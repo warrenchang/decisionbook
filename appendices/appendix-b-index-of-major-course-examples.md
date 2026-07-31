@@ -1,0 +1,46 @@
+---
+title: "Appendix B. Index of Major Course Examples"
+appendix: true
+---
+
+# Appendix B. Index of Major Course Examples
+
+Use this index to revisit the cases, demonstrations, and worked examples most likely to appear in class discussion and application questions.
+
+| Example | Main concept | Chapter(s) |
+| --- | --- | --- |
+| Two job offers: consulting or sustainability start-up | Prediction, valuation, opportunity cost, and multi-objective choice | 1–3, 7 |
+| Bat-and-ball problem | Cognitive reflection and intuitive substitution | 4 |
+| Invisible gorilla and radiologist gorilla | Inattentional blindness and expert search templates | 5 |
+| Door-study change blindness | The illusion of complete visual representation | 5 |
+| Bees’ ultraviolet flower patterns and animal Umwelt | Species-specific perception and epistemic humility | 5 |
+| Checker shadow, Kanizsa triangle, Thatcher illusion, and rubber hand | Perception as inference | 6 |
+| Subliminal reward cue and handgrip effort | Motivation with limited awareness | 7 |
+| Wine price, energy-drink discount, placebo, and nocebo | Expectation changes experience and performance | 8 |
+| Ecological shortcuts and trigger features | Heuristics as adaptive tools | 9 |
+| Plane crashes, vivid risks, and recent performance | Availability and affect | 10 |
+| Linda problem, prototypes, faces, and elections | Representativeness and conjunction error | 11 |
+| Medical-test frequencies, gambler’s fallacy, hot hand, and regression | Base rates, conditional probability, randomness, and calibration | 12 |
+| Wason task, death-penalty evidence, Barnum effect, and overconfidence | Confirmation, self-serving judgment, and calibration | 13 |
+| Wheel-of-fortune anchor, halo, decoy, sunk cost, and escalation | Contextual comparison and commitment | 14 |
+| Survival versus mortality, lean versus fat, and Asian disease | Framing and reference dependence | 15 |
+| Semantic, affective, identity, and goal priming | Associative accessibility and its boundary conditions | 16 |
+| Mere exposure, illusory truth, rhymes, and easy names | Fluency, familiarity, liking, and belief | 17 |
+| Stockings position effect and choice blindness | Reasons versus causes and rationalization | 18 |
+| Phone checking, procrastination, defensiveness, and habit loops | Context-cued automaticity | 19 |
+| Wanting versus liking, craving waves, and addiction | Incentive salience and self-control | 20 |
+| Implementation intentions, WOOP, B=MAP, defaults, and friction | Behavior design | 21 |
+| Overimitation, chameleon effect, and attribution flip | Social learning, mimicry, and causal explanation | 22 |
+| Sherif, Asch, towel reuse, energy feedback, and cultural markets | Conformity, norms, social proof, and cascades | 23 |
+| Milgram, bystanders, copier “because,” reciprocity, and scarcity | Authority, responsibility, and influence triggers | 24 |
+| Ethos–pathos–logos, elaboration likelihood, fear, and reactance | Persuasion and resistance | 25 |
+| Transportation, identification, identifiable victim, and ABT | Why narrative persuades | 26 |
+| STORY, evidence ladder, story–evidence braid, and worked transformations | Evidence-aligned storytelling | 27 |
+| Email tone, illusion of transparency, perspective-getting, and shared reality | Communication as joint inference | 28 |
+| Deep questions, liking gap, appreciation, help, support, and apology | Conversation and repair | 29 |
+| Positions, interests, BATNA, and the negotiator’s dilemma | Negotiation architecture | 30 |
+| Used-car ZOPA and salary preparation | Reservation values, targets, and bargaining power | 31 |
+| First offers, re-anchoring, concessions, even split, and deadlines | Distributive tactics | 32 |
+| Orange story, Camp David, priority mapping, and logrolling | Integrative trade-offs | 33 |
+| MESOs, contingent contracts, post-settlement search, and supplier terms | Advanced agreement design | 34 |
+| Decision journal, independent estimates, premortem, and after-action review | Decision hygiene | 35 |
