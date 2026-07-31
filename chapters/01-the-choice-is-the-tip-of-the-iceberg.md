@@ -18,7 +18,7 @@ slug: "01-the-choice-is-the-tip-of-the-iceberg"
 - Separate prediction from valuation.
 - Distinguish decision quality from outcome quality.
 - Apply the decision loop to persuasion and negotiation.
-
+我只是想在这一修改一下看看能不能够体现出来
 <aside class="callout scientific-caution"><div class="callout-title">SCIENTIFIC CAUTION</div><div class="callout-body">The Google advertising arrow and the reported Mars-bar response to Mars publicity are useful business anecdotes, not controlled demonstrations. In this book, anecdotes open questions; they do not establish effect sizes or general laws.</div></aside>
 
 Imagine that you are choosing between two job offers. The first comes from a prestigious consulting firm. The salary is high, the brand name is powerful, and the career path is clear. Your classmates congratulate you. Your family thinks it is the obvious choice.
