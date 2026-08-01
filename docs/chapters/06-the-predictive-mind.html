@@ -450,19 +450,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#prediction-error-and-precision" id="toc-prediction-error-and-precision" class="nav-link" data-scroll-target="#prediction-error-and-precision">Prediction, error, and precision</a></li>
-  <li><a href="#when-inner-models-help---and-trap" id="toc-when-inner-models-help---and-trap" class="nav-link" data-scroll-target="#when-inner-models-help---and-trap">When inner models help - and trap</a></li>
-  <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
-  <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
-  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -486,6 +475,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div id="chapter6">
 <p><em>Perception is inference constrained by sensory evidence</em></p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -526,16 +516,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="prediction-error-and-precision" class="level2">
 <h2 class="anchored" data-anchor-id="prediction-error-and-precision">Prediction, error, and precision</h2>
-<div id="fig-predictive-loop" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A loop linking internal model, predictions, sensory evidence, prediction error, perception and action, and model updating.">
+<div id="fig-predictive-processing-decision" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagram of judgment and decision-making according to predictive processing. Inside the decision-maker, the internal model shapes predictions, which guide perception and judgment. Precision or attention weights prediction versus sensory evidence. Prediction error updates the internal model. Action plans guide action, action changes the environment, and sensation feeds back into perception and judgment.">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-predictive-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/predictive-loop.svg" class="img-fluid figure-img" alt="A loop linking internal model, predictions, sensory evidence, prediction error, perception and action, and model updating.">
+<div aria-describedby="fig-predictive-processing-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/judgment-and-decision-making-according-to-predictive-processing.svg" class="img-fluid figure-img" alt="Diagram of judgment and decision-making according to predictive processing. Inside the decision-maker, the internal model shapes predictions, which guide perception and judgment. Precision or attention weights prediction versus sensory evidence. Prediction error updates the internal model. Action plans guide action, action changes the environment, and sensation feeds back into perception and judgment.">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-predictive-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: Perception and judgment emerge from predictions constrained by evidence; precision determines how strongly each source is weighted.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-predictive-processing-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: Judgment and decision-making according to predictive processing. An internal model generates predictions; perception and judgment integrate predictions with sensation; precision assigns weight to prediction error; action plans and action reshape contact with the environment.
 </figcaption>
 </figure>
 </div>
+<p>Figure <a href="#fig-predictive-processing-decision" class="quarto-xref">Figure&nbsp;<span>6.1</span></a> expands the predictive-processing account into a fuller model of judgment and decision-making. The <strong>internal model</strong> contains beliefs, causal assumptions, desired outcomes, and favored action plans. From that model the system generates <strong>predictions</strong> about sensations and outcomes. <strong>Perception and judgment</strong> arise when those predictions are integrated with incoming sensory evidence. The system does not passively read off the world; it infers the most likely current situation.</p>
+<p>The diagram also highlights <strong>precision/attention</strong>. In predictive-processing terms, precision is the estimated reliability or importance of a signal. Assigning high precision to a sensory signal gives it more influence over updating; assigning high precision to a prior gives top-down expectation more influence. This makes attention central rather than peripheral. Attention is one of the ways the system decides what counts as evidence.</p>
+<p>A crucial addition is <strong>prediction error</strong>. When the world does not match what the model expected, mismatch signals become candidates for updating. Yet not every mismatch produces learning. If the signal is treated as noisy, irrelevant, or untrustworthy, the model may resist revision. This is why expectations can become self-protective: people attend selectively, discount disconfirming evidence, or act in ways that prevent genuine correction.</p>
+<p>The diagram also shows why predictive processing is not just a theory of perception, but a theory of action. The system forms an <strong>action plan</strong> and takes <strong>action</strong> to reach desired outcomes or reduce uncertainty. Action changes the <strong>environment</strong>, which generates new <strong>sensations</strong> and feedback. Judgment, then, is embedded in a loop that links model, prediction, attention, perception, action, and learning. In this sense, decision-making is not a separate final stage placed after perception. It is part of a continuous predictive cycle in which organisms interpret the world while simultaneously trying to shape it.</p>
 <p>The idea that perception is inference becomes more powerful in predictive processing. Predictive processing theories propose that the brain is constantly generating predictions about sensory input and updating those predictions when errors occur (Clark, 2013; Friston, 2010; Hohwy, 2013; Rao &amp; Ballard, 1999). The brain does not wait passively for the world to arrive. It predicts the world, compares prediction with incoming evidence, and revises its model when mismatch matters.</p>
 <p>In this framework, the brain maintains a generative model: an internal model of what causes sensory input. The model generates predictions about what should be seen, heard, felt, or experienced. Incoming sensory signals are compared with predictions. The difference is called prediction error.</p>
 <p>If prediction error is small, the model is working well enough. If prediction error is large and reliable, the brain updates its beliefs or directs action to reduce the mismatch.</p>
@@ -569,45 +563,27 @@ Figure&nbsp;6.1: Perception and judgment emerge from predictions constrained by 
 <p>A practical method is to ask:</p>
 <p>What am I expecting to see? What would I notice if my expectation were wrong? What information am I treating as precise? What am I treating as noise? What alternative model could explain the same evidence? What action would test the model rather than protect it?</p>
 <p>These questions prepare the way for later chapters on heuristics, biases, framing, and probability judgment. Many biases are not separate from perception; they begin in what attention selects and what the model makes plausible.</p>
-<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<div class="callout-title">
+<p>EVIDENCE AND BOUNDARY CONDITIONS</p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence And Boundary Conditions
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body">
 <p>Predictive processing is an influential family of frameworks, not one settled theory with a single agreed implementation. Use it as a disciplined way to ask how priors, evidence, and precision interact, not as a universal explanation that can never be falsified.</p>
 </div>
+<div class="callout-title">
+<p>EVIDENCE AND BOUNDARY CONDITIONS</p>
 </div>
-<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence And Boundary Conditions
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body">
 <p>Clinical examples such as hallucinations or functional neurological symptoms are complex. They should not be reduced to “strong priors” without considering neural, developmental, social, and medical mechanisms.</p>
 </div>
-</div>
-<div id="tbl-06-1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-06-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;6.1: A functional predictive loop
-</figcaption>
-<div aria-describedby="tbl-06-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><em>Table 6.1. A functional predictive loop</em></p>
+<div class="table-wrapper" aria-label="Scrollable table" role="region" tabindex="0">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 22%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -629,8 +605,6 @@ Table&nbsp;6.1: A functional predictive loop
 </tbody>
 </table>
 </div>
-</figure>
-</div>
 </section>
 <section id="key-ideas" class="level2">
 <h2 class="anchored" data-anchor-id="key-ideas">Key ideas</h2>
@@ -648,99 +622,18 @@ Table&nbsp;6.1: A functional predictive loop
 <li><p>What evidence and mechanism would you use to describe predictive processing, prediction error, and precision in plain language?</p></li>
 <li><p>How would you use illusions to reveal the assumptions of ordinary perception in practice?</p></li>
 </ol>
-<div class="activity callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<div class="callout-title">
+<p>ACTIVITY</p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Activity
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body">
 <p>Choose a disagreement in which two people received similar information but saw different situations. Write each person’s prior model, the evidence each treated as precise, and one observation that could distinguish the models.<br>
 EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br>
 Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</p>
 </div>
-</div>
 </section>
-<section id="references-cited-in-this-chapter" class="level2">
-<h2 class="anchored" data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
-<div class="reference">
-<p>Adelson, E. H. (2000). Lightness perception and lightness illusions. In M. Gazzaniga (Ed.), The new cognitive neurosciences (2nd ed., pp.&nbsp;339–351). MIT Press.</p>
-</div>
-<div class="reference">
-<p>Balcetis, E., &amp; Dunning, D. (2010). Wishful seeing: More desired objects are seen as closer. Psychological Science, 21(1), 147–152.</p>
-</div>
-<div class="reference">
-<p>Botvinick, M., &amp; Cohen, J. (1998). Rubber hands “feel” touch that eyes see. Nature, 391(6669), 756.</p>
-</div>
-<div class="reference">
-<p>Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36(3), 181–204.</p>
-</div>
-<div class="reference">
-<p>Croskerry, P. (2003). The importance of cognitive errors in diagnosis and strategies to minimize them. Academic Medicine, 78(8), 775–780.</p>
-</div>
-<div class="reference">
-<p>Feldman, H., &amp; Friston, K. J. (2010). Attention, uncertainty, and free-energy. Frontiers in Human Neuroscience, 4, Article 215.</p>
-</div>
-<div class="reference">
-<p>Friston, K. (2010). The free-energy principle: A unified brain theory? Nature Reviews Neuroscience, 11(2), 127–138.</p>
-</div>
-<div class="reference">
-<p>Friston, K., FitzGerald, T., Rigoli, F., Schwartenbeck, P., &amp; Pezzulo, G. (2017). Active inference: A process theory. Neural Computation, 29(1), 1–49.</p>
-</div>
-<div class="reference">
-<p>Gregory, R. L. (1980). Perceptions as hypotheses. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 290(1038), 181–197.</p>
-</div>
-<div class="reference">
-<p>Helmholtz, H. von. (1962). Treatise on physiological optics (J. P. C. Southall, Trans.). Dover. (Original work published 1867)</p>
-</div>
-<div class="reference">
-<p>Hohwy, J. (2013). The predictive mind. Oxford University Press.</p>
-</div>
-<div class="reference">
-<p>Kanizsa, G. (1976). Subjective contours. Scientific American, 234(4), 48–52.</p>
-</div>
-<div class="reference">
-<p>Kersten, D., Mamassian, P., &amp; Yuille, A. (2004). Object perception as Bayesian inference. Annual Review of Psychology, 55, 271–304.</p>
-</div>
-<div class="reference">
-<p>Knill, D. C., &amp; Richards, W. (Eds.). (1996). Perception as Bayesian inference. Cambridge University Press.</p>
-</div>
-<div class="reference">
-<p>Martin, L. L., &amp; Tesser, A. (1996). Some ruminative thoughts. In R. S. Wyer Jr.&nbsp;(Ed.), Ruminative thoughts (pp.&nbsp;1–47). Lawrence Erlbaum.</p>
-</div>
-<div class="reference">
-<p>Ostrovsky, Y., Andalman, A., &amp; Sinha, P. (2006). Vision following extended congenital blindness. Psychological Science, 17(12), 1009–1014.</p>
-</div>
-<div class="reference">
-<p>Proffitt, D. R. (2006). Embodied perception and the economy of action. Perspectives on Psychological Science, 1(2), 110–122.</p>
-</div>
-<div class="reference">
-<p>Ramachandran, V. S. (1988). Perception of shape from shading. Nature, 331(6152), 163–166.</p>
-</div>
-<div class="reference">
-<p>Rao, R. P. N., &amp; Ballard, D. H. (1999). Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 2(1), 79–87.</p>
-</div>
-<div class="reference">
-<p>Rock, I. (1983). The logic of perception. MIT Press.</p>
-</div>
-<div class="reference">
-<p>Sacks, O. (1995). An anthropologist on Mars: Seven paradoxical tales. Knopf.</p>
-</div>
-<div class="reference">
-<p>Stefanucci, J. K., &amp; Proffitt, D. R. (2009). The roles of altitude and fear in the perception of height. Journal of Experimental Psychology: Human Perception and Performance, 35(2), 424–438.</p>
-</div>
-<div class="reference">
-<p>Thompson, P. (1980). Margaret Thatcher: A new illusion. Perception, 9(4), 483–484.</p>
-</div>
-<div class="reference">
-<p>Zeigarnik, B. (1927). On finished and unfinished tasks [Über das Behalten von erledigten und unerledigten Handlungen]. Psychologische Forschung, 9, 1–85.</p>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1135,7 +1028,7 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/06-the-predictive-mind.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
