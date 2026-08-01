@@ -1,12 +1,12 @@
 ---
-title: "Decision Hygiene and the DPN Studio"
+title: "Decision Hygiene"
 subtitle: "Notice, test, ask, design, and learn"
 chapter: 35
 part: 7
 slug: "35-decision-hygiene-and-the-dpn-studio"
 ---
 
-# Chapter 35. Decision Hygiene and the DPN Studio
+# Chapter 35. Decision Hygiene
 
 *Notice, test, ask, design, and learn*
 
