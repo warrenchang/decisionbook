@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs/>
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
+  <defs />
   <title>Predictive inference</title>
   <desc>An internal model generates predictions; sensory evidence produces prediction error; precision weights the balance; action and learning update the model.</desc>
-  <rect fill="white" height="650" width="1200" x="0" y="0"/>
+  <rect fill="white" height="650" width="1200" x="0" y="0" />
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="600" y="48">Predictive inference and active learning</text>
-  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="80" y="210"/>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="195.0" y="264.5">Internal model</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="195.0" y="298.5">priors • goals • causal beliefs</text>
-  <rect fill="#eaf3f8" height="120" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="485" y="95"/>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600.0" y="147.0">Predictions</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600.0" y="181.0">expected sensations + outcomes</text>
-  <rect fill="#f7f1e8" height="120" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="230" x="485" y="390"/>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600.0" y="442.0">Sensory evidence</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600.0" y="476.0">observations + feedback</text>
-  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="890" y="210"/>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="1005.0" y="264.5">Perception + action</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="1005.0" y="298.5">best current inference</text>
-  <line stroke="#17324d" stroke-width="4" x1="310" x2="485" y1="250" y2="155"/>
-  <polygon fill="#17324d" points="485,155 477.1615480013974,167.78900583570135 470.0051700578339,154.60620436071594"/>
-  <line stroke="#c56a2d" stroke-width="4" x1="310" x2="485" y1="295" y2="450"/>
-  <polygon fill="#c56a2d" points="485,450 470.30278994523746,447.001330860834 480.2483186246809,435.7725081582365"/>
-  <line stroke="#17324d" stroke-width="4" x1="715" x2="890" y1="155" y2="250"/>
-  <polygon fill="#17324d" points="890,250 875.0051700578339,250.39379563928406 882.1615480013974,237.21099416429865"/>
-  <line stroke="#c56a2d" stroke-width="4" x1="715" x2="890" y1="450" y2="295"/>
-  <polygon fill="#c56a2d" points="890,295 885.2483186246809,309.2274918417635 875.3027899452375,297.998669139166"/>
-  <rect fill="white" height="90" rx="16" ry="16" stroke="#2b7a78" stroke-width="3" width="250" x="475" y="250"/>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600.0" y="287.0">Prediction error</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600.0" y="321.0">mismatch weighted by precision</text>
-  <line stroke="#2b7a78" stroke-width="4" x1="600" x2="600" y1="250" y2="215"/>
-  <polygon fill="#2b7a78" points="600,215 607.5,227.99038105676658 592.5,227.99038105676658"/>
-  <line stroke="#2b7a78" stroke-width="4" x1="600" x2="600" y1="390" y2="340"/>
-  <polygon fill="#2b7a78" points="600,340 607.5,352.9903810567666 592.5,352.9903810567666"/>
-  <line stroke="#2b7a78" stroke-width="4" x1="890" x2="310" y1="335" y2="335"/>
-  <polygon fill="#2b7a78" points="310,335 322.9903810567666,327.5 322.9903810567666,342.5"/>
+  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="80" y="210" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="195" y="256.44"><tspan x="195" dy="0">Internal model</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="195" y="284.56"><tspan x="195" dy="0">priors • goals •</tspan><tspan x="195" dy="20.06">causal beliefs</tspan></text>
+  <rect fill="#eaf3f8" height="120" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="485" y="95" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600" y="138.94"><tspan x="600" dy="0">Predictions</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600" y="167.06"><tspan x="600" dy="0">expected sensations +</tspan><tspan x="600" dy="20.06">outcomes</tspan></text>
+  <rect fill="#f7f1e8" height="120" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="230" x="485" y="390" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="24.91" font-weight="bold" text-anchor="middle" x="600" y="419.921"><tspan x="600" dy="0">Sensory</tspan><tspan x="600" dy="29.3892">evidence</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="16.28" font-weight="normal" text-anchor="middle" x="600" y="476.458"><tspan x="600" dy="0">observations +</tspan><tspan x="600" dy="19.216">feedback</tspan></text>
+  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="230" x="890" y="210" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="1005" y="241.1"><tspan x="1005" dy="0">Perception +</tspan><tspan x="1005" dy="30.68">action</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="1005" y="299.9"><tspan x="1005" dy="0">best current</tspan><tspan x="1005" dy="20.06">inference</tspan></text>
+  <line stroke="#17324d" stroke-width="4" x1="310" x2="485" y1="250" y2="155" />
+  <polygon fill="#17324d" points="485,155 477.1615480013974,167.78900583570135 470.0051700578339,154.60620436071594" />
+  <line stroke="#c56a2d" stroke-width="4" x1="310" x2="485" y1="295" y2="450" />
+  <polygon fill="#c56a2d" points="485,450 470.30278994523746,447.001330860834 480.2483186246809,435.7725081582365" />
+  <line stroke="#17324d" stroke-width="4" x1="715" x2="890" y1="155" y2="250" />
+  <polygon fill="#17324d" points="890,250 875.0051700578339,250.39379563928406 882.1615480013974,237.21099416429865" />
+  <line stroke="#c56a2d" stroke-width="4" x1="715" x2="890" y1="450" y2="295" />
+  <polygon fill="#c56a2d" points="890,295 885.2483186246809,309.2274918417635 875.3027899452375,297.998669139166" />
+  <rect fill="white" height="90" rx="16" ry="16" stroke="#2b7a78" stroke-width="3" width="250" x="475" y="250" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18.72" font-weight="bold" text-anchor="middle" x="600" y="274.725"><tspan x="600" dy="0">Prediction</tspan><tspan x="600" dy="22.0896">error</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="12.24" font-weight="normal" text-anchor="middle" x="600" y="314.461"><tspan x="600" dy="0">mismatch weighted by</tspan><tspan x="600" dy="14.4432">precision</tspan></text>
+  <line stroke="#2b7a78" stroke-width="4" x1="600" x2="600" y1="250" y2="215" />
+  <polygon fill="#2b7a78" points="600,215 607.5,227.99038105676658 592.5,227.99038105676658" />
+  <line stroke="#2b7a78" stroke-width="4" x1="600" x2="600" y1="390" y2="340" />
+  <polygon fill="#2b7a78" points="600,340 607.5,352.9903810567666 592.5,352.9903810567666" />
+  <line stroke="#2b7a78" stroke-width="4" x1="890" x2="310" y1="335" y2="335" />
+  <polygon fill="#2b7a78" points="310,335 322.9903810567666,327.5 322.9903810567666,342.5" />
   <text fill="#66737f" font-family="Arial, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" x="600" y="595">Repeated, credible mismatch changes the model; action can also change the evidence received.</text>
 </svg>
