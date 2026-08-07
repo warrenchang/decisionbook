@@ -47,11 +47,17 @@ This is why attention is a decision problem before decision-making begins. What 
 
 Attention is also limited. The adult human brain consumes a large share of the body’s energy relative to its weight, and neural processing is metabolically expensive (Attwell & Laughlin, 2001; Raichle & Gusnard, 2002). The brain cannot process everything in full detail. Cognitive capacity is constrained by attention, working memory, and control systems (Baddeley, 1992; Cowan, 2001; Marois & Ivanoff, 2005). This means that attention is a scarce resource. Spending it in one place means not spending it elsewhere.
 
+The scale of the bottleneck is easy to underestimate. The adult brain is roughly 2% of body mass but accounts for about 20% of resting energy use. Difficult tasks do not multiply whole-brain consumption; they mainly redistribute activity within a system that is already working continuously. At the information level, Zheng and Meister (2025) estimate that human sensory systems collectively gather information on the order of $10^9$ bits per second, while deliberate behavioral output proceeds at roughly 10 bits per second. These are deliberately broad order-of-magnitude estimates across unlike channels, not a literal claim that the brain discards every other bit. Their importance is architectural: a vast, parallel sensory stream must be compressed into a very small, serial stream of report and action.
+
+![A high-dimensional sensory stream narrows through attention into a much smaller stream of conscious report and action.](../figures/attention-bottleneck.svg){#fig-attention-bottleneck fig-alt="A wide box labeled sensory systems at approximately one billion bits per second passes through an attention funnel into a box labeled conscious report and action at approximately ten bits per second. A note explains that the numbers are order-of-magnitude estimates and that selected information alone can guide deliberate judgment."}
+
 This has practical consequences.
 
 Students who divide attention between class and digital distractions often learn less. Junco and Cotten (2012) found that multitasking with technology was associated with poorer academic performance. Sana, Weston, and Cepeda (2013) found that laptop multitasking harmed not only the multitasker’s learning but also the learning of nearby students who could see the screen. Gingerich and Lineweaver (2014) found that media multitasking during class was associated with poorer retention. Attention is not infinitely divisible.
 
 Drivers using phones suffer similar limits. Strayer and Johnston (2001) showed that cell phone conversations can impair driving performance, and Strayer, Drews, and Johnston (2003) found that hands-free conversation does not eliminate the attentional cost. The problem is not merely holding a device. It is the diversion of attention from the driving environment.
+
+More information on one display does not guarantee more information in judgment. A head-up display can keep instrument data in a pilot's line of sight and still narrow attention so strongly that another visible event is missed. Integrating data spatially is therefore not the same as integrating attention psychologically. The design question is not only “Is the information present?” but “What search task does the display make dominant, and what anomaly could that task hide?”
 
 Organizations also suffer from attentional limits. A leadership team focused on quarterly revenue may miss employee burnout. A product team focused on technical features may miss user confusion. A board focused on legal compliance may miss reputational risk. A negotiator focused on price may miss interests that could create value. A hiring committee focused on confidence may miss reliability.
 
@@ -256,4 +262,8 @@ von Uexküll, J. (2010). A foray into the worlds of animals and humans: With a t
 
 ::: {.reference}
 Wiltschko, R., & Wiltschko, W. (2005). Magnetic orientation and magnetoreception in birds and other animals. Journal of Comparative Physiology A, 191(8), 675–693.
+:::
+
+::: {.reference}
+Zheng, J., & Meister, M. (2025). The unbearable slowness of being: Why do we live at 10 bits/s? Neuron, 113(2), 192–204.
 :::

@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -544,9 +573,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="attention-under-divided-demand" class="level2">
 <h2 class="anchored" data-anchor-id="attention-under-divided-demand">Attention under divided demand</h2>
 <p>Attention is also limited. The adult human brain consumes a large share of the body’s energy relative to its weight, and neural processing is metabolically expensive (Attwell &amp; Laughlin, 2001; Raichle &amp; Gusnard, 2002). The brain cannot process everything in full detail. Cognitive capacity is constrained by attention, working memory, and control systems (Baddeley, 1992; Cowan, 2001; Marois &amp; Ivanoff, 2005). This means that attention is a scarce resource. Spending it in one place means not spending it elsewhere.</p>
+<p>The scale of the bottleneck is easy to underestimate. The adult brain is roughly 2% of body mass but accounts for about 20% of resting energy use. Difficult tasks do not multiply whole-brain consumption; they mainly redistribute activity within a system that is already working continuously. At the information level, Zheng and Meister (2025) estimate that human sensory systems collectively gather information on the order of <span class="math inline">\(10^9\)</span> bits per second, while deliberate behavioral output proceeds at roughly 10 bits per second. These are deliberately broad order-of-magnitude estimates across unlike channels, not a literal claim that the brain discards every other bit. Their importance is architectural: a vast, parallel sensory stream must be compressed into a very small, serial stream of report and action.</p>
+<div id="fig-attention-bottleneck" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A wide box labeled sensory systems at approximately one billion bits per second passes through an attention funnel into a box labeled conscious report and action at approximately ten bits per second. A note explains that the numbers are order-of-magnitude estimates and that selected information alone can guide deliberate judgment.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-attention-bottleneck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/attention-bottleneck.svg" class="img-fluid figure-img" alt="A wide box labeled sensory systems at approximately one billion bits per second passes through an attention funnel into a box labeled conscious report and action at approximately ten bits per second. A note explains that the numbers are order-of-magnitude estimates and that selected information alone can guide deliberate judgment.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attention-bottleneck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: A high-dimensional sensory stream narrows through attention into a much smaller stream of conscious report and action.
+</figcaption>
+</figure>
+</div>
 <p>This has practical consequences.</p>
 <p>Students who divide attention between class and digital distractions often learn less. Junco and Cotten (2012) found that multitasking with technology was associated with poorer academic performance. Sana, Weston, and Cepeda (2013) found that laptop multitasking harmed not only the multitasker’s learning but also the learning of nearby students who could see the screen. Gingerich and Lineweaver (2014) found that media multitasking during class was associated with poorer retention. Attention is not infinitely divisible.</p>
 <p>Drivers using phones suffer similar limits. Strayer and Johnston (2001) showed that cell phone conversations can impair driving performance, and Strayer, Drews, and Johnston (2003) found that hands-free conversation does not eliminate the attentional cost. The problem is not merely holding a device. It is the diversion of attention from the driving environment.</p>
+<p>More information on one display does not guarantee more information in judgment. A head-up display can keep instrument data in a pilot’s line of sight and still narrow attention so strongly that another visible event is missed. Integrating data spatially is therefore not the same as integrating attention psychologically. The design question is not only “Is the information present?” but “What search task does the display make dominant, and what anomaly could that task hide?”</p>
 <p>Organizations also suffer from attentional limits. A leadership team focused on quarterly revenue may miss employee burnout. A product team focused on technical features may miss user confusion. A board focused on legal compliance may miss reputational risk. A negotiator focused on price may miss interests that could create value. A hiring committee focused on confidence may miss reliability.</p>
 <p>Attention is the gatekeeper of judgment. If the wrong information enters, or important information stays out, later reasoning may be careful but still misguided.</p>
 </section>
@@ -564,7 +605,7 @@ ul.task-list li input[type="checkbox"] {
 <img src="../figures/attention-filter.svg" class="img-fluid figure-img" alt="Many information streams narrow through an attention funnel into evidence for judgment.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attention-filter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: Attention does not merely inspect evidence; it determines which information becomes evidence at all.
+Figure&nbsp;5.2: Attention does not merely inspect evidence; it determines which information becomes evidence at all.
 </figcaption>
 </figure>
 </div>
@@ -764,6 +805,9 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </div>
 <div class="reference">
 <p>Wiltschko, R., &amp; Wiltschko, W. (2005). Magnetic orientation and magnetoreception in birds and other animals. Journal of Comparative Physiology A, 191(8), 675–693.</p>
+</div>
+<div class="reference">
+<p>Zheng, J., &amp; Meister, M. (2025). The unbearable slowness of being: Why do we live at 10 bits/s? Neuron, 113(2), 192–204.</p>
 </div>
 
 
