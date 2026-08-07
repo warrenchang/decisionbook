@@ -1,34 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs />
+  <defs>
+    <marker id="navy-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#17324d" />
+    </marker>
+    <marker id="orange-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#c56a2d" />
+    </marker>
+  </defs>
   <title>Choice, explanation, and learning</title>
   <desc>A choice produces an outcome; the narrator explains it. Hindsight and outcome bias can distort learning unless a contemporaneous decision record is compared with results.</desc>
   <rect fill="white" height="650" width="1200" x="0" y="0" />
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="600" y="48">The narrator can protect identity—or protect learning</text>
-  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="180" x="50" y="220" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="140" y="263.97"><tspan x="140" dy="0">Choice</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="140" y="292.09"><tspan x="140" dy="0">reasons felt now</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="230" x2="390" y1="270" y2="270" />
-  <polygon fill="#17324d" points="390,270 377.0096189432334,277.5 377.0096189432334,262.5" />
-  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="180" x="390" y="220" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="480" y="263.97"><tspan x="480" dy="0">Outcome</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="480" y="292.09"><tspan x="480" dy="0">luck + process</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="570" x2="730" y1="270" y2="270" />
-  <polygon fill="#17324d" points="730,270 717.0096189432334,277.5 717.0096189432334,262.5" />
-  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="200" x="730" y="220" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="830" y="263.97"><tspan x="830" dy="0">Narrative</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="830" y="292.09"><tspan x="830" dy="0">“why it happened”</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="930" x2="1090" y1="270" y2="270" />
-  <polygon fill="#17324d" points="1090,270 1077.0096189432334,277.5 1077.0096189432334,262.5" />
-  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="160" x="1010" y="400" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="24.67" font-weight="bold" text-anchor="middle" x="1090" y="429.723"><tspan x="1090" dy="0">Future</tspan><tspan x="1090" dy="29.1109">rule</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="16.13" font-weight="normal" text-anchor="middle" x="1090" y="485.771"><tspan x="1090" dy="0">what repeats</tspan></text>
-  <rect fill="#f7f1e8" height="105" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="300" x="390" y="430" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="540" y="466.44"><tspan x="540" dy="0">Decision record</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="540" y="494.56"><tspan x="540" dy="0">beliefs • probabilities •</tspan><tspan x="540" dy="20.06">values</tspan></text>
-  <line stroke="#c56a2d" stroke-width="4" x1="540" x2="810" y1="430" y2="320" />
-  <polygon fill="#c56a2d" points="810,320 800.7994340076848,331.84692303600616 795.139980697982,317.95553763946293" />
-  <line stroke="#c56a2d" stroke-width="4" x1="690" x2="1010" y1="482" y2="450" />
-  <polygon fill="#c56a2d" points="1010,450 997.8203656261754,458.7553701532231 996.3278098408604,443.8298123000733" />
+  <!-- Equal-width stages and equal gaps keep the learning sequence visually regular. -->
+  <line stroke="#17324d" stroke-width="4" stroke-linecap="round" x1="260" x2="340" y1="270" y2="270" marker-end="url(#navy-arrow)" />
+  <line stroke="#17324d" stroke-width="4" stroke-linecap="round" x1="560" x2="640" y1="270" y2="270" marker-end="url(#navy-arrow)" />
+  <line stroke="#17324d" stroke-width="4" stroke-linecap="round" x1="860" x2="940" y1="270" y2="270" marker-end="url(#navy-arrow)" />
+
+  <!-- Both record comparisons leave from one shared point. -->
+  <line stroke="#c56a2d" stroke-width="4" stroke-linecap="round" x1="600" x2="750" y1="430" y2="320" marker-end="url(#orange-arrow)" />
+  <line stroke="#c56a2d" stroke-width="4" stroke-linecap="round" x1="600" x2="1050" y1="430" y2="320" marker-end="url(#orange-arrow)" />
+
+  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="220" x="40" y="220" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="150" y="263.97"><tspan x="150" dy="0">Choice</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="150" y="292.09"><tspan x="150" dy="0">reasons felt now</tspan></text>
+
+  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="220" x="340" y="220" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="450" y="263.97"><tspan x="450" dy="0">Outcome</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="450" y="292.09"><tspan x="450" dy="0">luck + process</tspan></text>
+
+  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="220" x="640" y="220" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="750" y="263.97"><tspan x="750" dy="0">Narrative</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="750" y="292.09"><tspan x="750" dy="0">“why it happened”</tspan></text>
+
+  <rect fill="#eaf3f8" height="100" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="220" x="940" y="220" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="24.67" font-weight="bold" text-anchor="middle" x="1050" y="249.723"><tspan x="1050" dy="0">Future</tspan><tspan x="1050" dy="29.1109">rule</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="16.13" font-weight="normal" text-anchor="middle" x="1050" y="305.771"><tspan x="1050" dy="0">what repeats</tspan></text>
+
+  <rect fill="#f7f1e8" height="105" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="300" x="450" y="430" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600" y="466.44"><tspan x="600" dy="0">Decision record</tspan></text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600" y="494.56"><tspan x="600" dy="0">beliefs • probabilities •</tspan><tspan x="600" dy="20.06">values</tspan></text>
   <text fill="#66737f" font-family="Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" x="600" y="595">A record written before the outcome prevents luck from rewriting the process.</text>
 </svg>

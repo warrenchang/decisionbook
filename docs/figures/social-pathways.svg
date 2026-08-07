@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs />
+  <defs>
+    <marker id="cascade-arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L13 6.5 L0 13 Z" fill="#a74343" />
+    </marker>
+  </defs>
   <title>From private information to a social cascade</title>
   <desc>Private judgments become public actions; observed actions become social evidence; apparent consensus raises the cost of dissent and can produce a cascade. Independent elicitation interrupts the loop.</desc>
   <rect fill="white" height="650" width="1200" x="0" y="0" />
@@ -23,10 +27,7 @@
   <polygon fill="#17324d" points="580,277 567.0096189432334,284.5 567.0096189432334,269.5" />
   <line stroke="#17324d" stroke-width="4" x1="800" x2="840" y1="277" y2="277" />
   <polygon fill="#17324d" points="840,277 827.0096189432334,284.5 827.0096189432334,269.5" />
-  <line stroke="#a74343" stroke-width="4" x1="1060" x2="170" y1="335" y2="430" />
-  <polygon fill="#a74343" points="170,430 182.12096314287803,421.16358373043727 183.71304253929443,436.07885386528585" />
-  <line stroke="#a74343" stroke-width="4" x1="170" x2="170" y1="430" y2="335" />
-  <polygon fill="#a74343" points="170,335 177.5,347.9903810567666 162.5,347.9903810567666" />
+  <path d="M1060 335 V405 H170 V335" fill="none" stroke="#a74343" stroke-width="4" stroke-linejoin="round" marker-end="url(#cascade-arrow)" />
   <rect fill="#edf4ed" height="100" rx="16" ry="16" stroke="#447c55" stroke-width="3" width="440" x="380" y="455" />
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="600" y="488.94"><tspan x="600" dy="0">Interrupt the cascade</tspan></text>
   <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="600" y="517.06"><tspan x="600" dy="0">independent estimates • anonymous input •</tspan><tspan x="600" dy="20.06">first ally • visible dissent norm</tspan></text>

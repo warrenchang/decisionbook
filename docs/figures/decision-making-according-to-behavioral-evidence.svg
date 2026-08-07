@@ -16,7 +16,7 @@
       .flow{fill:none;stroke:#123c86;stroke-width:4}
       .context-flow{fill:none;stroke:#d62828;stroke-width:4}
     ]]></style>
-    <marker id="blue-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+    <marker id="blue-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
       <path d="M0 0 L12 6 L0 12 Z" fill="#123c86"/>
     </marker>
     <marker id="red-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
@@ -34,18 +34,17 @@
   <text x="755" y="88" class="heading" text-anchor="middle">Judgment</text>
 
   <!-- Connectors are drawn before nodes so no line crosses a label. -->
-  <path d="M310 278 H410 V340 H640" class="flow" marker-end="url(#blue-arrow)"/>
+  <path d="M310 278 L620 335" class="flow" marker-end="url(#blue-arrow)"/>
   <path d="M180 470 V335" class="context-flow" marker-end="url(#red-arrow)"/>
-  <path d="M340 540 H560" class="context-flow" marker-end="url(#red-arrow)"/>
+  <path d="M340 540 H545" class="context-flow" marker-end="url(#red-arrow)"/>
   <path d="M695 170 H805" class="flow" marker-start="url(#blue-arrow)" marker-end="url(#blue-arrow)"/>
-  <path d="M585 215 L700 290" class="flow" marker-end="url(#blue-arrow)"/>
-  <path d="M915 215 L835 290" class="flow" marker-end="url(#blue-arrow)"/>
-  <path d="M770 275 V215" class="flow" marker-end="url(#blue-arrow)"/>
-  <path d="M955 535 V445 H800 V395" class="flow" marker-end="url(#blue-arrow)"/>
-  <path d="M900 335 H1180" class="flow" marker-end="url(#blue-arrow)"/>
+  <path d="M585 215 L685 275" class="flow" marker-start="url(#blue-arrow)" marker-end="url(#blue-arrow)"/>
+  <path d="M915 215 L815 275" class="flow" marker-start="url(#blue-arrow)" marker-end="url(#blue-arrow)"/>
+  <path d="M750 470 V395" class="context-flow" marker-end="url(#red-arrow)"/>
+  <path d="M880 335 L1180 290" class="flow" marker-end="url(#blue-arrow)"/>
   <path d="M1360 290 H1400" class="flow" marker-end="url(#blue-arrow)"/>
   <path d="M1485 340 V500" class="flow" marker-end="url(#blue-arrow)"/>
-  <path d="M1190 545 H1135 V385 H900" class="flow" marker-end="url(#blue-arrow)"/>
+  <path d="M1190 545 H1160 V385 H880" class="flow" marker-end="url(#blue-arrow)"/>
 
   <!-- Inputs and contexts -->
   <rect x="20" y="220" width="290" height="115" rx="18" class="node"/>
@@ -63,12 +62,12 @@
     <tspan x="180" dy="19">social cues, and primes</tspan>
   </text>
 
-  <rect x="560" y="470" width="410" height="140" rx="18" class="context"/>
-  <text x="765" y="506" class="red" text-anchor="middle">Internal state and model</text>
-  <text x="765" y="535" class="red-small" text-anchor="middle">
-    <tspan x="765" dy="0">attention and cognitive resources; beliefs;</tspan>
-    <tspan x="765" dy="19">goals; affect; memory; identity;</tspan>
-    <tspan x="765" dy="19">and a causal model</tspan>
+  <rect x="545" y="470" width="410" height="140" rx="18" class="context"/>
+  <text x="750" y="506" class="red" text-anchor="middle">Internal state and model</text>
+  <text x="750" y="535" class="red-small" text-anchor="middle">
+    <tspan x="750" dy="0">attention and cognitive resources; beliefs;</tspan>
+    <tspan x="750" dy="19">goals; affect; memory; identity;</tspan>
+    <tspan x="750" dy="19">and a causal model</tspan>
   </text>
 
   <!-- Judgment -->
@@ -80,12 +79,12 @@
   <text x="915" y="163" class="white" text-anchor="middle">Valuation</text>
   <text x="915" y="188" class="white-small" text-anchor="middle">what matters?</text>
 
-  <rect x="640" y="275" width="260" height="120" rx="14" class="dark"/>
-  <text x="770" y="319" class="white" text-anchor="middle">
-    <tspan x="770" dy="0">Selection and</tspan>
-    <tspan x="770" dy="24">interpretation</tspan>
+  <rect x="620" y="275" width="260" height="120" rx="14" class="dark"/>
+  <text x="750" y="319" class="white" text-anchor="middle">
+    <tspan x="750" dy="0">Selection and</tspan>
+    <tspan x="750" dy="24">interpretation</tspan>
   </text>
-  <text x="770" y="374" class="white-small" text-anchor="middle">what becomes evidence?</text>
+  <text x="750" y="374" class="white-small" text-anchor="middle">what becomes evidence?</text>
 
   <!-- Choice, outcome, and learning -->
   <rect x="1180" y="240" width="180" height="100" rx="16" class="node"/>
