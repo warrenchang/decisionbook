@@ -8,7 +8,7 @@
 
 <meta name="description" content="A textbook on how people choose, influence, communicate, negotiate, and build better decision systems.">
 
-<title>20&nbsp; Wanting, Craving, and Self-Control – Decision, Persuasion, and Negotiation</title>
+<title>35&nbsp; Wanting and Self-Control: Urge Is Not Action – Decision, Persuasion, and Negotiation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -89,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III.How Choices Become Stories and Habits</a></li><li class="breadcrumb-item"><a href="../chapters/20-wanting-craving-and-self-control.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Wanting, Craving, and Self-Control</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-8.html">Part VIII. Habits and Behavior Design</a></li><li class="breadcrumb-item"><a href="../chapters/20-wanting-craving-and-self-control.html"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,10 +152,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Start Here</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Follow the Decision Upstream</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part I. The Architecture of Choice</span></a>
+ <span class="menu-text">Part I. The Decision-Making Process</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -135,49 +170,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/01-the-choice-is-the-tip-of-the-iceberg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Choice Is the Tip of the Iceberg</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decision-Making Is a Process, Not a Moment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/02-a-rational-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Rational Benchmark, Not a Portrait</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rationality: A Benchmark, Not a Portrait</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/03-opportunity-cost-information-and-better-options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Opportunity Cost, Information, and Better Options</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/04-fast-answers-slow-inspection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fast Answers, Slow Inspection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/05-attention-is-the-gatekeeper-of-evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Attention Is the Gatekeeper of Evidence</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/06-the-predictive-mind.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Predictive Mind</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">To Decide Is to Sacrifice: Opportunity Cost, Information, and Better Options</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/07-value-is-constructed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Value Is Constructed</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-expectations-that-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Expectations That Become Causes</span></span></a>
+  <a href="../chapters/18-the-narrator-after-the-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
   </div>
 </li>
       </ul>
@@ -185,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part II.Judgment Under Uncertainty and Context</span></a>
+ <span class="menu-text">Part II. Attention, Prediction, and Expectation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -193,56 +210,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-heuristics-the-adaptive-toolbox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Heuristics: The Adaptive Toolbox</span></span></a>
+  <a href="../chapters/05-attention-is-the-gatekeeper-of-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-feeling-and-availability-as-shortcuts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Feeling and Availability as Shortcuts</span></span></a>
+  <a href="../chapters/06-the-predictive-mind.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/11-resemblance-is-not-probability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Resemblance Is Not Probability</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Base Rates, Randomness, and Calibration</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/13-biases-that-protect-a-story.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Biases That Protect a Story</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/14-anchors-halos-decoys-and-escalation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Anchors, Halos, Decoys, and Escalation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/15-frames-change-the-decision.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Frames Change the Decision</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/16-priming-and-the-active-mental-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Priming and the Active Mental Context</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/17-fluency-familiarity-and-the-feeling-of-truth.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Fluency, Familiarity, and the Feeling of Truth</span></span></a>
+  <a href="../chapters/08-expectations-that-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
       </ul>
@@ -250,34 +231,76 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part III.How Choices Become Stories and Habits</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Part III. Heuristics, Biases, and Choice Across Time</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/18-the-narrator-after-the-choice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">The Narrator After the Choice</span></span></a>
+  <a href="../chapters/04-fast-answers-slow-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Two Systems of Thinking: Fast Is Not Foolish, Slow Is Not Free</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Habits: When Decisions Move Downstairs</span></span></a>
+  <a href="../chapters/09-heuristics-the-adaptive-toolbox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Heuristics: Useful Shortcuts in an Uncertain World</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Wanting, Craving, and Self-Control</span></span></a>
+  <a href="../chapters/10-feeling-and-availability-as-shortcuts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Feeling and Availability: When Ease of Recall Becomes Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Designing Behavior</span></span></a>
+  <a href="../chapters/11-resemblance-is-not-probability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Resemblance Is Not Probability</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-biases-that-protect-a-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Biases: Predictable Errors and the Stories That Sustain Them</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-anchors-halos-decoys-and-escalation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Anchors, Halos, Decoys, and Escalation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-frames-change-the-decision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-priming-and-the-active-mental-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Priming: What Is Active Changes What Comes Next</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-fluency-familiarity-and-the-feeling-of-truth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cognitive Ease: When Easy Feels True</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-intertemporal-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Choice: Why Later Loses to Now</span></span></a>
   </div>
 </li>
       </ul>
@@ -285,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part IV.The Social Mind</span></a>
+ <span class="menu-text">Part IV. Influence and Persuasion</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -294,19 +317,43 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Social Learning, Mimicry, and Attribution</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Social Brain: Learning, Mimicry, and Attribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/23-conformity-norms-and-social-proof.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Conformity, Norms, and Social Proof</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Conformity: When Popularity Becomes Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-culture-identity-social-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
   </div>
 </li>
       </ul>
@@ -314,7 +361,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part V.Persuasion, Story, and Connection</span></a>
+ <span class="menu-text">Part V. Distributive Negotiation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -322,32 +369,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Persuasion Is Model Updating</span></span></a>
+  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Communication Is Joint Inference</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">The Art of Conversation and Repair</span></span></a>
+  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span></a>
   </div>
 </li>
       </ul>
@@ -355,7 +390,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VI.Negotiation: Claiming and Creating Value</span></a>
+ <span class="menu-text">Part VI. Integrative Negotiation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -363,32 +398,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Negotiation Is Joint Decision-Making</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Anchors, Concessions, and Bargaining Tactics</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../chapters/33-interests-priorities-and-trade-offs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Interests, Priorities, and Trade-Offs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Integrative Negotiation: Create Value Before Dividing It</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/34-mesos-contingent-contracts-and-better-agreements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
   </div>
 </li>
       </ul>
@@ -396,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VII. Better Decision Systems</span></a>
+ <span class="menu-text">Part VII. Communication and Connection</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -404,8 +421,55 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VIII. Habits and Behavior Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-choice-architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/35-decision-hygiene.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Decision Hygiene</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
   </div>
 </li>
       </ul>
@@ -424,13 +488,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-a-portable-course-tools.html" class="sidebar-item-text sidebar-link">
@@ -456,9 +520,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#dopamine-teaches-the-cue-where-to-point" id="toc-dopamine-teaches-the-cue-where-to-point" class="nav-link" data-scroll-target="#dopamine-teaches-the-cue-where-to-point">Dopamine teaches the cue where to point</a></li>
   <li><a href="#addiction-is-more-than-a-bad-habit" id="toc-addiction-is-more-than-a-bad-habit" class="nav-link" data-scroll-target="#addiction-is-more-than-a-bad-habit">Addiction is more than a bad habit</a></li>
   <li><a href="#craving-as-sensation-and-prediction" id="toc-craving-as-sensation-and-prediction" class="nav-link" data-scroll-target="#craving-as-sensation-and-prediction">Craving as sensation and prediction</a></li>
-  <li><a href="#the-intention-behavior-gap" id="toc-the-intention-behavior-gap" class="nav-link" data-scroll-target="#the-intention-behavior-gap">The intention-behavior gap</a></li>
+  <li><a href="#the-intention-behavior-gap" id="toc-the-intention-behavior-gap" class="nav-link" data-scroll-target="#the-intention-behavior-gap">The intention-behavior gap</a>
+  <ul class="collapse">
+  <li><a href="#the-marshmallow-is-not-a-personality-test" id="toc-the-marshmallow-is-not-a-personality-test" class="nav-link" data-scroll-target="#the-marshmallow-is-not-a-personality-test">The marshmallow is not a personality test</a></li>
+  </ul></li>
   <li><a href="#self-control-without-heroics" id="toc-self-control-without-heroics" class="nav-link" data-scroll-target="#self-control-without-heroics">Self-control without heroics</a></li>
   <li><a href="#creating-space-between-cue-and-response" id="toc-creating-space-between-cue-and-response" class="nav-link" data-scroll-target="#creating-space-between-cue-and-response">Creating space between cue and response</a></li>
   <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
@@ -470,9 +538,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III.How Choices Become Stories and Habits</a></li><li class="breadcrumb-item"><a href="../chapters/20-wanting-craving-and-self-control.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Wanting, Craving, and Self-Control</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-8.html">Part VIII. Habits and Behavior Design</a></li><li class="breadcrumb-item"><a href="../chapters/20-wanting-craving-and-self-control.html"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Wanting, Craving, and Self-Control</span></h1>
+<h1 class="title"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></h1>
 </div>
 
 
@@ -507,7 +575,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
 <li>Distinguish wanting from liking.</li>
-<li>Explain dopamine in learning and incentive salience rather than as simple pleasure.</li>
+<li>Explain dopamine and reward prediction error without reducing either to pleasure or habit.</li>
 <li>Explain addiction as more than a bad habit or weak will.</li>
 <li>Use craving observation, situation selection, and precommitment.</li>
 </ul>
@@ -518,12 +586,41 @@ ul.task-list li input[type="checkbox"] {
 <p>Evolutionarily, this separation makes sense. Organisms must pursue food, sex, connection, safety, information, and status before they can enjoy them. A system that motivates pursuit cannot wait until pleasure is already present. It must be triggered by cues that predict possible reward. But this creates vulnerability. A cue can activate wanting even when the resulting experience is no longer very pleasurable.</p>
 <p>A useful self-control question is: do I actually like this, or do I mainly want it? The answer can reveal whether the loop is being driven by enjoyment, relief, prediction, identity, or policy strength.</p>
 </section>
+<section id="dopamine-teaches-the-cue-where-to-point" class="level2">
+<h2 class="anchored" data-anchor-id="dopamine-teaches-the-cue-where-to-point">Dopamine teaches the cue where to point</h2>
+<p>Reward prediction error makes the dopamine correction more precise. In classic recordings, an unexpected reward produced a phasic response. After learning, the response shifted toward the cue that predicted the reward. When the expected reward was omitted, activity dipped around the expected time (Schultz et al., 1997). A compact learning signal is:</p>
+<p><span class="math display">\[
+\delta_t = r_t - \hat r_t
+\]</span></p>
+<p>where <span class="math inline">\(r_t\)</span> is the outcome received and <span class="math inline">\(\hat r_t\)</span> is the outcome expected at that moment. Positive surprise supports upward updating; negative surprise supports downward updating.</p>
+<p>Three boundaries matter.</p>
+<p>First, reward prediction error overlaps with habit learning but does not define habit. Goal-guided learning, attention, movement, and other motivational processes also involve dopamine. Second, tonic and phasic activity, different circuits, and prolonged tasks cannot be reduced to one cartoon spike. Sustained effort often needs meaningful progress cues, not a constant burst. Third, the learning signal is not identical to pleasure. A cue can acquire incentive salience and pull action even when the eventual experience disappoints (Berridge &amp; Robinson, 1998, 2003).</p>
+<div id="fig-reward-prediction-error-shift" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Four conceptual timelines. An unexpected reward produces a positive update; after learning, prediction moves to the cue and delivery brings little new information; an omitted expected reward produces a negative update; a meaningful progress checkpoint can reduce uncertainty in a long task. The figure explicitly states that it is not a neural recording.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reward-prediction-error-shift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/reward-prediction-error-shift.svg" class="img-fluid figure-img" style="width:98.0%" alt="Four conceptual timelines. An unexpected reward produces a positive update; after learning, prediction moves to the cue and delivery brings little new information; an omitted expected reward produces a negative update; a meaningful progress checkpoint can reduce uncertainty in a long task. The figure explicitly states that it is not a neural recording.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reward-prediction-error-shift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;35.1: A reward-prediction-error schematic shows learning from an unexpected reward, a predictive cue, an omitted reward, and an informative progress cue in a long task.
+</figcaption>
+</figure>
+</div>
+<p>Read the four panels as a learning logic, not as a literal trace from one brain. What matters is where informative surprise occurs and whether a cue predicts a valued outcome—not the popular shorthand that every useful action needs a “dopamine hit.”</p>
+<p>This creates a useful audit for an app, product, status goal, or defensive routine:</p>
+<ol type="1">
+<li>What does the cue promise?</li>
+<li>What does the outcome actually deliver?</li>
+<li>Which prediction errors are noticed, and which are ignored?</li>
+<li>What underlying need—connection, relief, competence, certainty, dignity—could be met more directly?</li>
+</ol>
+<p>Variable reward keeps uncertainty open, but “variable” does not mean every digital product is a slot machine. The mechanism must be demonstrated rather than asserted.</p>
+</section>
 <section id="addiction-is-more-than-a-bad-habit" class="level2">
 <h2 class="anchored" data-anchor-id="addiction-is-more-than-a-bad-habit">Addiction is more than a bad habit</h2>
 <p>Addiction is often described as a bad habit, but this is incomplete. Addiction involves habit-like learning, but it is more severe, more compulsive, and more biologically and socially complex. It can involve substances such as alcohol, nicotine, opioids, stimulants, or other drugs. It can also involve behavioral patterns such as gambling, though not every repeated high-wanting behavior should be casually labeled addiction.</p>
 <p>Clinical addiction involves impaired control, craving, continued use despite harm, and significant impairment or distress. Depending on the substance or behavior, it may also involve tolerance, withdrawal, medical risk, social disruption, trauma, and co-occurring mental health problems.</p>
-<p>The incentive-sensitization theory of addiction argues that repeated drug use can sensitize neural systems of wanting, making drug-related cues increasingly able to trigger intense motivation. The person may not like the drug as much as before, but cues can still produce powerful wanting. This helps explain why addiction can persist even when pleasure declines. A person may say, “I do not even enjoy it anymore,” yet still feel compelled.</p>
-<p>Addiction also involves relief learning. Substance use may begin as pleasure but continue as negative reinforcement: relief from withdrawal, anxiety, pain, shame, or dysphoria. Over time, the person may use not to feel good but to stop feeling bad.</p>
+<p>The incentive-sensitization theory of addiction argues that repeated drug use can sensitize neural systems of wanting, making drug-related cues increasingly able to trigger intense motivation. The person may not like the drug as much as before, but cues can still produce powerful wanting. This helps explain why addiction can persist even when pleasure declines. A person may say, “I do not even enjoy it anymore,” yet still feel compelled (Robinson &amp; Berridge, 1993).</p>
+<p>Addiction can also involve relief learning and changes across stress, reward, and control systems. Substance use may begin as pleasure but continue as negative reinforcement: relief from withdrawal, anxiety, pain, shame, or dysphoria. Over time, the person may use not to feel good but to stop feeling bad (Koob &amp; Volkow, 2016).</p>
 <p>Moralizing addiction is ineffective and harmful. Addiction is not simply choosing pleasure over responsibility. It often involves altered learning, sensitized wanting, withdrawal, stress systems, environmental cues, social context, trauma, mental health, availability, and identity. At the same time, addiction is not destiny. Treatment can help. Depending on the case, support may include medication, therapy, contingency management, motivational interviewing, recovery groups, social support, environmental change, treatment of co-occurring mental health problems, and harm reduction.</p>
 <p>The practical distinction is important: ordinary habit change asks how to make a behavior easier or harder. Addiction treatment often must also address craving, withdrawal, sensitized cues, stress, identity, social environment, and medical risk. This distinction prevents two mistakes: treating addiction as mere habit, and treating ordinary habits as if every strong urge were clinical addiction.</p>
 </section>
@@ -535,7 +632,7 @@ ul.task-list li input[type="checkbox"] {
 <img src="../figures/wanting-liking.svg" class="img-fluid figure-img" alt="Cue leads to strong wanting and then an outcome with lower liking, followed by a relearning feedback loop.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wanting-liking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.1: Craving is a prediction and action tendency; comparing promised reward with actual experience creates room for relearning.
+Figure&nbsp;35.2: Craving is a prediction and action tendency; comparing promised reward with actual experience creates room for relearning.
 </figcaption>
 </figure>
 </div>
@@ -548,15 +645,20 @@ Figure&nbsp;20.1: Craving is a prediction and action tendency; comparing promise
 <h2 class="anchored" data-anchor-id="the-intention-behavior-gap">The intention-behavior gap</h2>
 <p>Many people know what they want to do and still fail to do it. They intend to exercise but do not. They intend to save but spend. They intend to listen but interrupt. They intend to study but scroll. They intend to sleep but keep watching. They intend to prepare for a negotiation but improvise. They intend to give feedback calmly but become defensive.</p>
 <p>This is the intention-behavior gap. Intentions matter, but they predict behavior imperfectly. One reason is that intentions are often abstract. “I will exercise more” does not specify when, where, how, or in response to what cue. Abstract intentions must be remembered, protected from competing motives, and translated into action at the right moment. Habits, by contrast, are cue-linked.</p>
-<p>A second reason is that intentions are often formed in cool states but executed in hot states. A person plans to eat well when full, but encounters dessert when tired and stressed. A student plans to study in the morning, but feels bored and anxious when the difficult work begins. A manager plans to listen, but feels status threat when challenged. Loewenstein called this the hot-cold empathy gap: people underestimate how much preferences and behavior change across visceral states such as hunger, craving, anger, fear, pain, fatigue, and arousal.</p>
+<p>A second reason is that intentions are often formed in cool states but executed in hot states. A person plans to eat well when full, but encounters dessert when tired and stressed. A student plans to study in the morning, but feels bored and anxious when the difficult work begins. A manager plans to listen, but feels status threat when challenged. Loewenstein (1996) called this the hot-cold empathy gap: people underestimate how much preferences and behavior change across visceral states such as hunger, craving, anger, fear, pain, fatigue, and arousal.</p>
 <p>A third reason is that environments are often designed against intentions. If unhealthy food is visible, notifications are constant, meetings reward fast talking, and social norms celebrate overwork, individual intention must fight the environment repeatedly. The environment usually wins.</p>
 <p>A fourth reason is that immediate rewards are concrete while long-term rewards are abstract. The pleasure of scrolling, eating, avoiding, or buying is immediate. The benefits of health, learning, savings, trust, or reputation are delayed. Temporal distance weakens value. Behavior change becomes easier when long-term goals are translated into immediate cues, actions, and rewards.</p>
+<section id="the-marshmallow-is-not-a-personality-test" class="level3">
+<h3 class="anchored" data-anchor-id="the-marshmallow-is-not-a-personality-test">The marshmallow is not a personality test</h3>
+<p>The classic delay-of-gratification task is often retold as if a child’s waiting time reveals a durable supply of willpower and forecasts destiny. That story is too clean. Waiting also depends on attention strategies, beliefs about whether the promised later reward will arrive, incentives, family and environmental conditions, and what the child has learned about adult reliability (Mischel et al., 1989; Kidd et al., 2013). A child facing an unreliable environment may be making a reasonable prediction, not revealing a defective character.</p>
+<p>The broader lesson is central to self-control: before praising or blaming inhibition, inspect the environment the person is predicting.</p>
+</section>
 </section>
 <section id="self-control-without-heroics" class="level2">
 <h2 class="anchored" data-anchor-id="self-control-without-heroics">Self-control without heroics</h2>
 <p>Self-control is often imagined as an internal battle: the rational self fights temptation, and success depends on willpower. There is some truth here. People sometimes need to inhibit impulses. But the willpower model is too narrow.</p>
 <p>Beneficial self-control often operates upstream through situation selection and reliable habits rather than constant resistance at the moment of temptation (Galla &amp; Duckworth, 2015; Duckworth et al., 2016).</p>
-<p>The influential ego-depletion theory proposed that self-control draws on a limited resource that can become depleted after use. The idea became widely known: self-control is like a muscle that gets tired. Later replication efforts and meta-analyses, however, raised serious questions about the size and reliability of the effect. The evidence no longer supports a simple fuel-tank model.</p>
+<p>The influential ego-depletion theory proposed that self-control draws on a limited resource that can become depleted after use. The idea became widely known: self-control is like a muscle that gets tired. A large preregistered multilab replication, among other challenges, raised serious questions about the size and reliability of the effect (Hagger et al., 2016). The evidence no longer supports a simple fuel-tank model.</p>
 <p>A better applied view is that self-control depends on motivation, attention, beliefs, emotions, opportunity, fatigue, reward, identity, social support, and situation. People may shift away from effortful control when it feels unrewarding, when attention is captured elsewhere, when temptation is salient, or when the goal no longer feels valuable.</p>
 <p>People with strong self-control often do not succeed by constantly resisting temptation. They succeed by avoiding tempting situations, creating routines, changing environments, and making desired behavior easier. Good self-control often looks less like heroic resistance and more like wise design.</p>
 <p>A person who keeps no cigarettes at home does not resist smoking at home. A student who studies in the library does not resist the bed. A person who turns off notifications does not resist every alert. A family that prepares healthy meals in advance does not decide under hunger and fatigue. A negotiator who writes a reservation price before entering the room does not invent discipline under pressure.</p>
@@ -564,7 +666,7 @@ Figure&nbsp;20.1: Craving is a prediction and action tendency; comparing promise
 <div id="tbl-20-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-20-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;20.1: Intervene before the peak of temptation
+Table&nbsp;35.1: Intervene before the peak of temptation
 </figcaption>
 <div aria-describedby="tbl-20-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -617,32 +719,84 @@ Table&nbsp;20.1: Intervene before the peak of temptation
 <p>Mindfulness is the practice of paying attention to present-moment experience with openness, curiosity, and reduced automatic reactivity. Meditation is one way to train this capacity. In the context of habits and self-control, mindfulness matters because it creates space between cue and response.</p>
 <p>A cue appears. The body reacts. A thought arises. A craving forms. An impulse pushes toward action. Normally, the response happens automatically. Mindfulness inserts awareness into the sequence. Instead of “I need to check my phone,” the person notices, “Restlessness is here.” Instead of “I must eat something,” the person notices, “Anxiety feels like hunger.” Instead of “I have to reply angrily,” the person notices, “My body is preparing to defend.”</p>
 <p>This shift is sometimes called decentering or cognitive defusion: thoughts and urges are experienced as mental events rather than as facts or commands. The person is not eliminating the urge. They are changing their relationship to it.</p>
+<div id="fig-urge-wave-observation" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A schematic urge-intensity curve rises and recedes over unspecified time, with faint alternative trajectories to emphasize variation. Four observation steps below the curve are breathe, recognize and allow, investigate, and non-identify and choose.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-urge-wave-observation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/urge-wave-observation.svg" class="img-fluid figure-img" style="width:88.0%" alt="A schematic urge-intensity curve rises and recedes over unspecified time, with faint alternative trajectories to emphasize variation. Four observation steps below the curve are breathe, recognize and allow, investigate, and non-identify and choose.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urge-wave-observation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;35.3: An urge may rise, vary, and recede while a person breathes, recognizes and allows it, investigates its components, and chooses without identifying with it.
+</figcaption>
+</figure>
+</div>
+<p>The curve does not promise that every craving passes quickly or safely. Its purpose is narrower: replace the single label “I need this” with observations that can be tracked, tested, and—when appropriate—brought to clinical support.</p>
 <p>Mindfulness is not a cure-all. It does not replace medical treatment, social support, behavior design, or structural change. For some people, especially those with trauma histories, intensive meditation can be difficult or destabilizing if not properly supported. It should be presented as a useful tool, not a universal solution or moral demand.</p>
 <p>A practical classroom tool is BRAIN, a short adaptation of mindfulness methods such as RAIN. BRAIN is useful when an internal trigger appears: craving, anger, anxiety, boredom, shame, avoidance, or defensiveness.</p>
+<div id="tbl-20-brain" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-20-brain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;35.2: BRAIN creates a small interval between internal cue and action
+</figcaption>
+<div aria-describedby="tbl-20-brain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>In-the-moment prompt</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>B — Breathe</strong></td>
+<td>Take one breath before acting.</td>
+<td>Interrupt the automatic sequence without pretending the breath solves the problem.</td>
+</tr>
+<tr class="even">
+<td><strong>R — Recognize</strong></td>
+<td>Name the state: wanting, anger, anxiety, avoidance, shame.</td>
+<td>Move from command to observation.</td>
+</tr>
+<tr class="odd">
+<td><strong>A — Allow</strong></td>
+<td>Let the experience be present briefly without suppression or obedience.</td>
+<td>Reduce the secondary struggle.</td>
+</tr>
+<tr class="even">
+<td><strong>I — Investigate</strong></td>
+<td>Where is it in the body? What does it predict? What action and relief does it promise?</td>
+<td>Turn the urge into data.</td>
+</tr>
+<tr class="odd">
+<td><strong>N — Non-identify and nurture</strong></td>
+<td>“This is an urge, not my identity.” What is the next wise, caring action?</td>
+<td>Protect agency and choose by values.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>BRAIN is a classroom mnemonic, not an independently validated treatment. It can organize mindfulness, acceptance, and decentering practices; it cannot make an unsafe workplace safe, treat withdrawal, or replace clinical care.</p>
 <div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence And Boundary Conditions
+<span class="screen-reader-only">Caution</span>Dopamine and addiction require narrower claims
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Dopamine is not a unitary pleasure chemical. It participates in learning, prediction, motivation, and action across distributed circuits.</p>
-</div>
-</div>
-<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence And Boundary Conditions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Clinical addiction can involve withdrawal, medical risk, trauma, and comorbidity. Ordinary habit advice is not a substitute for professional treatment.</p>
+<ul>
+<li><strong>Dopamine:</strong> It is not a unitary pleasure chemical. It participates in learning, prediction, motivation, and action across distributed circuits.</li>
+<li><strong>Clinical addiction:</strong> It can involve withdrawal, medical risk, trauma, and comorbidity. Ordinary habit advice is not a substitute for professional treatment.</li>
+</ul>
 </div>
 </div>
 </section>
@@ -650,20 +804,18 @@ Table&nbsp;20.1: Intervene before the peak of temptation
 <h2 class="anchored" data-anchor-id="key-ideas">Key ideas</h2>
 <ul>
 <li>Wanting, liking, and choosing can separate. Self-control improves when an urge is treated as a prediction and bodily event rather than as a command or a moral verdict.</li>
-</ul>
-<p>Wanting, liking, and choosing depend on partly separable processes; dopamine is more closely tied to learning, incentive salience, and pursuit than to pleasure itself (Berridge &amp; Robinson, 1998, 2003; Schultz et al., 1997).</p>
-<ul>
-<li>Distinguish wanting from liking.</li>
-<li>Explain dopamine in learning and incentive salience rather than as simple pleasure.</li>
-<li>Explain addiction as more than a bad habit or weak will.</li>
+<li>Reward prediction error describes updating from better- or worse-than-expected outcomes; it is not a synonym for pleasure or habit.</li>
+<li>Strong wanting can outlast liking, while a variable outcome can keep the cue informative.</li>
+<li>Self-control often improves upstream through situation selection, attention design, precommitment, and trustworthy environments.</li>
+<li>Urge surfing and BRAIN create observation and choice; clinical addiction requires additional assessment and care.</li>
 </ul>
 </section>
 <section id="study-and-practice" class="level2">
 <h2 class="anchored" data-anchor-id="study-and-practice">Study and practice</h2>
 <ol type="1">
-<li><p>How would you distinguish wanting from liking?</p></li>
-<li><p>How would you explain dopamine in learning and incentive salience rather than as simple pleasure?</p></li>
-<li><p>How would you explain addiction as more than a bad habit or weak will?</p></li>
+<li><p>How would you distinguish wanting, liking, and choosing in a disappointing digital loop?</p></li>
+<li><p>What happens to a reward-prediction signal when a reward is unexpected, predicted by a cue, or omitted?</p></li>
+<li><p>Why is the marshmallow task an environmental prediction problem as well as a self-control task?</p></li>
 </ol>
 <div class="activity callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -671,13 +823,26 @@ Table&nbsp;20.1: Intervene before the peak of temptation
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Activity
+<span class="screen-reader-only">Tip</span>One-Minute Urge-Surfing Lab
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose a behavior you sometimes want more than you like. Write what the urge promises, what usually happens after obeying it, and one way to observe the urge for sixty seconds without acting.<br>
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br>
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</p>
+<p>Choose a mild, private impulse; skip the exercise if observation would be unsafe or destabilizing. For sixty seconds, locate sensations, images, emotion, prediction, and action tendency. Note whether intensity changes without obeying or suppressing it. Then write what the urge promised, what the action usually delivers, and the next action you chose.</p>
+<p>EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br>
+Experience: describe the specific mild impulse. Explain: use wanting/liking, prediction, or decentering accurately. Apply: state one upstream change or replacement response.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Media: Watch the Cue Move
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>View a short excerpt from <a href="https://www.youtube.com/watch?v=pLqgakCXW5Q">Wolfram Schultz on dopamine and reward prediction</a>. Before viewing, predict what should happen when a reward is unexpected, when a cue reliably predicts it, and when the predicted reward is omitted. Afterward, identify one accurate learning claim and one “dopamine equals pleasure” overclaim the evidence does not support.</p>
 </div>
 </div>
 </section>
@@ -694,6 +859,24 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </div>
 <div class="reference">
 <p>Galla, B. M., &amp; Duckworth, A. L. (2015). More than resisting temptation: Beneficial habits mediate the relationship between self-control and positive life outcomes. Journal of Personality and Social Psychology, 109(3), 508-525.</p>
+</div>
+<div class="reference">
+<p>Hagger, M. S., Chatzisarantis, N. L. D., Alberts, H., Anggono, C. O., Batailler, C., Birt, A. R., Brand, R., Brandt, M. J., Brewer, G., Bruyneel, S., Calvillo, D. P., Campbell, W. K., Cannon, P. R., Carlucci, M., Carruth, N. P., Cheung, T., Crowell, A., De Ridder, D. T. D., Dewitte, S., et al.&nbsp;(2016). A multilab preregistered replication of the ego-depletion effect. Perspectives on Psychological Science, 11(4), 546-573.</p>
+</div>
+<div class="reference">
+<p>Kidd, C., Palmeri, H., &amp; Aslin, R. N. (2013). Rational snacking: Young children’s decision-making on the marshmallow task is moderated by beliefs about environmental reliability. Cognition, 126(1), 109-114.</p>
+</div>
+<div class="reference">
+<p>Koob, G. F., &amp; Volkow, N. D. (2016). Neurobiology of addiction: A neurocircuitry analysis. The Lancet Psychiatry, 3(8), 760-773.</p>
+</div>
+<div class="reference">
+<p>Loewenstein, G. (1996). Out of control: Visceral influences on behavior. Organizational Behavior and Human Decision Processes, 65(3), 272-292.</p>
+</div>
+<div class="reference">
+<p>Mischel, W., Shoda, Y., &amp; Rodriguez, M. L. (1989). Delay of gratification in children. Science, 244(4907), 933-938.</p>
+</div>
+<div class="reference">
+<p>Robinson, T. E., &amp; Berridge, K. C. (1993). The neural basis of drug craving: An incentive-sensitization theory of addiction. Brain Research Reviews, 18(3), 247-291.</p>
 </div>
 <div class="reference">
 <p>Schultz, W., Dayan, P., &amp; Montague, P. R. (1997). A neural substrate of prediction and reward. Science, 275(5306), 1593-1599.</p>
@@ -1077,13 +1260,13 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="pagination-link" aria-label="Habits: When Decisions Move Downstairs">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Habits: When Decisions Move Downstairs</span></span>
+      <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="pagination-link" aria-label="Habits: The Plan Is Often Not the Decision-Maker">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/21-designing-behavior.html" class="pagination-link" aria-label="Designing Behavior">
-        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Designing Behavior</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/21-designing-behavior.html" class="pagination-link" aria-label="Behavior Design: Make the Better Action Easier">
+        <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

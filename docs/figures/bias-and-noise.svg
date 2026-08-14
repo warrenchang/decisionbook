@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bias and noise are separate properties of a judgment system</title>
+  <desc id="desc">A two-by-two comparison shows accurate consistent judgments, biased consistent judgments, accurate on average but noisy judgments, and judgments that are both biased and noisy.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#183047">Bias and noise are different failures</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#60758a">Bias shifts the average. Noise spreads judgments that should agree.</text>
+
+  <text x="175" y="376" text-anchor="middle" transform="rotate(-90 175 376)" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#60758a">NOISE</text>
+  <text x="704" y="722" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#60758a">MORE BIAS →</text>
+
+  <line x1="277" y1="400" x2="1110" y2="400" stroke="#c3cfda" stroke-width="3"/>
+  <line x1="694" y1="126" x2="694" y2="675" stroke="#c3cfda" stroke-width="3"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(282,130)">
+      <rect x="0" y="0" width="392" height="250" rx="24" fill="#edf7ef" stroke="#4f8b61" stroke-width="3"/>
+      <text x="196" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#2d6740">ACCURATE AND CONSISTENT</text>
+      <g transform="translate(196,144)">
+        <circle r="76" fill="#ffffff" stroke="#9fb0bf" stroke-width="2"/>
+        <circle r="51" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="26" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="6" fill="#183047"/>
+        <g fill="#2b75a0">
+          <circle cx="-10" cy="-8" r="6"/><circle cx="9" cy="-5" r="6"/><circle cx="-6" cy="10" r="6"/><circle cx="8" cy="11" r="6"/><circle cx="1" cy="2" r="6"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(714,130)">
+      <rect x="0" y="0" width="392" height="250" rx="24" fill="#fff8ea" stroke="#d39b34" stroke-width="3"/>
+      <text x="196" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#7d5718">BIASED, LOW NOISE</text>
+      <g transform="translate(196,144)">
+        <circle r="76" fill="#ffffff" stroke="#9fb0bf" stroke-width="2"/>
+        <circle r="51" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="26" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="6" fill="#183047"/>
+        <g fill="#c05e2b">
+          <circle cx="39" cy="-43" r="6"/><circle cx="53" cy="-39" r="6"/><circle cx="43" cy="-28" r="6"/><circle cx="57" cy="-25" r="6"/><circle cx="48" cy="-34" r="6"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(282,420)">
+      <rect x="0" y="0" width="392" height="250" rx="24" fill="#eef5fa" stroke="#2b75a0" stroke-width="3"/>
+      <text x="196" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#245f84">LOW BIAS, HIGH NOISE</text>
+      <g transform="translate(196,144)">
+        <circle r="76" fill="#ffffff" stroke="#9fb0bf" stroke-width="2"/>
+        <circle r="51" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="26" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="6" fill="#183047"/>
+        <g fill="#2b75a0">
+          <circle cx="-54" cy="-30" r="6"/><circle cx="48" cy="-37" r="6"/><circle cx="-45" cy="39" r="6"/><circle cx="55" cy="35" r="6"/><circle cx="-4" cy="-6" r="6"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(714,420)">
+      <rect x="0" y="0" width="392" height="250" rx="24" fill="#fbefef" stroke="#a55358" stroke-width="3"/>
+      <text x="196" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#843b42">BIASED AND NOISY</text>
+      <g transform="translate(196,144)">
+        <circle r="76" fill="#ffffff" stroke="#9fb0bf" stroke-width="2"/>
+        <circle r="51" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="26" fill="none" stroke="#c3cfda" stroke-width="2"/>
+        <circle r="6" fill="#183047"/>
+        <g fill="#a55358">
+          <circle cx="12" cy="-58" r="6"/><circle cx="61" cy="-29" r="6"/><circle cx="24" cy="4" r="6"/><circle cx="68" cy="22" r="6"/><circle cx="42" cy="45" r="6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <text x="74" y="694" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#60758a">Each dot is one judgment of the same case.</text>
+</svg>

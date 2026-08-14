@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs />
+  <defs>
+    <marker id="navy-arrow" markerWidth="11" markerHeight="11" refX="9.5" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L11 5.5 L0 11 Z" fill="#17324d" />
+    </marker>
+  </defs>
   <title>Rational-choice benchmark</title>
   <desc>Feasible alternatives, beliefs and probabilities, and preferences and values combine in expected utility to guide choice.</desc>
   <rect fill="white" height="650" width="1200" x="0" y="0" />
@@ -20,13 +24,9 @@
   <rect fill="#eaf3f8" height="110" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="240" x="880" y="260" />
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="1000" y="308.97"><tspan x="1000" dy="0">Choice</tspan></text>
   <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="1000" y="337.09"><tspan x="1000" dy="0">best feasible option</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="170" y2="315" />
-  <polygon fill="#17324d" points="450,315 436.1736047696224,309.18357541668496 448.12397383315835,300.11777819607147" />
-  <line stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="330" y2="315" />
-  <polygon fill="#17324d" points="450,315 438.14208759006436,324.1863982756189 436.11538951906465,309.3239457549544" />
-  <line stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="490" y2="315" />
-  <polygon fill="#17324d" points="450,315 449.43666295912794,329.98941797997446 436.73711472096284,322.0068448016993" />
-  <line stroke="#17324d" stroke-width="4" x1="750" x2="880" y1="315" y2="315" />
-  <polygon fill="#17324d" points="880,315 867.0096189432334,322.5 867.0096189432334,307.5" />
+  <line marker-end="url(#navy-arrow)" stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="170" y2="270" />
+  <line marker-end="url(#navy-arrow)" stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="330" y2="315" />
+  <line marker-end="url(#navy-arrow)" stroke="#17324d" stroke-width="4" x1="340" x2="450" y1="490" y2="360" />
+  <line marker-end="url(#navy-arrow)" stroke="#17324d" stroke-width="4" x1="750" x2="880" y1="315" y2="315" />
   <text fill="#66737f" font-family="Arial, sans-serif" font-size="21" font-weight="normal" text-anchor="middle" x="600" y="610">Benchmark, not biography: it makes assumptions and trade-offs explicit.</text>
 </svg>

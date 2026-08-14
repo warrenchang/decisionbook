@@ -1,5 +1,7 @@
 # Structure and editorial report
 
+> **Historical report.** This document describes the earlier 35-chapter structure. The 2026 lecture-aligned 38-chapter revision is documented in `SOURCE_INTEGRATION_REPORT.md` and `_quarto.yml`.
+
 ## Editorial judgment
 
 The material is strongest when it is read as one expanding decision system rather than as separate units on biases, persuasion, and bargaining. The revised structure therefore follows a causal and pedagogical sequence: hidden choice architecture → judgment under uncertainty → post-choice learning and habit → the social mind → intentional influence and connection → negotiation → repeatable decision systems.

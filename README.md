@@ -1,16 +1,15 @@
-# Quarto part-navigation fix
+# Decision, Persuasion, and Negotiation
 
-Replace the corresponding files in the root of the Quarto textbook project:
+This is the Quarto source for Huanren Warren Zhang's textbook, *Decision, Persuasion, and Negotiation: How Minds Choose, Influence, Connect, and Bargain*.
 
-- `_quarto.yml`
-- `quarto-custom.scss`
-- `parts/part-1.qmd` through `parts/part-7.qmd`
+The 38 chapters follow the eight-movement 2026 lecture sequence: decision process; attention, prediction, and expectation; heuristics, biases, and choice across time; influence and persuasion; distributive negotiation; integrative negotiation; communication and connection; and habits and behavior design.
 
-Then stop any active preview, run `quarto render`, start `quarto preview`, and hard-refresh the browser.
+## Build
 
-The changes:
+Run `quarto render` from the project root. The HTML book is written to `docs/`.
 
-- add explicit title metadata to every part page;
-- prevent part overview pages from consuming chapter numbers;
-- set a docked, lightly shaded sidebar with part-level collapsing;
-- strengthen part headings, spacing, hover states, and the active-page indicator.
+## Editorial records
+
+- `SOURCE_INTEGRATION_REPORT.md` records coverage of all eight editable lecture decks and all 30 alternative textbook manuscripts, along with rights and correction decisions.
+- `QA_REPORT.md` records the latest release checks.
+- `QUARTO_EDITING_GUIDE.md` explains the source layout and editing workflow.

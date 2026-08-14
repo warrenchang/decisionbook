@@ -1,4 +1,4 @@
-# Decision Hygiene
+# Decision Hygiene: Build a Process That Can Learn
 
 *Notice, test, ask, design, and learn*
 
@@ -11,7 +11,9 @@ Better judgment is less a personality trait than a property of a well-designed p
 ## Learning goals
 
 - Design a decision process before debating the answer.
+- Distinguish bias from level, pattern, and occasion noise, and diagnose a judgment system with a noise audit.
 - Protect independent judgment and constructive dissent.
+- Combine outside views, decomposition, aggregation, models, and AI without outsourcing values or accountability.
 - Use environments, messages, conversations, and agreements as design objects.
 - Debrief process quality separately from outcome.
 
@@ -25,6 +27,48 @@ By the end of this book, a familiar temptation appears: make a list of biases, p
 
 Decision hygiene treats judgment as a system property. The central question is not only whether an individual is intelligent or well intentioned. It is whether the process makes relevant evidence visible, protects independent thought, separates prediction from valuation, creates useful alternatives, records uncertainty, and produces feedback that can be learned from.
 
+## Why judgment systems fail: bias, noise, and misplaced intuition
+
+Bias has a direction. A forecaster who is consistently too optimistic, an interviewer who systematically favors elite credentials, or a scale that always reads two kilograms high is biased. **Noise** is unwanted variation among judgments that should be similar. If qualified teachers grade the same essay very differently, physicians use different thresholds for the same case, or managers rate the same candidate from 4 to 9 on a ten-point scale, the system is noisy (Kahneman et al., 2021).
+
+![Bias shifts the average judgment; noise spreads judgments that should agree. A system can have either failure or both.](../figures/bias-and-noise.svg){#fig-bias-and-noise fig-alt="Four target diagrams form a two-by-two matrix. Tight dots around the center are accurate and consistent. Tight dots away from the center are biased with low noise. Widely dispersed dots centered on average have low bias but high noise. Widely dispersed off-center dots are both biased and noisy."}
+
+Noise is easy to miss because people usually encounter one judgment, not the distribution of judgments they might have received. One candidate meets one panel. One paper receives one set of reviews. One patient sees one clinician. Yet fairness requires that similar cases receive similar treatment unless a relevant difference justifies the variation.
+
+| Failure | What it looks like | First diagnostic question |
+| --- | --- | --- |
+| Bias | Judgments are wrong in a systematic direction. | What recurring factor shifts the average? |
+| Level noise | Some judges are generally harsher or more generous. | Does the result depend on which judge was assigned? |
+| Pattern noise | Judges weight features idiosyncratically. | Are the criteria and their weights shared? |
+| Occasion noise | The same judge varies with time, order, fatigue, or context. | Would this person decide the same way tomorrow? |
+| Legitimate discretion | Variation reflects relevant information, values, or circumstances. | Can the exception be explained and documented? |
+: Different sources of disagreement in a judgment system {#tbl-36-noise}
+
+The distinction matters statistically and ethically. Error increases when judgments are shifted in the wrong direction, widely dispersed, or both. Reducing dispersion around a bad target does not create a good system. Nor should consistency erase morally relevant differences. A noise audit measures variation first; responsible judgment then decides which variation is arbitrary and which is justified.
+
+Decision hygiene is broader than teaching a catalogue of biases. The analogy is medical hygiene: handwashing can prevent infection without identifying the exact germ in advance. Independent scoring, explicit criteria, reference classes, checklists, and decision records can reduce several errors without requiring the user to diagnose the precise bias operating in the moment.
+
+Intuition still has a place. It deserves more trust when the environment contains stable patterns and the judge receives rapid, accurate, attributable feedback. Chess and some skilled emergency work can provide such learning conditions. Long-range strategy, one-off hiring, political forecasting, and innovation often do not. Repetition can create confidence even when feedback is delayed, selective, or confounded (Kahneman & Klein, 2009).
+
+The rule is therefore not “ignore intuition.” It is **delay the global impression until the evidence has been structured**. Record the first impression if it may contain expertise, but do not let it silently determine every component score. Ask not only, “How experienced is this person?” but, “Could this environment have taught the person the right lesson?”
+
+## The structured judgment pipeline
+
+Decision-hygiene tools work best as one sequence rather than as disconnected tricks:
+
+![A structured judgment pipeline protects independent evidence, records the choice, and connects outcome review back to the next process.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="Six evenly spaced connected boxes read define, decompose, judge independently, aggregate, decide and record, and review and learn. A return arrow connects review and learning back to define. A bottom bar says to scale the structure with stakes, uncertainty, repetition, irreversibility, power, and automation."}
+
+1. **Define.** State the decision, prediction target, values, decision rights, affected people, and error costs.
+2. **Decompose.** Evaluate distinct criteria before forming a coherent global story.
+3. **Ground.** Begin with base rates, reference classes, or a transparent baseline.
+4. **Judge independently.** Record estimates and reasons before discussion, hierarchy, advocacy, or AI output creates correlation.
+5. **Aggregate and compare.** Examine the center, dispersion, profiles, disagreements, and model output.
+6. **Challenge.** Seek disconfirming evidence, run a premortem or red team, and ask what would change the conclusion.
+7. **Decide and document.** State the choice, trade-offs, authority, assumptions, exceptions, and implementation conditions.
+8. **Review and learn.** Compare forecasts with outcomes, audit fairness and drift, and change the process where the evidence warrants it.
+
+This is a proportional pipeline, not a command to make every choice slow. A low-stakes reversible decision may need only a quick check. A repeated, consequential, uncertain, contested, difficult-to-reverse, or partly automated decision deserves more structure.
+
 ## Before the decision: improve the input
 
 Start by defining the decision, the decision-maker, the deadline, and the real constraints. Generate alternatives before comparing them. Include doing nothing, delaying, piloting, negotiating, combining options, and changing the problem. Then make the best feasible alternative forgone visible. The sentence "By choosing this, we give up..." is a practical defense against invisible opportunity cost.
@@ -33,17 +77,113 @@ Decision hygiene improves judgment by changing the process around the judge: ind
 
 Use the outside view before the inside story becomes emotionally complete. Identify a reference class and ask what usually happens. Collect independent estimates before discussion so that hierarchy, charisma, and early anchors do not manufacture agreement. Predefine evaluation criteria when hiring, selecting projects, or judging proposals. A rubric cannot eliminate judgment, but it can stop the first global impression from silently deciding every criterion.
 
+### Diagnose before redesigning: run a noise audit
+
+Before installing a rubric, algorithm, or extra meeting, measure the variation the system actually produces. Select representative cases from a repeated task—grading, hiring, underwriting, forecasting, peer review, or project approval. Give identical evidence to several qualified judges without discussion. Ask for anchored scores, probability estimates, confidence, and brief reasons. Examine the range and dispersion, general severity differences, and case-specific disagreement. If occasion noise matters, repeat selected cases later.
+
+The final step is interpretive. Which disagreements reflect missing information or legitimate values? Which reflect vague criteria, different thresholds, order, mood, or irrelevant cues? Redesign the specific weak stage and repeat the audit. The question is concrete: **Would we accept this decision changing merely because another equally qualified person happened to make it?**
+
+::: {.callout-tip .activity icon=false}
+## Ten-Minute Noise-Audit Lab
+
+Give everyone the same candidate, project, settlement proposal, essay, or risk case. Without discussion, collect one anchored score, one probability, one confidence judgment, and one brief reason. Display the distribution before revealing any preferred answer. Separate disagreement caused by different information or legitimate values from disagreement caused by vague criteria, thresholds, irrelevant cues, or occasion. Redesign one weak stage, then have the class judge a comparable second case independently.
+:::
+
+### Define and decompose before evaluating
+
+Unstructured judgment lets charisma, familiarity, or one vivid weakness organize the whole evaluation. Decomposition asks judges to assess job-relevant or decision-relevant dimensions separately. In hiring, for example, technical skill, learning ability, teamwork, communication, and role requirements should be scored from evidence before asking, “Would I hire this person?” Comparable questions, work samples, and anchored scoring make the judgment more inspectable (Dana et al., 2013; Highhouse, 2008).
+
+Good criteria have four properties:
+
+- they connect to the actual objective rather than a convenient proxy;
+- their evidence can be observed or elicited comparably;
+- their scale anchors describe meaning, not just numbers;
+- their weighting or trade-off is decided explicitly rather than smuggled in through a halo.
+
+Structure can make the wrong value consistently influential. A perfect rubric for “cultural fit” is harmful if fit means similarity to current insiders. Decomposition improves judgment only when the target and criteria are legitimate.
+
+### Ground forecasts in the outside view
+
+An inside view explains why this candidate, project, product, or strategy is special. An outside view begins with what happened in comparable cases and then adjusts for case-specific evidence. The reference class should be close enough to inform and broad enough to contain useful variation.
+
+Projects make the contrast visible. Teams commonly build a detailed internal schedule and underestimate cost or delay; a reference-class forecast asks how comparable projects actually performed before accepting the case-specific story (Kahneman & Lovallo, 1993; Flyvbjerg et al., 2002). The reference class is itself a judgment and can be gamed. Record alternative classes considered, the outcome distribution in each, and the reason for every adjustment so that “our case is different” becomes an inspectable claim.
+
+Forecasts should be probabilities or ranges, not only adjectives such as “likely” or “risky.” Over a portfolio of forecasts, calibration becomes visible: events assigned 70 percent should occur about 70 percent of the time. A Brier score can summarize probabilistic accuracy, but the deeper practice is to reward honest uncertainty and timely revision rather than confidence alone (Brier, 1950; Mellers et al., 2014).
+
+When the choice involves a rare project with poor direct precedents, use several reference classes, analogous mechanisms, scenario ranges, and explicit assumptions. “No perfect comparison exists” is not permission to use no comparison at all.
+
+### Preserve independence, then aggregate
+
+Discussion is valuable after information has been captured. Before discussion, it creates correlation. Early speakers anchor the range; senior people change what feels safe; repeated arguments sound more supported than they are; and private doubts disappear behind public consensus.
+
+Use the sequence **estimate first, discuss second**. Ask members to record a score, forecast, strongest reason, and key uncertainty. Then display the distribution. Simple averaging can outperform immediate debate when individual errors are partly independent. Weighted aggregation can help when weights are earned through relevant calibration rather than status. Disagreement is not merely an obstacle to eliminate; it is evidence about ambiguous criteria, different information, or different models.
+
+Aggregation is not a ritual average. It helps when judges possess relevant information and their errors are not perfectly correlated; it cannot remove a shared bias, and it can dilute a person who holds uniquely diagnostic evidence. Diverse problem-solving perspectives can improve a group's search, but only when the process preserves and integrates them rather than producing conformity (Hong & Page, 2004; Sunstein & Hastie, 2015). Inspect the spread and reasons before deciding whether to average, weight, investigate, or escalate a decisive concern.
+
+Senior people should normally speak after independent input is captured. Anonymous concerns can protect information in high-power settings. A facilitator should ask what evidence explains the spread, not pressure everyone toward the midpoint.
+
+### Use models and AI as inputs, not authorities
+
+In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply the same weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). Humans still define the objective, choose the data, interpret unusual cases, weigh rights and values, and remain accountable. A model can be consistently wrong if its target, data, or deployment context is wrong.
+
+AI changes where judgment is needed; it does not remove judgment. It can calculate, retrieve, summarize, generate alternatives, expose counterarguments, apply criteria consistently, or draft a decision record. Each role requires a matching guardrail:
+
+| Useful role | Guardrail |
+| --- | --- |
+| Forecast or classify | Validate out of sample; inspect calibration, uncertainty, and subgroup error. |
+| Retrieve or summarize | Verify material facts, quotations, dates, and sources. |
+| Generate alternatives or risks | Treat the output as a search aid, not a complete option set. |
+| Apply a rubric | Audit the target, data, weights, and justified exceptions. |
+| Draft reasons or records | Ensure the accountable decision-maker owns and can defend the reasoning. |
+: Human–AI roles and safeguards {#tbl-36-ai}
+
+![Human judgment and AI contribute different capabilities to a governed decision, with validation, verification, fairness, documentation, correction, and monitoring between them.](../figures/human-ai-judgment.svg){#fig-human-ai-judgment fig-alt="A human judgment lane defines goals and values and owns exceptions. A model or AI lane calculates, retrieves, applies rules, and generates alternatives. Both pass through a guardrail panel to a governed decision with accountable authority, documentation, appeal, and review."}
+
+The first failure is the **target-variable problem**. A hospital model may predict cost rather than health need; a hiring model may reproduce past selection rather than future job performance; a productivity system may optimize response speed rather than quality. Technical accuracy cannot rescue the wrong objective. Historical labels can also encode past inequities, and average performance can conceal unequal errors (Obermeyer et al., 2019).
+
+The second failure is miscalibrated reliance. **Automation bias** is over-reliance on a system that appears authoritative. **Algorithm aversion** is rejecting a useful model after observing it make an error that would be tolerated from a human (Mosier et al., 1998; Dietvorst et al., 2015). The aim is neither obedience nor rejection, but trust proportionate to comparative evidence.
+
+Fairness is not one technical switch. Calibration, equal false-positive rates, equal false-negative rates, equal selection rates, and individual fairness can conflict; choosing among them depends on rights, error costs, history, and institutional purpose (Barocas et al., 2019). Nor does a post-hoc explanation always make a black box appropriate. Where decisions affect rights, access, health, liberty, or livelihood, a validated interpretable model may be preferable to explaining an opaque one after the fact (Rudin, 2019).
+
+Generative AI presents a special fluency risk. A polished answer can make weak evidence feel complete. Use it to widen thinking—with alternatives, edge cases, stakeholder harms, premortems, and questions—not to end thinking. For consequential tasks, record the independent human view before consulting AI, verify claims outside the model, document the system's role, protect confidential data, preserve correction and appeal, and monitor drift after deployment.
+
+Do not use an unvalidated system simply because it is available. Higher stakes require stronger comparative evidence, transparency, subgroup evaluation, contestability, and accountable human authority. Avoid deployment when the target is an illegitimate proxy, the population or context has shifted beyond validation, sensitive data cannot be protected, or the decision's moral and relational responsibility cannot be delegated. A human reviewer should not become a **moral crumple zone** who receives blame for an automated system without real authority or information to correct it (Elish, 2019). A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that role was legitimate, and how an error can be corrected?**
+
 ## During the decision: structure disagreement
 
 Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when "too risky" is decomposed into probability and consequence.
 
 Assign dissent a role rather than waiting for courage. Use a premortem: imagine that the decision failed and list plausible reasons. Ask one person to construct the strongest case against the emerging preference. Protect the dissenter from becoming the problem. The purpose is not permanent opposition; it is to expose information before commitment makes it expensive to hear.
 
+Checklists protect omission in repeated, high-risk work, but they are not universal scripts. A useful checklist is short, located at a natural pause, tied to known failure modes, and revised from experience. A long compliance list can become theatre. The surgical-safety evidence illustrates both the promise and the boundary: checklists can coordinate critical steps, yet results depend on implementation, teamwork, and local adaptation rather than on possessing a document alone (Haynes et al., 2009).
+
+A **premortem** asks each person to imagine that the plan has failed and independently write plausible causes. The fictional certainty of failure gives doubt permission to speak (Klein, 2007). A **red team** goes further by constructing an adversarial test of assumptions, evidence, and execution. Red teams need genuine access, time, and protection; a ceremonial critic who cannot change the plan is not decision hygiene. A designated devil's advocate can be dismissed as merely performing a role, so it should not replace authentic independent concern. Challenge earns its place only when someone has authority to inspect the evidence and the team records what changed in response.
+
+Psychological safety is the social infrastructure beneath these tools. It means that people can ask, disagree, admit error, and surface risk without interpersonal punishment; it does not mean comfort, agreement, or low standards (Edmondson, 1999). Leaders create it behaviorally by inviting specific dissent, responding productively to bad news, separating a concern from the status of the person who raised it, and showing that early correction is valued more than late loyalty.
+
+Safety and accountability are complements. High safety without evidence standards can become comfortable imprecision; high standards without safety can produce polished silence. The accountable system makes reasoning inspectable, expects preparation and correction, and protects the person who reveals a problem before it becomes a failure.
+
 ## Design choices, not just advice
 
 When behavior repeats, redesign the environment. Change defaults, friction, prompts, timing, information format, social visibility, and feedback. Make desired actions easier at the moment they must occur and make harmful impulsive actions harder. Ethical choice architecture preserves meaningful exit and serves goals that the affected person could endorse under informed reflection.
 
 In persuasion, begin with the audience model rather than the speaker's facts. Identify the current story, the barrier to updating, the protected identity, and the evidence that would be treated as credible. In communication, ask before assuming and make interpretation testable. In negotiation, improve the BATNA, map interests and priorities, and prepare packages before the pressure of the table.
+
+## Better meetings: do not let the presentation become the decision
+
+Many organizations call a meeting before defining what must be decided. Participants hear a polished recommendation, then try to recover independent judgment from inside its frame. A better meeting separates the stages:
+
+| Phase | Process rule | What it protects |
+| --- | --- | --- |
+| Before | Define the decision, criteria, evidence, authority, and affected people. | The agenda does not silently set the target. |
+| Independent input | Collect estimates and concerns before advocacy, discussion, or AI output. | Information diversity and unanchored forecasts. |
+| Evidence | Separate facts, assumptions, predictions, values, and recommendations. | Disagreement becomes diagnosable rather than personal. |
+| Challenge | Use an outside view, premortem, strongest objection, and “what would change our minds?” | Doubt becomes a role, not an act of disloyalty. |
+| Decision | State the choice, trade-offs, exceptions, owner, and implementation conditions. | Conversation becomes accountable action. |
+| Review | Set indicators, thresholds, and a review date. | Outcomes can update the process without rewriting it. |
+: A decision meeting organized around judgment rather than presentation {#tbl-36-meeting}
+
+Roles can make the process visible: one person tracks criteria, one assumptions, one risks and dissent, one unresolved questions, and one implementation. Decision rights must also be explicit. Who decides? Who advises? Who must consent? Who implements? Ambiguity here produces recurring debate and hidden vetoes.
 
 ## The decision audit: from a smooth story to an inspectable process
 
@@ -81,6 +221,8 @@ The practical record is a two-column decision journal:
 | Alternatives considered | What was process and what was luck? |
 | Assumptions and probabilistic predictions | Which assumptions failed or remain untested? |
 | Values, stakeholders, and trade-offs | What did we miss or misweight? |
+| Emotional state, incentives, and dissenting views | Which pressures or minority concerns proved relevant? |
+| Models or AI consulted, and reasons for following or overriding them | Did the tool add value, and was reliance calibrated? |
 | Best feasible alternative forgone | What should—and should not—change next time? |
 | Review date and evidence to collect | Which new prediction or decision rule will be tested? |
 : A decision journal protected from hindsight {#tbl-35-decision-journal}
@@ -104,20 +246,62 @@ Decision, persuasion, communication, and negotiation are not separate skills. Th
 | Learn | What did we predict, what happened, and what was luck? | Decision journal; calibration; process debrief |
 : The integrated DPN audit {#tbl-35-1}
 
+## Applications: redesign the recurring process
+
+Decision hygiene earns its cost when a judgment recurs and its errors matter.
+
+- **Hiring and promotion:** define job-relevant criteria before seeing candidates; use comparable questions and work samples; score dimensions independently; treat vague “fit” as a claim requiring evidence; audit later performance and group outcomes.
+- **Strategy and projects:** use reference classes, probabilistic forecasts, staged investment, leading indicators, and prewritten kill or review criteria. Ask what observation would show the strategy is wrong before sunk cost and identity make that answer expensive.
+- **Grading and peer review:** use shared criteria, anchored examples, independent assessment for high-stakes work, and moderation after scores are recorded. Preserve a path for justified exception and appeal.
+- **Medicine and safety:** combine expertise with evidence-based thresholds, checklists, second opinions, and patient values. Atypical cases need documented discretion, not silent departure.
+- **Persuasion and briefings:** collect estimates before the advocate presents a preferred answer. Separate evidence, assumptions, values, and recommendation. Require the presenter to state what would change the recommendation.
+- **Negotiation:** record BATNAs, reservation values, priority scores, and forecasts as ranges; preserve independent team concerns; conduct an implementation premortem before signing; review actual concessions, created value, relationship effects, and execution afterward.
+- **Public administration:** use transparent criteria, reduce arbitrary discretion where like cases should be treated alike, preserve documented discretion where circumstances differ, audit disparities, and provide correction and appeal for decisions affecting rights, access, or welfare.
+
+## Ethics, governance, and proportionality
+
+Structure is not automatically fair. A rubric can make the wrong values consistently influential. A model can turn historical discrimination into a scalable rule. A checklist can suppress professional attention. A decision journal can become surveillance. A demand for consistency can erase relevant differences.
+
+Responsible judgment systems therefore require:
+
+- **legitimate criteria:** the process must optimize an outcome worth pursuing;
+- **justified discretion:** exceptions are possible, reasoned, and reviewable;
+- **transparency:** affected people can understand the material basis of consequential decisions;
+- **contestability:** errors can be corrected and decisions appealed where stakes warrant it;
+- **voice and dignity:** affected people can be heard, receive an explanation, and encounter a person or institution that owns the decision;
+- **distributional audit:** performance and burdens are examined across groups and over time;
+- **accountability:** no committee, consultant, score, or model becomes a shield from responsibility;
+- **proportionality:** structure grows with consequence, uncertainty, repetition, irreversibility, power, and automation.
+
+The aim is disciplined humility, not technocracy. A good process should become more accurate, consistent, fair, transparent, learnable, and humane—not merely easier to defend.
+
+| Failure mode | First-line protection | Stronger response when stakes warrant it |
+| --- | --- | --- |
+| Inconsistent judges | Noise audit and anchored criteria | Multiple judges, calibration, model comparison |
+| Overconfident plan | Outside view and probability ranges | Premortem, staged investment, stop criteria |
+| Hierarchy or conformity | Independent input; senior person speaks last | Anonymous concerns, external review, red team |
+| Hindsight learning | Decision journal and review date | Forecast scoring and portfolio-level analysis |
+| Repeated prediction | Transparent statistical baseline | Validated model with fairness and drift audit |
+| AI-supported judgment | Independent human view and verification | Contestability, subgroup audit, human review board |
+| Excess bureaucracy | Short, failure-linked checklist | Remove low-value controls; preserve justified discretion |
+: Proportionate decision hygiene {#tbl-36-proportionality}
+
 ## Key ideas
 
 - Better judgment is less a personality trait than a property of a well-designed process: independent evidence, explicit assumptions, structured disagreement, meaningful alternatives, ethical influence, and feedback protected from hindsight.
 - Design a decision process before debating the answer.
 - Protect independent judgment and constructive dissent.
 - Use environments, messages, conversations, and agreements as design objects.
+- Bias and noise are different problems; similar cases should not depend arbitrarily on the assigned judge.
+- Use models and AI where comparative evidence supports them, while keeping targets, values, verification, appeal, and accountability humanly governed.
 
 ## Study and practice
 
-1. Design a decision process before debating the answer?
-
-2. Protect independent judgment and constructive dissent?
-
-3. How would you use environments, messages, conversations, and agreements as design objects in practice?
+1. Where would bias and noise appear differently in one judgment system you know?
+2. Which stage of the structured judgment pipeline is currently missing from that system?
+3. What should be judged independently before the next discussion or AI consultation?
+4. When would a simple statistical baseline deserve more weight than intuition, and when would it not?
+5. What appeal, exception, or review path would make the system more humane?
 
 ::: {.callout-tip .activity icon=false}
 ## Activity
@@ -130,7 +314,55 @@ Experience: describe one specific decision, interaction, or observation. Explain
 ## References cited in this chapter
 
 ::: {.reference}
+Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1–3.
+:::
+
+::: {.reference}
+Dana, J., Dawes, R., & Peterson, N. (2013). Belief in the unstructured interview: The persistence of an illusion. Judgment and Decision Making, 8(5), 512–520.
+:::
+
+::: {.reference}
+Dawes, R. M., Faust, D., & Meehl, P. E. (1989). Clinical versus actuarial judgment. Science, 243(4899), 1668–1674.
+:::
+
+::: {.reference}
+Dietvorst, B. J., Simmons, J. P., & Massey, C. (2015). Algorithm aversion: People erroneously avoid algorithms after seeing them err. Journal of Experimental Psychology: General, 144(1), 114–126.
+:::
+
+::: {.reference}
+Edmondson, A. C. (1999). Psychological safety and learning behavior in work teams. Administrative Science Quarterly, 44(2), 350–383.
+:::
+
+::: {.reference}
+Grove, W. M., Zald, D. H., Lebow, B. S., Snitz, B. E., & Nelson, C. (2000). Clinical versus mechanical prediction: A meta-analysis. Psychological Assessment, 12(1), 19–30.
+:::
+
+::: {.reference}
+Haynes, A. B., Weiser, T. G., Berry, W. R., Lipsitz, S. R., Breizat, A.-H. S., Dellinger, E. P., Herbosa, T., Joseph, S., Kibatala, P. L., Lapitan, M. C. M., Merry, A. F., Moorthy, K., Reznick, R. K., Taylor, B., & Gawande, A. A. (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. New England Journal of Medicine, 360(5), 491–499.
+:::
+
+::: {.reference}
+Highhouse, S. (2008). Stubborn reliance on intuition and subjectivity in employee selection. Industrial and Organizational Psychology, 1(3), 333–342.
+:::
+
+::: {.reference}
+Kahneman, D., & Klein, G. (2009). Conditions for intuitive expertise: A failure to disagree. American Psychologist, 64(6), 515–526.
+:::
+
+::: {.reference}
 Kahneman, D., Sibony, O., & Sunstein, C. R. (2021). Noise: A flaw in human judgment. Little, Brown Spark.
+:::
+
+::: {.reference}
+Meehl, P. E. (1954). Clinical versus statistical prediction: A theoretical analysis and a review of the evidence. University of Minnesota Press.
+:::
+
+::: {.reference}
+Mellers, B. A., Ungar, L., Baron, J., Ramos, J., Gurcay, B., Fincher, K., Scott, S. E., Moore, D., Atanasov, P., Swift, S. A., Murray, T., Stone, E., & Tetlock, P. E. (2014). Psychological strategies for winning a geopolitical forecasting tournament. Psychological Science, 25(5), 1106–1115.
+:::
+
+::: {.reference}
+Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453.
 :::
 
 ::: {.reference}
@@ -151,4 +383,36 @@ Milkman, K. L., Chugh, D., & Bazerman, M. H. (2009). How can decision making be 
 
 ::: {.reference}
 Soll, J. B., Milkman, K. L., & Payne, J. W. (2015). A user’s guide to debiasing. In G. Keren & G. Wu (Eds.), The Wiley Blackwell handbook of judgment and decision making (pp. 924–951). Wiley Blackwell.
+:::
+
+::: {.reference}
+Barocas, S., Hardt, M., & Narayanan, A. (2019). Fairness and machine learning: Limitations and opportunities. fairmlbook.org.
+:::
+
+::: {.reference}
+Elish, M. C. (2019). Moral crumple zones: Cautionary tales in human-robot interaction. Engaging Science, Technology, and Society, 5, 40–60.
+:::
+
+::: {.reference}
+Flyvbjerg, B., Holm, M. S., & Buhl, S. (2002). Underestimating costs in public works projects: Error or lie? Journal of the American Planning Association, 68(3), 279–295.
+:::
+
+::: {.reference}
+Hong, L., & Page, S. E. (2004). Groups of diverse problem solvers can outperform groups of high-ability problem solvers. Proceedings of the National Academy of Sciences, 101(46), 16385–16389.
+:::
+
+::: {.reference}
+Kahneman, D., & Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. Management Science, 39(1), 17–31.
+:::
+
+::: {.reference}
+Mosier, K. L., Skitka, L. J., Heers, S., & Burdick, M. (1998). Automation bias: Decision making and performance in high-tech cockpits. The International Journal of Aviation Psychology, 8(1), 47–63.
+:::
+
+::: {.reference}
+Rudin, C. (2019). Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. Nature Machine Intelligence, 1, 206–215.
+:::
+
+::: {.reference}
+Sunstein, C. R., & Hastie, R. (2015). Wiser: Getting beyond groupthink to make groups smarter. Harvard Business Review Press.
 :::

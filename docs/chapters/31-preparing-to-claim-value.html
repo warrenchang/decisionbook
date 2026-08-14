@@ -8,7 +8,7 @@
 
 <meta name="description" content="A textbook on how people choose, influence, communicate, negotiate, and build better decision systems.">
 
-<title>31&nbsp; Preparing to Claim Value – Decision, Persuasion, and Negotiation</title>
+<title>28&nbsp; Preparing to Claim Value – Decision, Persuasion, and Negotiation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -89,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-6.html">Part VI.Negotiation: Claiming and Creating Value</a></li><li class="breadcrumb-item"><a href="../chapters/31-preparing-to-claim-value.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-5.html">Part V. Distributive Negotiation</a></li><li class="breadcrumb-item"><a href="../chapters/31-preparing-to-claim-value.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,10 +152,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Start Here</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Follow the Decision Upstream</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part I. The Architecture of Choice</span></a>
+ <span class="menu-text">Part I. The Decision-Making Process</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -135,49 +170,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/01-the-choice-is-the-tip-of-the-iceberg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Choice Is the Tip of the Iceberg</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decision-Making Is a Process, Not a Moment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/02-a-rational-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Rational Benchmark, Not a Portrait</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rationality: A Benchmark, Not a Portrait</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/03-opportunity-cost-information-and-better-options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Opportunity Cost, Information, and Better Options</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/04-fast-answers-slow-inspection.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fast Answers, Slow Inspection</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/05-attention-is-the-gatekeeper-of-evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Attention Is the Gatekeeper of Evidence</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/06-the-predictive-mind.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Predictive Mind</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">To Decide Is to Sacrifice: Opportunity Cost, Information, and Better Options</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/07-value-is-constructed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Value Is Constructed</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/08-expectations-that-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Expectations That Become Causes</span></span></a>
+  <a href="../chapters/18-the-narrator-after-the-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
   </div>
 </li>
       </ul>
@@ -185,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part II.Judgment Under Uncertainty and Context</span></a>
+ <span class="menu-text">Part II. Attention, Prediction, and Expectation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -193,56 +210,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-heuristics-the-adaptive-toolbox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Heuristics: The Adaptive Toolbox</span></span></a>
+  <a href="../chapters/05-attention-is-the-gatekeeper-of-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/10-feeling-and-availability-as-shortcuts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Feeling and Availability as Shortcuts</span></span></a>
+  <a href="../chapters/06-the-predictive-mind.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/11-resemblance-is-not-probability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Resemblance Is Not Probability</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Base Rates, Randomness, and Calibration</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/13-biases-that-protect-a-story.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Biases That Protect a Story</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/14-anchors-halos-decoys-and-escalation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Anchors, Halos, Decoys, and Escalation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/15-frames-change-the-decision.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Frames Change the Decision</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/16-priming-and-the-active-mental-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Priming and the Active Mental Context</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/17-fluency-familiarity-and-the-feeling-of-truth.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Fluency, Familiarity, and the Feeling of Truth</span></span></a>
+  <a href="../chapters/08-expectations-that-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
       </ul>
@@ -250,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part III.How Choices Become Stories and Habits</span></a>
+ <span class="menu-text">Part III. Heuristics, Biases, and Choice Across Time</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -258,26 +239,68 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/18-the-narrator-after-the-choice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">The Narrator After the Choice</span></span></a>
+  <a href="../chapters/04-fast-answers-slow-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Two Systems of Thinking: Fast Is Not Foolish, Slow Is Not Free</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Habits: When Decisions Move Downstairs</span></span></a>
+  <a href="../chapters/09-heuristics-the-adaptive-toolbox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Heuristics: Useful Shortcuts in an Uncertain World</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Wanting, Craving, and Self-Control</span></span></a>
+  <a href="../chapters/10-feeling-and-availability-as-shortcuts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Feeling and Availability: When Ease of Recall Becomes Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Designing Behavior</span></span></a>
+  <a href="../chapters/11-resemblance-is-not-probability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Resemblance Is Not Probability</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-biases-that-protect-a-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Biases: Predictable Errors and the Stories That Sustain Them</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-anchors-halos-decoys-and-escalation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Anchors, Halos, Decoys, and Escalation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-frames-change-the-decision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-priming-and-the-active-mental-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Priming: What Is Active Changes What Comes Next</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-fluency-familiarity-and-the-feeling-of-truth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cognitive Ease: When Easy Feels True</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-intertemporal-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Choice: Why Later Loses to Now</span></span></a>
   </div>
 </li>
       </ul>
@@ -285,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part IV.The Social Mind</span></a>
+ <span class="menu-text">Part IV. Influence and Persuasion</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -294,19 +317,43 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Social Learning, Mimicry, and Attribution</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Social Brain: Learning, Mimicry, and Attribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/23-conformity-norms-and-social-proof.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Conformity, Norms, and Social Proof</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Conformity: When Popularity Becomes Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-culture-identity-social-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
   </div>
 </li>
       </ul>
@@ -314,40 +361,28 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part V.Persuasion, Story, and Connection</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+ <span class="menu-text">Part V. Distributive Negotiation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Persuasion Is Model Updating</span></span></a>
+  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Communication Is Joint Inference</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">The Art of Conversation and Repair</span></span></a>
+  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span></a>
   </div>
 </li>
       </ul>
@@ -355,40 +390,22 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VI.Negotiation: Claiming and Creating Value</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Part VI. Integrative Negotiation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Negotiation Is Joint Decision-Making</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Anchors, Concessions, and Bargaining Tactics</span></span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/33-interests-priorities-and-trade-offs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Interests, Priorities, and Trade-Offs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Integrative Negotiation: Create Value Before Dividing It</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/34-mesos-contingent-contracts-and-better-agreements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
   </div>
 </li>
       </ul>
@@ -396,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VII. Better Decision Systems</span></a>
+ <span class="menu-text">Part VII. Communication and Connection</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -404,8 +421,55 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VIII. Habits and Behavior Design</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-choice-architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/35-decision-hygiene.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Decision Hygiene</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
   </div>
 </li>
       </ul>
@@ -424,13 +488,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-a-portable-course-tools.html" class="sidebar-item-text sidebar-link">
@@ -456,10 +520,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#the-negotiation-before-the-negotiation" id="toc-the-negotiation-before-the-negotiation" class="nav-link" data-scroll-target="#the-negotiation-before-the-negotiation">The negotiation before the negotiation</a></li>
+  <li><a href="#the-case-before-the-vocabulary" id="toc-the-case-before-the-vocabulary" class="nav-link" data-scroll-target="#the-case-before-the-vocabulary">The case before the vocabulary</a></li>
+  <li><a href="#the-negotiation-before-the-negotiation" id="toc-the-negotiation-before-the-negotiation" class="nav-link" data-scroll-target="#the-negotiation-before-the-negotiation">The negotiation before the negotiation</a>
+  <ul class="collapse">
+  <li><a href="#a-complete-preparation-test" id="toc-a-complete-preparation-test" class="nav-link" data-scroll-target="#a-complete-preparation-test">A complete preparation test</a></li>
+  </ul></li>
   <li><a href="#the-structure-of-distributive-bargaining" id="toc-the-structure-of-distributive-bargaining" class="nav-link" data-scroll-target="#the-structure-of-distributive-bargaining">The structure of distributive bargaining</a></li>
   <li><a href="#batna-and-bargaining-power" id="toc-batna-and-bargaining-power" class="nav-link" data-scroll-target="#batna-and-bargaining-power">BATNA and bargaining power</a></li>
-  <li><a href="#estimating-the-other-side" id="toc-estimating-the-other-side" class="nav-link" data-scroll-target="#estimating-the-other-side">Estimating the other side</a></li>
+  <li><a href="#estimating-the-other-side" id="toc-estimating-the-other-side" class="nav-link" data-scroll-target="#estimating-the-other-side">Estimating the other side</a>
+  <ul class="collapse">
+  <li><a href="#reservation-value-is-private-by-default-not-sacred-in-every-case" id="toc-reservation-value-is-private-by-default-not-sacred-in-every-case" class="nav-link" data-scroll-target="#reservation-value-is-private-by-default-not-sacred-in-every-case">Reservation value is private by default, not sacred in every case</a></li>
+  </ul></li>
   <li><a href="#when-the-first-offer-belongs-in-preparation" id="toc-when-the-first-offer-belongs-in-preparation" class="nav-link" data-scroll-target="#when-the-first-offer-belongs-in-preparation">When the first offer belongs in preparation</a></li>
   <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
   <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
@@ -470,9 +541,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-6.html">Part VI.Negotiation: Claiming and Creating Value</a></li><li class="breadcrumb-item"><a href="../chapters/31-preparing-to-claim-value.html"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-5.html">Part V. Distributive Negotiation</a></li><li class="breadcrumb-item"><a href="../chapters/31-preparing-to-claim-value.html"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></h1>
+<h1 class="title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></h1>
 </div>
 
 
@@ -511,6 +582,18 @@ ul.task-list li input[type="checkbox"] {
 <li>Improve a BATNA before bargaining.</li>
 <li>Estimate the other side’s reservation value as a revisable hypothesis.</li>
 </ul>
+</section>
+<section id="the-case-before-the-vocabulary" class="level2">
+<h2 class="anchored" data-anchor-id="the-case-before-the-vocabulary">The case before the vocabulary</h2>
+<p>Imagine that you are selling a used car. Your best alternative is another buyer who has made a firm offer of €8,000. The current buyer has not named a number. Before reading on, write down:</p>
+<ol type="1">
+<li>the lowest amount you would accept;</li>
+<li>what you would like to obtain;</li>
+<li>what you think the buyer might pay;</li>
+<li>what evidence could change each number; and</li>
+<li>whether you would make the first offer.</li>
+</ol>
+<p>The exercise exposes a preparation problem. People often enter with a wish but without a walk-away point, an evidence base, or a learning plan. Preparation increases confidence and credibility, makes anchors and pressure easier to resist, and reduces avoidable renegotiation. The familiar “80% preparation, 20% negotiation” phrase is best treated as a teaching heuristic, not an empirical law. Its useful message is that information gathering and alternative development usually have higher leverage before the bargaining begins (Fisher et al., 2011; Thompson et al., 2010).</p>
 <p>Negotiation is disciplined by alternatives.</p>
 <p>A party should not evaluate an agreement in isolation. It should compare the agreement with what it can do if no agreement is reached. This is the BATNA: the best alternative to a negotiated agreement (Fisher et al., 2011). Your BATNA is your best realistic course of action if the negotiation fails.</p>
 <p>If you are negotiating a job offer, your BATNA may be another offer, staying in your current job, continuing your search, starting a PhD, or freelancing. If you are selling a car, your BATNA may be another buyer or keeping the car. If a company is negotiating with a supplier, its BATNA may be another supplier, internal production, redesigning the product, or delaying launch.</p>
@@ -544,6 +627,62 @@ ul.task-list li input[type="checkbox"] {
 <p>A preparation worksheet should include:</p>
 <p>My interests. Their likely interests. Issues. My BATNA. Their likely BATNA. My reservation value. My target. Possible bargaining zone. Objective standards. Questions to ask. Information to reveal. Information to protect. Possible trades. Implementation concerns. Ethical boundaries.</p>
 <p>Preparation does not eliminate uncertainty. It makes uncertainty manageable.</p>
+<section id="a-complete-preparation-test" class="level3">
+<h3 class="anchored" data-anchor-id="a-complete-preparation-test">A complete preparation test</h3>
+<p>Before entering the room, answer the questions below for <strong>both</strong> sides where possible:</p>
+<div id="tbl-31-preparation-test" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-31-preparation-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;28.1: Preparation as a set of decisions rather than a list of wishes
+</figcaption>
+<div aria-describedby="tbl-31-preparation-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Decision to make before bargaining</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alternatives</td>
+<td>What are each side’s BATNA and current reservation value? How could ours improve, and how might theirs change over time?</td>
+</tr>
+<tr class="even">
+<td>Surplus</td>
+<td>Is a positive ZOPA plausible? What facts support that estimate, and what would falsify it?</td>
+</tr>
+<tr class="odd">
+<td>Aspiration</td>
+<td>What is our ambitious but defensible target? What objective standard supports it?</td>
+</tr>
+<tr class="even">
+<td>Unknowns</td>
+<td>Which facts, constraints, stakeholders, and approvals do we need to learn? What question could reveal each one?</td>
+</tr>
+<tr class="odd">
+<td>Issues and priorities</td>
+<td>Which issues matter to each side, how strongly, and where might priorities differ?</td>
+</tr>
+<tr class="even">
+<td>Trades and forecasts</td>
+<td>What can be exchanged across issues? Where do predictions differ enough for a contingent term?</td>
+</tr>
+<tr class="odd">
+<td>Process</td>
+<td>Who decides, in what sequence, by what deadline, and how will agreement be documented and implemented?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Prepare at least one tough question you would prefer not to hear, then answer it truthfully without surrendering private information. Also prepare one question whose answer could make you abandon your favored strategy. That second question protects preparation from becoming confirmation bias.</p>
+</section>
 </section>
 <section id="the-structure-of-distributive-bargaining" class="level2">
 <h2 class="anchored" data-anchor-id="the-structure-of-distributive-bargaining">The structure of distributive bargaining</h2>
@@ -553,7 +692,7 @@ ul.task-list li input[type="checkbox"] {
 <img src="../figures/zopa.svg" class="img-fluid figure-img" alt="Number line showing seller reservation at 8,000 euros, buyer reservation at 10,000 euros, and a 2,000-euro zone between them.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-zopa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;31.1: A positive bargaining zone exists when the buyer’s maximum exceeds the seller’s minimum; the overlap is the bargaining surplus.
+Figure&nbsp;28.1: A positive bargaining zone exists when the buyer’s maximum exceeds the seller’s minimum; the overlap is the bargaining surplus.
 </figcaption>
 </figure>
 </div>
@@ -561,11 +700,26 @@ Figure&nbsp;31.1: A positive bargaining zone exists when the buyer’s maximum e
 <p>Suppose a seller owns a used car. The seller would rather keep the car than sell it for less than €8,000. The buyer would rather buy the car than walk away if the price is €10,000 or lower. The seller’s reservation value is €8,000. The buyer’s reservation value is €10,000.</p>
 <p>The bargaining zone, also called the zone of possible agreement or ZOPA, lies between €8,000 and €10,000. Any price in that zone is better than no agreement for both sides. At €8,000, the seller is just indifferent between selling and walking away, while the buyer gets a very favorable deal. At €10,000, the buyer is just indifferent between buying and walking away, while the seller gets a very favorable deal. At €9,000, the surplus is split evenly.</p>
 <p>The bargaining surplus is the overlap between the parties’ reservation values. In this case:</p>
-<p>Buyer’s reservation value = €10,000 Seller’s reservation value = €8,000 Bargaining surplus = €10,000 - €8,000 = €2,000</p>
-<p>If the final price is €9,200, the seller’s surplus is:</p>
-<p>Final price - seller’s reservation value = €9,200 - €8,000 = €1,200</p>
-<p>The buyer’s surplus is:</p>
-<p>Buyer’s reservation value - final price = €10,000 - €9,200 = €800</p>
+<p><span class="math display">\[
+\text{Bargaining surplus}
+= \text{buyer reservation value} - \text{seller reservation value}
+= €10{,}000 - €8{,}000
+= €2{,}000.
+\]</span></p>
+<p>If the final price is €9,200, the buyer’s surplus is:</p>
+<p><span class="math display">\[
+\text{Buyer surplus}
+= \text{buyer reservation value} - \text{settlement}
+= €10{,}000 - €9{,}200
+= €800.
+\]</span></p>
+<p>The seller’s surplus is:</p>
+<p><span class="math display">\[
+\text{Seller surplus}
+= \text{settlement} - \text{seller reservation value}
+= €9{,}200 - €8{,}000
+= €1{,}200.
+\]</span></p>
 <p>The total surplus remains €2,000, but the distribution changes. The seller claimed €1,200 of the surplus; the buyer claimed €800.</p>
 <p>This simple example captures the core structure of distributive negotiation. The parties should reach agreement if there is a positive bargaining zone. But each party prefers agreement closer to the other party’s reservation value.</p>
 <p>A positive bargaining zone exists when the buyer’s maximum willingness to pay is greater than the seller’s minimum willingness to accept. A negative bargaining zone exists when there is no overlap. If the seller will not accept less than €12,000 and the buyer will not pay more than €10,000, there is no deal on price alone. The parties should either walk away or add issues that might create value, such as warranty, financing, delivery, timing, repairs, or future business.</p>
@@ -605,6 +759,11 @@ Figure&nbsp;31.1: A positive bargaining zone exists when the buyer’s maximum e
 <p>A useful discipline is to write down before negotiation:</p>
 <p>My estimate of their reservation value. Why I believe this. What evidence would make me revise it. What questions can test it.</p>
 <p>Negotiation is not only influencing the other side. It is learning from the other side.</p>
+<section id="reservation-value-is-private-by-default-not-sacred-in-every-case" class="level3">
+<h3 class="anchored" data-anchor-id="reservation-value-is-private-by-default-not-sacred-in-every-case">Reservation value is private by default, not sacred in every case</h3>
+<p>Revealing an exact reservation value usually weakens value claiming because it tells the other side how far it can push. Yet secrecy is not an absolute rule. A credible disclosure can sometimes correct a mistaken estimate, prevent an avoidable impasse, satisfy a transparency obligation, or make a multi-issue agreement possible. The decision is not “honest or secretive”; it is whether this particular disclosure improves the chance of an informed agreement without unnecessarily surrendering value.</p>
+<p>If disclosure is useful, explain the underlying constraint and evidence before giving a naked number. “Our board-approved ceiling is €10,000 and we cannot exceed it” is more informative than “€10,000 is my bottom line,” but it should be said only if it is true and if the strategic and relational benefits exceed the cost. Never fabricate a reservation value or alternative.</p>
+</section>
 </section>
 <section id="when-the-first-offer-belongs-in-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="when-the-first-offer-belongs-in-preparation">When the first offer belongs in preparation</h2>
@@ -620,6 +779,76 @@ Figure&nbsp;31.1: A positive bargaining zone exists when the buyer’s maximum e
 <p>This leads to a more nuanced rule:</p>
 <p>Make the first offer when you have enough information to anchor ambitiously and defensibly. Avoid making the first offer when you are poorly informed and the other side may know much more.</p>
 <p>If neither side has much information, making the first offer may be useful because the anchor has room to operate. If both sides are well informed, the first offer still matters but extreme anchors are less likely to succeed. If the other side is better informed, try to learn before offering.</p>
+<div id="fig-first-offer-information-matrix" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Two-by-two matrix crossing your information, good or weak, with the counterpart's information, weak or good. Good-good suggests considering an ambitious justified opening; weak-good says learn before revealing; good-weak says anchor with restraint; weak-weak says research before centering an arbitrary number. Each cell names a risk.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-first-offer-information-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/first-offer-information-matrix.svg" class="img-fluid figure-img" style="width:92.0%" alt="Two-by-two matrix crossing your information, good or weak, with the counterpart's information, weak or good. Good-good suggests considering an ambitious justified opening; weak-good says learn before revealing; good-weak says anchor with restraint; weak-weak says research before centering an arbitrary number. Each cell names a risk.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-first-offer-information-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;28.2: A first-offer information matrix treats opening as a joint decision about anchoring and disclosure.
+</figcaption>
+</figure>
+</div>
+<p>The matrix highlights why “always make the first offer” is too crude: opening can create leverage, but it also discloses the quality and limits of your preparation.</p>
+<p>The deck’s first-offer matrix can be translated into a deliberately conservative heuristic:</p>
+<div id="tbl-31-first-offer-matrix" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-31-first-offer-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;28.2: A first-offer decision heuristic, not an automatic rule
+</figcaption>
+<div aria-describedby="tbl-31-first-offer-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Your information</th>
+<th>Counterpart’s information</th>
+<th>Default move</th>
+<th>Main risk to test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good</td>
+<td>Good</td>
+<td>Consider opening first.</td>
+<td>Credibility or chilling from an extreme offer.</td>
+</tr>
+<tr class="even">
+<td>Weak</td>
+<td>Good</td>
+<td>Invite or learn before opening.</td>
+<td>Revealing ignorance and suffering a winner’s curse.</td>
+</tr>
+<tr class="odd">
+<td>Good</td>
+<td>Weak</td>
+<td>A first offer can anchor, but use a defensible standard.</td>
+<td>Exploitation, relationship cost, or an uninformed impasse.</td>
+</tr>
+<tr class="even">
+<td>Weak</td>
+<td>Weak</td>
+<td>Research first; if forced, use a provisional, justified range.</td>
+<td>An arbitrary number becoming the conversation’s center.</td>
+</tr>
+<tr class="odd">
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Ask and investigate before committing.</td>
+<td>Mistaking confidence for information.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Commonly repeated stories about Raymond Chandler and Albert Einstein illustrate the hazard of naming a number far below an employer’s intended range. Their exact dialogue and figures are difficult to verify from strong primary sources, so they are not treated here as established history. The robust lesson does not depend on them: an opening offer anchors, but it also advertises what the speaker may not know.</p>
 <p>A first offer should be ambitious but not absurd. It should leave room for concession but not give away the bargaining zone. It should be supported by a rationale. A number without justification is easier to dismiss. A number tied to market data, cost structure, precedent, quality, risk, or comparable agreements feels more legitimate.</p>
 <p>For example:</p>
 <p>“Based on comparable roles, the scope of responsibility, and the market range for this position, I would be looking for a salary around €78,000.”</p>
@@ -629,7 +858,7 @@ Figure&nbsp;31.1: A positive bargaining zone exists when the buyer’s maximum e
 <div id="tbl-31-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-31-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;31.1: The numbers to set before bargaining
+Table&nbsp;28.3: The numbers to set before bargaining
 </figcaption>
 <div aria-describedby="tbl-31-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -709,6 +938,9 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </div>
 <div class="reference">
 <p>Galinsky, A. D., &amp; Mussweiler, T. (2001). First offers as anchors: The role of perspective-taking and negotiator focus. Journal of Personality and Social Psychology, 81(4), 657–669.</p>
+</div>
+<div class="reference">
+<p>Thompson, L. L., Wang, J., &amp; Gunia, B. C. (2010). Negotiation. Annual Review of Psychology, 61, 491–515.</p>
 </div>
 <div class="reference">
 <p>Tversky, A., &amp; Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131.</p>
@@ -1095,13 +1327,13 @@ Experience: describe one specific decision, interaction, or observation. Explain
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="pagination-link" aria-label="Negotiation Is Joint Decision-Making">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Negotiation Is Joint Decision-Making</span></span>
+      <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="pagination-link" aria-label="Negotiation: Winning Is Not the Same as Succeeding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="pagination-link" aria-label="Anchors, Concessions, and Bargaining Tactics">
-        <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Anchors, Concessions, and Bargaining Tactics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="pagination-link" aria-label="First Offers, Anchors, Concessions, and Silence">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
