@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Four description and experience information states</title>
+  <desc id="desc">A two by two matrix shows neither source, description only, experience only, and both sources. Each state has a distinct decision problem and response. A final band recommends joining calibrated description with representative experience.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#123047" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#315d7a"/>
+    </marker>
+    <style>
+      .title { font: 700 38px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #102a43; }
+      .subtitle { font: 400 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #486581; }
+      .axis { font: 700 21px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #243b53; letter-spacing: .4px; }
+      .state { font: 700 26px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #102a43; }
+      .body { font: 400 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #243b53; }
+      .cue { font: 700 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #315d7a; text-transform: uppercase; letter-spacing: .5px; }
+      .bridge { font: 700 21px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
+      .bridge2 { font: 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #eef8ff; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="#f7fafc"/>
+  <text x="700" y="60" text-anchor="middle" class="title">How did the chooser learn about the risk?</text>
+  <text x="700" y="96" text-anchor="middle" class="subtitle">Description states a model; experience supplies a sampled path.</text>
+
+  <text x="735" y="145" text-anchor="middle" class="axis">DESCRIPTION</text>
+  <text x="435" y="180" text-anchor="middle" class="cue">Absent</text>
+  <text x="1035" y="180" text-anchor="middle" class="cue">Present</text>
+  <text x="56" y="455" text-anchor="middle" class="axis" transform="rotate(-90 56 455)">EXPERIENCE</text>
+  <text x="102" y="330" text-anchor="middle" class="cue" transform="rotate(-90 102 330)">Absent</text>
+  <text x="102" y="600" text-anchor="middle" class="cue" transform="rotate(-90 102 600)">Present</text>
+
+  <rect x="145" y="205" width="560" height="235" rx="24" fill="#edf2f7" stroke="#9fb3c8" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="195" cy="252" r="23" fill="#829ab1"/>
+  <text x="195" y="260" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="700" fill="#fff">?</text>
+  <text x="235" y="259" class="state">Neither</text>
+  <text x="185" y="309" class="body">Deep uncertainty: no stable model</text>
+  <text x="185" y="339" class="body">and little relevant feedback.</text>
+  <text x="185" y="386" class="cue">Preserve options</text>
+  <text x="185" y="413" class="body">Seek evidence · stress-test · state ignorance</text>
+
+  <rect x="765" y="205" width="560" height="235" rx="24" fill="#e2f3ff" stroke="#5aa8d6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="787" y="229" width="46" height="46" rx="9" fill="#287fb6"/>
+  <path d="M799 242h22M799 251h22M799 260h16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <text x="855" y="259" class="state">Description only</text>
+  <text x="805" y="309" class="body">Explicit outcomes and probabilities,</text>
+  <text x="805" y="339" class="body">but no personal feedback.</text>
+  <text x="805" y="386" class="cue">Make numbers usable</text>
+  <text x="805" y="413" class="body">Absolute risk · denominator · comparison</text>
+
+  <rect x="145" y="480" width="560" height="235" rx="24" fill="#e8f7f1" stroke="#4fa984" stroke-width="2" filter="url(#shadow)"/>
+  <path d="M178 262" fill="none"/>
+  <circle cx="195" cy="527" r="22" fill="#27896a"/>
+  <path d="M184 527l8 8 16-19" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="235" y="534" class="state">Experience only</text>
+  <text x="185" y="584" class="body">A sampled path without the full</text>
+  <text x="185" y="614" class="body">generating distribution.</text>
+  <text x="185" y="661" class="cue">Audit the sample</text>
+  <text x="185" y="688" class="body">Exposure · selection · stopping · base rates</text>
+
+  <rect x="765" y="480" width="560" height="235" rx="24" fill="#eee9fb" stroke="#8169bd" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="810" cy="527" r="22" fill="#7051ac"/>
+  <path d="M798 527h24M810 515v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <text x="850" y="534" class="state">Both</text>
+  <text x="805" y="584" class="body">Numbers and experience can reinforce</text>
+  <text x="805" y="614" class="body">one another—or point in opposite directions.</text>
+  <text x="805" y="661" class="cue">Reconcile evidence</text>
+  <text x="805" y="688" class="body">Ask what each source observes and misses</text>
+
+  <path d="M705 322H748" stroke="#315d7a" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+  <path d="M705 597H748" stroke="#315d7a" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+
+  <rect x="145" y="762" width="1180" height="96" rx="22" fill="#315d7a"/>
+  <text x="735" y="802" text-anchor="middle" class="bridge">Calibrated description + representative experience + transparent updating</text>
+  <text x="735" y="834" text-anchor="middle" class="bridge2">The objective is not to make risk look larger or smaller. It is to make the evidence inspectable.</text>
+</svg>

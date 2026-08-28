@@ -17,7 +17,7 @@ Then run the canonical source-and-output audit:
 python3 scripts/qa_quarto_book.py
 ```
 
-The command rewrites `QA_REPORT.md`, `qa-report.json`, `CITATION_AUDIT.md`, and `citation-audit.json`. It checks the 38-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, and diagram connectors. Publish only when the report says **PASS**.
+The command rewrites `QA_REPORT.md`, `qa-report.json`, `CITATION_AUDIT.md`, and `citation-audit.json`. It checks the 48-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, and diagram connectors. Publish only when the report says **PASS**.
 
 For a labeled visual-review set, use the bundled artifact Python runtime (or any Python with Pillow):
 

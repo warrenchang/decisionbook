@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Three lenses on strategic behavior</title>
+  <desc id="desc">A game specification branches from one centered point to three evenly spaced lenses. Equilibrium asks about mutual best responses and stability. Behavioral reasoning asks about beliefs, level-k thinking, and learning. Population dynamics asks about imitation, selection, mutation, and local interaction. The lenses converge on conditional predictions, followed by an audit distinguishing stability, observed choice, and evolutionary prevalence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#25678f"/></marker>
+    <marker id="auditArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b95f2d"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#183047">Three lenses on strategic behavior</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">One game can support several questions; the answers are not interchangeable.</text>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="400" y="105" width="400" height="80" rx="20" fill="#183047"/>
+    <text x="600" y="139" text-anchor="middle" font-size="23" font-weight="700" fill="#ffffff">GAME SPECIFICATION</text>
+    <text x="600" y="166" text-anchor="middle" font-size="16" fill="#d8e6ef">players • actions • payoffs • information • timing</text>
+
+    <rect x="55" y="255" width="320" height="270" rx="22" fill="#eaf3f8" stroke="#25678f" stroke-width="3"/>
+    <text x="215" y="298" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">EQUILIBRIUM</text>
+    <text x="215" y="327" text-anchor="middle" font-size="17" font-weight="700" fill="#25678f">benchmark</text>
+    <line x1="95" y1="348" x2="335" y2="348" stroke="#9eb9ca" stroke-width="2"/>
+    <text x="215" y="385" text-anchor="middle" font-size="17" fill="#607080">best responses</text>
+    <text x="215" y="416" text-anchor="middle" font-size="17" fill="#607080">Nash equilibrium</text>
+    <text x="215" y="447" text-anchor="middle" font-size="17" fill="#607080">stability to one deviation</text>
+    <rect x="91" y="471" width="248" height="35" rx="12" fill="#ffffff"/>
+    <text x="215" y="494" text-anchor="middle" font-size="14" font-weight="700" fill="#25678f">What fits together?</text>
+
+    <rect x="440" y="255" width="320" height="270" rx="22" fill="#f5ebf5" stroke="#795a8a" stroke-width="3"/>
+    <text x="600" y="298" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">BEHAVIORAL</text>
+    <text x="600" y="327" text-anchor="middle" font-size="17" font-weight="700" fill="#795a8a">reasoning</text>
+    <line x1="480" y1="348" x2="720" y2="348" stroke="#c8afd0" stroke-width="2"/>
+    <text x="600" y="385" text-anchor="middle" font-size="17" fill="#607080">beliefs about others</text>
+    <text x="600" y="416" text-anchor="middle" font-size="17" fill="#607080">level-k • hierarchy</text>
+    <text x="600" y="447" text-anchor="middle" font-size="17" fill="#607080">feedback and learning</text>
+    <rect x="476" y="471" width="248" height="35" rx="12" fill="#ffffff"/>
+    <text x="600" y="494" text-anchor="middle" font-size="14" font-weight="700" fill="#795a8a">How do people predict?</text>
+
+    <rect x="825" y="255" width="320" height="270" rx="22" fill="#edf4ed" stroke="#447c55" stroke-width="3"/>
+    <text x="985" y="298" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">POPULATION</text>
+    <text x="985" y="327" text-anchor="middle" font-size="17" font-weight="700" fill="#447c55">dynamics</text>
+    <line x1="865" y1="348" x2="1105" y2="348" stroke="#a9c7b1" stroke-width="2"/>
+    <text x="985" y="385" text-anchor="middle" font-size="17" fill="#607080">imitation • selection</text>
+    <text x="985" y="416" text-anchor="middle" font-size="17" fill="#607080">mutation • reproduction</text>
+    <text x="985" y="447" text-anchor="middle" font-size="17" fill="#607080">networks and space</text>
+    <rect x="861" y="471" width="248" height="35" rx="12" fill="#ffffff"/>
+    <text x="985" y="494" text-anchor="middle" font-size="14" font-weight="700" fill="#447c55">Which strategy spreads?</text>
+
+    <rect x="285" y="590" width="630" height="72" rx="19" fill="#f7f9fc" stroke="#25678f" stroke-width="3"/>
+    <text x="600" y="621" text-anchor="middle" font-size="21" font-weight="700" fill="#183047">CONDITIONAL PREDICTIONS</text>
+    <text x="600" y="647" text-anchor="middle" font-size="16" fill="#607080">state the game, beliefs or update rule, population, and failure conditions</text>
+
+    <rect x="155" y="700" width="890" height="45" rx="20" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
+    <text x="600" y="729" text-anchor="middle" font-size="17" font-weight="700" fill="#183047">AUDIT: stability ≠ observed choice ≠ learning path ≠ evolutionary prevalence</text>
+  </g>
+
+  <line x1="600" y1="185" x2="600" y2="218" stroke="#25678f" stroke-width="4"/>
+  <line x1="215" y1="218" x2="985" y2="218" stroke="#25678f" stroke-width="4"/>
+  <line x1="215" y1="218" x2="215" y2="252" stroke="#25678f" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="218" x2="600" y2="252" stroke="#25678f" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="985" y1="218" x2="985" y2="252" stroke="#25678f" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <line x1="215" y1="525" x2="215" y2="555" stroke="#25678f" stroke-width="3.5"/>
+  <line x1="600" y1="525" x2="600" y2="555" stroke="#25678f" stroke-width="3.5"/>
+  <line x1="985" y1="525" x2="985" y2="555" stroke="#25678f" stroke-width="3.5"/>
+  <line x1="215" y1="555" x2="985" y2="555" stroke="#25678f" stroke-width="3.5"/>
+  <line x1="600" y1="555" x2="600" y2="587" stroke="#25678f" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="662" x2="600" y2="697" stroke="#b95f2d" stroke-width="4" marker-end="url(#auditArrow)"/>
+</svg>

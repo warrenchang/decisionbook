@@ -1,0 +1,315 @@
+# Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err
+
+*A market can aggregate information quickly even when many participants are biased. An investor can identify a real historical pattern and still have no profitable trade after risk, costs, crowding, and model uncertainty.*
+
+::: {.callout-note .core-idea icon=false}
+## Core idea
+
+Market efficiency is a benchmark about prices, information, expected returns, risk, and costs—not a claim that every investor is rational or every price is correct. Behavioral finance asks how psychology, limits to arbitrage, and market interaction shape decisions and prices. Every apparent anomaly therefore needs competing explanations and an implementation test.
+:::
+
+::: {.callout-warning icon=false}
+## Educational analysis, not investment advice
+
+The cases and historical return patterns in this chapter are tools for disciplined inference. They do not identify a security to buy or sell, guarantee that a pattern will persist, or replace a portfolio analysis suited to an investor's goals, constraints, taxes, costs, and capacity for loss.
+:::
+
+## Learning goals
+
+- Explain informational efficiency without assuming that every investor is rational.
+- Distinguish “no free lunch” from the stronger claim that every price equals fundamental value.
+- Interpret event studies, return anomalies, and post-publication attenuation with appropriate caveats.
+- Compare risk, behavioral mispricing, frictions, model misspecification, and data mining as explanations.
+- Use a falsifiable investment memo to reduce hindsight, overconfidence, sunk arguments, and outcome bias.
+
+## Opening puzzle: earnings beat expectations
+
+A listed company reports earnings above the analyst consensus before the market opens. Should you buy immediately, wait, or do nothing?
+
+“Good news means buy” is not yet an investment thesis. The question is not whether earnings were good in isolation. It is whether the announcement was better than the expectations already embedded in the price, whether your order can be executed before prices adjust, and whether the apparent return survives risk and costs.
+
+Write down what your choice requires:
+
+- Was the information public and unambiguous?
+- At what time did it become tradable?
+- How much surprise was already anticipated?
+- What price reaction do you predict—immediate, delayed, or reversed?
+- Relative to what expected-return model would the subsequent return be abnormal?
+- What spread, fee, tax, liquidity, and position risk would implementation create?
+
+The exercise reveals why behavioral finance is not a catalogue of profitable mistakes. It is a study of how information becomes price, how evidence is tested, and why identifying an error does not imply that it can be safely arbitraged.
+
+## Why study behavior in financial markets?
+
+Many criticisms of behavioral research point to small stakes, artificial tasks, or limited opportunities to learn. Financial markets appear to be the hardest place for behavioral effects to survive: stakes are high, feedback is frequent, professional traders are present, and mistakes can be exploited.
+
+That makes markets an informative stress test. If biased judgment still affects investment or price under these conditions, learning and competition have not automatically removed it. But the reverse is equally important: a biased investor does not prove a biased market. Other participants can trade against the error, information can aggregate, and prices can become useful even when the path is psychologically messy.
+
+Conventional finance asks how assets and liabilities should be allocated across time and uncertainty under stated assumptions. Behavioral finance asks how people and markets actually behave when attention, beliefs, reference points, social learning, overconfidence, and constraints enter the system (Barberis & Thaler, 2003). The two perspectives need each other. A descriptive anomaly is visible only relative to a benchmark.
+
+## The €20 note and three meanings of efficiency
+
+The familiar joke says that a financial economist would not pick up a €20 note because, in an efficient market, someone would already have taken it. But information is not free. People search precisely because a reward may remain.
+
+The **efficient market hypothesis** concerns the incorporation of a specified information set into prices, conditional on a model of expected returns (Fama, 1970, 1991):
+
+- **Weak form:** the information set includes historical prices and returns.
+- **Semi-strong form:** it includes publicly available information.
+- **Strong form:** it includes all information, even private information—a much stronger benchmark.
+
+Three claims are easily confused:
+
+1. **Information is incorporated quickly.** Price responds to a specified signal.
+2. **No free lunch.** A public rule does not reliably earn abnormal return after appropriate risk and realistic costs.
+3. **The price is right.** Market price equals a well-defined fundamental value.
+
+The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.
+
+Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.
+
+## Fast price discovery is possible
+
+Public news can move prices extraordinarily quickly. When the US Federal Reserve released its [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) at 14:00 on September 18, 2013, financial prices reacted within fractions of a second. The example shows that a human reading the press release after publication may be far behind automated and professional responses.
+
+Price discovery can also aggregate dispersed clues. The space shuttle *Challenger* exploded at 11:39 a.m. on January 28, 1986; the news appeared on a major financial wire minutes later. Four publicly traded contractors were connected to the launch. By the end of the trading response, Morton Thiokol experienced the distinctive loss. A presidential commission identified the failure of booster O-ring seals made by Thiokol months later. Maloney and Mulherin (2003) found no simple news story or obvious insider-trading trail that fully explained the early discrimination. The market appeared to combine dispersed information, inference, and trading.
+
+But “the market knew” is too strong. Price discovery can be correct for the wrong reason, and a single case does not show that markets always identify responsibility. It establishes a possibility: collective trading can reveal information no single public announcement states.
+
+The wisdom of a market depends on conditions also familiar from crowd judgment: dispersed information, some independence, incentives to reveal beliefs, and an aggregation mechanism. If participants copy the same signal or face the same constraint, the crowd can amplify error instead.
+
+## Every efficiency test is a joint test
+
+To label a return abnormal, we must first say what return was expected. Suppose an asset earns 12%. That is not evidence of mispricing until we specify its risk, exposures, time period, benchmark, and costs.
+
+Fama (1991) emphasizes the **joint-hypothesis problem**: a test evaluates market efficiency together with an asset-pricing model. A rejection can mean:
+
+- information was not incorporated efficiently;
+- the expected-return model omitted a priced risk or exposure;
+- the implementation assumed impossible timing or ignored costs;
+- the sample or statistic was selected after seeing the data;
+- or some combination of these.
+
+![A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.](../figures/behavioral-finance-audit.svg){#fig-behavioral-finance-audit fig-alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence."}
+
+This is why “prices changed after the event” and “I can profit from the event” are separate claims.
+
+## Event studies: turning a story into a test
+
+An **event study** estimates security returns around a defined event (MacKinlay, 1997). A credible design makes the inferential chain explicit:
+
+1. Define the event and its first public time.
+2. Specify an estimation window for the expected-return model.
+3. Specify an event window in which reaction is measured.
+4. Compute abnormal return as actual return minus expected return.
+5. Aggregate across securities or time into average abnormal returns or cumulative abnormal returns.
+6. Test uncertainty and inspect confounding events.
+
+If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.
+
+Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.
+
+Return to the opening puzzle. A good answer may still be “buy,” “wait,” or “do nothing,” but it must now name the information, expected-price response, benchmark, implementation assumptions, and evidence that would falsify the thesis.
+
+## The anomaly jigsaw
+
+An **anomaly** is a documented empirical pattern that is difficult to reconcile with a specified benchmark. The word does not tell us whether the source is behavioral error, omitted risk, frictions, or chance.
+
+| Pattern | Historical finding | Behavioral account | Competing account and caution |
+| --- | --- | --- | --- |
+| Size | Smaller firms earned higher average returns in early samples (Banz, 1981). | Neglect, limited attention, or segmented demand. | Risk, illiquidity, micro-cap trading costs, sample sensitivity; the effect weakened in later periods. |
+| Value | Stocks cheap relative to book value, earnings, or cash flow outperformed expensive “growth” stocks in many samples and countries (Fama & French, 1992, 1998). | Extrapolation of growth stories and overreaction to past performance. | Distress or other priced risk, changing definitions, implementation costs. |
+| Momentum | Recent winners continued to outperform recent losers over intermediate horizons in historical samples (Jegadeesh & Titman, 1993). | Underreaction, gradual diffusion, or herding. | Time-varying risk, crash exposure, turnover and costs, crowding. |
+| Long-run reversal | Extreme prior losers outperformed prior winners over longer horizons in an early study (De Bondt & Thaler, 1985). | Overreaction followed by correction. | Benchmark problems, size effects, survivorship, overlapping formation periods. |
+| Earnings drift | Returns continued in the direction of earnings surprise after announcements. | Conservatism, inattention, or gradual updating. | Expected-return model, confounds, measurement, implementation. |
+: Historical return patterns require competing explanations, not a single behavioral label {#tbl-finance-anomalies}
+
+Value and growth illustrate the interpretive conflict. A low price relative to accounting fundamentals can mean the market is too pessimistic—or that the firm is exposed to risks not captured by the simple comparison. A compelling growth story can describe a successful company while its stock produces a poor return because the success was already priced. Good company, good price, and good future return are three different judgments.
+
+The same separation applies to horizons. Momentum over months and reversal over years are not logically inconsistent: different mechanisms or samples may dominate at different horizons. But attaching two labels after observing a path can also make a theory impossible to falsify. Before seeing the outcome, state which horizon and mechanism the thesis predicts.
+
+## Data mining, publication, and attenuation
+
+Finance offers thousands of securities, variables, transformations, subperiods, and portfolio rules. If researchers test enough signals, some will appear significant by chance. Harvey, Liu, and Zhu (2016) argue that the expanding “factor zoo” requires much stronger standards than a conventional isolated test.
+
+A useful anomaly audit asks:
+
+- Was the predictor and specification chosen before or after inspecting returns?
+- Does the result survive alternative risk models and definitions?
+- Does it replicate in another market or time period?
+- Is the return concentrated in illiquid securities or impossible positions?
+- Does it survive spreads, turnover, borrowing constraints, taxes, and capacity?
+- Is there a mechanism that predicts where the result should strengthen or fail?
+- What happened after the result became public?
+
+McLean and Pontiff (2016) found that average return predictability declined after academic publication. Part of the decline may reflect traders learning and arbitraging the signal; part may reflect initial statistical bias. Either way, a historical backtest is not a stationary law. Discovery changes the environment being studied.
+
+This is the €20 note in dynamic form. Search can find opportunities, but taking them changes prices. If everybody believes no opportunity can exist, insufficient search can leave information uncollected. If everybody crowds into a published rule, the opportunity can disappear or reverse.
+
+## Limits to arbitrage: seeing an error is not enough
+
+The textbook arbitrageur buys an underpriced substitute and sells an overpriced one, locking in convergence. Real mispricing is rarely so clean. Shleifer and Vishny (1997) show why informed traders may be unable or unwilling to correct it:
+
+- **Fundamental risk:** the asset's underlying value can worsen before convergence.
+- **Noise-trader risk:** mispricing can become larger before it becomes smaller.
+- **Horizon risk:** clients or managers may withdraw capital after interim losses.
+- **Short-sale constraints:** borrowing can be unavailable, recalled, or expensive.
+- **Model risk:** the apparent mispricing may be the analyst's error.
+- **Transaction and funding costs:** spreads, market impact, leverage, and margin calls can dominate.
+
+Professional incentives can shorten the horizon precisely when a long-horizon correction is expected. An arbitrageur can be right eventually and insolvent first. Behavioral market outcomes therefore require both a source of biased demand and a reason better-informed capital does not fully offset it.
+
+## Technical, fundamental, and statistical stories
+
+**Fundamental analysis** estimates value from cash flows, assets, earnings, industry conditions, and economic drivers. **Technical analysis** uses price, volume, trends, and indicators, often on the premise that behavior creates persistent patterns. The distinction is useful, but neither label validates the forecast.
+
+Humans see structure in noisy paths. In demonstrations where actual market charts are mixed with random-number-generated series, even experienced observers struggle to distinguish them. A convincing pattern can be produced by chance. That does not show that every price pattern is random; it shows why a visual story needs an out-of-sample rule.
+
+Market-timing rules illustrate the trade-off. A moving-average strategy may avoid some severe declines and reduce measured volatility, but frequent switching during trendless periods can sacrifice return through missed rebounds and costs. “Time in the market” and “timing the market” are not slogans that settle every case. The evaluation must specify the rule before the sample, include all switches, and compare risk-adjusted after-cost outcomes.
+
+### Arithmetic averages can conceal multiplicative ruin
+
+Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from DKK 10,000 is more than DKK 1.4 million:
+
+$$
+10{,}000(1.10)^{52} \approx 1{,}420{,}000.
+$$
+
+But the most likely balanced sequence—26 rises and 26 falls—leaves approximately:
+
+$$
+10{,}000(1.8)^{26}(0.4)^{26} = 10{,}000(0.72)^{26} \approx 1.95.
+$$
+
+The expected value is dominated by rare paths with many gains; typical compounded wealth collapses because the geometric growth rate is negative. The example is deliberately extreme, but its lesson is general: average return, expected terminal wealth, median outcome, drawdown, and probability of ruin are not interchangeable. A strategy can have positive expected return and still be unacceptable under limited wealth.
+
+## Investor behavior: the decision process matters
+
+Investment mistakes often combine mechanisms already developed in the book:
+
+- **Overconfidence** creates narrow ranges, concentrated positions, and excessive trading.
+- **Availability and attention** make vivid news or salient stocks feel more diagnostic.
+- **Representativeness** turns a good company story into a high-return forecast.
+- **Confirmation and hindsight** protect a thesis after disconfirming evidence.
+- **Mental accounting** isolates positions and creates a disposition effect.
+- **Loss aversion and narrow bracketing** make frequent evaluation painful.
+- **Social proof** turns price appreciation into evidence that others know more.
+
+Barber and Odean (2000) found that the individual investors who traded most in their brokerage sample earned substantially lower net returns than those who traded least. The result is consistent with overconfidence plus trading costs; it is not a claim that every trade is mistaken or that passive investing fits every objective.
+
+The discipline is to evaluate process separately from outcome. A well-reasoned decision can lose because risk materializes. A poor decision can win because luck is favorable. Outcome-only learning rewards noise.
+
+## A falsifiable investment memo
+
+Before the outcome is known, write one page:
+
+1. **Decision and noninvestment option.** What exactly will be done, in what size, and why is doing nothing inferior?
+2. **Thesis.** State the causal claim in one sentence.
+3. **Embedded expectations.** What does the current price already require the firm or market to achieve?
+4. **Base rate and comparison class.** What happened in similar situations?
+5. **Drivers.** Name the two or three variables that must move.
+6. **Disconfirmation.** What observation would make the thesis materially less plausible?
+7. **Risks and dependence.** Which exposures could fail together?
+8. **Implementation.** Include spreads, liquidity, taxes, financing, capacity, and time horizon.
+9. **Position and exit rules.** Precommit a maximum exposure, review date, and conditions for reducing, adding, or closing.
+10. **Evaluation.** Separate frequent risk monitoring from the horizon on which performance will be judged.
+
+Then red-team the memo. Look for an unfalsifiable escape (“the market will recognize it eventually”), a sunk argument (“we have already lost too much to sell”), a missing denominator, a selected backtest, or a position too large for the uncertainty.
+
+The memo cannot remove risk. It creates an honest record of what was believed, why action was justified, and what should be learned.
+
+## Key ideas
+
+- Market efficiency concerns abnormal return relative to a specified information set and expected-return model, after risk and costs.
+- “Information is incorporated,” “no free lunch,” and “the price is right” are different claims.
+- Every efficiency test is a joint test; rejection can implicate efficiency, the expected-return model, or both.
+- Event studies require explicit event timing, benchmarks, windows, abnormal returns, and confound checks.
+- Size, value, momentum, reversal, and earnings drift are historical patterns with competing behavioral, risk, friction, and data-mining explanations.
+- Discovery and trading can attenuate a pattern; backtests must be evaluated out of sample and after publication.
+- Limits to arbitrage explain why identifying possible mispricing is not the same as safely correcting it.
+- A falsifiable memo separates thesis, price expectations, risks, disconfirmation, implementation, and process quality from realized outcome.
+
+## Study and practice
+
+1. Explain how a market can aggregate information while many investors remain biased.
+2. Distinguish “no free lunch” from “the price is right.”
+3. Why is every market-efficiency test a joint test?
+4. Design the event and estimation windows for one public announcement. What could confound attribution?
+5. Choose one anomaly and give a behavioral, a risk-based, and a data-mining explanation.
+6. Why can a positive arithmetic average coexist with a disastrous typical compounded path?
+7. Name one limit to arbitrage that can make a correct long-run view fail in the short run.
+8. What evidence would force you to revise an investment thesis before the realized return is known?
+
+::: {.callout-tip .activity icon=false}
+## Activity: anomaly jigsaw and red team
+
+Audit one historical pattern—size, value, momentum, reversal, or earnings drift. Record its specification, risk adjustment, out-of-sample evidence, trading costs, post-publication performance, one behavioral mechanism, and one nonbehavioral mechanism. Then write the strongest claim the evidence supports and one claim it does not. Convert the result into a fictional investment memo with a noninvestment option, position limit, disconfirming signal, and review date. Exchange memos and red-team the process, not the person.
+
+EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
+Experience: state the pattern and sample. Explain: compare at least two mechanisms. Apply: specify one pre-outcome test and one implementation constraint.
+:::
+
+## References cited in this chapter
+
+::: {.reference}
+Banz, R. W. (1981). The relationship between return and market value of common stocks. Journal of Financial Economics, 9(1), 3–18.
+:::
+
+::: {.reference}
+Barber, B. M., & Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. Journal of Finance, 55(2), 773–806.
+:::
+
+::: {.reference}
+Barberis, N., & Thaler, R. (2003). A survey of behavioral finance. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 1B, pp. 1053–1128). Elsevier.
+:::
+
+::: {.reference}
+De Bondt, W. F. M., & Thaler, R. (1985). Does the stock market overreact? Journal of Finance, 40(3), 793–805.
+:::
+
+::: {.reference}
+Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25(2), 383–417.
+:::
+
+::: {.reference}
+Fama, E. F. (1991). Efficient capital markets: II. Journal of Finance, 46(5), 1575–1617.
+:::
+
+::: {.reference}
+Fama, E. F., & French, K. R. (1992). The cross-section of expected stock returns. Journal of Finance, 47(2), 427–465.
+:::
+
+::: {.reference}
+Fama, E. F., & French, K. R. (1998). Value versus growth: The international evidence. Journal of Finance, 53(6), 1975–1999.
+:::
+
+::: {.reference}
+Grossman, S. J., & Stiglitz, J. E. (1980). On the impossibility of informationally efficient markets. American Economic Review, 70(3), 393–408.
+:::
+
+::: {.reference}
+Harvey, C. R., Liu, Y., & Zhu, H. (2016). … and the cross-section of expected returns. Review of Financial Studies, 29(1), 5–68.
+:::
+
+::: {.reference}
+Jegadeesh, N., & Titman, S. (1993). Returns to buying winners and selling losers: Implications for stock market efficiency. Journal of Finance, 48(1), 65–91.
+:::
+
+::: {.reference}
+MacKinlay, A. C. (1997). Event studies in economics and finance. Journal of Economic Literature, 35(1), 13–39.
+:::
+
+::: {.reference}
+Maloney, M. T., & Mulherin, J. H. (2003). The complexity of price discovery in an efficient market: The stock market reaction to the Challenger crash. Journal of Corporate Finance, 9(4), 453–479.
+:::
+
+::: {.reference}
+McLean, R. D., & Pontiff, J. (2016). Does academic research destroy stock return predictability? Journal of Finance, 71(1), 5–32.
+:::
+
+::: {.reference}
+Rendleman, R. J., Jr., Jones, C. P., & Latané, H. A. (1982). Empirical anomalies based on unexpected earnings and the importance of risk adjustments. Journal of Financial Economics, 10(3), 269–287.
+:::
+
+::: {.reference}
+Shleifer, A., & Vishny, R. W. (1997). The limits of arbitrage. Journal of Finance, 52(1), 35–55.
+:::
