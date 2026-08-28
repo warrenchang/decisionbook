@@ -15,7 +15,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = ROOT / "_quarto.yml"
+CONFIG = ROOT / "_quarto-html.yml"
 MASTER = ROOT / "references.qmd"
 CHAPTER_LINE = re.compile(r"^\s*-\s+(chapters/[^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(

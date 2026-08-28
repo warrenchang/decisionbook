@@ -77,7 +77,7 @@ After the causal spine is clear, SUCCESs asks whether the message is Simple, Une
 
 ## The STORY framework
 
-In entrepreneurship and applied persuasion, a longer structure is often needed. The STORY framework can be used in two closely related versions. In a business pitch, S often stands for stakeholder. In broader DPN persuasion, S can stand for shared reality. The logic is the same: start from the audience's decision, not from your information.
+In entrepreneurship and applied persuasion, a longer structure is often needed. The STORY framework can be used in two closely related versions. In a business pitch, S often stands for stakeholder. In broader persuasive communication, S can stand for shared reality. The logic is the same: start from the audience's decision, not from your information.
 
 A one-sentence STORY pitch can be written as: For [specific stakeholder] trying to [goal], [trouble] causes [cost, risk, or frustration], but [change or insight] creates a new opportunity; therefore [solution or idea] creates [value], supported by [evidence], and asks for [specific next step].
 
@@ -111,7 +111,7 @@ For example, a public health message might begin with a patient who misses a scr
 
 Use data to show scale; use story to show meaning. Data answers: How common is this? How large is the effect? How reliable is the pattern? Story answers: What does this mean in lived experience? Why should we care? How does the mechanism unfold? What action becomes possible?
 
-## Applications across DPN
+## Applications across domains
 
 ### Teaching and academic writing
 
@@ -247,27 +247,27 @@ The strongest persuasion often combines narrative and analysis: story creates cu
 
 ### Familiarity plus surprise
 
-The DPN materials also introduced the design principle MAYA: most advanced yet acceptable. Research on industrial design similarly finds that novelty and typicality can jointly shape aesthetic preference, although this is not a universal law of storytelling (Hekkert et al., 2003). The same principle applies to persuasive stories. A story that is too familiar may be boring because it creates no update. A story that is too strange may be rejected because the audience cannot enter it. Good persuasion often combines familiarity with surprise. It starts inside the audience's current model and then introduces a discrepancy that is close enough to understand but strong enough to matter.
+Raymond Loewy's design principle MAYA—most advanced yet acceptable—also applies to persuasive stories. Research on industrial design similarly finds that novelty and typicality can jointly shape aesthetic preference, although this is not a universal law of storytelling (Hekkert et al., 2003). A story that is too familiar may be boring because it creates no update. A story that is too strange may be rejected because the audience cannot enter it. Good persuasion often combines familiarity with surprise. It starts inside the audience's current model and then introduces a discrepancy that is close enough to understand but strong enough to matter.
 
 In storytelling terms, familiarity gives the audience a door. Surprise gives them a reason to walk through it. A public-health story about screening is stronger when the protagonist is not a cartoon of irresponsibility, but a recognizable person facing fear, inconvenience, family obligations, and uncertainty. The surprise is not that the person is foolish. The surprise is that good intentions can fail when the system makes action hard.
 
 ### Numbers, images, metaphors, and scale
 
-The DPN persuasion materials emphasized that numbers alone often fail because people struggle to feel scale. This does not make numbers unimportant. It means numbers need representation. A statement such as "the richest 1% own 31% of the wealth" may be accurate, but many listeners cannot picture the distribution. A metaphor can translate scale: imagine a 100-apartment building in which one person owns 31 apartments, ten people own 70 apartments, and the bottom half share only a tiny fraction of the building. The image does not replace the statistic. It makes the statistic imaginable.
+Numbers alone often fail because people struggle to feel scale. This does not make numbers unimportant. It means numbers need representation. A statement such as "the richest 1% own 31% of the wealth" may be accurate, but many listeners cannot picture the distribution. A metaphor can translate scale: imagine a 100-apartment building in which one person owns 31 apartments, ten people own 70 apartments, and the bottom half share only a tiny fraction of the building. The image does not replace the statistic. It makes the statistic imaginable.
 
 Metaphor also frames causal models. In experiments on crime metaphors, describing crime as a wild beast increased support for capture-and-punishment responses, whereas describing it as a virus increased support for diagnosis and prevention (Thibodeau & Boroditsky, 2011). Both metaphors may highlight something real, but each also hides something. A beast metaphor can hide social causes; a virus metaphor can hide agency and harm. Ethical metaphor use requires asking what the metaphor makes visible and what it makes invisible.
 
-Vivid images work for the same reason. The slides used concrete images such as a horse-sized syringe to make scale felt. The craft lesson is not to exaggerate. It is to convert abstraction into perception. If the audience cannot see, hear, feel, or imagine the implication, the message may remain inert.
+Vivid images work for the same reason. A horse-sized syringe, for example, can make an otherwise abstract scale immediately perceptible. The craft lesson is not to exaggerate. It is to convert abstraction into perception. If the audience cannot see, hear, feel, or imagine the implication, the message may remain inert.
 
 ### Responsible compassion
 
-The original persuasion slides discussed the power of a single identifiable victim, often illustrated with the Rokia-style charity example: people may respond more strongly to one named child than to statistics about many thousands. This chapter has already discussed the identifiable victim effect and psychic numbing. The DPN application is to combine compassion with scale. A story of one person can open the heart; evidence must then show how that person connects to the broader pattern.
+The identifiable-victim effect is often illustrated with a named-child charity example: people may respond more strongly to one identifiable person than to statistics about many thousands. This chapter has already discussed the identifiable-victim effect and psychic numbing. The practical response is to combine compassion with scale. A story of one person can open the heart; evidence must then show how that person connects to the broader pattern.
 
 A responsible humanitarian message might say: "This is one person's story, and it is one window into a broader problem affecting many people." An irresponsible message lets the audience infer that the most vivid case is the typical case, or lets one moving story determine policy without base rates, comparison cases, or unintended consequences. Ethical storytelling does not ask us to feel less. It asks us to connect feeling to proportion.
 
 ### Associative backfire
 
-The persuasion slides warned that a message can activate the very association it tries to defeat. A campaign attacking a slogan may repeat the opponent's slogan so vividly that the opponent's frame becomes more memorable. A phrase such as "Make America Sick Again" can unintentionally pair one's own side with sickness because the mind often keeps the image after it forgets the negation. The shift from "Don't be evil" to "Do the right thing" illustrates a related principle: negated frames can still keep unwanted concepts active.
+A message can activate the very association it tries to defeat. A campaign attacking a slogan may repeat the opponent's slogan so vividly that the opponent's frame becomes more memorable. A phrase such as "Make America Sick Again" can unintentionally pair one's own side with sickness because the mind often keeps the image after it forgets the negation. The shift from "Don't be evil" to "Do the right thing" illustrates a related principle: negated frames can still keep unwanted concepts active.
 
 The same risk appears in storytelling. Graphic descriptions, humiliating examples, or vivid depictions of harmful behavior can make the wrong image travel. Fear appeals can capture attention but collapse agency. A story about cheating may accidentally teach methods. A story about corruption may make corruption feel normal. Before using a vivid story, ask: what picture, emotion, and association will remain in the audience after the argument fades?
 

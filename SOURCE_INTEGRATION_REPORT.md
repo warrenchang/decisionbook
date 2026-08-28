@@ -80,6 +80,8 @@ This sequence follows the decks' planned progression. It also restores three sub
 
 The revision uses the following rule: **copyright status is not changed merely by cropping, recoloring, tracing, restyling, or asking a generative system to imitate an existing protected image**. A superficial modification was therefore never treated as a copyright cure.
 
+The companion [`SLIDE_IMAGE_INTEGRATION_REPORT.md`](SLIDE_IMAGE_INTEGRATION_REPORT.md) and `audits/slide-images-reviewed.csv` provide the image-level audit: all 396 visual occurrences across the eight decks, including hidden slides and duplicates, have an exact rights/treatment disposition.
+
 - Original diagrams were rebuilt as native SVGs from concepts or primary numerical results.
 - Videos and film/television examples are linked and framed with a prediction, observation question, mechanism, and boundary condition; their frames are not reproduced.
 - Journal, book, news, advertisement, website, and commercial-deck screenshots were not copied unless rights were independently clear.

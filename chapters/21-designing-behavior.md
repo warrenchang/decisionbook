@@ -41,7 +41,7 @@ Identity can support behavior change when behavior becomes evidence for the kind
 
 Relapse planning prevents all-or-nothing collapse. A lapse tells you which cue, state, or friction you underestimated. The question is not "What is wrong with me?" but "What did the loop learn?" A useful plan is: if I miss once, then I restart at the next cue. A lapse is not a verdict; it is a bug report.
 
-## DPN applications
+## Applications under pressure
 
 Habits matter in this course because decision, persuasion, and negotiation skills usually fail under pressure. The goal is not only to know the right concept, but to have a prepared response when the cue appears.
 
@@ -119,9 +119,9 @@ Digital habits are sticky because they combine several behavioral forces. The cu
 
 Several themes from the source chapters deserve explicit integration because they keep behavior change from becoming a purely individual or motivational story. Habits are supported by stable contexts. When contexts change, old habits may weaken and new ones may become possible. But contexts are not only physical. They are also social and identity-based. People repeat behaviors partly because those behaviors answer the question: What do people like us do, and who am I becoming when I do this?
 
-## DPN habit scripts
+## Portable habit scripts
 
-Decision, Persuasion, and Negotiation are learned practices. Students do not improve only by learning definitions. They improve when better behaviors become easier, prompted, rewarded, protected, ethically embedded, and connected to obstacle-sensitive plans. A DPN habit script converts a principle into a cue-linked action that can survive pressure.
+Decision, persuasion, and negotiation are learned practices. Students do not improve only by learning definitions. They improve when better behaviors become easier, prompted, rewarded, protected, ethically embedded, and connected to obstacle-sensitive plans. A portable habit script converts a principle into a cue-linked action that can survive pressure.
 
 ## Relapse, recovery, and ethics
 

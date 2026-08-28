@@ -36,4 +36,57 @@ No image is treated as cleared merely because it appeared in a lecture deck. No 
 
 ## Reviewed disposition and book additions
 
-_This section is generated after the occurrence-level editorial review and complete-book visual QA._
+The reviewed ledger accounts for **396 of 396 occurrences exactly once**. Of these, **298 are substantive** and have a completed pedagogical treatment. The remaining 98 are explicitly accounted for as 47 decorative items, 38 exact duplicates, and 13 administrative images such as QR codes or live-poll interfaces.
+
+| Treatment | Occurrences | What the book does |
+| --- | ---: | --- |
+| Represented in prose, a table, or an activity | 213 | Preserves the example, mechanism, result, qualification, or teaching prompt without copying protected expression. |
+| Represented by an existing original book visual | 39 | Routes the slide idea to an already available accessible SVG. |
+| Linked to the original source | 26 | Uses an authorised/source link and a predict–observe–debrief prompt; no frame or screenshot is copied. |
+| Re-expressed through a new original visual | 20 | Rebuilds the underlying study facts or teaching idea across fourteen new visuals. |
+| Decorative omitted | 47 | Omits title art, divider art, and atmosphere-only imagery. |
+| Exact duplicate accounted | 38 | Records the repeated occurrence without duplicating the book treatment. |
+| Administrative omitted | 13 | Replaces ephemeral QR, Padlet, and poll interfaces with durable instructions where the activity is substantive. |
+| **Total** | **396** | **Every occurrence has a destination or an explicit non-use rationale.** |
+
+The rights review identified 218 protected occurrences, 123 with unclear provenance, 43 containing only facts or data suitable for independent re-expression, 11 for which rights were not applicable, and one author-owned occurrence. No embedded slide asset had verified public-domain or open-license provenance. Consequently, **no raw slide raster was copied into the book**.
+
+### Fourteen new original visuals
+
+The image pass adds twelve accessible SVG figures with 2× PNG companions and two original raster illustrations. Several source occurrences can map to one integrated figure, which is why twenty occurrence-level redraw treatments produce fourteen unique visuals.
+
+| New figure | Destination | Editorial function |
+| --- | --- | --- |
+| `norm-message-diagnostic` | *Conformity: When Popularity Becomes Evidence* | Separates descriptive from injunctive norms and makes the backfire test visible. |
+| `first-offer-information-matrix` | *Preparing to Claim Value* | Turns the first-offer advice into a bounded information-and-disclosure heuristic. |
+| `communication-calibration-evidence` | *Communication: Language Is Not a File Transfer* | Redraws verified task-specific values and pairs them with an original perspective-getting schematic. |
+| `conversation-needs-map` | *Connection and Repair: Warm Honesty Makes Truth Usable* | Distinguishes practical, emotional, and social-or-identity needs without diagnosing from one sentence. |
+| `intent-behavior-impact-cycle` | *Connection and Repair: Warm Honesty Makes Truth Usable* | Shows why impact is real evidence but not a motive detector. |
+| `habit-formation-curve` | *Habits: The Plan Is Often Not the Decision-Maker* | Replaces a deadline myth with an explicitly illustrative family of gradual trajectories. |
+| `reward-prediction-error-shift` | *Wanting and Self-Control: Urge Is Not Action* | Re-expresses reward-prediction-error logic while stating that the panels are not neural traces. |
+| `urge-wave-observation` | *Wanting and Self-Control: Urge Is Not Action* | Gives the urge-surfing activity a variable, non-clinical schematic rather than a promised time course. |
+| `affect-panda-sea-star` | *Feeling and Availability: When Ease of Recall Becomes Evidence* | Restores the lecture’s conservation-allocation prompt with a wholly new illustration rather than the source photographs. |
+| `wording-memory-study-redraw` | *Frames Change the Decision* | Redraws the published speed-estimate and false-glass values in an original two-panel chart. |
+| `mimicry-study-redraw` | *Social Learning, Mimicry, and Attribution* | Displays the reported mannerism means together with task-specific and ethical boundaries. |
+| `cultural-market-study-redraw` | *Conformity, Norms, and Social Proof* | Redraws the Music Lab unpredictability pattern and explains its parallel-worlds logic. |
+| `culture-triad-monkey-panda-banana` | *Culture and Identity: The Same Action Is Not the Same Act* | Restores the analytic-versus-relational categorization prompt with a wholly new three-object illustration. |
+| `culture-honor-study-redraw` | *Culture and Identity: The Same Action Is Not the Same Act* | Redraws the published cortisol-change values while keeping the restricted sample and anti-stereotyping boundary visible. |
+
+Each figure has a unique Quarto identifier, a meaningful caption and `fig-alt`, and SVG `<title>` and `<desc>` metadata. The figures are placed at 86–98% of the chapter text width according to their density, with no fixed-width layout dependency.
+
+### Reproducible audit files
+
+- Raw occurrence inventory: `audits/slide-images-raw/slide-image-occurrences.csv`
+- Reviewed disposition ledger: `audits/slide-images-reviewed.csv`
+- Machine summary: `audits/slide-images-reviewed-summary.json`
+- Inventory generator: `scripts/audit_pptx_images.py`
+- Ledger merger: `scripts/merge_slide_image_ledgers.py`
+- Exact-coverage validator: `scripts/qa_slide_image_coverage.py`
+
+The final validator reports: **PASS — all 396 slide-image occurrences have valid reviewed dispositions**.
+
+### Layout and release validation
+
+The fourteen new visuals were inspected at original size and in their chapter renders, alongside a contact review of all 60 canonical chapter figures. One overly long subtitle in the communication-calibration figure and one crowded legend in the culture evidence redraw were reflowed during those passes. Final checks found no clipped text, overlapping labels, detached connectors, unintended arrow directions, or missing PNG companions for the SVG figures.
+
+The complete 52-source Quarto project was rebuilt to `docs/`. Every new figure renders with Quarto's responsive `img-fluid` class and a chapter-specific width between 86% and 98%. The canonical book audit finishes with **0 errors and 0 warnings**, including 0 missing rendered chapters, 0 rendered images without alternative text, and 0 unresolved author–year citations.

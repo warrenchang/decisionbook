@@ -380,7 +380,7 @@ Beliefs concern enrollment, price, employer sponsorship, faculty workload, compl
 
 The decision may be fragile because several probabilities are uncertain. Instead of inventing precise numbers, the university can use scenarios and sensitivity analysis. A prototype workshop, employer interviews, or a small pilot has information value if its outcomes would alter the scale, price, design, or decision to proceed. The final choice should include review dates and stopping, revision, or scaling criteria. Rational analysis therefore turns a debate of slogans into an explicit, testable model.
 
-## The benchmark across DPN
+## The benchmark across the book
 
 The benchmark applies beyond solitary choice.
 
@@ -3256,7 +3256,7 @@ The point is not to shame habit. Habits are essential. Without them, life would 
 
 But habits can also let the past choose for the present. A behavior that once solved a problem may persist after the problem has changed. A routine that once reduced anxiety may prevent growth. A cue that once predicted reward may continue to produce wanting after liking has faded. A culture that once created speed may later block learning. The science of habits therefore asks a precise question: which parts of behavior should become automatic, and which parts require conscious review?
 
-## Why habits belong in DPN
+## Why habits belong in this book
 
 Decision, persuasion, and negotiation are usually taught as deliberate skills. We teach people to analyze options, craft messages, prepare BATNAs, identify interests, ask better questions, and evaluate trade-offs. These skills matter. But knowing what to do is not the same as doing it under pressure. A student may know to check base rates and still rely on a vivid anecdote. A manager may know to invite dissent and still reward agreement. A negotiator may know to ask diagnostic questions and still defend a position when status feels threatened.
 
@@ -3541,7 +3541,7 @@ Identity can support behavior change when behavior becomes evidence for the kind
 
 Relapse planning prevents all-or-nothing collapse. A lapse tells you which cue, state, or friction you underestimated. The question is not "What is wrong with me?" but "What did the loop learn?" A useful plan is: if I miss once, then I restart at the next cue. A lapse is not a verdict; it is a bug report.
 
-## DPN applications
+## Applications under pressure
 
 Habits matter in this course because decision, persuasion, and negotiation skills usually fail under pressure. The goal is not only to know the right concept, but to have a prepared response when the cue appears.
 
@@ -3619,9 +3619,9 @@ Digital habits are sticky because they combine several behavioral forces. The cu
 
 Several themes from the source chapters deserve explicit integration because they keep behavior change from becoming a purely individual or motivational story. Habits are supported by stable contexts. When contexts change, old habits may weaken and new ones may become possible. But contexts are not only physical. They are also social and identity-based. People repeat behaviors partly because those behaviors answer the question: What do people like us do, and who am I becoming when I do this?
 
-## DPN habit scripts
+## Portable habit scripts
 
-Decision, Persuasion, and Negotiation are learned practices. Students do not improve only by learning definitions. They improve when better behaviors become easier, prompted, rewarded, protected, ethically embedded, and connected to obstacle-sensitive plans. A DPN habit script converts a principle into a cue-linked action that can survive pressure.
+Decision, persuasion, and negotiation are learned practices. Students do not improve only by learning definitions. They improve when better behaviors become easier, prompted, rewarded, protected, ethically embedded, and connected to obstacle-sensitive plans. A portable habit script converts a principle into a cue-linked action that can survive pressure.
 
 ## Relapse, recovery, and ethics
 
@@ -4860,7 +4860,7 @@ After the causal spine is clear, SUCCESs asks whether the message is Simple, Une
 
 ## The STORY framework
 
-In entrepreneurship and applied persuasion, a longer structure is often needed. The STORY framework can be used in two closely related versions. In a business pitch, S often stands for stakeholder. In broader DPN persuasion, S can stand for shared reality. The logic is the same: start from the audience's decision, not from your information.
+In entrepreneurship and applied persuasion, a longer structure is often needed. The STORY framework can be used in two closely related versions. In a business pitch, S often stands for stakeholder. In broader persuasive communication, S can stand for shared reality. The logic is the same: start from the audience's decision, not from your information.
 
 A one-sentence STORY pitch can be written as: For [specific stakeholder] trying to [goal], [trouble] causes [cost, risk, or frustration], but [change or insight] creates a new opportunity; therefore [solution or idea] creates [value], supported by [evidence], and asks for [specific next step].
 
@@ -4894,7 +4894,7 @@ For example, a public health message might begin with a patient who misses a scr
 
 Use data to show scale; use story to show meaning. Data answers: How common is this? How large is the effect? How reliable is the pattern? Story answers: What does this mean in lived experience? Why should we care? How does the mechanism unfold? What action becomes possible?
 
-## Applications across DPN
+## Applications across domains
 
 ### Teaching and academic writing
 
@@ -5030,27 +5030,27 @@ The strongest persuasion often combines narrative and analysis: story creates cu
 
 ### Familiarity plus surprise
 
-The DPN materials also introduced the design principle MAYA: most advanced yet acceptable. Research on industrial design similarly finds that novelty and typicality can jointly shape aesthetic preference, although this is not a universal law of storytelling (Hekkert et al., 2003). The same principle applies to persuasive stories. A story that is too familiar may be boring because it creates no update. A story that is too strange may be rejected because the audience cannot enter it. Good persuasion often combines familiarity with surprise. It starts inside the audience's current model and then introduces a discrepancy that is close enough to understand but strong enough to matter.
+Raymond Loewy's design principle MAYA—most advanced yet acceptable—also applies to persuasive stories. Research on industrial design similarly finds that novelty and typicality can jointly shape aesthetic preference, although this is not a universal law of storytelling (Hekkert et al., 2003). A story that is too familiar may be boring because it creates no update. A story that is too strange may be rejected because the audience cannot enter it. Good persuasion often combines familiarity with surprise. It starts inside the audience's current model and then introduces a discrepancy that is close enough to understand but strong enough to matter.
 
 In storytelling terms, familiarity gives the audience a door. Surprise gives them a reason to walk through it. A public-health story about screening is stronger when the protagonist is not a cartoon of irresponsibility, but a recognizable person facing fear, inconvenience, family obligations, and uncertainty. The surprise is not that the person is foolish. The surprise is that good intentions can fail when the system makes action hard.
 
 ### Numbers, images, metaphors, and scale
 
-The DPN persuasion materials emphasized that numbers alone often fail because people struggle to feel scale. This does not make numbers unimportant. It means numbers need representation. A statement such as "the richest 1% own 31% of the wealth" may be accurate, but many listeners cannot picture the distribution. A metaphor can translate scale: imagine a 100-apartment building in which one person owns 31 apartments, ten people own 70 apartments, and the bottom half share only a tiny fraction of the building. The image does not replace the statistic. It makes the statistic imaginable.
+Numbers alone often fail because people struggle to feel scale. This does not make numbers unimportant. It means numbers need representation. A statement such as "the richest 1% own 31% of the wealth" may be accurate, but many listeners cannot picture the distribution. A metaphor can translate scale: imagine a 100-apartment building in which one person owns 31 apartments, ten people own 70 apartments, and the bottom half share only a tiny fraction of the building. The image does not replace the statistic. It makes the statistic imaginable.
 
 Metaphor also frames causal models. In experiments on crime metaphors, describing crime as a wild beast increased support for capture-and-punishment responses, whereas describing it as a virus increased support for diagnosis and prevention (Thibodeau & Boroditsky, 2011). Both metaphors may highlight something real, but each also hides something. A beast metaphor can hide social causes; a virus metaphor can hide agency and harm. Ethical metaphor use requires asking what the metaphor makes visible and what it makes invisible.
 
-Vivid images work for the same reason. The slides used concrete images such as a horse-sized syringe to make scale felt. The craft lesson is not to exaggerate. It is to convert abstraction into perception. If the audience cannot see, hear, feel, or imagine the implication, the message may remain inert.
+Vivid images work for the same reason. A horse-sized syringe, for example, can make an otherwise abstract scale immediately perceptible. The craft lesson is not to exaggerate. It is to convert abstraction into perception. If the audience cannot see, hear, feel, or imagine the implication, the message may remain inert.
 
 ### Responsible compassion
 
-The original persuasion slides discussed the power of a single identifiable victim, often illustrated with the Rokia-style charity example: people may respond more strongly to one named child than to statistics about many thousands. This chapter has already discussed the identifiable victim effect and psychic numbing. The DPN application is to combine compassion with scale. A story of one person can open the heart; evidence must then show how that person connects to the broader pattern.
+The identifiable-victim effect is often illustrated with a named-child charity example: people may respond more strongly to one identifiable person than to statistics about many thousands. This chapter has already discussed the identifiable-victim effect and psychic numbing. The practical response is to combine compassion with scale. A story of one person can open the heart; evidence must then show how that person connects to the broader pattern.
 
 A responsible humanitarian message might say: "This is one person's story, and it is one window into a broader problem affecting many people." An irresponsible message lets the audience infer that the most vivid case is the typical case, or lets one moving story determine policy without base rates, comparison cases, or unintended consequences. Ethical storytelling does not ask us to feel less. It asks us to connect feeling to proportion.
 
 ### Associative backfire
 
-The persuasion slides warned that a message can activate the very association it tries to defeat. A campaign attacking a slogan may repeat the opponent's slogan so vividly that the opponent's frame becomes more memorable. A phrase such as "Make America Sick Again" can unintentionally pair one's own side with sickness because the mind often keeps the image after it forgets the negation. The shift from "Don't be evil" to "Do the right thing" illustrates a related principle: negated frames can still keep unwanted concepts active.
+A message can activate the very association it tries to defeat. A campaign attacking a slogan may repeat the opponent's slogan so vividly that the opponent's frame becomes more memorable. A phrase such as "Make America Sick Again" can unintentionally pair one's own side with sickness because the mind often keeps the image after it forgets the negation. The shift from "Don't be evil" to "Do the right thing" illustrates a related principle: negated frames can still keep unwanted concepts active.
 
 The same risk appears in storytelling. Graphic descriptions, humiliating examples, or vivid depictions of harmful behavior can make the wrong image travel. Fear appeals can capture attention but collapse agency. A story about cheating may accidentally teach methods. A story about corruption may make corruption feel normal. Before using a vivid story, ask: what picture, emotion, and association will remain in the audience after the argument fades?
 
@@ -7336,7 +7336,7 @@ MESOs and contingent agreements help reveal priorities and manage differences in
 How to make good judgment repeatable through decision hygiene, structured disagreement, and learning.
 
 
-# Chapter 35. Decision Hygiene and the DPN Studio
+# Chapter 35. Decision Hygiene
 
 *Notice, test, ask, design, and learn*
 
@@ -7381,15 +7381,15 @@ Review the process using what was knowable at the time. A good decision can prod
 
 Do not update from one noisy result more than the evidence warrants. Regression to the mean, random variation, and selective feedback can create false lessons. Calibrate over many predictions. Reward accurate uncertainty and timely revision, not only confident success.
 
-## The DPN cycle: notice, test, ask, design, learn
+## The decision-improvement cycle: notice, test, ask, design, learn
 
-<figure class="book-figure"><img src="figures/dpn-cycle.png" alt="Circular five-step cycle: notice, test, ask, design, and learn, around decision hygiene." /><figcaption>Figure 35.1. Notice, test, ask, design, and learn form a repeatable cycle for improving decisions, persuasion, communication, and negotiation.</figcaption></figure>
+<figure class="book-figure"><img src="figures/decision-improvement-cycle.png" alt="Circular five-step cycle: notice, test, ask, design, and learn, around decision hygiene." /><figcaption>Figure 35.1. Notice, test, ask, design, and learn form a repeatable cycle for improving decisions, persuasion, communication, and negotiation.</figcaption></figure>
 
 The course can be compressed into five verbs. Notice what attention selected and what it excluded. Test the model with base rates, counterevidence, experiments, and alternative explanations. Ask other people for their perspective, interests, constraints, and meaning. Design the environment, message, conversation, or agreement so that good action is easier. Learn from a record that existed before the outcome.
 
 Decision, persuasion, communication, and negotiation are not separate skills. They are different forms of model management. In each case, we are trying to understand how a mind represents a situation, what it expects, what it values, which actions appear possible, and what feedback will change the next cycle. The deepest practical lesson is therefore not "think harder." It is "build a process in which better thinking has a chance to occur."
 
-*Table 35.1  The integrated DPN audit*
+*Table 35.1  The integrated decision audit*
 
 | Move | Core question | Typical tool |
 | --- | --- | --- |
@@ -7414,7 +7414,7 @@ Decision, persuasion, communication, and negotiation are not separate skills. Th
 
 3. How would you use environments, messages, conversations, and agreements as design objects in practice?
 
-<aside class="callout activity"><div class="callout-title">ACTIVITY</div><div class="callout-body">Complete the integrated DPN studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.<br />EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br />Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</div></aside>
+<aside class="callout activity"><div class="callout-title">ACTIVITY</div><div class="callout-body">Complete the integrated decision studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.<br />EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br />Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</div></aside>
 
 
 # Appendix A. Portable Course Tools

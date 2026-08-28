@@ -138,10 +138,10 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     try:
         chapters = canonical_chapters()
     except SystemExit as exc:
-        return {}, [Issue("error", "canonical-chapters", "_quarto.yml", str(exc))], {}
+        return {}, [Issue("error", "canonical-chapters", "_quarto-html.yml", str(exc))], {}
 
     if len(chapters) != 38:
-        issues.append(Issue("error", "chapter-count", "_quarto.yml", f"Expected 38 canonical chapters; found {len(chapters)}."))
+        issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 38 canonical chapters; found {len(chapters)}."))
 
     global_ids: list[tuple[str, str]] = []
     figure_paths: set[Path] = set()

@@ -35,6 +35,12 @@ python3 scripts/audit_pptx_images.py "/path/to/Slides 2026" --out-dir audits/sli
 
 The inventory includes hidden slides, embedded or linked images, native chart/diagram objects, media hashes, duplicate groups, object metadata, dimensions, and crop data. It is deliberately rights-neutral. After editorial review, `audits/slide-images-reviewed.csv` gives each occurrence a pedagogical role, provenance assessment, rights status, treatment, destination, and completion state.
 
+When editorial review is split into several ledgers, merge them deterministically in raw-inventory order before validation:
+
+```bash
+python3 scripts/merge_slide_image_ledgers.py /path/to/ledger-1.csv /path/to/ledger-2.csv
+```
+
 Validate exact occurrence coverage and rights/treatment consistency with:
 
 ```bash

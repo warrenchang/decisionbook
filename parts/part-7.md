@@ -14,7 +14,7 @@ title: "Part 7. Better Decision Systems"
 
 ## Chapters
 
-<div class="chapter-card-grid"><a class="chapter-card" href="chapters/35-decision-hygiene.html"><small>Chapter 35</small><strong>Decision Hygiene and the DPN Studio</strong><span>Notice, test, ask, design, and learn</span><span class="minutes">About 5 min</span></a></div>
+<div class="chapter-card-grid"><a class="chapter-card" href="chapters/35-decision-hygiene.html"><small>Chapter 35</small><strong>Decision Hygiene</strong><span>Notice, test, ask, design, and learn</span><span class="minutes">About 5 min</span></a></div>
 
 ## Bridge to the next part
 

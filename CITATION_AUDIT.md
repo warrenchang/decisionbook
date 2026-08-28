@@ -4,7 +4,7 @@ Canonical chapters: **38**
 
 Unique references in the master union: **669**
 
-Chapter reference blocks: **771**
+Chapter reference blocks: **772**
 
 Unresolved author–year citations: **0**
 
@@ -34,7 +34,7 @@ Unresolved author–year citations: **0**
 | The Social Brain: Learning, Mimicry, and Attribution | 22 | 0 |
 | Conformity: When Popularity Becomes Evidence | 18 | 0 |
 | Authority, Bystanders, and Influence Triggers | 22 | 0 |
-| Culture and Identity: The Same Action Is Not the Same Act | 28 | 0 |
+| Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 30 | 0 |
 | Why Stories Move Minds | 11 | 0 |
 | Building an Evidence-Aligned Story | 19 | 0 |

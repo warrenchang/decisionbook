@@ -3,7 +3,7 @@ title: "Decision Hygiene"
 subtitle: "Notice, test, ask, design, and learn"
 chapter: 35
 part: 7
-slug: "35-decision-hygiene-and-the-dpn-studio"
+slug: "35-decision-hygiene"
 ---
 
 # Chapter 35. Decision Hygiene
@@ -51,15 +51,15 @@ Review the process using what was knowable at the time. A good decision can prod
 
 Do not update from one noisy result more than the evidence warrants. Regression to the mean, random variation, and selective feedback can create false lessons. Calibrate over many predictions. Reward accurate uncertainty and timely revision, not only confident success.
 
-## The DPN cycle: notice, test, ask, design, learn
+## The decision-improvement cycle: notice, test, ask, design, learn
 
-<figure class="book-figure"><img src="../figures/dpn-cycle.svg" alt="Circular five-step cycle: notice, test, ask, design, and learn, around decision hygiene." /><figcaption>Figure 35.1. Notice, test, ask, design, and learn form a repeatable cycle for improving decisions, persuasion, communication, and negotiation.</figcaption></figure>
+<figure class="book-figure"><img src="../figures/decision-improvement-cycle.svg" alt="Circular five-step cycle: notice, test, ask, design, and learn, around decision hygiene." /><figcaption>Figure 35.1. Notice, test, ask, design, and learn form a repeatable cycle for improving decisions, persuasion, communication, and negotiation.</figcaption></figure>
 
 The course can be compressed into five verbs. Notice what attention selected and what it excluded. Test the model with base rates, counterevidence, experiments, and alternative explanations. Ask other people for their perspective, interests, constraints, and meaning. Design the environment, message, conversation, or agreement so that good action is easier. Learn from a record that existed before the outcome.
 
 Decision, persuasion, communication, and negotiation are not separate skills. They are different forms of model management. In each case, we are trying to understand how a mind represents a situation, what it expects, what it values, which actions appear possible, and what feedback will change the next cycle. The deepest practical lesson is therefore not "think harder." It is "build a process in which better thinking has a chance to occur."
 
-*Table 35.1  The integrated DPN audit*
+*Table 35.1  The integrated decision audit*
 
 | Move | Core question | Typical tool |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ Decision, persuasion, communication, and negotiation are not separate skills. Th
 
 3. How would you use environments, messages, conversations, and agreements as design objects in practice?
 
-<aside class="callout activity"><div class="callout-title">ACTIVITY</div><div class="callout-body">Complete the integrated DPN studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.<br />EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br />Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</div></aside>
+<aside class="callout activity"><div class="callout-title">ACTIVITY</div><div class="callout-body">Complete the integrated decision studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.<br />EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br />Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</div></aside>
 
 ## References cited in this chapter
 

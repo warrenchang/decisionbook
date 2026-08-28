@@ -31,7 +31,7 @@ The point is not to shame habit. Habits are essential. Without them, life would 
 
 But habits can also let the past choose for the present. A behavior that once solved a problem may persist after the problem has changed. A routine that once reduced anxiety may prevent growth. A cue that once predicted reward may continue to produce wanting after liking has faded. A culture that once created speed may later block learning. The science of habits therefore asks a precise question: which parts of behavior should become automatic, and which parts require conscious review?
 
-## Why habits belong in DPN
+## Why habits belong in this book
 
 Decision, persuasion, and negotiation are usually taught as deliberate skills. We teach people to analyze options, craft messages, prepare BATNAs, identify interests, ask better questions, and evaluate trade-offs. These skills matter. But knowing what to do is not the same as doing it under pressure. A student may know to check base rates and still rely on a vivid anecdote. A manager may know to invite dissent and still reward agreement. A negotiator may know to ask diagnostic questions and still defend a position when status feels threatened.
 
