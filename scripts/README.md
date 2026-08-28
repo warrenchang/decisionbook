@@ -12,13 +12,18 @@ quarto render --profile html
 quarto render --profile epub
 ```
 
+The profiles use separate output directories. `sync_epub_release.py` is called
+after either render and copies the staged EPUB into `docs/`, so running the two
+commands in either order preserves both release formats.
+
 Then run the canonical source-and-output audit:
 
 ```bash
 python3 scripts/qa_quarto_book.py
+python3 scripts/qa_epub_release.py
 ```
 
-The command rewrites `QA_REPORT.md`, `qa-report.json`, `CITATION_AUDIT.md`, and `citation-audit.json`. It checks the 48-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, and diagram connectors. Publish only when the report says **PASS**.
+The commands rewrite the HTML/source/citation QA artifacts and `EPUB_QA_REPORT.md`. They check the 48-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, diagram connectors, EPUB ZIP/package integrity, Part titles, chapter numbering, appendices, compilation date, and required illustrations. Publish only when both reports say **PASS**.
 
 After the three Lecture Notes source audits have been reconciled into
 `audits/lecture-notes-coverage.csv`, regenerate the exact-path editorial

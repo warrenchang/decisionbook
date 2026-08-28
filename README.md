@@ -18,7 +18,7 @@ Build the EPUB with:
 quarto render --profile epub
 ```
 
-Both artifacts are written to `docs/`; the EPUB is `docs/Decision-Persuasion-and-Negotiation.epub`. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so Part titles and numbered chapters remain in the table of contents.
+Both release artifacts end in `docs/`; the EPUB is `docs/Decision-Persuasion-and-Negotiation.epub`. The EPUB profile builds in the ignored `_epub/` staging directory and a post-render hook copies the finished book beside the HTML release. This prevents either profile from cleaning the other format. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so Part titles and numbered chapters remain in the table of contents.
 
 ## Editorial records
 
@@ -26,4 +26,5 @@ Both artifacts are written to `docs/`; the EPUB is `docs/Decision-Persuasion-and
 - `audits/lecture-notes-final-integration.md` and `audits/lecture-notes-final-integration.csv` map every audited source path to its final book destination or an explicit non-reuse decision.
 - `SOURCE_INTEGRATION_REPORT.md` retains the earlier coverage record for the editable lecture decks and alternative textbook manuscripts.
 - `QA_REPORT.md` records the latest release checks.
+- `EPUB_QA_REPORT.md` records package, navigation, date, numbering, and required-content checks for the canonical EPUB.
 - `QUARTO_EDITING_GUIDE.md` explains the source layout and editing workflow.
