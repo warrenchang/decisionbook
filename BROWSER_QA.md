@@ -11,7 +11,7 @@ The prebuilt site was exercised in headless Chromium at desktop and mobile viewp
 | Search dialog opens | Pass |
 | Full-text search returns relevant results for “anchoring” | Pass |
 | Light/dark theme toggle | Pass |
-| Start Here page | Pass |
+| Preface page | Pass |
 | Chapter figure loads | Pass |
 | Chapter table is in a responsive wrapper | Pass |
 | On-page table of contents | Pass |

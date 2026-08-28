@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A textbook on how people choose, influence, communicate, negotiate, and build better decision systems.">
+
+<title>24&nbsp; Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err – Decision, Persuasion, and Negotiation</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/44-asset-bubbles.html" rel="next">
+<link href="../chapters/42-mental-accounting.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e42aecf8b7c1b0ab0c6597349aaf39ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-5.html">Part V. Money, Finance, and Well-Being</a></li><li class="breadcrumb-item"><a href="../chapters/43-behavioral-finance.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision, Persuasion, and Negotiation</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Follow the Decision Upstream</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. The Decision-Making Process</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-the-choice-is-the-tip-of-the-iceberg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decision-Making Is a Process, Not a Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-a-rational-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Rationality: A Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-opportunity-cost-information-and-better-options.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">To Decide Is to Sacrifice: Opportunity Cost, Information, and Better Options</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-value-is-constructed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-the-narrator-after-the-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Attention, Prediction, and Expectation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-attention-is-the-gatekeeper-of-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-the-predictive-mind.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-expectations-that-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Heuristics, Biases, and Probability Judgment</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-fast-answers-slow-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Two Systems of Thinking: Fast Is Not Foolish, Slow Is Not Free</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-heuristics-the-adaptive-toolbox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Heuristics: Useful Shortcuts in an Uncertain World</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-feeling-and-availability-as-shortcuts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Feeling and Availability: When Ease of Recall Becomes Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-resemblance-is-not-probability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Resemblance Is Not Probability</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-biases-that-protect-a-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Biases: Predictable Errors and the Stories That Sustain Them</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-anchors-halos-decoys-and-escalation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Anchors, Halos, Decoys, and Escalation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-frames-change-the-decision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-priming-and-the-active-mental-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Priming: What Is Active Changes What Comes Next</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-fluency-familiarity-and-the-feeling-of-truth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cognitive Ease: When Easy Feels True</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Risk, Experience, and Time</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-risky-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-prospect-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decisions-from-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-intertemporal-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Money, Finance, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/43-behavioral-finance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/44-asset-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Asset Bubbles: When Price Becomes Evidence About Price</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/45-subjective-well-being.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Subjective Well-Being: Income Is Not the Same as a Good Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/46-strategic-interdependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/47-behavioral-game-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/48-cooperation-social-preferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">The Social Brain: Learning, Mimicry, and Attribution</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-conformity-norms-and-social-proof.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Conformity: When Popularity Becomes Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-culture-identity-social-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Influence and Persuasion</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VIII. Negotiation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-interests-priorities-and-trade-offs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Integrative Negotiation: Create Value Before Dividing It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-mesos-contingent-contracts-and-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IX. Communication and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part X. Habits and Decision Design</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-choice-architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-decision-hygiene.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How Behavioral Evidence Is Built</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#opening-puzzle-earnings-beat-expectations" id="toc-opening-puzzle-earnings-beat-expectations" class="nav-link" data-scroll-target="#opening-puzzle-earnings-beat-expectations">Opening puzzle: earnings beat expectations</a></li>
+  <li><a href="#why-study-behavior-in-financial-markets" id="toc-why-study-behavior-in-financial-markets" class="nav-link" data-scroll-target="#why-study-behavior-in-financial-markets">Why study behavior in financial markets?</a></li>
+  <li><a href="#the-20-note-and-three-meanings-of-efficiency" id="toc-the-20-note-and-three-meanings-of-efficiency" class="nav-link" data-scroll-target="#the-20-note-and-three-meanings-of-efficiency">The €20 note and three meanings of efficiency</a></li>
+  <li><a href="#fast-price-discovery-is-possible" id="toc-fast-price-discovery-is-possible" class="nav-link" data-scroll-target="#fast-price-discovery-is-possible">Fast price discovery is possible</a></li>
+  <li><a href="#every-efficiency-test-is-a-joint-test" id="toc-every-efficiency-test-is-a-joint-test" class="nav-link" data-scroll-target="#every-efficiency-test-is-a-joint-test">Every efficiency test is a joint test</a></li>
+  <li><a href="#event-studies-turning-a-story-into-a-test" id="toc-event-studies-turning-a-story-into-a-test" class="nav-link" data-scroll-target="#event-studies-turning-a-story-into-a-test">Event studies: turning a story into a test</a></li>
+  <li><a href="#the-anomaly-jigsaw" id="toc-the-anomaly-jigsaw" class="nav-link" data-scroll-target="#the-anomaly-jigsaw">The anomaly jigsaw</a></li>
+  <li><a href="#data-mining-publication-and-attenuation" id="toc-data-mining-publication-and-attenuation" class="nav-link" data-scroll-target="#data-mining-publication-and-attenuation">Data mining, publication, and attenuation</a></li>
+  <li><a href="#limits-to-arbitrage-seeing-an-error-is-not-enough" id="toc-limits-to-arbitrage-seeing-an-error-is-not-enough" class="nav-link" data-scroll-target="#limits-to-arbitrage-seeing-an-error-is-not-enough">Limits to arbitrage: seeing an error is not enough</a></li>
+  <li><a href="#technical-fundamental-and-statistical-stories" id="toc-technical-fundamental-and-statistical-stories" class="nav-link" data-scroll-target="#technical-fundamental-and-statistical-stories">Technical, fundamental, and statistical stories</a>
+  <ul class="collapse">
+  <li><a href="#arithmetic-averages-can-conceal-multiplicative-ruin" id="toc-arithmetic-averages-can-conceal-multiplicative-ruin" class="nav-link" data-scroll-target="#arithmetic-averages-can-conceal-multiplicative-ruin">Arithmetic averages can conceal multiplicative ruin</a></li>
+  </ul></li>
+  <li><a href="#investor-behavior-the-decision-process-matters" id="toc-investor-behavior-the-decision-process-matters" class="nav-link" data-scroll-target="#investor-behavior-the-decision-process-matters">Investor behavior: the decision process matters</a></li>
+  <li><a href="#a-falsifiable-investment-memo" id="toc-a-falsifiable-investment-memo" class="nav-link" data-scroll-target="#a-falsifiable-investment-memo">A falsifiable investment memo</a></li>
+  <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
+  <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/43-behavioral-finance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/43-behavioral-finance.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-5.html">Part V. Money, Finance, and Well-Being</a></li><li class="breadcrumb-item"><a href="../chapters/43-behavioral-finance.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>A market can aggregate information quickly even when many participants are biased. An investor can identify a real historical pattern and still have no profitable trade after risk, costs, crowding, and model uncertainty.</em></p>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Market efficiency is a benchmark about prices, information, expected returns, risk, and costs—not a claim that every investor is rational or every price is correct. Behavioral finance asks how psychology, limits to arbitrage, and market interaction shape decisions and prices. Every apparent anomaly therefore needs competing explanations and an implementation test.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Educational analysis, not investment advice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The cases and historical return patterns in this chapter are tools for disciplined inference. They do not identify a security to buy or sell, guarantee that a pattern will persist, or replace a portfolio analysis suited to an investor’s goals, constraints, taxes, costs, and capacity for loss.</p>
+</div>
+</div>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>Explain informational efficiency without assuming that every investor is rational.</li>
+<li>Distinguish “no free lunch” from the stronger claim that every price equals fundamental value.</li>
+<li>Interpret event studies, return anomalies, and post-publication attenuation with appropriate caveats.</li>
+<li>Compare risk, behavioral mispricing, frictions, model misspecification, and data mining as explanations.</li>
+<li>Use a falsifiable investment memo to reduce hindsight, overconfidence, sunk arguments, and outcome bias.</li>
+</ul>
+</section>
+<section id="opening-puzzle-earnings-beat-expectations" class="level2">
+<h2 data-anchor-id="opening-puzzle-earnings-beat-expectations">Opening puzzle: earnings beat expectations</h2>
+<p>A listed company reports earnings above the analyst consensus before the market opens. Should you buy immediately, wait, or do nothing?</p>
+<p>“Good news means buy” is not yet an investment thesis. The question is not whether earnings were good in isolation. It is whether the announcement was better than the expectations already embedded in the price, whether your order can be executed before prices adjust, and whether the apparent return survives risk and costs.</p>
+<p>Write down what your choice requires:</p>
+<ul>
+<li>Was the information public and unambiguous?</li>
+<li>At what time did it become tradable?</li>
+<li>How much surprise was already anticipated?</li>
+<li>What price reaction do you predict—immediate, delayed, or reversed?</li>
+<li>Relative to what expected-return model would the subsequent return be abnormal?</li>
+<li>What spread, fee, tax, liquidity, and position risk would implementation create?</li>
+</ul>
+<p>The exercise reveals why behavioral finance is not a catalogue of profitable mistakes. It is a study of how information becomes price, how evidence is tested, and why identifying an error does not imply that it can be safely arbitraged.</p>
+</section>
+<section id="why-study-behavior-in-financial-markets" class="level2">
+<h2 data-anchor-id="why-study-behavior-in-financial-markets">Why study behavior in financial markets?</h2>
+<p>Many criticisms of behavioral research point to small stakes, artificial tasks, or limited opportunities to learn. Financial markets appear to be the hardest place for behavioral effects to survive: stakes are high, feedback is frequent, professional traders are present, and mistakes can be exploited.</p>
+<p>That makes markets an informative stress test. If biased judgment still affects investment or price under these conditions, learning and competition have not automatically removed it. But the reverse is equally important: a biased investor does not prove a biased market. Other participants can trade against the error, information can aggregate, and prices can become useful even when the path is psychologically messy.</p>
+<p>Conventional finance asks how assets and liabilities should be allocated across time and uncertainty under stated assumptions. Behavioral finance asks how people and markets actually behave when attention, beliefs, reference points, social learning, overconfidence, and constraints enter the system (Barberis &amp; Thaler, 2003). The two perspectives need each other. A descriptive anomaly is visible only relative to a benchmark.</p>
+</section>
+<section id="the-20-note-and-three-meanings-of-efficiency" class="level2">
+<h2 data-anchor-id="the-20-note-and-three-meanings-of-efficiency">The €20 note and three meanings of efficiency</h2>
+<p>The familiar joke says that a financial economist would not pick up a €20 note because, in an efficient market, someone would already have taken it. But information is not free. People search precisely because a reward may remain.</p>
+<p>The <strong>efficient market hypothesis</strong> concerns the incorporation of a specified information set into prices, conditional on a model of expected returns (Fama, 1970, 1991):</p>
+<ul>
+<li><strong>Weak form:</strong> the information set includes historical prices and returns.</li>
+<li><strong>Semi-strong form:</strong> it includes publicly available information.</li>
+<li><strong>Strong form:</strong> it includes all information, even private information—a much stronger benchmark.</li>
+</ul>
+<p>Three claims are easily confused:</p>
+<ol type="1">
+<li><strong>Information is incorporated quickly.</strong> Price responds to a specified signal.</li>
+<li><strong>No free lunch.</strong> A public rule does not reliably earn abnormal return after appropriate risk and realistic costs.</li>
+<li><strong>The price is right.</strong> Market price equals a well-defined fundamental value.</li>
+</ol>
+<p>The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.</p>
+<p>Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.</p>
+</section>
+<section id="fast-price-discovery-is-possible" class="level2">
+<h2 data-anchor-id="fast-price-discovery-is-possible">Fast price discovery is possible</h2>
+<p>Public news can move prices extraordinarily quickly. When the US Federal Reserve released its <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm">policy statement</a> at 14:00 on September 18, 2013, financial prices reacted within fractions of a second. The example shows that a human reading the press release after publication may be far behind automated and professional responses.</p>
+<p>Price discovery can also aggregate dispersed clues. The space shuttle <em>Challenger</em> exploded at 11:39 a.m. on January 28, 1986; the news appeared on a major financial wire minutes later. Four publicly traded contractors were connected to the launch. By the end of the trading response, Morton Thiokol experienced the distinctive loss. A presidential commission identified the failure of booster O-ring seals made by Thiokol months later. Maloney and Mulherin (2003) found no simple news story or obvious insider-trading trail that fully explained the early discrimination. The market appeared to combine dispersed information, inference, and trading.</p>
+<p>But “the market knew” is too strong. Price discovery can be correct for the wrong reason, and a single case does not show that markets always identify responsibility. It establishes a possibility: collective trading can reveal information no single public announcement states.</p>
+<p>The wisdom of a market depends on conditions also familiar from crowd judgment: dispersed information, some independence, incentives to reveal beliefs, and an aggregation mechanism. If participants copy the same signal or face the same constraint, the crowd can amplify error instead.</p>
+</section>
+<section id="every-efficiency-test-is-a-joint-test" class="level2">
+<h2 data-anchor-id="every-efficiency-test-is-a-joint-test">Every efficiency test is a joint test</h2>
+<p>To label a return abnormal, we must first say what return was expected. Suppose an asset earns 12%. That is not evidence of mispricing until we specify its risk, exposures, time period, benchmark, and costs.</p>
+<p>Fama (1991) emphasizes the <strong>joint-hypothesis problem</strong>: a test evaluates market efficiency together with an asset-pricing model. A rejection can mean:</p>
+<ul>
+<li>information was not incorporated efficiently;</li>
+<li>the expected-return model omitted a priced risk or exposure;</li>
+<li>the implementation assumed impossible timing or ignored costs;</li>
+<li>the sample or statistic was selected after seeing the data;</li>
+<li>or some combination of these.</li>
+</ul>
+<div id="fig-behavioral-finance-audit" class="quarto-float quarto-figure quarto-figure-center" alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-behavioral-finance-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/behavioral-finance-audit.svg" class="img-fluid figure-img" alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-behavioral-finance-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.1: A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.
+</figcaption>
+</figure>
+</div>
+<p>This is why “prices changed after the event” and “I can profit from the event” are separate claims.</p>
+</section>
+<section id="event-studies-turning-a-story-into-a-test" class="level2">
+<h2 data-anchor-id="event-studies-turning-a-story-into-a-test">Event studies: turning a story into a test</h2>
+<p>An <strong>event study</strong> estimates security returns around a defined event (MacKinlay, 1997). A credible design makes the inferential chain explicit:</p>
+<ol type="1">
+<li>Define the event and its first public time.</li>
+<li>Specify an estimation window for the expected-return model.</li>
+<li>Specify an event window in which reaction is measured.</li>
+<li>Compute abnormal return as actual return minus expected return.</li>
+<li>Aggregate across securities or time into average abnormal returns or cumulative abnormal returns.</li>
+<li>Test uncertainty and inspect confounding events.</li>
+</ol>
+<p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.</p>
+<p>Historical research on earnings announcements documented <strong>post-earnings-announcement drift</strong>: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.</p>
+<p>Return to the opening puzzle. A good answer may still be “buy,” “wait,” or “do nothing,” but it must now name the information, expected-price response, benchmark, implementation assumptions, and evidence that would falsify the thesis.</p>
+</section>
+<section id="the-anomaly-jigsaw" class="level2">
+<h2 data-anchor-id="the-anomaly-jigsaw">The anomaly jigsaw</h2>
+<p>An <strong>anomaly</strong> is a documented empirical pattern that is difficult to reconcile with a specified benchmark. The word does not tell us whether the source is behavioral error, omitted risk, frictions, or chance.</p>
+<div id="tbl-finance-anomalies" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-finance-anomalies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.1: Historical return patterns require competing explanations, not a single behavioral label
+</figcaption>
+<div aria-describedby="tbl-finance-anomalies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Historical finding</th>
+<th>Behavioral account</th>
+<th>Competing account and caution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Size</td>
+<td>Smaller firms earned higher average returns in early samples (Banz, 1981).</td>
+<td>Neglect, limited attention, or segmented demand.</td>
+<td>Risk, illiquidity, micro-cap trading costs, sample sensitivity; the effect weakened in later periods.</td>
+</tr>
+<tr class="even">
+<td>Value</td>
+<td>Stocks cheap relative to book value, earnings, or cash flow outperformed expensive “growth” stocks in many samples and countries (Fama &amp; French, 1992, 1998).</td>
+<td>Extrapolation of growth stories and overreaction to past performance.</td>
+<td>Distress or other priced risk, changing definitions, implementation costs.</td>
+</tr>
+<tr class="odd">
+<td>Momentum</td>
+<td>Recent winners continued to outperform recent losers over intermediate horizons in historical samples (Jegadeesh &amp; Titman, 1993).</td>
+<td>Underreaction, gradual diffusion, or herding.</td>
+<td>Time-varying risk, crash exposure, turnover and costs, crowding.</td>
+</tr>
+<tr class="even">
+<td>Long-run reversal</td>
+<td>Extreme prior losers outperformed prior winners over longer horizons in an early study (De Bondt &amp; Thaler, 1985).</td>
+<td>Overreaction followed by correction.</td>
+<td>Benchmark problems, size effects, survivorship, overlapping formation periods.</td>
+</tr>
+<tr class="odd">
+<td>Earnings drift</td>
+<td>Returns continued in the direction of earnings surprise after announcements.</td>
+<td>Conservatism, inattention, or gradual updating.</td>
+<td>Expected-return model, confounds, measurement, implementation.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Value and growth illustrate the interpretive conflict. A low price relative to accounting fundamentals can mean the market is too pessimistic—or that the firm is exposed to risks not captured by the simple comparison. A compelling growth story can describe a successful company while its stock produces a poor return because the success was already priced. Good company, good price, and good future return are three different judgments.</p>
+<p>The same separation applies to horizons. Momentum over months and reversal over years are not logically inconsistent: different mechanisms or samples may dominate at different horizons. But attaching two labels after observing a path can also make a theory impossible to falsify. Before seeing the outcome, state which horizon and mechanism the thesis predicts.</p>
+</section>
+<section id="data-mining-publication-and-attenuation" class="level2">
+<h2 data-anchor-id="data-mining-publication-and-attenuation">Data mining, publication, and attenuation</h2>
+<p>Finance offers thousands of securities, variables, transformations, subperiods, and portfolio rules. If researchers test enough signals, some will appear significant by chance. Harvey, Liu, and Zhu (2016) argue that the expanding “factor zoo” requires much stronger standards than a conventional isolated test.</p>
+<p>A useful anomaly audit asks:</p>
+<ul>
+<li>Was the predictor and specification chosen before or after inspecting returns?</li>
+<li>Does the result survive alternative risk models and definitions?</li>
+<li>Does it replicate in another market or time period?</li>
+<li>Is the return concentrated in illiquid securities or impossible positions?</li>
+<li>Does it survive spreads, turnover, borrowing constraints, taxes, and capacity?</li>
+<li>Is there a mechanism that predicts where the result should strengthen or fail?</li>
+<li>What happened after the result became public?</li>
+</ul>
+<p>McLean and Pontiff (2016) found that average return predictability declined after academic publication. Part of the decline may reflect traders learning and arbitraging the signal; part may reflect initial statistical bias. Either way, a historical backtest is not a stationary law. Discovery changes the environment being studied.</p>
+<p>This is the €20 note in dynamic form. Search can find opportunities, but taking them changes prices. If everybody believes no opportunity can exist, insufficient search can leave information uncollected. If everybody crowds into a published rule, the opportunity can disappear or reverse.</p>
+</section>
+<section id="limits-to-arbitrage-seeing-an-error-is-not-enough" class="level2">
+<h2 data-anchor-id="limits-to-arbitrage-seeing-an-error-is-not-enough">Limits to arbitrage: seeing an error is not enough</h2>
+<p>The textbook arbitrageur buys an underpriced substitute and sells an overpriced one, locking in convergence. Real mispricing is rarely so clean. Shleifer and Vishny (1997) show why informed traders may be unable or unwilling to correct it:</p>
+<ul>
+<li><strong>Fundamental risk:</strong> the asset’s underlying value can worsen before convergence.</li>
+<li><strong>Noise-trader risk:</strong> mispricing can become larger before it becomes smaller.</li>
+<li><strong>Horizon risk:</strong> clients or managers may withdraw capital after interim losses.</li>
+<li><strong>Short-sale constraints:</strong> borrowing can be unavailable, recalled, or expensive.</li>
+<li><strong>Model risk:</strong> the apparent mispricing may be the analyst’s error.</li>
+<li><strong>Transaction and funding costs:</strong> spreads, market impact, leverage, and margin calls can dominate.</li>
+</ul>
+<p>Professional incentives can shorten the horizon precisely when a long-horizon correction is expected. An arbitrageur can be right eventually and insolvent first. Behavioral market outcomes therefore require both a source of biased demand and a reason better-informed capital does not fully offset it.</p>
+</section>
+<section id="technical-fundamental-and-statistical-stories" class="level2">
+<h2 data-anchor-id="technical-fundamental-and-statistical-stories">Technical, fundamental, and statistical stories</h2>
+<p><strong>Fundamental analysis</strong> estimates value from cash flows, assets, earnings, industry conditions, and economic drivers. <strong>Technical analysis</strong> uses price, volume, trends, and indicators, often on the premise that behavior creates persistent patterns. The distinction is useful, but neither label validates the forecast.</p>
+<p>Humans see structure in noisy paths. In demonstrations where actual market charts are mixed with random-number-generated series, even experienced observers struggle to distinguish them. A convincing pattern can be produced by chance. That does not show that every price pattern is random; it shows why a visual story needs an out-of-sample rule.</p>
+<p>Market-timing rules illustrate the trade-off. A moving-average strategy may avoid some severe declines and reduce measured volatility, but frequent switching during trendless periods can sacrifice return through missed rebounds and costs. “Time in the market” and “timing the market” are not slogans that settle every case. The evaluation must specify the rule before the sample, include all switches, and compare risk-adjusted after-cost outcomes.</p>
+<section id="arithmetic-averages-can-conceal-multiplicative-ruin" class="level3">
+<h3 data-anchor-id="arithmetic-averages-can-conceal-multiplicative-ruin">Arithmetic averages can conceal multiplicative ruin</h3>
+<p>Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from DKK 10,000 is more than DKK 1.4 million:</p>
+<p><span class="math display">\[
+10{,}000(1.10)^{52} \approx 1{,}420{,}000.
+\]</span></p>
+<p>But the most likely balanced sequence—26 rises and 26 falls—leaves approximately:</p>
+<p><span class="math display">\[
+10{,}000(1.8)^{26}(0.4)^{26} = 10{,}000(0.72)^{26} \approx 1.95.
+\]</span></p>
+<p>The expected value is dominated by rare paths with many gains; typical compounded wealth collapses because the geometric growth rate is negative. The example is deliberately extreme, but its lesson is general: average return, expected terminal wealth, median outcome, drawdown, and probability of ruin are not interchangeable. A strategy can have positive expected return and still be unacceptable under limited wealth.</p>
+</section>
+</section>
+<section id="investor-behavior-the-decision-process-matters" class="level2">
+<h2 data-anchor-id="investor-behavior-the-decision-process-matters">Investor behavior: the decision process matters</h2>
+<p>Investment mistakes often combine mechanisms already developed in the book:</p>
+<ul>
+<li><strong>Overconfidence</strong> creates narrow ranges, concentrated positions, and excessive trading.</li>
+<li><strong>Availability and attention</strong> make vivid news or salient stocks feel more diagnostic.</li>
+<li><strong>Representativeness</strong> turns a good company story into a high-return forecast.</li>
+<li><strong>Confirmation and hindsight</strong> protect a thesis after disconfirming evidence.</li>
+<li><strong>Mental accounting</strong> isolates positions and creates a disposition effect.</li>
+<li><strong>Loss aversion and narrow bracketing</strong> make frequent evaluation painful.</li>
+<li><strong>Social proof</strong> turns price appreciation into evidence that others know more.</li>
+</ul>
+<p>Barber and Odean (2000) found that the individual investors who traded most in their brokerage sample earned substantially lower net returns than those who traded least. The result is consistent with overconfidence plus trading costs; it is not a claim that every trade is mistaken or that passive investing fits every objective.</p>
+<p>The discipline is to evaluate process separately from outcome. A well-reasoned decision can lose because risk materializes. A poor decision can win because luck is favorable. Outcome-only learning rewards noise.</p>
+</section>
+<section id="a-falsifiable-investment-memo" class="level2">
+<h2 data-anchor-id="a-falsifiable-investment-memo">A falsifiable investment memo</h2>
+<p>Before the outcome is known, write one page:</p>
+<ol type="1">
+<li><strong>Decision and noninvestment option.</strong> What exactly will be done, in what size, and why is doing nothing inferior?</li>
+<li><strong>Thesis.</strong> State the causal claim in one sentence.</li>
+<li><strong>Embedded expectations.</strong> What does the current price already require the firm or market to achieve?</li>
+<li><strong>Base rate and comparison class.</strong> What happened in similar situations?</li>
+<li><strong>Drivers.</strong> Name the two or three variables that must move.</li>
+<li><strong>Disconfirmation.</strong> What observation would make the thesis materially less plausible?</li>
+<li><strong>Risks and dependence.</strong> Which exposures could fail together?</li>
+<li><strong>Implementation.</strong> Include spreads, liquidity, taxes, financing, capacity, and time horizon.</li>
+<li><strong>Position and exit rules.</strong> Precommit a maximum exposure, review date, and conditions for reducing, adding, or closing.</li>
+<li><strong>Evaluation.</strong> Separate frequent risk monitoring from the horizon on which performance will be judged.</li>
+</ol>
+<p>Then red-team the memo. Look for an unfalsifiable escape (“the market will recognize it eventually”), a sunk argument (“we have already lost too much to sell”), a missing denominator, a selected backtest, or a position too large for the uncertainty.</p>
+<p>The memo cannot remove risk. It creates an honest record of what was believed, why action was justified, and what should be learned.</p>
+</section>
+<section id="key-ideas" class="level2">
+<h2 data-anchor-id="key-ideas">Key ideas</h2>
+<ul>
+<li>Market efficiency concerns abnormal return relative to a specified information set and expected-return model, after risk and costs.</li>
+<li>“Information is incorporated,” “no free lunch,” and “the price is right” are different claims.</li>
+<li>Every efficiency test is a joint test; rejection can implicate efficiency, the expected-return model, or both.</li>
+<li>Event studies require explicit event timing, benchmarks, windows, abnormal returns, and confound checks.</li>
+<li>Size, value, momentum, reversal, and earnings drift are historical patterns with competing behavioral, risk, friction, and data-mining explanations.</li>
+<li>Discovery and trading can attenuate a pattern; backtests must be evaluated out of sample and after publication.</li>
+<li>Limits to arbitrage explain why identifying possible mispricing is not the same as safely correcting it.</li>
+<li>A falsifiable memo separates thesis, price expectations, risks, disconfirmation, implementation, and process quality from realized outcome.</li>
+</ul>
+</section>
+<section id="study-and-practice" class="level2">
+<h2 data-anchor-id="study-and-practice">Study and practice</h2>
+<ol type="1">
+<li>Explain how a market can aggregate information while many investors remain biased.</li>
+<li>Distinguish “no free lunch” from “the price is right.”</li>
+<li>Why is every market-efficiency test a joint test?</li>
+<li>Design the event and estimation windows for one public announcement. What could confound attribution?</li>
+<li>Choose one anomaly and give a behavioral, a risk-based, and a data-mining explanation.</li>
+<li>Why can a positive arithmetic average coexist with a disastrous typical compounded path?</li>
+<li>Name one limit to arbitrage that can make a correct long-run view fail in the short run.</li>
+<li>What evidence would force you to revise an investment thesis before the realized return is known?</li>
+</ol>
+<div class="activity callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Activity: anomaly jigsaw and red team
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Audit one historical pattern—size, value, momentum, reversal, or earnings drift. Record its specification, risk adjustment, out-of-sample evidence, trading costs, post-publication performance, one behavioral mechanism, and one nonbehavioral mechanism. Then write the strongest claim the evidence supports and one claim it does not. Convert the result into a fictional investment memo with a noninvestment option, position limit, disconfirming signal, and review date. Exchange memos and red-team the process, not the person.</p>
+<p>EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)<br>
+Experience: state the pattern and sample. Explain: compare at least two mechanisms. Apply: specify one pre-outcome test and one implementation constraint.</p>
+</div>
+</div>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Banz, R. W. (1981). The relationship between return and market value of common stocks. Journal of Financial Economics, 9(1), 3–18.</p>
+</div>
+<div class="reference">
+<p>Barber, B. M., &amp; Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. Journal of Finance, 55(2), 773–806.</p>
+</div>
+<div class="reference">
+<p>Barberis, N., &amp; Thaler, R. (2003). A survey of behavioral finance. In G. M. Constantinides, M. Harris, &amp; R. Stulz (Eds.), Handbook of the economics of finance (Vol. 1B, pp.&nbsp;1053–1128). Elsevier.</p>
+</div>
+<div class="reference">
+<p>De Bondt, W. F. M., &amp; Thaler, R. (1985). Does the stock market overreact? Journal of Finance, 40(3), 793–805.</p>
+</div>
+<div class="reference">
+<p>Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25(2), 383–417.</p>
+</div>
+<div class="reference">
+<p>Fama, E. F. (1991). Efficient capital markets: II. Journal of Finance, 46(5), 1575–1617.</p>
+</div>
+<div class="reference">
+<p>Fama, E. F., &amp; French, K. R. (1992). The cross-section of expected stock returns. Journal of Finance, 47(2), 427–465.</p>
+</div>
+<div class="reference">
+<p>Fama, E. F., &amp; French, K. R. (1998). Value versus growth: The international evidence. Journal of Finance, 53(6), 1975–1999.</p>
+</div>
+<div class="reference">
+<p>Grossman, S. J., &amp; Stiglitz, J. E. (1980). On the impossibility of informationally efficient markets. American Economic Review, 70(3), 393–408.</p>
+</div>
+<div class="reference">
+<p>Harvey, C. R., Liu, Y., &amp; Zhu, H. (2016). … and the cross-section of expected returns. Review of Financial Studies, 29(1), 5–68.</p>
+</div>
+<div class="reference">
+<p>Jegadeesh, N., &amp; Titman, S. (1993). Returns to buying winners and selling losers: Implications for stock market efficiency. Journal of Finance, 48(1), 65–91.</p>
+</div>
+<div class="reference">
+<p>MacKinlay, A. C. (1997). Event studies in economics and finance. Journal of Economic Literature, 35(1), 13–39.</p>
+</div>
+<div class="reference">
+<p>Maloney, M. T., &amp; Mulherin, J. H. (2003). The complexity of price discovery in an efficient market: The stock market reaction to the Challenger crash. Journal of Corporate Finance, 9(4), 453–479.</p>
+</div>
+<div class="reference">
+<p>McLean, R. D., &amp; Pontiff, J. (2016). Does academic research destroy stock return predictability? Journal of Finance, 71(1), 5–32.</p>
+</div>
+<div class="reference">
+<p>Rendleman, R. J., Jr., Jones, C. P., &amp; Latané, H. A. (1982). Empirical anomalies based on unexpected earnings and the importance of risk adjustments. Journal of Financial Economics, 10(3), 269–287.</p>
+</div>
+<div class="reference">
+<p>Shleifer, A., &amp; Vishny, R. W. (1997). The limits of arbitrage. Journal of Finance, 52(1), 35–55.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/42-mental-accounting.html" class="pagination-link" aria-label="Mental Accounting: Money Is Fungible; Minds Label It">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/44-asset-bubbles.html" class="pagination-link" aria-label="Asset Bubbles: When Price Becomes Evidence About Price">
+        <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Asset Bubbles: When Price Becomes Evidence About Price</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/43-behavioral-finance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/43-behavioral-finance.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

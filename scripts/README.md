@@ -4,11 +4,12 @@ The checked-in QMD files are the canonical book source. The prebuilt `docs/` dir
 
 ## Release checks
 
-First synchronize the master bibliography and render the Quarto book:
+First synchronize the master bibliography and render both release formats:
 
 ```bash
 python3 scripts/sync_references.py
-quarto render
+quarto render --profile html
+quarto render --profile epub
 ```
 
 Then run the canonical source-and-output audit:
@@ -18,6 +19,18 @@ python3 scripts/qa_quarto_book.py
 ```
 
 The command rewrites `QA_REPORT.md`, `qa-report.json`, `CITATION_AUDIT.md`, and `citation-audit.json`. It checks the 48-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, and diagram connectors. Publish only when the report says **PASS**.
+
+After the three Lecture Notes source audits have been reconciled into
+`audits/lecture-notes-coverage.csv`, regenerate the exact-path editorial
+disposition ledger with:
+
+```bash
+python3 scripts/build_lecture_notes_integration_report.py
+```
+
+This writes `audits/lecture-notes-final-integration.csv` and its concise Markdown
+summary. It records incorporation, duplicate/derivative handling, non-content,
+and rights/provenance exclusions without altering the source folder.
 
 For a labeled visual-review set, use the bundled artifact Python runtime (or any Python with Pillow):
 

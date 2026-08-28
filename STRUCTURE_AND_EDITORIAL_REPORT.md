@@ -14,7 +14,7 @@ The material is strongest when it is read as one expanding decision system rathe
 4. **The social material is decompressed.** Social learning and attribution, conformity and norms, and authority and influence triggers are separate chapters.
 5. **Persuasion, story, and communication are distinguished.** Persuasion is intentional model updating; story is simulated meaning; communication is joint inference and repair.
 6. **Negotiation remains the integrative capstone.** It moves from architecture and preparation to distributive tactics, integrative trades, and agreement governance.
-7. **The website adds explicit bridges.** A Start Here page and seven part-overview pages explain why each unit follows the previous one.
+7. **The website adds explicit bridges.** The Preface and ten part-overview pages explain why each unit follows the previous one.
 
 ## Revised part structure
 
@@ -80,7 +80,7 @@ How interdependent decision-makers prepare, bargain, trade across differences, a
 
 How to make good judgment repeatable through decision hygiene, structured disagreement, and learning.
 
-- Chapter 35. **Decision Hygiene and the DPN Studio** — Notice, test, ask, design, and learn
+- Chapter 35. **Decision Hygiene and the Studio** — Notice, test, ask, design, and learn
 
 ## Chapter-level flow corrections
 
@@ -111,7 +111,7 @@ How to make good judgment repeatable through decision hygiene, structured disagr
 ## GitHub and accessibility design
 
 - The `docs/` directory is prebuilt and can be published directly with GitHub Pages; no build step is required for students to access the book.
-- The site includes Start Here and part-overview pages, responsive navigation, full-text search, dark mode, reading progress, previous/next links, mobile controls, print styles, and a complete single-page edition.
+- The site includes the Preface and part-overview pages, responsive navigation, full-text search, dark mode, reading progress, previous/next links, mobile controls, and print styles.
 - Tables scroll horizontally on small screens. Figures scale without losing text clarity. Keyboard focus, a skip link, semantic headings, alt text, and visible focus styles support accessibility.
 - A downloadable EPUB is included in `docs/downloads/`.
 

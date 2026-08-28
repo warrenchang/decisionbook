@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Expected value, expected utility, ambiguity, and outcome bias</title>
+  <desc id="desc">A concave square-root utility curve locates expected value, expected utility, certainty equivalent, and risk premium for a fifty-fifty lottery. A second panel distinguishes known risk from ambiguity and separates decision process from realized outcome.</desc>
+  <defs>
+    <marker id="risk-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#17324d"/>
+    </marker>
+    <style>
+      .title { font: 700 32px Arial, sans-serif; fill: #17324d; }
+      .panel-title { font: 700 23px Arial, sans-serif; fill: #17324d; }
+      .label { font: 700 17px Arial, sans-serif; fill: #17324d; }
+      .body { font: 15px Arial, sans-serif; fill: #344b5f; }
+      .small { font: 13.5px Arial, sans-serif; fill: #66737f; }
+      .axis { stroke: #66737f; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text class="title" x="600" y="45" text-anchor="middle">A probability becomes a choice only after consequences are valued</text>
+
+  <!-- Left panel -->
+  <rect x="25" y="80" width="710" height="620" rx="18" fill="#f7fafc" stroke="#c9d6df" stroke-width="2"/>
+  <text class="panel-title" x="380" y="119" text-anchor="middle">1. Same expected money, lower expected utility</text>
+  <text class="body" x="380" y="148" text-anchor="middle">Illustration: X = 0 or 100 with equal probability; u(x) = √x</text>
+
+  <!-- axes -->
+  <line class="axis" x1="110" y1="590" x2="645" y2="590"/>
+  <polygon points="645,580 665,590 645,600" fill="#17324d"/>
+  <line class="axis" x1="110" y1="590" x2="110" y2="169"/>
+  <polygon points="100,169 110,149 120,169" fill="#17324d"/>
+  <text class="label" x="650" y="568" text-anchor="end">Final wealth x</text>
+  <text class="label" x="82" y="175" transform="rotate(-90 82 175)">Utility u(x)</text>
+
+  <!-- ticks -->
+  <line x1="110" y1="590" x2="110" y2="598" stroke="#66737f" stroke-width="2"/>
+  <line x1="240" y1="590" x2="240" y2="598" stroke="#66737f" stroke-width="2"/>
+  <line x1="370" y1="590" x2="370" y2="598" stroke="#66737f" stroke-width="2"/>
+  <line x1="630" y1="590" x2="630" y2="598" stroke="#66737f" stroke-width="2"/>
+  <text class="small" x="110" y="616" text-anchor="middle">0</text>
+  <text class="small" x="240" y="616" text-anchor="middle">25</text>
+  <text class="small" x="370" y="616" text-anchor="middle">50</text>
+  <text class="small" x="630" y="616" text-anchor="middle">100</text>
+
+  <line x1="102" y1="590" x2="110" y2="590" stroke="#66737f" stroke-width="2"/>
+  <line x1="102" y1="380" x2="110" y2="380" stroke="#66737f" stroke-width="2"/>
+  <line x1="102" y1="170" x2="110" y2="170" stroke="#66737f" stroke-width="2"/>
+  <text class="small" x="96" y="595" text-anchor="end">0</text>
+  <text class="small" x="96" y="385" text-anchor="end">5</text>
+  <text class="small" x="96" y="175" text-anchor="end">10</text>
+
+  <!-- sqrt utility curve -->
+  <path d="M110 590 C132 531,149 492,157 464 C181 433,208 403,240 380 C280 346,324 318,365 295 C424 263,487 229,531 212 C568 196,603 181,630 170"
+        fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round"/>
+  <text x="520" y="195" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#2f6f9f">u(x) = √x</text>
+
+  <!-- chord and lottery endpoints -->
+  <line x1="110" y1="590" x2="630" y2="170" stroke="#c56a2d" stroke-width="3" stroke-dasharray="9 7"/>
+  <circle cx="110" cy="590" r="7" fill="#c56a2d"/>
+  <circle cx="630" cy="170" r="7" fill="#c56a2d"/>
+  <text class="small" x="125" y="566">50%: x = 0</text>
+  <text class="small" x="617" y="230" text-anchor="end">50%: x = 100</text>
+
+  <!-- Expected utility midpoint and CE -->
+  <circle cx="370" cy="380" r="8" fill="#c56a2d" stroke="#ffffff" stroke-width="2"/>
+  <line x1="110" y1="380" x2="370" y2="380" stroke="#447c55" stroke-width="3" stroke-dasharray="7 6"/>
+  <line x1="240" y1="380" x2="240" y2="590" stroke="#447c55" stroke-width="3" stroke-dasharray="7 6"/>
+  <line x1="370" y1="380" x2="370" y2="590" stroke="#c56a2d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="240" cy="380" r="8" fill="#447c55" stroke="#ffffff" stroke-width="2"/>
+
+  <rect x="125" y="300" width="205" height="62" rx="11" fill="#eef6ed" stroke="#447c55" stroke-width="2"/>
+  <text class="label" x="228" y="325" text-anchor="middle">Expected utility = 5</text>
+  <text class="small" x="228" y="348" text-anchor="middle">u(CE) = 5 ⇒ CE = 25</text>
+
+  <rect x="400" y="326" width="205" height="62" rx="11" fill="#f7f1e8" stroke="#c56a2d" stroke-width="2"/>
+  <text class="label" x="503" y="351" text-anchor="middle">Expected value = 50</text>
+  <text class="small" x="503" y="374" text-anchor="middle">not a guaranteed outcome</text>
+
+  <!-- risk premium bracket -->
+  <line x1="240" y1="650" x2="370" y2="650" stroke="#a74343" stroke-width="3"/>
+  <line x1="240" y1="642" x2="240" y2="658" stroke="#a74343" stroke-width="3"/>
+  <line x1="370" y1="642" x2="370" y2="658" stroke="#a74343" stroke-width="3"/>
+  <text x="305" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#a74343">Risk premium = EV − CE = 25</text>
+
+  <!-- Right panel -->
+  <rect x="760" y="80" width="415" height="620" rx="18" fill="#f7fafc" stroke="#c9d6df" stroke-width="2"/>
+  <text class="panel-title" x="968" y="119" text-anchor="middle">2. Diagnose what the number omits</text>
+
+  <text class="label" x="968" y="157" text-anchor="middle">KNOWN RISK versus AMBIGUITY</text>
+
+  <rect x="790" y="180" width="165" height="154" rx="14" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/>
+  <text class="label" x="873" y="207" text-anchor="middle">Known mix</text>
+  <circle cx="827" cy="244" r="17" fill="#a74343"/>
+  <circle cx="870" cy="244" r="17" fill="#17324d"/>
+  <circle cx="913" cy="244" r="17" fill="#17324d"/>
+  <circle cx="827" cy="286" r="17" fill="#a74343"/>
+  <circle cx="870" cy="286" r="17" fill="#17324d"/>
+  <circle cx="913" cy="286" r="17" fill="#17324d"/>
+  <text class="small" x="873" y="321" text-anchor="middle">probabilities specified</text>
+
+  <rect x="980" y="180" width="165" height="154" rx="14" fill="#f7f1e8" stroke="#c56a2d" stroke-width="2.5"/>
+  <text class="label" x="1063" y="207" text-anchor="middle">Unknown mix</text>
+  <circle cx="1017" cy="244" r="17" fill="#a74343"/>
+  <circle cx="1060" cy="244" r="17" fill="#66737f"/>
+  <circle cx="1103" cy="244" r="17" fill="#66737f"/>
+  <circle cx="1017" cy="286" r="17" fill="#a74343"/>
+  <circle cx="1060" cy="286" r="17" fill="#66737f"/>
+  <circle cx="1103" cy="286" r="17" fill="#66737f"/>
+  <text x="1060" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">?</text>
+  <text x="1103" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">?</text>
+  <text x="1060" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">?</text>
+  <text x="1103" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">?</text>
+  <text class="small" x="1063" y="321" text-anchor="middle">probability model uncertain</text>
+
+  <text class="label" x="968" y="382" text-anchor="middle">PROCESS is not OUTCOME</text>
+
+  <rect x="825" y="405" width="285" height="72" rx="14" fill="#17324d"/>
+  <text x="968" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Decision process</text>
+  <text x="968" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dbe7ef">evidence • values • alternatives • safeguards</text>
+
+  <path d="M968 477 L968 507 L865 507 L865 542" fill="none" stroke="#17324d" stroke-width="3" marker-end="url(#risk-arrow)"/>
+  <path d="M968 477 L968 507 L1070 507 L1070 542" fill="none" stroke="#17324d" stroke-width="3" marker-end="url(#risk-arrow)"/>
+
+  <rect x="795" y="548" width="140" height="70" rx="13" fill="#e7f4ea" stroke="#447c55" stroke-width="2.5"/>
+  <text class="label" x="865" y="578" text-anchor="middle">Good outcome</text>
+  <text class="small" x="865" y="601" text-anchor="middle">may include luck</text>
+
+  <rect x="1000" y="548" width="140" height="70" rx="13" fill="#f9e7e7" stroke="#a74343" stroke-width="2.5"/>
+  <text class="label" x="1070" y="578" text-anchor="middle">Bad outcome</text>
+  <text class="small" x="1070" y="601" text-anchor="middle">may include bad luck</text>
+
+  <text class="body" x="968" y="657" text-anchor="middle">Judge the process with information available ex ante.</text>
+</svg>

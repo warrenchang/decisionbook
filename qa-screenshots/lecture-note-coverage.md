@@ -1,6 +1,6 @@
 # Lecture-note incorporation and rights ledger
 
-This ledger accounts for all 294 pages in the four DPN lecture-note PDFs used for the revision. Slide titles, section dividers, activities, examples, synthesis slides, optional extensions, and reference pages are all included in the ranges below. “Incorporated” means the substantive teaching content is present in the listed book destination; material already present was retained rather than duplicated.
+This ledger accounts for all 294 pages in the four course lecture-note PDFs used for the revision. Slide titles, section dividers, activities, examples, synthesis slides, optional extensions, and reference pages are all included in the ranges below. “Incorporated” means the substantive teaching content is present in the listed book destination; material already present was retained rather than duplicated.
 
 ## DPN01 — Decision Process (62 slides)
 

@@ -8,7 +8,7 @@
 
 <meta name="description" content="A textbook on how people choose, influence, communicate, negotiate, and build better decision systems.">
 
-<title>13&nbsp; Probability: The Mind Loves Stories; Statistics Need Reference Classes – Decision, Persuasion, and Negotiation</title>
+<title>13&nbsp; Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes – Decision, Persuasion, and Negotiation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III. Heuristics, Biases, and Choice Across Time</a></li><li class="breadcrumb-item"><a href="../chapters/12-base-rates-randomness-and-calibration.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III. Heuristics, Biases, and Probability Judgment</a></li><li class="breadcrumb-item"><a href="../chapters/12-base-rates-randomness-and-calibration.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part III. Heuristics, Biases, and Choice Across Time</span></a>
+ <span class="menu-text">Part III. Heuristics, Biases, and Probability Judgment</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -225,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/12-base-rates-randomness-and-calibration.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -258,18 +287,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cognitive Ease: When Easy Feels True</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/38-intertemporal-choice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Choice: Why Later Loses to Now</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part IV. Influence and Persuasion</span></a>
+ <span class="menu-text">Part IV. Risk, Experience, and Time</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -277,44 +300,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">The Social Brain: Learning, Mimicry, and Attribution</span></span></a>
+  <a href="../chapters/39-risky-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/23-conformity-norms-and-social-proof.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Conformity: When Popularity Becomes Evidence</span></span></a>
+  <a href="../chapters/40-prospect-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
+  <a href="../chapters/41-decisions-from-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/37-culture-identity-social-meaning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
+  <a href="../chapters/38-intertemporal-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
   </div>
 </li>
       </ul>
@@ -322,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part V. Distributive Negotiation</span></a>
+ <span class="menu-text">Part V. Money, Finance, and Well-Being</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -330,20 +335,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span></a>
+  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
+  <a href="../chapters/43-behavioral-finance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Finance: Markets Can Be Efficient and Investors Can Still Err</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span></a>
+  <a href="../chapters/44-asset-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Asset Bubbles: When Price Becomes Evidence About Price</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/45-subjective-well-being.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Subjective Well-Being: Income Is Not the Same as a Good Life</span></span></a>
   </div>
 </li>
       </ul>
@@ -351,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VI. Integrative Negotiation</span></a>
+ <span class="menu-text">Part VI. Strategic and Social Decisions</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -359,14 +370,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/33-interests-priorities-and-trade-offs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Integrative Negotiation: Create Value Before Dividing It</span></span></a>
+  <a href="../chapters/46-strategic-interdependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/34-mesos-contingent-contracts-and-better-agreements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
+  <a href="../chapters/47-behavioral-game-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/48-cooperation-social-preferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">The Social Brain: Learning, Mimicry, and Attribution</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-conformity-norms-and-social-proof.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Conformity: When Popularity Becomes Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-culture-identity-social-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
   </div>
 </li>
       </ul>
@@ -374,7 +409,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VII. Communication and Connection</span></a>
+ <span class="menu-text">Part VII. Influence and Persuasion</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -382,14 +417,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Authority, Bystanders, and Influence Triggers</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  <a href="../chapters/25-persuasion-is-model-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-building-an-evidence-aligned-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Story</span></span></a>
   </div>
 </li>
       </ul>
@@ -397,7 +444,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../parts/part-8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part VIII. Habits and Behavior Design</span></a>
+ <span class="menu-text">Part VIII. Negotiation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -405,32 +452,96 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/30-negotiation-is-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Negotiation: Winning Is Not the Same as Succeeding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-preparing-to-claim-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Preparing to Claim Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-anchors-concessions-and-bargaining-tactics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">First Offers, Anchors, Concessions, and Silence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-interests-priorities-and-trade-offs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Integrative Negotiation: Create Value Before Dividing It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-mesos-contingent-contracts-and-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">MESOs, Contingent Contracts, and Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IX. Communication and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-communication-is-joint-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-the-art-of-conversation-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part X. Habits and Decision Design</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Habits: The Plan Is Often Not the Decision-Maker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/20-wanting-craving-and-self-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Wanting and Self-Control: Urge Is Not Action</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/21-designing-behavior.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/36-choice-architecture.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/35-decision-hygiene.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
   </div>
 </li>
       </ul>
@@ -449,13 +560,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-a-portable-course-tools.html" class="sidebar-item-text sidebar-link">
@@ -466,6 +577,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-b-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How Behavioral Evidence Is Built</span></span></a>
   </div>
 </li>
       </ul>
@@ -481,10 +598,39 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#conditional-probability-and-natural-frequencies" id="toc-conditional-probability-and-natural-frequencies" class="nav-link" data-scroll-target="#conditional-probability-and-natural-frequencies">Conditional probability and natural frequencies</a></li>
-  <li><a href="#regression-to-the-mean" id="toc-regression-to-the-mean" class="nav-link" data-scroll-target="#regression-to-the-mean">Regression to the mean</a></li>
-  <li><a href="#calibration" id="toc-calibration" class="nav-link" data-scroll-target="#calibration">Calibration</a></li>
-  <li><a href="#building-statistical-intuition" id="toc-building-statistical-intuition" class="nav-link" data-scroll-target="#building-statistical-intuition">Building statistical intuition</a></li>
+  <li><a href="#opening-puzzle-which-sequence-looks-random" id="toc-opening-puzzle-which-sequence-looks-random" class="nav-link" data-scroll-target="#opening-puzzle-which-sequence-looks-random">Opening puzzle: which sequence looks random?</a></li>
+  <li><a href="#probability-begins-by-specifying-the-model" id="toc-probability-begins-by-specifying-the-model" class="nav-link" data-scroll-target="#probability-begins-by-specifying-the-model">Probability begins by specifying the model</a>
+  <ul class="collapse">
+  <li><a href="#complement-what-remains-when-an-event-does-not-occur" id="toc-complement-what-remains-when-an-event-does-not-occur" class="nav-link" data-scroll-target="#complement-what-remains-when-an-event-does-not-occur">Complement: what remains when an event does not occur</a></li>
+  <li><a href="#and-intersections-require-a-conditional-probability" id="toc-and-intersections-require-a-conditional-probability" class="nav-link" data-scroll-target="#and-intersections-require-a-conditional-probability">AND: intersections require a conditional probability</a></li>
+  <li><a href="#or-add-then-subtract-the-overlap" id="toc-or-add-then-subtract-the-overlap" class="nav-link" data-scroll-target="#or-add-then-subtract-the-overlap">OR: add, then subtract the overlap</a></li>
+  <li><a href="#conditional-probability-direction-matters" id="toc-conditional-probability-direction-matters" class="nav-link" data-scroll-target="#conditional-probability-direction-matters">Conditional probability: direction matters</a></li>
+  <li><a href="#total-probability-rebuild-the-denominator" id="toc-total-probability-rebuild-the-denominator" class="nav-link" data-scroll-target="#total-probability-rebuild-the-denominator">Total probability: rebuild the denominator</a></li>
+  <li><a href="#bayes-rule-reverse-the-conditioning-without-reversing-the-evidence" id="toc-bayes-rule-reverse-the-conditioning-without-reversing-the-evidence" class="nav-link" data-scroll-target="#bayes-rule-reverse-the-conditioning-without-reversing-the-evidence">Bayes’ rule: reverse the conditioning without reversing the evidence</a></li>
+  </ul></li>
+  <li><a href="#the-logical-constraints-behind-conjunction-and-disjunction" id="toc-the-logical-constraints-behind-conjunction-and-disjunction" class="nav-link" data-scroll-target="#the-logical-constraints-behind-conjunction-and-disjunction">The logical constraints behind conjunction and disjunction</a>
+  <ul class="collapse">
+  <li><a href="#dilution-more-information-can-make-evidence-worse" id="toc-dilution-more-information-can-make-evidence-worse" class="nav-link" data-scroll-target="#dilution-more-information-can-make-evidence-worse">Dilution: more information can make evidence worse</a></li>
+  </ul></li>
+  <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a>
+  <ul class="collapse">
+  <li><a href="#reference-classes-are-choices-not-facts-delivered-by-nature" id="toc-reference-classes-are-choices-not-facts-delivered-by-nature" class="nav-link" data-scroll-target="#reference-classes-are-choices-not-facts-delivered-by-nature">Reference classes are choices, not facts delivered by nature</a></li>
+  </ul></li>
+  <li><a href="#small-samples-produce-stories-faster-than-evidence" id="toc-small-samples-produce-stories-faster-than-evidence" class="nav-link" data-scroll-target="#small-samples-produce-stories-faster-than-evidence">Small samples produce stories faster than evidence</a></li>
+  <li><a href="#gamblers-fallacy-and-hot-hands-require-different-process-models" id="toc-gamblers-fallacy-and-hot-hands-require-different-process-models" class="nav-link" data-scroll-target="#gamblers-fallacy-and-hot-hands-require-different-process-models">Gambler’s fallacy and hot hands require different process models</a>
+  <ul class="collapse">
+  <li><a href="#ritual-correlation-and-adaptive-knowledge" id="toc-ritual-correlation-and-adaptive-knowledge" class="nav-link" data-scroll-target="#ritual-correlation-and-adaptive-knowledge">Ritual, correlation, and adaptive knowledge</a></li>
+  </ul></li>
+  <li><a href="#regression-to-the-mean-extreme-outcomes-contain-extreme-noise" id="toc-regression-to-the-mean-extreme-outcomes-contain-extreme-noise" class="nav-link" data-scroll-target="#regression-to-the-mean-extreme-outcomes-contain-extreme-noise">Regression to the mean: extreme outcomes contain extreme noise</a></li>
+  <li><a href="#information-protocols-change-the-answer" id="toc-information-protocols-change-the-answer" class="nav-link" data-scroll-target="#information-protocols-change-the-answer">Information protocols change the answer</a>
+  <ul class="collapse">
+  <li><a href="#monty-hall" id="toc-monty-hall" class="nav-link" data-scroll-target="#monty-hall">Monty Hall</a></li>
+  <li><a href="#two-children" id="toc-two-children" class="nav-link" data-scroll-target="#two-children">Two children</a></li>
+  </ul></li>
+  <li><a href="#calibration-make-probability-answerable-to-outcomes" id="toc-calibration-make-probability-answerable-to-outcomes" class="nav-link" data-scroll-target="#calibration-make-probability-answerable-to-outcomes">Calibration: make probability answerable to outcomes</a></li>
+  <li><a href="#worked-application-a-positive-hiring-signal" id="toc-worked-application-a-positive-hiring-signal" class="nav-link" data-scroll-target="#worked-application-a-positive-hiring-signal">Worked application: a positive hiring signal</a></li>
+  <li><a href="#worked-application-a-project-with-many-routes-to-delay" id="toc-worked-application-a-project-with-many-routes-to-delay" class="nav-link" data-scroll-target="#worked-application-a-project-with-many-routes-to-delay">Worked application: a project with many routes to delay</a></li>
+  <li><a href="#ethics-a-denominator-can-persuade-as-strongly-as-a-story" id="toc-ethics-a-denominator-can-persuade-as-strongly-as-a-story" class="nav-link" data-scroll-target="#ethics-a-denominator-can-persuade-as-strongly-as-a-story">Ethics: a denominator can persuade as strongly as a story</a></li>
   <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
   <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -494,9 +640,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III. Heuristics, Biases, and Choice Across Time</a></li><li class="breadcrumb-item"><a href="../chapters/12-base-rates-randomness-and-calibration.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-3.html">Part III. Heuristics, Biases, and Probability Judgment</a></li><li class="breadcrumb-item"><a href="../chapters/12-base-rates-randomness-and-calibration.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability: The Mind Loves Stories; Statistics Need Reference Classes</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Probability Judgment: The Mind Loves Stories; Statistics Need Reference Classes</span></h1>
 </div>
 
 
@@ -513,7 +659,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Statistical intuition begins where the story meets the denominator</em></p>
+<p><em>Probability is not a feeling of plausibility. It is a disciplined way to represent uncertainty, combine evidence, and learn from error.</em></p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -524,129 +670,232 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Good probability judgment starts with a reference class, updates with diagnostic evidence, expects noise and regression, and records forecasts so confidence can be calibrated.</p>
+<p>Stories make one outcome easy to imagine. Probability asks a different set of questions: what is the sample space, what is the relevant reference class, how diagnostic is the evidence, which events overlap, and how often are forecasts like this one correct? Good judgment preserves that structure from the first estimate to the final score.</p>
 </div>
-</div>
-<div id="fig-natural-frequencies" class="quarto-float quarto-figure quarto-figure-center" alt="Frequency tree for 10,000 people showing 90 true positives and 891 false positives, producing a 9 percent posterior probability.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-natural-frequencies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/natural-frequencies.svg" class="img-fluid figure-img" alt="Frequency tree for 10,000 people showing 90 true positives and 891 false positives, producing a 9 percent posterior probability.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-natural-frequencies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13.1: Natural frequencies make base rates and false positives visible: only about 9% of positive tests in this example are true positives.
-</figcaption>
-</figure>
 </div>
 <section id="learning-goals" class="level2">
 <h2 data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
-<li>Use base rates and natural frequencies.</li>
-<li>Distinguish P(evidence|hypothesis) from P(hypothesis|evidence).</li>
-<li>Explain regression to the mean.</li>
-<li>Use explicit probabilities and feedback to improve calibration.</li>
+<li>Use complements, intersections, unions, conditional probability, independence, total probability, and Bayes’ rule.</li>
+<li>Translate conditional probabilities into natural frequencies.</li>
+<li>Diagnose conjunction, disjunction, dilution, and base-rate errors.</li>
+<li>Separate random clustering from genuine dependence, and explain regression to the mean.</li>
+<li>State the protocol assumptions behind Monty Hall and two-child problems.</li>
+<li>Record, score, and calibrate probabilistic forecasts.</li>
 </ul>
-<p>Imagine that you are evaluating a start-up founder. She is energetic, persuasive, technically skilled, and deeply committed. She tells a compelling story about a market that incumbents have ignored. She has a prototype and early user enthusiasm. The story feels strong.</p>
-<p>Now ask a different question: out of 100 start-ups at this stage, how many return significant value to investors?</p>
-<p>The first question invites narrative judgment. The second invites statistical judgment.</p>
-<p>Both matter. A base rate without case information is incomplete. Case information without a base rate is ungrounded. The challenge is integration.</p>
-<p>A base rate is the general frequency of an outcome in a relevant class. If 10% of similar projects succeed, that is a base rate. If 30% of candidates with a certain background perform well, that is a base rate. If 1% of people in a population have a disease, that is a base rate. If most mergers fail to create shareholder value, that is a base-rate warning. If similar construction projects usually exceed budget, that matters.</p>
-<p>People often underuse base rates. Kahneman and Tversky (1973) showed that people sometimes rely heavily on individuating descriptions even when base-rate information is available. Bar-Hillel (1980) reviewed evidence that base rates are neglected especially when case-specific information feels diagnostic, vivid, or representative. In plain language, people often prefer the story to the statistic.</p>
-<p>Consider hiring. A candidate gives an excellent unstructured interview. The interviewer is impressed. The candidate seems confident, fluent, and culturally compatible. But how predictive are unstructured interviews? How often do confident interviewees actually perform well? How much better are structured interviews, work samples, or job-relevant tests? Without reference-class information, the interviewer may confuse interview performance with job performance.</p>
-<p>Consider medicine. A doctor hears symptoms that fit a familiar diagnosis. The story is coherent. But if the disease is rare and the symptoms are common across many conditions, the base rate matters. Diagnosis requires asking not only “Does this look like disease X?” but also “How common is disease X among patients like this, and how strongly do these symptoms distinguish it from alternatives?”</p>
-<p>Consider public fear after a vivid event. A dramatic crime, accident, or disaster can dominate attention. But a vivid event is not the same as a frequent event. If public policy responds mainly to the most available story, it may overinvest in dramatic risks and underinvest in common but less visible harms.</p>
-<p>A base rate is not a substitute for judgment. It is the starting point that keeps judgment from floating away.</p>
-<p>Bayesian reasoning gives a formal version of this principle. The basic idea is simple: begin with a prior probability, examine new evidence, and update depending on how diagnostic the evidence is. The prior is the base rate or initial belief. The new evidence should move the probability up or down depending on how likely that evidence would be if the hypothesis were true compared with if it were false (Bayes, 1763; Edwards, 1968; Tversky &amp; Kahneman, 1974).</p>
-<p>In everyday language:</p>
-<p>Start with how common it is. Ask how much the evidence should change that. Do not let a vivid detail erase the base rate unless the detail is genuinely diagnostic.</p>
-<p>This discipline is hard because stories feel more personal than statistics. “This founder reminds me of a famous success” feels alive. “Most start-ups fail” feels abstract. “This patient has a symptom I recognize” feels immediate. “The condition is rare” feels distant. “This project team is different” feels more compelling than “similar projects usually run late.”</p>
-<p>The outside view helps correct this tendency. Instead of focusing only on the unique details of the case, we ask what happened in a reference class of similar cases (Kahneman &amp; Lovallo, 1993). This idea appeared earlier in planning fallacy and overconfidence, but it is fundamentally a probability tool. It asks decision-makers to step outside the story and look at the distribution.</p>
-<p>A useful question is:</p>
-<p>What is the relevant reference class, and what usually happens there?</p>
-<p>This question is simple. It is also one of the strongest defenses against poor probability judgment.</p>
 </section>
-<section id="conditional-probability-and-natural-frequencies" class="level2">
-<h2 data-anchor-id="conditional-probability-and-natural-frequencies">Conditional probability and natural frequencies</h2>
-<p>Probability becomes especially difficult when evidence is conditional.</p>
-<p>Consider a medical test. Suppose 1% of a population has a disease. A test correctly detects the disease 90% of the time when the disease is present. The test also produces false positives in 9% of people who do not have the disease. A person tests positive. What is the probability that the person actually has the disease?</p>
-<p>Many people answer close to 90%. That is wrong.</p>
-<p>Use natural frequencies. Imagine 10,000 people.</p>
-<p>About 1%, or 100 people, have the disease. Of those 100, the test correctly identifies 90. The remaining 9,900 people do not have the disease. Of those 9,900, 9% test positive falsely, which is 891 people. So the total number of positive tests is 90 true positives plus 891 false positives = 981 positive tests. Out of those 981 positive tests, only 90 are actual disease cases.</p>
-<p>The probability of disease given a positive test is about 90/981, or about 9%.</p>
-<p>This result surprises people because they confuse the probability of a positive test given disease with the probability of disease given a positive test. These are not the same.</p>
-<p>The first is:</p>
-<p>If the person has the disease, how likely is a positive test?</p>
-<p>The second is:</p>
-<p>If the person has a positive test, how likely is the disease?</p>
-<p>This distinction is central to conditional probability. Confusing the two can produce serious errors in medicine, law, security, hiring, and everyday judgment.</p>
-<p>Eddy (1982) showed that physicians often struggled with Bayesian reasoning in medical diagnosis. Gigerenzer and Hoffrage (1995) later showed that presenting information as natural frequencies can greatly improve reasoning compared with abstract probabilities. Cosmides and Tooby (1996) argued that human reasoning often improves when probability problems are presented in frequency formats that match how people may naturally track events.</p>
-<p>The problem is not that people are incapable of statistical reasoning. It is that many probability formats are cognitively unfriendly.</p>
-<p>Natural frequencies help because they preserve the nested structure of the problem. Instead of juggling percentages, people can count cases. “Out of 10,000 people…” is often easier than “1% prevalence, 90% sensitivity, 9% false-positive rate…”</p>
-<p>The same problem appears in legal reasoning. The prosecutor’s fallacy occurs when the probability of evidence given innocence is confused with the probability of innocence given evidence. Suppose a DNA match is rare: only 1 in 1 million people would match by chance. That does not automatically mean there is a 1 in 1 million chance the defendant is innocent. The probability of innocence depends on the prior probability, the size of the population, the quality of the evidence, possible lab errors, and other case evidence. Legal scholars and statisticians have long warned about such errors in courtroom reasoning (Thompson &amp; Schumann, 1987).</p>
-<p>Conditional probability also matters in everyday life.</p>
-<p>If a person is nervous in an interview, how likely is incompetence? If a company misses one deadline, how likely is future unreliability? If someone is quiet in a meeting, how likely is disagreement? If a student performs poorly once, how likely is low ability? If a stock rises after good news, how likely is continued growth?</p>
-<p>The evidence may matter, but it must be interpreted against a base rate and an alternative hypothesis. A nervous candidate may be incompetent, but they may also be introverted, under pressure, or unfamiliar with interviews. A quiet employee may disagree, but they may also be thinking, uncertain, culturally cautious, or waiting for invitation. A missed deadline may indicate unreliability, but it may also reflect unclear scope, overload, or one-time disruption.</p>
-<p>Bayesian reasoning is not only mathematics. It is disciplined humility about evidence.</p>
-<p>Ask:</p>
-<p>How common is the hypothesis before this evidence? How likely is this evidence if the hypothesis is true? How likely is this evidence if the hypothesis is false? What alternative explanations could produce the same evidence? How should my belief change—not to certainty, but upward or downward?</p>
-<p>Good probability judgment rarely jumps from evidence to conclusion. It updates.</p>
+<section id="opening-puzzle-which-sequence-looks-random" class="level2">
+<h2 data-anchor-id="opening-puzzle-which-sequence-looks-random">Opening puzzle: which sequence looks random?</h2>
+<p>A fair coin will be tossed six times. Rank these exact sequences from most to least likely:</p>
+<ol type="1">
+<li>H H H H H H</li>
+<li>H H H T T T</li>
+<li>H T H T H T</li>
+</ol>
+<p>Most people find the first sequence suspicious and the third comfortably random. But each specified sequence has probability</p>
+<p><span class="math display">\[
+\left(\frac{1}{2}\right)^6=\frac{1}{64}.
+\]</span></p>
+<p>The mind is answering a sensible but different question: <em>Which sequence resembles my prototype of randomness?</em> Alternation looks random; a streak looks designed. Probability asks what event was specified before the tosses and how many elementary outcomes belong to it.</p>
+<p>This distinction resolves an apparent contradiction. The exact sequences above are equally likely, <strong>but</strong> the class “three heads and three tails in any order” contains <span class="math inline">\(\binom{6}{3}=20\)</span> sequences, whereas “all heads or all tails” contains only two. The first class therefore has probability <span class="math inline">\(20/64\)</span> and the second <span class="math inline">\(2/64\)</span>. A single outcome and a category of outcomes are not interchangeable.</p>
+<p>That is the journey of this chapter. Intuition supplies a story; formal probability restores the event, denominator, and information protocol.</p>
 </section>
-<section id="regression-to-the-mean" class="level2">
-<h2 data-anchor-id="regression-to-the-mean">Regression to the mean</h2>
-<p>Regression to the mean is one of the most important and least intuitive ideas in statistics.</p>
-<p>When an outcome is extreme, the next measurement is likely to be closer to average, partly because extreme outcomes often reflect both skill and luck. If a student scores unusually high on one test, the next score is likely to be lower, even if the student remains strong. If a salesperson has an extraordinary month, the next month is likely to be more ordinary. If a mutual fund dramatically outperforms, future performance may move closer to the market average. If a pilot performs unusually badly during one training flight, the next flight may improve even without intervention.</p>
-<p>Francis Galton first described regression toward mediocrity in his study of heredity (Galton, 1886). The concept later became central to statistics. In decision-making, regression matters because people often invent causal explanations for movement that is partly statistical.</p>
-<p>Kahneman and Tversky (1973) described how people misunderstand regression. Suppose a flight instructor praises pilots after excellent landings and criticizes them after poor landings. The instructor observes that praise is often followed by worse performance and criticism by better performance. He concludes that criticism works and praise harms. But regression to the mean provides another explanation. Exceptional landings are likely to be followed by less exceptional ones, and poor landings by better ones, regardless of feedback.</p>
-<p>This error is common.</p>
-<p>A company has a terrible quarter. Leadership launches a new initiative. Performance improves. The initiative gets credit, even if some improvement was regression from an unusually bad quarter.</p>
-<p>A student performs badly on a test. Parents punish the student. The next score improves. Punishment gets credit, even if the first score was unusually low.</p>
-<p>A sports team fires a coach after a losing streak. Performance improves. The firing gets credit, even if the streak was partly bad luck.</p>
-<p>A hospital unit has unusually high infection rates one month. Management intervenes. Rates fall. The intervention may have helped, but regression may also contribute.</p>
-<p>Regression does not mean interventions do not work. It means improvement after an extreme outcome is not sufficient evidence that the intervention caused improvement. We need comparison groups, longer histories, or repeated data.</p>
-<p>Regression also matters in prediction. People often make extreme predictions from extreme evidence. A student who scores in the 99th percentile once is predicted to always perform at that level. A job candidate who gives a brilliant interview is predicted to be outstanding. A company with rapid early growth is predicted to continue rapid growth. But if the evidence contains noise, predictions should be regressed toward the average.</p>
-<p>This is one reason intuitive predictions are often too extreme. People predict outcomes that are as extreme as the evidence seems, rather than adjusting for unreliability. If an interview is only moderately predictive, an outstanding interview should not produce an extremely high performance forecast. If early sales are noisy, strong early sales should be tempered.</p>
-<p>A useful corrective is:</p>
-<p>How reliable is this measure? How extreme is the current observation? How much luck might be involved? What is the average outcome in the reference class? How far should my prediction move back toward that average?</p>
-<p>Regression to the mean teaches humility. Extreme outcomes invite stories. Some stories are true. Many are partly luck.</p>
+<section id="probability-begins-by-specifying-the-model" class="level2">
+<h2 data-anchor-id="probability-begins-by-specifying-the-model">Probability begins by specifying the model</h2>
+<p>A <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> lists the elementary outcomes allowed by a model. An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of those outcomes. A probability measure assigns numbers satisfying three basic requirements:</p>
+<p><span class="math display">\[
+0\le P(A)\le 1, \qquad P(\Omega)=1,
+\]</span></p>
+<p>and probabilities add for mutually exclusive events. These rules are simple. Applying them responsibly requires more: the sample space, probability model, and reference class must fit the real process.</p>
+<p>Calling a coin fair assumes that each side has probability one-half. Calling successive tosses independent assumes that an earlier result does not change the next probability. Those are modeling claims, not properties created by the notation. A damaged coin, a shuffled deck without replacement, an adaptive algorithm, or a tired player may generate dependence.</p>
+<p>The formal language is useful because it prevents several ordinary ambiguities.</p>
+<section id="complement-what-remains-when-an-event-does-not-occur" class="level3">
+<h3 data-anchor-id="complement-what-remains-when-an-event-does-not-occur">Complement: what remains when an event does not occur</h3>
+<p>If <span class="math inline">\(A^c\)</span> means “not <span class="math inline">\(A\)</span>,” then</p>
+<p><span class="math display">\[
+P(A^c)=1-P(A).
+\]</span></p>
+<p>If a project has a 0.70 probability of finishing by Friday under a stated model, it has a 0.30 probability of not finishing by Friday. The complement must refer to the same event boundary and time horizon. “Not finished by Friday” is not the same as “the project fails.”</p>
 </section>
-<section id="calibration" class="level2">
-<h2 data-anchor-id="calibration">Calibration</h2>
-<p>Probability judgment is not only about avoiding specific errors. It is also about becoming calibrated.</p>
-<p>A person is well calibrated when events assigned a probability of 70% happen about 70% of the time, events assigned 90% happen about 90% of the time, and so on. Calibration is not about being certain. It is about matching confidence to reality.</p>
-<p>Research on calibration shows that people are often overconfident, especially when answering difficult knowledge questions or forecasting uncertain events (Lichtenstein et al., 1982). They may say they are 90% confident but be correct much less often. This is overprecision, discussed in Chapter 14.</p>
-<p>Calibration matters because decisions depend on confidence. If a manager says a project has an 80% chance of success, the organization may invest heavily. If the true probability is closer to 40%, the decision changes. If a doctor says a diagnosis is very likely, treatment follows. If an investor is highly confident in a forecast, they may concentrate risk.</p>
-<p>Forecasting research offers tools for improvement. Tetlock’s work on expert political judgment found that many experts performed poorly at long-term forecasting, especially when they relied on broad ideological narratives (Tetlock, 2005). Later work on forecasting tournaments found that some people—“superforecasters”—performed unusually well by breaking problems into parts, using base rates, updating gradually, thinking probabilistically, considering alternatives, and learning from feedback (Mellers et al., 2014; Tetlock &amp; Gardner, 2015).</p>
-<p>Good forecasters do not simply “trust their gut.” They use habits that align with statistical reasoning:</p>
-<p>Start with base rates. Break complex questions into components. Use comparison classes. Make numerical probability estimates. Update incrementally when evidence changes. Look for disconfirming information. Track accuracy over time. Distinguish uncertainty from ignorance. Avoid false precision.</p>
-<p>One useful tool is the Brier score, a measure of forecast accuracy for probabilistic predictions (Brier, 1950). A lower Brier score indicates better accuracy. Most people do not need to compute Brier scores in daily life, but the principle matters: probabilistic predictions should be recorded and checked.</p>
-<p>Calibration also requires using probability language carefully. Words such as “likely,” “possible,” “rare,” “serious risk,” and “good chance” mean different things to different people. One person’s “likely” may mean 60%; another’s may mean 90%. In organizations, vague probability language causes confusion. A project described as “highly likely” may be interpreted differently by executives, analysts, and engineers.</p>
-<p>Sherman Kent, a pioneer of intelligence analysis, argued for translating probability words into numerical ranges to reduce ambiguity (Kent, 1964). Modern intelligence communities often use probability terms with defined ranges. This is useful in business too. Instead of saying “There is a real chance,” say “I estimate 25–35%.” Instead of “This is unlikely,” say “About 10%.” Numbers are not perfect, but they force clarity.</p>
-<p>People often resist numerical probabilities because they feel artificial. But vague words can hide disagreement. A team may agree that success is “likely” while one person means 55% and another means 85%. The agreement is an illusion.</p>
-<p>A useful decision practice is to ask each person privately for a probability estimate before discussion. Then compare. Differences reveal assumptions.</p>
-<p>Calibration is not about pretending to know more than we do. It is about admitting uncertainty precisely enough to learn.</p>
+<section id="and-intersections-require-a-conditional-probability" class="level3">
+<h3 data-anchor-id="and-intersections-require-a-conditional-probability">AND: intersections require a conditional probability</h3>
+<p>For two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>,</p>
+<p><span class="math display">\[
+P(A\cap B)=P(A)P(B\mid A).
+\]</span></p>
+<p>The second term asks how likely <span class="math inline">\(B\)</span> is <strong>after learning that <span class="math inline">\(A\)</span> occurred</strong>. If the events are independent, then <span class="math inline">\(P(B\mid A)=P(B)\)</span> and the multiplication rule becomes</p>
+<p><span class="math display">\[
+P(A\cap B)=P(A)P(B).
+\]</span></p>
+<p>Independence is stronger than “the events can both happen.” Rain and traffic delay are not mutually exclusive, but they may be dependent. Two draws from a deck without replacement are dependent because the first draw changes the composition of the deck.</p>
 </section>
-<section id="building-statistical-intuition" class="level2">
-<h2 data-anchor-id="building-statistical-intuition">Building statistical intuition</h2>
-<p>Statistical intuition can improve. It requires tools that make probability more concrete and less story-dependent.</p>
-<p>The first tool is natural frequencies. Instead of saying “The disease prevalence is 1%, the sensitivity is 90%, and the false-positive rate is 9%,” say “Out of 10,000 people, 100 have the disease, 90 of them test positive, and 891 people without the disease also test positive.” Natural frequencies make conditional probability easier (Gigerenzer &amp; Hoffrage, 1995).</p>
-<p>The second tool is reference-class forecasting. Ask what happened in similar cases. A project plan should be compared with similar projects. A hiring forecast should be compared with similar hires. A medical risk should be compared with similar patients. A start-up should be compared with similar ventures at a similar stage. The reference class anchors the prediction.</p>
-<p>The third tool is sample size awareness. Small samples are noisy. A few cases rarely prove a pattern. Before drawing conclusions, ask how many observations are involved. A school’s test scores, a doctor’s outcomes, a fund manager’s returns, or a team’s performance may fluctuate substantially when samples are small.</p>
-<p>The fourth tool is regression thinking. Extreme outcomes should be expected to move partly toward average unless there is strong evidence of lasting change. This helps prevent overreaction to exceptional success or failure.</p>
-<p>The fifth tool is alternative explanations. When evidence appears diagnostic, ask what else could produce it. A positive test could be true disease or false positive. A quiet student could be confused, bored, shy, reflective, or culturally cautious. A rising stock could reflect fundamentals, hype, liquidity, or temporary sentiment.</p>
-<p>The sixth tool is probabilistic language. Replace certainty with ranges. Say “I am 70% confident” rather than “I know.” Say “My estimate is 40–60%” rather than “It could happen.” Probability language helps people update.</p>
-<p>The seventh tool is feedback. Record forecasts, compare outcomes, and update calibration. Without feedback, people repeat the same probability errors.</p>
-<p>The eighth tool is visual representation. Icon arrays, frequency trees, risk ladders, and simple charts can make probability easier to grasp. Visual aids are especially useful in medicine and public policy, where abstract percentages can confuse (Gigerenzer &amp; Edwards, 2003).</p>
-<p>The ninth tool is slowing down when stories are vivid. A coherent story should trigger the question: how common is this story? Vividness is not probability.</p>
-<p>The tenth tool is humility. Many probabilities are uncertain. The goal is not false precision but disciplined uncertainty.</p>
-<p>A practical probability checklist:</p>
-<p>What is the reference class? What is the base rate? How diagnostic is the evidence? What alternative explanations exist? How large is the sample? Could this be random variation? Should I expect regression to the mean? What probability would I assign? What evidence would change it? How will I check calibration later?</p>
-<p>Statistical intuition is not about becoming a calculator. It is about learning to ask questions that stories often hide.</p>
-<p>Chapter 2 showed how probabilities and utilities are combined under risk; this chapter supplies the statistical discipline those models require. Probability judgment asks how likely outcomes are. Risky decision-making asks how people choose when probabilities and outcomes must be combined. That requires expected value, expected utility, risk aversion, and the limits of the rational model under risk.</p>
-<div id="tbl-12-1" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-12-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;13.1: A probability checklist
+<section id="or-add-then-subtract-the-overlap" class="level3">
+<h3 data-anchor-id="or-add-then-subtract-the-overlap">OR: add, then subtract the overlap</h3>
+<p>For “<span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both,”</p>
+<p><span class="math display">\[
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+\]</span></p>
+<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mutually exclusive, their intersection is empty and the subtraction term is zero. A flight may be delayed by weather, crew problems, or both; simply adding the two probabilities would double-count flights in the overlap.</p>
+</section>
+<section id="conditional-probability-direction-matters" class="level3">
+<h3 data-anchor-id="conditional-probability-direction-matters">Conditional probability: direction matters</h3>
+<p>Provided <span class="math inline">\(P(B)&gt;0\)</span>,</p>
+<p><span class="math display">\[
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
+\]</span></p>
+<p><span class="math inline">\(P(A\mid B)\)</span> and <span class="math inline">\(P(B\mid A)\)</span> generally answer different questions. “How often does the test turn positive among people with the disease?” is not “How often do people with a positive test have the disease?” The denominators differ.</p>
+<p>Two events are independent when learning one does not change the probability of the other:</p>
+<p><span class="math display">\[
+P(A\mid B)=P(A),
+\]</span></p>
+<p>whenever the conditional probability is defined. Zero correlation is not, in general, the same as independence; independence rules out every probabilistic relationship, whereas zero correlation only rules out a particular linear association.</p>
+</section>
+<section id="total-probability-rebuild-the-denominator" class="level3">
+<h3 data-anchor-id="total-probability-rebuild-the-denominator">Total probability: rebuild the denominator</h3>
+<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(A^c\)</span> partition the cases, then</p>
+<p><span class="math display">\[
+P(B)=P(B\mid A)P(A)+P(B\mid A^c)P(A^c).
+\]</span></p>
+<p>This equation is the denominator that intuitive judgment often loses. Event <span class="math inline">\(B\)</span> can arrive through the <span class="math inline">\(A\)</span> branch or the not-<span class="math inline">\(A\)</span> branch. Both paths count.</p>
+</section>
+<section id="bayes-rule-reverse-the-conditioning-without-reversing-the-evidence" class="level3">
+<h3 data-anchor-id="bayes-rule-reverse-the-conditioning-without-reversing-the-evidence">Bayes’ rule: reverse the conditioning without reversing the evidence</h3>
+<p>Combining the multiplication rule with total probability gives</p>
+<p><span class="math display">\[
+P(A\mid B)=
+\frac{P(B\mid A)P(A)}
+{P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}.
+\]</span></p>
+<p>The prior probability <span class="math inline">\(P(A)\)</span> supplies the starting prevalence. The likelihood <span class="math inline">\(P(B\mid A)\)</span> describes how compatible the evidence is with <span class="math inline">\(A\)</span>. The competing likelihood <span class="math inline">\(P(B\mid A^c)\)</span> asks how often the same evidence appears without <span class="math inline">\(A\)</span>. The posterior <span class="math inline">\(P(A\mid B)\)</span> is the updated belief (Bayes, 1763).</p>
+<p>Bayes’ rule cannot rescue a poor model. A posterior is conditional on the prior, likelihoods, measurement quality, and hypothesis set supplied. Missing alternatives, selected samples, changing environments, and uncertain parameters remain substantive problems.</p>
+<div id="fig-probability-judgment-map" class="quarto-float quarto-figure quarto-figure-center" alt="Three-panel diagram. Panel one gives complement, AND, and OR probability rules. Panel two follows 10,000 people through a one-percent disease base rate, ninety-percent sensitivity, and nine-percent false-positive rate to show 90 true positives and 891 false positives, so 90 of 981 positive tests are true positives. Panel three shows a cycle from a numerical forecast to an observed outcome, a Brier score, and an updated forecast.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/probability-judgment-map.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three-panel diagram. Panel one gives complement, AND, and OR probability rules. Panel two follows 10,000 people through a one-percent disease base rate, ninety-percent sensitivity, and nine-percent false-positive rate to show 90 true positives and 891 false positives, so 90 of 981 positive tests are true positives. Panel three shows a cycle from a numerical forecast to an observed outcome, a Brier score, and an updated forecast.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: Probability judgment preserves three structures: coherent event rules, a natural-frequency denominator for Bayesian updating, and a forecast–score–update feedback loop.
 </figcaption>
-<div aria-describedby="tbl-12-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figure>
+</div>
+</section>
+</section>
+<section id="the-logical-constraints-behind-conjunction-and-disjunction" class="level2">
+<h2 data-anchor-id="the-logical-constraints-behind-conjunction-and-disjunction">The logical constraints behind conjunction and disjunction</h2>
+<p><a href="../chapters/11-resemblance-is-not-probability.html">The previous chapter</a> introduced the Linda problem and the pull of representativeness. Probability now supplies the non-negotiable boundary:</p>
+<p><span class="math display">\[
+P(A\cap B)\le P(A), \qquad P(A\cap B)\le P(B).
+\]</span></p>
+<p>Adding a condition can make a description more coherent, vivid, and representative. It cannot make the set larger. “A bank teller active in a social movement” is a subset of “a bank teller.” This is the <strong>conjunction rule</strong>, independent of whether the description sounds more like the person.</p>
+<p>The corresponding disjunction boundary is</p>
+<p><span class="math display">\[
+P(A\cup B)\ge P(A), \qquad P(A\cup B)\ge P(B).
+\]</span></p>
+<p>Organizations often underestimate aggregate failure because they assess each route separately. No single cause—supplier delay, staff turnover, regulatory review, software defect, or client revision—feels dominant. Yet the probability that <em>at least one</em> route delays the project can be substantial. The correction is not to add every percentage mechanically; routes may overlap. Map the union and its intersections.</p>
+<section id="dilution-more-information-can-make-evidence-worse" class="level3">
+<h3 data-anchor-id="dilution-more-information-can-make-evidence-worse">Dilution: more information can make evidence worse</h3>
+<p>Additional detail feels like additional knowledge. But information has value only when it changes the likelihood ratio or the decision. Irrelevant or weakly diagnostic details can dilute attention to stronger evidence.</p>
+<p>Sivanathan and Kakkar (2017) demonstrated this in six experiments with 3,059 participants. Adding minor side effects to a list of serious drug side effects reduced perceived overall severity and increased the drug’s attractiveness. The serious information did not become less true. It became less prominent in the average impression.</p>
+<p>This does not imply that minor effects should be hidden. It implies that risk communication should preserve severity and diagnosticity rather than present an undifferentiated list. Group evidence by consequence, likelihood, and decision relevance. Transparency requires completeness <strong>and</strong> structure.</p>
+</section>
+</section>
+<section id="natural-frequencies-make-bayes-visible" class="level2">
+<h2 data-anchor-id="natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</h2>
+<p>Suppose 1% of a population has a disease. A test is positive for 90% of people who have it and for 9% of people who do not. A person tests positive. What is the probability that the person has the disease?</p>
+<p>The number 90% is tempting because it is attached to the test. But it is <span class="math inline">\(P(+\mid D)\)</span>, not <span class="math inline">\(P(D\mid +)\)</span>.</p>
+<p>Imagine 10,000 people:</p>
+<ul>
+<li>100 have the disease; 90 of them test positive.</li>
+<li>9,900 do not have the disease; 891 of them test positive.</li>
+<li>There are therefore 981 positive tests, of which 90 are true positives.</li>
+</ul>
+<p>So</p>
+<p><span class="math display">\[
+P(D\mid +)=\frac{90}{90+891}=\frac{90}{981}\approx 0.0917.
+\]</span></p>
+<p>Only about 9.2% of positive tests in this model are true positives. Natural frequencies help because they keep the nested sets and denominator visible (Gigerenzer &amp; Hoffrage, 1995).</p>
+<p>The same directional error appears in court. A one-in-a-million probability of a particular DNA profile among unrelated people is not a one-in-a-million probability that a matched defendant is innocent. The latter requires a prior over possible sources, the number and selection of people compared, laboratory error, relatedness, and the rest of the evidence. Treating <span class="math inline">\(P(E\mid I)\)</span> as <span class="math inline">\(P(I\mid E)\)</span> is the prosecutor’s fallacy (Thompson &amp; Schumann, 1987).</p>
+<section id="reference-classes-are-choices-not-facts-delivered-by-nature" class="level3">
+<h3 data-anchor-id="reference-classes-are-choices-not-facts-delivered-by-nature">Reference classes are choices, not facts delivered by nature</h3>
+<p>A base rate is only as useful as its reference class. Should a start-up be compared with every new company, companies in the same sector, companies at the same funding stage, or companies led by founders with similar experience? A narrower class may be more relevant but smaller and noisier. A broader class is more stable but less tailored.</p>
+<p>Base-rate use is not simply present or absent. People are more likely to neglect a base rate when individuating detail feels causally diagnostic and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore asks what happened in comparable cases before explaining why this case is special (Kahneman &amp; Lovallo, 1993). A defensible process uses several nested classes, reports how results change, and states why one class receives more weight. “This case is unique” is a hypothesis, not a denominator.</p>
+</section>
+</section>
+<section id="small-samples-produce-stories-faster-than-evidence" class="level2">
+<h2 data-anchor-id="small-samples-produce-stories-faster-than-evidence">Small samples produce stories faster than evidence</h2>
+<p>People expect a small sample to resemble its population too closely—the “law of small numbers” (Tversky &amp; Kahneman, 1971). Three successful hires make a selection method feel validated. Two product failures condemn a market. A short winning streak reveals skill. Yet sampling variation is largest when the sample is small.</p>
+<p>For an independent Bernoulli event with probability <span class="math inline">\(p\)</span>, the standard error of the sample proportion is</p>
+<p><span class="math display">\[
+SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
+\]</span></p>
+<p>With <span class="math inline">\(p=0.5\)</span>, the standard error is about 0.158 for <span class="math inline">\(n=10\)</span> but 0.050 for <span class="math inline">\(n=100\)</span>. The population process did not become more stable; the estimate did.</p>
+<p>Selection makes the problem harder. Public success stories omit quiet failures. A fund enters a ranking because it just performed unusually well. A hospital is investigated because its rate was extreme. Data selected on an extreme outcome are especially likely to move toward the mean later.</p>
+</section>
+<section id="gamblers-fallacy-and-hot-hands-require-different-process-models" class="level2">
+<h2 data-anchor-id="gamblers-fallacy-and-hot-hands-require-different-process-models">Gambler’s fallacy and hot hands require different process models</h2>
+<p>After five roulette reds, black may feel “due.” Under independent fair spins, it is not: the wheel has no memory. The <strong>gambler’s fallacy</strong> treats short-run balancing as a physical correction. Lottery players have even avoided recently drawn numbers, behavior consistent with believing those numbers are temporarily less likely (Clotfelter &amp; Cook, 1993).</p>
+<p>After five successful shots, however, another success may feel more likely. That <strong>hot-hand belief</strong> could be another misreading of random clusters, or it could reflect genuine state dependence: confidence, fatigue, defensive adjustment, learning, selection of shot difficulty, or changing conditions.</p>
+<p>Gilovich, Vallone, and Tversky (1985) famously argued that basketball observers saw more streak dependence than the data supported. Miller and Sanjurjo (2018) later identified a finite-sample bias in common analyses of hit-after-hit rates and showed that some earlier tests understated streakiness. The updated lesson is not “the hot hand is always real.” It is:</p>
+<ol type="1">
+<li>specify the data-generating process;</li>
+<li>correct the statistic for selection and finite samples;</li>
+<li>distinguish an exact sequence from a class of streaks;</li>
+<li>test state dependence rather than infer it from appearance.</li>
+</ol>
+<p>Randomness can cluster. Dependence can also exist. A pattern alone decides neither.</p>
+<section id="ritual-correlation-and-adaptive-knowledge" class="level3">
+<h3 data-anchor-id="ritual-correlation-and-adaptive-knowledge">Ritual, correlation, and adaptive knowledge</h3>
+<p>When a ritual precedes success, repetition can feel causal. Skinner’s pigeons repeated movements that had accidentally preceded food, illustrating how intermittent reinforcement can maintain “superstitious” behavior (Skinner, 1948). Sports rituals and investment rules can develop the same way.</p>
+<p>But not every tradition without a modern explanation is irrational. Cultural practices may encode accumulated knowledge about toxins, weather, food preparation, or cooperation. The correct question is not whether a practice looks scientific. It is whether changing the practice changes outcomes under credible comparison, and whether a plausible mechanism or reliable long-run evidence exists.</p>
+</section>
+</section>
+<section id="regression-to-the-mean-extreme-outcomes-contain-extreme-noise" class="level2">
+<h2 data-anchor-id="regression-to-the-mean-extreme-outcomes-contain-extreme-noise">Regression to the mean: extreme outcomes contain extreme noise</h2>
+<p>Suppose performance is</p>
+<p><span class="math display">\[
+Y=\theta+\varepsilon,
+\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is a persistent component and <span class="math inline">\(\varepsilon\)</span> is temporary noise. Selecting an unusually high <span class="math inline">\(Y\)</span> selects cases with high persistent ability, favorable noise, or both. When the next noise term is less extreme, performance tends to move toward average even if ability does not change.</p>
+<p>For two standardized measures with correlation <span class="math inline">\(r\)</span>, the simple linear prediction is</p>
+<p><span class="math display">\[
+\widehat z_2=r z_1.
+\]</span></p>
+<p>If a measure two standard deviations above average has test–retest correlation <span class="math inline">\(r=0.40\)</span>, the best linear prediction under that model is only <span class="math inline">\(0.8\)</span> standard deviations above average. This is not punishment for success. It is shrinkage for unreliability.</p>
+<p>The Israeli flight-instructor example makes the attribution error vivid. Praise follows unusually good performance and criticism follows unusually poor performance. The next performance often looks worse after praise and better after criticism. An instructor may conclude that criticism works and praise harms, even if both changes partly reflect regression (Kahneman &amp; Tversky, 1973).</p>
+<p>Regression does not show that an intervention had no effect. It shows that before–after improvement among units selected for extreme performance cannot identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals.</p>
+</section>
+<section id="information-protocols-change-the-answer" class="level2">
+<h2 data-anchor-id="information-protocols-change-the-answer">Information protocols change the answer</h2>
+<p>Probability puzzles often appear to have one surprising answer. They actually have one answer <strong>conditional on a protocol</strong>.</p>
+<section id="monty-hall" class="level3">
+<h3 data-anchor-id="monty-hall">Monty Hall</h3>
+<p>You choose one of three doors. One hides a prize; two hide goats. A host who knows the locations always opens a different door showing a goat and always offers a switch. Your initial door retains probability <span class="math inline">\(1/3\)</span>; the two-door set you did not choose began with probability <span class="math inline">\(2/3\)</span>. The host’s rule transfers that <span class="math inline">\(2/3\)</span> to the only unopened alternative. Switching wins with probability <span class="math inline">\(2/3\)</span> (Selvin, 1975).</p>
+<p>Change the host protocol and the answer can change. If the host sometimes opens a door at random, sometimes reveals the prize, or offers a switch selectively, the opened door carries different information. “A goat was shown” is not enough; we need <span class="math inline">\(P(\text{host action}\mid\text{prize location})\)</span>.</p>
+</section>
+<section id="two-children" class="level3">
+<h3 data-anchor-id="two-children">Two children</h3>
+<p>Suppose a randomly sampled two-child family is known to have at least one boy, with independent equally likely sexes and no other selection. The remaining ordered possibilities are boy–boy, boy–girl, and girl–boy, so the probability of two boys is <span class="math inline">\(1/3\)</span>.</p>
+<p>If instead the older child is identified as a boy, the younger child’s probability is <span class="math inline">\(1/2\)</span>. If a parent volunteers “I have a boy,” the answer depends on how parents choose which child and statement to mention. The wording does not merely decorate the problem; it defines the sampling event.</p>
+<p>The transferable question is: <em>How was this information generated?</em></p>
+</section>
+</section>
+<section id="calibration-make-probability-answerable-to-outcomes" class="level2">
+<h2 data-anchor-id="calibration-make-probability-answerable-to-outcomes">Calibration: make probability answerable to outcomes</h2>
+<p>A forecaster is <strong>calibrated</strong> when events assigned 70% occur about 70% of the time, events assigned 20% occur about 20% of the time, and so forth. Calibration is a property of repeated forecasts, not one dramatic success.</p>
+<p>Accuracy has another dimension: <strong>resolution</strong> or discrimination. A forecaster who says 50% for everything may be calibrated in a balanced environment but provides little useful separation. Good forecasting requires probabilities that are both calibrated and responsive to information.</p>
+<p>For a binary event with forecast <span class="math inline">\(p\)</span> and outcome <span class="math inline">\(o\in\{0,1\}\)</span>, the Brier score is</p>
+<p><span class="math display">\[
+BS=(p-o)^2.
+\]</span></p>
+<p>Lower is better. A 70% forecast scores <span class="math inline">\(0.09\)</span> if the event occurs and <span class="math inline">\(0.49\)</span> if it does not. Across many forecasts, average the scores. For multicategory forecasts, one common convention sums squared errors across all categories; because scales then differ, the convention must be stated before comparing scores (Brier, 1950; Murphy, 1973).</p>
+<p>Forecasting tournaments show that judgment can improve through habits rather than clairvoyance: decompose the question, start with a base rate, use several reference classes, update in small increments, seek disconfirming evidence, and obtain feedback (Mellers et al., 2014). Numeric forecasts also reveal false agreement. Two colleagues may both say “likely” while one means 55% and the other 90%.</p>
+<p>A useful forecast record contains:</p>
+<div id="tbl-probability-forecast-ledger" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-probability-forecast-ledger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;13.1: A minimal forecast ledger
+</figcaption>
+<div aria-describedby="tbl-probability-forecast-ledger-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -654,30 +903,38 @@ Table&nbsp;13.1: A probability checklist
 </colgroup>
 <thead>
 <tr class="header">
-<th>Question</th>
-<th>Why it matters</th>
+<th>Field</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>What is the reference class and base rate?</td>
-<td>The story needs a statistical starting point.</td>
+<td>Event and resolution rule</td>
+<td>“The supplier passes acceptance testing by 30 September, documented by signed report.”</td>
 </tr>
 <tr class="even">
-<td>How diagnostic is the evidence?</td>
-<td>Evidence matters relative to alternative explanations.</td>
+<td>Probability and date</td>
+<td>0.65 on 1 June</td>
 </tr>
 <tr class="odd">
-<td>How large and selected is the sample?</td>
-<td>Small or filtered samples are noisy.</td>
+<td>Reference classes</td>
+<td>Similar suppliers; same supplier’s last ten deliveries</td>
 </tr>
 <tr class="even">
-<td>Could regression or random clustering explain the pattern?</td>
-<td>Extreme outcomes often move toward average.</td>
+<td>Main evidence</td>
+<td>Prototype passed; staffing still incomplete</td>
 </tr>
 <tr class="odd">
-<td>What probability do I assign, and when will I review it?</td>
-<td>Calibration needs explicit forecasts and feedback.</td>
+<td>Alternatives</td>
+<td>Delay from certification, integration, or staffing</td>
+</tr>
+<tr class="even">
+<td>Update triggers</td>
+<td>Test failure, new staff, scope change</td>
+</tr>
+<tr class="odd">
+<td>Outcome and score</td>
+<td>Enter after resolution; do not rewrite the original forecast</td>
 </tr>
 </tbody>
 </table>
@@ -685,24 +942,60 @@ Table&nbsp;13.1: A probability checklist
 </figure>
 </div>
 </section>
+<section id="worked-application-a-positive-hiring-signal" class="level2">
+<h2 data-anchor-id="worked-application-a-positive-hiring-signal">Worked application: a positive hiring signal</h2>
+<p>A candidate passes a screening test. Before celebrating the test’s “80% accuracy,” separate the quantities:</p>
+<ol type="1">
+<li>What proportion of applicants in the relevant pool would later meet the performance standard?</li>
+<li>Among strong future performers, how often does the screen pass them?</li>
+<li>Among weaker future performers, how often does it also pass them?</li>
+<li>Was the test validated on a comparable applicant pool and outcome?</li>
+<li>Does the organization use the screen alone or combine it with independent work samples?</li>
+</ol>
+<p>The Bayesian posterior is useful only if the criterion is meaningful and the validation sample transports to the present setting. A precise posterior from a biased outcome measure is precisely misleading.</p>
+</section>
+<section id="worked-application-a-project-with-many-routes-to-delay" class="level2">
+<h2 data-anchor-id="worked-application-a-project-with-many-routes-to-delay">Worked application: a project with many routes to delay</h2>
+<p>A team assigns 15% to supplier delay, 10% to regulatory delay, and 20% to software delay. Adding gives 45%, but that total is valid only if the events are mutually exclusive. They are not: a supplier delay can create a software delay, and regulatory changes can affect both.</p>
+<p>The team should build a small event tree or simulation with conditional probabilities, then compare it with the empirical delay rate for similar projects. The inside model explains pathways; the outside view checks whether the combined result is plausible. If the model says 18% while comparable projects miss the date 55% of the time, the discrepancy is evidence—not an invitation to discard the base rate.</p>
+</section>
+<section id="ethics-a-denominator-can-persuade-as-strongly-as-a-story" class="level2">
+<h2 data-anchor-id="ethics-a-denominator-can-persuade-as-strongly-as-a-story">Ethics: a denominator can persuade as strongly as a story</h2>
+<p>Probability formats are not neutral. Relative risk can make a small absolute change look large. A narrow reference class can make performance look exceptional. A long list of minor harms can dilute a severe one. A model can bury uncertainty behind decimal places.</p>
+<p>Ethical probability communication asks:</p>
+<ul>
+<li>What population, time horizon, and comparison define the denominator?</li>
+<li>Are absolute counts shown alongside percentages?</li>
+<li>Are false positives, false negatives, and uncertainty visible?</li>
+<li>Is the reference class chosen for relevance or persuasion?</li>
+<li>Can the person affected inspect the assumptions and correct the model?</li>
+<li>Will the forecast and outcome remain recorded after the decision?</li>
+</ul>
+<p>The goal is not to remove judgment. It is to make judgment auditable.</p>
+</section>
 <section id="key-ideas" class="level2">
 <h2 data-anchor-id="key-ideas">Key ideas</h2>
 <ul>
-<li>Good probability judgment starts with a reference class, updates with diagnostic evidence, expects noise and regression, and records forecasts so confidence can be calibrated.</li>
-</ul>
-<p>Natural-frequency formats, reference classes, and calibration make statistical structure easier to see and improve probabilistic judgment (Gigerenzer &amp; Hoffrage, 1995; Tetlock &amp; Gardner, 2015).</p>
-<ul>
-<li>Use base rates and natural frequencies.</li>
-<li>Distinguish P(evidence|hypothesis) from P(hypothesis|evidence).</li>
-<li>Explain regression to the mean.</li>
+<li>Probability rules operate on defined events: complements subtract from one, intersections multiply through a conditional probability, and unions add after subtracting overlap.</li>
+<li>Conditional direction matters. Bayes’ rule combines a prior with evidence and its alternatives; natural frequencies preserve the denominator.</li>
+<li>Conjunctions cannot exceed their components, while unions cannot be smaller than their components. Extra detail can increase narrative fit while reducing probability or diluting diagnostic evidence.</li>
+<li>Small samples produce large fluctuations. Random clustering is not proof of dependence, and apparent streaks require a process model and corrected test.</li>
+<li>Regression to the mean follows when extreme observations contain temporary noise; before–after change among extreme cases does not identify causation.</li>
+<li>Monty Hall and two-child answers depend on how information was generated.</li>
+<li>Calibration requires recorded numeric forecasts, explicit resolution rules, scoring, and feedback.</li>
 </ul>
 </section>
 <section id="study-and-practice" class="level2">
 <h2 data-anchor-id="study-and-practice">Study and practice</h2>
 <ol type="1">
-<li><p>How would you use base rates and natural frequencies in practice?</p></li>
-<li><p>How would you distinguish p(evidence|hypothesis) from p(hypothesis|evidence)?</p></li>
-<li><p>How would you explain regression to the mean?</p></li>
+<li>A 2% event has a test with 95% sensitivity and a 10% false-positive rate. Translate the problem into 10,000 natural-frequency cases and calculate <span class="math inline">\(P(\text{event}\mid +)\)</span>.</li>
+<li>Give one pair of events that are mutually exclusive and one pair that are independent. Explain why the terms are not synonyms.</li>
+<li>A team lists five overlapping failure routes. How would you estimate the probability that at least one occurs without double-counting?</li>
+<li>Why can all-heads be as likely as one specified mixed sequence but less likely than the category “three heads and three tails”?</li>
+<li>What evidence would distinguish gambler’s fallacy from genuine state dependence?</li>
+<li>Explain regression to the mean without claiming that every improvement is statistical.</li>
+<li>State the host protocol required for the <span class="math inline">\(2/3\)</span> Monty Hall switching result.</li>
+<li>Score a 0.80 forecast when the event occurs and when it does not. Which miss is penalized more, and why?</li>
 </ol>
 <div class="activity callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -710,68 +1003,70 @@ Table&nbsp;13.1: A probability checklist
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Activity
+<span class="screen-reader-only">Tip</span>Activity: from story to scored forecast
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Convert one percentage problem into natural frequencies. Then make a forecast with a numerical probability and a review date. After the outcome, score whether the confidence was calibrated.<br>
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)<br>
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.</p>
+<p>Choose one resolvable event in the next four weeks. Write the event and resolution rule before estimating it. Identify two reference classes, list one causal argument for and against, and assign a probability. State one update trigger. When the date arrives, record the outcome and Brier score without revising the original entry.</p>
+<p>EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS) Experience: describe the first intuitive story. Explain: use a reference class, conditional probability, or sampling concept. Apply: state the forecast, update trigger, and feedback rule.</p>
 </div>
 </div>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
 <div class="reference">
-<p>Bar-Hillel, M. (1980). The base-rate fallacy in probability judgments. Acta Psychologica, 44(3), 211–233.</p>
+<p>Bar-Hillel, M. (1980). The base-rate fallacy in probability judgments. <em>Acta Psychologica, 44</em>(3), 211–233.</p>
 </div>
 <div class="reference">
-<p>Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1–3.</p>
+<p>Bayes, T. (1763). An essay towards solving a problem in the doctrine of chances. <em>Philosophical Transactions of the Royal Society of London, 53</em>, 370–418.</p>
 </div>
 <div class="reference">
-<p>Cosmides, L., &amp; Tooby, J. (1996). Are humans good intuitive statisticians after all? Rethinking some conclusions from the literature on judgment under uncertainty. Cognition, 58(1), 1–73.</p>
+<p>Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. <em>Monthly Weather Review, 78</em>(1), 1–3.</p>
 </div>
 <div class="reference">
-<p>Eddy, D. M. (1982). Probabilistic reasoning in clinical medicine: Problems and opportunities. In D. Kahneman, P. Slovic, &amp; A. Tversky (Eds.), Judgment under uncertainty: Heuristics and biases (pp.&nbsp;249–267). Cambridge University Press.</p>
+<p>Clotfelter, C. T., &amp; Cook, P. J. (1993). The “gambler’s fallacy” in lottery play. <em>Management Science, 39</em>(12), 1521–1525.</p>
 </div>
 <div class="reference">
-<p>Edwards, W. (1968). Conservatism in human information processing. In B. Kleinmuntz (Ed.), Formal representation of human judgment (pp.&nbsp;17–52). Wiley.</p>
+<p>Gigerenzer, G., &amp; Hoffrage, U. (1995). How to improve Bayesian reasoning without instruction: Frequency formats. <em>Psychological Review, 102</em>(4), 684–704.</p>
 </div>
 <div class="reference">
-<p>Galton, F. (1886). Regression towards mediocrity in hereditary stature. Journal of the Anthropological Institute of Great Britain and Ireland, 15, 246–263.</p>
+<p>Gilovich, T., Vallone, R., &amp; Tversky, A. (1985). The hot hand in basketball: On the misperception of random sequences. <em>Cognitive Psychology, 17</em>(3), 295–314.</p>
 </div>
 <div class="reference">
-<p>Gigerenzer, G., &amp; Edwards, A. (2003). Simple tools for understanding risks: From innumeracy to insight. BMJ, 327(7417), 741–744.</p>
+<p>Kahneman, D., &amp; Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. <em>Management Science, 39</em>(1), 17–31.</p>
 </div>
 <div class="reference">
-<p>Gigerenzer, G., &amp; Hoffrage, U. (1995). How to improve Bayesian reasoning without instruction: Frequency formats. Psychological Review, 102(4), 684–704.</p>
+<p>Kahneman, D., &amp; Tversky, A. (1973). On the psychology of prediction. <em>Psychological Review, 80</em>(4), 237–251.</p>
 </div>
 <div class="reference">
-<p>Kahneman, D., &amp; Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. Management Science, 39(1), 17–31.</p>
+<p>Mellers, B., Stone, E., Atanasov, P., Rohrbaugh, N., Metz, S. E., Ungar, L., Bishop, M. M., Horowitz, M., Merkle, E., &amp; Tetlock, P. E. (2014). The psychology of intelligence analysis: Drivers of prediction accuracy in world politics. <em>Journal of Experimental Psychology: Applied, 20</em>(1), 1–14.</p>
 </div>
 <div class="reference">
-<p>Kahneman, D., &amp; Tversky, A. (1973). On the psychology of prediction. Psychological Review, 80(4), 237–251.</p>
+<p>Miller, J. B., &amp; Sanjurjo, A. (2018). Surprised by the hot hand fallacy? A truth in the law of small numbers. <em>Econometrica, 86</em>(6), 2019–2047.</p>
 </div>
 <div class="reference">
-<p>Kent, S. (1964). Words of estimative probability. Studies in Intelligence, 8(4), 49–65.</p>
+<p>Murphy, A. H. (1973). A new vector partition of the probability score. <em>Journal of Applied Meteorology, 12</em>(4), 595–600.</p>
 </div>
 <div class="reference">
-<p>Lichtenstein, S., Fischhoff, B., &amp; Phillips, L. D. (1982). Calibration of probabilities: The state of the art to 1980. In D. Kahneman, P. Slovic, &amp; A. Tversky (Eds.), Judgment under uncertainty: Heuristics and biases (pp.&nbsp;306–334). Cambridge University Press.</p>
+<p>Selvin, S. (1975). A problem in probability. <em>The American Statistician, 29</em>(1), 67.</p>
 </div>
 <div class="reference">
-<p>Mellers, B., Stone, E., Atanasov, P., Rohrbaugh, N., Metz, S. E., Ungar, L., Bishop, M. M., Horowitz, M., Merkle, E., &amp; Tetlock, P. E. (2014). The psychology of intelligence analysis: Drivers of prediction accuracy in world politics. Journal of Experimental Psychology: Applied, 20(1), 1–14.</p>
+<p>Sivanathan, N., &amp; Kakkar, H. (2017). The unintended consequences of argument dilution in direct-to-consumer drug advertisements. <em>Nature Human Behaviour, 1</em>, 797–802.</p>
 </div>
 <div class="reference">
-<p>Tetlock, P. E. (2005). Expert political judgment: How good is it? How can we know? Princeton University Press.</p>
+<p>Skinner, B. F. (1948). “Superstition” in the pigeon. <em>Journal of Experimental Psychology, 38</em>(2), 168–172.</p>
 </div>
 <div class="reference">
-<p>Tetlock, P. E., &amp; Gardner, D. (2015). Superforecasting: The art and science of prediction. Crown.</p>
+<p>Thompson, W. C., &amp; Schumann, E. L. (1987). Interpretation of statistical evidence in criminal trials: The prosecutor’s fallacy and the defense attorney’s fallacy. <em>Law and Human Behavior, 11</em>(3), 167–187.</p>
 </div>
 <div class="reference">
-<p>Thompson, W. C., &amp; Schumann, E. L. (1987). Interpretation of statistical evidence in criminal trials: The prosecutor’s fallacy and the defense attorney’s fallacy. Law and Human Behavior, 11(3), 167–187.</p>
+<p>Tversky, A., &amp; Kahneman, D. (1971). Belief in the law of small numbers. <em>Psychological Bulletin, 76</em>(2), 105–110.</p>
 </div>
 <div class="reference">
-<p>Tversky, A., &amp; Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131.</p>
+<p>Tversky, A., &amp; Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. <em>Science, 185</em>(4157), 1124–1131.</p>
+</div>
+<div class="reference">
+<p>Tversky, A., &amp; Kahneman, D. (1983). Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment. <em>Psychological Review, 90</em>(4), 293–315.</p>
 </div>
 
 

@@ -75,3 +75,32 @@ book:
     - appendices/appendix-a-portable-course-tools.qmd
     - appendices/appendix-b-index-of-major-course-examples.qmd
     - appendices/appendix-c-how-behavioral-evidence-is-built.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - quarto-custom.scss
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    link-external-newwindow: true
+    code-copy: false
+    syntax-highlighting: none
+    minimal: true
+    fig-responsive: true
+
+    comments:
+      giscus:
+        repo: warrenchang/decisionbook
+        repo-id: "R_kgDOTpqPRg"
+        category: "Announcements"
+        category-id: "DIC_kwDOTpqPRs4DCa1q"
+        mapping: pathname
+        reactions-enabled: true
+        input-position: top
+        loading: lazy
+        language: en
+        theme:
+          light: light
+          dark: dark_dimmed

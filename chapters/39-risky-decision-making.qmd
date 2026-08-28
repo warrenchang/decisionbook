@@ -54,6 +54,32 @@ Expected value is powerful when outcomes are repeatable, stakes are small relati
 
 The benchmark also exposes missing costs. A gamble that pays DKK 100 with probability one-half and zero otherwise does not have expected **net** value DKK 50 if entry costs DKK 60. The expected net value is DKK $-10$.
 
+::: {.callout-note icon=false}
+## Application box: the single-period newsvendor
+
+A retailer orders once before uncertain demand $D$ is known. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
+
+$$
+C_u=p-c,
+$$
+
+whereas ordering one unit too many creates the net overage cost
+
+$$
+C_o=c-s.
+$$
+
+For risk-neutral expected-profit maximization with a known continuous demand distribution $F$, the optimal order satisfies the critical-fractile rule
+
+$$
+F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
+$$
+
+For discrete demand, choose the smallest quantity whose cumulative probability reaches the fractile. Shortage penalties, disposal costs, capacity constraints, ambiguity, and risk preferences change the rule.
+
+Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.
+:::
+
 ## The St Petersburg puzzle: infinite money is not infinite value
 
 Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
@@ -312,7 +338,7 @@ A defensible decision makes both the average and the tail answerable to the peop
 
 Choose one real decision with uncertain consequences. List outcomes, probabilities or ranges, affected people, and dependencies. Calculate expected value where meaningful. Then state what EV omits: utility, ruin, ambiguity, distribution, or rights. Choose one elicitation or communication format and name its limitation. Write the review rule before the outcome occurs.
 
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
+EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)
 Experience: describe the uncertain choice. Explain: use EV plus one concept—utility, certainty equivalent, ambiguity, or outcome bias. Apply: state one decision safeguard and one ethical boundary.
 :::
 
@@ -368,6 +394,10 @@ Pedroni, A., Frey, R., Bruhin, A., Dutilh, G., Hertwig, R., & Rieskamp, J. (2017
 
 ::: {.reference}
 Poldrack, R. A. (2006). Can cognitive processes be inferred from neuroimaging data? *Trends in Cognitive Sciences, 10*(2), 59–63.
+:::
+
+::: {.reference}
+Schweitzer, M. E., & Cachon, G. P. (2000). Decision bias in the newsvendor problem with a known demand distribution: Experimental evidence. *Management Science, 46*(3), 404–420.
 :::
 
 ::: {.reference}
