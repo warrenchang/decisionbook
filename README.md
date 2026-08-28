@@ -2,7 +2,7 @@
 
 This is the Quarto source for Huanren Warren Zhang's textbook, *Decision, Persuasion, and Negotiation: How Minds Choose, Influence, Connect, and Bargain*.
 
-The 48 chapters follow a cumulative ten-part journey: the decision-making process; attention, prediction, and expectation; heuristics, biases, and probability judgment; risk, experience, and time; money, finance, and well-being; strategic and social decisions; influence and persuasion; negotiation; communication and connection; and habits and decision design.
+The 48 chapters follow a cumulative ten-part journey: the decision-making process; attention, prediction, and expectation; heuristics, biases, and probability judgment; risk, experience, and time; money, finance, and well-being; strategic and social decisions; influence and persuasion; communication and connection; negotiation; and habits and decision design. Four appendices provide portable course tools, an example index, a practical guide to running experimental studies, and a guide to replication and research integrity.
 
 ## Build
 

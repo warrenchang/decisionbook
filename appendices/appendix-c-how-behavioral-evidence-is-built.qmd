@@ -1,20 +1,27 @@
-# How Behavioral Evidence Is Built
+# Running an Experimental Study: From Question to Credible Evidence
 
-*Match the claim to the question, measure, comparison, and design*
+*A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments*
 
 ::: {.callout-note .core-idea icon=false}
 ## Core idea
 
-Evidence is not a result with a small *p*-value. It is a chain from a clear question to a defensible measure, comparison, estimand, analysis, and bounded claim. Randomization, statistical power, preregistration, and replication strengthen different links; none can repair a construct that was never defined or a claim the design cannot identify.
+This appendix is a practical chapter about **running an experimental study**. The work begins before participants arrive and continues after the last result is reported: define the question, build the treatment and measure, plan the assignment and analysis, implement the protocol, protect the data, estimate the effect, and document what happened. Evidence is not a result with a small *p*-value. It is the entire chain.
 :::
 
-## How to use this appendix
+## The experimental workflow
 
-Use this appendix in three passes:
+Use this appendix as a working protocol in five phases. Each phase leaves a record that the next phase can inspect.
 
-1. **Before data:** complete the design card in @tbl-evidence-design-card.
-2. **During implementation:** monitor assignment, exposure, attrition, contamination, measurement, and deviations without looking for a preferred result.
-3. **After data:** state the estimand first, report uncertainty and all planned outcomes, separate confirmatory from exploratory analysis, and narrow the claim to what the design learned.
+| Phase | What you do | What you preserve |
+| --- | --- | --- |
+| **1. Define** | Turn the topic into a testable question; define the construct, outcome, comparison, population, and estimand | Research question, theory, hypotheses, construct definitions |
+| **2. Design** | Choose the experimental design; create treatments and measures; plan assignment, power, exclusions, and analysis | Protocol, materials, code, design calculation, preregistration, ethics approval |
+| **3. Implement** | Recruit, assign, deliver, measure, and monitor without steering the study toward a preferred result | Recruitment and assignment logs, timestamps, deviations, attrition, treatment fidelity |
+| **4. Analyze** | Freeze the data, execute the planned analysis, check robustness, and label exploration | Immutable raw data, cleaning scripts, analysis code, output log, deviation record |
+| **5. Report and preserve** | Report estimates and uncertainty, match the claim to the design, share what can be shared, and archive what must be protected | Manuscript, tables and figures, reproducibility package, access conditions, correction path |
+: Running an experimental study from definition to preservation {#tbl-experimental-workflow}
+
+Before collecting data, complete the design card in @tbl-evidence-design-card. During implementation, monitor assignment, exposure, attrition, contamination, measurement, and deviations without looking for a preferred result. After data collection, state the estimand first, report uncertainty and all planned outcomes, distinguish confirmatory from exploratory analysis, and narrow the claim to what the experiment actually learned.
 
 The point is not to make every study maximally complicated. It is to stop complexity from remaining hidden.
 
@@ -99,7 +106,7 @@ Mechanism is harder still. Showing that treatment changes a proposed mediator an
 
 ## 4. Make the counterfactual and confounding visible
 
-For person (i), let (Y_i(1)) denote the outcome under treatment and (Y_i(0)) the outcome under control. The individual causal effect is:
+For person $i$, let $Y_i(1)$ denote the outcome under treatment and $Y_i(0)$ the outcome under control. The individual causal effect is:
 
 $$
 Y_i(1)-Y_i(0).
@@ -188,7 +195,7 @@ Report rates and reasons by arm, timing, baseline predictors of missingness, and
 
 ### Noncompliance: assignment is not receipt
 
-Let (Z) be assignment and (D) treatment received.
+Let $Z$ be assignment and $D$ treatment received.
 
 The **intention-to-treat (ITT)** effect compares outcomes by assignment:
 

@@ -27,13 +27,13 @@ EXPECTED_PARTS = [
     "Part I. The Decision-Making Process",
     "Part II. Attention, Prediction, and Expectation",
     "Part III. Heuristics, Biases, and Probability Judgment",
-    "Part IV. Risk, Experience, and Time",
+    "Part IV. Risk, Experience, Time, and Self-Control",
     "Part V. Money, Finance, and Well-Being",
     "Part VI. Strategic and Social Decisions",
     "Part VII. Influence and Persuasion",
-    "Part VIII. Negotiation",
-    "Part IX. Communication and Connection",
-    "Part X. Habits and Decision Design",
+    "Part VIII. Communication and Connection",
+    "Part IX. Negotiation",
+    "Part X. Behavior and Decision Design",
 ]
 
 REQUIRED_CONTENT = [
@@ -54,6 +54,11 @@ REQUIRED_CONTENT = [
     "33.1%",
     "25.4%",
     "36.5%",
+    "Replication Crisis",
+    "Publication Bias",
+    "Underpowered Studies",
+    "Data Fabrication",
+    "Registered Reports",
 ]
 
 
@@ -135,7 +140,7 @@ def main() -> int:
         check("Navigation contains a table of contents", toc is not None)
         toc_list = toc.find(f"{{{XHTML}}}ol") if toc is not None else None
         top_items = toc_list.findall(f"{{{XHTML}}}li") if toc_list is not None else []
-        check("Navigation has 64 top-level book items", len(top_items) == 64, str(len(top_items)))
+        check("Navigation has 65 top-level book items", len(top_items) == 65, str(len(top_items)))
 
         labels: list[str] = []
         missing_targets: list[str] = []
@@ -159,8 +164,8 @@ def main() -> int:
         ]
         check("Chapters are numbered 1 through 48", chapter_numbers == list(range(1, 49)), str(chapter_numbers))
         check(
-            "Appendices A, B, and C are present",
-            all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABC"),
+            "Appendices A, B, C, and D are present",
+            all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABCD"),
         )
 
         publication_date = package.findtext(f".//{{{DC}}}date", default="")
@@ -168,7 +173,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 64 source documents are packaged", len(chapter_files) == 64, str(len(chapter_files)))
+        check("All 65 source documents are packaged", len(chapter_files) == 65, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         searchable = "\n".join(
