@@ -26,11 +26,13 @@ HEADING = re.compile(r"^(#{2,6})\s+(.+?)\s*$", re.MULTILINE)
 ID = re.compile(r"\{[^}\n]*#([A-Za-z][\w:.-]*)[^}\n]*\}")
 FIGURE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)\{([^}\n]*)\}")
 QMD_LINK = re.compile(r"\[[^\]]+\]\(([^)#?]+\.qmd)(?:#[^)]+)?\)")
+BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL)
-REQUIRED = (
+REQUIRED_PREFIXES = (
     "Learning goals",
-    "Key ideas",
-    "Study and practice",
+    "Where this chapter enters the loop",
+    "Take it forward",
+    "Practice Lab",
     "References cited in this chapter",
 )
 
@@ -140,11 +142,12 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     except SystemExit as exc:
         return {}, [Issue("error", "canonical-chapters", "_quarto-html.yml", str(exc))], {}
 
-    if len(chapters) != 48:
-        issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 48 canonical chapters; found {len(chapters)}."))
+    if len(chapters) != 41:
+        issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 41 canonical chapters; found {len(chapters)}."))
 
     global_ids: list[tuple[str, str]] = []
     figure_paths: set[Path] = set()
+    book_figure_paths: set[Path] = set()
     body_words: dict[str, int] = {}
     reference_blocks = 0
     table_count = 0
@@ -157,8 +160,8 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         h1s = H1.findall(text)
         if len(h1s) != 1:
             issues.append(Issue("error", "chapter-h1", rel(chapter), f"Expected one H1; found {len(h1s)}."))
-        for required in REQUIRED:
-            if required not in headings:
+        for required in REQUIRED_PREFIXES:
+            if not any(heading == required or heading.startswith(f"{required}:") for heading in headings):
                 issues.append(Issue("error", "required-section", rel(chapter), f"Missing section: {required}."))
         for hashes, heading in HEADING.findall(text):
             if len(hashes) in {2, 3} and re.match(r"^(?:worked\s+)?transfer\b", heading, re.I):
@@ -210,13 +213,40 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
                 issues.append(Issue("error", "missing-figure", rel(chapter), f"Missing figure: {target}."))
                 continue
             figure_paths.add(path)
+            book_figure_paths.add(path)
             if path.suffix.lower() == ".svg" and not svg_has_accessible_metadata(path):
                 issues.append(Issue("error", "svg-metadata", rel(path), "SVG must contain title and desc elements."))
+            if path.suffix.lower() == ".svg" and not path.with_suffix(".png").exists():
+                issues.append(Issue("error", "missing-png-fallback", rel(path), "Reader-facing SVG lacks a PNG fallback for EPUB compatibility and visual QA."))
 
         for target in QMD_LINK.findall(text):
             linked = (chapter.parent / target).resolve()
             if not linked.exists():
                 issues.append(Issue("error", "broken-qmd-link", rel(chapter), f"Broken source link: {target}."))
+
+    # Front matter, part openers, and appendices also contain reader-facing figures.
+    # Audit them here so a chapter-only pass cannot miss a broken or unrenderable asset.
+    chapter_set = set(chapters)
+    configured_sources = [ROOT / value for value in BOOK_SOURCE_LINE.findall((ROOT / "_quarto-html.yml").read_text(encoding="utf-8"))]
+    for source in configured_sources:
+        if source in chapter_set:
+            continue
+        if not source.exists():
+            issues.append(Issue("error", "missing-book-source", rel(source), "Configured book source does not exist."))
+            continue
+        text = source.read_text(encoding="utf-8")
+        for alt, target, attrs in FIGURE.findall(text):
+            if not alt.strip() or not re.search(r'\bfig-alt="[^"]+"', attrs):
+                issues.append(Issue("error", "figure-alt", rel(source), f"Figure lacks caption or fig-alt: {target}."))
+            path = figure_svg_path(source, target)
+            if path is None or not path.exists():
+                issues.append(Issue("error", "missing-figure", rel(source), f"Missing figure: {target}."))
+                continue
+            book_figure_paths.add(path)
+            if path.suffix.lower() == ".svg" and not svg_has_accessible_metadata(path):
+                issues.append(Issue("error", "svg-metadata", rel(path), "SVG must contain title and desc elements."))
+            if path.suffix.lower() == ".svg" and not path.with_suffix(".png").exists():
+                issues.append(Issue("error", "missing-png-fallback", rel(path), "Reader-facing SVG lacks a PNG fallback for EPUB compatibility and visual QA."))
 
     global_duplicate_ids = sorted(
         (value, sorted(file for item, file in global_ids if item == value))
@@ -226,7 +256,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     for value, files in global_duplicate_ids:
         issues.append(Issue("error", "global-duplicate-id", ", ".join(files), f"ID appears more than once: {value}."))
 
-    for path in sorted(figure_paths):
+    for path in sorted(book_figure_paths):
         if path.suffix.lower() != ".svg":
             continue
         for detail in audit_connectors(path):
@@ -287,6 +317,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         "chapter_reference_blocks": reference_blocks,
         "master_unique_references": len(master_keys),
         "chapter_figures": len(figure_paths),
+        "book_figures": len(book_figure_paths),
         "chapter_tables": table_count,
         "rendered_chapters_missing": rendered_missing,
         "rendered_images_missing_alt": rendered_alt_missing,
@@ -330,6 +361,7 @@ def render_report(summary: dict[str, object], issues: list[Issue]) -> str:
         "chapter_reference_blocks": "Chapter reference blocks",
         "master_unique_references": "Unique master references",
         "chapter_figures": "Unique chapter figures",
+        "book_figures": "Unique figures across the full book",
         "chapter_tables": "Captioned chapter tables",
         "rendered_chapters_missing": "Rendered chapters missing",
         "rendered_images_missing_alt": "Rendered images missing alt text",
@@ -352,7 +384,7 @@ def render_report(summary: dict[str, object], issues: list[Issue]) -> str:
             "",
             "## Scope",
             "",
-            "The audit checks canonical chapter membership, required learning sections, source and rendered figures, alternative text, SVG metadata, connector attachment, duplicate cross-reference IDs, source links, and exact master-bibliography union. Visual aesthetics are also reviewed separately from rendered figure contact sheets; scientific source support still requires editorial judgment.",
+            "The audit checks canonical chapter membership, required learning sections, every figure referenced by configured book sources, alternative text, SVG metadata, PNG fallbacks, connector attachment, duplicate cross-reference IDs, source links, and exact master-bibliography union. Visual aesthetics are also reviewed separately from rendered figure contact sheets; scientific source support still requires editorial judgment.",
             "",
         ]
     )

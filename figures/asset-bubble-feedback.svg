@@ -3,9 +3,9 @@
   <title id="title">When price becomes evidence about price</title>
   <desc id="desc">A speculative feedback loop connects price increases, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Fundamentals feed price separately. Elastic supply, short selling, risk limits, and skeptical capital can brake the loop, but synchronization and funding risk can delay correction.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b95f2d"/></marker>
-    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#25678f"/></marker>
-    <marker id="brake" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#447c55"/></marker>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#b95f2d"/></marker>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#25678f"/></marker>
+    <marker id="brake" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M1 1 L13 7 L1 13 Z" fill="#447c55"/></marker>
     <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/></filter>
   </defs>
   <rect width="1200" height="760" fill="#ffffff"/>
@@ -38,11 +38,15 @@
     <text x="442" y="573" text-anchor="middle" font-size="16" fill="#607080">cash amplifies demand</text>
   </g>
 
-  <line x1="270" y1="223" x2="427" y2="194" stroke="#25678f" stroke-width="5" marker-end="url(#blueArrow)"/>
-  <path d="M730 190 C810 185 875 210 911 243" fill="none" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-  <path d="M1000 370 C1000 415 938 455 893 468" fill="none" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-  <line x1="660" y1="533" x2="603" y2="533" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-  <path d="M392 470 C350 405 355 265 470 248" fill="none" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Independent evidence from fundamentals enters the left side of price. -->
+    <path d="M270 218 C330 211 377 190 427 177" stroke="#25678f" stroke-width="5" marker-end="url(#blueArrow)"/>
+    <!-- The speculative loop enters price separately from below. -->
+    <path d="M730 190 C810 185 875 210 911 243" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M1000 370 C1000 415 938 455 893 468" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
+    <line x1="660" y1="533" x2="603" y2="533" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M392 470 C346 395 372 292 508 252" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
 
   <text x="645" y="354" text-anchor="middle" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#b95f2d">REINFORCING</text>
   <text x="645" y="388" text-anchor="middle" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#b95f2d">FEEDBACK</text>

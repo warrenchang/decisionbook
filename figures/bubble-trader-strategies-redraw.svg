@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-labelledby="title desc">
   <title id="title">Strategy shares in an experimental asset market</title>
-  <desc id="desc">A horizontal bar chart shows momentum traders at 36.5 percent, fundamental-value traders at 33.1 percent, rational speculators at 25.4 percent, and other classified behavior at about 5 percent in one experimental classification. A side panel explains how different strategies can coexist in one bubble.</desc>
+  <desc id="desc">A horizontal bar chart shows feedback or momentum-consistent behavior at 36.5 percent, passive or fundamental-value-consistent behavior at 33.1 percent, speculator or next-price-consistent behavior at 25.4 percent, and other classified behavior at 4.9 percent. The chart identifies the rule and denominator and warns that the classifications are not stable investor types.</desc>
   <defs>
     <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#2f6f9f"/></marker>
     <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#c56a2d"/></marker>
@@ -11,20 +11,23 @@
 <text x="600" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="33" font-weight="700" fill="#17324d" >A bubble can contain several strategies at once</text>
 <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#66737f" >Original redraw of one experimental classification reported by Haruvy and Noussair (2006).</text>
 <rect x="55" y="112" width="760" height="540" rx="18" fill="#f7fafc" stroke="#c8d7e2" stroke-width="2" />
-<text x="285" y="207" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d" >Momentum traders</text>
+<text x="285" y="198" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >Feedback / momentum</text>
+<text x="285" y="219" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >consistent</text>
 <rect x="315" y="175" width="396.9" height="52" rx="8" fill="#c56a2d"/>
 <text x="725.9375" y="209" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#c56a2d" >36.5%</text>
-<text x="285" y="315" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d" >Fundamental-value traders</text>
+<text x="285" y="306" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >Passive / fundamental-value</text>
+<text x="285" y="327" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >consistent</text>
 <rect x="315" y="283" width="360.0" height="52" rx="8" fill="#2f6f9f"/>
 <text x="688.9625" y="317" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#2f6f9f" >33.1%</text>
-<text x="285" y="423" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d" >Rational speculators</text>
+<text x="285" y="414" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >Speculator / next-price</text>
+<text x="285" y="435" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >consistent</text>
 <rect x="315" y="391" width="276.2" height="52" rx="8" fill="#447c55"/>
 <text x="605.225" y="425" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#447c55" >25.4%</text>
-<text x="285" y="531" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d" >Other classified behavior</text>
-<rect x="315" y="499" width="54.4" height="52" rx="8" fill="#8a7895"/>
-<text x="383.375" y="533" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#8a7895" >5.0%</text>
+<text x="285" y="522" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >Other / unclassified</text>
+<rect x="315" y="499" width="53.3" height="52" rx="8" fill="#8a7895"/>
+<text x="382.2875" y="533" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#8a7895" >4.9%</text>
 <line x1="315" y1="605" x2="750" y2="605" stroke="#8fa0ad" stroke-width="2"/>
-<text x="532" y="634" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#17324d" >Share of classified behavior</text>
+<text x="532" y="634" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#17324d" >Share of trader classifications</text>
 <rect x="850" y="112" width="305" height="540" rx="18" fill="#f7f1e8" stroke="#c56a2d" stroke-width="2" />
 <text x="1002" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d" >Why the mix matters</text>
 <rect x="890" y="195" width="225" height="82" rx="14" fill="#ffffff" stroke="#c56a2d" stroke-width="2" />
@@ -34,10 +37,11 @@
 <text x="1002" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >Momentum can reinforce</text>
 <text x="1002" y="359" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >the observed trend.</text>
 <rect x="890" y="405" width="225" height="105" rx="14" fill="#ffffff" stroke="#c56a2d" stroke-width="2" />
-<text x="1002" y="439" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >A rational trader may</text>
-<text x="1002" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >ride a bubble while</text>
-<text x="1002" y="489" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >planning to exit first.</text>
+<text x="1002" y="439" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >A speculator may buy</text>
+<text x="1002" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >while expecting a still</text>
+<text x="1002" y="489" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17324d" >higher next price.</text>
 <text x="1002" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#c56a2d" >One market, different</text>
 <text x="1002" y="591" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#c56a2d" >beliefs and horizons</text>
-<text x="600" y="704" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#66737f" >The shares describe one experimental setting and classification rule; they are not population estimates of investor types.</text>
+<text x="600" y="688" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#66737f" >N = 162 trader classifications in 18 sessions; ties received fractional weights; highest score had to reach 8 of 15 periods.</text>
+<text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#66737f" >These are rule-based classifications in one design—not population estimates or stable investor types.</text>
 </svg>

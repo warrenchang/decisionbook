@@ -19,8 +19,8 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Every navigation target exists | **PASS** |
 | Navigation omits the redundant generated title-page entry | **PASS** |
 | Visible contents suppresses automatic ordered-list counters | **PASS** |
-| All ten Part titles appear in order | **PASS** |
-| Chapters are numbered 1 through 48 | **PASS** |
+| All Part and interlude titles appear in order | **PASS** |
+| Chapters are numbered 1 through 41 | **PASS** |
 | Every chapter is nested under its Part with no section titles | **PASS** |
 | Preface and back matter have no section-level navigation | **PASS** |
 | Navigation contains no section titles | **PASS** |
@@ -31,7 +31,7 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | NCX omits the redundant generated title-page entry | **PASS** |
 | NCX mirrors the compact Part-to-Chapter hierarchy | **PASS** |
 | Compilation date is current | **PASS** |
-| All 66 source documents are packaged | **PASS** |
+| All 59 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |

@@ -25,29 +25,25 @@ CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 NCX = "http://www.daisy.org/z3986/2005/ncx/"
 
 EXPECTED_PARTS = [
-    "Part I. The Decision-Making Process",
-    "Part II. Attention, Prediction, and Expectation",
-    "Part III. Heuristics, Biases, and Probability Judgment",
-    "Part IV. Risk, Experience, Time, and Self-Control",
-    "Part V. Money, Finance, and Well-Being",
-    "Part VI. Strategic and Social Decisions",
-    "Part VII. Influence and Persuasion",
-    "Part VIII. Communication and Connection",
-    "Part IX. Negotiation",
-    "Part X. Behavior and Decision Design",
+    "Part I. How a Choice Takes Shape",
+    "Part II. Judgment Under Uncertainty",
+    "Part III. Risk, Time, Self-Regulation, and a Good Life",
+    "Applied Interlude. Markets, Mispricing, and Bubbles",
+    "Part IV. When Choices Become Interdependent",
+    "Part V. Influence, Communication, and Connection",
+    "Part VI. Negotiating Joint Decisions",
+    "Part VII. Designing Better Loops",
 ]
 
 EXPECTED_PART_CHAPTERS = [
-    list(range(1, 6)),
-    list(range(6, 9)),
-    list(range(9, 19)),
-    list(range(19, 25)),
-    list(range(25, 29)),
-    list(range(29, 35)),
+    list(range(1, 8)),
+    list(range(8, 16)),
+    list(range(16, 23)),
+    [23],
+    list(range(24, 30)),
+    list(range(30, 35)),
     list(range(35, 39)),
-    list(range(39, 41)),
-    list(range(41, 46)),
-    list(range(46, 49)),
+    list(range(39, 42)),
 ]
 
 REQUIRED_CONTENT = [
@@ -196,14 +192,14 @@ def main() -> int:
         )
 
         positions = [labels.index(part) if part in labels else -1 for part in EXPECTED_PARTS]
-        check("All ten Part titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
+        check("All Part and interlude titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
 
         chapter_numbers = [
             int(match.group(1))
             for label in all_labels
             if (match := re.match(r"^(\d+)\s+", label))
         ]
-        check("Chapters are numbered 1 through 48", chapter_numbers == list(range(1, 49)), str(chapter_numbers))
+        check("Chapters are numbered 1 through 41", chapter_numbers == list(range(1, 42)), str(chapter_numbers))
 
         hierarchy_errors: list[str] = []
         for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):
@@ -309,7 +305,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 66 source documents are packaged", len(chapter_files) == 66, str(len(chapter_files)))
+        check("All 59 source documents are packaged", len(chapter_files) == 59, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         searchable = "\n".join(

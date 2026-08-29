@@ -10,12 +10,15 @@ An equilibrium is a conditional benchmark: if the game, payoffs, beliefs, and ra
 
 ## Learning goals
 
-- Solve a simple beauty-contest game and state the assumptions behind its equilibrium.
-- Distinguish level-*k* reasoning from cognitive hierarchy and from Nash equilibrium.
-- Explain why an observed action does not uniquely reveal a belief or depth of reasoning.
-- Separate deliberate best response, repeated-game learning, and evolutionary population dynamics.
-- Use replicator-style updating and the evolutionarily stable strategy criterion in simple two-strategy games.
-- Evaluate spatial and agent-based demonstrations without treating one simulation path as a general result.
+- Compare equilibrium, level-*k*, and cognitive-hierarchy accounts of one beauty-contest dataset.
+- Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.
+- Design an observation or treatment that distinguishes competing explanations for the same strategic action.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Behavioral game theory examines how people **Predict** other minds and **Learn** from strategic feedback. The same action can follow from different beliefs, depths of reasoning, or adaptation histories.
+:::
 
 ## Opening puzzle: should a sophisticated player choose zero?
 
@@ -50,7 +53,7 @@ The lenses can complement one another. They cannot be substituted without changi
 
 ## Limited strategic depth: level-*k*
 
-A level-*k* model replaces the assumption of perfectly matched equilibrium beliefs with a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995).
+A level-*k* model replaces the assumption of perfectly matched equilibrium beliefs with a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
 
 ![In a game where the target is two-thirds of the group mean, a theoretical level-*k* ladder begins from a random-choice anchor of 50, then moves to 33, 22, and 15 as each level best responds to the level below; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes. A lower audit box warns that the observed number does not uniquely identify beliefs or reasoning depth." width=100%}
 
@@ -118,41 +121,12 @@ To distinguish accounts, vary what participants receive:
 
 Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.
 
-## From individual reasoning to population dynamics
+::: {.callout-note .research-lens icon=false}
+## Research Lens: Evolutionary and spatial models
 
-Classical game theory often asks, “What should a deliberate player choose against another strategy?” Evolutionary game theory asks, “Which strategies become more common when success affects replication, survival, or imitation?” (Maynard Smith & Price, 1973).
+Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory asks which strategies become more common under a declared rule linking payoff to replication, survival, or imitation (Maynard Smith & Price, 1973). The language can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named; learning is not natural selection merely because frequencies change.
 
-The evolutionary language can describe genes, cultural transmission, organizational routines, or social learning. But the transmission mechanism must be named. A cultural strategy is not literally inherited like an allele, and a learning rule is not natural selection.
-
-### A payoff-monotonic update
-
-A two-strategy demonstration uses a discrete replicator-style update. Let $x$ be the share using strategy 1, let
-
-$$
-A=\begin{pmatrix}a&b\\c&d\end{pmatrix},
-$$
-
-and let $w$ represent the weight placed on game payoffs. The two fitness terms are
-
-$$
-f_1=1-w+w[ax+b(1-x)],
-$$
-
-$$
-f_2=1-w+w[cx+d(1-x)].
-$$
-
-The next-period share is
-
-$$
-x'=\frac{xf_1}{xf_1+(1-x)f_2}.
-$$
-
-When strategy 1 earns more than strategy 2, its share rises under this rule. The trajectory is conditional on the payoff matrix, $w$, initial share, population mixing, and the absence of other strategies or mutation. Change the update rule, and the prediction can change.
-
-### Dominance: the beetle arms race
-
-Consider a stylized Small–Large contest:
+A two-strategy illustration lets $x$ be the share using strategy 1 and updates that share according to relative payoff. A discrete replicator-style rule is $x'=xf_1/[xf_1+(1-x)f_2]$. Under the stylized beetle game below, Large earns more at every population share and therefore spreads under a payoff-monotonic update. The result is conditional on the stated payoffs, population mixing, initial share, update rule, and omitted costs.
 
 | Focal  Other | Small | Large |
 | --- | ---: | ---: |
@@ -160,37 +134,7 @@ Consider a stylized Small–Large contest:
 | **Large** | 5, 0 | 1, 1 |
 : Stylized beetle-size game {#tbl-beetle-game}
 
-If $x$ is the share of Large, Small earns $3(1-x)$ and Large earns $5(1-x)+x$. Large earns more for every $x\in[0,1]$, so it spreads under payoff-monotonic updating. This is a model of directional selection. It does not show that every observed biological trait is optimal; costs outside the matrix, ecological constraints, and alternative traits could reverse the result.
-
-## Evolutionarily stable strategies
-
-An **evolutionarily stable strategy** (ESS) resists invasion by a small share of mutants. In a symmetric two-strategy game with resident strategy $S$, mutant $T$, and row payoffs
-
-$$
-\begin{array}{c|cc}
-&S&T\\\hline
-S&a&b\\
-T&c&d
-\end{array},
-$$
-
-$S$ is an ESS if either
-
-$$
-a>c,
-$$
-
-or
-
-$$
-a=c \quad\text{and}\quad b>d.
-$$
-
-The first condition says a rare mutant does worse against residents. If the mutant ties against residents, the second asks residents to do better in encounters with mutants. Every ESS is a symmetric Nash equilibrium, but a symmetric Nash equilibrium need not be evolutionarily stable.
-
-### Basin dependence: stag hunt
-
-Use the following evolutionary stag-hunt payoffs:
+An **evolutionarily stable strategy** resists invasion by a small share of mutants. In the stag hunt, both pure populations can be stable and the starting share determines which basin is reached. In hawk–dove, payoff equality can sustain a population mixture; that is not the same claim as each individual deliberately randomizing.
 
 | Focal  Other | Stag | Hare |
 | --- | ---: | ---: |
@@ -198,55 +142,26 @@ Use the following evolutionary stag-hunt payoffs:
 | **Hare** | 1, 0 | 1, 1 |
 : Evolutionary stag hunt {#tbl-evolutionary-stag-hunt}
 
-If $x$ is the share of Hare, Stag earns $2(1-x)$ and Hare earns 1. Stag grows when $x<1/2$; Hare grows when $x>1/2$. Both pure populations are stable, and the initial condition selects the basin. Superior coordination can fail to emerge because it begins below a threshold—not because anyone makes a computational error.
-
-### Coexistence: hawk–dove
-
-Now consider:
-
 | Focal  Other | Dove | Hawk |
 | --- | ---: | ---: |
 | **Dove** | 3, 3 | 1, 5 |
 | **Hawk** | 5, 1 | 0, 0 |
 : Hawk–dove game {#tbl-hawk-dove}
 
-If $x$ is the share of Dove, Dove earns $1+2x$ and Hawk earns $5x$. Payoffs are equal at $x=1/3$. Under the specified population dynamics, the mixed population contains one-third Dove and two-thirds Hawk. This population mixture is not the same statement as each person deliberately randomizing with those probabilities.
-
-## Space changes who meets whom
-
-Well-mixed models assume random encounters. Real interaction is local. Neighbors, teams, platforms, schools, and networks determine whose behavior is observed and whose payoff is copied.
-
-The spatial Prisoner's Dilemma demonstration gives each cooperator's neighbor a benefit $r>1$ at a personal cost of 1. Pairwise payoffs are therefore mutual cooperation $(r-1,r-1)$, cooperation against defection $(-1,r)$, and mutual defection $(0,0)$. Agents imitate a locally successful neighbor. One illustration uses a 50-by-50 torus with eight neighbors; companion models include a 101-by-101 four/eight-neighbor version and labeled 10-by-10 teaching variants.
-
-Clusters can protect cooperators from exploitation in some parameter regions because cooperators inside a cluster receive benefits from one another. But one picture cannot establish a general effect. A cooperative cluster surviving is different from a single cooperator invading an all-defector population. The result also depends on topology, update timing, tie-breaking, benefit, mutation, starting density, and stopping rule.
-
-### What the models can—and cannot—support
+Spatial models add another dependency: who meets whom. Cooperative clusters, ethnocentric strategies, or aggregate segregation can emerge under particular neighborhoods and update rules. A screenshot is not empirical evidence, and a model pattern does not identify human intent, innateness, or the historical cause of a city outcome. Reproducibility requires the following minimum record:
 
 | Model layer | Substantive lesson | Reproducibility gate |
 | --- | --- | --- |
-| Two-strategy update | Payoff differences can change population shares; basins and mixtures matter. | Declare $a,b,c,d,w$, initial $x$, time horizon, and numerical precision. |
-| Spatial game/PD | Local interaction can permit clusters that a well-mixed model removes. | Declare grid, torus/boundary, four/eight neighbors, update rule, ties, seed, and replications. |
-| Ethnocentrism | Conditional help can spread in a particular immigration–reproduction–mutation model. | Preserve its 12% reproduction attempt, 10% death, 1% giving cost, 3% recipient benefit, 0.5% per-trait mutation, and local interaction—or explicitly change them. |
-| Schelling segregation | Mild local thresholds can produce pronounced aggregate sorting. | Declare population, vacancies, threshold, move rule, seed, and the outcome measure. |
+| Two-strategy update | Payoff differences can change population shares. | Payoffs, initial share, update rule, and horizon. |
+| Spatial game | Local interaction can protect clusters. | Topology, neighbors, timing, ties, seed, and replications. |
+| Ethnocentrism | Conditional help can spread in one specified process. | Benefits, costs, tags, mutation, mobility, and interaction rule. |
+| Schelling segregation | Mild local thresholds can yield aggregate sorting. | Population, vacancies, threshold, move rule, seed, and outcome measure. |
 : Model demonstrations require parameter and process provenance {#tbl-model-provenance}
 
-The NetLogo models are scientifically useful as specifications, but their screenshots are not empirical evidence. Several have stale Info tabs, and the files carry CC BY-NC-SA licensing conditions. A publishable result should be independently implemented from the declared rule, rerun with a seed policy and replications, and displayed with uncertainty—not inferred from one screenshot.
+Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner's-dilemma dynamics (Wilensky, 2002), and a specific ethnocentrism model (Hammond & Axelrod, 2006; Wilensky, 2003). These are executable hypotheses under declared rules, not photographs of how real populations must behave.
 
-## Ethnocentrism and segregation: name the inference boundary
-
-The Hammond–Axelrod ethnocentrism model allows agents to condition help on group markers. In one implementation, four strategies—help all, help only the same group, help only other groups, or help nobody—interact locally while immigration, reproduction, death, and mutation change the population (Hammond & Axelrod, 2006). “Ethnocentric” behavior can dominate for some parameter combinations.
-
-That is a model result, not evidence that human group favoritism is innate, universal, or morally justified. The result follows from a specific benefit–cost structure, spatial interaction, inherited tags and strategies, and evolutionary update.
-
-Schelling's segregation model supplies a parallel warning. Agents who require only a modest share of similar neighbors can generate highly segregated aggregate patterns (Schelling, 1969). One model description reports that a 30% threshold can produce about 70% same-type neighbors in a particular setup; another configuration uses 500 agents of each type on a 32-by-32 lattice and a 40% threshold. These are model-conditional demonstrations. Aggregate segregation does not reveal each person's intent, and the model does not establish the empirical cause of segregation in a city where income, discrimination, zoning, history, networks, and housing supply also matter.
-
-## Repeated-game success is not evolutionary stability
-
-Tit-for-tat cooperates first and then copies the other player's previous move. It is memorable because it was successful in Axelrod's computer tournaments: it is nice, retaliatory, and forgiving after the opponent returns to cooperation (Axelrod, 1984).
-
-Noise exposes two weaknesses. A mistaken defection can trigger retaliation, and unconditional cooperators can drift into a population because they behave identically against tit-for-tat until exploited by defectors. Win-stay, lose-shift repeats an action after a satisfactory outcome and switches after an unsatisfactory one, so it can correct some errors.
-
-Imhof, Fudenberg, and Nowak (2007) compare always defect, always cooperate, tit-for-tat, and win-stay, lose-shift in a particular finite-population mutation–selection process with implementation errors. Below a critical cooperation benefit, always defect is selected; above it, win-stay, lose-shift is selected. Tit-for-tat is not selected in that process, although its presence lowers the threshold at which win-stay, lose-shift succeeds. This result does not prove that tit-for-tat “does not work.” Tournament payoff, repeated-game equilibrium, learning, and stochastic evolutionary selection are different criteria.
+Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat's success in one tournament and its vulnerability under noise or mutation–selection are not contradictory findings; they answer different questions (Axelrod, 1984; Imhof et al., 2007).
+:::
 
 ## Application: choose the model after diagnosing the process
 
@@ -273,35 +188,15 @@ Level labels, brain images, and evolutionary language can give a fragile inferen
 
 The defensible use of a strategic model makes its payoff assumptions, population, update rule, uncertainty, and failure conditions inspectable. People affected should be able to ask what the model leaves out and how a classification can be corrected.
 
-## Key ideas
+## Practice Lab
 
-- Equilibrium predicts mutual best responses under stated assumptions; it is not a portrait of average initial play.
-- Level-*k* and cognitive-hierarchy models capture bounded strategic reasoning, but fitted levels are task- and model-dependent.
-- One action rarely identifies one belief or cognitive process.
-- Evolutionary models replace deliberate optimization with a declared population update.
-- ESS is an invasion-resistance criterion; Nash equilibrium and ESS are related but not identical.
-- Initial conditions, local interaction, mutation, noise, and update rules can reverse population outcomes.
-- One-shot incentives, repeated reciprocity, and evolutionary selection answer different questions.
+Run five rounds of the two-thirds number game. Record the full distribution, individual revisions, the mean, and the target each round. Produce three rival accounts of any movement—deeper reasoning, belief learning, and imitation or reinforcement—then design one additional treatment that gives them different predictions. The output is the annotated path plus the discriminating treatment.
 
-## Study and practice
+## Take it forward
 
-1. Why can zero be the equilibrium choice but a poor choice in a number game?
-2. Compute the level-1, level-2, and level-3 choices when the target is three-quarters of the mean and level 0 has mean 50.
-3. How does cognitive hierarchy differ from a simple level-*k* model?
-4. Give two mechanisms that can generate movement toward equilibrium across rounds.
-5. For the stag-hunt population, which strategy grows when 30% are Hare? What about 70%?
-6. Why is the mixed hawk–dove population not necessarily individual randomization?
-7. What parameters and seed information would you require before interpreting a spatial-cooperation chart?
-8. State one claim that the ethnocentrism or segregation model cannot support.
-
-::: {.callout-tip .activity icon=false}
-## Activity: three explanations for the same path
-
-Run five rounds of the two-thirds number game. Record the full distribution, not only the winning number. After each round, reveal the mean and target. Then write three explanations for any downward movement: deeper reasoning, belief learning, and imitation or reinforcement. Identify one additional treatment that would separate the explanations.
-
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 150 WORDS)  
-Experience: describe the path without calling it rational or irrational. Explain: compare one equilibrium and one behavioral mechanism. Apply: propose one discriminating treatment and one ethical boundary on classifying participants.
-:::
+- **Use this when** equilibrium is a useful benchmark but initial play or adjustment does not match it.
+- **Do not infer** a person's belief, reasoning level, or stable type from one observed action.
+- **Try this next** by writing two mechanisms that predict the action and one treatment on which their predictions diverge.
 
 ## References cited in this chapter
 

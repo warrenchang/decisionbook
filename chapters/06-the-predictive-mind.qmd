@@ -11,13 +11,14 @@ The brain does not passively record the world. It combines incomplete sensory si
 ## Learning goals
 
 - Explain perception as inference rather than recording.
-- Describe predictive processing, prediction error, and precision in
-  plain language.
-- Distinguish predictive processing from active inference, expected free
-  energy, and the value of information.
-- Use illusions to reveal the assumptions of ordinary perception.
-- Explain how inner models can support expertise or protect themselves
-  from correction.
+- Describe priors, sensory evidence, prediction error, and precision in plain language.
+- Specify an observation that could distinguish two competing interpretations.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+The chapter focuses on **Interpret** and **Predict**. Incoming signals do not explain themselves; a model turns them into a situation and anticipates what should happen next.
+:::
 
 If perception is not complete sensory recording, what is it?
 
@@ -28,7 +29,10 @@ perception as unconscious inference (Helmholtz, 1867/1962). Later work
 in psychology and cognitive science developed this idea through theories
 of constructivist perception, Bayesian perception, and predictive
 processing (Gregory, 1980; Kersten et al., 2004; Knill & Richards, 1996;
-Rock, 1983).
+Rock, 1983). Evidence that perception is context-sensitive and inferential
+does not uniquely establish one predictive-processing implementation in
+the brain; predictive processing is an influential family of theoretical
+accounts for how such inference might be organized.
 
 The brain does not simply ask, “What light hit the retina?” It asks, in
 effect, “What in the world is most likely to have caused this pattern of
@@ -118,15 +122,14 @@ Classic ambiguity stimuli—the B/13 figure, duck–rabbit, an object seen as sq
 
 ![Judgment and decision-making according to predictive processing. An internal model generates predictions; perception and judgment integrate predictions with sensation; precision assigns weight to prediction error; action plans and action reshape contact with the environment.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="Diagram of judgment and decision-making according to predictive processing. Inside the decision-maker, the internal model shapes predictions, which guide perception and judgment. Precision or attention weights prediction versus sensory evidence. Prediction error updates the internal model. Action plans guide action, action changes the environment, and sensation feeds back into perception and judgment."}
 
-Figure @fig-predictive-processing-decision shows the whole loop before we examine its parts. Read it clockwise: an internal model predicts sensations and outcomes; precision determines which discrepancies deserve weight; perception and judgment integrate prediction with sensation; action changes the environment and therefore the next evidence; prediction error can then update the model. Decision-making is not a separate final stage after perception. It belongs to a continuous cycle in which an agent interprets the world while acting within it.
+Figure @fig-predictive-processing-decision shows the loop proposed by this framework before we examine its parts. Read it clockwise: an internal model predicts sensations and outcomes; precision determines which discrepancies deserve weight; perception and judgment integrate prediction with sensation; action changes the environment and therefore the next evidence; prediction error can then update the model. The figure is a theoretical architecture, not a direct image of neural implementation. Its useful decision lesson is that perception, action, and learning can form a continuous cycle.
 
-The idea that perception is inference becomes more powerful in predictive processing. Predictive processing theories propose that the
-brain is constantly generating predictions about sensory input and
+The idea that perception is inference becomes more specific in predictive processing. Predictive processing theories propose that the
+brain generates predictions about sensory input and
 updating those predictions when errors occur (Clark, 2013; Friston,
 2010; Hohwy, 2013; Rao & Ballard, 1999). The brain does not wait
-passively for the world to arrive. It predicts the world, compares
-prediction with incoming evidence, and revises its model when mismatch
-matters.
+passively for the world to arrive on this account. Prediction is compared
+with incoming evidence, and the model may be revised when mismatch matters.
 
 Two objects must be kept separate. The **generative process** is the
 world and body that actually produce observations. The **generative
@@ -162,18 +165,20 @@ likely appearance of objects. You do not need to reconstruct the room
 from scratch. But if a chair has been moved, your foot bumps into it.
 Prediction error occurs. You update: the chair is not where expected.
 
-Predictive processing helps explain why perception is fast. The brain
-does not process every detail equally. It predicts what is likely and
-focuses processing on what is surprising, uncertain, or important. This
-makes perception efficient. It also makes it vulnerable to expectation.
+Predictive processing offers one account of why perception is fast: the
+system need not treat every detail equally, and can allocate processing to
+what is surprising, uncertain, or important. This can be efficient and can
+also make inference vulnerable to expectation. Other computational and
+neural accounts can explain some of the same observations.
 
 Attention plays a central role in predictive processing. In this
-framework, attention can be understood partly as the assignment of
+framework, attention can be modeled partly as the assignment of
 precision to prediction errors (Feldman & Friston, 2010). Precision
 means the estimated reliability or importance of a signal. If a sensory
 signal is treated as precise, it has more influence on updating
 perception. If it is treated as noisy or irrelevant, it has less
-influence.
+influence. This is a framework-specific proposal, not a general definition
+of attention or a uniquely established neural mechanism.
 
 This idea helps explain why attention changes perception. If you are
 listening for your name in a noisy room, speech sounds related to your
@@ -183,7 +188,8 @@ threat cues receive more precision. If you are motivated to defend a
 belief, evidence consistent with that belief may receive more weight
 than evidence against it.
 
-### From predictive processing to active inference
+::: {.callout-note .research-lens icon=false}
+## Research Lens: from predictive processing to active inference
 
 Predictive processing is a family of accounts in which perception and
 learning involve predictions, precision-weighted errors, and belief
@@ -237,6 +243,7 @@ because it is more flexible, its fit is not yet an explanation. Active
 inference is strongest when the formalism creates a risky prediction or
 a boundary condition; it is weakest when every outcome is redescribed
 as successful free-energy minimization.
+:::
 
 ::: {.callout-warning icon=false}
 ## A network label is not a cognitive process
@@ -300,7 +307,7 @@ biased, threatening, or noisy, the information may not update belief.
 This is why decision science must study internal models, not just
 external data.
 
-## When inner models help - and trap
+## When inner models help—and trap
 
 Inner models are essential. Without them, the world would be chaotic.
 
@@ -463,65 +470,15 @@ tabindex="0">
 
 </div>
 
-## Key ideas
+## Practice Lab
 
-- The brain does not passively record the world. It combines incomplete
-  sensory signals with prior models, goals, context, and estimates of
-  reliability to infer what is present and what action is appropriate.
-- The generative process produces observations; a generative model is
-  the agent's representation of how hidden causes could produce them.
-- Precision weights the influence of a prior or signal; a prediction
-  error does not guarantee updating.
-- Active inference adds policies and expected future observations to
-  predictive processing. Expected free energy combines preferred
-  outcomes with epistemic value, making exploration and exploitation
-  part of one model.
-- Ordinary surprise, Bayesian belief change, and variational free
-  energy are different concepts.
-- Prediction, judgment, causal inference, and decision are different
-  tasks. Better AI prediction does not supply objectives or causal
-  effects automatically.
-- A flexible framework becomes explanatory only when its states,
-  priors, likelihoods, policies, preferences, parameters, and competing
-  models are specified well enough to be tested.
+Choose a disagreement in which two people received similar information but inferred different situations. Produce a two-model test: state each person's prior model, identify the signal each treated as most precise, and name one feasible observation that would be expected under one model but not the other. End by stating what action would follow from each possible result.
 
-## Study and practice
+## Take it forward
 
-1.  How would you explain perception as inference rather than recording?
-
-2.  What evidence and mechanism would you use to describe predictive
-    processing, prediction error, and precision in plain language?
-
-3.  How would you use illusions to reveal the assumptions of ordinary
-    perception in practice?
-
-4.  Distinguish the generative process from the generative model in the
-    moved-chair example.
-
-5.  Why can an information-seeking action have epistemic value even if
-    it delays an immediate reward?
-
-6.  Give a case in which a prediction is accurate but does not identify
-    a useful intervention or a defensible decision.
-
-<div class="callout-title">
-
-ACTIVITY
-
-</div>
-
-<div class="callout-body">
-
-Choose a disagreement in which two people received similar information
-but saw different situations. Write each person's prior model, the
-evidence each treated as precise, and one observation that could
-distinguish the models.  
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)  
-Experience: describe one specific decision, interaction, or observation.
-Explain: use one or two concepts from this chapter accurately. Apply:
-state one improvement, implication, or testable prediction.
-
-</div>
+- **Use this when:** people agree on the raw event but disagree about what it means or what will happen next.
+- **Do not infer:** that every perception is arbitrary, that prediction identifies causation, or that a flexible predictive-processing vocabulary explains a case without testable commitments.
+- **Try this next:** write the observation that would make your preferred model lose ground before collecting more evidence.
 
 ## References cited in this chapter
 

@@ -1,6 +1,6 @@
-# MESOs, Contingent Contracts, and Better Agreements
+# Designing Better Agreements
 
-*Learning priorities, betting on differences, and improving implementation*
+*Turn packages, disagreement, trust, and implementation into agreement architecture*
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -10,26 +10,35 @@ Better agreements can reveal priorities through multiple packages, convert forec
 
 ## Learning goals
 
-- Design multiple equivalent simultaneous offers.
-- Use contingent contracts when beliefs differ and performance can be measured.
-- Manage disclosure through staged reciprocity and verification.
-- Use process design, post-settlement settlements, and implementation planning.
+- Design multiple equivalent packages that reveal priorities without using decoys.
+- Write a contingent term with measurable outcomes, aligned incentives, and verifiable data.
+- Produce an implementation architecture covering authority, disclosure, review, adaptation, and dispute resolution.
 
-## Why would a builder ask for a larger penalty?
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
 
-A construction contract is nearly complete when the client adds a demand: a substantial penalty for late completion. The builder surprises everyone by proposing an even larger late penalty. Is that irrational, deceptive, or an attempt to create value?
+Agreement design turns a promising package into a decision that can survive the future. Packages reveal priorities; contingencies let later evidence resolve forecast disagreement; staged disclosure and verification manage trust; process rules guide interaction; and implementation converts promises into observable action and learning.
+:::
 
-Decide before reading further. Name the missing information that could reverse your judgment. The diagnostic move is to ask what the client values and what the builder believes about the schedule. If timely completion is unusually valuable to the client and the builder is confident, the parties can pair the larger late penalty with a bonus for early completion. The client gets protection and stronger incentives; the builder receives upside for performance. The construction case previews this chapter's central tools: packages reveal priorities, contingencies exploit forecast differences, and implementation tests decide whether a clever agreement is actually safe.
+## Return to the supplier table
+
+The buyer and supplier have identified a promising structure: commercial exclusivity with one legacy exception, minimum annual volume, flexible call-offs, shared capacity investment, quality criteria, and staged delivery. They have created options. They have not yet designed a safe agreement.
+
+Several uncertainties remain. How much capacity is genuinely available? Who bears a delay caused by late forecasts, transport disruption, or supplier failure? How will defect rate be measured? What information can each side verify? Who may change volume, and when? A sophisticated package can merely relocate conflict unless these questions become terms, measures, and review rules.
+
+## 1. Reveal priorities through packages
 
 One powerful tool for discovering integrative agreements is the use of multiple equivalent simultaneous offers, or MESOs.
 
 A MESO is a set of two or more offers made at the same time, each designed to be roughly equal in value to the offer-maker but different in how value is allocated across issues. The other side’s reaction reveals priorities.
 
-Suppose a service provider is negotiating with a client over start date, service level, and price. The provider might offer:
+The supplier might offer three packages it has privately valued as roughly equivalent:
 
-Option A: Start in July, standard service, €650,000. Option B: Start in March, standard service, €635,000. Option C: Start in July, premium service, €700,000. Option D: Start in March, premium service, €680,000.
+- **Capacity package:** lower unit price, firm annual minimum, narrow monthly call-off band.
+- **Flexibility package:** higher unit price, wider call-off band, quarterly forecast commitment.
+- **Investment package:** middle unit price, buyer contribution to dedicated tooling, longer term, and an exit schedule for unrecovered investment.
 
-If these options are designed to be roughly equivalent for the provider, the client’s preference reveals what the client values: early start, premium service, or lower price. The provider learns without asking the client to reveal reservation values directly.
+If the packages are genuinely equivalent for the supplier, the buyer's reaction reveals how it values price, flexibility, commitment, and capacity security. The supplier learns without asking the buyer to disclose its reservation value.
 
 MESOs have several advantages.
 
@@ -66,11 +75,9 @@ Then ask pairwise questions:
 
 MESOs reduce the risk of learning priorities through direct interrogation, and research suggests that offering a choice of first offers can improve both economic and relational outcomes in studied settings (Leonardelli et al., 2019). They remain proposals, not a menu of traps. A decoy that is not sincerely available undermines the tool.
 
-## Designing across disagreement
+## 2. Use contingent terms when forecasts differ
 
 ![Advanced agreement design uses MESOs, contingent terms, post-settlement improvement, and implementation governance.](../figures/agreement-design.svg){#fig-agreement-design fig-alt="Four agreement-design tools point toward a central better-agreement node."}
-
-### Contingent contracts
 
 Sometimes parties disagree not because they value different issues, but because they predict the future differently.
 
@@ -108,45 +115,19 @@ What future uncertainty divides us? Who is more optimistic? What outcome would r
 
 Contingent contracts are not only legal devices. They are decision tools for transforming disagreement about the future into value.
 
-### Worked example: an investment-bank fee
+### Apply the logic to supplier capacity
 
-Consider a company owner negotiating a fee with an investment bank. The bank has identified a potential acquirer and proposes a 1% success fee. The owner expects the company to sell for about $500 million and thinks a 1% fee, or $5 million, is excessive. The owner proposes 0.625%. The bankers believe the likely sale price is closer to $250 million, where 0.625% would yield only $1.56 million. Each side has a different forecast of the company’s sale price (Bazerman & Gillespie, 1999).
+The buyer expects monthly demand to remain within a narrow band. The supplier expects volatile peaks that would require overtime and displaced orders. Arguing about whose forecast is right will not create capacity. A contingent term can allocate the consequence:
 
-If they argue over a single percentage, the negotiation becomes distributive. The owner wants a lower percentage. The bank wants a higher percentage. But their disagreement is partly about future value. This makes the situation suitable for a contingent contract.
+- The buyer supplies a rolling twelve-week forecast and commits only to the first four weeks.
+- Volume inside the agreed band receives the base price.
+- Volume above the band is accepted only when capacity is confirmed and carries a predeclared surge price.
+- If the buyer's committed forecast arrives late, the delivery clock moves by the same number of days.
+- If the supplier confirms capacity and then misses a dependency it controls, service credits apply; repeated failure activates cure and exit rights.
 
-One possible fee schedule might be:
+This term turns forecast disagreement into a measurable allocation of responsibility. It still needs definitions: what counts as a forecast, confirmation, surge volume, supplier-controlled delay, external shock, and cure? The agreement should avoid cliffs that reward strategic reporting just above or below a threshold. When parties disagree about the future, let future evidence affect terms only when measurement, control, incentives, and enforcement are credible (Bazerman & Gillespie, 1999).
 
-1% if the sale price is $250 million or lower. 0.75% if the sale price is between $250 million and $500 million. 0.625% if the sale price is $500 million or higher.
-
-This structure gives the bank protection if the sale price is low and gives the owner a lower rate if the sale price is high. Another structure might include a nonrefundable upfront fee and lower success percentages at higher valuations. The exact numbers matter less than the logic: the parties stop arguing about the future and make the agreement responsive to it.
-
-This example also shows why contingent contracts require careful design. A fee schedule should preserve incentives for the bank to maximize sale value. If the percentage declines too sharply at higher prices, the bank might have weaker incentive to push for a higher price. A good structure aligns incentives rather than merely splitting forecasts.
-
-The full fee exercise compares two schedules with the parties' original proposals. Fees below are in **millions of dollars**.
-
-**Schedule S1** pays 1% at sale prices up to $250 million, 0.75% from $250 million to below $500 million, and 0.625% at $500 million or above. **Schedule S2** adds a nonrefundable $0.5 million signing fee, then pays 0.8% up to $300 million, 0.625% from above $300 million to below $400 million, and 0.525% at $400 million or above. The percentages apply to the full sale price within the stated band, as in the original exercise—not marginally by tranche.
-
-| Sale price | Client's 0.625% | Bank's 1% | S1 | S2 |
-| ---: | ---: | ---: | ---: | ---: |
-| $250m | $1.56m | $2.50m | $2.50m | $2.50m |
-| $300m | $1.88m | $3.00m | $2.25m | $2.90m |
-| $400m | $2.50m | $4.00m | $3.00m | $2.60m |
-| $500m | $3.13m | $5.00m | $3.13m | $3.13m |
-: Fees generated by the original proposals and two contingent schedules {#tbl-34-fee-schedules}
-
-The $2.25 million S1 value at $300 million is the arithmetic implied by the stated 0.75% rate; $2.52 million would be a transposition. More important, both schedules have **cliffs**: S1 drops just above $250 million, while S2 drops at $300 million and again at $400 million. Such discontinuities can weaken incentives or invite strategic reporting near a threshold. A better design might use marginal tiers, a continuous formula, or a bonus for value above a benchmark.
-
-::: {.callout-tip .activity icon=false}
-## Redesign the fee
-
-Before seeing someone else's solution, create a third schedule. It must be acceptable under both forecasts, keep the bank motivated to increase sale value, define sale price unambiguously, and avoid payment cliffs. Test it at $250m, $300m, $400m, and $500m, then at $1 above and below every threshold.
-:::
-
-The broader lesson is:
-
-When parties disagree about the future, ask whether the agreement can let the future decide.
-
-### Trust, disclosure, and verification
+## 3. Stage disclosure and verification
 
 Integrative negotiation requires information, but information is not free. Revealing interests and priorities can create vulnerability.
 
@@ -186,7 +167,7 @@ Reward useful disclosure with problem-solving, not exploitation.
 
 This does not mean giving away value. It means using information to construct trades that both sides can accept.
 
-### Perspective-getting
+### Ask before inferring
 
 The communication chapter distinguished perspective-taking from perspective-getting. This distinction is critical in negotiation.
 
@@ -210,7 +191,7 @@ Perhaps their demand is not about money but precedent. Perhaps their refusal is 
 
 Integrative negotiation begins when negotiators stop treating the other side’s position as irrational and start investigating the structure that makes it rational to them.
 
-### Negotiate the process
+## 4. Negotiate the process
 
 Sometimes the best way to create value is to improve the process before negotiating substance.
 
@@ -252,7 +233,7 @@ The process itself can be summarized as a loop:
 
 At each step ask what evidence would send you backward. A process model is useful only if it supports updating rather than disguising a predetermined deal.
 
-### Post-settlement settlements
+### Search safely after agreement
 
 A post-settlement settlement is an improved agreement reached after the parties have already reached an initial agreement.
 
@@ -290,81 +271,7 @@ The rule is:
 
 Post-settlement settlement should only improve the deal for both parties. It should never be a disguised attempt to claw back value.
 
-::: {.callout-tip icon=false}
-## Watch and diagnose a complete negotiation
-
-Watch this [*Borgen* negotiation example](https://youtu.be/n--tLhsiMwA). Before playing it, prepare four columns: **positions**, **interests**, **leverage**, and **possible trades**. Afterward, mark each move as primarily value creating, value claiming, or process managing. The book links to the clip without reproducing copyrighted frames.
-:::
-
-## Applications
-
-### Employment
-
-Employment negotiations are often treated as salary negotiations. But they are usually multi-issue negotiations.
-
-Issues can include salary, bonus, title, start date, location, remote work, teaching load, research support, relocation, professional development, conference travel, administrative duties, mentoring, performance review, publication support, childcare flexibility, visa support, and future promotion criteria.
-
-The candidate may care most about research time and flexibility. The employer may care most about start date and teaching coverage. A purely distributive salary negotiation could miss value.
-
-For example, suppose an employer cannot exceed €70,000 due to salary bands. The candidate wants €76,000 because of living costs and recognition. Instead of ending the conversation, the parties could explore:
-
-A signing bonus. Earlier salary review. Relocation support. Remote work. Reduced teaching in first semester. Research assistant support. Conference budget. Clear promotion timeline. Professional development funding. Flexible start date.
-
-Some of these may be low-cost to the employer but high-value to the candidate. Others may be high-cost and therefore poor trades. The only way to know is to discuss priorities.
-
-A candidate might say:
-
-“I understand the salary band constraint. Could we look at the broader package? Research support, review timing, and flexibility are also important to me.”
-
-An employer might say:
-
-“We have limited flexibility on salary, but more flexibility on start date, professional development, and review schedule. Which of these would matter most?”
-
-This is integrative negotiation because it treats the job offer as a package rather than a single number.
-
-### Organizations
-
-Organizations negotiate constantly: budgets, deadlines, resources, roles, strategy, priorities, credit, responsibility, and change.
-
-Many internal negotiations fail because parties frame issues as departmental competition. Marketing wants more budget. Operations wants more budget. Faculty want autonomy. Administration wants standardization. Sales wants customization. Production wants stability. These positions conflict.
-
-Integrative negotiation asks what interests the positions protect.
-
-Marketing may need budget to generate leads. Operations may need budget to reduce delays. Faculty may need autonomy to protect academic judgment. Administration may need standardization to reduce errors. Sales may need customization to win clients. Production may need stability to deliver quality.
-
-Once interests are explicit, creative options become possible:
-
-Shared infrastructure. Pilot programs. Rotating resources. Service-level agreements. Decision rights by issue. Flexible standards. Contingent funding. Cross-functional teams. Joint metrics. Staged implementation. Trade-offs across time.
-
-For example, a department may resist a new administrative system because it fears loss of autonomy. Administration may insist on standardization because manual processes create errors. An integrative solution might standardize core reporting while allowing local flexibility in workflow. Both interests are addressed.
-
-Internal negotiation also depends on relationship. Unlike one-time market transactions, colleagues must continue working together. A department that claims value aggressively but damages trust may lose long-term cooperation. Integrative negotiation is therefore essential for organizational health.
-
-A useful organizational question is:
-
-What problem is each unit trying to solve, and can we design a system that solves more than one problem at once?
-
-### Public policy
-
-Public policy negotiations often involve multiple stakeholders with different values, risks, and constraints. Integrative negotiation can help move beyond symbolic conflict.
-
-Consider climate policy. One side may emphasize emissions reduction; another side may emphasize jobs, affordability, energy security, or regional fairness. A purely positional debate becomes “regulation versus freedom” or “environment versus economy.” An integrative approach asks how policies can reduce emissions while addressing transition costs: retraining, regional investment, technological innovation, compensation, phased timelines, and energy reliability.
-
-Consider urban planning. Residents may oppose new housing because of traffic, school capacity, neighborhood identity, or green space. Developers may want density. City governments may want affordability. An integrative agreement may include transit investment, design standards, affordable units, green space, school funding, and phased development.
-
-Consider healthcare. Patients want access and dignity. Providers want manageable workload. Governments want cost control. Insurers want predictability. Integrative solutions may involve triage redesign, digital tools, preventive care, payment reform, and shared decision-making.
-
-Policy negotiation is difficult because interests are often public, moral, and identity-laden. Not everything can be traded. Some values are sacred or rights-based. Still, many policy conflicts include practical dimensions that can be structured creatively.
-
-The risk is that integrative language can be used to pressure weaker parties into compromise. Ethical integration must respect rights, dignity, and power imbalances. Creating value should not mean asking vulnerable groups to trade away basic protections.
-
-A useful policy question is:
-
-Which parts of this conflict are true value conflicts, and which parts are design problems?
-
-The first may require democratic choice. The second may allow integrative design.
-
-## Ethics, process, and implementation
+## 5. Design implementation and review
 
 ### Ethics of value creation
 
@@ -392,39 +299,7 @@ Does this value-creating proposal make both parties genuinely better off, or doe
 
 The language of win-win should be earned, not assumed.
 
-### An integrative process
-
-Integrative negotiation can be approached as a structured process.
-
-First, prepare separately. Identify issues, interests, priorities, BATNA, reservation value, target, standards, and possible trades.
-
-Second, create a constructive process. Agree to discuss multiple issues, explore interests, and avoid premature commitment.
-
-Third, exchange information gradually. Share interests and priorities, not hard limits. Ask diagnostic questions. Listen for constraints and hidden values.
-
-Fourth, identify differences. Look for differences in valuation, cost, risk tolerance, time preference, beliefs, capabilities, and stakeholder needs.
-
-Fifth, construct packages. Avoid negotiating issues one by one. Build offers that combine issues.
-
-Sixth, use MESOs when useful. Present multiple packages equivalent to you but different in structure. Learn from the other side’s preferences.
-
-Seventh, consider contingent contracts when beliefs differ. Let future outcomes determine part of the agreement if outcomes can be measured and incentives remain aligned.
-
-Eighth, claim value fairly. Once value is created, negotiate division using BATNAs, standards, fairness, and relationship considerations.
-
-Ninth, test for Pareto improvements. Ask whether any changes could make one party better off without hurting the other.
-
-Tenth, plan implementation. Clarify responsibilities, timing, metrics, review, and dispute resolution.
-
-Eleventh, consider post-settlement settlement. After reaching agreement, ask whether both parties want to search safely for improvements.
-
-A simple integrative checklist:
-
-What are all the issues? What are my interests? What are their interests? Which issues matter most to me? Which issues matter most to them? Where do we differ? What can I give that costs me little and helps them a lot? What can they give that costs them little and helps me a lot? Could a package create more value than issue-by-issue bargaining? Could a contingent term resolve different beliefs? Is the agreement Pareto efficient? Is the agreement fair enough to implement? Have we protected our BATNA and ethics?
-
-This process turns negotiation from a contest into a design problem.
-
-### Worked example: supplier contract
+### Turn the supplier package into operating rules
 
 A manufacturing firm is negotiating with a component supplier. The buyer wants a low price, flexible delivery, high quality, and short lead time. The supplier wants higher price, predictable volume, longer contract length, and earlier payment.
 
@@ -478,37 +353,9 @@ This package may be better for both than simply splitting price. The supplier ge
 
 The lesson is that price was not the whole problem. Price was the visible conflict. Value was hidden in volume, timing, risk, quality, and information.
 
-### Worked example: academic workload
+The package becomes implementable only after the parties name owners, evidence, and review. The buyer owns the rolling forecast; the supplier confirms capacity within two working days. A shared dashboard records committed volume, accepted surge orders, defects, and dependency delays. A monthly operating review handles forecasts and quality; a quarterly governance review can revise bands and investment milestones. Cure periods precede exit except for safety or fraud. Disputes escalate first to named operational leads, then commercial sponsors, then the agreed formal mechanism. The agreement records which terms survive termination and how dedicated-tooling value is recovered.
 
-Two faculty members are negotiating responsibilities for a new master’s course. Both initially say they cannot take more work. The department head considers splitting tasks equally. But equal division may not fit interests or capabilities.
-
-Faculty member A enjoys lectures and conceptual framing but dislikes grading and administrative coordination. Faculty member B prefers smaller interactive sessions, assessment design, and student feedback but dislikes large lectures. A has heavy research travel in October. B has heavy committee work in December.
-
-A compromise might split lectures, grading, and administration equally. An integrative agreement might allocate tasks by strengths and timing:
-
-A gives more large lectures early in the semester.
-
-B designs assessments and leads workshops.
-
-A prepares conceptual teaching materials.
-
-B manages feedback rubrics.
-
-Administrative tasks are reduced through templates.
-
-Grading is divided based on timing availability.
-
-Both agree on shared office hours before exams.
-
-This agreement may create more value because it uses differences in preferences, capabilities, and calendars. It is not equal in every task, but it may be fairer and more efficient overall.
-
-This example shows that integrative negotiation is not only for business deals. It is useful in everyday organizational life.
-
-### From agreement to architecture
-
-This chapter closes the negotiation part of the book. Negotiation is a joint decision process. It requires rational preparation, strategic thinking, social understanding, persuasion, storytelling, communication, and ethical judgment. Distributive negotiation helps parties avoid bad deals and claim value. Integrative negotiation helps parties discover better deals and create value.
-
-Chapter 48 turns from individual agreements to recurring decision systems. Negotiation designs a better conversation and agreement; decision hygiene designs the agendas, roles, forecasts, checks, and feedback through which future decisions will be made.
+Agreement architecture therefore answers six questions: **Who acts? What is observed? Who may verify? What happens when assumptions fail? Who may revise the term? How can either side exit?** A deal is not complete when it looks clever on paper. It is complete when the parties can carry it out, detect failure, and adapt without inventing a new negotiation each time.
 
 | Issue | My position | My interest | My priority | Their likely position | Their likely interest | Their likely priority |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -519,31 +366,21 @@ Chapter 48 turns from individual agreements to recurring decision systems. Negot
 | Contract length | Flexible | Optionality | Low | Longer | Predictability | High |
 : A multi-issue priority map {#tbl-34-1}
 
-## Key ideas
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Evidence Boundary
 
-- Better agreements can reveal priorities through multiple packages, convert forecast disagreement into contingent terms, stage trust, and reopen an initial settlement only when both parties can improve without risk.
-
-MESOs and contingent agreements help reveal priorities and manage differences in beliefs, provided outcomes are measurable and incentives are well aligned (Raiffa et al., 2002; Thompson, 2015).
-
-- Design multiple equivalent simultaneous offers.
-- Use contingent contracts when beliefs differ and performance can be measured.
-- Manage disclosure through staged reciprocity and verification.
-
-## Study and practice
-
-1. Design multiple equivalent simultaneous offers?
-
-2. How would you use contingent contracts when beliefs differ and performance can be measured in practice?
-
-3. Manage disclosure through staged reciprocity and verification?
-
-::: {.callout-tip .activity icon=false}
-## Activity
-
-Create three packages that are equal in value to you but different in composition. Add one question the counterpart's preference would answer, one contingent term for a forecast disagreement, and one implementation safeguard.  
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)  
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.
+MESOs can reveal preferences only when the packages are sincere, understandable, and close in value to the offer-maker. A preference between packages need not reveal a stable priority; strategic response and context also matter. Contingent terms work only when outcomes are measurable, verifiable, sufficiently controllable, enforceable, and worth the complexity. Signing does not establish informed consent, fairness, or implementation capacity.
 :::
+
+## Practice Lab
+
+Complete an agreement-design file for the supplier case containing: three equivalent packages; the priority each comparison is meant to test; one contingent term for demand or delivery uncertainty; definitions for every metric and threshold; data source and verification rights; incentive and sabotage risks; disclosure sequence; decision authority; implementation owners; review cadence; cure and escalation; adaptation rule; and exit. Stress-test the agreement against one demand shock, one supplier failure, one buyer-caused delay, and one ambiguous measurement.
+
+## Take it forward
+
+- **Use this when:** a promising multi-issue package still depends on uncertain forecasts, sensitive information, or future cooperation.
+- **Do not infer:** more options, more complex terms, or a signature automatically creates value, fairness, trust, or enforceability.
+- **Try this next:** add one owner, measure, verification source, review date, and failure rule to the term most likely to break.
 
 ## References cited in this chapter
 
@@ -553,12 +390,4 @@ Bazerman, M. H., & Gillespie, J. J. (1999). Betting on the future: The virtues o
 
 ::: {.reference}
 Leonardelli, G. J., Gu, J., McRuer, G., Medvec, V. H., & Galinsky, A. D. (2019). Multiple equivalent simultaneous offers (MESOs) reduce the negotiator dilemma: How a choice of first offers increases economic and relational outcomes. Organizational Behavior and Human Decision Processes, 152, 64–83.
-:::
-
-::: {.reference}
-Raiffa, H., Richardson, J., & Metcalfe, D. (2002). Negotiation analysis: The science and art of collaborative decision making. Belknap Press.
-:::
-
-::: {.reference}
-Thompson, L. L. (2015). The mind and heart of the negotiator (6th ed.). Pearson.
 :::

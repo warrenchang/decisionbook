@@ -10,12 +10,15 @@ Strategic interdependence changes the unit of analysis. An action cannot be eval
 
 ## Learning goals
 
-- Diagnose coordination, conflict, mixed motives, and anti-coordination.
-- Represent a strategic situation using players, actions, payoffs, information, and timing.
-- Find best responses and Nash equilibria in simple games.
-- Distinguish equilibrium from efficiency, fairness, prediction, and advice.
-- Explain how focal points, communication, commitment, and institutions change strategic outcomes.
-- Recognize competition neglect and escalation before entering the trap.
+- Represent a strategic situation using players, actions, payoffs, information, timing, repetition, and enforcement.
+- Distinguish coordination, mixed motives, and escalation while separating equilibrium from welfare and advice.
+- Redesign one strategic situation by changing communication, commitment, timing, monitoring, or exit.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+When another person enters the payoff function, **Predict** becomes strategic: each decision depends on expected actions, reactions, and expectations about expectations. The loop expands from individual choice to **Coordinate** and, later, **Negotiate**.
+:::
 
 ## Opening puzzle: meet me in Odense
 
@@ -65,7 +68,7 @@ Watch the linked [strategic-interdependence scene from *A Beautiful Mind*](https
 
 ## Best responses and Nash equilibrium
 
-A **best response** is an action that gives a player the highest payoff for a specified action by the other player. A **Nash equilibrium** is a set of actions—one for each player—such that no player can gain by changing their action alone (Nash, 1950).
+A **best response** is a strategy that gives a player the highest payoff against a specified strategy profile of the other players. In the two-player pure-action examples below, that reduces to choosing the best action against the other player's stated action. A **Nash equilibrium** is a strategy profile—possibly including mixed strategies—such that no player can gain by deviating alone (Nash, 1950).
 
 This definition is narrow and powerful. It asks whether an outcome is stable against unilateral deviation. It does not ask whether the outcome is fair, efficient, moral, legal, or likely to occur.
 
@@ -106,7 +109,7 @@ A fish-market activity can assign private buyer values and vary available supply
 | Which commitment or rule changes the strategic incentives. | Whether the specified payoffs capture actual motives. |
 : Equilibrium is a benchmark, not a portrait {#tbl-equilibrium-boundary}
 
-Behavioral game theory begins where the last column becomes unavoidable. The next chapter asks how real people form beliefs and how many steps of strategic reasoning they use.
+Behavioral game theory begins where the last column becomes unavoidable (Camerer, 2003). The next chapter asks how real people form beliefs and how many steps of strategic reasoning they use.
 
 ## Coordination: shared expectations can do the work
 
@@ -124,7 +127,7 @@ Suppose two people coordinate on a central station. Did they choose it because i
 
 Culture can supply common expectations, but it can also divide them. When groups bring different conventions, explicit communication is not redundant; it creates common ground.
 
-## Strategic uncertainty: the stag hunt
+### Strategic uncertainty: the stag hunt
 
 The **stag hunt** separates a high-value coordinated action from a safe individual action. Consider this illustrative matrix:
 
@@ -136,17 +139,17 @@ The **stag hunt** separates a high-value coordinated action from a safe individu
 
 Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant. Hare protects a player against being abandoned.
 
-If Player 1 believes Player 2 chooses Stag with probability $p$, then:
+If Player 1 maximizes expected payoff and treats the displayed numbers linearly, and believes Player 2 chooses Stag with probability $p$, then:
 
 $$
 EU(\text{Stag})=15p+2(1-p)=2+13p,
 $$
 
-while $EU(\text{Hare})=10$. Stag is the best response only when $p>8/13\approx0.615$. The threshold makes the problem visible: the barrier may not be risk preference in the ordinary sense. It may be **strategic uncertainty** about whether others will coordinate.
+while $EU(\text{Hare})=10$. Under that linear-payoff assumption, Stag is the best response only when $p>8/13\approx0.615$. With nonlinear utility over the consequences, the threshold must be calculated from their utilities rather than the printed money or point values. The illustration makes one barrier visible: **strategic uncertainty** about whether others will coordinate can matter separately from ordinary outcome risk.
 
-The 3DO Interactive Multiplayer provides a platform-coordination example. Hardware is unattractive without software; software developers hesitate without users and installed hardware. The case is instructive because a technically promising system can fail when complementary players do not share the same incentives or confidence. But it is not a clean test of one mechanism: pricing, timing, capital, rivals, product quality, and execution also mattered. Use the stag hunt to organize the diagnosis, not to replace the historical evidence.
+The 3DO Interactive Multiplayer provides a platform-coordination example. Hardware is unattractive without software; software developers hesitate without users and installed hardware. The case is instructive because a technically promising system can fail when complementary players do not share the same incentives or confidence. But it is not a clean test of one mechanism: pricing, timing, capital, rivals, product quality, and execution also mattered. Use the stag hunt to organize the diagnosis, not to replace the historical evidence (Skyrms, 2004).
 
-## Coordination with opposing interests
+## Mixed motives, anti-coordination, and escalation
 
 Some games require coordination while leaving players in conflict over which coordinated outcome should prevail.
 
@@ -166,11 +169,11 @@ Two people prefer being together but disagree about the activity. Both coordinat
 
 The lesson across these games is simple: “coordinate” is incomplete advice. Coordination must answer **on what**, **by which rule**, and **with what distribution of burdens and gains**.
 
-## Commitment changes the game
+### Commitment changes the game
 
 A credible commitment alters another player's expectations because reversing course becomes costly, observable, or impossible. Schelling (1960) emphasized that deliberately limiting one's future freedom can sometimes increase bargaining power.
 
-The Ford Price Promise provides a useful stylized case. A promise to reimburse buyers if the recommended price later fell could reassure consumers who expected a future price cut. It also raised Ford's cost of cutting price after the sale. If rivals adopted similar guarantees, the strategic incentives surrounding later price reductions could change. The case demonstrates how a customer promise may also operate as a competitive commitment. It does not by itself establish the policy's market-wide causal effect.
+The Ford Price Promise provides a useful stylized case. A promise to reimburse buyers if the recommended price later fell could reassure consumers who expected a future price cut. It also raised Ford's cost of cutting price after the sale. If rivals adopted similar guarantees, the strategic incentives surrounding later price reductions could change. The case demonstrates how a customer promise may also operate as a competitive commitment. It does not by itself establish the policy's market-wide causal effect; price-war remedies remain conditional on the competitive structure (Rao et al., 2000).
 
 Commitment and escalation look similar from outside: both make retreat difficult. The difference is whether the remaining future benefit still justifies the constraint.
 
@@ -181,7 +184,7 @@ Ask four questions:
 3. What flexibility is sacrificed if information changes?
 4. After removing sunk costs and face-saving, is continuation still better than exit?
 
-## The 50-kr auction: competition neglect becomes escalation
+### The €50 auction: competition neglect becomes escalation
 
 In Shubik's dollar-auction game, the highest bidder wins the prize, but the second-highest bidder must also pay their final bid (Shubik, 1971). Early entry looks attractive. Once two people are competing, another small bid can appear cheaper than accepting a certain loss. Each expects that the next bid may make the rival quit. If both reason this way, bids can exceed the prize.
 
@@ -196,7 +199,7 @@ The practical defense is designed before entry: a reservation value, a stop rule
 
 Competitive acquisition creates a related trap. A bidder can value a target in isolation, then discover that the price is determined by rivals who saw the same target. When estimates contain common error, winning can be bad news: the winner may simply be the most optimistic bidder (Bazerman & Samuelson, 1983). Before bidding, separate private synergies from common value, model likely rival entry, and set a reservation price that does not rise merely because competition becomes visible.
 
-## Bargaining is also a coordination problem
+### Bargaining is also a coordination problem
 
 Suppose two players simultaneously claim shares of a total surplus of 4. If their claims sum to at most 4, each receives their claim. If the claims exceed 4, both receive 0.
 
@@ -244,33 +247,15 @@ Strategic competence can create value, but it can also make exploitation more ef
 
 The ethical test is not whether the strategy reaches equilibrium. Ask who is included in the payoff table, whether material facts and alternatives remain visible, whether refusal is meaningful, and whether the rule would remain defensible if affected people understood how it worked.
 
-## Key ideas
+## Practice Lab
 
-- Strategic interdependence means that the value of an action depends on others' actions and reactions.
-- A game specifies players, actions, payoffs, information, and timing; changing any element can change the prediction.
-- Nash equilibrium is stability against unilateral deviation, not a guarantee of efficiency, fairness, or empirical accuracy.
-- Focal points coordinate through shared expectations, but shared salience is group- and context-dependent.
-- Multiple equilibria create a selection problem; strategic uncertainty can make a lower-payoff outcome safer.
-- Commitment can coordinate expectations, but inflexibility can also create collision and escalation.
-- Competition neglect begins before entry; a stop rule should evaluate future value rather than defend sunk cost.
+Map a live supplier, departmental, or platform interaction. Produce a strategic map listing players, actions, material and social payoffs, information, timing, repetition, enforcement, and outsiders. Draw one baseline payoff table and identify best responses. Change exactly one rule—communication, timing, monitoring, commitment, rotation, or exit—and state the observable behavioral change the redesign predicts.
 
-## Study and practice
+## Take it forward
 
-1. Give one example each of coordination, conflict, mixed motives, and anti-coordination.
-2. In the price-war matrix, identify every best response and explain why low–low is not jointly best for the firms.
-3. Why is a focal point different from a payoff-dominant equilibrium?
-4. In the stag hunt, what belief about the other player makes Stag optimal?
-5. Describe a commitment that improves coordination and one that increases escalation risk.
-6. Name one outsider omitted from a familiar two-player game and explain how including them changes welfare.
-
-::: {.callout-tip .activity icon=false}
-## Activity: redraw a real strategic problem
-
-Choose one live problem involving at least two decision-makers. Write the players, actions, payoffs, information, and timing. Classify the structure. Draw one baseline payoff table, identify best responses, and state every equilibrium. Then change exactly one feature—communication, timing, monitoring, commitment, rotation, or exit—and predict how behavior should change.
-
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 150 WORDS)  
-Experience: describe the interaction without assigning personalities. Explain: identify the game and one uncertain assumption. Apply: propose one rule change, one prediction, and one ethical boundary.
-:::
+- **Use this when** advice to one actor changes what another actor can profitably or safely do.
+- **Do not infer** that an equilibrium is efficient, fair, inevitable, or the game people believe they are playing.
+- **Try this next** by changing one element of the strategic map and predicting how the response pattern should move.
 
 ## References cited in this chapter
 

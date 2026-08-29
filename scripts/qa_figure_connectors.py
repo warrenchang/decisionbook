@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail when an arrow in a chapter SVG does not end on a diagram node.
+"""Fail when an arrow in a reader-facing book SVG does not end on a diagram node.
 
 The book uses two arrow styles: SVG markers on paths and explicit triangle
 polygons following a line.  This check recognizes both forms, extracts the
@@ -19,9 +19,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FIGURES = ROOT / "figures"
-CHAPTERS = ROOT / "chapters"
+CONFIG = ROOT / "_quarto-html.yml"
 NUMBER = re.compile(r"-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?")
 TOKEN = re.compile(r"[A-Za-z]|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?")
+BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 FREE_ENDPOINTS = {
     ("pareto.svg", 1120.0, 540.0),  # horizontal axis
     ("pareto.svg", 150.0, 70.0),  # vertical axis
@@ -137,10 +138,17 @@ def arrow_endpoint(element: ET.Element) -> tuple[float, float] | None:
     return points[-1] if points else None
 
 
-def chapter_figure_names() -> set[str]:
+def book_figure_names() -> set[str]:
+    """Return every SVG referenced by the configured HTML book sources."""
     names: set[str] = set()
-    for chapter in CHAPTERS.glob("*.qmd"):
-        names.update(re.findall(r"\.\./figures/([^)]+\.svg)", chapter.read_text(encoding="utf-8")))
+    for relative in BOOK_SOURCE_LINE.findall(CONFIG.read_text(encoding="utf-8")):
+        source = ROOT / relative
+        names.update(
+            re.findall(
+                r"(?:\.\./)?figures/([^)\s]+\.svg)",
+                source.read_text(encoding="utf-8"),
+            )
+        )
     return names
 
 
@@ -229,7 +237,7 @@ def audit(path: Path, tolerance: float = 14.0) -> list[str]:
 
 def main() -> int:
     failures = 0
-    names = chapter_figure_names()
+    names = book_figure_names()
     for name in sorted(names):
         path = FIGURES / name
         issues = audit(path)
@@ -240,7 +248,7 @@ def main() -> int:
     if failures:
         print(f"FAILED: {failures} disconnected arrow endpoint(s)")
         return 1
-    print(f"PASS: checked arrow endpoints in {len(names)} chapter figures")
+    print(f"PASS: checked arrow endpoints in {len(names)} reader-facing book figures")
     return 0
 
 

@@ -306,10 +306,10 @@ def event_study() -> str:
 
 def bubble_strategies() -> str:
     values = [
-        ("Momentum traders", 36.5, ORANGE),
-        ("Fundamental-value traders", 33.1, BLUE),
-        ("Rational speculators", 25.4, GREEN),
-        ("Other classified behavior", 5.0, "#8a7895"),
+        (["Feedback / momentum", "consistent"], 36.5, ORANGE),
+        (["Passive / fundamental-value", "consistent"], 33.1, BLUE),
+        (["Speculator / next-price", "consistent"], 25.4, GREEN),
+        (["Other / unclassified"], 4.9, "#8a7895"),
     ]
     body = [title_block(
         "A bubble can contain several strategies at once",
@@ -317,17 +317,17 @@ def bubble_strategies() -> str:
     )]
     body += [rect(55, 112, 760, 540, fill="#f7fafc", stroke="#c8d7e2", sw=2, rx=18)]
     x0, maxw = 315, 435
-    for i, (label, value, color) in enumerate(values):
+    for i, (label_lines, value, color) in enumerate(values):
         y = 175 + i * 108
         width = maxw * value / 40
         body += [
-            txt(285, y + 32, label, 18, anchor="end", weight=700),
+            multiline(285, y + 23, label_lines, size=17, leading=21, anchor="end", weight=700),
             f'<rect x="{x0}" y="{y}" width="{width:.1f}" height="52" rx="8" fill="{color}"/>',
             txt(x0 + width + 14, y + 34, f"{value:.1f}%", 22, anchor="start", weight=700, fill=color),
         ]
     body += [
         '<line x1="315" y1="605" x2="750" y2="605" stroke="#8fa0ad" stroke-width="2"/>',
-        txt(532, 634, "Share of classified behavior", 16, weight=700),
+        txt(532, 634, "Share of trader classifications", 16, weight=700),
         rect(850, 112, 305, 540, fill=PALE_ORANGE, stroke=ORANGE, sw=2, rx=18),
         txt(1002, 158, "Why the mix matters", 23, weight=700),
         rect(890, 195, 225, 82, fill="#ffffff", stroke=ORANGE, sw=2, rx=14),
@@ -335,14 +335,15 @@ def bubble_strategies() -> str:
         rect(890, 300, 225, 82, fill="#ffffff", stroke=ORANGE, sw=2, rx=14),
         multiline(1002, 334, ["Momentum can reinforce", "the observed trend."], size=17, leading=25, weight=700),
         rect(890, 405, 225, 105, fill="#ffffff", stroke=ORANGE, sw=2, rx=14),
-        multiline(1002, 439, ["A rational trader may", "ride a bubble while", "planning to exit first."], size=17, leading=25, weight=700),
+        multiline(1002, 439, ["A speculator may buy", "while expecting a still", "higher next price."], size=17, leading=25, weight=700),
         txt(1002, 566, "One market, different", 18, weight=700, fill=ORANGE),
         txt(1002, 591, "beliefs and horizons", 18, weight=700, fill=ORANGE),
-        txt(600, 704, "The shares describe one experimental setting and classification rule; they are not population estimates of investor types.", 14, fill=MUTED),
+        txt(600, 688, "N = 162 trader classifications in 18 sessions; ties received fractional weights; highest score had to reach 8 of 15 periods.", 14, fill=MUTED),
+        txt(600, 710, "These are rule-based classifications in one design—not population estimates or stable investor types.", 14, fill=MUTED),
     ]
     return document(
         "Strategy shares in an experimental asset market",
-        "A horizontal bar chart shows momentum traders at 36.5 percent, fundamental-value traders at 33.1 percent, rational speculators at 25.4 percent, and other classified behavior at about 5 percent in one experimental classification. A side panel explains how different strategies can coexist in one bubble.",
+        "A horizontal bar chart shows feedback or momentum-consistent behavior at 36.5 percent, passive or fundamental-value-consistent behavior at 33.1 percent, speculator or next-price-consistent behavior at 25.4 percent, and other classified behavior at 4.9 percent. The chart identifies the rule and denominator and warns that the classifications are not stable investor types.",
         "\n".join(body), height=730,
     )
 

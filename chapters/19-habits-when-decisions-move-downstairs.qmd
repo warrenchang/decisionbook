@@ -1,19 +1,24 @@
-# Habits: The Plan Is Often Not the Decision-Maker
+# Habits, Wanting, and Self-Control
 
-*Repeated choices become context-bound policies*
+*The past can cue action before the present has finished deciding*
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-A habit is a learned cue-response pattern. The decision loop still exists functionally, but prediction and value have been compressed into an automatic response that the context can trigger before deliberation fully arrives.
+A habit is a learned cue-response pattern. Wanting is the motivational pull a cue can acquire; liking is the pleasure the outcome actually provides. Self-control improves when people diagnose the loop, redesign the context, and treat an urge as a prediction rather than as a command or moral verdict.
 :::
 
 ## Learning goals
 
-- Define habits as context-response learning rather than frequency alone.
-- Distinguish goal-directed and habitual control.
-- Map cue, urge, response, reward or relief, and learning.
-- Explain how cue ecology, reinforcement, and reward prediction error build automaticity.
+- Map a repeated behavior from cue ecology through wanting, response, immediate consequence, and learning.
+- Distinguish goal-directed control, habit, wanting, liking, and clinically significant addiction.
+- Produce an upstream self-control and recovery plan that does not depend on uninterrupted willpower.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Habits compress **Predict**, **Value**, and **Choose** into context-bound policies. Wanting recruits **Act**; consequences update the next loop through **Learn**. Self-control can intervene before the cue, during the urge, or after a lapse.
+:::
 
 A person wakes up and reaches for the phone before deciding to do so. A student opens a laptop to study and, almost before noticing, checks messages. A manager enters a tense meeting intending to listen but interrupts as soon as a proposal feels threatening. A negotiator prepares to stay calm, then makes a concession the moment the other side rejects the first offer. A team says it values learning, but whenever bad news appears the meeting automatically turns to blame.
 
@@ -25,13 +30,9 @@ Choose one mild repeated behavior. Which best predicted what happened last time:
 
 These behaviors are not all the same. Some are helpful, some harmful, some neutral, and some depend on context. But they share a feature: they often occur without full conscious deliberation. A cue appears, attention narrows, the body prepares, an old response becomes available, and action begins before the reflective self has finished the sentence "I should decide."
 
-Habits show that decision-making is not only about isolated moments of conscious choice. Much of behavior is built from loops. Repeated loops become automatic. A behavior that once required deliberate intention becomes part of the environment-person system: the phone lights up and the hand moves; the meeting becomes tense and the manager defends; the task feels vague and the student seeks relief; the negotiation feels risky and the old script takes over.
+Repeated loops can make a once-deliberate behavior part of the environment–person system: the phone lights up and the hand moves; a meeting becomes tense and the manager defends. This efficiency is essential—competence relies on good routines—but it also lets an old solution act after the problem has changed.
 
-This chapter turns decision science into design science. The question is not only why people choose poorly. It is how behavior becomes automatic, how cues recruit action, and how individuals and organizations can redesign the conditions that call behavior into being.
-
-The point is not to shame habit. Habits are essential. Without them, life would collapse under the weight of tiny decisions. We need habits to brush teeth, type, drive, prepare, greet, read, teach, negotiate, wash hands, check assumptions, save, listen, and recover from mistakes. Good habits are the architecture of competence.
-
-But habits can also let the past choose for the present. A behavior that once solved a problem may persist after the problem has changed. A routine that once reduced anxiety may prevent growth. A cue that once predicted reward may continue to produce wanting after liking has faded. A culture that once created speed may later block learning. The science of habits therefore asks a precise question: which parts of behavior should become automatic, and which parts require conscious review?
+A cue that once predicted reward can keep producing wanting after liking fades; a routine that once created speed can later block learning. The question is which behaviors should become automatic and which require review.
 
 ## Why habits belong in this book
 
@@ -41,13 +42,11 @@ Habits are the bridge between knowledge and repeated action. Expertise is not on
 
 This chapter therefore treats habit as both a risk and a resource. Bad habits compress old solutions into present responses. Good habits compress good judgment into reliable action. The goal is not to make all behavior conscious. The goal is to make the right things automatic and the right things reflective.
 
-Habit science provides a behavior-design laboratory. Readers are asked not only to understand better strategies, but to build small, repeated behaviors: decision routines before analysis, persuasion routines that respect agency, and negotiation routines that survive defensive pressure. This makes the chapter practical. It asks how concepts become behavior.
-
 ## What is a habit?
 
 A habit is a learned association between a context cue and a response. The cue may be physical, such as a kitchen, desk, classroom, car, phone screen, coffee machine, supermarket, or meeting room. It may be temporal, such as morning, after lunch, Friday evening, before sleep, or the first five minutes after opening a laptop. It may be social, such as being with certain friends, hearing a supervisor speak, entering a negotiation, or noticing group silence. It may be emotional, such as boredom, anxiety, fatigue, loneliness, anger, excitement, shame, or uncertainty.
 
-The response may be physical, mental, emotional, or social: eating, scrolling, smoking, exercising, checking email, apologizing, avoiding, arguing, smiling, rehearsing worries, asking a question, interrupting, withdrawing, or reaching for coffee. The response becomes more likely when the cue appears because the cue has previously been followed by reward, relief, completion, social approval, or reduced effort.
+The response may be physical, mental, emotional, or social: eating, scrolling, smoking, exercising, checking email, apologizing, avoiding, arguing, smiling, rehearsing worries, asking a question, interrupting, withdrawing, or reaching for coffee. The response becomes more likely as it is repeated in that context. Reward, relief, completion, social approval, and reduced effort can strengthen the loop, but past reinforcement is not the defining source of every habit.
 
 This definition prevents a common mistake. A habit is not simply something done often. It is something that becomes cued by context. A person may attend a conference every year, but the context may be too rare for automaticity. Another person may check the phone whenever anxious; because anxiety and phone availability are frequent cues, the behavior may become strong even if each single episode is brief.
 
@@ -59,11 +58,17 @@ In decision terms, habits are compressed decision loops. The cue carries predict
 
 A conscious decision is flexible. It asks: given my current goals, beliefs, constraints, and options, what should I do now? It can simulate outcomes, compare alternatives, and adapt to novelty. A habit is less flexible. It says: when this cue appears, do this. It is fast, low-effort, context-bound, and learned from the past.
 
-In reinforcement-learning language, goal-directed decisions are often described as model-based. They use an internal model of the world to simulate how actions lead to outcomes. Habitual actions are often described as model-free. They rely on cached action values or policies learned through reinforcement, without much current simulation. In plain language, model-based control asks, "What will happen if I do this now?" Model-free control says, "When this cue appears, do the action that worked before."
+In one reinforcement-learning framework, goal-directed decisions are modeled as model-based and some habitual control as model-free. Model-based algorithms use an internal transition model to simulate how actions lead to outcomes; model-free algorithms use cached action values or policies learned from feedback. This computational contrast can explain some behavior, but it is not a definition of habit. In plain language, model-based control asks, "What will happen if I do this now?" A model-free policy says, "In this state, choose the action that previously had value."
 
 Imagine choosing dinner. The goal-directed system asks what you want, how hungry you are, what food is available, what you ate earlier, and what will make you feel good later. The habit system says: I am watching television; this is when I snack. Imagine checking email. The goal-directed system asks whether email helps the current task. The habit system says: I opened the laptop; check email. Imagine a difficult conversation. The goal-directed system asks what outcome you want and what the other person needs to understand. The habit system says: I feel criticized; defend.
 
 This distinction does not mean conscious decisions are always good and habits are always bad. Conscious decisions can be biased, slow, exhausting, and overconfident. Habits can be wise, efficient, and morally useful. A person can habitually listen carefully, exercise, prepare, save, speak kindly, check assumptions, or ask one more question. The question is not whether behavior is automatic. The question is whether the automatic pattern still serves what matters.
+
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Evidence Boundary: four measurements are not one construct
+
+Researchers measure related but non-equivalent things. **Frequency** records how often an action occurred. **Automaticity** asks whether a context retrieves the response quickly or with little deliberation. **Outcome-devaluation tests** ask whether behavior persists after the outcome loses value, a stricter operational test of habitual control in some laboratory paradigms. **Model-based/model-free fits** infer parameters from choices under a computational model. One measure does not automatically identify the others. Repetition in a stable context can increase automaticity without proving outcome insensitivity, and a model-free fit is not a synonym for an everyday habit.
+:::
 
 ## How habits form
 
@@ -143,15 +148,21 @@ The first rule of habit diagnosis is therefore: do not remove a behavior until y
 
 ## Reward, relief, and variable reinforcement
 
-Thorndike described the law of effect: behaviors followed by satisfying consequences become more likely. Skinner later developed operant conditioning, showing how reinforcement and punishment shape behavior. Modern reinforcement learning describes how organisms learn from reward, punishment, and prediction error.
+Thorndike (1911) described the law of effect: behaviors followed by satisfying consequences become more likely. Skinner (1938) later developed operant conditioning, showing how reinforcement and punishment shape behavior. Modern reinforcement learning describes how organisms learn from reward, punishment, and prediction error.
 
-### Learning from surprise
+::: {.callout-note .research-lens icon=false}
+## Research Lens: reward prediction error and dopamine
 
 A **reward prediction error** is the gap between what was expected and what occurred. If a consequence is better than expected, the cues and actions that preceded it gain value. If it is worse than expected, their value should fall. If it is exactly predicted, there is less new information to learn. Neural and computational work uses this error signal to explain how expectations update across repeated encounters (Schultz et al., 1997; Sutton & Barto, 2018).
 
 Suppose a student checks a quiet inbox ten times. Nine checks produce nothing; one delivers an exciting message. The exciting outcome is surprising, so the context preceding that check can acquire motivational weight. The next pause may feel unusually check-worthy. The same logic operates when an angry reply occasionally makes another person retreat, when an unnecessary concession occasionally restores conversational movement, or when delaying work occasionally produces a last-minute burst of relief.
 
 Prediction error is not a little accountant that guarantees rational learning. People learn from partial signals, delayed consequences, and environments they do not fully understand. Immediate relief is easy to connect to the response; a damaged relationship or lost concentration may arrive later and be attributed elsewhere. The short-run loop can strengthen while the long-run outcome deteriorates.
+
+Dopamine is often called a pleasure chemical. That shorthand is misleading. Dopamine participates in learning, prediction, pursuit, and action; pleasure depends on additional systems. In classic recordings, an unexpected reward produced a phasic response. With learning, the informative response shifted toward the cue; omission of an expected reward produced a negative update around the expected time (Schultz et al., 1997). This is a computational and neural learning account, not a definition of an everyday habit or a claim that one chemical contains pleasure.
+
+![A reward-prediction-error schematic shows learning from an unexpected reward, a predictive cue, an omitted reward, and an informative progress cue in a long task.](../figures/reward-prediction-error-shift.svg){#fig-reward-prediction-error-shift fig-alt="Four conceptual timelines. An unexpected reward produces a positive update; after learning, prediction moves to the cue and delivery brings little new information; an omitted expected reward produces a negative update; a meaningful progress checkpoint can reduce uncertainty in a long task. The figure explicitly states that it is not a neural recording." width=98%}
+:::
 
 Intermittent reinforcement is especially important. A reward that appears unpredictably can make a behavior persistent because the next attempt might produce the reward. Gambling, email, social media, market prices, dating apps, and many digital platforms use variable novelty, social feedback, and uncertainty. The user does not know when the next interesting message, signal, or reward will appear, so checking continues.
 
@@ -161,9 +172,57 @@ This distinction also protects the boundary between habit and diagnosis. A stick
 
 This matters ethically. A language-learning app can use streaks and feedback to support a learner's endorsed goal. The same psychological architecture can also harvest attention, hide costs, or make exit difficult. Habit design can serve agency or capture it.
 
+## Wanting can outlast liking
+
+Liking is experienced pleasure. Wanting is motivational pull: the “go get it” force that makes a cue compelling. The two often travel together, but they can separate. A person may want to check a phone and dislike what follows, crave a cigarette and dislike its taste, or pursue status while finding the pursuit exhausting. The diagnostic question is simple: **What does the cue promise, and what does the outcome actually deliver?**
+
+![Craving is a prediction and action tendency; comparing promised reward with actual experience creates room for relearning.](../figures/wanting-liking.svg){#fig-wanting-liking fig-alt="Cue leads to strong wanting and then an outcome with lower liking, followed by a relearning feedback loop."}
+
+A craving can feel like an instruction, but it is an experience containing sensations, images, emotion, and an action tendency. It also contains a forecast: obeying will bring pleasure, relief, completion, escape, or control. Sometimes that short-run forecast is accurate. The crucial comparison is whether the usual action delivers what the cue promised across the full time path.
+
+## The intention–behavior gap is an environment problem
+
+Intentions are often abstract and formed in a cool state; execution occurs in the presence of a concrete cue, immediate reward, fatigue, anxiety, or status threat. This hot–cold empathy gap helps explain why “I will exercise,” “I will listen,” or “I will save” can lose at the relevant moment (Loewenstein, 1996). Present bias adds a temporal asymmetry, but neither mechanism establishes a defective character.
+
+The classic marshmallow task makes the boundary visible. Waiting depends on attention strategy, incentives, and beliefs that the promised reward will arrive. Children exposed to an unreliable adult waited less in Kidd et al.'s (2013) experiment. Before praising inhibition or diagnosing weakness, inspect the environment the person is predicting.
+
+Beneficial self-control often operates upstream through situation selection and reliable routines rather than continuous resistance (Galla & Duckworth, 2015; Duckworth et al., 2016). The simple fuel-tank version of ego depletion is also not a secure foundation: a large preregistered multilab replication did not support the expected effect under its protocol (Hagger et al., 2016). Motivation, attention, opportunity, beliefs, fatigue, reward, and context remain distinguishable candidates.
+
+| Stage | Tool | Why it helps |
+| --- | --- | --- |
+| Before the cue | Situation selection, availability, precommitment | Prevents the strongest loop from being recruited |
+| At the cue | Prompt, if–then plan, replacement action | Makes the desired response retrievable |
+| During the urge | Name sensations, delay, BRAIN/RAIN | Turns a command into a changing observation |
+| After action | Immediate feedback and nonmoralizing review | Compares promised reward with actual experience |
+| After lapse | Recovery plan and next-cue restart | Prevents one lapse from becoming an identity or abandoned plan |
+: Intervene before the peak of temptation {#tbl-20-1}
+
+### Create space without demanding that the urge disappear
+
+Mindful observation can insert a small interval between cue and action. It does not guarantee rapid relief, replace environmental change, or serve as treatment for withdrawal or trauma. Its narrower function is to make the state observable.
+
+![An urge may rise, vary, and recede while a person breathes, recognizes and allows it, investigates its components, and chooses without identifying with it.](../figures/urge-wave-observation.svg){#fig-urge-wave-observation fig-alt="A schematic urge-intensity curve rises and recedes over unspecified time, with faint alternative trajectories to emphasize variation. Four observation steps below the curve are breathe, recognize and allow, investigate, and non-identify and choose." width=88%}
+
+| Step | In-the-moment prompt | Function |
+| --- | --- | --- |
+| **B — Breathe** | Take one breath before acting. | Interrupt the sequence without pretending the breath solves it. |
+| **R — Recognize** | Name wanting, anger, anxiety, avoidance, or shame. | Move from command to observation. |
+| **A — Allow** | Let the state be present briefly without suppression or obedience. | Reduce the second struggle about having the urge. |
+| **I — Investigate** | Where is it? What does it predict and promise? | Turn the urge into testable data. |
+| **N — Non-identify and nurture** | “This is an urge, not my identity.” What is the next caring action? | Protect agency and choose by values. |
+: BRAIN creates a small interval between internal cue and action {#tbl-20-brain}
+
+BRAIN is a classroom mnemonic, not an independently validated treatment. The redesign chapter later takes the next step: it changes prompts, friction, feedback, and recovery around a diagnosed loop.
+
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Evidence Boundary: addiction is more than a strong habit
+
+Clinical addiction can involve impaired control, craving, continued use despite harm, withdrawal, medical risk, trauma, and comorbidity. Incentive-sensitization and relief learning help explain why wanting may persist after liking falls (Robinson & Berridge, 1993; Berridge & Robinson, 1998; Koob & Volkow, 2016), but ordinary habit advice is not diagnosis or treatment. Medication, therapy, harm reduction, social support, and clinical assessment may be necessary. Do not call every sticky digital loop an addiction, and do not call addiction weak will.
+:::
+
 | Dimension | Conscious decision | Habitual behavior | Practical implication |
 | --- | --- | --- | --- |
-| Value source | Current goals and predicted consequences. | Past reinforcement in a specific context. | Ask whether the behavior still serves current goals. |
+| Value source | Current goals and predicted consequences. | Learned cue-response history; current outcome value may exert less control. | Ask whether the behavior still serves current goals. |
 | Flexibility | High: adapts to new information and changed goals. | Lower: repeats learned response when cue appears. | Use conscious review when context changes. |
 | Awareness | Often reportable before action. | Often noticed after action has begun. | Study cues, not only explanations. |
 | Cognitive cost | High: attention-hungry and effortful. | Low: fast and efficient. | Make good routines automatic when stakes are recurring. |
@@ -179,29 +238,15 @@ This matters ethically. A language-learning app can use streaks and feedback to 
 | Organizational blame | Error, missed target, bad news. | Protect status and assign responsibility quickly. | Emotional certainty; temporary control. | Run a learning review: what did the system make likely and what must change? |
 : Diagnosing common loops {#tbl-19-2}
 
-## Key ideas
+## Practice Lab
 
-- A habit is a learned cue-response pattern. The decision loop still exists functionally, but prediction and value have been compressed into an automatic response that the context can trigger before deliberation fully arrives.
-- A cue is often an ecology of physical, temporal, social, digital, internal, and historical signals.
-- Reward prediction errors update what cues and actions are expected to deliver; intermittent rewards and immediate relief can maintain costly loops.
-- A useful redesign first asks what local problem the behavior solves and which cue configuration recruits it.
+Complete a Habit–Wanting Autopsy for one mild, private behavior. Produce a diagram containing the cue ecology, response tendency, action, immediate reward or relief, delayed consequence, what the urge promised, what the outcome delivered, and what the loop learned. Then add one upstream change, one cue-linked replacement, one recovery rule after a lapse, and a seven-day observable measure. Do not redesign the behavior until you can state the local problem it solves.
 
-## Study and practice
+## Take it forward
 
-1. Why is repeated frequency insufficient to define a habit?
-
-2. How would you distinguish goal-directed and habitual control in one real behavior?
-
-3. How do reward prediction error and delayed cost help explain a habit that persists without much enjoyment?
-
-::: {.callout-tip .activity icon=false}
-## Six-Minute Habit Autopsy
-
-Choose a mild, private repeated behavior. For two minutes, reconstruct the cue ecology. For two minutes, name the response tendency, action, and immediate outcome—pleasure, progress, relief, or cost. For two minutes, state what the loop learned and what delayed consequence it ignored. Do not propose a solution until you can state the local problem the habit solves.
-
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)  
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.
-:::
+- **Use this when** a repeated response begins before deliberation or remains compelling after enjoyment has faded.
+- **Do not infer** laziness, weak character, or addiction from frequency, one lapse, or one strong urge.
+- **Try this next** by changing the cue ecology and rehearsing the replacement at the next cue—not by waiting for stronger motivation.
 
 ## References cited in this chapter
 
@@ -239,4 +284,36 @@ Wood, W., Quinn, J. M., & Kashy, D. A. (2002). Habits in everyday life: Thought,
 
 ::: {.reference}
 Wood, W., & Rünger, D. (2016). Psychology of habit. Annual Review of Psychology, 67, 289-314.
+:::
+
+::: {.reference}
+Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in reward: Hedonic impact, reward learning, or incentive salience? Brain Research Reviews, 28(3), 309–369.
+:::
+
+::: {.reference}
+Duckworth, A. L., Gendler, T. S., & Gross, J. J. (2016). Situational strategies for self-control. Perspectives on Psychological Science, 11(1), 35-55.
+:::
+
+::: {.reference}
+Galla, B. M., & Duckworth, A. L. (2015). More than resisting temptation: Beneficial habits mediate the relationship between self-control and positive life outcomes. Journal of Personality and Social Psychology, 109(3), 508-525.
+:::
+
+::: {.reference}
+Hagger, M. S., Chatzisarantis, N. L. D., Alberts, H., Anggono, C. O., Batailler, C., Birt, A. R., Brand, R., Brandt, M. J., Brewer, G., Bruyneel, S., Calvillo, D. P., Campbell, W. K., Cannon, P. R., Carlucci, M., Carruth, N. P., Cheung, T., Crowell, A., De Ridder, D. T. D., Dewitte, S., et al. (2016). A multilab preregistered replication of the ego-depletion effect. Perspectives on Psychological Science, 11(4), 546-573.
+:::
+
+::: {.reference}
+Kidd, C., Palmeri, H., & Aslin, R. N. (2013). Rational snacking: Young children's decision-making on the marshmallow task is moderated by beliefs about environmental reliability. Cognition, 126(1), 109-114.
+:::
+
+::: {.reference}
+Koob, G. F., & Volkow, N. D. (2016). Neurobiology of addiction: A neurocircuitry analysis. The Lancet Psychiatry, 3(8), 760-773.
+:::
+
+::: {.reference}
+Loewenstein, G. (1996). Out of control: Visceral influences on behavior. Organizational Behavior and Human Decision Processes, 65(3), 272-292.
+:::
+
+::: {.reference}
+Robinson, T. E., & Berridge, K. C. (1993). The neural basis of drug craving: An incentive-sensitization theory of addiction. Brain Research Reviews, 18(3), 247-291.
 :::

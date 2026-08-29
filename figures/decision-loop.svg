@@ -21,6 +21,9 @@
   </marker>
 </defs>
 
+<!-- Explicit canvas prevents transparent SVG fallbacks from becoming black in dark readers. -->
+<rect x="0" y="0" width="1670" height="736" fill="#ffffff"/>
+
 <!-- Feedback loop connectors: drawn first so the feedback label sits above them -->
 <path d="M 867 60 H 365 V 280 H 399" fill="none" stroke="#0a2f68" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <path d="M 1485 352 V 60 H 1338" fill="none" stroke="#0a2f68" stroke-width="4" stroke-linejoin="round" marker-end="url(#arrow)"/>

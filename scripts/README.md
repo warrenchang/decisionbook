@@ -24,7 +24,7 @@ python3 scripts/qa_quarto_book.py
 python3 scripts/qa_epub_release.py
 ```
 
-The commands rewrite the HTML/source/citation QA artifacts and `EPUB_QA_REPORT.md`. They check the 48-chapter order, required learning sections, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, duplicate IDs, diagram connectors, EPUB ZIP/package integrity, Part titles, chapter numbering, appendices, compilation date, and required illustrations. Publish only when both reports say **PASS**.
+The commands rewrite the HTML/source/citation QA artifacts and `EPUB_QA_REPORT.md`. They check the 41-chapter order, recurring chapter architecture, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, PNG fallbacks, duplicate IDs, connectors in every reader-facing SVG, EPUB ZIP/package integrity, Part and interlude titles, chapter numbering, appendices, compilation date, and required illustrations. Publish only when both reports say **PASS**.
 
 After the three Lecture Notes source audits have been reconciled into
 `audits/lecture-notes-coverage.csv`, regenerate the exact-path editorial
@@ -38,7 +38,15 @@ This writes `audits/lecture-notes-final-integration.csv` and its concise Markdow
 summary. It records incorporation, duplicate/derivative handling, non-content,
 and rights/provenance exclusions without altering the source folder.
 
-For a labeled visual-review set, use the bundled artifact Python runtime (or any Python with Pillow):
+After changing an SVG, regenerate its high-resolution PNG companion from the final vector source:
+
+```bash
+NODE_PATH=/path/to/node_modules node scripts/render_svg_png_fallbacks.cjs figures/example.svg
+```
+
+The renderer requires Playwright and a local Chrome or Chromium executable. It uses the SVG's declared canvas and an opaque light background so the fallback does not acquire extra whitespace or disappear in dark readers.
+
+For a labeled visual-review set covering every configured book figure, use the bundled artifact Python runtime (or any Python with Pillow):
 
 ```bash
 python3 scripts/render_figure_contact_sheets.py

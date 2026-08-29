@@ -28,55 +28,55 @@ def final_destination(row: dict[str, str]) -> str:
     path = row["source_path"].lower()
 
     if "dpn2026/dpn01" in path:
-        return "Chapters 1–5: decision process, benchmark, sacrifice, valuation, and post-choice learning"
+        return "Chapters 1–2 and 5–7: decision process, benchmark, sacrifice, valuation, expectations, and post-choice learning"
     if "dpn2026/dpn02" in path:
-        return "Chapters 6–8: attention, predictive inference, and expectation"
+        return "Chapters 3–6: attention, predictive inference, valuation, and expectation"
     if "dpn2026/dpn03" in path:
-        return "Chapters 9–18: two-process thinking, heuristics, biases, probability, framing, priming, and fluency"
+        return "Chapters 8–15: heuristics, biases, probability, framing, accessibility, and fluency"
     if "dpn2026/dpn04" in path:
-        return "Chapters 35–38: influence, persuasion, and evidence-aligned narrative"
+        return "Chapters 29–32: social signals, persuasion, and evidence-aligned narrative"
     if "dpn2026/dpn05" in path or "dpn2026/dpn06" in path:
-        return "Chapters 41–45: the unified Negotiation part"
+        return "Chapters 35–38: the unified Negotiating Joint Decisions part"
     if "dpn2026/dpn07" in path:
-        return "Chapters 39–40: communication, connection, and repair"
+        return "Chapters 33–34: communication, connection, and repair"
 
     mappings = [
-        (("04 probability",), "Chapter 18: Probability Judgment"),
-        (("04 risky",), "Chapter 19: Risky Decision-Making"),
-        (("04 prospect",), "Chapter 20: Prospect Theory"),
-        (("07/decision from experience",), "Chapter 21: Decisions from Experience"),
-        (("06/intertemporal",), "Chapter 22: Intertemporal Decision-Making; bridge to Chapter 28"),
-        (("06/mental accounting",), "Chapter 25: Mental Accounting"),
-        (("06/behavioral finance",), "Chapter 26: Behavioral Finance"),
-        (("06/asset bubbles",), "Chapter 27: Asset Bubbles"),
-        (("06/money and mind",), "Chapters 25–27: mental accounting, finance, and bubbles"),
-        (("subjective well-being",), "Chapter 28: Subjective Well-Being"),
-        (("happiness and behavioral finance",), "Chapters 26 and 28"),
-        (("05/strategic interdependence",), "Chapters 29–30: strategic interdependence and behavioral game theory"),
-        (("05/cooperation",), "Chapter 31: cooperation, repeated interaction, and social preferences"),
-        (("05/evolutionary",), "Chapter 31: advanced evolutionary-game layer"),
-        (("social preferences and norms",), "Chapters 31 and 33–34: social preferences, norms, and culture"),
-        (("additional topics / cooperation",), "Chapter 31: cooperation and social preferences"),
-        (("additional topics / evolutionary",), "Chapter 31: advanced evolutionary-game layer"),
-        (("additional topics / negotiation",), "Chapters 41–45: unified Negotiation part"),
-        (("additional topics / risk",), "Chapter 19: risky choice and the newsvendor application"),
-        (("07/newsvendor",), "Chapter 19: newsvendor application"),
-        (("07/market experiment",), "Chapter 29 and Appendix C: market institutions and experimental evidence"),
+        (("04 probability",), "Chapters 14–15: probability judgment, Bayesian updating, randomness, regression, and calibration"),
+        (("04 risky",), "Chapter 16: Risky Decision-Making"),
+        (("04 prospect",), "Chapter 17: Prospect Theory"),
+        (("07/decision from experience",), "Chapter 18: Decisions from Experience"),
+        (("06/intertemporal",), "Chapter 19: Intertemporal Decision-Making; bridge to Chapter 22"),
+        (("06/mental accounting",), "Chapter 21: Mental Accounting"),
+        (("06/behavioral finance",), "Chapter 23: Markets, Mispricing, and Bubbles"),
+        (("06/asset bubbles",), "Chapter 23: Markets, Mispricing, and Bubbles"),
+        (("06/money and mind",), "Chapters 21 and 23: mental accounting, finance, and bubbles"),
+        (("subjective well-being",), "Chapter 22: Subjective Well-Being"),
+        (("happiness and behavioral finance",), "Chapters 22–23"),
+        (("05/strategic interdependence",), "Chapters 24–25: strategic interdependence and behavioral game theory"),
+        (("05/cooperation",), "Chapter 26: cooperation, repeated interaction, and social preferences"),
+        (("05/evolutionary",), "Chapter 25: advanced evolutionary-game research lens"),
+        (("social preferences and norms",), "Chapters 26–28: social preferences, norms, social learning, and culture"),
+        (("additional topics / cooperation",), "Chapter 26: cooperation and social preferences"),
+        (("additional topics / evolutionary",), "Chapter 25: advanced evolutionary-game research lens"),
+        (("additional topics / negotiation",), "Chapters 35–38: Negotiating Joint Decisions"),
+        (("additional topics / risk",), "Chapter 16: risky choice and the newsvendor application"),
+        (("07/newsvendor",), "Chapter 16: newsvendor application"),
+        (("07/market experiment",), "Chapter 24 and Appendix C: market institutions and experimental evidence"),
         (("08 - research methods",), "Appendix C: Running an Experimental Study; Appendix D: replication and research integrity"),
         (("readings / research design",), "Appendix C: experimental design and execution; Appendix D: power, replication, selection, and research integrity"),
-        (("readings / ai",), "Chapter 7, Chapter 48, and Appendix C: prediction, AI, and evidence boundaries"),
-        (("readings / priming",), "Chapters 16, 46, and 48: priming, goals, behavior design, and evidence boundaries"),
+        (("readings / ai",), "Chapters 4 and 41 and Appendix C: prediction, AI, and evidence boundaries"),
+        (("readings / priming",), "Chapters 13 and 39–41: accessibility, goals, behavior design, and evidence boundaries"),
         (("readings / instructor notes",), "Appendices C–D: experimental workflow, bibliographic verification, replication, and research integrity"),
-        (("additional topics / abt",), "Chapter 38: evidence-aligned narrative and ABT"),
-        (("03 choice architecture",), "Chapter 47: Choice Architecture"),
-        (("03 context",), "Chapters 15–17: framing, priming, and cognitive ease"),
-        (("03 habits",), "Chapters 23–24 and 46–48: habits, self-control, behavior and decision design"),
-        (("02 attention",), "Chapters 6–8: attention, predictive inference, and expectation"),
-        (("02 biases", "02 context", "02 heuristics"), "Chapters 9–18: heuristics, biases, probability, framing, priming, and fluency"),
-        (("01–02 perception",), "Chapters 6–7: attention and predictive perception"),
-        (("01 foundations",), "Chapters 1–8, Chapter 48, and Appendix C"),
-        (("additional topics / legacy decision theory",), "Chapters 2, 19, and 20"),
-        (("additional topics / neuroscience",), "Chapter 7 and Appendix C; unsupported self-help claims excluded"),
+        (("additional topics / abt",), "Chapter 32: evidence-aligned message and ABT"),
+        (("03 choice architecture",), "Chapter 40: Choice Architecture"),
+        (("03 context",), "Chapters 11–13: contextual comparison, framing, accessibility, and fluency"),
+        (("03 habits",), "Chapters 20 and 39–41: habits, self-control, behavior and decision design"),
+        (("02 attention",), "Chapters 3–6: attention, predictive inference, valuation, and expectation"),
+        (("02 biases", "02 context", "02 heuristics"), "Chapters 8–15: heuristics, biases, probability, framing, accessibility, and fluency"),
+        (("01–02 perception",), "Chapters 3–4: attention and predictive perception"),
+        (("01 foundations",), "Chapters 1–7, Chapter 41, and Appendix C"),
+        (("additional topics / legacy decision theory",), "Chapters 2, 16, and 17"),
+        (("additional topics / neuroscience",), "Chapter 4 and Appendix C; unsupported self-help claims excluded"),
     ]
     for needles, destination in mappings:
         if any(needle in group for needle in needles):

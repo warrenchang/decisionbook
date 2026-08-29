@@ -10,12 +10,15 @@ Description gives a decision-maker an explicit model of outcomes and probabiliti
 
 ## Learning goals
 
-- Distinguish decisions from description, experience, and mixtures of the two.
-- Explain why a rare event can loom large in description yet disappear from a small experience sample.
-- Diagnose sampling error, recency, contingent sampling, stopping, and feedback.
-- Explain why experience can sometimes underweight and sometimes overweight rare events.
-- Separate decision quality from outcome quality when learning from feedback.
-- Design risk communication that combines numerical description with interpretable experience.
+- Distinguish a described distribution from the selective path a decision-maker actually experiences.
+- Diagnose sampling, stopping, recency, avoidance, and feedback mechanisms in one supplier-risk case.
+- Design a learning system that combines calibrated description with representative experience.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Experience changes **Predict** through **Learn**. The outcomes encountered today update tomorrow's model, but earlier choices determine which outcomes can be encountered at all.
+:::
 
 ## Opening puzzle: the rare outcome that did not happen
 
@@ -173,7 +176,7 @@ The boundary condition is always the same: specify what description and experien
 
 ## Learning from outcomes without being fooled by luck
 
-Experience is feedback, but an outcome is an imperfect teacher under uncertainty. The process–outcome distinction introduced in [Chapter 1](01-the-choice-is-the-tip-of-the-iceberg.qmd#outcome-is-not-process) and applied to risky choice in [Chapter 19](39-risky-decision-making.qmd#outcome-bias-a-good-process-can-lose) now meets a further problem: experience supplies only the outcomes actually encountered. A good decision can therefore produce a bad result, a bad decision can be rescued by luck, and an unobserved rare outcome can remain outside the learner's sample.
+Experience is feedback, but an outcome is an imperfect teacher under uncertainty. The process–outcome distinction introduced in [*Decision-Making Is a Process, Not a Moment*](01-the-choice-is-the-tip-of-the-iceberg.qmd#outcome-is-not-process) and applied in [*Risky Decision-Making*](39-risky-decision-making.qmd#outcome-bias-a-good-process-can-lose) now meets a further problem: experience supplies only the outcomes actually encountered. A good decision can therefore produce a bad result, a bad decision can be rescued by luck, and an unobserved rare outcome can remain outside the learner's sample.
 
 |  | Good outcome | Bad outcome |
 | --- | --- | --- |
@@ -272,34 +275,15 @@ Both moves are errors. Representative statistics may miss subgroup harm, impleme
 
 Good judgment uses experience as evidence, not as proof; description as a model, not as reality.
 
-## Key ideas
+## Practice Lab
 
-- Description states a distribution; experience supplies a path from which the distribution must be learned.
-- Rare outcomes often receive more influence in described choice and less in experienced choice, but the gap varies with task structure and learning procedure.
-- Small samples, optional stopping, recency, contingent sampling, memory, and format shape the evidence before valuation begins.
-- Experience can also make a rare adverse event dominate through avoidance and reduced future sampling—the hot-stove effect.
-- Personal macroeconomic histories, local exposure, and market paths can shape beliefs and behavior without proving one stable risk preference.
-- Good learning separates process from outcome and records beliefs before hindsight arrives.
-- Risk communication works best when calibrated description and representative experience complement one another.
+Audit a supplier judged “reliable because it has never failed us.” Produce a sampling map with the observation window, number of exposures, near misses, avoided situations, unreported failures, relevant base rate, and stopping rule. Add one controlled stress test or simulation, then state what finding would change the sourcing decision. The output should make the experienced path and the possible distribution visibly different.
 
-## Study and practice
+## Take it forward
 
-1. In the opening puzzle, calculate the probability of missing the rare outcome in 5, 10, and 20 samples.
-2. Give one example of each of the four information states: neither, description only, experience only, and both.
-3. Explain why experiential underweighting does not necessarily imply a reverse probability-weighting function.
-4. Describe a hot-stove effect in work, investing, health, education, or relationships. How did avoidance prevent corrective learning?
-5. Take one personal experience that feels diagnostic. Define the reference class and name three observations that the experience did not contain.
-6. Redesign a risk communication so that description and simulation add distinct information.
-7. Review a past success. What evidence would tell you that it resulted from a weak process plus good luck?
-
-::: {.callout-tip .activity icon=false}
-## Activity: sample, stop, and compare
-
-In pairs, create two concealed distributions. Let one option pay €3 every time. Let the other pay €30 on 12% of draws and €0 otherwise. One student samples freely and records when they choose to stop; the other receives the full description. Compare choices, sample sizes, encountered frequencies, and confidence. Repeat with 40 forced samples. Which gap changes, and which remains?
-
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
-Experience: report what your learner actually sampled. Explain: distinguish sampling error from probability weighting. Apply: design one rule that would improve learning without forcing a preferred choice.
-:::
+- **Use this when** confidence rests on personal history, repeated feedback, or a reassuring run without failure.
+- **Do not infer** the underlying distribution from a short, selected path—or one mechanism from an experience–description gap.
+- **Try this next** by pairing the lived record with a base rate, a counterfactual sample, and an explicit exploration rule.
 
 ## References cited in this chapter
 

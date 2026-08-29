@@ -10,14 +10,15 @@ People often evaluate changes from a reference point rather than final wealth, s
 
 ## Learning goals
 
-- Explain reference dependence, diminishing sensitivity, loss aversion, and probability weighting.
-- Use a prospect-theory value function and distinguish probability from decision weight.
-- Derive the certainty effect, possibility effect, and fourfold pattern of risk attitudes.
-- Diagnose gain–loss framing while testing whether descriptions are substantively equivalent.
-- Treat loss aversion as bounded and model-dependent rather than constant.
-- Compare loss-aversion, ownership, effort, attention, switching-cost, and information accounts of endowment, IKEA, and status quo effects.
-- Distinguish narrow from broad framing and connect risky choice to mental accounting.
-- Redesign a frame transparently without choosing on another person's behalf.
+- Use a reference point, value function, and probability weights to explain the fourfold pattern of risky choice.
+- Test whether a gain–loss effect reflects prospect theory or a competing mechanism such as ownership, attention, inertia, or switching cost.
+- Translate one choice across frames while preserving final states, probabilities, and meaningful exit.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Prospect theory shows how **Interpret** and **Value** transform the same outcomes. A reference point codes final states as gains or losses, while decision weights change how stated probabilities enter choice.
+:::
 
 ## Opening puzzle: 200 saved or 400 lost?
 
@@ -55,7 +56,9 @@ Prospect theory changes three elements (Kahneman & Tversky, 1979; Tversky & Kahn
 
 The model is descriptive. It organizes recurring patterns in choice. It does not say that a person *should* overweight a small probability or treat a reference point as an entitlement.
 
-## Reference dependence: the zero is psychologically constructed
+## The prospect-theory model
+
+### Reference dependence: the zero is psychologically constructed
 
 Let $r$ be a reference point and $x$ an outcome. Prospect value depends on $x-r$, not only $x$. The same salary can feel like a gain relative to last year's pay, a loss relative to an expected promotion, and an insult relative to a colleague's salary.
 
@@ -75,7 +78,7 @@ Counterfactuals make this visible. Olympic bronze medalists can compare their re
 
 Expectations can also become reference points. A €10,000 bonus may feel like a gain if no bonus was expected and a loss if €15,000 was promised. Models of expectation-based reference dependence make this idea explicit (Kőszegi & Rabin, 2006). But an expectation is not automatically a right, and an analyst should not infer it only because the choice fits the model.
 
-## The value function: sensitivity diminishes with distance
+### The value function: sensitivity diminishes with distance
 
 A common functional form is
 
@@ -100,7 +103,7 @@ Concavity over gains tends to support risk aversion; convexity over losses tends
 
 Tversky and Kahneman's (1992) fitted cumulative-prospect specification estimated $\alpha=\beta=0.88$ and $\lambda=2.25$ in their data. These numbers are historically important model estimates, not psychological constants. Other tasks, stakes, samples, reference points, and estimation choices yield different parameters.
 
-## Probability weighting: decision weight is not belief
+### Probability weighting: decision weight is not belief
 
 Prospect theory replaces objective probabilities with **decision weights**. A common one-parameter display is
 
@@ -118,7 +121,7 @@ For prospects with several outcomes, cumulative prospect theory does not simply 
 
 ![Prospect theory combines an S-shaped value function around a reference point with an inverse-S probability-weighting function. Together they imply the fourfold pattern: caution for high-probability gains and low-probability losses, but risk seeking for low-probability gains and high-probability losses.](../figures/prospect-theory-map.svg){#fig-prospect-theory-map fig-alt="Three-part diagram. The left panel shows a value function centered at a reference point: concave for gains, convex and steeper for losses. The right panel shows an inverse-S probability-weighting curve relative to the forty-five-degree objective-probability line, emphasizing possibility and certainty. The bottom panel is a four-cell table mapping high- and low-probability gains and losses to typical risk attitudes and examples." width=100%}
 
-## Certainty and possibility are psychological boundaries
+### Certainty and possibility are psychological boundaries
 
 A probability change from 95% to 100% removes all chance of failure. A change from 45% to 50% does not. Prospect theory captures the special impact of certainty: the final step to 100% can matter more than an equal numerical increase in the middle of the scale. This **certainty effect** helps explain the sure option in the first Allais pair and risk aversion for high-probability gains.
 
@@ -126,7 +129,7 @@ The move from 0% to a small positive probability creates a possibility that did 
 
 Neither effect makes every tiny probability important. Very small probabilities may also be ignored, rounded to zero, or never encountered. How a probability is described and learned matters—a boundary developed in the next chapter on decisions from experience.
 
-## The fourfold pattern of risk attitudes
+### The fourfold pattern of risk attitudes
 
 Value curvature and probability weighting jointly produce four common patterns.
 
@@ -181,7 +184,7 @@ The familiar statement “losses loom about twice as large as gains” compresse
 
 Gal and Rucker (2018) argue that evidence does not justify loss aversion as a context-free general principle. Other work supports loss aversion in particular tasks and populations. The scientifically useful conclusion is conditional: specify the domain, measurement model, comparison, and alternative mechanism.
 
-## Endowment effects: giving up is not the same as owning
+### Endowment effects: giving up is not the same as owning
 
 An **endowment effect** occurs when ownership changes valuation or willingness to trade. In classic experiments, randomly endowed participants were often less willing to exchange an object, and sellers demanded more than buyers offered for similar goods (Kahneman et al., 1990).
 
@@ -211,7 +214,7 @@ When an owner refuses to sell, ask:
 
 “Loss aversion” should begin the investigation, not end it.
 
-## The IKEA effect: labor can create value without proving loss aversion
+### The IKEA effect: labor can create value without proving loss aversion
 
 The **IKEA effect** is increased valuation of something one has helped create. Norton, Mochon, and Ariely (2012) studied assembled boxes, origami, and Lego creations. Valuation increased after successful completion, but the effect weakened when participants failed to complete or had to destroy their work.
 
@@ -226,7 +229,7 @@ Several mechanisms can produce this pattern:
 
 The mechanism matters for design. Inviting customers or employees to co-create can build agency and knowledge. It can also exploit sunk effort to keep them in a poor product or project. Successful labor may add real experiential value, so a higher valuation is not automatically an error.
 
-## Status quo bias: staying can be rational, psychological, or designed
+### Status quo bias: staying can be rational, psychological, or designed
 
 Samuelson and Zeckhauser (1988) documented disproportionate selection of an option designated as the status quo. Loss aversion can contribute: changing makes possible losses salient, while foregone gains from staying are less visible.
 
@@ -244,15 +247,17 @@ The default may even be substantively best. A status quo preference is evidence 
 
 A diagnostic intervention varies one mechanism at a time: make switching costs explicit, provide a neutral recommendation, simplify comparison, add a reversible trial, or randomize the initial allocation where ethical. If the effect remains, the evidence for deeper preference construction becomes stronger.
 
-## Narrow and broad framing: what counts as one prospect?
+### Narrow and broad framing: what counts as one prospect?
 
 Suppose you reject a 50–50 gamble to lose €100 or gain €200. Would you accept 100 independent repetitions? The repeated portfolio has positive expected value and a much smaller probability of an overall loss. Evaluating each gamble separately can produce a different choice from evaluating the distribution of total outcomes.
 
 **Narrow framing** evaluates one transaction, account, day, or outcome in isolation. **Broad framing** evaluates its contribution to total wealth, a portfolio, or a longer time horizon. Neither bracket is always correct. A single catastrophic exposure should not disappear inside an average, and legal or moral constraints may be transaction-specific. The right bracket follows the decision objective and dependence structure.
 
-Mental accounting explains how people create, label, open, and close these brackets. To keep the mechanisms distinct, [Chapter 25](42-mental-accounting.qmd) develops mental budgets, transaction utility, sunk costs, prior outcomes, hedonic editing, and choice bracketing in detail. Here the bridge is enough: prospect theory supplies a value function over gains and losses; mental accounting helps determine which outcomes are grouped and which reference point each account uses.
+Mental accounting explains how people create, label, open, and close these brackets. To keep the mechanisms distinct, [*Mental Accounting*](42-mental-accounting.qmd) develops mental budgets, transaction utility, sunk costs, prior outcomes, hedonic editing, and choice bracketing in detail. Here the bridge is enough: prospect theory supplies a value function over gains and losses; mental accounting helps determine which outcomes are grouped and which reference point each account uses.
 
-## Worked application: evaluate an investment without staring at the purchase price
+## One applied audit across three settings
+
+### Investment: look beyond the purchase price
 
 An investor bought a share at €100. It now trades at €70. “I will not sell until I break even” treats 100 as a reference point and converts selling into a sure loss. But the prospective decision is whether €70 should remain in this asset or move to the best alternative.
 
@@ -266,7 +271,7 @@ A disciplined review separates:
 
 Prospect theory predicts why realizing the loss can feel unusually painful. It does not recommend holding.
 
-## Worked application: a change program framed as loss
+### Organizational change: make the sacrifice legible
 
 A manager says, “If we do not adopt the system, each team will lose €200,000.” A loss frame may create urgency, but it can also encourage risk seeking, conceal uncertainty, and make dissent look irresponsible.
 
@@ -280,7 +285,7 @@ A transparent redesign shows both frames and final states:
 
 The aim is not a neutral sentence—there may be none. It is a complete representation that survives translation between gain and loss language.
 
-## Worked application: a default with a real switching cost
+### Defaults: separate reference dependence from switching cost
 
 An employer automatically enrolls workers in a retirement plan. Staying may reflect loss aversion, recommendation, inertia, trust, or a considered choice. A defensible default keeps fees, contribution rate, investment risk, and exit visible; allows easy adjustment; and tests outcomes across employees with different liquidity needs.
 
@@ -302,37 +307,15 @@ Ethical framing asks:
 
 Prospect theory is especially useful ethically because it shows that presentation changes value. That is a reason for accountability, not a license to manipulate.
 
-## Key ideas
+## Practice Lab
 
-- Prospect theory evaluates gains and losses relative to a reference point and transforms probabilities into decision weights.
-- Diminishing sensitivity produces concavity for gains and convexity for losses; loss aversion makes the loss side steeper in many fitted settings.
-- Probability weighting differs from judged belief, and cumulative prospect theory uses rank-dependent cumulative weights for multi-outcome prospects.
-- Certainty and possibility help generate the fourfold pattern of risk attitudes.
-- Framing effects require substantive equivalence before they diagnose inconsistency.
-- Loss-aversion coefficients are estimates conditional on a task, reference point, functional form, and error model—not universal constants.
-- Endowment, IKEA, and status quo effects have multiple mechanisms; ownership, effort, attention, information, switching costs, and inertia must be tested alongside loss aversion.
-- Narrow versus broad framing determines which outcomes share a reference point; mental accounting develops that bracketing process.
-- Ethical design reveals reference points, final states, probabilities, objectives, and exit.
+Take one live purchase, policy, investment, or negotiation. Produce a three-column comparison showing the choice as final states, gains, and losses while preserving probabilities and time horizons. Mark the reference point, locate the case in the fourfold pattern, and specify one competing mechanism and one observation that would distinguish it. Finish with a transparent redesign and a meaningful exit route.
 
-## Study and practice
+## Take it forward
 
-1. Give three plausible reference points for the same salary offer. How would each code the offer?
-2. Explain why risk aversion and loss aversion are not synonyms.
-3. Use the fourfold table to explain both lottery purchase and catastrophe insurance without assuming one stable risk attitude.
-4. Why is $w(p)$ not simply a mistaken probability estimate?
-5. Rewrite one risky choice in final-state, gain, and loss frames. Are the versions genuinely equivalent?
-6. Design a test that distinguishes loss aversion from switching cost in a status quo choice.
-7. Give two mechanisms for the IKEA effect that do not require loss aversion.
-8. When is broad framing useful, and when could it hide a catastrophic or moral constraint?
-
-::: {.callout-tip .activity icon=false}
-## Activity: find the reference point, then translate the frame
-
-Choose a real purchase, investment, policy, or negotiation. State the current frame and inferred reference point. Rewrite the options as final states, gains, and losses while preserving all probabilities and time horizons. Identify one alternative mechanism—ownership, effort, inertia, information, or switching cost. Propose one transparent redesign and one boundary where it may fail.
-
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)
-Experience: describe the original frame. Explain: use reference dependence plus one additional prospect-theory mechanism. Apply: give the translated frame and ethical safeguard.
-:::
+- **Use this when** the same risky outcome changes appeal across reference points, probability ranges, or gain–loss descriptions.
+- **Do not infer** loss aversion whenever ownership, effort, attention, information, inertia, or switching costs can also explain the choice.
+- **Try this next** by translating the options into final states and the complementary frame before recommending action.
 
 ## References cited in this chapter
 

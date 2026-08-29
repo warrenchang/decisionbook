@@ -5,7 +5,7 @@ function Header(header)
   end
 
   local title = pandoc.utils.stringify(header.content)
-  if title:match("^Part%s+[IVXLCDM]+%.") then
+  if title:match("^Part%s+[IVXLCDM]+%.") or title:match("^Applied%s+Interlude%.") then
     header.classes:insert("unnumbered")
     return header
   end

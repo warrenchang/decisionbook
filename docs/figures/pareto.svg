@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="720" version="1.1" viewBox="0 0 1200 720" width="1200" role="img" aria-labelledby="pareto-title pareto-desc">
   <defs>
-    <marker id="green-arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <marker id="green-arrow" markerWidth="14" markerHeight="14" refX="12.5" refY="7" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
       <path d="M0 0 L13 6.5 L0 13 Z" fill="#447c55" />
     </marker>
   </defs>
-  <title>Pareto frontier</title>
-  <desc>Negotiated agreements inside a curved frontier are inefficient; moving northeast can improve both parties until reaching the Pareto frontier. Distribution along the frontier remains a fairness question.</desc>
-  <rect fill="white" height="650" width="1200" x="0" y="0" />
+  <title id="pareto-title">Pareto frontier and mutual gains</title>
+  <desc id="pareto-desc">A downward-sloping frontier shows efficient trade-offs between value to Party A and value to Party B. A green northeast path moves from an interior compromise to an efficient deal, improving both parties. Efficiency does not determine whether the division is fair.</desc>
+  <rect fill="white" height="720" width="1200" x="0" y="0" />
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="600" y="48">Create value before arguing over its division</text>
   <line stroke="#17324d" stroke-width="4" x1="150" x2="1080" y1="540" y2="540" />
   <line stroke="#17324d" stroke-width="4" x1="150" x2="150" y1="540" y2="100" />
@@ -15,17 +15,22 @@
   <polygon fill="#17324d" points="1120,540 1107.0096189432334,547.5 1107.0096189432334,532.5" />
   <line stroke="#17324d" stroke-width="4" x1="150" x2="150" y1="100" y2="70" />
   <polygon fill="#17324d" points="150,70 157.5,82.99038105676658 142.5,82.99038105676658" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="650" y="610">Value to Party A</text>
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="650" y="596">Value to Party A</text>
   <text fill="#17324d" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" x="70" y="310" transform="rotate(-90 70 310)">Value to Party B</text>
-  <path d="M 250 500 C 420 420, 650 260, 990 140" fill="none" stroke="#c56a2d" stroke-width="8" />
-  <text fill="#c56a2d" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" x="820" y="165">Pareto frontier</text>
-  <circle cx="390" cy="430" fill="#2f6f9f" r="11" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="end" x="365" y="468">compromise</text>
-  <circle cx="500" cy="360" fill="#2f6f9f" r="11" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="end" x="475" y="405">better package</text>
-  <circle cx="760" cy="245" fill="#2f6f9f" r="11" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" x="790" y="278">efficient deal</text>
-  <line stroke="#447c55" stroke-width="4" x1="399.28" x2="490.72" y1="424.09" y2="365.91" marker-end="url(#green-arrow)" />
-  <line stroke="#447c55" stroke-width="4" x1="510.06" x2="749.94" y1="355.55" y2="249.45" marker-end="url(#green-arrow)" />
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" x="600" y="565">Efficiency asks whether value is wasted. Fairness asks how the created value is divided.</text>
+  <path d="M150 540 L150 160 L210 160 Q620 235 740 300 Q860 365 1030 520 L1030 540 Z" fill="#eef5f8" opacity="0.9" />
+  <path d="M210 160 Q620 235 740 300 Q860 365 1030 520" fill="none" stroke="#c56a2d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <text fill="#c56a2d" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" x="555" y="155">Pareto frontier: efficient trade-offs</text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="16" text-anchor="start" x="172" y="520">Feasible agreements</text>
+
+  <circle cx="390" cy="440" fill="#2f6f9f" r="11" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" x="390" y="478">interior compromise</text>
+
+  <path d="M402 433 C500 397 595 323 727 302" fill="none" stroke="#447c55" stroke-width="5" stroke-linecap="round" marker-end="url(#green-arrow)" />
+  <text fill="#447c55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" x="555" y="369">mutual gains</text>
+
+  <circle cx="740" cy="300" fill="#2f6f9f" r="11" stroke="#ffffff" stroke-width="2" />
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="18" text-anchor="start" x="770" y="329">Pareto-efficient deal</text>
+
+  <text fill="#17324d" font-family="Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" x="600" y="646">Efficiency asks whether a feasible mutual improvement remains.</text>
+  <text fill="#66737f" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" x="600" y="676">Fairness asks how the value is divided—including which efficient point is chosen.</text>
 </svg>

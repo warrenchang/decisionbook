@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render labeled contact sheets for visual inspection of canonical chapter figures."""
+"""Render labeled contact sheets for every figure in the configured book."""
 
 from __future__ import annotations
 
@@ -10,11 +10,10 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
-from sync_references import canonical_chapters
-
-
 ROOT = Path(__file__).resolve().parents[1]
-FIGURE = re.compile(r"!\[[^\]]*\]\((\.\./figures/[^)]+)\)\{[^}\n]*\}")
+CONFIG = ROOT / "_quarto-html.yml"
+BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
+FIGURE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)\{[^}\n]*\}")
 
 
 def font(size: int, bold: bool = False) -> ImageFont.ImageFont:
@@ -31,11 +30,15 @@ def font(size: int, bold: bool = False) -> ImageFont.ImageFont:
 def figure_paths() -> list[Path]:
     paths: list[Path] = []
     seen: set[Path] = set()
-    for chapter in canonical_chapters():
-        text = chapter.read_text(encoding="utf-8")
+    sources = [ROOT / value for value in BOOK_SOURCE_LINE.findall(CONFIG.read_text(encoding="utf-8"))]
+    for source_file in sources:
+        text = source_file.read_text(encoding="utf-8")
         for target in FIGURE.findall(text):
-            source = (chapter.parent / target).resolve()
-            png = source.with_suffix(".png")
+            clean = target.split()[0]
+            if "figures/" not in clean:
+                continue
+            source = (source_file.parent / clean).resolve()
+            png = source.with_suffix(".png") if source.suffix.lower() == ".svg" else source
             if png not in seen:
                 seen.add(png)
                 paths.append(png)
@@ -67,7 +70,7 @@ def main() -> int:
         height = margin * 2 + title_h + args.rows * cell_h
         canvas = Image.new("RGB", (width, height), "#f4f7f9")
         draw = ImageDraw.Draw(canvas)
-        draw.text((margin, margin), f"Canonical chapter figures — sheet {page + 1} of {sheets}", fill="#183047", font=title_font)
+        draw.text((margin, margin), f"Configured book figures — sheet {page + 1} of {sheets}", fill="#183047", font=title_font)
         subset = paths[page * per_sheet : (page + 1) * per_sheet]
         for index, path in enumerate(subset):
             row, col = divmod(index, args.columns)

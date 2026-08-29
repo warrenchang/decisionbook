@@ -1,23 +1,26 @@
-# Rationality: A Benchmark, Not a Portrait
+# Building a Better Decision: Rationality, Alternatives, and Opportunity Cost
 
-*What coherent choice would require under stated beliefs and values*
+*A benchmark is useful when it improves the menu, exposes sacrifice, and makes assumptions testable*
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Rational choice is a model for making assumptions and trade-offs inspectable; it is not a claim that real people consciously calculate perfectly or that rational values must be selfish.
+Rationality is a benchmark for making alternatives, beliefs, values, constraints, and trade-offs inspectable. It improves a decision only when the problem itself has been built well.
 :::
 
 ## Learning goals
 
-- Distinguish instrumental, epistemic, procedural, and outcome rationality.
-- Identify the building blocks of a rational-choice problem.
-- Explain utility as a representation of preference.
-- Use expected utility without confusing it with expected money.
-- Distinguish normative, descriptive, and prescriptive decision science.
-- Explain why rational choice and expected utility are mainly normative, prospect theory is primarily descriptive, and decision hygiene is prescriptive.
+- Distinguish normative, descriptive, and prescriptive questions about one decision.
+- Construct feasible alternatives and state the best alternative forgone.
+- Decide whether more information or analysis could change action enough to justify its cost.
 
-Chapter 1 mapped the full decision loop and showed how attention, context, internal state, and feedback shape real behavior. Chapter 2 asks a narrower normative question: if a decision-maker wanted to choose coherently under stated beliefs, values, and constraints, what structure would the decision require?
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+This chapter makes **Construct options** and **Choose** inspectable. It also checks whether prediction, valuation, constraints, and opportunity cost have been represented well enough to support commitment.
+:::
+
+The opening chapter mapped the full decision loop and showed how attention, context, internal state, and feedback shape real behavior. This chapter asks a narrower normative question: if a decision-maker wanted to choose coherently under stated beliefs, values, and constraints, what structure would the decision require?
 
 Return to the two job offers. The consulting role provides salary, training, brand value, and a relatively clear path, but may impose long hours and less autonomy. The sustainability start-up offers mission, responsibility, and learning, but lower income and greater uncertainty. A coherent decision requires more than a feeling about which option is "better." It requires a defined set of alternatives, beliefs about possible outcomes, values over those outcomes, constraints, trade-offs, and a comparison rule.
 
@@ -61,6 +64,28 @@ A decision is rational only relative to a feasible set. The best imaginable opti
 
 Option generation is therefore part of rationality, not a creative extra. A choice among poor options can be coherent and still be avoidably poor because the best feasible alternative was never generated.
 
+## Sacrifice and opportunity cost
+
+Every choice uses scarce resources and excludes alternatives. **Opportunity cost** is the value of the best feasible alternative forgone. It is not merely the money paid, and it is not the sum of everything left unchosen. The cost of a two-hour meeting is the best alternative use of those two hours. The cost of accepting one job includes the best feasible career path, time, learning, location, and future options that commitment cuts off.
+
+The question therefore changes from “Is this option good?” to “Is it better than the best feasible alternative?” Research on opportunity-cost neglect shows that consumers do not always generate the displaced alternative spontaneously; making the sacrifice explicit can change purchase decisions (Frederick et al., 2009). A practical test is simple: **If I choose this, what will I no longer be able to do?**
+
+Option creation and opportunity cost belong together. The student facing two job offers may negotiate role, location, start date, compensation, or learning opportunities; request more time; continue searching; or propose a trial arrangement. A negotiator who sees only accept or reject may discover options in timing, verification, warranties, risk sharing, or future work. Creating a better alternative changes the opportunity cost of the current menu.
+
+## Information has value only when it can change action
+
+![A disciplined decision expands options, represents sacrifice, values information, and tests sensitivity before committing.](../figures/option-information.svg){#fig-option-information fig-alt="Four-step flow from option generation through opportunity cost and value of information to sensitivity analysis."}
+
+A rational decision-maker should not gather all available information. Information is instrumentally valuable when it can improve action enough to justify money, delay, attention, privacy, processing, and strategic exposure. A reference check matters if a plausible result could change a hiring decision or contract term. A pilot matters if it could change the scale, design, or decision to proceed. A diagnostic test has little instrumental value when treatment would remain the same regardless of the result.
+
+Formally, the expected value of information is the expected value achievable after learning minus the expected value achievable without learning. Net value subtracts the cost of obtaining and acting on the information. The practical version requires no false precision: list the possible results, state what action follows from each, and ask whether any branch differs. If no plausible answer changes action, the request may be serving reassurance or delay rather than decision quality.
+
+## Multiple objectives without false precision
+
+Important decisions rarely have one objective. A job involves income, learning, autonomy, health, location, culture, mission, risk, relationships, and future options. A decision table can separate **predictions** about performance on each objective from **values** about how much those outcomes matter (Keeney & Raiffa, 1976).
+
+The table is a conversation made inspectable, not a machine for discovering the correct answer. Avoid double counting related attributes. Treat weights as trade-offs over defined ranges, not abstract declarations that “health matters 30.” Show uncertainty. Then vary the forecasts, weights, and constraints that could reverse the ranking. A precise total produced from weak inputs is not disciplined merely because it contains decimals.
+
 ## Preferences, utility, and coherence
 
 Preferences describe how a decision-maker ranks alternatives or outcomes. Utility is a numerical representation of those preferences. It is not automatically money, happiness, pleasure, or moral worth.
@@ -71,7 +96,7 @@ Under expected utility theory, the utility index carries more structure because 
 
 Two basic coherence conditions are completeness and transitivity. Completeness means the decision-maker can compare any two alternatives in the relevant domain: prefer A, prefer B, or be indifferent. Transitivity means that if A is preferred to B and B to C, then A should be preferred to C. These conditions support a stable representation, but they should not be turned into moral accusations. In novel, morally conflicted, or poorly specified choices, temporary incompleteness can be reasonable: the person may need information, reflection, or a richer framing before comparison is possible.
 
-## What violations do - and do not - show
+## What violations do—and do not—show
 
 Empirical violations of completeness, transitivity, or independence do not imply that every observed choice is irrational or that normative analysis should be abandoned. A violation may reflect unstable attention, changing interpretation, incomplete preference formation, misunderstanding, or a genuine departure from the model's axioms. The correct inference depends on the task and measurement.
 
@@ -85,17 +110,9 @@ Probability is one language for disciplined belief. Coherent probabilities obey 
 
 Risk usually refers to situations in which relevant outcomes and probabilities are known or estimable. Uncertainty refers to situations in which probabilities are not fully known. Ambiguity goes further: the decision-maker may be unsure which probability model applies. In practice these categories form a continuum. A scientifically responsible analysis can use ranges, scenarios, confidence intervals, or multiple models rather than forcing a precise point estimate.
 
-## Expected utility
+## Expected utility as a benchmark
 
-Expected utility combines beliefs and values. For a feasible action a, possible states s, outcomes x(a,s), probabilities P(s|a), and a utility function u, the expected utility of the action is:
-
-EU(a) = ∑ₛ P(s | a) × u[x(a,s)]
-
-The benchmark selects the feasible action with the highest expected utility. If the outcome is certain, the formula reduces to choosing the outcome with the greatest utility. If probabilities are subjective, the calculation represents subjective expected utility.
-
-Expected utility is not expected money. A person may value each additional euro less than the previous one, value avoiding ruin disproportionately, or care about nonfinancial outcomes. A concave utility function can represent risk aversion even when expected monetary value favors a riskier option. Conversely, a person may rationally accept risk when upside, learning, or mission has high utility and downside is bearable.
-
-The arithmetic is usually the easy part. The difficult work is defining outcomes, assigning defensible probabilities, representing values, and checking whether the model omits an important objective or constraint.
+Expected utility combines probabilities with the value of possible outcomes. It is not expected money, a brain process, or a complete moral theory. Its main purpose here is to show what coherent comparison under risk would require. The detailed model, risk premiums, curvature, and elicitation problems belong in *Risky Decision-Making*, where they are needed. For now, the important point is that the arithmetic is usually easier than defining the outcomes, probabilities, values, affected parties, and constraints.
 
 ## Three questions of decision science
 
@@ -132,7 +149,7 @@ Prescriptive decision science asks how people and organizations can make better 
 
 A prescriptive method may ask decision-makers to define objectives before comparing options, use a relevant reference class rather than relying only on the inside view, record predictions before outcomes are known, obtain independent estimates before group discussion, score criteria separately before forming an overall impression, or specify in advance what evidence would trigger revision (Milkman et al., 2009).
 
-**Decision hygiene is a central prescriptive approach.** It treats judgment quality as a property of a system rather than only a personal virtue. Structured interviews, rubrics, checklists, independent estimates, noise audits, premortems, decision journals, calibration exercises, and review procedures are prescriptive because they are designed to reduce avoidable error and improve learning (Kahneman et al., 2021). Chapter 48 develops this approach in detail.
+**Decision hygiene is a central prescriptive approach.** It treats judgment quality as a property of a system rather than only a personal virtue. Structured interviews, rubrics, checklists, independent estimates, noise audits, premortems, decision journals, calibration exercises, and review procedures are prescriptive because they are designed to reduce avoidable error and improve learning (Kahneman et al., 2021). The final chapter develops this approach in detail.
 
 Prescriptive methods therefore combine two kinds of knowledge:
 
@@ -161,13 +178,13 @@ Three category errors should be avoided.
 3. A prescriptive intervention is not justified merely because it changes behavior. A nudge, default, checklist, or algorithm must still be evaluated against legitimate objectives, evidence, transparency, fairness, autonomy, and possible unintended consequences.
 :::
 
-## Worked example: the two job offers
+## Worked decision: the two job offers
 
-Suppose the student uses three simplified outcome scenarios for each job. The numbers below are illustrative, not objective. They represent the student's current beliefs and utility judgments on a scale chosen for this decision.
+Return to the consulting firm and sustainability start-up. The feasible set initially contains two offers, but option construction adds negotiation, delayed commitment, further search, and a reversible trial. Predictions concern workload, organizational survival, learning, advancement, and future options. Values concern income, autonomy, mission, health, family time, and tolerance for downside. Constraints include finances, location, visa conditions, and deadlines.
 
-Under these inputs, the start-up has higher expected utility. But the conclusion is conditional. If the student assigns a lower probability to start-up survival, places greater utility on income security, or treats burnout risk differently, the ranking can reverse. That is not a flaw. Sensitivity to beliefs and values is the point: the table shows what the choice depends on.
+The student should now name the best feasible alternative forgone for each commitment. If the start-up is chosen, the cost is not “the consulting salary” alone but the best complete consulting path that becomes unavailable. If the consulting role is chosen, the cost is the best feasible start-up or continued-search path. The comparison may remain fragile because survival, burnout, and learning are uncertain. One additional conversation has value only if a plausible answer would change the ranking, contract terms, or decision to wait.
 
-A good analysis therefore reports not only the winning option but also the assumptions that make it win.
+A good analysis therefore reports not only the preferred option but the assumptions that make it preferred, the information that could reverse it, and the review point after action.
 
 ## Dominance and sensitivity analysis
 
@@ -218,45 +235,29 @@ A precise probability is not scientific merely because it contains a number. It 
 | Strategic interdependence | Outcomes depend on what other actors do. | Game-theoretic analysis adds beliefs about others, incentives, and equilibrium or strategic stability. |
 : Certainty, risk, uncertainty, and strategic interdependence {#tbl-02-2}
 
-## Key ideas
+## Practice Lab
 
-- Rational choice is a model for making assumptions and trade-offs inspectable; it is not a claim that real people consciously calculate perfectly or that rational values must be selfish.
-- Distinguish instrumental, epistemic, procedural, and outcome rationality.
-- Identify the building blocks of a rational-choice problem.
-- Explain utility as a representation of preference.
-- Rational choice and expected utility are mainly normative: they specify standards of coherent choice under stated assumptions.
-- Prospect theory is primarily descriptive: it explains systematic patterns in actual choice rather than prescribing how people ought to choose.
-- Prescriptive decision science combines normative targets with descriptive evidence; decision hygiene is a system-level method for improving judgment.
+Produce a one-page preparation sheet for a decision you expect to make this year. Include: the current and newly constructed feasible options; the best alternative forgone by each leading option; predictions and their uncertainty; values and legitimate constraints; one sensitivity test; and three possible information results with the action each would trigger. Finish by labeling one normative question, one descriptive risk, and one prescriptive redesign. The observable output is the completed sheet and a one-sentence decision rule.
 
-## Study and practice
+## Take it forward
 
-1. How would you distinguish instrumental, epistemic, procedural, and outcome rationality?
-
-2. How would you identify the building blocks of a rational-choice problem in a real case?
-
-3. How would you explain utility as a representation of preference?
-
-4. Why is expected utility theory useful even if it is not a complete psychological description?
-
-5. Why should prospect theory not be interpreted as a recommendation to be loss averse or to overweight small probabilities?
-
-6. How does prescriptive decision science use both normative standards and descriptive evidence?
-
-7. Classify each as mainly normative, descriptive, or prescriptive: expected utility, prospect theory, Bayesian updating, the framing effect, a premortem, and a noise audit. Explain any cases that could serve more than one purpose.
-
-::: {.callout-tip .activity icon=false}
-## Activity
-
-Take a decision you expect to make this year. Specify the feasible set, uncertain states, predicted consequences, preferences, constraints, and comparison rule. Then analyze the same decision through three lenses: What is the **normative** standard? What **descriptive** tendencies may shape the actual choice? What **prescriptive** change would improve the process? Identify the assumption most likely to fail.  
-EXPERIENCE - EXPLAIN - APPLY (MAXIMUM 120 WORDS)  
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.
-:::
+- **Use this when:** a consequential decision is being treated as a vague preference or a fixed either-or choice.
+- **Do not infer:** that coherence requires selfish values, that a numerical score creates objectivity, or that a favorable outcome proves a rational process.
+- **Try this next:** name the best feasible alternative forgone and stop collecting information that cannot change action.
 
 ## References cited in this chapter
 
 
 ::: {.reference}
 Edwards, W. (1954). The theory of decision making. Psychological Bulletin, 51(4), 380-417.
+:::
+
+::: {.reference}
+Frederick, S., Novemsky, N., Wang, J., Dhar, R., & Nowlis, S. (2009). Opportunity cost neglect. Journal of Consumer Research, 36(4), 553-561.
+:::
+
+::: {.reference}
+Keeney, R. L., & Raiffa, H. (1976). Decisions with multiple objectives: Preferences and value tradeoffs. Wiley.
 :::
 
 ::: {.reference}
