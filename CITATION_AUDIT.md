@@ -2,7 +2,7 @@
 
 Canonical chapters: **48**
 
-Unique references in the master union: **823**
+Unique references in the master union: **843**
 
 Chapter reference blocks: **950**
 

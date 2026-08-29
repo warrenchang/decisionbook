@@ -242,7 +242,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
                 "error",
                 "master-references",
                 "references.qmd",
-                f"Master/chapter mismatch: {len(chapter_keys - master_keys)} missing and {len(master_keys - chapter_keys)} extra.",
+                f"Master/source mismatch: {len(chapter_keys - master_keys)} missing and {len(master_keys - chapter_keys)} extra.",
             )
         )
     if len(master_blocks) != len(master_keys):

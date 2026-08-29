@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Synchronize references.qmd with the union of canonical chapter reference blocks.
+"""Synchronize references.qmd with the union of canonical chapter and appendix references.
 
 Run from the repository root:
     python3 scripts/sync_references.py
@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "_quarto-html.yml"
 MASTER = ROOT / "references.qmd"
 CHAPTER_LINE = re.compile(r"^\s*-\s+(chapters/[^\s]+\.qmd)\s*$", re.MULTILINE)
+APPENDIX_LINE = re.compile(r"^\s*-\s+(appendices/[^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(
     r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL
 )
@@ -31,6 +32,19 @@ def canonical_chapters() -> list[Path]:
         raise SystemExit(f"Missing canonical chapter(s): {joined}")
     if len(paths) != len(set(paths)):
         raise SystemExit("The canonical chapter list contains a duplicate path.")
+    return paths
+
+
+def canonical_reference_sources() -> list[Path]:
+    """Return reader-facing chapters and appendices that contribute cited works."""
+    config = CONFIG.read_text(encoding="utf-8")
+    paths = canonical_chapters() + [ROOT / match for match in APPENDIX_LINE.findall(config)]
+    missing = [path for path in paths if not path.exists()]
+    if missing:
+        joined = ", ".join(str(path.relative_to(ROOT)) for path in missing)
+        raise SystemExit(f"Missing canonical reference source(s): {joined}")
+    if len(paths) != len(set(paths)):
+        raise SystemExit("The canonical reference-source list contains a duplicate path.")
     return paths
 
 
@@ -54,7 +68,7 @@ def sort_key(value: str) -> str:
 
 def chapter_references() -> list[str]:
     unique: dict[str, str] = {}
-    for path in canonical_chapters():
+    for path in canonical_reference_sources():
         text = path.read_text(encoding="utf-8")
         for raw in REFERENCE_BLOCK.findall(text):
             reference = clean_reference(raw)
@@ -69,8 +83,8 @@ def rendered_master() -> str:
     blocks = "\n\n".join(f"::: {{.reference}}\n{reference}\n:::" for reference in chapter_references())
     return (
         "# References {.unnumbered}\n\n"
-        "This master bibliography is the deduplicated union of the works cited in the canonical chapters. "
-        "Each chapter also provides its own cited-reference list.\n\n"
+        "This master bibliography is the deduplicated union of the works cited in the canonical chapters and appendices. "
+        "Each chapter and appendix also provides its own cited-reference list.\n\n"
         f"{blocks}\n"
     )
 
@@ -85,10 +99,10 @@ def main() -> int:
         if current != expected:
             print("FAIL: references.qmd is not synchronized with canonical chapter reference blocks.")
             return 1
-        print(f"PASS: references.qmd contains {len(chapter_references())} unique chapter references.")
+        print(f"PASS: references.qmd contains {len(chapter_references())} unique chapter-and-appendix references.")
         return 0
     MASTER.write_text(expected, encoding="utf-8")
-    print(f"Updated references.qmd with {len(chapter_references())} unique chapter references.")
+    print(f"Updated references.qmd with {len(chapter_references())} unique chapter-and-appendix references.")
     return 0
 
 
