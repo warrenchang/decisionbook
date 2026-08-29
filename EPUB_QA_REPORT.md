@@ -17,6 +17,8 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Navigation contains a table of contents | **PASS** |
 | Navigation has 18 compact top-level items | **PASS** |
 | Every navigation target exists | **PASS** |
+| Navigation omits the redundant generated title-page entry | **PASS** |
+| Visible contents suppresses automatic ordered-list counters | **PASS** |
 | All ten Part titles appear in order | **PASS** |
 | Chapters are numbered 1 through 48 | **PASS** |
 | Every chapter is nested under its Part with no section titles | **PASS** |
@@ -26,6 +28,7 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Appendices precede References, Index, and About | **PASS** |
 | One NCX navigation document is declared | **PASS** |
 | NCX declares a two-level hierarchy | **PASS** |
+| NCX omits the redundant generated title-page entry | **PASS** |
 | NCX mirrors the compact Part-to-Chapter hierarchy | **PASS** |
 | Compilation date is current | **PASS** |
 | All 66 source documents are packaged | **PASS** |

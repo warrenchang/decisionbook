@@ -2,10 +2,12 @@
 """Normalize EPUB navigation to a compact Part -> Chapter hierarchy.
 
 Quarto/Pandoc writes Part pages and numbered chapters as sibling navigation
-items. This postprocessor nests each numbered chapter below its Part and drops
-section-level navigation. The XHTML navigation document and EPUB 2 NCX are
-updated together. The operation is idempotent so the HTML post-render hook can
-safely encounter an already-normalized staged EPUB.
+items. This postprocessor nests each numbered chapter below its Part, drops
+section-level navigation and the redundant generated title-page entry, and
+suppresses automatic ordered-list counters in the visible contents page. The
+XHTML navigation document and EPUB 2 NCX are updated together. The operation
+is idempotent so the HTML post-render hook can safely encounter an
+already-normalized staged EPUB.
 """
 
 from __future__ import annotations
@@ -42,10 +44,25 @@ def strip_direct_children(element: ET.Element, tag: str) -> list[ET.Element]:
     return removed
 
 
+def add_style(element: ET.Element, declaration: str) -> None:
+    """Add an inline CSS declaration once, preserving any existing styles."""
+    existing = element.get("style", "").strip()
+    if declaration in existing:
+        return
+    separator = " " if existing and existing.endswith(";") else "; " if existing else ""
+    element.set("style", f"{existing}{separator}{declaration}")
+
+
 def nav_label(item: ET.Element) -> str:
     anchor = direct_child(item, f"{{{XHTML}}}a")
     span = direct_child(item, f"{{{XHTML}}}span")
     return normalized_text(anchor if anchor is not None else span)
+
+
+def is_nav_title_page(item: ET.Element, book_title: str) -> bool:
+    anchor = direct_child(item, f"{{{XHTML}}}a")
+    href = anchor.get("href", "") if anchor is not None else ""
+    return nav_label(item) == book_title and href.split("#", 1)[0].endswith("title_page.xhtml")
 
 
 def nested_nav_chapters(item: ET.Element) -> list[ET.Element]:
@@ -75,6 +92,8 @@ def normalize_nav(data: bytes) -> tuple[bytes, list[str], list[str]]:
     if ordered is None:
         raise ValueError("EPUB navigation toc has no ordered list")
 
+    book_title = normalized_text(root.find(f"{{{XHTML}}}head/{{{XHTML}}}title"))
+
     original = [child for child in list(ordered) if child.tag == f"{{{XHTML}}}li"]
     for item in original:
         ordered.remove(item)
@@ -85,6 +104,8 @@ def normalize_nav(data: bytes) -> tuple[bytes, list[str], list[str]]:
 
     for item in original:
         label = nav_label(item)
+        if is_nav_title_page(item, book_title):
+            continue
         carried_chapters = nested_nav_chapters(item) if PART_RE.match(label) else []
         strip_direct_children(item, f"{{{XHTML}}}ol")
 
@@ -103,6 +124,14 @@ def normalize_nav(data: bytes) -> tuple[bytes, list[str], list[str]]:
             ordered.append(item)
             current_part_list = None
 
+    # Some reading systems ignore an EPUB's external stylesheet when they
+    # display nav.xhtml. Inline declarations prevent those systems from adding
+    # their own 1., 2., 3. counters before labels that already contain chapter
+    # numbers. Keep indentation; remove only the list markers.
+    for element in toc.iter():
+        if element.tag in (f"{{{XHTML}}}ol", f"{{{XHTML}}}li"):
+            add_style(element, "list-style-type: none !important;")
+
     ET.indent(root, space="  ")
     return ET.tostring(root, encoding="utf-8", xml_declaration=True), part_labels, chapter_labels
 
@@ -119,12 +148,20 @@ def nested_ncx_chapters(item: ET.Element) -> list[ET.Element]:
     ]
 
 
+def is_ncx_title_page(item: ET.Element, book_title: str) -> bool:
+    content = direct_child(item, f"{{{NCX}}}content")
+    src = content.get("src", "") if content is not None else ""
+    return ncx_label(item) == book_title and src.split("#", 1)[0].endswith("title_page.xhtml")
+
+
 def normalize_ncx(data: bytes) -> bytes:
     ET.register_namespace("", NCX)
     root = ET.fromstring(data)
     nav_map = root.find(f"{{{NCX}}}navMap")
     if nav_map is None:
         raise ValueError("EPUB NCX has no navMap")
+
+    book_title = normalized_text(root.find(f"{{{NCX}}}docTitle/{{{NCX}}}text"))
 
     original = [child for child in list(nav_map) if child.tag == f"{{{NCX}}}navPoint"]
     for item in original:
@@ -133,6 +170,8 @@ def normalize_ncx(data: bytes) -> bytes:
     current_part: ET.Element | None = None
     for item in original:
         label = ncx_label(item)
+        if is_ncx_title_page(item, book_title):
+            continue
         carried_chapters = nested_ncx_chapters(item) if PART_RE.match(label) else []
         strip_direct_children(item, f"{{{NCX}}}navPoint")
 

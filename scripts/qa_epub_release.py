@@ -177,6 +177,23 @@ def main() -> int:
             if anchor is not None:
                 labels.append(normalized_text(anchor))
         check("Every navigation target exists", not missing_targets, ", ".join(missing_targets[:5]))
+        check(
+            "Navigation omits the redundant generated title-page entry",
+            "Decision, Persuasion, and Negotiation" not in labels,
+        )
+
+        styled_lists = toc.findall(f".//{{{XHTML}}}ol") if toc is not None else []
+        styled_items = toc.findall(f".//{{{XHTML}}}li") if toc is not None else []
+        unstyled_markers = [
+            element
+            for element in [*styled_lists, *styled_items]
+            if "list-style-type: none" not in element.get("style", "")
+        ]
+        check(
+            "Visible contents suppresses automatic ordered-list counters",
+            not unstyled_markers,
+            str(len(unstyled_markers)),
+        )
 
         positions = [labels.index(part) if part in labels else -1 for part in EXPECTED_PARTS]
         check("All ten Part titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
@@ -256,6 +273,14 @@ def main() -> int:
             check("NCX declares a two-level hierarchy", ncx_depth is not None and ncx_depth.get("content") == "2")
             nav_map = ncx_root.find(f"{{{NCX}}}navMap")
             ncx_top = nav_map.findall(f"{{{NCX}}}navPoint") if nav_map is not None else []
+            ncx_top_labels = [
+                normalized_text(point.find(f"{{{NCX}}}navLabel/{{{NCX}}}text"))
+                for point in ncx_top
+            ]
+            check(
+                "NCX omits the redundant generated title-page entry",
+                "Decision, Persuasion, and Negotiation" not in ncx_top_labels,
+            )
             ncx_hierarchy_errors: list[str] = []
             for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):
                 part_point = next(
