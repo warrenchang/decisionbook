@@ -9,6 +9,7 @@ const { chromium } = require("playwright");
 const epubRoot = path.resolve(process.argv[2] || "/private/tmp/dpn-epub-inspect-20260829/EPUB");
 const screenshotDir = path.resolve(process.argv[3] || "/private/tmp/dpn-epub-render-qa");
 const textDir = path.join(epubRoot, "text");
+const reportPath = path.resolve(__dirname, "..", "audits", "rendered-epub-figure-qa.json");
 
 function chromeExecutable() {
   return [
@@ -112,7 +113,18 @@ async function main() {
     await browser.close();
   }
 
-  process.stdout.write(`${issues.length ? "FAIL" : "PASS"}: ${imagePlacements} EPUB figure placements loaded at 768px and 390px; ${issues.length} issue(s)\n`);
+  const report = {
+    status: issues.length ? "FAIL" : "PASS",
+    generated: new Date().toISOString(),
+    xhtmlDocuments: files.length,
+    figurePlacements: imagePlacements,
+    viewports: [768, 390],
+    issues,
+    screenshots: screenshotDir,
+  };
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+  process.stdout.write(`${report.status}: ${imagePlacements} EPUB figure placements loaded at 768px and 390px; ${issues.length} issue(s)\n`);
   if (issues.length) process.stdout.write(`${issues.join("\n")}\n`);
   process.exitCode = issues.length ? 1 : 0;
 }
