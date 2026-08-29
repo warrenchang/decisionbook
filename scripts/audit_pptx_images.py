@@ -66,7 +66,12 @@ def relationships(zf: zipfile.ZipFile, owner: str) -> dict[str, dict[str, str]]:
 
 
 def resolve_target(owner: str, target: str) -> str:
-    return posixpath.normpath(posixpath.join(posixpath.dirname(owner), target))
+    # OOXML relationships may be package-relative (../media/image1.png) or
+    # package-absolute (/ppt/slides/slide1.xml). Zip member names never begin
+    # with a slash, so normalize both forms to the package member path.
+    if target.startswith("/"):
+        return posixpath.normpath(target).lstrip("/")
+    return posixpath.normpath(posixpath.join(posixpath.dirname(owner), target)).lstrip("/")
 
 
 def slide_order(zf: zipfile.ZipFile) -> list[tuple[str, bool]]:

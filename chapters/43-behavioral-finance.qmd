@@ -65,6 +65,10 @@ Three claims are easily confused:
 
 The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.
 
+![A deliberately stylized €20 teaching note leads to three separate market-efficiency claims: information moves quickly, there is no free lunch after risk and realistic costs, and the price equals fundamental value. The illustration is marked as not currency, and it emphasizes that the first two claims do not establish the third.](../figures/finance-euro-efficiency.svg){#fig-finance-euro-efficiency fig-alt="A non-currency teaching illustration marked euro twenty points from one common branch to three boxes. The boxes distinguish rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third." width=100%}
+
+Figure @fig-finance-euro-efficiency preserves the lecture's €20-note intuition without reproducing a banknote or a copyrighted photograph. Its separation of the three claims is the point: finding an unclaimed reward and establishing fundamental-value accuracy are different evidentiary tasks.
+
 Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.
 
 ## Fast price discovery is possible
@@ -105,6 +109,10 @@ An **event study** estimates security returns around a defined event (MacKinlay,
 6. Test uncertainty and inspect confounding events.
 
 If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.
+
+![An event-study schematic distinguishes the estimation window, the event's first public time, and the post-event window. A stylized cumulative-abnormal-return panel shows immediate reactions followed by continued separation after positive and negative earnings surprises. The curves explain the logic of post-earnings-announcement drift; they are not digitized effect-size estimates.](../figures/finance-event-study-drift.svg){#fig-finance-event-study-drift fig-alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, stylized cumulative abnormal returns react at the event and continue upward after a positive surprise or downward after a negative surprise. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs." width=100%}
+
+Figure @fig-finance-event-study-drift makes an important boundary visible. A price reaction is observed; an **abnormal** reaction exists only relative to the expected-return model. Continued separation after the event is evidence to explain, not an automatically tradable return.
 
 Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.
 
@@ -168,7 +176,7 @@ Market-timing rules illustrate the trade-off. A moving-average strategy may avoi
 
 ### Arithmetic averages can conceal multiplicative ruin
 
-Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from DKK 10,000 is more than DKK 1.4 million:
+Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from €10,000 is more than €1.4 million:
 
 $$
 10{,}000(1.10)^{52} \approx 1{,}420{,}000.

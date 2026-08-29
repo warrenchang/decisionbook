@@ -727,6 +727,17 @@ window.Quarto = {
 <li><strong>The price is right.</strong> Market price equals a well-defined fundamental value.</li>
 </ol>
 <p>The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.</p>
+<div id="fig-finance-euro-efficiency" class="quarto-float quarto-figure quarto-figure-center" alt="A non-currency teaching illustration marked euro twenty points from one common branch to three boxes. The boxes distinguish rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finance-euro-efficiency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/finance-euro-efficiency.svg" class="img-fluid figure-img" style="width:100.0%" alt="A non-currency teaching illustration marked euro twenty points from one common branch to three boxes. The boxes distinguish rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finance-euro-efficiency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;26.1: A deliberately stylized €20 teaching note leads to three separate market-efficiency claims: information moves quickly, there is no free lunch after risk and realistic costs, and the price equals fundamental value. The illustration is marked as not currency, and it emphasizes that the first two claims do not establish the third.
+</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig-finance-euro-efficiency" class="quarto-xref">Figure&nbsp;<span>26.1</span></a> preserves the lecture’s €20-note intuition without reproducing a banknote or a copyrighted photograph. Its separation of the three claims is the point: finding an unclaimed reward and establishing fundamental-value accuracy are different evidentiary tasks.</p>
 <p>Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.</p>
 </section>
 <section id="fast-price-discovery-is-possible" class="level2">
@@ -753,7 +764,7 @@ window.Quarto = {
 <img src="../figures/behavioral-finance-audit.svg" class="img-fluid figure-img" alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-behavioral-finance-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;26.1: A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.
+Figure&nbsp;26.2: A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.
 </figcaption>
 </figure>
 </div>
@@ -771,6 +782,17 @@ Figure&nbsp;26.1: A documented return pattern passes through a joint-test audit 
 <li>Test uncertainty and inspect confounding events.</li>
 </ol>
 <p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.</p>
+<div id="fig-finance-event-study-drift" class="quarto-float quarto-figure quarto-figure-center" alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, stylized cumulative abnormal returns react at the event and continue upward after a positive surprise or downward after a negative surprise. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finance-event-study-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/finance-event-study-drift.svg" class="img-fluid figure-img" style="width:100.0%" alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, stylized cumulative abnormal returns react at the event and continue upward after a positive surprise or downward after a negative surprise. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finance-event-study-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;26.3: An event-study schematic distinguishes the estimation window, the event’s first public time, and the post-event window. A stylized cumulative-abnormal-return panel shows immediate reactions followed by continued separation after positive and negative earnings surprises. The curves explain the logic of post-earnings-announcement drift; they are not digitized effect-size estimates.
+</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig-finance-event-study-drift" class="quarto-xref">Figure&nbsp;<span>26.3</span></a> makes an important boundary visible. A price reaction is observed; an <strong>abnormal</strong> reaction exists only relative to the expected-return model. Continued separation after the event is evidence to explain, not an automatically tradable return.</p>
 <p>Historical research on earnings announcements documented <strong>post-earnings-announcement drift</strong>: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.</p>
 <p>Return to the opening puzzle. A good answer may still be “buy,” “wait,” or “do nothing,” but it must now name the information, expected-price response, benchmark, implementation assumptions, and evidence that would falsify the thesis.</p>
 </section>
@@ -873,7 +895,7 @@ Table&nbsp;26.1: Historical return patterns require competing explanations, not 
 <p>Market-timing rules illustrate the trade-off. A moving-average strategy may avoid some severe declines and reduce measured volatility, but frequent switching during trendless periods can sacrifice return through missed rebounds and costs. “Time in the market” and “timing the market” are not slogans that settle every case. The evaluation must specify the rule before the sample, include all switches, and compare risk-adjusted after-cost outcomes.</p>
 <section id="arithmetic-averages-can-conceal-multiplicative-ruin" class="level3">
 <h3 data-anchor-id="arithmetic-averages-can-conceal-multiplicative-ruin">Arithmetic averages can conceal multiplicative ruin</h3>
-<p>Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from DKK 10,000 is more than DKK 1.4 million:</p>
+<p>Suppose a stylized initial offering rises 80% in one week with probability one half and falls 60% with probability one half. The arithmetic mean return is +10%. If that independent gamble is repeated 52 times, expected wealth from €10,000 is more than €1.4 million:</p>
 <p><span class="math display">\[
 10{,}000(1.10)^{52} \approx 1{,}420{,}000.
 \]</span></p>
