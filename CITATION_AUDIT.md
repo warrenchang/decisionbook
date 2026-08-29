@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **720**
+Unique references in the master union: **731**
 
-Chapter reference blocks: **786**
+Chapter reference blocks: **798**
 
 Unresolved author–year citations: **0**
 
@@ -19,8 +19,8 @@ Unresolved author–year citations: **0**
 | Valuation: How Options Become Worth Choosing | 39 | 0 |
 | Expectations: When Predictions Become Causes | 43 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 18 | 0 |
-| Fast and Frugal Thinking | 27 | 0 |
-| What Feels Likely: Availability, Affect, and Resemblance | 16 | 0 |
+| Fast and Frugal Thinking | 31 | 0 |
+| What Feels Likely: Availability, Affect, and Resemblance | 17 | 0 |
 | Beliefs That Defend Themselves | 24 | 0 |
 | When Context Rewrites Comparison | 10 | 0 |
 | Framing: When the Same Facts Become Different Decisions | 16 | 0 |
@@ -34,11 +34,11 @@ Unresolved author–year citations: **0**
 | Habits, Wanting, and Self-Control | 17 | 0 |
 | Mental Accounting: Money Is Fungible; Minds Label It | 21 | 0 |
 | Subjective Well-Being: Income Is Not the Same as a Good Life | 16 | 0 |
-| Markets, Mispricing, and Bubbles | 20 | 0 |
 | Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
 | Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |
 | Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 24 | 0 |
-| Social Learning, Conformity, and Cascades | 25 | 0 |
+| Social Learning, Conformity, and Cascades | 27 | 0 |
+| Markets, Mispricing, and Bubbles | 25 | 0 |
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Authority, Responsibility, and Pluralistic Ignorance | 9 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 30 | 0 |

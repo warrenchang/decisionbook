@@ -1,0 +1,18 @@
+# Excluded-Chapter Consolidation Audit
+
+**Status: reviewed and reconciled on August 29, 2026**
+
+Eight former chapter source files are no longer listed in the canonical HTML or EPUB manifests. They have not been deleted from the repository. Each was excluded because its central argument was consolidated into a successor chapter. This audit distinguishes content that survived the merger, content restored after a line-by-line comparison, and material intentionally not duplicated.
+
+| Former source chapter | Canonical destination | Reconciliation |
+| --- | --- | --- |
+| `03-opportunity-cost-information-and-better-options.qmd` | Chapter 2, *Building a Better Decision* | Opportunity cost, option construction, and value of information were already integrated. The worked executive-program case and its precommitted launch/revise/stop criteria were restored. |
+| `09-heuristics-the-adaptive-toolbox.qmd` | Chapter 8, *Fast Answers and Slow Inspection* | Ecological fit and feedback were already central. A Research Lens now restores the recognition heuristic, take-the-best, elimination by aspects, and fast-and-frugal trees with their conditional validity. |
+| `11-resemblance-is-not-probability.qmd` | Chapter 9, *What Feels Likely* | Representativeness, the conjunction error, prototypes, and base-rate correction were already integrated. The faces-and-election example was restored with an explicit boundary between predicting voter response and measuring governing competence. |
+| `17-fluency-familiarity-and-the-feeling-of-truth.qmd` | Chapter 13, *Accessibility, Familiarity, and the Feeling of Truth* | Fluency, mere exposure, illusory truth, clarity, and desirable-difficulty boundaries survived the merger. No additional duplicate passage was needed. |
+| `20-wanting-craving-and-self-control.qmd` | Chapter 20, *Habits, Wanting, and Self-Control* | Wanting versus liking, craving, environmental control, recovery, and the addiction boundary survived the merger. No additional duplicate passage was needed. |
+| `23-conformity-norms-and-social-proof.qmd` | Chapter 26, *Social Learning, Conformity, and Cascades* | Informational and normative influence, independence before discussion, cascades, and norm design were already integrated. Dynamic norms and the underdetection of normative influence were restored with a forward link to choice architecture. |
+| `32-anchors-concessions-and-bargaining-tactics.qmd` | Chapter 36, *Preparing and Claiming Value*, and Appendix A | The chronological opening-response-movement-close sequence survived. Appendix A now restores a compact tactic diagnostic and the mediation-arbitration distinction. The decreasing-concession claim and reference were corrected; the unsupported historical anecdote and duplicative tactic tour were not restored. |
+| `44-asset-bubbles.qmd` | Chapter 27, *Markets, Mispricing, and Bubbles* | The feedback loop, field and laboratory cases, heterogeneous strategies, and bubble dashboard were already integrated. Strategic resale, synchronization risk, laboratory-to-field transport, flat-fundamental/liquidity evidence, the bubble-crash-systemic-crisis distinction, and downside-bearing ethics were restored. The duplicate historical tour and repeated exercises were not. |
+
+The governing rule was **consolidation, not disappearance**. Distinctive mechanisms, examples, evidence boundaries, and practical tools were retained or restored. Repeated definitions, duplicate openings and summaries, redundant exercises, unsupported anecdotes, and material that would recreate the earlier catalogue structure were not reintroduced.

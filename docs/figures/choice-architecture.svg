@@ -3,8 +3,8 @@
   <title id="title">The plausible path of choice architecture</title>
   <desc id="desc">A five-stage path runs from objective to menu, understanding, action, and feedback. Aligned levers beneath the path show how choice architecture changes each stage, while a governance bar applies to the full system.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#25678f"/>
+    <marker id="arrow" viewBox="0 0 10 8" markerWidth="8" markerHeight="7" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0.5,0.8 L9,4 L0.5,7.2 Z" fill="#25678f"/>
     </marker>
     <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
       <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/>
@@ -17,10 +17,10 @@
 
   <!-- Straight, center-to-center connectors -->
   <g stroke="#25678f" stroke-width="4" fill="none">
-    <line x1="250" y1="184" x2="277" y2="184" marker-end="url(#arrow)"/>
-    <line x1="470" y1="184" x2="497" y2="184" marker-end="url(#arrow)"/>
-    <line x1="690" y1="184" x2="717" y2="184" marker-end="url(#arrow)"/>
-    <line x1="910" y1="184" x2="937" y2="184" marker-end="url(#arrow)"/>
+    <line x1="250" y1="184" x2="277" y2="184" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="470" y1="184" x2="497" y2="184" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="690" y1="184" x2="717" y2="184" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="910" y1="184" x2="937" y2="184" stroke-width="3" marker-end="url(#arrow)"/>
   </g>
 
   <!-- Five evenly spaced stages -->
@@ -68,28 +68,28 @@
 
     <rect x="60" y="330" width="190" height="112" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="155" y="367" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">Goal and scope</text>
-    <text x="155" y="395" text-anchor="middle" font-size="15" fill="#607080">target • population</text>
-    <text x="155" y="417" text-anchor="middle" font-size="15" fill="#607080">instrument • metric</text>
+    <text x="155" y="395" text-anchor="middle" font-size="16" fill="#607080">target • population</text>
+    <text x="155" y="417" text-anchor="middle" font-size="16" fill="#607080">instrument • metric</text>
 
     <rect x="280" y="330" width="190" height="112" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="375" y="367" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">Menu and start</text>
-    <text x="375" y="395" text-anchor="middle" font-size="15" fill="#607080">options • categories</text>
-    <text x="375" y="417" text-anchor="middle" font-size="15" fill="#607080">order • defaults</text>
+    <text x="375" y="395" text-anchor="middle" font-size="16" fill="#607080">options • categories</text>
+    <text x="375" y="417" text-anchor="middle" font-size="16" fill="#607080">order • defaults</text>
 
     <rect x="500" y="330" width="190" height="112" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="595" y="367" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">Meaning</text>
-    <text x="595" y="395" text-anchor="middle" font-size="15" fill="#607080">mapping • metrics</text>
-    <text x="595" y="417" text-anchor="middle" font-size="15" fill="#607080">frames • salience</text>
+    <text x="595" y="395" text-anchor="middle" font-size="16" fill="#607080">mapping • metrics</text>
+    <text x="595" y="417" text-anchor="middle" font-size="16" fill="#607080">frames • salience</text>
 
     <rect x="720" y="330" width="190" height="112" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="815" y="367" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">Execution</text>
-    <text x="815" y="395" text-anchor="middle" font-size="15" fill="#607080">friction • timing</text>
-    <text x="815" y="417" text-anchor="middle" font-size="15" fill="#607080">prompts • social cues</text>
+    <text x="815" y="395" text-anchor="middle" font-size="16" fill="#607080">friction • timing</text>
+    <text x="815" y="417" text-anchor="middle" font-size="16" fill="#607080">prompts • social cues</text>
 
     <rect x="940" y="330" width="190" height="112" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="1035" y="367" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">Learning</text>
-    <text x="1035" y="395" text-anchor="middle" font-size="15" fill="#607080">progress • warnings</text>
-    <text x="1035" y="417" text-anchor="middle" font-size="15" fill="#607080">correction • review</text>
+    <text x="1035" y="395" text-anchor="middle" font-size="16" fill="#607080">progress • warnings</text>
+    <text x="1035" y="417" text-anchor="middle" font-size="16" fill="#607080">correction • review</text>
   </g>
 
   <!-- Governance applies to the entire path -->

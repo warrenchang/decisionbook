@@ -84,16 +84,115 @@ h2 { margin-top: 2.8rem; padding-top: 1.1rem; border-top: 1px solid var(--book-l
 
 table { font-size: .94rem; }
 thead th { background: var(--book-panel); }
+th[scope="rowgroup"] { vertical-align: middle; }
 
 .sidebar-title { font-weight: 800; }
 
 @media (max-width: 768px) {
   #quarto-content main.content { padding-left: .25rem; padding-right: .25rem; }
   .hero-block { padding: 1rem; }
+
+  #quarto-content main.content,
+  #quarto-content main.content section,
+  .quarto-figure,
+  figure.quarto-float {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  // Preserve diagram type and arrow legibility instead of shrinking a wide SVG
+  // to an unreadable phone-sized thumbnail. The image remains contained in a
+  // deliberate horizontal reading pane; raster photographs still scale normally.
+  figure.quarto-float-fig > div[aria-describedby],
+  figure.quarto-float-tbl > div[aria-describedby] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  figure.quarto-float-fig > div[aria-describedby] > img[src$=".svg"] {
+    width: 760px;
+    min-width: 760px;
+    max-width: none;
+    max-height: none;
+  }
+
+  // Pandoc tables that are not inside a float still need their own reading pane.
+  main.content table:not(.table-sm) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  mjx-container[display="true"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+  }
 }
 
 @media print {
   .quarto-figure, table, .callout { break-inside: avoid; }
+}
+
+.author-profile {
+  display: grid;
+  grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.25rem 0 0;
+  padding: 1.25rem;
+  border: 1px solid var(--book-line);
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--book-panel), #fff);
+}
+
+.author-profile-image,
+.author-profile-image p,
+.author-profile-image .quarto-figure { margin: 0; }
+
+.author-profile-photo,
+.author-profile-image .quarto-figure img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  max-height: none;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--book-line);
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.author-profile-bio > :first-child { margin-top: 0; }
+.author-profile-bio > :last-child { margin-bottom: 0; }
+.author-profile-image figcaption {
+  margin-top: .45rem;
+  color: var(--book-muted);
+  font-size: .86rem;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .author-profile { grid-template-columns: 1fr; }
+  .author-profile-image { max-width: 240px; margin: 0 auto; }
+}
+
+@media print {
+  .author-profile { break-inside: avoid; }
 }
 
 /* Refined book navigation: stronger part hierarchy and calmer chapter spacing. */

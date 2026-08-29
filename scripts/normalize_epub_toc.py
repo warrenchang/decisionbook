@@ -218,7 +218,7 @@ def normalize_epub(path: Path) -> tuple[int, int]:
     entries[by_name["EPUB/toc.ncx"]] = (entries[by_name["EPUB/toc.ncx"]][0], ncx_data)
 
     chapter_numbers = [int(match.group(1)) for label in chapters if (match := CHAPTER_RE.match(label))]
-    if len(parts) != 8 or chapter_numbers != list(range(1, 42)):
+    if len(parts) != 7 or chapter_numbers != list(range(1, 42)):
         raise ValueError(
             f"Unexpected book hierarchy: {len(parts)} Parts and chapter numbers {chapter_numbers}"
         )
@@ -243,4 +243,4 @@ if __name__ == "__main__":
     parser.add_argument("epub", type=Path)
     arguments = parser.parse_args()
     part_count, chapter_count = normalize_epub(arguments.epub)
-    print(f"Normalized EPUB navigation: {part_count} Parts/interludes, {chapter_count} numbered chapters")
+    print(f"Normalized EPUB navigation: {part_count} Parts, {chapter_count} numbered chapters")

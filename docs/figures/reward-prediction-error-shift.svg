@@ -3,8 +3,8 @@
   <title id="title">Reward prediction error changes as cues become informative</title>
   <desc id="desc">Four conceptual panels show an unexpected reward, a learned predictive cue, an omitted reward, and an informative progress cue in a long task. The graphic is a schematic and not a neural recording.</desc>
   <defs>
-    <marker id="rpe-arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L11,5.5 L0,11 Z" fill="#17324d"/>
+    <marker id="rpe-arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0.5,0.8 L9,4 L0.5,7.2 Z" fill="#17324d"/>
     </marker>
   </defs>
   <rect width="1200" height="650" fill="#ffffff"/>
@@ -17,9 +17,9 @@
     <text x="190" y="153" text-anchor="middle" font-size="18" font-weight="700" fill="#17324d">Unexpected reward</text>
     <line x1="65" y1="300" x2="242" y2="300" stroke="#17324d" stroke-width="3" marker-end="url(#rpe-arrow)"/>
     <circle cx="115" cy="300" r="12" fill="#d9e2e8" stroke="#66737f" stroke-width="2"/>
-    <text x="115" y="332" text-anchor="middle" font-size="14" fill="#66737f">neutral cue</text>
+    <text x="115" y="332" text-anchor="middle" font-size="16" fill="#66737f">neutral cue</text>
     <circle cx="220" cy="300" r="17" fill="#c56a2d"/>
-    <text x="220" y="332" text-anchor="middle" font-size="14" fill="#66737f">reward</text>
+    <text x="220" y="332" text-anchor="middle" font-size="16" fill="#66737f">reward</text>
     <path d="M196 257 L220 216 L244 257 Z" fill="#447c55"/>
     <text x="220" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#447c55">positive update</text>
     <text x="163" y="390" text-anchor="middle" font-size="16" fill="#66737f">Outcome is better</text>
@@ -30,9 +30,11 @@
     <text x="481" y="153" text-anchor="middle" font-size="19" font-weight="700" fill="#17324d">Learned cue</text>
     <line x1="356" y1="300" x2="533" y2="300" stroke="#17324d" stroke-width="3" marker-end="url(#rpe-arrow)"/>
     <circle cx="406" cy="300" r="17" fill="#2b7a78"/>
-    <text x="406" y="332" text-anchor="middle" font-size="14" fill="#66737f">predictive cue</text>
+    <text x="406" y="330" text-anchor="middle" font-size="16" fill="#66737f">predictive</text>
+    <text x="406" y="349" text-anchor="middle" font-size="16" fill="#66737f">cue</text>
     <circle cx="511" cy="300" r="17" fill="#c56a2d"/>
-    <text x="511" y="332" text-anchor="middle" font-size="14" fill="#66737f">expected reward</text>
+    <text x="511" y="330" text-anchor="middle" font-size="16" fill="#66737f">expected</text>
+    <text x="511" y="349" text-anchor="middle" font-size="16" fill="#66737f">reward</text>
     <path d="M382 257 L406 216 L430 257 Z" fill="#447c55"/>
     <text x="454" y="200" text-anchor="middle" font-size="16" font-weight="700" fill="#447c55">prediction moves earlier</text>
     <text x="454" y="390" text-anchor="middle" font-size="16" fill="#66737f">Little new information</text>
@@ -43,11 +45,13 @@
     <text x="772" y="153" text-anchor="middle" font-size="17" font-weight="700" fill="#17324d">Expected, then omitted</text>
     <line x1="647" y1="300" x2="824" y2="300" stroke="#17324d" stroke-width="3" marker-end="url(#rpe-arrow)"/>
     <circle cx="697" cy="300" r="17" fill="#2b7a78"/>
-    <text x="697" y="332" text-anchor="middle" font-size="14" fill="#66737f">predictive cue</text>
+    <text x="697" y="330" text-anchor="middle" font-size="16" fill="#66737f">predictive</text>
+    <text x="697" y="349" text-anchor="middle" font-size="16" fill="#66737f">cue</text>
     <circle cx="802" cy="300" r="18" fill="#ffffff" stroke="#c56a2d" stroke-width="3" stroke-dasharray="5 4"/>
     <line x1="790" y1="288" x2="814" y2="312" stroke="#a74343" stroke-width="3"/>
     <line x1="814" y1="288" x2="790" y2="312" stroke="#a74343" stroke-width="3"/>
-    <text x="802" y="332" text-anchor="middle" font-size="14" fill="#66737f">expected time</text>
+    <text x="802" y="330" text-anchor="middle" font-size="16" fill="#66737f">expected</text>
+    <text x="802" y="349" text-anchor="middle" font-size="16" fill="#66737f">time</text>
     <path d="M778 365 L802 406 L826 365 Z" fill="#a74343"/>
     <text x="745" y="438" text-anchor="middle" font-size="16" font-weight="700" fill="#a74343">negative update</text>
     <text x="745" y="474" text-anchor="middle" font-size="16" fill="#66737f">Outcome is worse</text>
@@ -57,16 +61,16 @@
     <circle cx="936" cy="148" r="21" fill="#447c55"/><text x="936" y="155" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">4</text>
     <text x="1063" y="153" text-anchor="middle" font-size="17" font-weight="700" fill="#17324d">Long or uncertain task</text>
     <line x1="938" y1="300" x2="1133" y2="300" stroke="#17324d" stroke-width="3" marker-end="url(#rpe-arrow)"/>
-    <circle cx="970" cy="300" r="12" fill="#2f6f9f"/><text x="970" y="332" text-anchor="middle" font-size="14" fill="#66737f">start</text>
+    <circle cx="970" cy="300" r="12" fill="#2f6f9f"/><text x="970" y="332" text-anchor="middle" font-size="16" fill="#66737f">start</text>
     <rect x="1026" y="283" width="34" height="34" rx="6" fill="#447c55"/>
     <path d="M1034 300 L1041 307 L1054 292" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="1043" y="342" text-anchor="middle" font-size="14" fill="#66737f">progress cue</text>
-    <circle cx="1110" cy="300" r="17" fill="#c56a2d"/><text x="1110" y="332" text-anchor="middle" font-size="14" fill="#66737f">goal</text>
+    <text x="1043" y="342" text-anchor="middle" font-size="16" fill="#66737f">progress cue</text>
+    <circle cx="1110" cy="300" r="17" fill="#c56a2d"/><text x="1110" y="332" text-anchor="middle" font-size="16" fill="#66737f">goal</text>
     <text x="1036" y="390" text-anchor="middle" font-size="16" fill="#66737f">Meaningful checkpoints</text>
     <text x="1036" y="413" text-anchor="middle" font-size="16" fill="#66737f">can reduce uncertainty.</text>
-    <text x="1036" y="454" text-anchor="middle" font-size="15" font-weight="700" fill="#a74343">Not a promise of</text>
-    <text x="1036" y="476" text-anchor="middle" font-size="15" font-weight="700" fill="#a74343">constant dopamine.</text>
+    <text x="1036" y="454" text-anchor="middle" font-size="16" font-weight="700" fill="#a74343">Not a promise of</text>
+    <text x="1036" y="476" text-anchor="middle" font-size="16" font-weight="700" fill="#a74343">constant dopamine.</text>
   </g>
 
-  <text x="600" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#66737f">Reward-prediction-error account: Schultz, Dayan, and Montague (1997). Progress panel is a bounded application schematic.</text>
+  <text x="600" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#66737f">Reward-prediction-error account: Schultz, Dayan, and Montague (1997). Progress panel is a bounded application schematic.</text>
 </svg>

@@ -28,9 +28,8 @@ EXPECTED_PARTS = [
     "Part I. How a Choice Takes Shape",
     "Part II. Judgment Under Uncertainty",
     "Part III. Risk, Time, Self-Regulation, and a Good Life",
-    "Applied Interlude. Markets, Mispricing, and Bubbles",
-    "Part IV. When Choices Become Interdependent",
-    "Part V. Influence, Communication, and Connection",
+    "Part IV. Strategic and Social Decisions",
+    "Part V. Persuasion, Communication, and Connection",
     "Part VI. Negotiating Joint Decisions",
     "Part VII. Designing Better Loops",
 ]
@@ -39,8 +38,7 @@ EXPECTED_PART_CHAPTERS = [
     list(range(1, 8)),
     list(range(8, 16)),
     list(range(16, 23)),
-    [23],
-    list(range(24, 30)),
+    list(range(23, 30)),
     list(range(30, 35)),
     list(range(35, 39)),
     list(range(39, 42)),
@@ -153,7 +151,7 @@ def main() -> int:
         check("Navigation contains a table of contents", toc is not None)
         toc_list = toc.find(f"{{{XHTML}}}ol") if toc is not None else None
         top_items = toc_list.findall(f"{{{XHTML}}}li") if toc_list is not None else []
-        check("Navigation has 18 compact top-level items", len(top_items) == 18, str(len(top_items)))
+        check("Navigation has 17 compact top-level items", len(top_items) == 17, str(len(top_items)))
 
         labels: list[str] = []
         all_labels: list[str] = []
@@ -192,7 +190,7 @@ def main() -> int:
         )
 
         positions = [labels.index(part) if part in labels else -1 for part in EXPECTED_PARTS]
-        check("All Part and interlude titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
+        check("All Part titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
 
         chapter_numbers = [
             int(match.group(1))
@@ -305,7 +303,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 59 source documents are packaged", len(chapter_files) == 59, str(len(chapter_files)))
+        check("All 58 source documents are packaged", len(chapter_files) == 58, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         searchable = "\n".join(

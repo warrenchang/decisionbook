@@ -42,6 +42,10 @@ def esc(value: str) -> str:
 
 def txt(x, y, value, size=18, *, anchor="middle", weight=400, fill=NAVY,
         family="Arial, sans-serif", extra="") -> str:
+    # Figures are routinely reduced to roughly 70% of their source width in
+    # HTML and EPUB.  A 16 px source minimum keeps even audit notes and axis
+    # labels comfortably readable after that reduction.
+    size = max(float(size), 16)
     return (
         f'<text x="{x}" y="{y}" text-anchor="{anchor}" '
         f'font-family="{family}" font-size="{size}" font-weight="{weight}" '
@@ -72,8 +76,8 @@ def document(title: str, desc: str, body: str, *, height=760) -> str:
   <title id="title">{esc(title)}</title>
   <desc id="desc">{esc(desc)}</desc>
   <defs>
-    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="{BLUE}"/></marker>
-    <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="{ORANGE}"/></marker>
+    <marker id="blueArrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="{BLUE}"/></marker>
+    <marker id="orangeArrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="{ORANGE}"/></marker>
     <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="{NAVY}" flood-opacity="0.12"/></filter>
   </defs>
   <rect width="1200" height="{height}" fill="#ffffff"/>
@@ -85,7 +89,7 @@ def document(title: str, desc: str, body: str, *, height=760) -> str:
 def title_block(title: str, subtitle: str) -> str:
     return "\n".join([
         txt(600, 48, title, 33, weight=700, family="Georgia, serif"),
-        txt(600, 80, subtitle, 18, fill=MUTED),
+        txt(600, 80, subtitle, 20, fill=MUTED),
     ])
 
 
@@ -282,13 +286,14 @@ def event_study() -> str:
         rect(55, 315, 900, 370, fill="#f7fafc", stroke="#c8d7e2", sw=2, rx=18),
         txt(505, 350, "Cumulative abnormal return (schematic)", 22, weight=700),
         f'<line x1="{x0}" y1="{y0+h/2}" x2="{x0+w}" y2="{y0+h/2}" stroke="#8fa0ad" stroke-width="2"/>',
-        f'<line x1="{x0+300}" y1="{y0}" x2="{x0+300}" y2="{y0+h}" stroke="{ORANGE}" stroke-width="3" stroke-dasharray="8 7"/>',
-        txt(x0 + 300, y0 + h + 28, "0  announcement", 15, weight=700, fill=ORANGE),
+        rect(x0 + 235, y0 + 15, 130, 36, fill=PALE_ORANGE, stroke=ORANGE, sw=2, rx=9),
+        txt(x0 + 300, y0 + 40, "EVENT · t = 0", 15, weight=700, fill=ORANGE),
+        f'<line x1="{x0+300}" y1="{y0+55}" x2="{x0+300}" y2="{y0+h}" stroke="{ORANGE}" stroke-width="3" stroke-dasharray="8 7"/>',
         txt(x0 + 20, y0 + h + 28, "before", 14, fill=MUTED),
         txt(x0 + 530, y0 + h + 28, "after", 14, fill=MUTED),
         f'<path d="M{x0} {y0+h/2} L{x0+300} {y0+h/2}" fill="none" stroke="{NAVY}" stroke-width="6" stroke-linecap="round"/>',
-        f'<path d="M{x0+300} {y0+h/2} L{x0+320} {y0+h/2-62} C{x0+350} {y0+h/2-78} {x0+405} {y0+h/2-84} {x0+450} {y0+h/2-88} C{x0+560} {y0+h/2-105} {x0+660} {y0+h/2-135} {x0+w} {y0+h/2-150}" fill="none" stroke="{GREEN}" stroke-width="6" stroke-linecap="round"/>',
-        f'<path d="M{x0+300} {y0+h/2} L{x0+320} {y0+h/2+62} C{x0+350} {y0+h/2+78} {x0+405} {y0+h/2+84} {x0+450} {y0+h/2+88} C{x0+560} {y0+h/2+105} {x0+660} {y0+h/2+135} {x0+w} {y0+h/2+150}" fill="none" stroke="{RED}" stroke-width="6" stroke-linecap="round"/>',
+        f'<path d="M{x0+300} {y0+h/2} C{x0+312} {y0+h/2-42} {x0+318} {y0+h/2-72} {x0+342} {y0+h/2-88} C{x0+410} {y0+h/2-113} {x0+485} {y0+h/2-101} {x0+555} {y0+h/2-116} C{x0+630} {y0+h/2-133} {x0+700} {y0+h/2-148} {x0+w} {y0+h/2-150}" fill="none" stroke="{GREEN}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>',
+        f'<path d="M{x0+300} {y0+h/2} C{x0+312} {y0+h/2+42} {x0+318} {y0+h/2+72} {x0+342} {y0+h/2+88} C{x0+410} {y0+h/2+113} {x0+485} {y0+h/2+101} {x0+555} {y0+h/2+116} C{x0+630} {y0+h/2+133} {x0+700} {y0+h/2+148} {x0+w} {y0+h/2+150}" fill="none" stroke="{RED}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>',
         f'<circle cx="{x0+300}" cy="{y0+h/2}" r="7" fill="{ORANGE}"/>',
         txt(x0 + w - 8, y0 + h/2 - 160, "positive surprise", 16, anchor="end", weight=700, fill=GREEN),
         txt(x0 + w - 8, y0 + h/2 + 176, "negative surprise", 16, anchor="end", weight=700, fill=RED),
@@ -367,7 +372,7 @@ def level_k() -> str:
                  extra='filter="url(#shadow)"'),
             txt(x + 97, 213, level, 18, weight=700, fill=stroke),
             txt(x + 97, 304, number, 72, weight=700, fill=stroke, family="Georgia, serif"),
-            txt(x + 97, 347, note, 15, weight=700, fill=MUTED),
+            txt(x + 97, 347, note, 17, weight=700, fill=MUTED),
         ]
         if i < len(levels) - 1:
             body.append(f'<line x1="{x+195}" y1="295" x2="{x+229}" y2="295" stroke="{BLUE}" stroke-width="4" marker-end="url(#blueArrow)"/>')
@@ -375,7 +380,7 @@ def level_k() -> str:
         rect(80, 485, 1040, 145, fill="#f7fafc", stroke="#c8d7e2", sw=2, rx=18),
         txt(600, 525, "The observed number does not reveal the reason by itself", 22, weight=700),
         multiline(600, 558, ["The same choice can reflect a different belief, arithmetic error, anchoring, a social focal point,", "or a deeper best response. Measure beliefs and comprehension before assigning a strategic level."], size=17, leading=27, fill=MUTED),
-        txt(600, 690, "The numerical ladder is the theoretical level-k illustration for a target equal to two-thirds of the group mean (Nagel, 1995).", 14, fill=MUTED),
+        txt(600, 690, "The numerical ladder is the theoretical level-k illustration for a target equal to two-thirds of the group mean (Nagel, 1995).", 15, fill=MUTED),
     ]
     return document(
         "Level-k reasoning in the two-thirds guessing game",

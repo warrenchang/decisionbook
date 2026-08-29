@@ -3,9 +3,9 @@
   <title id="title">When price becomes evidence about price</title>
   <desc id="desc">A speculative feedback loop connects price increases, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Fundamentals feed price separately. Elastic supply, short selling, risk limits, and skeptical capital can brake the loop, but synchronization and funding risk can delay correction.</desc>
   <defs>
-    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#b95f2d"/></marker>
-    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#25678f"/></marker>
-    <marker id="brake" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M1 1 L13 7 L1 13 Z" fill="#447c55"/></marker>
+    <marker id="arrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#b95f2d"/></marker>
+    <marker id="blueArrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#25678f"/></marker>
+    <marker id="brake" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#447c55"/></marker>
     <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/></filter>
   </defs>
   <rect width="1200" height="760" fill="#ffffff"/>
@@ -55,7 +55,7 @@
   <g font-family="Arial, sans-serif" filter="url(#shadow)">
     <rect x="80" y="650" width="1040" height="72" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="3"/>
     <text x="160" y="680" font-size="18" font-weight="700" fill="#183047">BRAKES</text>
-    <text x="160" y="705" font-size="14" fill="#607080">can be delayed</text>
+    <text x="160" y="705" font-size="16" fill="#607080">can be delayed</text>
     <rect x="260" y="665" width="180" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
     <text x="350" y="692" text-anchor="middle" font-size="16" fill="#183047">Elastic supply</text>
     <rect x="465" y="665" width="180" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
@@ -68,5 +68,5 @@
 
   <path d="M555 665 C550 635 520 618 500 597" fill="none" stroke="#447c55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#brake)"/>
   <path d="M760 665 C770 635 795 620 805 598" fill="none" stroke="#447c55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#brake)"/>
-  <text x="600" y="744" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#607080">Funding, shorting, model, and synchronization risk can weaken the brakes before correction.</text>
+  <text x="600" y="744" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#607080">Funding, shorting, model, and synchronization risk can weaken the brakes before correction.</text>
 </svg>

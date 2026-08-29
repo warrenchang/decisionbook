@@ -3,8 +3,8 @@
   <title id="title">Why later loses to now</title>
   <desc id="desc">A decision point branches to a smaller sooner outcome and a larger later outcome. The delayed path passes through uncertainty, weak future imagery, friction, and changing states. Four design levers strengthen the bridge to the future.</desc>
   <defs>
-    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#25678f"/></marker>
-    <marker id="orangeArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#b95f2d"/></marker>
+    <marker id="blueArrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#25678f"/></marker>
+    <marker id="orangeArrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#b95f2d"/></marker>
     <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/></filter>
   </defs>
   <rect width="1200" height="720" fill="#fff"/>
@@ -32,13 +32,13 @@
   <g font-family="Arial, sans-serif">
     <rect x="345" y="382" width="145" height="72" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="417" y="414" text-anchor="middle" font-size="18" font-weight="700" fill="#183047">Uncertainty</text>
-    <text x="417" y="438" text-anchor="middle" font-size="14" fill="#607080">will it arrive?</text>
+    <text x="417" y="438" text-anchor="middle" font-size="16" fill="#607080">will it arrive?</text>
     <rect x="525" y="382" width="145" height="72" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="597" y="414" text-anchor="middle" font-size="18" font-weight="700" fill="#183047">Weak image</text>
-    <text x="597" y="438" text-anchor="middle" font-size="14" fill="#607080">can I feel it?</text>
+    <text x="597" y="438" text-anchor="middle" font-size="16" fill="#607080">can I feel it?</text>
     <rect x="705" y="382" width="145" height="72" rx="14" fill="#f7f9fc" stroke="#d7e0e7" stroke-width="2"/>
     <text x="777" y="414" text-anchor="middle" font-size="18" font-weight="700" fill="#183047">Friction</text>
-    <text x="777" y="438" text-anchor="middle" font-size="14" fill="#607080">can I act now?</text>
+    <text x="777" y="438" text-anchor="middle" font-size="16" fill="#607080">can I act now?</text>
   </g>
 
   <!-- The delayed route visibly enters and exits each obstacle; no line is hidden behind a box. -->
@@ -46,7 +46,7 @@
     <path d="M280 335 C312 352 326 392 345 418"/>
     <line x1="490" y1="418" x2="525" y2="418"/>
     <line x1="670" y1="418" x2="705" y2="418"/>
-    <path d="M850 418 C869 447 869 490 877 518" marker-end="url(#blueArrow)"/>
+    <path d="M850 418 C869 447 869 490 877 518" stroke-width="4" marker-end="url(#blueArrow)"/>
   </g>
 
   <text x="60" y="635" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#607080" letter-spacing="1.1">DESIGN THE BRIDGE</text>

@@ -258,15 +258,22 @@ identify a one-to-one mental system.
 ### AI can predict without deciding
 
 Improved machine prediction can change a decision without supplying all
-parts of it. Keep four tasks separate (Agrawal et al., 2019):
+parts of it. Keep four tasks separate (Agrawal et al., 2019). Agrawal
+and colleagues call the second task *judgment*; in the terminology used
+throughout this book, it is **valuation**.^[Agrawal et al. (2019) use
+*judgment* for determining the payoffs associated with an action in
+each possible state. In standard decision-science terminology, and in
+this book, that task is **valuation**. Elsewhere in the book,
+**judgment** retains its broader meaning of forming beliefs and
+assessments.]
 
 | Task | Question | What an accurate model still does not supply |
 | --- | --- | --- |
 | Prediction | Which state or outcome is likely? | The value of each consequence |
-| Judgment and valuation | What would each action mean, cost, or achieve in each state? | The causal effect of changing the action |
+| Valuation | What would each action mean, cost, or achieve in each state? | The causal effect of changing the action |
 | Causal inference | What would change under an intervention? | The objective, constraints, or acceptable trade-offs |
 | Decision | Which feasible action should be taken now? | Authority, accountability, and permission to impose the choice |
-: Prediction, judgment, causal inference, and decision are different tasks {#tbl-ai-prediction-judgment-causation}
+: Prediction, valuation, causal inference, and decision are different tasks {#tbl-ai-prediction-judgment-causation}
 
 An AI system can predict hospital readmission accurately while leaving
 open which intervention would prevent it, whose welfare should be

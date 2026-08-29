@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Fail when an arrow in a reader-facing book SVG does not end on a diagram node.
+"""Audit connector attachment and arrowhead proportions in book SVGs.
 
 The book uses two arrow styles: SVG markers on paths and explicit triangle
 polygons following a line.  This check recognizes both forms, extracts the
 arrow tip, and measures it against rectangle, circle, polygon, and filled-path
-node boundaries.  Axis arrows in the Pareto plot are the only intentional
-free endpoints.
+node boundaries.  Marker-based arrows are also screened for unstable
+stroke-scaled markers, oversized heads, and gaps so short that the connector
+renders as an arrowhead without a visible shaft.  Axis arrows in the Pareto
+plot are the only intentional free endpoints.
 """
 
 from __future__ import annotations
@@ -23,6 +25,8 @@ CONFIG = ROOT / "_quarto-html.yml"
 NUMBER = re.compile(r"-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?")
 TOKEN = re.compile(r"[A-Za-z]|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?")
 BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
+DESKTOP_FIGURE_WIDTH = 820.0  # quarto-custom.scss: main.content max-width
+MIN_SUPPORTING_TEXT_CSS_PX = 10.5
 FREE_ENDPOINTS = {
     ("pareto.svg", 1120.0, 540.0),  # horizontal axis
     ("pareto.svg", 150.0, 70.0),  # vertical axis
@@ -138,6 +142,97 @@ def arrow_endpoint(element: ET.Element) -> tuple[float, float] | None:
     return points[-1] if points else None
 
 
+def arrow_startpoint(element: ET.Element) -> tuple[float, float] | None:
+    tag = local_name(element.tag)
+    if tag == "line":
+        return number(element.get("x1")), number(element.get("y1"))
+    if tag in {"polyline", "polygon"}:
+        points = points_attribute(element.get("points"))
+        return points[0] if points else None
+    points = path_points(element.get("d"))
+    return points[0] if points else None
+
+
+def marker_id(value: str | None) -> str | None:
+    match = re.fullmatch(r"url\(#([^)]+)\)", (value or "").strip())
+    return match.group(1) if match else None
+
+
+def marker_definitions(root: ET.Element) -> dict[str, ET.Element]:
+    return {
+        element.get("id", ""): element
+        for element in root.iter()
+        if local_name(element.tag) == "marker" and element.get("id")
+    }
+
+
+def connector_length(element: ET.Element) -> float:
+    tag = local_name(element.tag)
+    if tag == "line":
+        start = arrow_startpoint(element)
+        end = arrow_endpoint(element)
+        return math.dist(start, end) if start and end else 0.0
+    points = points_attribute(element.get("points")) if tag in {"polyline", "polygon"} else path_points(element.get("d"))
+    return sum(math.dist(start, end) for start, end in zip(points, points[1:]))
+
+
+def marker_length(marker: ET.Element, stroke_width: float) -> float:
+    width = number(marker.get("markerWidth"), 3.0)
+    if marker.get("markerUnits", "strokeWidth") != "userSpaceOnUse":
+        width *= stroke_width
+    return width
+
+
+def intrinsic_width(root: ET.Element) -> float:
+    values = [number(value) for value in NUMBER.findall(root.get("viewBox", ""))]
+    if len(values) == 4 and values[2] > 0:
+        return values[2]
+    return max(number(root.get("width"), DESKTOP_FIGURE_WIDTH), 1.0)
+
+
+def css_class_font_sizes(root: ET.Element) -> dict[str, float]:
+    styles = "\n".join(
+        element.text or ""
+        for element in root.iter()
+        if local_name(element.tag) == "style"
+    )
+    sizes: dict[str, float] = {}
+    for class_name, body in re.findall(r"\.([\w-]+)\s*\{([^}]*)\}", styles):
+        match = re.search(r"font-size\s*:\s*([\d.]+)px", body)
+        if match is None:
+            match = re.search(r"font\s*:[^;{}]*?([\d.]+)px", body)
+        if match:
+            sizes[class_name] = float(match.group(1))
+    return sizes
+
+
+def text_font_sizes(root: ET.Element) -> list[float]:
+    class_sizes = css_class_font_sizes(root)
+    sizes: list[float] = []
+    for element in root.iter():
+        if local_name(element.tag) != "text":
+            continue
+        candidates: list[float] = []
+        direct = re.search(r"[\d.]+", element.get("font-size", ""))
+        if direct:
+            candidates.append(float(direct.group(0)))
+        style = element.get("style", "")
+        styled = re.search(r"font-size\s*:\s*([\d.]+)px", style)
+        if styled:
+            candidates.append(float(styled.group(1)))
+        shorthand = re.search(r"(?:^|;)\s*font\s*:[^;]*?([\d.]+)px", style)
+        if shorthand:
+            candidates.append(float(shorthand.group(1)))
+        candidates.extend(
+            class_sizes[class_name]
+            for class_name in element.get("class", "").split()
+            if class_name in class_sizes
+        )
+        if candidates:
+            sizes.append(min(candidates))
+    return sizes
+
+
 def book_figure_names() -> set[str]:
     """Return every SVG referenced by the configured HTML book sources."""
     names: set[str] = set()
@@ -207,6 +302,7 @@ def explicit_arrow_lines(root: ET.Element) -> list[ET.Element]:
 def audit(path: Path, tolerance: float = 14.0) -> list[str]:
     root = ET.parse(path).getroot()
     shapes = node_shapes(root)
+    markers = marker_definitions(root)
     arrows = explicit_arrow_lines(root)
     arrows.extend(
         element
@@ -214,6 +310,16 @@ def audit(path: Path, tolerance: float = 14.0) -> list[str]:
         if element.get("marker-end") and "arrowSmall" not in element.get("marker-end", "")
     )
     issues: list[str] = []
+    font_sizes = text_font_sizes(root)
+    if font_sizes:
+        width = intrinsic_width(root)
+        display_scale = min(1.0, DESKTOP_FIGURE_WIDTH / width)
+        smallest_rendered = min(font_sizes) * display_scale
+        if smallest_rendered < MIN_SUPPORTING_TEXT_CSS_PX:
+            issues.append(
+                f"smallest text renders at about {smallest_rendered:.1f}px at the {DESKTOP_FIGURE_WIDTH:.0f}px "
+                f"book width (source {min(font_sizes):.1f}px on a {width:.0f}px canvas); enlarge or reflow it"
+            )
     seen: set[int] = set()
     for arrow in arrows:
         if id(arrow) in seen:
@@ -232,6 +338,32 @@ def audit(path: Path, tolerance: float = 14.0) -> list[str]:
                 f"arrow ends at ({endpoint[0]:.1f}, {endpoint[1]:.1f}), "
                 f"{distance:.1f}px from the nearest node"
             )
+        marker_name = marker_id(arrow.get("marker-end"))
+        marker = markers.get(marker_name or "")
+        if marker is None:
+            continue
+        stroke_width = max(number(arrow.get("stroke-width"), 1.0), 0.1)
+        units = marker.get("markerUnits", "strokeWidth")
+        if units != "userSpaceOnUse":
+            issues.append(
+                f"marker #{marker_name} uses {units} units and can grow with stroke width; "
+                "use markerUnits=userSpaceOnUse"
+            )
+        head_length = marker_length(marker, stroke_width)
+        # The visual specification targets a head about two to three stroke
+        # widths long.  Allow a small tolerance for marker-box whitespace, but
+        # reject the four-to-ten-times-stroke heads that dominate short links.
+        if head_length > 3.5 * stroke_width:
+            issues.append(
+                f"marker #{marker_name} is {head_length:.1f}px long for a {stroke_width:.1f}px stroke "
+                f"({head_length / stroke_width:.1f}x); reduce the arrowhead"
+            )
+        length = connector_length(arrow)
+        if length and length < 3.0 * head_length:
+            issues.append(
+                f"connector is {length:.1f}px long but marker #{marker_name} is {head_length:.1f}px; "
+                "leave at least two arrowhead lengths of visible shaft"
+            )
     return issues
 
 
@@ -246,9 +378,9 @@ def main() -> int:
             for issue in issues:
                 print(f"{name}: {issue}")
     if failures:
-        print(f"FAILED: {failures} disconnected arrow endpoint(s)")
+        print(f"FAILED: {failures} connector geometry issue(s)")
         return 1
-    print(f"PASS: checked arrow endpoints in {len(names)} reader-facing book figures")
+    print(f"PASS: checked connector attachment and arrowhead proportions in {len(names)} reader-facing book figures")
     return 0
 
 

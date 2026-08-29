@@ -3,10 +3,10 @@
   <desc id="desc">An internal model generates predictions. Perception and judgment integrate predictions with sensation while precision assigns their relative weight. Perception guides action plans and action. The environment produces new sensation, and prediction error updates the internal model.</desc>
   <defs>
     <style><![CDATA[
-      .heading{font:700 27px Arial,sans-serif;fill:#0b2c5f}
-      .label{font:700 18px Arial,sans-serif;fill:#0b2c5f}
-      .small{font:14px Arial,sans-serif;fill:#334}
-      .red{font:700 18px Arial,sans-serif;fill:#c62828}
+      .heading{font:700 30px Arial,sans-serif;fill:#0b2c5f}
+      .label{font:700 23px Arial,sans-serif;fill:#0b2c5f}
+      .small{font:21px Arial,sans-serif;fill:#334}
+      .red{font:700 23px Arial,sans-serif;fill:#c62828}
       .blue-node{fill:#f1f6fc;stroke:#2b6cb0;stroke-width:2.5}
       .green-node{fill:#f1faf4;stroke:#2e8b57;stroke-width:2.5}
       .purple-node{fill:#faf5ff;stroke:#6c3eb6;stroke-width:2.5}
@@ -35,57 +35,62 @@
   </text>
 
   <!-- Dedicated connector lanes keep arrows outside all text blocks. -->
-  <path d="M280 210 V270" class="blue-flow" marker-end="url(#blue-arrow)"/>
-  <path d="M460 330 H540" class="blue-flow" marker-end="url(#blue-arrow)"/>
-  <path d="M460 510 H500 V385 H540" class="orange-flow" marker-end="url(#orange-arrow)"/>
-  <path d="M1095 495 H940 V365 H900" class="purple-flow" marker-end="url(#purple-arrow)"/>
-  <path d="M720 270 V210" class="purple-flow" marker-end="url(#purple-arrow)"/>
-  <path d="M900 150 H1115" class="green-flow" marker-end="url(#green-arrow)"/>
-  <path d="M1240 145 H1285 V280 H1330" class="green-flow" marker-end="url(#green-arrow)"/>
-  <path d="M1450 390 V495 H1245" class="purple-flow" marker-end="url(#purple-arrow)"/>
-  <path d="M720 420 V470" class="red-flow" marker-end="url(#red-arrow)"/>
-  <path d="M720 570 V600 H65 V150 H100" class="red-flow" marker-end="url(#red-arrow)"/>
+  <path d="M280 210 V270" class="blue-flow" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <path d="M460 330 H540" class="blue-flow" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <path d="M460 510 H500 V385 H540" class="orange-flow" stroke-width="4" marker-end="url(#orange-arrow)"/>
+  <path d="M1095 495 H940 V365 H900" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
+  <path d="M720 270 V210" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
+  <path d="M900 150 H1115" class="green-flow" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <path d="M1240 145 H1285 V280 H1330" class="green-flow" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <path d="M1450 390 V495 H1245" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
+  <path d="M720 420 V470" class="red-flow" stroke-width="4" marker-end="url(#red-arrow)"/>
+  <path d="M720 570 V600 H65 V150 H100" class="red-flow" stroke-width="4" marker-end="url(#red-arrow)"/>
 
   <!-- Predictive system -->
   <rect x="100" y="90" width="360" height="120" rx="18" class="blue-node"/>
   <text x="280" y="128" class="label" text-anchor="middle">Internal model</text>
-  <text x="280" y="156" class="small" text-anchor="middle">
-    <tspan x="280" dy="0">beliefs, causal assumptions, desired outcomes,</tspan>
-    <tspan x="280" dy="19">and favored action plans</tspan>
+  <text x="280" y="151" class="small" text-anchor="middle">
+    <tspan x="280" dy="0">beliefs and causal assumptions</tspan>
+    <tspan x="280" dy="22">desired outcomes</tspan>
+    <tspan x="280" dy="22">favored action plans</tspan>
   </text>
 
   <rect x="100" y="270" width="360" height="120" rx="18" class="blue-node"/>
   <text x="280" y="308" class="label" text-anchor="middle">Predictions</text>
   <text x="280" y="336" class="small" text-anchor="middle">
-    <tspan x="280" dy="0">expected sensations and outcomes guide</tspan>
-    <tspan x="280" dy="19">sensory processing and interpretation</tspan>
+    <tspan x="280" dy="0">expected sensations and outcomes</tspan>
+    <tspan x="280" dy="20">guide processing and interpretation</tspan>
   </text>
 
   <rect x="100" y="450" width="360" height="120" rx="18" class="orange-node"/>
   <text x="280" y="488" class="label" text-anchor="middle">Precision / attention</text>
   <text x="280" y="516" class="small" text-anchor="middle">
     <tspan x="280" dy="0">assigns relative weight to predictions</tspan>
-    <tspan x="280" dy="19">and sensory evidence</tspan>
+    <tspan x="280" dy="20">and sensory evidence</tspan>
   </text>
 
   <rect x="540" y="270" width="360" height="150" rx="18" class="purple-node"/>
   <text x="720" y="316" class="label" text-anchor="middle">Perception and judgment</text>
-  <text x="720" y="346" class="small" text-anchor="middle">
-    <tspan x="720" dy="0">predictions and sensation are integrated</tspan>
-    <tspan x="720" dy="19">to infer the current situation</tspan>
+  <text x="720" y="344" class="small" text-anchor="middle">
+    <tspan x="720" dy="0">prediction and sensation combine</tspan>
+    <tspan x="720" dy="22">to infer the current situation</tspan>
+    <tspan x="720" dy="22">the result is a model,</tspan>
+    <tspan x="720" dy="22">not a direct copy</tspan>
   </text>
-  <text x="720" y="395" class="small" text-anchor="middle">the best current model, not a direct copy</text>
 
   <rect x="540" y="90" width="360" height="120" rx="18" class="green-node"/>
   <text x="720" y="128" class="label" text-anchor="middle">Action plan</text>
   <text x="720" y="156" class="small" text-anchor="middle">
     <tspan x="720" dy="0">acts to reach desired outcomes</tspan>
-    <tspan x="720" dy="19">or reduce uncertainty</tspan>
+    <tspan x="720" dy="20">or reduce uncertainty</tspan>
   </text>
 
   <rect x="540" y="470" width="360" height="100" rx="18" class="red-node"/>
   <text x="720" y="510" class="red" text-anchor="middle">Prediction error</text>
-  <text x="720" y="539" class="small" text-anchor="middle">mismatch between predicted and sensed input</text>
+  <text x="720" y="535" class="small" text-anchor="middle">
+    <tspan x="720">mismatch between predicted</tspan>
+    <tspan x="720" dy="22">and sensed input</tspan>
+  </text>
 
   <!-- World interface -->
   <rect x="1115" y="100" width="125" height="90" rx="14" class="green-node"/>
@@ -96,9 +101,10 @@
 
   <rect x="1330" y="210" width="240" height="180" rx="22" class="purple-node"/>
   <text x="1450" y="277" class="label" text-anchor="middle">Environment</text>
-  <text x="1450" y="307" class="small" text-anchor="middle">
-    <tspan x="1450" dy="0">external states generate</tspan>
-    <tspan x="1450" dy="19">sensory input and feedback</tspan>
+  <text x="1450" y="303" class="small" text-anchor="middle">
+    <tspan x="1450" dy="0">external states</tspan>
+    <tspan x="1450" dy="22">generate sensory input</tspan>
+    <tspan x="1450" dy="22">and feedback</tspan>
   </text>
 
   <text x="53" y="345" class="label" text-anchor="middle" transform="rotate(-90 53 345)">Model update</text>

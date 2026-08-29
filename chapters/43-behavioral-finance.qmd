@@ -171,6 +171,12 @@ But the notation must not create false precision. Before calling a price irratio
 
 Extrapolation, social transmission, leverage, liquidity, strategic resale, supply constraints, and limits to arbitrage can each strengthen the loop. None is necessary in every episode. A boom can begin with genuine innovation and later acquire a feedback component. Fundamentals and speculation are not mutually exclusive.
 
+### Strategic resale and synchronization risk
+
+A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers' beliefs and on exiting before the correction. This makes a bubble partly a problem of strategic interdependence.
+
+Skeptical traders face the mirror problem. Even when many privately judge the price fragile, each may be uncertain about when the others will act. Selling or shorting too early can be costly, and funding or career pressure can force an informed trader out before convergence. Abreu and Brunnermeier (2003) formalize how this **synchronization risk** can delay correction. Shared doubt is not the same as coordinated correction.
+
 ### One field episode: dot-com innovation and extreme expectations
 
 From the beginning of 1995 to its March 2000 peak, the NASDAQ Composite rose roughly 570%; by October 2002 it had fallen about 78% from that peak. Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
@@ -181,7 +187,7 @@ The internet was not imaginary. The mistake would be to infer that every firm ex
 
 Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, a risk-neutral benchmark without final redemption is $FV_t=kd$. Even with this transparent declining value, prices in many baseline markets rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
 
-The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. It does not establish the cause or magnitude of any field episode. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them; learning is representation-specific rather than universal immunity (Dufwenberg et al., 2005; Hussam et al., 2008).
+The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them; learning is representation-specific rather than universal immunity (Dufwenberg et al., 2005; Hussam et al., 2008).
 
 Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair's (2006) rule classified behavior only when a trader's highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications were:
 
@@ -197,6 +203,14 @@ Different strategies can sustain the same path. Passive trading can remain broad
 
 These are behaviors under one design and classification rule, not permanent investor types or population estimates. The evidence supports interaction among heterogeneous strategies; it does not license a personality label.
 
+::: {.callout-note .research-lens icon=false}
+## Research Lens: what laboratory markets can transport
+
+Laboratory markets identify mechanisms by changing conditions that field markets rarely hold constant. Bubble-like deviations have appeared with known, declining fundamentals and also with flat fundamentals; raising cash relative to asset value can enlarge deviations (Caginalp et al., 1998). Forecast data show that traders' expectations can lag turning points and help explain price paths (Haruvy et al., 2007; Holt et al., 2017).
+
+The design strength is control over fundamentals, liquidity, experience, and trading rules. The boundary is transport: participants, stakes, institutions, leverage, information, and asset supply differ from field markets. A laboratory result can rule out one proposed necessity or estimate the effect of a randomized design change. It does not by itself establish the cause, prevalence, or magnitude of a mechanism in a particular historical boom.
+:::
+
 ## A two-direction bubble dashboard
 
 Do not ask only “bubble or not?” Record a probability range and update it downward as willingly as upward.
@@ -210,6 +224,14 @@ Do not ask only “bubble or not?” Record a probability range and update it do
 : A two-direction bubble diagnostic {#tbl-bubble-dashboard}
 
 Write both the fundamental story that would justify the price and the feedback story that would make it fragile. For each, name a discriminating observation. Even a high bubble probability does not reveal timing. Robust responses—limiting leverage and position size, stress-testing funding, preserving liquidity, and precommitting review conditions—may dominate a confident directional bet.
+
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Bubble, crash, and systemic crisis are different claims
+
+A crash can occur without a prior bubble when fundamentals or discount rates change sharply. A price correction becomes a **systemic crisis** only when leverage, maturity mismatch, balance-sheet exposure, networks, or confidence propagate losses widely enough to impair financial intermediation or real economic activity (Brunnermeier & Oehmke, 2013).
+
+Policy should therefore target the mechanism rather than the label: disclosure targets information problems; underwriting standards, capital buffers, and leverage limits target fragility and loss propagation; consumer protection targets burden and informed choice. Each intervention carries false-positive costs from constraining a sustainable market and false-negative costs from leaving a dangerous mechanism unaddressed. Ask who receives the upside, who can exit, who carries the downside, and whether losses are absorbable or propagated through obligations to others.
+:::
 
 ## Investor behavior: the decision process matters
 
@@ -267,6 +289,18 @@ Barberis, N., & Thaler, R. (2003). A survey of behavioral finance. In G. M. Cons
 :::
 
 ::: {.reference}
+Abreu, D., & Brunnermeier, M. K. (2003). Bubbles and crashes. Econometrica, 71(1), 173–204.
+:::
+
+::: {.reference}
+Brunnermeier, M. K., & Oehmke, M. (2013). Bubbles, financial crises, and systemic risk. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 2B, pp. 1221–1288). Elsevier.
+:::
+
+::: {.reference}
+Caginalp, G., Porter, D. P., & Smith, V. L. (1998). Initial cash/asset ratio and asset prices: An experimental study. Proceedings of the National Academy of Sciences, 95(2), 756–761.
+:::
+
+::: {.reference}
 Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25(2), 383–417.
 :::
 
@@ -311,11 +345,19 @@ Greenwood, R., & Shleifer, A. (2014). Expectations of returns and expected retur
 :::
 
 ::: {.reference}
+Haruvy, E., Lahav, Y., & Noussair, C. N. (2007). Traders' expectations in asset markets: Experimental evidence. American Economic Review, 97(5), 1901–1920.
+:::
+
+::: {.reference}
 Haruvy, E., & Noussair, C. N. (2006). The effect of short selling on bubbles and crashes in experimental spot asset markets. Journal of Finance, 61(3), 1119–1157.
 :::
 
 ::: {.reference}
 Hussam, R. N., Porter, D., & Smith, V. L. (2008). Thar she blows: Can bubbles be rekindled with experienced subjects? American Economic Review, 98(3), 924–937.
+:::
+
+::: {.reference}
+Holt, C. A., Porzio, M., & Song, M. Y. (2017). Price bubbles, gender, and expectations in experimental asset markets. European Economic Review, 100, 72–94.
 :::
 
 ::: {.reference}

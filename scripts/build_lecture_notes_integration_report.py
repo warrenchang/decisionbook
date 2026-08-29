@@ -47,17 +47,17 @@ def final_destination(row: dict[str, str]) -> str:
         (("07/decision from experience",), "Chapter 18: Decisions from Experience"),
         (("06/intertemporal",), "Chapter 19: Intertemporal Decision-Making; bridge to Chapter 22"),
         (("06/mental accounting",), "Chapter 21: Mental Accounting"),
-        (("06/behavioral finance",), "Chapter 23: Markets, Mispricing, and Bubbles"),
-        (("06/asset bubbles",), "Chapter 23: Markets, Mispricing, and Bubbles"),
-        (("06/money and mind",), "Chapters 21 and 23: mental accounting, finance, and bubbles"),
+        (("06/behavioral finance",), "Chapter 27: Markets, Mispricing, and Bubbles"),
+        (("06/asset bubbles",), "Chapter 27: Markets, Mispricing, and Bubbles"),
+        (("06/money and mind",), "Chapters 21 and 27: mental accounting, finance, and bubbles"),
         (("subjective well-being",), "Chapter 22: Subjective Well-Being"),
-        (("happiness and behavioral finance",), "Chapters 22–23"),
-        (("05/strategic interdependence",), "Chapters 24–25: strategic interdependence and behavioral game theory"),
-        (("05/cooperation",), "Chapter 26: cooperation, repeated interaction, and social preferences"),
-        (("05/evolutionary",), "Chapter 25: advanced evolutionary-game research lens"),
-        (("social preferences and norms",), "Chapters 26–28: social preferences, norms, social learning, and culture"),
-        (("additional topics / cooperation",), "Chapter 26: cooperation and social preferences"),
-        (("additional topics / evolutionary",), "Chapter 25: advanced evolutionary-game research lens"),
+        (("happiness and behavioral finance",), "Chapters 22 and 27"),
+        (("05/strategic interdependence",), "Chapters 23–24: strategic interdependence and behavioral game theory"),
+        (("05/cooperation",), "Chapter 25: cooperation, repeated interaction, and social preferences"),
+        (("05/evolutionary",), "Chapter 24: advanced evolutionary-game research lens"),
+        (("social preferences and norms",), "Chapters 25–28: social preferences, norms, social learning, markets, and culture"),
+        (("additional topics / cooperation",), "Chapter 25: cooperation and social preferences"),
+        (("additional topics / evolutionary",), "Chapter 24: advanced evolutionary-game research lens"),
         (("additional topics / negotiation",), "Chapters 35–38: Negotiating Joint Decisions"),
         (("additional topics / risk",), "Chapter 16: risky choice and the newsvendor application"),
         (("07/newsvendor",), "Chapter 16: newsvendor application"),
@@ -162,7 +162,12 @@ def main() -> int:
 
     fields = list(rows[0]) if rows else []
     with OUTPUT_CSV.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields, quoting=csv.QUOTE_ALL)
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=fields,
+            quoting=csv.QUOTE_ALL,
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
