@@ -10,6 +10,7 @@ conceptual panels are explicitly labelled as schematics.
 from __future__ import annotations
 
 import argparse
+import base64
 import math
 from pathlib import Path
 
@@ -93,17 +94,20 @@ def euro_efficiency() -> str:
         "The €20 note: three different efficiency claims",
         "Finding a reward is not the same as proving that prices are always right.",
     )]
-    # A deliberately non-banknote-like teaching illustration.
+    photo_path = FIGURES / "finance-euro-note-found.png"
+    if not photo_path.is_file():
+        raise FileNotFoundError(f"Missing supplied teaching photograph: {photo_path}")
+    photo_data = base64.b64encode(photo_path.read_bytes()).decode("ascii")
     body += [
-        rect(55, 145, 365, 455, fill="#ece9f8", stroke="#665b9a", sw=3, rx=26,
+        rect(55, 145, 365, 455, fill="#f7fafc", stroke="#665b9a", sw=3, rx=26,
              extra='filter="url(#shadow)"'),
-        '<circle cx="150" cy="280" r="68" fill="#d9d3f1" stroke="#665b9a" stroke-width="3"/>',
-        '<circle cx="325" cy="430" r="54" fill="none" stroke="#8f83bd" stroke-width="12" opacity="0.55"/>',
-        '<path d="M85 500 L385 210 M90 545 L390 255" stroke="#b9afd9" stroke-width="14" opacity="0.55"/>',
-        txt(238, 355, "€20", 104, weight=700, fill="#544981", family="Georgia, serif"),
-        txt(238, 398, "A REWARD THAT MAY REMAIN", 17, weight=700, fill="#665b9a"),
-        rect(80, 520, 315, 48, fill=PALE_RED, stroke=RED, sw=2, rx=8),
-        txt(237, 551, "TEACHING ILLUSTRATION — NOT CURRENCY", 14, weight=700, fill=RED),
+        '<defs><clipPath id="euroPhotoClip"><rect x="78" y="170" width="319" height="240" rx="16"/></clipPath></defs>',
+        f'<image x="78" y="170" width="319" height="240" preserveAspectRatio="xMidYMid slice" clip-path="url(#euroPhotoClip)" href="data:image/png;base64,{photo_data}"/>',
+        '<rect x="78" y="170" width="319" height="240" rx="16" fill="none" stroke="#c8d7e2" stroke-width="2"/>',
+        txt(238, 448, "A €20 NOTE STILL ON THE GROUND", 17, weight=700, fill="#544981"),
+        multiline(238, 480, ["Finding it required someone to notice,", "stop, and pick it up."], size=16, leading=24, fill=MUTED),
+        rect(80, 540, 315, 42, fill=PALE_RED, stroke=RED, sw=2, rx=8),
+        txt(237, 567, "SEARCH AND ATTENTION ARE COSTLY", 14, weight=700, fill=RED),
         '<path d="M420 372 L478 372" fill="none" stroke="%s" stroke-width="5"/>' % BLUE,
         '<path d="M478 212 L478 552" fill="none" stroke="%s" stroke-width="5"/>' % BLUE,
     ]
@@ -134,7 +138,7 @@ def euro_efficiency() -> str:
     ]
     return document(
         "The €20 note and three meanings of market efficiency",
-        "A stylized teaching note points to three separate claims: rapid information incorporation, no free lunch after risk and costs, and prices equal fundamental value. The first two claims do not imply the third.",
+        "A photograph of a twenty-euro note left on the ground points to three separate claims: rapid information incorporation, no free lunch after risk and costs, and prices equal fundamental value. The first two claims do not imply the third.",
         "\n".join(body), height=740,
     )
 
@@ -281,9 +285,11 @@ def event_study() -> str:
         f'<line x1="{x0+300}" y1="{y0}" x2="{x0+300}" y2="{y0+h}" stroke="{ORANGE}" stroke-width="3" stroke-dasharray="8 7"/>',
         txt(x0 + 300, y0 + h + 28, "0  announcement", 15, weight=700, fill=ORANGE),
         txt(x0 + 20, y0 + h + 28, "before", 14, fill=MUTED),
-        txt(x0 + w - 10, y0 + h + 28, "after", 14, anchor="end", fill=MUTED),
-        f'<path d="M{x0} {y0+h/2} L{x0+285} {y0+h/2-4} C{x0+320} {y0+h/2-65} {x0+390} {y0+h/2-82} {x0+450} {y0+h/2-88} C{x0+560} {y0+h/2-105} {x0+660} {y0+h/2-135} {x0+w} {y0+h/2-150}" fill="none" stroke="{GREEN}" stroke-width="6"/>',
-        f'<path d="M{x0} {y0+h/2} L{x0+285} {y0+h/2+4} C{x0+320} {y0+h/2+65} {x0+390} {y0+h/2+82} {x0+450} {y0+h/2+88} C{x0+560} {y0+h/2+105} {x0+660} {y0+h/2+135} {x0+w} {y0+h/2+150}" fill="none" stroke="{RED}" stroke-width="6"/>',
+        txt(x0 + 530, y0 + h + 28, "after", 14, fill=MUTED),
+        f'<path d="M{x0} {y0+h/2} L{x0+300} {y0+h/2}" fill="none" stroke="{NAVY}" stroke-width="6" stroke-linecap="round"/>',
+        f'<path d="M{x0+300} {y0+h/2} L{x0+320} {y0+h/2-62} C{x0+350} {y0+h/2-78} {x0+405} {y0+h/2-84} {x0+450} {y0+h/2-88} C{x0+560} {y0+h/2-105} {x0+660} {y0+h/2-135} {x0+w} {y0+h/2-150}" fill="none" stroke="{GREEN}" stroke-width="6" stroke-linecap="round"/>',
+        f'<path d="M{x0+300} {y0+h/2} L{x0+320} {y0+h/2+62} C{x0+350} {y0+h/2+78} {x0+405} {y0+h/2+84} {x0+450} {y0+h/2+88} C{x0+560} {y0+h/2+105} {x0+660} {y0+h/2+135} {x0+w} {y0+h/2+150}" fill="none" stroke="{RED}" stroke-width="6" stroke-linecap="round"/>',
+        f'<circle cx="{x0+300}" cy="{y0+h/2}" r="7" fill="{ORANGE}"/>',
         txt(x0 + w - 8, y0 + h/2 - 160, "positive surprise", 16, anchor="end", weight=700, fill=GREEN),
         txt(x0 + w - 8, y0 + h/2 + 176, "negative surprise", 16, anchor="end", weight=700, fill=RED),
         rect(985, 315, 160, 370, fill=PALE_ORANGE, stroke=ORANGE, sw=2, rx=18),

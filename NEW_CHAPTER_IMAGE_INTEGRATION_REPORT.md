@@ -20,7 +20,7 @@ Copyrighted photographs, screenshots, journal artwork, maps, cartoons, video fra
 
 | Figure asset | Chapter and placement | Treatment | Evidence boundary |
 | --- | --- | --- | --- |
-| `finance-euro-efficiency` | Behavioral Finance, “The €20 note and three meanings of efficiency” | Original, deliberately non-currency teaching illustration | Separates rapid incorporation, no-free-lunch, and fundamental-value claims; does not reproduce a €20 banknote or slide photograph. |
+| `finance-euro-efficiency` | Behavioral Finance, “The €20 note and three meanings of efficiency” | Original composite using the photograph supplied for this book | Shows an actual €20 note left on the ground while separating rapid incorporation, no-free-lunch, and fundamental-value claims. |
 | `finance-event-study-drift` | Behavioral Finance, event studies | Original method schematic derived from the cited event-study and earnings-drift literature | Curves explain the design logic and are explicitly not digitized effect-size estimates. |
 | `experience-rare-event-sampling` | Decisions from Experience, small samples | Original mathematical visualization of $(1-p)^n$ | Assumes independent sampling; the caption names selection, dependence, censoring, and memory as departures. |
 | `mental-accounting-evidence-redraw` | Mental Accounting, disposition effect and myopic loss aversion | Original redraw of reported values from Odean (1998) and Benartzi and Thaler (1999) | Displays the 3.41-percentage-point comparison and 40%/90% allocations without copying either published figure; context and alternative mechanisms remain visible. |
