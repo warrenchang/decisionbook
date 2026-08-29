@@ -11,6 +11,8 @@ from __future__ import annotations
 import shutil
 from pathlib import Path
 
+from normalize_epub_toc import normalize_epub
+
 
 ROOT = Path(__file__).resolve().parents[1]
 FILENAME = "Decision-Persuasion-and-Negotiation.epub"
@@ -23,6 +25,8 @@ def main() -> int:
         print("No staged EPUB found; HTML release left unchanged.")
         return 0
 
+    parts, chapters = normalize_epub(SOURCE)
+    print(f"Normalized staged EPUB navigation: {parts} Parts, {chapters} numbered chapters")
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(SOURCE, TARGET)
     print(f"Copied staged EPUB to {TARGET}")

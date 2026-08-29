@@ -22,6 +22,7 @@ EPUB_NS = "http://www.idpf.org/2007/ops"
 OPF = "http://www.idpf.org/2007/opf"
 DC = "http://purl.org/dc/elements/1.1/"
 CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
+NCX = "http://www.daisy.org/z3986/2005/ncx/"
 
 EXPECTED_PARTS = [
     "Part I. The Decision-Making Process",
@@ -34,6 +35,19 @@ EXPECTED_PARTS = [
     "Part VIII. Communication and Connection",
     "Part IX. Negotiation",
     "Part X. Behavior and Decision Design",
+]
+
+EXPECTED_PART_CHAPTERS = [
+    list(range(1, 6)),
+    list(range(6, 9)),
+    list(range(9, 19)),
+    list(range(19, 25)),
+    list(range(25, 29)),
+    list(range(29, 35)),
+    list(range(35, 39)),
+    list(range(39, 41)),
+    list(range(41, 46)),
+    list(range(46, 49)),
 ]
 
 REQUIRED_CONTENT = [
@@ -59,6 +73,10 @@ REQUIRED_CONTENT = [
     "Underpowered Studies",
     "Data Fabrication",
     "Registered Reports",
+    "Follow the Decision Upstream—and Outward",
+    "pause without reset",
+    "Scheduled cue occasions / days",
+    "Index of Concepts",
 ]
 
 
@@ -127,7 +145,6 @@ def main() -> int:
         check("One navigation document is declared", len(nav_items) == 1, str(len(nav_items)))
         nav_path = posixpath.normpath(posixpath.join(opf_dir, nav_items[0].get("href", "")))
         nav_bytes = archive.read(nav_path)
-        nav_text = nav_bytes.decode("utf-8")
         nav_root = ET.fromstring(nav_bytes)
         toc = next(
             (
@@ -140,40 +157,134 @@ def main() -> int:
         check("Navigation contains a table of contents", toc is not None)
         toc_list = toc.find(f"{{{XHTML}}}ol") if toc is not None else None
         top_items = toc_list.findall(f"{{{XHTML}}}li") if toc_list is not None else []
-        check("Navigation has 65 top-level book items", len(top_items) == 65, str(len(top_items)))
+        check("Navigation has 18 compact top-level items", len(top_items) == 18, str(len(top_items)))
 
         labels: list[str] = []
+        all_labels: list[str] = []
         missing_targets: list[str] = []
-        for item in top_items:
+        all_items = toc.findall(f".//{{{XHTML}}}li") if toc is not None else []
+        for item in all_items:
             anchor = item.find(f"{{{XHTML}}}a")
             if anchor is None:
                 continue
-            labels.append(normalized_text(anchor))
+            all_labels.append(normalized_text(anchor))
             href = anchor.get("href", "").split("#", 1)[0]
             target = posixpath.normpath(posixpath.join(posixpath.dirname(nav_path), href))
             if href and target not in names:
                 missing_targets.append(target)
-        check("Every top-level navigation target exists", not missing_targets, ", ".join(missing_targets[:5]))
+        for item in top_items:
+            anchor = item.find(f"{{{XHTML}}}a")
+            if anchor is not None:
+                labels.append(normalized_text(anchor))
+        check("Every navigation target exists", not missing_targets, ", ".join(missing_targets[:5]))
 
         positions = [labels.index(part) if part in labels else -1 for part in EXPECTED_PARTS]
         check("All ten Part titles appear in order", all(position >= 0 for position in positions) and positions == sorted(positions))
 
         chapter_numbers = [
-            int(value)
-            for value in re.findall(r'<span class="header-section-number">(\d+)</span>', nav_text)
+            int(match.group(1))
+            for label in all_labels
+            if (match := re.match(r"^(\d+)\s+", label))
         ]
         check("Chapters are numbered 1 through 48", chapter_numbers == list(range(1, 49)), str(chapter_numbers))
+
+        hierarchy_errors: list[str] = []
+        for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):
+            part_item = next(
+                (
+                    item
+                    for item in top_items
+                    if (anchor := item.find(f"{{{XHTML}}}a")) is not None
+                    and normalized_text(anchor) == part_title
+                ),
+                None,
+            )
+            nested = part_item.find(f"{{{XHTML}}}ol") if part_item is not None else None
+            chapter_items = nested.findall(f"{{{XHTML}}}li") if nested is not None else []
+            actual_numbers: list[int] = []
+            for chapter_item in chapter_items:
+                anchor = chapter_item.find(f"{{{XHTML}}}a")
+                match = re.match(r"^(\d+)\s+", normalized_text(anchor)) if anchor is not None else None
+                if match:
+                    actual_numbers.append(int(match.group(1)))
+                if chapter_item.find(f"{{{XHTML}}}ol") is not None:
+                    hierarchy_errors.append(f"{part_title} contains section-level navigation")
+            if actual_numbers != expected_numbers:
+                hierarchy_errors.append(f"{part_title}: expected {expected_numbers}, found {actual_numbers}")
+        check(
+            "Every chapter is nested under its Part with no section titles",
+            not hierarchy_errors,
+            "; ".join(hierarchy_errors[:5]),
+        )
+
+        nonpart_nested: list[str] = []
+        for item in top_items:
+            anchor = item.find(f"{{{XHTML}}}a")
+            label = normalized_text(anchor)
+            if label not in EXPECTED_PARTS and item.find(f"{{{XHTML}}}ol") is not None:
+                nonpart_nested.append(label)
+        check(
+            "Preface and back matter have no section-level navigation",
+            not nonpart_nested,
+            ", ".join(nonpart_nested),
+        )
+        check("Navigation contains no section titles", "Learning goals" not in all_labels and "Core Idea" not in all_labels)
+
         check(
             "Appendices A, B, C, and D are present",
             all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABCD"),
         )
+        appendix_d_position = next((i for i, label in enumerate(labels) if label.startswith("Appendix D")), -1)
+        references_position = labels.index("References") if "References" in labels else -1
+        index_position = labels.index("Index of Concepts") if "Index of Concepts" in labels else -1
+        about_position = labels.index("About This Book") if "About This Book" in labels else -1
+        check(
+            "Appendices precede References, Index, and About",
+            appendix_d_position >= 0
+            and references_position > appendix_d_position
+            and index_position > references_position
+            and about_position > index_position,
+            f"Appendix D={appendix_d_position}, References={references_position}, Index={index_position}, About={about_position}",
+        )
+
+        ncx_items = [item for item in manifest_items if item.get("media-type") == "application/x-dtbncx+xml"]
+        check("One NCX navigation document is declared", len(ncx_items) == 1, str(len(ncx_items)))
+        if len(ncx_items) == 1:
+            ncx_path = posixpath.normpath(posixpath.join(opf_dir, ncx_items[0].get("href", "")))
+            ncx_root = ET.fromstring(archive.read(ncx_path))
+            ncx_depth = ncx_root.find(f"{{{NCX}}}head/{{{NCX}}}meta[@name='dtb:depth']")
+            check("NCX declares a two-level hierarchy", ncx_depth is not None and ncx_depth.get("content") == "2")
+            nav_map = ncx_root.find(f"{{{NCX}}}navMap")
+            ncx_top = nav_map.findall(f"{{{NCX}}}navPoint") if nav_map is not None else []
+            ncx_hierarchy_errors: list[str] = []
+            for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):
+                part_point = next(
+                    (
+                        point
+                        for point in ncx_top
+                        if normalized_text(point.find(f"{{{NCX}}}navLabel/{{{NCX}}}text")) == part_title
+                    ),
+                    None,
+                )
+                nested_points = part_point.findall(f"{{{NCX}}}navPoint") if part_point is not None else []
+                actual_numbers: list[int] = []
+                for point in nested_points:
+                    label = normalized_text(point.find(f"{{{NCX}}}navLabel/{{{NCX}}}text"))
+                    match = re.match(r"^(\d+)\s+", label)
+                    if match:
+                        actual_numbers.append(int(match.group(1)))
+                    if point.find(f"{{{NCX}}}navPoint") is not None:
+                        ncx_hierarchy_errors.append(f"{part_title} contains section-level NCX entries")
+                if actual_numbers != expected_numbers:
+                    ncx_hierarchy_errors.append(f"{part_title}: expected {expected_numbers}, found {actual_numbers}")
+            check("NCX mirrors the compact Part-to-Chapter hierarchy", not ncx_hierarchy_errors, "; ".join(ncx_hierarchy_errors[:5]))
 
         publication_date = package.findtext(f".//{{{DC}}}date", default="")
         check("Compilation date is current", publication_date == date.today().isoformat(), publication_date)
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 65 source documents are packaged", len(chapter_files) == 65, str(len(chapter_files)))
+        check("All 66 source documents are packaged", len(chapter_files) == 66, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         searchable = "\n".join(

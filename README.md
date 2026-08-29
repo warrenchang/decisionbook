@@ -2,7 +2,7 @@
 
 This is the Quarto source for Huanren Warren Zhang's textbook, *Decision, Persuasion, and Negotiation: How Minds Choose, Influence, Connect, and Bargain*.
 
-The 48 chapters follow a cumulative ten-part journey: the decision-making process; attention, prediction, and expectation; heuristics, biases, and probability judgment; risk, experience, and time; money, finance, and well-being; strategic and social decisions; influence and persuasion; communication and connection; negotiation; and habits and decision design. Four appendices provide portable course tools, an example index, a practical guide to running experimental studies, and a guide to replication and research integrity.
+The 48 chapters follow a cumulative ten-part journey: the decision-making process; attention, prediction, and expectation; heuristics, biases, and probability judgment; risk, experience, and time; money, finance, and well-being; strategic and social decisions; influence and persuasion; communication and connection; negotiation; and habits and decision design. Four appendices provide portable course tools, an example index, a practical guide to running experimental studies, and a guide to replication and research integrity. A curated concept index identifies each key concept's main discussion and selected later applications.
 
 ## Build
 
@@ -18,7 +18,7 @@ Build the EPUB with:
 quarto render --profile epub
 ```
 
-Both release artifacts end in `docs/`; the EPUB is `docs/Decision-Persuasion-and-Negotiation.epub`. The EPUB profile builds in the ignored `_epub/` staging directory and a post-render hook copies the finished book beside the HTML release. This prevents either profile from cleaning the other format. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so Part titles and numbered chapters remain in the table of contents.
+Both release artifacts end in `docs/`; the EPUB is `docs/Decision-Persuasion-and-Negotiation.epub`. The EPUB profile builds in the ignored `_epub/` staging directory and a post-render hook normalizes its navigation and copies the finished book beside the HTML release. This prevents either profile from cleaning the other format. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so numbered chapters are nested beneath Part titles while section headings remain outside the table of contents.
 
 ## Editorial records
 

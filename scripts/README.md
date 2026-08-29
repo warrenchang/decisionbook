@@ -13,8 +13,9 @@ quarto render --profile epub
 ```
 
 The profiles use separate output directories. `sync_epub_release.py` is called
-after either render and copies the staged EPUB into `docs/`, so running the two
-commands in either order preserves both release formats.
+after either render, nests numbered chapters under their Part titles in the
+staged EPUB navigation, and copies the EPUB into `docs/`. Running the two
+commands in either order therefore preserves both release formats.
 
 Then run the canonical source-and-output audit:
 

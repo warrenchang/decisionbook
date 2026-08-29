@@ -15,13 +15,20 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Every spine reference resolves | **PASS** |
 | One navigation document is declared | **PASS** |
 | Navigation contains a table of contents | **PASS** |
-| Navigation has 65 top-level book items | **PASS** |
-| Every top-level navigation target exists | **PASS** |
+| Navigation has 18 compact top-level items | **PASS** |
+| Every navigation target exists | **PASS** |
 | All ten Part titles appear in order | **PASS** |
 | Chapters are numbered 1 through 48 | **PASS** |
+| Every chapter is nested under its Part with no section titles | **PASS** |
+| Preface and back matter have no section-level navigation | **PASS** |
+| Navigation contains no section titles | **PASS** |
 | Appendices A, B, C, and D are present | **PASS** |
+| Appendices precede References, Index, and About | **PASS** |
+| One NCX navigation document is declared | **PASS** |
+| NCX declares a two-level hierarchy | **PASS** |
+| NCX mirrors the compact Part-to-Chapter hierarchy | **PASS** |
 | Compilation date is current | **PASS** |
-| All 65 source documents are packaged | **PASS** |
+| All 66 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |
@@ -45,6 +52,10 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Required content: Underpowered Studies | **PASS** |
 | Required content: Data Fabrication | **PASS** |
 | Required content: Registered Reports | **PASS** |
+| Required content: Follow the Decision Upstream—and Outward | **PASS** |
+| Required content: pause without reset | **PASS** |
+| Required content: Scheduled cue occasions / days | **PASS** |
+| Required content: Index of Concepts | **PASS** |
 | Removed reader text: Start Here | **PASS** |
 | Removed reader text: Start reading | **PASS** |
 | Removed reader text: Browse references | **PASS** |
