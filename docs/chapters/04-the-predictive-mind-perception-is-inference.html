@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Preface: A Decision Is Already in the Making</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -520,10 +520,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#prediction-error-and-precision" id="toc-prediction-error-and-precision" class="nav-link" data-scroll-target="#prediction-error-and-precision">Prediction, error, and precision</a>
   <ul class="collapse">
-  <li><a href="#ai-can-predict-without-deciding" id="toc-ai-can-predict-without-deciding" class="nav-link" data-scroll-target="#ai-can-predict-without-deciding">AI can predict without deciding</a></li>
+  <li><a href="#ai-can-improve-prediction-without-completing-the-decision" id="toc-ai-can-improve-prediction-without-completing-the-decision" class="nav-link" data-scroll-target="#ai-can-improve-prediction-without-completing-the-decision">AI can improve prediction without completing the decision</a></li>
+  <li><a href="#predictions-can-protect-their-own-mistakes" id="toc-predictions-can-protect-their-own-mistakes" class="nav-link" data-scroll-target="#predictions-can-protect-their-own-mistakes">Predictions can protect their own mistakes</a></li>
+  <li><a href="#more-information-is-not-automatic-correction" id="toc-more-information-is-not-automatic-correction" class="nav-link" data-scroll-target="#more-information-is-not-automatic-correction">More information is not automatic correction</a></li>
   </ul></li>
-  <li><a href="#when-inner-models-helpand-trap" id="toc-when-inner-models-helpand-trap" class="nav-link" data-scroll-target="#when-inner-models-helpand-trap">When inner models help—and trap</a></li>
+  <li><a href="#when-inner-models-helpand-when-they-stop-learning" id="toc-when-inner-models-helpand-when-they-stop-learning" class="nav-link" data-scroll-target="#when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</a></li>
   <li><a href="#calibrationnot-less-predictionis-the-goal" id="toc-calibrationnot-less-predictionis-the-goal" class="nav-link" data-scroll-target="#calibrationnot-less-predictionis-the-goal">Calibration—not less prediction—is the goal</a></li>
+  <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/04-the-predictive-mind-perception-is-inference.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/04-the-predictive-mind-perception-is-inference.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -683,80 +688,101 @@ Figure&nbsp;4.3: A predictive-processing teaching synthesis. An internal generat
 <p>Large-scale brain networks such as the default-mode and frontoparietal control networks should not be mapped literally onto System 1 and System 2. Network activity is distributed, task-dependent, and reused across functions. A correlation between a network and a task does not identify a one-to-one mental system.</p>
 </div>
 </div>
-<section id="ai-can-predict-without-deciding" class="level3">
-<h3 data-anchor-id="ai-can-predict-without-deciding">AI can predict without deciding</h3>
-<p>Improved machine prediction can change a decision without supplying all parts of it. Keep four tasks separate (Agrawal et al., 2019). Agrawal and colleagues call the second task <em>judgment</em>; in the terminology used throughout this book, it is <strong>valuation</strong>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<section id="ai-can-improve-prediction-without-completing-the-decision" class="level3">
+<h3 data-anchor-id="ai-can-improve-prediction-without-completing-the-decision">AI can improve prediction without completing the decision</h3>
+<p>AI systems are often most useful when they reduce uncertainty about what will happen next. Better prediction can materially improve a choice, but prediction is only one input into that choice. It does not determine which consequences matter, which intervention would change them, or who is authorized to impose and answer for the action. Therefore, building on Agrawal et al.&nbsp;(2019), keep four tasks separate.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div id="tbl-ai-prediction-judgment-causation" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-prediction-judgment-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1: Prediction, valuation, causal inference, and decision are different tasks
+Table&nbsp;4.1: Prediction is one task inside accountable decision-making
 </figcaption>
 <div aria-describedby="tbl-ai-prediction-judgment-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Task</th>
-<th>Question</th>
-<th>What an accurate model still does not supply</th>
+<th>What must be supplied</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Prediction</td>
-<td>Which state or outcome is likely?</td>
-<td>The value of each consequence</td>
+<td><strong>Prediction</strong></td>
+<td>Estimate which state or outcome is likely, with what uncertainty. An AI model may supply this estimate, but its accuracy, calibration, and transport to the present setting still require evidence.</td>
 </tr>
 <tr class="even">
-<td>Valuation</td>
-<td>What would each action mean, cost, or achieve in each state?</td>
-<td>The causal effect of changing the action</td>
+<td><strong>Valuation</strong></td>
+<td>Decide which consequences matter, whose welfare counts, and how benefits, costs, fairness, and error should be traded off. AI can help display these consequences; a prediction does not make the value choice legitimate.</td>
 </tr>
 <tr class="odd">
-<td>Causal inference</td>
-<td>What would change under an intervention?</td>
-<td>The objective, constraints, or acceptable trade-offs</td>
+<td><strong>Intervention design</strong></td>
+<td>Identify which feasible action could change the outcome. This requires causal assumptions, options, constraints, and an exception process. Predictive association alone does not establish an intervention effect.</td>
 </tr>
 <tr class="even">
-<td>Decision</td>
-<td>Which feasible action should be taken now?</td>
-<td>Authority, accountability, and permission to impose the choice</td>
+<td><strong>Decision and responsibility</strong></td>
+<td>Choose what should be implemented, under whose authority, with what appeal and review. The decision owner remains answerable for the objective, the action, and its consequences.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>An AI system can predict hospital readmission accurately while leaving open which intervention would prevent it, whose welfare should be optimized, and whether a costly false positive is acceptable. Human oversight is not completed by adding a final click. Someone must own the objective, causal assumptions, stakeholder costs, exception process, and right to revise the decision.</p>
-<p>This does not mean the brain is always accurate. A predictive system can become trapped if its priors are too strong, if it samples evidence selectively, or if it acts in ways that prevent disconfirmation.</p>
-<p>Consider social anxiety. A person expects rejection, attends to ambiguous signs of disapproval, interprets neutral expressions negatively, avoids interaction, and therefore loses opportunities to learn that others might respond warmly. The model predicts rejection; attention finds threat; action prevents correction. The prediction becomes self-protecting.</p>
-<p>Consider organizational strategy. A leadership team believes customers do not want a new product. They do little market testing, underinvest in prototypes, and interpret weak early signals as confirmation. Their action produces the world they expected. Again, prediction guides sampling and action.</p>
-<p>Consider medical diagnosis. A physician with a strong early hypothesis may attend to confirming symptoms and underweight disconfirming evidence. Expertise helps when the hypothesis is right, but premature closure can be dangerous. Diagnostic reasoning therefore requires deliberate checks against alternative explanations (Croskerry, 2003).</p>
-<p>Predictive processing helps explain why “just give people more information” is often insufficient. New information changes judgment only if it is attended to, treated as reliable, and integrated into the person’s model. If the model dismisses the information as irrelevant, biased, threatening, or noisy, the information may not update belief.</p>
-<p>This is why decision science must study internal models, not just external data.</p>
+<p>Suppose an AI system predicts that a patient has a high probability of hospital readmission. That estimate does not determine whether the hospital should delay discharge, arrange a home visit, call the patient, or do nothing. It does not say which intervention would work, how to weigh a missed readmission against an unnecessary intervention, or how the patient’s circumstances and preferences should count. Those are questions of causal reasoning, valuation, and decision.</p>
+<p>AI can assist with all four tasks, and future systems may do more. But a predictive output does not create legitimate objectives, authority, or accountability. Human oversight is therefore not a final click after the model has already determined everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, exceptions and appeals, monitoring, and right to revise the decision.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Prediction is not responsibility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A prediction may be automated. The prediction itself cannot decide whose welfare matters, authorize an intervention, or accept responsibility for the result.</p>
+</div>
+</div>
+</section>
+<section id="predictions-can-protect-their-own-mistakes" class="level3">
+<h3 data-anchor-id="predictions-can-protect-their-own-mistakes">Predictions can protect their own mistakes</h3>
+<p>It would be a mistake to contrast machine error with an always-accurate human mind. Human predictive systems can also become trapped when a prior is too strong, evidence is sampled selectively, or action prevents disconfirmation.</p>
+<ul>
+<li><strong>Social anxiety:</strong> expecting rejection directs attention toward ambiguous signs of disapproval. Avoiding interaction then removes opportunities to discover that other people might respond warmly.</li>
+<li><strong>Organizational strategy:</strong> believing that customers do not want a new product can reduce market testing and prototype investment. Weak evidence produced by that limited search is then read as confirmation.</li>
+<li><strong>Medical diagnosis:</strong> an early hypothesis can direct attention toward confirming symptoms and away from alternatives. Expertise helps when the pattern is valid, but premature closure makes a deliberate diagnostic check necessary (Croskerry, 2003).</li>
+</ul>
+<p>The three examples share one loop:</p>
+<p><strong>Prior model → selective attention → interpretation → protective action → restricted feedback → apparent confirmation</strong></p>
+<p>The prediction does more than describe a possible future. It changes what evidence is collected and can help produce the future that later appears to confirm it. Chapter 6 examines such self-fulfilling and self-defeating expectations directly.</p>
+</section>
+<section id="more-information-is-not-automatic-correction" class="level3">
+<h3 data-anchor-id="more-information-is-not-automatic-correction">More information is not automatic correction</h3>
+<p>“Give people more information” is therefore incomplete advice. New information changes a belief only when it enters attention, is treated as sufficiently reliable, and can be integrated into the current model. If it is classified as irrelevant, biased, threatening, or noisy, the belief may remain unchanged.</p>
+<p>The practical question is not simply whether evidence was available. Ask what the person expected, what signal received weight, what alternative explanation was considered, and what action could expose the model to a fair test. Decision science must study internal models because external data influence choice through them.</p>
 </section>
 </section>
-<section id="when-inner-models-helpand-trap" class="level2">
-<h2 data-anchor-id="when-inner-models-helpand-trap">When inner models help—and trap</h2>
-<p>Inner models are essential. Without them, the world would be chaotic.</p>
-<p>Imagine trying to read without prior knowledge of letters, words, grammar, and context. Imagine trying to understand a meeting without assumptions about roles, goals, norms, and social meaning. Imagine trying to cross a street without expectations about cars, traffic signals, speed, and human behavior. Inner models allow perception and action to be fast, meaningful, and adaptive.</p>
-<p>They also make expertise possible. A radiologist sees patterns in medical images that a novice cannot. A musician hears structure in sound that a beginner misses. A negotiator hears interests behind positions. A teacher sees confusion in a student’s expression. A firefighter notices that a fire behaves strangely. Expertise is partly the development of better models for a domain.</p>
-<p>But inner models can trap us when they become too rigid, too narrow, or too self-protective.</p>
-<p>One trap is seeing what we expect. If a manager expects an employee to be difficult, ambiguous behavior may be interpreted as resistance. If a teacher expects a student to struggle, errors may seem diagnostic while improvements are overlooked. If a doctor expects a common diagnosis, rare but dangerous alternatives may be missed. Expectations guide attention and interpretation.</p>
-<p>Another trap is not seeing what lacks a model. People may fail to perceive or understand information for which they have no useful framework. The neurologist Oliver Sacks (1995) described cases of people who regained sight after long blindness but struggled to make sense of visual input. Modern work with formerly blind individuals also shows that learning to see involves more than retinal input; the brain must learn to parse objects, depth, motion, and meaning (Ostrovsky et al., 2006). Sensory data without an interpretive model can be overwhelming.</p>
-<p>This has a decision-making analogue. An organization without a model for psychological safety may fail to see why employees remain silent. A manager without a model for incentive conflict may interpret strategic behavior as personality. A student without a model for opportunity cost may experience a choice as simply “what I want” rather than “what I give up.” Concepts change perception. Once you learn a concept, you begin to see what was previously invisible.</p>
-<p>A third trap is emotional precision. Emotion can increase the weight assigned to certain signals. Fear makes threat cues more salient. Anger makes offense and blame more salient. Desire makes opportunities more vivid. Shame makes social evaluation more central. This can be adaptive, but it can also narrow judgment.</p>
-<p>A person afraid of heights may overestimate the steepness or danger of a slope. A socially anxious person may overread signs of disapproval. A manager under threat may interpret dissent as disloyalty. A negotiator who feels insulted may miss information about the other side’s constraints.</p>
-<p>A fourth trap is attention capture by unresolved concerns. When something bothers us, attention repeatedly returns to it. This makes it difficult to engage fully with other tasks. Rumination, anxiety, unresolved conflict, and unfinished goals can occupy working memory and reduce executive control. Zeigarnik (1927) observed that unfinished tasks tend to remain mentally active, and later research on goal systems and rumination has explored how unresolved concerns capture thought (Martin &amp; Tesser, 1996). In decision contexts, this means that emotional preoccupation can narrow the field of available information.</p>
-<p>A fifth trap is model-protecting action. People may act in ways that prevent their inner model from being tested. If I believe others will reject me, I avoid them. If I believe employees cannot handle autonomy, I micromanage them. If I believe customers will not want the product, I never build a serious prototype. If I believe negotiations are zero-sum, I never ask questions that reveal trade-offs. The model survives because behavior prevents disconfirmation.</p>
-<p>Good decision-making requires using inner models without becoming imprisoned by them.</p>
-<p>A practical method is to ask:</p>
-<p>What am I expecting to see? What would I notice if my expectation were wrong? What information am I treating as precise? What am I treating as noise? What alternative model could explain the same evidence? What action would test the model rather than protect it?</p>
-<p>These questions prepare the way for later chapters on heuristics, biases, framing, and probability judgment. Many biases are not separate from perception; they begin in what attention selects and what the model makes plausible.</p>
+<section id="when-inner-models-helpand-when-they-stop-learning" class="level2">
+<h2 data-anchor-id="when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</h2>
+<p>Inner models are not defects. They make perception usable. Reading requires models of letters, words, and grammar; crossing a street requires expectations about vehicles, signals, and speed. Expertise develops when repeated experience builds models that detect meaningful patterns. A radiologist sees structure in an image that a novice cannot, and an experienced firefighter may notice that a fire is behaving abnormally.</p>
+<p>Models also determine what can be noticed. An organization without a concept of psychological safety may interpret silence as agreement. A manager without a model of incentive conflict may explain strategic behavior as personality. A student without the concept of opportunity cost may see only the chosen benefit and not the best alternative forgone. Better concepts can make previously invisible features of a decision visible.</p>
+<p>But a useful model stops learning in three common ways:</p>
+<ol type="1">
+<li><strong>The prior becomes too rigid.</strong> Ambiguous evidence is repeatedly interpreted in the expected direction.</li>
+<li><strong>Precision is assigned selectively.</strong> Confirming signals are treated as diagnostic while disconfirming signals are dismissed as noise. Emotion, identity, and incentives can influence this weighting.</li>
+<li><strong>Action protects the model.</strong> Avoidance, micromanagement, underinvestment in testing, or failure to ask diagnostic questions prevents informative feedback.</li>
+</ol>
+<p>Calibration therefore requires more than confidence. Ask:</p>
+<ul>
+<li>What am I expecting to see?</li>
+<li>Which observation would be more likely if my model were wrong?</li>
+<li>Why am I treating one signal as reliable and another as noise?</li>
+<li>What alternative model explains the same evidence?</li>
+<li>What feasible action would test the model rather than protect it?</li>
+</ul>
+<p>These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.</p>
 </section>
 <section id="calibrationnot-less-predictionis-the-goal" class="level2">
 <h2 data-anchor-id="calibrationnot-less-predictionis-the-goal">Calibration—not less prediction—is the goal</h2>
@@ -820,47 +846,76 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 <p>For one disputed perception or interpretation, write four lines: <strong>prior model</strong>, <strong>current evidence</strong>, <strong>why each source deserves its present weight</strong>, and <strong>what observation would change that weight</strong>. “Use less intuition” is not yet a test; specify what evidence should become more diagnostic.</p>
 </div>
 </div>
-<div class="callout-title">
-<p>EVIDENCE AND BOUNDARY CONDITIONS</p>
-<div class="callout-body">
-<p>Predictive processing is an influential family of frameworks, not one settled theory with a single agreed implementation. Use it as a disciplined way to ask how priors, evidence, and precision interact, not as a universal explanation that can never be falsified.</p>
+<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title">
-<p>EVIDENCE AND BOUNDARY CONDITIONS</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Evidence Boundary: a framework must be allowed to fail
 </div>
-<div class="callout-body">
-<p>Clinical examples such as hallucinations or functional neurological symptoms are complex. They should not be reduced to “strong priors” without considering neural, developmental, social, and medical mechanisms.</p>
 </div>
-<p><em>Table 6.1. A functional predictive loop</em></p>
-<div class="table-wrapper" aria-label="Scrollable table" role="region" tabindex="0">
+<div class="callout-body-container callout-body">
+<p>Predictive processing is an influential family of frameworks, not one settled theory with a single agreed implementation. Use it to ask how priors, evidence, and precision interact, not as a universal explanation that can redescribe every outcome after it occurs.</p>
+</div>
+</div>
+<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Evidence Boundary: clinical cases need clinical explanations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hallucinations and functional neurological symptoms are complex. They should not be reduced to “strong priors” without considering neural, developmental, social, and medical mechanisms.</p>
+</div>
+</div>
+<div id="tbl-functional-predictive-loop" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-functional-predictive-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.3: A functional predictive loop
+</figcaption>
+<div aria-describedby="tbl-functional-predictive-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 16%">
-<col style="width: 14%">
-<col style="width: 22%">
-<col style="width: 27%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Internal representation</th>
-<th>Predictions</th>
-<th>Sensory evidence</th>
-<th>Perception and action</th>
-<th>Prediction error and learning</th>
+<th>Stage</th>
+<th>Function in the predictive loop</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Beliefs and causal assumptions; formal models also represent preferences and policy options</td>
-<td>What sensations and outcomes are expected</td>
-<td>Signals from the environment and body</td>
-<td>Inference about the current situation and a plan for action</td>
-<td>Mismatch updates current beliefs; repeated mismatch can revise the model</td>
+<td><strong>Internal representation</strong></td>
+<td>Beliefs and causal assumptions represent the current model; formal models may also represent preferences and possible policies.</td>
+</tr>
+<tr class="even">
+<td><strong>Prediction</strong></td>
+<td>The model anticipates sensations and outcomes.</td>
+</tr>
+<tr class="odd">
+<td><strong>Sensory evidence</strong></td>
+<td>Signals arrive from the environment and body.</td>
+</tr>
+<tr class="even">
+<td><strong>Perception and action</strong></td>
+<td>The system infers the current situation and selects a plan that changes what happens or what is sampled next.</td>
+</tr>
+<tr class="odd">
+<td><strong>Error and learning</strong></td>
+<td>A credible mismatch updates current beliefs; repeated mismatch can revise the model itself.</td>
 </tr>
 </tbody>
 </table>
 </div>
+</figure>
+</div>
+</section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
 <p>Choose a disagreement in which two people received similar information but inferred different situations. Produce a two-model test: state each person’s prior model, identify the signal each treated as most precise, and name one feasible observation that would be expected under one model but not the other. End by stating what action would follow from each possible result.</p>
@@ -933,12 +988,6 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 <p>Knill, D. C., &amp; Richards, W. (Eds.). (1996). Perception as Bayesian inference. Cambridge University Press.</p>
 </div>
 <div class="reference">
-<p>Martin, L. L., &amp; Tesser, A. (1996). Some ruminative thoughts. In R. S. Wyer Jr.&nbsp;(Ed.), Ruminative thoughts (pp.&nbsp;1–47). Lawrence Erlbaum.</p>
-</div>
-<div class="reference">
-<p>Ostrovsky, Y., Andalman, A., &amp; Sinha, P. (2006). Vision following extended congenital blindness. Psychological Science, 17(12), 1009–1014.</p>
-</div>
-<div class="reference">
 <p>Parr, T., Pezzulo, G., &amp; Friston, K. J. (2022). <em>Active inference: The free energy principle in mind, brain, and behavior.</em> MIT Press.</p>
 </div>
 <div class="reference">
@@ -960,9 +1009,6 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 <p>Rock, I. (1983). The logic of perception. MIT Press.</p>
 </div>
 <div class="reference">
-<p>Sacks, O. (1995). An anthropologist on Mars: Seven paradoxical tales. Knopf.</p>
-</div>
-<div class="reference">
 <p>Sterzer, P., Adams, R. A., Fletcher, P., Frith, C., Lawrie, S. M., Muckli, L., Petrovic, P., Uhlhaas, P., Voss, M., &amp; Corlett, P. R. (2018). The predictive coding account of psychosis. <em>Biological Psychiatry, 84</em>(9), 634–643.</p>
 </div>
 <div class="reference">
@@ -974,18 +1020,13 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 <div class="reference">
 <p>Yeo, J. M., Carson, A., &amp; Stone, J. (2019). Seeing again: Treatment of functional visual loss. <em>Practical Neurology, 19</em>(2), 168–172.</p>
 </div>
-<div class="reference">
-<p>Zeigarnik, B. (1927). On finished and unfinished tasks [Über das Behalten von erledigten und unerledigten Handlungen]. Psychologische Forschung, 9, 1–85.</p>
-</div>
-</section>
-</div>
 
 
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>Agrawal et al.&nbsp;(2019) use <em>judgment</em> for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and in this book, that task is <strong>valuation</strong>. Elsewhere in the book, <strong>judgment</strong> retains its broader meaning of forming beliefs and assessments.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Agrawal et al.&nbsp;(2019) use <em>judgment</em> for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and throughout this book, that task is <strong>valuation</strong>. Elsewhere in the book, <strong>judgment</strong> retains its broader meaning of forming beliefs and assessments.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

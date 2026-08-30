@@ -7,6 +7,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Check | Result |
 | --- | ---: |
 | Canonical EPUB exists | **PASS** |
+| Released EPUB is newer than every source and EPUB-build input | **PASS** |
 | Staged and released EPUBs match | **PASS** |
 | ZIP integrity | **PASS** |
 | EPUB mimetype is first and uncompressed | **PASS** |
@@ -18,6 +19,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Navigation has 17 compact top-level items | **PASS** |
 | Every navigation target exists | **PASS** |
 | Navigation omits the redundant generated title-page entry | **PASS** |
+| Preface contains the current hiring-committee opening | **PASS** |
+| Preface contains the current closing sentence | **PASS** |
 | Visible contents suppresses automatic ordered-list counters | **PASS** |
 | All Part titles appear in order | **PASS** |
 | Chapters are numbered 1 through 41 | **PASS** |
@@ -33,6 +36,10 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Compilation date is current | **PASS** |
 | All 58 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
+| Every packaged chapter is well-formed XHTML | **PASS** |
+| Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
+| Chapter 4 functional loop uses the EPUB-safe two-column table | **PASS** |
+| Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |
 | Required content: Prospect Theory | **PASS** |
@@ -61,6 +68,9 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Data Fabrication | **PASS** |
 | Required content: Registered Reports | **PASS** |
 | Required content: A Decision Is Already in the Making | **PASS** |
+| Required content: At 3:17 p.m. | **PASS** |
+| Required content: The decision is already in the making. | **PASS** |
+| Required content: Prediction is not responsibility | **PASS** |
 | Required content: pause without reset | **PASS** |
 | Required content: Scheduled cue occasions / days | **PASS** |
 | Required content: Index of Concepts | **PASS** |

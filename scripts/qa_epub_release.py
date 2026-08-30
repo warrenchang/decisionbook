@@ -73,6 +73,9 @@ REQUIRED_CONTENT = [
     "Data Fabrication",
     "Registered Reports",
     "A Decision Is Already in the Making",
+    "At 3:17 p.m.",
+    "The decision is already in the making.",
+    "Prediction is not responsibility",
     "pause without reset",
     "Scheduled cue occasions / days",
     "Index of Concepts",
@@ -104,6 +107,25 @@ def main() -> int:
     if not EPUB.is_file():
         REPORT.write_text("# EPUB QA report\n\n**Release status: FAIL**\n\nCanonical EPUB is missing.\n", encoding="utf-8")
         return 1
+
+    source_inputs = [
+        *ROOT.glob("*.qmd"),
+        *ROOT.glob("chapters/*.qmd"),
+        *ROOT.glob("parts/*.qmd"),
+        *ROOT.glob("appendices/*.qmd"),
+        *ROOT.glob("_quarto*.yml"),
+        ROOT / "epub-custom.css",
+        ROOT / "filters" / "epub-parts.lua",
+        ROOT / "scripts" / "normalize_epub_toc.py",
+        ROOT / "scripts" / "sync_epub_release.py",
+    ]
+    source_inputs = [path for path in source_inputs if path.is_file()]
+    latest_source = max(source_inputs, key=lambda path: path.stat().st_mtime_ns)
+    check(
+        "Released EPUB is newer than every source and EPUB-build input",
+        EPUB.stat().st_mtime_ns >= latest_source.stat().st_mtime_ns,
+        f"newest input is {latest_source.relative_to(ROOT)}",
+    )
 
     if STAGED_EPUB.is_file():
         check("Staged and released EPUBs match", sha256(STAGED_EPUB) == sha256(EPUB))
@@ -179,6 +201,32 @@ def main() -> int:
         check(
             "Navigation omits the redundant generated title-page entry",
             "Decision in the Making" not in labels,
+        )
+
+        preface_item = next(
+            (
+                item
+                for item in top_items
+                if (anchor := item.find(f"{{{XHTML}}}a")) is not None
+                and normalized_text(anchor).startswith("Preface:")
+            ),
+            None,
+        )
+        preface_anchor = preface_item.find(f"{{{XHTML}}}a") if preface_item is not None else None
+        preface_href = preface_anchor.get("href", "").split("#", 1)[0] if preface_anchor is not None else ""
+        preface_path = posixpath.normpath(posixpath.join(posixpath.dirname(nav_path), preface_href)) if preface_href else ""
+        preface_text = ""
+        if preface_path in names:
+            preface_text = normalized_text(ET.fromstring(archive.read(preface_path)))
+        check(
+            "Preface contains the current hiring-committee opening",
+            "At 3:17 p.m." in preface_text,
+            preface_path,
+        )
+        check(
+            "Preface contains the current closing sentence",
+            "The decision is already in the making." in preface_text,
+            preface_path,
         )
 
         styled_lists = toc.findall(f".//{{{XHTML}}}ol") if toc is not None else []
@@ -310,6 +358,72 @@ def main() -> int:
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
         check("All 58 source documents are packaged", len(chapter_files) == 58, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
+
+        malformed_xhtml: list[str] = []
+        overnested_callout_titles: list[str] = []
+        parsed_chapters: dict[str, ET.Element] = {}
+        for chapter_path in chapter_files:
+            try:
+                chapter_root = ET.fromstring(archive.read(chapter_path))
+            except ET.ParseError as error:
+                malformed_xhtml.append(f"{chapter_path}: {error}")
+                continue
+            parsed_chapters[chapter_path] = chapter_root
+            for div in chapter_root.findall(f".//{{{XHTML}}}div"):
+                if "callout-title" not in div.get("class", "").split():
+                    continue
+                bad_heading = any(div.find(f".//{{{XHTML}}}h{level}") is not None for level in range(1, 7))
+                bad_table = div.find(f".//{{{XHTML}}}table") is not None
+                bad_body = any(
+                    "callout-body" in child.get("class", "").split()
+                    for child in div.findall(f".//{{{XHTML}}}div")
+                )
+                if bad_heading or bad_table or bad_body:
+                    overnested_callout_titles.append(chapter_path)
+                    break
+        check("Every packaged chapter is well-formed XHTML", not malformed_xhtml, "; ".join(malformed_xhtml[:3]))
+        check(
+            "Callout titles do not contain later headings, tables, or callout bodies",
+            not overnested_callout_titles,
+            ", ".join(overnested_callout_titles[:5]),
+        )
+
+        chapter_four_item = next(
+            (
+                item
+                for item in all_items
+                if (anchor := item.find(f"{{{XHTML}}}a")) is not None
+                and re.match(r"^4\s+", normalized_text(anchor))
+            ),
+            None,
+        )
+        chapter_four_anchor = chapter_four_item.find(f"{{{XHTML}}}a") if chapter_four_item is not None else None
+        chapter_four_href = chapter_four_anchor.get("href", "").split("#", 1)[0] if chapter_four_anchor is not None else ""
+        chapter_four_path = (
+            posixpath.normpath(posixpath.join(posixpath.dirname(nav_path), chapter_four_href))
+            if chapter_four_href
+            else ""
+        )
+        chapter_four_root = parsed_chapters.get(chapter_four_path)
+        functional_loop = (
+            chapter_four_root.find(f".//*[@id='tbl-functional-predictive-loop']")
+            if chapter_four_root is not None
+            else None
+        )
+        functional_table = functional_loop.find(f".//{{{XHTML}}}table") if functional_loop is not None else None
+        first_row = functional_table.find(f".//{{{XHTML}}}tr") if functional_table is not None else None
+        first_row_cells = (
+            [child for child in list(first_row) if child.tag in {f"{{{XHTML}}}th", f"{{{XHTML}}}td"}]
+            if first_row is not None
+            else []
+        )
+        chapter_four_text = normalized_text(chapter_four_root) if chapter_four_root is not None else ""
+        check(
+            "Chapter 4 functional loop uses the EPUB-safe two-column table",
+            len(first_row_cells) == 2,
+            f"{chapter_four_path}: {len(first_row_cells)} columns",
+        )
+        check("Chapter 4 contains no stale manual Table 6.1 caption", "Table 6.1" not in chapter_four_text)
 
         searchable = "\n".join(
             archive.read(name).decode("utf-8", "ignore")

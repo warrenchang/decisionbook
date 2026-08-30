@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **772**
+Unique references in the master union: **768**
 
-Chapter reference blocks: **843**
+Chapter reference blocks: **839**
 
 Unresolved author–year citations: **0**
 
@@ -15,7 +15,7 @@ Unresolved author–year citations: **0**
 | Decision-Making Is a Process, Not a Moment | 14 | 0 |
 | Building a Better Decision: Rationality, Alternatives, and Opportunity Cost | 11 | 0 |
 | Attention: What Becomes Evidence? | 29 | 0 |
-| The Predictive Mind: Perception Is Inference | 34 | 0 |
+| The Predictive Mind: Perception Is Inference | 30 | 0 |
 | Valuation: How Options Become Worth Choosing | 39 | 0 |
 | Expectations: When Predictions Become Causes | 44 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 18 | 0 |
