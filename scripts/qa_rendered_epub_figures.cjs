@@ -100,6 +100,9 @@ async function main() {
       ["fig-asch-line-comparison", "epub-asch-lines.png"],
       ["fig-schelling-emergence", "epub-schelling-emergence.png"],
       ["fig-fairness-entitlements-redraw", "epub-fairness-entitlements.png"],
+      ["fig-subscription-decoy", "epub-subscription-decoy.png"],
+      ["fig-watched-eyes-evidence-update", "epub-watched-eyes.png"],
+      ["fig-digital-arrow-affordance", "epub-digital-arrow.png"],
       ["tbl-self-fulfilling-self-defeating", "epub-table-6-1.png"],
     ];
     for (const [id, output] of captures) {

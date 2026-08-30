@@ -10,7 +10,7 @@ aliases:
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Every decision in this book has moved through a causal loop: context shapes attention and interpretation, which shape prediction, valuation, action, outcomes, and learning. But intelligent, well-intentioned people still repeat failure when evidence is not independent, assumptions remain hidden, disagreement is unsafe, alternatives are thin, influence escapes ethical scrutiny, or hindsight corrupts feedback. Therefore decision hygiene closes the loop by designing a repeatable process that protects judgment before choice and turns outcomes into evidence for calibrated revision rather than a convenient story.
+Every decision in this book has moved through a causal loop: **context and information → notice and interpret → construct options → predict → value → choose, commit, and act → observe and learn**. But intelligent, well-intentioned people still repeat failure when evidence is not independent, assumptions remain hidden, disagreement is unsafe, alternatives are thin, influence escapes ethical scrutiny, or hindsight corrupts feedback. Therefore decision hygiene closes the loop by designing a repeatable process that protects judgment before choice and turns outcomes into evidence for calibrated revision rather than a convenient story.
 :::
 
 ## Learning goals
@@ -137,6 +137,28 @@ Senior people should normally speak after independent input is captured. Anonymo
 ### Use models and AI as inputs, not authorities
 
 In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply the same weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). Humans still define the objective, choose the data, interpret unusual cases, weigh rights and values, and remain accountable. A model can be consistently wrong if its target, data, or deployment context is wrong.
+
+#### Prediction is only one task inside a decision
+
+AI systems are often most useful when they reduce uncertainty about what will happen next. Better prediction can materially improve a choice, but it does not determine which consequences matter, which intervention would change them, or who is authorized to impose and answer for the action. Therefore, building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere in the book, **judgment** retains its broader meaning of forming beliefs and assessments.]
+
+| Task | What must be supplied |
+| --- | --- |
+| **Prediction** | Estimate which state or outcome is likely, with what uncertainty. An AI model may supply this estimate, but its accuracy, calibration, and transport to the present setting still require evidence. |
+| **Valuation** | Decide which consequences matter, whose welfare counts, and how benefits, costs, fairness, and error should be traded off. AI can help display these consequences; a prediction does not make the value choice legitimate. |
+| **Intervention design** | Identify which feasible action could change the outcome. This requires causal assumptions, options, constraints, and an exception process. Predictive association alone does not establish an intervention effect. |
+| **Decision and responsibility** | Choose what should be implemented, under whose authority, with what appeal and review. The decision owner remains answerable for the objective, the action, and its consequences. |
+: Prediction is one task inside accountable decision-making {#tbl-ai-prediction-judgment-causation}
+
+Suppose an AI system predicts that a patient has a high probability of hospital readmission. That estimate does not determine whether the hospital should delay discharge, arrange a home visit, call the patient, or do nothing. It does not say which intervention would work, how to weigh a missed readmission against an unnecessary intervention, or how the patient's circumstances and preferences should count. Those are questions of causal reasoning, valuation, and decision.
+
+AI can assist with all four tasks, and future systems may do more. But a predictive output does not create legitimate objectives, authority, or accountability. Human oversight is therefore not a final click after the model has already determined everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, exceptions and appeals, monitoring, and right to revise the decision.
+
+::: {.callout-important icon=false}
+## Prediction is not responsibility
+
+A prediction may be automated. The prediction itself cannot decide whose welfare matters, authorize an intervention, or accept responsibility for the result.
+:::
 
 “AI” is not one fixed bundle of capabilities. A fixed, versioned deterministic or predictive pipeline may repeat a defined calculation, rule, or prediction; this repeatability says nothing by itself about whether the target, data, or result is valid. A generative model may be prompted to retrieve, summarize, propose alternatives, expose counterarguments, or draft a record, but its output can vary, fail instructions, or contain fabricated claims. It is therefore not inherently consistent, truthful, or rule-bound. Assign a role only after validating the actual tool, version, task, population, and division of labor against feasible alternatives (National Institute of Standards and Technology, 2023; Ji et al., 2023).
 
@@ -308,12 +330,6 @@ The aim is disciplined humility, not technocracy. A good process should become m
 | Excess bureaucracy | Short, failure-linked checklist | Remove low-value controls; preserve justified discretion |
 : Proportionate decision hygiene {#tbl-36-proportionality}
 
-## Take it forward
-
-- **Use this when:** a judgment is consequential, repeated, uncertain, difficult to reverse, vulnerable to power, or partly automated.
-- **Do not infer:** more structure is automatically fair, or a model can legitimately choose the target, values, and rights it should serve.
-- **Try this next:** select one recurring decision and specify what must happen before discussion, during challenge, at commitment, and after the outcome.
-
 ::: {.callout-tip .activity icon=false}
 ## Practice Lab: integrated decision studio
 
@@ -324,7 +340,17 @@ Complete the integrated decision studio on one real challenge: (1) notice the cu
 Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.
 :::
 
+## Take it forward
+
+- **Use this when:** a judgment is consequential, repeated, uncertain, difficult to reverse, vulnerable to power, or partly automated.
+- **Do not infer:** more structure is automatically fair, or a model can legitimately choose the target, values, and rights it should serve.
+- **Try this next:** select one recurring decision and specify what must happen before discussion, during challenge, at commitment, and after the outcome.
+
 ## References cited in this chapter
+
+::: {.reference}
+Agrawal, A., Gans, J., & Goldfarb, A. (2019). Prediction, judgment, and complexity: A theory of decision-making and artificial intelligence. In A. Agrawal, J. Gans, & A. Goldfarb (Eds.), *The economics of artificial intelligence: An agenda* (pp. 89–110). University of Chicago Press.
+:::
 
 ::: {.reference}
 Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1–3.

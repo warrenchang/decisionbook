@@ -13,6 +13,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | EPUB mimetype is first and uncompressed | **PASS** |
 | Container identifies package document | **PASS** |
 | Every manifest resource exists | **PASS** |
+| EPUB table cells have visible borders | **PASS** |
+| EPUB table headers have a contrasting background | **PASS** |
 | Every spine reference resolves | **PASS** |
 | One navigation document is declared | **PASS** |
 | Navigation contains a table of contents | **PASS** |
@@ -38,7 +40,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
-| Chapter 4 functional loop uses the EPUB-safe two-column table | **PASS** |
+| Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |
@@ -70,10 +72,12 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: A Decision Is Already in the Making | **PASS** |
 | Required content: At 3:17 p.m. | **PASS** |
 | Required content: The decision is already in the making. | **PASS** |
+| Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
 | Required content: pause without reset | **PASS** |
 | Required content: Scheduled cue occasions / days | **PASS** |
 | Required content: Index of Concepts | **PASS** |
+| Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |
 | Removed reader text: Start Here | **PASS** |
 | Removed reader text: Start reading | **PASS** |
 | Removed reader text: Browse references | **PASS** |

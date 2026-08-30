@@ -574,7 +574,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Every decision in this book has moved through a causal loop: context shapes attention and interpretation, which shape prediction, valuation, action, outcomes, and learning. But intelligent, well-intentioned people still repeat failure when evidence is not independent, assumptions remain hidden, disagreement is unsafe, alternatives are thin, influence escapes ethical scrutiny, or hindsight corrupts feedback. Therefore decision hygiene closes the loop by designing a repeatable process that protects judgment before choice and turns outcomes into evidence for calibrated revision rather than a convenient story.</p>
+<p>Every decision in this book has moved through a causal loop: <strong>context and information → notice and interpret → construct options → predict → value → choose, commit, and act → observe and learn</strong>. But intelligent, well-intentioned people still repeat failure when evidence is not independent, assumptions remain hidden, disagreement is unsafe, alternatives are thin, influence escapes ethical scrutiny, or hindsight corrupts feedback. Therefore decision hygiene closes the loop by designing a repeatable process that protects judgment before choice and turns outcomes into evidence for calibrated revision rather than a convenient story.</p>
 </div>
 </div>
 <section id="learning-goals" class="level2">
@@ -761,11 +761,68 @@ Figure&nbsp;41.2: This author’s prescriptive synthesis structures judgment by 
 <section id="use-models-and-ai-as-inputs-not-authorities" class="level3">
 <h3 data-anchor-id="use-models-and-ai-as-inputs-not-authorities">Use models and AI as inputs, not authorities</h3>
 <p>In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply the same weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). Humans still define the objective, choose the data, interpret unusual cases, weigh rights and values, and remain accountable. A model can be consistently wrong if its target, data, or deployment context is wrong.</p>
+<section id="prediction-is-only-one-task-inside-a-decision" class="level4">
+<h4 data-anchor-id="prediction-is-only-one-task-inside-a-decision">Prediction is only one task inside a decision</h4>
+<p>AI systems are often most useful when they reduce uncertainty about what will happen next. Better prediction can materially improve a choice, but it does not determine which consequences matter, which intervention would change them, or who is authorized to impose and answer for the action. Therefore, building on Agrawal et al.&nbsp;(2019), keep four tasks separate.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div id="tbl-ai-prediction-judgment-causation" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-prediction-judgment-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;41.2: Prediction is one task inside accountable decision-making
+</figcaption>
+<div aria-describedby="tbl-ai-prediction-judgment-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>What must be supplied</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Prediction</strong></td>
+<td>Estimate which state or outcome is likely, with what uncertainty. An AI model may supply this estimate, but its accuracy, calibration, and transport to the present setting still require evidence.</td>
+</tr>
+<tr class="even">
+<td><strong>Valuation</strong></td>
+<td>Decide which consequences matter, whose welfare counts, and how benefits, costs, fairness, and error should be traded off. AI can help display these consequences; a prediction does not make the value choice legitimate.</td>
+</tr>
+<tr class="odd">
+<td><strong>Intervention design</strong></td>
+<td>Identify which feasible action could change the outcome. This requires causal assumptions, options, constraints, and an exception process. Predictive association alone does not establish an intervention effect.</td>
+</tr>
+<tr class="even">
+<td><strong>Decision and responsibility</strong></td>
+<td>Choose what should be implemented, under whose authority, with what appeal and review. The decision owner remains answerable for the objective, the action, and its consequences.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Suppose an AI system predicts that a patient has a high probability of hospital readmission. That estimate does not determine whether the hospital should delay discharge, arrange a home visit, call the patient, or do nothing. It does not say which intervention would work, how to weigh a missed readmission against an unnecessary intervention, or how the patient’s circumstances and preferences should count. Those are questions of causal reasoning, valuation, and decision.</p>
+<p>AI can assist with all four tasks, and future systems may do more. But a predictive output does not create legitimate objectives, authority, or accountability. Human oversight is therefore not a final click after the model has already determined everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, exceptions and appeals, monitoring, and right to revise the decision.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Prediction is not responsibility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A prediction may be automated. The prediction itself cannot decide whose welfare matters, authorize an intervention, or accept responsibility for the result.</p>
+</div>
+</div>
 <p>“AI” is not one fixed bundle of capabilities. A fixed, versioned deterministic or predictive pipeline may repeat a defined calculation, rule, or prediction; this repeatability says nothing by itself about whether the target, data, or result is valid. A generative model may be prompted to retrieve, summarize, propose alternatives, expose counterarguments, or draft a record, but its output can vary, fail instructions, or contain fabricated claims. It is therefore not inherently consistent, truthful, or rule-bound. Assign a role only after validating the actual tool, version, task, population, and division of labor against feasible alternatives (National Institute of Standards and Technology, 2023; Ji et al., 2023).</p>
 <div id="tbl-36-ai" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-36-ai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.2: Human–AI roles and safeguards
+Table&nbsp;41.3: Human–AI roles and safeguards
 </figcaption>
 <div aria-describedby="tbl-36-ai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -837,6 +894,7 @@ Figure&nbsp;41.3: This author’s prescriptive synthesis assigns no intrinsic br
 <p>Do not use an unvalidated system simply because it is available. Higher stakes require stronger comparative evidence, transparency, subgroup evaluation, contestability, and accountable human authority. Avoid deployment when the target is an illegitimate proxy, the population or context has shifted beyond validation, sensitive data cannot be protected, or the decision’s moral and relational responsibility cannot be delegated. A human reviewer should not become a <strong>moral crumple zone</strong> who receives blame for an automated system without real authority or information to correct it (Elish, 2019). A practical test is: <strong>Could we explain to an affected person what the system contributed, who had power to challenge it, why that role was legitimate, and how an error can be corrected?</strong></p>
 </section>
 </section>
+</section>
 <section id="during-the-decision-structure-disagreement" class="level2">
 <h2 data-anchor-id="during-the-decision-structure-disagreement">During the decision: structure disagreement</h2>
 <p>Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when “too risky” is decomposed into probability and consequence.</p>
@@ -858,7 +916,7 @@ Figure&nbsp;41.3: This author’s prescriptive synthesis assigns no intrinsic br
 <div id="tbl-36-meeting" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-36-meeting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.3: A decision meeting organized around judgment rather than presentation
+Table&nbsp;41.4: A decision meeting organized around judgment rather than presentation
 </figcaption>
 <div aria-describedby="tbl-36-meeting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -919,7 +977,7 @@ Table&nbsp;41.3: A decision meeting organized around judgment rather than presen
 <div id="tbl-35-decision-audit" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-decision-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.4: A decision-loop diagnostic
+Table&nbsp;41.5: A decision-loop diagnostic
 </figcaption>
 <div aria-describedby="tbl-35-decision-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1000,7 +1058,7 @@ Figure&nbsp;41.4: A sound or weak process can be followed by either a favorable 
 <div id="tbl-35-decision-journal" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-decision-journal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.5: A decision journal protected from hindsight
+Table&nbsp;41.6: A decision journal protected from hindsight
 </figcaption>
 <div aria-describedby="tbl-35-decision-journal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1081,7 +1139,7 @@ Figure&nbsp;41.6: Notice, test, ask, design, and learn form the book’s closing
 <div id="tbl-35-1" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.6: The integrated decision audit
+Table&nbsp;41.7: The integrated decision audit
 </figcaption>
 <div aria-describedby="tbl-35-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1153,7 +1211,7 @@ Table&nbsp;41.6: The integrated decision audit
 <div id="tbl-36-proportionality" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-36-proportionality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.7: Proportionate decision hygiene
+Table&nbsp;41.8: Proportionate decision hygiene
 </figcaption>
 <div aria-describedby="tbl-36-proportionality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1210,14 +1268,6 @@ Table&nbsp;41.7: Proportionate decision hygiene
 </div>
 </figure>
 </div>
-</section>
-<section id="take-it-forward" class="level2">
-<h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<ul>
-<li><strong>Use this when:</strong> a judgment is consequential, repeated, uncertain, difficult to reverse, vulnerable to power, or partly automated.</li>
-<li><strong>Do not infer:</strong> more structure is automatically fair, or a model can legitimately choose the target, values, and rights it should serve.</li>
-<li><strong>Try this next:</strong> select one recurring decision and specify what must happen before discussion, during challenge, at commitment, and after the outcome.</li>
-</ul>
 <div class="activity callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1234,8 +1284,19 @@ Table&nbsp;41.7: Proportionate decision hygiene
 </div>
 </div>
 </section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<ul>
+<li><strong>Use this when:</strong> a judgment is consequential, repeated, uncertain, difficult to reverse, vulnerable to power, or partly automated.</li>
+<li><strong>Do not infer:</strong> more structure is automatically fair, or a model can legitimately choose the target, values, and rights it should serve.</li>
+<li><strong>Try this next:</strong> select one recurring decision and specify what must happen before discussion, during challenge, at commitment, and after the outcome.</li>
+</ul>
+</section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2019). Prediction, judgment, and complexity: A theory of decision-making and artificial intelligence. In A. Agrawal, J. Gans, &amp; A. Goldfarb (Eds.), <em>The economics of artificial intelligence: An agenda</em> (pp.&nbsp;89–110). University of Chicago Press.</p>
+</div>
 <div class="reference">
 <p>Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1–3.</p>
 </div>
@@ -1325,6 +1386,12 @@ Table&nbsp;41.7: Proportionate decision hygiene
 </div>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Agrawal et al.&nbsp;(2019) use <em>judgment</em> for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and throughout this book, that task is <strong>valuation</strong>. Elsewhere in the book, <strong>judgment</strong> retains its broader meaning of forming beliefs and assessments.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->

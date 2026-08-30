@@ -17,12 +17,12 @@ The decision loop cannot begin with a complete internal recording of the world, 
 
 - Explain perception as inference rather than recording.
 - Describe priors, sensory evidence, prediction error, and precision in plain language.
-- Specify an observation that could distinguish two competing interpretations.
+- Distinguish perceptual prediction from a decision forecast, and specify an observation that could distinguish two competing interpretations.
 
 ::: {.callout-note .loop-location icon=false}
 ## Where this chapter enters the loop
 
-The chapter focuses on **Interpret** and **Predict**. Incoming signals do not explain themselves; a model turns them into a situation and anticipates what should happen next.
+The chapter focuses primarily on **Interpret**. Incoming signals do not explain themselves; an internal model helps infer what is producing them. Predictive processing calls this activity *prediction*, but it is not identical to the later **Predict** stage in the decision loop, where a person forecasts the consequences of an option.
 :::
 
 If perception is not complete sensory recording, what is it?
@@ -44,6 +44,20 @@ effect, “What in the world is most likely to have caused this pattern of
 light?” The answer depends on sensory evidence, but also on context,
 prior experience, expectations, goals, and assumptions about how the
 world usually works.
+
+## Two meanings of prediction
+
+The word **prediction** creates a possible confusion. Predictive processing and decision science use the same word for related but different functions.
+
+| Use of prediction | Meaning in this book |
+| --- | --- |
+| **Prediction in predictive processing** | An internal model anticipates sensory signals or infers their hidden causes. A mismatch between expected and incoming signals can alter perception or update the model. |
+| **Prediction in judgment and decision-making** | A person or model forecasts a state or consequence that may occur, often under a specified option and time horizon. The forecast becomes one input into valuation and choice. |
+: Predictive processing and predictive judgment ask different questions {#tbl-two-meanings-prediction}
+
+The first asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. A theory of perceptual inference does not by itself forecast hospital readmission, estimate a project's probability of success, or determine whether an outcome is desirable.
+
+This chapter stays with the first meaning: how internal models help construct perception and guide sampling. Chapter 6 examines expectations that alter behavior and outcomes; Chapters 14 and 15 develop disciplined forecasts; and Chapter 41 separates machine prediction from valuation, intervention, decision, and responsibility.
 
 This is why illusions are so useful. Illusions are not merely tricks.
 They reveal the assumptions the visual system uses to construct
@@ -125,17 +139,17 @@ Classic ambiguity stimuli—the B/13 figure, duck–rabbit, an object seen as sq
 
 ![An original perceptual-context demonstration uses exactly the same middle vector mark in two rows. Number context invites a reading of “13,” while letter context invites a reading of “B.” This is a demonstration of context-sensitive interpretation, not evidence for a particular neural mechanism or effect size.](../figures/context-b13-demonstration.svg){#fig-context-b13-demonstration fig-alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B. A boundary note says the graphic is a demonstration, not evidence of a specific neural mechanism or effect size." width=100%}
 
-Figure @fig-context-b13-demonstration holds the sensory mark fixed while changing only its neighbors. If your reading changes, the figure has exposed an interpretive contribution from context. It has not measured how often this happens, identified the responsible neural computation, or shown that perception is unconstrained by evidence.
+@fig-context-b13-demonstration holds the sensory mark fixed while changing only its neighbors. If your reading changes, the figure has exposed an interpretive contribution from context. It has not measured how often this happens, identified the responsible neural computation, or shown that perception is unconstrained by evidence.
 
-The same teaching logic works when the target can be measured directly. In Figure @fig-perception-context-lab, the paired shafts, centre circles, and grey patches are physically identical within each comparison. The surrounding geometry or luminance changes their appearance. Measuring the target can correct the judgment without necessarily turning off the impression.
+The same teaching logic works when the target can be measured directly. In @fig-perception-context-lab, the paired shafts, centre circles, and grey patches are physically identical within each comparison. The surrounding geometry or luminance changes their appearance. Measuring the target can correct the judgment without necessarily turning off the impression.
 
 ![Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields. These demonstrate context-dependent appearance, not a single neural mechanism or an estimated effect size.](../figures/perception-context-lab.svg){#fig-perception-context-lab fig-alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality, and a footer says to measure the target rather than infer a single neural mechanism." width=100%}
 
 ## Prediction, error, and precision
 
-![A predictive-processing teaching synthesis. An internal generative model produces predictions; perception and judgment infer the current situation from model-based predictions and incoming signals; action changes subsequent sampling; and precision—the estimated reliability of prediction-error signals—modulates how strongly discrepancies influence updating.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="A theoretical loop links an internal generative model, predictions, perception and judgment, action, the environment, sensory signals, prediction error, and model updating. A separate box defines precision as estimated reliability of prediction-error signals. A boundary note states that predictive-processing variants differ and that attention is only sometimes modeled partly through precision."}
+![A predictive-processing teaching synthesis. An internal generative model produces expectations about sensory signals; perceptual inference estimates their hidden causes; action changes subsequent sampling; and precision—the estimated reliability of prediction-error signals—modulates how strongly discrepancies influence updating.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="A theoretical loop links an internal generative model, predicted sensory signals, perceptual inference, action and sampling, the environment, sensory signals, prediction error, and model updating. A separate box defines precision as estimated reliability of prediction-error signals. A boundary note states that predictive-processing variants differ and that attention is only sometimes modeled partly through precision."}
 
-Figure @fig-predictive-processing-decision shows a teaching synthesis of the loop proposed across predictive-processing accounts. Read it clockwise: an internal model predicts sensations and outcomes; perception and judgment infer a current situation; action changes the environment and the evidence sampled next; prediction error can then update the model. **Precision** is the system's estimate of how reliable a prediction-error signal is, and therefore how much influence that signal should have on updating. Some accounts model part of attention through precision assignment (Feldman & Friston, 2010), but attention and precision are not interchangeable, and predictive-processing variants differ in their scope and proposed implementation. The figure is a theoretical architecture, not a direct image of neural circuitry (Clark, 2013; Friston, 2010; Rao & Ballard, 1999).
+@fig-predictive-processing-decision shows a teaching synthesis of the loop proposed across predictive-processing accounts. Read it clockwise: an internal model predicts sensory signals; perceptual inference estimates their hidden causes from expectations and incoming evidence; action changes the environment and what is sampled next; prediction error can then update the model. **Precision** is the system's estimate of how reliable a prediction-error signal is, and therefore how much influence that signal should have on updating. Some accounts model part of attention through precision assignment (Feldman & Friston, 2010), but attention and precision are not interchangeable, and predictive-processing variants differ in their scope and proposed implementation. The figure is a theoretical architecture, not a direct image of neural circuitry (Clark, 2013; Friston, 2010; Rao & Ballard, 1999).
 
 The idea that perception is inference becomes more specific in predictive processing. Predictive processing theories propose that the
 brain generates predictions about sensory input and
@@ -268,48 +282,6 @@ across functions. A correlation between a network and a task does not
 identify a one-to-one mental system.
 :::
 
-### AI can improve prediction without completing the decision
-
-AI systems are often most useful when they reduce uncertainty about what will happen next. Better prediction can materially improve a choice, but prediction is only one input into that choice. It does not determine which consequences matter, which intervention would change them, or who is authorized to impose and answer for the action. Therefore, building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere in the book, **judgment** retains its broader meaning of forming beliefs and assessments.]
-
-| Task | What must be supplied |
-| --- | --- |
-| **Prediction** | Estimate which state or outcome is likely, with what uncertainty. An AI model may supply this estimate, but its accuracy, calibration, and transport to the present setting still require evidence. |
-| **Valuation** | Decide which consequences matter, whose welfare counts, and how benefits, costs, fairness, and error should be traded off. AI can help display these consequences; a prediction does not make the value choice legitimate. |
-| **Intervention design** | Identify which feasible action could change the outcome. This requires causal assumptions, options, constraints, and an exception process. Predictive association alone does not establish an intervention effect. |
-| **Decision and responsibility** | Choose what should be implemented, under whose authority, with what appeal and review. The decision owner remains answerable for the objective, the action, and its consequences. |
-: Prediction is one task inside accountable decision-making {#tbl-ai-prediction-judgment-causation}
-
-Suppose an AI system predicts that a patient has a high probability of hospital readmission. That estimate does not determine whether the hospital should delay discharge, arrange a home visit, call the patient, or do nothing. It does not say which intervention would work, how to weigh a missed readmission against an unnecessary intervention, or how the patient's circumstances and preferences should count. Those are questions of causal reasoning, valuation, and decision.
-
-AI can assist with all four tasks, and future systems may do more. But a predictive output does not create legitimate objectives, authority, or accountability. Human oversight is therefore not a final click after the model has already determined everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, exceptions and appeals, monitoring, and right to revise the decision.
-
-::: {.callout-important icon=false}
-## Prediction is not responsibility
-
-A prediction may be automated. The prediction itself cannot decide whose welfare matters, authorize an intervention, or accept responsibility for the result.
-:::
-
-### Predictions can protect their own mistakes
-
-It would be a mistake to contrast machine error with an always-accurate human mind. Human predictive systems can also become trapped when a prior is too strong, evidence is sampled selectively, or action prevents disconfirmation.
-
-- **Social anxiety:** expecting rejection directs attention toward ambiguous signs of disapproval. Avoiding interaction then removes opportunities to discover that other people might respond warmly.
-- **Organizational strategy:** believing that customers do not want a new product can reduce market testing and prototype investment. Weak evidence produced by that limited search is then read as confirmation.
-- **Medical diagnosis:** an early hypothesis can direct attention toward confirming symptoms and away from alternatives. Expertise helps when the pattern is valid, but premature closure makes a deliberate diagnostic check necessary (Croskerry, 2003).
-
-The three examples share one loop:
-
-**Prior model → selective attention → interpretation → protective action → restricted feedback → apparent confirmation**
-
-The prediction does more than describe a possible future. It changes what evidence is collected and can help produce the future that later appears to confirm it. Chapter 6 examines such self-fulfilling and self-defeating expectations directly.
-
-### More information is not automatic correction
-
-“Give people more information” is therefore incomplete advice. New information changes a belief only when it enters attention, is treated as sufficiently reliable, and can be integrated into the current model. If it is classified as irrelevant, biased, threatening, or noisy, the belief may remain unchanged.
-
-The practical question is not simply whether evidence was available. Ask what the person expected, what signal received weight, what alternative explanation was considered, and what action could expose the model to a fair test. Decision science must study internal models because external data influence choice through them.
-
 ## When inner models help—and when they stop learning
 
 Inner models are not defects. They make perception usable. Reading requires models of letters, words, and grammar; crossing a street requires expectations about vehicles, signals, and speed. Expertise develops when repeated experience builds models that detect meaningful patterns. A radiologist sees structure in an image that a novice cannot, and an experienced firefighter may notice that a fire is behaving abnormally.
@@ -322,6 +294,8 @@ But a useful model stops learning in three common ways:
 2. **Precision is assigned selectively.** Confirming signals are treated as diagnostic while disconfirming signals are dismissed as noise. Emotion, identity, and incentives can influence this weighting.
 3. **Action protects the model.** Avoidance, micromanagement, underinvestment in testing, or failure to ask diagnostic questions prevents informative feedback.
 
+More information is therefore not automatic correction. A signal changes the model only if it enters attention, is treated as sufficiently reliable, and can be integrated into the current account. If it is dismissed as irrelevant or noisy, the model may survive unchanged.
+
 Calibration therefore requires more than confidence. Ask:
 
 - What am I expecting to see?
@@ -332,7 +306,7 @@ Calibration therefore requires more than confidence. Ask:
 
 These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.
 
-## Calibration—not less prediction—is the goal
+## The practical goal is calibration, not fewer predictions
 
 Unusual cases can make the ordinary architecture visible, but only if
 we resist forcing them into one explanation. The cases below do not
@@ -377,14 +351,7 @@ Predictive processing is an influential family of frameworks, not one settled th
 Hallucinations and functional neurological symptoms are complex. They should not be reduced to “strong priors” without considering neural, developmental, social, and medical mechanisms.
 :::
 
-| Stage | Function in the predictive loop |
-| --- | --- |
-| **Internal representation** | Beliefs and causal assumptions represent the current model; formal models may also represent preferences and possible policies. |
-| **Prediction** | The model anticipates sensations and outcomes. |
-| **Sensory evidence** | Signals arrive from the environment and body. |
-| **Perception and action** | The system infers the current situation and selects a plan that changes what happens or what is sampled next. |
-| **Error and learning** | A credible mismatch updates current beliefs; repeated mismatch can revise the model itself. |
-: A functional predictive loop {#tbl-functional-predictive-loop}
+The chapter's main message can now be stated compactly: perception depends on models that make ambiguous signals usable, and those models improve only when credible error is allowed to change them. The goal is not to remove prior expectations, but to make their influence testable and their updating proportionate to evidence.
 
 ## Practice Lab
 
@@ -400,10 +367,6 @@ Choose a disagreement in which two people received similar information but infer
 
 ::: {.reference}
 Adelson, E. H. (2000). Lightness perception and lightness illusions. In M. Gazzaniga (Ed.), The new cognitive neurosciences (2nd ed., pp. 339–351). MIT Press.
-:::
-
-::: {.reference}
-Agrawal, A., Gans, J., & Goldfarb, A. (2019). Prediction, judgment, and complexity: A theory of decision-making and artificial intelligence. In A. Agrawal, J. Gans, & A. Goldfarb (Eds.), *The economics of artificial intelligence: An agenda* (pp. 89–110). University of Chicago Press.
 :::
 
 ::: {.reference}

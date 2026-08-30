@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1670" height="736" viewBox="0 0 1670 736" role="img" aria-labelledby="title desc">
 <title id="title">Decision loop</title>
-<desc id="desc">Information on alternatives flows to prediction, then valuation, choice, and outcome. Prediction and valuation are enclosed within judgment. Outcome connects to feedback and learning, which returns to prediction.</desc>
+<desc id="desc">Information on alternatives enters judgment. Prediction and valuation revise one another within judgment, which supports choice and outcome. Outcome connects to feedback and learning, which returns to judgment.</desc>
 <defs>
   <linearGradient id="lightGrad" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0%" stop-color="#fbfdff"/>
@@ -15,6 +15,9 @@
   </filter>
   <marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse">
     <path d="M1,1 L11,5 L1,9 Z" fill="#0a2f68"/>
+  </marker>
+  <marker id="arrowStart" markerWidth="12" markerHeight="10" refX="1" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M11,1 L1,5 L11,9 Z" fill="#0a2f68"/>
   </marker>
   <marker id="arrowSmall" markerWidth="11" markerHeight="11" refX="9.5" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
     <path d="M0,0 L11,5.5 L0,11 Z" fill="#0a2f68"/>
@@ -106,7 +109,7 @@
 
 <!-- Main forward-flow arrows -->
 <path d="M310 280 H399" fill="none" stroke="#0a2f68" stroke-width="4" marker-end="url(#arrow)"/>
-<path d="M605 363 V447" fill="none" stroke="#0a2f68" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M605 363 V447" fill="none" stroke="#0a2f68" stroke-width="4" marker-start="url(#arrowStart)" marker-end="url(#arrow)"/>
 <path d="M811 528 H992" fill="none" stroke="#0a2f68" stroke-width="4" marker-end="url(#arrow)"/>
 <path d="M1240 528 H1364" fill="none" stroke="#0a2f68" stroke-width="4" marker-end="url(#arrow)"/>
 

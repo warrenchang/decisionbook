@@ -76,7 +76,7 @@ The first two do not automatically establish the third. A price can be difficult
 
 ![A photograph of a €20 note still lying on the ground leads to three separate market-efficiency claims: information moves quickly, there is no free lunch after risk and realistic costs, and the price equals fundamental value. The first two claims do not establish the third.](../figures/finance-euro-efficiency.svg){#fig-finance-euro-efficiency fig-alt="A photograph shows a twenty-euro note lying on pavement. From the photograph, one common branch points to three boxes distinguishing rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third." width=100%}
 
-Figure @fig-finance-euro-efficiency makes the €20-note intuition concrete using the photograph supplied for this book. Its separation of the three claims is the point: finding an unclaimed reward and establishing fundamental-value accuracy are different evidentiary tasks.
+@fig-finance-euro-efficiency makes the €20-note intuition concrete using the photograph supplied for this book. Its separation of the three claims is the point: finding an unclaimed reward and establishing fundamental-value accuracy are different evidentiary tasks.
 
 Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.
 
@@ -121,7 +121,7 @@ If prices incorporate a clean public surprise rapidly, abnormal returns should c
 
 ![An event-study schematic distinguishes the estimation window, the event's first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift; they are not digitized effect-size estimates.](../figures/finance-event-study-drift.svg){#fig-finance-event-study-drift fig-alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs." width=100%}
 
-Figure @fig-finance-event-study-drift makes an important boundary visible. A price reaction is observed; an **abnormal** reaction exists only relative to the expected-return model. Continued separation after the event is evidence to explain, not an automatically tradable return.
+@fig-finance-event-study-drift makes an important boundary visible. A price reaction is observed; an **abnormal** reaction exists only relative to the expected-return model. Continued separation after the event is evidence to explain, not an automatically tradable return.
 
 Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.
 
@@ -174,13 +174,13 @@ After Palm's first trading day, observed prices implied that the residual 3Com b
 
 ## A bubble is a reinforcing-process hypothesis
 
-Fundamental value is not printed beside the price. It depends on uncertain cash flows, discount rates, and a terminal value. Let $s_t$ denote the annualized $t$-period spot rate and let $P_T$ be the ex-dividend terminal price. A model can discipline the debate:
+Fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. Let $D_t$ denote the discount factor appropriate to a cash flow at horizon $t$, and let $P_T$ be the ex-dividend terminal price. A deliberately simplified discounted-cash-flow model can discipline the debate:
 
 $$
-V_0=\sum_{t=1}^{T}\frac{E(CF_t)}{(1+s_t)^t}+\frac{E(P_T)}{(1+s_T)^T}.
+V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 $$
 
-If $r_s$ instead denotes the one-period rate applying in period $s$, the discount factor for a cash flow at $t$ is $\prod_{s=1}^{t}(1+r_s)$ rather than $(1+r_t)^t$. But correct notation must not create false precision. Before calling a price irrational, state the growth, margin, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
+Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without such an adjustment would overstate value. But correct notation must not create false precision. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
 
 ![A speculative feedback loop runs from price increases to attention and extrapolative expectations, then to demand and strategic resale, then through leverage and liquidity back to price. Fundamentals enter the price from outside the loop. Supply, short selling, risk limits, and skeptical capital can brake the process, but synchronization and funding risk can delay correction.](../figures/asset-bubble-feedback.svg){#fig-asset-bubble-feedback fig-alt="A circular four-stage loop shows price increase, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Arrows connect each stage and return to price. A fundamentals box feeds price separately. Four brake boxes—elastic supply, short selling, risk limits, and skeptical capital—point toward the loop, with a note that funding and synchronization risk can weaken the brakes."}
 
@@ -198,9 +198,9 @@ From the January 3, 1995 close of 743.58 to the March 10, 2000 peak close of 5,0
 
 The internet was not imaginary. The mistake would be to infer that every firm exposed to a transformative technology deserved every price. Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
 
-### One laboratory market: known value can still be exceeded
+### One laboratory market: a known risk-neutral benchmark can still be exceeded
 
-Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, a risk-neutral benchmark without final redemption is $FV_t=kd$. Even with this transparent declining value, prices in many baseline markets rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
+Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark** without final redemption is $FV_t=kd$. This benchmark is transparent, but it is not a unique subjective value for participants with different risk preferences. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
 
 The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them; learning is representation-specific rather than universal immunity (Dufwenberg et al., 2005; Hussam et al., 2008).
 

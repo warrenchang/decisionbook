@@ -35,7 +35,7 @@ That question turns a scandal story into a problem of inference and institutiona
 
 ![A five-stage pipeline from phenomenon and theory through study design, observed data, analysis and reporting, to the visible literature. Safeguards below the pipeline show where precision, preregistration, audit trails, open workflows, and replication and correction strengthen the evidence chain.](../figures/selected-evidence-pipeline.svg){#fig-selected-evidence-pipeline fig-alt="Five evenly spaced boxes show how a phenomenon becomes visible literature through study design, observed data, and analysis and reporting. A lower row connects theory and precision, preregistration, audit trails, open workflows, and replication and correction to the corresponding stages."}
 
-Figure @fig-selected-evidence-pipeline makes the central point visible. The literature is evidence, but it is **selected evidence**. A safeguard aimed at one stage cannot repair every other stage. Preregistration can reveal when an analysis was planned, but it cannot validate a poor measure. Open data can expose a coding error, but it cannot make an underpowered design precise. Replication can update an effect estimate, but it cannot recover undocumented implementation details.
+@fig-selected-evidence-pipeline makes the central point visible. The literature is evidence, but it is **selected evidence**. A safeguard aimed at one stage cannot repair every other stage. Preregistration can reveal when an analysis was planned, but it cannot validate a poor measure. Open data can expose a coding error, but it cannot make an underpowered design precise. Replication can update an effect estimate, but it cannot recover undocumented implementation details.
 
 ## What the replication crisis does—and does not—mean
 
@@ -82,6 +82,10 @@ Statistical power is the probability that a specified analysis will meet a speci
 Low power has an obvious consequence: real effects are often missed. Its less obvious consequence appears when only “successful” results become visible.
 
 Suppose the true effect is small. Small studies will produce a wide distribution of estimates. Most will be inconclusive. A few will be large enough to cross a significance threshold. If journals, authors, or news outlets disproportionately select those few, the visible estimates will be unusually large. This is the **winner’s curse**: conditional on winning the selection contest, the estimate tends to overstate the underlying signal.
+
+![A deterministic teaching simulation shows noisy estimates passing through a significance-only reporting gate. The true effect is 0.20 standard deviations, outcome variance is 1, each arm has 50 observations, alpha is .05, and the seed is 20260830. Across 2,000 simulated studies, 328 pass the gate and their mean estimate is 0.490 rather than 0.20.](../figures/selected-literature-simulation.svg){#fig-selected-literature-simulation fig-alt="A vertical three-stage figure shows all simulated estimates distributed around a true effect of 0.20, a reporting gate that retains only two-sided p-values below .05, and a selected visible distribution concentrated on larger positive estimates. The figure declares the variance, sample size, alpha, seed, selection rule, power, selected count, selected mean, and wrong-sign count."}
+
+@fig-selected-literature-simulation isolates one mechanism. Under the declared normal-outcome model, each difference in means has standard error 0.20 and theoretical power of 17.0%. The significance-only rule makes 328 of 2,000 studies visible; their mean estimate is 0.490, about 2.5 times the true effect, and four have the wrong sign. This is a reproducible demonstration of selection, not an estimate of how any actual discipline publishes. The deterministic generator is `scripts/build_methods_appendix_figures.py`; its study-level output and parameter record are preserved in `figures/source/selected-literature-simulation.csv` and `.json`.
 
 This creates two risks:
 
@@ -256,7 +260,7 @@ Correction is not evidence that science has failed. A system that can reveal, in
 
 A small original study reports a large intervention effect on one of six measured outcomes. The article discusses only that outcome and does not disclose its stopping rule. A larger preregistered replication estimates a much smaller effect with an interval spanning zero. The raw data and analysis code for the original are unavailable.
 
-Do not vote “true” or “false.” Map the case onto Figure @fig-selected-evidence-pipeline. Identify the uncertainty introduced at design, data, analysis, publication, and replication. Then propose: (a) the next study, (b) the cumulative claim that is warranted now, and (c) one institutional change that would have made the evidence easier to interpret.
+Do not vote “true” or “false.” Map the case onto @fig-selected-evidence-pipeline. Identify the uncertainty introduced at design, data, analysis, publication, and replication. Then propose: (a) the next study, (b) the cumulative claim that is warranted now, and (c) one institutional change that would have made the evidence easier to interpret.
 
 EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
 Experience: state what each study found. Explain: diagnose two distinct threats without alleging intent. Apply: design the next test and write the revised claim.
@@ -265,7 +269,7 @@ Experience: state what each study found. Explain: diagnose two distinct threats 
 ## References cited in this appendix
 
 ::: {.reference}
-Bateson, M., Nettle, D., & Roberts, G. (2006). Cues of being watched enhance cooperation in a real-world setting. *Biology Letters, 2*(3), 412–414.
+Bateson, M., Nettle, D., & Roberts, G. (2006). Cues of being watched enhance cooperation in a real-world setting. *Biology Letters, 2*(3), 412–414. https://doi.org/10.1098/rsbl.2006.0509
 :::
 
 ::: {.reference}
@@ -301,7 +305,7 @@ National Academies of Sciences, Engineering, and Medicine. (2019). *Reproducibil
 :::
 
 ::: {.reference}
-Northover, S. B., Pedersen, W. C., Cohen, A. B., & Andrews, P. W. (2017). Artificial surveillance cues do not increase generosity: Two meta-analyses. *Evolution and Human Behavior, 38*(1), 144–153.
+Northover, S. B., Pedersen, W. C., Cohen, A. B., & Andrews, P. W. (2017). Artificial surveillance cues do not increase generosity: Two meta-analyses. *Evolution and Human Behavior, 38*(1), 144–153. https://doi.org/10.1016/j.evolhumbehav.2016.07.001
 :::
 
 ::: {.reference}

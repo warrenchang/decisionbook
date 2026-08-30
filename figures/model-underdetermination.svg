@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="850" viewBox="0 0 900 850" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic observations underdetermine future extrapolation</title>
+  <desc id="desc">Five declared synthetic observations at periods one through five take values twelve, eighteen, twenty-four, thirty, and thirty-six. Three candidate curves share these observations exactly, then extrapolate as steady growth, acceleration, or a plateau. A pre-specified synthetic observation of forty-four at period eight lies near the plateau candidate and far from the other two. A note explains that the point favors rather than proves the plateau model because repeated out-of-sample observations and a noise model are still needed.</desc>
+  <defs>
+    <style>
+      .title{font:700 38px Arial,sans-serif;fill:#17324d}
+      .subtitle{font:29px Arial,sans-serif;fill:#536879}
+      .axis{stroke:#4f6476;stroke-width:2.5}
+      .grid{stroke:#d8e1e8;stroke-width:1.5}
+      .tick{font:27px Arial,sans-serif;fill:#536879}
+      .axislabel{font:700 30px Arial,sans-serif;fill:#17324d}
+      .label{font:700 27px Arial,sans-serif;fill:#17324d}
+      .observed{fill:#17324d;stroke:#ffffff;stroke-width:2.5}
+      .future{fill:#ffffff;stroke:#3f7f54;stroke-width:5}
+      .note{font:27px Arial,sans-serif;fill:#40566a}
+      .noteStrong{font:700 28px Arial,sans-serif;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="900" height="810" fill="#ffffff"/>
+  <text class="title" x="450" y="49" text-anchor="middle">One pattern, three extrapolations</text>
+  <text class="subtitle" x="450" y="89" text-anchor="middle">Declared synthetic values through period 5: 12, 18, 24, 30, 36</text>
+
+  <rect x="70" y="120" width="770" height="500" rx="22" fill="#f8fafc" stroke="#b8c9d6" stroke-width="2"/>
+
+  <line class="grid" x1="110" y1="500" x2="820" y2="500"/>
+  <line class="grid" x1="110" y1="420" x2="820" y2="420"/>
+  <line class="grid" x1="110" y1="340" x2="820" y2="340"/>
+  <line class="grid" x1="110" y1="260" x2="820" y2="260"/>
+  <line class="grid" x1="110" y1="180" x2="820" y2="180"/>
+  <line class="axis" x1="110" y1="580" x2="820" y2="580"/>
+  <line class="axis" x1="110" y1="155" x2="110" y2="580"/>
+
+  <text class="tick" x="92" y="588" text-anchor="end">0</text>
+  <text class="tick" x="92" y="508" text-anchor="end">20</text>
+  <text class="tick" x="92" y="428" text-anchor="end">40</text>
+  <text class="tick" x="92" y="348" text-anchor="end">60</text>
+  <text class="tick" x="92" y="268" text-anchor="end">80</text>
+  <text class="tick" x="92" y="188" text-anchor="end">100</text>
+  <text class="tick" x="150" y="610" text-anchor="middle">1</text>
+  <text class="tick" x="230" y="610" text-anchor="middle">2</text>
+  <text class="tick" x="310" y="610" text-anchor="middle">3</text>
+  <text class="tick" x="390" y="610" text-anchor="middle">4</text>
+  <text class="tick" x="470" y="610" text-anchor="middle">5</text>
+  <text class="tick" x="550" y="610" text-anchor="middle">6</text>
+  <text class="tick" x="630" y="610" text-anchor="middle">7</text>
+  <text class="tick" x="710" y="610" text-anchor="middle">8</text>
+  <text class="tick" x="790" y="610" text-anchor="middle">9</text>
+  <text class="axislabel" x="465" y="648" text-anchor="middle">Period</text>
+  <text class="axislabel" x="32" y="370" text-anchor="middle" transform="rotate(-90 32 370)">Synthetic outcome</text>
+
+  <rect x="132" y="140" width="520" height="49" rx="15" fill="#e9eef2" stroke="#aebbc5" stroke-width="1.5"/>
+  <text x="392" y="173" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#17324d">ALL THREE CURVES FIT PERIODS 1–5</text>
+  <line x1="470" y1="135" x2="470" y2="580" stroke="#8294a3" stroke-width="2.5" stroke-dasharray="8 7"/>
+  <text class="tick" x="483" y="214">extrapolation begins</text>
+
+  <path d="M 150 532 L 230 508 L 310 484 L 390 460 L 470 436" fill="none" stroke="#17324d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="observed" cx="150" cy="532" r="8"/>
+  <circle class="observed" cx="230" cy="508" r="8"/>
+  <circle class="observed" cx="310" cy="484" r="8"/>
+  <circle class="observed" cx="390" cy="460" r="8"/>
+  <circle class="observed" cx="470" cy="436" r="8"/>
+
+  <path d="M 470 436 L 790 340" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 470 436 C 515 430 535 418 550 404 C 585 385 610 370 630 356 C 665 334 690 312 710 292 C 745 260 770 232 790 212" fill="none" stroke="#c96021" stroke-width="5" stroke-dasharray="11 7" stroke-linecap="round"/>
+  <path d="M 470 436 C 520 421 530 420 550 420 C 590 414 610 411 630 410 C 670 407 690 405 710 404 C 745 402 770 401 790 400" fill="none" stroke="#3f7f54" stroke-width="5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+  <rect x="150" y="282" width="280" height="145" rx="16" fill="#ffffff" stroke="#c4d1da" stroke-width="1.8"/>
+  <line x1="178" y1="316" x2="235" y2="316" stroke="#c96021" stroke-width="5" stroke-dasharray="11 7"/>
+  <text class="label" x="250" y="324">Acceleration</text>
+  <line x1="178" y1="360" x2="235" y2="360" stroke="#2f6f9f" stroke-width="5"/>
+  <text class="label" x="250" y="368">Steady growth</text>
+  <line x1="178" y1="404" x2="235" y2="404" stroke="#3f7f54" stroke-width="5" stroke-dasharray="3 7" stroke-linecap="round"/>
+  <text class="label" x="250" y="412">Plateau</text>
+
+  <line x1="710" y1="365" x2="710" y2="580" stroke="#3f7f54" stroke-width="2.5" stroke-dasharray="8 7"/>
+  <circle class="future" cx="710" cy="404" r="11"/>
+  <rect x="535" y="458" width="250" height="101" rx="16" fill="#eef5ef" stroke="#8db29a" stroke-width="2"/>
+  <text class="label" x="660" y="489" text-anchor="middle">PRE-SPECIFIED</text>
+  <text class="label" x="660" y="518" text-anchor="middle">FUTURE TEST</text>
+  <text class="note" x="660" y="548" text-anchor="middle">period 8: y = 44</text>
+
+  <rect x="70" y="675" width="770" height="150" rx="19" fill="#f9f1e8" stroke="#d2a16f" stroke-width="2"/>
+  <text class="noteStrong" x="455" y="710" text-anchor="middle">Observed points do not choose the extrapolation.</text>
+  <text class="note" x="455" y="744" text-anchor="middle">Here, y=44 favors the plateau; it does not prove it.</text>
+  <text class="note" x="455" y="779" text-anchor="middle">Repeated out-of-sample observations</text>
+  <text class="note" x="455" y="812" text-anchor="middle">and a stated noise model are still needed.</text>
+</svg>

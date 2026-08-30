@@ -44,7 +44,7 @@ The same dataset may answer the first question and fail on the other three. A ti
 
 ![A five-stage evidence pipeline from question and hypothesis through construct and measure, assignment and comparison, estimand and analysis, to the final claim, with common threats and a feedback path for reproduction, replication, and revision.](../figures/claim-to-design-pipeline.svg){#fig-claim-to-design-pipeline fig-alt="A left-to-right pipeline begins with question, then measure, compare, estimate, and claim. Under each stage is a common failure: vague target, invalid measure, confounding, fragile estimate, and overclaiming. A lower arrow labeled reproduce, replicate, revise returns from the claim to the question."}
 
-Figure @fig-claim-to-design-pipeline shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.
+@fig-claim-to-design-pipeline shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.
 
 ## 1. Turn a topic into a question and hypothesis
 
@@ -152,6 +152,10 @@ No design dominates on every dimension. Control can improve internal validity an
 
 A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.
 
+![Random sampling and random assignment solve different inferential problems. Sampling supports a claim to a defined population under the sampling design; assignment supports an internal contrast under the randomization and implementation assumptions. Neither process alone resolves attrition, interference, or transportability.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability."}
+
+@fig-random-sampling-vs-assignment keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.
+
 ### Random assignment balances in expectation
 
 Random assignment does not guarantee that realized groups are identical. It makes assignment independent of baseline potential outcomes and covariates according to a known mechanism. Across repeated randomizations, differences average to zero; in one realized sample, chance imbalance can occur (Imbens & Rubin, 2015).
@@ -192,6 +196,10 @@ After data collection, observed power computed from the observed effect adds lit
 ## 8. Protect the assignment during implementation
 
 A randomized design can lose its meaning after allocation. Track a participant or unit flow from eligibility through assignment, delivery, outcome observation, and analysis.
+
+![A participant-flow audit separates assignment, treatment receipt, outcome observation, analysis, and cross-arm spillovers. ITT follows the original assignment groups; noncompliance, missingness, and interference are different problems. There is no universally safe attrition percentage.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe."}
+
+@fig-participant-flow-threats prevents several losses from being collapsed into “dropout.” **Noncompliance** separates assignment from treatment receipt. **Missingness or attrition** separates assignment from outcome observation. **Interference** means that one unit's assignment or treatment changes another unit's exposure or outcome. Each changes the estimand or the assumptions needed for interpretation.
 
 ### Attrition and missing outcomes
 
@@ -372,7 +380,7 @@ Institutional review, data-protection law, registration, and local procedures ch
 ::: {.callout-tip .activity icon=false}
 ## Activity: break and repair the evidence chain
 
-Choose one claim from the book or current media. Place it in Figure @fig-claim-to-design-pipeline. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.
+Choose one claim from the book or current media. Place it in @fig-claim-to-design-pipeline. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.
 
 EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
 Experience: state the original claim and evidence. Explain: identify one design link and one assumption. Apply: give the revised design or the narrower warranted claim.

@@ -707,7 +707,7 @@ Figure&nbsp;C.1: A five-stage evidence pipeline from question and hypothesis thr
 </figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>C.1</span></a> shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.</p>
+<p><a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>C.1</span></a> shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.</p>
 </section>
 <section id="turn-a-topic-into-a-question-and-hypothesis" class="level2">
 <h2 data-anchor-id="turn-a-topic-into-a-question-and-hypothesis">1. Turn a topic into a question and hypothesis</h2>
@@ -904,6 +904,17 @@ Table&nbsp;C.3: Designs answer different questions under different assumptions
 <h2 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h2>
 <p><strong>Random sampling</strong> selects units from a population and supports population description under the sampling design. <strong>Random assignment</strong> allocates eligible units to conditions and supports causal comparison within the experimental sample.</p>
 <p>A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.</p>
+<div id="fig-random-sampling-vs-assignment" class="quarto-float quarto-figure quarto-figure-center" alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/random-sampling-vs-assignment.svg" class="img-fluid figure-img" alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;C.2: Random sampling and random assignment solve different inferential problems. Sampling supports a claim to a defined population under the sampling design; assignment supports an internal contrast under the randomization and implementation assumptions. Neither process alone resolves attrition, interference, or transportability.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>C.2</span></a> keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.</p>
 <section id="random-assignment-balances-in-expectation" class="level3">
 <h3 data-anchor-id="random-assignment-balances-in-expectation">Random assignment balances in expectation</h3>
 <p>Random assignment does not guarantee that realized groups are identical. It makes assignment independent of baseline potential outcomes and covariates according to a known mechanism. Across repeated randomizations, differences average to zero; in one realized sample, chance imbalance can occur (Imbens &amp; Rubin, 2015).</p>
@@ -941,6 +952,17 @@ Table&nbsp;C.3: Designs answer different questions under different assumptions
 <section id="protect-the-assignment-during-implementation" class="level2">
 <h2 data-anchor-id="protect-the-assignment-during-implementation">8. Protect the assignment during implementation</h2>
 <p>A randomized design can lose its meaning after allocation. Track a participant or unit flow from eligibility through assignment, delivery, outcome observation, and analysis.</p>
+<div id="fig-participant-flow-threats" class="quarto-float quarto-figure quarto-figure-center" alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/participant-flow-threats.svg" class="img-fluid figure-img" alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;C.3: A participant-flow audit separates assignment, treatment receipt, outcome observation, analysis, and cross-arm spillovers. ITT follows the original assignment groups; noncompliance, missingness, and interference are different problems. There is no universally safe attrition percentage.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-participant-flow-threats" class="quarto-xref">Figure&nbsp;<span>C.3</span></a> prevents several losses from being collapsed into “dropout.” <strong>Noncompliance</strong> separates assignment from treatment receipt. <strong>Missingness or attrition</strong> separates assignment from outcome observation. <strong>Interference</strong> means that one unit’s assignment or treatment changes another unit’s exposure or outcome. Each changes the estimand or the assumptions needed for interpretation.</p>
 <section id="attrition-and-missing-outcomes" class="level3">
 <h3 data-anchor-id="attrition-and-missing-outcomes">Attrition and missing outcomes</h3>
 <p>Attrition is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.</p>
@@ -1217,7 +1239,7 @@ Table&nbsp;C.5: A compact evidence design card
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose one claim from the book or current media. Place it in Figure <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>C.1</span></a>. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.</p>
+<p>Choose one claim from the book or current media. Place it in <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>C.1</span></a>. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.</p>
 <p>EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)<br>
 Experience: state the original claim and evidence. Explain: identify one design link and one assumption. Apply: give the revised design or the narrower warranted claim.</p>
 </div>

@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **768**
+Unique references in the master union: **773**
 
-Chapter reference blocks: **839**
+Chapter reference blocks: **845**
 
 Unresolved author–year citations: **0**
 
@@ -12,17 +12,17 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| Decision-Making Is a Process, Not a Moment | 14 | 0 |
-| Building a Better Decision: Rationality, Alternatives, and Opportunity Cost | 11 | 0 |
-| Attention: What Becomes Evidence? | 29 | 0 |
-| The Predictive Mind: Perception Is Inference | 30 | 0 |
+| Decision-Making Is a Process, Not a Moment | 7 | 0 |
+| Building a Better Decision: Rationality, Alternatives, and Opportunity Cost | 18 | 0 |
+| Attention: What Becomes Evidence? | 31 | 0 |
+| The Predictive Mind: Perception Is Inference | 29 | 0 |
 | Valuation: How Options Become Worth Choosing | 39 | 0 |
 | Expectations: When Predictions Become Causes | 44 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 18 | 0 |
 | Fast and Frugal Thinking | 32 | 0 |
 | What Feels Likely: Availability, Affect, and Resemblance | 17 | 0 |
 | Beliefs That Defend Themselves | 25 | 0 |
-| When Context Rewrites Comparison | 10 | 0 |
+| When Context Rewrites Comparison | 11 | 0 |
 | Framing: When the Same Facts Become Different Decisions | 16 | 0 |
 | Accessibility, Familiarity, and Ease | 23 | 0 |
 | Base Rates, Conditional Probability, and Bayesian Updating | 7 | 0 |
@@ -36,7 +36,7 @@ Unresolved author–year citations: **0**
 | Deciding for a Better Life: Satisfaction, Connection, and Meaning | 18 | 0 |
 | Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
 | Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |
-| Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 24 | 0 |
+| Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 26 | 0 |
 | Social Norms and Conformity: When Other People Become Evidence | 29 | 0 |
 | Markets, Mispricing, and Bubbles | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
@@ -51,8 +51,8 @@ Unresolved author–year citations: **0**
 | Creating Value Across Differences | 8 | 0 |
 | Designing Better Agreements | 18 | 0 |
 | Behavior Design: Make the Better Action Easier | 19 | 0 |
-| Choice Architecture: The Environment Gets a Vote | 27 | 0 |
-| Decision Hygiene: Build a Process That Can Learn | 29 | 0 |
+| Choice Architecture: The Environment Gets a Vote | 28 | 0 |
+| Decision Hygiene: Build a Process That Can Learn | 30 | 0 |
 
 ## Unresolved citation strings
 

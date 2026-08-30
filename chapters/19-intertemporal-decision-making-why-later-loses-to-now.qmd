@@ -76,6 +76,8 @@ This financial discount factor is not the same object as a psychological discoun
 
 Exponential discounting treats each added period proportionally. Human choices often display **declining impatience**: the difference between now and soon feels larger than an equal difference between two distant dates. Hyperbolic models capture this pattern by making the implied discount rate fall with delay (Ainslie, 1975). Quasi-hyperbolic models simplify it into a special penalty for anything not immediate, followed by more regular discounting across later periods (Laibson, 1997).
 
+![Three declared teaching discount functions illustrate different implications: exponential $D(t)=0.95^t$, hyperbolic $D(t)=1/(1+0.15t)$, and quasi-hyperbolic $D(0)=1$ and $D(t>0)=0.70(0.95^t)$. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. These parameterized models are not fitted data or universal human curves, and observed choices may also reflect liquidity, trust, risk, and changing states.](../figures/discount-model-crossover.svg){#fig-discount-model-crossover fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent and actual choices can reflect factors beyond discounting." width=100%}
+
 The important psychological result is **dynamic inconsistency**. A plan that looks best from a distance can lose when temptation or effort becomes immediate. O'Donoghue and Rabin (1999) show how present bias can produce two familiar failures:
 
 - **procrastination:** an action has an immediate cost and delayed benefit, so the person repeatedly postpones it;
@@ -139,6 +141,8 @@ The choice “€100 today or €120 in a month” hides two complete outcome st
 - €0 today **and €120 in one month**.
 
 Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The mechanism connects directly to opportunity-cost neglect: the immediate reward is not free; it replaces a later reward. A fair design can reveal the full stream without pretending that the later option must be chosen.
+
+![The abbreviated and complete-stream displays contain the same payoffs. Writing the otherwise hidden zeros makes the forgone outcome at each date explicit and can redirect attention to opportunity cost. The fuller frame does not establish that the delayed option is normatively superior.](../figures/hidden-zero-frame.svg){#fig-hidden-zero-frame fig-alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month. A note says the fuller frame changes attention without making the delayed option normatively decisive." width=100%}
 
 ### The search path can construct patience
 

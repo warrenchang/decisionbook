@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
-  <title id="title">A predictive-processing account of perception, action, and updating</title>
-  <desc id="desc">A theoretical loop links an internal generative model, predictions, perception and judgment, action, the environment, sensory signals, prediction error, and model updating. Precision is the estimated reliability of prediction-error signals and modulates their influence. Predictive-processing variants differ, and attention is only sometimes modeled partly through precision.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="790" viewBox="0 0 1600 790" role="img" aria-labelledby="title desc">
+  <title id="title">A predictive-processing account of perception, sampling, and updating</title>
+  <desc id="desc">A theoretical loop links an internal generative model, predicted sensory signals, perceptual inference, action and sampling, the environment, sensory signals, prediction error, and model updating. Precision is the estimated reliability of prediction-error signals and modulates their influence. Predictive-processing variants differ, and attention is only sometimes modeled partly through precision.</desc>
   <defs>
     <marker id="blue-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#2f6f9f"/></marker>
     <marker id="purple-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#7657a8"/></marker>
@@ -17,27 +17,27 @@
       .flow{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
     </style>
   </defs>
-  <rect width="1600" height="760" fill="#ffffff"/>
-  <text class="title" x="800" y="48" text-anchor="middle">A predictive-processing account of inference, action, and updating</text>
+  <rect width="1600" height="790" fill="#ffffff"/>
+  <text class="title" x="800" y="48" text-anchor="middle">A predictive-processing account of perception, sampling, and updating</text>
   <text class="subtitle" x="800" y="80" text-anchor="middle">A theoretical family of models—not a direct image of one neural implementation</text>
 
-  <rect x="45" y="112" width="1510" height="525" rx="30" fill="#fbfcfe" stroke="#bdd0de" stroke-width="2.5"/>
+  <rect x="45" y="112" width="1510" height="615" rx="30" fill="#fbfcfe" stroke="#bdd0de" stroke-width="2.5"/>
 
   <rect class="node" x="85" y="145" width="285" height="150" rx="20" fill="#eaf3f8" stroke="#2f6f9f"/>
   <text class="label" x="228" y="187" text-anchor="middle">Internal generative model</text>
-  <text class="body" x="228" y="221" text-anchor="middle"><tspan x="228">beliefs about hidden causes</tspan><tspan x="228" dy="25">outcome expectations</tspan><tspan x="228" dy="25">and possible actions</tspan></text>
+  <text class="body" x="228" y="221" text-anchor="middle"><tspan x="228">beliefs about hidden causes</tspan><tspan x="228" dy="25">and how they produce</tspan><tspan x="228" dy="25">sensory signals</tspan></text>
 
   <rect class="node" x="455" y="160" width="250" height="125" rx="20" fill="#eaf3f8" stroke="#2f6f9f"/>
   <text class="label" x="580" y="206" text-anchor="middle">Predictions</text>
-  <text class="body" x="580" y="239" text-anchor="middle"><tspan x="580">expected sensory</tspan><tspan x="580" dy="25">signals and outcomes</tspan></text>
+  <text class="body" x="580" y="239" text-anchor="middle"><tspan x="580">expected sensory</tspan><tspan x="580" dy="25">signals</tspan></text>
 
   <rect class="node" x="790" y="140" width="315" height="165" rx="20" fill="#eee9fb" stroke="#7657a8"/>
-  <text class="label" x="948" y="184" text-anchor="middle">Perception and judgment</text>
-  <text class="body" x="948" y="220" text-anchor="middle"><tspan x="948">infer the current situation</tspan><tspan x="948" dy="25">from predictions and</tspan><tspan x="948" dy="25">incoming signals</tspan></text>
+  <text class="label" x="948" y="184" text-anchor="middle">Perceptual inference</text>
+  <text class="body" x="948" y="220" text-anchor="middle"><tspan x="948">estimates hidden causes</tspan><tspan x="948" dy="25">from predictions and</tspan><tspan x="948" dy="25">incoming signals</tspan></text>
 
   <rect class="node" x="1190" y="160" width="235" height="125" rx="20" fill="#edf4ed" stroke="#447c55"/>
-  <text class="label" x="1308" y="206" text-anchor="middle">Action</text>
-  <text class="body" x="1308" y="239" text-anchor="middle"><tspan x="1308">changes sampling</tspan><tspan x="1308" dy="25">and the environment</tspan></text>
+  <text class="label" x="1308" y="206" text-anchor="middle">Action and sampling</text>
+  <text class="body" x="1308" y="239" text-anchor="middle"><tspan x="1308">change what sensory</tspan><tspan x="1308" dy="25">evidence arrives next</tspan></text>
 
   <path class="flow" d="M370 222 H455" stroke="#2f6f9f" stroke-width="4" marker-end="url(#blue-arrow)"/>
   <path class="flow" d="M705 222 H790" stroke="#2f6f9f" stroke-width="4" marker-end="url(#blue-arrow)"/>
@@ -67,8 +67,8 @@
   <circle cx="430" cy="492" r="5" fill="#c56a2d"/>
   <text class="note" x="330" y="330" text-anchor="start">precision-weighted error can update the model</text>
 
-  <rect x="250" y="575" width="1100" height="135" rx="20" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2"/>
-  <text class="label" x="800" y="612" text-anchor="middle">Evidence boundary</text>
-  <text class="note" x="800" y="644" text-anchor="middle"><tspan x="800">Attention is sometimes modeled partly through precision assignment; it is not identical to precision.</tspan><tspan x="800" dy="25">Teaching synthesis of Rao &amp; Ballard (1999), Clark (2013), and Friston (2010).</tspan><tspan x="800" dy="25">Predictive-processing and active-inference formulations differ in scope and implementation.</tspan></text>
-  <text class="subtitle" x="800" y="734" text-anchor="middle">Precision means estimated reliability—not confidence, arousal, or attention in every sense.</text>
+  <rect x="250" y="580" width="1100" height="130" rx="20" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2"/>
+  <text class="label" x="800" y="615" text-anchor="middle">Evidence boundary</text>
+  <text class="note" x="800" y="645" text-anchor="middle"><tspan x="800">Attention is sometimes modeled partly through precision assignment; it is not identical to precision.</tspan><tspan x="800" dy="25">Teaching synthesis of Rao &amp; Ballard (1999), Clark (2013), and Friston (2010).</tspan><tspan x="800" dy="25">Predictive-processing and active-inference formulations differ in scope and implementation.</tspan></text>
+  <text class="subtitle" x="800" y="760" text-anchor="middle">Precision means estimated reliability—not confidence, arousal, or attention in every sense.</text>
 </svg>

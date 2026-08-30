@@ -75,6 +75,7 @@ REQUIRED_CONTENT = [
     "A Decision Is Already in the Making",
     "At 3:17 p.m.",
     "The decision is already in the making.",
+    "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
     "pause without reset",
     "Scheduled cue occasions / days",
@@ -157,6 +158,25 @@ def main() -> int:
         }
         missing_manifest = sorted(path for path in manifest_paths.values() if path not in names)
         check("Every manifest resource exists", not missing_manifest, ", ".join(missing_manifest[:5]))
+
+        css_paths = [
+            manifest_paths[item_id]
+            for item_id, item in manifest.items()
+            if item.get("media-type") == "text/css" and manifest_paths[item_id] in names
+        ]
+        packaged_css = "\n".join(archive.read(path).decode("utf-8", "ignore") for path in css_paths)
+        table_cell_rule = re.search(r"th\s*,\s*td\s*\{(?P<body>.*?)\}", packaged_css, flags=re.DOTALL | re.I)
+        check(
+            "EPUB table cells have visible borders",
+            table_cell_rule is not None and "border:" in table_cell_rule.group("body").lower(),
+            ", ".join(css_paths),
+        )
+        check(
+            "EPUB table headers have a contrasting background",
+            re.search(r"thead\s+th\s*\{[^}]*background-color\s*:", packaged_css, flags=re.DOTALL | re.I)
+            is not None,
+            ", ".join(css_paths),
+        )
 
         spine_refs = [item.get("idref", "") for item in package.findall(f".//{{{OPF}}}spine/{{{OPF}}}itemref")]
         missing_spine = [item_id for item_id in spine_refs if item_id not in manifest]
@@ -405,13 +425,13 @@ def main() -> int:
             else ""
         )
         chapter_four_root = parsed_chapters.get(chapter_four_path)
-        functional_loop = (
-            chapter_four_root.find(f".//*[@id='tbl-functional-predictive-loop']")
+        prediction_meanings = (
+            chapter_four_root.find(f".//*[@id='tbl-two-meanings-prediction']")
             if chapter_four_root is not None
             else None
         )
-        functional_table = functional_loop.find(f".//{{{XHTML}}}table") if functional_loop is not None else None
-        first_row = functional_table.find(f".//{{{XHTML}}}tr") if functional_table is not None else None
+        meanings_table = prediction_meanings.find(f".//{{{XHTML}}}table") if prediction_meanings is not None else None
+        first_row = meanings_table.find(f".//{{{XHTML}}}tr") if meanings_table is not None else None
         first_row_cells = (
             [child for child in list(first_row) if child.tag in {f"{{{XHTML}}}th", f"{{{XHTML}}}td"}]
             if first_row is not None
@@ -419,7 +439,7 @@ def main() -> int:
         )
         chapter_four_text = normalized_text(chapter_four_root) if chapter_four_root is not None else ""
         check(
-            "Chapter 4 functional loop uses the EPUB-safe two-column table",
+            "Chapter 4 prediction distinction uses an EPUB-safe two-column table",
             len(first_row_cells) == 2,
             f"{chapter_four_path}: {len(first_row_cells)} columns",
         )
@@ -432,6 +452,10 @@ def main() -> int:
         )
         for phrase in REQUIRED_CONTENT:
             check(f"Required content: {phrase}", phrase.lower() in searchable.lower())
+        check(
+            "Rendered EPUB contains no duplicated Figure Figure cross-reference labels",
+            re.search(r">\s*Figures?\s+<a\b[^>]*>\s*Figure", searchable, flags=re.DOTALL | re.I) is None,
+        )
         for phrase in ("Start Here", "Start reading", "Browse references"):
             check(f"Removed reader text: {phrase}", phrase.lower() not in searchable.lower())
         check("Removed acronym from reader package", re.search(r"\bDPN\b", searchable, flags=re.IGNORECASE) is None)

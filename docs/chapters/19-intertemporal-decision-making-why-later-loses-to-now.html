@@ -676,6 +676,16 @@ PV = \frac{FV}{(1+r)^n}.
 <section id="present-bias-and-preference-reversal" class="level3">
 <h3 data-anchor-id="present-bias-and-preference-reversal">Present bias and preference reversal</h3>
 <p>Exponential discounting treats each added period proportionally. Human choices often display <strong>declining impatience</strong>: the difference between now and soon feels larger than an equal difference between two distant dates. Hyperbolic models capture this pattern by making the implied discount rate fall with delay (Ainslie, 1975). Quasi-hyperbolic models simplify it into a special penalty for anything not immediate, followed by more regular discounting across later periods (Laibson, 1997).</p>
+<div id="fig-discount-model-crossover" class="quarto-float quarto-figure quarto-figure-center" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent and actual choices can reflect factors beyond discounting.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-discount-model-crossover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/discount-model-crossover.svg" class="img-fluid figure-img" style="width:100.0%" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent and actual choices can reflect factors beyond discounting.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discount-model-crossover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19.1: Three declared teaching discount functions illustrate different implications: exponential <span class="math inline">\(D(t)=0.95^t\)</span>, hyperbolic <span class="math inline">\(D(t)=1/(1+0.15t)\)</span>, and quasi-hyperbolic <span class="math inline">\(D(0)=1\)</span> and <span class="math inline">\(D(t&gt;0)=0.70(0.95^t)\)</span>. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. These parameterized models are not fitted data or universal human curves, and observed choices may also reflect liquidity, trust, risk, and changing states.
+</figcaption>
+</figure>
+</div>
 <p>The important psychological result is <strong>dynamic inconsistency</strong>. A plan that looks best from a distance can lose when temptation or effort becomes immediate. O’Donoghue and Rabin (1999) show how present bias can produce two familiar failures:</p>
 <ul>
 <li><strong>procrastination:</strong> an action has an immediate cost and delayed benefit, so the person repeatedly postpones it;</li>
@@ -693,7 +703,7 @@ PV = \frac{FV}{(1+r)^n}.
 <img src="../figures/intertemporal-choice.svg" class="img-fluid figure-img" alt="An author's diagnostic synthesis shows two paths from a choice point. Possible bottlenecks on a delayed path include uncertainty, weak future imagery, friction, and changing states; design levers can be tested against them. The factors are not required stages.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intertemporal-choice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;19.1: Intertemporal choice can be shaped by immediate salience, uncertainty, weak future imagery, friction, and changing states. The diagram is an author’s diagnostic synthesis of possible bottlenecks, not a claim that every choice passes through each one.
+Figure&nbsp;19.2: Intertemporal choice can be shaped by immediate salience, uncertainty, weak future imagery, friction, and changing states. The diagram is an author’s diagnostic synthesis of possible bottlenecks, not a claim that every choice passes through each one.
 </figcaption>
 </figure>
 </div>
@@ -831,6 +841,16 @@ Table&nbsp;19.2: MOST: four attributes that shift apparent discounting
 <li>€0 today <strong>and €120 in one month</strong>.</li>
 </ul>
 <p>Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The mechanism connects directly to opportunity-cost neglect: the immediate reward is not free; it replaces a later reward. A fair design can reveal the full stream without pretending that the later option must be chosen.</p>
+<div id="fig-hidden-zero-frame" class="quarto-float quarto-figure quarto-figure-center" alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month. A note says the fuller frame changes attention without making the delayed option normatively decisive.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hidden-zero-frame-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/hidden-zero-frame.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month. A note says the fuller frame changes attention without making the delayed option normatively decisive.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hidden-zero-frame-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19.3: The abbreviated and complete-stream displays contain the same payoffs. Writing the otherwise hidden zeros makes the forgone outcome at each date explicit and can redirect attention to opportunity cost. The fuller frame does not establish that the delayed option is normatively superior.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="the-search-path-can-construct-patience" class="level3">
 <h3 data-anchor-id="the-search-path-can-construct-patience">The search path can construct patience</h3>

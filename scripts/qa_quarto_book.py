@@ -26,6 +26,7 @@ HEADING = re.compile(r"^(#{2,6})\s+(.+?)\s*$", re.MULTILINE)
 ID = re.compile(r"\{[^}\n]*#([A-Za-z][\w:.-]*)[^}\n]*\}")
 FIGURE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)\{([^}\n]*)\}")
 QMD_LINK = re.compile(r"\[[^\]]+\]\(([^)#?]+\.qmd)(?:#[^)]+)?\)")
+REDUNDANT_FIGURE_XREF = re.compile(r"\bFigures?\s+@fig-[A-Za-z0-9_-]+")
 BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL)
 REQUIRED_PREFIXES = (
@@ -157,6 +158,15 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
 
     for chapter in chapters:
         text = chapter.read_text(encoding="utf-8")
+        for match in REDUNDANT_FIGURE_XREF.finditer(text):
+            issues.append(
+                Issue(
+                    "error",
+                    "redundant-figure-xref-label",
+                    rel(chapter),
+                    f"Write the cross-reference without a literal Figure label: {match.group(0)}.",
+                )
+            )
         headings = [match.group(2).strip() for match in HEADING.finditer(text)]
         h1s = H1.findall(text)
         if len(h1s) != 1:
@@ -236,6 +246,15 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
             issues.append(Issue("error", "missing-book-source", rel(source), "Configured book source does not exist."))
             continue
         text = source.read_text(encoding="utf-8")
+        for match in REDUNDANT_FIGURE_XREF.finditer(text):
+            issues.append(
+                Issue(
+                    "error",
+                    "redundant-figure-xref-label",
+                    rel(source),
+                    f"Write the cross-reference without a literal Figure label: {match.group(0)}.",
+                )
+            )
         for alt, target, attrs in FIGURE.findall(text):
             if not alt.strip() or not re.search(r'\bfig-alt="[^"]+"', attrs):
                 issues.append(Issue("error", "figure-alt", rel(source), f"Figure lacks caption or fig-alt: {target}."))
@@ -304,6 +323,15 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
             issues.append(Issue("error", "missing-rendered-chapter", rel(html_path), "Canonical chapter has not been rendered."))
             continue
         rendered = html_path.read_text(encoding="utf-8", errors="replace")
+        if re.search(r">Figures?\s+<a\b[^>]*class=\"quarto-xref\"[^>]*>\s*Figure", rendered, flags=re.I):
+            issues.append(
+                Issue(
+                    "error",
+                    "rendered-redundant-figure-xref-label",
+                    rel(html_path),
+                    "Rendered prose contains a duplicated Figure Figure reference.",
+                )
+            )
         for tag in re.findall(r"<img\b[^>]*>", rendered, flags=re.I):
             match = re.search(r'\balt="([^"]*)"', tag, flags=re.I)
             if match is None or not html.unescape(match.group(1)).strip():

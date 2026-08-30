@@ -607,7 +607,7 @@ Figure&nbsp;D.1: A five-stage pipeline from phenomenon and theory through study 
 </figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig-selected-evidence-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a> makes the central point visible. The literature is evidence, but it is <strong>selected evidence</strong>. A safeguard aimed at one stage cannot repair every other stage. Preregistration can reveal when an analysis was planned, but it cannot validate a poor measure. Open data can expose a coding error, but it cannot make an underpowered design precise. Replication can update an effect estimate, but it cannot recover undocumented implementation details.</p>
+<p><a href="#fig-selected-evidence-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a> makes the central point visible. The literature is evidence, but it is <strong>selected evidence</strong>. A safeguard aimed at one stage cannot repair every other stage. Preregistration can reveal when an analysis was planned, but it cannot validate a poor measure. Open data can expose a coding error, but it cannot make an underpowered design precise. Replication can update an effect estimate, but it cannot recover undocumented implementation details.</p>
 </section>
 <section id="what-the-replication-crisis-doesand-does-notmean" class="level2">
 <h2 data-anchor-id="what-the-replication-crisis-doesand-does-notmean">What the replication crisis does—and does not—mean</h2>
@@ -696,6 +696,17 @@ Table&nbsp;D.1: Different credibility questions require different tests
 <p>Statistical power is the probability that a specified analysis will meet a specified decision criterion under a stated effect and data-generating process. Power therefore depends on more than the number of participants. It depends on the effect worth detecting, variance, measurement reliability, allocation, clustering, attrition, compliance, multiplicity, and the estimator.</p>
 <p>Low power has an obvious consequence: real effects are often missed. Its less obvious consequence appears when only “successful” results become visible.</p>
 <p>Suppose the true effect is small. Small studies will produce a wide distribution of estimates. Most will be inconclusive. A few will be large enough to cross a significance threshold. If journals, authors, or news outlets disproportionately select those few, the visible estimates will be unusually large. This is the <strong>winner’s curse</strong>: conditional on winning the selection contest, the estimate tends to overstate the underlying signal.</p>
+<div id="fig-selected-literature-simulation" class="quarto-float quarto-figure quarto-figure-center" alt="A vertical three-stage figure shows all simulated estimates distributed around a true effect of 0.20, a reporting gate that retains only two-sided p-values below .05, and a selected visible distribution concentrated on larger positive estimates. The figure declares the variance, sample size, alpha, seed, selection rule, power, selected count, selected mean, and wrong-sign count.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-selected-literature-simulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/selected-literature-simulation.svg" class="img-fluid figure-img" alt="A vertical three-stage figure shows all simulated estimates distributed around a true effect of 0.20, a reporting gate that retains only two-sided p-values below .05, and a selected visible distribution concentrated on larger positive estimates. The figure declares the variance, sample size, alpha, seed, selection rule, power, selected count, selected mean, and wrong-sign count.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-selected-literature-simulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;D.2: A deterministic teaching simulation shows noisy estimates passing through a significance-only reporting gate. The true effect is 0.20 standard deviations, outcome variance is 1, each arm has 50 observations, alpha is .05, and the seed is 20260830. Across 2,000 simulated studies, 328 pass the gate and their mean estimate is 0.490 rather than 0.20.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-selected-literature-simulation" class="quarto-xref">Figure&nbsp;<span>D.2</span></a> isolates one mechanism. Under the declared normal-outcome model, each difference in means has standard error 0.20 and theoretical power of 17.0%. The significance-only rule makes 328 of 2,000 studies visible; their mean estimate is 0.490, about 2.5 times the true effect, and four have the wrong sign. This is a reproducible demonstration of selection, not an estimate of how any actual discipline publishes. The deterministic generator is <code>scripts/build_methods_appendix_figures.py</code>; its study-level output and parameter record are preserved in <code>figures/source/selected-literature-simulation.csv</code> and <code>.json</code>.</p>
 <p>This creates two risks:</p>
 <ul>
 <li><strong>Type S error:</strong> the estimated sign can be wrong.</li>
@@ -925,7 +936,7 @@ Table&nbsp;D.2: Safeguards solve different credibility problems
 </div>
 <div class="callout-body-container callout-body">
 <p>A small original study reports a large intervention effect on one of six measured outcomes. The article discusses only that outcome and does not disclose its stopping rule. A larger preregistered replication estimates a much smaller effect with an interval spanning zero. The raw data and analysis code for the original are unavailable.</p>
-<p>Do not vote “true” or “false.” Map the case onto Figure <a href="#fig-selected-evidence-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. Identify the uncertainty introduced at design, data, analysis, publication, and replication. Then propose: (a) the next study, (b) the cumulative claim that is warranted now, and (c) one institutional change that would have made the evidence easier to interpret.</p>
+<p>Do not vote “true” or “false.” Map the case onto <a href="#fig-selected-evidence-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. Identify the uncertainty introduced at design, data, analysis, publication, and replication. Then propose: (a) the next study, (b) the cumulative claim that is warranted now, and (c) one institutional change that would have made the evidence easier to interpret.</p>
 <p>EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)<br>
 Experience: state what each study found. Explain: diagnose two distinct threats without alleging intent. Apply: design the next test and write the revised claim.</p>
 </div>
@@ -934,7 +945,7 @@ Experience: state what each study found. Explain: diagnose two distinct threats 
 <section id="references-cited-in-this-appendix" class="level2">
 <h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
 <div class="reference">
-<p>Bateson, M., Nettle, D., &amp; Roberts, G. (2006). Cues of being watched enhance cooperation in a real-world setting. <em>Biology Letters, 2</em>(3), 412–414.</p>
+<p>Bateson, M., Nettle, D., &amp; Roberts, G. (2006). Cues of being watched enhance cooperation in a real-world setting. <em>Biology Letters, 2</em>(3), 412–414. https://doi.org/10.1098/rsbl.2006.0509</p>
 </div>
 <div class="reference">
 <p>Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., &amp; Munafò, M. R. (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience, 14</em>, 365–376.</p>
@@ -961,7 +972,7 @@ Experience: state what each study found. Explain: diagnose two distinct threats 
 <p>National Academies of Sciences, Engineering, and Medicine. (2019). <em>Reproducibility and replicability in science.</em> National Academies Press.</p>
 </div>
 <div class="reference">
-<p>Northover, S. B., Pedersen, W. C., Cohen, A. B., &amp; Andrews, P. W. (2017). Artificial surveillance cues do not increase generosity: Two meta-analyses. <em>Evolution and Human Behavior, 38</em>(1), 144–153.</p>
+<p>Northover, S. B., Pedersen, W. C., Cohen, A. B., &amp; Andrews, P. W. (2017). Artificial surveillance cues do not increase generosity: Two meta-analyses. <em>Evolution and Human Behavior, 38</em>(1), 144–153. https://doi.org/10.1016/j.evolhumbehav.2016.07.001</p>
 </div>
 <div class="reference">
 <p>Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., Buck, S., Chambers, C. D., Chin, G., Christensen, G., Contestabile, M., Dafoe, A., Eich, E., Freese, J., Glennerster, R., Goroff, D., Green, D. P., Hesse, B., Humphreys, M., … Yarkoni, T. (2015). Promoting an open research culture. <em>Science, 348</em>(6242), 1422–1425.</p>

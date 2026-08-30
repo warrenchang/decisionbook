@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="850" viewBox="0 0 900 850" role="img" aria-labelledby="title desc">
+  <title id="title">Regression to the mean in a declared teaching model</title>
+  <desc id="desc">A fixed-seed simulation of fifty observations uses independent standard-normal z one and epsilon, with z two equal to zero point four z one plus the square root of zero point eight four times epsilon. Seed 50273 produces a displayed sample correlation of about zero point four. The conditional prediction line has slope zero point four. An initial observation two standard deviations above average predicts a second measurement zero point eight standard deviations above average, not a reversal below average. A note states that individual outcomes can move either way and that regression does not identify an intervention effect.</desc>
+  <defs>
+    <style>
+      .title{font:700 35px Arial,sans-serif;fill:#17324d}
+      .subtitle{font:29px Arial,sans-serif;fill:#536879}
+      .axis{stroke:#4f6476;stroke-width:2.5}
+      .grid{stroke:#d8e1e8;stroke-width:1.5}
+      .tick{font:27px Arial,sans-serif;fill:#536879}
+      .axislabel{font:700 30px Arial,sans-serif;fill:#17324d}
+      .point{fill:#80b7d6;stroke:#2f6f9f;stroke-width:1.2;opacity:.72}
+      .identity{fill:none;stroke:#9aa9b5;stroke-width:3;stroke-dasharray:10 8}
+      .prediction{fill:none;stroke:#c96021;stroke-width:5;stroke-linecap:round}
+      .guide{fill:none;stroke:#3f7f54;stroke-width:2.5;stroke-dasharray:7 6}
+      .label{font:700 28px Arial,sans-serif;fill:#17324d}
+      .orange{font:700 28px Arial,sans-serif;fill:#a94c17}
+      .green{font:700 28px Arial,sans-serif;fill:#2f6f43}
+      .note{font:25px Arial,sans-serif;fill:#40566a}
+      .noteStrong{font:700 26px Arial,sans-serif;fill:#17324d}
+    </style>
+  </defs>
+
+  <rect width="900" height="850" fill="#ffffff"/>
+  <text class="title" x="450" y="42" text-anchor="middle">An extreme observation predicts</text>
+  <text class="title" x="450" y="79" text-anchor="middle">a less extreme conditional average</text>
+  <text class="subtitle" x="450" y="114" text-anchor="middle">n=50; z₂=.40z₁+√.84ε; seed 50273; sample r≈.40</text>
+
+  <rect x="105" y="125" width="740" height="525" rx="22" fill="#f8fafc" stroke="#b8c9d6" stroke-width="2"/>
+
+  <line class="grid" x1="130" y1="236.7" x2="820" y2="236.7"/>
+  <line class="grid" x1="130" y1="313.3" x2="820" y2="313.3"/>
+  <line class="grid" x1="130" y1="390" x2="820" y2="390"/>
+  <line class="grid" x1="130" y1="466.7" x2="820" y2="466.7"/>
+  <line class="grid" x1="130" y1="543.3" x2="820" y2="543.3"/>
+  <line class="grid" x1="245" y1="160" x2="245" y2="620"/>
+  <line class="grid" x1="360" y1="160" x2="360" y2="620"/>
+  <line class="grid" x1="475" y1="160" x2="475" y2="620"/>
+  <line class="grid" x1="590" y1="160" x2="590" y2="620"/>
+  <line class="grid" x1="705" y1="160" x2="705" y2="620"/>
+
+  <line class="axis" x1="130" y1="620" x2="820" y2="620"/>
+  <line class="axis" x1="130" y1="160" x2="130" y2="620"/>
+
+  <text class="tick" x="245" y="650" text-anchor="middle">−2</text>
+  <text class="tick" x="360" y="650" text-anchor="middle">−1</text>
+  <text class="tick" x="475" y="650" text-anchor="middle">0</text>
+  <text class="tick" x="590" y="650" text-anchor="middle">1</text>
+  <text class="tick" x="705" y="650" text-anchor="middle">2</text>
+  <text class="tick" x="98" y="551" text-anchor="end">−2</text>
+  <text class="tick" x="98" y="474" text-anchor="end">−1</text>
+  <text class="tick" x="98" y="398" text-anchor="end">0</text>
+  <text class="tick" x="98" y="321" text-anchor="end">1</text>
+  <text class="tick" x="98" y="244" text-anchor="end">2</text>
+  <text class="axislabel" x="475" y="684" text-anchor="middle">First measurement, z₁</text>
+  <text class="axislabel" x="35" y="390" text-anchor="middle" transform="rotate(-90 35 390)">Second measurement, z₂</text>
+
+  <circle cx="467.8" cy="383.9" r="5.5" class="point"/>
+  <circle cx="327.6" cy="371.0" r="5.5" class="point"/>
+  <circle cx="642.0" cy="264.0" r="5.5" class="point"/>
+  <circle cx="458.8" cy="416.9" r="5.5" class="point"/>
+  <circle cx="499.5" cy="318.1" r="5.5" class="point"/>
+  <circle cx="377.7" cy="407.6" r="5.5" class="point"/>
+  <circle cx="514.3" cy="329.3" r="5.5" class="point"/>
+  <circle cx="415.2" cy="284.9" r="5.5" class="point"/>
+  <circle cx="329.3" cy="495.0" r="5.5" class="point"/>
+  <circle cx="412.9" cy="566.7" r="5.5" class="point"/>
+  <circle cx="628.4" cy="391.4" r="5.5" class="point"/>
+  <circle cx="358.4" cy="457.5" r="5.5" class="point"/>
+  <circle cx="279.9" cy="475.0" r="5.5" class="point"/>
+  <circle cx="295.9" cy="363.3" r="5.5" class="point"/>
+  <circle cx="536.0" cy="296.8" r="5.5" class="point"/>
+  <circle cx="566.1" cy="288.3" r="5.5" class="point"/>
+  <circle cx="582.9" cy="346.7" r="5.5" class="point"/>
+  <circle cx="555.9" cy="368.9" r="5.5" class="point"/>
+  <circle cx="364.2" cy="580.4" r="5.5" class="point"/>
+  <circle cx="444.0" cy="490.4" r="5.5" class="point"/>
+  <circle cx="581.9" cy="280.7" r="5.5" class="point"/>
+  <circle cx="316.2" cy="437.4" r="5.5" class="point"/>
+  <circle cx="583.0" cy="366.0" r="5.5" class="point"/>
+  <circle cx="665.8" cy="366.8" r="5.5" class="point"/>
+  <circle cx="473.5" cy="429.6" r="5.5" class="point"/>
+  <circle cx="332.2" cy="460.1" r="5.5" class="point"/>
+  <circle cx="548.2" cy="242.9" r="5.5" class="point"/>
+  <circle cx="688.4" cy="439.0" r="5.5" class="point"/>
+  <circle cx="351.7" cy="409.6" r="5.5" class="point"/>
+  <circle cx="514.6" cy="427.5" r="5.5" class="point"/>
+  <circle cx="379.0" cy="498.7" r="5.5" class="point"/>
+  <circle cx="336.5" cy="387.4" r="5.5" class="point"/>
+  <circle cx="482.8" cy="310.8" r="5.5" class="point"/>
+  <circle cx="284.6" cy="481.8" r="5.5" class="point"/>
+  <circle cx="505.1" cy="401.4" r="5.5" class="point"/>
+  <circle cx="518.4" cy="452.2" r="5.5" class="point"/>
+  <circle cx="629.8" cy="402.5" r="5.5" class="point"/>
+  <circle cx="521.4" cy="463.5" r="5.5" class="point"/>
+  <circle cx="537.1" cy="283.1" r="5.5" class="point"/>
+  <circle cx="669.6" cy="270.6" r="5.5" class="point"/>
+  <circle cx="508.9" cy="348.0" r="5.5" class="point"/>
+  <circle cx="339.7" cy="331.0" r="5.5" class="point"/>
+  <circle cx="407.4" cy="514.0" r="5.5" class="point"/>
+  <circle cx="403.9" cy="389.1" r="5.5" class="point"/>
+  <circle cx="710.5" cy="355.6" r="5.5" class="point"/>
+  <circle cx="420.9" cy="223.3" r="5.5" class="point"/>
+  <circle cx="375.7" cy="366.1" r="5.5" class="point"/>
+  <circle cx="629.0" cy="422.6" r="5.5" class="point"/>
+  <circle cx="531.8" cy="447.2" r="5.5" class="point"/>
+  <circle cx="468.5" cy="398.8" r="5.5" class="point"/>
+
+  <path class="identity" d="M 130 620 L 820 160"/>
+  <path class="prediction" d="M 130 482 L 820 298"/>
+  <text class="label" x="808" y="217" text-anchor="end">No-noise identity: z₂ = z₁</text>
+  <text class="orange" x="808" y="286" text-anchor="end">Prediction: E[z₂|z₁] = 0.40z₁</text>
+
+  <line class="guide" x1="705" y1="620" x2="705" y2="328.7"/>
+  <line class="guide" x1="130" y1="328.7" x2="705" y2="328.7"/>
+  <circle cx="705" cy="328.7" r="10" fill="#ffffff" stroke="#3f7f54" stroke-width="4"/>
+  <text class="green" x="685" y="363" text-anchor="end">z₁ = +2 → predicted z₂ = +0.8</text>
+
+  <rect x="75" y="712" width="750" height="112" rx="18" fill="#eef5ef" stroke="#8db29a" stroke-width="2"/>
+  <text class="noteStrong" x="450" y="746" text-anchor="middle">Regression concerns the conditional average—not every case.</text>
+  <text class="note" x="450" y="780" text-anchor="middle">Individual outcomes can move either way.</text>
+  <text class="note" x="450" y="812" text-anchor="middle">Treatment effects still require a counterfactual.</text>
+</svg>

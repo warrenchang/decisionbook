@@ -58,17 +58,36 @@ table {
   max-width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
+  border: 1.2px solid #687682;
   font-size: .82em;
   line-height: 1.25;
 }
 
 th,
 td {
-  padding: .22em .28em;
+  padding: .38em .46em;
+  border: 1px solid #a4adb5;
   vertical-align: top;
   overflow-wrap: anywhere;
   word-break: normal;
   hyphens: auto;
+}
+
+thead th {
+  background-color: #e8eef2;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th {
+  background-color: #f6f8fa;
+}
+
+caption,
+.quarto-float-caption.quarto-float-tbl {
+  margin-bottom: .45em;
+  font-weight: 600;
+  text-align: left;
 }
 
 .math.display,
