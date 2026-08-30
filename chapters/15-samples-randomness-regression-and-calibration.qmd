@@ -1,0 +1,216 @@
+---
+aliases:
+  - 12b-samples-randomness-regression-calibration.html
+---
+
+# Samples, Randomness, Regression, and Calibration
+
+*A pattern becomes evidence only after we ask how much variation the process could produce on its own*
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+Once events and denominators are defined, a pattern can still look more informative than it is. But small samples produce volatile estimates, random processes create streaks and clusters, and extreme observations often move toward the average even without a corrective intervention. Therefore, this chapter models expected variation, distinguishes randomness from dependence or real change, and uses recorded probabilistic forecasts to make confidence learn from outcomes.
+:::
+
+## Learning goals
+
+- Explain why small samples, streaks, and clusters can look more informative than they are.
+- Diagnose regression to the mean without dismissing real change or causal effects.
+- Record, score, and review probabilistic forecasts for calibration and resolution.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Sampling shapes **Predict**; calibration closes the path through **Learn**. The chapter asks whether an apparent pattern exceeds expected noise and whether repeated forecasts deserve their stated confidence.
+:::
+
+## Which sequence looks random?
+
+A fair coin will be tossed six times. Rank these exact sequences from most to least likely:
+
+1. H H H H H H
+2. H H H T T T
+3. H T H T H T
+
+The first looks designed, while the third looks comfortably random. Yet every specified sequence has probability
+
+$$
+\left(\frac{1}{2}\right)^6=\frac{1}{64}.
+$$
+
+The intuition answers a different question: *Which sequence resembles my prototype of randomness?* Alternation looks random; a run looks meaningful. Probability asks which event was specified before the tosses and how many elementary outcomes it contains.
+
+The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains $\binom{6}{3}=20$ exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.
+
+Randomness is clumpier than intuition expects. When many sequences, people, schools, funds, products, or locations are observed, some will display striking runs and clusters even when the underlying process is unchanged. A pattern invites explanation; a statistical model asks how surprising that pattern was given all the opportunities for one to appear.
+
+## Small samples swing widely
+
+People often expect a small sample to resemble its population too closely, a tendency Tversky and Kahneman (1971) called belief in the **law of small numbers**. Three successful hires seem to validate an interview method. Two product failures condemn a market. A fund manager's two strong years reveal skill. A student's two weak performances become a trait.
+
+For an independent Bernoulli event with probability $p$, the standard error of the sample proportion is
+
+$$
+SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
+$$
+
+When $p=0.5$, the standard error is about 0.158 for $n=10$ and 0.050 for $n=100$. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.
+
+Selection magnifies the problem. Public success stories omit quiet failures. A fund appears in a ranking because it has just performed unusually well. A hospital is investigated because its rate was extreme. An employee receives attention after an unusually bad month. If cases enter analysis because the outcome was striking, ordinary sampling variation has already helped select them.
+
+The correction is not “wait for a large sample” in every setting. Some decisions cannot wait and some populations are inherently small. Report uncertainty, pool comparable evidence cautiously, use hierarchical or shrinkage estimates where appropriate, and identify which conclusion depends on one or two observations. A small sample can provide information; it cannot provide the stability of a large one by force of narrative.
+
+## Streaks require a process model
+
+After five reds at roulette, black may feel due. Under independent fair spins, it is not. The wheel has no memory. The **gambler's fallacy** treats short-run balancing as a physical correction because the sequence is expected to look representative quickly (Clotfelter & Cook, 1993).
+
+The opposite intuition appears after success: a basketball player who has made several shots seems more likely to make the next. That **hot-hand belief** could misread random clustering, or it could reflect genuine state dependence through confidence, fatigue, strategy, defense, learning, or shot selection.
+
+Gilovich, Vallone, and Tversky (1985) famously argued that observers saw more hot-hand dependence than basketball data supported. Later work identified a finite-sample bias in common comparisons of success following success and showed that some earlier tests understated streakiness (Miller & Sanjurjo, 2018). The correction is not to replace “hot hands are illusions” with “hot hands are real.” It is to specify and test the process:
+
+1. What would independent outcomes produce?
+2. Was the streak pattern chosen before or after examining the data?
+3. Did opportunities, difficulty, strategy, or selection change during the run?
+4. Does the pattern replicate with a statistic suited to the sampling process?
+
+A salesperson may improve through learning, encounter a favorable cluster of clients, or change which prospects are attempted. A stock can rise for several days because of common news, momentum trading, or chance. The appearance of a run identifies a question, not its answer.
+
+## Clusters and the search for causes
+
+Clusters are expected whenever many units are compared. Some schools will have unusually high scores, some neighborhoods unusually many cases, and some experiments unusually small $p$-values even if units differ only through noise. The more patterns searched, the more striking the best one can appear (Nickerson, 2002).
+
+This does not make clusters meaningless. A disease cluster may reveal a local exposure; a manufacturing cluster may reveal a faulty machine; a set of related forecast errors may reveal a missing variable. The test needs a denominator that includes the number of units, periods, outcomes, subgroups, and models searched. It also needs a mechanism or independent replication that was not selected by the same extreme pattern.
+
+A useful sequence is:
+
+**Describe → compare with chance → specify a mechanism → predict new observations → replicate.**
+
+Stopping after description rewards the most surprising pattern. Jumping directly to a favored mechanism invites confirmation. A new prediction forces the proposed cause to do work outside the data that suggested it.
+
+## Regression to the mean
+
+Suppose observed performance is
+
+$$
+Y=\theta+\varepsilon,
+$$
+
+where $\theta$ is a persistent component and $\varepsilon$ is temporary noise. Selecting an unusually high $Y$ selects cases with high persistent ability, favorable noise, or both. When the next noise term is less extreme, performance tends to move toward average even if the underlying ability does not change.
+
+For two standardized measures with correlation $r$, a simple linear prediction is
+
+$$
+\widehat z_2=r z_1.
+$$
+
+If a measure two standard deviations above average has test–retest correlation $r=0.40$, the best linear prediction under that model is 0.8 standard deviations above average. The predicted person remains above average; the extreme observation is shrunk because part of it was unreliable.
+
+The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman & Tversky, 1973).
+
+Regression does not prove that an intervention had no effect. It proves that before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.
+
+The same logic belongs in organizational review. A manager sent to rescue the worst-performing branch may appear successful even if every extreme branch would have partly recovered. A newly celebrated fund may disappoint even if the manager remains skilled. Evaluation should ask what would have happened to comparable units without the intervention.
+
+::: {.callout-note .research-lens icon=false}
+## Research Lens: information protocols change probability puzzles
+
+Monty Hall and the two-child problem are useful only when the information protocol is explicit. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Switching then wins with probability $2/3$ (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: **How was this information generated?**
+
+![The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch; a different host rule can change the inference.](../figures/monty-hall-protocol.svg){#fig-monty-hall-protocol fig-alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds. A boundary note says that different host rules can change the answer." width=100%}
+:::
+
+## Calibration makes confidence answerable
+
+A forecaster is **calibrated** when events assigned 70 percent occur about 70 percent of the time, events assigned 20 percent occur about 20 percent of the time, and so forth. Calibration is a property of repeated forecasts, not one dramatic success.
+
+Accuracy also requires **resolution** or discrimination. A forecaster who assigns 50 percent to everything may be calibrated in a balanced environment but contributes little separation. Useful forecasts move away from the base rate when evidence warrants it and remain calibrated across those movements.
+
+For a binary event with forecast $p$ and outcome $o\in\{0,1\}$, the Brier score is
+
+$$
+BS=(p-o)^2.
+$$
+
+Lower is better. A 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Across forecasts, average the scores. The scoring convention for multicategory forecasts must be stated because scales can differ (Brier, 1950; Murphy, 1973).
+
+Forecasting research suggests that performance can improve through habits rather than clairvoyance: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.
+
+| Field | Example |
+| --- | --- |
+| Event and resolution rule | “The supplier passes acceptance testing by 30 September, documented by a signed report.” |
+| Probability and date | 0.65 on 1 June |
+| Reference classes | Comparable suppliers; this supplier's last ten deliveries |
+| Main evidence | Prototype passed; staffing remains incomplete |
+| Alternative pathways | Certification, integration, staffing, or scope delay |
+| Update triggers | Test failure, staff appointment, scope change |
+| Outcome and score | Enter after resolution; preserve the original forecast |
+: A minimal forecast ledger {#tbl-probability-forecast-ledger}
+
+The record matters because memory rounds forecasts toward outcomes. “We knew it might fail” can describe almost any vague prior statement. A dated number, event definition, and update rule allow learning to survive hindsight.
+
+## From a project story to a forecast system
+
+A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. Adding them gives 45 percent only if the events are mutually exclusive. They are not: supplier delay can cause software delay, and regulatory change can affect both.
+
+The team should draw an event tree or build a small simulation with conditional pathways, then compare the combined estimate with the empirical delay rate for similar projects. The inside model explains mechanisms; the outside view checks whether the combined answer is plausible. If the inside model gives 18 percent while comparable projects miss the date 55 percent of the time, the discrepancy is evidence. It requires investigation, not automatic rejection of the base rate.
+
+Record one forecast for the final date and separate forecasts for leading mechanisms. Update only when specified evidence arrives. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. One project cannot establish calibration, but it can begin the ledger.
+
+::: {.callout-caution .evidence-boundary icon=false}
+## Evidence Boundary
+
+An unusual pattern is not automatically noise, and regression is not an explanation for every reversal. Chance models need justified assumptions; genuine dependence and causal change require tests that can distinguish them from selection and ordinary variation.
+:::
+
+## Practice Lab
+
+Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. When the date arrives, enter the outcome and Brier score without revising the original entry. The observable output is the preserved ledger plus a short diagnosis of whether any error came from sampling, model, or confidence.
+
+## Take it forward
+
+- **Use this when:** a short run, extreme case, or striking cluster is being treated as a stable pattern.
+- **Do not infer:** that randomness must alternate, that regression rules out treatment effects, or that one correct forecast proves calibration.
+- **Try this next:** specify the data-generating process, predict an observation not used to find the pattern, and keep a scored forecast ledger.
+
+## References cited in this chapter
+
+::: {.reference}
+Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. *Monthly Weather Review, 78*(1), 1–3.
+:::
+
+::: {.reference}
+Clotfelter, C. T., & Cook, P. J. (1993). The gambler's fallacy in lottery play. *Management Science, 39*(12), 1521–1525.
+:::
+
+::: {.reference}
+Gilovich, T., Vallone, R., & Tversky, A. (1985). The hot hand in basketball: On the misperception of random sequences. *Cognitive Psychology, 17*(3), 295–314.
+:::
+
+::: {.reference}
+Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. *Psychological Review, 80*(4), 237–251.
+:::
+
+::: {.reference}
+Mellers, B., Stone, E., Atanasov, P., Rohrbaugh, N., Metz, S. E., Ungar, L., Bishop, M. M., Horowitz, M., Merkle, E., & Tetlock, P. E. (2014). The psychology of intelligence analysis: Drivers of prediction accuracy in world politics. *Journal of Experimental Psychology: Applied, 20*(1), 1–14.
+:::
+
+::: {.reference}
+Miller, J. B., & Sanjurjo, A. (2018). Surprised by the hot hand fallacy? A truth in the law of small numbers. *Econometrica, 86*(6), 2019–2047.
+:::
+
+::: {.reference}
+Murphy, A. H. (1973). A new vector partition of the probability score. *Journal of Applied Meteorology, 12*(4), 595–600.
+:::
+
+::: {.reference}
+Nickerson, R. S. (2002). The production and perception of randomness. *Psychological Review, 109*(2), 330–357.
+:::
+
+::: {.reference}
+Selvin, S. (1975). A problem in probability. *The American Statistician, 29*(1), 67.
+:::
+
+::: {.reference}
+Tversky, A., & Kahneman, D. (1971). Belief in the law of small numbers. *Psychological Bulletin, 76*(2), 105–110.
+:::

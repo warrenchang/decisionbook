@@ -1,0 +1,415 @@
+---
+aliases:
+  - 39-risky-decision-making.html
+---
+
+# Risky Decision-Making: A Probability Is Not Yet a Feeling
+
+*Probability describes what may happen. Choice still requires a theory of what those outcomes mean to the decision-maker.*
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+Probability judgment tells us what may happen, and expected value combines outcomes with their probabilities while expected utility asks what those consequences are worth. But options with equal expected value can invite different choices, and a measured “risk preference” can also absorb wealth, probability perception, reference points, ambiguity, comprehension, and task design. Therefore this chapter builds a disciplined language for risky choice without reducing risk or the decision-maker to one number.
+:::
+
+## Learning goals
+
+- Compare expected value with expected utility in one consequential insurance decision.
+- Distinguish known risk, ambiguity, tail exposure, and the limits of risk-preference measures.
+- Produce an uncertainty-aware recommendation that separates process quality from realized outcome.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Probability judgment supplies beliefs about possible states. Risky choice joins those beliefs to **Value**: what each state would mean for the chooser, who could bear it, and whether the model itself is trustworthy.
+:::
+
+## Opening puzzle: the same expected value, a different choice
+
+Choose between:
+
+- **Option S:** €50 for certain.
+- **Option G:** a 50% chance of €100 and a 50% chance of €0.
+
+Both have expected monetary value €50. Many people nevertheless choose the sure €50. Now imagine that the gamble determines whether you can pay rent. The sure amount may become much more attractive. Imagine instead that both amounts are entertainment money and the gamble itself is enjoyable. The gamble may become more attractive.
+
+Expected value is unchanged. The consequences are not.
+
+This is the central transition from probability judgment to risky choice. A probability answers, “How likely?” A decision must also answer, “How much would each outcome matter, from this person's position, given what else could happen?”
+
+The running case is a small organization deciding whether to insure a cyber exposure. It must estimate incident frequency, contract coverage, and uncertain losses, but the recommendation also depends on liquid reserves, service interruption, legal obligations, and survival. Each formal tool below will be judged by whether it improves that decision—not by whether it produces one elegant number.
+
+## Risk, uncertainty, and ambiguity
+
+In a textbook lottery, outcomes and probabilities are specified: a coin gives a 50% chance of each result. This is **risk** in the narrow decision-theory sense. In many real decisions, the probabilities are estimated, disputed, or partly unknown. This broader **uncertainty** includes model error, missing outcomes, changing environments, and ambiguous evidence.
+
+**Ambiguity** describes uncertainty about the probability model itself. A jar with a known 30 red and 60 black balls is risky; a jar with 30 red and 60 balls of unknown black–yellow composition introduces ambiguity. A precise-looking spreadsheet can still be ambiguous if the probability estimates rest on one historical period or an untested causal model.
+
+The categories are useful, but the boundary is not natural law. Even “known” probabilities depend on a trusted randomization mechanism, and real-world risks often combine sampling variation with model uncertainty.
+
+## Expected value: the monetary benchmark
+
+For outcomes $x_1,\ldots,x_n$ with probabilities $p_1,\ldots,p_n$, expected monetary value is
+
+$$
+EV(X)=\sum_{i=1}^{n}p_i x_i.
+$$
+
+Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.
+
+Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.
+
+The benchmark also exposes missing costs. A gamble that pays €100 with probability one-half and zero otherwise does not have expected **net** value €50 if entry costs €60. The expected net value is −€10.
+
+::: {.callout-note icon=false}
+## Application box: the single-period newsvendor
+
+A retailer orders once before uncertain demand $D$ is known. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
+
+$$
+C_u=p-c,
+$$
+
+whereas ordering one unit too many creates the net overage cost
+
+$$
+C_o=c-s.
+$$
+
+For risk-neutral expected-profit maximization with a known continuous demand distribution $F$, the optimal order satisfies the critical-fractile rule
+
+$$
+F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
+$$
+
+For discrete demand, choose the smallest quantity whose cumulative probability reaches the fractile. Shortage penalties, disposal costs, capacity constraints, ambiguity, and risk preferences change the rule.
+
+Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.
+:::
+
+### Research Lens: the St Petersburg puzzle
+
+Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
+
+$$
+EV=\sum_{n=1}^{\infty}2^{-n}2^n
+=\sum_{n=1}^{\infty}1
+=\infty.
+$$
+
+Yet few people would pay an enormous entry price. Bernoulli's solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.
+
+The puzzle does not by itself prove diminishing marginal utility. It shows that unbounded expected money is not an adequate decision criterion for the stated offer. Diminishing marginal utility is one historically important response; finite wealth, bounded liability, mistrust, transaction costs, and a maximum feasible number of tosses also change the problem. A casino promising $2^{50}$ units may not be able to pay. Expected value is conditional on a realizable contract.
+
+## Expected utility: value over final consequences
+
+Expected utility theory evaluates a lottery over final wealth or consequences:
+
+$$
+EU(X)=\sum_{i=1}^{n}p_i u(W+x_i),
+$$
+
+where $W$ is initial wealth and $u(\cdot)$ represents preferences over final wealth. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
+
+The independence axiom is central. If lottery $A$ is preferred to lottery $B$, mixing both with the same third lottery $C$ in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.
+
+### Curvature and attitudes toward a mean-preserving risk
+
+- A **linear** utility function implies risk neutrality: utility of the expected value equals expected utility.
+- A **concave** utility function implies risk aversion for ordinary mean-preserving spreads: $u(E[X])>E[u(X)]$.
+- A **convex** utility function implies risk seeking over that range: $u(E[X])<E[u(X)]$.
+
+Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.
+
+![A 50–50 lottery paying 0 or 100 has expected value 50. Under the illustrative utility function u(x)=square root of x, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and reminds the reader to evaluate process before outcome.](../figures/risky-decision-map.svg){#fig-risky-decision-map fig-alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win." width=100%}
+
+### Certainty equivalents and risk premia
+
+For payoff changes $x_i$ around initial wealth $W$, the **certainty-equivalent payoff** $c$ solves
+
+$$
+u(W+c)=\sum_i p_i u(W+x_i).
+$$
+
+The **risk premium** is
+
+$$
+\pi=E[x]-c.
+$$
+
+For the compact opening example, normalize initial wealth to zero and treat 0 and 100 as **final-wealth outcomes**. Let $u(w)=\sqrt{w}$. Then
+
+$$
+EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
+$$
+
+Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.
+
+This is an illustration, not an estimate of anyone's utility. If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.
+
+### Insurance: expected loss is not the whole premium
+
+Insurance exchanges an uncertain loss for a certain premium. Under concave utility, a person may pay more than the actuarially fair expected loss to remove variability. The difference can reflect a risk premium, but real insurance decisions also include insurer costs, exclusions, deductibles, counterparty risk, liquidity, legal requirements, and protection against ruin.
+
+The key comparison is not “premium versus expected loss” alone. It is final wealth and feasible action in each state. Insurance can be valuable because a rare loss would be unaffordable even when its expected amount is modest.
+
+### Why do people buy insurance and lottery tickets?
+
+A simple globally concave utility function predicts risk aversion, so buying both insurance and lottery tickets looks inconsistent. But the behavior does not identify one mechanism.
+
+- Insurance may protect against ruin while a lottery ticket uses a very small entertainment budget.
+- The lottery can provide anticipation, fantasy, or consumption value before the draw.
+- People may overweight a tiny probability of a large gain and also overweight a tiny probability of a catastrophic loss.
+- The choices may sit in separate mental accounts.
+- Probabilities, fees, and exclusions may be misunderstood.
+- Preferences may change with stake, framing, wealth, and domain.
+
+The tension is evidence against an overly simple one-curve account. It is not, by itself, proof of one replacement theory.
+
+::: {.callout-note .research-lens icon=false}
+## Research Lens: every elicitation task measures a bundle
+
+Risk preference is not observed directly. A task presents options, and a model maps choices back to a parameter. Different tasks change comprehension, probability format, reference point, response mode, and noise.
+
+| Method | What the participant does | What it can reveal | Main identification limits |
+| --- | --- | --- | --- |
+| Certainty equivalent | States or selects a sure amount equal to a lottery | A point or interval of indifference | Open responses invite rounding, anchoring, strategic answers, and misunderstanding |
+| Multiple price list | Chooses between safer and riskier lotteries as probabilities or payoffs change | A switching interval for curvature under a model | Multiple switching, row-order effects, compound lotteries, and assumed functional form |
+| Ordered lotteries | Chooses one lottery from a menu with changing mean and variance | Coarse ranking of risk taking | Mean and variance change together; few categories; loss and probability weighting remain confounded |
+| Investment task | Allocates an endowment between a safe and risky asset | Continuous risky share | Portfolio framing, endowment, beliefs, and scale affect the share |
+| Bomb risk elicitation task | Chooses exposure to more reward-bearing boxes while one hidden box destroys earnings | A continuous stopping point | Sequential interface, loss salience, probability knowledge, and task-specific emotion |
+: Common risk-elicitation methods and what travels with them {#tbl-risk-elicitation}
+
+Holt and Laury's (2002) multiple-price-list design, Eckel and Grossman's (2008) ordered gambles, and the bomb task of Crosetto and Filippin (2013) are all useful. They are not interchangeable rulers. Reviews and direct comparisons find that classifications can vary substantially across elicitation methods (Charness et al., 2013; Pedroni et al., 2017).
+
+### Identification requires more than a choice
+
+Suppose a participant chooses the safe option. Possible explanations include:
+
+- concave utility over final wealth;
+- loss aversion around a reference point;
+- nonlinear probability weighting;
+- ambiguity or distrust;
+- low numeracy or task misunderstanding;
+- decision error or weak attention;
+- a household liquidity constraint;
+- a desire to avoid regret;
+- experimenter-demand or interface effects.
+
+Estimating a “risk-aversion coefficient” usually holds several of these channels fixed. Report the task, stakes, probability format, model, error structure, and population. A parameter without its elicitation environment travels too easily.
+:::
+
+## The Allais pattern: certainty does not cancel cleanly
+
+Consider two pairs of choices, with monetary units scaled to “millions.”
+
+**Pair 1**
+
+- $A$: 1 for certain.
+- $B$: 89% chance of 1, 10% chance of 5, and 1% chance of 0.
+
+**Pair 2**
+
+- $C$: 11% chance of 1 and 89% chance of 0.
+- $D$: 10% chance of 5 and 90% chance of 0.
+
+Many people prefer $A$ to $B$ but $D$ to $C$ (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.
+
+Under expected utility and independence, the pattern is inconsistent. If $A\succ B$, subtracting the common 89% chance of receiving 1 implies $C\succ D$. Choosing $A$ and $D$ gives special weight to the move from 99% to 100% or to the presentation of certainty.
+
+The Allais pattern identifies a violated axiom; it does not prove that every participant used the same psychology. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.
+
+## The Ellsberg urn: risk is not ambiguity
+
+An urn contains 90 balls:
+
+- exactly 30 are red;
+- the remaining 60 are black or yellow in an unknown proportion.
+
+First choose a bet that pays if **red** is drawn or a bet that pays if **black** is drawn. Many choose red because its probability is known to be $1/3$.
+
+Now choose a bet that pays if **red or yellow** is drawn or a bet that pays if **black or yellow** is drawn. Many choose black-or-yellow because its probability is known to be $2/3$.
+
+Preferring red to black suggests $P(R)>P(B)$. Preferring black-or-yellow to red-or-yellow suggests $P(B)>P(R)$. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).
+
+This pattern is called **ambiguity aversion**, but it has boundaries. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:
+
+1. variability given a model;
+2. uncertainty about parameters;
+3. uncertainty about the model and missing outcomes;
+4. the decision-maker's trust in the source.
+
+Collapsing all four into one probability hides the reason for caution.
+
+## Outcome bias: a good process can lose
+
+[*Decision-Making Is a Process, Not a Moment*](01-decision-making-is-a-process-not-a-moment.qmd#outcome-is-not-process) introduced outcome bias as a general failure to separate decision quality from outcome quality. Risk makes that distinction especially important because even a well-calibrated choice can produce a loss, while a reckless choice can be rescued by luck.
+
+| Process | Outcome | Correct interpretation |
+| --- | --- | --- |
+| Good | Good | The result is encouraging, but one case does not prove skill. |
+| Good | Bad | The loss may be bad luck; inspect whether assumptions and execution were defensible ex ante. |
+| Poor | Good | The gain may be luck; do not reward a process that exposed the organization to unjustified risk. |
+| Poor | Bad | Repair the process, but do not infer the mechanism from the loss alone. |
+: Process and outcome are different dimensions {#tbl-risk-process-outcome}
+
+The earlier evidence shows that people evaluate the same decision more favorably when told it produced a good outcome (Baron & Hershey, 1988). The risk-specific lesson is procedural: preserve the information, probabilities, alternatives, constraints, and reasons available at the time. Review that record before learning from the result. Otherwise, realized luck becomes a false measure of ex ante judgment.
+
+## Risk communication: show the denominator and the consequence
+
+Suppose a treatment reduces an adverse outcome from 2 in 1,000 to 1 in 1,000 over one year. The relative reduction is 50%. The absolute reduction is 1 in 1,000, or 0.1 percentage points. Both are correct; neither is sufficient alone.
+
+Responsible risk communication reports:
+
+- the reference population and time period;
+- absolute frequencies with a common denominator;
+- relative change when useful, beside the absolute change;
+- the outcome severity and reversibility;
+- uncertainty intervals and important model assumptions;
+- benefits and harms in comparable formats;
+- what is known, unknown, and value-dependent.
+
+Natural frequencies and icon arrays can make rare outcomes more legible (Gigerenzer & Edwards, 2003). But visual clarity cannot replace a relevant reference class. “1 in 1,000” among whom, under which baseline care, over what period?
+
+::: {.callout-warning icon=false}
+## Research Lens: there is no single risk center
+
+Neuroimaging studies often report activity correlated with subjective value in ventromedial prefrontal cortex and ventral striatum across many tasks; risk, salience, arousal, learning, and negative outcomes recruit distributed and overlapping systems, including insular and frontoparietal regions (Mohr et al., 2010; Bartra et al., 2013).
+
+These findings do **not** license the claim that one region “is” value, fear, or risk. Functional MRI measures a delayed blood-oxygen-level-dependent signal, not utility or a thought directly. Results depend on the task contrast, timing model, preprocessing, sample, and statistical threshold. A region activated by many processes is especially weak evidence for any one process.
+
+Inferring “loss aversion occurred because the insula activated” is a **reverse inference**: reasoning from a non-specific neural pattern back to a psychological state (Poldrack, 2006). Stronger evidence combines preregistered behavioral predictions, computational models, convergent methods, out-of-sample prediction, and tests that distinguish alternative mechanisms. Neuroscience can constrain a theory; it should not decorate it.
+:::
+
+## Worked application: should we insure this exposure?
+
+A small organization considers cyber insurance. Begin with four layers:
+
+1. **Exposure:** list final consequences—restoration cost, interrupted service, legal liability, reputation, and possible ruin—not only the insurer's payout.
+2. **Probability:** use base rates for comparable organizations, internal controls, and uncertainty ranges. Separate known event frequency from model uncertainty.
+3. **Contract:** read deductibles, exclusions, caps, reporting duties, and insurer credit risk. “Coverage” is not a binary state.
+4. **Capacity:** compare the uninsured worst credible loss with liquid reserves and the ability to continue operating.
+
+Expected loss is one input. Utility, survival, ambiguity, and contract quality determine whether transferring the risk is worthwhile. Record the analysis before knowing whether an incident occurs.
+
+### Extension: one project or a portfolio?
+
+A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. One project has expected net value
+
+$$
+0.30(200{,}000)-40{,}000=20{,}000.
+$$
+
+Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.
+
+The mental-accounting chapter later shows why decision-makers often evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
+
+::: {.callout-note .research-lens icon=false}
+## Research Lens: a positive arithmetic average can conceal multiplicative collapse
+
+Suppose a deliberately extreme gamble risks **all current wealth** in every round. It multiplies wealth by 1.8 with probability one half and by 0.4 with probability one half, independently across 52 rounds. The one-round arithmetic mean return is +10%, so expected terminal wealth from €10,000 is
+
+$$
+10{,}000[0.5(1.8)+0.5(0.4)]^{52}
+=10{,}000(1.10)^{52}
+\approx €1{,}420{,}429.
+$$
+
+Yet 26 gains and 26 losses—the median and modal number of gains—produce
+
+$$
+10{,}000(1.8)^{26}(0.4)^{26}
+=10{,}000(0.72)^{26}
+\approx €1.95.
+$$
+
+The expected terminal value is pulled upward by rare paths with many gains, while the median or typical compounded outcome nearly exhausts the initial wealth; the geometric mean return per round is $\sqrt{0.72}-1\approx-15.1\%$. Drawdown is different again because it depends on the order of gains and losses. Literal ruin has probability zero in this toy model because neither multiplier is zero, but the probability of crossing a practical solvency threshold can be high and must be defined explicitly. Arithmetic return, expected wealth, median compounded wealth, drawdown, and ruin are therefore different risk questions.
+:::
+
+## Ethics: who receives the expected benefit, and who bears the tail?
+
+An organization can accept a positive expected-value project while shifting catastrophic losses onto employees, customers, taxpayers, or future stakeholders. Expected value does not settle distribution, rights, consent, or ruin.
+
+Ethical risky choice asks:
+
+- Who receives gains and who bears losses in each state?
+- Can those exposed understand and refuse the risk?
+- Are low-probability severe harms visible rather than averaged away?
+- Is ambiguity disclosed, or converted into a confident point estimate?
+- Will decision-makers be rewarded for lucky outcomes from poor processes?
+- Is insurance protecting the affected party or merely the designer's balance sheet?
+
+A defensible decision makes both the average and the tail answerable to the people who live with them.
+
+## Practice Lab
+
+Build a one-page risk register for a real insurance or project decision. Report final-state consequences, probabilities or ranges, dependencies, affected parties, expected value where meaningful, one capacity-to-bear-loss constraint, and one ambiguity the point estimates hide. Conclude with a recommendation, a review date, and an observable condition that would reverse it. The output is the completed register—not a description of what one might contain.
+
+## Take it forward
+
+- **Use this when** a probability must become a consequential choice about insurance, investment, safety, or a project.
+- **Do not infer** a stable risk trait, a sound process, or an acceptable distribution of harm from one choice or one outcome.
+- **Try this next** by recording the range, tail, capacity constraint, and decision rule before uncertainty resolves.
+
+## References cited in this chapter
+
+::: {.reference}
+Allais, M. (1953). Le comportement de l'homme rationnel devant le risque: Critique des postulats et axiomes de l'école américaine. *Econometrica, 21*(4), 503–546.
+:::
+
+::: {.reference}
+Baron, J., & Hershey, J. C. (1988). Outcome bias in decision evaluation. *Journal of Personality and Social Psychology, 54*(4), 569–579.
+:::
+
+::: {.reference}
+Bartra, O., McGuire, J. T., & Kable, J. W. (2013). The valuation system: A coordinate-based meta-analysis of BOLD fMRI experiments examining neural correlates of subjective value. *NeuroImage, 76*, 412–427.
+:::
+
+::: {.reference}
+Bernoulli, D. (1954). Exposition of a new theory on the measurement of risk (L. Sommer, Trans.). *Econometrica, 22*(1), 23–36. (Original work published 1738.)
+:::
+
+::: {.reference}
+Charness, G., Gneezy, U., & Imas, A. (2013). Experimental methods: Eliciting risk preferences. *Journal of Economic Behavior & Organization, 87*, 43–51.
+:::
+
+::: {.reference}
+Crosetto, P., & Filippin, A. (2013). The “bomb” risk elicitation task. *Journal of Risk and Uncertainty, 47*(1), 31–65.
+:::
+
+::: {.reference}
+Eckel, C. C., & Grossman, P. J. (2008). Forecasting risk attitudes: An experimental study using actual and forecast gamble choices. *Journal of Economic Behavior & Organization, 68*(1), 1–17.
+:::
+
+::: {.reference}
+Ellsberg, D. (1961). Risk, ambiguity, and the Savage axioms. *Quarterly Journal of Economics, 75*(4), 643–669.
+:::
+
+::: {.reference}
+Gigerenzer, G., & Edwards, A. (2003). Simple tools for understanding risks: From innumeracy to insight. *BMJ, 327*(7417), 741–744.
+:::
+
+::: {.reference}
+Holt, C. A., & Laury, S. K. (2002). Risk aversion and incentive effects. *American Economic Review, 92*(5), 1644–1655.
+:::
+
+::: {.reference}
+Mohr, P. N. C., Biele, G., & Heekeren, H. R. (2010). Neural processing of risk. *Journal of Neuroscience, 30*(19), 6613–6619.
+:::
+
+::: {.reference}
+Pedroni, A., Frey, R., Bruhin, A., Dutilh, G., Hertwig, R., & Rieskamp, J. (2017). The risk elicitation puzzle. *Nature Human Behaviour, 1*, 803–809.
+:::
+
+::: {.reference}
+Poldrack, R. A. (2006). Can cognitive processes be inferred from neuroimaging data? *Trends in Cognitive Sciences, 10*(2), 59–63.
+:::
+
+::: {.reference}
+Schweitzer, M. E., & Cachon, G. P. (2000). Decision bias in the newsvendor problem with a known demand distribution: Experimental evidence. *Management Science, 46*(3), 404–420.
+:::
+
+::: {.reference}
+von Neumann, J., & Morgenstern, O. (1944). *Theory of games and economic behavior*. Princeton University Press.
+:::

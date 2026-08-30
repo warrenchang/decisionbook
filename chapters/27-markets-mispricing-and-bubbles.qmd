@@ -1,0 +1,422 @@
+---
+aliases:
+  - 43-behavioral-finance.html
+---
+
+# Markets, Mispricing, and Bubbles
+
+*A price can aggregate information, depart from a defensible value model, and feed the expectations that move it next.*
+
+::: {.callout-note .core-idea icon=false}
+## Core idea
+
+Markets aggregate many strategically interdependent choices, and prices can transmit information quickly enough to guide later decisions. But rapid news incorporation, absence of an easy profit, equality between price and fundamental value, and a speculative bubble are different claims; social learning and risky correction can sustain visible inconsistency. Therefore this chapter separates efficiency, mispricing, and bubbles and treats each as a testable hypothesis about information, incentives, limits to arbitrage, and reinforcing feedback—not as a label proved by a rise or reversal.
+:::
+
+::: {.callout-warning icon=false}
+## Educational analysis, not investment advice
+
+The cases and historical return patterns in this chapter are tools for disciplined inference. They do not identify a security to buy or sell, guarantee that a pattern will persist, or replace a portfolio analysis suited to an investor's goals, constraints, taxes, costs, and capacity for loss.
+:::
+
+## Learning goals
+
+- Distinguish rapid information incorporation, no free lunch, fundamental-value accuracy, and bubble dynamics.
+- Evaluate one event study, one limits-to-arbitrage case, one laboratory market, and one field episode without collapsing their evidence.
+- Produce a falsifiable market memo and a two-direction bubble dashboard with a robust action.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Markets make **Predict**, **Value**, **Learn**, and **Coordinate** interact at scale. Each price is both an outcome of distributed judgments and new evidence that can alter attention, expectations, financing, and the next round of demand.
+:::
+
+## Opening puzzle: earnings beat expectations
+
+A listed company reports earnings above the analyst consensus before the market opens. Should you buy immediately, wait, or do nothing?
+
+“Good news means buy” is not yet an investment thesis. The question is not whether earnings were good in isolation. It is whether the announcement was better than the expectations already embedded in the price, whether your order can be executed before prices adjust, and whether the apparent return survives risk and costs.
+
+Write down what your choice requires:
+
+- Was the information public and unambiguous?
+- At what time did it become tradable?
+- How much surprise was already anticipated?
+- What price reaction do you predict—immediate, delayed, or reversed?
+- Relative to what expected-return model would the subsequent return be abnormal?
+- What spread, fee, tax, liquidity, and position risk would implementation create?
+
+The exercise reveals why behavioral finance is not a catalogue of profitable mistakes. It is a study of how information becomes price, how evidence is tested, and why identifying an error does not imply that it can be safely arbitraged.
+
+## Why study behavior in financial markets?
+
+Many criticisms of behavioral research point to small stakes, artificial tasks, or limited opportunities to learn. Financial markets appear to be the hardest place for behavioral effects to survive: stakes are high, feedback is frequent, professional traders are present, and mistakes can be exploited.
+
+That makes markets an informative stress test. If biased judgment still affects investment or price under these conditions, learning and competition have not automatically removed it. But the reverse is equally important: a biased investor does not prove a biased market. Other participants can trade against the error, information can aggregate, and prices can become useful even when the path is psychologically messy.
+
+Conventional finance asks how assets and liabilities should be allocated across time and uncertainty under stated assumptions. Behavioral finance asks how people and markets actually behave when attention, beliefs, reference points, social learning, overconfidence, and constraints enter the system (Barberis & Thaler, 2003). The two perspectives need each other. A descriptive anomaly is visible only relative to a benchmark.
+
+## The €20 note and three meanings of efficiency
+
+The familiar joke says that a financial economist would not pick up a €20 note because, in an efficient market, someone would already have taken it. But information is not free. People search precisely because a reward may remain.
+
+The **efficient market hypothesis** concerns the incorporation of a specified information set into prices, conditional on a model of expected returns (Fama, 1970, 1991):
+
+- **Weak form:** the information set includes historical prices and returns.
+- **Semi-strong form:** it includes publicly available information.
+- **Strong form:** it includes all information, even private information—a much stronger benchmark.
+
+Three claims are easily confused:
+
+1. **Information is incorporated quickly.** Price responds to a specified signal.
+2. **No free lunch.** A public rule does not reliably earn abnormal return after appropriate risk and realistic costs.
+3. **The price is right.** Market price equals a well-defined fundamental value.
+
+The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.
+
+![A photograph of a €20 note still lying on the ground leads to three separate market-efficiency claims: information moves quickly, there is no free lunch after risk and realistic costs, and the price equals fundamental value. The first two claims do not establish the third.](../figures/finance-euro-efficiency.svg){#fig-finance-euro-efficiency fig-alt="A photograph shows a twenty-euro note lying on pavement. From the photograph, one common branch points to three boxes distinguishing rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third." width=100%}
+
+Figure @fig-finance-euro-efficiency makes the €20-note intuition concrete using the photograph supplied for this book. Its separation of the three claims is the point: finding an unclaimed reward and establishing fundamental-value accuracy are different evidentiary tasks.
+
+Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.
+
+## Fast price discovery is possible
+
+Public news can move prices extraordinarily quickly, but an announcement timestamp is not evidence of that reaction. The US Federal Reserve's [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) establishes 14:00 on September 18, 2013 as the public release time; by itself, it does not show whether or how quickly prices and trading changed. In an event study, the release anchors event time. Separate high-frequency price and volume data must establish the market response.
+
+Price discovery can also aggregate dispersed clues. The space shuttle *Challenger* exploded at 11:39 a.m. on January 28, 1986; the news appeared on a major financial wire minutes later. Four publicly traded contractors were connected to the launch. By the end of the trading response, Morton Thiokol experienced the distinctive loss. A presidential commission identified the failure of booster O-ring seals made by Thiokol months later. Maloney and Mulherin (2003) found no simple news story or obvious insider-trading trail that fully explained the early discrimination. The market appeared to combine dispersed information, inference, and trading.
+
+But “the market knew” is too strong. Price discovery can be correct for the wrong reason, and a single case does not show that markets always identify responsibility. It establishes a possibility: collective trading can reveal information no single public announcement states.
+
+The wisdom of a market depends on conditions also familiar from crowd judgment: dispersed information, some independence, incentives to reveal beliefs, and an aggregation mechanism. If participants copy the same signal or face the same constraint, the crowd can amplify error instead.
+
+## Every efficiency test is a joint test
+
+To label a return abnormal, we must first say what return was expected. Suppose an asset earns 12%. That is not evidence of mispricing until we specify its risk, exposures, time period, benchmark, and costs.
+
+Fama (1991) emphasizes the **joint-hypothesis problem**: a test evaluates market efficiency together with an asset-pricing model. A rejection can mean:
+
+- information was not incorporated efficiently;
+- the expected-return model omitted a priced risk or exposure;
+- the implementation assumed impossible timing or ignored costs;
+- the sample or statistic was selected after seeing the data;
+- or some combination of these.
+
+![A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.](../figures/behavioral-finance-audit.svg){#fig-behavioral-finance-audit fig-alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence."}
+
+This is why “prices changed after the event” and “I can profit from the event” are separate claims.
+
+## Event studies: turning a story into a test
+
+An **event study** estimates security returns around a defined event (MacKinlay, 1997). A credible design makes the inferential chain explicit:
+
+1. Define the event and its first public time.
+2. Specify an estimation window for the expected-return model.
+3. Specify an event window in which reaction is measured.
+4. Compute abnormal return as actual return minus expected return.
+5. Aggregate across securities or time into average abnormal returns or cumulative abnormal returns.
+6. Test uncertainty and inspect confounding events.
+
+If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.
+
+![An event-study schematic distinguishes the estimation window, the event's first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift; they are not digitized effect-size estimates.](../figures/finance-event-study-drift.svg){#fig-finance-event-study-drift fig-alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs." width=100%}
+
+Figure @fig-finance-event-study-drift makes an important boundary visible. A price reaction is observed; an **abnormal** reaction exists only relative to the expected-return model. Continued separation after the event is evidence to explain, not an automatically tradable return.
+
+Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.
+
+Return to the opening puzzle. A good answer may still be “buy,” “wait,” or “do nothing,” but it must now name the information, expected-price response, benchmark, implementation assumptions, and evidence that would falsify the thesis.
+
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Evidence Boundary: an anomaly is not a mechanism or a trade
+
+A documented return pattern challenges a specified benchmark; it does not say whether the source is behavioral error, omitted risk, friction, model misspecification, or data mining. Finance offers thousands of securities, variables, transformations, and subperiods, so out-of-sample, after-cost, and post-publication evidence matters (Harvey et al., 2016). McLean and Pontiff (2016) found that average predictability declined after publication, consistent with both correction through trading and bias in initial discovery. A good company, a low price, and a high future return remain three different judgments.
+
+### Research Lens: five patterns, five open diagnoses
+
+The table summarizes several historically important findings without treating any of them as a timeless law or a ready-made strategy. Each row begins with a result in a specified sample; the behavioral account remains one hypothesis among several.
+
+| Pattern | Scoped historical finding | Behavioral possibility | Rival account and implementation gate |
+| --- | --- | --- | --- |
+| Size | Smaller firms earned higher average returns in an early U.S. sample (Banz, 1981). | Neglect, limited attention, or segmented demand | Priced risk, illiquidity, micro-cap trading costs, sample sensitivity, and later attenuation |
+| Value | Stocks priced low relative to book value, earnings, or cash flow outperformed higher-priced “growth” stocks in influential U.S. and international samples (Fama & French, 1992, 1998). | Extrapolation of growth stories or overreaction to past performance | Distress or another priced risk, changing definitions, portfolio construction, and costs |
+| Momentum | Recent winners outperformed recent losers over intermediate horizons in the historical U.S. sample studied by Jegadeesh and Titman (1993). | Underreaction, gradual information diffusion, or herding | Time-varying risk, crash exposure, turnover, crowding, and trading costs |
+| Long-run reversal | Extreme prior losers outperformed prior winners over longer horizons in an early study (De Bondt & Thaler, 1985). | Overreaction followed by correction | Benchmark and size effects, survivorship, overlapping formation periods, and implementability |
+| Earnings drift | Returns continued in the direction of earnings surprises after announcements in the studied samples (Rendleman et al., 1982). | Conservatism, inattention, or gradual updating | Expected-return model, confounding news, measurement, tradable timing, liquidity, risk, and costs |
+: Historical return patterns require competing explanations, not a single behavioral label {#tbl-finance-anomalies}
+
+Momentum over months and reversal over years are not logically inconsistent because different mechanisms, horizons, or samples may dominate. But explaining momentum after prices rise and reversal after they fall would make the theory difficult to falsify. A prospective claim should specify the horizon, mechanism, benchmark, and failure condition before the return path is known.
+:::
+
+## Limits to arbitrage: seeing an error is not enough
+
+The textbook arbitrageur buys an underpriced substitute and sells an overpriced one, locking in convergence. Real mispricing is rarely so clean. Shleifer and Vishny (1997) show why informed traders may be unable or unwilling to correct it:
+
+- **Fundamental risk:** the asset's underlying value can worsen before convergence.
+- **Noise-trader risk:** mispricing can become larger before it becomes smaller.
+- **Horizon risk:** clients or managers may withdraw capital after interim losses.
+- **Short-sale constraints:** borrowing can be unavailable, recalled, or expensive.
+- **Model risk:** the apparent mispricing may be the analyst's error.
+- **Transaction and funding costs:** spreads, market impact, leverage, and margin calls can dominate.
+
+Professional incentives can shorten the horizon precisely when a long-horizon correction is expected. An arbitrageur can be right eventually and insolvent first. Behavioral market outcomes therefore require both a source of biased demand and a reason better-informed capital does not fully offset it.
+
+
+## The Palm–3Com case: visible inconsistency, costly correction
+
+On March 2, 2000, 3Com sold about 5% of its Palm subsidiary and announced an intention—subject to conditions—to distribute the remaining Palm shares to 3Com shareholders at roughly 1.5 Palm shares per 3Com share. Ignoring timing, taxes, and frictions, the relative-value relation was:
+
+$$
+P(3Com) \approx 1.5P(Palm) + \text{value of 3Com's other businesses}.
+$$
+
+After Palm's first trading day, observed prices implied that the residual 3Com businesses were worth about negative $22 billion in Lamont and Thaler's (2003) calculation. Simple addition makes that hard to defend. Yet Palm shares were scarce to borrow, shorting was costly and risky, and the distribution was delayed and conditional. The case is unusually strong evidence of relative-value mispricing—and equally strong evidence that a visible inconsistency need not create a riskless free lunch.
+
+## A bubble is a reinforcing-process hypothesis
+
+Fundamental value is not printed beside the price. It depends on uncertain cash flows, discount rates, and a terminal value. Let $s_t$ denote the annualized $t$-period spot rate and let $P_T$ be the ex-dividend terminal price. A model can discipline the debate:
+
+$$
+V_0=\sum_{t=1}^{T}\frac{E(CF_t)}{(1+s_t)^t}+\frac{E(P_T)}{(1+s_T)^T}.
+$$
+
+If $r_s$ instead denotes the one-period rate applying in period $s$, the discount factor for a cash flow at $t$ is $\prod_{s=1}^{t}(1+r_s)$ rather than $(1+r_t)^t$. But correct notation must not create false precision. Before calling a price irrational, state the growth, margin, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
+
+![A speculative feedback loop runs from price increases to attention and extrapolative expectations, then to demand and strategic resale, then through leverage and liquidity back to price. Fundamentals enter the price from outside the loop. Supply, short selling, risk limits, and skeptical capital can brake the process, but synchronization and funding risk can delay correction.](../figures/asset-bubble-feedback.svg){#fig-asset-bubble-feedback fig-alt="A circular four-stage loop shows price increase, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Arrows connect each stage and return to price. A fundamentals box feeds price separately. Four brake boxes—elastic supply, short selling, risk limits, and skeptical capital—point toward the loop, with a note that funding and synchronization risk can weaken the brakes."}
+
+Extrapolation, social transmission, leverage, liquidity, strategic resale, supply constraints, and limits to arbitrage can each strengthen the loop. None is necessary in every episode. A boom can begin with genuine innovation and later acquire a feedback component. Fundamentals and speculation are not mutually exclusive.
+
+### Strategic resale and synchronization risk
+
+A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers' beliefs and on exiting before the correction. This makes a bubble partly a problem of strategic interdependence.
+
+Skeptical traders face the mirror problem. Even when many privately judge the price fragile, each may be uncertain about when the others will act. Selling or shorting too early can be costly, and funding or career pressure can force an informed trader out before convergence. Abreu and Brunnermeier (2003) formalize how this **synchronization risk** can delay correction. Shared doubt is not the same as coordinated correction.
+
+### One field episode: dot-com innovation and extreme expectations
+
+From the January 3, 1995 close of 743.58 to the March 10, 2000 peak close of 5,048.62, the NASDAQ Composite rose about 579%. By October 9, 2002, it closed at 1,114.11—a 77.9% decline from the peak (Federal Reserve Bank of St. Louis, 2026). Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
+
+The internet was not imaginary. The mistake would be to infer that every firm exposed to a transformative technology deserved every price. Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
+
+### One laboratory market: known value can still be exceeded
+
+Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, a risk-neutral benchmark without final redemption is $FV_t=kd$. Even with this transparent declining value, prices in many baseline markets rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
+
+The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them; learning is representation-specific rather than universal immunity (Dufwenberg et al., 2005; Hussam et al., 2008).
+
+Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair's (2006) rule classified behavior only when a trader's highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications were:
+
+| Strategy classification | Share |
+| --- | ---: |
+| Feedback / momentum-consistent | 36.5% |
+| Passive / fundamental-value-consistent | 33.1% |
+| Speculator / next-price-consistent | 25.4% |
+| Other or unclassified | 4.9% |
+: Rule-based behavioral classifications in Haruvy and Noussair (2006): 162 classifications from 18 sessions, fractional allocation of ties, and a highest consistency score of at least 8 of 15 periods. {#tbl-bubble-strategies}
+
+![An original redraw reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other classified behavior. These are 162 rule-based trader classifications from one experimental design, with fractional allocation of ties—not stable investor types.](../figures/bubble-trader-strategies-redraw.svg){#fig-bubble-trader-strategies-redraw fig-alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other classified behavior at four point nine percent. A side panel identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods." width=100%}
+
+These are behaviors under one design and classification rule, not permanent investor types or population estimates. The evidence supports interaction among heterogeneous strategies; it does not license a personality label.
+
+::: {.callout-note .research-lens icon=false}
+## Research Lens: what laboratory markets can transport
+
+Laboratory markets identify mechanisms by changing conditions that field markets rarely hold constant. Bubble-like deviations have appeared with known, declining fundamentals and also with flat fundamentals; raising cash relative to asset value can enlarge deviations (Caginalp et al., 1998). Forecast data show that traders' expectations can lag turning points and help explain price paths (Haruvy et al., 2007; Holt et al., 2017).
+
+The design strength is control over fundamentals, liquidity, experience, and trading rules. The boundary is transport: participants, stakes, institutions, leverage, information, and asset supply differ from field markets. A laboratory result can rule out one proposed necessity or estimate the effect of a randomized design change. It does not by itself establish the cause, prevalence, or magnitude of a mechanism in a particular historical boom.
+:::
+
+## A two-direction bubble dashboard
+
+Do not ask only “bubble or not?” Record a probability range and update it downward as willingly as upward.
+
+| Domain | Evidence that raises concern | Evidence that lowers concern |
+| --- | --- | --- |
+| Fundamentals | Price requires extreme growth or implausibly low discount rates | Verifiable cash flows, productivity, scarcity, or lower required returns support the move |
+| Expectations and trading | Forecasts extrapolate gains; turnover, attention, entry, and resale talk surge | Expectations remain dispersed and cash-flow theses remain testable |
+| Leverage and liquidity | Credit, collateral loops, maturity mismatch, or one-sided liquidity expand | Financing is conservative, losses absorbable, and supply responsive |
+| Arbitrage constraints | Shorting is costly; skeptical capital is horizon-constrained | Close substitutes and durable corrective capital exist |
+: A two-direction bubble diagnostic {#tbl-bubble-dashboard}
+
+Write both the fundamental story that would justify the price and the feedback story that would make it fragile. For each, name a discriminating observation. Even a high bubble probability does not reveal timing. Robust responses—limiting leverage and position size, stress-testing funding, preserving liquidity, and precommitting review conditions—may dominate a confident directional bet.
+
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Bubble, crash, and systemic crisis are different claims
+
+A crash can occur without a prior bubble when fundamentals or discount rates change sharply. A price correction becomes a **systemic crisis** only when leverage, maturity mismatch, balance-sheet exposure, networks, or confidence propagate losses widely enough to impair financial intermediation or real economic activity (Brunnermeier & Oehmke, 2013).
+
+Policy should therefore target the mechanism rather than the label: disclosure targets information problems; underwriting standards, capital buffers, and leverage limits target fragility and loss propagation; consumer protection targets burden and informed choice. Each intervention carries false-positive costs from constraining a sustainable market and false-negative costs from leaving a dangerous mechanism unaddressed. Ask who receives the upside, who can exit, who carries the downside, and whether losses are absorbable or propagated through obligations to others.
+:::
+
+## Investor behavior: the decision process matters
+
+Investment mistakes often combine mechanisms already developed in the book. The concepts do not change when they enter a market; what changes is that prices, other traders, implementation costs, and limits to arbitrage mediate their consequences:
+
+- [**Overconfidence**](10-beliefs-that-defend-themselves.qmd) creates narrow ranges, concentrated positions, and excessive trading.
+- [**Availability and attention**](09-what-feels-likely-availability-affect-and-resemblance.qmd) make vivid news or salient stocks feel more diagnostic.
+- [**Representativeness**](09-what-feels-likely-availability-affect-and-resemblance.qmd) turns a good company story into a high-return forecast.
+- [**Confirmation and hindsight**](10-beliefs-that-defend-themselves.qmd) protect a thesis after disconfirming evidence.
+- [**Mental accounting**](20-mental-accounting-money-is-fungible-minds-label-it.qmd) isolates positions and creates a disposition effect.
+- [**Loss aversion and narrow bracketing**](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd) make frequent evaluation painful.
+- [**Social learning and cascades**](26-social-norms-and-conformity-when-other-people-become-evidence.qmd) can turn price appreciation into apparently independent evidence that others know more.
+
+Barber and Odean (2000) found that the individual investors who traded most in their brokerage sample earned substantially lower net returns than those who traded least. The result is consistent with overconfidence plus trading costs; it is not a claim that every trade is mistaken or that passive investing fits every objective.
+
+The discipline is to apply the process–outcome separation from [*Decision-Making Is a Process, Not a Moment*](01-decision-making-is-a-process-not-a-moment.qmd#outcome-is-not-process). A well-reasoned decision can lose because risk materializes. A poor decision can win because luck is favorable. In finance, outcome-only learning is especially dangerous because volatile prices generate many convincing but noisy stories.
+
+## A falsifiable investment memo
+
+Before the outcome is known, write one page:
+
+1. **Decision and noninvestment option.** What exactly will be done, in what size, and why is doing nothing inferior?
+2. **Thesis.** State the causal claim in one sentence.
+3. **Embedded expectations.** What does the current price already require the firm or market to achieve?
+4. **Base rate and comparison class.** What happened in similar situations?
+5. **Drivers.** Name the two or three variables that must move.
+6. **Disconfirmation.** What observation would make the thesis materially less plausible?
+7. **Risks and dependence.** Which exposures could fail together?
+8. **Implementation.** Include spreads, liquidity, taxes, financing, capacity, and time horizon.
+9. **Position and exit rules.** Precommit a maximum exposure, review date, and conditions for reducing, adding, or closing.
+10. **Evaluation.** Separate frequent risk monitoring from the horizon on which performance will be judged.
+
+Then red-team the memo. Look for an unfalsifiable escape (“the market will recognize it eventually”), a sunk argument (“we have already lost too much to sell”), a missing denominator, a selected backtest, or a position too large for the uncertainty.
+
+The memo cannot remove risk. It creates an honest record of what was believed, why action was justified, and what should be learned.
+
+## Practice Lab
+
+Prepare a two-page fictional market memo. Page one defines one event study: event time, expected-return model, windows, confounds, tradable timing, and costs. Page two applies the bubble dashboard to the same market, states a fundamental story and a feedback story, gives each a probability range and discriminating observation, and chooses a position limit or noninvestment action that remains defensible if timing is wrong. Exchange memos and red-team the process, not the person.
+
+## Take it forward
+
+- **Use this when** a price pattern, apparent mispricing, or boom is being converted into an investment or policy claim.
+- **Do not infer** fundamental accuracy from fast price discovery, a free lunch from visible inconsistency, or reversal timing from a bubble diagnosis.
+- **Try this next** by writing the rival fundamental and feedback stories before choosing exposure, leverage, and review conditions.
+
+Prices can coordinate dispersed action without a single commander. Organizations also coordinate through leaders, roles, meetings, and assigned responsibilities. The next chapter asks when these concentrated social signals improve coordination and when they suppress evidence, dissent, ownership, or action.
+
+## References cited in this chapter
+
+::: {.reference}
+Barber, B. M., & Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. Journal of Finance, 55(2), 773–806.
+:::
+
+::: {.reference}
+Barberis, N., & Thaler, R. (2003). A survey of behavioral finance. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 1B, pp. 1053–1128). Elsevier.
+:::
+
+::: {.reference}
+Banz, R. W. (1981). The relationship between return and market value of common stocks. Journal of Financial Economics, 9(1), 3–18.
+:::
+
+::: {.reference}
+Abreu, D., & Brunnermeier, M. K. (2003). Bubbles and crashes. Econometrica, 71(1), 173–204.
+:::
+
+::: {.reference}
+Brunnermeier, M. K., & Oehmke, M. (2013). Bubbles, financial crises, and systemic risk. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 2B, pp. 1221–1288). Elsevier.
+:::
+
+::: {.reference}
+Caginalp, G., Porter, D. P., & Smith, V. L. (1998). Initial cash/asset ratio and asset prices: An experimental study. Proceedings of the National Academy of Sciences, 95(2), 756–761.
+:::
+
+::: {.reference}
+De Bondt, W. F. M., & Thaler, R. (1985). Does the stock market overreact? Journal of Finance, 40(3), 793–805.
+:::
+
+::: {.reference}
+Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25(2), 383–417.
+:::
+
+::: {.reference}
+Fama, E. F. (1991). Efficient capital markets: II. Journal of Finance, 46(5), 1575–1617.
+:::
+
+::: {.reference}
+Fama, E. F., & French, K. R. (1992). The cross-section of expected stock returns. Journal of Finance, 47(2), 427–465.
+:::
+
+::: {.reference}
+Fama, E. F., & French, K. R. (1998). Value versus growth: The international evidence. Journal of Finance, 53(6), 1975–1999.
+:::
+
+::: {.reference}
+Federal Reserve Bank of St. Louis. (2026). NASDAQ Composite [NASDAQCOM]. *FRED*. Retrieved August 29, 2026, from https://fred.stlouisfed.org/series/NASDAQCOM
+:::
+
+::: {.reference}
+Grossman, S. J., & Stiglitz, J. E. (1980). On the impossibility of informationally efficient markets. American Economic Review, 70(3), 393–408.
+:::
+
+::: {.reference}
+Harvey, C. R., Liu, Y., & Zhu, H. (2016). … and the cross-section of expected returns. Review of Financial Studies, 29(1), 5–68.
+:::
+
+::: {.reference}
+Jegadeesh, N., & Titman, S. (1993). Returns to buying winners and selling losers: Implications for stock market efficiency. Journal of Finance, 48(1), 65–91.
+:::
+
+::: {.reference}
+MacKinlay, A. C. (1997). Event studies in economics and finance. Journal of Economic Literature, 35(1), 13–39.
+:::
+
+::: {.reference}
+Maloney, M. T., & Mulherin, J. H. (2003). The complexity of price discovery in an efficient market: The stock market reaction to the Challenger crash. Journal of Corporate Finance, 9(4), 453–479.
+:::
+
+::: {.reference}
+McLean, R. D., & Pontiff, J. (2016). Does academic research destroy stock return predictability? Journal of Finance, 71(1), 5–32.
+:::
+
+::: {.reference}
+Rendleman, R. J., Jr., Jones, C. P., & Latané, H. A. (1982). Empirical anomalies based on unexpected earnings and the importance of risk adjustments. Journal of Financial Economics, 10(3), 269–287.
+:::
+
+::: {.reference}
+Shleifer, A., & Vishny, R. W. (1997). The limits of arbitrage. Journal of Finance, 52(1), 35–55.
+:::
+
+::: {.reference}
+Dufwenberg, M., Lindqvist, T., & Moore, E. (2005). Bubbles and experience: An experiment. American Economic Review, 95(5), 1731–1737.
+:::
+
+::: {.reference}
+Greenwood, R., & Shleifer, A. (2014). Expectations of returns and expected returns. Review of Financial Studies, 27(3), 714–746.
+:::
+
+::: {.reference}
+Haruvy, E., Lahav, Y., & Noussair, C. N. (2007). Traders' expectations in asset markets: Experimental evidence. American Economic Review, 97(5), 1901–1920.
+:::
+
+::: {.reference}
+Haruvy, E., & Noussair, C. N. (2006). The effect of short selling on bubbles and crashes in experimental spot asset markets. Journal of Finance, 61(3), 1119–1157.
+:::
+
+::: {.reference}
+Hussam, R. N., Porter, D., & Smith, V. L. (2008). Thar she blows: Can bubbles be rekindled with experienced subjects? American Economic Review, 98(3), 924–937.
+:::
+
+::: {.reference}
+Holt, C. A., Porzio, M., & Song, M. Y. (2017). Price bubbles, gender, and expectations in experimental asset markets. European Economic Review, 100, 72–94.
+:::
+
+::: {.reference}
+Lamont, O. A., & Thaler, R. H. (2003). Can the market add and subtract? Mispricing in tech stock carve-outs. Journal of Political Economy, 111(2), 227–268.
+:::
+
+::: {.reference}
+Ofek, E., & Richardson, M. (2003). DotCom mania: The rise and fall of internet stock prices. Journal of Finance, 58(3), 1113–1137.
+:::
+
+::: {.reference}
+Porter, D. P., & Smith, V. L. (2003). Stock market bubbles in the laboratory. Journal of Behavioral Finance, 4(1), 7–20.
+:::
+
+::: {.reference}
+Shiller, R. J. (2000). Irrational exuberance. Princeton University Press.
+:::
+
+::: {.reference}
+Smith, V. L., Suchanek, G. L., & Williams, A. W. (1988). Bubbles, crashes, and endogenous expectations in experimental spot asset markets. Econometrica, 56(5), 1119–1151.
+:::

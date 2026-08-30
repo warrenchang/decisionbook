@@ -123,28 +123,28 @@ async function main() {
     const page = await context.newPage();
     const screenshots = [
       ["parts/part-1.html", "main img[src$='master-loop-part-1.svg']", "part-loop-desktop.png"],
-      ["chapters/01-the-choice-is-the-tip-of-the-iceberg.html", "#fig-behavioral-decision-loop", "figure-1-2-desktop.png"],
-      ["chapters/16-priming-and-the-active-mental-context.html", "#fig-fluency-pathway", "figure-13-2-desktop.png"],
-      ["chapters/19-habits-when-decisions-move-downstairs.html", "#fig-habit-formation-curve", "habit-formation-desktop.png"],
-      ["chapters/19-habits-when-decisions-move-downstairs.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
-      ["chapters/43-behavioral-finance.html", "#fig-finance-event-study-drift", "event-study-desktop.png"],
-      ["chapters/08-expectations-that-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-6-1-desktop.png"],
-      ["chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-desktop.png"],
-      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-personal-mimicry-crossed-arms", "personal-mimicry-desktop.png"],
-      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-learning-culture", "figure-26-1-desktop.png"],
-      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-norm-message-diagnostic", "figure-26-4-desktop.png"],
-      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-pathways", "figure-26-5-desktop.png"],
-      ["chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-desktop.png"],
-      ["chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-desktop.png"],
-      ["chapters/36-choice-architecture.html", "#fig-choice-architecture-simplified-remote", "simplified-remote-desktop.png"],
-      ["chapters/04-fast-answers-slow-inspection.html", "#fig-stroop-interference-lab", "stroop-interference-desktop.png"],
-      ["chapters/06-the-predictive-mind.html", "#fig-perception-context-lab", "perception-context-desktop.png"],
-      ["chapters/12b-samples-randomness-regression-calibration.html", "#fig-monty-hall-protocol", "monty-hall-desktop.png"],
-      ["chapters/15-frames-change-the-decision.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-desktop.png"],
-      ["chapters/18-the-narrator-after-the-choice.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
-      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-asch-line-comparison", "asch-lines-desktop.png"],
-      ["chapters/47-behavioral-game-theory.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
-      ["chapters/48-cooperation-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-desktop.png"],
+      ["chapters/01-decision-making-is-a-process-not-a-moment.html", "#fig-behavioral-decision-loop", "figure-1-2-desktop.png"],
+      ["chapters/13-accessibility-familiarity-and-ease.html", "#fig-fluency-pathway", "figure-13-2-desktop.png"],
+      ["chapters/21-habits-wanting-and-self-control.html", "#fig-habit-formation-curve", "habit-formation-desktop.png"],
+      ["chapters/21-habits-wanting-and-self-control.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
+      ["chapters/27-markets-mispricing-and-bubbles.html", "#fig-finance-event-study-drift", "event-study-desktop.png"],
+      ["chapters/06-expectations-when-predictions-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-6-1-desktop.png"],
+      ["chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-desktop.png"],
+      ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-personal-mimicry-crossed-arms", "personal-mimicry-desktop.png"],
+      ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-desktop.png"],
+      ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-norm-message-diagnostic", "figure-26-4-desktop.png"],
+      ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-pathways", "figure-26-5-desktop.png"],
+      ["chapters/38-designing-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-desktop.png"],
+      ["chapters/40-choice-architecture-the-environment-gets-a-vote.html", "#fig-mpg-fuel-use", "mpg-fuel-use-desktop.png"],
+      ["chapters/40-choice-architecture-the-environment-gets-a-vote.html", "#fig-choice-architecture-simplified-remote", "simplified-remote-desktop.png"],
+      ["chapters/08-fast-and-frugal-thinking.html", "#fig-stroop-interference-lab", "stroop-interference-desktop.png"],
+      ["chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-perception-context-lab", "perception-context-desktop.png"],
+      ["chapters/15-samples-randomness-regression-and-calibration.html", "#fig-monty-hall-protocol", "monty-hall-desktop.png"],
+      ["chapters/12-framing-when-the-same-facts-become-different-decisions.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-desktop.png"],
+      ["chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
+      ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-asch-line-comparison", "asch-lines-desktop.png"],
+      ["chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
+      ["chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-desktop.png"],
     ];
     for (const [relative, selector, output] of screenshots) await screenshotFigure(page, relative, selector, output);
     await context.close();
@@ -153,33 +153,33 @@ async function main() {
     const mobilePage = await mobileContext.newPage();
     await screenshotFigure(
       mobilePage,
-      "chapters/16-priming-and-the-active-mental-context.html",
+      "chapters/13-accessibility-familiarity-and-ease.html",
       "#fig-fluency-pathway",
       "figure-13-2-mobile.png",
     );
-    await screenshotFigure(mobilePage, "chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-norm-message-diagnostic", "figure-26-4-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-pathways", "figure-26-5-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/04-fast-answers-slow-inspection.html", "#fig-stroop-interference-lab", "stroop-interference-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/06-the-predictive-mind.html", "#fig-perception-context-lab", "perception-context-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/12b-samples-randomness-regression-calibration.html", "#fig-monty-hall-protocol", "monty-hall-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/15-frames-change-the-decision.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/18-the-narrator-after-the-choice.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-asch-line-comparison", "asch-lines-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/47-behavioral-game-theory.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/48-cooperation-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-norm-message-diagnostic", "figure-26-4-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-pathways", "figure-26-5-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/38-designing-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/40-choice-architecture-the-environment-gets-a-vote.html", "#fig-mpg-fuel-use", "mpg-fuel-use-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/08-fast-and-frugal-thinking.html", "#fig-stroop-interference-lab", "stroop-interference-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-perception-context-lab", "perception-context-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/15-samples-randomness-regression-and-calibration.html", "#fig-monty-hall-protocol", "monty-hall-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/12-framing-when-the-same-facts-become-different-decisions.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-asch-line-comparison", "asch-lines-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-mobile.png");
     await mobileContext.close();
 
     const validationContext = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
     const validationPage = await validationContext.newPage();
-    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/08-expectations-that-become-causes.html")).href);
+    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/06-expectations-when-predictions-become-causes.html")).href);
     const rowgroups = await validationPage.locator("#tbl-self-fulfilling-self-defeating th[scope='rowgroup'][rowspan='2']").count();
-    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/06-the-predictive-mind.html")).href);
+    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/04-the-predictive-mind-perception-is-inference.html")).href);
     const valuation = await validationPage.locator("#tbl-ai-prediction-judgment-causation").innerText();
-    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/04-fast-answers-slow-inspection.html")).href);
+    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/08-fast-and-frugal-thinking.html")).href);
     const daughterCaption = await validationPage.locator("#fig-daughter-finger-counting figcaption").innerText();
     await validationContext.close();
 

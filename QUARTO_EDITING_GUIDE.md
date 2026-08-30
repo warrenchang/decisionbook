@@ -22,7 +22,7 @@ From the repository root, run:
 quarto preview
 ```
 
-Open a chapter such as `chapters/01-the-choice-is-the-tip-of-the-iceberg.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
+Open a chapter such as `chapters/01-decision-making-is-a-process-not-a-moment.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
 
 ## Rebuild all publishing files
 

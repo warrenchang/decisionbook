@@ -143,7 +143,7 @@ def main() -> int:
         page.set_content(inline_page("start-here.html"), wait_until="load")
         check("start-here", "The organizing logic" in page.locator("main").inner_text())
 
-        page.set_content(inline_page("chapters/10-feeling-and-availability-as-shortcuts.html"), wait_until="load")
+        page.set_content(inline_page("chapters/09-what-feels-likely-availability-affect-and-resemblance.html"), wait_until="load")
         check(
             "chapter-figure-loaded",
             page.locator("main figure img").count() == 1

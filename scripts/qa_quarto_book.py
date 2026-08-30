@@ -50,6 +50,7 @@ def rel(path: Path) -> str:
 
 
 def strip_reference_tail(text: str) -> str:
+    text = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, count=1, flags=re.DOTALL)
     marker = re.search(r"^## References cited in this chapter\s*$", text, re.MULTILINE)
     return text[: marker.start()] if marker else text
 

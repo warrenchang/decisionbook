@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Refresh reader-facing chapter links after the 2026 structural consolidation.
+"""Refresh reader-facing chapter links after structural revisions.
 
-The source filenames are intentionally stable where possible, so their numeric
-prefixes do not represent reader-facing chapter numbers. This script derives
-numbers and titles from the canonical HTML profile, redirects links from merged
-source files, and refreshes Markdown labels that begin with ``Chapter N``.
+Canonical source filenames carry the current chapter number and title. This
+script still derives numbering and titles from the HTML profile, redirects
+links from retained merged sources, and refreshes Markdown labels that begin
+with ``Chapter N``.
 """
 
 from __future__ import annotations
@@ -21,14 +21,14 @@ H1 = re.compile(r"^#\s+(.+?)(?:\s+\{[^}]+\})?\s*$", re.MULTILINE)
 MARKDOWN_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 REDIRECTS = {
-    "03-opportunity-cost-information-and-better-options.qmd": "02-a-rational-benchmark-not-a-portrait.qmd",
-    "09-heuristics-the-adaptive-toolbox.qmd": "04-fast-answers-slow-inspection.qmd",
-    "11-resemblance-is-not-probability.qmd": "10-feeling-and-availability-as-shortcuts.qmd",
-    "17-fluency-familiarity-and-the-feeling-of-truth.qmd": "16-priming-and-the-active-mental-context.qmd",
-    "20-wanting-craving-and-self-control.qmd": "19-habits-when-decisions-move-downstairs.qmd",
-    "44-asset-bubbles.qmd": "43-behavioral-finance.qmd",
-    "23-conformity-norms-and-social-proof.qmd": "22-social-learning-mimicry-and-attribution.qmd",
-    "32-anchors-concessions-and-bargaining-tactics.qmd": "31-preparing-to-claim-value.qmd",
+    "retired-opportunity-cost-information-and-better-options.qmd": "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd",
+    "retired-heuristics-the-adaptive-toolbox.qmd": "08-fast-and-frugal-thinking.qmd",
+    "retired-resemblance-is-not-probability.qmd": "09-what-feels-likely-availability-affect-and-resemblance.qmd",
+    "retired-fluency-familiarity-and-the-feeling-of-truth.qmd": "13-accessibility-familiarity-and-ease.qmd",
+    "retired-wanting-craving-and-self-control.qmd": "21-habits-wanting-and-self-control.qmd",
+    "retired-asset-bubbles.qmd": "27-markets-mispricing-and-bubbles.qmd",
+    "retired-conformity-norms-and-social-proof.qmd": "26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+    "retired-anchors-concessions-and-bargaining-tactics.qmd": "36-preparing-and-claiming-value.qmd",
 }
 
 

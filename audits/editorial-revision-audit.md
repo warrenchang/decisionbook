@@ -70,19 +70,19 @@ The following items were checked against the final source manifest, rendered HTM
 
 - [x] **Canonical manifest:** 7 numbered parts and 41 numbered chapters in the intended order.
 - [x] **Chapter count:** source, HTML navigation, and EPUB navigation agree on 41 chapters.
-- [x] **Word count:** final canonical body-only count recorded using the same extraction rule as the 192,394-word baseline: **149,685 words**.
+- [x] **Word count:** final canonical body-only count recorded using the same extraction rule as the 192,394-word baseline: **160,652 words**.
 - [x] **Front matter:** Preface, How to Use This Book, and How to Read the Evidence in This Book are unnumbered and nonredundant.
 - [x] **Part navigation:** every part opener displays the same master loop with the relevant stages highlighted and presents it as a recursive navigation model.
 - [x] **HTML build:** completed without unresolved cross-references, missing figures, duplicate identifiers, or broken internal links.
 - [x] **EPUB build:** Part titles are visible; chapters are nested beneath them; section-level headings do not clutter the contents; visible chapter numbers are not duplicated by list counters.
-- [x] **Figures and tables:** all **77 unique chapter figures**, **87 unique figures across the configured book**, and **100 captioned chapter tables** are present; connector checks pass; result figures use accurate labels, denominators, axes, and captions; PNG/raster fallbacks display at readable size.
-- [x] **References:** cited-source synchronization passes with 731 unique references, and every substantive empirical claim added during revision has an appropriate source.
+- [x] **Figures and tables:** all **90 unique chapter figures**, **100 unique figures across the configured book**, and **103 captioned chapter tables** are present; connector checks pass; result figures use accurate labels, denominators, axes, and captions; PNG/raster fallbacks display at readable size.
+- [x] **References:** cited-source synchronization passes with **772 unique references**, and every substantive empirical claim added during revision has an appropriate source.
 - [x] **Scientific boundaries:** the final review confirms that causal, mechanistic, generalizability, and replication claims do not exceed their evidence.
 - [x] **Recurring cases and referrals:** repeated cases retain stable facts, and cross-references replace unnecessary re-teaching.
 - [x] **Appendices and back matter:** Appendices A–D precede References; the concept index and author information are present and current.
 - [x] **Final artifacts:** HTML path, EPUB path, build date, and QA report locations are recorded below.
 
-**Build date:** August 29, 2026  
+**Build date:** August 30, 2026  
 **HTML artifact:** `docs/index.html`  
-**EPUB artifact:** `docs/Decision-Persuasion-and-Negotiation.epub`  
+**EPUB artifact:** `docs/Decision-in-the-Making.epub`  
 **QA reports:** `QA_REPORT.md`; `EPUB_QA_REPORT.md`

@@ -1,0 +1,268 @@
+---
+aliases:
+  - 47-behavioral-game-theory.html
+---
+
+# Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait
+
+*Game theory asks what fits together. Behavioral game theory asks how people actually decide what others will do.*
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+Game theory supplies conditional equilibrium benchmarks for strategically interdependent choices. But real players may represent a different game, reason only a few steps, hold different beliefs, learn from feedback, value others’ outcomes, or use rules that spread through a population; an observed departure does not identify which explanation is correct. Therefore behavioral game theory turns the gap between benchmark and behavior into evidence to explain, not permission to call people irrational or infer a reasoning type from one action.
+:::
+
+## Learning goals
+
+- Compare equilibrium, level-*k*, and cognitive-hierarchy accounts of one beauty-contest dataset.
+- Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.
+- Design an observation or treatment that distinguishes competing explanations for the same strategic action.
+
+::: {.callout-note .loop-location icon=false}
+## Where this chapter enters the loop
+
+Behavioral game theory examines how people **Predict** other minds and **Learn** from strategic feedback. The same action can follow from different beliefs, depths of reasoning, or adaptation histories.
+:::
+
+## Opening puzzle: should a sophisticated player choose zero?
+
+Everyone chooses a number from 0 to 100. The winner is closest to two-thirds of the group's mean.
+
+If choices were random, the mean would be about 50, so a best response would be about 33. If others make that calculation, a best response is about 22. If they expect one more step, the answer is about 15. Repeating the reasoning drives the choice toward zero.
+
+Under common knowledge of rationality, iterated elimination removes choices above $66\frac{2}{3}$, then above $44\frac{4}{9}$, and so on. The unique Nash equilibrium is zero.
+
+But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. The equilibrium calculation is correct under its assumptions. The decision is poor because the population is not at equilibrium.
+
+This is the central puzzle. Strategic sophistication is not the number of steps one can calculate in isolation. It is choosing the depth of reasoning that fits other people's reasoning.
+
+### Two beauty contests
+
+The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for preference; the second asks for a prediction about a prediction. Any class changes are an activity result, not population evidence.
+
+The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The clip is copyrighted fiction and illustrates a puzzle; it does not estimate human reasoning depth.
+
+![Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game but answers a different question and requires a different evidentiary boundary.](../figures/three-lenses-strategic-behavior.svg){#fig-three-lenses-strategic-behavior fig-alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions, followed by an audit box warning that stability, observed choice, and evolutionary prevalence are different claims."}
+
+## Three lenses, three questions
+
+| Lens | Decision rule | Primary question | What it does not establish |
+| --- | --- | --- | --- |
+| Equilibrium benchmark | Each strategy is a best response to the others. | Which strategy profiles are mutually stable? | That people know the game, reach equilibrium, or approve of it. |
+| Behavioral reasoning | Players respond to beliefs about less or differently sophisticated players. | How many strategic steps fit observed play? | A fixed intelligence trait or the true belief behind one action. |
+| Population dynamics | More successful strategies become more common through selection, imitation, or reproduction. | Which strategies grow, shrink, or coexist under a specified update rule? | Deliberate reasoning, moral endorsement, or transport to human populations. |
+: Three lenses on strategic behavior {#tbl-three-strategic-lenses}
+
+The lenses can complement one another. They cannot be substituted without changing the claim. A Nash equilibrium is not an estimate of average behavior. A level-2 choice is not an evolutionarily stable strategy. A strategy that spreads in a spatial simulation need not be anyone's conscious best response.
+
+## Limited strategic depth: level-*k*
+
+A level-*k* model replaces the assumption of perfectly matched equilibrium beliefs with a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
+
+![In a game where the target is two-thirds of the group mean, a theoretical level-*k* ladder begins from a random-choice anchor of 50, then moves to 33, 22, and 15 as each level best responds to the level below; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes. A lower audit box warns that the observed number does not uniquely identify beliefs or reasoning depth." width=100%}
+
+Figure @fig-level-k-reasoning-ladder makes the theoretical recursion visible. It should not be read backward as a psychological scanner. A choice of 22 can reflect a level-2 best response, but also a different belief, arithmetic error, anchoring, or a focal point. Beliefs and comprehension are needed before a strategic level is assigned.
+
+- **Level 0** is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.
+- **Level 1** best responds to level 0 and chooses about $\frac{2}{3}\times50=33$.
+- **Level 2** best responds to level 1 and chooses about $\frac{2}{3}\times33=22$.
+- **Level 3** best responds to level 2 and chooses about 15.
+
+The labels describe a model of choice in one task. They are not ranks of intelligence. The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.
+
+### Cognitive hierarchy: best respond to a mixture
+
+Cognitive hierarchy makes a different assumption. A step-$k$ thinker best responds not to one lower type, but to a distribution of steps $0$ through $k-1$ (Camerer, Ho, & Chong, 2004). The population frequency of step $h$ is often modeled with a Poisson distribution,
+
+$$
+f(h)=\frac{e^{-\tau}\tau^h}{h!},
+$$
+
+and a step-$k$ player renormalizes this distribution over the lower steps they believe exist. The parameter $\tau$ governs the population's average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games. That is a model fit across tasks—not a law that every person takes one and a half steps.
+
+The following cross-group number-game summary makes heterogeneity visible. It is descriptive, drawn from different settings and samples, and should not be read as a causal ranking of occupations or education.
+
+| Participant group | Group size | Mean choice | Modal choice | Fitted $\tau$ |
+| --- | ---: | ---: | ---: | ---: |
+| Chief executives | 20 | 37.9 | 33 | 1.0 |
+| German students | 66 | 37.2 | 25 | 1.1 |
+| U.S. high-school students | 52 | 32.5 | 33 | 1.6 |
+| Economics PhDs | 16 | 27.4 | — | 2.3 |
+| Portfolio managers | 26 | 24.3 | 22 | 2.8 |
+| Caltech students | 42 | 23.0 | 35 | 3.0 |
+| Newspaper participants | 7,884 | 23.0 | 1 | 3.0 |
+| Game theorists | 136 | 19.1 | 0 | 3.7 |
+: Descriptive number-game results used to illustrate heterogeneous strategic depth {#tbl-beauty-contest-groups}
+
+Large within-group dispersion remains. A fitted $\tau$ is a population-and-model parameter. It should not be converted into an individual psychological diagnosis.
+
+## The action does not identify the thought
+
+Suppose someone chooses 22. They may be level 2. But they may also believe the mean will be 33 for another reason, copy a familiar answer, misunderstand the target, anchor on a previous round, or choose strategically after observing the participant pool.
+
+This is an **identification problem**. Choice data can be consistent with several combinations of beliefs and preferences. Better evidence may include:
+
+- an incentive-compatible belief report;
+- response time and information search;
+- repeated choices across games with different best responses;
+- exogenous changes in information about opponents;
+- learning after feedback;
+- process measures interpreted alongside, not instead of, behavior.
+
+Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. Yet a brain region is not a unique label for “level 2,” and correlational activation cannot by itself identify the computation or show that the process caused the choice. Neural evidence narrows some accounts; it does not eliminate the behavioral identification problem.
+
+## Learning is not the same as deeper initial reasoning
+
+After several rounds, choices in a number game often move toward lower values. That path may reflect belief learning, reinforcement, imitation, comprehension, or selection among participants. Calling it “more rational” skips the mechanism.
+
+To distinguish accounts, vary what participants receive:
+
+- **choices only:** participants see others' actions but not payoffs;
+- **payoffs only:** participants learn success but not the full action distribution;
+- **belief information:** participants receive a credible signal about others;
+- **counterfactual feedback:** participants see what alternative actions would have earned;
+- **no feedback:** repeated choices reveal mere task familiarity or self-generated change.
+
+Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.
+
+::: {.callout-note .research-lens icon=false}
+## Research Lens: Evolutionary and spatial models
+
+Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory asks which strategies become more common under a declared rule linking payoff to replication, survival, or imitation (Maynard Smith & Price, 1973). The language can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named; learning is not natural selection merely because frequencies change.
+
+A two-strategy illustration lets $x$ be the share using strategy 1 and updates that share according to relative payoff. A discrete replicator-style rule is $x'=xf_1/[xf_1+(1-x)f_2]$. Under the stylized beetle game below, Large earns more at every population share and therefore spreads under a payoff-monotonic update. The result is conditional on the stated payoffs, population mixing, initial share, update rule, and omitted costs.
+
+| Focal  Other | Small | Large |
+| --- | ---: | ---: |
+| **Small** | 3, 3 | 0, 5 |
+| **Large** | 5, 0 | 1, 1 |
+: Stylized beetle-size game {#tbl-beetle-game}
+
+An **evolutionarily stable strategy** resists invasion by a small share of mutants. In the stag hunt, both pure populations can be stable and the starting share determines which basin is reached. In hawk–dove, payoff equality can sustain a population mixture; that is not the same claim as each individual deliberately randomizing.
+
+| Focal  Other | Stag | Hare |
+| --- | ---: | ---: |
+| **Stag** | 2, 2 | 0, 1 |
+| **Hare** | 1, 0 | 1, 1 |
+: Evolutionary stag hunt {#tbl-evolutionary-stag-hunt}
+
+| Focal  Other | Dove | Hawk |
+| --- | ---: | ---: |
+| **Dove** | 3, 3 | 1, 5 |
+| **Hawk** | 5, 1 | 0, 0 |
+: Hawk–dove game {#tbl-hawk-dove}
+
+Spatial models add another dependency: who meets whom. Cooperative clusters, ethnocentric strategies, or aggregate segregation can emerge under particular neighborhoods and update rules. A screenshot is not empirical evidence, and a model pattern does not identify human intent, innateness, or the historical cause of a city outcome. Reproducibility requires the following minimum record:
+
+| Model layer | Substantive lesson | Reproducibility gate |
+| --- | --- | --- |
+| Two-strategy update | Payoff differences can change population shares. | Payoffs, initial share, update rule, and horizon. |
+| Spatial game | Local interaction can protect clusters. | Topology, neighbors, timing, ties, seed, and replications. |
+| Ethnocentrism | Conditional help can spread in one specified process. | Benefits, costs, tags, mutation, mobility, and interaction rule. |
+| Schelling segregation | Mild local thresholds can yield aggregate sorting. | Population, vacancies, threshold, move rule, seed, and outcome measure. |
+: Model demonstrations require parameter and process provenance {#tbl-model-provenance}
+
+Figure @fig-schelling-emergence applies that standard rather than relying on parameter-free screenshots. In one seeded run, local moves raise the average same-group-neighbour share from 0.48 to 0.68. The figure displays the core parameters; the retained generator also fixes population counts, isolated-agent handling, shuffled sequential updates, vacancy construction, tie-breaking, and the pseudorandom implementation. It shows what those declared rules can produce—not that the same process, threshold, or motive generated residential segregation in a real city.
+
+![One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.](../figures/schelling-emergence.svg){#fig-schelling-emergence fig-alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830." width=100%}
+
+Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner's-dilemma dynamics (Wilensky, 2002), and a specific ethnocentrism model (Hammond & Axelrod, 2006; Wilensky, 2003). These are executable hypotheses under declared rules, not photographs of how real populations must behave.
+
+Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat's success in one tournament and its vulnerability under noise or mutation–selection are not contradictory findings; they answer different questions (Axelrod, 1984; Imhof et al., 2007).
+:::
+
+## Application: choose the model after diagnosing the process
+
+Suppose a team asks why one work routine is spreading.
+
+1. **Best response:** Are employees deliberately choosing the routine because it fits colleagues' actions?
+2. **Level reasoning:** Are they anticipating what colleagues will anticipate?
+3. **Reinforcement:** Did recent success increase repetition even without a strategic model?
+4. **Imitation:** Are employees copying visible high performers?
+5. **Selection:** Are teams using other routines disappearing, losing resources, or not being hired?
+6. **Institution:** Did software, incentives, or management make one routine easier or mandatory?
+
+These accounts can generate the same observed diffusion. Test them by varying information, feedback, visibility, incentives, mobility, or rules. Do not call every spread behavior “evolutionary” merely because its frequency changes.
+
+## Ethics: strategic classification can become a weapon
+
+Level labels, brain images, and evolutionary language can give a fragile inference an aura of inevitability.
+
+- A low number-game choice is not proof of superior intelligence.
+- An equilibrium is not a moral endorsement.
+- A neural correlate is not a diagnosis.
+- A simulated group pattern is not proof of an innate tendency.
+- A successful strategy can impose costs on people outside the modeled population.
+
+The defensible use of a strategic model makes its payoff assumptions, population, update rule, uncertainty, and failure conditions inspectable. People affected should be able to ask what the model leaves out and how a classification can be corrected.
+
+## Practice Lab
+
+Run five rounds of the two-thirds number game. Record the full distribution, individual revisions, the mean, and the target each round. Produce three rival accounts of any movement—deeper reasoning, belief learning, and imitation or reinforcement—then design one additional treatment that gives them different predictions. The output is the annotated path plus the discriminating treatment.
+
+## Take it forward
+
+- **Use this when** equilibrium is a useful benchmark but initial play or adjustment does not match it.
+- **Do not infer** a person's belief, reasoning level, or stable type from one observed action.
+- **Try this next** by writing two mechanisms that predict the action and one treatment on which their predictions diverge.
+
+Knowing how people reason strategically does not yet explain why they cooperate. The same cooperative action may arise from future consequences, reputation, enforcement, concern for others, or norms. The next chapter separates those mechanisms before treating cooperation as evidence about motive.
+
+## References cited in this chapter
+
+::: {.reference}
+Axelrod, R. (1984). *The evolution of cooperation*. Basic Books.
+:::
+
+::: {.reference}
+Camerer, C. F. (2003). *Behavioral game theory: Experiments in strategic interaction*. Princeton University Press.
+:::
+
+::: {.reference}
+Camerer, C. F., Ho, T.-H., & Chong, J.-K. (2004). A cognitive hierarchy model of games. *Quarterly Journal of Economics, 119*(3), 861–898. https://doi.org/10.1162/0033553041502225
+:::
+
+::: {.reference}
+Coricelli, G., & Nagel, R. (2009). Neural correlates of depth of strategic reasoning in medial prefrontal cortex. *Proceedings of the National Academy of Sciences, 106*(23), 9163–9168. https://doi.org/10.1073/pnas.0807721106
+:::
+
+::: {.reference}
+Crawford, V. P., Costa-Gomes, M. A., & Iriberri, N. (2013). Structural models of nonequilibrium strategic thinking: Theory, evidence, and applications. *Journal of Economic Literature, 51*(1), 5–62. https://doi.org/10.1257/jel.51.1.5
+:::
+
+::: {.reference}
+Hammond, R. A., & Axelrod, R. (2006). The evolution of ethnocentrism. *Journal of Conflict Resolution, 50*(6), 926–936. https://doi.org/10.1177/0022002706293470
+:::
+
+::: {.reference}
+Imhof, L. A., Fudenberg, D., & Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? *Journal of Theoretical Biology, 247*(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027
+:::
+
+::: {.reference}
+Maynard Smith, J., & Price, G. R. (1973). The logic of animal conflict. *Nature, 246*, 15–18. https://doi.org/10.1038/246015a0
+:::
+
+::: {.reference}
+Nagel, R. (1995). Unraveling in guessing games: An experimental study. *American Economic Review, 85*(5), 1313–1326.
+:::
+
+::: {.reference}
+Schelling, T. C. (1969). Models of segregation. *American Economic Review, 59*(2), 488–493.
+:::
+
+::: {.reference}
+Stahl, D. O., & Wilson, P. W. (1995). On players' models of other players: Theory and experimental evidence. *Games and Economic Behavior, 10*(1), 218–254. https://doi.org/10.1006/game.1995.1031
+:::
+
+::: {.reference}
+Wilensky, U. (1997). *NetLogo Segregation model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation
+:::
+
+::: {.reference}
+Wilensky, U. (2002). *NetLogo PD Basic Evolutionary model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary
+:::
+
+::: {.reference}
+Wilensky, U. (2003). *NetLogo Ethnocentrism Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization
+:::
