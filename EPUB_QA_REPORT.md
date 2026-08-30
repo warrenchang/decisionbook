@@ -55,7 +55,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Underpowered Studies | **PASS** |
 | Required content: Data Fabrication | **PASS** |
 | Required content: Registered Reports | **PASS** |
-| Required content: A Decision Is Always in the Making | **PASS** |
+| Required content: A Decision Is Already in the Making | **PASS** |
 | Required content: pause without reset | **PASS** |
 | Required content: Scheduled cue occasions / days | **PASS** |
 | Required content: Index of Concepts | **PASS** |

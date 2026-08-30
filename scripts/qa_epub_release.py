@@ -67,7 +67,7 @@ REQUIRED_CONTENT = [
     "Underpowered Studies",
     "Data Fabrication",
     "Registered Reports",
-    "A Decision Is Always in the Making",
+    "A Decision Is Already in the Making",
     "pause without reset",
     "Scheduled cue occasions / days",
     "Index of Concepts",

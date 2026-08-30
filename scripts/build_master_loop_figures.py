@@ -10,8 +10,8 @@ OUT = Path(__file__).resolve().parents[1] / "figures"
 NODES = [
     ("context", ["Context &", "information"]),
     ("notice", ["Notice &", "interpret"]),
-    ("predict", ["Predict &", "value"]),
     ("construct", ["Construct", "options"]),
+    ("predict", ["Predict &", "value"]),
     ("choose", ["Choose &", "commit"]),
     ("act", ["Act"]),
     ("learn", ["Observe &", "learn"]),
@@ -47,7 +47,7 @@ def render(active: set[str]) -> str:
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="610" viewBox="0 0 1400 610" role="img" aria-labelledby="title desc">',
         '<title id="title">The recursive decision loop and its social environment</title>',
-        '<desc id="desc">Context and information feed noticing and interpretation, prediction and valuation, option construction, choice, action, and learning. Other minds, institutions, and designed environments can alter every stage.</desc>',
+        '<desc id="desc">Context and information feed noticing and interpretation, option construction, prediction and valuation, choice, action, and learning. Other minds, institutions, and designed environments can alter every function.</desc>',
         '<defs>',
         '<marker id="arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5,0.8 L9,4 L0.5,7.2 z" fill="#587189"/></marker>',
         '<marker id="arrow-accent" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5,0.8 L9,4 L0.5,7.2 z" fill="#c44e52"/></marker>',
@@ -62,7 +62,7 @@ def render(active: set[str]) -> str:
     parts.extend([
         f'<rect x="58" y="48" width="1284" height="112" rx="20" fill="{outer_fill}" stroke="{outer_stroke}" stroke-width="3"/>',
         '<text x="700" y="86" class="outer" fill="#183047" text-anchor="middle">OTHER MINDS, INSTITUTIONS, AND DESIGNED ENVIRONMENTS</text>',
-        '<text x="700" y="122" class="small" fill="#4c6173" text-anchor="middle">can change what is noticed, predicted, valued, possible, chosen, reinforced, and learned</text>',
+        '<text x="700" y="122" class="small" fill="#4c6173" text-anchor="middle">can change what is noticed, interpreted, possible, predicted, valued, chosen, reinforced, and learned</text>',
         '<path d="M700 160 L700 226" fill="none" stroke="#587189" stroke-width="3" marker-end="url(#arrow)"/>',
     ])
 
