@@ -27,7 +27,7 @@ NCX = "http://www.daisy.org/z3986/2005/ncx/"
 EXPECTED_PARTS = [
     "Part I. How a Choice Takes Shape",
     "Part II. Judgment Under Uncertainty",
-    "Part III. Risk, Time, Self-Regulation, and a Good Life",
+    "Part III. Risk, Time, and Well-Being",
     "Part IV. Strategic and Social Decisions",
     "Part V. Persuasion, Communication, and Connection",
     "Part VI. Negotiating Joint Decisions",

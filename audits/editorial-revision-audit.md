@@ -46,8 +46,8 @@ The revised architecture contains 41 canonical chapters distributed across seven
 |---|---:|---|
 | Part I. How a Choice Takes Shape | 7 | Follow a choice from evidence selection through post-outcome learning. |
 | Part II. Judgment Under Uncertainty | 8 | Diagnose intuitive judgment, belief protection, context, probability, and calibration. |
-| Part III. Risk, Time, Self-Regulation, and a Good Life | 7 | Connect uncertain outcomes, experience, delay, repeated control, money, and welfare. |
-| Part IV. Strategic and Social Decisions | 7 | Add strategic interdependence, cooperation, social learning, market feedback, culture, authority, and responsibility. |
+| Part III. Risk, Time, and Well-Being | 7 | Connect uncertain outcomes, experience, delay, repeated control, money, and welfare. |
+| Part IV. Strategic and Social Decisions | 7 | Add strategic interdependence, cooperation, social learning, market feedback, authority, responsibility, culture, and local meaning. |
 | Part V. Persuasion, Communication, and Connection | 5 | Move from warranted model change to grounding and relationship repair. |
 | Part VI. Negotiating Joint Decisions | 4 | Prepare, claim, create, and implement value across differing interests. |
 | Part VII. Designing Better Loops | 3 | Redesign repeated behavior, choice paths, and organizational learning systems. |

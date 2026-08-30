@@ -39,8 +39,8 @@ Unresolved author–year citations: **0**
 | Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 24 | 0 |
 | Social Norms and Conformity: When Other People Become Evidence | 29 | 0 |
 | Markets, Mispricing, and Bubbles | 26 | 0 |
-| Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
+| Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 30 | 0 |
 | Why Stories Move Minds | 10 | 0 |
 | Building an Evidence-Aligned Message | 13 | 0 |
