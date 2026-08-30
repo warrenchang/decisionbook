@@ -1,0 +1,468 @@
+# Rational Choice and Decision Analysis
+
+*Formal details supporting Chapters 1 and 2*
+
+::: {.callout-note title="Purpose of this appendix" icon=false}
+This appendix formalizes the benchmark introduced in [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and turned into a practical decision process in [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd). The notation makes feasibility, preferences, beliefs, values, information, and sensitivity inspectable. It is not a claim that decision-makers consciously calculate these expressions, that the model predicts how attention and interpretation actually work, or that any internally coherent objective is ethically legitimate.
+:::
+
+## 1. Feasible and consideration sets {#feasible-and-consideration-sets}
+
+Let \(\mathcal{A}\) denote the set of imaginable actions. An action is feasible only if it satisfies the relevant constraints. Suppose the decision contains inequality constraints \(g_j(a)\leq 0\) and equality constraints \(h_\ell(a)=0\). The feasible set is
+
+$$
+A
+=
+\left\{
+ a\in\mathcal{A}:
+ g_j(a)\leq 0\ \text{for all }j,
+ \quad
+ h_\ell(a)=0\ \text{for all }\ell
+\right\}.
+$$
+
+Budget, time, law, authority, technology, physical capacity, and contractual commitments can all enter through the constraint functions. Once \(A\) has been defined, those constraints have determined membership in the feasible set; they are not an additional primitive beside the feasible alternatives.
+
+This formulation also explains why prescriptive analysis tests apparent constraints. If a deadline can be negotiated, a role redesigned, or a commitment staged, the relevant constraint changes and the feasible set may expand. The best imaginable action need not be feasible, and the current visible menu need not contain every feasible action.
+
+Actual decision-makers often choose from a smaller **consideration set** \(K\):
+
+$$
+K(z,m)\subseteq A,
+$$
+
+where \(z\) represents external context and \(m\) represents internal state. The set contains feasible alternatives that are noticed, recalled, generated, or taken seriously in that context and state. A person may therefore compare the considered alternatives coherently while overlooking a better action in the full feasible set. This is why option generation is part of decision quality rather than a decorative step before calculation.
+
+## 2. Preferences and the choice correspondence {#preferences-and-choice-correspondence}
+
+Let \(\succeq\) be a weak preference relation over the feasible alternatives. The statement
+
+$$
+a\succeq b
+$$
+
+means that alternative \(a\) is at least as good as alternative \(b\) for the purposes represented by the model.
+
+For a finite feasible set, completeness and transitivity are sufficient for a numerical value representation \(V\) such that
+
+$$
+a\succeq b
+\quad\Longleftrightarrow\quad
+V(a)\geq V(b).
+$$
+
+For infinite domains, completeness and transitivity alone need not guarantee a useful numerical representation; additional continuity, measurability, topological, or related regularity conditions are required depending on the domain. The maximization expression below also assumes that a maximum exists. With a finite \(A\), existence is immediate. With an infinite \(A\), compactness, continuity, or another existence argument may be needed. This reduced-form distinction between a coherent benchmark and a descriptive theory has long organized decision research (Edwards, 1954).
+
+The model's **choice correspondence** returns all feasible maximizers:
+
+$$
+C(A)
+=
+\operatorname*{arg\,max}_{a\in A}V(a)
+=
+\left\{
+ a\in A:
+ V(a)\geq V(b)\ \text{for every }b\in A
+\right\}.
+$$
+
+If several alternatives tie, \(C(A)\) contains several actions. A separate tie-breaking rule is required to predict which one will be observed. Once \(V\) and any tie-breaking rule have been defined, there is no further substantive “comparison input”: the decision rule selects an element of \(C(A)\).
+
+::: {.callout-important title="Do not subtract ordinal scores" icon=false}
+A value representation of a ranking is ordinal: any strictly increasing transformation represents the same preferences. Numerical gaps such as \(V(a)-V(b)\) therefore have no substantive magnitude unless \(V\) is placed on a cardinal scale. Expected-utility indices are unique up to positive affine transformations, and multiattribute scores require explicit normalization. This appendix uses value differences only after those scale assumptions are stated.
+:::
+
+## 3. Consequences, beliefs, and expected utility {#consequences-beliefs-and-expected-utility}
+
+The reduced-form function \(V(a)\) can be unpacked into beliefs about consequences and values over those consequences.
+
+If action \(a\) produces a known consequence \(x(a)\), and \(u(x)\) represents the value of consequence \(x\), then
+
+$$
+V(a)=u\bigl(x(a)\bigr).
+$$
+
+Under uncertainty, let \(O\) be a finite set of possible consequences. Let \(P(o\mid a)\) be the probability assigned to consequence \(o\) conditional on choosing action \(a\), and let \(u(o)\) represent preferences over consequences. A standard expected-utility evaluation is
+
+$$
+V(a)
+=
+EU(a)
+=
+\sum_{o\in O}P(o\mid a)u(o),
+$$
+
+so that
+
+$$
+C(A)
+=
+\operatorname*{arg\,max}_{a\in A}
+\sum_{o\in O}P(o\mid a)u(o).
+$$
+
+This representation separates three objects:
+
+- \(A\): feasible alternatives;
+- \(P(o\mid a)\): beliefs or specified probabilities over consequences; and
+- \(u(o)\): values or preferences over consequences.
+
+The formula is not implied by completeness and transitivity alone. For lotteries with specified probabilities, the von Neumann–Morgenstern expected-utility representation additionally relies on continuity and independence conditions (von Neumann & Morgenstern, 1944). A subjective-probability interpretation requires further assumptions connecting choices to beliefs. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#expected-utility-value-over-final-consequences) develops expected value, expected utility, final consequences, curvature, and the independence axiom in the setting of risky choice.
+
+Nothing in the expression requires selfish values. A consequence may include effects on other people, fairness, identity, environmental outcomes, duties, or future generations. Some rights and obligations may instead be represented as constraints that remove impermissible actions from \(A\). Neither placement settles the normative question of whose interests count or which trade-offs are legitimate.
+
+## 4. Invariance, regularity, and omitted variables {#invariance-regularity-and-omitted-variables}
+
+A descriptive extension allows context and internal state to shape the consideration set, beliefs, and values:
+
+$$
+V(a\mid z,m)
+=
+\sum_{o\in O}
+P(o\mid a,z,m)\,
+u(o\mid z,m),
+\qquad a\in K(z,m).
+$$
+
+Observed selection can then be written as
+
+$$
+a^{\mathrm{choice}}
+\in
+\operatorname*{arg\,max}_{a\in K(z,m)}
+V(a\mid z,m).
+$$
+
+This decomposition is not by itself a predictive psychological theory. If \(K\), \(P\), and \(u\) are adjusted only after the choice has been observed, almost any behavior can be rationalized. The representation becomes testable only when the relevant variables and their response to context are specified or measured independently of the outcome. It also represents selection, not successful execution. A model of implementation would require a separate mapping from chosen action to performed action and realized consequence.
+
+Let \(d_1\) and \(d_2\) be two descriptions of a decision. If they leave the feasible set, consequence distributions, and values unchanged, then description invariance requires the same choice correspondence:
+
+$$
+C_{d_1}(A)=C_{d_2}(A).
+$$
+
+This condition does not require the same single action to be observed when the common correspondence contains several tied maximizers. An invariant point prediction requires either a unique maximizer or a tie-breaking rule that is itself held fixed.
+
+The survival-versus-mortality result is informative because the descriptions were designed to express complementary versions of the same outcome information, yet preferences shifted (McNeil et al., 1982). The result challenges description invariance under that representation; it does not show that every wording change is normatively irrelevant or that all readers understand complementary descriptions identically.
+
+In stochastic choice models satisfying **regularity**, adding a new alternative \(d\) cannot increase the probability of choosing an existing alternative \(a\):
+
+$$
+\Pr(a\mid A\cup\{d\})
+\leq
+\Pr(a\mid A).
+$$
+
+An attraction effect occurs when an asymmetrically dominated decoy raises the choice share of a target, violating regularity for that menu comparison (Huber et al., 1982). The formal condition concerns probabilities across otherwise comparable menus. It does not imply that every added option creates an attraction effect.
+
+Defaults illustrate a different boundary. An opt-in and an opt-out design are not the same decision merely because both responses are physically available. A default may change effort, delay, perceived recommendation, responsibility, anticipated regret, or the consequence of inaction. If action costs matter, they should enter the consequences or a consistently defined net value; they should not appear as an extra primitive after \(V\) has already absorbed them. [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd) use these distinctions to separate a challenge to an invariant benchmark from a variable omitted by a thin model.
+
+## 5. Opportunity cost and decision margins {#opportunity-cost-and-decision-margins}
+
+Suppose \(A\) contains at least two alternatives. For a contemplated action \(a\), define a best feasible alternative forgone as
+
+$$
+b^*(a)
+\in
+\operatorname*{arg\,max}_{b\in A\setminus\{a\}}V(b).
+$$
+
+The alternative \(b^*(a)\)—or the set of tied alternatives that satisfy the expression—is the opportunity-cost benchmark. Discovering a better feasible option can change that benchmark even when the contemplated action itself has not changed.
+
+When \(V\) has a declared cardinal scale, including an explicit origin and unit, the opportunity cost can be reported numerically as
+
+$$
+OC(a)
+=
+V\bigl(b^*(a)\bigr)
+=
+\max_{b\in A\setminus\{a\}}V(b).
+$$
+
+A corresponding decision margin is
+
+$$
+M(a)
+=
+V(a)-OC(a).
+$$
+
+If \(a\) is uniquely optimal, \(M(a)>0\). If the scale is merely ordinal, however, the meaningful statement is that \(a\) ranks above or below its best forgone alternative—not that the gap is “small.” Even on a normalized cardinal scale, fragility should be assessed by varying substantive beliefs, values, and constraints rather than interpreting an arbitrary score gap in isolation.
+
+Opportunity costs are easy to neglect when the displaced alternative is not made explicit. Experimental evidence shows that prompting consumers to consider other uses of money can change purchase decisions (Frederick et al., 2009). [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#name-the-opportunity-cost) develops the practical question: what is the best feasible path this commitment would prevent?
+
+## 6. Multiattribute value {#multiattribute-value}
+
+Suppose each alternative produces outcomes on \(J\) attributes, such as income, health, autonomy, learning, and security. Let \(x_j(a)\) be the performance of alternative \(a\) on attribute \(j\). A common additive model is
+
+$$
+V(a)
+=
+\sum_{j=1}^{J}w_jv_j\bigl(x_j(a)\bigr),
+$$
+
+where each \(v_j(\cdot)\) maps performance on attribute \(j\) to a common normalized scale and the weights satisfy
+
+$$
+w_j\geq 0,
+\qquad
+\sum_{j=1}^{J}w_j=1.
+$$
+
+A transparent normalization sets \(v_j=0\) at the least-preferred relevant level and \(v_j=1\) at the most-preferred relevant level for the decision. The resulting \(w_j\) are **swing weights**: they represent the importance of moving across the stated range of attribute \(j\), not a context-free claim that “health matters 30 percent.” Changing the range changes the meaning of the weight.
+
+The additive form requires appropriate preferential-independence and scaling assumptions. It is not justified merely because a worksheet has several columns. If workload affects health, learning affects future income, or two attributes describe the same consequence, a simple sum can double-count value. The analyst should first redefine overlapping attributes. If a substantively important interaction remains, it should be modeled and elicited explicitly rather than hidden in an unexplained adjustment.
+
+When consequences are uncertain, an additive multiattribute utility model can be nested inside expected utility:
+
+$$
+V(a)
+=
+\sum_{o\in O}P(o\mid a)
+\left[
+\sum_{j=1}^{J}
+w_jv_j\bigl(x_j(a,o)\bigr)
+\right].
+$$
+
+This expression keeps prediction and valuation separate. \(P(o\mid a)\) represents what is expected to happen; \(v_j\) and \(w_j\) represent how performance over defined attribute ranges is valued. Under uncertainty, the \(v_j\) terms must function as cardinal von Neumann–Morgenstern utility components on compatible scales, and the additive form requires stronger utility-independence conditions than a deterministic scoring table. Without those conditions, the expression is only a pragmatic expected-score model, not an expected-utility representation. The model remains an aid to disciplined discussion, not a machine for discovering ethically correct weights (Keeney & Raiffa, 1976).
+
+## 7. Value of information {#value-of-information}
+
+Information has instrumental value when it permits action to respond to uncertainty in a way that improves expected value.
+
+Let \(\theta\in\Theta\) denote an uncertain state of the world, where \(\Theta\) is finite or countable and the relevant expectations converge. Let \(p(\theta)\) be the prior probability and \(u(a,\theta)\) the value produced by action \(a\) in state \(\theta\). Without additional information, the best expected value is
+
+$$
+V_0
+=
+\max_{a\in A}
+\sum_{\theta\in\Theta}
+p(\theta)u(a,\theta).
+$$
+
+Perfect information reveals \(\theta\) before action is chosen. The expected value attainable with perfect information is
+
+$$
+V_{\mathrm{PI}}
+=
+\sum_{\theta\in\Theta}
+p(\theta)
+\max_{a\in A}u(a,\theta),
+$$
+
+and the expected value of perfect information is
+
+$$
+EVPI
+=
+V_{\mathrm{PI}}-V_0.
+$$
+
+Under the stated model, finite expectations, the same action set, and costless accurate revelation of the relevant state, \(EVPI\geq 0\). It is a gross upper bound on the value of any signal about that same \(\theta\) for that same decision. It is not an upper bound on information that changes the action set, reveals a different state, creates strategic consequences, or serves another objective.
+
+Now suppose a test, pilot, interview, or study produces a finite or countable signal \(Y\), with likelihood \(p(y\mid\theta)\). A coherent joint probability model implies
+
+$$
+p(y)
+=
+\sum_{\theta\in\Theta}
+p(y\mid\theta)p(\theta),
+$$
+
+and, whenever \(p(y)>0\), Bayes' rule gives
+
+$$
+p(\theta\mid y)
+=
+\frac{p(y\mid\theta)p(\theta)}
+{p(y)}.
+$$
+
+The expected value of acting after the signal is
+
+$$
+V_Y
+=
+\sum_y p(y)
+\max_{a\in A}
+\sum_{\theta\in\Theta}
+p(\theta\mid y)u(a,\theta).
+$$
+
+The expected value of sample information is
+
+$$
+EVSI(Y)=V_Y-V_0.
+$$
+
+Under the same action set and payoff model, costless observation, and finite expectations,
+
+$$
+0\leq EVSI(Y)\leq EVPI.
+$$
+
+If the total cost of obtaining and using the information is \(c(Y)\), its net value is
+
+$$
+NVSI(Y)=EVSI(Y)-c(Y).
+$$
+
+False positives, false negatives, and other ordinary signal errors belong in the likelihood \(p(y\mid\theta)\). The cost term can include money, delay, attention, privacy loss, implementation effort, and strategic disclosure. Model misspecification—such as an incorrect likelihood or an omitted state—is a separate robustness problem rather than a cost that should be added after the fact.
+
+If every possible signal leads to the same action and the signal changes no other payoff or future decision, then the information has zero instrumental value for this decision. This is the formal counterpart of Chapter 2's branch test: state what action follows each plausible answer before gathering more information (Raiffa, 1968).
+
+## 8. Sensitivity and robustness {#sensitivity-and-robustness}
+
+Sensitivity analysis studies how a recommendation changes when uncertain inputs vary. On a declared cardinal scale, the value difference between alternatives \(a\) and \(b\) is
+
+$$
+\Delta_{ab}=V(a)-V(b).
+$$
+
+The sign identifies the ranking: \(a\) is preferred when \(\Delta_{ab}>0\), the alternatives tie when \(\Delta_{ab}=0\), and \(b\) is preferred when \(\Delta_{ab}<0\). The magnitude has meaning only under the scale assumptions stated earlier.
+
+### Probability threshold
+
+Suppose action \(a\) produces a high outcome \(H\) with probability \(p\) and a low outcome \(L\) otherwise, while action \(b\) produces certain outcome \(c\). Assume \(u(H)>u(L)\). Indifference requires
+
+$$
+p\,u(H)+(1-p)u(L)=u(c),
+$$
+
+which gives the threshold
+
+$$
+p^*
+=
+\frac{u(c)-u(L)}
+{u(H)-u(L)}.
+$$
+
+An interior threshold requires \(0<p^*<1\), equivalently \(u(L)<u(c)<u(H)\). Weak inequalities allow boundary thresholds at zero or one. When \(p^*\in[0,1]\), \(a\) is preferred when \(p>p^*\). If the plausible range for \(p\) lies entirely on one side of the threshold, the ranking is robust to that uncertainty. If the range crosses the threshold, information about \(p\) may have decision value.
+
+### Weight threshold
+
+With two normalized attributes, suppose
+
+$$
+V(a)=w\,v_1(a)+(1-w)v_2(a),
+\qquad 0\leq w\leq 1.
+$$
+
+The weight at which \(a\) and \(b\) tie is
+
+$$
+w^*
+=
+\frac{v_2(b)-v_2(a)}
+{\bigl[v_1(a)-v_1(b)\bigr]+\bigl[v_2(b)-v_2(a)\bigr]},
+$$
+
+provided the denominator is nonzero. The threshold is decision-relevant only if \(w^*\in[0,1]\); the signs of the attribute differences determine which alternative is preferred on each side. The useful question is whether reasonable stakeholders or elicitation ranges place \(w\) on different sides of the threshold, not whether an unsupported point weight equals \(0.63\) rather than \(0.61\).
+
+### Joint sensitivity
+
+One-at-a-time sensitivity can mislead when inputs move together. A start-up's survival, salary growth, workload, and future options may be correlated. Scenario analysis therefore varies coherent bundles of assumptions:
+
+$$
+V(a\mid s),
+\qquad
+s\in
+\{\text{favorable},\text{central},\text{unfavorable}\}.
+$$
+
+A recommendation is robust over the declared scenario set when the same alternative remains preferred throughout it. That statement is conditional on the scenarios being substantively plausible; it does not prove global optimality or assign probabilities to scenarios that were never estimated. When rankings change, the analysis should report the conditions producing each recommendation rather than hide them inside an average score.
+
+## 9. Sequential choice, reversibility, and the cost of analysis {#sequential-choice-and-reversibility}
+
+Reversibility matters because an initial action can preserve or remove future choices. Let \(a\) be an action taken now, \(y\) information observed later, and \(B(a,y)\) the set of actions available after \(a\) and \(y\). Let \(V_0(a)\) be the immediate value of the initial action and \(V_1(b;a,y)\) the continuation value of later action \(b\). Their sum requires a common cardinal, additively separable intertemporal scale; \(V_1\) must be discounted to the decision time where necessary. Under those assumptions, a two-stage evaluation is
+
+$$
+V_{\mathrm{seq}}(a)
+=
+V_0(a)
++
+\sum_y p(y\mid a)
+\max_{b\in B(a,y)}
+V_1(b;a,y).
+$$
+
+Switching costs, exit costs, and implementation burdens should enter \(V_1\) or restrict \(B(a,y)\). If one initial action preserves a superset of future actions while all immediate consequences, probabilities, and costs remain the same, its continuation value is weakly higher. In practice those “all else equal” conditions often fail: a pilot may preserve flexibility while delaying benefits or imposing a setup cost.
+
+This formulation avoids adding a free-standing “reversibility bonus” to a value function that already includes every consequence. It also clarifies why information and reversibility interact. A future signal has more instrumental value when the decision-maker retains an action that can respond to it.
+
+Analysis itself consumes scarce resources. Let \(r\) denote one additional analysis step that may produce result \(y\), and let \(A(r,y)\) be the feasible set remaining after the step and result. Express the direct resource cost \(c(r)\), plus any delay cost not already represented through \(A(r,y)\) or \(V(a\mid y,r)\), in the same cardinal units as \(V\). The net expected gain can then be written as
+
+$$
+G(r)
+=
+\sum_y p(y\mid r)
+\max_{a\in A(r,y)}V(a\mid y,r)
+-
+\max_{a\in A}V(a)
+-
+c(r).
+$$
+
+Under this stylized metareasoning rule, conduct the step when \(G(r)>0\). The analysis-dependent action set represents options that expire, emerge, or become infeasible during deliberation; any other consequence of delay belongs in \(V(a\mid y,r)\) or \(c(r)\), but not both. This is a normative comparison of the expected benefit and cost of one more analysis step. It is not Simon's satisficing model itself. Bounded rationality supplies the motivation—search, attention, time, memory, and computation are scarce—while satisficing describes a different stopping strategy based on aspiration levels (Simon, 1955, 1956).
+
+Low-stakes, familiar, reversible decisions often justify routines or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback decisions often justify more structure. These are reasons to vary the depth of analysis, not proof that a particular formula should govern every decision.
+
+## 10. What formal analysis can and cannot establish {#what-formal-analysis-can-and-cannot-establish}
+
+A formal model is useful because it:
+
+1. makes explicit whether a restriction defines feasibility, enters consequences, or changes value;
+2. separates predictions about consequences from values over consequences;
+3. reveals which assumptions generate a recommendation; and
+4. permits explicit analysis of opportunity cost, information, sensitivity, and future flexibility.
+
+It does not automatically provide:
+
+- a complete feasible or consideration set;
+- accurate probabilities or a correctly specified signal model;
+- ethically legitimate objectives, weights, or trade-offs;
+- a predictive account of attention, interpretation, emotion, or social meaning;
+- successful implementation; or
+- valid learning from noisy outcomes.
+
+Those limits explain why normative, descriptive, and prescriptive decision science must remain distinct and connected. Chapter 1 develops that distinction; Chapter 2 develops the prescriptive workflow. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd) gives risky choice its fuller treatment, while [Chapter 20](../chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd) shows how labels and brackets can pull choice away from a forward-looking, whole-consequence benchmark. Formal analysis supplies a disciplined language for assumptions. Behavioral evidence and ethical reasoning determine whether those assumptions describe the decision and deserve to guide it.
+
+## References cited in this appendix
+
+::: {.reference}
+Edwards, W. (1954). The theory of decision making. *Psychological Bulletin, 51*(4), 380–417.
+:::
+
+::: {.reference}
+Frederick, S., Novemsky, N., Wang, J., Dhar, R., & Nowlis, S. (2009). Opportunity cost neglect. *Journal of Consumer Research, 36*(4), 553–561.
+:::
+
+::: {.reference}
+Huber, J., Payne, J. W., & Puto, C. (1982). Adding asymmetrically dominated alternatives: Violations of regularity and the similarity hypothesis. *Journal of Consumer Research, 9*(1), 90–98. https://doi.org/10.1086/208899
+:::
+
+::: {.reference}
+Keeney, R. L., & Raiffa, H. (1976). *Decisions with multiple objectives: Preferences and value tradeoffs*. Wiley.
+:::
+
+::: {.reference}
+McNeil, B. J., Pauker, S. G., Sox, H. C., Jr., & Tversky, A. (1982). On the elicitation of preferences for alternative therapies. *New England Journal of Medicine, 306*(21), 1259–1262. https://doi.org/10.1056/NEJM198205273062103
+:::
+
+::: {.reference}
+Raiffa, H. (1968). *Decision analysis: Introductory lectures on choices under uncertainty*. Addison-Wesley.
+:::
+
+::: {.reference}
+Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics, 69*(1), 99–118.
+:::
+
+::: {.reference}
+Simon, H. A. (1956). Rational choice and the structure of the environment. *Psychological Review, 63*(2), 129–138.
+:::
+
+::: {.reference}
+von Neumann, J., & Morgenstern, O. (1944). *Theory of games and economic behavior*. Princeton University Press.
+:::

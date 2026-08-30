@@ -18,7 +18,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every spine reference resolves | **PASS** |
 | One navigation document is declared | **PASS** |
 | Navigation contains a table of contents | **PASS** |
-| Navigation has 17 compact top-level items | **PASS** |
+| Navigation has 18 compact top-level items | **PASS** |
 | Every navigation target exists | **PASS** |
 | Navigation omits the redundant generated title-page entry | **PASS** |
 | Preface contains the current hiring-committee opening | **PASS** |
@@ -29,19 +29,22 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every chapter is nested under its Part with no section titles | **PASS** |
 | Preface and back matter have no section-level navigation | **PASS** |
 | Navigation contains no section titles | **PASS** |
-| Appendices A, B, C, and D are present | **PASS** |
+| Appendices A through E are present | **PASS** |
 | Appendices precede References, Index, and About | **PASS** |
 | One NCX navigation document is declared | **PASS** |
 | NCX declares a two-level hierarchy | **PASS** |
 | NCX omits the redundant generated title-page entry | **PASS** |
 | NCX mirrors the compact Part-to-Chapter hierarchy | **PASS** |
 | Compilation date is current | **PASS** |
-| All 58 source documents are packaged | **PASS** |
+| All 59 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
+| Required content: How Decisions Should Be Made—and How They Actually Are | **PASS** |
+| Required content: Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
+| Required content: Rational Choice and Decision Analysis | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |
 | Required content: Prospect Theory | **PASS** |

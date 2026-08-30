@@ -21,7 +21,12 @@ H1 = re.compile(r"^#\s+(.+?)(?:\s+\{[^}]+\})?\s*$", re.MULTILINE)
 MARKDOWN_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 REDIRECTS = {
-    "retired-opportunity-cost-information-and-better-options.qmd": "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd",
+    "01-the-choice-is-the-tip-of-the-iceberg.qmd": "01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+    "01-decision-making-is-a-process-not-a-moment.qmd": "01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+    "02-a-rational-benchmark-not-a-portrait.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+    "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+    "appendix-d-when-evidence-breaks.qmd": "appendix-e-when-evidence-breaks.qmd",
+    "retired-opportunity-cost-information-and-better-options.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
     "retired-heuristics-the-adaptive-toolbox.qmd": "08-fast-and-frugal-thinking.qmd",
     "retired-resemblance-is-not-probability.qmd": "09-what-feels-likely-availability-affect-and-resemblance.qmd",
     "retired-fluency-familiarity-and-the-feeling-of-truth.qmd": "13-accessibility-familiarity-and-ease.qmd",

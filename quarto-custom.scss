@@ -123,6 +123,16 @@ th[scope="rowgroup"] { vertical-align: middle; }
     max-height: none;
   }
 
+  // Portrait figures are composed specifically for a narrow reading column.
+  // Let them fit the screen instead of forcing the wide-diagram scroll pane.
+  figure.quarto-float-fig > div[aria-describedby] > img[src$="-portrait.svg"],
+  figure.quarto-float-fig > div[aria-describedby] > img[src$="context-enters-choice.svg"] {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
   // Pandoc tables that are not inside a float still need their own reading pane.
   main.content table:not(.table-sm) {
     display: block;
@@ -134,6 +144,7 @@ th[scope="rowgroup"] { vertical-align: middle; }
     -webkit-overflow-scrolling: touch;
   }
 
+  span.math.display,
   mjx-container[display="true"] {
     display: block;
     width: 100%;

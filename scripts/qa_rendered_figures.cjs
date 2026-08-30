@@ -123,8 +123,10 @@ async function main() {
     const page = await context.newPage();
     const screenshots = [
       ["parts/part-1.html", "main img[src$='master-loop-part-1.svg']", "part-loop-desktop.png"],
-      ["chapters/02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.html", "#fig-behavioral-decision-loop", "figure-2-2-desktop.png"],
-      ["chapters/02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.html", "#fig-context-enters-choice", "seven-context-cases-desktop.png"],
+      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-rational-benchmark", "rational-benchmark-desktop.png"],
+      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-context-enters-choice", "seven-context-cases-desktop.png"],
+      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-decision-loop-ch1", "chapter-1-master-loop-desktop.png"],
+      ["chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-desktop.png"],
       ["chapters/13-accessibility-familiarity-and-ease.html", "#fig-fluency-pathway", "figure-13-2-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-habit-formation-curve", "habit-formation-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
@@ -161,7 +163,10 @@ async function main() {
       "#fig-fluency-pathway",
       "figure-13-2-mobile.png",
     );
-    await screenshotFigure(mobilePage, "chapters/02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.html", "#fig-context-enters-choice", "seven-context-cases-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-rational-benchmark", "rational-benchmark-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-context-enters-choice", "seven-context-cases-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-decision-loop-ch1", "chapter-1-master-loop-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-mobile.png");
     await screenshotFigure(mobilePage, "chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-norm-message-diagnostic", "figure-26-4-mobile.png");
@@ -195,10 +200,10 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 116 configured placements; the base loop is deliberately
+    // The book contains 115 configured placements; the base loop is deliberately
     // repeated as a navigation device across Part openers.
-    if (totalByViewport.desktop !== 116 || totalByViewport.mobile !== 116) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 116 in each viewport`);
+    if (totalByViewport.desktop !== 115 || totalByViewport.mobile !== 115) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 115 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`Table 6.1 has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");

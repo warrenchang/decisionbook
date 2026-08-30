@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>2&nbsp; Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/03-attention-what-becomes-evidence.html" rel="next">
+<link href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d2019665f541c533688acda013f46e40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-1.html">Part I. How a Choice Takes Shape</a></li><li class="breadcrumb-item"><a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: A Decision Is Already in the Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How Decisions Should Be Made—and How They Actually Are</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-attention-what-becomes-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-the-predictive-mind-perception-is-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-fast-and-frugal-thinking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fast and Frugal Thinking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">What Feels Likely: Availability, Affect, and Resemblance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-beliefs-that-defend-themselves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Beliefs That Defend Themselves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-when-context-rewrites-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">When Context Rewrites Comparison</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-accessibility-familiarity-and-ease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Accessibility, Familiarity, and Ease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates, Conditional Probability, and Bayesian Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-samples-randomness-regression-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, Regression, and Calibration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-building-an-evidence-aligned-message.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Message</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-communication-language-is-not-a-file-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-preparing-and-claiming-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Preparing and Claiming Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-creating-value-across-differences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Creating Value Across Differences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Loops</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-behavior-design-make-the-better-action-easier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-choice-architecture-the-environment-gets-a-vote.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-d-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-e-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#from-diagnosis-to-a-better-decision" id="toc-from-diagnosis-to-a-better-decision" class="nav-link" data-scroll-target="#from-diagnosis-to-a-better-decision">A better decision begins before comparison</a></li>
+  <li><a href="#define-the-decision-before-solving-it" id="toc-define-the-decision-before-solving-it" class="nav-link" data-scroll-target="#define-the-decision-before-solving-it">Define the decision before solving it</a></li>
+  <li><a href="#construct-the-feasible-set" id="toc-construct-the-feasible-set" class="nav-link" data-scroll-target="#construct-the-feasible-set">Construct the feasible set</a>
+  <ul class="collapse">
+  <li><a href="#distinguish-real-constraints-from-assumed-constraints" id="toc-distinguish-real-constraints-from-assumed-constraints" class="nav-link" data-scroll-target="#distinguish-real-constraints-from-assumed-constraints">Distinguish real constraints from assumed constraints</a></li>
+  <li><a href="#generate-alternatives-deliberately" id="toc-generate-alternatives-deliberately" class="nav-link" data-scroll-target="#generate-alternatives-deliberately">Generate alternatives deliberately</a></li>
+  </ul></li>
+  <li><a href="#name-the-opportunity-cost" id="toc-name-the-opportunity-cost" class="nav-link" data-scroll-target="#name-the-opportunity-cost">Name the opportunity cost</a></li>
+  <li><a href="#separate-predictions-from-values" id="toc-separate-predictions-from-values" class="nav-link" data-scroll-target="#separate-predictions-from-values">Separate predictions from values</a>
+  <ul class="collapse">
+  <li><a href="#make-predictions-inspectable" id="toc-make-predictions-inspectable" class="nav-link" data-scroll-target="#make-predictions-inspectable">Make predictions inspectable</a></li>
+  <li><a href="#make-values-and-trade-offs-inspectable" id="toc-make-values-and-trade-offs-inspectable" class="nav-link" data-scroll-target="#make-values-and-trade-offs-inspectable">Make values and trade-offs inspectable</a></li>
+  </ul></li>
+  <li><a href="#gather-information-only-when-it-can-change-action" id="toc-gather-information-only-when-it-can-change-action" class="nav-link" data-scroll-target="#gather-information-only-when-it-can-change-action">Gather information only when it can change action</a></li>
+  <li><a href="#stress-test-the-recommendation" id="toc-stress-test-the-recommendation" class="nav-link" data-scroll-target="#stress-test-the-recommendation">Stress-test the recommendation</a></li>
+  <li><a href="#use-proportionate-analysis" id="toc-use-proportionate-analysis" class="nav-link" data-scroll-target="#use-proportionate-analysis">Use proportionate analysis</a></li>
+  <li><a href="#produce-a-decision-recommendation-not-merely-a-score" id="toc-produce-a-decision-recommendation-not-merely-a-score" class="nav-link" data-scroll-target="#produce-a-decision-recommendation-not-merely-a-score">Produce a decision recommendation, not merely a score</a></li>
+  <li><a href="#worked-framework-from-two-offers-to-a-decision-architecture" id="toc-worked-framework-from-two-offers-to-a-decision-architecture" class="nav-link" data-scroll-target="#worked-framework-from-two-offers-to-a-decision-architecture">Worked framework: from two offers to a decision architecture</a>
+  <ul class="collapse">
+  <li><a href="#the-first-visible-menu" id="toc-the-first-visible-menu" class="nav-link" data-scroll-target="#the-first-visible-menu">The first visible menu</a></li>
+  <li><a href="#constructed-alternatives" id="toc-constructed-alternatives" class="nav-link" data-scroll-target="#constructed-alternatives">Constructed alternatives</a></li>
+  <li><a href="#predictions" id="toc-predictions" class="nav-link" data-scroll-target="#predictions">Predictions</a></li>
+  <li><a href="#values" id="toc-values" class="nav-link" data-scroll-target="#values">Values</a></li>
+  <li><a href="#opportunity-cost" id="toc-opportunity-cost" class="nav-link" data-scroll-target="#opportunity-cost">Opportunity cost</a></li>
+  <li><a href="#sensitivity-and-action" id="toc-sensitivity-and-action" class="nav-link" data-scroll-target="#sensitivity-and-action">Sensitivity and action</a></li>
+  </ul></li>
+  <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-1.html">Part I. How a Choice Takes Shape</a></li><li class="breadcrumb-item"><a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>The best calculation cannot rescue a menu that omitted the best feasible path</em></p>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core Idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Rational choice is most useful in practice when its inputs are actively constructed and tested. A better decision process builds the feasible set rather than accepting the first visible menu, names the best alternative that commitment would displace, separates predictions from values, seeks information when it can change action, and stress-tests whether the recommendation survives plausible assumptions. The goal is not maximal calculation. It is proportionate, inspectable, and revisable judgment.</p>
+</div>
+</div>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<p>After reading this chapter, you should be able to:</p>
+<ul>
+<li>Distinguish the feasible set from the smaller set of alternatives that happen to receive serious consideration.</li>
+<li>Construct alternatives without treating constraints as a separate item from feasibility.</li>
+<li>Identify opportunity cost as the value of the best feasible alternative forgone.</li>
+<li>Separate predictions about consequences from values over those consequences.</li>
+<li>Assess information by whether plausible results could change action.</li>
+<li>Distinguish a robust recommendation from one that depends on fragile assumptions.</li>
+</ul>
+<div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Where this chapter enters the loop
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This chapter concentrates on <strong>Construct options → Predict consequences → Value consequences → Compare and choose</strong>. It also prepares <strong>Commit and act</strong> by making opportunity cost, reversibility, information needs, and review conditions explicit.</p>
+</div>
+</div>
+<p>Chapter 1 showed why the rational-choice benchmark is valuable as a normative standard but insufficient as a stand-alone description of actual decision-making. The feasible set is not simply handed to the mind. Consequences are not automatically noticed or correctly predicted. Values are not always stable, articulate, or independent of context. A preference can also fail to become action.</p>
+<p>That does not make rational analysis obsolete. It changes its practical job. Prescriptive decision science must help real people construct, inspect, and improve the inputs on which coherent choice depends.</p>
+</section>
+<section id="from-diagnosis-to-a-better-decision" class="level2">
+<h2 data-anchor-id="from-diagnosis-to-a-better-decision">A better decision begins before comparison</h2>
+<p>Many decision tools begin with a table of options. By then, the most consequential mistake may already have occurred. The table may contain only the first two alternatives that became visible. A deadline may be treated as fixed although it is negotiable. A role may be treated as indivisible although it can be redesigned. A decision may be framed as accept or reject even though delay, a pilot, further information, a package, or a reversible commitment is feasible.</p>
+<p>A disciplined process therefore begins before scoring.</p>
+<div id="fig-option-information" class="quarto-float quarto-figure quarto-figure-center" alt="Four vertically arranged steps: expand the feasible set, name the best forgone option, ask what information could change the choice, and stress-test the ranking.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-option-information-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/option-information-portrait.svg" class="img-fluid figure-img" alt="Four vertically arranged steps: expand the feasible set, name the best forgone option, ask what information could change the choice, and stress-test the ranking.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-option-information-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: A practical sequence for better decisions: expand the feasible set, name the best forgone option, ask what information could change the choice, and stress-test the ranking.
+</figcaption>
+</figure>
+</div>
+<p>The sequence is not a rigid algorithm. Predictions can reveal a new option; values can show that a constraint should be challenged; new information can change feasibility. Its purpose is to keep four questions visible before commitment:</p>
+<ol type="1">
+<li>Are we choosing from the right set of alternatives?</li>
+<li>What valuable path will the choice displace?</li>
+<li>What uncertain information could actually change action?</li>
+<li>Does the recommendation survive plausible changes in assumptions?</li>
+</ol>
+</section>
+<section id="define-the-decision-before-solving-it" class="level2">
+<h2 data-anchor-id="define-the-decision-before-solving-it">Define the decision before solving it</h2>
+<p>A useful decision statement specifies the commitment being considered, the decision-maker, the relevant horizon, and the conditions under which the choice can be revised. Compare:</p>
+<blockquote class="blockquote">
+<p>Should I accept the start-up job?</p>
+</blockquote>
+<p>with:</p>
+<blockquote class="blockquote">
+<p>By Friday, should I accept the start-up offer as written, negotiate its terms, request time for one further conversation, continue the search, or decline, given my financial runway, family location, learning goals, and tolerance for employment risk over the next two years?</p>
+</blockquote>
+<p>The second statement does not guarantee a better answer. It makes the decision boundary inspectable. It reveals alternatives, time, affected values, and the possibility that the offer itself can be changed.</p>
+<p>Before analysis, ask:</p>
+<ul>
+<li>What commitment is being made now?</li>
+<li>Who has authority to make it?</li>
+<li>Whose consequences legitimately matter?</li>
+<li>What is the relevant time horizon?</li>
+<li>Which parts are reversible, and at what cost?</li>
+<li>What decision will occur automatically if nobody acts?</li>
+</ul>
+<p>These questions prevent a broad life problem from being compressed into a misleading yes-or-no choice.</p>
+</section>
+<section id="construct-the-feasible-set" class="level2">
+<h2 data-anchor-id="construct-the-feasible-set">Construct the feasible set</h2>
+<p>A <strong>feasible alternative</strong> is a course of action that can actually be taken given relevant limits of money, time, law, authority, technology, health, capability, and commitment. Those limits define feasibility; they are not a separate fourth component added after the alternatives have been listed.</p>
+<p>The practical difficulty is that people often confuse three sets:</p>
+<ul>
+<li>The <strong>imaginable set</strong>: everything one can describe, including options that are impossible or impermissible.</li>
+<li>The <strong>feasible set</strong>: the alternatives that can genuinely be implemented.</li>
+<li>The <strong>consideration set</strong>: the feasible alternatives that are noticed, generated, recalled, or taken seriously.</li>
+</ul>
+<p>The consideration set is often much smaller than the feasible set. A person can choose consistently from the alternatives considered and still make a poor decision because a better feasible alternative never entered the comparison.</p>
+<section id="distinguish-real-constraints-from-assumed-constraints" class="level3">
+<h3 data-anchor-id="distinguish-real-constraints-from-assumed-constraints">Distinguish real constraints from assumed constraints</h3>
+<p>Some constraints are hard. A law prohibits an action. A budget cannot cover the cost. A physical deadline cannot be moved. A person lacks the authority to make the commitment.</p>
+<p>Other apparent constraints may be negotiable or designed:</p>
+<ul>
+<li>A deadline can be extended.</li>
+<li>A role can be divided or redesigned.</li>
+<li>A partnership can create missing capacity.</li>
+<li>A contract can make payment contingent on performance.</li>
+<li>A pilot can reduce the scale of commitment.</li>
+<li>A sequence of smaller decisions can replace one irreversible decision.</li>
+<li>A safeguard can make an otherwise unacceptable risk tolerable.</li>
+</ul>
+<p>The distinction is not an invitation to deny reality. It is a prompt to test whether the boundary is genuinely fixed. A good question is:</p>
+<blockquote class="blockquote">
+<p><strong>What would have to be true for this excluded option to become feasible?</strong></p>
+</blockquote>
+<p>The answer may confirm the constraint. It may also reveal a negotiation, investment, permission, or redesign that changes the menu.</p>
+</section>
+<section id="generate-alternatives-deliberately" class="level3">
+<h3 data-anchor-id="generate-alternatives-deliberately">Generate alternatives deliberately</h3>
+<p>When the visible menu is too narrow, use a small set of generative moves:</p>
+<ul>
+<li><strong>Maintain:</strong> Keep the status quo or continue the current path.</li>
+<li><strong>Delay:</strong> Preserve the option while waiting for a defined event or date.</li>
+<li><strong>Learn:</strong> Gather information, run a test, seek a second opinion, or conduct a pilot.</li>
+<li><strong>Negotiate:</strong> Change price, timing, scope, responsibilities, safeguards, or exit terms.</li>
+<li><strong>Combine:</strong> Create a package or hybrid from parts of existing alternatives.</li>
+<li><strong>Stage:</strong> Begin with a limited, reversible commitment and expand only if conditions are met.</li>
+<li><strong>Search:</strong> Reopen the market or generate alternatives outside the current menu.</li>
+<li><strong>Exit:</strong> Stop, decline, or abandon the project.</li>
+</ul>
+<p>Option generation is part of rationality, not a decorative act of creativity. Careful comparison cannot rescue a choice set that excludes the best feasible path.</p>
+<p>More choice is not automatically better. Choice overload is not universal, but it becomes more likely when alternatives are complex, preferences are uncertain, the task is difficult, or the decision goal is unclear (Iyengar &amp; Lepper, 2000; Scheibehenne et al., 2010; Chernev et al., 2015). The aim is a set broad enough to escape tunnel vision and structured enough to remain actionable.</p>
+<p>A useful stopping question is:</p>
+<blockquote class="blockquote">
+<p>Do we have at least one meaningfully different alternative, not merely a slightly altered version of the current favorite?</p>
+</blockquote>
+</section>
+</section>
+<section id="name-the-opportunity-cost" class="level2">
+<h2 data-anchor-id="name-the-opportunity-cost">Name the opportunity cost</h2>
+<p>Commitment has a cutting-off structure: choosing one path also gives up others.</p>
+<p>Economics represents that sacrifice as <strong>opportunity cost</strong>: the value of the best feasible alternative forgone. It is not merely the money paid, and it is not the sum of everything left unchosen.</p>
+<ul>
+<li>The cost of a two-hour meeting is the best alternative use of those two hours.</li>
+<li>The cost of accepting one job is the value of the best complete path that the commitment displaces.</li>
+<li>The cost of investing in one project includes the value of the best feasible use of the same capital, talent, and managerial attention.</li>
+<li>The cost of waiting includes the value of the best action that could have been taken during the delay.</li>
+</ul>
+<p>Opportunity cost depends on the alternative set. Discovering a better feasible option raises the cost of accepting every proposal already on the table. Conversely, if the apparent alternative is not actually feasible, it should not be used to exaggerate the sacrifice.</p>
+<p>Research on opportunity-cost neglect shows that people do not always generate the displaced alternative spontaneously; making it explicit can change purchase decisions (Frederick et al., 2009). Before commitment, ask:</p>
+<blockquote class="blockquote">
+<p><strong>If I choose this, what is the best feasible path I will no longer be able to take?</strong></p>
+</blockquote>
+<p>Naming that path often clarifies the decision more than adding another score to the favored option.</p>
+</section>
+<section id="separate-predictions-from-values" class="level2">
+<h2 data-anchor-id="separate-predictions-from-values">Separate predictions from values</h2>
+<p>A consequence-based decision combines two distinct judgments:</p>
+<ul>
+<li><strong>Prediction:</strong> What is likely to happen if this alternative is chosen?</li>
+<li><strong>Valuation:</strong> How desirable or undesirable would that consequence be?</li>
+</ul>
+<p>The distinction sounds obvious but is often lost in ordinary discussion. “The candidate is the best fit” may combine a prediction about performance, a value placed on similarity, a feeling of interpersonal ease, and an unstated view of what the organization should become. “The project is too risky” may combine the probability of failure, the size of the loss, the ability to recover, and the speaker’s tolerance for uncertainty.</p>
+<p>Separating predictions from values helps diagnose disagreement. If two people disagree about the probability of success, more relevant evidence may help. If they agree about the forecast but value the outcome differently, more data may not resolve the conflict. They need to discuss priorities, rights, trade-offs, or authority.</p>
+<section id="make-predictions-inspectable" class="level3">
+<h3 data-anchor-id="make-predictions-inspectable">Make predictions inspectable</h3>
+<p>For each alternative, state:</p>
+<ul>
+<li>The most important possible consequences.</li>
+<li>The time at which they may occur.</li>
+<li>A plausible range rather than only a point estimate.</li>
+<li>The evidence supporting the forecast.</li>
+<li>The main causal assumption.</li>
+<li>A reference class where one is available.</li>
+<li>What evidence would make the forecast change.</li>
+</ul>
+<p>Confidence is not evidence. Vividness is not frequency. A detailed story is not necessarily a calibrated prediction. Later chapters develop base rates, sampling, regression, and calibration; here the central habit is to write the forecast in a form that can later be checked.</p>
+</section>
+<section id="make-values-and-trade-offs-inspectable" class="level3">
+<h3 data-anchor-id="make-values-and-trade-offs-inspectable">Make values and trade-offs inspectable</h3>
+<p>Important decisions usually involve several objectives. A job can affect income, learning, autonomy, health, location, family time, mission, relationships, and future options. A public decision may affect different groups unequally. Some consequences can be traded off; others may be unacceptable even when an aggregate score is high. Multiattribute decision analysis can help make these objectives and trade-offs explicit (Keeney &amp; Raiffa, 1976).</p>
+<p>For each objective, ask:</p>
+<ul>
+<li>What exactly is being valued?</li>
+<li>Over what range does the difference matter?</li>
+<li>Whose value is represented?</li>
+<li>Is this an objective, a means to another objective, or a duplicate of something already counted?</li>
+<li>Is there a threshold or right that should not be traded away?</li>
+<li>Would the same consideration be applied consistently to other alternatives?</li>
+</ul>
+<p>A decision table is not a machine for discovering the correct answer. It is a conversation made inspectable. Avoid double-counting related attributes. Do not attach a precise weight to an undefined concept. A statement such as “health matters 30 percent” has little meaning unless the relevant range and trade-off are clear.</p>
+<div id="tbl-prediction-value" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-prediction-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: A prediction–value table for comparing alternatives
+</figcaption>
+<div aria-describedby="tbl-prediction-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Alternative</th>
+<th>Prediction: consequences, evidence, and uncertainty</th>
+<th>Valuation, thresholds, and safeguards</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Option A</td>
+<td>What is expected to happen, when, and across what plausible range? What evidence and causal assumption support the forecast?</td>
+<td>Which consequences matter, to whom, and why? What must be true before committing?</td>
+</tr>
+<tr class="even">
+<td>Option B</td>
+<td>What is expected to happen, when, and across what plausible range? What evidence and causal assumption support the forecast?</td>
+<td>Which consequences matter, to whom, and why? What must be true before committing?</td>
+</tr>
+<tr class="odd">
+<td>Status quo or delay</td>
+<td>What follows if no new action is taken? Is inaction really neutral?</td>
+<td>What is preserved, lost, or postponed? When will the decision be reopened?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The table should preserve uncertainty rather than hiding it. If one option looks best only because every uncertain input has been entered at its most favorable value, the apparent precision is misleading.</p>
+</section>
+</section>
+<section id="gather-information-only-when-it-can-change-action" class="level2">
+<h2 data-anchor-id="gather-information-only-when-it-can-change-action">Gather information only when it can change action</h2>
+<p>Information has instrumental value when it can improve action enough to justify its costs. Those costs include money, delay, attention, privacy, processing, false reassurance, and strategic exposure.</p>
+<p>A reference check matters if a plausible result could change a hiring decision, safeguard, or contract term. A pilot matters if it could change scale, design, or the decision to proceed. A diagnostic test has little value for a particular treatment decision when treatment would remain the same regardless of the result, although it may still matter for prognosis, surveillance, or another decision.</p>
+<p>The practical test requires no false precision:</p>
+<ol type="1">
+<li>List the possible results.</li>
+<li>State the action that would follow each result.</li>
+<li>Ask whether any plausible branch produces a different action.</li>
+<li>Compare the likely improvement with the cost of obtaining and using the information.</li>
+</ol>
+<p>If no plausible answer changes action, the request may serve reassurance, curiosity, politics, documentation, or delay rather than the decision at hand. Those purposes may still matter, but they should be named honestly.</p>
+<div id="tbl-information-decision-branches" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-information-decision-branches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: A decision-branch test for information
+</figcaption>
+<div aria-describedby="tbl-information-decision-branches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question or test</th>
+<th>Result that could change action</th>
+<th>Likely decision value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reference check on role-critical behavior</td>
+<td>Credible evidence changes the ranking, safeguards, or contract terms.</td>
+<td>Potentially high when the choice is close and the source is informative.</td>
+</tr>
+<tr class="even">
+<td>Small pilot before an irreversible launch</td>
+<td>A pre-stated threshold triggers scale-up, revision, delay, or stopping.</td>
+<td>Often high when the pilot is cheap, representative, and tied to a decision rule.</td>
+</tr>
+<tr class="odd">
+<td>Diagnostic test when treatment would be identical either way</td>
+<td>No plausible result changes treatment.</td>
+<td>Low for this treatment decision, though it may serve another purpose.</td>
+</tr>
+<tr class="even">
+<td>Negotiation question about timing</td>
+<td>A real difference reveals a feasible trade or package.</td>
+<td>Potentially high when the answer is credible and contractible.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The <a href="../appendices/appendix-d-rational-choice-and-decision-analysis.html">technical appendix</a> formalizes the expected value of perfect and imperfect information. The practical principle is simpler:</p>
+<blockquote class="blockquote">
+<p><strong>Do not ask only whether information would be interesting. Ask what you would do differently after each plausible answer.</strong></p>
+</blockquote>
+</section>
+<section id="stress-test-the-recommendation" class="level2">
+<h2 data-anchor-id="stress-test-the-recommendation">Stress-test the recommendation</h2>
+<p>A recommendation is <strong>robust relative to a stated decision model and plausible ranges</strong> when it remains preferred across the specified changes in uncertain predictions, values, or constraints. It is <strong>fragile relative to those ranges</strong> when a small and credible change reverses the ranking. Robustness is therefore not an unconditional property of an option; it depends on which uncertainties the analysis includes and how widely they are varied.</p>
+<p>Sensitivity analysis asks:</p>
+<ul>
+<li>Which assumption contributes most to the recommendation?</li>
+<li>How far would that assumption have to move before the preferred option changes?</li>
+<li>Is that threshold inside or outside the plausible range?</li>
+<li>Are the assumptions correlated?</li>
+<li>What happens under a jointly unfavorable scenario?</li>
+<li>Can the decision be staged or made reversible if the ranking is fragile?</li>
+</ul>
+<p>Suppose the start-up is preferred only if it survives for three years, workload remains below a certain level, and rapid learning receives a very high value. The decision should not be reported simply as “the start-up scores 82 and consulting scores 78.” The useful conclusion is conditional:</p>
+<blockquote class="blockquote">
+<p>The start-up is preferred if its survival probability is above the stated threshold and if early autonomy is valued more than near-term income by at least the specified trade-off. Otherwise, consulting is preferred.</p>
+</blockquote>
+<p>This form of conclusion identifies what should be investigated, negotiated, protected, or monitored.</p>
+<p>Fragility does not always justify more analysis. When information is expensive or unavailable, a reversible choice may be better than another forecast. A pilot, probation period, staged investment, contingency clause, or exit option can reduce the cost of being wrong.</p>
+</section>
+<section id="use-proportionate-analysis" class="level2">
+<h2 data-anchor-id="use-proportionate-analysis">Use proportionate analysis</h2>
+<p>Bounded rationality recognizes that search, attention, time, memory, and computation are scarce (Simon, 1955, 1956). People often <strong>satisfice</strong>: they search until an alternative meets an aspiration level rather than proving global optimality. That can be procedurally rational when further search costs more than it is likely to improve the decision.</p>
+<p>The appropriate depth of analysis depends on the decision.</p>
+<div id="tbl-proportionate-analysis" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-proportionate-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.3: When to use more or less decision structure
+</figcaption>
+<div aria-describedby="tbl-proportionate-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision feature</th>
+<th>Usually warrants less structure</th>
+<th>Usually warrants more structure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stakes</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td>Familiarity</td>
+<td>Repeated and well learned</td>
+<td>Novel</td>
+</tr>
+<tr class="odd">
+<td>Reversibility</td>
+<td>Easy and inexpensive to reverse</td>
+<td>Irreversible or costly to reverse</td>
+</tr>
+<tr class="even">
+<td>Feedback</td>
+<td>Fast, clear, and diagnostic</td>
+<td>Delayed, noisy, or absent</td>
+</tr>
+<tr class="odd">
+<td>Interdependence</td>
+<td>Mostly individual</td>
+<td>Depends strategically on other people</td>
+</tr>
+<tr class="even">
+<td>Distributional effects</td>
+<td>Limited and private</td>
+<td>Affects rights, fairness, or many stakeholders</td>
+</tr>
+<tr class="odd">
+<td>Uncertainty</td>
+<td>Narrow and well understood</td>
+<td>Wide, ambiguous, or model-dependent</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Low-stakes, familiar, reversible choices can rely on routines, trained intuition, or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback choices deserve more explicit structure. Rationality should guide proportionate deliberation, not turn life into continuous calculation. <a href="../chapters/08-fast-and-frugal-thinking.html"><em>Fast and Frugal Thinking</em></a> asks when compressed judgment is well trained; <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html"><em>Risky Decision-Making</em></a> develops the expected-utility detail needed when uncertain consequences must be combined.</p>
+</section>
+<section id="produce-a-decision-recommendation-not-merely-a-score" class="level2">
+<h2 data-anchor-id="produce-a-decision-recommendation-not-merely-a-score">Produce a decision recommendation, not merely a score</h2>
+<p>The output of the process should be an inspectable recommendation. A useful one-page decision record contains:</p>
+<ol type="1">
+<li><strong>Decision:</strong> What commitment is being made, by whom, and by when?</li>
+<li><strong>Feasible alternatives:</strong> Which options are genuinely available, including the status quo, delay, negotiation, learning, staging, and exit where relevant?</li>
+<li><strong>Best forgone alternative:</strong> What is the opportunity cost of the recommended choice?</li>
+<li><strong>Predictions:</strong> What are the main expected consequences, ranges, and causal assumptions?</li>
+<li><strong>Values:</strong> What matters, to whom, and which trade-offs, rights, or non-negotiable conditions apply?</li>
+<li><strong>Recommendation:</strong> Which alternative is preferred, and under which assumptions?</li>
+<li><strong>Sensitivity:</strong> What plausible change would reverse the recommendation?</li>
+<li><strong>Information:</strong> What further evidence could change action, and is it worth obtaining?</li>
+<li><strong>Implementation:</strong> Who acts, when, with what safeguards and exit conditions?</li>
+<li><strong>Review:</strong> What will be observed, when will the decision be reviewed, and how will outcome, implementation, and luck be separated?</li>
+</ol>
+<p>The recommendation is not “Option A has the largest number.” It is:</p>
+<blockquote class="blockquote">
+<p><strong>Choose Option A because, under the stated evidence, objectives, constraints, rights or thresholds, and decision rule, it is preferred among the feasible alternatives. The recommendation would change if these particular assumptions crossed these thresholds.</strong></p>
+</blockquote>
+<p>That sentence makes the analysis open to disagreement and revision.</p>
+</section>
+<section id="worked-framework-from-two-offers-to-a-decision-architecture" class="level2">
+<h2 data-anchor-id="worked-framework-from-two-offers-to-a-decision-architecture">Worked framework: from two offers to a decision architecture</h2>
+<p>Consider a student choosing between a prestigious consulting firm and a smaller sustainability start-up.</p>
+<section id="the-first-visible-menu" class="level3">
+<h3 data-anchor-id="the-first-visible-menu">The first visible menu</h3>
+<p>The initial choice appears binary:</p>
+<ul>
+<li>Accept consulting.</li>
+<li>Accept the start-up.</li>
+</ul>
+<p>This menu is incomplete.</p>
+</section>
+<section id="constructed-alternatives" class="level3">
+<h3 data-anchor-id="constructed-alternatives">Constructed alternatives</h3>
+<p>Further analysis adds:</p>
+<ul>
+<li>Negotiate workload, location, start date, compensation, or role scope.</li>
+<li>Request a short extension for one further conversation.</li>
+<li>Continue the search.</li>
+<li>Decline both offers.</li>
+<li>Ask the start-up for a staged or probationary arrangement.</li>
+<li>Accept one offer while preserving a defined future exit option, where contractually and ethically possible.</li>
+</ul>
+<p>Financial runway, visa conditions, location, deadlines, and family commitments determine which of these are feasible. They are not listed again as an independent ingredient after the feasible set has been defined.</p>
+</section>
+<section id="predictions" class="level3">
+<h3 data-anchor-id="predictions">Predictions</h3>
+<p>The important predictions concern:</p>
+<ul>
+<li>Actual rather than advertised workload.</li>
+<li>Learning and responsibility during the first two years.</li>
+<li>Organizational survival.</li>
+<li>Promotion and future options.</li>
+<li>Quality of supervision.</li>
+<li>Location stability.</li>
+<li>The probability that negotiated terms will be honored in practice.</li>
+</ul>
+<p>One further conversation has decision value only if a plausible answer could change the ranking, contract, safeguard, or decision to wait.</p>
+</section>
+<section id="values" class="level3">
+<h3 data-anchor-id="values">Values</h3>
+<p>The relevant values include income, autonomy, mission, health, family time, learning, security, identity, and tolerance for downside. Some are partly overlapping. Learning and future options should not automatically be counted twice. Health may function as a threshold rather than a compensable attribute.</p>
+</section>
+<section id="opportunity-cost" class="level3">
+<h3 data-anchor-id="opportunity-cost">Opportunity cost</h3>
+<p>If consulting is chosen and the start-up is the best complete feasible alternative, the opportunity cost is the overall value of that start-up path; its autonomy, mission, and early responsibility are dimensions contributing to that value. If the start-up is chosen and consulting is the best complete feasible alternative, the opportunity cost is the overall value of the consulting path, to which income, structured training, security, and network may contribute. The opportunity cost is not every benefit of every unchosen life. It is the singular value of the best complete feasible alternative displaced by commitment.</p>
+</section>
+<section id="sensitivity-and-action" class="level3">
+<h3 data-anchor-id="sensitivity-and-action">Sensitivity and action</h3>
+<p>The recommendation may depend mainly on three assumptions: the start-up’s survival, the consulting workload, and the value placed on early learning relative to financial security. If small plausible changes reverse the ranking, the decision is fragile. The student may then seek targeted information, negotiate a safeguard, or prefer a reversible arrangement.</p>
+<p>The output is not a number pretending to be objective. It is a recommendation, the assumptions that make it preferred, the evidence that would reverse it, and the review point after action.</p>
+</section>
+</section>
+<section id="practice-lab" class="level2">
+<h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<p>Prepare a one-page decision record for a consequential decision.</p>
+<ol type="1">
+<li>Rewrite the decision so that the commitment, decision-maker, horizon, and automatic outcome of inaction are explicit.</li>
+<li>List the visible alternatives, then add at least one option created through delay, learning, negotiation, combination, staging, search, or exit.</li>
+<li>Mark which alternatives are imaginable, feasible, and seriously considered.</li>
+<li>State the best feasible alternative forgone by the current favorite.</li>
+<li>Separate the three most important predictions from the three most important values.</li>
+<li>Identify one piece of information and write the action that would follow each plausible result. Remove the information request if no branch changes action.</li>
+<li>State the assumption most capable of reversing the recommendation and the threshold at which it would do so.</li>
+<li>Specify one implementation safeguard and one review point.</li>
+</ol>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<ul>
+<li><strong>Use this when:</strong> A decision arrives as a narrow menu, a score hides the assumptions producing it, or more information is being requested without a decision rule.</li>
+<li><strong>Do not infer:</strong> That more alternatives, more data, or more calculation always improve a decision.</li>
+<li><strong>Try this next:</strong> State the best forgone feasible path and the smallest plausible change that would reverse your recommendation.</li>
+</ul>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Chernev, A., Böckenholt, U., &amp; Goodman, J. (2015). Choice overload: A conceptual review and meta-analysis. <em>Journal of Consumer Psychology, 25</em>(2), 333–358.</p>
+</div>
+<div class="reference">
+<p>Frederick, S., Novemsky, N., Wang, J., Dhar, R., &amp; Nowlis, S. (2009). Opportunity cost neglect. <em>Journal of Consumer Research, 36</em>(4), 553–561.</p>
+</div>
+<div class="reference">
+<p>Iyengar, S. S., &amp; Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? <em>Journal of Personality and Social Psychology, 79</em>(6), 995–1006.</p>
+</div>
+<div class="reference">
+<p>Keeney, R. L., &amp; Raiffa, H. (1976). <em>Decisions with multiple objectives: Preferences and value tradeoffs</em>. Wiley.</p>
+</div>
+<div class="reference">
+<p>Scheibehenne, B., Greifeneder, R., &amp; Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. <em>Journal of Consumer Research, 37</em>(3), 409–425.</p>
+</div>
+<div class="reference">
+<p>Simon, H. A. (1955). A behavioral model of rational choice. <em>The Quarterly Journal of Economics, 69</em>(1), 99–118.</p>
+</div>
+<div class="reference">
+<p>Simon, H. A. (1956). Rational choice and the structure of the environment. <em>Psychological Review, 63</em>(2), 129–138.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="pagination-link" aria-label="How Decisions Should Be Made—and How They Actually Are">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How Decisions Should Be Made—and How They Actually Are</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/03-attention-what-becomes-evidence.html" class="pagination-link" aria-label="Attention: What Becomes Evidence?">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

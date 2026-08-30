@@ -16,8 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Ordered by the current reader-facing chapter sequence.
 CHAPTER_RENAMES = {
-    "01-the-choice-is-the-tip-of-the-iceberg": "01-decision-making-is-a-process-not-a-moment",
-    "02-a-rational-benchmark-not-a-portrait": "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost",
+    "01-the-choice-is-the-tip-of-the-iceberg": "01-how-decisions-should-be-made-and-how-they-actually-are",
+    "02-a-rational-benchmark-not-a-portrait": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness",
     "05-attention-is-the-gatekeeper-of-evidence": "03-attention-what-becomes-evidence",
     "06-the-predictive-mind": "04-the-predictive-mind-perception-is-inference",
     "07-value-is-constructed": "05-valuation-how-options-become-worth-choosing",

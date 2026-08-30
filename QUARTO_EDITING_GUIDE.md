@@ -22,7 +22,7 @@ From the repository root, run:
 quarto preview
 ```
 
-Open a chapter such as `chapters/01-decision-making-is-a-process-not-a-moment.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
+Open a chapter such as `chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
 
 ## Rebuild all publishing files
 
@@ -49,4 +49,4 @@ Keep an editable source such as `figures-src/decision-loop.drawio`, export it as
 - Edit `.qmd`, not `docs/*.html`.
 - Do not edit `docs/search.json` or Quarto-generated navigation.
 - Run a full `quarto render` before publishing.
-- The EPUB download is intentionally not configured. Add an `epub:` format and `book: downloads: [epub]` only when an EPUB is desired.
+- Build the EPUB with `quarto render --profile epub`. The normalized release is copied to `docs/Decision-in-the-Making.epub` without adding a download button to the HTML book.

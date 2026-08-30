@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1040" viewBox="0 0 820 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Rational-choice benchmark</title>
+  <desc id="desc">Feasible alternatives, beliefs about consequences, and values over consequences feed a consequence-based comparison, followed by choice of a highest-valued feasible option.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 11 9" markerWidth="11" markerHeight="9" refX="10" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0.8 0.8 L10 4.5 L0.8 8.2 Z" fill="#17324d"/>
+    </marker>
+    <style>
+      .title{font:700 38px Arial,Helvetica,sans-serif;fill:#17324d}
+      .subtitle{font:22px Arial,Helvetica,sans-serif;fill:#536779}
+      .box-title{font:700 30px Arial,Helvetica,sans-serif;fill:#17324d}
+      .box-copy{font:23px Arial,Helvetica,sans-serif;fill:#536779}
+      .dark-title{font:700 29px Arial,Helvetica,sans-serif;fill:#ffffff}
+      .dark-copy{font:22px Arial,Helvetica,sans-serif;fill:#ffffff}
+      .footer{font:22px Arial,Helvetica,sans-serif;fill:#536779}
+    </style>
+  </defs>
+
+  <rect width="820" height="1040" fill="#ffffff"/>
+  <text class="title" x="410" y="54" text-anchor="middle">Rational-choice benchmark</text>
+  <text class="subtitle" x="410" y="91" text-anchor="middle">Three inputs support an explicit consequence-based comparison.</text>
+
+  <rect x="55" y="135" width="425" height="145" rx="20" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+  <text class="box-title" x="267.5" y="187" text-anchor="middle">Feasible alternatives</text>
+  <text class="box-copy" x="267.5" y="235" text-anchor="middle">What can actually be done?</text>
+
+  <rect x="55" y="335" width="425" height="145" rx="20" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+  <text class="box-title" x="267.5" y="387" text-anchor="middle">Beliefs and probabilities</text>
+  <text class="box-copy" x="267.5" y="435" text-anchor="middle">What may follow from each option?</text>
+
+  <rect x="55" y="535" width="425" height="145" rx="20" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
+  <text class="box-title" x="267.5" y="587" text-anchor="middle">Preferences and values</text>
+  <text class="box-copy" x="267.5" y="622" text-anchor="middle">
+    <tspan x="267.5" dy="0">How good or bad are</tspan>
+    <tspan x="267.5" dy="29">the consequences?</tspan>
+  </text>
+
+  <path d="M480 207.5 H515 V365 H545" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <path d="M480 407.5 H545" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M480 607.5 H515 V550 H545" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+
+  <rect x="545" y="310" width="225" height="285" rx="22" fill="#17324d" stroke="#17324d" stroke-width="3"/>
+  <text class="dark-title" x="657.5" y="380" text-anchor="middle">
+    <tspan x="657.5" dy="0">Consequence-</tspan>
+    <tspan x="657.5" dy="37">based value</tspan>
+  </text>
+  <text class="dark-copy" x="657.5" y="480" text-anchor="middle">
+    <tspan x="657.5" dy="0">Compare predicted</tspan>
+    <tspan x="657.5" dy="29">consequences using</tspan>
+    <tspan x="657.5" dy="29">stated values</tspan>
+  </text>
+
+  <path d="M657.5 595 V715 H410 V770" fill="none" stroke="#17324d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <rect x="190" y="770" width="440" height="145" rx="20" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+  <text class="box-title" x="410" y="824" text-anchor="middle">Choose</text>
+  <text class="box-copy" x="410" y="872" text-anchor="middle">Select a highest-valued feasible option.</text>
+
+  <text class="footer" x="410" y="980" text-anchor="middle">Benchmark, not biography: make assumptions and trade-offs inspectable.</text>
+</svg>
