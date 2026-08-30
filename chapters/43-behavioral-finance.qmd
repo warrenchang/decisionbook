@@ -5,7 +5,7 @@
 ::: {.callout-note .core-idea icon=false}
 ## Core idea
 
-Market efficiency, mispricing, and bubbles are different claims. Prices may incorporate public news rapidly while remaining difficult to connect to one fundamental value, and a visible inconsistency may survive when correction is risky. A bubble is therefore a hypothesis about reinforcing dynamics—not a label proved by a large rise or known reversal.
+Markets aggregate many strategically interdependent choices, and prices can transmit information quickly enough to guide later decisions. But rapid news incorporation, absence of an easy profit, equality between price and fundamental value, and a speculative bubble are different claims; social learning and risky correction can sustain visible inconsistency. Therefore this chapter separates efficiency, mispricing, and bubbles and treats each as a testable hypothesis about information, incentives, limits to arbitrage, and reinforcing feedback—not as a label proved by a rise or reversal.
 :::
 
 ::: {.callout-warning icon=false}
@@ -159,13 +159,13 @@ After Palm's first trading day, observed prices implied that the residual 3Com b
 
 ## A bubble is a reinforcing-process hypothesis
 
-Fundamental value is not printed beside the price. It depends on uncertain cash flows, discount rates, and a terminal value. A model can discipline the debate:
+Fundamental value is not printed beside the price. It depends on uncertain cash flows, discount rates, and a terminal value. Let $s_t$ denote the annualized $t$-period spot rate and let $P_T$ be the ex-dividend terminal price. A model can discipline the debate:
 
 $$
-V_0=\sum_{t=1}^{T}\frac{E(CF_t)}{(1+r_t)^t}+\frac{E(P_T)}{(1+r_T)^T}.
+V_0=\sum_{t=1}^{T}\frac{E(CF_t)}{(1+s_t)^t}+\frac{E(P_T)}{(1+s_T)^T}.
 $$
 
-But the notation must not create false precision. Before calling a price irrational, state the growth, margin, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
+If $r_s$ instead denotes the one-period rate applying in period $s$, the discount factor for a cash flow at $t$ is $\prod_{s=1}^{t}(1+r_s)$ rather than $(1+r_t)^t$. But correct notation must not create false precision. Before calling a price irrational, state the growth, margin, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
 
 ![A speculative feedback loop runs from price increases to attention and extrapolative expectations, then to demand and strategic resale, then through leverage and liquidity back to price. Fundamentals enter the price from outside the loop. Supply, short selling, risk limits, and skeptical capital can brake the process, but synchronization and funding risk can delay correction.](../figures/asset-bubble-feedback.svg){#fig-asset-bubble-feedback fig-alt="A circular four-stage loop shows price increase, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Arrows connect each stage and return to price. A fundamentals box feeds price separately. Four brake boxes—elastic supply, short selling, risk limits, and skeptical capital—point toward the loop, with a note that funding and synchronization risk can weaken the brakes."}
 
@@ -179,7 +179,7 @@ Skeptical traders face the mirror problem. Even when many privately judge the pr
 
 ### One field episode: dot-com innovation and extreme expectations
 
-From the beginning of 1995 to its March 2000 peak, the NASDAQ Composite rose roughly 570%; by October 2002 it had fallen about 78% from that peak. Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
+From the January 3, 1995 close of 743.58 to the March 10, 2000 peak close of 5,048.62, the NASDAQ Composite rose about 579%. By October 9, 2002, it closed at 1,114.11—a 77.9% decline from the peak (Federal Reserve Bank of St. Louis, 2026). Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
 
 The internet was not imaginary. The mistake would be to infer that every firm exposed to a transformative technology deserved every price. Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
 
@@ -306,6 +306,10 @@ Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical 
 
 ::: {.reference}
 Fama, E. F. (1991). Efficient capital markets: II. Journal of Finance, 46(5), 1575–1617.
+:::
+
+::: {.reference}
+Federal Reserve Bank of St. Louis. (2026). NASDAQ Composite [NASDAQCOM]. *FRED*. Retrieved August 29, 2026, from https://fred.stlouisfed.org/series/NASDAQCOM
 :::
 
 ::: {.reference}

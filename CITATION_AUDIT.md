@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **731**
+Unique references in the master union: **751**
 
-Chapter reference blocks: **798**
+Chapter reference blocks: **821**
 
 Unresolved author–year citations: **0**
 
@@ -14,14 +14,14 @@ Unresolved author–year citations: **0**
 | --- | ---: | ---: |
 | Decision-Making Is a Process, Not a Moment | 14 | 0 |
 | Building a Better Decision: Rationality, Alternatives, and Opportunity Cost | 10 | 0 |
-| Attention: What Becomes Evidence? | 28 | 0 |
+| Attention: What Becomes Evidence? | 29 | 0 |
 | The Predictive Mind: Perception Is Inference | 34 | 0 |
 | Valuation: How Options Become Worth Choosing | 39 | 0 |
-| Expectations: When Predictions Become Causes | 43 | 0 |
+| Expectations: When Predictions Become Causes | 44 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 18 | 0 |
 | Fast and Frugal Thinking | 31 | 0 |
 | What Feels Likely: Availability, Affect, and Resemblance | 17 | 0 |
-| Beliefs That Defend Themselves | 24 | 0 |
+| Beliefs That Defend Themselves | 25 | 0 |
 | When Context Rewrites Comparison | 10 | 0 |
 | Framing: When the Same Facts Become Different Decisions | 16 | 0 |
 | Accessibility, Familiarity, and Ease | 23 | 0 |
@@ -38,7 +38,7 @@ Unresolved author–year citations: **0**
 | Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |
 | Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 24 | 0 |
 | Social Learning, Conformity, and Cascades | 27 | 0 |
-| Markets, Mispricing, and Bubbles | 25 | 0 |
+| Markets, Mispricing, and Bubbles | 26 | 0 |
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Authority, Responsibility, and Pluralistic Ignorance | 9 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 30 | 0 |
@@ -49,10 +49,10 @@ Unresolved author–year citations: **0**
 | Negotiation as Joint Decision Design | 14 | 0 |
 | Preparing and Claiming Value | 10 | 0 |
 | Creating Value Across Differences | 8 | 0 |
-| Designing Better Agreements | 2 | 0 |
-| Behavior Design: Make the Better Action Easier | 18 | 0 |
+| Designing Better Agreements | 18 | 0 |
+| Behavior Design: Make the Better Action Easier | 19 | 0 |
 | Choice Architecture: The Environment Gets a Vote | 27 | 0 |
-| Decision Hygiene: Build a Process That Can Learn | 27 | 0 |
+| Decision Hygiene: Build a Process That Can Learn | 29 | 0 |
 
 ## Unresolved citation strings
 

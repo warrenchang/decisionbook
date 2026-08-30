@@ -1,111 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="680" viewBox="0 0 1600 680" role="img" aria-labelledby="title desc">
-  <title id="title">Judgment and decision-making according to predictive processing</title>
-  <desc id="desc">An internal model generates predictions. Perception and judgment integrate predictions with sensation while precision assigns their relative weight. Perception guides action plans and action. The environment produces new sensation, and prediction error updates the internal model.</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">A predictive-processing account of perception, action, and updating</title>
+  <desc id="desc">A theoretical loop links an internal generative model, predictions, perception and judgment, action, the environment, sensory signals, prediction error, and model updating. Precision is the estimated reliability of prediction-error signals and modulates their influence. Predictive-processing variants differ, and attention is only sometimes modeled partly through precision.</desc>
   <defs>
-    <style><![CDATA[
-      .heading{font:700 30px Arial,sans-serif;fill:#0b2c5f}
-      .label{font:700 23px Arial,sans-serif;fill:#0b2c5f}
-      .small{font:21px Arial,sans-serif;fill:#334}
-      .red{font:700 23px Arial,sans-serif;fill:#c62828}
-      .blue-node{fill:#f1f6fc;stroke:#2b6cb0;stroke-width:2.5}
-      .green-node{fill:#f1faf4;stroke:#2e8b57;stroke-width:2.5}
-      .purple-node{fill:#faf5ff;stroke:#6c3eb6;stroke-width:2.5}
-      .orange-node{fill:#fff8ef;stroke:#d97706;stroke-width:2.5}
-      .red-node{fill:#fff5f5;stroke:#d62828;stroke-width:2.5}
-      .blue-flow{fill:none;stroke:#2b6cb0;stroke-width:4}
-      .green-flow{fill:none;stroke:#2e8b57;stroke-width:4}
-      .purple-flow{fill:none;stroke:#6c3eb6;stroke-width:4}
-      .orange-flow{fill:none;stroke:#d97706;stroke-width:4}
-      .red-flow{fill:none;stroke:#d62828;stroke-width:4}
-    ]]></style>
-    <marker id="blue-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#2b6cb0"/></marker>
-    <marker id="green-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#2e8b57"/></marker>
-    <marker id="purple-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#6c3eb6"/></marker>
-    <marker id="orange-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#d97706"/></marker>
-    <marker id="red-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#d62828"/></marker>
+    <marker id="blue-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#2f6f9f"/></marker>
+    <marker id="purple-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#7657a8"/></marker>
+    <marker id="green-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#447c55"/></marker>
+    <marker id="red-arrow" viewBox="0 0 10 8" markerWidth="11" markerHeight="9" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#a74343"/></marker>
+    <style>
+      .title{font:700 34px Arial,sans-serif;fill:#17324d}
+      .subtitle{font:21px Arial,sans-serif;fill:#607080}
+      .label{font:700 22px Arial,sans-serif;fill:#17324d}
+      .body{font:21px Arial,sans-serif;fill:#536879}
+      .note{font:21px Arial,sans-serif;fill:#607080}
+      .node{stroke-width:3}
+      .flow{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    </style>
   </defs>
+  <rect width="1600" height="760" fill="#ffffff"/>
+  <text class="title" x="800" y="48" text-anchor="middle">A predictive-processing account of inference, action, and updating</text>
+  <text class="subtitle" x="800" y="80" text-anchor="middle">A theoretical family of models—not a direct image of one neural implementation</text>
 
-  <rect width="1600" height="680" fill="#fff"/>
-  <rect x="35" y="50" width="1005" height="580" rx="38" fill="none" stroke="#2b6cb0" stroke-width="3" stroke-dasharray="12 10"/>
-  <text x="537" y="35" class="heading" text-anchor="middle">Decision-maker / predictive brain</text>
-  <rect x="1080" y="70" width="190" height="540" rx="24" fill="none" stroke="#999" stroke-width="2.5" stroke-dasharray="10 8"/>
-  <text x="1175" y="28" class="heading" text-anchor="middle">
-    <tspan x="1175" dy="0">Interface with</tspan>
-    <tspan x="1175" dy="30">the world</tspan>
-  </text>
+  <rect x="45" y="112" width="1510" height="525" rx="30" fill="#fbfcfe" stroke="#bdd0de" stroke-width="2.5"/>
 
-  <!-- Dedicated connector lanes keep arrows outside all text blocks. -->
-  <path d="M280 210 V270" class="blue-flow" stroke-width="4" marker-end="url(#blue-arrow)"/>
-  <path d="M460 330 H540" class="blue-flow" stroke-width="4" marker-end="url(#blue-arrow)"/>
-  <path d="M460 510 H500 V385 H540" class="orange-flow" stroke-width="4" marker-end="url(#orange-arrow)"/>
-  <path d="M1095 495 H940 V365 H900" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
-  <path d="M720 270 V210" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
-  <path d="M900 150 H1115" class="green-flow" stroke-width="4" marker-end="url(#green-arrow)"/>
-  <path d="M1240 145 H1285 V280 H1330" class="green-flow" stroke-width="4" marker-end="url(#green-arrow)"/>
-  <path d="M1450 390 V495 H1245" class="purple-flow" stroke-width="4" marker-end="url(#purple-arrow)"/>
-  <path d="M720 420 V470" class="red-flow" stroke-width="4" marker-end="url(#red-arrow)"/>
-  <path d="M720 570 V600 H65 V150 H100" class="red-flow" stroke-width="4" marker-end="url(#red-arrow)"/>
+  <rect class="node" x="85" y="145" width="285" height="150" rx="20" fill="#eaf3f8" stroke="#2f6f9f"/>
+  <text class="label" x="228" y="187" text-anchor="middle">Internal generative model</text>
+  <text class="body" x="228" y="221" text-anchor="middle"><tspan x="228">beliefs about hidden causes</tspan><tspan x="228" dy="25">outcome expectations</tspan><tspan x="228" dy="25">and possible actions</tspan></text>
 
-  <!-- Predictive system -->
-  <rect x="100" y="90" width="360" height="120" rx="18" class="blue-node"/>
-  <text x="280" y="128" class="label" text-anchor="middle">Internal model</text>
-  <text x="280" y="151" class="small" text-anchor="middle">
-    <tspan x="280" dy="0">beliefs and causal assumptions</tspan>
-    <tspan x="280" dy="22">desired outcomes</tspan>
-    <tspan x="280" dy="22">favored action plans</tspan>
-  </text>
+  <rect class="node" x="455" y="160" width="250" height="125" rx="20" fill="#eaf3f8" stroke="#2f6f9f"/>
+  <text class="label" x="580" y="206" text-anchor="middle">Predictions</text>
+  <text class="body" x="580" y="239" text-anchor="middle"><tspan x="580">expected sensory</tspan><tspan x="580" dy="25">signals and outcomes</tspan></text>
 
-  <rect x="100" y="270" width="360" height="120" rx="18" class="blue-node"/>
-  <text x="280" y="308" class="label" text-anchor="middle">Predictions</text>
-  <text x="280" y="336" class="small" text-anchor="middle">
-    <tspan x="280" dy="0">expected sensations and outcomes</tspan>
-    <tspan x="280" dy="20">guide processing and interpretation</tspan>
-  </text>
+  <rect class="node" x="790" y="140" width="315" height="165" rx="20" fill="#eee9fb" stroke="#7657a8"/>
+  <text class="label" x="948" y="184" text-anchor="middle">Perception and judgment</text>
+  <text class="body" x="948" y="220" text-anchor="middle"><tspan x="948">infer the current situation</tspan><tspan x="948" dy="25">from predictions and</tspan><tspan x="948" dy="25">incoming signals</tspan></text>
 
-  <rect x="100" y="450" width="360" height="120" rx="18" class="orange-node"/>
-  <text x="280" y="488" class="label" text-anchor="middle">Precision / attention</text>
-  <text x="280" y="516" class="small" text-anchor="middle">
-    <tspan x="280" dy="0">assigns relative weight to predictions</tspan>
-    <tspan x="280" dy="20">and sensory evidence</tspan>
-  </text>
+  <rect class="node" x="1190" y="160" width="235" height="125" rx="20" fill="#edf4ed" stroke="#447c55"/>
+  <text class="label" x="1308" y="206" text-anchor="middle">Action</text>
+  <text class="body" x="1308" y="239" text-anchor="middle"><tspan x="1308">changes sampling</tspan><tspan x="1308" dy="25">and the environment</tspan></text>
 
-  <rect x="540" y="270" width="360" height="150" rx="18" class="purple-node"/>
-  <text x="720" y="316" class="label" text-anchor="middle">Perception and judgment</text>
-  <text x="720" y="344" class="small" text-anchor="middle">
-    <tspan x="720" dy="0">prediction and sensation combine</tspan>
-    <tspan x="720" dy="22">to infer the current situation</tspan>
-    <tspan x="720" dy="22">the result is a model,</tspan>
-    <tspan x="720" dy="22">not a direct copy</tspan>
-  </text>
+  <path class="flow" d="M370 222 H455" stroke="#2f6f9f" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <path class="flow" d="M705 222 H790" stroke="#2f6f9f" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <path class="flow" d="M1105 222 H1190" stroke="#447c55" stroke-width="4" marker-end="url(#green-arrow)"/>
 
-  <rect x="540" y="90" width="360" height="120" rx="18" class="green-node"/>
-  <text x="720" y="128" class="label" text-anchor="middle">Action plan</text>
-  <text x="720" y="156" class="small" text-anchor="middle">
-    <tspan x="720" dy="0">acts to reach desired outcomes</tspan>
-    <tspan x="720" dy="20">or reduce uncertainty</tspan>
-  </text>
+  <rect class="node" x="1190" y="420" width="235" height="145" rx="20" fill="#edf4ed" stroke="#447c55"/>
+  <text class="label" x="1308" y="463" text-anchor="middle">Environment</text>
+  <text class="body" x="1308" y="498" text-anchor="middle"><tspan x="1308">world and body</tspan><tspan x="1308" dy="25">generate new</tspan><tspan x="1308" dy="25">sensory input</tspan></text>
 
-  <rect x="540" y="470" width="360" height="100" rx="18" class="red-node"/>
-  <text x="720" y="510" class="red" text-anchor="middle">Prediction error</text>
-  <text x="720" y="535" class="small" text-anchor="middle">
-    <tspan x="720">mismatch between predicted</tspan>
-    <tspan x="720" dy="22">and sensed input</tspan>
-  </text>
+  <rect class="node" x="855" y="430" width="250" height="125" rx="20" fill="#eee9fb" stroke="#7657a8"/>
+  <text class="label" x="980" y="476" text-anchor="middle">Sensory signals</text>
+  <text class="body" x="980" y="510" text-anchor="middle"><tspan x="980">evidence produced by</tspan><tspan x="980" dy="25">the generative process</tspan></text>
 
-  <!-- World interface -->
-  <rect x="1115" y="100" width="125" height="90" rx="14" class="green-node"/>
-  <text x="1177" y="153" class="label" text-anchor="middle">Action</text>
+  <rect class="node" x="500" y="420" width="270" height="145" rx="20" fill="#fff0ed" stroke="#a74343"/>
+  <text class="label" x="635" y="462" text-anchor="middle">Prediction error</text>
+  <text class="body" x="635" y="496" text-anchor="middle"><tspan x="635">mismatch between</tspan><tspan x="635" dy="24">predicted and</tspan><tspan x="635" dy="24">incoming signals</tspan></text>
 
-  <rect x="1095" y="450" width="150" height="90" rx="14" class="purple-node"/>
-  <text x="1170" y="503" class="label" text-anchor="middle">Sensation</text>
+  <rect class="node" x="85" y="420" width="310" height="145" rx="20" fill="#fff8ef" stroke="#c56a2d"/>
+  <text class="label" x="240" y="462" text-anchor="middle">Precision weighting</text>
+  <text class="body" x="240" y="497" text-anchor="middle"><tspan x="240">estimated reliability of</tspan><tspan x="240" dy="25">prediction-error signals;</tspan><tspan x="240" dy="25">modulates their influence</tspan></text>
 
-  <rect x="1330" y="210" width="240" height="180" rx="22" class="purple-node"/>
-  <text x="1450" y="277" class="label" text-anchor="middle">Environment</text>
-  <text x="1450" y="303" class="small" text-anchor="middle">
-    <tspan x="1450" dy="0">external states</tspan>
-    <tspan x="1450" dy="22">generate sensory input</tspan>
-    <tspan x="1450" dy="22">and feedback</tspan>
-  </text>
+  <path class="flow" d="M1308 285 V420" stroke="#447c55" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <path class="flow" d="M1190 492 H1105" stroke="#7657a8" stroke-width="4" marker-end="url(#purple-arrow)"/>
+  <path class="flow" d="M855 492 H770" stroke="#a74343" stroke-width="4" marker-end="url(#red-arrow)"/>
+  <path class="flow" d="M500 492 H430 V345 H228 V295" stroke="#a74343" stroke-width="4" marker-end="url(#red-arrow)"/>
+  <path d="M395 492 H420" fill="none" stroke="#c56a2d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="430" cy="492" r="5" fill="#c56a2d"/>
+  <text class="note" x="330" y="330" text-anchor="start">precision-weighted error can update the model</text>
 
-  <text x="53" y="345" class="label" text-anchor="middle" transform="rotate(-90 53 345)">Model update</text>
+  <rect x="250" y="575" width="1100" height="135" rx="20" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2"/>
+  <text class="label" x="800" y="612" text-anchor="middle">Evidence boundary</text>
+  <text class="note" x="800" y="644" text-anchor="middle"><tspan x="800">Attention is sometimes modeled partly through precision assignment; it is not identical to precision.</tspan><tspan x="800" dy="25">Teaching synthesis of Rao &amp; Ballard (1999), Clark (2013), and Friston (2010).</tspan><tspan x="800" dy="25">Predictive-processing and active-inference formulations differ in scope and implementation.</tspan></text>
+  <text class="subtitle" x="800" y="734" text-anchor="middle">Precision means estimated reliability—not confidence, arousal, or attention in every sense.</text>
 </svg>

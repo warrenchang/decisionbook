@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900" role="img" aria-labelledby="title desc">
+  <title id="title">Why equal MPG gains do not save equal amounts of fuel</title>
+  <desc id="desc">A reciprocal curve shows US gallons used over 100 miles as 100 divided by miles per gallon. Moving from 10 to 20 MPG reduces fuel use from 10 to 5 gallons, saving 5 gallons. Moving from 30 to 40 MPG reduces fuel use from 3.33 to 2.50 gallons, saving five sixths of a gallon. The first improvement therefore saves exactly six times as much fuel over the same distance.</desc>
+  <defs>
+    <clipPath id="plot-clip">
+      <rect x="145" y="180" width="790" height="376" rx="2"/>
+    </clipPath>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="900" fill="#ffffff"/>
+  <text id="title-text" x="550" y="49" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700" fill="#183047">The same MPG gain can save very different amounts of fuel</text>
+  <text x="550" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#536678">For a fixed 100-mile trip: fuel use (US gallons) = 100 ÷ MPG</text>
+
+  <!-- Plot background and grid -->
+  <rect x="90" y="125" width="920" height="455" rx="18" fill="#f7f9fc" stroke="#c8d6e1" stroke-width="2"/>
+  <g stroke="#dce5ec" stroke-width="2">
+    <line x1="150" y1="550" x2="930" y2="550"/>
+    <line x1="150" y1="478" x2="930" y2="478"/>
+    <line x1="150" y1="406" x2="930" y2="406"/>
+    <line x1="150" y1="334" x2="930" y2="334"/>
+    <line x1="150" y1="262" x2="930" y2="262"/>
+    <line x1="150" y1="190" x2="930" y2="190"/>
+  </g>
+
+  <!-- Axes -->
+  <g stroke="#536678" stroke-width="3" fill="none">
+    <line x1="150" y1="175" x2="150" y2="550"/>
+    <line x1="150" y1="550" x2="945" y2="550"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#536678">
+    <text x="132" y="556" text-anchor="end">0</text>
+    <text x="132" y="484" text-anchor="end">2</text>
+    <text x="132" y="412" text-anchor="end">4</text>
+    <text x="132" y="340" text-anchor="end">6</text>
+    <text x="132" y="268" text-anchor="end">8</text>
+    <text x="132" y="196" text-anchor="end">10</text>
+    <text x="150" y="578" text-anchor="middle">10</text>
+    <text x="345" y="578" text-anchor="middle">20</text>
+    <text x="540" y="578" text-anchor="middle">30</text>
+    <text x="735" y="578" text-anchor="middle">40</text>
+    <text x="930" y="578" text-anchor="middle">50</text>
+  </g>
+  <text x="540" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#183047">Fuel economy (MPG)</text>
+  <text x="46" y="365" text-anchor="middle" transform="rotate(-90 46 365)" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#183047">US gallons per 100 miles</text>
+
+  <!-- The curve is a dense rendering of y = 100 / MPG, not fitted data. -->
+  <g clip-path="url(#plot-clip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 150.00 190.00 L 159.75 207.14 L 169.50 222.73 L 179.25 236.96 L 189.00 250.00 L 198.75 262.00 L 208.50 273.08 L 218.25 283.33 L 228.00 292.86 L 237.75 301.72 L 247.50 310.00 L 257.25 317.74 L 267.00 325.00 L 276.75 331.82 L 286.50 338.24 L 296.25 344.29 L 306.00 350.00 L 315.75 355.41 L 325.50 360.53 L 335.25 365.38 L 345.00 370.00 L 354.75 374.39 L 364.50 378.57 L 374.25 382.56 L 384.00 386.36 L 393.75 390.00 L 403.50 393.48 L 413.25 396.81 L 423.00 400.00 L 432.75 403.06 L 442.50 406.00 L 452.25 408.82 L 462.00 411.54 L 471.75 414.15 L 481.50 416.67 L 491.25 419.09 L 501.00 421.43 L 510.75 423.68 L 520.50 425.86 L 530.25 427.97 L 540.00 430.00 L 549.75 431.97 L 559.50 433.87 L 569.25 435.71 L 579.00 437.50 L 588.75 439.23 L 598.50 440.91 L 608.25 442.54 L 618.00 444.12 L 627.75 445.65 L 637.50 447.14 L 647.25 448.59 L 657.00 450.00 L 666.75 451.37 L 676.50 452.70 L 686.25 454.00 L 696.00 455.26 L 705.75 456.49 L 715.50 457.69 L 725.25 458.86 L 735.00 460.00 L 744.75 461.11 L 754.50 462.20 L 764.25 463.25 L 774.00 464.29 L 783.75 465.29 L 793.50 466.28 L 803.25 467.24 L 813.00 468.18 L 822.75 469.10 L 832.50 470.00 L 842.25 470.88 L 852.00 471.74 L 861.75 472.58 L 871.50 473.40 L 881.25 474.21 L 891.00 475.00 L 900.75 475.77 L 910.50 476.53 L 920.25 477.27 L 930.00 478.00" stroke="#91a3b1" stroke-width="5"/>
+    <path d="M 150.00 190.00 L 159.75 207.14 L 169.50 222.73 L 179.25 236.96 L 189.00 250.00 L 198.75 262.00 L 208.50 273.08 L 218.25 283.33 L 228.00 292.86 L 237.75 301.72 L 247.50 310.00 L 257.25 317.74 L 267.00 325.00 L 276.75 331.82 L 286.50 338.24 L 296.25 344.29 L 306.00 350.00 L 315.75 355.41 L 325.50 360.53 L 335.25 365.38 L 345.00 370.00" stroke="#25678f" stroke-width="9"/>
+    <path d="M 540.00 430.00 L 549.75 431.97 L 559.50 433.87 L 569.25 435.71 L 579.00 437.50 L 588.75 439.23 L 598.50 440.91 L 608.25 442.54 L 618.00 444.12 L 627.75 445.65 L 637.50 447.14 L 647.25 448.59 L 657.00 450.00 L 666.75 451.37 L 676.50 452.70 L 686.25 454.00 L 696.00 455.26 L 705.75 456.49 L 715.50 457.69 L 725.25 458.86 L 735.00 460.00" stroke="#b95f2d" stroke-width="9"/>
+  </g>
+
+  <!-- Exact comparison points and rounded display labels -->
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <g fill="#ffffff" stroke="#25678f" stroke-width="5">
+      <circle cx="150" cy="190" r="9"/>
+      <circle cx="345" cy="370" r="9"/>
+    </g>
+    <g fill="#ffffff" stroke="#b95f2d" stroke-width="5">
+      <circle cx="540" cy="430" r="9"/>
+      <circle cx="735" cy="460" r="9"/>
+    </g>
+    <text x="174" y="181" fill="#25678f">10.00</text>
+    <text x="365" y="360" fill="#25678f">5.00</text>
+    <text x="560" y="420" fill="#b95f2d">3.33</text>
+    <text x="755" y="450" fill="#b95f2d">2.50</text>
+  </g>
+
+  <!-- Side-by-side comparisons -->
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="90" y="645" width="440" height="140" rx="18" fill="#eaf3f8" stroke="#25678f" stroke-width="3"/>
+    <text x="310" y="680" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">10 → 20 MPG</text>
+    <text x="310" y="721" text-anchor="middle" font-size="30" font-weight="700" fill="#25678f">10.00 → 5.00</text>
+    <text x="310" y="748" text-anchor="middle" font-size="22" fill="#536678">US gallons per 100 miles</text>
+    <text x="310" y="775" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">5.00 gallons saved</text>
+
+    <rect x="570" y="645" width="440" height="140" rx="18" fill="#f7f1e8" stroke="#b95f2d" stroke-width="3"/>
+    <text x="790" y="680" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">30 → 40 MPG</text>
+    <text x="790" y="721" text-anchor="middle" font-size="30" font-weight="700" fill="#b95f2d">3.33 → 2.50</text>
+    <text x="790" y="748" text-anchor="middle" font-size="22" fill="#536678">US gallons per 100 miles</text>
+    <text x="790" y="775" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">0.83 (= 5/6) gallon saved</text>
+  </g>
+
+  <rect x="90" y="815" width="920" height="62" rx="16" fill="#183047"/>
+  <text x="550" y="854" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Same +10 MPG, but the first improvement saves exactly 6× as much fuel.</text>
+</svg>

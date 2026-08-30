@@ -129,6 +129,11 @@ async function main() {
       ["chapters/19-habits-when-decisions-move-downstairs.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
       ["chapters/43-behavioral-finance.html", "#fig-finance-event-study-drift", "event-study-desktop.png"],
       ["chapters/08-expectations-that-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-6-1-desktop.png"],
+      ["chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-desktop.png"],
+      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-personal-mimicry-crossed-arms", "personal-mimicry-desktop.png"],
+      ["chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-desktop.png"],
+      ["chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-desktop.png"],
+      ["chapters/36-choice-architecture.html", "#fig-choice-architecture-simplified-remote", "simplified-remote-desktop.png"],
     ];
     for (const [relative, selector, output] of screenshots) await screenshotFigure(page, relative, selector, output);
     await context.close();
@@ -141,6 +146,9 @@ async function main() {
       "#fig-fluency-pathway",
       "figure-13-2-mobile.png",
     );
+    await screenshotFigure(mobilePage, "chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-mobile.png");
     await mobileContext.close();
 
     const validationContext = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
@@ -157,10 +165,10 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 87 distinct visual assets and 89 configured placements:
+    // The book contains 92 distinct visual assets and 94 configured placements:
     // the base loop is deliberately repeated as a navigation device.
-    if (totalByViewport.desktop !== 89 || totalByViewport.mobile !== 89) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 89 in each viewport`);
+    if (totalByViewport.desktop !== 94 || totalByViewport.mobile !== 94) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 94 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`Table 6.1 has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");

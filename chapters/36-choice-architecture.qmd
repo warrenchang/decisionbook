@@ -5,7 +5,7 @@
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Choice architecture is the design of the path through which a person notices options, understands consequences, acts, and learns. A nudge changes that path without forbidding options or substantially changing material incentives. Good architecture expands practical agency; bad architecture exploits predictable attention, effort, and inference.
+Behavior design can help one person act on an endorsed goal, and every institution also designs the path through which many people notice options, understand consequences, act, and learn. But the same architecture can expand practical agency or exploit limited attention, effort, and inference in service of someone else's objective; a nudge changes the path without forbidding options or substantially changing material incentives. Therefore this chapter asks how to design and test choice environments that improve understanding and action while preserving welfare, meaningful exit, and refusal.
 :::
 
 ## Learning goals
@@ -54,7 +54,7 @@ A reminder cannot repair an unaffordable service. A literacy module cannot compe
 
 ## The plausible path: where architecture enters the loop
 
-![Choice architecture shapes a path from objective to menu, understanding, action, and feedback. Each lever should be diagnosed, tested, and governed.](../figures/choice-architecture.svg){#fig-choice-architecture fig-alt="A left-to-right path with five evenly spaced boxes: objective, menu, understanding, action, and feedback. Beneath it are aligned levers: defaults and order, mapping and salience, friction and timing, social information, and learning. A governance bar under the full path asks whose goal is served, what evidence supports it, who can exit, and how harms are monitored."}
+![The plausible-path model is an author's hypothesis map from objective through menu, understanding, action, and feedback. Each proposed link and lever must be diagnosed, tested, and governed rather than assumed.](../figures/choice-architecture.svg){#fig-choice-architecture fig-alt="An author's hypothesis map connects objective, menu, understanding, action, and feedback. Aligned levers and a governance bar indicate relationships to test, not a validated universal sequence."}
 
 An intervention is plausible only when the proposed design can be connected to a barrier through a credible path:
 
@@ -125,6 +125,8 @@ Metrics are frames. [Chapter 12](15-frames-change-the-decision.qmd) showed why e
 
 Even familiar units can map poorly. Miles per gallon is nonlinear in fuel consumed: an improvement from 10 to 20 MPG saves much more fuel over a fixed distance than an improvement from 30 to 40 MPG. Gallons per hundred miles makes that consequence easier to compare (Larrick & Soll, 2008). The design question is not which unit looks intuitive, but which one reveals the welfare-relevant difference.
 
+![Over a fixed 100-mile trip, fuel use equals 100 divided by MPG. Moving from 10 to 20 MPG lowers use from 10 to 5 US gallons, saving 5 gallons. Moving from 30 to 40 MPG lowers use from 3.33 to 2.50 gallons, saving 0.83 gallon—exactly one-sixth as much. The curve is a mathematical conversion, not an estimated behavioral effect (Larrick & Soll, 2008).](../figures/mpg-fuel-use.svg){#fig-mpg-fuel-use fig-alt="A reciprocal curve plots US gallons used over 100 miles against miles per gallon. The highlighted 10-to-20-MPG segment falls from 10 to 5 gallons, while the 30-to-40-MPG segment falls only from 3.33 to 2.50 gallons. Comparison cards show that the first change saves 5 gallons and the second saves five-sixths of a gallon, so the first saves exactly six times as much fuel." width="100%"}
+
 [Chapter 21](42-mental-accounting.qmd) developed mental accounting as cognitive bookkeeping. Here the implication is architectural: an interface can either reinforce narrow accounts or reveal the broader balance sheet. People may treat a refund as free money, recent gains as “house money,” a credit balance as less real than cash, or a sunk ticket price as a reason to continue an unenjoyable activity (Thaler, 1985). Categories can support self-control, but they can also conceal total exposure. A responsible interface preserves useful budgets while also showing the whole budget, forward-looking costs and benefits, monthly and total cost, aggregate risk, and opportunity cost.
 
 ## Make action feasible: simplification, friction, and sludge
@@ -140,6 +142,8 @@ A simple symmetry test is revealing:
 > If joining is easy, is leaving comparably easy? If consent is prominent, is refusal equally legible? If the likely benefit is vivid, are material costs and risks comparably recoverable?
 
 Simplification must preserve meaning. Shortening a form helps only if the remaining questions still protect eligibility, safety, and informed choice. Removing text is not the same as reducing cognitive work; sometimes a comparison table or worked example adds words while making the decision easier.
+
+![Masking seldom-used controls makes the simplification problem concrete. The goal is not the fewest possible buttons, but an interface in which the controls that remain match the user's real tasks. Hiding a necessary function can create a new error rather than remove friction. This AI-generated teaching illustration is based on a lecture-note example; no source image was reused.](../figures/choice-architecture-simplified-remote.png){#fig-choice-architecture-simplified-remote fig-alt="Two generic black remote controls lie side by side. The left has many small controls; most of the right remote is covered with removable white tape, leaving only a power button, navigation ring, and a few large controls exposed." width="68%"}
 
 Administrative burden has at least three components: learning what exists and whether one qualifies, complying with procedures, and bearing the stress, stigma, or loss of autonomy attached to the process (Herd & Moynihan, 2018). Field studies show why this distinction matters. Simplifying benefit notices increased take-up of an earned-income tax credit, while hands-on assistance with financial-aid forms improved aid receipt and college enrollment; information by itself was not the whole bottleneck (Bhargava & Manoli, 2015; Bettinger et al., 2012). A sludge audit should therefore count time and steps **and** ask who must translate, disclose, wait, travel, or absorb psychological cost.
 

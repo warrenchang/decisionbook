@@ -2,7 +2,7 @@
 
 **Release status: PASS**
 
-Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
+Artifact: `docs/Decision-in-the-Making.epub`
 
 | Check | Result |
 | --- | ---: |
@@ -55,7 +55,7 @@ Artifact: `docs/Decision-Persuasion-and-Negotiation.epub`
 | Required content: Underpowered Studies | **PASS** |
 | Required content: Data Fabrication | **PASS** |
 | Required content: Registered Reports | **PASS** |
-| Required content: Follow the Decision Upstream—and Outward | **PASS** |
+| Required content: A Decision Is Always in the Making | **PASS** |
 | Required content: pause without reset | **PASS** |
 | Required content: Scheduled cue occasions / days | **PASS** |
 | Required content: Index of Concepts | **PASS** |

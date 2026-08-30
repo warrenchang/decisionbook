@@ -1,6 +1,6 @@
-# Decision, Persuasion, and Negotiation
+# Decision in the Making
 
-This is the Quarto source for Huanren Warren Zhang's textbook, *Decision, Persuasion, and Negotiation: How Choices Take Shape—and How Minds Shape One Another*.
+This is the Quarto source for Huanren Warren Zhang's book, *Decision in the Making: The Behavioral Science of Choice, Influence, and Agreement*.
 
 The 41 chapters follow a cumulative seven-part journey: how a choice takes shape; judgment under uncertainty; risk, time, self-regulation, and a good life; strategic and social decisions, including markets and bubbles; persuasion, communication, and connection; negotiating joint decisions; and designing better loops. Four appendices provide portable tools, an evidence-aware example index, a Research Companion on running experimental studies, and a guide to replication and research integrity. A curated concept index identifies each key concept's main discussion and selected later applications.
 
@@ -18,7 +18,7 @@ Build the EPUB with:
 quarto render --profile epub
 ```
 
-Both release artifacts end in `docs/`; the EPUB is `docs/Decision-Persuasion-and-Negotiation.epub`. The EPUB profile builds in the ignored `_epub/` staging directory and a post-render hook normalizes its navigation and copies the finished book beside the HTML release. This prevents either profile from cleaning the other format. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so numbered chapters are nested beneath Part titles while section headings remain outside the table of contents.
+Both release artifacts end in `docs/`; the EPUB is `docs/Decision-in-the-Making.epub`. The EPUB profile builds in the ignored `_epub/` staging directory and a post-render hook normalizes its navigation and copies the finished book beside the HTML release. This prevents either profile from cleaning the other format. The EPUB build uses `_quarto-epub.yml` and `filters/epub-parts.lua` so numbered chapters are nested beneath Part titles while section headings remain outside the table of contents.
 
 ## Editorial records
 

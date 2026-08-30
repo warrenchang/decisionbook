@@ -13,7 +13,7 @@ from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EPUB = ROOT / "docs" / "Decision-Persuasion-and-Negotiation.epub"
+EPUB = ROOT / "docs" / "Decision-in-the-Making.epub"
 STAGED_EPUB = ROOT / "_epub" / EPUB.name
 REPORT = ROOT / "EPUB_QA_REPORT.md"
 
@@ -67,7 +67,7 @@ REQUIRED_CONTENT = [
     "Underpowered Studies",
     "Data Fabrication",
     "Registered Reports",
-    "Follow the Decision Upstream—and Outward",
+    "A Decision Is Always in the Making",
     "pause without reset",
     "Scheduled cue occasions / days",
     "Index of Concepts",
@@ -173,7 +173,7 @@ def main() -> int:
         check("Every navigation target exists", not missing_targets, ", ".join(missing_targets[:5]))
         check(
             "Navigation omits the redundant generated title-page entry",
-            "Decision, Persuasion, and Negotiation" not in labels,
+            "Decision in the Making" not in labels,
         )
 
         styled_lists = toc.findall(f".//{{{XHTML}}}ol") if toc is not None else []
@@ -273,7 +273,7 @@ def main() -> int:
             ]
             check(
                 "NCX omits the redundant generated title-page entry",
-                "Decision, Persuasion, and Negotiation" not in ncx_top_labels,
+                "Decision in the Making" not in ncx_top_labels,
             )
             ncx_hierarchy_errors: list[str] = []
             for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):

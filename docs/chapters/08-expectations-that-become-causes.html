@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A cumulative journey from the hidden process beneath one choice to the social and designed systems that shape many choices.">
+<meta name="description" content="A cumulative journey through how choices take shape, how minds influence one another, and how people construct better agreements and decision environments.">
 
-<title>6&nbsp; Expectations: When Predictions Become Causes – Decision, Persuasion, and Negotiation</title>
+<title>6&nbsp; Expectations: When Predictions Become Causes – Decision in the Making</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -100,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Decision, Persuasion, and Negotiation</a> 
+      <a href="../">Decision in the Making</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
@@ -116,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface: Follow the Decision Upstream—and Outward</span></a>
+ <span class="menu-text">Preface: A Decision Is Always in the Making</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -565,7 +594,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>An expectation is sometimes more than a description of the future. It can alter attention, interpretation, effort, bodily response, treatment by others, and the feedback that later appears to confirm the original belief.</p>
+<p>Predictions usually describe what might happen, and decision-makers use them to prepare action. But in human systems an expectation can also alter attention, interpretation, effort, bodily response, treatment by others, and the feedback later taken as confirmation. Therefore, this chapter traces when a prediction enters the causal path, distinguishes the routes through which it can change outcomes, and asks how to support useful expectations without confusing their effects with independent evidence.</p>
 </div>
 </div>
 <section id="learning-goals" class="level2">
@@ -672,17 +701,17 @@ Non-occurrence does not show that the warning was irrational.
 </section>
 <section id="expectation-in-the-body" class="level2">
 <h2 data-anchor-id="expectation-in-the-body">Expectation in the body</h2>
-<div id="fig-expectation-loop" class="quarto-float quarto-figure quarto-figure-center" alt="Circular loop from expectation through attention, interpretation, emotion, action, environment and others, feedback, and back to expectation.">
+<div id="fig-expectation-loop" class="quarto-float quarto-figure quarto-figure-center" alt="An expectation branches into four parallel pathways: physiological response, behavior and effort, other people's responses, and resources and opportunities. The pathways converge on changed outcomes and evidence. A feedback path distinguishes self-fulfilling reinforcement from self-defeating prevention.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-expectation-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/expectation-loop.svg" class="img-fluid figure-img" alt="Circular loop from expectation through attention, interpretation, emotion, action, environment and others, feedback, and back to expectation.">
+<img src="../figures/expectation-loop.svg" class="img-fluid figure-img" alt="An expectation branches into four parallel pathways: physiological response, behavior and effort, other people's responses, and resources and opportunities. The pathways converge on changed outcomes and evidence. A feedback path distinguishes self-fulfilling reinforcement from self-defeating prevention.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-expectation-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: Expectations can shape attention, action, and social response, producing feedback that appears to confirm the original belief.
+Figure&nbsp;6.1: Expectations can affect outcomes through four parallel pathways: physiological response, the person’s behavior, other people’s responses, and the allocation of resources or opportunities. Feedback may reinforce the expectation in a self-fulfilling pattern or counteract the predicted outcome in a self-defeating pattern.
 </figcaption>
 </figure>
 </div>
-<p>The loop contains at least four distinguishable causal pathways. They should not be collapsed into a vague claim that “mindset changes reality.”</p>
+<p>Figure <a href="#fig-expectation-loop" class="quarto-xref">Figure&nbsp;<span>6.1</span></a> is a teaching synthesis, not a claim that every expectation passes through a fixed sequence. One pathway may operate alone, or several may combine. Attention and interpretation can mediate each pathway—for example, symptom monitoring can alter physiology, and a manager’s interpretation can alter resource allocation—but they are not additional outcomes by themselves. The key identification question is which pathway changed what followed (Merton, 1948; Harris &amp; Rosenthal, 1985; Kirsch, 1985).</p>
 <div id="tbl-08-expectation-pathways" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-08-expectation-pathways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -704,24 +733,24 @@ Table&nbsp;6.2: Four pathways from expectation to outcome
 </thead>
 <tbody>
 <tr class="odd">
-<td>Attention</td>
-<td>What is monitored and retrieved.</td>
-<td>Expecting a symptom increases scanning for it.</td>
-</tr>
-<tr class="even">
-<td>Interpretation</td>
-<td>What ambiguous evidence is taken to mean.</td>
-<td>Nervous arousal becomes danger or readiness.</td>
-</tr>
-<tr class="odd">
 <td>Physiology</td>
 <td>Stress, pain, fatigue, satiety, and arousal regulation.</td>
 <td>A nocebo warning can amplify symptom experience.</td>
 </tr>
 <tr class="even">
-<td>Action</td>
+<td>Behavior</td>
 <td>Practice, avoidance, disclosure, trust, persistence, and feedback seeking.</td>
-<td>Low expectations reduce effort and opportunities to learn.</td>
+<td>Low expectations can reduce effort and opportunities to learn.</td>
+</tr>
+<tr class="odd">
+<td>Interpersonal response</td>
+<td>How teachers, managers, peers, or clinicians respond.</td>
+<td>A teacher may offer more challenge, patience, or feedback to a pupil expected to improve.</td>
+</tr>
+<tr class="even">
+<td>Resources and opportunities</td>
+<td>Time, budget, access, roles, and information.</td>
+<td>A forecast of failure may lead a project to be underfunded.</td>
 </tr>
 </tbody>
 </table>
@@ -734,8 +763,8 @@ Table&nbsp;6.2: Four pathways from expectation to outcome
 <p>If a patient expects pain relief, anxiety may fall, attention to pain may decrease, and endogenous pain-control systems may become more active. If a patient expects side effects, attention to bodily sensations may increase, ordinary sensations may be interpreted as symptoms, and anxiety may amplify discomfort.</p>
 <p>Nocebo effects raise a difficult ethical problem in medicine. Patients have a right to know risks. But the way risks are communicated can increase fear and symptoms. A doctor who says, “This drug often causes terrible nausea” may produce a different expectation than one who says, “Some people experience nausea, but many do not, and we have ways to manage it.” Both can be truthful, but they create different expectation environments.</p>
 <p>Ethical communication does not require hiding information. It requires communicating risks accurately without unnecessary threat amplification. Clinicians can validate concerns, provide balanced probabilities, explain what to monitor, and emphasize available support. The goal is neither deception nor careless optimism. The goal is informed expectation.</p>
-<p>Expectation also shapes taste, pleasure, and consumer experience. Plassmann and colleagues (2008) found that when people believed they were drinking more expensive wine, they reported greater pleasantness, and valuation-related brain activity increased, even when the wine was actually the same. Lee, Frederick, and Ariely (2006) found that beer preferences changed depending on whether people learned before or after tasting that vinegar had been added. Information changed experience, not merely post-hoc explanation.</p>
-<p>Marketing can produce placebo-like effects. Shiv, Carmon, and Ariely (2005) found that people who consumed an energy drink purchased at a discounted price performed worse on puzzle tasks than those who consumed the same drink at full price. The lower price apparently reduced expected efficacy. Again, the product did not change. Expectation changed performance.</p>
+<p>Expectation also shapes taste, pleasure, and consumer experience. Plassmann and colleagues (2008) found that a higher stated price for otherwise identical wine increased reported pleasantness and blood-oxygen-level-dependent activity in medial orbitofrontal cortex during tasting. This pattern is consistent with price information altering experienced valuation, but the imaging contrast does not identify a unique psychological mechanism or, by itself, rule out demand-related responding. Lee, Frederick, and Ariely (2006) found that beer preferences changed depending on whether people learned before or after tasting that vinegar had been added. Information can therefore alter reported experience, not merely a later verbal explanation, while the mechanism still requires a discriminating design.</p>
+<p>Marketing can produce placebo-like effects. Shiv, Carmon, and Ariely (2005) found that people who consumed an energy drink purchased at a discounted price performed worse on puzzle tasks than those who consumed the same drink at full price; related measures and follow-up conditions supported the authors’ expectancy account. The experiment establishes an effect of price information in those tasks. Reduced expected efficacy is the proposed and partly supported mediator—not proof that every price effect operates through expectation.</p>
 <p>Crum and Langer (2007) studied hotel room attendants whose work involved substantial physical activity. Some were informed that their work satisfied exercise recommendations; others were not. The informed group later showed improvements in measures such as weight, blood pressure, and perceived exercise. The study suggests that mindset about an activity can affect physiological outcomes, though such findings should be interpreted carefully and not turned into simplistic claims that belief alone determines health. Crum, Corbin, Brownell, and Salovey (2011) similarly found that beliefs about a milkshake’s indulgence influenced physiological satiety responses.</p>
 <p>Stress provides another example of interpretation becoming action. Crum, Salovey, and Achor (2013) found that representing stress as potentially enhancing rather than only debilitating changed how participants interpreted and responded to demanding situations. The practical claim is not that harmful overload becomes healthy if relabeled. It is that arousal is ambiguous: it can be carried forward as evidence of damage and incapacity or as energy for a meaningful challenge, and that interpretation can alter the response repertoire.</p>
 <p>Cultural expectations can also attach meaning to bodily events. Phillips, Ruth, and Wagner (1993) reported shorter survival among Chinese Americans whose birth years and diseases formed combinations treated as ill-fated in a five-phase cultural system. This example is historically influential because it proposes a path from shared belief to stress, behavior, care, and health. It also requires unusual caution: Smith’s (2006) reanalysis argued that the reported pattern was sensitive to analytical choices. The lesson is therefore not that astrology causes illness. It is that culturally learned expectations can plausibly shape experience and action, while striking observational results still require robust specification checks and replication.</p>
@@ -768,7 +797,7 @@ Table&nbsp;6.2: Four pathways from expectation to outcome
 <p>Stereotype threat occurs when people fear confirming a negative stereotype about a group to which they belong (Steele &amp; Aronson, 1995). Steele and Aronson found that Black students performed worse on difficult verbal tests when the test was framed as diagnostic of ability, making racial stereotypes about intellectual ability more relevant. When the same task was framed differently, performance gaps were reduced.</p>
 <p>Spencer, Steele, and Quinn (1999) found stereotype threat effects among women taking difficult math tests when gender stereotypes about math ability were made relevant. Shih, Pittinsky, and Ambady (1999) found that Asian American women’s math performance shifted depending on whether ethnic identity or gender identity was made salient. The same person can perform differently depending on which identity-linked expectation is activated.</p>
 <p>Cross-national variation points in the same anti-essentialist direction. Guiso and colleagues (2008) reported that gender gaps in mathematics were smaller in societies with greater gender equality, whereas gender differences in reading followed a different pattern. Such country-level associations do not identify a single causal mechanism, but they make one conclusion difficult to avoid: a performance gap is not a context-free measure of innate capacity.</p>
-<p>The mechanism is not simple. Stereotype threat may operate through anxiety, increased monitoring, working memory load, reduced sense of belonging, altered motivation, and interpretation of difficulty (Schmader et al., 2008). Meta-analyses show that effects vary by context, task, group, and methodology, and the literature has generated debate about effect sizes and boundary conditions (Flore &amp; Wicherts, 2015; Nguyen &amp; Ryan, 2008). But the core idea remains important: social meanings can enter performance through expectation.</p>
+<p>The mechanism is not simple. Stereotype threat may operate through anxiety, increased monitoring, working memory load, reduced sense of belonging, altered motivation, and interpretation of difficulty (Schmader et al., 2008). Meta-analyses show substantial heterogeneity by population, manipulation, task, outcome, and setting (Flore &amp; Wicherts, 2015; Nguyen &amp; Ryan, 2008). In a meta-analysis restricted toward features plausible in operational cognitive testing, Shewach, Sackett, and Quint (2019) estimated a small average effect (<span class="math inline">\(d=-.14\)</span>), found estimates from zero to small in operational and incentive-compatible subsets, and reported nontrivial evidence of publication bias. The defensible conclusion is therefore conditional: social meanings can affect performance in some settings, but a group difference or a difficult test is not by itself evidence that stereotype threat caused the result.</p>
 <p>A key feature of stereotype threat is that difficulty changes meaning. A hard problem is not merely hard. It becomes evidence that one may confirm a stereotype. That extra meaning consumes attention and increases pressure. In the terms developed in <em>Valuation</em>, the task is no longer just a task; it is filtered through an inner model of social evaluation.</p>
 <p>Stereotypes can also shape aging. Levy and Langer (1994) found that cultural beliefs about aging were associated with memory performance among older adults in different cultural groups. Levy (2009) and colleagues have argued that aging stereotypes can influence health through psychological, behavioral, and physiological pathways. In one longitudinal study, people with more positive self-perceptions of aging lived longer on average than those with more negative self-perceptions, even after controlling for several relevant factors (Levy et al., 2002). Negative aging stereotypes held earlier in life have also been linked to later cardiovascular events (Levy et al., 2009).</p>
 <p>These findings should not be interpreted as saying that aging is “all mindset.” Biology, healthcare, income, environment, discrimination, and physical conditions matter enormously. But beliefs about aging can influence activity, stress, motivation, social engagement, and interpretation of bodily changes. A person who believes decline is inevitable may stop exercising, learning, or seeking social connection. A person who believes growth and adaptation remain possible may act differently.</p>
@@ -1005,6 +1034,9 @@ Table&nbsp;6.3: Expectation pathways and ethical conditions
 </div>
 <div class="reference">
 <p>Shiv, B., Carmon, Z., &amp; Ariely, D. (2005). Placebo effects of marketing actions: Consumers may get what they pay for. Journal of Marketing Research, 42(4), 383–393.</p>
+</div>
+<div class="reference">
+<p>Shewach, O. R., Sackett, P. R., &amp; Quint, S. (2019). Stereotype threat effects in settings with features likely versus unlikely in operational test settings: A meta-analysis. <em>Journal of Applied Psychology, 104</em>(12), 1514–1534. https://doi.org/10.1037/apl0000420</p>
 </div>
 <div class="reference">
 <p>Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L., &amp; Macnamara, B. N. (2018). To what extent and under which circumstances are growth mind-sets important to academic achievement? Two meta-analyses. Psychological Science, 29(4), 549–571.</p>

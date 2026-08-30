@@ -15,7 +15,7 @@ from normalize_epub_toc import normalize_epub
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FILENAME = "Decision-Persuasion-and-Negotiation.epub"
+FILENAME = "Decision-in-the-Making.epub"
 SOURCE = ROOT / "_epub" / FILENAME
 TARGET = ROOT / "docs" / FILENAME
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="760" viewBox="0 0 1200 760"
+     role="img" aria-labelledby="title desc"
+     preserveAspectRatio="xMidYMid meet">
+  <title id="title">One ambiguous mark, two context-dependent readings</title>
+  <desc id="desc">Two rows contain the same central vector mark. Between 12 and 14, it is readily read as 13. Between A and C, it is readily read as B. A boundary note states that this is a demonstration of context-sensitive interpretation, not evidence for a specific neural mechanism.</desc>
+
+  <defs>
+    <style>
+      .figure-title { font: 700 38px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .subtitle { font: 22px Arial, Helvetica, sans-serif; fill: #53697a; }
+      .context-label { font: 700 20px Arial, Helvetica, sans-serif; letter-spacing: 1.4px; fill: #2f6f73; }
+      .sequence { font: 700 74px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .same-label { font: 700 20px Arial, Helvetica, sans-serif; fill: #8a5a21; }
+      .takeaway { font: 700 25px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .boundary { font: 20px Arial, Helvetica, sans-serif; fill: #53697a; }
+    </style>
+
+    <!-- Original ambiguous glyph: a separated stem and two-lobed curve can be read as 13 or B. -->
+    <g id="ambiguous-mark" fill="none" stroke="#17324d" stroke-width="11"
+       stroke-linecap="round" stroke-linejoin="round">
+      <path d="M -28,-58 L -28,58"/>
+      <path d="M -8,-58 C 37,-58 47,-31 14,0 C 47,29 37,58 -8,58"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ffffff"/>
+
+  <text class="figure-title" x="600" y="58" text-anchor="middle">One mark, two readings</text>
+  <text class="subtitle" x="600" y="92" text-anchor="middle">Read the middle mark in each row before comparing them.</text>
+
+  <!-- Number-context row -->
+  <rect x="90" y="130" width="1020" height="210" rx="24"
+        fill="#f5f9fb" stroke="#c9d6df" stroke-width="2"/>
+  <text class="context-label" x="135" y="177">NUMBER CONTEXT</text>
+  <line x1="135" y1="194" x2="1065" y2="194" stroke="#d9e3ea" stroke-width="2"/>
+
+  <rect x="530" y="205" width="140" height="118" rx="18"
+        fill="#fff4dc" stroke="#d89b3c" stroke-width="2.5"/>
+  <text class="sequence" x="420" y="295" text-anchor="middle">12</text>
+  <use href="#ambiguous-mark" transform="translate(600 264)"/>
+  <text class="sequence" x="780" y="295" text-anchor="middle">14</text>
+
+  <!-- Letter-context row -->
+  <rect x="90" y="370" width="1020" height="210" rx="24"
+        fill="#f3f8f6" stroke="#c7d9d1" stroke-width="2"/>
+  <text class="context-label" x="135" y="417">LETTER CONTEXT</text>
+  <line x1="135" y1="434" x2="1065" y2="434" stroke="#d5e2dd" stroke-width="2"/>
+
+  <rect x="530" y="445" width="140" height="118" rx="18"
+        fill="#fff4dc" stroke="#d89b3c" stroke-width="2.5"/>
+  <text class="sequence" x="420" y="535" text-anchor="middle">A</text>
+  <use href="#ambiguous-mark" transform="translate(600 504)"/>
+  <text class="sequence" x="780" y="535" text-anchor="middle">C</text>
+
+  <rect x="415" y="602" width="370" height="38" rx="19" fill="#fff4dc" stroke="#d89b3c" stroke-width="2"/>
+  <text class="same-label" x="600" y="627" text-anchor="middle">IDENTICAL VECTOR MARK</text>
+
+  <text class="takeaway" x="600" y="684" text-anchor="middle">Context changes the most plausible interpretation.</text>
+  <text class="boundary" x="600" y="719" text-anchor="middle">Demonstration—not evidence of a specific neural mechanism or effect size.</text>
+</svg>

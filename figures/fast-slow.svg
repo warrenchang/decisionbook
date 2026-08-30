@@ -1,26 +1,51 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs />
-  <title>Fast and reflective processing</title>
-  <desc>Automatic processing generates impressions; reflective processing can inspect, redirect, and train it.</desc>
-  <rect fill="white" height="650" width="1200" x="0" y="0" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="600" y="55">Fast answers and slow inspection</text>
-  <rect fill="#eaf3f8" height="260" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="400" x="80" y="150" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="280" y="223.99"><tspan x="280" dy="0">Automatic processing</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="280" y="252.11"><tspan x="280" dy="0">fast • associative • practiced</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="280" y="284.73"><tspan x="280" dy="0">impressions</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" x="280" y="317.89"><tspan x="280" dy="0">pattern recognition</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" x="280" y="350.03"><tspan x="280" dy="0">action tendencies</tspan></text>
-  <rect fill="#f7f1e8" height="260" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="400" x="720" y="150" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="920" y="223.99"><tspan x="920" dy="0">Reflective processing</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="920" y="252.11"><tspan x="920" dy="0">effortful • rule-guided • limited</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="920" y="284.73"><tspan x="920" dy="0">inspection</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" x="920" y="317.89"><tspan x="920" dy="0">simulation + comparison</tspan></text>
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" x="920" y="350.03"><tspan x="920" dy="0">inhibition + redesign</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="480" x2="720" y1="250" y2="250" />
-  <polygon fill="#17324d" points="720,250 707.0096189432334,257.5 707.0096189432334,242.5" />
-  <line stroke="#c56a2d" stroke-width="4" x1="720" x2="480" y1="340" y2="340" />
-  <polygon fill="#c56a2d" points="480,340 492.9903810567666,332.5 492.9903810567666,347.5" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="middle" x="600" y="500">Practice can make slow skills fast; reflection can redirect attention and train intuition.</text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" x="600" y="555">Neither mode is always rational. Reliability depends on the task, environment, and feedback.</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Type 1 and Type 2 processing features</title>
+  <desc id="desc">Two columns summarize features commonly associated with Type 1 and Type 2 processing. Type 1 is typically fast, automatic, low effort, associative, and cue driven. Type 2 is typically working-memory dependent, effortful, rule guided, and capable of hypothetical reasoning. Arrows show that reflective processing can inspect and train responses and that automatic processing supplies candidate answers. A boundary note states that these are processing-feature clusters, not two literal brain modules.</desc>
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#2f6f9f"/></marker>
+    <marker id="arrow-orange" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#c56a2d"/></marker>
+    <style>
+      .title{font:700 34px Arial,sans-serif;fill:#17324d}
+      .subtitle{font:19px Arial,sans-serif;fill:#607080}
+      .label{font:700 26px Arial,sans-serif;fill:#17324d}
+      .body{font:20px Arial,sans-serif;fill:#3f5668}
+      .small{font:18px Arial,sans-serif;fill:#607080}
+      .flow{fill:none;stroke-width:4;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text class="title" x="600" y="50" text-anchor="middle">Two clusters of processing features</text>
+  <text class="subtitle" x="600" y="82" text-anchor="middle">“System 1” and “System 2” are teaching labels—not two agents or anatomical brain systems.</text>
+
+  <rect x="70" y="125" width="430" height="365" rx="24" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+  <text class="label" x="285" y="174" text-anchor="middle">Type 1 features</text>
+  <text class="small" x="285" y="207" text-anchor="middle">often called “System 1”</text>
+  <g class="body">
+    <text x="120" y="258">• fast and relatively automatic</text>
+    <text x="120" y="304">• low demand on working memory</text>
+    <text x="120" y="350">• associative and cue driven</text>
+    <text x="120" y="396">• includes learned skills and habits</text>
+    <text x="120" y="442">• supplies impressions and responses</text>
+  </g>
+
+  <rect x="700" y="125" width="430" height="365" rx="24" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
+  <text class="label" x="915" y="174" text-anchor="middle">Type 2 features</text>
+  <text class="small" x="915" y="207" text-anchor="middle">often called “System 2”</text>
+  <g class="body">
+    <text x="750" y="258">• working-memory dependent</text>
+    <text x="750" y="304">• effortful and capacity limited</text>
+    <text x="750" y="350">• rule guided and sequential</text>
+    <text x="750" y="396">• supports hypothetical reasoning</text>
+    <text x="750" y="442">• can inspect or inhibit responses</text>
+  </g>
+
+  <path class="flow" d="M500 255 H700" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow-blue)"/>
+  <text class="small" x="595" y="238" text-anchor="middle">candidate answer</text>
+  <path class="flow" d="M700 390 H500" stroke="#c56a2d" stroke-width="4" marker-end="url(#arrow-orange)"/>
+  <text x="600" y="421" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#607080">inspect • redirect • train</text>
+
+  <rect x="170" y="535" width="860" height="95" rx="20" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2.5"/>
+  <text class="body" x="600" y="570" text-anchor="middle"><tspan x="600">Processes can combine features, and practice can change how a task is performed.</tspan><tspan x="600" dy="29">Neither cluster is inherently rational; reliability depends on task, environment, and feedback.</tspan></text>
+  <text class="subtitle" x="600" y="661" text-anchor="middle">Feature-based teaching synthesis grounded in controlled/automatic and dual-process research.</text>
 </svg>

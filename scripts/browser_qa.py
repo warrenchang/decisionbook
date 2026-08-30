@@ -106,7 +106,7 @@ def main() -> int:
         page.set_content(inline_page("index.html"), wait_until="load")
         check(
             "home-title",
-            page.locator("h1").first.inner_text().strip() == "Decision, Persuasion, and Negotiation",
+            page.locator("h1").first.inner_text().strip() == "Decision in the Making",
             page.title(),
         )
         part_count = page.locator("section.part-intro").count()

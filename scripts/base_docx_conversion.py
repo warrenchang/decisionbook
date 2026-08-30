@@ -1030,21 +1030,21 @@ SITE_TEMPLATE='''<!doctype html>
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page_title }} · Decision, Persuasion, and Negotiation</title>
+<title>{{ page_title }} · Decision in the Making</title>
 <meta name="description" content="{{ description|e }}">
 <link rel="stylesheet" href="{{ root }}assets/style.css">
 <script defer src="{{ root }}assets/site.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="topbar"><button class="menu-button" aria-label="Open navigation">☰</button><a class="brand" href="{{ root }}index.html">Decision, Persuasion, and Negotiation</a><div class="top-actions"><button id="search-button" aria-label="Search book">Search</button><button id="theme-button" aria-label="Toggle dark mode">◐</button></div></header>
+<header class="topbar"><button class="menu-button" aria-label="Open navigation">☰</button><a class="brand" href="{{ root }}index.html">Decision in the Making</a><div class="top-actions"><button id="search-button" aria-label="Search book">Search</button><button id="theme-button" aria-label="Toggle dark mode">◐</button></div></header>
 <div class="layout">
 <aside class="sidebar" aria-label="Book navigation"><div class="sidebar-inner"><a class="course-home" href="{{ root }}index.html">Course textbook</a>{{ nav|safe }}</div></aside>
 <main id="main" class="content">{{ content|safe }}<nav class="page-nav">{% if prev %}<a class="prev" href="{{ root }}{{ prev.href }}">← {{ prev.label }}</a>{% endif %}{% if next %}<a class="next" href="{{ root }}{{ next.href }}">{{ next.label }} →</a>{% endif %}</nav></main>
 <aside class="on-page" aria-label="On this page">{{ toc|safe }}</aside>
 </div>
 <dialog id="search-dialog"><form method="dialog"><button class="close-search">Close</button></form><h2>Search the textbook</h2><input id="search-input" type="search" placeholder="Search concepts, cases, and tools" autocomplete="off"><div id="search-results"></div></dialog>
-<footer><p>© 2026 Huanren Warren Zhang. Course textbook for Decision, Persuasion, and Negotiation.</p></footer>
+<footer><p>© 2026 Huanren Warren Zhang. <em>Decision in the Making</em>.</p></footer>
 </body></html>'''
 
 CSS='''
@@ -1148,8 +1148,8 @@ def build_site(chapters, appendices, all_refs, figs):
         cards.append(f'<section class="part-intro"><h2>Part {part}. {html.escape(pt)}</h2><p>{html.escape(desc)}</p><div class="chapter-card-grid">')
         for ch in [x for x in chapters if x.part==part]: cards.append(f'<a class="chapter-card" href="chapters/{ch.slug}.html"><small>Chapter {ch.num}</small><strong>{html.escape(ch.title)}</strong><span>{html.escape(ch.subtitle)}</span></a>')
         cards.append('</div></section>')
-    home=f'''<section class="hero"><p class="eyebrow">Student textbook · 2026 edition</p><h1>Decision, Persuasion, and Negotiation</h1><p>How minds choose, influence, connect, and bargain. This edition is organized as a continuous journey from private judgment to social influence, communication, negotiation, and decision hygiene.</p><div class="download-row"><a href="downloads/Decision_Persuasion_Negotiation_Student_Ebook.epub">Download EPUB</a><a href="references.html">Browse references</a><a href="about.html">Read editorial notes</a></div></section>{''.join(cards)}'''
-    hp=tpl.render(page_title='Home',description='Online textbook for Decision, Persuasion, and Negotiation.',root='',content=home,toc='',nav=nav,prev=None,next=pages[0]).replace('<body>','<body data-root="">'); (docs/'index.html').write_text(hp,encoding='utf-8')
+    home=f'''<section class="hero"><p class="eyebrow">Student textbook · 2026 edition</p><h1>Decision in the Making</h1><p>The behavioral science of choice, influence, and agreement. This edition follows the process through which decisions take shape, move between minds, and become shared action.</p><div class="download-row"><a href="downloads/Decision_Persuasion_Negotiation_Student_Ebook.epub">Download EPUB</a><a href="references.html">Browse references</a><a href="about.html">Read editorial notes</a></div></section>{''.join(cards)}'''
+    hp=tpl.render(page_title='Home',description='Online textbook for Decision in the Making.',root='',content=home,toc='',nav=nav,prev=None,next=pages[0]).replace('<body>','<body data-root="">'); (docs/'index.html').write_text(hp,encoding='utf-8')
     (docs/'search-index.json').write_text(json.dumps(search,ensure_ascii=False),encoding='utf-8')
 
 # ---------- reports/readme ----------
@@ -1184,7 +1184,7 @@ def write_support_files(chapters, old_refs, all_refs, removed_refs, unresolved):
     if unresolved: md += ['','## Unresolved citation strings','']+[f'- {x}' for x in unresolved]
     (OUT/'CITATION_AUDIT.md').write_text('\n'.join(md),encoding='utf-8')
     # README
-    readme=f'''# Decision, Persuasion, and Negotiation — online textbook
+    readme=f'''# Decision in the Making — online textbook
 
 This repository is ready to upload to GitHub. The student-facing website is already built in `docs/`; no local software is required to publish it.
 
@@ -1219,7 +1219,7 @@ The `docs/.nojekyll` file prevents Jekyll processing and allows the prebuilt sta
     (OUT/'README.md').write_text(readme,encoding='utf-8')
     (OUT/'.nojekyll').write_text('',encoding='utf-8')
     (OUT/'requirements.txt').write_text('markdown-it-py>=3.0\nJinja2>=3.1\nbeautifulsoup4>=4.12\nPyYAML>=6.0\n',encoding='utf-8')
-    (OUT/'CITATION.cff').write_text('''cff-version: 1.2.0\ntitle: "Decision, Persuasion, and Negotiation: How Minds Choose, Influence, Connect, and Bargain"\nmessage: "Please cite this textbook using the metadata below."\ntype: book\nauthors:\n  - family-names: Zhang\n    given-names: Huanren Warren\nyear: 2026\nversion: "2026 GitHub edition"\n''',encoding='utf-8')
+    (OUT/'CITATION.cff').write_text('''cff-version: 1.2.0\ntitle: "Decision in the Making: The Behavioral Science of Choice, Influence, and Agreement"\nmessage: "Please cite this textbook using the metadata below."\ntype: book\nauthors:\n  - family-names: Zhang\n    given-names: Huanren Warren\nyear: 2026\nversion: "2026 GitHub edition"\n''',encoding='utf-8')
     wf=OUT/'.github/workflows'; wf.mkdir(parents=True,exist_ok=True)
     (wf/'pages.yml').write_text('''name: Deploy static textbook to GitHub Pages\non:\n  push:\n    branches: ["main", "master"]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pages: write\n  id-token: write\nconcurrency:\n  group: pages\n  cancel-in-progress: true\njobs:\n  deploy:\n    environment:\n      name: github-pages\n      url: ${{ steps.deployment.outputs.page_url }}\n    runs-on: ubuntu-latest\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Configure Pages\n        uses: actions/configure-pages@v5\n      - name: Upload prebuilt site\n        uses: actions/upload-pages-artifact@v3\n        with:\n          path: docs\n      - name: Deploy\n        id: deployment\n        uses: actions/deploy-pages@v4\n''',encoding='utf-8')
 
@@ -1324,7 +1324,7 @@ def main():
     shutil.copy2(__file__,OUT/'scripts/source_conversion_pipeline.py')
 
     # Build combined EPUB source using PNG figures and no duplicate YAML front matter.
-    combined=['% Decision, Persuasion, and Negotiation','% Huanren Warren Zhang','% 2026 Edition','']
+    combined=['% Decision in the Making','% Huanren Warren Zhang','% 2026 Edition','']
     combined += ['# Preface: The Decision Point Is Usually Too Late','',
       'A visible choice is the end of a hidden process. Before anyone signs, buys, rejects, concedes, or walks away, attention has selected evidence, perception has interpreted it, expectations have shaped what seems likely, valuation has determined what matters, social cues have altered the field, and previous choices have become habits. This book begins upstream.','',
       'The revised structure follows a continuous movement from individual judgment to social influence, communication, negotiation, and decision hygiene. Each short chapter can be read independently, but the sequence is cumulative.','']
@@ -1345,7 +1345,7 @@ def main():
     # Build site before EPUB, then copy EPUB into downloads.
     build_site(chapters,appendices,all_ref_text,figs)
     # EPUB with embedded PNG figures.
-    cmd=f"cd {OUT} && pandoc book.md -o {EPUB} --toc --toc-depth=2 --metadata title='Decision, Persuasion, and Negotiation' --metadata author='Huanren Warren Zhang' --metadata lang='en'"
+    cmd=f"cd {OUT} && pandoc book.md -o {EPUB} --toc --toc-depth=2 --metadata title='Decision in the Making' --metadata author='Huanren Warren Zhang' --metadata lang='en'"
     rc=os.system(cmd)
     if rc!=0: raise RuntimeError('pandoc EPUB build failed')
     shutil.copy2(EPUB,OUT/'docs/downloads'/EPUB.name)
