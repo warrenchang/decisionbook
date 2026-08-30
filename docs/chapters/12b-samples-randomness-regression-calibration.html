@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A cumulative journey through how choices take shape, how minds influence one another, and how people construct better agreements and decision environments.">
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
 
 <title>15&nbsp; Samples, Randomness, Regression, and Calibration – Decision in the Making</title>
 <style>
@@ -307,20 +307,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/45-subjective-well-being.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Subjective Well-Being: Income Is Not the Same as a Good Life</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
   </div>
 </li>
       </ul>
@@ -355,7 +355,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Learning, Conformity, and Cascades</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -373,7 +373,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Authority, Responsibility, and Pluralistic Ignorance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
   </div>
 </li>
       </ul>
@@ -690,7 +690,17 @@ Y=\theta+\varepsilon,
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Monty Hall and the two-child problem are useful only when the information protocol is explicit. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; switching then wins with probability <span class="math inline">\(2/3\)</span> (Selvin, 1975). If the host sometimes chooses randomly or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
+<p>Monty Hall and the two-child problem are useful only when the information protocol is explicit. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Switching then wins with probability <span class="math inline">\(2/3\)</span> (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
+<div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds. A boundary note says that different host rules can change the answer.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/monty-hall-protocol.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds. A boundary note says that different host rules can change the answer.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15.1: The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch; a different host rule can change the inference.
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>

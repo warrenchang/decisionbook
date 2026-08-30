@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A cumulative journey through how choices take shape, how minds influence one another, and how people construct better agreements and decision environments.">
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
 
 <title>24&nbsp; Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait – Decision in the Making</title>
 <style>
@@ -307,20 +307,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/42-mental-accounting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  <a href="../chapters/19-habits-when-decisions-move-downstairs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/45-subjective-well-being.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Subjective Well-Being: Income Is Not the Same as a Good Life</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
   </div>
 </li>
       </ul>
@@ -355,7 +355,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/22-social-learning-mimicry-and-attribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Learning, Conformity, and Cascades</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -373,7 +373,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/24-authority-bystanders-and-influence-triggers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Authority, Responsibility, and Pluralistic Ignorance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
   </div>
 </li>
       </ul>
@@ -985,6 +985,17 @@ Table&nbsp;24.6: Model demonstrations require parameter and process provenance
 </tbody>
 </table>
 </div>
+</figure>
+</div>
+<p>Figure <a href="#fig-schelling-emergence" class="quarto-xref">Figure&nbsp;<span>24.3</span></a> applies that standard rather than relying on parameter-free screenshots. In one seeded run, local moves raise the average same-group-neighbour share from 0.48 to 0.68. The figure displays the core parameters; the retained generator also fixes population counts, isolated-agent handling, shuffled sequential updates, vacancy construction, tie-breaking, and the pseudorandom implementation. It shows what those declared rules can produce—not that the same process, threshold, or motive generated residential segregation in a real city.</p>
+<div id="fig-schelling-emergence" class="quarto-float quarto-figure quarto-figure-center" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/schelling-emergence.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.3: One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.
+</figcaption>
 </figure>
 </div>
 <p>Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner’s-dilemma dynamics (Wilensky, 2002), and a specific ethnocentrism model (Hammond &amp; Axelrod, 2006; Wilensky, 2003). These are executable hypotheses under declared rules, not photographs of how real populations must behave.</p>

@@ -89,6 +89,17 @@ async function main() {
       ["fig-fluency-pathway", "epub-figure-13-2.png"],
       ["fig-reward-prediction-error-shift", "epub-reward-prediction-error.png"],
       ["fig-finance-event-study-drift", "epub-event-study.png"],
+      ["fig-social-learning-culture", "epub-figure-26-1.png"],
+      ["fig-norm-message-diagnostic", "epub-figure-26-4.png"],
+      ["fig-social-pathways", "epub-figure-26-5.png"],
+      ["fig-stroop-interference-lab", "epub-stroop-interference.png"],
+      ["fig-perception-context-lab", "epub-perception-context.png"],
+      ["fig-monty-hall-protocol", "epub-monty-hall.png"],
+      ["fig-assumed-choice-eggs", "epub-assumed-choice-eggs.png"],
+      ["fig-choice-blindness-swap", "epub-choice-blindness.png"],
+      ["fig-asch-line-comparison", "epub-asch-lines.png"],
+      ["fig-schelling-emergence", "epub-schelling-emergence.png"],
+      ["fig-fairness-entitlements-redraw", "epub-fairness-entitlements.png"],
       ["tbl-self-fulfilling-self-defeating", "epub-table-6-1.png"],
     ];
     for (const [id, output] of captures) {
@@ -109,6 +120,17 @@ async function main() {
     const aiText = await page.locator("#tbl-ai-prediction-judgment-causation").innerText();
     if (!/Valuation/.test(aiText) || /\nJudgment\n/.test(aiText)) issues.push("EPUB Table 4.1 does not use Valuation");
     await context.close();
+
+    const mobileContext = await browser.newContext({ viewport: { width: 390, height: 844 }, colorScheme: "light" });
+    const mobilePage = await mobileContext.newPage();
+    for (const [id, output] of captures) {
+      const file = fileContaining(files, `id="${id}"`);
+      await mobilePage.goto(pathToFileURL(file).href, { waitUntil: "domcontentloaded" });
+      const locator = mobilePage.locator(`#${id}`).first();
+      await locator.scrollIntoViewIfNeeded();
+      await locator.screenshot({ path: path.join(screenshotDir, output.replace(/\.png$/, "-mobile.png")) });
+    }
+    await mobileContext.close();
   } finally {
     await browser.close();
   }

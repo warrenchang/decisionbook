@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **751**
+Unique references in the master union: **758**
 
-Chapter reference blocks: **821**
+Chapter reference blocks: **831**
 
 Unresolved author–year citations: **0**
 
@@ -31,16 +31,16 @@ Unresolved author–year citations: **0**
 | Prospect Theory: Gains and Losses Begin at a Reference Point | 13 | 0 |
 | Decisions from Experience: When Rare Events Are Not Encountered | 18 | 0 |
 | Intertemporal Decision-Making: Why Later Loses to Now | 27 | 0 |
-| Habits, Wanting, and Self-Control | 17 | 0 |
 | Mental Accounting: Money Is Fungible; Minds Label It | 21 | 0 |
-| Subjective Well-Being: Income Is Not the Same as a Good Life | 16 | 0 |
+| Habits, Wanting, and Self-Control | 17 | 0 |
+| Deciding for a Better Life: Satisfaction, Connection, and Meaning | 18 | 0 |
 | Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
 | Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |
 | Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 24 | 0 |
-| Social Learning, Conformity, and Cascades | 27 | 0 |
+| Social Norms and Conformity: When Other People Become Evidence | 29 | 0 |
 | Markets, Mispricing, and Bubbles | 26 | 0 |
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
-| Authority, Responsibility, and Pluralistic Ignorance | 9 | 0 |
+| Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 30 | 0 |
 | Why Stories Move Minds | 10 | 0 |
 | Building an Evidence-Aligned Message | 13 | 0 |

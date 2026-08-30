@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">Three demonstrations of context-dependent appearance</title>
+  <desc id="desc">Three panels show equal line segments with different fins, equal center circles with different surrounding circles, and identical gray patches on dark and light backgrounds. The targets are physically identical within each comparison even though they may look different.</desc>
+  <style>
+    .title{font:700 34px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#183047}
+    .subtitle{font:500 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#52677a}
+    .panel-title{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#183047}
+    .label{font:600 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#314b61}
+    .small{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#52677a}
+    .foot{font:600 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#314b61}
+  </style>
+  <rect x="18" y="18" width="1164" height="654" rx="28" fill="#f7f9fc" stroke="#9fb2c3" stroke-width="2"/>
+  <text x="600" y="67" class="title" text-anchor="middle">CONTEXT CHANGES APPEARANCE</text>
+  <text x="600" y="101" class="subtitle" text-anchor="middle">The marked targets are physically identical within each panel; compare appearance with measurement.</text>
+
+  <rect x="48" y="132" width="346" height="450" rx="22" fill="#ffffff" stroke="#bfd0dd" stroke-width="2"/>
+  <text x="221" y="173" class="panel-title" text-anchor="middle">1  Line context</text>
+  <text x="221" y="204" class="small" text-anchor="middle">Which red shaft looks longer?</text>
+  <line x1="121" y1="295" x2="321" y2="295" stroke="#c44e52" stroke-width="7" stroke-linecap="round"/>
+  <path d="M121 295 L151 265 M121 295 L151 325 M321 295 L291 265 M321 295 L291 325" fill="none" stroke="#314b61" stroke-width="5" stroke-linecap="round"/>
+  <line x1="121" y1="405" x2="321" y2="405" stroke="#c44e52" stroke-width="7" stroke-linecap="round"/>
+  <path d="M121 405 L91 375 M121 405 L91 435 M321 405 L351 375 M321 405 L351 435" fill="none" stroke="#314b61" stroke-width="5" stroke-linecap="round"/>
+  <path d="M121 500 V520 M321 500 V520 M121 510 H321" fill="none" stroke="#7d91a2" stroke-width="2"/>
+  <text x="221" y="550" class="label" text-anchor="middle">Equal 200-unit shafts</text>
+
+  <rect x="427" y="132" width="346" height="450" rx="22" fill="#ffffff" stroke="#bfd0dd" stroke-width="2"/>
+  <text x="600" y="173" class="panel-title" text-anchor="middle">2  Size context</text>
+  <text x="600" y="204" class="small" text-anchor="middle">Which blue centre looks larger?</text>
+  <g fill="#d9e2e9" stroke="#70869a" stroke-width="2">
+    <circle cx="520" cy="262" r="12"/><circle cx="561" cy="285" r="12"/><circle cx="578" cy="327" r="12"/><circle cx="561" cy="369" r="12"/>
+    <circle cx="520" cy="392" r="12"/><circle cx="479" cy="369" r="12"/><circle cx="462" cy="327" r="12"/><circle cx="479" cy="285" r="12"/>
+  </g>
+  <circle cx="520" cy="327" r="34" fill="#2d7fab" stroke="#175b7e" stroke-width="3"/>
+  <g fill="#d9e2e9" stroke="#70869a" stroke-width="2">
+    <circle cx="680" cy="259" r="35"/><circle cx="739" cy="294" r="35"/><circle cx="739" cy="360" r="35"/>
+    <circle cx="680" cy="395" r="35"/><circle cx="621" cy="360" r="35"/><circle cx="621" cy="294" r="35"/>
+  </g>
+  <circle cx="680" cy="327" r="34" fill="#2d7fab" stroke="#175b7e" stroke-width="3"/>
+  <text x="600" y="550" class="label" text-anchor="middle">Equal 34-unit centre circles</text>
+
+  <rect x="806" y="132" width="346" height="450" rx="22" fill="#ffffff" stroke="#bfd0dd" stroke-width="2"/>
+  <text x="979" y="173" class="panel-title" text-anchor="middle">3  Lightness context</text>
+  <text x="979" y="204" class="small" text-anchor="middle">Which centre patch looks lighter?</text>
+  <rect x="843" y="247" width="136" height="188" rx="12" fill="#24384d"/>
+  <rect x="979" y="247" width="136" height="188" rx="12" fill="#e4e9ed"/>
+  <rect x="883" y="301" width="56" height="80" rx="6" fill="#9aa4ad" stroke="#ffffff" stroke-opacity="0.25"/>
+  <rect x="1019" y="301" width="56" height="80" rx="6" fill="#9aa4ad" stroke="#314b61" stroke-opacity="0.25"/>
+  <path d="M883 477 H939 M1019 477 H1075" stroke="#9aa4ad" stroke-width="12" stroke-linecap="round"/>
+  <text x="979" y="550" class="label" text-anchor="middle">Identical #9AA4AD patches</text>
+
+  <rect x="92" y="608" width="1016" height="42" rx="21" fill="#e9f2f7" stroke="#9fbfd0"/>
+  <text x="600" y="635" class="foot" text-anchor="middle">Measure the target, not the impression. These demonstrations do not identify a single neural mechanism.</text>
+</svg>

@@ -11,9 +11,9 @@ NODES = [
     ("context", ["Context &", "information"]),
     ("notice", ["Notice &", "interpret"]),
     ("construct", ["Construct", "options"]),
-    ("predict", ["Predict &", "value"]),
-    ("choose", ["Choose &", "commit"]),
-    ("act", ["Act"]),
+    ("predict", ["Predict"]),
+    ("value", ["Value"]),
+    ("choose", ["Choose,", "commit", "& act"]),
     ("learn", ["Observe &", "learn"]),
 ]
 
@@ -22,16 +22,16 @@ MODE_KEYS = {f"mode:{label.lower()}" for label in MODES}
 
 VARIANTS = {
     "master-loop.svg": set(),
-    "master-loop-part-1.svg": {"context", "notice", "predict", "construct", "choose", "act", "learn"},
-    "master-loop-part-2.svg": {"notice", "predict", "learn"},
-    "master-loop-part-3.svg": {"predict", "choose", "act", "learn"},
-    "master-loop-interlude.svg": {"predict", "choose", "act", "learn", "mode:coordinate"},
+    "master-loop-part-1.svg": {"context", "notice", "construct", "predict", "value", "choose", "learn"},
+    "master-loop-part-2.svg": {"notice", "predict", "value", "learn"},
+    "master-loop-part-3.svg": {"predict", "value", "choose", "learn"},
+    "master-loop-interlude.svg": {"predict", "value", "choose", "learn", "mode:coordinate"},
     "master-loop-part-4.svg": {
-        "predict", "construct", "choose", "act", "learn", "mode:influence", "mode:coordinate"
+        "construct", "predict", "value", "choose", "learn", "mode:influence", "mode:coordinate"
     },
-    "master-loop-part-5.svg": {"notice", "predict", "mode:ask", "mode:influence"},
-    "master-loop-part-6.svg": {"construct", "choose", "act", "mode:ask", "mode:coordinate", "mode:negotiate"},
-    "master-loop-part-7.svg": {"context", "construct", "act", "learn", "mode:ask", "mode:design"},
+    "master-loop-part-5.svg": {"notice", "predict", "value", "mode:ask", "mode:influence"},
+    "master-loop-part-6.svg": {"construct", "choose", "mode:ask", "mode:coordinate", "mode:negotiate"},
+    "master-loop-part-7.svg": {"context", "construct", "choose", "learn", "mode:ask", "mode:design"},
 }
 
 
@@ -45,15 +45,15 @@ def text_block(x: int, y: int, lines: list[str], color: str) -> str:
 
 def render(active: set[str]) -> str:
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="610" viewBox="0 0 1400 610" role="img" aria-labelledby="title desc">',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="570" viewBox="0 0 1400 570" role="img" aria-labelledby="title desc">',
         '<title id="title">The recursive decision loop and its social environment</title>',
-        '<desc id="desc">Context and information feed noticing and interpretation, option construction, prediction and valuation, choice, action, and learning. Other minds, institutions, and designed environments can alter every function.</desc>',
+        '<desc id="desc">Context and information feed noticing and interpretation, option construction, prediction, valuation, choosing, commitment and action, and learning. A shared influence rail shows that other minds, institutions, and designed environments can alter every function.</desc>',
         '<defs>',
         '<marker id="arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5,0.8 L9,4 L0.5,7.2 z" fill="#587189"/></marker>',
         '<marker id="arrow-accent" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5,0.8 L9,4 L0.5,7.2 z" fill="#c44e52"/></marker>',
         '<style>.node-label{font:600 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.small{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.outer{font:650 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mode{font:600 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}</style>',
         '</defs>',
-        '<rect x="18" y="18" width="1364" height="574" rx="28" fill="#f7f9fc" stroke="#9fb2c3" stroke-width="2"/>',
+        '<rect x="18" y="18" width="1364" height="534" rx="28" fill="#f7f9fc" stroke="#9fb2c3" stroke-width="2"/>',
     ]
 
     social_active = bool(active & MODE_KEYS) or not active
@@ -62,13 +62,16 @@ def render(active: set[str]) -> str:
     parts.extend([
         f'<rect x="58" y="48" width="1284" height="112" rx="20" fill="{outer_fill}" stroke="{outer_stroke}" stroke-width="3"/>',
         '<text x="700" y="86" class="outer" fill="#183047" text-anchor="middle">OTHER MINDS, INSTITUTIONS, AND DESIGNED ENVIRONMENTS</text>',
-        '<text x="700" y="122" class="small" fill="#4c6173" text-anchor="middle">can change what is noticed, interpreted, possible, predicted, valued, chosen, reinforced, and learned</text>',
-        '<path d="M700 160 L700 226" fill="none" stroke="#587189" stroke-width="3" marker-end="url(#arrow)"/>',
+        '<text x="700" y="122" class="small" fill="#4c6173" text-anchor="middle">can change what is available, noticed, interpreted, possible, predicted, valued, chosen, reinforced, and learned</text>',
+        '<path d="M700 160 V190 M130 190 H1270" fill="none" stroke="#587189" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>',
     ])
 
     # Leave a full 36 px between equivalent nodes.  This keeps a visible shaft
     # behind each compact 10 px arrowhead at both browser and EPUB sizes.
     x0, gap, w, h, y = 53, 36, 154, 108, 226
+    for idx in range(len(NODES)):
+        cx = x0 + idx * (w + gap) + w // 2
+        parts.append(f'<path d="M{cx} 190 V{y}" fill="none" stroke="#587189" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>')
     for idx, (key, lines) in enumerate(NODES):
         x = x0 + idx * (w + gap)
         is_active = key in active or not active
@@ -102,7 +105,6 @@ def render(active: set[str]) -> str:
         stroke = "#c44e52" if mode_active else "#9aabb8"
         parts.append(f'<rect x="{x}" y="{my}" width="{mw}" height="58" rx="29" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
         parts.append(f'<text x="{x + mw/2}" y="{my+37}" class="mode" fill="#4b3a36" text-anchor="middle">{label}</text>')
-    parts.append('<text x="700" y="558" class="small" fill="#607282" text-anchor="middle">interaction modes—not a required sequence</text>')
     parts.append('</svg>')
     return "\n".join(parts) + "\n"
 

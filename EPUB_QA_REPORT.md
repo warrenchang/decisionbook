@@ -39,9 +39,14 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Decisions from Experience | **PASS** |
 | Required content: Intertemporal Decision-Making | **PASS** |
 | Required content: Mental Accounting | **PASS** |
+| Required content: Deciding for a Better Life | **PASS** |
 | Required content: Behavioral Finance | **PASS** |
 | Required content: Asset Bubbles | **PASS** |
 | Required content: Subjective Well-Being | **PASS** |
+| Required content: Social Norms and Conformity | **PASS** |
+| Required content: Descriptive norm | **PASS** |
+| Required content: Injunctive norm | **PASS** |
+| Required content: Groupthink | **PASS** |
 | Required content: Strategic Interdependence | **PASS** |
 | Required content: Behavioral Game Theory | **PASS** |
 | Required content: panda | **PASS** |

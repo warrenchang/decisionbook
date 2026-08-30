@@ -131,9 +131,20 @@ async function main() {
       ["chapters/08-expectations-that-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-6-1-desktop.png"],
       ["chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-desktop.png"],
       ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-personal-mimicry-crossed-arms", "personal-mimicry-desktop.png"],
+      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-learning-culture", "figure-26-1-desktop.png"],
+      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-norm-message-diagnostic", "figure-26-4-desktop.png"],
+      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-pathways", "figure-26-5-desktop.png"],
       ["chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-desktop.png"],
       ["chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-desktop.png"],
       ["chapters/36-choice-architecture.html", "#fig-choice-architecture-simplified-remote", "simplified-remote-desktop.png"],
+      ["chapters/04-fast-answers-slow-inspection.html", "#fig-stroop-interference-lab", "stroop-interference-desktop.png"],
+      ["chapters/06-the-predictive-mind.html", "#fig-perception-context-lab", "perception-context-desktop.png"],
+      ["chapters/12b-samples-randomness-regression-calibration.html", "#fig-monty-hall-protocol", "monty-hall-desktop.png"],
+      ["chapters/15-frames-change-the-decision.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-desktop.png"],
+      ["chapters/18-the-narrator-after-the-choice.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
+      ["chapters/22-social-learning-mimicry-and-attribution.html", "#fig-asch-line-comparison", "asch-lines-desktop.png"],
+      ["chapters/47-behavioral-game-theory.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
+      ["chapters/48-cooperation-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-desktop.png"],
     ];
     for (const [relative, selector, output] of screenshots) await screenshotFigure(page, relative, selector, output);
     await context.close();
@@ -147,8 +158,19 @@ async function main() {
       "figure-13-2-mobile.png",
     );
     await screenshotFigure(mobilePage, "chapters/06-the-predictive-mind.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-norm-message-diagnostic", "figure-26-4-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-social-pathways", "figure-26-5-mobile.png");
     await screenshotFigure(mobilePage, "chapters/34-mesos-contingent-contracts-and-better-agreements.html", "#fig-lie-cues-belief-gap", "lie-cues-mobile.png");
     await screenshotFigure(mobilePage, "chapters/36-choice-architecture.html", "#fig-mpg-fuel-use", "mpg-fuel-use-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/04-fast-answers-slow-inspection.html", "#fig-stroop-interference-lab", "stroop-interference-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/06-the-predictive-mind.html", "#fig-perception-context-lab", "perception-context-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/12b-samples-randomness-regression-calibration.html", "#fig-monty-hall-protocol", "monty-hall-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/15-frames-change-the-decision.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/18-the-narrator-after-the-choice.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/22-social-learning-mimicry-and-attribution.html", "#fig-asch-line-comparison", "asch-lines-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/47-behavioral-game-theory.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/48-cooperation-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-mobile.png");
     await mobileContext.close();
 
     const validationContext = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
@@ -165,10 +187,10 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 92 distinct visual assets and 94 configured placements:
+    // The book contains 100 distinct visual assets and 102 configured placements:
     // the base loop is deliberately repeated as a navigation device.
-    if (totalByViewport.desktop !== 94 || totalByViewport.mobile !== 94) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 94 in each viewport`);
+    if (totalByViewport.desktop !== 102 || totalByViewport.mobile !== 102) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 102 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`Table 6.1 has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");
