@@ -24,6 +24,7 @@ OPF = "http://www.idpf.org/2007/opf"
 DC = "http://purl.org/dc/elements/1.1/"
 CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 NCX = "http://www.daisy.org/z3986/2005/ncx/"
+MATHML = "http://www.w3.org/1998/Math/MathML"
 
 EXPECTED_PARTS = [
     "Part I. How a Choice Takes Shape",
@@ -448,6 +449,40 @@ def main() -> int:
             not overnested_callout_titles,
             ", ".join(overnested_callout_titles[:5]),
         )
+
+        appendix_d = next(
+            (
+                (path, root)
+                for path, root in parsed_chapters.items()
+                if "Rational Choice and Decision Analysis" in normalized_text(root)
+            ),
+            None,
+        )
+        check("Appendix D is present for mathematics QA", appendix_d is not None)
+        if appendix_d is not None:
+            appendix_d_path, appendix_d_root = appendix_d
+            inline_math = [
+                element
+                for element in appendix_d_root.findall(f".//{{{MATHML}}}math")
+                if element.get("display") == "inline"
+            ]
+            empty_inline_math = [element for element in inline_math if not normalized_text(element)]
+            appendix_d_text = normalized_text(appendix_d_root)
+            check(
+                "Appendix D packages its inline formulas as MathML",
+                len(inline_math) >= 100,
+                f"{appendix_d_path}: found {len(inline_math)} inline MathML elements",
+            )
+            check(
+                "Every Appendix D inline MathML formula contains content",
+                not empty_inline_math,
+                f"{appendix_d_path}: found {len(empty_inline_math)} empty inline formulas",
+            )
+            check(
+                "Appendix D contains no empty-parenthesis math loss",
+                not re.search(r"\b(?:Let|where|Suppose|when|If)\s+\(\)", appendix_d_text),
+                appendix_d_path,
+            )
 
         broken_content_links: list[str] = []
         empty_image_alts: list[str] = []

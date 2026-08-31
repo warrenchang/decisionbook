@@ -47,6 +47,10 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
+| Appendix D is present for mathematics QA | **PASS** |
+| Appendix D packages its inline formulas as MathML | **PASS** |
+| Every Appendix D inline MathML formula contains content | **PASS** |
+| Appendix D contains no empty-parenthesis math loss | **PASS** |
 | Every internal content link and fragment resolves | **PASS** |
 | Every packaged content image has nonempty alternative text | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |

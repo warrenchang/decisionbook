@@ -27,6 +27,7 @@ ID = re.compile(r"\{[^}\n]*#([A-Za-z][\w:.-]*)[^}\n]*\}")
 FIGURE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)\{([^}\n]*)\}")
 QMD_LINK = re.compile(r"\[[^\]]+\]\(([^)#?]+\.qmd)(?:#[^)]+)?\)")
 REDUNDANT_FIGURE_XREF = re.compile(r"\bFigures?\s+@fig-[A-Za-z0-9_-]+")
+LEGACY_INLINE_MATH_DELIMITER = re.compile(r"\\[()]")
 BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL)
 REQUIRED_PREFIXES = (
@@ -158,6 +159,16 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
 
     for chapter in chapters:
         text = chapter.read_text(encoding="utf-8")
+        legacy_math = LEGACY_INLINE_MATH_DELIMITER.findall(text)
+        if legacy_math:
+            issues.append(
+                Issue(
+                    "error",
+                    "inline-math-delimiter",
+                    rel(chapter),
+                    f"Found {len(legacy_math)} LaTeX-style inline delimiter(s); use $...$ so Quarto renders the formula.",
+                )
+            )
         for match in REDUNDANT_FIGURE_XREF.finditer(text):
             issues.append(
                 Issue(
@@ -246,6 +257,16 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
             issues.append(Issue("error", "missing-book-source", rel(source), "Configured book source does not exist."))
             continue
         text = source.read_text(encoding="utf-8")
+        legacy_math = LEGACY_INLINE_MATH_DELIMITER.findall(text)
+        if legacy_math:
+            issues.append(
+                Issue(
+                    "error",
+                    "inline-math-delimiter",
+                    rel(source),
+                    f"Found {len(legacy_math)} LaTeX-style inline delimiter(s); use $...$ so Quarto renders the formula.",
+                )
+            )
         for match in REDUNDANT_FIGURE_XREF.finditer(text):
             issues.append(
                 Issue(
