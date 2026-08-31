@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/05-valuation-how-options-become-worth-choosing.html" rel="next">
+<link href="../chapters/05-expectations-when-predictions-become-causes.html" rel="next">
 <link href="../chapters/03-attention-what-becomes-evidence.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -166,14 +166,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -527,7 +527,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#two-meanings-of-prediction" id="toc-two-meanings-of-prediction" class="nav-link" data-scroll-target="#two-meanings-of-prediction">Two meanings of prediction</a></li>
   <li><a href="#prediction-error-and-precision" id="toc-prediction-error-and-precision" class="nav-link" data-scroll-target="#prediction-error-and-precision">Prediction, error, and precision</a></li>
   <li><a href="#when-inner-models-helpand-when-they-stop-learning" id="toc-when-inner-models-helpand-when-they-stop-learning" class="nav-link" data-scroll-target="#when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</a></li>
-  <li><a href="#the-practical-goal-is-calibration-not-fewer-predictions" id="toc-the-practical-goal-is-calibration-not-fewer-predictions" class="nav-link" data-scroll-target="#the-practical-goal-is-calibration-not-fewer-predictions">The practical goal is calibration, not fewer predictions</a></li>
+  <li><a href="#research-lens-calibration-in-complex-cases" id="toc-research-lens-calibration-in-complex-cases" class="nav-link" data-scroll-target="#research-lens-calibration-in-complex-cases">Research Lens: calibration in complex cases</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -629,14 +629,8 @@ Table&nbsp;4.1: Predictive processing and predictive judgment ask different ques
 </figure>
 </div>
 <p>The first asks, in effect, <strong>“What is producing the signals I am receiving?”</strong> The second asks <strong>“What is likely to happen if this option is chosen?”</strong> Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. A theory of perceptual inference does not by itself forecast hospital readmission, estimate a project’s probability of success, or determine whether an outcome is desirable.</p>
-<p>This chapter stays with the first meaning: how internal models help construct perception and guide sampling. Chapter 6 examines expectations that alter behavior and outcomes; Chapters 14 and 15 develop disciplined forecasts; and Chapter 41 separates machine prediction from valuation, intervention, decision, and responsibility.</p>
-<p>This is why illusions are so useful. Illusions are not merely tricks. They reveal the assumptions the visual system uses to construct experience.</p>
-<p>Consider brightness and shadow illusions. Two regions with the same physical luminance can appear different because the visual system interprets one as being in shadow and the other as being in light. Adelson’s checker-shadow illusion is a famous example: squares with identical luminance appear different because the brain estimates surface reflectance by taking illumination into account (Adelson, 2000). The visual system is not measuring raw light; it is inferring surfaces under lighting conditions.</p>
-<p>Shape-from-shading illusions reveal another assumption: light usually comes from above. When we see patterns of light and dark, the brain uses a “light-from-above” prior to infer whether shapes are bumps or dents (Ramachandran, 1988). The same image can appear as a raised surface or a hollow depending on orientation. The sensory input is the same; the inferred cause changes.</p>
-<p>Faces provide another example. Humans have strong priors about faces because faces are socially important. The Thatcher illusion shows that grotesque changes to facial features are much harder to notice when a face is upside down than when it is upright (Thompson, 1980). We have powerful models for upright faces, weaker models for inverted ones. Perception depends on the match between sensory input and learned models.</p>
-<p>The Kanizsa triangle demonstrates how the visual system constructs edges and shapes not physically present in the image (Kanizsa, 1976). We perceive a bright triangle because the arrangement suggests an occluding surface. The brain infers a coherent object from incomplete evidence.</p>
-<p>Body ownership can also be inferred. In the rubber hand illusion, a visible rubber hand is stroked in synchrony with a participant’s hidden real hand. Many participants begin to feel as if the rubber hand is part of their body (Botvinick &amp; Cohen, 1998). The brain integrates visual, tactile, and proprioceptive evidence and infers a common cause. Body ownership, which feels immediate and obvious, is partly constructed.</p>
-<p>These examples show that perception is active interpretation. The brain uses prior knowledge because sensory information is ambiguous. A given retinal image could be caused by many possible arrangements of objects, lighting, distance, and movement. Perception resolves ambiguity by using assumptions that usually work.</p>
+<p>This chapter stays with the first meaning: how internal models help construct perception and guide sampling. Chapter 5 examines consequence forecasts and expectations that alter behavior and outcomes; Chapters 14 and 15 develop disciplined probability judgment and calibration; and Chapter 41 separates machine prediction from valuation, intervention, decision, and responsibility.</p>
+<p>Illusions are useful because they hold parts of the signal constant while changing the context or prior that gives it meaning. Equal luminance can look different when one patch is interpreted as lying in shadow (Adelson, 2000); the same shading can imply a bump or dent because light is usually expected from above (Ramachandran, 1988); and synchronized visual and tactile signals can alter experienced body ownership (Botvinick &amp; Cohen, 1998). These demonstrations do not prove one neural implementation. They establish the narrower point needed here: sensory input underdetermines interpretation, so learned assumptions help resolve it.</p>
 <p>This is adaptive. If perception required complete data, action would be too slow. Priors allow the brain to act quickly in uncertain environments. But priors can also mislead.</p>
 <p>A person afraid of spiders may perceive a spider as larger or more threatening than another person would. Research suggests that fear and desire can influence perceptual judgments of distance, size, and slope, although the interpretation of such effects remains debated (Balcetis &amp; Dunning, 2010; Proffitt, 2006; Stefanucci &amp; Proffitt, 2009). A person with social anxiety may interpret neutral expressions as hostile. A medical student who has just learned about a disease may notice normal bodily sensations and interpret them as symptoms. A manager expecting resistance may perceive questions from employees as opposition rather than curiosity.</p>
 <p>Perception is constrained by the world, but not dictated by it. It is neither pure reality nor pure imagination. It is a controlled construction: a best guess, shaped by evidence and prior models.</p>
@@ -683,7 +677,6 @@ Figure&nbsp;4.3: A predictive-processing teaching synthesis. An internal generat
 <p>Two objects must be kept separate. The <strong>generative process</strong> is the world and body that actually produce observations. The <strong>generative model</strong> is the agent’s probabilistic model of how hidden states could produce those observations. The process contains the moved chair; the model contains beliefs about kitchens, locations, vision in low light, and how observations depend on objects. A model can fit familiar data and still represent the process badly.</p>
 <p>The generative model produces predictions about what should be seen, heard, felt, or experienced. Incoming signals are compared with those predictions. The mismatch is called <strong>prediction error</strong>.</p>
 <p>If prediction error is small, the model is working well enough. If prediction error is large and reliable, the brain updates its beliefs or directs action to reduce the mismatch.</p>
-<p>“Surprise” also has more than one meaning. In ordinary speech, surprise is a felt reaction. In probabilistic modeling, an observation is surprising when the current model assigned it low probability. <strong>Bayesian surprise</strong> is different again: it is the amount by which the observation changes beliefs from prior to posterior. An unlikely event need not produce a large update if every candidate model predicted it poorly; a quiet observation can produce a large update if it strongly discriminates between two models. Variational free energy is a formal model-evidence quantity used to make otherwise difficult inference tractable. It is not a synonym for pain, anxiety, discomfort, or “negative energy” (Friston, 2010; Parr et al., 2022).</p>
 <p>For example, when you walk into your kitchen at night, your brain predicts the location of furniture, the feel of the floor, and the likely appearance of objects. You do not need to reconstruct the room from scratch. But if a chair has been moved, your foot bumps into it. Prediction error occurs. You update: the chair is not where expected.</p>
 <p>Predictive processing offers one account of why perception is fast: the system need not treat every detail equally, and can allocate processing to what is surprising, uncertain, or important. This can be efficient and can also make inference vulnerable to expectation. Other computational and neural accounts can explain some of the same observations.</p>
 <p>Attention plays a central role in predictive processing. In this framework, attention can be modeled partly as the assignment of precision to prediction errors (Feldman &amp; Friston, 2010). Precision means the estimated reliability or importance of a signal. If a sensory signal is treated as precise, it has more influence on updating perception. If it is treated as noisy or irrelevant, it has less influence. This is a framework-specific proposal, not a general definition of attention or a uniquely established neural mechanism.</p>
@@ -699,6 +692,7 @@ Figure&nbsp;4.3: A predictive-processing teaching synthesis. An internal generat
 </div>
 <div class="callout-body-container callout-body">
 <p>Predictive processing is a family of accounts in which perception and learning involve predictions, precision-weighted errors, and belief updating. <strong>Active inference</strong> adds an explicit account of policy selection: the agent considers courses of action that will generate new observations and move it toward preferred states (Friston et al., 2017; Da Costa et al., 2020; Parr et al., 2022).</p>
+<p>“Surprise” has several meanings in this literature. In ordinary speech, it is a felt reaction. In probabilistic modeling, an observation is surprising when the current model assigned it low probability. <strong>Bayesian surprise</strong> instead describes how much an observation changes beliefs from prior to posterior. Variational free energy is a formal model-evidence quantity used to make otherwise difficult inference tractable; it is not a synonym for pain, anxiety, discomfort, or “negative energy” (Friston, 2010; Parr et al., 2022).</p>
 <p>If your body is cold, putting on a coat changes the observations. If you do not know whether a negotiation offer is final, asking a diagnostic question changes what you can learn. Action is therefore not only a response to a finished perception. It changes the evidence on which the next perception and judgment will be based.</p>
 <p>In formal active-inference models, possible policies are scored by <strong>expected free energy</strong>. The useful teaching distinction is between two components:</p>
 <ul>
@@ -749,8 +743,8 @@ Figure&nbsp;4.3: A predictive-processing teaching synthesis. An internal generat
 </ul>
 <p>These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.</p>
 </section>
-<section id="the-practical-goal-is-calibration-not-fewer-predictions" class="level2">
-<h2 data-anchor-id="the-practical-goal-is-calibration-not-fewer-predictions">The practical goal is calibration, not fewer predictions</h2>
+<section id="research-lens-calibration-in-complex-cases" class="level2">
+<h2 data-anchor-id="research-lens-calibration-in-complex-cases">Research Lens: calibration in complex cases</h2>
 <p>Unusual cases can make the ordinary architecture visible, but only if we resist forcing them into one explanation. The cases below do not share one proven neural mechanism. They illustrate four different ways in which learned models, present sensory evidence, and estimated reliability can become difficult to coordinate.</p>
 <div id="tbl-predictive-calibration-cases" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -869,9 +863,6 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 <p>Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36(3), 181–204.</p>
 </div>
 <div class="reference">
-<p>Croskerry, P. (2003). The importance of cognitive errors in diagnosis and strategies to minimize them. Academic Medicine, 78(8), 775–780.</p>
-</div>
-<div class="reference">
 <p>Da Costa, L., Parr, T., Sajid, N., Veselic, S., Neacsu, V., &amp; Friston, K. (2020). Active inference on discrete state-spaces: A synthesis. <em>Journal of Mathematical Psychology, 99</em>, 102447.</p>
 </div>
 <div class="reference">
@@ -897,9 +888,6 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 </div>
 <div class="reference">
 <p>Hohwy, J. (2013). The predictive mind. Oxford University Press.</p>
-</div>
-<div class="reference">
-<p>Kanizsa, G. (1976). Subjective contours. Scientific American, 234(4), 48–52.</p>
 </div>
 <div class="reference">
 <p>Kersten, D., Mamassian, P., &amp; Yuille, A. (2004). Object perception as Bayesian inference. Annual Review of Psychology, 55, 271–304.</p>
@@ -933,9 +921,6 @@ Table&nbsp;4.2: Four cases, four boundary conditions
 </div>
 <div class="reference">
 <p>Stefanucci, J. K., &amp; Proffitt, D. R. (2009). The roles of altitude and fear in the perception of height. Journal of Experimental Psychology: Human Perception and Performance, 35(2), 424–438.</p>
-</div>
-<div class="reference">
-<p>Thompson, P. (1980). Margaret Thatcher: A new illusion. Perception, 9(4), 483–484.</p>
 </div>
 <div class="reference">
 <p>Yeo, J. M., Carson, A., &amp; Stone, J. (2019). Seeing again: Treatment of functional visual loss. <em>Practical Neurology, 19</em>(2), 168–172.</p>
@@ -1008,8 +993,8 @@ Table&nbsp;4.2: Four cases, four boundary conditions
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="pagination-link" aria-label="Valuation: How Options Become Worth Choosing">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="pagination-link" aria-label="Expectations: When Predictions Become Causes">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

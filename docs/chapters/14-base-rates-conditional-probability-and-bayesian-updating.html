@@ -195,14 +195,14 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -561,9 +561,11 @@ window.Quarto = {
   </ul></li>
   <li><a href="#conditional-direction-matters" id="toc-conditional-direction-matters" class="nav-link" data-scroll-target="#conditional-direction-matters">Conditional direction matters</a></li>
   <li><a href="#bayes-rule-restores-the-alternatives" id="toc-bayes-rule-restores-the-alternatives" class="nav-link" data-scroll-target="#bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</a></li>
-  <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a></li>
+  <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a>
+  <ul class="collapse">
+  <li><a href="#worked-update-the-same-screen-in-two-applicant-pools" id="toc-worked-update-the-same-screen-in-two-applicant-pools" class="nav-link" data-scroll-target="#worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</a></li>
+  </ul></li>
   <li><a href="#reference-classes-are-judgment-calls" id="toc-reference-classes-are-judgment-calls" class="nav-link" data-scroll-target="#reference-classes-are-judgment-calls">Reference classes are judgment calls</a></li>
-  <li><a href="#logical-boundaries-conjunction-disjunction-and-dilution" id="toc-logical-boundaries-conjunction-disjunction-and-dilution" class="nav-link" data-scroll-target="#logical-boundaries-conjunction-disjunction-and-dilution">Logical boundaries: conjunction, disjunction, and dilution</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -710,21 +712,61 @@ Figure&nbsp;14.1: Probability judgment preserves three structures: coherent even
 P(D\mid +)=\frac{90}{90+891}=\frac{90}{981}\approx 0.0917.
 \]</span></p>
 <p>Natural frequencies preserve the nested sets and denominator, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer &amp; Hoffrage, 1995). They do not solve measurement error or transportability; they make the assumed structure visible.</p>
+<section id="worked-update-the-same-screen-in-two-applicant-pools" class="level3">
+<h3 data-anchor-id="worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</h3>
+<p>Return to the hiring screen. Suppose, for teaching purposes, that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:</p>
+<ul>
+<li>2,000 would meet the standard; 1,600 pass the screen.</li>
+<li>8,000 would not; 2,400 nevertheless pass.</li>
+<li>Of 4,000 positive screens, 1,600 are true positives.</li>
+</ul>
+<p>Under those assumptions, <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40\)</span>. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
+<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. If its sensitivity and false-positive rate transport unchanged, then among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the posterior is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot travel on its own: the receiving population and the transportability of both error rates are part of its meaning.</p>
+</section>
 </section>
 <section id="reference-classes-are-judgment-calls" class="level2">
 <h2 data-anchor-id="reference-classes-are-judgment-calls">Reference classes are judgment calls</h2>
 <p>A base rate is only as useful as its reference class. Should a start-up be compared with all new firms, firms in the same sector, firms at the same funding stage, or firms with similarly experienced founders? A narrow class may be more relevant but noisier. A broad class is more stable but less tailored.</p>
 <p>Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman &amp; Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. “This case is unique” is a hypothesis, not a denominator.</p>
 <p>Return to hiring. The base rate should concern future performance under the organization’s role, support, and criterion—not an undefined pool of “talent.” The screen’s sensitivity and false-positive rate must come from a comparable applicant population. If the criterion rewards manager similarity rather than job output, the posterior can be mathematically correct and substantively wrong.</p>
-</section>
-<section id="logical-boundaries-conjunction-disjunction-and-dilution" class="level2">
-<h2 data-anchor-id="logical-boundaries-conjunction-disjunction-and-dilution">Logical boundaries: conjunction, disjunction, and dilution</h2>
+<p><span id="research-lens-conjunction-disjunction-and-dilution"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: conjunction, disjunction, and dilution
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The resemblance chapter showed why a coherent story can feel probable. Probability supplies a non-negotiable set relation:</p>
 <p><span class="math display">\[
 P(A\cap B)\le P(A), \qquad P(A\cup B)\ge P(A).
 \]</span></p>
 <p>Adding a condition makes the event a subset. “A bank teller active in a social movement” cannot be more probable than “a bank teller,” however well the detail matches the description (Tversky &amp; Kahneman, 1983). By contrast, adding alternative routes expands a union. The probability that a project is delayed by <em>at least one</em> of several causes cannot be smaller than the probability of any single route, though overlaps must be handled rather than simply added.</p>
 <p>More detail is not always more information. Weakly diagnostic detail can dilute attention to stronger evidence. Sivanathan and Kakkar (2017) found that adding minor side effects to serious drug side effects could reduce perceived overall severity. The ethical response is not to hide minor effects. It is to group evidence by severity, probability, and decision relevance so completeness does not destroy structure.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Check your denominator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For each prompt, write the target conditional before answering.</p>
+<ol type="1">
+<li>Seventy percent of successful trainees used a practice platform. What additional quantities are needed to estimate the probability of success among platform users?</li>
+<li>Ten percent of projects suffer supplier delay and 12% suffer software delay. What must be known before adding the percentages?</li>
+<li>A screen validated in experienced applicants is applied to entry-level applicants. Which part of the Bayesian model may no longer transport?</li>
+</ol>
+<p>A complete answer names the conditioning event, denominator, relevant overlap or alternative, and at least one assumption about how the evidence was generated.</p>
+</div>
+</div>
 <div class="evidence-boundary callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

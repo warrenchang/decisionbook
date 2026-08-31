@@ -9,6 +9,7 @@ import re
 import zipfile
 from datetime import date
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree as ET
 
 
@@ -377,6 +378,43 @@ def main() -> int:
         publication_date = package.findtext(f".//{{{DC}}}date", default="")
         check("Compilation date is current", publication_date == date.today().isoformat(), publication_date)
 
+        identifier = package.findtext(f".//{{{DC}}}identifier", default="")
+        publisher = package.findtext(f".//{{{DC}}}publisher", default="")
+        rights = package.findtext(f".//{{{DC}}}rights", default="")
+        subjects = [normalized_text(element) for element in package.findall(f".//{{{DC}}}subject")]
+        metadata_entries = package.findall(f".//{{{OPF}}}metadata/{{{OPF}}}meta")
+        properties: dict[str, list[str]] = {}
+        for element in metadata_entries:
+            property_name = element.get("property", "")
+            if property_name:
+                properties.setdefault(property_name, []).append(normalized_text(element))
+        check(
+            "EPUB uses the stable publication identifier",
+            identifier == "urn:uuid:d5f0cd81-a793-488a-87d3-47257fdb4c0d",
+            identifier,
+        )
+        check("EPUB identifies its publisher", publisher == "Huanren Warren Zhang", publisher)
+        check("EPUB states publication rights", "Huanren Warren Zhang" in rights and "rights reserved" in rights.lower(), rights)
+        check(
+            "EPUB carries subject metadata",
+            {"Decision science", "Behavioral economics", "Negotiation"}.issubset(set(subjects)),
+            ", ".join(subjects),
+        )
+        check(
+            "EPUB declares textual and visual access modes",
+            {"textual", "visual"}.issubset(set(properties.get("schema:accessMode", []))),
+            ", ".join(properties.get("schema:accessMode", [])),
+        )
+        check(
+            "EPUB declares MathML and alternative-text accessibility features",
+            {"MathML", "alternativeText"}.issubset(set(properties.get("schema:accessibilityFeature", []))),
+            ", ".join(properties.get("schema:accessibilityFeature", [])),
+        )
+        check(
+            "EPUB includes an accessibility summary",
+            bool(properties.get("schema:accessibilitySummary", [])),
+        )
+
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
         check("All 59 source documents are packaged", len(chapter_files) == 59, str(len(chapter_files)))
@@ -409,6 +447,53 @@ def main() -> int:
             "Callout titles do not contain later headings, tables, or callout bodies",
             not overnested_callout_titles,
             ", ".join(overnested_callout_titles[:5]),
+        )
+
+        broken_content_links: list[str] = []
+        empty_image_alts: list[str] = []
+        id_cache: dict[str, set[str]] = {
+            path: {element.get("id", "") for element in root.iter() if element.get("id")}
+            for path, root in parsed_chapters.items()
+        }
+        for chapter_path, chapter_root in parsed_chapters.items():
+            for image in chapter_root.findall(f".//{{{XHTML}}}img"):
+                if not image.get("alt", "").strip():
+                    empty_image_alts.append(f"{chapter_path}: {image.get('src', '')}")
+            for anchor in chapter_root.findall(f".//{{{XHTML}}}a"):
+                href = anchor.get("href", "").strip()
+                if not href or href.startswith(("http://", "https://", "mailto:", "tel:", "data:")):
+                    continue
+                parsed_href = urlsplit(href)
+                raw_path = unquote(parsed_href.path)
+                fragment = unquote(parsed_href.fragment)
+                target_path = (
+                    chapter_path
+                    if not raw_path
+                    else posixpath.normpath(posixpath.join(posixpath.dirname(chapter_path), raw_path))
+                )
+                if target_path not in names:
+                    broken_content_links.append(f"{chapter_path}: {href} -> missing {target_path}")
+                    continue
+                if fragment:
+                    if target_path not in id_cache and target_path.endswith((".xhtml", ".html")):
+                        try:
+                            target_root = ET.fromstring(archive.read(target_path))
+                            id_cache[target_path] = {
+                                element.get("id", "") for element in target_root.iter() if element.get("id")
+                            }
+                        except ET.ParseError:
+                            id_cache[target_path] = set()
+                    if target_path in id_cache and fragment not in id_cache[target_path]:
+                        broken_content_links.append(f"{chapter_path}: {href} -> missing fragment #{fragment}")
+        check(
+            "Every internal content link and fragment resolves",
+            not broken_content_links,
+            "; ".join(broken_content_links[:5]),
+        )
+        check(
+            "Every packaged content image has nonempty alternative text",
+            not empty_image_alts,
+            "; ".join(empty_image_alts[:5]),
         )
 
         chapter_four_item = next(

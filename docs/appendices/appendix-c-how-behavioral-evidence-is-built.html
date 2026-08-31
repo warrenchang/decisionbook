@@ -195,14 +195,14 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -581,6 +581,7 @@ window.Quarto = {
   <li><a href="#transport-the-result-only-as-far-as-the-evidence-travels" id="toc-transport-the-result-only-as-far-as-the-evidence-travels" class="nav-link" data-scroll-target="#transport-the-result-only-as-far-as-the-evidence-travels">12. Transport the result only as far as the evidence travels</a></li>
   <li><a href="#match-the-final-sentence-to-the-design" id="toc-match-the-final-sentence-to-the-design" class="nav-link" data-scroll-target="#match-the-final-sentence-to-the-design">13. Match the final sentence to the design</a></li>
   <li><a href="#the-one-page-evidence-design-card" id="toc-the-one-page-evidence-design-card" class="nav-link" data-scroll-target="#the-one-page-evidence-design-card">The one-page evidence design card</a></li>
+  <li><a href="#worked-study-from-question-to-report" id="toc-worked-study-from-question-to-report" class="nav-link" data-scroll-target="#worked-study-from-question-to-report">Worked study: from question to report</a></li>
   <li><a href="#ethics-is-part-of-identification" id="toc-ethics-is-part-of-identification" class="nav-link" data-scroll-target="#ethics-is-part-of-identification">Ethics is part of identification</a></li>
   <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
   <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
@@ -1202,6 +1203,87 @@ Table&nbsp;C.5: A compact evidence design card
 </figure>
 </div>
 </section>
+<section id="worked-study-from-question-to-report" class="level2">
+<h2 data-anchor-id="worked-study-from-question-to-report">Worked study: from question to report</h2>
+<p>The following example is a <strong>simulated teaching study</strong>, not evidence about any real clinic. Its purpose is to show how the records connect from question to final sentence.</p>
+<p><strong>Question.</strong> Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?</p>
+<p><strong>Preregistered design.</strong> Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.</p>
+<div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;C.6: Preregistered design card for the simulated reminder study
+</figcaption>
+<div aria-describedby="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design-card field</th>
+<th>Declared choice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population</td>
+<td>Patients eligible for the appointment under the clinic’s existing rule</td>
+</tr>
+<tr class="even">
+<td>Treatment and comparison</td>
+<td>Plain-language reminder versus standard reminder</td>
+</tr>
+<tr class="odd">
+<td>Unit and assignment</td>
+<td>Individual patient; exactly 600 assignments per arm</td>
+</tr>
+<tr class="even">
+<td>Primary outcome</td>
+<td>Attendance recorded within thirty days</td>
+</tr>
+<tr class="odd">
+<td>Estimand</td>
+<td>ITT risk difference: assignment to new reminder minus assignment to standard reminder</td>
+</tr>
+<tr class="even">
+<td>Main threats</td>
+<td>Delivery failure, wrong contact information, spillovers within households, missing administrative records, and outcome-definition errors</td>
+</tr>
+<tr class="odd">
+<td>Mechanism boundary</td>
+<td>The contrast tests the reminder package; it does not separately identify comprehension, fear reduction, salience, or lower friction</td>
+</tr>
+<tr class="even">
+<td>Decision rule</td>
+<td>Report estimate and interval; the clinic evaluates operational cost, distribution across patient groups, and implementation errors before scaling</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The data below are generated with a declared seed and fixed probabilities solely to make the workflow reproducible:</p>
+<pre class="python"><code>import math
+import random
+
+rng = random.Random(20260830)
+n_control = n_treatment = 600
+control = [int(rng.random() &lt; 0.65) for _ in range(n_control)]
+treatment = [int(rng.random() &lt; 0.70) for _ in range(n_treatment)]
+
+p_control = sum(control) / n_control
+p_treatment = sum(treatment) / n_treatment
+effect = p_treatment - p_control
+se = math.sqrt(
+    p_control * (1 - p_control) / n_control
+    + p_treatment * (1 - p_treatment) / n_treatment
+)
+ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
+<p>The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is <strong>6.2 percentage points</strong>, with an approximate 95% confidence interval from <strong>0.8 to 11.5 percentage points</strong>.</p>
+<p><strong>Design-matched interpretation.</strong> In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.</p>
+<p><strong>Deviation and preservation record.</strong> This simulated analysis has no analytical deviations because the code follows the declared generation and estimation procedure. It bypasses recruitment, delivery, attrition, spillovers, implementation failure, and measurement operations, so it does <strong>not</strong> demonstrate treatment fidelity or the absence of protocol deviations in a real study. A real study would preserve the eligibility extract, assignment file, delivered-message log, undeliverable contacts, outcome pull, code, environment, consent or waiver decision, preregistration, and every departure from the protocol. A model answer is credible because each sentence can be traced back through that record—not because the estimate happens to exclude zero.</p>
+</section>
 <section id="ethics-is-part-of-identification" class="level2">
 <h2 data-anchor-id="ethics-is-part-of-identification">Ethics is part of identification</h2>
 <p>The Belmont principles remain a useful starting point: <strong>respect for persons</strong>, <strong>beneficence</strong>, and <strong>justice</strong>. Respect requires meaningful information and voluntary participation where consent applies. Beneficence requires risks to be minimized and justified by potential value. Justice asks who bears research burdens and who can benefit.</p>
@@ -1246,8 +1328,7 @@ Table&nbsp;C.5: A compact evidence design card
 </div>
 <div class="callout-body-container callout-body">
 <p>Choose one claim from the book or current media. Place it in <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>C.1</span></a>. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.</p>
-<p>EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)<br>
-Experience: state the original claim and evidence. Explain: identify one design link and one assumption. Apply: give the revised design or the narrower warranted claim.</p>
+<p>Submit the completed pipeline, one explicit assumption, the revised design, and a final sentence whose strength matches the evidence the redesign could earn.</p>
 </div>
 </div>
 </section>

@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **774**
+Unique references in the master union: **728**
 
-Chapter reference blocks: **844**
+Chapter reference blocks: **794**
 
 Unresolved author–year citations: **0**
 
@@ -14,19 +14,19 @@ Unresolved author–year citations: **0**
 | --- | ---: | ---: |
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | 7 | 0 |
-| Attention: What Becomes Evidence? | 31 | 0 |
-| The Predictive Mind: Perception Is Inference | 29 | 0 |
-| Valuation: How Options Become Worth Choosing | 39 | 0 |
-| Expectations: When Predictions Become Causes | 44 | 0 |
+| Attention: What Becomes Evidence? | 29 | 0 |
+| The Predictive Mind: Perception Is Inference | 26 | 0 |
+| Expectations: When Predictions Become Causes | 32 | 0 |
+| Valuation: How Options Become Worth Choosing | 32 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 18 | 0 |
-| Fast and Frugal Thinking | 32 | 0 |
-| What Feels Likely: Availability, Affect, and Resemblance | 17 | 0 |
-| Beliefs That Defend Themselves | 25 | 0 |
+| Fast and Frugal Thinking | 27 | 0 |
+| What Feels Likely: Availability, Affect, and Resemblance | 15 | 0 |
+| Beliefs That Defend Themselves | 15 | 0 |
 | When Context Rewrites Comparison | 11 | 0 |
-| Framing: When the Same Facts Become Different Decisions | 16 | 0 |
+| Framing: When the Same Facts Become Different Decisions | 15 | 0 |
 | Accessibility, Familiarity, and Ease | 23 | 0 |
 | Base Rates, Conditional Probability, and Bayesian Updating | 7 | 0 |
-| Samples, Randomness, Regression, and Calibration | 10 | 0 |
+| Samples, Randomness, Regression, and Calibration | 17 | 0 |
 | Risky Decision-Making: A Probability Is Not Yet a Feeling | 15 | 0 |
 | Prospect Theory: Gains and Losses Begin at a Reference Point | 13 | 0 |
 | Decisions from Experience: When Rare Events Are Not Encountered | 18 | 0 |
@@ -41,14 +41,14 @@ Unresolved author–year citations: **0**
 | Markets, Mispricing, and Bubbles | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
-| Persuasion: Changing Minds Means Updating Models | 33 | 0 |
+| Persuasion: Changing Minds Means Updating Models | 28 | 0 |
 | Why Stories Move Minds | 10 | 0 |
 | Building an Evidence-Aligned Message | 13 | 0 |
-| Communication: Language Is Not a File Transfer | 22 | 0 |
-| Connection and Repair: Warm Honesty Makes Truth Usable | 29 | 0 |
-| Negotiation as Joint Decision Design | 14 | 0 |
+| Communication: Language Is Not a File Transfer | 18 | 0 |
+| Connection and Repair: Warm Honesty Makes Truth Usable | 27 | 0 |
+| Negotiation as Joint Decision Design | 11 | 0 |
 | Preparing and Claiming Value | 10 | 0 |
-| Creating Value Across Differences | 8 | 0 |
+| Creating Value Across Differences | 7 | 0 |
 | Designing Better Agreements | 18 | 0 |
 | Behavior Design: Make the Better Action Easier | 19 | 0 |
 | Choice Architecture: The Environment Gets a Vote | 28 | 0 |

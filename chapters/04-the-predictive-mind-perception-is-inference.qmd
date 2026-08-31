@@ -57,53 +57,9 @@ The word **prediction** creates a possible confusion. Predictive processing and 
 
 The first asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. A theory of perceptual inference does not by itself forecast hospital readmission, estimate a project's probability of success, or determine whether an outcome is desirable.
 
-This chapter stays with the first meaning: how internal models help construct perception and guide sampling. Chapter 6 examines expectations that alter behavior and outcomes; Chapters 14 and 15 develop disciplined forecasts; and Chapter 41 separates machine prediction from valuation, intervention, decision, and responsibility.
+This chapter stays with the first meaning: how internal models help construct perception and guide sampling. Chapter 5 examines consequence forecasts and expectations that alter behavior and outcomes; Chapters 14 and 15 develop disciplined probability judgment and calibration; and Chapter 41 separates machine prediction from valuation, intervention, decision, and responsibility.
 
-This is why illusions are so useful. Illusions are not merely tricks.
-They reveal the assumptions the visual system uses to construct
-experience.
-
-Consider brightness and shadow illusions. Two regions with the same
-physical luminance can appear different because the visual system
-interprets one as being in shadow and the other as being in light.
-Adelson’s checker-shadow illusion is a famous example: squares with
-identical luminance appear different because the brain estimates surface
-reflectance by taking illumination into account (Adelson, 2000). The
-visual system is not measuring raw light; it is inferring surfaces under
-lighting conditions.
-
-Shape-from-shading illusions reveal another assumption: light usually
-comes from above. When we see patterns of light and dark, the brain uses
-a “light-from-above” prior to infer whether shapes are bumps or dents
-(Ramachandran, 1988). The same image can appear as a raised surface or a
-hollow depending on orientation. The sensory input is the same; the
-inferred cause changes.
-
-Faces provide another example. Humans have strong priors about faces
-because faces are socially important. The Thatcher illusion shows that
-grotesque changes to facial features are much harder to notice when a
-face is upside down than when it is upright (Thompson, 1980). We have
-powerful models for upright faces, weaker models for inverted ones.
-Perception depends on the match between sensory input and learned
-models.
-
-The Kanizsa triangle demonstrates how the visual system constructs edges
-and shapes not physically present in the image (Kanizsa, 1976). We
-perceive a bright triangle because the arrangement suggests an occluding
-surface. The brain infers a coherent object from incomplete evidence.
-
-Body ownership can also be inferred. In the rubber hand illusion, a
-visible rubber hand is stroked in synchrony with a participant’s hidden
-real hand. Many participants begin to feel as if the rubber hand is part
-of their body (Botvinick & Cohen, 1998). The brain integrates visual,
-tactile, and proprioceptive evidence and infers a common cause. Body
-ownership, which feels immediate and obvious, is partly constructed.
-
-These examples show that perception is active interpretation. The brain
-uses prior knowledge because sensory information is ambiguous. A given
-retinal image could be caused by many possible arrangements of objects,
-lighting, distance, and movement. Perception resolves ambiguity by using
-assumptions that usually work.
+Illusions are useful because they hold parts of the signal constant while changing the context or prior that gives it meaning. Equal luminance can look different when one patch is interpreted as lying in shadow (Adelson, 2000); the same shading can imply a bump or dent because light is usually expected from above (Ramachandran, 1988); and synchronized visual and tactile signals can alter experienced body ownership (Botvinick & Cohen, 1998). These demonstrations do not prove one neural implementation. They establish the narrower point needed here: sensory input underdetermines interpretation, so learned assumptions help resolve it.
 
 This is adaptive. If perception required complete data, action would be
 too slow. Priors allow the brain to act quickly in uncertain
@@ -174,18 +130,6 @@ If prediction error is small, the model is working well enough. If
 prediction error is large and reliable, the brain updates its beliefs or
 directs action to reduce the mismatch.
 
-“Surprise” also has more than one meaning. In ordinary speech, surprise
-is a felt reaction. In probabilistic modeling, an observation is
-surprising when the current model assigned it low probability.
-**Bayesian surprise** is different again: it is the amount by which the
-observation changes beliefs from prior to posterior. An unlikely event
-need not produce a large update if every candidate model predicted it
-poorly; a quiet observation can produce a large update if it strongly
-discriminates between two models. Variational free energy is a formal
-model-evidence quantity used to make otherwise difficult inference
-tractable. It is not a synonym for pain, anxiety, discomfort, or
-“negative energy” (Friston, 2010; Parr et al., 2022).
-
 For example, when you walk into your kitchen at night, your brain
 predicts the location of furniture, the feel of the floor, and the
 likely appearance of objects. You do not need to reconstruct the room
@@ -224,6 +168,15 @@ updating. **Active inference** adds an explicit account of policy
 selection: the agent considers courses of action that will generate new
 observations and move it toward preferred states (Friston et al., 2017;
 Da Costa et al., 2020; Parr et al., 2022).
+
+“Surprise” has several meanings in this literature. In ordinary speech,
+it is a felt reaction. In probabilistic modeling, an observation is
+surprising when the current model assigned it low probability.
+**Bayesian surprise** instead describes how much an observation changes
+beliefs from prior to posterior. Variational free energy is a formal
+model-evidence quantity used to make otherwise difficult inference
+tractable; it is not a synonym for pain, anxiety, discomfort, or
+“negative energy” (Friston, 2010; Parr et al., 2022).
 
 If your body is cold, putting on a coat changes the observations. If you
 do not know whether a negotiation offer is final, asking a diagnostic
@@ -306,7 +259,7 @@ Calibration therefore requires more than confidence. Ask:
 
 These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.
 
-## The practical goal is calibration, not fewer predictions
+## Research Lens: calibration in complex cases
 
 Unusual cases can make the ordinary architecture visible, but only if
 we resist forcing them into one explanation. The cases below do not
@@ -386,10 +339,6 @@ Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the fut
 :::
 
 ::: {.reference}
-Croskerry, P. (2003). The importance of cognitive errors in diagnosis and strategies to minimize them. Academic Medicine, 78(8), 775–780.
-:::
-
-::: {.reference}
 Da Costa, L., Parr, T., Sajid, N., Veselic, S., Neacsu, V., & Friston, K. (2020). Active inference on discrete state-spaces: A synthesis. *Journal of Mathematical Psychology, 99*, 102447.
 :::
 
@@ -423,10 +372,6 @@ Helmholtz, H. von. (1962). Treatise on physiological optics (J. P. C. Southall, 
 
 ::: {.reference}
 Hohwy, J. (2013). The predictive mind. Oxford University Press.
-:::
-
-::: {.reference}
-Kanizsa, G. (1976). Subjective contours. Scientific American, 234(4), 48–52.
 :::
 
 ::: {.reference}
@@ -471,10 +416,6 @@ Sterzer, P., Adams, R. A., Fletcher, P., Frith, C., Lawrie, S. M., Muckli, L., P
 
 ::: {.reference}
 Stefanucci, J. K., & Proffitt, D. R. (2009). The roles of altitude and fear in the perception of height. Journal of Experimental Psychology: Human Perception and Performance, 35(2), 424–438.
-:::
-
-::: {.reference}
-Thompson, P. (1980). Margaret Thatcher: A new illusion. Perception, 9(4), 483–484.
 :::
 
 ::: {.reference}

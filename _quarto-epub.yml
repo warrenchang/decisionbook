@@ -3,6 +3,36 @@ project:
   post-render:
     - python3 scripts/sync_epub_release.py
 
+metadata:
+  identifier:
+    scheme: URN
+    text: "urn:uuid:d5f0cd81-a793-488a-87d3-47257fdb4c0d"
+  publisher: "Huanren Warren Zhang"
+  rights: "© 2026 Huanren Warren Zhang. All rights reserved."
+  subject:
+    - "Decision science"
+    - "Behavioral economics"
+    - "Persuasion"
+    - "Communication"
+    - "Negotiation"
+    - "Behavior design"
+  accessModes:
+    - textual
+    - visual
+  accessModeSufficient:
+    - "textual,visual"
+  accessibilityFeatures:
+    - alternativeText
+    - readingOrder
+    - structuralNavigation
+    - tableOfContents
+    - MathML
+  accessibilityHazards:
+    - none
+  accessibilitySummary: "This EPUB provides structural navigation, a table of contents, MathML for equations, and alternative text for informative images. Complex figures and tables may be easier to inspect on a larger screen."
+  ibooks:
+    version: "2026.08.30"
+
 book:
   chapters:
     - index.qmd
@@ -13,8 +43,8 @@ book:
     - chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd
     - chapters/03-attention-what-becomes-evidence.qmd
     - chapters/04-the-predictive-mind-perception-is-inference.qmd
-    - chapters/05-valuation-how-options-become-worth-choosing.qmd
-    - chapters/06-expectations-when-predictions-become-causes.qmd
+    - chapters/05-expectations-when-predictions-become-causes.qmd
+    - chapters/06-valuation-how-options-become-worth-choosing.qmd
     - chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd
     - parts/part-2.qmd
     - chapters/08-fast-and-frugal-thinking.qmd

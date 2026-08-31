@@ -85,9 +85,8 @@ async function main() {
     const context = await browser.newContext({ viewport: { width: 768, height: 1024 }, colorScheme: "light" });
     const page = await context.newPage();
     const captures = [
-      ["fig-rational-benchmark", "epub-rational-benchmark.png"],
-      ["fig-context-enters-choice", "epub-seven-context-cases.png"],
-      ["fig-decision-loop-ch1", "epub-chapter-1-master-loop.png"],
+      ["fig-normative-decision-loop", "epub-normative-decision-loop.png"],
+      ["fig-behavioral-decision-loop", "epub-behavioral-decision-loop.png"],
       ["fig-option-information", "epub-better-decision-process.png"],
       ["fig-fluency-pathway", "epub-figure-13-2.png"],
       ["fig-reward-prediction-error-shift", "epub-reward-prediction-error.png"],

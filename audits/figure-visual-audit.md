@@ -1,12 +1,13 @@
 # Book-wide figure visual audit
 
-**Scope:** all 100 distinct reader-facing visual assets (102 configured HTML placements because the base loop is deliberately repeated) in the book on 30 August 2026.
+**Scope:** all 109 distinct reader-facing visual assets (112 configured HTML placements because the base loop is deliberately repeated) in the book on 30 August 2026.
 
-**Method:** Each figure was reviewed on one of nine labeled contact sheets (maximum image area approximately 446 × 265 px) and at 100% in its source or PNG fallback. Dense, new, and previously flagged figures were reopened individually. All 94 configured SVG figures were checked programmatically for parseability, text size at the 820 px book column, connector attachment, visible shaft length, and arrowhead proportion. All 102 HTML placements were loaded at 1440 px and 390 px. Wide HTML diagrams use a deliberate horizontal reading pane below 768 px so their labels remain readable instead of becoming phone-sized thumbnails. All 101 in-book EPUB placements were extracted and loaded at 768 px and 390 px, and the eight new figures were captured and visually inspected at both widths; the separate cover image was package-validated. EPUB uses PNG fallbacks, while SVG sources are retained for editing. `ADDED` identifies a new asset from the complete lecture-note visual review; `REVISED` means that the current working-tree version changed during the figure-revision programme; `PASS` means it required no visual change. There are no known `BLOCKED` figures.
+**Method:** Each figure was reviewed on labeled contact sheets and at 100% in its source or PNG fallback. Dense, new, and previously flagged figures were reopened individually. All 104 connector-bearing figures were checked programmatically for connector attachment, visible shaft length, and arrowhead proportion. All 112 HTML placements were loaded at 1440 px and 390 px. Wide HTML diagrams use a deliberate horizontal reading pane below 768 px so their labels remain readable instead of becoming phone-sized thumbnails. All 111 in-book EPUB placements were extracted and loaded at 768 px and 390 px; selected figures were captured and visually inspected at both widths. The separate cover image was package-validated. EPUB uses PNG fallbacks, while SVG sources are retained for editing. `ADDED` identifies a new asset from the complete lecture-note visual review; `REVISED` means that the current working-tree version changed during the figure-revision programme; `PASS` means it required no visual change. There are no known `BLOCKED` figures.
 
 ## Notable corrections
 
 - Rebuilt the master loop and all seven part variants with evenly spaced stages, compact marker-based arrowheads, visible shafts, and consistent highlighting.
+- Reintroduced the Chapter 1 normative loop immediately after the rational-choice benchmark, routed feedback to the Judgment boundary, and kept the forward Prediction-to-Valuation relation unambiguous.
 - Reworked Figure 1.2 so its unobstructed connectors are straight, its context arrow is correctly coloured, Selection and Interpretation is centred, and every internal Judgment relation is bidirectional.
 - Contained the note in Figure 12.2 and rebuilt Figure 13.2 as aligned left and right columns around the central mechanism, eliminating crossings and unreadably small labels.
 - Aligned the habit-loop connector; smoothed the habit-formation curves; represented a missed opportunity as a plateau rather than continued automaticity growth; and reduced oversized arrowheads in the habit, risk, finance, social, communication, negotiation, and design diagrams.
@@ -21,8 +22,8 @@
 |---|---|---|---|
 | `master-loop.png` | REVISED | 100% fallback | Shared influence rail, separate prediction and valuation, combined choice–commitment–action, spacing, and markers verified; QA pass. |
 | `master-loop-part-1.png` | REVISED | 100% fallback | Shared influence rail, revised stage grouping, shafts, markers, and highlight verified; QA pass. |
-| `decision-loop.png` | REVISED | Contact sheet; 100% fallback | Connector geometry and feedback curve corrected; QA pass. |
-| `decision-making-according-to-behavioral-evidence.png` | REVISED | Contact sheet; 100% fallback | Straight/aligned connectors and bidirectional Judgment relations corrected; QA pass. |
+| `decision-loop.png` | REVISED | 100% fallback; HTML desktop/mobile; EPUB 768/390 | Normative flow, one-way Prediction-to-Valuation relation, connector attachment, and feedback path to the Judgment boundary verified; QA pass. |
+| `decision-making-according-to-behavioral-evidence.png` | REVISED | 100% fallback; HTML desktop/mobile; EPUB 768/390 | Straight/aligned connectors, bidirectional Judgment relations, and feedback path to the internal model verified; QA pass. |
 | `rational-benchmark.png` | PASS | Contact sheet; 100% fallback | Text, alignment, and hierarchy verified. |
 | `option-information.png` | REVISED | Contact sheet; 100% fallback | Connector and spacing corrections verified; QA pass. |
 | `attention-bottleneck.png` | REVISED | Contact sheet; 100% fallback | Text sizing and visual hierarchy corrected; QA pass. |

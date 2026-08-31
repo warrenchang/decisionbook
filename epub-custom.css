@@ -100,6 +100,26 @@ math[display="block"] {
   overflow-y: hidden;
 }
 
+math[display="inline"] {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+}
+
+pre {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+pre code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .author-profile {
   margin: 1.5em 0;
 }

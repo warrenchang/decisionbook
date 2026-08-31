@@ -10,14 +10,14 @@ aliases:
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Once events and denominators are defined, a pattern can still look more informative than it is. But small samples produce volatile estimates, random processes create streaks and clusters, and extreme observations often move toward the average even without a corrective intervention. Therefore, this chapter models expected variation, distinguishes randomness from dependence or real change, and uses recorded probabilistic forecasts to make confidence learn from outcomes.
+Once events and denominators are defined, a pattern can still look more informative than it is. But small samples produce volatile estimates, random processes create streaks and clusters, extreme observations often move toward the average, and confidence can outrun the evidence that produced it. Therefore, this chapter models expected variation, distinguishes randomness from dependence or real change, and uses outside views plus recorded probabilistic forecasts to make confidence learn from outcomes.
 :::
 
 ## Learning goals
 
 - Explain why small samples, streaks, and clusters can look more informative than they are.
 - Diagnose regression to the mean without dismissing real change or causal effects.
-- Record, score, and review probabilistic forecasts for calibration and resolution.
+- Distinguish overestimation, overplacement, and overprecision, then record and score forecasts for calibration and resolution.
 
 ::: {.callout-note .loop-location icon=false}
 ## Where this chapter enters the loop
@@ -108,11 +108,35 @@ If a measure two standard deviations above average has test–retest correlation
 
 The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman & Tversky, 1973).
 
-Regression does not prove that an intervention had no effect. It proves that before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.
+Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.
 
 ![A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$. Regression describes conditional averages; an individual outcome need not reverse, and before–after movement does not identify an intervention effect.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average. A note says individual outcomes may move either way and intervention effects need a counterfactual." width=100%}
 
 The same logic belongs in organizational review. A manager sent to rescue the worst-performing branch may appear successful even if every extreme branch would have partly recovered. A newly celebrated fund may disappoint even if the manager remains skilled. Evaluation should ask what would have happened to comparable units without the intervention.
+
+## Confidence must face a distribution
+
+Confidence is not one quantity. Moore and Healy (2008) distinguish three patterns:
+
+- **Overestimation:** believing one's performance or ability is better than it is.
+- **Overplacement:** believing one ranks above other people.
+- **Overprecision:** expressing more certainty than the evidence supports.
+
+The distinctions matter because the correction differs. Overestimation needs an external performance measure. Overplacement needs a defined comparison group and common scale. Overprecision needs intervals or probabilities checked against repeated outcomes. Asking a confident person to “think harder” supplies none of these comparisons.
+
+The familiar Dunning–Kruger pattern requires the same discipline. Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. But a quartile plot alone does not identify that mechanism. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
+
+The **planning fallacy** is a related forecast error: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman & Tversky, 1979). It can produce optimistic point estimates, intervals that are too narrow, or both. The **outside view** begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman & Lovallo, 1993; Lovallo & Kahneman, 2003).
+
+Suppose a city team proposes an 18-month rail-project schedule. Before hearing why this project is special, obtain the completion-time distribution for comparable projects. Then require each departure from that range to name a causal difference and evidence that the difference changed outcomes elsewhere. The inside view remains useful because it reveals mechanisms and dependencies; the outside view prevents an elegant plan from erasing how projects actually unfold.
+
+| Confidence problem | Comparison required | Observable correction |
+| --- | --- | --- |
+| Overestimation | Forecast versus measured performance | Record the estimate and outcome on the same scale. |
+| Overplacement | Self versus a defined comparison distribution | Specify the population and criterion before ranking. |
+| Overprecision | Stated interval or probability versus repeated coverage | Widen or update ranges when outcomes fall outside too often. |
+| Planning fallacy | Inside plan versus comparable completed cases | Start from the reference-class distribution; justify each adjustment. |
+: Different confidence problems require different feedback {#tbl-confidence-calibration}
 
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: information protocols change probability puzzles
@@ -167,13 +191,13 @@ An unusual pattern is not automatically noise, and regression is not an explanat
 
 ## Practice Lab
 
-Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. When the date arrives, enter the outcome and Brier score without revising the original entry. The observable output is the preserved ledger plus a short diagnosis of whether any error came from sampling, model, or confidence.
+Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. For a quantity such as cost or completion time, add the 10th, 50th, and 90th percentiles and explain every adjustment away from the outside-view distribution. When the date arrives, enter the outcome and score without revising the original entry. The observable output is the preserved ledger plus a diagnosis of whether any error came from sampling, model, or confidence.
 
 ## Take it forward
 
 - **Use this when:** a short run, extreme case, or striking cluster is being treated as a stable pattern.
 - **Do not infer:** that randomness must alternate, that regression rules out treatment effects, or that one correct forecast proves calibration.
-- **Try this next:** specify the data-generating process, predict an observation not used to find the pattern, and keep a scored forecast ledger.
+- **Try this next:** specify the data-generating process, begin with an outside-view distribution, predict an observation not used to find the pattern, and keep a scored forecast ledger.
 
 ## References cited in this chapter
 
@@ -182,7 +206,15 @@ Brier, G. W. (1950). Verification of forecasts expressed in terms of probability
 :::
 
 ::: {.reference}
+Buehler, R., Griffin, D., & Ross, M. (1994). Exploring the planning fallacy: Why people underestimate their task completion times. *Journal of Personality and Social Psychology, 67*(3), 366–381.
+:::
+
+::: {.reference}
 Clotfelter, C. T., & Cook, P. J. (1993). The gambler's fallacy in lottery play. *Management Science, 39*(12), 1521–1525.
+:::
+
+::: {.reference}
+Gignac, G. E., & Zajenkowski, M. (2020). The Dunning–Kruger effect is (mostly) a statistical artefact: Valid approaches to testing the hypothesis with individual differences data. *Intelligence, 80*, Article 101449. https://doi.org/10.1016/j.intell.2020.101449
 :::
 
 ::: {.reference}
@@ -194,11 +226,31 @@ Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. *Psychologi
 :::
 
 ::: {.reference}
+Kahneman, D., & Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. *Management Science, 39*(1), 17–31.
+:::
+
+::: {.reference}
+Kahneman, D., & Tversky, A. (1979). Intuitive prediction: Biases and corrective procedures. *TIMS Studies in Management Science, 12*, 313–327.
+:::
+
+::: {.reference}
+Kruger, J., & Dunning, D. (1999). Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments. *Journal of Personality and Social Psychology, 77*(6), 1121–1134.
+:::
+
+::: {.reference}
+Lovallo, D., & Kahneman, D. (2003). Delusions of success: How optimism undermines executives' decisions. *Harvard Business Review, 81*(7), 56–63.
+:::
+
+::: {.reference}
 Mellers, B., Stone, E., Atanasov, P., Rohrbaugh, N., Metz, S. E., Ungar, L., Bishop, M. M., Horowitz, M., Merkle, E., & Tetlock, P. E. (2014). The psychology of intelligence analysis: Drivers of prediction accuracy in world politics. *Journal of Experimental Psychology: Applied, 20*(1), 1–14.
 :::
 
 ::: {.reference}
 Miller, J. B., & Sanjurjo, A. (2018). Surprised by the hot hand fallacy? A truth in the law of small numbers. *Econometrica, 86*(6), 2019–2047.
+:::
+
+::: {.reference}
+Moore, D. A., & Healy, P. J. (2008). The trouble with overconfidence. *Psychological Review, 115*(2), 502–517.
 :::
 
 ::: {.reference}

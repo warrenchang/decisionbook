@@ -123,15 +123,14 @@ async function main() {
     const page = await context.newPage();
     const screenshots = [
       ["parts/part-1.html", "main img[src$='master-loop-part-1.svg']", "part-loop-desktop.png"],
-      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-rational-benchmark", "rational-benchmark-desktop.png"],
-      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-context-enters-choice", "seven-context-cases-desktop.png"],
-      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-decision-loop-ch1", "chapter-1-master-loop-desktop.png"],
+      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-normative-decision-loop", "normative-decision-loop-desktop.png"],
+      ["chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-behavioral-decision-loop", "behavioral-decision-loop-desktop.png"],
       ["chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-desktop.png"],
       ["chapters/13-accessibility-familiarity-and-ease.html", "#fig-fluency-pathway", "figure-13-2-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-habit-formation-curve", "habit-formation-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
       ["chapters/27-markets-mispricing-and-bubbles.html", "#fig-finance-event-study-drift", "event-study-desktop.png"],
-      ["chapters/06-expectations-when-predictions-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-6-1-desktop.png"],
+      ["chapters/05-expectations-when-predictions-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-5-1-desktop.png"],
       ["chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-desktop.png"],
       ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-personal-mimicry-crossed-arms", "personal-mimicry-desktop.png"],
       ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-desktop.png"],
@@ -163,9 +162,8 @@ async function main() {
       "#fig-fluency-pathway",
       "figure-13-2-mobile.png",
     );
-    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-rational-benchmark", "rational-benchmark-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-context-enters-choice", "seven-context-cases-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-decision-loop-ch1", "chapter-1-master-loop-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-normative-decision-loop", "normative-decision-loop-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-behavioral-decision-loop", "behavioral-decision-loop-mobile.png");
     await screenshotFigure(mobilePage, "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-mobile.png");
     await screenshotFigure(mobilePage, "chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
@@ -188,7 +186,7 @@ async function main() {
 
     const validationContext = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
     const validationPage = await validationContext.newPage();
-    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/06-expectations-when-predictions-become-causes.html")).href);
+    await validationPage.goto(pathToFileURL(path.join(docs, "chapters/05-expectations-when-predictions-become-causes.html")).href);
     const rowgroups = await validationPage.locator("#tbl-self-fulfilling-self-defeating th[scope='rowgroup'][rowspan='2']").count();
     await validationPage.goto(pathToFileURL(path.join(docs, "chapters/41-decision-hygiene-build-a-process-that-can-learn.html")).href);
     const valuation = await validationPage.locator("#tbl-ai-prediction-judgment-causation").innerText();
@@ -200,12 +198,12 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 115 configured placements; the base loop is deliberately
+    // The book contains 112 rendered placements; the base loop is deliberately
     // repeated as a navigation device across Part openers.
-    if (totalByViewport.desktop !== 115 || totalByViewport.mobile !== 115) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 115 in each viewport`);
+    if (totalByViewport.desktop !== 112 || totalByViewport.mobile !== 112) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 112 in each viewport`);
     }
-    if (rowgroups !== 2) issues.push(`Table 6.1 has ${rowgroups} two-row rowgroups; expected 2`);
+    if (rowgroups !== 2) issues.push(`The self-fulfilling and self-defeating table has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");
     if (!/System 2/.test(daughterCaption) || !/System 1/.test(daughterCaption) || !/4 \+ 1/.test(daughterCaption)) {
       issues.push("Figure 8.3 caption does not state the System 2 to System 1 transition");

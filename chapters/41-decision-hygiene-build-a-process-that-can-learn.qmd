@@ -134,64 +134,35 @@ Aggregation is not a ritual average. It helps when judges possess relevant infor
 
 Senior people should normally speak after independent input is captured. Anonymous concerns can protect information in high-power settings. A facilitator should ask what evidence explains the spread, not pressure everyone toward the midpoint.
 
-### Use models and AI as inputs, not authorities
+[]{#ai-accountable-judgment}
 
-In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply the same weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). Humans still define the objective, choose the data, interpret unusual cases, weigh rights and values, and remain accountable. A model can be consistently wrong if its target, data, or deployment context is wrong.
+::: {.callout-note .research-lens icon=false}
+## Research Lens: AI and accountable judgment
 
-#### Prediction is only one task inside a decision
+In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). That advantage is task-specific. A model can be consistently wrong when its target, data, or deployment context is wrong.
 
-AI systems are often most useful when they reduce uncertainty about what will happen next. Better prediction can materially improve a choice, but it does not determine which consequences matter, which intervention would change them, or who is authorized to impose and answer for the action. Therefore, building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for determining the payoffs associated with an action in each possible state. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere in the book, **judgment** retains its broader meaning of forming beliefs and assessments.]
+AI is often valuable because it improves **prediction**, but prediction is only one task inside a decision. Building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for assigning payoffs to consequences. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere, **judgment** retains its broader meaning of forming beliefs and assessments.]
 
-| Task | What must be supplied |
+| Task | Accountable question |
 | --- | --- |
-| **Prediction** | Estimate which state or outcome is likely, with what uncertainty. An AI model may supply this estimate, but its accuracy, calibration, and transport to the present setting still require evidence. |
-| **Valuation** | Decide which consequences matter, whose welfare counts, and how benefits, costs, fairness, and error should be traded off. AI can help display these consequences; a prediction does not make the value choice legitimate. |
-| **Intervention design** | Identify which feasible action could change the outcome. This requires causal assumptions, options, constraints, and an exception process. Predictive association alone does not establish an intervention effect. |
-| **Decision and responsibility** | Choose what should be implemented, under whose authority, with what appeal and review. The decision owner remains answerable for the objective, the action, and its consequences. |
+| **Prediction** | What state or outcome is likely, with what uncertainty, and how well is the model calibrated here? |
+| **Valuation** | Which consequences matter, whose welfare and rights count, and how should error costs be traded off? |
+| **Intervention design** | Which feasible action could change the outcome, under what causal assumptions and constraints? |
+| **Decision and responsibility** | What should be implemented, under whose authority, with what exception, appeal, monitoring, and review? |
 : Prediction is one task inside accountable decision-making {#tbl-ai-prediction-judgment-causation}
 
-Suppose an AI system predicts that a patient has a high probability of hospital readmission. That estimate does not determine whether the hospital should delay discharge, arrange a home visit, call the patient, or do nothing. It does not say which intervention would work, how to weigh a missed readmission against an unnecessary intervention, or how the patient's circumstances and preferences should count. Those are questions of causal reasoning, valuation, and decision.
+**Prediction is not responsibility.** A forecast can inform a decision, but it cannot determine which consequence should count, which intervention is justified, who may authorize it, or who must answer for the result.
 
-AI can assist with all four tasks, and future systems may do more. But a predictive output does not create legitimate objectives, authority, or accountability. Human oversight is therefore not a final click after the model has already determined everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, exceptions and appeals, monitoring, and right to revise the decision.
+Suppose an AI system predicts hospital readmission accurately. The estimate does not determine whether a home visit, delayed discharge, telephone call, or no intervention would work. Nor does it decide how to weigh a missed readmission against an unnecessary intervention or how the patient's circumstances and preferences should count. Human oversight is not a final click after the model has settled everything important. A person or institution must own the objective, causal assumptions, stakeholder costs, action, exceptions, appeal, and consequences.
 
-::: {.callout-important icon=false}
-## Prediction is not responsibility
+The same discipline applies to different tools. Validate forecasts out of sample and inspect calibration and subgroup error. Verify facts and sources in generated summaries. Treat generated alternatives as search aids rather than complete menus. Version fixed rules and record justified exceptions. Require the accountable decision-maker to own any reasons or records produced with AI. A polished answer is not evidence of truth or completeness (Ji et al., 2023; National Institute of Standards and Technology, 2023).
 
-A prediction may be automated. The prediction itself cannot decide whose welfare matters, authorize an intervention, or accept responsibility for the result.
+Three governance failures deserve special attention. First, the **target-variable problem** allows technical accuracy to optimize the wrong objective or reproduce historical labels (Obermeyer et al., 2019). Second, automation bias and algorithm aversion produce over- and under-reliance rather than trust calibrated to comparative evidence (Dietvorst et al., 2015; Mosier et al., 1998). Third, fairness criteria can conflict, so no technical switch can choose among rights, error costs, history, and institutional purpose (Barocas et al., 2019). Higher stakes therefore require stronger validation, transparency, subgroup analysis, contestability, privacy protection, and real human authority to correct the system.
+
+A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that authority was legitimate, and how an error can be corrected?** A reviewer without the information or power to change the output is not meaningful oversight; the person merely becomes a moral crumple zone for the system (Elish, 2019).
 :::
 
-“AI” is not one fixed bundle of capabilities. A fixed, versioned deterministic or predictive pipeline may repeat a defined calculation, rule, or prediction; this repeatability says nothing by itself about whether the target, data, or result is valid. A generative model may be prompted to retrieve, summarize, propose alternatives, expose counterarguments, or draft a record, but its output can vary, fail instructions, or contain fabricated claims. It is therefore not inherently consistent, truthful, or rule-bound. Assign a role only after validating the actual tool, version, task, population, and division of labor against feasible alternatives (National Institute of Standards and Technology, 2023; Ji et al., 2023).
-
-| Candidate role | Required task-specific check |
-| --- | --- |
-| Forecast or classify | Validate out of sample; inspect calibration, uncertainty, and subgroup error. |
-| Retrieve or summarize | Verify material facts, quotations, dates, and sources. |
-| Generate alternatives or risks | Treat the output as a search aid, not a complete option set. |
-| Apply a fixed rule or rubric | Version the pipeline; audit the target, data, weights, reproducibility, and justified exceptions. |
-| Draft reasons or records | Ensure the accountable decision-maker owns and can defend the reasoning. |
-: Human–AI roles and safeguards {#tbl-36-ai}
-
-![This author's prescriptive synthesis assigns no intrinsic broad capability advantage to either people or AI. It distinguishes fixed or predictive tools from generative models and places every proposed role behind a task-specific comparative evidence gate.](../figures/human-ai-judgment.svg){#fig-human-ai-judgment fig-alt="Three left panels separate accountable human responsibilities, fixed or predictive tools, and generative models. All point to a task-specific evidence gate covering target validity, comparative performance, output checks, system conditions, and rights. The gate leads to a governed decision with accountability, documentation, correction, appeal, and monitoring."}
-
-@fig-human-ai-judgment is a governance proposal, not a capability scorecard or an empirical ranking. Human responsibility for goals, rights, and accountability does not establish that unaided human forecasts are accurate. A fixed model's repeatability does not establish that it is well targeted. A generative model's fluency does not establish truth or instruction-following. The relevant comparison is task-specific performance and harm under the proposed workflow—including the workload and authority of the human reviewer—not “human versus AI” in the abstract.
-
-The first failure is the **target-variable problem**. A hospital model may predict cost rather than health need; a hiring model may reproduce past selection rather than future job performance; a productivity system may optimize response speed rather than quality. Technical accuracy cannot rescue the wrong objective. Historical labels can also encode past inequities, and average performance can conceal unequal errors (Obermeyer et al., 2019).
-
-The second failure is miscalibrated reliance. **Automation bias** is over-reliance on a system that appears authoritative. **Algorithm aversion** is rejecting a useful model after observing it make an error that would be tolerated from a human (Mosier et al., 1998; Dietvorst et al., 2015). The aim is neither obedience nor rejection, but trust proportionate to comparative evidence.
-
-Fairness is not one technical switch. Calibration, equal false-positive rates, equal false-negative rates, equal selection rates, and individual fairness can conflict; choosing among them depends on rights, error costs, history, and institutional purpose (Barocas et al., 2019). Nor does a post-hoc explanation always make a black box appropriate. Where decisions affect rights, access, health, liberty, or livelihood, a validated interpretable model may be preferable to explaining an opaque one after the fact (Rudin, 2019).
-
-Generative AI presents a special fluency risk. A polished answer can make weak evidence feel complete. Use it to widen thinking—with alternatives, edge cases, stakeholder harms, premortems, and questions—not to end thinking. For consequential tasks, record the independent human view before consulting AI, verify claims outside the model, document the system's role, protect confidential data, preserve correction and appeal, and monitor drift after deployment.
-
-::: {.callout-note .research-lens .epistemic-action icon=false}
-## Research Lens: act to learn
-
-Some actions are valuable mainly because they improve an outcome now; others are valuable because they reveal a hidden state. Active-inference language calls the first **pragmatic** and the second **epistemic** (Friston et al., 2017). A pilot before full deployment, a diagnostic test, a negotiation question about priorities, or a request that an AI system expose sources can be an epistemic action. The distinction sharpens one step in decision hygiene: ask not only “Which option currently looks best?” but also “Which safe action would most improve the next decision?”
-
-This is a modeling lens, not evidence that every organizational action literally minimizes one neural quantity. It becomes useful only when the hidden state, candidate action, information gained, and subsequent choice can be specified and tested.
-:::
-
-Do not use an unvalidated system simply because it is available. Higher stakes require stronger comparative evidence, transparency, subgroup evaluation, contestability, and accountable human authority. Avoid deployment when the target is an illegitimate proxy, the population or context has shifted beyond validation, sensitive data cannot be protected, or the decision's moral and relational responsibility cannot be delegated. A human reviewer should not become a **moral crumple zone** who receives blame for an automated system without real authority or information to correct it (Elish, 2019). A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that role was legitimate, and how an error can be corrected?**
+Some choices should also be designed to learn. A pilot, diagnostic test, negotiation question, or request for supporting sources can reveal a hidden state before commitment. Ask not only which option currently looks best, but which safe action would most improve the next decision.
 
 ## During the decision: structure disagreement
 
@@ -211,9 +182,7 @@ Safety and accountability are complements. High safety without evidence standard
 
 ## Design choices, not just advice
 
-When behavior repeats, redesign the environment. Change defaults, friction, prompts, timing, information format, social visibility, and feedback. Make desired actions easier at the moment they must occur and make harmful impulsive actions harder. Ethical choice architecture preserves meaningful exit and serves goals that the affected person could endorse under informed reflection.
-
-In persuasion, begin with the audience model rather than the speaker's facts. Identify the current story, the barrier to updating, the protected identity, and the evidence that would be treated as credible. In communication, ask before assuming and make interpretation testable. In negotiation, improve the BATNA, map interests and priorities, and prepare packages before the pressure of the table.
+Advice leaves the surrounding process intact. Chapters 30–40 supplied stronger design moves: diagnose the audience model, make meaning testable, map alternatives and interests, redesign recurring cues and friction, and govern the whole choice path. Decision hygiene does not reteach those mechanisms. It asks which one repairs the diagnosed weak stage while preserving agency, challenge, and feedback.
 
 ## Better meetings: do not let the presentation become the decision
 
@@ -279,8 +248,6 @@ Reflection differs from rationalization because it produces a testable change. �
 
 ![The book's recurring navigation model returns as an author's teaching synthesis: a system that can be redesigned and made answerable to feedback, with functions that may overlap, repeat, or be skipped.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="The author's recursive navigation model highlights context, option construction, the combined function of choosing, commitment and action, learning, and the outer social and institutional environment. A shared rail shows that this environment can influence every function. It is not a validated universal stage order."}
 
-![Notice, test, ask, design, and learn form the book's closing prescriptive synthesis for improving decisions, persuasion, communication, and negotiation; it is a reusable prompt, not a validated universal cycle.](../figures/decision-improvement-cycle.svg){#fig-decision-improvement-cycle fig-alt="An author's closing synthesis arranges notice, test, ask, design, and learn around decision hygiene. The cycle is a reusable prompt rather than a validated universal sequence."}
-
 The framework can be compressed into five verbs. Notice what attention selected and what it excluded. Test the model with base rates, counterevidence, experiments, and alternative explanations. Ask other people for their perspective, interests, constraints, and meaning. Design the environment, message, conversation, or agreement so that good action is easier. Learn from a record that existed before the outcome.
 
 Decision, persuasion, communication, and negotiation are not separate skills. They are different forms of model management. In each case, we are trying to understand how a mind represents a situation, what it expects, what it values, which actions appear possible, and what feedback will change the next cycle. The deepest practical lesson is therefore not "think harder." It is "build a process in which better thinking has a chance to occur."
@@ -334,10 +301,6 @@ The aim is disciplined humility, not technocracy. A good process should become m
 ## Practice Lab: integrated decision studio
 
 Complete the integrated decision studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.
-
-**EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)**
-
-Experience: describe one specific decision, interaction, or observation. Explain: use one or two concepts from this chapter accurately. Apply: state one improvement, implication, or testable prediction.
 :::
 
 ## Take it forward

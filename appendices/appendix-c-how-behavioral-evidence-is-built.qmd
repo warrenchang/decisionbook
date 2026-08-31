@@ -345,6 +345,53 @@ Scientific writing becomes clearer when it states the estimand and scope before 
 | Transport | Target setting; likely effect modifiers; planned boundary tests |
 : A compact evidence design card {#tbl-evidence-design-card}
 
+## Worked study: from question to report
+
+The following example is a **simulated teaching study**, not evidence about any real clinic. Its purpose is to show how the records connect from question to final sentence.
+
+**Question.** Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?
+
+**Preregistered design.** Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.
+
+| Design-card field | Declared choice |
+| --- | --- |
+| Population | Patients eligible for the appointment under the clinic's existing rule |
+| Treatment and comparison | Plain-language reminder versus standard reminder |
+| Unit and assignment | Individual patient; exactly 600 assignments per arm |
+| Primary outcome | Attendance recorded within thirty days |
+| Estimand | ITT risk difference: assignment to new reminder minus assignment to standard reminder |
+| Main threats | Delivery failure, wrong contact information, spillovers within households, missing administrative records, and outcome-definition errors |
+| Mechanism boundary | The contrast tests the reminder package; it does not separately identify comprehension, fear reduction, salience, or lower friction |
+| Decision rule | Report estimate and interval; the clinic evaluates operational cost, distribution across patient groups, and implementation errors before scaling |
+: Preregistered design card for the simulated reminder study {#tbl-worked-reminder-design}
+
+The data below are generated with a declared seed and fixed probabilities solely to make the workflow reproducible:
+
+```python
+import math
+import random
+
+rng = random.Random(20260830)
+n_control = n_treatment = 600
+control = [int(rng.random() < 0.65) for _ in range(n_control)]
+treatment = [int(rng.random() < 0.70) for _ in range(n_treatment)]
+
+p_control = sum(control) / n_control
+p_treatment = sum(treatment) / n_treatment
+effect = p_treatment - p_control
+se = math.sqrt(
+    p_control * (1 - p_control) / n_control
+    + p_treatment * (1 - p_treatment) / n_treatment
+)
+ci = (effect - 1.96 * se, effect + 1.96 * se)
+```
+
+The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is **6.2 percentage points**, with an approximate 95% confidence interval from **0.8 to 11.5 percentage points**.
+
+**Design-matched interpretation.** In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.
+
+**Deviation and preservation record.** This simulated analysis has no analytical deviations because the code follows the declared generation and estimation procedure. It bypasses recruitment, delivery, attrition, spillovers, implementation failure, and measurement operations, so it does **not** demonstrate treatment fidelity or the absence of protocol deviations in a real study. A real study would preserve the eligibility extract, assignment file, delivered-message log, undeliverable contacts, outcome pull, code, environment, consent or waiver decision, preregistration, and every departure from the protocol. A model answer is credible because each sentence can be traced back through that record—not because the estimate happens to exclude zero.
+
 ## Ethics is part of identification
 
 The Belmont principles remain a useful starting point: **respect for persons**, **beneficence**, and **justice**. Respect requires meaningful information and voluntary participation where consent applies. Beneficence requires risks to be minimized and justified by potential value. Justice asks who bears research burdens and who can benefit.
@@ -382,8 +429,7 @@ Institutional review, data-protection law, registration, and local procedures ch
 
 Choose one claim from the book or current media. Place it in @fig-claim-to-design-pipeline. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.
 
-EXPERIENCE – EXPLAIN – APPLY (MAXIMUM 120 WORDS)  
-Experience: state the original claim and evidence. Explain: identify one design link and one assumption. Apply: give the revised design or the narrower warranted claim.
+Submit the completed pipeline, one explicit assumption, the revised design, and a final sentence whose strength matches the evidence the redesign could earn.
 :::
 
 ## References cited in this appendix

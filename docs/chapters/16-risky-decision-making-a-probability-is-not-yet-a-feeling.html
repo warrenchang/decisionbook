@@ -195,14 +195,14 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/06-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -555,10 +555,7 @@ window.Quarto = {
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#opening-puzzle-the-same-expected-value-a-different-choice" id="toc-opening-puzzle-the-same-expected-value-a-different-choice" class="nav-link" data-scroll-target="#opening-puzzle-the-same-expected-value-a-different-choice">Opening puzzle: the same expected value, a different choice</a></li>
   <li><a href="#risk-uncertainty-and-ambiguity" id="toc-risk-uncertainty-and-ambiguity" class="nav-link" data-scroll-target="#risk-uncertainty-and-ambiguity">Risk, uncertainty, and ambiguity</a></li>
-  <li><a href="#expected-value-the-monetary-benchmark" id="toc-expected-value-the-monetary-benchmark" class="nav-link" data-scroll-target="#expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</a>
-  <ul class="collapse">
-  <li><a href="#research-lens-the-st-petersburg-puzzle" id="toc-research-lens-the-st-petersburg-puzzle" class="nav-link" data-scroll-target="#research-lens-the-st-petersburg-puzzle">Research Lens: the St Petersburg puzzle</a></li>
-  </ul></li>
+  <li><a href="#expected-value-the-monetary-benchmark" id="toc-expected-value-the-monetary-benchmark" class="nav-link" data-scroll-target="#expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</a></li>
   <li><a href="#expected-utility-value-over-final-consequences" id="toc-expected-utility-value-over-final-consequences" class="nav-link" data-scroll-target="#expected-utility-value-over-final-consequences">Expected utility: value over final consequences</a>
   <ul class="collapse">
   <li><a href="#curvature-and-attitudes-toward-a-mean-preserving-risk" id="toc-curvature-and-attitudes-toward-a-mean-preserving-risk" class="nav-link" data-scroll-target="#curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</a></li>
@@ -568,7 +565,6 @@ window.Quarto = {
   </ul></li>
   <li><a href="#the-allais-pattern-certainty-does-not-cancel-cleanly" id="toc-the-allais-pattern-certainty-does-not-cancel-cleanly" class="nav-link" data-scroll-target="#the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais pattern: certainty does not cancel cleanly</a></li>
   <li><a href="#the-ellsberg-urn-risk-is-not-ambiguity" id="toc-the-ellsberg-urn-risk-is-not-ambiguity" class="nav-link" data-scroll-target="#the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: risk is not ambiguity</a></li>
-  <li><a href="#outcome-bias-a-good-process-can-lose" id="toc-outcome-bias-a-good-process-can-lose" class="nav-link" data-scroll-target="#outcome-bias-a-good-process-can-lose">Outcome bias: a good process can lose</a></li>
   <li><a href="#risk-communication-show-the-denominator-and-the-consequence" id="toc-risk-communication-show-the-denominator-and-the-consequence" class="nav-link" data-scroll-target="#risk-communication-show-the-denominator-and-the-consequence">Risk communication: show the denominator and the consequence</a></li>
   <li><a href="#worked-application-should-we-insure-this-exposure" id="toc-worked-application-should-we-insure-this-exposure" class="nav-link" data-scroll-target="#worked-application-should-we-insure-this-exposure">Worked application: should we insure this exposure?</a>
   <ul class="collapse">
@@ -649,6 +645,7 @@ window.Quarto = {
 <p>Expected value is unchanged. The consequences are not.</p>
 <p>This is the central transition from probability judgment to risky choice. A probability answers, “How likely?” A decision must also answer, “How much would each outcome matter, from this person’s position, given what else could happen?”</p>
 <p>The running case is a small organization deciding whether to insure a cyber exposure. It must estimate incident frequency, contract coverage, and uncertain losses, but the recommendation also depends on liquid reserves, service interruption, legal obligations, and survival. Each formal tool below will be judged by whether it improves that decision—not by whether it produces one elegant number.</p>
+<p>The core route is deliberately narrow: distinguish risk from ambiguity, move from expected money to the value of final consequences, test the expected-utility benchmark with Allais and Ellsberg, and return to the insurance decision. The Research Lenses preserve specialist extensions without making them prerequisites for that route.</p>
 </section>
 <section id="risk-uncertainty-and-ambiguity" class="level2">
 <h2 data-anchor-id="risk-uncertainty-and-ambiguity">Risk, uncertainty, and ambiguity</h2>
@@ -691,8 +688,16 @@ F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
 <p>Experiments often find <strong>pull-to-center</strong> ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon’s (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.</p>
 </div>
 </div>
-<section id="research-lens-the-st-petersburg-puzzle" class="level3">
-<h3 data-anchor-id="research-lens-the-st-petersburg-puzzle">Research Lens: the St Petersburg puzzle</h3>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: the St Petersburg puzzle
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss <span class="math inline">\(n\)</span>, the game pays <span class="math inline">\(2^n\)</span> monetary units. The probability of that outcome is <span class="math inline">\(2^{-n}\)</span>. Its expected monetary value is</p>
 <p><span class="math display">\[
 EV=\sum_{n=1}^{\infty}2^{-n}2^n
@@ -701,7 +706,8 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 \]</span></p>
 <p>Yet few people would pay an enormous entry price. Bernoulli’s solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.</p>
 <p>The puzzle does not by itself prove diminishing marginal utility. It shows that unbounded expected money is not an adequate decision criterion for the stated offer. Diminishing marginal utility is one historically important response; finite wealth, bounded liability, mistrust, transaction costs, and a maximum feasible number of tosses also change the problem. A casino promising <span class="math inline">\(2^{50}\)</span> units may not be able to pay. Expected value is conditional on a realizable contract.</p>
-</section>
+</div>
+</div>
 </section>
 <section id="expected-utility-value-over-final-consequences" class="level2">
 <h2 data-anchor-id="expected-utility-value-over-final-consequences">Expected utility: value over final consequences</h2>
@@ -888,56 +894,20 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 <li>the decision-maker’s trust in the source.</li>
 </ol>
 <p>Collapsing all four into one probability hides the reason for caution.</p>
-</section>
-<section id="outcome-bias-a-good-process-can-lose" class="level2">
-<h2 data-anchor-id="outcome-bias-a-good-process-can-lose">Outcome bias: a good process can lose</h2>
-<p><a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#outcome-is-not-process"><em>How Decisions Should Be Made—and How They Actually Are</em></a> introduced outcome bias as a general failure to separate decision quality from outcome quality. Risk makes that distinction especially important because even a well-calibrated choice can produce a loss, while a reckless choice can be rescued by luck.</p>
-<div id="tbl-risk-process-outcome" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-risk-process-outcome-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;16.2: Process and outcome are different dimensions
-</figcaption>
-<div aria-describedby="tbl-risk-process-outcome-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Process</th>
-<th>Outcome</th>
-<th>Correct interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Good</td>
-<td>Good</td>
-<td>The result is encouraging, but one case does not prove skill.</td>
-</tr>
-<tr class="even">
-<td>Good</td>
-<td>Bad</td>
-<td>The loss may be bad luck; inspect whether assumptions and execution were defensible ex ante.</td>
-</tr>
-<tr class="odd">
-<td>Poor</td>
-<td>Good</td>
-<td>The gain may be luck; do not reward a process that exposed the organization to unjustified risk.</td>
-</tr>
-<tr class="even">
-<td>Poor</td>
-<td>Bad</td>
-<td>Repair the process, but do not infer the mechanism from the loss alone.</td>
-</tr>
-</tbody>
-</table>
+<p><span id="risk-process-check"></span></p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Process check: risk does not rewrite decision quality
 </div>
-<p>The earlier evidence shows that people evaluate the same decision more favorably when told it produced a good outcome (Baron &amp; Hershey, 1988). The risk-specific lesson is procedural: preserve the information, probabilities, alternatives, constraints, and reasons available at the time. Review that record before learning from the result. Otherwise, realized luck becomes a false measure of ex ante judgment.</p>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#outcome-is-not-process"><em>How Decisions Should Be Made—and How They Actually Are</em></a> owns the general distinction between process and outcome (Baron &amp; Hershey, 1988). Its risk-specific implication is simple: a calibrated choice can lose, while a reckless choice can be rescued by luck. Preserve the probabilities, alternatives, constraints, and reasons available before the uncertainty resolves; otherwise one realized path becomes a false measure of ex ante judgment.</p>
+</div>
+</div>
 </section>
 <section id="risk-communication-show-the-denominator-and-the-consequence" class="level2">
 <h2 data-anchor-id="risk-communication-show-the-denominator-and-the-consequence">Risk communication: show the denominator and the consequence</h2>
@@ -987,6 +957,7 @@ Table&nbsp;16.2: Process and outcome are different dimensions
 \]</span></p>
 <p>Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.</p>
 <p>The mental-accounting chapter later shows why decision-makers often evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.</p>
+<p><span id="multiplicative-risk"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

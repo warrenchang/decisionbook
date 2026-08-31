@@ -40,6 +40,8 @@ This is the central transition from probability judgment to risky choice. A prob
 
 The running case is a small organization deciding whether to insure a cyber exposure. It must estimate incident frequency, contract coverage, and uncertain losses, but the recommendation also depends on liquid reserves, service interruption, legal obligations, and survival. Each formal tool below will be judged by whether it improves that decision—not by whether it produces one elegant number.
 
+The core route is deliberately narrow: distinguish risk from ambiguity, move from expected money to the value of final consequences, test the expected-utility benchmark with Allais and Ellsberg, and return to the insurance decision. The Research Lenses preserve specialist extensions without making them prerequisites for that route.
+
 ## Risk, uncertainty, and ambiguity
 
 In a textbook lottery, outcomes and probabilities are specified: a coin gives a 50% chance of each result. This is **risk** in the narrow decision-theory sense. In many real decisions, the probabilities are estimated, disputed, or partly unknown. This broader **uncertainty** includes model error, missing outcomes, changing environments, and ambiguous evidence.
@@ -88,7 +90,8 @@ For discrete demand, choose the smallest quantity whose cumulative probability r
 Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.
 :::
 
-### Research Lens: the St Petersburg puzzle
+::: {.callout-note .research-lens icon=false}
+## Research Lens: the St Petersburg puzzle
 
 Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
 
@@ -101,6 +104,7 @@ $$
 Yet few people would pay an enormous entry price. Bernoulli's solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.
 
 The puzzle does not by itself prove diminishing marginal utility. It shows that unbounded expected money is not an adequate decision criterion for the stated offer. Diminishing marginal utility is one historically important response; finite wealth, bounded liability, mistrust, transaction costs, and a maximum feasible number of tosses also change the problem. A casino promising $2^{50}$ units may not be able to pay. Expected value is conditional on a realizable contract.
+:::
 
 ## Expected utility: value over final consequences
 
@@ -242,19 +246,13 @@ This pattern is called **ambiguity aversion**, but it has boundaries. People may
 
 Collapsing all four into one probability hides the reason for caution.
 
-## Outcome bias: a good process can lose
+[]{#risk-process-check}
 
-[*How Decisions Should Be Made—and How They Actually Are*](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) introduced outcome bias as a general failure to separate decision quality from outcome quality. Risk makes that distinction especially important because even a well-calibrated choice can produce a loss, while a reckless choice can be rescued by luck.
+::: {.callout-tip icon=false}
+## Process check: risk does not rewrite decision quality
 
-| Process | Outcome | Correct interpretation |
-| --- | --- | --- |
-| Good | Good | The result is encouraging, but one case does not prove skill. |
-| Good | Bad | The loss may be bad luck; inspect whether assumptions and execution were defensible ex ante. |
-| Poor | Good | The gain may be luck; do not reward a process that exposed the organization to unjustified risk. |
-| Poor | Bad | Repair the process, but do not infer the mechanism from the loss alone. |
-: Process and outcome are different dimensions {#tbl-risk-process-outcome}
-
-The earlier evidence shows that people evaluate the same decision more favorably when told it produced a good outcome (Baron & Hershey, 1988). The risk-specific lesson is procedural: preserve the information, probabilities, alternatives, constraints, and reasons available at the time. Review that record before learning from the result. Otherwise, realized luck becomes a false measure of ex ante judgment.
+[*How Decisions Should Be Made—and How They Actually Are*](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) owns the general distinction between process and outcome (Baron & Hershey, 1988). Its risk-specific implication is simple: a calibrated choice can lose, while a reckless choice can be rescued by luck. Preserve the probabilities, alternatives, constraints, and reasons available before the uncertainty resolves; otherwise one realized path becomes a false measure of ex ante judgment.
+:::
 
 ## Risk communication: show the denominator and the consequence
 
@@ -304,6 +302,8 @@ $$
 Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.
 
 The mental-accounting chapter later shows why decision-makers often evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
+
+[]{#multiplicative-risk}
 
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: a positive arithmetic average can conceal multiplicative collapse

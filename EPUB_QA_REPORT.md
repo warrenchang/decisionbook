@@ -36,10 +36,19 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | NCX omits the redundant generated title-page entry | **PASS** |
 | NCX mirrors the compact Part-to-Chapter hierarchy | **PASS** |
 | Compilation date is current | **PASS** |
+| EPUB uses the stable publication identifier | **PASS** |
+| EPUB identifies its publisher | **PASS** |
+| EPUB states publication rights | **PASS** |
+| EPUB carries subject metadata | **PASS** |
+| EPUB declares textual and visual access modes | **PASS** |
+| EPUB declares MathML and alternative-text accessibility features | **PASS** |
+| EPUB includes an accessibility summary | **PASS** |
 | All 59 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
+| Every internal content link and fragment resolves | **PASS** |
+| Every packaged content image has nonempty alternative text | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
 | Required content: How Decisions Should Be Made—and How They Actually Are | **PASS** |
