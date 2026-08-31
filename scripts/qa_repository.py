@@ -292,7 +292,7 @@ def audit(repo: Path) -> tuple[dict, list[Issue]]:
         else:
             expected_prev = chapter_html[i - 1].name
         if i == len(chapter_html) - 1:
-            expected_next = "appendix-a-portable-course-tools.html"
+            expected_next = "appendix-a-rational-choice-and-decision-analysis.html"
         elif chapter_parts[i + 1] != part:
             expected_next = f"part-{part + 1}.html"
         else:

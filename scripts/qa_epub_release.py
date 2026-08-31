@@ -46,6 +46,14 @@ EXPECTED_PART_CHAPTERS = [
     list(range(39, 42)),
 ]
 
+EXPECTED_APPENDICES = [
+    ("Appendix A", "Rational Choice and Decision Analysis"),
+    ("Appendix B", "Portable Tools"),
+    ("Appendix C", "Index of Major Examples"),
+    ("Appendix D", "Running an Experimental Study"),
+    ("Appendix E", "When Evidence Breaks"),
+]
+
 REQUIRED_CONTENT = [
     "How Decisions Should Be Made—and How They Actually Are",
     "Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness",
@@ -323,6 +331,16 @@ def main() -> int:
             "Appendices A through E are present",
             all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABCDE"),
         )
+        appendix_labels = [label for label in labels if label.startswith("Appendix ")]
+        check(
+            "Appendices have the intended order and titles",
+            len(appendix_labels) >= len(EXPECTED_APPENDICES)
+            and all(
+                appendix_labels[index].startswith(prefix) and title in appendix_labels[index]
+                for index, (prefix, title) in enumerate(EXPECTED_APPENDICES)
+            ),
+            " | ".join(appendix_labels[:5]),
+        )
         appendix_e_position = next((i for i, label in enumerate(labels) if label.startswith("Appendix E")), -1)
         references_position = labels.index("References") if "References" in labels else -1
         index_position = labels.index("Index of Concepts") if "Index of Concepts" in labels else -1
@@ -450,7 +468,15 @@ def main() -> int:
             ", ".join(overnested_callout_titles[:5]),
         )
 
-        appendix_d = next(
+        epigraph_count = sum(
+            1
+            for chapter_root in parsed_chapters.values()
+            for div in chapter_root.findall(f".//{{{XHTML}}}div")
+            if "chapter-epigraph" in div.get("class", "").split()
+        )
+        check("Every main chapter packages one epigraph", epigraph_count == 41, str(epigraph_count))
+
+        appendix_a = next(
             (
                 (path, root)
                 for path, root in parsed_chapters.items()
@@ -458,30 +484,30 @@ def main() -> int:
             ),
             None,
         )
-        check("Appendix D is present for mathematics QA", appendix_d is not None)
-        if appendix_d is not None:
-            appendix_d_path, appendix_d_root = appendix_d
+        check("Appendix A is present for mathematics QA", appendix_a is not None)
+        if appendix_a is not None:
+            appendix_a_path, appendix_a_root = appendix_a
             inline_math = [
                 element
-                for element in appendix_d_root.findall(f".//{{{MATHML}}}math")
+                for element in appendix_a_root.findall(f".//{{{MATHML}}}math")
                 if element.get("display") == "inline"
             ]
             empty_inline_math = [element for element in inline_math if not normalized_text(element)]
-            appendix_d_text = normalized_text(appendix_d_root)
+            appendix_a_text = normalized_text(appendix_a_root)
             check(
-                "Appendix D packages its inline formulas as MathML",
+                "Appendix A packages its inline formulas as MathML",
                 len(inline_math) >= 100,
-                f"{appendix_d_path}: found {len(inline_math)} inline MathML elements",
+                f"{appendix_a_path}: found {len(inline_math)} inline MathML elements",
             )
             check(
-                "Every Appendix D inline MathML formula contains content",
+                "Every Appendix A inline MathML formula contains content",
                 not empty_inline_math,
-                f"{appendix_d_path}: found {len(empty_inline_math)} empty inline formulas",
+                f"{appendix_a_path}: found {len(empty_inline_math)} empty inline formulas",
             )
             check(
-                "Appendix D contains no empty-parenthesis math loss",
-                not re.search(r"\b(?:Let|where|Suppose|when|If)\s+\(\)", appendix_d_text),
-                appendix_d_path,
+                "Appendix A contains no empty-parenthesis math loss",
+                not re.search(r"\b(?:Let|where|Suppose|when|If)\s+\(\)", appendix_a_text),
+                appendix_a_path,
             )
 
         broken_content_links: list[str] = []

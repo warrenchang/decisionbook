@@ -30,6 +30,21 @@ REDUNDANT_FIGURE_XREF = re.compile(r"\bFigures?\s+@fig-[A-Za-z0-9_-]+")
 LEGACY_INLINE_MATH_DELIMITER = re.compile(r"\\[()]")
 BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL)
+CHAPTER_EPIGRAPH = re.compile(
+    r'^::: \{\.chapter-epigraph\}\s*\n> “([^”]+)”\s*\n>\s*\n> — (.+?)\n:::\s*$',
+    re.MULTILINE,
+)
+EPIGRAPH_METADISCOURSE = re.compile(
+    r"\b(?:this|the) (?:paper|article|study|chapter|book|essay)\b"
+    r"|\b(?:we|the authors?) (?:explore|examine|investigate|describe|review|report|present|propose|test|found)\b"
+    r"|\bevidence is reviewed\b|\bthe hypothesis is offered\b",
+    re.IGNORECASE,
+)
+EPIGRAPH_METADISCOURSE_EXCEPTIONS = {
+    "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd":
+        "Evidence is reviewed which suggests that there may be little or no direct introspective access to higher order cognitive processes.",
+}
+PART_MOVEMENT_LABEL = re.compile(r"^\*\*(?:Book\s+[IVX]+|Coda)\b.*\*\*\s*$", re.MULTILINE)
 REQUIRED_PREFIXES = (
     "Learning goals",
     "Where this chapter enters the loop",
@@ -148,6 +163,37 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     if len(chapters) != 41:
         issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 41 canonical chapters; found {len(chapters)}."))
 
+    expected_appendices = [
+        "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",
+        "appendices/appendix-b-portable-course-tools.qmd",
+        "appendices/appendix-c-index-of-major-course-examples.qmd",
+        "appendices/appendix-d-how-behavioral-evidence-is-built.qmd",
+        "appendices/appendix-e-when-evidence-breaks.qmd",
+    ]
+    configured_book_sources = BOOK_SOURCE_LINE.findall((ROOT / "_quarto-html.yml").read_text(encoding="utf-8"))
+    actual_appendices = [value for value in configured_book_sources if value.startswith("appendices/appendix-")]
+    if actual_appendices != expected_appendices:
+        issues.append(
+            Issue(
+                "error",
+                "appendix-order",
+                "_quarto-html.yml",
+                f"Expected {expected_appendices}; found {actual_appendices}.",
+            )
+        )
+
+    for part_source in (value for value in configured_book_sources if value.startswith("parts/part-")):
+        part_path = ROOT / part_source
+        if part_path.exists() and PART_MOVEMENT_LABEL.search(part_path.read_text(encoding="utf-8")):
+            issues.append(
+                Issue(
+                    "error",
+                    "part-movement-label",
+                    part_source,
+                    "Book-level movement labels belong in the front matter, not at the start of each part.",
+                )
+            )
+
     global_ids: list[tuple[str, str]] = []
     figure_paths: set[Path] = set()
     book_figure_paths: set[Path] = set()
@@ -182,6 +228,29 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         h1s = H1.findall(text)
         if len(h1s) != 1:
             issues.append(Issue("error", "chapter-h1", rel(chapter), f"Expected one H1; found {len(h1s)}."))
+        epigraphs = CHAPTER_EPIGRAPH.findall(text)
+        if len(epigraphs) != 1:
+            issues.append(Issue("error", "chapter-epigraph", rel(chapter), f"Expected one sourced epigraph; found {len(epigraphs)}."))
+        else:
+            quotation, attribution = epigraphs[0]
+            quoted_words = len(WORD.findall(quotation))
+            if quoted_words > 25:
+                issues.append(Issue("error", "epigraph-length", rel(chapter), f"Epigraph contains {quoted_words} words; maximum is 25."))
+            approved_metadiscourse = EPIGRAPH_METADISCOURSE_EXCEPTIONS.get(rel(chapter)) == quotation
+            if EPIGRAPH_METADISCOURSE.search(quotation) and not approved_metadiscourse:
+                issues.append(
+                    Issue(
+                        "error",
+                        "epigraph-metadiscourse",
+                        rel(chapter),
+                        "Epigraph describes what a source does or reports instead of stating a self-contained insight.",
+                    )
+                )
+            source_year = re.search(r"\b(?:16|17|18|19|20)\d{2}\b|\b\d{3,4}\s+BCE\b", attribution)
+            if not re.search(r"\]\(https?://", attribution) or not source_year:
+                issues.append(Issue("error", "epigraph-source", rel(chapter), "Epigraph needs a linked source and identifiable year."))
+            if text.find("chapter-epigraph") > text.find("core-idea"):
+                issues.append(Issue("error", "epigraph-position", rel(chapter), "Place the epigraph before the Core Idea."))
         for required in REQUIRED_PREFIXES:
             if not any(heading == required or heading.startswith(f"{required}:") for heading in headings):
                 issues.append(Issue("error", "required-section", rel(chapter), f"Missing section: {required}."))
@@ -249,7 +318,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     # Front matter, part openers, and appendices also contain reader-facing figures.
     # Audit them here so a chapter-only pass cannot miss a broken or unrenderable asset.
     chapter_set = set(chapters)
-    configured_sources = [ROOT / value for value in BOOK_SOURCE_LINE.findall((ROOT / "_quarto-html.yml").read_text(encoding="utf-8"))]
+    configured_sources = [ROOT / value for value in configured_book_sources]
     for source in configured_sources:
         if source in chapter_set:
             continue

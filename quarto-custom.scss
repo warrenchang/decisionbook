@@ -27,6 +27,30 @@ h2 { margin-top: 2.8rem; padding-top: 1.1rem; border-top: 1px solid var(--book-l
 
 .subtitle, p.subtitle { color: var(--book-muted); font-family: Georgia, serif; font-size: 1.12rem; }
 
+.chapter-epigraph {
+  margin: 1.25rem 0 1.6rem;
+  padding: .15rem 0 .15rem 1.05rem;
+  border-left: .18rem solid var(--book-accent);
+  color: #43586c;
+}
+.chapter-epigraph blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+}
+.chapter-epigraph blockquote p:first-child {
+  margin: 0 0 .45rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+.chapter-epigraph blockquote p:last-child {
+  margin: 0;
+  color: var(--book-muted);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
 .hero-block {
   padding: 1.5rem 1.6rem;
   border: 1px solid var(--book-line);

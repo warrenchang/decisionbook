@@ -11,6 +11,33 @@ body {
   box-sizing: inherit;
 }
 
+.chapter-epigraph {
+  margin: 1em 0 1.25em;
+  padding: .1em 0 .1em .85em;
+  border-left: .16em solid #25678f;
+  color: #43586c;
+}
+
+.chapter-epigraph blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.chapter-epigraph blockquote p:first-child {
+  margin: 0 0 .4em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02em;
+  line-height: 1.5;
+}
+
+.chapter-epigraph blockquote p:last-child {
+  margin: 0;
+  color: #607080;
+  font-size: .84em;
+  line-height: 1.4;
+}
+
 .quarto-figure,
 figure.quarto-float,
 figure.quarto-float > div[aria-describedby] {

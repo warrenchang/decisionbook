@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>Appendix D — Running an Experimental Study: From Question to Credible Evidence – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../appendices/appendix-e-when-evidence-breaks.html" rel="next">
+<link href="../appendices/appendix-c-index-of-major-course-examples.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7bd5e343c731cb2535898a92f2262fe9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/appendix-d-how-behavioral-evidence-is-built.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: A Decision Is Already in the Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How Decisions Should Be Made—and How They Actually Are</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-attention-what-becomes-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-the-predictive-mind-perception-is-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-fast-and-frugal-thinking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fast and Frugal Thinking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">What Feels Likely: Availability, Affect, and Resemblance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-beliefs-that-defend-themselves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Beliefs That Defend Themselves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-when-context-rewrites-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">When Context Rewrites Comparison</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-accessibility-familiarity-and-ease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Accessibility, Familiarity, and Ease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates, Conditional Probability, and Bayesian Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-samples-randomness-regression-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, Regression, and Calibration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-building-an-evidence-aligned-message.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Message</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-communication-language-is-not-a-file-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-preparing-and-claiming-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Preparing and Claiming Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-creating-value-across-differences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Creating Value Across Differences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Loops</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-behavior-design-make-the-better-action-easier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-choice-architecture-the-environment-gets-a-vote.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-d-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-e-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-experimental-workflow" id="toc-the-experimental-workflow" class="nav-link active" data-scroll-target="#the-experimental-workflow">The experimental workflow</a></li>
+  <li><a href="#start-with-the-claim-you-want-to-earn" id="toc-start-with-the-claim-you-want-to-earn" class="nav-link" data-scroll-target="#start-with-the-claim-you-want-to-earn">Start with the claim you want to earn</a></li>
+  <li><a href="#turn-a-topic-into-a-question-and-hypothesis" id="toc-turn-a-topic-into-a-question-and-hypothesis" class="nav-link" data-scroll-target="#turn-a-topic-into-a-question-and-hypothesis">1. Turn a topic into a question and hypothesis</a>
+  <ul class="collapse">
+  <li><a href="#research-question-check" id="toc-research-question-check" class="nav-link" data-scroll-target="#research-question-check">Research question check</a></li>
+  </ul></li>
+  <li><a href="#define-the-construct-before-choosing-the-instrument" id="toc-define-the-construct-before-choosing-the-instrument" class="nav-link" data-scroll-target="#define-the-construct-before-choosing-the-instrument">2. Define the construct before choosing the instrument</a></li>
+  <li><a href="#separate-description-prediction-causation-and-mechanism" id="toc-separate-description-prediction-causation-and-mechanism" class="nav-link" data-scroll-target="#separate-description-prediction-causation-and-mechanism">3. Separate description, prediction, causation, and mechanism</a></li>
+  <li><a href="#make-the-counterfactual-and-confounding-visible" id="toc-make-the-counterfactual-and-confounding-visible" class="nav-link" data-scroll-target="#make-the-counterfactual-and-confounding-visible">4. Make the counterfactual and confounding visible</a></li>
+  <li><a href="#choose-the-design-that-identifies-the-contrast" id="toc-choose-the-design-that-identifies-the-contrast" class="nav-link" data-scroll-target="#choose-the-design-that-identifies-the-contrast">5. Choose the design that identifies the contrast</a></li>
+  <li><a href="#random-sampling-and-random-assignment-solve-different-problems" id="toc-random-sampling-and-random-assignment-solve-different-problems" class="nav-link" data-scroll-target="#random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</a>
+  <ul class="collapse">
+  <li><a href="#random-assignment-balances-in-expectation" id="toc-random-assignment-balances-in-expectation" class="nav-link" data-scroll-target="#random-assignment-balances-in-expectation">Random assignment balances in expectation</a></li>
+  <li><a href="#rerandomization-is-a-design-not-a-rescue" id="toc-rerandomization-is-a-design-not-a-rescue" class="nav-link" data-scroll-target="#rerandomization-is-a-design-not-a-rescue">Rerandomization is a design, not a rescue</a></li>
+  </ul></li>
+  <li><a href="#plan-precision-before-collecting-outcomes" id="toc-plan-precision-before-collecting-outcomes" class="nav-link" data-scroll-target="#plan-precision-before-collecting-outcomes">7. Plan precision before collecting outcomes</a></li>
+  <li><a href="#protect-the-assignment-during-implementation" id="toc-protect-the-assignment-during-implementation" class="nav-link" data-scroll-target="#protect-the-assignment-during-implementation">8. Protect the assignment during implementation</a>
+  <ul class="collapse">
+  <li><a href="#attrition-and-missing-outcomes" id="toc-attrition-and-missing-outcomes" class="nav-link" data-scroll-target="#attrition-and-missing-outcomes">Attrition and missing outcomes</a></li>
+  <li><a href="#noncompliance-assignment-is-not-receipt" id="toc-noncompliance-assignment-is-not-receipt" class="nav-link" data-scroll-target="#noncompliance-assignment-is-not-receipt">Noncompliance: assignment is not receipt</a></li>
+  <li><a href="#spillovers-interference-and-displacement" id="toc-spillovers-interference-and-displacement" class="nav-link" data-scroll-target="#spillovers-interference-and-displacement">Spillovers, interference, and displacement</a></li>
+  <li><a href="#evaluation-can-change-behavior" id="toc-evaluation-can-change-behavior" class="nav-link" data-scroll-target="#evaluation-can-change-behavior">Evaluation can change behavior</a></li>
+  </ul></li>
+  <li><a href="#make-multiplicity-and-flexibility-visible" id="toc-make-multiplicity-and-flexibility-visible" class="nav-link" data-scroll-target="#make-multiplicity-and-flexibility-visible">9. Make multiplicity and flexibility visible</a></li>
+  <li><a href="#replication-is-estimation-under-a-declared-protocol" id="toc-replication-is-estimation-under-a-declared-protocol" class="nav-link" data-scroll-target="#replication-is-estimation-under-a-declared-protocol">10. Replication is estimation under a declared protocol</a></li>
+  <li><a href="#build-an-open-and-reproducible-workflow" id="toc-build-an-open-and-reproducible-workflow" class="nav-link" data-scroll-target="#build-an-open-and-reproducible-workflow">11. Build an open and reproducible workflow</a></li>
+  <li><a href="#transport-the-result-only-as-far-as-the-evidence-travels" id="toc-transport-the-result-only-as-far-as-the-evidence-travels" class="nav-link" data-scroll-target="#transport-the-result-only-as-far-as-the-evidence-travels">12. Transport the result only as far as the evidence travels</a></li>
+  <li><a href="#match-the-final-sentence-to-the-design" id="toc-match-the-final-sentence-to-the-design" class="nav-link" data-scroll-target="#match-the-final-sentence-to-the-design">13. Match the final sentence to the design</a></li>
+  <li><a href="#the-one-page-evidence-design-card" id="toc-the-one-page-evidence-design-card" class="nav-link" data-scroll-target="#the-one-page-evidence-design-card">The one-page evidence design card</a></li>
+  <li><a href="#worked-study-from-question-to-report" id="toc-worked-study-from-question-to-report" class="nav-link" data-scroll-target="#worked-study-from-question-to-report">Worked study: from question to report</a></li>
+  <li><a href="#ethics-is-part-of-identification" id="toc-ethics-is-part-of-identification" class="nav-link" data-scroll-target="#ethics-is-part-of-identification">Ethics is part of identification</a></li>
+  <li><a href="#key-ideas" id="toc-key-ideas" class="nav-link" data-scroll-target="#key-ideas">Key ideas</a></li>
+  <li><a href="#study-and-practice" id="toc-study-and-practice" class="nav-link" data-scroll-target="#study-and-practice">Study and practice</a></li>
+  <li><a href="#references-cited-in-this-appendix" id="toc-references-cited-in-this-appendix" class="nav-link" data-scroll-target="#references-cited-in-this-appendix">References cited in this appendix</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/appendices/appendix-d-how-behavioral-evidence-is-built.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/appendices/appendix-d-how-behavioral-evidence-is-built.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/appendix-d-how-behavioral-evidence-is-built.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Appendix D — Running an Experimental Study: From Question to Credible Evidence</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments</em></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This appendix is optional for readers following the book’s professional pathway and central for students who must design, run, analyze, or evaluate an experimental study. It can be read as one methods chapter or used phase by phase while a study is in progress.</p>
+</div>
+</div>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This appendix is a practical chapter about <strong>running an experimental study</strong>. The work begins before participants arrive and continues after the last result is reported: define the question, build the treatment and measure, plan the assignment and analysis, implement the protocol, protect the data, estimate the effect, and document what happened. Evidence is not a result with a small <em>p</em>-value. It is the entire chain.</p>
+</div>
+</div>
+<section id="the-experimental-workflow" class="level2">
+<h2 data-anchor-id="the-experimental-workflow">The experimental workflow</h2>
+<p>Use this appendix as a working protocol in five phases. Each phase leaves a record that the next phase can inspect.</p>
+<div id="tbl-experimental-workflow" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-experimental-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.1: Running an experimental study from definition to preservation
+</figcaption>
+<div aria-describedby="tbl-experimental-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>What you do</th>
+<th>What you preserve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Define</strong></td>
+<td>Turn the topic into a testable question; define the construct, outcome, comparison, population, and estimand</td>
+<td>Research question, theory, hypotheses, construct definitions</td>
+</tr>
+<tr class="even">
+<td><strong>2. Design</strong></td>
+<td>Choose the experimental design; create treatments and measures; plan assignment, power, exclusions, and analysis</td>
+<td>Protocol, materials, code, design calculation, preregistration, ethics approval</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Implement</strong></td>
+<td>Recruit, assign, deliver, measure, and monitor without steering the study toward a preferred result</td>
+<td>Recruitment and assignment logs, timestamps, deviations, attrition, treatment fidelity</td>
+</tr>
+<tr class="even">
+<td><strong>4. Analyze</strong></td>
+<td>Freeze the data, execute the planned analysis, check robustness, and label exploration</td>
+<td>Immutable raw data, cleaning scripts, analysis code, output log, deviation record</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Report and preserve</strong></td>
+<td>Report estimates and uncertainty, match the claim to the design, share what can be shared, and archive what must be protected</td>
+<td>Manuscript, tables and figures, reproducibility package, access conditions, correction path</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Before collecting data, complete the design card in <a href="#tbl-evidence-design-card" class="quarto-xref">Table&nbsp;<span>D.5</span></a>. During implementation, monitor assignment, exposure, attrition, contamination, measurement, and deviations without looking for a preferred result. After data collection, state the estimand first, report uncertainty and all planned outcomes, distinguish confirmatory from exploratory analysis, and narrow the claim to what the experiment actually learned.</p>
+<p>The point is not to make every study maximally complicated. It is to stop complexity from remaining hidden.</p>
+</section>
+<section id="start-with-the-claim-you-want-to-earn" class="level2">
+<h2 data-anchor-id="start-with-the-claim-you-want-to-earn">Start with the claim you want to earn</h2>
+<p>Suppose sales rise after a company introduces a negotiation workshop. Four questions can be asked:</p>
+<ul>
+<li><strong>Description:</strong> By how much did sales rise?</li>
+<li><strong>Prediction:</strong> Which teams are likely to improve next quarter?</li>
+<li><strong>Causation:</strong> What would sales have been for these teams without the workshop?</li>
+<li><strong>Mechanism:</strong> Did the workshop work through preparation, information sharing, confidence, manager attention, or something else?</li>
+</ul>
+<p>The same dataset may answer the first question and fail on the other three. A time trend describes. A predictive model forecasts under a data-generating environment. A causal design compares potential outcomes under interventions. A mechanism claim needs further variation or measurement that distinguishes pathways.</p>
+<div id="fig-claim-to-design-pipeline" class="quarto-float quarto-figure quarto-figure-center" alt="A left-to-right pipeline begins with question, then measure, compare, estimate, and claim. Under each stage is a common failure: vague target, invalid measure, confounding, fragile estimate, and overclaiming. A lower arrow labeled reproduce, replicate, revise returns from the claim to the question.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-claim-to-design-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/claim-to-design-pipeline.svg" class="img-fluid figure-img" alt="A left-to-right pipeline begins with question, then measure, compare, estimate, and claim. Under each stage is a common failure: vague target, invalid measure, confounding, fragile estimate, and overclaiming. A lower arrow labeled reproduce, replicate, revise returns from the claim to the question.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-claim-to-design-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;D.1: A five-stage evidence pipeline from question and hypothesis through construct and measure, assignment and comparison, estimand and analysis, to the final claim, with common threats and a feedback path for reproduction, replication, and revision.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a> shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.</p>
+</section>
+<section id="turn-a-topic-into-a-question-and-hypothesis" class="level2">
+<h2 data-anchor-id="turn-a-topic-into-a-question-and-hypothesis">1. Turn a topic into a question and hypothesis</h2>
+<p>“Anchoring,” “happiness,” and “AI advice” are topics. A research question specifies what would count as an answer.</p>
+<p>For an empirical study, write:</p>
+<blockquote class="blockquote">
+<p>For <strong>population P</strong>, what is the effect or association of <strong>intervention/exposure X</strong>, relative to <strong>comparison C</strong>, on <strong>outcome Y</strong>, over <strong>time T</strong>, and through which proposed <strong>mechanism M</strong>?</p>
+</blockquote>
+<p>Not every question needs every element in its title. The design does.</p>
+<p>A hypothesis should make a risky prediction before the outcome is known. “Anchoring matters” is too elastic. “Participants who see a high initial price will report a higher willingness to pay than those who see a low initial price, for the preregistered product and estimator” can be contradicted.</p>
+<p>Three distinctions prevent later confusion:</p>
+<ul>
+<li><strong>Confirmatory</strong> analysis evaluates a claim and analysis plan specified without using the outcome pattern.</li>
+<li><strong>Exploratory</strong> analysis uses the data to discover patterns and generate explanations.</li>
+<li><strong>Post hoc prediction</strong> can be valuable, but it must not be narrated as if it was specified in advance.</li>
+</ul>
+<p>ABT—AND, BUT, THEREFORE—can make the motivation clear. It cannot establish novelty, measurement quality, or identification. A compelling contradiction earns attention; a design earns the claim.</p>
+<section id="research-question-check" class="level3">
+<h3 data-anchor-id="research-question-check">Research question check</h3>
+<ul>
+<li>Can another researcher name the population, comparison, outcome, and horizon?</li>
+<li>Is the question descriptive, predictive, causal, mechanistic, or a synthesis question?</li>
+<li>What result would count against the hypothesis?</li>
+<li>Is the study feasible with the available sample, ethics, time, access, and measurement?</li>
+<li>Would the answer change theory, a decision, a design, or a boundary condition?</li>
+</ul>
+</section>
+</section>
+<section id="define-the-construct-before-choosing-the-instrument" class="level2">
+<h2 data-anchor-id="define-the-construct-before-choosing-the-instrument">2. Define the construct before choosing the instrument</h2>
+<p>A <strong>construct</strong> is the theoretical object: trust, impatience, fairness, experienced affect, cooperation. An <strong>operationalization</strong> is how the study makes that object observable: an item, scale, choice, response time, transfer, physiological signal, or coded behavior.</p>
+<p>Similar labels can hide different constructs. A one-shot transfer, a self-report of generosity, and repeated helping behavior are not interchangeable measures of “prosociality.” Different labels can also hide near-identical measures. Name the construct first, then justify why the operation captures it in this population and setting.</p>
+<p><strong>Reliability</strong> concerns the consistency or precision of a measurement for its intended use. <strong>Validity</strong> concerns whether the interpretation of the score is warranted. A measure can be reliable and invalid: a scale can reproduce the same number while measuring the wrong object. High internal consistency does not establish construct validity. A correlation with brain activity does not certify a questionnaire as the true measure of a mental state.</p>
+<p>Before data collection, record:</p>
+<ul>
+<li>exact items, task, instructions, response scale, timing, scoring, exclusions, and version;</li>
+<li>why the measure fits the construct and decision context;</li>
+<li>evidence about reliability and validity in a relevant population;</li>
+<li>whether the treatment changes the measure itself rather than the underlying construct;</li>
+<li>whether comparison across languages or groups assumes comparable scale use;</li>
+<li>which outcome is primary and which are secondary, manipulation checks, mediators, or exploratory.</li>
+</ul>
+<p>Manipulation checks need care. A post-treatment check can be a useful diagnostic, but conditioning the main analysis on passing it can break randomization. If the treatment changes how people interpret the check, the check is also an outcome.</p>
+<p>Measurement is not clerical work after theory. It is the bridge between theory and data (Flake &amp; Fried, 2020).</p>
+</section>
+<section id="separate-description-prediction-causation-and-mechanism" class="level2">
+<h2 data-anchor-id="separate-description-prediction-causation-and-mechanism">3. Separate description, prediction, causation, and mechanism</h2>
+<div id="tbl-claim-families" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-claim-families-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.2: Claim families require different evidence
+</figcaption>
+<div aria-describedby="tbl-claim-families-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Claim family</th>
+<th>Target question</th>
+<th>Design requirement</th>
+<th>Common overreach</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Description</td>
+<td>What happened, to whom, and how variable was it?</td>
+<td>Defined population, measure, sampling, missingness</td>
+<td>Generalizing beyond the observed population</td>
+</tr>
+<tr class="even">
+<td>Association</td>
+<td>How do measured variables co-vary?</td>
+<td>Transparent adjustment and measurement</td>
+<td>Calling an adjusted coefficient an effect</td>
+</tr>
+<tr class="odd">
+<td>Prediction</td>
+<td>How well does a model forecast new observations?</td>
+<td>Honest out-of-sample evaluation and distribution-shift checks</td>
+<td>Treating predictive importance as a causal lever</td>
+</tr>
+<tr class="even">
+<td>Causation</td>
+<td>What would change under an intervention?</td>
+<td>Credible counterfactual and identification assumptions</td>
+<td>Treating before–after change as treatment effect</td>
+</tr>
+<tr class="odd">
+<td>Mechanism</td>
+<td>Through which pathway did the effect arise?</td>
+<td>Variation or evidence that separates pathways</td>
+<td>Relabeling a mediator correlation as a process</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Prediction and causation can point in different directions. An excellent predictor may be impossible or unethical to intervene on. A weak predictor can still be a useful treatment if its manipulated change affects the outcome. “The model predicts who defaults” does not answer “What policy reduces default?”</p>
+<p>Mechanism is harder still. Showing that treatment changes a proposed mediator and the mediator correlates with the outcome is not, by itself, a causal mechanism test. The mediator is post-treatment and can be confounded with unmeasured responses. Mechanism evidence becomes stronger when designs manipulate or otherwise identify the pathway, rule out alternatives, and predict boundary conditions.</p>
+</section>
+<section id="make-the-counterfactual-and-confounding-visible" class="level2">
+<h2 data-anchor-id="make-the-counterfactual-and-confounding-visible">4. Make the counterfactual and confounding visible</h2>
+<p>For person <span class="math inline">\(i\)</span>, let <span class="math inline">\(Y_i(1)\)</span> denote the outcome under treatment and <span class="math inline">\(Y_i(0)\)</span> the outcome under control. The individual causal effect is:</p>
+<p><span class="math display">\[
+Y_i(1)-Y_i(0).
+\]</span></p>
+<p>Only one potential outcome is observed. The missing one is the <strong>counterfactual problem</strong>. A comparison group is useful when its observed outcome represents what would have happened to the treated units without treatment.</p>
+<p><strong>Confounding</strong> occurs when the groups differ in causes of the outcome apart from the treatment. Employees who volunteer for training may be more motivated. People who marry differ from people who do not. Countries with stronger institutions differ in many ways from countries with weaker institutions. Regression adjustment removes confounding only under assumptions about what was measured, how it was modeled, and what was not measured.</p>
+<p>Ask of every causal claim:</p>
+<ul>
+<li>Why is the comparison group a credible counterfactual?</li>
+<li>Which common causes of treatment and outcome are blocked by design?</li>
+<li>Which remain possible?</li>
+<li>Did treatment affect observation, attrition, reporting, or exposure to the outcome?</li>
+<li>Could one unit’s treatment change another unit’s outcome?</li>
+</ul>
+</section>
+<section id="choose-the-design-that-identifies-the-contrast" class="level2">
+<h2 data-anchor-id="choose-the-design-that-identifies-the-contrast">5. Choose the design that identifies the contrast</h2>
+<div id="tbl-evidence-designs" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evidence-designs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.3: Designs answer different questions under different assumptions
+</figcaption>
+<div aria-describedby="tbl-evidence-designs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design</th>
+<th>What creates the comparison?</th>
+<th>Strong use</th>
+<th>Central assumption or limit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Randomized experiment</td>
+<td>Known random assignment</td>
+<td>Average effects of assignment in the study population</td>
+<td>Implementation, attrition, interference, and sampling still matter</td>
+</tr>
+<tr class="even">
+<td>Laboratory experiment</td>
+<td>Randomization in a controlled task</td>
+<td>Mechanisms and comparative statics</td>
+<td>Task, stakes, participants, and institution bound transport</td>
+</tr>
+<tr class="odd">
+<td>Field experiment</td>
+<td>Randomization in a natural setting</td>
+<td>Causal effects under field implementation</td>
+<td>Less control; treatment delivery and spillovers may vary</td>
+</tr>
+<tr class="even">
+<td>Natural or quasi-experiment</td>
+<td>Rule, threshold, shock, timing, or instrument</td>
+<td>Causal effects when the assignment process is credible</td>
+<td>Each design has specific untestable assumptions</td>
+</tr>
+<tr class="odd">
+<td>Observational study</td>
+<td>Naturally occurring differences</td>
+<td>Description, prediction, hypothesis generation; sometimes causal analysis with strong assumptions</td>
+<td>Unmeasured confounding and selection</td>
+</tr>
+<tr class="even">
+<td>Simulation</td>
+<td>Outcomes generated by an explicit model</td>
+<td>Logic, mechanisms, sensitivity, boundary results</td>
+<td>A result about the model is not automatically evidence about people</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>“Quasi-experiment” is not a stamp of causality. A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.</p>
+<p>No design dominates on every dimension. Control can improve internal validity and narrow realism. Field context can increase realism and add uncontrolled pathways. Build a body of evidence whose weaknesses do not all point in the same direction.</p>
+</section>
+<section id="random-sampling-and-random-assignment-solve-different-problems" class="level2">
+<h2 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h2>
+<p><strong>Random sampling</strong> selects units from a population and supports population description under the sampling design. <strong>Random assignment</strong> allocates eligible units to conditions and supports causal comparison within the experimental sample.</p>
+<p>A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.</p>
+<div id="fig-random-sampling-vs-assignment" class="quarto-float quarto-figure quarto-figure-center" alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/random-sampling-vs-assignment.svg" class="img-fluid figure-img" alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;D.2: Random sampling and random assignment solve different inferential problems. Sampling supports a claim to a defined population under the sampling design; assignment supports an internal contrast under the randomization and implementation assumptions. Neither process alone resolves attrition, interference, or transportability.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a> keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.</p>
+<section id="random-assignment-balances-in-expectation" class="level3">
+<h3 data-anchor-id="random-assignment-balances-in-expectation">Random assignment balances in expectation</h3>
+<p>Random assignment does not guarantee that realized groups are identical. It makes assignment independent of baseline potential outcomes and covariates according to a known mechanism. Across repeated randomizations, differences average to zero; in one realized sample, chance imbalance can occur (Imbens &amp; Rubin, 2015).</p>
+<p>This changes how balance should be used.</p>
+<ol type="1">
+<li>Verify the assignment code, unit, probabilities, strata, clusters, and allocation concealment.</li>
+<li>Report important baseline covariates by group and inspect standardized differences or design-relevant summaries.</li>
+<li>Do not run dozens of baseline significance tests and treat one <em>p</em> &lt; .05 as proof that randomization failed. Under valid randomization, some chance differences are expected; <em>p</em>-values mainly restate that fact (Senn, 1994).</li>
+<li>Pre-specify adjustment for strong predictors to improve precision; do not select controls by whether their baseline test is significant.</li>
+<li>Investigate patterns that suggest coding errors, differential recruitment after assignment, or implementation failure.</li>
+</ol>
+</section>
+<section id="rerandomization-is-a-design-not-a-rescue" class="level3">
+<h3 data-anchor-id="rerandomization-is-a-design-not-a-rescue">Rerandomization is a design, not a rescue</h3>
+<p>Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. <strong>Rerandomization</strong> can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan &amp; Rubin, 2012).</p>
+<p>Stratification, pair matching, blocking, clustering, and covariate-adaptive allocation can also improve balance or logistics. Record the procedure completely; it becomes part of the estimand and inference.</p>
+</section>
+</section>
+<section id="plan-precision-before-collecting-outcomes" class="level2">
+<h2 data-anchor-id="plan-precision-before-collecting-outcomes">7. Plan precision before collecting outcomes</h2>
+<p>Power is the probability that a specified analysis will meet its decision criterion under a specified effect and data-generating process. It is not a property of sample size alone.</p>
+<p>A defensible design calculation declares:</p>
+<ul>
+<li>primary outcome and estimator;</li>
+<li>smallest effect of substantive interest and plausible effect range;</li>
+<li>outcome variance, baseline correlation, and repeated-measure structure;</li>
+<li>assignment ratio, clusters, intraclass correlation, and strata;</li>
+<li>expected noncompliance, attrition, missingness, and multiple testing;</li>
+<li>significance or interval criterion and analysis model.</li>
+</ul>
+<p>Do not take the largest published estimate from a small study, insert it into a calculator, and call the resulting sample adequate. Selective publication and sampling variation tend to make early significant effects too large.</p>
+<p>Low power causes more than missed significance. Conditional on passing a significance filter, estimates can have the wrong sign (<strong>Type S error</strong>) or a seriously exaggerated magnitude (<strong>Type M error</strong>). Design analysis should therefore examine plausible estimates and uncertainty, not only a binary rejection probability (Gelman &amp; Carlin, 2014).</p>
+<p>After data collection, observed power computed from the observed effect adds little. Report the estimate, compatible interval, design assumptions, and what effect sizes the study could or could not distinguish.</p>
+</section>
+<section id="protect-the-assignment-during-implementation" class="level2">
+<h2 data-anchor-id="protect-the-assignment-during-implementation">8. Protect the assignment during implementation</h2>
+<p>A randomized design can lose its meaning after allocation. Track a participant or unit flow from eligibility through assignment, delivery, outcome observation, and analysis.</p>
+<div id="fig-participant-flow-threats" class="quarto-float quarto-figure quarto-figure-center" alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/participant-flow-threats.svg" class="img-fluid figure-img" alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;D.3: A participant-flow audit separates assignment, treatment receipt, outcome observation, analysis, and cross-arm spillovers. ITT follows the original assignment groups; noncompliance, missingness, and interference are different problems. There is no universally safe attrition percentage.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-participant-flow-threats" class="quarto-xref">Figure&nbsp;<span>D.3</span></a> prevents several losses from being collapsed into “dropout.” <strong>Noncompliance</strong> separates assignment from treatment receipt. <strong>Missingness or attrition</strong> separates assignment from outcome observation. <strong>Interference</strong> means that one unit’s assignment or treatment changes another unit’s exposure or outcome. Each changes the estimand or the assumptions needed for interpretation.</p>
+<section id="attrition-and-missing-outcomes" class="level3">
+<h3 data-anchor-id="attrition-and-missing-outcomes">Attrition and missing outcomes</h3>
+<p>Attrition is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.</p>
+<p>Report rates and reasons by arm, timing, baseline predictors of missingness, and sensitivity analyses under plausible missing-data assumptions. Do not silently replace the randomized sample with complete cases and retain the original causal language.</p>
+</section>
+<section id="noncompliance-assignment-is-not-receipt" class="level3">
+<h3 data-anchor-id="noncompliance-assignment-is-not-receipt">Noncompliance: assignment is not receipt</h3>
+<p>Let <span class="math inline">\(Z\)</span> be assignment and <span class="math inline">\(D\)</span> treatment received.</p>
+<p>The <strong>intention-to-treat (ITT)</strong> effect compares outcomes by assignment:</p>
+<p><span class="math display">\[
+ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
+\]</span></p>
+<p>ITT answers the effect of offering, assigning, or implementing the treatment under observed compliance. It preserves the randomized comparison and is often the policy-relevant estimand.</p>
+<p>The effect among those who actually received treatment is not obtained by simply comparing receivers with nonreceivers; receipt is selected. Under a valid binary instrument, the assignment can identify a <strong>local average treatment effect (LATE)</strong> for compliers. The standard interpretation requires:</p>
+<ul>
+<li><strong>relevance:</strong> assignment changes treatment receipt;</li>
+<li><strong>independence:</strong> assignment is as good as random relative to potential outcomes and compliance types;</li>
+<li><strong>exclusion:</strong> assignment affects the outcome only through treatment receipt;</li>
+<li><strong>monotonicity:</strong> no unit systematically does the opposite of assignment.</li>
+</ul>
+<p>Then the Wald ratio is:</p>
+<p><span class="math display">\[
+LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
+\]</span></p>
+<p>LATE is local to compliers induced by that instrument. It is not automatically the average treatment effect for all participants, always larger than ITT, or portable to another implementation (Angrist et al., 1996).</p>
+</section>
+<section id="spillovers-interference-and-displacement" class="level3">
+<h3 data-anchor-id="spillovers-interference-and-displacement">Spillovers, interference, and displacement</h3>
+<p>The usual no-interference assumption says one unit’s outcome does not depend on other units’ assignments. Social information, contagion, peer effects, congestion, and markets often violate it.</p>
+<p>Spillovers can make the standard difference too small, too large, or simply answer the wrong question. A job-placement program can help treated workers while displacing untreated workers from a fixed number of jobs. The direct effect and the total labor-market effect are different estimands.</p>
+<p>Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. None is automatic. State whose outcome depends on whose treatment.</p>
+</section>
+<section id="evaluation-can-change-behavior" class="level3">
+<h3 data-anchor-id="evaluation-can-change-behavior">Evaluation can change behavior</h3>
+<p>Participants can respond to being studied, surveyed, observed, encouraged, or assigned to control. Labels such as demand, Hawthorne, John Henry, demoralization, anticipation, and survey effects describe possibilities, not guaranteed biases of one sign.</p>
+<p>Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.</p>
+</section>
+</section>
+<section id="make-multiplicity-and-flexibility-visible" class="level2">
+<h2 data-anchor-id="make-multiplicity-and-flexibility-visible">9. Make multiplicity and flexibility visible</h2>
+<p>With many outcomes, subgroups, exclusions, transformations, models, and stopping rules, some apparently strong results will arise by chance. The problem is not only a researcher consciously “fishing.” Undocumented flexibility makes the effective analysis set unknowable.</p>
+<p>Before outcomes are observed:</p>
+<ul>
+<li>designate primary and secondary outcomes;</li>
+<li>specify the estimator, treatment contrast, exclusions, covariates, missing-data rule, transformations, subgroup tests, and stopping rule;</li>
+<li>define a family for error-rate or false-discovery control where appropriate;</li>
+<li>preserve space for exploration and label it as exploration.</li>
+</ul>
+<p>Preregistration time-stamps decisions. It does not make a poor hypothesis important, an invalid measure valid, or a biased design causal. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.</p>
+<p>Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.</p>
+</section>
+<section id="replication-is-estimation-under-a-declared-protocol" class="level2">
+<h2 data-anchor-id="replication-is-estimation-under-a-declared-protocol">10. Replication is estimation under a declared protocol</h2>
+<p>A replication is not a ritual in which an effect “works” or “fails.” It asks whether an estimate appears under a specified protocol, sample, setting, measure, and analysis—and how the new estimate changes cumulative uncertainty.</p>
+<ul>
+<li><strong>Direct replication</strong> holds key procedures close to the original to test repeatability under a defined protocol.</li>
+<li><strong>Conceptual replication</strong> tests a theory with a different operation; a difference can reflect the theory, the new measure, or an unrecognized moderator.</li>
+<li><strong>Multi-site replication</strong> estimates average effects and heterogeneity across implementations, populations, and settings.</li>
+<li><strong>Reanalysis or reproduction</strong> checks whether reported results follow from the declared data and code; it is not the same as collecting new data.</li>
+</ul>
+<p>Large replication projects in psychology and experimental economics found both replicated effects and substantial attenuation or heterogeneity (Camerer et al., 2016; Open Science Collaboration, 2015). The lesson is not that an entire field is false. It is that single studies—especially small, flexible, selected ones—provide less certainty than clean narratives imply.</p>
+<p>For a useful replication, document fidelity and departures, compare effect estimates with intervals, analyze protocol heterogeneity, and update the cumulative claim. A statistically significant original and nonsignificant replication can still have compatible estimates. A binary verdict discards that information.</p>
+</section>
+<section id="build-an-open-and-reproducible-workflow" class="level2">
+<h2 data-anchor-id="build-an-open-and-reproducible-workflow">11. Build an open and reproducible workflow</h2>
+<p>Transparency is not “put everything online.” Human-subject data can contain confidential or re-identifiable information. The target is <strong>as open as possible and as protected as necessary</strong>.</p>
+<p>A minimum project structure preserves:</p>
+<ul>
+<li>immutable raw inputs with provenance and checksums;</li>
+<li>a data dictionary, consent and access conditions, and de-identification decisions;</li>
+<li>versioned materials, assignment code, and implementation logs;</li>
+<li>scripted transformations from raw to analytic data;</li>
+<li>an environment or dependency record plus random seeds where relevant;</li>
+<li>a machine-readable analysis that regenerates tables and figures;</li>
+<li>a README with exact commands and expected outputs;</li>
+<li>a deviation log connecting preregistration, implementation, and final analysis;</li>
+<li>disclosure of inaccessible data, proprietary materials, or manual steps.</li>
+</ul>
+<p>Run the pipeline in a clean environment before release. Check that figures and tables match the manuscript, the sample flow adds up, and the public package contains no direct or inferable identifiers. The FAIR principles—findable, accessible, interoperable, reusable—do not imply that every dataset is public; “accessible” can mean a governed access process (Wilkinson et al., 2016).</p>
+<p>Preregistration, open materials, open code, and registered reports change different incentives. They should be evaluated and improved rather than treated as badges of truth (Munafò et al., 2017; Nosek et al., 2018).</p>
+</section>
+<section id="transport-the-result-only-as-far-as-the-evidence-travels" class="level2">
+<h2 data-anchor-id="transport-the-result-only-as-far-as-the-evidence-travels">12. Transport the result only as far as the evidence travels</h2>
+<p><strong>Internal validity</strong> concerns whether the comparison supports the causal claim in the studied setting. <strong>External validity</strong> concerns where the result travels: to which people, tasks, institutions, treatments, outcomes, and times.</p>
+<p>“The laboratory is artificial” is not a complete criticism. Every design abstracts. A lab can identify a mechanism that is hidden in the field. A field experiment can be realistic and highly local. A representative sample can improve population description but not guarantee that an intervention effect transports across institutions.</p>
+<p>Build a transport argument:</p>
+<ol type="1">
+<li>Name the target population and setting.</li>
+<li>Compare the study and target on effect modifiers, treatment delivery, outcome measurement, incentives, and equilibrium conditions.</li>
+<li>Explain why the mechanism should remain or change.</li>
+<li>Test heterogeneity with enough precision and without converting exploratory subgroups into facts.</li>
+<li>Seek replications whose contexts vary on the proposed boundary condition.</li>
+</ol>
+<p>External validity is not a yes/no property of a study. It is an argument supported by design, theory, and accumulated evidence.</p>
+</section>
+<section id="match-the-final-sentence-to-the-design" class="level2">
+<h2 data-anchor-id="match-the-final-sentence-to-the-design">13. Match the final sentence to the design</h2>
+<div id="tbl-claim-design-matching" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.4: Claim-to-design matching
+</figcaption>
+<div aria-describedby="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Evidence obtained</th>
+<th>Defensible sentence</th>
+<th>Sentence to avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cross-sectional association</td>
+<td>“X and Y were associated in this sample.”</td>
+<td>“X changed Y.”</td>
+</tr>
+<tr class="even">
+<td>Out-of-sample predictive accuracy</td>
+<td>“The model predicted Y in the held-out sample under this data environment.”</td>
+<td>“The important predictors are causal levers.”</td>
+</tr>
+<tr class="odd">
+<td>Randomized ITT estimate</td>
+<td>“Assignment to the offer changed Y by … in the study sample.”</td>
+<td>“Receiving treatment has this effect for everyone.”</td>
+</tr>
+<tr class="even">
+<td>Valid IV estimate</td>
+<td>“For compliers induced by this instrument, treatment changed Y under the stated assumptions.”</td>
+<td>“This is the universal treatment effect.”</td>
+</tr>
+<tr class="odd">
+<td>Laboratory treatment effect</td>
+<td>“Under this task, institution, stakes, and sample, treatment changed behavior.”</td>
+<td>“Humans always behave this way.”</td>
+</tr>
+<tr class="even">
+<td>Simulation result</td>
+<td>“Under these model rules and parameters, the mechanism can produce the pattern.”</td>
+<td>“The simulation proves the human mechanism.”</td>
+</tr>
+<tr class="odd">
+<td>Mediator correlation</td>
+<td>“The pattern is consistent with the proposed pathway.”</td>
+<td>“The mediator caused the effect.”</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Scientific writing becomes clearer when it states the estimand and scope before the interpretation.</p>
+</section>
+<section id="the-one-page-evidence-design-card" class="level2">
+<h2 data-anchor-id="the-one-page-evidence-design-card">The one-page evidence design card</h2>
+<div id="tbl-evidence-design-card" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.5: A compact evidence design card
+</figcaption>
+<div aria-describedby="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Complete before data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Question</td>
+<td>Population; treatment/exposure; comparison; outcome; horizon; mechanism</td>
+</tr>
+<tr class="even">
+<td>Claim family</td>
+<td>Description; association; prediction; causation; mechanism</td>
+</tr>
+<tr class="odd">
+<td>Construct</td>
+<td>Definition and competing interpretations</td>
+</tr>
+<tr class="even">
+<td>Measure</td>
+<td>Exact operation; scoring; reliability; validity; primary/secondary status</td>
+</tr>
+<tr class="odd">
+<td>Assignment/comparison</td>
+<td>Unit; probabilities; strata/clusters; counterfactual logic</td>
+</tr>
+<tr class="even">
+<td>Estimand</td>
+<td>ITT, ATE, LATE, direct, spillover, total, predictive loss, or other quantity</td>
+</tr>
+<tr class="odd">
+<td>Threats</td>
+<td>Confounding; attrition; noncompliance; interference; demand; measurement change</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td>Plausible effect; MDE; variance; dependence; attrition; multiplicity</td>
+</tr>
+<tr class="odd">
+<td>Analysis</td>
+<td>Estimator; covariates; exclusions; missingness; uncertainty; family corrections</td>
+</tr>
+<tr class="even">
+<td>Ethics</td>
+<td>Respect; consent; beneficence; justice; privacy; data access; stopping rules</td>
+</tr>
+<tr class="odd">
+<td>Reproducibility</td>
+<td>Registration; materials; code; environment; provenance; access plan</td>
+</tr>
+<tr class="even">
+<td>Transport</td>
+<td>Target setting; likely effect modifiers; planned boundary tests</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="worked-study-from-question-to-report" class="level2">
+<h2 data-anchor-id="worked-study-from-question-to-report">Worked study: from question to report</h2>
+<p>The following example is a <strong>simulated teaching study</strong>, not evidence about any real clinic. Its purpose is to show how the records connect from question to final sentence.</p>
+<p><strong>Question.</strong> Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?</p>
+<p><strong>Preregistered design.</strong> Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.</p>
+<div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.6: Preregistered design card for the simulated reminder study
+</figcaption>
+<div aria-describedby="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design-card field</th>
+<th>Declared choice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population</td>
+<td>Patients eligible for the appointment under the clinic’s existing rule</td>
+</tr>
+<tr class="even">
+<td>Treatment and comparison</td>
+<td>Plain-language reminder versus standard reminder</td>
+</tr>
+<tr class="odd">
+<td>Unit and assignment</td>
+<td>Individual patient; exactly 600 assignments per arm</td>
+</tr>
+<tr class="even">
+<td>Primary outcome</td>
+<td>Attendance recorded within thirty days</td>
+</tr>
+<tr class="odd">
+<td>Estimand</td>
+<td>ITT risk difference: assignment to new reminder minus assignment to standard reminder</td>
+</tr>
+<tr class="even">
+<td>Main threats</td>
+<td>Delivery failure, wrong contact information, spillovers within households, missing administrative records, and outcome-definition errors</td>
+</tr>
+<tr class="odd">
+<td>Mechanism boundary</td>
+<td>The contrast tests the reminder package; it does not separately identify comprehension, fear reduction, salience, or lower friction</td>
+</tr>
+<tr class="even">
+<td>Decision rule</td>
+<td>Report estimate and interval; the clinic evaluates operational cost, distribution across patient groups, and implementation errors before scaling</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The data below are generated with a declared seed and fixed probabilities solely to make the workflow reproducible:</p>
+<pre class="python"><code>import math
+import random
+
+rng = random.Random(20260830)
+n_control = n_treatment = 600
+control = [int(rng.random() &lt; 0.65) for _ in range(n_control)]
+treatment = [int(rng.random() &lt; 0.70) for _ in range(n_treatment)]
+
+p_control = sum(control) / n_control
+p_treatment = sum(treatment) / n_treatment
+effect = p_treatment - p_control
+se = math.sqrt(
+    p_control * (1 - p_control) / n_control
+    + p_treatment * (1 - p_treatment) / n_treatment
+)
+ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
+<p>The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is <strong>6.2 percentage points</strong>, with an approximate 95% confidence interval from <strong>0.8 to 11.5 percentage points</strong>.</p>
+<p><strong>Design-matched interpretation.</strong> In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.</p>
+<p><strong>Deviation and preservation record.</strong> This simulated analysis has no analytical deviations because the code follows the declared generation and estimation procedure. It bypasses recruitment, delivery, attrition, spillovers, implementation failure, and measurement operations, so it does <strong>not</strong> demonstrate treatment fidelity or the absence of protocol deviations in a real study. A real study would preserve the eligibility extract, assignment file, delivered-message log, undeliverable contacts, outcome pull, code, environment, consent or waiver decision, preregistration, and every departure from the protocol. A model answer is credible because each sentence can be traced back through that record—not because the estimate happens to exclude zero.</p>
+</section>
+<section id="ethics-is-part-of-identification" class="level2">
+<h2 data-anchor-id="ethics-is-part-of-identification">Ethics is part of identification</h2>
+<p>The Belmont principles remain a useful starting point: <strong>respect for persons</strong>, <strong>beneficence</strong>, and <strong>justice</strong>. Respect requires meaningful information and voluntary participation where consent applies. Beneficence requires risks to be minimized and justified by potential value. Justice asks who bears research burdens and who can benefit.</p>
+<p>Ethics also affects evidence. Coercive recruitment selects participants. Privacy fears change answers. An intervention that cannot be implemented ethically may have little policy relevance. Excluding affected groups for convenience can make the sample uninformative about those who bear the decision.</p>
+<p>Institutional review, data-protection law, registration, and local procedures change over time. Check current requirements with the relevant institution before collecting data; a historical lecture link is not approval.</p>
+</section>
+<section id="key-ideas" class="level2">
+<h2 data-anchor-id="key-ideas">Key ideas</h2>
+<ul>
+<li>Begin with the claim family and estimand, not with a preferred method.</li>
+<li>Define the construct and justify the operation before collecting numbers.</li>
+<li>Association, prediction, causation, and mechanism answer different questions.</li>
+<li>Random assignment creates comparability in expectation; realized balance is a diagnostic, not a significance-test ritual.</li>
+<li>Predeclared rerandomization or covariate-adaptive assignment can be valid; outcome-informed rescue is not the same design.</li>
+<li>Power depends on an effect, variance, dependence, allocation, attrition, multiplicity, and analysis—not sample size alone.</li>
+<li>ITT estimates assignment; LATE identifies an effect for compliers only under relevance, independence, exclusion, and monotonicity.</li>
+<li>Attrition, noncompliance, spillovers, displacement, and evaluation-driven behavior change the estimand.</li>
+<li>Preregistration distinguishes planned from discovered analysis; replication estimates cumulative evidence rather than issuing a pass/fail verdict.</li>
+<li>A claim should never be stronger or broader than the design that earned it.</li>
+</ul>
+</section>
+<section id="study-and-practice" class="level2">
+<h2 data-anchor-id="study-and-practice">Study and practice</h2>
+<ol type="1">
+<li>Rewrite “Does social media affect happiness?” as a descriptive, predictive, and causal question.</li>
+<li>Give an example of a reliable but invalid measure.</li>
+<li>Why does a valid random assignment not guarantee identical observed groups?</li>
+<li>When is rerandomization defensible?</li>
+<li>Distinguish ITT from LATE in a job-training offer with partial take-up.</li>
+<li>How can spillovers reverse a policy conclusion even when the direct effect is positive?</li>
+<li>Why can a significant estimate from a low-powered study have an exaggerated magnitude?</li>
+<li>Convert one causal overclaim in a news story into a design-matched sentence.</li>
+</ol>
+<div class="activity callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Activity: break and repair the evidence chain
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Choose one claim from the book or current media. Place it in <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.</p>
+<p>Submit the completed pipeline, one explicit assumption, the revised design, and a final sentence whose strength matches the evidence the redesign could earn.</p>
+</div>
+</div>
+</section>
+<section id="references-cited-in-this-appendix" class="level2">
+<h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
+<div class="reference">
+<p>Angrist, J. D., Imbens, G. W., &amp; Rubin, D. B. (1996). Identification of causal effects using instrumental variables. <em>Journal of the American Statistical Association, 91</em>(434), 444–455.</p>
+</div>
+<div class="reference">
+<p>Bruhn, M., &amp; McKenzie, D. (2009). In pursuit of balance: Randomization in practice in development field experiments. <em>American Economic Journal: Applied Economics, 1</em>(4), 200–232.</p>
+</div>
+<div class="reference">
+<p>Camerer, C. F., Dreber, A., Forsell, E., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Almenberg, J., Altmejd, A., Chan, T., Heikensten, E., Holzmeister, F., Imai, T., Isaksson, S., Nave, G., Pfeiffer, T., Razen, M., &amp; Wu, H. (2016). Evaluating replicability of laboratory experiments in economics. <em>Science, 351</em>(6280), 1433–1436.</p>
+</div>
+<div class="reference">
+<p>Flake, J. K., &amp; Fried, E. I. (2020). Measurement schmeasurement: Questionable measurement practices and how to avoid them. <em>Advances in Methods and Practices in Psychological Science, 3</em>(4), 456–465.</p>
+</div>
+<div class="reference">
+<p>Gelman, A., &amp; Carlin, J. (2014). Beyond power calculations: Assessing Type S (sign) and Type M (magnitude) errors. <em>Perspectives on Psychological Science, 9</em>(6), 641–651.</p>
+</div>
+<div class="reference">
+<p>Imbens, G. W., &amp; Rubin, D. B. (2015). <em>Causal inference for statistics, social, and biomedical sciences: An introduction.</em> Cambridge University Press.</p>
+</div>
+<div class="reference">
+<p>Morgan, K. L., &amp; Rubin, D. B. (2012). Rerandomization to improve covariate balance in experiments. <em>Annals of Statistics, 40</em>(2), 1263–1282.</p>
+</div>
+<div class="reference">
+<p>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., &amp; Ioannidis, J. P. A. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour, 1</em>, 0021.</p>
+</div>
+<div class="reference">
+<p>Nosek, B. A., Ebersole, C. R., DeHaven, A. C., &amp; Mellor, D. T. (2018). The preregistration revolution. <em>Proceedings of the National Academy of Sciences, 115</em>(11), 2600–2606.</p>
+</div>
+<div class="reference">
+<p>Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science, 349</em>(6251), aac4716.</p>
+</div>
+<div class="reference">
+<p>Senn, S. (1994). Testing for baseline balance in clinical trials. <em>Statistics in Medicine, 13</em>(17), 1715–1726.</p>
+</div>
+<div class="reference">
+<p>Shadish, W. R., Cook, T. D., &amp; Campbell, D. T. (2002). <em>Experimental and quasi-experimental designs for generalized causal inference.</em> Houghton Mifflin.</p>
+</div>
+<div class="reference">
+<p>Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., da Silva Santos, L. B., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. <em>Scientific Data, 3</em>, 160018.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../appendices/appendix-c-index-of-major-course-examples.html" class="pagination-link" aria-label="Index of Major Examples">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../appendices/appendix-e-when-evidence-breaks.html" class="pagination-link" aria-label="When Evidence Breaks: The Replication Crisis and Research Integrity">
+        <span class="nav-page-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/appendices/appendix-d-how-behavioral-evidence-is-built.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/appendices/appendix-d-how-behavioral-evidence-is-built.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
