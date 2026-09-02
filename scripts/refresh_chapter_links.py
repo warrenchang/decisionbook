@@ -25,7 +25,15 @@ REDIRECTS = {
     "01-decision-making-is-a-process-not-a-moment.qmd": "01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
     "02-a-rational-benchmark-not-a-portrait.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
     "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
-    "appendix-d-when-evidence-breaks.qmd": "appendix-e-when-evidence-breaks.qmd",
+    "appendix-a-portable-course-tools.qmd": "appendix-c-portable-course-tools.qmd",
+    "appendix-b-portable-course-tools.qmd": "appendix-c-portable-course-tools.qmd",
+    "appendix-b-index-of-major-course-examples.qmd": "appendix-d-index-of-major-course-examples.qmd",
+    "appendix-c-index-of-major-course-examples.qmd": "appendix-d-index-of-major-course-examples.qmd",
+    "appendix-c-how-behavioral-evidence-is-built.qmd": "appendix-e-how-behavioral-evidence-is-built.qmd",
+    "appendix-d-how-behavioral-evidence-is-built.qmd": "appendix-e-how-behavioral-evidence-is-built.qmd",
+    "appendix-d-when-evidence-breaks.qmd": "appendix-f-when-evidence-breaks.qmd",
+    "appendix-e-when-evidence-breaks.qmd": "appendix-f-when-evidence-breaks.qmd",
+    "appendix-f-evolutionary-explanations-of-value-choice-and-rationality.qmd": "appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd",
     "retired-opportunity-cost-information-and-better-options.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
     "retired-heuristics-the-adaptive-toolbox.qmd": "08-fast-and-frugal-thinking.qmd",
     "retired-resemblance-is-not-probability.qmd": "09-what-feels-likely-availability-affect-and-resemblance.qmd",
@@ -75,6 +83,8 @@ def redirect_target(raw: str) -> str:
     if not replacement:
         return raw
     redirected = str(Path(path_part).with_name(replacement))
+    if name.startswith("appendix-"):
+        return f"{redirected}#{fragment}" if marker else redirected
     # Headings in merged chapters are deliberately rebuilt. A chapter-level
     # link is safer than retaining an anchor that may now identify other text.
     return redirected

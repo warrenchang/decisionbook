@@ -11,7 +11,7 @@ The material is split by explanatory job rather than placed in one long chapter.
 | Chapter 6 | Introduce proximate and evolutionary explanations of valuation; distinguish decision value, experienced value, fitness consequence, and normative value; compare Maslow and Kenrick | These distinctions directly change how the chapter answers “what makes this option valuable to this person now?” |
 | Chapter 8 | Bound the evolutionary interpretation of heuristics and asymmetric errors | This is where the book already evaluates fast rules by their environment and error costs. |
 | Chapter 22 | Prevent fitness, pleasure, meaning, autonomy, and moral worth from being collapsed | The well-being chapter is the natural place to state that evolutionary success is not the criterion for a good life. |
-| Appendix F | Integrate Tinbergen's questions, motive systems, ecological and resource rationality, mismatch, and adaptation-claim tests | The extended theory and evidence audit would interrupt Chapter 6's practical valuation arc. Keeping it after Appendix E also preserves all existing Appendix A–E labels and links. |
+| Appendix B | Integrate Tinbergen's questions, motive systems, ecological and resource rationality, mismatch, and adaptation-claim tests | The extended theory and evidence audit would interrupt Chapter 6's practical valuation arc. Placing it directly after Appendix A pairs the book's formal rational-choice benchmark with a complementary evolutionary explanation, while keeping those explanatory standards distinct. |
 
 ## Evidence matrix
 
