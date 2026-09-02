@@ -18,7 +18,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every spine reference resolves | **PASS** |
 | One navigation document is declared | **PASS** |
 | Navigation contains a table of contents | **PASS** |
-| Navigation has 18 compact top-level items | **PASS** |
+| Navigation has 19 compact top-level items | **PASS** |
 | Every navigation target exists | **PASS** |
 | Navigation omits the redundant generated title-page entry | **PASS** |
 | Preface contains the current hiring-committee opening | **PASS** |
@@ -29,7 +29,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every chapter is nested under its Part with no section titles | **PASS** |
 | Preface and back matter have no section-level navigation | **PASS** |
 | Navigation contains no section titles | **PASS** |
-| Appendices A through E are present | **PASS** |
+| Appendices A through F are present | **PASS** |
 | Appendices have the intended order and titles | **PASS** |
 | Appendices precede References, Index, and About | **PASS** |
 | One NCX navigation document is declared | **PASS** |
@@ -44,7 +44,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | EPUB declares textual and visual access modes | **PASS** |
 | EPUB declares MathML and alternative-text accessibility features | **PASS** |
 | EPUB includes an accessibility summary | **PASS** |
-| All 59 source documents are packaged | **PASS** |
+| All 60 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |

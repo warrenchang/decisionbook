@@ -52,6 +52,7 @@ EXPECTED_APPENDICES = [
     ("Appendix C", "Index of Major Examples"),
     ("Appendix D", "Running an Experimental Study"),
     ("Appendix E", "When Evidence Breaks"),
+    ("Appendix F", "Evolutionary Explanations of Value, Choice, and Rationality"),
 ]
 
 REQUIRED_CONTENT = [
@@ -211,7 +212,7 @@ def main() -> int:
         check("Navigation contains a table of contents", toc is not None)
         toc_list = toc.find(f"{{{XHTML}}}ol") if toc is not None else None
         top_items = toc_list.findall(f"{{{XHTML}}}li") if toc_list is not None else []
-        check("Navigation has 18 compact top-level items", len(top_items) == 18, str(len(top_items)))
+        check("Navigation has 19 compact top-level items", len(top_items) == 19, str(len(top_items)))
 
         labels: list[str] = []
         all_labels: list[str] = []
@@ -328,8 +329,8 @@ def main() -> int:
         check("Navigation contains no section titles", "Learning goals" not in all_labels and "Core Idea" not in all_labels)
 
         check(
-            "Appendices A through E are present",
-            all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABCDE"),
+            "Appendices A through F are present",
+            all(any(label.startswith(f"Appendix {letter}") for label in labels) for letter in "ABCDEF"),
         )
         appendix_labels = [label for label in labels if label.startswith("Appendix ")]
         check(
@@ -339,19 +340,19 @@ def main() -> int:
                 appendix_labels[index].startswith(prefix) and title in appendix_labels[index]
                 for index, (prefix, title) in enumerate(EXPECTED_APPENDICES)
             ),
-            " | ".join(appendix_labels[:5]),
+            " | ".join(appendix_labels[:6]),
         )
-        appendix_e_position = next((i for i, label in enumerate(labels) if label.startswith("Appendix E")), -1)
+        appendix_f_position = next((i for i, label in enumerate(labels) if label.startswith("Appendix F")), -1)
         references_position = labels.index("References") if "References" in labels else -1
         index_position = labels.index("Index of Concepts") if "Index of Concepts" in labels else -1
         about_position = labels.index("About This Book") if "About This Book" in labels else -1
         check(
             "Appendices precede References, Index, and About",
-            appendix_e_position >= 0
-            and references_position > appendix_e_position
+            appendix_f_position >= 0
+            and references_position > appendix_f_position
             and index_position > references_position
             and about_position > index_position,
-            f"Appendix E={appendix_e_position}, References={references_position}, Index={index_position}, About={about_position}",
+            f"Appendix F={appendix_f_position}, References={references_position}, Index={index_position}, About={about_position}",
         )
 
         ncx_items = [item for item in manifest_items if item.get("media-type") == "application/x-dtbncx+xml"]
@@ -436,7 +437,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 59 source documents are packaged", len(chapter_files) == 59, str(len(chapter_files)))
+        check("All 60 source documents are packaged", len(chapter_files) == 60, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         malformed_xhtml: list[str] = []

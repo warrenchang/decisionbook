@@ -2,7 +2,7 @@
 
 This is the Quarto source for Huanren Warren Zhang's book, *Decision in the Making: The Behavioral Science of Choice, Influence, and Agreement*.
 
-The 41 chapters follow a cumulative seven-part journey: how a choice takes shape; judgment under uncertainty; risk, time, and well-being; strategic and social decisions, including markets and bubbles; persuasion, communication, and connection; negotiating joint decisions; and designing better loops. Five appendices provide portable tools, an evidence-aware example index, a Research Companion on running experimental studies, formal rational-choice and decision-analysis detail, and a guide to replication and research integrity. A curated concept index identifies each key concept's main discussion and selected later applications.
+The 41 chapters follow a cumulative seven-part journey: how a choice takes shape; judgment under uncertainty; risk, time, and well-being; strategic and social decisions, including markets and bubbles; persuasion, communication, and connection; negotiating joint decisions; and designing better loops. Six appendices provide formal rational-choice and decision-analysis detail, portable tools, an evidence-aware example index, a Research Companion on running experimental studies, a guide to replication and research integrity, and an evidence-bounded account of evolutionary explanations of value, choice, and rationality. A curated concept index identifies each key concept's main discussion and selected later applications.
 
 ## Build
 

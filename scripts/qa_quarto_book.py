@@ -169,6 +169,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         "appendices/appendix-c-index-of-major-course-examples.qmd",
         "appendices/appendix-d-how-behavioral-evidence-is-built.qmd",
         "appendices/appendix-e-when-evidence-breaks.qmd",
+        "appendices/appendix-f-evolutionary-explanations-of-value-choice-and-rationality.qmd",
     ]
     configured_book_sources = BOOK_SOURCE_LINE.findall((ROOT / "_quarto-html.yml").read_text(encoding="utf-8"))
     actual_appendices = [value for value in configured_book_sources if value.startswith("appendices/appendix-")]
