@@ -87,6 +87,9 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Underpowered Studies | **PASS** |
 | Required content: Data Fabrication | **PASS** |
 | Required content: Registered Reports | **PASS** |
+| Required content: Famous findings after replication | **PASS** |
+| Required content: Elderly-word priming slows walking | **PASS** |
+| Required content: Three category errors to avoid | **PASS** |
 | Required content: A Decision Is Already in the Making | **PASS** |
 | Required content: At 3:17 p.m. | **PASS** |
 | Required content: The decision is already in the making. | **PASS** |

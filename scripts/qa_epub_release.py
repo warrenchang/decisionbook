@@ -33,7 +33,7 @@ EXPECTED_PARTS = [
     "Part IV. Strategic and Social Decisions",
     "Part V. Persuasion, Communication, and Connection",
     "Part VI. Negotiating Joint Decisions",
-    "Part VII. Designing Better Loops",
+    "Part VII. Designing Better Decisions",
 ]
 
 EXPECTED_PART_CHAPTERS = [
@@ -86,6 +86,10 @@ REQUIRED_CONTENT = [
     "Underpowered Studies",
     "Data Fabrication",
     "Registered Reports",
+    "Famous findings after replication",
+    "Elderly-word priming slows walking",
+    "Ill-fated disease–birth-year combinations shorten Chinese-American lives",
+    "Four category errors to avoid",
     "A Decision Is Already in the Making",
     "At 3:17 p.m.",
     "The decision is already in the making.",
