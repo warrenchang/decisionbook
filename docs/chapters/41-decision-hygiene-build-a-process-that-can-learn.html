@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -543,7 +572,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#design-choices-not-just-advice" id="toc-design-choices-not-just-advice" class="nav-link" data-scroll-target="#design-choices-not-just-advice">Design choices, not just advice</a></li>
   <li><a href="#better-meetings-do-not-let-the-presentation-become-the-decision" id="toc-better-meetings-do-not-let-the-presentation-become-the-decision" class="nav-link" data-scroll-target="#better-meetings-do-not-let-the-presentation-become-the-decision">Better meetings: do not let the presentation become the decision</a></li>
   <li><a href="#the-decision-audit-from-a-smooth-story-to-an-inspectable-process" id="toc-the-decision-audit-from-a-smooth-story-to-an-inspectable-process" class="nav-link" data-scroll-target="#the-decision-audit-from-a-smooth-story-to-an-inspectable-process">The decision audit: from a smooth story to an inspectable process</a></li>
-  <li><a href="#after-the-outcome-learn-without-worshipping-luck" id="toc-after-the-outcome-learn-without-worshipping-luck" class="nav-link" data-scroll-target="#after-the-outcome-learn-without-worshipping-luck">After the outcome: learn without worshipping luck</a></li>
+  <li><a href="#after-the-outcome-learn-without-worshipping-luck" id="toc-after-the-outcome-learn-without-worshipping-luck" class="nav-link" data-scroll-target="#after-the-outcome-learn-without-worshipping-luck">After the outcome: learn without worshipping luck</a>
+  <ul class="collapse">
+  <li><a href="#what-a-decision-journal-is" id="toc-what-a-decision-journal-is" class="nav-link" data-scroll-target="#what-a-decision-journal-is">What a decision journal is—and is not</a></li>
+  <li><a href="#decision-journal-before-choice" id="toc-decision-journal-before-choice" class="nav-link" data-scroll-target="#decision-journal-before-choice">The elements before choosing</a></li>
+  <li><a href="#decision-journal-after-outcome" id="toc-decision-journal-after-outcome" class="nav-link" data-scroll-target="#decision-journal-after-outcome">The elements after the outcome</a></li>
+  </ul></li>
   <li><a href="#the-decision-improvement-cycle-notice-test-ask-design-learn" id="toc-the-decision-improvement-cycle-notice-test-ask-design-learn" class="nav-link" data-scroll-target="#the-decision-improvement-cycle-notice-test-ask-design-learn">The decision-improvement cycle: notice, test, ask, design, learn</a></li>
   <li><a href="#return-to-the-hiring-decision" id="toc-return-to-the-hiring-decision" class="nav-link" data-scroll-target="#return-to-the-hiring-decision">Return to the hiring decision</a></li>
   <li><a href="#ethics-governance-and-proportionality" id="toc-ethics-governance-and-proportionality" class="nav-link" data-scroll-target="#ethics-governance-and-proportionality">Ethics, governance, and proportionality</a></li>
@@ -991,59 +1025,149 @@ Figure&nbsp;41.3: A sound or weak process can be followed by either a favorable 
 </section>
 <section id="after-the-outcome-learn-without-worshipping-luck" class="level2">
 <h2 data-anchor-id="after-the-outcome-learn-without-worshipping-luck">After the outcome: learn without worshipping luck</h2>
+<section id="what-a-decision-journal-is" class="level3">
+<h3 data-anchor-id="what-a-decision-journal-is">What a decision journal is—and is not</h3>
+<p>A <strong>decision journal</strong> is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned <strong>without overwriting the original entry</strong>. Its unit is a consequential decision, not a day in the writer’s life.</p>
+<p>The neighboring tools serve different purposes. A <strong>decision record</strong> is one dated snapshot within the journal. A <strong>decision log</strong> is usually an administrative register of what was decided, by whom, and when. <strong>Meeting minutes</strong> record discussion and formal action. A personal <strong>diary</strong> may capture experience without a fixed decision structure. A <strong>premortem</strong> challenges a plan before commitment, while an <strong>after-action review</strong> examines performance afterward. A decision journal can link all of these, but it is defined by the protected comparison between an ex-ante record and later evidence.</p>
+<p>The journal is not a single psychological theory or a standardized psychometric instrument. The version in this book is an author’s evidence-informed synthesis of five research traditions:</p>
+<ol type="1">
+<li><strong>Decision analysis</strong> separates alternatives, uncertain consequences, objectives, and trade-offs rather than hiding them inside a global impression (Raiffa, 1968; Keeney &amp; Raiffa, 1976).</li>
+<li><strong>Hindsight and outcome-bias research</strong> shows why later memory is an unreliable reconstruction of what seemed knowable and reasonable before the result (Fischhoff, 1975; Baron &amp; Hershey, 1988).</li>
+<li><strong>Probabilistic forecasting and calibration</strong> make expectations resolvable and improvable across repeated cases rather than leaving them as elastic words such as “likely” or “confident” (Brier, 1950; Mellers et al., 2014).</li>
+<li><strong>Reason writing and accountability</strong> can force assumptions into view, but their effects depend on timing, audience, and incentives. Experiments with incumbent Chinese judges found that writing reasons before deciding reduced the influence of an induced negative feeling; a forced deliberation period produced a similar effect, so the result does not establish that writing or journals are a universal remedy (Liu, 2018). Accountability can also encourage conformity or defensible stories when the audience’s preferred conclusion is known (Lerner &amp; Tetlock, 1999).</li>
+<li><strong>Debriefing and experiential learning</strong> support structured comparison, explanation, and goal setting after performance. A meta-analysis of 46 samples (<span class="math inline">\(N = 2{,}136\)</span>) found that debriefs improved effectiveness relative to controls by <span class="math inline">\(d = 0.67\)</span> on average, but that is evidence about structured debriefing—not about this entire journal format (Tannenbaum &amp; Cerasoli, 2013).</li>
+</ol>
+<p>The justified claim is therefore component-level: a contemporaneous record creates evidence that memory alone cannot supply; explicit probabilities can be scored; and a structured review can improve learning. The stronger claim—that this exact template reliably improves every kind of decision—has not been established. The journal helps only when entries are timely and candid, forecasts are resolvable, reviews occur, and the record is not turned into bureaucracy, retrospective editing, or surveillance.</p>
 <p>Review the process using what was knowable at the time. A good decision can produce a bad outcome, and a poor process can get lucky. Compare forecasts with outcomes, not stories with feelings. Ask which assumptions failed, which information was missing, which values changed, and which parts of the process should remain even though the outcome was disappointing.</p>
 <p>Do not update from one noisy result more than the evidence warrants. Regression to the mean, random variation, and selective feedback can create false lessons. Calibrate over many predictions. Reward accurate uncertainty and timely revision, not only confident success.</p>
 <p>The retrospective biases developed earlier now become design requirements. <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#outcome-is-not-process">Outcome bias and hindsight bias</a> separate results from what was knowable ex ante; self-serving attribution assigns success to skill and failure to circumstances; and rationalization constructs a coherent defense after the choice. A disciplined review counters all four by asking: What did we know then? What did we predict? Which assumptions failed? What was process, what was luck, and what remains unknowable? The contribution of decision hygiene is not another definition of the biases, but a process that makes them harder to enact.</p>
-<p>The practical record is a two-column decision journal:</p>
+</section>
+<section id="decision-journal-before-choice" class="level3">
+<h3 data-anchor-id="decision-journal-before-choice">The elements before choosing</h3>
+<p>The minimum useful entry identifies the decision, separates prediction from valuation, and defines how later evidence will be interpreted.</p>
 <div id="tbl-35-decision-journal" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-decision-journal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.5: A decision journal protected from hindsight
+Table&nbsp;41.5: Elements recorded before the outcome is known
 </figcaption>
 <div aria-describedby="tbl-35-decision-journal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Before choosing</th>
-<th>After the outcome</th>
+<th>Element</th>
+<th>Operational definition</th>
+<th>What to record before choosing</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Decision statement and deadline</td>
-<td>What happened, including delayed effects?</td>
+<td><strong>Identity and authority</strong></td>
+<td>The record’s traceable owner, version, and decision rights.</td>
+<td>Entry ID; date and time; author; person or body authorized to decide; deadline.</td>
 </tr>
 <tr class="even">
-<td>Alternatives considered</td>
-<td>What was process and what was luck?</td>
+<td><strong>Decision statement</strong></td>
+<td>One actionable choice within a defined scope and horizon—not merely a topic or problem description.</td>
+<td>“Choose whether to ___ by ___ for the period ___.”</td>
 </tr>
 <tr class="odd">
-<td>Assumptions and probabilistic predictions</td>
-<td>Which assumptions failed or remain untested?</td>
+<td><strong>Alternatives and opportunity cost</strong></td>
+<td>Feasible courses of action, including the status quo, delay, pilot, combination, or negotiation; opportunity cost is the value of the best feasible alternative forgone.</td>
+<td>Options genuinely considered; best forgone option; reasons any plausible option was excluded.</td>
 </tr>
 <tr class="even">
-<td>Values, stakeholders, and trade-offs</td>
-<td>What did we miss or misweight?</td>
+<td><strong>Evidence and reference class</strong></td>
+<td>Information available at the time and comparable prior cases that supply an outside-view baseline. Evidence is observed or sourced; an estimate is inferred; an assumption is provisionally taken as true.</td>
+<td>Key sources and dates; relevant base rate; important missing or disputed evidence; fact–estimate–assumption labels.</td>
 </tr>
 <tr class="odd">
-<td>Emotional state, incentives, and dissenting views</td>
-<td>Which pressures or minority concerns proved relevant?</td>
+<td><strong>Predictions and uncertainty</strong></td>
+<td>Resolvable claims about observable consequences under each serious option, stated for a time horizon. Uncertainty is the degree of confidence represented by probabilities, ranges, or scenarios.</td>
+<td>Predicted event or measure; option to which it applies; horizon; probability or range; exact resolution criterion.</td>
 </tr>
 <tr class="even">
-<td>Models or AI consulted, and reasons for following or overriding them</td>
-<td>Did the tool add value, and was reliance calibrated?</td>
+<td><strong>Values, stakeholders, and trade-offs</strong></td>
+<td>Values are consequences, rights, or principles that matter; stakeholders are people or groups materially affected; a trade-off accepts less on one valued dimension to gain on another.</td>
+<td>Criteria and priorities; affected parties; protected constraints; acceptable and unacceptable trade-offs.</td>
 </tr>
 <tr class="odd">
-<td>Best feasible alternative forgone</td>
-<td>What should—and should not—change next time?</td>
+<td><strong>Assumptions and causal rationale</strong></td>
+<td>An assumption is a load-bearing proposition not yet adequately verified; the rationale explains how the option is expected to produce the forecast consequences.</td>
+<td>Most important assumptions; causal pathway; strongest alternative explanation; evidence that would weaken the account.</td>
 </tr>
 <tr class="even">
-<td>Review date and evidence to collect</td>
-<td>Which new prediction or decision rule will be tested?</td>
+<td><strong>Context, incentives, and dissent</strong></td>
+<td>Features of the current state or environment that may influence judgment without belonging to the option itself.</td>
+<td>Time pressure, affect, incentives, roles, conflicts, social influence, AI or models consulted, and the strongest contrary view recorded before discussion converges.</td>
+</tr>
+<tr class="odd">
+<td><strong>Choice and learning rule</strong></td>
+<td>The commitment and the pre-specified conditions for reopening it.</td>
+<td>Selected option and reason; implementation owner; review date or event; evidence to collect; thresholds for continuing, stopping, scaling, or revising.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="decision-journal-after-outcome" class="level3">
+<h3 data-anchor-id="decision-journal-after-outcome">The elements after the outcome</h3>
+<p>Append the review; do not edit the original forecast into agreement with what occurred.</p>
+<div id="tbl-decision-journal-review" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-decision-journal-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;41.6: Elements appended after the outcome or review trigger
+</figcaption>
+<div aria-describedby="tbl-decision-journal-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Review element</th>
+<th>Operational definition</th>
+<th>What to record after the review trigger</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Outcome evidence</strong></td>
+<td>Observed consequences over the stated horizon, separated from interpretation and from consequences that remain delayed or unmeasured.</td>
+<td>What happened; source and measurement date; missing, censored, or ambiguous outcomes.</td>
+</tr>
+<tr class="even">
+<td><strong>Forecast resolution</strong></td>
+<td>Whether each pre-defined event occurred or each quantity fell inside its stated range. Calibration concerns performance across a set of comparable forecasts, not whether one uncertain event happened.</td>
+<td>Resolved predictions; probability score where useful; unresolved items; repeated-case calibration.</td>
+</tr>
+<tr class="odd">
+<td><strong>Process quality</strong></td>
+<td>How well the decision used the information, alternatives, values, challenge, and uncertainty available at the time.</td>
+<td>What was done well or poorly ex ante, assessed without using the outcome as proof.</td>
+</tr>
+<tr class="even">
+<td><strong>Outcome quality</strong></td>
+<td>The realized desirability of the consequences for the named criteria and stakeholders.</td>
+<td>Benefits, harms, distribution, delayed effects, and comparison with the stated objectives.</td>
+</tr>
+<tr class="odd">
+<td><strong>Assumption and surprise audit</strong></td>
+<td>Which load-bearing claims survived, failed, or remain untested, and which observation fell outside the working model.</td>
+<td>Supported and failed assumptions; surprises; role of execution, changing conditions, and luck; counterfactuals that remain unknowable.</td>
+</tr>
+<tr class="even">
+<td><strong>Update</strong></td>
+<td>A specific, testable change to a future forecast, rule, information search, or process—not a broad promise to “use better judgment.”</td>
+<td>What should change; what should not change after one noisy case; next prediction, experiment, or review date.</td>
 </tr>
 </tbody>
 </table>
@@ -1051,6 +1175,7 @@ Table&nbsp;41.5: A decision journal protected from hindsight
 </figure>
 </div>
 <p>Reflection differs from rationalization because it produces a testable change. “How can I defend what I did?” searches for coherence. “What process produced this choice?” separates evidence, values, context, and luck. “What will I do differently next time?” turns the answer into a new rule, forecast, or experiment.</p>
+</section>
 </section>
 <section id="the-decision-improvement-cycle-notice-test-ask-design-learn" class="level2">
 <h2 data-anchor-id="the-decision-improvement-cycle-notice-test-ask-design-learn">The decision-improvement cycle: notice, test, ask, design, learn</h2>
@@ -1069,7 +1194,7 @@ Figure&nbsp;41.4: The book’s recurring navigation model returns as an author�
 <div id="tbl-35-1" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.6: The integrated decision audit
+Table&nbsp;41.7: The integrated decision audit
 </figcaption>
 <div aria-describedby="tbl-35-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1141,7 +1266,7 @@ Table&nbsp;41.6: The integrated decision audit
 <div id="tbl-36-proportionality" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-36-proportionality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.7: Proportionate decision hygiene
+Table&nbsp;41.8: Proportionate decision hygiene
 </figcaption>
 <div aria-describedby="tbl-36-proportionality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1311,6 +1436,21 @@ Table&nbsp;41.7: Proportionate decision hygiene
 </div>
 <div class="reference">
 <p>Sunstein, C. R., &amp; Hastie, R. (2015). Wiser: Getting beyond groupthink to make groups smarter. Harvard Business Review Press.</p>
+</div>
+<div class="reference">
+<p>Keeney, R. L., &amp; Raiffa, H. (1976). <em>Decisions with multiple objectives: Preferences and value tradeoffs</em>. Wiley.</p>
+</div>
+<div class="reference">
+<p>Lerner, J. S., &amp; Tetlock, P. E. (1999). Accounting for the effects of accountability. <em>Psychological Bulletin, 125</em>(2), 255–275. https://doi.org/10.1037/0033-2909.125.2.255</p>
+</div>
+<div class="reference">
+<p>Liu, Z. (2018). Does reason writing reduce decision bias? Experimental evidence from judges in China. <em>The Journal of Legal Studies, 47</em>(1), 83–118. https://doi.org/10.1086/696879</p>
+</div>
+<div class="reference">
+<p>Raiffa, H. (1968). <em>Decision analysis: Introductory lectures on choices under uncertainty</em>. Addison-Wesley.</p>
+</div>
+<div class="reference">
+<p>Tannenbaum, S. I., &amp; Cerasoli, C. P. (2013). Do team and individual debriefs enhance performance? A meta-analysis. <em>Human Factors, 55</em>(1), 231–245. https://doi.org/10.1177/0018720812448394</p>
 </div>
 
 

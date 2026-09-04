@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **775**
+Unique references in the master union: **778**
 
-Chapter reference blocks: **832**
+Chapter reference blocks: **837**
 
 Unresolved author–year citations: **0**
 
@@ -52,7 +52,7 @@ Unresolved author–year citations: **0**
 | Designing Better Agreements | 19 | 0 |
 | Behavior Design: Make the Better Action Easier | 19 | 0 |
 | Choice Architecture: The Environment Gets a Vote | 28 | 0 |
-| Decision Hygiene: Build a Process That Can Learn | 30 | 0 |
+| Decision Hygiene: Build a Process That Can Learn | 35 | 0 |
 
 ## Unresolved citation strings
 
