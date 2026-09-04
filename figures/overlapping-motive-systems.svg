@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="980" viewBox="150 0 1100 980" role="img" aria-labelledby="title desc">
+  <title id="title">Overlapping motive systems across development</title>
+  <desc id="desc">Seven complete triangular sheets are piled from earlier- to later-developing motive systems: immediate physiological needs, self-protection, affiliation, status and esteem, mate acquisition, mate retention, and kin care. The visible diagonal edges show that later-developing systems are added without replacing earlier ones. A note states that developmental order is not current priority or moral worth.</desc>
+  <defs>
+    <filter id="card-shadow" x="-8%" y="-8%" width="116%" height="122%">
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#17324d" flood-opacity="0.12"/>
+    </filter>
+    <filter id="sheet-shadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#17324d" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .figure-title { font: 700 44px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .figure-subtitle { font: 28px Arial, Helvetica, sans-serif; fill: #536779; }
+      .layer-label { font: 700 30px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .axis-end { font: 700 25px Arial, Helvetica, sans-serif; fill: #536779; }
+      .axis-label { font: 26px Arial, Helvetica, sans-serif; fill: #536779; letter-spacing: 0.3px; }
+      .footer-strong { font: 700 30px Arial, Helvetica, sans-serif; fill: #17324d; }
+      .footer { font: 25px Arial, Helvetica, sans-serif; fill: #536779; }
+      .motive-sheet { stroke: #60798e; stroke-width: 2.4; stroke-linejoin: round; filter: url(#sheet-shadow); }
+      .motive-sheet-outer { stroke-width: 3.4; }
+    </style>
+  </defs>
+
+  <rect x="150" width="1100" height="980" fill="#ffffff"/>
+  <text class="figure-title" x="700" y="58" text-anchor="middle">Overlapping motive systems across development</text>
+  <text class="figure-subtitle" x="700" y="101" text-anchor="middle">Later-developing systems are added; earlier systems remain available.</text>
+
+  <rect x="160" y="140" width="1080" height="715" rx="30" fill="#f7fafc" stroke="#c8d6e1" stroke-width="3" filter="url(#card-shadow)"/>
+
+  <!-- Developmental guide: deliberately not an importance arrow. -->
+  <line x1="250" y1="238" x2="250" y2="785" stroke="#8ca3b6" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="250" cy="238" r="8" fill="#d5b63c"/>
+  <circle cx="250" cy="785" r="8" fill="#d78b72"/>
+  <text class="axis-end" x="250" y="214" text-anchor="middle">Later</text>
+  <text class="axis-end" x="250" y="824" text-anchor="middle">Earlier</text>
+  <text class="axis-label" x="205" y="512" text-anchor="middle" transform="rotate(-90 205 512)">Typical developmental ordering in the proposal</text>
+
+  <!--
+    Each color is a complete triangular sheet. The sheets are drawn back-to-front,
+    with slightly offset apexes, so the exposed diagonal edges communicate
+    persistence and overlap rather than a stack of independent horizontal bands.
+  -->
+  <path class="motive-sheet motive-sheet-outer" d="M 305 800 L 740 190 L 1175 800 Z" fill="#f3c3b3"/>
+  <path class="motive-sheet" d="M 370 735 L 740 190 L 1110 735 Z" fill="#e4c7e7"/>
+  <path class="motive-sheet" d="M 430 670 L 740 190 L 1050 670 Z" fill="#bde5e8"/>
+  <path class="motive-sheet" d="M 485 605 L 740 190 L 995 605 Z" fill="#c4d4f1"/>
+  <path class="motive-sheet" d="M 540 540 L 740 190 L 940 540 Z" fill="#bde5cf"/>
+  <path class="motive-sheet" d="M 590 475 L 740 190 L 890 475 Z" fill="#dce8a7"/>
+  <path class="motive-sheet" d="M 635 410 L 740 190 L 845 410 Z" fill="#f5e28a"/>
+
+  <!-- Equal 65-unit baselines and equal 17-unit bottom margins for all seven labels. -->
+  <text class="layer-label" x="740" y="393" text-anchor="middle">Kin care</text>
+  <text class="layer-label" x="740" y="458" text-anchor="middle">Mate retention</text>
+  <text class="layer-label" x="740" y="523" text-anchor="middle">Mate acquisition</text>
+  <text class="layer-label" x="740" y="588" text-anchor="middle">Status &amp; esteem</text>
+  <text class="layer-label" x="740" y="653" text-anchor="middle">Affiliation</text>
+  <text class="layer-label" x="740" y="718" text-anchor="middle">Self-protection</text>
+  <text class="layer-label" x="740" y="783" text-anchor="middle">Immediate physiological needs</text>
+
+  <text class="footer-strong" x="700" y="895" text-anchor="middle">Developmental order ≠ current priority ≠ moral worth</text>
+  <text class="footer" x="700" y="935" text-anchor="middle">Several motives can be active together.</text>
+  <text class="footer" x="700" y="968" text-anchor="middle">Relevant cues can reactivate any system already developed.</text>
+</svg>

@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **771**
+Unique references in the master union: **772**
 
-Chapter reference blocks: **826**
+Chapter reference blocks: **827**
 
 Unresolved author–year citations: **0**
 
@@ -17,7 +17,7 @@ Unresolved author–year citations: **0**
 | Attention: What Becomes Evidence? | 29 | 0 |
 | The Predictive Mind: Perception Is Inference | 28 | 0 |
 | Expectations: When Predictions Become Causes | 32 | 0 |
-| Valuation: How Options Become Worth Choosing | 49 | 0 |
+| Valuation: How Options Become Worth Choosing | 50 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 19 | 0 |
 | Fast and Frugal Thinking | 27 | 0 |
 | What Feels Likely: Availability, Affect, and Resemblance | 15 | 0 |
