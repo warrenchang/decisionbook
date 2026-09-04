@@ -172,65 +172,37 @@ than evidence against it.
 
 Predictive processing is a family of accounts in which perception and
 learning involve predictions, precision-weighted errors, and belief
-updating. **Active inference** adds an explicit account of policy
-selection: the agent considers courses of action that will generate new
-observations and move it toward preferred states (Friston et al., 2017;
-Da Costa et al., 2020; Parr et al., 2022).
+updating. **Active inference** adds a practical insight: action changes
+the observations on which the next judgment will be based (Friston et
+al., 2017; Da Costa et al., 2020; Parr et al., 2022). Putting on a coat
+changes bodily signals. Asking whether a negotiation offer is final
+creates evidence that another concession cannot.
 
-“Surprise” has several meanings in this literature. In ordinary speech,
-it is a felt reaction. In probabilistic modeling, an observation is
-surprising when the current model assigned it low probability.
-**Bayesian surprise** instead describes how much an observation changes
-beliefs from prior to posterior. Variational free energy is a formal
-model-evidence quantity used to make otherwise difficult inference
-tractable; it is not a synonym for pain, anxiety, discomfort, or
-“negative energy” (Friston, 2010; Parr et al., 2022).
+This suggests a usable two-question check before acting:
 
-If your body is cold, putting on a coat changes the observations. If you
-do not know whether a negotiation offer is final, asking a diagnostic
-question changes what you can learn. Action is therefore not only a
-response to a finished perception. It changes the evidence on which the
-next perception and judgment will be based.
+- **Outcome value:** Which action is most likely to produce the outcome
+  I currently prefer?
+- **Information value:** Which feasible action would most reduce an
+  uncertainty that could change the decision?
 
-In formal active-inference models, possible policies are scored by
-**expected free energy**. The useful teaching distinction is between two
-components:
+A small pilot can therefore dominate immediate scaling when it tests a
+decisive assumption; once that uncertainty is resolved, further
+exploration may add little (Friston et al., 2015). The point is not that
+people consciously calculate an equation. It is that some actions both
+produce outcomes and improve the evidence available for the next choice.
 
-- **Pragmatic or extrinsic value:** is the policy expected to produce
-  outcomes the agent prefers?
-- **Epistemic value:** is the policy expected to reduce relevant
-  uncertainty or produce information gain?
-
-Epistemic value makes exploration intelligible. A manager may run a
-small pilot instead of immediately scaling the currently favored
-option. A negotiator may ask about constraints instead of making
-another concession. As useful uncertainty is resolved, the value of
-further exploration can fall and exploitation of the better-supported
-policy can dominate (Friston et al., 2015).
-
-This is not a license to translate every preference into “prediction
-error.” Preferred outcomes, likelihoods, policies, and time horizons
-must be represented explicitly. Expected free energy is a model-based
-score of future policies, not ordinary emotional strain and not a claim
-that every organism consciously calculates an equation.
-
-### Identification: when does the framework rule anything out?
-
-A flexible vocabulary can explain almost any result after it occurs.
-That is precisely why an active-inference application must specify the
-hidden states, observations, likelihood, priors, policies, preferred
-outcomes, learning rule, and free parameters before claiming that the
-framework explains behavior. Useful evidence includes parameter
-recovery, out-of-sample prediction, experimental manipulations tied to
-model quantities, and comparison with simpler Bayesian, reinforcement-
-learning, and heuristic models.
-
-If several parameter combinations generate the same behavior, the
-psychological interpretation is not identified. If a model wins only
-because it is more flexible, its fit is not yet an explanation. Active
-inference is strongest when the formalism creates a risky prediction or
-a boundary condition; it is weakest when every outcome is redescribed
-as successful free-energy minimization.
+In formal models, variational and expected free energy are technical
+quantities, not synonyms for surprise as a feeling, anxiety, discomfort,
+or “negative energy” (Friston, 2010; Parr et al., 2022). A research
+application must specify hidden states, observations, policies, preferred
+outcomes, learning rules, and free parameters; it should test parameter
+recovery where parameters carry psychological meaning, predict new data,
+and be compared with simpler alternatives rather than redescribing every
+result after it occurs. Readers who need the
+formal derivations should use the cited technical sources. [Appendix
+E](../appendices/appendix-e-how-behavioral-evidence-is-built.qmd#separate-description-prediction-causation-and-mechanism)
+provides the complementary discipline for turning a model into a claim
+that evidence can distinguish from its rivals.
 :::
 
 ::: {.callout-warning icon=false}
@@ -267,21 +239,18 @@ Calibration therefore requires more than confidence. Ask:
 
 These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.
 
-## Research Lens: calibration in complex cases
+## Research Lens: restored sight as a bounded calibration case
 
-Unusual cases can make the ordinary architecture visible, but only if
-we resist forcing them into one explanation. The cases below do not
-share one proven neural mechanism. They illustrate four different ways
-in which learned models, present sensory evidence, and estimated
-reliability can become difficult to coordinate.
-
-| Case | What the case makes visible | What the evidence does **not** justify |
-| --- | --- | --- |
-| Restored sight | Optical input can return before objects, faces, depth, and cross-modal mappings become a coherent visual world. Newly sighted participants initially struggled to match a seen object with one known by touch, then learned rapidly (Held et al., 2011). | “The eye now works, so mature perception is immediately restored.” Case histories also mix prior experience, residual impairment, development, and rehabilitation. |
-| Functional visual symptoms | A person can sincerely report severe visual loss even while positive tests show that parts of visual processing remain available. Explanation, attention to residual function, and rehabilitation can help (Yeo et al., 2019; Ramsay et al., 2024). | Functional neurological symptoms are faking, imaginary, or established as one simple case of an overstrong prior. A case treated with several interventions cannot identify one causal ingredient. |
-| Conditioned hallucinations | After learning that a checkerboard predicts a faint tone, people may report the tone on no-tone trials. This effect was more frequent among participants who heard voices in everyday life (Powers et al., 2017). | Schizophrenia is reducible to a single “faulty model.” Predictive-coding accounts of psychosis involve different levels, symptoms, learning histories, dopamine-related processes, and social contexts (Sterzer et al., 2018). |
-| Autism and visual context | Susceptibility to some illusions and use of some learned priors can differ across people and tasks. A large review finds mixed results rather than a global absence of prior knowledge (Angeletos Chrysaitis & Seriès, 2023). | Autistic perception contains “no models,” is uniformly less contextual, or is simply better or worse. Long-established and newly learned priors may behave differently. |
-: Four cases, four boundary conditions {#tbl-predictive-calibration-cases}
+Restored sight offers one unusually clear illustration without serving
+as a general clinical theory. Optical input can return before objects,
+faces, depth, and cross-modal mappings form a coherent visual world.
+Newly sighted participants initially struggled to match a seen object
+with one known by touch, then learned rapidly (Held et al., 2011). The
+result shows that usable perception depends on learned organization as
+well as incoming signals. It does not show that mature perception appears
+immediately when the eye works, nor does it isolate one neural mechanism:
+prior experience, residual impairment, development, and rehabilitation
+remain relevant.
 
 The target is therefore not perception with fewer predictions. Without
 learned structure, sensory signals do not organize themselves into a
@@ -309,7 +278,12 @@ Predictive processing is an influential family of frameworks, not one settled th
 ::: {.callout-caution .evidence-and-boundary-conditions icon=false}
 ## Evidence Boundary: clinical cases need clinical explanations
 
-Hallucinations and functional neurological symptoms are complex. They should not be reduced to “strong priors” without considering neural, developmental, social, and medical mechanisms.
+Hallucinations and functional neurological symptoms are heterogeneous
+clinical phenomena. Predictive-processing concepts may organize a
+hypothesis, but they do not provide a diagnosis or establish one causal
+mechanism. Condition-specific neural, developmental, social, and medical
+evidence—and qualified clinical assessment—remain necessary (Sterzer et
+al., 2018; Yeo et al., 2019; Ramsay et al., 2024).
 :::
 
 The chapter's main message can now be stated compactly: perception depends on models that make ambiguous signals usable, and those models improve only when credible error is allowed to change them. The goal is not to remove prior expectations, but to make their influence testable and their updating proportionate to evidence.
@@ -328,10 +302,6 @@ Choose a disagreement in which two people received similar information but infer
 
 ::: {.reference}
 Adelson, E. H. (2000). Lightness perception and lightness illusions. In M. Gazzaniga (Ed.), The new cognitive neurosciences (2nd ed., pp. 339–351). MIT Press.
-:::
-
-::: {.reference}
-Angeletos Chrysaitis, N., & Seriès, P. (2023). Ten years of Bayesian theories of autism: A comprehensive review. *Neuroscience & Biobehavioral Reviews, 145*, 105022.
 :::
 
 ::: {.reference}
@@ -400,10 +370,6 @@ Knill, D. C., & Richards, W. (Eds.). (1996). Perception as Bayesian inference. C
 
 ::: {.reference}
 Parr, T., Pezzulo, G., & Friston, K. J. (2022). *Active inference: The free energy principle in mind, brain, and behavior.* MIT Press.
-:::
-
-::: {.reference}
-Powers, A. R., III, Mathys, C., & Corlett, P. R. (2017). Pavlovian conditioning-induced hallucinations result from overweighting of perceptual priors. *Science, 357*(6351), 596–600.
 :::
 
 ::: {.reference}

@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **807**
+Unique references in the master union: **805**
 
-Chapter reference blocks: **837**
+Chapter reference blocks: **833**
 
 Unresolved author–year citations: **0**
 
@@ -12,10 +12,10 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| How Decisions Should Be Made—and How They Actually Are | 18 | 0 |
+| How Decisions Should Be Made—and How They Actually Are | 16 | 0 |
 | Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | 9 | 0 |
 | Attention: What Becomes Evidence? | 29 | 0 |
-| The Predictive Mind: Perception Is Inference | 28 | 0 |
+| The Predictive Mind: Perception Is Inference | 26 | 0 |
 | Expectations: When Predictions Become Causes | 32 | 0 |
 | Valuation: How Options Become Worth Choosing | 55 | 0 |
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 19 | 0 |

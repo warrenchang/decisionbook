@@ -231,6 +231,34 @@ Before accepting an adaptation claim, ask:
 
 If the account cannot answer these questions, call it a possibility or organizing hypothesis, not an established explanation.
 
+### Advanced track: population and spatial model provenance {#population-model-provenance}
+
+Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory instead asks which strategies become more common under a declared process linking payoff to replication, survival, or imitation (Maynard Smith & Price, 1973). The vocabulary can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named. A frequency change is not evidence of natural selection merely because an evolutionary equation can reproduce it.
+
+For two strategies, let $x$ be the share using strategy 1 and let $f_1$ and $f_2$ be the strategies' current payoffs. One discrete replicator-style rule is
+
+$$
+x' = \frac{xf_1}{xf_1+(1-x)f_2}.
+$$
+
+The equation makes an update rule explicit; it does not establish that people literally use it. Any conclusion remains conditional on the payoff function, initial shares, population mixing, horizon, omitted costs, and choice of update rule. An **evolutionarily stable strategy** is resistant to invasion by a small share of specified alternatives. It is not automatically a consciously chosen strategy, a welfare optimum, or a moral recommendation. A stable population mixture is also different from each person deliberately randomizing.
+
+Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. A model pattern does not identify human intent, innateness, or the historical cause of a real city or institution. Before interpreting a formal or simulated population result, preserve this minimum record:
+
+| Model component | Minimum provenance |
+| --- | --- |
+| Frequency update | Payoffs, initial shares, update rule, and horizon |
+| Spatial interaction | Topology, neighborhood, timing, mobility, vacancies, and tie-breaking |
+| Stochastic simulation | Pseudorandom generator, seed, replications, and outcome distribution—not only one attractive run |
+| Transport claim | The real-world observation that could distinguish the modeled process from learning, imitation, institutional change, or selection |
+: A minimum provenance record for population and spatial models {#tbl-model-provenance}
+
+@fig-schelling-emergence applies that standard. In one seeded Schelling-style teaching run, agents move only when fewer than one-third of their occupied neighbours share their group and choose a vacancy satisfying that threshold. The average same-group-neighbour share rises from 0.48 to 0.68. The pattern shows what these declared rules can generate; it does not show that the same threshold, motive, or process caused segregation in a real neighbourhood.
+
+![One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.](../figures/schelling-emergence.svg){#fig-schelling-emergence fig-alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830." width=100%}
+
+Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner's-dilemma dynamics (Wilensky, 2002), and one specified ethnocentrism model (Hammond & Axelrod, 2006; Wilensky, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability answer different questions: tit-for-tat's success in one tournament and its vulnerability under another mutation–selection process are not contradictory findings (Axelrod, 1984; Imhof et al., 2007). The correct inference is always conditional on the declared process.
+
 ## 9. What the evolutionary lens changes in a decision {#evolutionary-valuation-audit}
 
 Return to the invitation to give a prestigious talk from Chapter 6. An evolutionary lens does not produce a hidden correct answer. It improves the diagnosis.
@@ -250,6 +278,10 @@ This is the practical contribution of the evolutionary perspective. Before dismi
 Evolution can deepen an account of human choice. It cannot finish the choice for us.
 
 ## References cited in this appendix
+
+::: {.reference}
+Axelrod, R. (1984). *The evolution of cooperation*. Basic Books.
+:::
 
 ::: {.reference}
 Bennett, M. S. (2021). Five breakthroughs: A first approximation of brain evolution from early bilaterians to humans. *Frontiers in Neuroanatomy, 15*, 693346. https://doi.org/10.3389/fnana.2021.693346
@@ -292,6 +324,14 @@ Haselton, M. G., & Buss, D. M. (2000). Error management theory: A new perspectiv
 :::
 
 ::: {.reference}
+Hammond, R. A., & Axelrod, R. (2006). The evolution of ethnocentrism. *Journal of Conflict Resolution, 50*(6), 926–936. https://doi.org/10.1177/0022002706293470
+:::
+
+::: {.reference}
+Imhof, L. A., Fudenberg, D., & Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? *Journal of Theoretical Biology, 247*(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027
+:::
+
+::: {.reference}
 Kahneman, D., & Klein, G. (2009). Conditions for intuitive expertise: A failure to disagree. American Psychologist, 64(6), 515-526.
 :::
 
@@ -321,6 +361,10 @@ Lieder, F., & Griffiths, T. L. (2020). Resource-rational analysis: Understanding
 
 ::: {.reference}
 Maslow, A. H. (1943). A theory of human motivation. *Psychological Review, 50*(4), 370–396. https://doi.org/10.1037/h0054346
+:::
+
+::: {.reference}
+Maynard Smith, J., & Price, G. R. (1973). The logic of animal conflict. *Nature, 246*, 15–18. https://doi.org/10.1038/246015a0
 :::
 
 ::: {.reference}
@@ -360,6 +404,10 @@ Sapolsky, R. M. (2023). *Determined: A science of life without free will*. Pengu
 :::
 
 ::: {.reference}
+Schelling, T. C. (1969). Models of segregation. *American Economic Review, 59*(2), 488–493.
+:::
+
+::: {.reference}
 Scott-Phillips, T. C., Dickins, T. E., & West, S. A. (2011). Evolutionary theory and the ultimate–proximate distinction in the human behavioral sciences. *Perspectives on Psychological Science, 6*(1), 38–47. https://doi.org/10.1177/1745691610393528
 :::
 
@@ -385,4 +433,16 @@ Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and b
 
 ::: {.reference}
 Wahba, M. A., & Bridwell, L. G. (1976). Maslow reconsidered: A review of research on the need hierarchy theory. *Organizational Behavior and Human Performance, 15*(2), 212–240. https://doi.org/10.1016/0030-5073(76)90038-6
+:::
+
+::: {.reference}
+Wilensky, U. (1997). *NetLogo Segregation model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation
+:::
+
+::: {.reference}
+Wilensky, U. (2002). *NetLogo PD Basic Evolutionary model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary
+:::
+
+::: {.reference}
+Wilensky, U. (2003). *NetLogo Ethnocentrism Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization
 :::

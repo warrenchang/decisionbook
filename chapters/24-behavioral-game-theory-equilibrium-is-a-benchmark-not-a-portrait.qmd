@@ -135,63 +135,26 @@ To distinguish accounts, vary what participants receive:
 Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.
 
 ::: {.callout-note .research-lens icon=false}
-## Research Lens: Evolutionary and spatial models
+## Advanced research track: evolutionary and spatial models
 
-Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory asks which strategies become more common under a declared rule linking payoff to replication, survival, or imitation (Maynard Smith & Price, 1973). The language can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named; learning is not natural selection merely because frequencies change.
+Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith & Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.
 
-A two-strategy illustration lets $x$ be the share using strategy 1 and updates that share according to relative payoff. A discrete replicator-style rule is $x'=xf_1/[xf_1+(1-x)f_2]$. Under the stylized beetle game below, Large earns more at every population share and therefore spreads under a payoff-monotonic update. The result is conditional on the stated payoffs, population mixing, initial share, update rule, and omitted costs.
-
-| Focal  Other | Small | Large |
-| --- | ---: | ---: |
-| **Small** | 3, 3 | 0, 5 |
-| **Large** | 5, 0 | 1, 1 |
-: Stylized beetle-size game {#tbl-beetle-game}
-
-An **evolutionarily stable strategy** resists invasion by a small share of mutants. In the stag hunt, both pure populations can be stable and the starting share determines which basin is reached. In hawk–dove, payoff equality can sustain a population mixture; that is not the same claim as each individual deliberately randomizing.
-
-| Focal  Other | Stag | Hare |
-| --- | ---: | ---: |
-| **Stag** | 2, 2 | 0, 1 |
-| **Hare** | 1, 0 | 1, 1 |
-: Evolutionary stag hunt {#tbl-evolutionary-stag-hunt}
-
-| Focal  Other | Dove | Hawk |
-| --- | ---: | ---: |
-| **Dove** | 3, 3 | 1, 5 |
-| **Hawk** | 5, 1 | 0, 0 |
-: Hawk–dove game {#tbl-hawk-dove}
-
-Spatial models add another dependency: who meets whom. Cooperative clusters, ethnocentric strategies, or aggregate segregation can emerge under particular neighborhoods and update rules. A screenshot is not empirical evidence, and a model pattern does not identify human intent, innateness, or the historical cause of a city outcome. Reproducibility requires the following minimum record:
-
-| Model layer | Substantive lesson | Reproducibility gate |
-| --- | --- | --- |
-| Two-strategy update | Payoff differences can change population shares. | Payoffs, initial share, update rule, and horizon. |
-| Spatial game | Local interaction can protect clusters. | Topology, neighbors, timing, ties, seed, and replications. |
-| Ethnocentrism | Conditional help can spread in one specified process. | Benefits, costs, tags, mutation, mobility, and interaction rule. |
-| Schelling segregation | Mild local thresholds can yield aggregate sorting. | Population, vacancies, threshold, move rule, seed, and outcome measure. |
-: Model demonstrations require parameter and process provenance {#tbl-model-provenance}
-
-@fig-schelling-emergence applies that standard rather than relying on parameter-free screenshots. In one seeded run, local moves raise the average same-group-neighbour share from 0.48 to 0.68. The figure displays the core parameters; the retained generator also fixes population counts, isolated-agent handling, shuffled sequential updates, vacancy construction, tie-breaking, and the pseudorandom implementation. It shows what those declared rules can produce—not that the same process, threshold, or motive generated residential segregation in a real city.
-
-![One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.](../figures/schelling-emergence.svg){#fig-schelling-emergence fig-alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830." width=100%}
-
-Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner's-dilemma dynamics (Wilensky, 2002), and a specific ethnocentrism model (Hammond & Axelrod, 2006; Wilensky, 2003). These are executable hypotheses under declared rules, not photographs of how real populations must behave.
-
-Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat's success in one tournament and its vulnerability under noise or mutation–selection are not contradictory findings; they answer different questions (Axelrod, 1984; Imhof et al., 2007).
+A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner's-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules, not evidence that the same process or motive produced a real population pattern (Schelling, 1969; Hammond & Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.
 :::
 
 ## Application: choose the model after diagnosing the process
 
-Suppose a team asks why one work routine is spreading.
+Suppose a team asks why one work routine is spreading. First ask whether employees are deliberately best responding to colleagues or anticipating what colleagues will anticipate. If the claim is about diffusion, use four distinct tests:
 
-1. **Best response:** Are employees deliberately choosing the routine because it fits colleagues' actions?
-2. **Level reasoning:** Are they anticipating what colleagues will anticipate?
-3. **Reinforcement:** Did recent success increase repetition even without a strategic model?
-4. **Imitation:** Are employees copying visible high performers?
-5. **Selection:** Are teams using other routines disappearing, losing resources, or not being hired?
-6. **Institution:** Did software, incentives, or management make one routine easier or mandatory?
+| Candidate process | Diagnostic question | Discriminating evidence |
+| --- | --- | --- |
+| Reinforcement | Did the employee repeat a routine after it worked for them? | Hold information about others constant and vary feedback about the employee's own outcome. |
+| Imitation | Are employees copying visible or prestigious performers? | Hold own-outcome feedback constant and vary whose behavior is visible. |
+| Selection | Are routines spreading because teams or employees using alternatives disappear or lose resources? | Separate change within continuing units from replacement or differential survival of units. |
+| Institution | Did software, incentives, defaults, or management make one routine easier or mandatory? | Identify the rule change and compare behavior under otherwise similar institutional conditions. |
+: Four mechanisms that can produce the same diffusion pattern {#tbl-strategy-diffusion-diagnostic}
 
-These accounts can generate the same observed diffusion. Test them by varying information, feedback, visibility, incentives, mobility, or rules. Do not call every spread behavior “evolutionary” merely because its frequency changes.
+The processes can coexist, so record which signal each account requires and what observation would weaken it. Do not call every spread behavior “evolutionary” merely because its frequency changes.
 
 ## Ethics: strategic classification can become a weapon
 

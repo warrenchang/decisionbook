@@ -16,42 +16,69 @@ aliases:
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Package trades can create value across differences, and agreement design can turn that value into durable terms. But unresolved forecasts, unverifiable claims, unclear authority, and missing review or dispute rules can merely postpone the conflict. Therefore this chapter turns negotiated value into agreement architecture by answering six questions: Who acts? What is observed? Who verifies? What happens when assumptions fail? Who may revise? How can either side exit?
+Package trades can create value across differences, and agreement design can turn that value into durable terms. But unresolved forecasts, unverifiable claims, unclear authority, and missing review or exit rules can merely postpone the conflict. Therefore begin with a **minimum viable agreement** for every material promise: a named owner, an observable measure, a verification source, a review date, a failure rule, and an exit path. Add packages, contingent terms, staged disclosure, or third-party procedures only when a diagnosed problem justifies the added complexity.
 :::
 
 ## Learning goals
 
-- Design multiple equivalent packages that reveal priorities without using decoys.
-- Write a contingent term with measurable outcomes, aligned incentives, and verifiable data rather than relying on confidence or demeanor.
-- Produce an implementation architecture covering ownership, observation, verification, failure, revision, and exit.
+- Produce a minimum viable agreement covering ownership, measurement, verification, review, failure, and exit.
+- Diagnose whether unclear priorities, forecast disagreement, sensitive claims, or process failure warrants an optional agreement-design module.
+- Add an advanced term only when its measurement, incentives, authority, and implementation burden are defensible.
 
 ::: {.callout-note .loop-location icon=false}
 ## Where this chapter enters the loop
 
-Agreement design turns a promising package into a decision that can survive the future. Packages reveal priorities; contingencies let later evidence resolve forecast disagreement; staged disclosure and verification manage trust; process rules guide interaction; third parties can assist or decide when direct negotiation fails; and implementation converts promises into observable action and learning.
+Agreement design turns a promising package into a decision that can survive the future. The minimum viable agreement makes each material promise observable and governable. Optional modules can then reveal priorities, let later evidence resolve forecast disagreement, manage sensitive information, or specify how a stalled process will continue.
 :::
 
-## Return to the supplier table
+## Start with a minimum viable agreement
 
-The buyer and supplier have identified a promising structure: commercial exclusivity with one legacy exception, minimum annual volume, flexible call-offs, shared capacity investment, quality criteria, and staged delivery. They have created options. They have not yet designed a safe agreement.
+The buyer and supplier have identified a promising structure: commercial exclusivity with one legacy exception, minimum annual volume, flexible call-offs, shared capacity investment, quality criteria, and staged delivery. They have created options. They have not yet designed a safe agreement. Before adding more clauses, they should make each material promise operational.
 
 Several uncertainties remain. How much capacity is genuinely available? Who bears a delay caused by late forecasts, transport disruption, or supplier failure? How will defect rate be measured? What information can each side verify? Who may change volume, and when? A sophisticated package can merely relocate conflict unless these questions become terms, measures, and review rules.
 
-The chapter uses six implementation questions as its spine:
+The chapter uses six required fields as its spine:
 
-| Question | Agreement-design purpose |
+| Required field | Agreement-design purpose |
 | --- | --- |
-| **Who acts?** | Assign every promise to a named role with authority and resources. |
-| **What is observed?** | Define the event, metric, threshold, deadline, and data source. |
-| **Who verifies?** | Establish access, inspection, audit, and challenge rights. |
-| **What happens when assumptions fail?** | Allocate risk, cure, escalation, and consequences. |
-| **Who may revise?** | Specify review cadence, decision rights, and change control. |
-| **How can either side exit?** | Define termination, surviving duties, transition, and appeal. |
-: Six questions that turn a package into an operating agreement {#tbl-agreement-six-questions}
+| **Owner** | Assign the promise to a named role with authority and resources. |
+| **Measure** | Define the observable event, metric, threshold, and deadline. |
+| **Verification source** | Name the record, data source, inspection right, and challenge process. |
+| **Review date** | State when the responsible parties will examine performance and who may approve a revision. |
+| **Failure rule** | Define cure, escalation, consequence, and treatment of relevant external shocks. |
+| **Exit** | Define termination rights, transition, surviving duties, and any appeal. |
+: Six fields that turn a package into a minimum viable agreement {#tbl-agreement-six-questions}
 
-MESOs, contingent terms, staged disclosure, process rules, and dispute procedures are useful only insofar as they help answer these questions.
+For the supplier's forecast-and-capacity obligation, the minimum record could look like this:
 
-## 1. Reveal priorities through packages
+| Field | Illustrative operating term |
+| --- | --- |
+| Owner | The buyer's demand-planning lead submits the rolling forecast; the supplier's account lead confirms available capacity. |
+| Measure | Submission is time-stamped; capacity inside the agreed band is confirmed within two working days. |
+| Verification source | Both parties can inspect the shared forecast, order, and confirmation log. |
+| Review date | Operational leads review the record monthly; designated commercial sponsors approve any change to the band. |
+| Failure rule | A buyer-caused late forecast moves the delivery clock; a supplier-controlled miss after confirmed capacity activates the stated cure and service-credit rule. |
+| Exit | Repeated uncured failure activates the agreed termination and transition process, including treatment of dedicated tooling and surviving duties. |
+: A minimum viable agreement for one supplier obligation {#tbl-agreement-minimum-example}
+
+The record is deliberately small. It does not settle every legal question, and legal drafting still requires the relevant expertise and jurisdiction. It does make the operational promise testable before complexity accumulates.
+
+::: {.callout-tip icon=false}
+## Add an advanced module only for a diagnosed problem
+
+| Diagnosed problem | Optional module | Use only if... |
+| --- | --- | --- |
+| The parties do not know which issues the other side values most | Multiple equivalent simultaneous offers (MESOs) | The packages are sincere, understandable, and approximately equivalent to the offer-maker |
+| The parties make materially different forecasts | Contingent term | The outcome is measurable, verifiable, sufficiently controllable, and worth the contracting burden |
+| Important information is sensitive or a claim is consequential | Staged disclosure and claim verification | Disclosure is reciprocal or protected and a credible verification path exists |
+| Agenda, authority, communication, or impasse blocks progress | Process or third-party rule | Decision rights, confidentiality, timing, and transfer of control can be specified |
+| A signed agreement may leave mutually beneficial trades unexplored | Protected post-settlement search | The signed agreement remains the fallback and either party may stop without penalty |
+: Route a diagnosed agreement problem to an optional module {#tbl-agreement-module-routing}
+
+If no diagnosed problem fits a module, do not add one. Complexity creates interpretation, monitoring, gaming, and enforcement costs of its own.
+:::
+
+## Optional module 1: Reveal priorities through packages
 
 One powerful tool for discovering integrative agreements is the use of multiple equivalent simultaneous offers, or MESOs.
 
@@ -100,7 +127,7 @@ Then ask pairwise questions:
 
 MESOs reduce the risk of learning priorities through direct interrogation, and research suggests that offering a choice of first offers can improve both economic and relational outcomes in studied settings (Leonardelli et al., 2019). They remain proposals, not a menu of traps. A decoy that is not sincerely available undermines the tool.
 
-## 2. Use contingent terms when forecasts differ
+## Optional module 2: Use contingent terms when forecasts differ {#use-contingent-terms-when-forecasts-differ}
 
 ![This author's prescriptive synthesis shows four agreement-design tools together with the conditions that make each defensible. The figure is a design checklist, not a validated universal sequence or a claim that the tools necessarily improve an agreement.](../figures/agreement-design.svg){#fig-agreement-design fig-alt="Four balanced panels state conditions for MESOs, contingent terms, post-settlement search, and governance. A lower flow sends candidate terms through a feasibility, BATNA, legality, fairness, understanding, and implementation test before implementation and learning."}
 
@@ -154,7 +181,7 @@ The buyer expects monthly demand to remain within a narrow band. The supplier ex
 
 This term turns forecast disagreement into a measurable allocation of responsibility. It still needs definitions: what counts as a forecast, confirmation, surge volume, supplier-controlled delay, external shock, and cure? The agreement should avoid cliffs that reward strategic reporting just above or below a threshold. When parties disagree about the future, let future evidence affect terms only when measurement, control, incentives, and enforcement are credible (Bazerman & Gillespie, 1999).
 
-## 3. Stage disclosure and verification
+## Optional module 3: Stage disclosure and verification {#stage-disclosure-and-verification}
 
 Integrative negotiation needs information, but disclosure can create vulnerability. Stage it. Begin with interests and lower-risk priorities that explain a position—“Delivery reliability matters because our customer contract contains penalties”—and ask for comparable information. Use the answer to propose a trade, not to impose the maximum pressure it reveals. Exact reservation values and confidential alternatives remain private unless disclosure produces a clear process, legal, or agreement benefit.
 
@@ -197,7 +224,7 @@ For every material claim, ask:
 
 Direct questions can reduce deception, but they do not guarantee truth. Schweitzer and Croson (1999) found an overall reduction in deception in their first study; in their second, direct questions particularly reduced omission but could increase lies of commission. Therefore ask a precise question **and** verify the answer when it matters. Good agreement design makes important claims testable without pretending that every inconsistency reveals intent.
 
-## 4. Negotiate the process
+## Optional module 4: Negotiate the process {#negotiate-the-process}
 
 Sometimes the best way to create value is to improve the process before negotiating substance.
 
@@ -242,7 +269,7 @@ At each step ask what evidence would send you backward. A process model is usefu
 []{#third-party-dispute-resolution}
 
 ::: {.callout-note .research-lens icon=false}
-## Research Lens: when direct negotiation needs a third party
+## Optional module: when direct negotiation needs a third party
 
 A third party can repair a process or replace it. These are different interventions. The mediation–arbitration distinction below follows the non-adjudicatory versus adjudicatory allocation of authority used in the UNCITRAL frameworks; the fit and risk columns are the author's decision aid, not comparative-effect estimates (UNCITRAL, 2022).
 
@@ -261,7 +288,7 @@ A staged commercial clause might move from operational leads, to executive spons
 Hybrid procedures such as mediation–arbitration offer a settlement opportunity plus finality and may produce perceived time or cost savings in some disputes. They also create a predictable problem when one person performs both roles: information disclosed to a mediator in confidence may appear relevant when that person later becomes the decision-maker. Parties may become less candid or doubt impartiality. Barsky (2013) analyzes these risks in family-law disputes; recent American Arbitration Association commercial-practice guidance identifies the same concerns about candor, ex parte information, informed consent, and the integrity of an eventual award (American Arbitration Association, 2025). If a hybrid is used, the parties should decide in advance whether separate neutrals will serve, what information can cross stages, and whether renewed consent is required before the role changes. Potential speed should not hide a change in authority or confidentiality.
 :::
 
-### Search safely after agreement
+### Optional extension: search safely after agreement
 
 A post-settlement settlement is an improved agreement reached after the parties have already reached an initial agreement.
 
@@ -299,7 +326,7 @@ The rule is:
 
 Post-settlement settlement should only improve the deal for both parties. It should never be a disguised attempt to claw back value.
 
-## 5. Design implementation and review
+## Complete the minimum agreement: implementation and review
 
 ### Ethics of value creation
 
@@ -383,7 +410,7 @@ The lesson is that price was not the whole problem. Price was the visible confli
 
 The package becomes implementable only after the parties name owners, evidence, and review. The buyer owns the rolling forecast; the supplier confirms capacity within two working days. A shared dashboard records committed volume, accepted surge orders, defects, and dependency delays. A monthly operating review handles forecasts and quality; a quarterly governance review can revise bands and investment milestones. Cure periods precede exit except for safety or fraud. Disputes escalate first to named operational leads, then commercial sponsors, then the agreed formal mechanism. The agreement records which terms survive termination and how dedicated-tooling value is recovered.
 
-Agreement architecture therefore answers six questions: **Who acts? What is observed? Who may verify? What happens when assumptions fail? Who may revise the term? How can either side exit?** A deal is not complete when it looks clever on paper. It is complete when the parties can carry it out, detect failure, and adapt without inventing a new negotiation each time.
+Agreement architecture therefore completes six fields: **owner, measure, verification source, review date, failure rule, and exit**. A deal is not complete when it looks clever on paper. It is complete when the parties can carry it out, detect failure, and adapt without inventing a new negotiation each time.
 
 | Issue | My position | My interest | My priority | Their likely position | Their likely interest | Their likely priority |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -402,13 +429,15 @@ MESOs can reveal preferences only when the packages are sincere, understandable,
 
 ## Practice Lab
 
-Complete an agreement-design file for the supplier case containing: three equivalent packages; the priority each comparison is meant to test; one contingent term for demand or delivery uncertainty; definitions for every metric and threshold; data source and verification rights; incentive and sabotage risks; one cultural-meaning hypothesis and the question that would test it; disclosure sequence; decision authority; implementation owners; review cadence; cure and escalation; adaptation rule; and exit. Identify one material claim that must be independently verified. Choose mediation or arbitration for the unresolved-dispute stage and explain why party control should be preserved or transferred. Stress-test the agreement against one demand shock, one supplier failure, one buyer-caused delay, and one ambiguous measurement.
+Produce a **one-page minimum viable agreement** for the supplier obligation most likely to fail. Complete its six fields: owner, measure, verification source, review date, failure rule, and exit. Then stress-test the record against one plausible failure and revise whichever field did not provide a clear response.
+
+Choose **no more than one** optional module from @tbl-agreement-module-routing. State the diagnosed problem that justifies it and add only the information that module requires—for example, two or three sincere packages for unclear priorities, one measurable contingent term for forecast disagreement, or one explicit escalation rule for process failure. If no module is justified, record “none.” Multiple packages, full contingent-contract drafting, independent audits, detailed mediation or arbitration clauses, and multi-shock testing belong in an advanced agreement-design file, not in the minimum exercise.
 
 ## Take it forward
 
 - **Use this when:** a promising multi-issue package still depends on uncertain forecasts, sensitive information, or future cooperation.
 - **Do not infer:** more options, more complex terms, or a signature automatically creates value, fairness, trust, or enforceability.
-- **Try this next:** add one owner, measure, verification source, review date, and failure rule to the term most likely to break.
+- **Try this next:** add an owner, measure, verification source, review date, failure rule, and exit to the term most likely to break; add an optional module only if a specific problem requires it.
 
 ## References cited in this chapter
 

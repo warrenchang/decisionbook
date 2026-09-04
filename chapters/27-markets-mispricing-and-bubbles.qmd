@@ -118,9 +118,9 @@ Fama (1991) emphasizes the **joint-hypothesis problem**: a test evaluates market
 
 This is why “prices changed after the event” and “I can profit from the event” are separate claims.
 
-## Event studies: turning a story into a test
+## Advanced research track: auditing an event study
 
-An **event study** estimates security returns around a defined event (MacKinlay, 1997). A credible design makes the inferential chain explicit:
+An **event study** estimates security returns around a defined event (MacKinlay, 1997). Conducting one is an advanced empirical task: it requires timestamped event and price data, a defensible expected-return model, code or statistical software, uncertainty estimates, and a protocol for confounding news. General readers can still audit a published study by making its inferential chain explicit:
 
 1. Define the event and its first public time.
 2. Specify an estimation window for the expected-return model.
@@ -128,6 +128,8 @@ An **event study** estimates security returns around a defined event (MacKinlay,
 4. Compute abnormal return as actual return minus expected return.
 5. Aggregate across securities or time into average abnormal returns or cumulative abnormal returns.
 6. Test uncertainty and inspect confounding events.
+
+For an audit, record the published answer to each step and mark missing information rather than inventing a price, return, or model. A full reproduction additionally requires the original sample-construction rules, data vintage, corporate-action handling, code, and trading assumptions.
 
 If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.
 
@@ -297,7 +299,9 @@ The memo cannot remove risk. It creates an honest record of what was believed, w
 
 ## Practice Lab
 
-Prepare a two-page fictional market memo. Page one defines one event study: event time, expected-return model, windows, confounds, tradable timing, and costs. Page two applies the bubble dashboard to the same market, states a fundamental story and a feedback story, gives each a probability range and discriminating observation, and chooses a position limit or noninvestment action that remains defensible if timing is wrong. Exchange memos and red-team the process, not the person.
+Choose a published event study discussed in this chapter or a course-provided case containing the event time, benchmark, reported abnormal return, uncertainty, and potential confounds. Produce a one-page audit that records: first public time, expected-return model, estimation and event windows, main estimate with uncertainty, overlapping news, tradable timing, and costs. End with two sentences: the strongest warranted conclusion and one stronger claim the evidence does not support. Do not invent missing data or results.
+
+**Advanced extension:** reproduce the estimate only when the dataset, data definitions, and analysis code or a specified software template are provided. Compare your result with the published estimate and document every discrepancy before interpreting it.
 
 ## Take it forward
 

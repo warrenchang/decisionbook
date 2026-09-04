@@ -863,110 +863,24 @@ Table&nbsp;24.2: Descriptive number-game results used to illustrate heterogeneou
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Research Lens: Evolutionary and spatial models
+<span class="screen-reader-only">Note</span>Advanced research track: evolutionary and spatial models
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory asks which strategies become more common under a declared rule linking payoff to replication, survival, or imitation (Maynard Smith &amp; Price, 1973). The language can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named; learning is not natural selection merely because frequencies change.</p>
-<p>A two-strategy illustration lets <span class="math inline">\(x\)</span> be the share using strategy 1 and updates that share according to relative payoff. A discrete replicator-style rule is <span class="math inline">\(x'=xf_1/[xf_1+(1-x)f_2]\)</span>. Under the stylized beetle game below, Large earns more at every population share and therefore spreads under a payoff-monotonic update. The result is conditional on the stated payoffs, population mixing, initial share, update rule, and omitted costs.</p>
-<div id="tbl-beetle-game" class="quarto-float quarto-figure quarto-figure-center">
+<p>Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith &amp; Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.</p>
+<p>A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner’s-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules, not evidence that the same process or motive produced a real population pattern (Schelling, 1969; Hammond &amp; Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html#population-model-provenance">Appendix B</a> preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.</p>
+</div>
+</div>
+</section>
+<section id="application-choose-the-model-after-diagnosing-the-process" class="level2">
+<h2 data-anchor-id="application-choose-the-model-after-diagnosing-the-process">Application: choose the model after diagnosing the process</h2>
+<p>Suppose a team asks why one work routine is spreading. First ask whether employees are deliberately best responding to colleagues or anticipating what colleagues will anticipate. If the claim is about diffusion, use four distinct tests:</p>
+<div id="tbl-strategy-diffusion-diagnostic" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-beetle-game-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.3: Stylized beetle-size game
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-strategy-diffusion-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.3: Four mechanisms that can produce the same diffusion pattern
 </figcaption>
-<div aria-describedby="tbl-beetle-game-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Focal Other</th>
-<th style="text-align: right;">Small</th>
-<th style="text-align: right;">Large</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Small</strong></td>
-<td style="text-align: right;">3, 3</td>
-<td style="text-align: right;">0, 5</td>
-</tr>
-<tr class="even">
-<td><strong>Large</strong></td>
-<td style="text-align: right;">5, 0</td>
-<td style="text-align: right;">1, 1</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>An <strong>evolutionarily stable strategy</strong> resists invasion by a small share of mutants. In the stag hunt, both pure populations can be stable and the starting share determines which basin is reached. In hawk–dove, payoff equality can sustain a population mixture; that is not the same claim as each individual deliberately randomizing.</p>
-<div id="tbl-evolutionary-stag-hunt" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evolutionary-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.4: Evolutionary stag hunt
-</figcaption>
-<div aria-describedby="tbl-evolutionary-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Focal Other</th>
-<th style="text-align: right;">Stag</th>
-<th style="text-align: right;">Hare</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Stag</strong></td>
-<td style="text-align: right;">2, 2</td>
-<td style="text-align: right;">0, 1</td>
-</tr>
-<tr class="even">
-<td><strong>Hare</strong></td>
-<td style="text-align: right;">1, 0</td>
-<td style="text-align: right;">1, 1</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<div id="tbl-hawk-dove" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hawk-dove-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.5: Hawk–dove game
-</figcaption>
-<div aria-describedby="tbl-hawk-dove-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Focal Other</th>
-<th style="text-align: right;">Dove</th>
-<th style="text-align: right;">Hawk</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Dove</strong></td>
-<td style="text-align: right;">3, 3</td>
-<td style="text-align: right;">1, 5</td>
-</tr>
-<tr class="even">
-<td><strong>Hawk</strong></td>
-<td style="text-align: right;">5, 1</td>
-<td style="text-align: right;">0, 0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>Spatial models add another dependency: who meets whom. Cooperative clusters, ethnocentric strategies, or aggregate segregation can emerge under particular neighborhoods and update rules. A screenshot is not empirical evidence, and a model pattern does not identify human intent, innateness, or the historical cause of a city outcome. Reproducibility requires the following minimum record:</p>
-<div id="tbl-model-provenance" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.6: Model demonstrations require parameter and process provenance
-</figcaption>
-<div aria-describedby="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-strategy-diffusion-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -975,65 +889,38 @@ Table&nbsp;24.6: Model demonstrations require parameter and process provenance
 </colgroup>
 <thead>
 <tr class="header">
-<th>Model layer</th>
-<th>Substantive lesson</th>
-<th>Reproducibility gate</th>
+<th>Candidate process</th>
+<th>Diagnostic question</th>
+<th>Discriminating evidence</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Two-strategy update</td>
-<td>Payoff differences can change population shares.</td>
-<td>Payoffs, initial share, update rule, and horizon.</td>
+<td>Reinforcement</td>
+<td>Did the employee repeat a routine after it worked for them?</td>
+<td>Hold information about others constant and vary feedback about the employee’s own outcome.</td>
 </tr>
 <tr class="even">
-<td>Spatial game</td>
-<td>Local interaction can protect clusters.</td>
-<td>Topology, neighbors, timing, ties, seed, and replications.</td>
+<td>Imitation</td>
+<td>Are employees copying visible or prestigious performers?</td>
+<td>Hold own-outcome feedback constant and vary whose behavior is visible.</td>
 </tr>
 <tr class="odd">
-<td>Ethnocentrism</td>
-<td>Conditional help can spread in one specified process.</td>
-<td>Benefits, costs, tags, mutation, mobility, and interaction rule.</td>
+<td>Selection</td>
+<td>Are routines spreading because teams or employees using alternatives disappear or lose resources?</td>
+<td>Separate change within continuing units from replacement or differential survival of units.</td>
 </tr>
 <tr class="even">
-<td>Schelling segregation</td>
-<td>Mild local thresholds can yield aggregate sorting.</td>
-<td>Population, vacancies, threshold, move rule, seed, and outcome measure.</td>
+<td>Institution</td>
+<td>Did software, incentives, defaults, or management make one routine easier or mandatory?</td>
+<td>Identify the rule change and compare behavior under otherwise similar institutional conditions.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p><a href="#fig-schelling-emergence" class="quarto-xref">Figure&nbsp;<span>24.3</span></a> applies that standard rather than relying on parameter-free screenshots. In one seeded run, local moves raise the average same-group-neighbour share from 0.48 to 0.68. The figure displays the core parameters; the retained generator also fixes population counts, isolated-agent handling, shuffled sequential updates, vacancy construction, tie-breaking, and the pseudorandom implementation. It shows what those declared rules can produce—not that the same process, threshold, or motive generated residential segregation in a real city.</p>
-<div id="fig-schelling-emergence" class="quarto-float quarto-figure quarto-figure-center" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/schelling-emergence.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24.3: One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.
-</figcaption>
-</figure>
-</div>
-<p>Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner’s-dilemma dynamics (Wilensky, 2002), and a specific ethnocentrism model (Hammond &amp; Axelrod, 2006; Wilensky, 2003). These are executable hypotheses under declared rules, not photographs of how real populations must behave.</p>
-<p>Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat’s success in one tournament and its vulnerability under noise or mutation–selection are not contradictory findings; they answer different questions (Axelrod, 1984; Imhof et al., 2007).</p>
-</div>
-</div>
-</section>
-<section id="application-choose-the-model-after-diagnosing-the-process" class="level2">
-<h2 data-anchor-id="application-choose-the-model-after-diagnosing-the-process">Application: choose the model after diagnosing the process</h2>
-<p>Suppose a team asks why one work routine is spreading.</p>
-<ol type="1">
-<li><strong>Best response:</strong> Are employees deliberately choosing the routine because it fits colleagues’ actions?</li>
-<li><strong>Level reasoning:</strong> Are they anticipating what colleagues will anticipate?</li>
-<li><strong>Reinforcement:</strong> Did recent success increase repetition even without a strategic model?</li>
-<li><strong>Imitation:</strong> Are employees copying visible high performers?</li>
-<li><strong>Selection:</strong> Are teams using other routines disappearing, losing resources, or not being hired?</li>
-<li><strong>Institution:</strong> Did software, incentives, or management make one routine easier or mandatory?</li>
-</ol>
-<p>These accounts can generate the same observed diffusion. Test them by varying information, feedback, visibility, incentives, mobility, or rules. Do not call every spread behavior “evolutionary” merely because its frequency changes.</p>
+<p>The processes can coexist, so record which signal each account requires and what observation would weaken it. Do not call every spread behavior “evolutionary” merely because its frequency changes.</p>
 </section>
 <section id="ethics-strategic-classification-can-become-a-weapon" class="level2">
 <h2 data-anchor-id="ethics-strategic-classification-can-become-a-weapon">Ethics: strategic classification can become a weapon</h2>

@@ -97,7 +97,7 @@ Experiments often find **pull-to-center** ordering: too much relative to the opt
 :::
 
 ::: {.callout-note .research-lens icon=false}
-## Research Lens: the St Petersburg puzzle
+## Optional theory lens: the St Petersburg puzzle
 
 Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
 
@@ -109,7 +109,12 @@ $$
 
 Yet few people would pay an enormous entry price. Bernoulli's solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.
 
-The puzzle does not by itself prove diminishing marginal utility. It shows that unbounded expected money is not an adequate decision criterion for the stated offer. Diminishing marginal utility is one historically important response; finite wealth, bounded liability, mistrust, transaction costs, and a maximum feasible number of tosses also change the problem. A casino promising $2^{50}$ units may not be able to pay. Expected value is conditional on a realizable contract.
+The puzzle is optional because its lesson is narrow: unbounded expected
+money is not an adequate decision criterion for this stated offer. It
+does not by itself prove diminishing marginal utility. Finite wealth,
+bounded liability, mistrust, transaction costs, and a maximum feasible
+number of tosses also change the problem. Expected value is conditional
+on a realizable contract.
 :::
 
 ## Expected utility: value over final consequences
@@ -276,14 +281,17 @@ Responsible risk communication reports:
 
 Natural frequencies and icon arrays can make rare outcomes more legible (Gigerenzer & Edwards, 2003). But visual clarity cannot replace a relevant reference class. “1 in 1,000” among whom, under which baseline care, over what period?
 
-::: {.callout-warning icon=false}
-## Research Lens: there is no single risk center
+::: {.callout-caution .evidence-and-boundary-conditions icon=false}
+## Evidence Boundary: a brain region is not a risk explanation
 
-Neuroimaging studies often report activity correlated with subjective value in ventromedial prefrontal cortex and ventral striatum across many tasks; risk, salience, arousal, learning, and negative outcomes recruit distributed and overlapping systems, including insular and frontoparietal regions (Mohr et al., 2010; Bartra et al., 2013).
-
-These findings do **not** license the claim that one region “is” value, fear, or risk. Functional MRI measures a delayed blood-oxygen-level-dependent signal, not utility or a thought directly. Results depend on the task contrast, timing model, preprocessing, sample, and statistical threshold. A region activated by many processes is especially weak evidence for any one process.
-
-Inferring “loss aversion occurred because the insula activated” is a **reverse inference**: reasoning from a non-specific neural pattern back to a psychological state (Poldrack, 2006). Stronger evidence combines preregistered behavioral predictions, computational models, convergent methods, out-of-sample prediction, and tests that distinguish alternative mechanisms. Neuroscience can constrain a theory; it should not decorate it.
+Risk, value, salience, arousal, and learning recruit distributed and
+overlapping processes (Mohr et al., 2010; Bartra et al., 2013). A claim
+such as “insula activation proves loss aversion” therefore commits
+**reverse inference**: a nonspecific neural pattern is treated as a
+unique psychological explanation (Poldrack, 2006). As [Chapter
+6](06-valuation-how-options-become-worth-choosing.qmd#research-lens-value-is-distributed-not-a-single-center)
+explains, neural evidence is useful when it distinguishes mechanisms or
+improves prediction—not when it merely relabels a behavioral result.
 :::
 
 ## Worked application: should we insure this exposure?

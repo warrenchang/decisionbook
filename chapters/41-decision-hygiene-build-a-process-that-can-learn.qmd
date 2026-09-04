@@ -166,6 +166,21 @@ The same discipline applies to different tools. Validate forecasts out of sample
 Three governance failures deserve special attention. First, the **target-variable problem** allows technical accuracy to optimize the wrong objective or reproduce historical labels (Obermeyer et al., 2019). Second, automation bias and algorithm aversion produce over- and under-reliance rather than trust calibrated to comparative evidence (Dietvorst et al., 2015; Mosier et al., 1998). Third, fairness criteria can conflict, so no technical switch can choose among rights, error costs, history, and institutional purpose (Barocas et al., 2019). Higher stakes therefore require stronger validation, transparency, subgroup analysis, contestability, privacy protection, and real human authority to correct the system.
 
 A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that authority was legitimate, and how an error can be corrected?** A reviewer without the information or power to change the output is not meaningful oversight; the person merely becomes a moral crumple zone for the system (Elish, 2019).
+
+### Minimum AI-use record {#minimum-ai-use-record}
+
+When a model materially informs a consequential decision, record five fields. The purpose is not to preserve every keystroke. It is to make the contribution, verification, authority, and correction path inspectable.
+
+| Field | Minimum record |
+| --- | --- |
+| **1. Task and tool** | The task delegated; tool, model, or rule used; version or access date; and why it was appropriate for this task. |
+| **2. Inputs and boundaries** | Material inputs, sources, missing information, and any privacy, consent, or use restriction. Do not copy sensitive data into an unauthorized record. |
+| **3. Output and reliance** | The material output, recommendation, or forecast; what the decision-maker followed, modified, or rejected; and why. |
+| **4. Independent checks** | Fact and source verification, comparison with a baseline or independent human view, uncertainty and subgroup checks where relevant, and the strongest contrary evidence. |
+| **5. Authority and correction** | Named decision owner, affected people, available exception or appeal, monitoring signal, review date, and who can pause or reverse the use. |
+: A minimum record for consequential AI-supported judgment {#tbl-minimum-ai-use-record}
+
+For low-stakes drafting or search assistance, a brief record may be enough. As consequence, repetition, irreversibility, unequal power, or automation grows, the record and validation should grow with it. [Appendix C](../appendices/appendix-c-portable-course-tools.qmd#ai-use-record) provides a printable version.
 :::
 
 Some choices should also be designed to learn. A pilot, diagnostic test, negotiation question, or request for supporting sources can reveal a hidden state before commitment. Ask not only which option currently looks best, but which safe action would most improve the next decision.
@@ -348,7 +363,18 @@ The aim is disciplined humility, not technocracy. A good process should become m
 ::: {.callout-tip .activity icon=false}
 ## Practice Lab: integrated decision studio
 
-Complete the integrated decision studio on one real challenge: (1) notice the current loop, (2) test the model and base rate, (3) ask for missing perspectives and interests, (4) redesign the choice, message, conversation, or agreement, and (5) set a feedback date.
+Produce one completed, one-page judgment pipeline for a real decision:
+
+1. **Define:** state the decision, deadline, owner, affected people, and most costly error.
+2. **Decompose:** name three to five criteria and the evidence each requires before giving an overall judgment.
+3. **Ground:** record one base rate, reference class, transparent baseline, or the reason none is available.
+4. **Judge independently:** obtain at least two estimates, scores, or written views before discussion or AI output; if only one decision-maker is available, record an initial estimate before seeking advice.
+5. **Compare:** display the estimates, disagreement, and reasons; do not average away uniquely diagnostic evidence.
+6. **Challenge:** write the strongest objection, one disconfirming observation, and one safe information-gaining action.
+7. **Decide and document:** state the choice, trade-offs, implementation owner, and any justified exception. If AI materially informed it, attach the [minimum AI-use record](#minimum-ai-use-record).
+8. **Review and learn:** specify an observable outcome, threshold or resolution rule, review date, and what will continue, stop, scale, or change.
+
+The submitted artifact is the completed pipeline, not an essay about decision hygiene. For a low-stakes reversible choice, use only **define → challenge → decide → review**. For a consequential, repeated, contested, difficult-to-reverse, or partly automated decision, complete all eight stages.
 :::
 
 ## Take it forward

@@ -145,7 +145,7 @@ async function main() {
       ["chapters/12-framing-when-the-same-facts-become-different-decisions.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-desktop.png"],
       ["chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
       ["chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-asch-line-comparison", "asch-lines-desktop.png"],
-      ["chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
+      ["appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
       ["chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-desktop.png"],
       ["chapters/11-when-context-rewrites-comparison.html", "#fig-subscription-decoy", "subscription-decoy-desktop.png"],
       ["chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-watched-eyes-evidence-update", "watched-eyes-desktop.png"],
@@ -177,7 +177,7 @@ async function main() {
     await screenshotFigure(mobilePage, "chapters/12-framing-when-the-same-facts-become-different-decisions.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-mobile.png");
     await screenshotFigure(mobilePage, "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-asch-line-comparison", "asch-lines-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
+    await screenshotFigure(mobilePage, "appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
     await screenshotFigure(mobilePage, "chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-mobile.png");
     await screenshotFigure(mobilePage, "chapters/11-when-context-rewrites-comparison.html", "#fig-subscription-decoy", "subscription-decoy-mobile.png");
     await screenshotFigure(mobilePage, "chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html", "#fig-watched-eyes-evidence-update", "watched-eyes-mobile.png");

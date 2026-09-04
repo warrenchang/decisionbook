@@ -571,7 +571,10 @@ window.Quarto = {
   </ul></li>
   <li><a href="#heuristics-tools-and-biases" id="toc-heuristics-tools-and-biases" class="nav-link" data-scroll-target="#heuristics-tools-and-biases">6. Heuristics can be tools and sources of bias</a></li>
   <li><a href="#evolutionary-mismatch" id="toc-evolutionary-mismatch" class="nav-link" data-scroll-target="#evolutionary-mismatch">7. Mismatch is a testable hypothesis, not a slogan</a></li>
-  <li><a href="#evolutionary-claim-audit" id="toc-evolutionary-claim-audit" class="nav-link" data-scroll-target="#evolutionary-claim-audit">8. How to evaluate an evolutionary explanation</a></li>
+  <li><a href="#evolutionary-claim-audit" id="toc-evolutionary-claim-audit" class="nav-link" data-scroll-target="#evolutionary-claim-audit">8. How to evaluate an evolutionary explanation</a>
+  <ul class="collapse">
+  <li><a href="#population-model-provenance" id="toc-population-model-provenance" class="nav-link" data-scroll-target="#population-model-provenance">Advanced track: population and spatial model provenance</a></li>
+  </ul></li>
   <li><a href="#evolutionary-valuation-audit" id="toc-evolutionary-valuation-audit" class="nav-link" data-scroll-target="#evolutionary-valuation-audit">9. What the evolutionary lens changes in a decision</a></li>
   <li><a href="#references-cited-in-this-appendix" id="toc-references-cited-in-this-appendix" class="nav-link" data-scroll-target="#references-cited-in-this-appendix">References cited in this appendix</a></li>
   </ul>
@@ -1095,6 +1098,67 @@ Table&nbsp;B.7: Different evidence answers different parts of an evolutionary cl
 <li>Have historical fitness, current welfare, and normative value been kept separate?</li>
 </ol>
 <p>If the account cannot answer these questions, call it a possibility or organizing hypothesis, not an established explanation.</p>
+<section id="population-model-provenance" class="level3">
+<h3 data-anchor-id="population-model-provenance">Advanced track: population and spatial model provenance</h3>
+<p>Classical game theory asks what a deliberate player should choose against another strategy. Evolutionary game theory instead asks which strategies become more common under a declared process linking payoff to replication, survival, or imitation (Maynard Smith &amp; Price, 1973). The vocabulary can describe genes, cultural transmission, or organizational routines only when the transmission mechanism is named. A frequency change is not evidence of natural selection merely because an evolutionary equation can reproduce it.</p>
+<p>For two strategies, let <span class="math inline">\(x\)</span> be the share using strategy 1 and let <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span> be the strategies’ current payoffs. One discrete replicator-style rule is</p>
+<p><span class="math display">\[
+x' = \frac{xf_1}{xf_1+(1-x)f_2}.
+\]</span></p>
+<p>The equation makes an update rule explicit; it does not establish that people literally use it. Any conclusion remains conditional on the payoff function, initial shares, population mixing, horizon, omitted costs, and choice of update rule. An <strong>evolutionarily stable strategy</strong> is resistant to invasion by a small share of specified alternatives. It is not automatically a consciously chosen strategy, a welfare optimum, or a moral recommendation. A stable population mixture is also different from each person deliberately randomizing.</p>
+<p>Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. A model pattern does not identify human intent, innateness, or the historical cause of a real city or institution. Before interpreting a formal or simulated population result, preserve this minimum record:</p>
+<div id="tbl-model-provenance" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;B.8: A minimum provenance record for population and spatial models
+</figcaption>
+<div aria-describedby="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model component</th>
+<th>Minimum provenance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frequency update</td>
+<td>Payoffs, initial shares, update rule, and horizon</td>
+</tr>
+<tr class="even">
+<td>Spatial interaction</td>
+<td>Topology, neighborhood, timing, mobility, vacancies, and tie-breaking</td>
+</tr>
+<tr class="odd">
+<td>Stochastic simulation</td>
+<td>Pseudorandom generator, seed, replications, and outcome distribution—not only one attractive run</td>
+</tr>
+<tr class="even">
+<td>Transport claim</td>
+<td>The real-world observation that could distinguish the modeled process from learning, imitation, institutional change, or selection</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><a href="#fig-schelling-emergence" class="quarto-xref">Figure&nbsp;<span>B.1</span></a> applies that standard. In one seeded Schelling-style teaching run, agents move only when fewer than one-third of their occupied neighbours share their group and choose a vacancy satisfying that threshold. The average same-group-neighbour share rises from 0.48 to 0.68. The pattern shows what these declared rules can generate; it does not show that the same threshold, motive, or process caused segregation in a real neighbourhood.</p>
+<div id="fig-schelling-emergence" class="quarto-float quarto-figure quarto-figure-center" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/schelling-emergence.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three eighteen-by-fourteen grids show a mixed random starting population, the state after one sequential sweep, and the state after four sweeps. Blue and red groups become more locally clustered while white vacancies remain. The average share of same-group occupied neighbours rises from 0.48 to 0.64 and then 0.68. The footer declares the grid, population, neighbourhood, minimum same-group share, sequential move rule, pseudorandom generator, and seed 20260830.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schelling-emergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;B.1: One seeded Schelling-style teaching run. Starting from mixed locations, agents move sequentially only when fewer than one-third of their occupied neighbours share their group and choose a randomly selected vacancy that satisfies that minimum share. Local moves increase aggregate same-group clustering. The retained generator makes the run reproducible; the pattern is a model illustration, not empirical evidence about a real neighbourhood.
+</figcaption>
+</figure>
+</div>
+<p>Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner’s-dilemma dynamics (Wilensky, 2002), and one specified ethnocentrism model (Hammond &amp; Axelrod, 2006; Wilensky, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability answer different questions: tit-for-tat’s success in one tournament and its vulnerability under another mutation–selection process are not contradictory findings (Axelrod, 1984; Imhof et al., 2007). The correct inference is always conditional on the declared process.</p>
+</section>
 </section>
 <section id="evolutionary-valuation-audit" class="level2">
 <h2 data-anchor-id="evolutionary-valuation-audit">9. What the evolutionary lens changes in a decision</h2>
@@ -1102,7 +1166,7 @@ Table&nbsp;B.7: Different evidence answers different parts of an evolutionary cl
 <div id="tbl-evolutionary-valuation-audit" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evolutionary-valuation-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the objective
+Table&nbsp;B.9: Evolution adds diagnostic questions; it does not choose the objective
 </figcaption>
 <div aria-describedby="tbl-evolutionary-valuation-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1152,6 +1216,9 @@ Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the obje
 <section id="references-cited-in-this-appendix" class="level2">
 <h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
 <div class="reference">
+<p>Axelrod, R. (1984). <em>The evolution of cooperation</em>. Basic Books.</p>
+</div>
+<div class="reference">
 <p>Bennett, M. S. (2021). Five breakthroughs: A first approximation of brain evolution from early bilaterians to humans. <em>Frontiers in Neuroanatomy, 15</em>, 693346. https://doi.org/10.3389/fnana.2021.693346</p>
 </div>
 <div class="reference">
@@ -1182,6 +1249,12 @@ Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the obje
 <p>Haselton, M. G., &amp; Buss, D. M. (2000). Error management theory: A new perspective on biases in cross-sex mind reading. Journal of Personality and Social Psychology, 78(1), 81–91.</p>
 </div>
 <div class="reference">
+<p>Hammond, R. A., &amp; Axelrod, R. (2006). The evolution of ethnocentrism. <em>Journal of Conflict Resolution, 50</em>(6), 926–936. https://doi.org/10.1177/0022002706293470</p>
+</div>
+<div class="reference">
+<p>Imhof, L. A., Fudenberg, D., &amp; Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? <em>Journal of Theoretical Biology, 247</em>(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027</p>
+</div>
+<div class="reference">
 <p>Kahneman, D., &amp; Klein, G. (2009). Conditions for intuitive expertise: A failure to disagree. American Psychologist, 64(6), 515-526.</p>
 </div>
 <div class="reference">
@@ -1204,6 +1277,9 @@ Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the obje
 </div>
 <div class="reference">
 <p>Maslow, A. H. (1943). A theory of human motivation. <em>Psychological Review, 50</em>(4), 370–396. https://doi.org/10.1037/h0054346</p>
+</div>
+<div class="reference">
+<p>Maynard Smith, J., &amp; Price, G. R. (1973). The logic of animal conflict. <em>Nature, 246</em>, 15–18. https://doi.org/10.1038/246015a0</p>
 </div>
 <div class="reference">
 <p>Mayr, E. (1961). Cause and effect in biology. <em>Science, 134</em>(3489), 1501–1506. https://doi.org/10.1126/science.134.3489.1501</p>
@@ -1233,6 +1309,9 @@ Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the obje
 <p>Sapolsky, R. M. (2023). <em>Determined: A science of life without free will</em>. Penguin Press.</p>
 </div>
 <div class="reference">
+<p>Schelling, T. C. (1969). Models of segregation. <em>American Economic Review, 59</em>(2), 488–493.</p>
+</div>
+<div class="reference">
 <p>Scott-Phillips, T. C., Dickins, T. E., &amp; West, S. A. (2011). Evolutionary theory and the ultimate–proximate distinction in the human behavioral sciences. <em>Perspectives on Psychological Science, 6</em>(1), 38–47. https://doi.org/10.1177/1745691610393528</p>
 </div>
 <div class="reference">
@@ -1252,6 +1331,15 @@ Table&nbsp;B.8: Evolution adds diagnostic questions; it does not choose the obje
 </div>
 <div class="reference">
 <p>Wahba, M. A., &amp; Bridwell, L. G. (1976). Maslow reconsidered: A review of research on the need hierarchy theory. <em>Organizational Behavior and Human Performance, 15</em>(2), 212–240. https://doi.org/10.1016/0030-5073(76)90038-6</p>
+</div>
+<div class="reference">
+<p>Wilensky, U. (1997). <em>NetLogo Segregation model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation</p>
+</div>
+<div class="reference">
+<p>Wilensky, U. (2002). <em>NetLogo PD Basic Evolutionary model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary</p>
+</div>
+<div class="reference">
+<p>Wilensky, U. (2003). <em>NetLogo Ethnocentrism Alternative Visualization model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization</p>
 </div>
 
 
