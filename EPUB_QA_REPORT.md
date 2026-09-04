@@ -89,7 +89,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Registered Reports | **PASS** |
 | Required content: Famous findings after replication | **PASS** |
 | Required content: Elderly-word priming slows walking | **PASS** |
-| Required content: Three category errors to avoid | **PASS** |
+| Required content: Ill-fated disease–birth-year combinations shorten Chinese-American lives | **PASS** |
+| Required content: Four category errors to avoid | **PASS** |
 | Required content: A Decision Is Already in the Making | **PASS** |
 | Required content: At 3:17 p.m. | **PASS** |
 | Required content: The decision is already in the making. | **PASS** |

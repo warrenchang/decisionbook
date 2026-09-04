@@ -90,6 +90,8 @@ REQUIRED_CONTENT = [
     "Elderly-word priming slows walking",
     "Ill-fated disease–birth-year combinations shorten Chinese-American lives",
     "Four category errors to avoid",
+    "The same-name rule",
+    "freeze → compare → update",
     "A Decision Is Already in the Making",
     "At 3:17 p.m.",
     "The decision is already in the making.",

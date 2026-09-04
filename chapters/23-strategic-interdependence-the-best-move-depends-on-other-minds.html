@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>23&nbsp; Strategic Interdependence: The Best Move Depends on Other Minds – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" rel="next">
+<link href="../parts/part-4.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7bd5e343c731cb2535898a92f2262fe9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: A Decision Is Already in the Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How Decisions Should Be Made—and How They Actually Are</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-attention-what-becomes-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-the-predictive-mind-perception-is-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-fast-and-frugal-thinking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fast and Frugal Thinking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">What Feels Likely: Availability, Affect, and Resemblance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-beliefs-that-defend-themselves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Beliefs That Defend Themselves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-when-context-rewrites-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">When Context Rewrites Comparison</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-accessibility-familiarity-and-ease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Accessibility, Familiarity, and Ease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates, Conditional Probability, and Bayesian Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-samples-randomness-regression-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, Regression, and Calibration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-building-an-evidence-aligned-message.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Message</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-communication-language-is-not-a-file-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-preparing-and-claiming-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Preparing and Claiming Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-creating-value-across-differences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Creating Value Across Differences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-behavior-design-make-the-better-action-easier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-choice-architecture-the-environment-gets-a-vote.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Evolutionary Explanations of Value, Choice, and Rationality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-d-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#opening-puzzle-meet-me-in-odense" id="toc-opening-puzzle-meet-me-in-odense" class="nav-link" data-scroll-target="#opening-puzzle-meet-me-in-odense">Opening puzzle: meet me in Odense</a></li>
+  <li><a href="#first-diagnose-the-strategic-problem" id="toc-first-diagnose-the-strategic-problem" class="nav-link" data-scroll-target="#first-diagnose-the-strategic-problem">First diagnose the strategic problem</a></li>
+  <li><a href="#a-game-is-a-model-not-the-situation-itself" id="toc-a-game-is-a-model-not-the-situation-itself" class="nav-link" data-scroll-target="#a-game-is-a-model-not-the-situation-itself">A game is a model, not the situation itself</a>
+  <ul class="collapse">
+  <li><a href="#see-the-game-before-solving-it" id="toc-see-the-game-before-solving-it" class="nav-link" data-scroll-target="#see-the-game-before-solving-it">See the game before solving it</a></li>
+  </ul></li>
+  <li><a href="#best-responses-and-nash-equilibrium" id="toc-best-responses-and-nash-equilibrium" class="nav-link" data-scroll-target="#best-responses-and-nash-equilibrium">Best responses and Nash equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#what-equilibrium-doesand-does-nottell-us" id="toc-what-equilibrium-doesand-does-nottell-us" class="nav-link" data-scroll-target="#what-equilibrium-doesand-does-nottell-us">What equilibrium does—and does not—tell us</a></li>
+  </ul></li>
+  <li><a href="#coordination-shared-expectations-can-do-the-work" id="toc-coordination-shared-expectations-can-do-the-work" class="nav-link" data-scroll-target="#coordination-shared-expectations-can-do-the-work">Coordination: shared expectations can do the work</a>
+  <ul class="collapse">
+  <li><a href="#focality-payoff-dominance-and-evidence" id="toc-focality-payoff-dominance-and-evidence" class="nav-link" data-scroll-target="#focality-payoff-dominance-and-evidence">Focality, payoff dominance, and evidence</a></li>
+  <li><a href="#strategic-uncertainty-the-stag-hunt" id="toc-strategic-uncertainty-the-stag-hunt" class="nav-link" data-scroll-target="#strategic-uncertainty-the-stag-hunt">Strategic uncertainty: the stag hunt</a></li>
+  </ul></li>
+  <li><a href="#mixed-motives-anti-coordination-and-escalation" id="toc-mixed-motives-anti-coordination-and-escalation" class="nav-link" data-scroll-target="#mixed-motives-anti-coordination-and-escalation">Mixed motives, anti-coordination, and escalation</a>
+  <ul class="collapse">
+  <li><a href="#commitment-changes-the-game" id="toc-commitment-changes-the-game" class="nav-link" data-scroll-target="#commitment-changes-the-game">Commitment changes the game</a></li>
+  <li><a href="#bargaining-is-also-a-coordination-problem" id="toc-bargaining-is-also-a-coordination-problem" class="nav-link" data-scroll-target="#bargaining-is-also-a-coordination-problem">Bargaining is also a coordination problem</a></li>
+  </ul></li>
+  <li><a href="#application-run-a-strategic-audit-before-giving-advice" id="toc-application-run-a-strategic-audit-before-giving-advice" class="nav-link" data-scroll-target="#application-run-a-strategic-audit-before-giving-advice">Application: run a strategic audit before giving advice</a>
+  <ul class="collapse">
+  <li><a href="#worked-application-two-departments-need-one-reporting-standard" id="toc-worked-application-two-departments-need-one-reporting-standard" class="nav-link" data-scroll-target="#worked-application-two-departments-need-one-reporting-standard">Worked application: two departments need one reporting standard</a></li>
+  </ul></li>
+  <li><a href="#ethics-cooperation-for-whom-commitment-against-whom" id="toc-ethics-cooperation-for-whom-commitment-against-whom" class="nav-link" data-scroll-target="#ethics-cooperation-for-whom-commitment-against-whom">Ethics: cooperation for whom, commitment against whom?</a></li>
+  <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>A decision becomes strategic when its result depends not only on what you do, but also on what other people do in response.</em></p>
+<div class="chapter-epigraph">
+<blockquote class="blockquote">
+<p>“The term is intended to focus on the interdependence of the adversaries’ decisions and on their expectations about each other’s behavior.”</p>
+<p>— Thomas C. Schelling, <a href="https://books.google.com/books/about/The_strategy_of_conflict.html?id=Bdt-AAAAMAAJ"><em>The Strategy of Conflict</em></a>, 1960, p.&nbsp;3</p>
+</blockquote>
+</div>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core Idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Individual decisions can often be mapped without specifying another chooser’s move. But once outcomes depend on what others do, an action has no fixed value by itself: beliefs, information, timing, and the game each person thinks they are playing enter the decision. Therefore game theory changes the unit of analysis and supplies disciplined benchmarks for joint dependence—without assuming perfect calculation, desirable equilibrium, or that the analyst has correctly identified the perceived game.</p>
+</div>
+</div>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>Represent a strategic situation using players, actions, payoffs, information, timing, repetition, and enforcement.</li>
+<li>Distinguish coordination, mixed motives, and escalation while separating equilibrium from welfare and advice.</li>
+<li>Redesign one strategic situation by changing communication, commitment, timing, monitoring, or exit.</li>
+</ul>
+<div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Where this chapter enters the loop
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When another person enters the payoff function, <strong>Predict</strong> becomes strategic: each decision depends on expected actions, reactions, and expectations about expectations. The loop expands from individual choice to <strong>Coordinate</strong> and, later, <strong>Negotiate</strong>.</p>
+</div>
+</div>
+</section>
+<section id="opening-puzzle-meet-me-in-odense" class="level2">
+<h2 data-anchor-id="opening-puzzle-meet-me-in-odense">Opening puzzle: meet me in Odense</h2>
+<p>You and another person must meet tomorrow in Odense. You cannot communicate. Write one exact place and one exact time. You receive the reward only if both answers match.</p>
+<p>Your favorite café is not automatically a good answer. The central question is not, “Where would I like to go?” It is, “Where do I expect the other person to expect me to expect them to go?”</p>
+<p>This small exercise exposes the change from individual choice to strategic choice. If each person chooses privately, an outcome can still become salient because of shared geography, habit, culture, or institutional prominence. The main station, city hall, noon, and 12:00 are not intrinsically coordinated outcomes. They can become <strong>focal points</strong> because both people expect them to stand out to both people (Schelling, 1960).</p>
+<p>But focality is conditional. A long-term resident, an exchange student, a commuter, and a person with limited mobility may not share the same map. What coordinates one group can miscoordinate another. A focal point is therefore a hypothesis about shared expectations—not a universal property of an option.</p>
+</section>
+<section id="first-diagnose-the-strategic-problem" class="level2">
+<h2 data-anchor-id="first-diagnose-the-strategic-problem">First diagnose the strategic problem</h2>
+<p>Before choosing a move, identify the structure of dependence. The labels below are strategic archetypes, not mutually exclusive categories. Mixed motives combine cooperation and conflict; anti-coordination is a coordination family in which players benefit from taking different rather than matching roles. Let the specified payoffs determine which features coexist.</p>
+<div id="fig-strategic-situation-diagnostic" class="quarto-float quarto-figure quarto-figure-center" alt="An author's diagnostic map branches to four overlapping strategic archetypes: coordination, conflict, mixed motives, and anti-coordination, with anti-coordination identified as a coordination family. The archetypes converge on a game audit and design levers.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-strategic-situation-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/strategic-situation-diagnostic.svg" class="img-fluid figure-img" alt="An author's diagnostic map branches to four overlapping strategic archetypes: coordination, conflict, mixed motives, and anti-coordination, with anti-coordination identified as a coordination family. The archetypes converge on a game audit and design levers.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-strategic-situation-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23.1: A strategic situation may contain overlapping coordination, conflict, mixed-motive, and anti-coordination features. These author’s diagnostic archetypes direct attention to different questions; the payoff structure determines which coexist.
+</figcaption>
+</figure>
+</div>
+<div id="tbl-strategic-structures" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-strategic-structures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23.1: Four strategic archetypes that can overlap
+</figcaption>
+<div aria-describedby="tbl-strategic-structures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Structure</th>
+<th>What makes the problem strategic?</th>
+<th>Typical failure</th>
+<th>Useful first question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coordination</td>
+<td>Interests broadly align, but actions must match.</td>
+<td>Miscoordination or incompatible standards.</td>
+<td>What common signal or convention can both sides recognize?</td>
+</tr>
+<tr class="even">
+<td>Conflict</td>
+<td>One side’s gain reduces the other’s payoff.</td>
+<td>Hidden resistance, retaliation, or exploitation.</td>
+<td>What will the other side do after my move?</td>
+</tr>
+<tr class="odd">
+<td>Mixed motives</td>
+<td>Cooperation creates value, while distribution creates conflict.</td>
+<td>Failure to cooperate or a fight over who receives the gain.</td>
+<td>Which part creates value, and which part allocates it?</td>
+</tr>
+<tr class="even">
+<td>Anti-coordination</td>
+<td>Players benefit from choosing different roles or actions.</td>
+<td>Collision, delay, duplication, or nobody volunteering.</td>
+<td>How will roles be assigned or rotated?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The same visible behavior can arise from different games. Two firms may keep prices high because costs increased, because demand changed, because they independently reached the same best response, or because they coordinated illegally. Two colleagues may remain silent because they agree, fear authority, expect the other to speak, or each hopes the other will bear the cost. Surface behavior does not identify the payoff structure or the beliefs behind it.</p>
+</section>
+<section id="a-game-is-a-model-not-the-situation-itself" class="level2">
+<h2 data-anchor-id="a-game-is-a-model-not-the-situation-itself">A game is a model, not the situation itself</h2>
+<p>A <strong>game</strong> is a mathematical representation of a strategic situation. At minimum, it specifies:</p>
+<ol type="1">
+<li><strong>Players:</strong> Who can act, and whose response matters?</li>
+<li><strong>Actions or strategies:</strong> What can each player do?</li>
+<li><strong>Payoffs:</strong> What does each player value under every combination of actions?</li>
+<li><strong>Information:</strong> What does each player know, observe, or believe?</li>
+<li><strong>Timing:</strong> Who moves when, and can later players observe earlier moves?</li>
+</ol>
+<p>Payoffs need not be money. They may include safety, time, status, fairness, identity, reputation, legal exposure, regret, or future access. A payoff table does not prove that these motives are correctly measured. It makes the proposed motives inspectable.</p>
+<p>Timing also changes the game. Simultaneous price choices differ from a market in which one firm moves first and the other observes. A one-shot interaction differs from a relationship with an uncertain end. A public action differs from a private one because reputation and sanction become possible.</p>
+<p>The discipline is useful precisely because it exposes what has been assumed. If a recommendation changes after adding one absent stakeholder, one unobserved action, or one future response, the recommendation was never independent of those details.</p>
+<section id="see-the-game-before-solving-it" class="level3">
+<h3 data-anchor-id="see-the-game-before-solving-it">See the game before solving it</h3>
+<p>Watch the linked <a href="https://youtu.be/Q-a1I61sIO8">strategic-interdependence scene from <em>A Beautiful Mind</em></a>. Before accepting the character’s solution, write the players, actions, payoffs, information, and timing. Then ask whose payoff is omitted and whether the proposed outcome is actually a Nash equilibrium. The scene is copyrighted fiction, so it is linked rather than reproduced; it is a model-building exercise, not evidence about how groups generally behave.</p>
+</section>
+</section>
+<section id="best-responses-and-nash-equilibrium" class="level2">
+<h2 data-anchor-id="best-responses-and-nash-equilibrium">Best responses and Nash equilibrium</h2>
+<p>A <strong>best response</strong> is a strategy that gives a player the highest payoff against a specified strategy profile of the other players. In the two-player pure-action examples below, that reduces to choosing the best action against the other player’s stated action. A <strong>Nash equilibrium</strong> is a strategy profile—possibly including mixed strategies—such that no player can gain by deviating alone (Nash, 1950).</p>
+<p>This definition is narrow and powerful. It asks whether an outcome is stable against unilateral deviation. It does not ask whether the outcome is fair, efficient, moral, legal, or likely to occur.</p>
+<p>Consider a stylized price-war game. The numbers are illustrative profit units.</p>
+<div id="tbl-price-war" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-price-war-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23.2: Illustrative price-war payoff matrix; Firm 1’s payoff appears first
+</figcaption>
+<div aria-describedby="tbl-price-war-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Firm 1 &nbsp;Firm 2</th>
+<th style="text-align: right;">High price</th>
+<th style="text-align: right;">Low price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>High price</strong></td>
+<td style="text-align: right;">10, 10</td>
+<td style="text-align: right;">2, 15</td>
+</tr>
+<tr class="even">
+<td><strong>Low price</strong></td>
+<td style="text-align: right;">15, 2</td>
+<td style="text-align: right;">5, 5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>If Firm 2 chooses a high price, Firm 1 earns 15 by choosing low rather than 10 by choosing high. If Firm 2 chooses low, Firm 1 earns 5 by choosing low rather than 2 by choosing high. Low is therefore Firm 1’s best response to either action. The same reasoning holds for Firm 2. The unique Nash equilibrium is low–low, with payoffs 5,5, even though both firms would earn more at high–high.</p>
+<p>The matrix clarifies an incentive conflict. It does not establish that real firms face these payoffs. Nor does “cooperation” between competitors automatically improve welfare: coordinated high prices may benefit firms while harming consumers and violating competition law. Efficiency must be defined for everyone affected, not only the players shown in the matrix.</p>
+<div class="applied-module callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Applied module: market rules change the strategic game
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A market is not only buyers, sellers, and values. Its trading rule determines who can move, when they move, what they observe, and how a price is formed.</p>
+<div id="tbl-market-institutions" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-market-institutions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23.3: Market institutions alter information, timing, and bargaining power
+</figcaption>
+<div aria-describedby="tbl-market-institutions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Institution</th>
+<th>Basic rule</th>
+<th>Strategic consequence to inspect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Continuous double auction</td>
+<td>Buyers and sellers submit and accept bids and asks during the trading period.</td>
+<td>Rapid feedback can aid price discovery, while timing and order visibility affect bargaining.</td>
+</tr>
+<tr class="even">
+<td>Posted-offer market</td>
+<td>Sellers post take-it-or-leave-it prices and buyers choose among them.</td>
+<td>Price-setting power initially sits with sellers; search and substitutability determine discipline.</td>
+</tr>
+<tr class="odd">
+<td>Call market</td>
+<td>Orders are pooled and matched at a scheduled clearing time.</td>
+<td>Pooling reduces continuous speed competition but makes the clearing and rationing rule consequential.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A fish-market activity can assign private buyer values and vary available supply across rounds, extending the experimental-market tradition of Smith (1962). Run the same underlying values under different trading rules, then compare transaction prices, quantity, total surplus, and how surplus is divided between buyers and sellers. Classroom numbers are outcomes of that implementation—not empirical estimates of real markets. The scientific question is which rule changes price discovery, allocative efficiency, adaptation to a supply shock, and bargaining power, holding the economic environment as constant as possible.</p>
+</div>
+</div>
+<section id="what-equilibrium-doesand-does-nottell-us" class="level3">
+<h3 data-anchor-id="what-equilibrium-doesand-does-nottell-us">What equilibrium does—and does not—tell us</h3>
+<div id="tbl-equilibrium-boundary" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-equilibrium-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23.4: Equilibrium is a benchmark, not a portrait
+</figcaption>
+<div aria-describedby="tbl-equilibrium-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equilibrium can clarify</th>
+<th>Equilibrium alone cannot establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whether each action is a best response to the others.</td>
+<td>Whether players know the game or calculate correctly.</td>
+</tr>
+<tr class="even">
+<td>Whether an outcome is stable against one player’s deviation.</td>
+<td>Whether the outcome is socially efficient or fair.</td>
+</tr>
+<tr class="odd">
+<td>How predictions change when payoffs, information, or timing change.</td>
+<td>Which equilibrium will be selected when several exist.</td>
+</tr>
+<tr class="even">
+<td>Which commitment or rule changes the strategic incentives.</td>
+<td>Whether the specified payoffs capture actual motives.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Behavioral game theory begins where the last column becomes unavoidable (Camerer, 2003). The next chapter asks how real people form beliefs and how many steps of strategic reasoning they use.</p>
+</section>
+</section>
+<section id="coordination-shared-expectations-can-do-the-work" class="level2">
+<h2 data-anchor-id="coordination-shared-expectations-can-do-the-work">Coordination: shared expectations can do the work</h2>
+<p>Coordination games often have several equilibria. The problem is not finding an action that would work if everyone chose it. The problem is selecting the same action.</p>
+<p>Driving on the right or left is a convention. Red and green can signal gain or loss differently across financial displays. Electrical plugs, measurement systems, software formats, and keyboard layouts become more valuable when many others use the same standard. Shared use creates <strong>network benefits</strong> and switching costs.</p>
+<p>QWERTY is a useful teaching case only if its history is handled carefully. David (1985) used it to motivate path dependence, while Liebowitz and Margolis (1990) challenged the familiar claim that QWERTY survived because it was deliberately designed to slow typists and was technically inferior. The defensible lesson is not that bad standards always persist. It is that historical adoption, installed bases, learning, compatibility, and switching costs can make a standard self-reinforcing. Whether the selected standard is inferior is a separate empirical question.</p>
+<section id="focality-payoff-dominance-and-evidence" class="level3">
+<h3 data-anchor-id="focality-payoff-dominance-and-evidence">Focality, payoff dominance, and evidence</h3>
+<p>A focal outcome may be selected because it is salient. A payoff-dominant outcome gives all players a higher payoff than another equilibrium. These are not the same mechanism.</p>
+<p>Suppose two people coordinate on a central station. Did they choose it because it was culturally salient, because it gave the highest payoff, or because each believed the other had visited it? A simple test varies salience while holding payoffs constant, or varies payoffs while holding labels and presentation constant. Without such a comparison, “focal point” may merely rename the outcome.</p>
+<p>Culture can supply common expectations, but it can also divide them. When groups bring different conventions, explicit communication is not redundant; it creates common ground.</p>
+</section>
+<section id="strategic-uncertainty-the-stag-hunt" class="level3">
+<h3 data-anchor-id="strategic-uncertainty-the-stag-hunt">Strategic uncertainty: the stag hunt</h3>
+<p>The <strong>stag hunt</strong> separates a high-value coordinated action from a safe individual action. Consider this illustrative matrix:</p>
+<div id="tbl-stag-hunt" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23.5: Stag hunt with a payoff-dominant and a safer equilibrium
+</figcaption>
+<div aria-describedby="tbl-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Player 1 &nbsp;Player 2</th>
+<th style="text-align: right;">Stag</th>
+<th style="text-align: right;">Hare</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stag</strong></td>
+<td style="text-align: right;">15, 15</td>
+<td style="text-align: right;">2, 10</td>
+</tr>
+<tr class="even">
+<td><strong>Hare</strong></td>
+<td style="text-align: right;">10, 2</td>
+<td style="text-align: right;">10, 10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant. Hare protects a player against being abandoned.</p>
+<p>If Player 1 maximizes expected payoff and treats the displayed numbers linearly, and believes Player 2 chooses Stag with probability <span class="math inline">\(p\)</span>, then:</p>
+<p><span class="math display">\[
+EU(\text{Stag})=15p+2(1-p)=2+13p,
+\]</span></p>
+<p>while <span class="math inline">\(EU(\text{Hare})=10\)</span>. Under that linear-payoff assumption, Stag is the best response only when <span class="math inline">\(p&gt;8/13\approx0.615\)</span>. With nonlinear utility over the consequences, the threshold must be calculated from their utilities rather than the printed money or point values. The illustration makes one barrier visible: <strong>strategic uncertainty</strong> about whether others will coordinate can matter separately from ordinary outcome risk.</p>
+<p>The 3DO Interactive Multiplayer provides a platform-coordination example. Hardware is unattractive without software; software developers hesitate without users and installed hardware. The case is instructive because a technically promising system can fail when complementary players do not share the same incentives or confidence. But it is not a clean test of one mechanism: pricing, timing, capital, rivals, product quality, and execution also mattered. Use the stag hunt to organize the diagnosis, not to replace the historical evidence (Skyrms, 2004).</p>
+</section>
+</section>
+<section id="mixed-motives-anti-coordination-and-escalation" class="level2">
+<h2 data-anchor-id="mixed-motives-anti-coordination-and-escalation">Mixed motives, anti-coordination, and escalation</h2>
+<p>Some games require coordination while leaving players in conflict over which coordinated outcome should prevail.</p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: three additional strategic structures
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These compact games extend the core coordination diagnosis. They are useful when the application requires their particular payoff structure; readers can proceed directly to commitment if coordination and the stag hunt already supply the needed language.</p>
+<section id="game-of-chicken" class="level3">
+<h3 data-anchor-id="game-of-chicken">Game of chicken</h3>
+<p>Two drivers approach a one-lane bridge. Both prefer that one yields. Neither wants to be the one who yields, and collision is worst. Similar structures appear in market entry, diplomatic confrontation, deadline bargaining, and escalation.</p>
+<p>Commitment can change beliefs: a visible first move, sunk capacity, an exclusive contract, or a public launch date may make one action credible. But commitment does not create value by itself. A rigid commitment can also force a collision.</p>
+</section>
+<section id="volunteers-dilemma" class="level3">
+<h3 data-anchor-id="volunteers-dilemma">Volunteer’s dilemma</h3>
+<p>Everyone benefits if at least one person bears the cost of acting, but each prefers that someone else acts. Calling an ambulance, reporting an error, interrupting misconduct, or taking an unwanted organizational role can have this structure. More potential helpers do not guarantee help; each may infer that someone else will act.</p>
+</section>
+<section id="battle-of-the-sexesand-turn-taking" class="level3">
+<h3 data-anchor-id="battle-of-the-sexesand-turn-taking">Battle of the Sexes—and turn taking</h3>
+<p>Two people prefer being together but disagree about the activity. Both coordinated outcomes are better than separation, yet distribution remains contested. In repeated versions of this structure, turn taking can create a Pareto improvement relative to persistent conflict. Rotation, lotteries, seniority, or a neutral tie-breaker can convert a distributional fight into a rule both sides can anticipate.</p>
+<p>The lesson across these games is simple: “coordinate” is incomplete advice. Coordination must answer <strong>on what</strong>, <strong>by which rule</strong>, and <strong>with what distribution of burdens and gains</strong>.</p>
+</section>
+</div>
+</div>
+<section id="commitment-changes-the-game" class="level3">
+<h3 data-anchor-id="commitment-changes-the-game">Commitment changes the game</h3>
+<p>A credible commitment alters another player’s expectations because reversing course becomes costly, observable, or impossible. Schelling (1960) emphasized that deliberately limiting one’s future freedom can sometimes increase bargaining power.</p>
+<p>The Ford Price Promise provides a useful stylized case. A promise to reimburse buyers if the recommended price later fell could reassure consumers who expected a future price cut. It also raised Ford’s cost of cutting price after the sale. If rivals adopted similar guarantees, the strategic incentives surrounding later price reductions could change. The case demonstrates how a customer promise may also operate as a competitive commitment. It does not by itself establish the policy’s market-wide causal effect; price-war remedies remain conditional on the competitive structure (Rao et al., 2000).</p>
+<p>Commitment and escalation look similar from outside: both make retreat difficult. The difference is whether the remaining future benefit still justifies the constraint.</p>
+<p>Ask four questions:</p>
+<ol type="1">
+<li>What future response is the commitment intended to change?</li>
+<li>Is the commitment observable and credible to that audience?</li>
+<li>What flexibility is sacrificed if information changes?</li>
+<li>After removing sunk costs and face-saving, is continuation still better than exit?</li>
+</ol>
+<p><span id="research-lens-the-50-auction-and-competitive-escalation"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: the €50 auction and competitive escalation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In Shubik’s dollar-auction game, the highest bidder wins the prize, but the second-highest bidder must also pay their final bid (Shubik, 1971). Early entry looks attractive. Once two people are competing, another small bid can appear cheaper than accepting a certain loss. Each expects that the next bid may make the rival quit. If both reason this way, bids can exceed the prize.</p>
+<p>The game joins two failures:</p>
+<ul>
+<li><strong>Competition neglect:</strong> entering without modeling rivals’ likely entry, persistence, and response.</li>
+<li><strong>Escalation of commitment:</strong> continuing partly to justify an earlier choice after the forward-looking incentives have changed (Staw, 1976).</li>
+</ul>
+<p>The auction is a mechanism demonstration, not evidence that every merger, litigation, war, or project overrun follows the same process. Field cases can also involve private information, reputation, real option value, agency problems, or changing fundamentals.</p>
+<p>The practical defense is designed before entry: a reservation value, a stop rule based on future value rather than past expenditure, and an independent reviewer who is not defending the original decision.</p>
+<p>Competitive acquisition creates a related trap. A bidder can value a target in isolation, then discover that the price is determined by rivals who saw the same target. When estimates contain common error, winning can be bad news: the winner may simply be the most optimistic bidder (Bazerman &amp; Samuelson, 1983). Before bidding, separate private synergies from common value, model likely rival entry, and set a reservation price that does not rise merely because competition becomes visible.</p>
+</div>
+</div>
+</section>
+<section id="bargaining-is-also-a-coordination-problem" class="level3">
+<h3 data-anchor-id="bargaining-is-also-a-coordination-problem">Bargaining is also a coordination problem</h3>
+<p>Suppose two players simultaneously claim shares of a total surplus of 4. If their claims sum to at most 4, each receives their claim. If the claims exceed 4, both receive 0.</p>
+<p>Many claim pairs are feasible, and many can be sustained by expectations. The game combines coordination—avoid incompatible claims—with distribution—who receives how much. A focal equal split may help, but entitlement, contribution, alternatives, procedure, and power can support other claims.</p>
+<p>This is why a Pareto improvement can still be unfair. Efficiency asks whether someone can be made better off without making another worse off. Fairness asks how benefits, burdens, voice, and procedure should be distributed. Neither criterion eliminates the other.</p>
+</section>
+</section>
+<section id="application-run-a-strategic-audit-before-giving-advice" class="level2">
+<h2 data-anchor-id="application-run-a-strategic-audit-before-giving-advice">Application: run a strategic audit before giving advice</h2>
+<p>When a strategic problem appears, use this sequence:</p>
+<ol type="1">
+<li><strong>Name the players.</strong> Include absent stakeholders, regulators, customers, and future selves whose responses matter.</li>
+<li><strong>List actions.</strong> Include delay, exit, communication, delegation, and rule changes—not only the two visible moves.</li>
+<li><strong>Specify payoffs.</strong> Separate money, relationship, status, fairness, legal exposure, and future options.</li>
+<li><strong>Map information and timing.</strong> What is observed, believed, hidden, or learned later?</li>
+<li><strong>Find best responses and equilibria.</strong> Use them as conditional benchmarks.</li>
+<li><strong>Test alternative games.</strong> Would another plausible payoff or belief structure reverse the prediction?</li>
+<li><strong>Change the game.</strong> Consider communication, sequencing, matching, guarantees, rotation, monitoring, commitment, or exit.</li>
+<li><strong>Record a prediction.</strong> State whose behavior should change, by how much, and what result would count against the diagnosis.</li>
+</ol>
+<section id="worked-application-two-departments-need-one-reporting-standard" class="level3">
+<h3 data-anchor-id="worked-application-two-departments-need-one-reporting-standard">Worked application: two departments need one reporting standard</h3>
+<p>Department A prefers a system integrated with its existing software. Department B prefers a more flexible platform. Both lose if they adopt incompatible systems.</p>
+<p>Calling the disagreement “resistance to change” would personalize a coordination problem. A better design makes the game explicit:</p>
+<ul>
+<li>measure the payoff from compatibility separately from each system’s local quality;</li>
+<li>identify switching and training costs for both departments;</li>
+<li>create a joint pilot with the same evaluation criteria;</li>
+<li>use a pre-agreed tie-breaker if results are close;</li>
+<li>compensate concentrated transition costs rather than pretending they do not exist;</li>
+<li>preserve an exit or review point if the common standard fails.</li>
+</ul>
+<p>The goal is not merely agreement. It is an agreement whose coordination benefit survives implementation.</p>
+</section>
+</section>
+<section id="ethics-cooperation-for-whom-commitment-against-whom" class="level2">
+<h2 data-anchor-id="ethics-cooperation-for-whom-commitment-against-whom">Ethics: cooperation for whom, commitment against whom?</h2>
+<p>Strategic competence can create value, but it can also make exploitation more effective.</p>
+<ul>
+<li>Competitors can coordinate to raise prices at customers’ expense.</li>
+<li>A focal norm can exclude people who do not share the dominant group’s history.</li>
+<li>A commitment can protect a joint plan or coerce the other side by making harm inevitable.</li>
+<li>Reputation systems can support trust or punish dissent and trap people in stale labels.</li>
+<li>Institutions can solve a dilemma for insiders while moving costs to outsiders.</li>
+</ul>
+<p>The ethical test is not whether the strategy reaches equilibrium. Ask who is included in the payoff table, whether material facts and alternatives remain visible, whether refusal is meaningful, and whether the rule would remain defensible if affected people understood how it worked.</p>
+</section>
+<section id="practice-lab" class="level2">
+<h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<p>Map a live supplier, departmental, or platform interaction. Produce a strategic map listing players, actions, material and social payoffs, information, timing, repetition, enforcement, and outsiders. Draw one baseline payoff table and identify best responses. Change exactly one rule—communication, timing, monitoring, commitment, rotation, or exit—and state the observable behavioral change the redesign predicts.</p>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<ul>
+<li><strong>Use this when</strong> advice to one actor changes what another actor can profitably or safely do.</li>
+<li><strong>Do not infer</strong> that an equilibrium is efficient, fair, inevitable, or the game people believe they are playing.</li>
+<li><strong>Try this next</strong> by changing one element of the strategic map and predicting how the response pattern should move.</li>
+</ul>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Bazerman, M. H., &amp; Samuelson, W. F. (1983). I won the auction but don’t want the prize. <em>Journal of Conflict Resolution, 27</em>(4), 618–634. https://doi.org/10.1177/0022002783027004003</p>
+</div>
+<div class="reference">
+<p>Camerer, C. F. (2003). <em>Behavioral game theory: Experiments in strategic interaction</em>. Princeton University Press.</p>
+</div>
+<div class="reference">
+<p>David, P. A. (1985). Clio and the economics of QWERTY. American Economic Review, 75(2), 332–337.</p>
+</div>
+<div class="reference">
+<p>Liebowitz, S. J., &amp; Margolis, S. E. (1990). The fable of the keys. Journal of Law &amp; Economics, 33(1), 1–25.</p>
+</div>
+<div class="reference">
+<p>Nash, J. F. (1950). Equilibrium points in n-person games. Proceedings of the National Academy of Sciences, 36(1), 48–49.</p>
+</div>
+<div class="reference">
+<p>Rao, A. R., Bergen, M. E., &amp; Davis, S. (2000). How to fight a price war. Harvard Business Review, 78(2), 107–116.</p>
+</div>
+<div class="reference">
+<p>Schelling, T. C. (1960). <em>The strategy of conflict</em>. Harvard University Press.</p>
+</div>
+<div class="reference">
+<p>Shubik, M. (1971). The dollar auction game: A paradox in noncooperative behavior and escalation. Journal of Conflict Resolution, 15(1), 109–111.</p>
+</div>
+<div class="reference">
+<p>Smith, V. L. (1962). An experimental study of competitive market behavior. <em>Journal of Political Economy, 70</em>(2), 111–137. https://doi.org/10.1086/258609</p>
+</div>
+<div class="reference">
+<p>Skyrms, B. (2004). <em>The stag hunt and the evolution of social structure</em>. Cambridge University Press.</p>
+</div>
+<div class="reference">
+<p>Staw, B. M. (1976). Knee-deep in the Big Muddy: A study of escalating commitment to a chosen course of action. Organizational Behavior and Human Performance, 16(1), 27–44.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../parts/part-4.html" class="pagination-link" aria-label="Part IV. Strategic and Social Decisions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Part IV. Strategic and Social Decisions</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="pagination-link" aria-label="Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
