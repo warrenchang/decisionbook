@@ -97,8 +97,8 @@ REQUIRED_CONTENT = [
     "The decision is already in the making.",
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
-    "pause without reset",
-    "Scheduled cue occasions / days",
+    "no strengthening, but no reset",
+    "median 66 days",
     "Index of Concepts",
 ]
 

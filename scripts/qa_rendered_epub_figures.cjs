@@ -89,6 +89,8 @@ async function main() {
       ["fig-behavioral-decision-loop", "epub-behavioral-decision-loop.png"],
       ["fig-option-information", "epub-better-decision-process.png"],
       ["fig-fluency-pathway", "epub-figure-13-2.png"],
+      ["fig-habit-formation-curve", "epub-habit-formation.png"],
+      ["fig-urge-wave-observation", "epub-urge-wave-observation.png"],
       ["fig-reward-prediction-error-shift", "epub-reward-prediction-error.png"],
       ["fig-finance-event-study-drift", "epub-event-study.png"],
       ["fig-social-learning-culture", "epub-figure-26-1.png"],

@@ -128,6 +128,7 @@ async function main() {
       ["chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-desktop.png"],
       ["chapters/13-accessibility-familiarity-and-ease.html", "#fig-fluency-pathway", "figure-13-2-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-habit-formation-curve", "habit-formation-desktop.png"],
+      ["chapters/21-habits-wanting-and-self-control.html", "#fig-urge-wave-observation", "urge-wave-observation-desktop.png"],
       ["chapters/21-habits-wanting-and-self-control.html", "#fig-reward-prediction-error-shift", "reward-prediction-error-desktop.png"],
       ["chapters/27-markets-mispricing-and-bubbles.html", "#fig-finance-event-study-drift", "event-study-desktop.png"],
       ["chapters/05-expectations-when-predictions-become-causes.html", "#tbl-self-fulfilling-self-defeating", "table-5-1-desktop.png"],
@@ -165,6 +166,8 @@ async function main() {
     await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-normative-decision-loop", "normative-decision-loop-mobile.png");
     await screenshotFigure(mobilePage, "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html", "#fig-behavioral-decision-loop", "behavioral-decision-loop-mobile.png");
     await screenshotFigure(mobilePage, "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html", "#fig-option-information", "better-decision-process-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/21-habits-wanting-and-self-control.html", "#fig-habit-formation-curve", "habit-formation-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/21-habits-wanting-and-self-control.html", "#fig-urge-wave-observation", "urge-wave-observation-mobile.png");
     await screenshotFigure(mobilePage, "chapters/04-the-predictive-mind-perception-is-inference.html", "#fig-context-b13-demonstration", "context-b13-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-social-learning-culture", "figure-26-1-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html", "#fig-norm-message-diagnostic", "figure-26-4-mobile.png");

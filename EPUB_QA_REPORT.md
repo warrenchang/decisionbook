@@ -98,8 +98,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: The decision is already in the making. | **PASS** |
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
-| Required content: pause without reset | **PASS** |
-| Required content: Scheduled cue occasions / days | **PASS** |
+| Required content: no strengthening, but no reset | **PASS** |
+| Required content: Day in the 84-day study | **PASS** |
 | Required content: Index of Concepts | **PASS** |
 | Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |
 | Removed reader text: Start Here | **PASS** |

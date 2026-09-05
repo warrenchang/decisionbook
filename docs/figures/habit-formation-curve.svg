@@ -1,57 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">Habit automaticity develops gradually along different trajectories</title>
-  <desc id="desc">Three illustrative asymptotic curves rise at different rates across scheduled cue occasions. Each curve is flat across one shaded missed occasion and then resumes rising, showing no new strengthening during the omission and no reset of prior learning.</desc>
-  <rect width="1200" height="760" fill="#ffffff"/>
-  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17324d">Habit formation is a trajectory, not a deadline</text>
-  <text x="600" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#66737f">Illustrative curves: the rate and eventual level vary across people, behaviors, and contexts.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Habit automaticity grows gradually, and one missed opportunity does not reset it</title>
+  <desc id="desc">Two-panel evidence synthesis of Lally and colleagues, 2010. Panel A shows one illustrative asymptotic curve: self-reported automaticity rises across study days, with larger modeled gains early and diminishing gains near a plateau. Panel B separates the omission analysis: a performed occasion, one missed opportunity, and performance resumed. The immediate mean change after the miss was minus 0.29 points. For 67 occasions with next-day follow-up, the mean change from before the miss to after performance resumed was plus 0.55 points and was not statistically significant; the uninterrupted comparison was plus 0.79 points.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#506b80"/>
+    </marker>
+  </defs>
 
-  <line x1="125" y1="515" x2="1095" y2="515" stroke="#17324d" stroke-width="3"/>
-  <line x1="125" y1="515" x2="125" y2="130" stroke="#17324d" stroke-width="3"/>
-  <polygon points="1095,515 1079,506 1079,524" fill="#17324d"/>
-  <polygon points="125,130 116,146 134,146" fill="#17324d"/>
-  <text x="610" y="558" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">Scheduled cue occasions / days</text>
-  <text x="42" y="326" transform="rotate(-90 42 326)" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">Automaticity</text>
-  <text x="108" y="512" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#66737f">low</text>
-  <text x="108" y="147" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#66737f">high</text>
+  <rect width="1200" height="820" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17324d">Habit automaticity grows gradually—not by a fixed deadline</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">Evidence synthesis of daily self-reports in Lally et al. (2010)</text>
 
-  <rect x="505" y="130" width="72" height="385" fill="#f3f5f7"/>
-  <line x1="505" y1="130" x2="505" y2="515" stroke="#9babb7" stroke-dasharray="6 6"/>
-  <line x1="577" y1="130" x2="577" y2="515" stroke="#9babb7" stroke-dasharray="6 6"/>
-  <text x="541" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#66737f">missed: no</text>
-  <text x="541" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#66737f">repetition</text>
+  <!-- Panel A -->
+  <rect x="55" y="108" width="1090" height="365" rx="18" fill="#f7fafc" stroke="#c7d5df" stroke-width="2"/>
+  <text x="85" y="145" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">A. The modeled growth pattern</text>
+  <text x="85" y="174" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">One illustrative asymptotic curve—not a group average or a personal timetable</text>
 
-  <path d="M140 495 C230 300, 350 169, 505 169" fill="none" stroke="#2f6f9f" stroke-width="6" stroke-linecap="round"/>
-  <path d="M505 169 L577 169" fill="none" stroke="#2f6f9f" stroke-width="6"/>
-  <path d="M577 169 C655 169, 770 132, 1060 132" fill="none" stroke="#2f6f9f" stroke-width="6" stroke-linecap="round"/>
+  <line x1="170" y1="412" x2="1070" y2="412" stroke="#17324d" stroke-width="2.5"/>
+  <line x1="170" y1="412" x2="170" y2="208" stroke="#17324d" stroke-width="2.5"/>
+  <text x="620" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17324d">Day in the 84-day study</text>
+  <text x="98" y="310" transform="rotate(-90 98 310)" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17324d">Self-reported automaticity</text>
+  <text x="153" y="410" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">lower</text>
+  <text x="153" y="223" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">higher</text>
 
-  <path d="M140 500 C260 430, 385 267, 505 267" fill="none" stroke="#2b7a78" stroke-width="6" stroke-linecap="round"/>
-  <path d="M505 267 L577 267" fill="none" stroke="#2b7a78" stroke-width="6"/>
-  <path d="M577 267 C675 267, 790 164, 1060 164" fill="none" stroke="#2b7a78" stroke-width="6" stroke-linecap="round"/>
+  <line x1="190" y1="225" x2="1045" y2="225" stroke="#86a3b8" stroke-width="2" stroke-dasharray="8 8"/>
+  <path d="M190 397 C305 290 445 242 610 230 C770 226 925 225 1045 225" fill="none" stroke="#2f6f9f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <path d="M140 503 C280 480, 410 397, 505 397" fill="none" stroke="#c56a2d" stroke-width="6" stroke-linecap="round"/>
-  <path d="M505 397 L577 397" fill="none" stroke="#c56a2d" stroke-width="6"/>
-  <path d="M577 397 C690 397, 810 252, 1060 252" fill="none" stroke="#c56a2d" stroke-width="6" stroke-linecap="round"/>
+  <line x1="330" y1="342" x2="330" y2="316" stroke="#506b80" stroke-width="2"/>
+  <text x="330" y="369" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">Earlier days</text>
+  <text x="330" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">larger modeled gains</text>
 
-  <circle cx="505" cy="169" r="7" fill="#2f6f9f"/>
-  <circle cx="505" cy="267" r="7" fill="#2b7a78"/>
-  <circle cx="505" cy="397" r="7" fill="#c56a2d"/>
-  <circle cx="577" cy="169" r="7" fill="#2f6f9f"/>
-  <circle cx="577" cy="267" r="7" fill="#2b7a78"/>
-  <circle cx="577" cy="397" r="7" fill="#c56a2d"/>
+  <line x1="760" y1="222" x2="760" y2="302" stroke="#506b80" stroke-width="2"/>
+  <text x="760" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">Later days</text>
+  <text x="760" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">smaller modeled gains</text>
 
-  <rect x="150" y="575" width="930" height="120" rx="15" fill="#f7fafc" stroke="#c8d7e2" stroke-width="2"/>
-  <text x="175" y="607" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">What the shape teaches</text>
-  <line x1="188" y1="627" x2="188" y2="673" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round"/>
-  <text x="205" y="645" font-family="Arial, sans-serif" font-size="16" fill="#66737f">Early repetitions</text>
-  <text x="205" y="668" font-family="Arial, sans-serif" font-size="16" fill="#66737f">can change more</text>
-  <line x1="478" y1="627" x2="478" y2="673" stroke="#2b7a78" stroke-width="5" stroke-linecap="round"/>
-  <text x="495" y="645" font-family="Arial, sans-serif" font-size="16" fill="#66737f">Gains often level</text>
-  <text x="495" y="668" font-family="Arial, sans-serif" font-size="16" fill="#66737f">rather than rise forever</text>
-  <line x1="788" y1="627" x2="788" y2="673" stroke="#c56a2d" stroke-width="5" stroke-linecap="round"/>
-  <text x="805" y="645" font-family="Arial, sans-serif" font-size="16" fill="#66737f">One miss can pause gain</text>
-  <text x="805" y="668" font-family="Arial, sans-serif" font-size="16" fill="#66737f">without erasing it</text>
+  <line x1="968" y1="224" x2="968" y2="191" stroke="#506b80" stroke-width="2"/>
+  <text x="968" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">Plateau</text>
+  <text x="968" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">level and timing varied</text>
 
-  <text x="600" y="721" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#66737f">Schematic grounded in Lally et al. (2010); the flat pause is teaching shorthand because daily automaticity measures can fluctuate.</text>
-  <text x="600" y="742" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#66737f">The curves are not individual forecasts, and repeated omissions can hinder acquisition even when one omission does not reset learning.</text>
+  <!-- Panel B -->
+  <rect x="55" y="490" width="1090" height="300" rx="18" fill="#fffaf4" stroke="#e1c49e" stroke-width="2"/>
+  <text x="85" y="527" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">B. What happened around one missed opportunity</text>
+  <text x="85" y="555" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">The omission analysis is separate from the growth curve above.</text>
+
+  <rect x="95" y="575" width="260" height="90" rx="14" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/>
+  <text x="225" y="607" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">BEHAVIOR PERFORMED</text>
+  <text x="225" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">three preceding occasions</text>
+
+  <line x1="355" y1="620" x2="416" y2="620" stroke="#506b80" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="425" y="575" width="285" height="90" rx="14" fill="#fce9e7" stroke="#c24b45" stroke-width="2.5"/>
+  <text x="567.5" y="607" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8d322e">ONE OPPORTUNITY MISSED</text>
+  <text x="567.5" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">immediate mean change: −0.29</text>
+
+  <line x1="710" y1="620" x2="771" y2="620" stroke="#506b80" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="780" y="575" width="325" height="90" rx="14" fill="#eaf4ed" stroke="#3f7f56" stroke-width="2.5"/>
+  <text x="942.5" y="607" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#285d3a">PERFORMANCE RESUMED</text>
+  <text x="942.5" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">no detectable longer-term cost</text>
+
+  <path d="M225 682 L225 695 Q225 705 235 705 L932.5 705 Q942.5 705 942.5 695 L942.5 682" fill="none" stroke="#506b80" stroke-width="2"/>
+  <text x="583.75" y="733" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">For 67 followed occasions: mean change from before the miss to after resuming = +0.55 points (not statistically significant)</text>
+
+  <text x="600" y="769" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5e6f7d">Omission analysis: 140 occasions across 55 participants. Comparable uninterrupted two-day change: +0.79 points.</text>
 </svg>

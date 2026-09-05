@@ -1,8 +1,8 @@
 # Book-wide figure visual audit
 
-**Scope:** all 109 distinct reader-facing visual assets (112 configured HTML placements because the base loop is deliberately repeated) in the book on 30 August 2026.
+**Scope:** all 110 distinct reader-facing visual assets (111 configured source placements) in the book on 5 September 2026.
 
-**Method:** Each figure was reviewed on labeled contact sheets and at 100% in its source or PNG fallback. Dense, new, and previously flagged figures were reopened individually. All 104 connector-bearing figures were checked programmatically for connector attachment, visible shaft length, and arrowhead proportion. All 112 HTML placements were loaded at 1440 px and 390 px. Wide HTML diagrams use a deliberate horizontal reading pane below 768 px so their labels remain readable instead of becoming phone-sized thumbnails. All 111 in-book EPUB placements were extracted and loaded at 768 px and 390 px; selected figures were captured and visually inspected at both widths. The separate cover image was package-validated. EPUB uses PNG fallbacks, while SVG sources are retained for editing. `ADDED` identifies a new asset from the complete lecture-note visual review; `REVISED` means that the current working-tree version changed during the figure-revision programme; `PASS` means it required no visual change. There are no known `BLOCKED` figures.
+**Method:** Every asset was reviewed on labeled contact sheets; dense, new, and previously flagged figures were reopened individually. The semantic pass checked whether each colour, curve, symbol, line style, and annotation had one explicit role. All 105 connector-bearing figures were checked programmatically for attachment, visible shaft length, and arrowhead proportion. All 113 rendered HTML placements were loaded at 1440 px and 390 px, and all 112 in-book EPUB placements were extracted and loaded at 768 px and 390 px. Selected figures were captured and inspected at both widths. Wide HTML diagrams use a deliberate horizontal reading pane below 768 px so labels remain readable. The separate cover image was package-validated. EPUB uses PNG fallbacks, while SVG sources are retained for editing. `ADDED` identifies a new asset from the lecture-note visual review; `REVISED` means the current working-tree version changed during the figure-revision programme; `PASS` means it required no visual change. There are no known `BLOCKED` figures.
 
 ## Notable corrections
 
@@ -10,7 +10,9 @@
 - Reintroduced the Chapter 1 normative loop immediately after the rational-choice benchmark, routed feedback to the Judgment boundary, and kept the forward Prediction-to-Valuation relation unambiguous.
 - Reworked Figure 1.2 so its unobstructed connectors are straight, its context arrow is correctly coloured, Selection and Interpretation is centred, and every internal Judgment relation is bidirectional.
 - Contained the note in Figure 12.2 and rebuilt Figure 13.2 as aligned left and right columns around the central mechanism, eliminating crossings and unreadably small labels.
-- Aligned the habit-loop connector; smoothed the habit-formation curves; represented a missed opportunity as a plateau rather than continued automaticity growth; and reduced oversized arrowheads in the habit, risk, finance, social, communication, negotiation, and design diagrams.
+- Aligned the habit-loop connector and reduced the habit-formation figure to one curve plus the informative 18–254-day range and 66-day median. The separate omission analysis now remains in the caption and prose, where its estimates and boundary conditions can be explained accurately.
+- Simplified the urge-wave figure to one curve and five short action labels. Explanatory sentences, caveats, pseudo-legend material, and redundant panels were removed from both Chapter 21 figures.
+- Completed a text-light pass across the remaining figures: provenance, methodological qualifiers, and interpretive sentences that did not need to be decoded inside the artwork now appear in captions or prose; essential labels, values, and visual keys remain in the figures.
 - Corrected the event-study schematic so the paths coincide before the announcement and visibly diverge only at the event; placed the event label above its line; and used the supplied photograph of an actual €20 note in the efficiency figure.
 - Reflowed crowded reward-prediction-error labels and retained its explicit boundary that the drawing is a teaching schematic, not a neural recording.
 - Added eight source-safe lecture-inspired figures: a Stroop activity, measurable perceptual-context demonstrations, a choice-blindness switch sequence, an assumed-choice egg menu, a fully specified Monty Hall protocol, an Asch-style line task, a source-verified market-fairness redraw, and a seeded Schelling-style simulation generated from retained code.
@@ -24,8 +26,7 @@
 | `master-loop-part-1.png` | REVISED | 100% fallback | Shared influence rail, revised stage grouping, shafts, markers, and highlight verified; QA pass. |
 | `decision-loop.png` | REVISED | 100% fallback; HTML desktop/mobile; EPUB 768/390 | Normative flow, one-way Prediction-to-Valuation relation, connector attachment, and feedback path to the Judgment boundary verified; QA pass. |
 | `decision-making-according-to-behavioral-evidence.png` | REVISED | 100% fallback; HTML desktop/mobile; EPUB 768/390 | Straight/aligned connectors, bidirectional Judgment relations, and feedback path to the internal model verified; QA pass. |
-| `rational-benchmark.png` | PASS | Contact sheet; 100% fallback | Text, alignment, and hierarchy verified. |
-| `option-information.png` | REVISED | Contact sheet; 100% fallback | Connector and spacing corrections verified; QA pass. |
+| `option-information-portrait.png` | REVISED | Contact sheet; 100% fallback | Connector and spacing corrections verified; QA pass. |
 | `attention-bottleneck.png` | REVISED | Contact sheet; 100% fallback | Text sizing and visual hierarchy corrected; QA pass. |
 | `attention-filter.png` | REVISED | Contact sheet; 100% fallback | Alignment and connector geometry corrected; QA pass. |
 | `judgment-and-decision-making-according-to-predictive-processing.png` | REVISED | Contact sheet; 100% fallback | Reflowed to aligned columns; crossings and small type removed; QA pass. |
@@ -53,10 +54,10 @@
 | `experience-rare-event-sampling.png` | REVISED | Contact sheet; 100% fallback | Sampling path and type hierarchy corrected; QA pass. |
 | `intertemporal-choice.png` | REVISED | Contact sheet; 100% fallback | Timeline, labels, and connector scale corrected; QA pass. |
 | `habit-loop.png` | REVISED | Contact sheet; 100% fallback | Middle connector aligned to adjacent shaft; QA pass. |
-| `habit-formation-curve.png` | REVISED | Contact sheet; 100% fallback | Curves smoothed; missed opportunity shown as a plateau; annotation repositioned; QA pass. |
+| `habit-formation-curve.png` | REVISED | Source and fallback; HTML desktop/mobile; EPUB 768/390 | Reduced to one curve and one numeric range: 18–254 days, median 66; omission details moved to prose; QA pass. |
 | `reward-prediction-error-shift.png` | REVISED | Contact sheet; 100% fallback | Marker size and crowded cue/reward labels corrected; evidence boundary retained; QA pass. |
 | `wanting-liking.png` | REVISED | Contact sheet; 100% fallback | Label scale and relationship layout corrected; QA pass. |
-| `urge-wave-observation.png` | REVISED | Contact sheet; 100% fallback | Curve and annotation placement corrected; QA pass. |
+| `urge-wave-observation.png` | REVISED | Source and fallback; HTML desktop/mobile; EPUB 768/390 | Reduced to one curve and five short BRAIN labels; explanatory boxes and meta-commentary removed; QA pass. |
 | `mental-accounting-map.png` | REVISED | Contact sheet; 100% fallback | Layout, arrows, and text scale corrected; QA pass. |
 | `mental-accounting-evidence-redraw.png` | REVISED | Contact sheet; 100% fallback | Study-result redraw and labels clarified; QA pass. |
 | `subjective-well-being-six-lenses.png` | REVISED | Contact sheet; 100% fallback | Six-panel spacing and type hierarchy corrected; QA pass. |
@@ -86,7 +87,7 @@
 | `story-evidence-braid.png` | REVISED | Contact sheet; 100% fallback | Braid paths, labels, and evidence relation corrected; QA pass. |
 | `communication-iceberg.png` | REVISED | Contact sheet; 100% fallback | Layer spacing and labels corrected; QA pass. |
 | `communication-grounding.png` | REVISED | Contact sheet; 100% fallback | Grounding loop and text containment corrected; QA pass. |
-| `communication-calibration-evidence.png` | REVISED | Contact sheet; 100% fallback | Evidence/calibration paths and labels corrected; QA pass. |
+| `communication-calibration-evidence.png` | REVISED | Contact sheet; 100% fallback | Meta-text removed, labels shortened, and every label contained; QA pass. |
 | `conversation-needs-map.png` | REVISED | Contact sheet; 100% fallback | Column alignment, spacing, and labels corrected; QA pass. |
 | `conversation-repair.png` | REVISED | Contact sheet; 100% fallback | Repair sequence and connector geometry corrected; QA pass. |
 | `intent-behavior-impact-cycle.png` | REVISED | Contact sheet; 100% fallback | Cycle geometry and text hierarchy corrected; QA pass. |
@@ -101,9 +102,7 @@
 | `choice-architecture.png` | REVISED | Contact sheet; 100% fallback | Choice path and visual hierarchy corrected; QA pass. |
 | `bias-and-noise.png` | REVISED | Contact sheet; 100% fallback | Comparison layout and labels corrected; QA pass. |
 | `structured-judgment-pipeline.png` | REVISED | Contact sheet; 100% fallback | Pipeline geometry and text scale corrected; QA pass. |
-| `human-ai-judgment.png` | REVISED | Contact sheet; 100% fallback | Role separation, connectors, and labels corrected; QA pass. |
 | `decision-audit.png` | REVISED | Contact sheet; 100% fallback | Audit sequence, arrowheads, and type scale corrected; QA pass. |
-| `decision-improvement-cycle.png` | REVISED | Contact sheet; 100% fallback | Cycle geometry and text containment corrected; QA pass. |
 | `claim-to-design-pipeline.png` | REVISED | Contact sheet; 100% fallback | Claim/design flow and evidence boundary corrected; QA pass. |
 | `selected-evidence-pipeline.png` | REVISED | Contact sheet; 100% fallback | Evidence pipeline spacing, hierarchy, and labels corrected; QA pass. |
 | `huanren-warren-zhang-profile.png` | PASS | Contact sheet; 100% source | Crop, resolution, and about-page fit verified. |
@@ -115,3 +114,21 @@
 | `asch-line-comparison.png` | ADDED | Contact sheet; source and fallback; HTML desktop/mobile; EPUB 768/390 | Lines are precisely drawn, labels are legible, and the visible caption preserves the activity before asking about public pressure; QA pass. |
 | `fairness-entitlements-redraw.png` | ADDED | Contact sheet; source and fallback; HTML desktop/mobile; EPUB 768/390 | Exact source values and sample sizes are legible; headings are descriptive; historical, separate-sample, and nonnormative boundaries are visible; QA pass. |
 | `schelling-emergence.png` | ADDED | Contact sheet; source and fallback; HTML desktop/mobile; EPUB 768/390 | Three panels preserve identical population counts; connectors attach cleanly; parameter text was enlarged and reflowed; generator-level schedule and randomness are declared; QA pass. |
+| `camp-david-two-issue-map.png` | REVISED | Contact sheet; source and fallback | Redundant boundary box removed; issue map and package relationship verified; QA pass. |
+| `choice-architecture-simplified-remote.png` | PASS | Contact sheet; source and fallback | Simplified remote-control comparison is legible and its choice-design contrast is explicit; QA pass. |
+| `context-b13-demonstration.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Identical central symbols and contextual cues are clearly distinguished; no false hidden-answer implication; QA pass. |
+| `digital-arrow-affordance.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Directional cue is visually salient without implying stronger evidence than the example supports; QA pass. |
+| `discount-model-crossover.png` | PASS | Contact sheet; source and fallback | Discount curves, crossover, axes, and model labels are distinct and readable; QA pass. |
+| `economist-subscription-decoy.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Three offers and the dominated comparison are visibly separated; QA pass. |
+| `hidden-zero-frame.png` | PASS | Contact sheet; source and fallback | Equivalent totals and the hidden-zero contrast are contained and legible; QA pass. |
+| `lie-cues-belief-gap.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Belief–evidence gap, uncertainty, and the absence of a reliable single cue are explicit; QA pass. |
+| `model-underdetermination.png` | PASS | Contact sheet; source and fallback | Multiple mechanisms leading to the same observation are visually distinct; QA pass. |
+| `mpg-fuel-use.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Nonlinear mapping and comparison quantities are labelled and readable; QA pass. |
+| `overlapping-motive-systems.png` | PASS | Contact sheet; source and fallback | Nested triangular systems use equal type size and spacing; the caption prevents interpretation as a rigid hierarchy; QA pass. |
+| `participant-flow-threats.png` | PASS | Contact sheet; source and fallback | Recruitment, allocation, attrition, and analysis threats are separated without crossed connectors; QA pass. |
+| `personal-mimicry-crossed-arms.png` | PASS | Contact sheet; 100% source | Crop, resolution, and contextual placement verified. |
+| `random-sampling-vs-assignment.png` | PASS | Contact sheet; source and fallback | Population generalization and causal assignment paths are visually separated; QA pass. |
+| `selected-literature-simulation.png` | PASS | Contact sheet; source and fallback | Literature-to-simulation relation and evidence boundary are explicit; QA pass. |
+| `sensory-windows-partial-world.png` | PASS | Contact sheet; source and fallback | Partial-observation metaphor, labels, and visual hierarchy verified; QA pass. |
+| `silence-mechanism-diagnostic.png` | PASS | Contact sheet; source and fallback | Competing meanings of silence are aligned and visibly treated as hypotheses; QA pass. |
+| `watched-eyes-evidence-update.png` | PASS | Contact sheet; HTML desktop/mobile; EPUB 768/390 | Effect estimate, uncertainty, and updated evidence boundary are visibly distinguished; QA pass. |
