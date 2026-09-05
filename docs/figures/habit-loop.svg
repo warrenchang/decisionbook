@@ -1,60 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
   <title id="title">A habit is a context-response learning loop</title>
-  <desc id="desc">A main path connects a stable context or cue to a retrieved response tendency, action, immediate consequence, and learning update. Learning feeds back to the response tendency. A separate dashed side path shows that an urge or wanting can be experienced but is not a required stage.</desc>
+  <desc id="desc">A stable context or cue retrieves a response tendency, which leads toward action. The response tendency includes automatic readiness and may be consciously experienced as an urge, wanting, or tension, but an urge is not required. Immediate consequences produce a learning update that can strengthen, weaken, or leave cue-response control unchanged.</desc>
   <defs>
-    <marker id="arrow-navy" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8.5,5 L1,9 Z" fill="#47647e"/></marker>
-    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8.5,5 L1,9 Z" fill="#2b7a78"/></marker>
-    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8.5,5 L1,9 Z" fill="#bf682d"/></marker>
+    <marker id="arrow-navy" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1,1 L8.5,5 L1,9 Z" fill="#47647e"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1,1 L8.5,5 L1,9 Z" fill="#2b7a78"/>
+    </marker>
   </defs>
-  <rect width="1200" height="650" fill="#ffffff"/>
-  <rect x="1.5" y="1.5" width="1197" height="647" rx="28" fill="none" stroke="#d5e1ea" stroke-width="3"/>
+
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <rect x="1.5" y="1.5" width="1197" height="597" rx="28" fill="none" stroke="#d5e1ea" stroke-width="3"/>
+
   <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#17324d">A habit is a context–response learning loop</text>
-  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#586d80">A conscious urge may accompany the loop, but habitual action does not require one.</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#586d80">A cue can retrieve action readiness with or without a consciously experienced urge.</text>
 
-  <!-- Optional conscious experience -->
-  <rect x="325" y="116" width="330" height="78" rx="18" fill="#fff5ec" stroke="#bf682d" stroke-width="2.5" stroke-dasharray="8 6"/>
-  <text x="490" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#914c20">OPTIONAL SIDE PATH</text>
-  <text x="490" y="177" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#53677a">experienced urge, wanting, or tension</text>
-  <path d="M124 234 V155 H313" fill="none" stroke="#bf682d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#arrow-orange)"/>
-  <path d="M655 155 H612 Q594 155 594 173 V234" fill="none" stroke="#bf682d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#arrow-orange)"/>
-
-  <!-- Main habit-learning path -->
   <g font-family="Arial, sans-serif">
-    <rect x="28" y="245" width="192" height="128" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
-    <text x="124" y="285" text-anchor="middle" font-size="23" font-weight="700" fill="#17324d">CONTEXT / CUE</text>
-    <text x="124" y="324" text-anchor="middle" font-size="17" fill="#586d80"><tspan x="124" dy="0">time • place •</tspan><tspan x="124" dy="23">social or internal state</tspan></text>
+    <rect x="30" y="160" width="180" height="170" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+    <text x="120" y="204" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">CONTEXT / CUE</text>
+    <text x="120" y="247" text-anchor="middle" font-size="18" fill="#586d80">
+      <tspan x="120">time • place</tspan>
+      <tspan x="120" dy="24">social or</tspan>
+      <tspan x="120" dy="24">internal state</tspan>
+    </text>
 
-    <rect x="266" y="245" width="206" height="128" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
-    <text x="369" y="285" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">RESPONSE</text>
-    <text x="369" y="312" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">TENDENCY</text>
-    <text x="369" y="346" text-anchor="middle" font-size="17" fill="#586d80">retrieved automatically</text>
+    <rect x="250" y="160" width="250" height="170" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+    <text x="375" y="195" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">RESPONSE TENDENCY</text>
+    <text x="375" y="219" text-anchor="middle" font-size="18" fill="#586d80">
+      <tspan x="375">automatic readiness</tspan>
+      <tspan x="375" dy="21">to respond</tspan>
+    </text>
+    <rect x="272" y="258" width="206" height="58" rx="13" fill="#fff5ec" stroke="#bf682d" stroke-width="2"/>
+    <text x="375" y="282" text-anchor="middle" font-size="18" font-weight="700" fill="#914c20">SOMETIMES FELT AS</text>
+    <text x="375" y="306" text-anchor="middle" font-size="18" fill="#53677a">urge • wanting • tension</text>
 
-    <rect x="518" y="245" width="152" height="128" rx="18" fill="#eef4f8" stroke="#7892a8" stroke-width="3"/>
-    <text x="594" y="297" text-anchor="middle" font-size="23" font-weight="700" fill="#17324d">ACTION</text>
-    <text x="594" y="329" text-anchor="middle" font-size="17" fill="#586d80"><tspan x="594" dy="0">performed</tspan><tspan x="594" dy="21">or inhibited</tspan></text>
+    <rect x="540" y="160" width="155" height="170" rx="18" fill="#eef4f8" stroke="#7892a8" stroke-width="3"/>
+    <text x="617.5" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">ACTION</text>
+    <text x="617.5" y="259" text-anchor="middle" font-size="18" fill="#586d80">
+      <tspan x="617.5">performed</tspan>
+      <tspan x="617.5" dy="23">or inhibited</tspan>
+    </text>
 
-    <rect x="716" y="245" width="210" height="128" rx="18" fill="#f8f1e7" stroke="#bf682d" stroke-width="3"/>
-    <text x="821" y="283" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">IMMEDIATE</text>
-    <text x="821" y="310" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">CONSEQUENCE</text>
-    <text x="821" y="344" text-anchor="middle" font-size="17" fill="#586d80">reward • relief • cost</text>
+    <rect x="735" y="160" width="210" height="170" rx="18" fill="#f8f1e7" stroke="#bf682d" stroke-width="3"/>
+    <text x="840" y="213" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">IMMEDIATE</text>
+    <text x="840" y="240" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">CONSEQUENCE</text>
+    <text x="840" y="282" text-anchor="middle" font-size="18" fill="#586d80">
+      <tspan x="840">reward • relief</tspan>
+      <tspan x="840" dy="23">or cost</tspan>
+    </text>
 
-    <rect x="972" y="245" width="200" height="128" rx="18" fill="#eaf4ec" stroke="#3f7c59" stroke-width="3"/>
-    <text x="1072" y="285" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">LEARNING</text>
-    <text x="1072" y="312" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">UPDATE</text>
-    <text x="1072" y="340" text-anchor="middle" font-size="16" fill="#586d80"><tspan x="1072" dy="0">strengthen or weaken</tspan><tspan x="1072" dy="20">or leave unchanged</tspan></text>
+    <rect x="985" y="160" width="185" height="170" rx="18" fill="#eaf4ec" stroke="#3f7c59" stroke-width="3"/>
+    <text x="1077.5" y="213" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">LEARNING</text>
+    <text x="1077.5" y="240" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">UPDATE</text>
+    <text x="1077.5" y="278" text-anchor="middle" font-size="18" fill="#586d80">
+      <tspan x="1077.5">strengthen, weaken,</tspan>
+      <tspan x="1077.5" dy="22">or leave unchanged</tspan>
+    </text>
 
-    <path d="M220 309 H254" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M472 309 H506" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M670 309 H704" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M926 309 H960" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
+    <path d="M210 245 H250" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
+    <path d="M500 245 H540" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
+    <path d="M695 245 H735" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
+    <path d="M945 245 H985" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
   </g>
 
-  <path d="M1072 373 V435 Q1072 453 1054 453 H387 Q369 453 369 435 V385" fill="none" stroke="#2b7a78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
-  <rect x="445" y="427" width="390" height="52" rx="26" fill="#e9f4f2" stroke="#2b7a78" stroke-width="2.5"/>
-  <text x="640" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#245e5c">Repetition updates cue–response control</text>
+  <path d="M1077.5 330 V399 Q1077.5 419 1057.5 419 H395 Q375 419 375 399 V342" fill="none" stroke="#2b7a78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)"/>
+  <rect x="465" y="389" width="380" height="58" rx="29" fill="#e9f4f2" stroke="#2b7a78" stroke-width="2.5"/>
+  <text x="655" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#245e5c">Repetition updates cue–response control</text>
 
-  <rect x="130" y="520" width="940" height="78" rx="18" fill="#f7f9fb" stroke="#b8c8d5" stroke-width="2.5"/>
-  <text x="600" y="551" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17324d">TEACHING SYNTHESIS</text>
-  <text x="600" y="581" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#586d80">The loop depicts context-cued learning; it is not a claim that every repetition becomes habitual.</text>
+  <rect x="150" y="486" width="900" height="76" rx="18" fill="#f7f9fb" stroke="#b8c8d5" stroke-width="2.5"/>
+  <text x="600" y="517" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17324d">TEACHING SYNTHESIS</text>
+  <text x="600" y="546" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#586d80">Not every habitual response includes an urge, and not every urge reflects a habit.</text>
 </svg>
