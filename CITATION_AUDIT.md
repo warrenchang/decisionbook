@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **798**
+Unique references in the master union: **805**
 
-Chapter reference blocks: **813**
+Chapter reference blocks: **820**
 
 Unresolved author–year citations: **0**
 
@@ -21,7 +21,7 @@ Unresolved author–year citations: **0**
 | The Narrator After Choice: Why Reasons Are Not Always Causes | 19 | 0 |
 | Fast and Frugal Thinking | 28 | 0 |
 | What Feels Likely: Availability, Affect, and Resemblance | 15 | 0 |
-| Beliefs That Defend Themselves | 15 | 0 |
+| Beliefs That Defend Themselves | 18 | 0 |
 | When Context Rewrites Comparison | 11 | 0 |
 | Framing: When the Same Facts Become Different Decisions | 15 | 0 |
 | Accessibility, Familiarity, and Ease | 24 | 0 |
@@ -43,9 +43,9 @@ Unresolved author–year citations: **0**
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 28 | 0 |
 | Why Stories Move Minds | 12 | 0 |
-| Building an Evidence-Aligned Message | 11 | 0 |
+| Building an Evidence-Aligned Message | 12 | 0 |
 | Communication: Language Is Not a File Transfer | 18 | 0 |
-| Connection and Repair: Warm Honesty Makes Truth Usable | 26 | 0 |
+| Connection and Repair: Warm Honesty Makes Truth Usable | 29 | 0 |
 | Negotiation as Joint Decision Design | 12 | 0 |
 | Preparing and Claiming Value | 10 | 0 |
 | Creating Value Across Differences | 9 | 0 |
