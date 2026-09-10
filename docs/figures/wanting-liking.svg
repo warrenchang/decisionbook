@@ -5,7 +5,7 @@
   <defs>
     <marker id="orange-arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#c56a2d"/></marker>
     <marker id="red-arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#a74343"/></marker>
-    <marker id="green-arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#447c55"/></marker>
+    <marker id="green-arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#447c55"/></marker>
     <style>
       .title{font:700 33px Arial,sans-serif;fill:#17324d}
       .subtitle{font:19px Arial,sans-serif;fill:#607080}
@@ -19,15 +19,15 @@
   <text class="title" x="600" y="50" text-anchor="middle">Wanting can remain strong after liking has weakened</text>
   <text class="subtitle" x="600" y="82" text-anchor="middle">Wanting, experienced pleasure, and choice can dissociate.</text>
 
-  <rect x="55" y="195" width="235" height="150" rx="20" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
-  <text class="label" x="173" y="240" text-anchor="middle">Cue</text>
-  <text class="body" x="173" y="278" text-anchor="middle"><tspan x="173">notification • smell</tspan><tspan x="173" dy="26">stress • place • person</tspan></text>
-  <path class="flow" d="M290 270 H410" stroke="#c56a2d" stroke-width="4" marker-end="url(#orange-arrow)"/>
+  <rect x="55" y="185" width="300" height="170" rx="22" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
+  <text class="label" x="205" y="233" text-anchor="middle">Cue</text>
+  <text class="body" x="205" y="272" text-anchor="middle"><tspan x="205">notification • smell</tspan><tspan x="205" dy="27">stress • place • person</tspan></text>
+  <path class="flow" d="M355 270 H442.5" stroke="#c56a2d" stroke-width="4" marker-end="url(#orange-arrow)"/>
 
-  <rect x="410" y="170" width="315" height="200" rx="22" fill="#fff0ed" stroke="#a74343" stroke-width="3"/>
-  <text class="label" x="568" y="220" text-anchor="middle">Wanting</text>
-  <text class="body" x="568" y="258" text-anchor="middle"><tspan x="568">incentive salience</tspan><tspan x="568" dy="27">attention and action readiness</tspan><tspan x="568" dy="27">can be strong</tspan></text>
-  <path class="flow" d="M725 270 H845" stroke="#a74343" stroke-width="4" marker-end="url(#red-arrow)"/>
+  <rect x="442.5" y="170" width="315" height="200" rx="22" fill="#fff0ed" stroke="#a74343" stroke-width="3"/>
+  <text class="label" x="600" y="220" text-anchor="middle">Wanting</text>
+  <text class="body" x="600" y="258" text-anchor="middle"><tspan x="600">incentive salience</tspan><tspan x="600" dy="27">attention and action readiness</tspan><tspan x="600" dy="27">can be strong</tspan></text>
+  <path class="flow" d="M757.5 270 H845" stroke="#a74343" stroke-width="4" marker-end="url(#red-arrow)"/>
 
   <rect x="845" y="185" width="300" height="170" rx="22" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
   <text class="label" x="995" y="233" text-anchor="middle">Experienced outcome</text>
@@ -37,8 +37,9 @@
   <text class="label" x="600" y="503" text-anchor="middle">Evidence that can support relearning</text>
   <text class="body" x="600" y="540" text-anchor="middle"><tspan x="600">observe the urge • delay • compare promised with actual reward</tspan><tspan x="600" dy="27">change cue, access, response, or consequence where possible</tspan></text>
 
-  <path class="flow" d="M995 355 C995 420 860 440 800 460" stroke="#447c55" stroke-width="4" stroke-dasharray="9 7" marker-end="url(#green-arrow)"/>
-  <path class="flow" d="M300 527 C215 527 173 445 173 345" stroke="#447c55" stroke-width="4" stroke-dasharray="9 7" marker-end="url(#green-arrow)"/>
+  <!-- Mirrored connector geometry around x=600, with opposite directions around the learning loop. -->
+  <path class="flow" d="M995 355 C995 420 800 395 800 460" stroke="#447c55" stroke-width="4" stroke-dasharray="9 7" marker-end="url(#green-arrow)"/>
+  <path class="flow" d="M205 355 C205 420 400 395 400 460" stroke="#447c55" stroke-width="4" stroke-dasharray="9 7" marker-start="url(#green-arrow)"/>
 
   <rect x="120" y="606" width="960" height="62" rx="18" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2"/>
   <text class="small" x="600" y="632" text-anchor="middle"><tspan x="600">Discrepant evidence creates an opportunity for updating;</tspan><tspan x="600" dy="23">it does not guarantee that wanting will diminish.</tspan></text>
