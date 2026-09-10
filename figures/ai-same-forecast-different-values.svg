@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="820" viewBox="0 0 800 820" role="img" aria-labelledby="title desc">
+  <title id="title">One forecast, two decisions</title>
+  <desc id="desc">Hypothetical error-loss example, not observed data or advice for an actual event. Both organizers forecast rain with probability 30 percent. Correct choices have zero incremental loss. A false alarm means moving indoors on a dry day; a miss means remaining outdoors in rain. Organizer A has losses 2 and 8, respectively, so the switching threshold is 2/(2+8)=20 percent. Expected losses are 1.4 for moving and 2.4 for staying: move indoors. Organizer B has losses 6 and 4, so the threshold is 60 percent. Expected losses are 4.2 for moving and 1.2 for staying: keep outdoors. The blue dot marks the shared forecast on each 0 to 100 percent strip; the vertical tick marks the organizer's switching threshold. Losses are in hypothetical common units, with risk-neutral expected-loss comparison, two actions, and two weather states. At the threshold, the actions tie.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 9 8" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0.5 0.5 L8 4 L0.5 7.5 Z" fill="#526778"/>
+    </marker>
+  </defs>
+  <rect width="800" height="820" fill="white"/>
+<text x="400" y="49" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#17324d">One forecast, two decisions</text>
+<rect x="190" y="86" width="420" height="94" rx="18" fill="#edf4f8" stroke="#2f6f9f" stroke-width="2"/>
+<text x="400" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#2f6f9f">Rain probability: 30%</text>
+<g id="organizer-a">
+<rect x="40" y="222" width="720" height="268" rx="18" fill="white" stroke="#d8e2e9" stroke-width="2"/>
+<text x="70" y="267" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17324d">Organizer A</text>
+<text x="70" y="311" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">False alarm: 2</text>
+<text x="430" y="311" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">Missed rain: 8</text>
+<line x1="90" y1="368" x2="710" y2="368" stroke="#d8e2e9" stroke-width="12" stroke-linecap="round" />
+<line x1="214" y1="351" x2="214" y2="386" stroke="#17324d" stroke-width="3" stroke-linecap="round" />
+<circle cx="276" cy="368" r="10" fill="#2f6f9f" stroke="white" stroke-width="3"/>
+<text x="276" y="343" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#2f6f9f">30%</text>
+<text x="90" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#526778">0</text>
+<text x="710" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#526778">100%</text>
+<text x="214" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">20% threshold</text>
+<text x="400" y="466" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#c56a2d">Move indoors</text>
+</g>
+<g id="organizer-b">
+<rect x="40" y="522" width="720" height="268" rx="18" fill="white" stroke="#d8e2e9" stroke-width="2"/>
+<text x="70" y="567" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17324d">Organizer B</text>
+<text x="70" y="611" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">False alarm: 6</text>
+<text x="430" y="611" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">Missed rain: 4</text>
+<line x1="90" y1="668" x2="710" y2="668" stroke="#d8e2e9" stroke-width="12" stroke-linecap="round" />
+<line x1="462" y1="651" x2="462" y2="686" stroke="#17324d" stroke-width="3" stroke-linecap="round" />
+<circle cx="276" cy="668" r="10" fill="#2f6f9f" stroke="white" stroke-width="3"/>
+<text x="276" y="643" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#2f6f9f">30%</text>
+<text x="90" y="725" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#526778">0</text>
+<text x="710" y="725" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#526778">100%</text>
+<text x="462" y="725" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d">60% threshold</text>
+<text x="400" y="766" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#447c55">Keep outdoors</text>
+</g>
+</svg>

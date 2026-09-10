@@ -25,7 +25,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Preface contains the current closing sentence | **PASS** |
 | Visible contents suppresses automatic ordered-list counters | **PASS** |
 | All Part titles appear in order | **PASS** |
-| Chapters are numbered 1 through 41 | **PASS** |
+| Chapters are numbered 1 through 42 | **PASS** |
 | Every chapter is nested under its Part with no section titles | **PASS** |
 | Preface and back matter have no section-level navigation | **PASS** |
 | Navigation contains no section titles | **PASS** |
@@ -44,7 +44,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | EPUB declares textual and visual access modes | **PASS** |
 | EPUB declares MathML and alternative-text accessibility features | **PASS** |
 | EPUB includes an accessibility summary | **PASS** |
-| All 60 source documents are packaged | **PASS** |
+| All 61 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |

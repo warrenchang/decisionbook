@@ -24,7 +24,7 @@ python3 scripts/qa_quarto_book.py
 python3 scripts/qa_epub_release.py
 ```
 
-The commands rewrite the HTML/source/citation QA artifacts and `EPUB_QA_REPORT.md`. They check the 41-chapter order, recurring chapter architecture, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, PNG fallbacks, duplicate IDs, connectors in every reader-facing SVG, EPUB ZIP/package integrity, Part and interlude titles, chapter numbering, appendices, compilation date, and required illustrations. Publish only when both reports say **PASS**.
+The commands rewrite the HTML/source/citation QA artifacts and `EPUB_QA_REPORT.md`. They check the 42-chapter order, recurring chapter architecture, source/render parity, references, author–year correspondence, links, alternative text, SVG metadata, PNG fallbacks, duplicate IDs, connectors in every reader-facing SVG, EPUB ZIP/package integrity, Part and interlude titles, chapter numbering, appendices, compilation date, and required illustrations. Publish only when both reports say **PASS**.
 
 After the three Lecture Notes source audits have been reconciled into
 `audits/lecture-notes-coverage.csv`, regenerate the exact-path editorial

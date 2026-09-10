@@ -1,10 +1,10 @@
 # Citation audit
 
-Canonical chapters: **41**
+Canonical chapters: **42**
 
-Unique references in the master union: **805**
+Unique references in the master union: **820**
 
-Chapter reference blocks: **820**
+Chapter reference blocks: **840**
 
 Unresolved author–year citations: **0**
 
@@ -53,6 +53,7 @@ Unresolved author–year citations: **0**
 | Behavior Design: Make the Better Action Easier | 18 | 0 |
 | Choice Architecture: The Environment Gets a Vote | 28 | 0 |
 | Decision Hygiene: Build a Process That Can Learn | 31 | 0 |
+| Data Driven Decision Making | 20 | 0 |
 
 ## Unresolved citation strings
 

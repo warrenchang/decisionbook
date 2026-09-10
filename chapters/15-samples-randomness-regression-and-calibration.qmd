@@ -177,6 +177,8 @@ Forecasting research suggests that performance can improve through habits rather
 
 The record matters because memory rounds forecasts toward outcomes. “We knew it might fail” can describe almost any vague prior statement. A dated number, event definition, and update rule allow learning to survive hindsight.
 
+The same discipline is needed when AI supplies the forecast. [Chapter 42](42-data-driven-decision-making.qmd#test-the-whole-decision) carries calibration and sampling into the evaluation of machine predictions: reserve observations that were not used to fit or tune the model, make the test resemble its intended use, and examine whether its probabilities support better actions. This is how the book's treatment of uncertainty helps distinguish a promising demonstration from evidence that a decision process has improved.
+
 ## From a project story to a forecast system
 
 A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. Adding them gives 45 percent only if the events are mutually exclusive. They are not: supplier delay can cause software delay, and regulatory change can affect both.

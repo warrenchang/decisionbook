@@ -1,6 +1,6 @@
 # Chapter source filenames
 
-The 41 canonical `.qmd` files are numbered in the book's current reading order
+The 42 canonical `.qmd` files are numbered in the book's current reading order
 and use a lowercase form of the current chapter title. For example, Chapter 8,
 *Fast and Frugal Thinking*, is `08-fast-and-frugal-thinking.qmd`.
 

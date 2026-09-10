@@ -162,8 +162,8 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
     except SystemExit as exc:
         return {}, [Issue("error", "canonical-chapters", "_quarto-html.yml", str(exc))], {}
 
-    if len(chapters) != 41:
-        issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 41 canonical chapters; found {len(chapters)}."))
+    if len(chapters) != 42:
+        issues.append(Issue("error", "chapter-count", "_quarto-html.yml", f"Expected 42 canonical chapters; found {len(chapters)}."))
 
     expected_appendices = [
         "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",

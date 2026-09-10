@@ -214,10 +214,10 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 113 rendered placements; the base loop is deliberately
-    // repeated as a navigation device across Part openers.
-    if (totalByViewport.desktop !== 113 || totalByViewport.mobile !== 113) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 113 in each viewport`);
+    // The book contains 115 rendered placements, including Chapter 42's two
+    // numerical illustrations and the loops repeated across Part openers.
+    if (totalByViewport.desktop !== 115 || totalByViewport.mobile !== 115) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 115 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`The self-fulfilling and self-defeating table has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");

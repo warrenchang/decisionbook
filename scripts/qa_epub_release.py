@@ -43,7 +43,7 @@ EXPECTED_PART_CHAPTERS = [
     list(range(23, 30)),
     list(range(30, 35)),
     list(range(35, 39)),
-    list(range(39, 42)),
+    list(range(39, 43)),
 ]
 
 EXPECTED_APPENDICES = [
@@ -290,7 +290,7 @@ def main() -> int:
             for label in all_labels
             if (match := re.match(r"^(\d+)\s+", label))
         ]
-        check("Chapters are numbered 1 through 41", chapter_numbers == list(range(1, 42)), str(chapter_numbers))
+        check("Chapters are numbered 1 through 42", chapter_numbers == list(range(1, 43)), str(chapter_numbers))
 
         hierarchy_errors: list[str] = []
         for part_title, expected_numbers in zip(EXPECTED_PARTS, EXPECTED_PART_CHAPTERS):
@@ -443,7 +443,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 60 source documents are packaged", len(chapter_files) == 60, str(len(chapter_files)))
+        check("All 61 source documents are packaged", len(chapter_files) == 61, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         malformed_xhtml: list[str] = []
@@ -481,7 +481,7 @@ def main() -> int:
             for div in chapter_root.findall(f".//{{{XHTML}}}div")
             if "chapter-epigraph" in div.get("class", "").split()
         )
-        check("Every main chapter packages one epigraph", epigraph_count == 41, str(epigraph_count))
+        check("Every main chapter packages one epigraph", epigraph_count == 42, str(epigraph_count))
 
         appendix_a = next(
             (

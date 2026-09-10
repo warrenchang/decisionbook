@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>42&nbsp; Data Driven Decision Making – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" rel="next">
+<link href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-34c7abfd9a2c37ec5dbcf238d516f91e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-7.html">Part VII. Designing Better Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/42-data-driven-decision-making.html"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Data Driven Decision Making</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: A Decision Is Already in the Making</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How Decisions Should Be Made—and How They Actually Are</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/03-attention-what-becomes-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Attention: What Becomes Evidence?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/04-the-predictive-mind-perception-is-inference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Predictive Mind: Perception Is Inference</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/05-expectations-when-predictions-become-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations: When Predictions Become Causes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/06-valuation-how-options-become-worth-choosing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation: How Options Become Worth Choosing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Narrator After Choice: Why Reasons Are Not Always Causes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/08-fast-and-frugal-thinking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fast and Frugal Thinking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">What Feels Likely: Availability, Affect, and Resemblance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/10-beliefs-that-defend-themselves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Beliefs That Defend Themselves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/11-when-context-rewrites-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">When Context Rewrites Comparison</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing: When the Same Facts Become Different Decisions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/13-accessibility-familiarity-and-ease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Accessibility, Familiarity, and Ease</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates, Conditional Probability, and Bayesian Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/15-samples-randomness-regression-and-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, Regression, and Calibration</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Intertemporal Decision-Making: Why Later Loses to Now</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Authority, Groupthink, and Shared Responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/31-why-stories-move-minds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Why Stories Move Minds</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/32-building-an-evidence-aligned-message.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Building an Evidence-Aligned Message</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/33-communication-language-is-not-a-file-transfer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication: Language Is Not a File Transfer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/36-preparing-and-claiming-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Preparing and Claiming Value</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/37-creating-value-across-differences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Creating Value Across Differences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Decisions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/39-behavior-design-make-the-better-action-easier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/40-choice-architecture-the-environment-gets-a-vote.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../chapters/42-data-driven-decision-making.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Data Driven Decision Making</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Evolutionary Explanations of Value, Choice, and Rationality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-c-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-d-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-puzzle-where-should-the-city-dig" id="toc-opening-puzzle-where-should-the-city-dig" class="nav-link active" data-scroll-target="#opening-puzzle-where-should-the-city-dig">Opening puzzle: where should the city dig?</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#why-this-final-chapter" id="toc-why-this-final-chapter" class="nav-link" data-scroll-target="#why-this-final-chapter">Why this is the final chapter</a></li>
+  <li><a href="#cheap-prediction" id="toc-cheap-prediction" class="nav-link" data-scroll-target="#cheap-prediction">What becomes possible when prediction becomes cheap?</a></li>
+  <li><a href="#separate-prediction-and-valuation" id="toc-separate-prediction-and-valuation" class="nav-link" data-scroll-target="#separate-prediction-and-valuation">Separate the forecast from the value of its consequences</a>
+  <ul class="collapse">
+  <li><a href="#one-rain-forecast-two-sensible-choices" id="toc-one-rain-forecast-two-sensible-choices" class="nav-link" data-scroll-target="#one-rain-forecast-two-sensible-choices">One rain forecast, two sensible choices</a></li>
+  <li><a href="#ai-target-variable-problem" id="toc-ai-target-variable-problem" class="nav-link" data-scroll-target="#ai-target-variable-problem">Values enter before the final button</a></li>
+  </ul></li>
+  <li><a href="#flint-lead-pipes" id="toc-flint-lead-pipes" class="nav-link" data-scroll-target="#flint-lead-pipes">Flint: a probability map becomes a public decision</a></li>
+  <li><a href="#risk-is-not-treatment-benefit" id="toc-risk-is-not-treatment-benefit" class="nav-link" data-scroll-target="#risk-is-not-treatment-benefit">Predicting risk does not tell us whom an intervention will help</a></li>
+  <li><a href="#ai-workbench" id="toc-ai-workbench" class="nav-link" data-scroll-target="#ai-workbench">Choose an AI tool by the work it must do</a>
+  <ul class="collapse">
+  <li><a href="#ai-customer-support" id="toc-ai-customer-support" class="nav-link" data-scroll-target="#ai-customer-support">Customer support: help at the moment of action</a></li>
+  <li><a href="#ai-masai-screening" id="toc-ai-masai-screening" class="nav-link" data-scroll-target="#ai-masai-screening">Screening: change the workflow, then test it</a></li>
+  <li><a href="#ai-physician-vignettes" id="toc-ai-physician-vignettes" class="nav-link" data-scroll-target="#ai-physician-vignettes">A capable assistant can still fail to improve the user</a></li>
+  </ul></li>
+  <li><a href="#trust-and-responsibility" id="toc-trust-and-responsibility" class="nav-link" data-scroll-target="#trust-and-responsibility">Trust, valuation, and responsibility</a></li>
+  <li><a href="#test-the-whole-decision" id="toc-test-the-whole-decision" class="nav-link" data-scroll-target="#test-the-whole-decision">Test the whole decision, not just the model</a>
+  <ul class="collapse">
+  <li><a href="#make-the-test-resemble-the-task" id="toc-make-the-test-resemble-the-task" class="nav-link" data-scroll-target="#make-the-test-resemble-the-task">Make the test resemble the task</a></li>
+  <li><a href="#evaluate-probabilities-and-decisions-separately" id="toc-evaluate-probabilities-and-decisions-separately" class="nav-link" data-scroll-target="#evaluate-probabilities-and-decisions-separately">Evaluate probabilities and decisions separately</a></li>
+  <li><a href="#compare-workflows-before-scaling" id="toc-compare-workflows-before-scaling" class="nav-link" data-scroll-target="#compare-workflows-before-scaling">Compare workflows before scaling</a></li>
+  <li><a href="#communicate-enough-uncertainty-to-support-a-choice" id="toc-communicate-enough-uncertainty-to-support-a-choice" class="nav-link" data-scroll-target="#communicate-enough-uncertainty-to-support-a-choice">Communicate enough uncertainty to support a choice</a></li>
+  </ul></li>
+  <li><a href="#practice-lab-build-a-small-ai-decision-system" id="toc-practice-lab-build-a-small-ai-decision-system" class="nav-link" data-scroll-target="#practice-lab-build-a-small-ai-decision-system">Practice Lab: build a small AI decision system</a>
+  <ul class="collapse">
+  <li><a href="#ai-decision-canvas" id="toc-ai-decision-canvas" class="nav-link" data-scroll-target="#ai-decision-canvas">The AI decision canvas</a></li>
+  </ul></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/42-data-driven-decision-making.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/42-data-driven-decision-making.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-7.html">Part VII. Designing Better Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/42-data-driven-decision-making.html"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Data Driven Decision Making</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Data Driven Decision Making</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><span id="data-driven-decision-making"></span></p>
+<p><em>When prediction becomes cheaper, deciding what is worth doing becomes more important.</em></p>
+<div class="chapter-epigraph">
+<blockquote class="blockquote">
+<p>“Prediction is the process of filling in missing information.”</p>
+<p>— Ajay Agrawal, Joshua Gans, and Avi Goldfarb, <a href="https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/e/1511/files/2023/05/Prediction-Machines-Simple-Economics-of-AI-2018.pdf"><em>Prediction Machines</em></a>, 2018, chapter 2, “Cheap Creates Value”</p>
+</blockquote>
+</div>
+<section id="opening-puzzle-where-should-the-city-dig" class="level2">
+<h2 data-anchor-id="opening-puzzle-where-should-the-city-dig">Opening puzzle: where should the city dig?</h2>
+<p>A city needs to replace dangerous water-service lines. The pipes are underground, the records are incomplete, and excavation is expensive. A crew can spend a day opening a street only to discover a pipe that did not need replacement. Meanwhile, a household with a hazardous line may still be waiting.</p>
+<p>This was a practical problem in Flint, Michigan. Researchers used property information, historical records, and inspection results to estimate where service lines containing lead or galvanized material were likely to be found. Machine learning helped turn an incomplete map into a more informative search plan (Abernethy et al., 2018; Webb et al., 2020).</p>
+<p>Now imagine the city has those estimates on a screen. One property has a higher predicted risk than another. Is the next decision settled?</p>
+<p>The answer depends on the city’s purpose. Finding the largest number of hazardous lines per day is one objective. Reducing the most serious exposure, reaching overlooked neighborhoods, managing disruption, and learning about poorly documented streets may also matter. Residents need an explanation of the plan and a way to challenge an error. The model can improve the estimate of what is buried. It cannot supply its own public mandate.</p>
+<p>This is where the book’s earlier distinctions become practical. The <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#ai-accountable-judgment">previous chapter</a> provides a process for separating estimates from valuations and learning from results. This chapter asks how to use that process when AI can reduce the effort required to predict, search, summarize, and compare.</p>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core Idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use validated AI to improve estimates of what may happen. Keep valuation and consequential final choices under accountable human authority: people must determine what matters, whose interests count, which trade-offs are acceptable, and who answers for the action. Test the whole arrangement, because a capable model helps only when its information improves an actual decision.</p>
+</div>
+</div>
+</section>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>Separate a prediction from a value judgment, an intervention effect, and an authorization to act.</li>
+<li>Match machine learning, language models, and other analytical tools to a specific decision task.</li>
+<li>Explain why probability thresholds, data labels, and evaluation criteria embody human choices.</li>
+<li>Design a small, testable AI-assisted workflow with a baseline, an owner, and a learning rule.</li>
+</ul>
+</section>
+<section id="why-this-final-chapter" class="level2">
+<h2 data-anchor-id="why-this-final-chapter">Why this is the final chapter</h2>
+<p>The book began by asking how a decision should be made and how it actually takes shape. AI brings those two questions together. We can ask a model to estimate a consequence separately from the human discussion of what that consequence is worth. This creates an opportunity to improve prediction while making the remaining judgments easier to identify. A city with better pipe estimates still needs to decide what its replacement program should accomplish.</p>
+<p>Using that opportunity draws on the whole book:</p>
+<ul>
+<li><strong>Attention and interpretation:</strong> <a href="../chapters/03-attention-what-becomes-evidence.html#inattentional-blindness-what-attention-leaves-out">Chapter 3</a> asks what becomes evidence; <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html#equivalent-facts-different-meanings">Chapter 12</a> examines how its presentation changes a decision. These questions apply to the cases included in a dataset, the information supplied to an AI assistant, and the way a score or recommendation is displayed.</li>
+<li><strong>Prediction and evidence:</strong> <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#probability-begins-with-a-model">Chapters 14</a> and <a href="../chapters/15-samples-randomness-regression-and-calibration.html#calibration-makes-confidence-answerable">15</a> supply base rates, updating, and calibration. They help us judge whether an AI forecast deserves reliance and whether an apparent improvement survives an appropriate comparison.</li>
+<li><strong>Valuation and a better life:</strong> <a href="../chapters/06-valuation-how-options-become-worth-choosing.html#using-valuation-wisely">Chapter 6</a> examines how outcomes become worth pursuing; <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html#one-word-several-targets">Chapter 22</a> asks what makes the resulting life better. Together they keep a convenient target—spending, clicks, or speed—from silently defining success.</li>
+<li><strong>Other minds and institutions:</strong> <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html#authority-and-responsibility">Chapter 28</a> examines authority and responsibility, while <a href="../chapters/35-negotiation-as-joint-decision-design.html#prepare-the-joint-decision">Chapter 35</a> treats negotiation as joint decision design. An AI-supported policy still needs a way to address conflicting interests, hear objections, and assign authority over the final choice.</li>
+<li><strong>Design and learning:</strong> <a href="../chapters/39-behavior-design-make-the-better-action-easier.html#one-primary-workflow">Chapters 39</a> through <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#decision-hygiene-build-a-process-that-can-learn">41</a> turn these distinctions into changes that can be implemented and tested. A forecast becomes useful when someone can act on it, record the result, and revise the process.</li>
+</ul>
+<p>Chapter 41 assembles a process that can learn. This final chapter puts that process to work with AI. Its practical test is whether cheaper prediction, combined with explicit values and accountable action, improves the decisions people actually make. The behavioral lessons matter at every point where people build, interpret, authorize, or challenge the system.</p>
+</section>
+<section id="cheap-prediction" class="level2">
+<h2 data-anchor-id="cheap-prediction">What becomes possible when prediction becomes cheap?</h2>
+<p>Suppose a bakery must decide how much bread to make tomorrow. A demand estimate helps, but the baker also cares about waste, disappointed customers, labor, and the reputation for having fresh bread available. A better forecast can make the decision easier. It does not determine how those consequences should be weighted.</p>
+<p>In <em>Prediction Machines</em>, Agrawal, Gans, and Goldfarb frame the economic significance of AI as a fall in the cost of prediction (Agrawal et al., 2022b). Their use of <strong>prediction</strong> includes filling in missing information about the present: whether a transaction is fraudulent, what an image contains, or which material lies underground. It is broader than forecasting the future. <em>Power and Prediction</em> extends the argument from improving individual tasks to reorganizing the systems in which decisions depend on one another (Agrawal et al., 2022a).</p>
+<p>There is concrete evidence of falling costs, although its meaning needs care. Stanford’s 2025 AI Index reports that the inference price of achieving approximately GPT-3.5-level performance on the MMLU benchmark fell by more than 280-fold between November 2022 and October 2024. That is a comparison at a particular measured capability. It is not a 280-fold reduction in the total cost of every reliable forecast or decision system (Stanford Institute for Human-Centered Artificial Intelligence, 2025).</p>
+<p>A cheap answer still needs suitable data, a valid target, a working interface, and a way to catch mistakes. Nevertheless, a substantial fall in one input’s cost changes what is worth attempting. A small organization may be able to classify more incoming requests, inspect more documents, or update forecasts more frequently. Problems once handled by one broad rule may support more differentiated responses.</p>
+<p>The opportunity reaches beyond doing the same work faster. If a bakery can anticipate demand by product and time, it may change when batches are baked, how staff are scheduled, and when unsold stock is offered elsewhere. These are linked decisions. Improving a forecast without changing the production schedule may achieve little; redesigning the schedule without reliable forecasts may create new waste. This is an illustrative application of the systems argument, not a measured bakery intervention.</p>
+<p>Cheaper prediction can therefore increase the value of its <strong>complements</strong>: useful observations, clear objectives, good interventions, implementation capacity, and feedback. If the city cannot obtain access to a property, a better pipe-risk score cannot make the excavation happen. If nobody is authorized to adjust a production schedule, a better demand forecast may remain an attractive dashboard.</p>
+<p>The useful starting question is concrete: <strong>Which uncertainty is currently preventing a better action, and what would we change if we could reduce it?</strong></p>
+</section>
+<section id="separate-prediction-and-valuation" class="level2">
+<h2 data-anchor-id="separate-prediction-and-valuation">Separate the forecast from the value of its consequences</h2>
+<p>A prediction describes possibilities and uncertainty. <strong>Valuation</strong> assigns importance to consequences: money, time, safety, dignity, fairness, enjoyment, or other ends. A <strong>choice</strong> commits to an available action. A decision process needs all three, together with evidence about what the actions can change.</p>
+<p>The distinction is analytical rather than a rigid order of meetings. Values enter early because they help determine which outcomes deserve prediction. Evidence can then reveal a trade-off that people had overlooked. What matters is keeping the contributions visible, so a disagreement about probabilities does not quietly become a disagreement about priorities—or the reverse.</p>
+<p>Return to <a href="01-how-decisions-should-be-made-and-how-they-actually-are.html#fig-normative-decision-loop" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> in <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#a-rational-benchmark">Chapter 1</a>. It supplies the normative framework here: information about alternatives supports prediction; predicted consequences are valued; choice and implementation lead to outcomes; and feedback can inform later judgment. AI can assist prediction within that process. People and institutions remain responsible for specifying what matters, deciding whether the evidence is sufficient, authorizing the action, and learning from its consequences.</p>
+<p>Agrawal and colleagues use <em>judgment</em> in a narrower sense for assigning payoffs to consequences. Here we retain the book’s term <em>valuation</em>, so that <em>judgment</em> can continue to describe forming beliefs and assessments more broadly (Agrawal et al., 2019).</p>
+<section id="one-rain-forecast-two-sensible-choices" class="level3">
+<h3 data-anchor-id="one-rain-forecast-two-sensible-choices">One rain forecast, two sensible choices</h3>
+<p>Two organizers receive the same forecast: a 30 percent probability of rain during an outdoor event. Each can move indoors or remain outdoors. One event would be badly damaged by rain; the other would lose much of its appeal by moving inside.</p>
+<p>To see the logic clearly, use a deliberately simplified <strong>error-loss model</strong>. A false alarm means moving indoors when the weather would have been dry. A miss means staying outdoors when it rains. Assign zero incremental loss to the two correct matches: outdoors when dry and indoors when rainy. The figures below are hypothetical loss points, not measured preferences or financial estimates.</p>
+<div id="tbl-ai-rain-losses" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-rain-losses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42.1: The same forecast can imply different actions under different values
+</figcaption>
+<div aria-describedby="tbl-ai-rain-losses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organizer</th>
+<th style="text-align: right;">Loss from an unnecessary move indoors</th>
+<th style="text-align: right;">Loss from staying outdoors in rain</th>
+<th style="text-align: right;">Expected loss if moving indoors</th>
+<th style="text-align: right;">Expected loss if staying outdoors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rain would be especially damaging</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;"><span class="math inline">\(0.70\times2=1.4\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.30\times8=2.4\)</span></td>
+</tr>
+<tr class="even">
+<td>Moving indoors would sacrifice much of the event</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><span class="math inline">\(0.70\times6=4.2\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(0.30\times4=1.2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The first organizer moves indoors; the second remains outdoors. Neither needs a different weather forecast. They face different consequences.</p>
+<p>More generally, let <span class="math inline">\(p\)</span> be the probability of rain, <span class="math inline">\(C_F\)</span> the false-alarm loss, and <span class="math inline">\(C_M\)</span> the missed-rain loss. In this model, moving indoors has lower expected loss when</p>
+<p><span class="math display">\[
+(1-p)C_F &lt; pC_M,
+\]</span></p>
+<p>or equivalently</p>
+<p><span class="math display">\[
+p &gt; \frac{C_F}{C_F+C_M}.
+\]</span></p>
+<p>The thresholds are therefore 20 percent and 60 percent. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
+<div id="fig-ai-same-forecast-different-values" class="quarto-float quarto-figure quarto-figure-center" alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ai-same-forecast-different-values-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ai-same-forecast-different-values.svg" class="img-fluid figure-img" style="width:100.0%" alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ai-same-forecast-different-values-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;42.1: An illustrative 30% rain forecast exceeds one organizer’s 20% action threshold but falls below another’s 60% threshold. The thresholds follow from the hypothetical error losses in the text, with zero incremental loss for correct matches. They are not observed behavior or recommendations for actual events.
+</figcaption>
+</figure>
+</div>
+<p>Real choices can include reserving a tent, delaying a decision, accepting some weather exposure, or cancelling. They may also involve fixed costs, uncertain forecasts, capacity limits, and protected rights that cannot simply be priced away. The arithmetic is a device for revealing where valuation enters. It is not a claim that every important value belongs on one numerical scale.</p>
+</section>
+<section id="ai-target-variable-problem" class="level3">
+<h3 data-anchor-id="ai-target-variable-problem">Values enter before the final button</h3>
+<p>A model’s training target is already a consequential choice. In a widely used healthcare-management algorithm, spending was used as a proxy for health need. Obermeyer and colleagues found that Black patients were sicker than White patients with the same risk score: unequal spending patterns made costs an inadequate stand-in for need (Obermeyer et al., 2019).</p>
+<p>The model could perform well at predicting its label while allocating help in a way that conflicted with the stated purpose. Better prediction of the same proxy would not resolve that mismatch. A person or institution had to reconsider what the system should identify.</p>
+<p>Before discussing model sophistication, finish two sentences: <strong>“The outcome we can measure is…”</strong> and <strong>“The consequence we actually care about is…”</strong> If they differ, explain why the first is an acceptable proxy, how it could fail, and who bears the cost of that failure.</p>
+</section>
+</section>
+<section id="flint-lead-pipes" class="level2">
+<h2 data-anchor-id="flint-lead-pipes">Flint: a probability map becomes a public decision</h2>
+<p>Agrawal and colleagues discuss Flint in chapter 15 of <em>Power and Prediction</em>, “The New Judges” (Agrawal et al., 2022a). Return to the buried pipes. The technical task was a form of <strong>supervised learning</strong>: use properties with observed service-line materials to learn relationships that help estimate materials at other properties. Features included information about parcels and buildings, historical records, and inspection findings. The work used predictive models including gradient-boosted decision trees, alongside methods for deciding where additional inspection would be informative (Abernethy et al., 2018; Webb et al., 2020).</p>
+<p>A <strong>decision tree</strong> divides cases through a sequence of feature-based splits. A tree ensemble combines many trees; in boosting, successive trees help improve the model’s predictions under a specified loss function. The resulting score can express an estimated probability of a class, rather than only a yes-or-no label (James et al., 2023). Here the target concerned service-line materials, not a direct measurement of lead concentration in the water coming from a particular tap.</p>
+<p>The performance claims need their original labels. The 2018 technical paper compared an actual unnecessary-visit rate of 18.8 percent with 2.0 percent under a proposed procedure in a <strong>backtesting simulation</strong>. The latter was not an observed 98 percent field success rate. A later author report described how targeting performance changed as the city’s approach changed, but that before-and-after account was not a randomized trial (Abernethy et al., 2018; Webb et al., 2020).</p>
+<p>The case is compelling without turning every reported gain into a causal estimate. Information about an unseen physical condition could be combined across many records, updated with inspections, and used to direct scarce fieldwork. The model’s practical role was to make the search more informed.</p>
+<p>Its use still required several human decisions:</p>
+<div id="tbl-ai-flint-decision" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-flint-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42.2: Questions to distinguish when applying the Flint lesson; the table is an analytical synthesis, not a description of a single adopted city policy
+</figcaption>
+<div aria-describedby="tbl-ai-flint-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision component</th>
+<th>In a pipe-replacement program</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prediction target</td>
+<td>Which service-line materials are likely at this property, and how uncertain is the estimate?</td>
+</tr>
+<tr class="even">
+<td>Public objective</td>
+<td>How should exposure, access, fairness, disruption, and replacement progress count?</td>
+</tr>
+<tr class="odd">
+<td>Feasible action</td>
+<td>Inspect, excavate, replace, gather records, or investigate an uncertain area.</td>
+</tr>
+<tr class="even">
+<td>Operational constraints</td>
+<td>Crew time, access, street works, budgets, and the ability to respond to findings.</td>
+</tr>
+<tr class="odd">
+<td>Authority and review</td>
+<td>Who approves the plan, explains exceptions, hears challenges, and changes it when evidence warrants?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>There is also a learning problem. If crews inspect only properties with high scores, the next dataset contains more information about those properties and less about the rest. A low score in a poorly documented neighborhood may be unreliable; the estimated risk and the amount of evidence behind it are different things. Spending some inspection capacity to learn can improve later decisions, although it may reduce the immediate number of hazardous lines found. <strong>Active learning</strong> studies the selection of informative observations; choosing how much present capacity to devote to future learning remains a decision about costs and benefits.</p>
+<p>This is one reason a map should distinguish predicted risk from uncertainty and missing information. An uninspected property should not look as though it has been verified safe. A color-coded display can otherwise give incomplete records the authority of physical inspection.</p>
+</section>
+<section id="risk-is-not-treatment-benefit" class="level2">
+<h2 data-anchor-id="risk-is-not-treatment-benefit">Predicting risk does not tell us whom an intervention will help</h2>
+<p>A university wants to prevent students from leaving their studies. An algorithm estimates who is most likely to leave. Should the university automatically give its limited outreach places to the highest-risk students?</p>
+<p>Risk tells us what is expected under the existing conditions. The policy question asks how much outreach would change that outcome. Some high-risk students may face obstacles that a telephone call cannot address. Others with lower baseline risk may benefit substantially from timely help. Both groups may deserve support, but the most useful form of support need not be the same.</p>
+<p>Consider two hypothetical groups. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.</p>
+<div id="fig-ai-risk-is-not-benefit" class="quarto-float quarto-figure quarto-figure-center" alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ai-risk-is-not-benefit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ai-risk-is-not-benefit.svg" class="img-fluid figure-img" style="width:100.0%" alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ai-risk-is-not-benefit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;42.2: Hypothetical group-average dropout rates illustrate why baseline risk and intervention benefit can rank groups differently. The with-outreach rates require causal evidence; they cannot be inferred from the baseline forecasts alone. These values are constructed for teaching and are not findings about a student-support program.
+</figcaption>
+</figure>
+</div>
+<p>For one student, we cannot observe both outcomes at the same time: leaving after receiving outreach and leaving without it. Causal inference uses research designs and assumptions to estimate such comparisons across appropriate groups. Randomized assignment is one route; credible observational designs require other defensible assumptions (Cunningham, 2021). Machine learning can assist estimation, but predictive flexibility does not by itself establish the causal comparison.</p>
+<p>The same distinction is useful in business. A customer with a high purchase probability may buy without a discount. An offer can then reduce revenue on a purchase that would have happened anyway. Predicting purchase propensity and estimating the <strong>incremental effect</strong> of an offer answer different questions. A randomized offer test, where appropriate, helps distinguish them.</p>
+<p>Even a credible benefit estimate does not finish the allocation decision. A university may protect a minimum level of access, prioritize people facing severe disadvantage, or provide a different intervention where outreach is insufficient. Those commitments should be explicit. The figure identifies a missing causal input; it does not appoint one efficiency measure as the university’s only legitimate goal.</p>
+</section>
+<section id="ai-workbench" class="level2">
+<h2 data-anchor-id="ai-workbench">Choose an AI tool by the work it must do</h2>
+<p>“Use AI” is too broad to guide implementation. A predictive model, a language model, a retrieval system, and an optimizer can contribute different things to the same workflow. Some modern systems combine these functions. The useful distinction is the job being performed, rather than a rigid taxonomy of products.</p>
+<div id="tbl-ai-workbench" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-workbench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42.3: Select functions for a decision workflow; these tool families overlap
+</figcaption>
+<div aria-describedby="tbl-ai-workbench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Work inside the decision</th>
+<th>Possible tool</th>
+<th>Output to request</th>
+<th>Human check that matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Estimate a quantity or probability</td>
+<td>Regression, tree ensembles, neural networks</td>
+<td>Demand range, failure risk, or class probability</td>
+<td>Is it validated for these cases and this time horizon?</td>
+</tr>
+<tr class="even">
+<td>Find structure or unusual cases</td>
+<td>Clustering or anomaly detection</td>
+<td>Groups or flagged deviations</td>
+<td>Does the pattern have a useful interpretation, and could the flag be harmless?</td>
+</tr>
+<tr class="odd">
+<td>Find and organize evidence</td>
+<td>Search, retrieval, document extraction, assisted summarization</td>
+<td>Relevant passages with traceable sources</td>
+<td>Does the source actually support the claim, and what was omitted?</td>
+</tr>
+<tr class="even">
+<td>Generate and compare language</td>
+<td>A large language model</td>
+<td>Drafts, alternative explanations, questions, or a comparison table</td>
+<td>Are facts, calculations, implications, and the option set sound?</td>
+</tr>
+<tr class="odd">
+<td>Allocate resources under explicit rules</td>
+<td>Optimization, possibly using model estimates</td>
+<td>A feasible schedule or allocation</td>
+<td>Are the objective, constraints, and uncertainty acceptable?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A <strong>large language model</strong>, or LLM, learns statistical structure from language and other training material. A central training task for many LLMs is predicting subsequent tokens—pieces of text—given a context. Additional training and connected tools can support instruction following, retrieval, coding, and other tasks. A fluent answer is therefore not equivalent to a calibrated forecast about the external world. Generated facts and references can be false; asking the model to sound more certain does not validate them (Ji et al., 2023).</p>
+<p>This does not make language assistance trivial. Much organizational work consists of turning scattered information into something another person can understand and use. A useful LLM can lower that cost, provided the workflow preserves the evidence and gives someone the means to check it.</p>
+<section id="ai-customer-support" class="level3">
+<h3 data-anchor-id="ai-customer-support">Customer support: help at the moment of action</h3>
+<p>Brynjolfsson and colleagues studied a staggered rollout of a generative-AI assistant among 5,172 customer-support agents. Access increased issues resolved per hour by 15 percent on average, with substantial differences across workers. The setting matters: this was a particular company and workflow, not a universal effect for all knowledge work (Brynjolfsson et al., 2025).</p>
+<p>The assistant’s value was connected to an immediate task: helping a worker respond to a customer. Translating that idea elsewhere requires identifying what the worker needs at the moment of action. A draft that arrives too late, cannot be checked, or contradicts the organization’s obligations may save writing time while worsening the service.</p>
+</section>
+<section id="ai-masai-screening" class="level3">
+<h3 data-anchor-id="ai-masai-screening">Screening: change the workflow, then test it</h3>
+<p>The Swedish MASAI trial tested an AI-supported mammography workflow in which scores helped route examinations to one or two radiologists and supported detection. In the 2023 interim analysis of about 80,000 women, screen-reading workload fell by 44.3 percent relative to standard double reading (Lång et al., 2023).</p>
+<p>The later randomized analysis examined <strong>interval cancers</strong>: cancers diagnosed between scheduled screening rounds. Rates were 1.55 versus 1.76 per 1,000, meeting the trial’s <strong>non-inferiority</strong> criterion: ruling out worsening beyond a prespecified margin. The rate ratio was 0.88, with a 95 percent confidence interval of 0.65–1.18; this did not establish a reduction in interval cancers. The AI-supported workflow detected a larger share of cancers (<strong>sensitivity</strong>) while correctly clearing a similar share of women without cancer (<strong>specificity</strong>) (Gommers et al., 2026). These findings support a tested screening arrangement; they do not establish a mortality benefit or validate every imaging system.</p>
+<p>The lesson is practical: the intervention included a division of work, a comparison condition, and patient-relevant evaluation. It was more specific than making an algorithm available and hoping it helped.</p>
+</section>
+<section id="ai-physician-vignettes" class="level3">
+<h3 data-anchor-id="ai-physician-vignettes">A capable assistant can still fail to improve the user</h3>
+<p>In a randomized study, 50 physicians solved clinical vignettes with or without access to an LLM. Access did not significantly improve diagnostic reasoning: the adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8. The exercise did not test patient outcomes (Goh et al., 2024).</p>
+<p>A tool’s standalone performance and its effect on a person using it are different quantities. The user must recognize when to consult it, interpret its output, detect errors, and change an appropriate action. Interface design, training, time pressure, and incentives can all become part of the intervention. Their contribution has to be tested rather than assumed.</p>
+<p>Together, these cases suggest a more demanding measure of progress: <strong>Does this particular arrangement improve the work and its consequences, compared with a credible alternative?</strong></p>
+</section>
+</section>
+<section id="trust-and-responsibility" class="level2">
+<h2 data-anchor-id="trust-and-responsibility">Trust, valuation, and responsibility</h2>
+<p>People’s willingness to accept algorithmic advice depends on what the advice is for. Bigman and Gray’s experiments found reluctance to let machines make morally consequential decisions, with less aversion when machines advised rather than decided. Other experiments found that people sometimes placed more weight on advice attributed to an algorithm than on advice attributed to a person (Bigman &amp; Gray, 2018; Logg et al., 2019).</p>
+<p>These findings do not establish a universal, current public refusal to trust AI. Nor does confidence in an AI response establish its competence. The important distinction is between <strong>trust in a prediction</strong>, <strong>acceptance of a value trade-off</strong>, and <strong>recognition of legitimate authority</strong>. A resident can believe that a pipe-risk model is useful while still expecting public officials to justify whose street is excavated next.</p>
+<p>This chapter’s recommendation is that valuation and consequential final choice remain human responsibilities. People and institutions should own the objectives, constraints, trade-offs, authorization, and remedies. AI can help articulate competing values, reveal inconsistencies, estimate consequences, or summarize affected people’s expressed preferences. Predicting what people are likely to approve is different from establishing what they ought to accept.</p>
+<p>Human authority must also have substance. A reviewer who cannot inspect the relevant evidence, has no time to disagree, or is punished for overriding the system offers little protection. Responsibility belongs to those who design and control the process as well as those who use it. The previous chapter develops the danger of making the frontline operator a convenient bearer of blame without corresponding power (Elish, 2019).</p>
+<p>For a consequential decision, retain a person or authorized body who can hear reasons, approve or refuse the action, explain exceptions, and arrange review. That does not require a manager to approve every routine stock replenishment individually. People can authorize bounded automated actions under an explicit policy, while retaining responsibility for the policy, monitoring, escalation, and withdrawal of that authority. The boundary should be chosen in advance and scaled to the consequences (National Institute of Standards and Technology, 2023).</p>
+<p>The design goal is therefore accountable human control with well-tested machine assistance. It gives neither human intuition nor technical sophistication a free pass.</p>
+</section>
+<section id="test-the-whole-decision" class="level2">
+<h2 data-anchor-id="test-the-whole-decision">Test the whole decision, not just the model</h2>
+<p>Imagine receiving a report that a model is “95 percent accurate.” Before celebrating, ask what was predicted, which cases were included, and what comparison matters. If an event occurs in only 5 percent of cases, a rule that always predicts its absence is already 95 percent accurate. It may still be useless for finding the cases that require action.</p>
+<p>Evaluation should follow the decision from data to consequences. The statistical-learning approach emphasizes performance on observations that did not determine the fitted model, with validation separated from final testing (James et al., 2023). The course materials for strategic and data-driven decision-making add the managerial questions: which errors matter, what capacity exists, and who will act on the result?</p>
+<section id="make-the-test-resemble-the-task" class="level3">
+<h3 data-anchor-id="make-the-test-resemble-the-task">Make the test resemble the task</h3>
+<p>Begin with the unit and moment of decision. Are we predicting a property, a customer session, a student term, or tomorrow’s demand? Use only information available at that moment. A variable recorded after the outcome can make a model look excellent by leaking the answer into its inputs.</p>
+<p>Keep an untouched test set for the final comparison. Use the training and validation data to fit and tune the model. When future performance is the target, respect time order; when the same person or organization appears repeatedly, avoid treating their related observations as independent evidence of generalization. Apply preprocessing within the relevant training partitions. Document exclusions, missingness, source versions, and the exact model that produced the result.</p>
+<p>Compare a complex model with a credible simple rule on the same cases and under the same information constraints. A base rate, a transparent regression, or the existing procedure may be hard to beat after operating costs are included. Better-looking performance on a more favorable test does not show improvement.</p>
+</section>
+<section id="evaluate-probabilities-and-decisions-separately" class="level3">
+<h3 data-anchor-id="evaluate-probabilities-and-decisions-separately">Evaluate probabilities and decisions separately</h3>
+<p><strong>Discrimination</strong> concerns how well scores distinguish cases with different outcomes. <strong>Calibration</strong> concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event. Good ranking does not by itself establish good probabilities.</p>
+<p>Then evaluate the action rule. Count the important kinds of error, inspect subgroup performance, and apply the stated costs and capacity limits. A model with a slightly better ranking metric can still produce a worse decision if its probabilities are poorly calibrated around the action threshold. Conversely, an improvement far from any threshold may change almost no actions.</p>
+<p>Record the number of cases underlying each result and the uncertainty in estimated performance. One missed event does not disprove a 30 percent forecast, and one fortunate choice does not validate a decision policy. <a href="../chapters/15-samples-randomness-regression-and-calibration.html#calibration-makes-confidence-answerable">Chapter 15</a> develops the discipline of calibration and learning from samples.</p>
+</section>
+<section id="compare-workflows-before-scaling" class="level3">
+<h3 data-anchor-id="compare-workflows-before-scaling">Compare workflows before scaling</h3>
+<p>A practical pilot should compare the current process, a simple baseline, and the proposed AI-assisted process. A model-only comparison can be informative in a retrospective or otherwise safe evaluation even when it would not be an acceptable live policy. Measure verification time, error consequences, appropriate reliance, and outcomes—not only how quickly a draft appears.</p>
+<p>Start with a mode that lets the system produce outputs without automatically changing consequential actions when that is feasible. Then use a limited, monitored deployment; randomize or use another credible evaluation design when the question is whether the new workflow causes improvement. Prespecify what would justify expansion, revision, or stopping.</p>
+<p>The live system also changes its own evidence. A fraud review prevents some losses; outreach may prevent some departures; an excavation reveals a previously unknown pipe. Outcomes under the new policy are not a neutral test of what would have happened under the old one. Log the action as well as the prediction, and preserve the distinction between forecasting quality and policy effects.</p>
+</section>
+<section id="communicate-enough-uncertainty-to-support-a-choice" class="level3">
+<h3 data-anchor-id="communicate-enough-uncertainty-to-support-a-choice">Communicate enough uncertainty to support a choice</h3>
+<p>A useful display makes the relevant comparison visible. Show the same units and time horizon across alternatives, label the action threshold, and distinguish observations from predictions. If an interval is shown, say whether it concerns an average effect, an estimated parameter, or an individual future outcome; those are different uncertainties. Wilke’s treatment of uncertainty emphasizes that a visually precise mark can easily be mistaken for certainty (Wilke, 2019).</p>
+<p>For the city, a map should make missing inspections visible. For the event organizer, the forecast should appear beside the consequences of moving or remaining. For the university, the display should distinguish baseline dropout risk from estimated benefit of outreach. A dashboard earns its place when updated information can trigger a useful decision.</p>
+</section>
+</section>
+<section id="practice-lab-build-a-small-ai-decision-system" class="level2">
+<h2 data-anchor-id="practice-lab-build-a-small-ai-decision-system">Practice Lab: build a small AI decision system</h2>
+<p>Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases.</p>
+<section id="ai-decision-canvas" class="level3">
+<h3 data-anchor-id="ai-decision-canvas">The AI decision canvas</h3>
+<p>Complete the following canvas before selecting a product or writing a prompt. This is a practical synthesis of the chapter, not a validated assessment scale.</p>
+<div id="tbl-ai-decision-canvas" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-decision-canvas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal evidence, and responsibility distinct
+</figcaption>
+<div aria-describedby="tbl-ai-decision-canvas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>What to write before the pilot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Decision and owner</strong></td>
+<td>Who must choose what, by when, from which feasible alternatives?</td>
+</tr>
+<tr class="even">
+<td><strong>Prediction</strong></td>
+<td>What missing information would change that choice? Specify unit, target, horizon, and uncertainty.</td>
+</tr>
+<tr class="odd">
+<td><strong>Valuation</strong></td>
+<td>Whose benefits, burdens, rights, and error costs count? Which constraints are protected?</td>
+</tr>
+<tr class="even">
+<td><strong>Causal link</strong></td>
+<td>Why would the proposed action improve the outcome? What evidence is still needed?</td>
+</tr>
+<tr class="odd">
+<td><strong>Tool and baseline</strong></td>
+<td>Which function should the tool perform? What simple rule or existing process must it improve upon?</td>
+</tr>
+<tr class="even">
+<td><strong>Evidence and test</strong></td>
+<td>Which data are legitimate and available at decision time? What held-out or prospective comparison will be used?</td>
+</tr>
+<tr class="odd">
+<td><strong>Authority and exceptions</strong></td>
+<td>Who authorizes actions, checks uncertain cases, handles challenges, and can stop the system?</td>
+</tr>
+<tr class="even">
+<td><strong>Learning rule</strong></td>
+<td>What is logged, when is it reviewed, and what result triggers continuation, revision, or withdrawal?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><strong>Round 1: preserve independent judgment.</strong> Give two people the same case. Each records the available actions, a forecast, the consequences that matter, and a provisional choice before seeing model output. This uses the independence principle from <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html">Chapter 41</a>.</p>
+<p><strong>Round 2: assign the tool a bounded job.</strong> Ask for the missing estimate, a source-grounded comparison, or alternatives that the team may have omitted. If the system cannot justify a probability from an appropriate model and validation, keep its suggestions qualitative rather than inventing precision.</p>
+<p>For an LLM helping with a document-based decision, a useful instruction is:</p>
+<blockquote class="blockquote">
+<p>Using only the supplied material, make a comparison table for these alternatives. Link each factual claim to its supporting passage. Separate stated facts, assumptions, and missing information. Show which additional evidence could change the comparison. Use our stated criteria; flag any value trade-off that we have not resolved.</p>
+</blockquote>
+<p>This prompt structures a checkable output. It does not guarantee that the system will follow the instruction accurately. Verify the supporting passages and important calculations before using the table.</p>
+<p><strong>Round 3: diagnose the disagreement.</strong> When people and AI differ, classify the reason. Do they disagree about evidence, probability, values, feasibility, or authority? A model cannot settle a disagreement about priorities merely by restating its forecast. A senior person cannot refute a well-validated forecast merely by disliking its implications.</p>
+<p><strong>Round 4: record a choice and a test.</strong> Use the canvas to authorize a limited action or decide that more evidence is needed. Preserve the initial forecasts, the advice received, what was checked, and why the advice changed—or did not change—the decision. Set a review date before the outcome can rewrite the story.</p>
+<p>Debrief with one question: <strong>What became better because the tool was present, and what evidence would show that improvement?</strong> A useful answer identifies a changed part of the process and an observable consequence. “The output sounded professional” is not enough.</p>
+</section>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<p>The city at the start of this chapter does not need a machine to care about its residents. It needs better information about its pipes, a defensible replacement policy, the capacity to carry it out, and people who can answer for the result. AI can strengthen the information available to that system. Its contribution becomes valuable when the rest of the system is ready to use it.</p>
+<p>Choose one recurring decision this week. Write down the uncertain fact that matters most and the values that would turn that fact into a choice. Test whether an AI tool can improve the first, while making the second more explicit. Keep an identifiable owner and a record that later evidence can challenge.</p>
+<p>Return finally to the hiring committee that opened the book. AI might help compare applications or estimate later performance. The committee still has to define which kinds of performance matter, examine how evidence was selected and presented, hear disagreement, and justify its choice. It then needs to check what happened without letting the outcome rewrite the original reasoning. Attention, prediction, valuation, influence, design, and learning meet in that one decision.</p>
+<p>The process in <a href="01-how-decisions-should-be-made-and-how-they-actually-are.html#fig-normative-decision-loop" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> gives us a common reference from the first chapter to the last. We can now ask which parts a tool improves, which judgments people must own, and what feedback would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.</p>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Abernethy, J., Chojnacki, A., Farahi, A., Schwartz, E., &amp; Webb, J. (2018). ActiveRemediation: The search for lead pipes in Flint, Michigan. In <em>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</em>. https://doi.org/10.1145/3219819.3219896</p>
+</div>
+<div class="reference">
+<p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2018). <em>Prediction machines: The simple economics of artificial intelligence</em>. Harvard Business Review Press.</p>
+</div>
+<div class="reference">
+<p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2019). Prediction, judgment, and complexity: A theory of decision-making and artificial intelligence. In A. Agrawal, J. Gans, &amp; A. Goldfarb (Eds.), <em>The economics of artificial intelligence: An agenda</em> (pp.&nbsp;89–110). University of Chicago Press.</p>
+</div>
+<div class="reference">
+<p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2022a). <em>Power and prediction: The disruptive economics of artificial intelligence</em>. Harvard Business Review Press. https://store.hbr.org/product/power-and-prediction-the-disruptive-economics-of-artificial-intelligence/10580</p>
+</div>
+<div class="reference">
+<p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2022b). <em>Prediction machines: The simple economics of artificial intelligence</em> (Updated and expanded ed.). Harvard Business Review Press. https://store.hbr.org/product/prediction-machines-updated-and-expanded-the-simple-economics-of-artificial-intelligence/10598</p>
+</div>
+<div class="reference">
+<p>Bigman, Y. E., &amp; Gray, K. (2018). People are averse to machines making moral decisions. <em>Cognition, 181</em>, 21–34. https://doi.org/10.1016/j.cognition.2018.08.003</p>
+</div>
+<div class="reference">
+<p>Brynjolfsson, E., Li, D., &amp; Raymond, L. (2025). Generative AI at work. <em>The Quarterly Journal of Economics, 140</em>(2), 889–942. https://doi.org/10.1093/qje/qjae044</p>
+</div>
+<div class="reference">
+<p>Cunningham, S. (2021). <em>Causal inference: The mixtape</em>. Yale University Press.</p>
+</div>
+<div class="reference">
+<p>Elish, M. C. (2019). Moral crumple zones: Cautionary tales in human-robot interaction. Engaging Science, Technology, and Society, 5, 40–60.</p>
+</div>
+<div class="reference">
+<p>Goh, E., Gallo, R., Hom, J., Strong, E., Weng, Y., Kerman, H., Cool, J. A., Kanjee, Z., Parsons, A. S., Ahuja, N., Horvitz, E., Yang, D., Milstein, A., Olson, A. P. J., Rodman, A., &amp; Chen, J. H. (2024). Large language model influence on diagnostic reasoning: A randomized clinical trial. <em>JAMA Network Open, 7</em>(10), e2440969. https://doi.org/10.1001/jamanetworkopen.2024.40969</p>
+</div>
+<div class="reference">
+<p>Gommers, J., Hernström, V., Josefsson, V., Sartor, H., Schmidt, D., Hjelmgren, A., Larsson, A.-M., Hofvind, S., Andersson, I., Rosso, A., Hagberg, O., &amp; Lång, K. (2026). Interval cancer, sensitivity, and specificity comparing AI-supported mammography screening with standard double reading without AI in the MASAI study: A randomised, controlled, non-inferiority, single-blinded, population-based, screening-accuracy trial. <em>The Lancet, 407</em>(10527), 505–514. https://doi.org/10.1016/S0140-6736(25)02464-X</p>
+</div>
+<div class="reference">
+<p>James, G., Witten, D., Hastie, T., Tibshirani, R., &amp; Taylor, J. (2023). <em>An introduction to statistical learning: With applications in Python</em>. Springer. https://doi.org/10.1007/978-3-031-38747-0</p>
+</div>
+<div class="reference">
+<p>Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A., &amp; Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), Article 248. https://doi.org/10.1145/3571730</p>
+</div>
+<div class="reference">
+<p>Lång, K., Josefsson, V., Larsson, A.-M., Larsson, S., Högberg, C., Sartor, H., Hofvind, S., Andersson, I., &amp; Rosso, A. (2023). Artificial intelligence-supported screen reading versus standard double reading in the Mammography Screening with Artificial Intelligence trial (MASAI): A clinical safety analysis of a randomised, controlled, non-inferiority, single-blinded, screening accuracy study. <em>The Lancet Oncology, 24</em>(8), 936–944. https://doi.org/10.1016/S1470-2045(23)00298-X</p>
+</div>
+<div class="reference">
+<p>Logg, J. M., Minson, J. A., &amp; Moore, D. A. (2019). Algorithm appreciation: People prefer algorithmic to human judgment. <em>Organizational Behavior and Human Decision Processes, 151</em>, 90–103. https://doi.org/10.1016/j.obhdp.2018.12.005</p>
+</div>
+<div class="reference">
+<p>National Institute of Standards and Technology. (2023). Artificial intelligence risk management framework (AI RMF 1.0) (NIST AI 100-1). U.S. Department of Commerce. https://doi.org/10.6028/NIST.AI.100-1</p>
+</div>
+<div class="reference">
+<p>Obermeyer, Z., Powers, B., Vogeli, C., &amp; Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453.</p>
+</div>
+<div class="reference">
+<p>Stanford Institute for Human-Centered Artificial Intelligence. (2025). <em>The 2025 AI Index report</em> [Report overview]. Stanford University. https://hai.stanford.edu/ai-index/2025-ai-index-report</p>
+</div>
+<div class="reference">
+<p>Webb, J., Abernethy, J., &amp; Schwartz, E. (2020, February 12). <em>Getting the lead out: Data science and water service lines in Flint</em>. Author report. https://storage.googleapis.com/flint-storage-bucket/d4gx_2019%20%282%29.pdf</p>
+</div>
+<div class="reference">
+<p>Wilke, C. O. (2019). <em>Fundamentals of data visualization</em>. O’Reilly Media. https://clauswilke.com/dataviz/</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="pagination-link" aria-label="Decision Hygiene: Build a Process That Can Learn">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="pagination-link" aria-label="Rational Choice and Decision Analysis">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/42-data-driven-decision-making.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/42-data-driven-decision-making.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
