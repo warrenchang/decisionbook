@@ -13,10 +13,14 @@ aliases:
 > — Amos Tversky and Daniel Kahneman, [“Belief in the Law of Small Numbers”](https://doi.org/10.1037/h0031322), 1971, p. 105
 :::
 
+A branch manager arrives after the worst quarter in the company’s history. Three months later, sales have recovered and headquarters praises the rescue. Perhaps the manager changed something that mattered. But a branch selected because it had an exceptionally bad quarter may also improve when temporary setbacks pass. How much of the recovery should count as evidence of good management?
+
+The same question appears in smaller decisions: whether two successful hires validate an interview method, whether a winning streak reveals skill, or whether a missed deadline was foreseeable. We need to learn what variation alone can produce before deciding what a striking result means.
+
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Once events and denominators are defined, a pattern can still look more informative than it is. But small samples produce volatile estimates, random processes create streaks and clusters, extreme observations often move toward the average, and confidence can outrun the evidence that produced it. Therefore, this chapter models expected variation, distinguishes randomness from dependence or real change, and uses outside views plus recorded probabilistic forecasts to make confidence learn from outcomes.
+A striking result becomes useful evidence when we compare it with what the underlying process could produce by chance. Small samples and the selection of extreme cases can exaggerate apparent differences; repeated, recorded forecasts help us discover whether our confidence is deserved.
 :::
 
 ## Learning goals
@@ -24,12 +28,6 @@ Once events and denominators are defined, a pattern can still look more informat
 - Explain why small samples, streaks, and clusters can look more informative than they are.
 - Diagnose regression to the mean without dismissing real change or causal effects.
 - Distinguish overestimation, overplacement, and overprecision, then record and score forecasts for calibration and resolution.
-
-::: {.callout-note .loop-location icon=false}
-## Where this chapter enters the loop
-
-Sampling shapes **Predict**; calibration closes the path through **Learn**. The chapter asks whether an apparent pattern exceeds expected noise and whether repeated forecasts deserve their stated confidence.
-:::
 
 ## Which sequence looks random?
 
@@ -53,7 +51,7 @@ Randomness is clumpier than intuition expects. When many sequences, people, scho
 
 ## Small samples swing widely
 
-People often expect a small sample to resemble its population too closely, a tendency Tversky and Kahneman (1971) called belief in the **law of small numbers**. Three successful hires seem to validate an interview method. Two product failures condemn a market. A fund manager's two strong years reveal skill. A student's two weak performances become a trait.
+People often expect a small sample to resemble its population too closely, a tendency Tversky and Kahneman (1971) called belief in the **law of small numbers**. After three successful hires, an interview panel may feel it has found a reliable method. Yet three outcomes can change dramatically with the next appointment, especially if applicants and jobs vary. The question is how much confidence that sample can support.
 
 For an independent Bernoulli event with probability $p$, the standard error of the sample proportion is
 
@@ -63,7 +61,7 @@ $$
 
 When $p=0.5$, the standard error is about 0.158 for $n=10$ and 0.050 for $n=100$. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.
 
-Selection magnifies the problem. Public success stories omit quiet failures. A fund appears in a ranking because it has just performed unusually well. A hospital is investigated because its rate was extreme. An employee receives attention after an unusually bad month. If cases enter analysis because the outcome was striking, ordinary sampling variation has already helped select them.
+Selection magnifies the problem. The branch reached headquarters’ agenda because its quarter was unusually bad, just as a fund enters a performance ranking because its returns were unusually good. In both cases, temporary variation has helped select the evidence we are about to explain.
 
 The correction is not “wait for a large sample” in every setting. Some decisions cannot wait and some populations are inherently small. Report uncertainty, pool comparable evidence cautiously, use hierarchical or shrinkage estimates where appropriate, and identify which conclusion depends on one or two observations. A small sample can provide information; it cannot provide the stability of a large one by force of narrative.
 
@@ -80,11 +78,9 @@ Gilovich, Vallone, and Tversky (1985) famously argued that observers saw more ho
 3. Did opportunities, difficulty, strategy, or selection change during the run?
 4. Does the pattern replicate with a statistic suited to the sampling process?
 
-A salesperson may improve through learning, encounter a favorable cluster of clients, or change which prospects are attempted. A stock can rise for several days because of common news, momentum trading, or chance. The appearance of a run identifies a question, not its answer.
-
 ## Clusters and the search for causes
 
-Clusters are expected whenever many units are compared. Some schools will have unusually high scores, some neighborhoods unusually many cases, and some experiments unusually small $p$-values even if units differ only through noise. The more patterns searched, the more striking the best one can appear (Nickerson, 2002).
+Searching more units, periods, or subgroups gives chance more opportunities to produce an impressive cluster (Nickerson, 2002).
 
 This does not make clusters meaningless. A disease cluster may reveal a local exposure; a manufacturing cluster may reveal a faulty machine; a set of related forecast errors may reveal a missing variable. The test needs a denominator that includes the number of units, periods, outcomes, subgroups, and models searched. It also needs a mechanism or independent replication that was not selected by the same extreme pattern.
 
@@ -118,7 +114,7 @@ Regression does not show that an intervention had no effect. It shows why before
 
 ![A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$. Regression describes conditional averages; an individual outcome need not reverse, and before–after movement does not identify an intervention effect.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average. A note says individual outcomes may move either way and intervention effects need a counterfactual." width=100%}
 
-The same logic belongs in organizational review. A manager sent to rescue the worst-performing branch may appear successful even if every extreme branch would have partly recovered. A newly celebrated fund may disappoint even if the manager remains skilled. Evaluation should ask what would have happened to comparable units without the intervention.
+Return to the branch manager. The recovery is real, but attributing all of it to the rescue plan would confuse improvement with evidence of its cause. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
 
 ## Confidence must face a distribution
 
@@ -128,7 +124,7 @@ Confidence is not one quantity. Moore and Healy (2008) distinguish three pattern
 - **Overplacement:** believing one ranks above other people.
 - **Overprecision:** expressing more certainty than the evidence supports.
 
-The distinctions matter because the correction differs. Overestimation needs an external performance measure. Overplacement needs a defined comparison group and common scale. Overprecision needs intervals or probabilities checked against repeated outcomes. Asking a confident person to “think harder” supplies none of these comparisons.
+Each requires a different comparison, as @tbl-confidence-calibration shows. Asking a confident person to “think harder” supplies none of them.
 
 The familiar Dunning–Kruger pattern requires the same discipline. Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. But a quartile plot alone does not identify that mechanism. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
 
@@ -144,7 +140,7 @@ Suppose a city team proposes an 18-month rail-project schedule. Before hearing w
 | Planning fallacy | Inside plan versus comparable completed cases | Start from the reference-class distribution; justify each adjustment. |
 : Different confidence problems require different feedback {#tbl-confidence-calibration}
 
-::: {.callout-note .research-lens icon=false}
+::: {.callout-note .research-lens icon=false collapse=true}
 ## Research Lens: information protocols change probability puzzles
 
 Monty Hall and the two-child problem are useful only when the information protocol is explicit. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Switching then wins with probability $2/3$ (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: **How was this information generated?**
@@ -187,7 +183,7 @@ A project team assigns 15 percent to supplier delay, 10 percent to regulatory de
 
 The team should draw an event tree or build a small simulation with conditional pathways, then compare the combined estimate with the empirical delay rate for similar projects. The inside model explains mechanisms; the outside view checks whether the combined answer is plausible. If the inside model gives 18 percent while comparable projects miss the date 55 percent of the time, the discrepancy is evidence. It requires investigation, not automatic rejection of the base rate.
 
-Record one forecast for the final date and separate forecasts for leading mechanisms. Update only when specified evidence arrives. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. One project cannot establish calibration, but it can begin the ledger.
+Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. One project cannot establish calibration, but it can begin the ledger.
 
 ::: {.callout-caution .evidence-boundary icon=false}
 ## Evidence Boundary
@@ -201,9 +197,7 @@ Choose one event that will resolve within four weeks. Produce a complete forecas
 
 ## Take it forward
 
-- **Use this when:** a short run, extreme case, or striking cluster is being treated as a stable pattern.
-- **Do not infer:** that randomness must alternate, that regression rules out treatment effects, or that one correct forecast proves calibration.
-- **Try this next:** specify the data-generating process, begin with an outside-view distribution, predict an observation not used to find the pattern, and keep a scored forecast ledger.
+The next time a spectacular success or failure reaches the meeting agenda, ask what led that case to be selected and what a comparable case would be expected to do next. Then write down the prediction before the next quarter arrives. That simple record gives the organization a chance to learn something more durable than a story about its latest result.
 
 ## References cited in this chapter
 

@@ -1,72 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">When price becomes evidence about price</title>
-  <desc id="desc">A speculative feedback loop connects price increases, attention and extrapolative expectations, demand and strategic resale, and leverage and liquidity. Fundamentals feed price separately. Elastic supply, short selling, risk limits, and skeptical capital can brake the loop, but synchronization and funding risk can delay correction.</desc>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#b95f2d"/></marker>
-    <marker id="blueArrow" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#25678f"/></marker>
-    <marker id="brake" viewBox="0 0 10 8" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#447c55"/></marker>
-    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#183047" flood-opacity="0.12"/></filter>
-  </defs>
-  <rect width="1200" height="760" fill="#ffffff"/>
-  <text x="600" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#183047">When price becomes evidence about price</text>
-  <text x="600" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">A genuine fundamental improvement can begin a boom; feedback can then make the path fragile.</text>
-
-  <g font-family="Arial, sans-serif" filter="url(#shadow)">
-    <rect x="45" y="170" width="225" height="130" rx="18" fill="#eaf3f8" stroke="#25678f" stroke-width="3"/>
-    <text x="157" y="212" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">FUNDAMENTALS</text>
-    <text x="157" y="246" text-anchor="middle" font-size="16" fill="#607080">cash flows • scarcity</text>
-    <text x="157" y="272" text-anchor="middle" font-size="16" fill="#607080">risk • discount rates</text>
-
-    <rect x="430" y="135" width="300" height="115" rx="20" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
-    <text x="580" y="179" text-anchor="middle" font-size="24" font-weight="700" fill="#183047">PRICE INCREASE</text>
-    <text x="580" y="213" text-anchor="middle" font-size="17" fill="#607080">observable success</text>
-
-    <rect x="805" y="245" width="315" height="125" rx="20" fill="#f7f1e8" stroke="#b95f2d" stroke-width="3"/>
-    <text x="962" y="287" text-anchor="middle" font-size="21" font-weight="700" fill="#183047">ATTENTION + EXPECTATIONS</text>
-    <text x="962" y="322" text-anchor="middle" font-size="16" fill="#607080">recent return predicts return</text>
-    <text x="962" y="348" text-anchor="middle" font-size="16" fill="#607080">stories and social transmission</text>
-
-    <rect x="660" y="470" width="315" height="125" rx="20" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
-    <text x="817" y="512" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">DEMAND + RESALE</text>
-    <text x="817" y="547" text-anchor="middle" font-size="16" fill="#607080">buy now to sell higher later</text>
-    <text x="817" y="573" text-anchor="middle" font-size="16" fill="#607080">entry • momentum • FOMO</text>
-
-    <rect x="285" y="470" width="315" height="125" rx="20" fill="#f7f1e8" stroke="#b95f2d" stroke-width="3"/>
-    <text x="442" y="512" text-anchor="middle" font-size="22" font-weight="700" fill="#183047">LEVERAGE + LIQUIDITY</text>
-    <text x="442" y="547" text-anchor="middle" font-size="16" fill="#607080">collateral expands purchasing</text>
-    <text x="442" y="573" text-anchor="middle" font-size="16" fill="#607080">cash amplifies demand</text>
-  </g>
-
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Independent evidence from fundamentals enters the left side of price. -->
-    <path d="M270 218 C330 211 377 190 427 177" stroke="#25678f" stroke-width="5" marker-end="url(#blueArrow)"/>
-    <!-- The speculative loop enters price separately from below. -->
-    <path d="M730 190 C810 185 875 210 911 243" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-    <path d="M1000 370 C1000 415 938 455 893 468" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-    <line x1="660" y1="533" x2="603" y2="533" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-    <path d="M392 470 C346 395 372 292 508 252" stroke="#b95f2d" stroke-width="5" marker-end="url(#arrow)"/>
-  </g>
-
-  <text x="645" y="354" text-anchor="middle" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#b95f2d">REINFORCING</text>
-  <text x="645" y="388" text-anchor="middle" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#b95f2d">FEEDBACK</text>
-  <text x="645" y="421" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#607080">temporarily self-validating</text>
-
-  <g font-family="Arial, sans-serif" filter="url(#shadow)">
-    <rect x="80" y="650" width="1040" height="72" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="3"/>
-    <text x="160" y="680" font-size="18" font-weight="700" fill="#183047">BRAKES</text>
-    <text x="160" y="705" font-size="16" fill="#607080">can be delayed</text>
-    <rect x="260" y="665" width="180" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
-    <text x="350" y="692" text-anchor="middle" font-size="16" fill="#183047">Elastic supply</text>
-    <rect x="465" y="665" width="180" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
-    <text x="555" y="692" text-anchor="middle" font-size="16" fill="#183047">Short selling</text>
-    <rect x="670" y="665" width="180" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
-    <text x="760" y="692" text-anchor="middle" font-size="16" fill="#183047">Risk limits</text>
-    <rect x="875" y="665" width="205" height="42" rx="12" fill="#ffffff" stroke="#447c55" stroke-width="2"/>
-    <text x="977" y="692" text-anchor="middle" font-size="16" fill="#183047">Skeptical capital</text>
-  </g>
-
-  <path d="M555 665 C550 635 520 618 500 597" fill="none" stroke="#447c55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#brake)"/>
-  <path d="M760 665 C770 635 795 620 805 598" fill="none" stroke="#447c55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#brake)"/>
-  <text x="600" y="744" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#607080">Funding, shorting, model, and synchronization risk can weaken the brakes before correction.</text>
+<title id="title">When price becomes evidence about price</title>
+<desc id="desc">A possible reinforcing loop links rising prices, expectations of further gains, and more buying. Fundamentals influence price separately. Financing can amplify buying but is not a required stage. Supply, short selling, and durable skeptical capital can weaken the feedback.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#b95f2d"/></marker><marker id="blue" viewBox="0 0 10 10" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#25678f"/></marker></defs>
+<rect width="1200" height="760" fill="white"/>
+<text x="600" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#183047" font-weight="700">When price becomes evidence about price</text>
+<text x="600" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#607080">A possible feedback loop; genuine improvements in value can also raise prices.</text>
+<rect x="440" y="130" width="320" height="120" rx="18" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
+<text x="600" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#183047" font-weight="700">RISING PRICES</text>
+<text x="600" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">The recent gain attracts attention</text>
+<rect x="820" y="300" width="320" height="120" rx="18" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
+<text x="980" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#183047" font-weight="700">EXPECTING MORE GAINS</text>
+<text x="980" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">Buyers extrapolate or plan to resell</text>
+<rect x="440" y="480" width="320" height="120" rx="18" fill="#fff0e9" stroke="#b95f2d" stroke-width="3"/>
+<text x="600" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#183047" font-weight="700">MORE BUYING</text>
+<text x="600" y="562" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">Demand can push the price up</text>
+<rect x="40" y="145" width="265" height="120" rx="18" fill="#eaf3f8" stroke="#25678f" stroke-width="3"/>
+<text x="172" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#183047" font-weight="700">FUNDAMENTALS</text>
+<text x="172" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#607080">Cash flows and scarcity</text>
+<text x="172" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#607080">Risk and discount rates</text>
+<rect x="40" y="480" width="265" height="120" rx="18" fill="#eaf3f8" stroke="#25678f" stroke-width="3"/>
+<text x="172" y="518" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#183047" font-weight="700">FINANCING</text>
+<text x="172" y="551" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#607080">Credit or cash can</text>
+<text x="172" y="577" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#607080">amplify buying</text>
+<g fill="none" stroke-width="5" stroke-linecap="round">
+<path d="M760 190 C965 190 980 245 980 297" stroke="#b95f2d" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M980 420 C980 540 845 540 763 540" stroke="#b95f2d" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M440 540 C325 510 320 302 477 252" stroke="#b95f2d" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M305 203 L437 191" stroke="#25678f" stroke-width="4" marker-end="url(#blue)"/>
+<path d="M305 571 C355 639 461 650 536 603" stroke="#25678f" stroke-width="4" stroke-dasharray="8 7" marker-end="url(#blue)"/>
+</g>
+<text x="602" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#b95f2d" font-weight="700">REINFORCING</text>
+<text x="602" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#b95f2d" font-weight="700">FEEDBACK</text>
+<rect x="70" y="665" width="1060" height="67" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="3"/>
+<text x="600" y="693" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#183047" font-weight="700">Possible brakes: more supply · short selling · risk limits · skeptical capital</text>
+<text x="600" y="721" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#607080">Correction can be delayed by funding constraints and uncertainty about when others will act.</text>
 </svg>

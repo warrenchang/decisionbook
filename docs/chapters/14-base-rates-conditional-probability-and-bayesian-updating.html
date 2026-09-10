@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2df1c134e8a8f9a6c8318e4ae69a9baa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aeb761aecd5c5ae153118da15ab1f1a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -559,6 +559,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#worked-update-the-same-screen-in-two-applicant-pools" id="toc-worked-update-the-same-screen-in-two-applicant-pools" class="nav-link" data-scroll-target="#worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</a></li>
   <li><a href="#probability-begins-with-a-model" id="toc-probability-begins-with-a-model" class="nav-link" data-scroll-target="#probability-begins-with-a-model">Probability begins with a model</a>
   <ul class="collapse">
   <li><a href="#complement-preserve-the-event-boundary" id="toc-complement-preserve-the-event-boundary" class="nav-link" data-scroll-target="#complement-preserve-the-event-boundary">Complement: preserve the event boundary</a></li>
@@ -567,10 +568,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#conditional-direction-matters" id="toc-conditional-direction-matters" class="nav-link" data-scroll-target="#conditional-direction-matters">Conditional direction matters</a></li>
   <li><a href="#bayes-rule-restores-the-alternatives" id="toc-bayes-rule-restores-the-alternatives" class="nav-link" data-scroll-target="#bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</a></li>
-  <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a>
-  <ul class="collapse">
-  <li><a href="#worked-update-the-same-screen-in-two-applicant-pools" id="toc-worked-update-the-same-screen-in-two-applicant-pools" class="nav-link" data-scroll-target="#worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</a></li>
-  </ul></li>
+  <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a></li>
   <li><a href="#reference-classes-are-judgment-calls" id="toc-reference-classes-are-judgment-calls" class="nav-link" data-scroll-target="#reference-classes-are-judgment-calls">Reference classes are judgment calls</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
@@ -607,6 +605,8 @@ window.Quarto = {
 <p>— Thomas Bayes, <a href="https://doi.org/10.1098/rstl.1763.0053">“An Essay towards Solving a Problem in the Doctrine of Chances”</a>, 1763, p.&nbsp;376</p>
 </blockquote>
 </div>
+<p>A candidate passes a screening test that is described as “80 percent accurate.” How confident should the hiring committee be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of <em>what</em>? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?</p>
+<p>The committee’s target is <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span>. A report may instead provide <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span>. Those quantities reverse the conditioning and use different denominators. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -617,7 +617,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Probability questions often arrive as persuasive stories, test results, or striking pieces of evidence. But no number can be interpreted safely when the event, denominator, reference class, or competing hypothesis has shifted, and the probability of evidence given a hypothesis is not the probability of the hypothesis given the evidence. Therefore, this chapter uses sets, natural frequencies, and Bayesian updating to keep the question stable and measure how well evidence distinguishes alternatives.</p>
+<p>A positive screen can come from someone who meets the standard or someone who does not. To interpret the result, count both routes in the relevant population. Bayes’ rule organizes this comparison, while its usefulness depends on the evidence and assumptions supplied to it.</p>
 </div>
 </div>
 <section id="learning-goals" class="level2">
@@ -627,25 +627,21 @@ window.Quarto = {
 <li>Translate a Bayesian update into natural frequencies and select defensible reference classes.</li>
 <li>Diagnose base-rate neglect, reversed conditionals, conjunction errors, and information dilution.</li>
 </ul>
-<div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Where this chapter enters the loop
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Probability disciplines <strong>Predict</strong>. It turns “this story feels likely” into defined events, comparable hypotheses, explicit denominators, and updates that remain answerable to evidence.</p>
-</div>
-</div>
-<p>A candidate passes a screening test that is described as “80 percent accurate.” How confident should the hiring committee be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of <em>what</em>? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?</p>
-<p>The committee’s target is <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span>. A report may instead provide <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span>. Those quantities reverse the conditioning and use different denominators. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.</p>
+</section>
+<section id="worked-update-the-same-screen-in-two-applicant-pools" class="level2">
+<h2 data-anchor-id="worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</h2>
+<p>Return to the hiring screen. Suppose, for teaching purposes, that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:</p>
+<ul>
+<li>2,000 would meet the standard; 1,600 pass the screen.</li>
+<li>8,000 would not; 2,400 nevertheless pass.</li>
+<li>Of 4,000 positive screens, 1,600 are true positives.</li>
+</ul>
+<p>Under those assumptions, <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40\)</span>. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
+<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. If its sensitivity and false-positive rate transport unchanged, then among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the posterior is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot travel on its own: the receiving population and the transportability of both error rates are part of its meaning.</p>
 </section>
 <section id="probability-begins-with-a-model" class="level2">
 <h2 data-anchor-id="probability-begins-with-a-model">Probability begins with a model</h2>
-<p>A <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> lists the elementary outcomes allowed by a model. An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of those outcomes. A probability measure assigns numbers satisfying</p>
+<p>The screen example works by dividing a common population into cases. Probability notation makes the same logic available for other decisions. A <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> lists the elementary outcomes allowed by a model. An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of those outcomes. A probability measure assigns numbers satisfying</p>
 <p><span class="math display">\[
 0\le P(A)\le 1, \qquad P(\Omega)=1,
 \]</span></p>
@@ -697,22 +693,12 @@ P(A\mid B)=
 \frac{P(B\mid A)P(A)}
 {P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}.
 \]</span></p>
-<p>The prior <span class="math inline">\(P(A)\)</span> gives the starting prevalence. The likelihood <span class="math inline">\(P(B\mid A)\)</span> asks how compatible the evidence is with <span class="math inline">\(A\)</span>. The competing likelihood <span class="math inline">\(P(B\mid A^c)\)</span> asks how often the same evidence appears without <span class="math inline">\(A\)</span>. The posterior is the updated belief (Bayes, 1763).</p>
+<p>The <strong>prior</strong> <span class="math inline">\(P(A)\)</span> gives the starting probability, which is a prevalence in this screening example. The <strong>likelihood</strong> <span class="math inline">\(P(B\mid A)\)</span> asks how probable the evidence would be if <span class="math inline">\(A\)</span> held. The competing likelihood <span class="math inline">\(P(B\mid A^c)\)</span> asks how often the same evidence appears without <span class="math inline">\(A\)</span>. The <strong>posterior</strong> is the probability after incorporating the evidence (Bayes, 1763).</p>
 <p>Bayes’ rule cannot rescue a poor hypothesis set. Missing alternatives, selected samples, changing environments, weak measurements, and uncertain parameters remain problems. A posterior is precise only conditional on the model and inputs that produced it.</p>
-<div id="fig-probability-judgment-map" class="quarto-float quarto-figure quarto-figure-center" alt="Three-panel diagram. Panel one gives complement, AND, and OR probability rules. Panel two follows 10,000 people through a one-percent disease base rate, ninety-percent sensitivity, and nine-percent false-positive rate to show 90 true positives and 891 false positives, so 90 of 981 positive tests are true positives. Panel three shows a cycle from a numerical forecast to an observed outcome, a Brier score, and an updated forecast.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/probability-judgment-map.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three-panel diagram. Panel one gives complement, AND, and OR probability rules. Panel two follows 10,000 people through a one-percent disease base rate, ninety-percent sensitivity, and nine-percent false-positive rate to show 90 true positives and 891 false positives, so 90 of 981 positive tests are true positives. Panel three shows a cycle from a numerical forecast to an observed outcome, a Brier score, and an updated forecast.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.1: Probability judgment preserves three structures: coherent event rules, a natural-frequency denominator for Bayesian updating, and a forecast–score–update feedback loop.
-</figcaption>
-</figure>
-</div>
 </section>
 <section id="natural-frequencies-make-bayes-visible" class="level2">
 <h2 data-anchor-id="natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</h2>
-<p>Suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that is <span class="math inline">\(P(+\mid D)\)</span> rather than <span class="math inline">\(P(D\mid +)\)</span>.</p>
+<p>For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that is <span class="math inline">\(P(+\mid D)\)</span> rather than <span class="math inline">\(P(D\mid +)\)</span>.</p>
 <p>Imagine 10,000 people:</p>
 <ul>
 <li>100 have the disease; 90 test positive.</li>
@@ -723,18 +709,17 @@ Figure&nbsp;14.1: Probability judgment preserves three structures: coherent even
 <p><span class="math display">\[
 P(D\mid +)=\frac{90}{90+891}=\frac{90}{981}\approx 0.0917.
 \]</span></p>
+<div id="fig-probability-judgment-map" class="quarto-float quarto-figure quarto-figure-center" alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/probability-judgment-map.svg" class="img-fluid figure-img" style="width:100.0%" alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14.1: A positive result can come from either group. In this hypothetical population, the much larger group without disease supplies most of the positive tests.
+</figcaption>
+</figure>
+</div>
 <p>Natural frequencies preserve the nested sets and denominator, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer &amp; Hoffrage, 1995). They do not solve measurement error or transportability; they make the assumed structure visible.</p>
-<section id="worked-update-the-same-screen-in-two-applicant-pools" class="level3">
-<h3 data-anchor-id="worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</h3>
-<p>Return to the hiring screen. Suppose, for teaching purposes, that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:</p>
-<ul>
-<li>2,000 would meet the standard; 1,600 pass the screen.</li>
-<li>8,000 would not; 2,400 nevertheless pass.</li>
-<li>Of 4,000 positive screens, 1,600 are true positives.</li>
-</ul>
-<p>Under those assumptions, <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40\)</span>. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
-<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. If its sensitivity and false-positive rate transport unchanged, then among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the posterior is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot travel on its own: the receiving population and the transportability of both error rates are part of its meaning.</p>
-</section>
 </section>
 <section id="reference-classes-are-judgment-calls" class="level2">
 <h2 data-anchor-id="reference-classes-are-judgment-calls">Reference classes are judgment calls</h2>
@@ -779,19 +764,6 @@ P(A\cap B)\le P(A), \qquad P(A\cup B)\ge P(A).
 <p>A complete answer names the conditioning event, denominator, relevant overlap or alternative, and at least one assumption about how the evidence was generated.</p>
 </div>
 </div>
-<div class="evidence-boundary callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence Boundary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A Bayesian posterior is conditional on its prior, likelihoods, measurement, hypothesis set, and sampling process. It does not turn a contestable reference class into an objective fact or a predictive association into a causal effect.</p>
-</div>
-</div>
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
@@ -799,11 +771,7 @@ P(A\cap B)\le P(A), \qquad P(A\cup B)\ge P(A).
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<ul>
-<li><strong>Use this when:</strong> a test result, vivid detail, or “accuracy” statistic is being treated as a posterior probability.</li>
-<li><strong>Do not infer:</strong> that the reverse conditional is equal, that a narrow reference class is automatically better, or that a precise posterior proves causation.</li>
-<li><strong>Try this next:</strong> put every case into one shared denominator and ask how often the evidence appears under the leading alternative.</li>
-</ul>
+<p>The committee can now replace “the screen is 80 percent accurate” with a meaningful account: who was screened, how often each kind of applicant passed, and what a positive result implies in this pool. Before using a striking percentage, identify its denominator and the alternative route by which the same evidence could appear.</p>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>

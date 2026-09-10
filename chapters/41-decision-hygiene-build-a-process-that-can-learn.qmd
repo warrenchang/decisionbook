@@ -5,6 +5,10 @@ aliases:
 
 # Decision Hygiene: Build a Process That Can Learn
 
+::: {.content-visible unless-format="epub"}
+[]{#decision-hygiene-build-a-process-that-can-learn}
+:::
+
 *Notice, test, ask, design, and learn*
 
 ::: {.chapter-epigraph}
@@ -13,10 +17,16 @@ aliases:
 > — Daniel Kahneman and Gary Klein, [“Conditions for Intuitive Expertise”](https://doi.org/10.1037/a0016755), 2009, p. 515
 :::
 
+A hiring committee is ready to compare candidates when its chair says, “I was very impressed by the first applicant.” Several members had doubts about the work sample, but the conversation now begins with reasons to share the chair’s enthusiasm. The committee eventually agrees. Six months later, the appointee struggles, and everyone remembers having warned about the risk.
+
+The problem spans two meetings: one in which judgments became correlated before the evidence was compared, and another in which memory rewrote the earlier uncertainty. Recognizing bias is useful, but the committee also needs a procedure that preserves independent views and a record that later events cannot silently change.
+
+This final chapter brings the book’s tools together around that task: making consequential decisions easier to inspect and learn from.
+
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Every decision in this book has moved through a causal loop: **context and information → notice and interpret → construct options → predict → value → choose, commit, and act → observe and learn**. But intelligent, well-intentioned people still repeat failure when evidence is not independent, assumptions remain hidden, disagreement is unsafe, alternatives are thin, influence escapes ethical scrutiny, or hindsight corrupts feedback. Therefore decision hygiene closes the loop by designing a repeatable process that protects judgment before choice and turns outcomes into evidence for calibrated revision rather than a convenient story.
+Protect judgment before the answer becomes obvious: define the criteria, gather independent assessments, examine disagreement, and record what is expected. Afterward, compare the outcome with that original record. The process should help people revise what the evidence challenges while recognizing what one result cannot tell them.
 :::
 
 ## Learning goals
@@ -25,23 +35,11 @@ Every decision in this book has moved through a causal loop: **context and infor
 - Protect independent evidence, structured disagreement, and accountable use of models or AI.
 - Review forecasts, process, fairness, and outcomes without confusing luck with quality.
 
-::: {.callout-note .loop-location icon=false}
-## Where this chapter enters the loop
-
-Decision hygiene redesigns the whole loop and the feedback that sustains it. It turns the book's mechanisms into a repeatable organizational process: notice, test, ask, design, and learn.
-:::
-
 ::: {.callout-important .the-final-standard icon=false}
 ## The final standard
 
 A useful intervention should remain defensible if the people affected understand how it works, whose objective it serves, what evidence supports it, and how they can refuse or revise it.
 :::
-
-Return to the hiring decision used throughout the book. A committee must choose one candidate for a consequential role. One résumé arrives through a trusted colleague. A confident interviewer speaks first. The job criteria are broad, the base rate for success is unclear, and the committee will later know only how the selected candidate performed—not how the rejected candidates would have done. Intelligence and goodwill cannot remove this structure. The decision needs a process that protects evidence before discussion and learning after the outcome.
-
-By the end of this book, a familiar temptation appears: make a list of biases, promise to remember them, and trust the improved self to perform better next time. That is rarely enough. A bias label does not automatically change a meeting. Knowledge about anchors does not prevent an anchor from entering. Knowing that people conform does not make dissent socially safe. Knowing one should ask about interests does not make the question appear under pressure.
-
-Decision hygiene treats judgment as a system property. The central question is not only whether an individual is intelligent or well intentioned. It is whether the process makes relevant evidence visible, protects independent thought, separates prediction from valuation, creates useful alternatives, records uncertainty, and produces feedback that can be learned from.
 
 ## Why judgment systems fail: bias, noise, and misplaced intuition
 
@@ -72,9 +70,9 @@ The rule is therefore not “ignore intuition.” It is **delay the global impre
 
 ## The structured judgment pipeline
 
-Decision-hygiene tools work best as one sequence rather than as disconnected tricks:
+A workflow helps connect preparation with later review. The one below is a practical synthesis to adapt to the decision:
 
-![This author's prescriptive synthesis structures judgment by defining, decomposing, eliciting independent assessments, aggregating, recording, and reviewing. It is a design proposal whose components should be scaled and tested for the task.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="An author's prescriptive synthesis connects define, decompose, judge independently, aggregate, decide and record, and review and learn. A return arrow and scaling conditions show a proposed workflow, not a validated universal stage order."}
+![This author's prescriptive synthesis structures judgment by defining, decomposing, eliciting independent assessments, aggregating, recording, and reviewing. It is a design proposal whose components should be scaled and tested for the task.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="Six steps define a decision, separate its criteria, elicit independent judgments, compare and combine them, record a decision, and review the result. A return arrow informs the next process while preserving the original record. This is a proposed workflow rather than a universal stage order."}
 
 1. **Define.** State the decision, prediction target, values, decision rights, affected people, and error costs.
 2. **Decompose.** Evaluate distinct criteria before forming a coherent global story.
@@ -89,11 +87,11 @@ This is a proportional pipeline, not a command to make every choice slow. A low-
 
 ## Before the decision: improve the input
 
-Start by defining the decision, the decision-maker, the deadline, and the real constraints. Generate alternatives before comparing them. Include doing nothing, delaying, piloting, negotiating, combining options, and changing the problem. Then make the best feasible alternative forgone visible. The sentence "By choosing this, we give up..." is a practical defense against invisible opportunity cost.
+For the hiring committee, the first improvement happens before anyone advocates for a candidate. Agree on what successful work requires, what evidence can be collected comparably, and who will make the final decision. Keep alternatives visible, including reopening the search if no applicant meets an essential requirement.
 
-Decision hygiene improves judgment by changing the process around the judge: independent estimates, structured aggregation, premortems, calibration, and after-action review (Klein, 2007; Milkman et al., 2009; Soll et al., 2015; Kahneman et al., 2021).
+Then ask where the present procedure is unreliable. More scoring forms will not help if the criteria themselves measure the wrong thing.
 
-Use the outside view before the inside story becomes emotionally complete. Identify a reference class and ask what usually happens. Collect independent estimates before discussion so that hierarchy, charisma, and early anchors do not manufacture agreement. Predefine evaluation criteria when hiring, selecting projects, or judging proposals. A rubric cannot eliminate judgment, but it can stop the first global impression from silently deciding every criterion.
+
 
 ### Diagnose before redesigning: run a noise audit
 
@@ -165,7 +163,7 @@ The same discipline applies to different tools. Validate forecasts out of sample
 
 Three governance failures deserve special attention. First, the **target-variable problem** allows technical accuracy to optimize the wrong objective or reproduce historical labels (Obermeyer et al., 2019). Second, automation bias and algorithm aversion produce over- and under-reliance rather than trust calibrated to comparative evidence (Dietvorst et al., 2015; Mosier et al., 1998). Third, fairness criteria can conflict, so no technical switch can choose among rights, error costs, history, and institutional purpose (Barocas et al., 2019). Higher stakes therefore require stronger validation, transparency, subgroup analysis, contestability, privacy protection, and real human authority to correct the system.
 
-A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that authority was legitimate, and how an error can be corrected?** A reviewer without the information or power to change the output is not meaningful oversight; the person merely becomes a moral crumple zone for the system (Elish, 2019).
+A practical test is: **Could we explain to an affected person what the system contributed, who had power to challenge it, why that authority was legitimate, and how an error can be corrected?** A reviewer without enough information or power to challenge the output cannot provide meaningful oversight and may instead be left carrying responsibility for a system they could not control (Elish, 2019).
 
 ### Minimum AI-use record {#minimum-ai-use-record}
 
@@ -189,9 +187,9 @@ Some choices should also be designed to learn. A pilot, diagnostic test, negotia
 
 Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when "too risky" is decomposed into probability and consequence.
 
-Assign dissent a role rather than waiting for courage. Use a premortem: imagine that the decision failed and list plausible reasons. Ask one person to construct the strongest case against the emerging preference. Protect the dissenter from becoming the problem. The purpose is not permanent opposition; it is to expose information before commitment makes it expensive to hear.
+Checklists can protect against omissions in repeated work when they are short, located at a useful pause, and tied to known failures. Haynes et al. (2009) observed lower complication and mortality rates after introducing a surgical safety checklist in eight hospitals. This was a before-and-after study, so the change cannot be attributed to the document alone; implementation and concurrent changes matter. A hiring checklist likewise needs to address an actual failure, such as scoring work samples before discussing impressions.
 
-Checklists protect omission in repeated, high-risk work, but they are not universal scripts. A useful checklist is short, located at a natural pause, tied to known failure modes, and revised from experience. A long compliance list can become theatre. The surgical-safety evidence illustrates both the promise and the boundary: checklists can coordinate critical steps, yet results depend on implementation, teamwork, and local adaptation rather than on possessing a document alone (Haynes et al., 2009).
+
 
 A **premortem** asks each person to imagine that the plan has failed and independently write plausible causes. The fictional certainty of failure gives doubt permission to speak (Klein, 2007). A **red team** goes further by constructing an adversarial test of assumptions, evidence, and execution. Red teams need genuine access, time, and protection; a ceremonial critic who cannot change the plan is not decision hygiene. A designated devil's advocate can be dismissed as merely performing a role, so it should not replace authentic independent concern. Challenge earns its place only when someone has authority to inspect the evidence and the team records what changed in response.
 
@@ -239,7 +237,7 @@ Now slow the story into six inspectable components:
 
 The audit does not prove that the chosen option was best, recover the road not taken, or reveal how every counterfactual future would have unfolded. It can reveal missing options, unsupported predictions, hidden values, invisible opportunity costs, contextual pressures, and feedback that was never designed. Its purpose is prospective: make the next decision more testable than the last one.
 
-![A sound or weak process can be followed by either a favorable or unfavorable outcome.](../figures/decision-audit.svg){#fig-decision-audit fig-alt="A two-by-two matrix crosses sound and weak decision processes with favorable and unfavorable outcomes. A sound process with a bad result is labeled bad luck; a weak process with a good result is labeled the most dangerous condition for learning."}
+![A sound or weak process can be followed by either a favorable or unfavorable outcome.](../figures/decision-audit.svg){#fig-decision-audit fig-alt="A two-by-two matrix crosses sound and weak decision processes with favorable and unfavorable outcomes. A sound process can still meet an unfavorable outcome, and a weak process can receive a favorable one. Neither pairing alone identifies luck or the cause of the result."}
 
 ## After the outcome: learn without worshipping luck
 
@@ -247,19 +245,15 @@ The audit does not prove that the chosen option was best, recover the road not t
 
 A **decision journal** is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned **without overwriting the original entry**. Its unit is a consequential decision, not a day in the writer's life.
 
-The neighboring tools serve different purposes. A **decision record** is one dated snapshot within the journal. A **decision log** is usually an administrative register of what was decided, by whom, and when. **Meeting minutes** record discussion and formal action. A personal **diary** may capture experience without a fixed decision structure. A **premortem** challenges a plan before commitment, while an **after-action review** examines performance afterward. A decision journal can link all of these, but it is defined by the protected comparison between an ex-ante record and later evidence.
+The journal links two different records: what you believed before choosing and what later happened. Meeting minutes can document the choice, but usually do not preserve the alternative forecasts and learning rules needed for this comparison.
 
-The journal is not a single psychological theory or a standardized psychometric instrument. The version in this book is an author's evidence-informed synthesis of five research traditions:
+Its research basis is in components, rather than a trial of one universal journal template. Decision analysis identifies the options, consequences, and values to record (Raiffa, 1968; Keeney & Raiffa, 1976). Hindsight and outcome-bias research explains why later recollection cannot substitute for a contemporary record (Fischhoff, 1975; Baron & Hershey, 1988). Forecasting research makes predictions resolvable across repeated decisions (Brier, 1950; Mellers et al., 2014).
 
-1. **Decision analysis** separates alternatives, uncertain consequences, objectives, and trade-offs rather than hiding them inside a global impression (Raiffa, 1968; Keeney & Raiffa, 1976).
-2. **Hindsight and outcome-bias research** shows why later memory is an unreliable reconstruction of what seemed knowable and reasonable before the result (Fischhoff, 1975; Baron & Hershey, 1988).
-3. **Probabilistic forecasting and calibration** make expectations resolvable and improvable across repeated cases rather than leaving them as elastic words such as “likely” or “confident” (Brier, 1950; Mellers et al., 2014).
-4. **Reason writing and accountability** can force assumptions into view, but their effects depend on timing, audience, and incentives. Experiments with incumbent Chinese judges found that writing reasons before deciding reduced the influence of an induced negative feeling; a forced deliberation period produced a similar effect, so the result does not establish that writing or journals are a universal remedy (Liu, 2018). Accountability can also encourage conformity or defensible stories when the audience's preferred conclusion is known (Lerner & Tetlock, 1999).
-5. **Debriefing and experiential learning** support structured comparison, explanation, and goal setting after performance. A meta-analysis of 46 samples ($N = 2{,}136$) found that debriefs improved effectiveness relative to controls by $d = 0.67$ on average, but that is evidence about structured debriefing—not about this entire journal format (Tannenbaum & Cerasoli, 2013).
+Writing and review also depend on the conditions. In a study of Chinese judges, reason writing before judgment reduced the influence of an induced negative feeling, but forced deliberation produced a similar effect (Liu, 2018). A meta-analysis found benefits of structured debriefing across 46 samples ($N = 2{,}136$; average $d = 0.67$), not evidence that this entire journal format works for every decision (Tannenbaum & Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner & Tetlock, 1999).
 
-These traditions imply a three-operation learning architecture. **Freeze** the ex-ante state before outcome knowledge can alter memory. **Compare** each frozen item with its own later evidence rather than asking a new set of retrospective questions. **Update** a forecast, assumption, decision rule, or information search while preserving what one noisy case cannot establish. Decision analysis supplies the objects to preserve; forecasting makes one of those objects scoreable; hindsight and outcome-bias research explains why the two moments must remain separate; and structured debriefing turns discrepancies into prospective learning.
+The practical sequence is **freeze, compare, update**: preserve the original account, compare each prediction or assumption with relevant evidence, then change a rule or forecast where warranted. A record helps only if it is candid, reviewed, and protected from retrospective editing.
 
-The justified claim is therefore component-level: a contemporaneous record creates evidence that memory alone cannot supply; explicit probabilities can be scored; matched comparisons reveal where a model, value, or process diverged from experience; and a structured review can improve learning. The stronger claim—that this exact template reliably improves every kind of decision—has not been established. The journal helps only when entries are timely and candid, forecasts are resolvable, reviews occur, and the record is not turned into bureaucracy, retrospective editing, or surveillance.
+
 
 ::: {.callout-important icon=false}
 ## The same-name rule
@@ -276,17 +270,19 @@ The table below illustrates the two-stage structure. The case and numbers are hy
 | **1. Decision and execution** | By 15 September, decide whether to keep the current feedback process, run a four-week pilot in one course, or adopt the tool in all courses. | The four-week pilot was implemented for 100 assignments as planned. Record any deviations before interpreting its results. |
 | **2. Alternatives and opportunity cost** | The best forgone option is the current process with additional teaching-assistant time. | The teaching-assistant option was not tested, so its counterfactual result remains unknown. No clearly feasible option omitted from the original menu emerged. |
 | **3. Evidence and reference class** | A local test of 20 assignments reduced average editing time from 12 to 8 minutes, but 4 drafts needed major correction. The sample is small and local; no external comparison is available. | Across 100 assignments, editing averaged 8.5 minutes, 8% needed major correction, 62% of students rated the feedback helpful, and no privacy breach was reported. This strengthens local evidence but does not establish performance elsewhere. |
-| **4. Predictions and assumptions** | Pilot forecasts: 60% chance editing time is below 9 minutes; 70% chance at least 70% of students rate feedback helpful; 15% chance more than 10% of drafts need major correction. Assumptions: instructors catch material errors and opting out is meaningful. | Resolve the same forecasts: time below 9 minutes—yes; helpfulness at least 70%—no; correction above 10%—no. Error detection appears workable; whether opting out felt meaningful remains untested. One realized event does not by itself prove that a stated probability was well calibrated. |
-| **5. Values and stakeholders** | Faster feedback matters, but accuracy, privacy, student trust, and a genuine option to decline are protected values. A privacy breach is unacceptable even if time is saved. | Accuracy and privacy stayed within the stated constraints; helpfulness was weaker than hoped. Trust and the experience of students who opted out were not measured, so those original values cannot yet be evaluated. |
+| **4. Predictions and assumptions** | Pilot forecasts: 60% chance editing time is below 9 minutes; 70% chance at least 70% of students rate feedback helpful; 15% chance more than 10% of drafts need major correction. Assumptions: instructors catch material errors and opting out is meaningful. | Resolve the same forecasts: time below 9 minutes—yes; helpfulness at least 70%—no; correction above 10%—no. The recorded correction rate is below the threshold; unrecognized errors and whether opting out felt meaningful remain untested. One realized event does not by itself prove that a stated probability was well calibrated. |
+| **5. Values and stakeholders** | Faster feedback matters, but accuracy, privacy, student trust, and a genuine option to decline are protected values. A privacy breach is unacceptable even if time is saved. | The observed major-correction rate met the threshold and no privacy breach was reported; this does not rule out undetected errors or breaches. Helpfulness was weaker than hoped. Trust and the experience of students who opted out were not measured, so those original values cannot yet be evaluated. |
 | **6. Context, incentives, dissent, and tools** | Instructors want to reduce workload and may be unusually receptive to the tool. The strongest objection is that verification could consume the time saved. Record any model or AI advice and why it was followed or overridden. | Verification did not eliminate the time saving, but student concerns received less measurement than instructor workload. Reassess whether dissent was answered and whether reliance on the tool was calibrated to where it actually added value. |
-| **7. Choice, thresholds, and learning rule** | Run the limited pilot; review after 100 assignments. Stop after a confirmed privacy breach. Do not scale if major correction exceeds 10% or helpfulness is below 70%. | The implementation followed a sound review process, and the outcome was mixed. Do not scale: helpfulness missed the stated threshold. Continue only as a limited test, improve the student explanation, measure trust and opt-out experience, and set the next review before collecting more outcomes. |
+| **7. Choice, thresholds, and learning rule** | Run the limited pilot; review after 100 assignments. Stop after a confirmed privacy breach. Do not scale if major correction exceeds 10% or helpfulness is below 70%. | The recorded implementation and review thresholds were followed, and the measured outcome was mixed. Do not scale: helpfulness missed the stated threshold. Continue only as a limited test, improve the student explanation, measure trust and opt-out experience, and set the next review before collecting more outcomes. |
 : A hypothetical decision journal in which every ex-post entry answers its ex-ante counterpart {#tbl-simplified-decision-journal}
 
 Review the process using what was knowable at the time. A good decision can produce a bad outcome, and a poor process can get lucky. Compare forecasts with outcomes, not stories with feelings. Ask which assumptions failed, which information was missing, which values changed, and which parts of the process should remain even though the outcome was disappointing.
 
 Do not update from one noisy result more than the evidence warrants. Regression to the mean, random variation, and selective feedback can create false lessons. Calibrate over many predictions. Reward accurate uncertainty and timely revision, not only confident success.
 
-The retrospective biases developed earlier now become design requirements. [Outcome bias and hindsight bias](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) separate results from what was knowable ex ante; self-serving attribution assigns success to skill and failure to circumstances; and rationalization constructs a coherent defense after the choice. A disciplined review counters all four by asking: What did we know then? What did we predict? Which assumptions failed? What was process, what was luck, and what remains unknowable? The contribution of decision hygiene is not another definition of the biases, but a process that makes them harder to enact.
+The hiring committee’s later review should begin with its original scores and reasons. Without them, the chair’s enthusiasm can become a shared memory of caution. With them, members can ask which evidence was useful, which uncertainty remained, and what should change before the next appointment.
+
+
 
 ### The matched fields: one name, two moments {#decision-journal-before-choice}
 
@@ -294,26 +290,26 @@ The retrospective biases developed earlier now become design requirements. [Outc
 
 The minimum useful entry identifies the decision, separates prediction from valuation, and defines how later evidence will be interpreted. Append the review; never edit the original entry into agreement with what occurred.
 
-| Learning loop | Before choosing — freeze the ex-ante record | After the outcome — answer the same record |
+| Learning loop | Before choosing — freeze | After the outcome — compare |
 | --- | --- | --- |
-| **1. Decision and execution** | Entry ID, time stamp, author, decision owner, deadline, scope, and actionable decision statement: “Choose whether to ___ by ___ for the period ___.” | What was actually implemented, by whom, and when; deviations, partial compliance, changing conditions, and outcomes still delayed or unmeasured. |
-| **2. Alternatives and opportunity cost** | Serious options, including status quo, delay, pilot, combination, or negotiation; best feasible alternative forgone; reasons plausible options were excluded. | Whether a material option was missing; what later evidence says about the original alternatives; which counterfactual comparisons remain unknowable. Do not judge the menu solely because the chosen option went well or badly. |
-| **3. Evidence and reference class** | Key sources and dates; comparable prior cases or base rates; important missing or disputed evidence; labels separating facts, estimates, and assumptions. | New evidence and its measurement date; whether the reference class was informative; which original evidence proved diagnostic, weak, misleading, or still unresolved. |
-| **4. Predictions and assumptions** | For each serious option: observable consequence, horizon, probability or range, and resolution criterion. Add load-bearing assumptions, the causal pathway, strongest alternative explanation, and evidence that would weaken the account. | Resolve each original forecast as yes, no, value observed, or unresolved; assess calibration across comparable entries. Mark each assumption supported, failed, or untested; identify surprises and whether the proposed mechanism operated. |
-| **5. Values and stakeholders** | Criteria and priorities; materially affected people; protected rights or constraints; acceptable and unacceptable trade-offs. | Evaluate consequences using the same criteria and stakeholders. Separate what was misweighted from a legitimate later change in values; record benefits, harms, distribution, and neglected voices. |
-| **6. Context, incentives, dissent, and tools** | Affect, time pressure, incentives, roles, conflicts, social influence, strongest contrary view, and any model or AI advice—including reasons for following or overriding it. | Which pressure, incentive, dissenting concern, or tool output proved relevant; whether it changed the process or the outcome; whether reliance and override were calibrated to demonstrated value. |
-| **7. Choice, thresholds, and learning rule** | Selected option and reason; implementation owner; review date or event; evidence to collect; conditions for continuing, stopping, scaling, or revising; observation that would change the decision. | Whether the precommitted process and thresholds were followed. Rate **process quality** using only what was knowable then and **outcome quality** separately. State what should change, what should remain unchanged after this case, and the next test, forecast, or review date. |
+| **1. Decision and execution** | Decision, date, owner, deadline, and scope | What was implemented, including deviations and delays |
+| **2. Alternatives and opportunity cost** | Serious options and the best feasible alternative forgone | Missing options, new evidence, and counterfactuals still unknown |
+| **3. Evidence and reference class** | Sources, comparable cases, missing evidence, and assumptions | Which evidence proved useful, misleading, or unresolved |
+| **4. Predictions and assumptions** | Consequences, probabilities or ranges, time horizons, and resolution rules | Resolve each forecast; mark assumptions supported, failed, or untested |
+| **5. Values and stakeholders** | Priorities, affected people, rights, and unacceptable trade-offs | Benefits, harms, omitted perspectives, and any later change in values |
+| **6. Context, incentives, dissent, and tools** | Pressures, contrary views, and model or AI advice followed or rejected | What influence each had and whether reliance was justified |
+| **7. Choice, thresholds, and learning rule** | Choice, implementation owner, review date, and continue/stop/revise rules | Whether rules were followed; process and outcome assessed separately; next test |
 : A matched decision-journal template: freeze, compare, and update {#tbl-35-decision-journal}
 
 Reflection differs from rationalization because it produces a testable change. “How can I defend what I did?” searches for coherence. “What process produced this choice?” separates evidence, values, context, and luck. “What will I do differently next time?” turns the answer into a new rule, forecast, or experiment.
 
 ## The decision-improvement cycle: notice, test, ask, design, learn
 
-![The book's recurring navigation model returns as an author's teaching synthesis: a system that can be redesigned and made answerable to feedback, with functions that may overlap, repeat, or be skipped.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="The author's recursive navigation model highlights context, option construction, the combined function of choosing, commitment and action, learning, and the outer social and institutional environment. A shared rail shows that this environment can influence every function. It is not a validated universal stage order."}
+![Part VII follows a practical reading route: find the obstacle, change the conditions, and check the results. This is a guide to the chapters, not a universal psychological sequence.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="Three reading questions connect finding the obstacle, changing the conditions, and checking the results. They organize Part VII's design and learning tools."}
 
-The framework can be compressed into five verbs. Notice what attention selected and what it excluded. Test the model with base rates, counterevidence, experiments, and alternative explanations. Ask other people for their perspective, interests, constraints, and meaning. Design the environment, message, conversation, or agreement so that good action is easier. Learn from a record that existed before the outcome.
+The three questions in the part map can guide a brief review: What is getting in the way? What condition could change? What result would tell us whether the change helped? For a more detailed diagnosis, the five verbs below locate the work that remains.
 
-Decision, persuasion, communication, and negotiation are not separate skills. They are different forms of model management. In each case, we are trying to understand how a mind represents a situation, what it expects, what it values, which actions appear possible, and what feedback will change the next cycle. The deepest practical lesson is therefore not "think harder." It is "build a process in which better thinking has a chance to occur."
+
 
 | Move | Core question | Typical tool |
 | --- | --- | --- |
@@ -336,18 +332,11 @@ After the outcome, the committee reviews what was knowable at the time. It does 
 
 Structure is not automatically fair. A rubric can make the wrong values consistently influential. A model can turn historical discrimination into a scalable rule. A checklist can suppress professional attention. A decision journal can become surveillance. A demand for consistency can erase relevant differences.
 
-Responsible judgment systems therefore require:
+Ask whether the criteria serve legitimate goals, whether exceptions are reasoned and reviewable, and whether affected people can challenge errors. Inspect how benefits and burdens are distributed. A model, committee, or consultant should not obscure who has authority and responsibility.
 
-- **legitimate criteria:** the process must optimize an outcome worth pursuing;
-- **justified discretion:** exceptions are possible, reasoned, and reviewable;
-- **transparency:** affected people can understand the material basis of consequential decisions;
-- **contestability:** errors can be corrected and decisions appealed where stakes warrant it;
-- **voice and dignity:** affected people can be heard, receive an explanation, and encounter a person or institution that owns the decision;
-- **distributional audit:** performance and burdens are examined across groups and over time;
-- **accountability:** no committee, consultant, score, or model becomes a shield from responsibility;
-- **proportionality:** structure grows with consequence, uncertainty, repetition, irreversibility, power, and automation.
+Scale the procedure to the stakes. A low-cost reversible choice may need a short note and a review date; a repeated hiring process needs stronger evidence and checks for unfair treatment. Remove a control when its burden exceeds its useful contribution.
 
-The aim is disciplined humility, not technocracy. A good process should become more accurate, consistent, fair, transparent, learnable, and humane—not merely easier to defend.
+
 
 | Failure mode | First-line protection | Stronger response when stakes warrant it |
 | --- | --- | --- |
@@ -379,9 +368,8 @@ The submitted artifact is the completed pipeline, not an essay about decision hy
 
 ## Take it forward
 
-- **Use this when:** a judgment is consequential, repeated, uncertain, difficult to reverse, vulnerable to power, or partly automated.
-- **Do not infer:** more structure is automatically fair, or a model can legitimately choose the target, values, and rights it should serve.
-- **Try this next:** select one recurring decision and specify what must happen before discussion, during challenge, at commitment, and after the outcome.
+
+Return to the hiring meeting that opened the book. A better process cannot promise the best hire every time, but it can make the reasons for the choice clearer, expose disagreement before commitment, and preserve what the outcome can teach. Start with one recurring decision and build the conditions under which the next decision can improve.
 
 ## References cited in this chapter
 
@@ -462,14 +450,6 @@ Klein, G. (2007). Performing a project premortem. Harvard Business Review, 85(9)
 :::
 
 ::: {.reference}
-Milkman, K. L., Chugh, D., & Bazerman, M. H. (2009). How can decision making be improved? Perspectives on Psychological Science, 4(4), 379–383.
-:::
-
-::: {.reference}
-Soll, J. B., Milkman, K. L., & Payne, J. W. (2015). A user’s guide to debiasing. In G. Keren & G. Wu (Eds.), The Wiley Blackwell handbook of judgment and decision making (pp. 924–951). Wiley Blackwell.
-:::
-
-::: {.reference}
 Barocas, S., Hardt, M., & Narayanan, A. (2019). Fairness and machine learning: Limitations and opportunities. fairmlbook.org.
 :::
 
@@ -482,10 +462,6 @@ Flyvbjerg, B., Holm, M. S., & Buhl, S. (2002). Underestimating costs in public w
 :::
 
 ::: {.reference}
-Friston, K. J., FitzGerald, T., Rigoli, F., Schwartenbeck, P., & Pezzulo, G. (2017). Active inference: A process theory. Neural Computation, 29(1), 1–49.
-:::
-
-::: {.reference}
 Hong, L., & Page, S. E. (2004). Groups of diverse problem solvers can outperform groups of high-ability problem solvers. Proceedings of the National Academy of Sciences, 101(46), 16385–16389.
 :::
 
@@ -495,10 +471,6 @@ Kahneman, D., & Lovallo, D. (1993). Timid choices and bold forecasts: A cognitiv
 
 ::: {.reference}
 Mosier, K. L., Skitka, L. J., Heers, S., & Burdick, M. (1998). Automation bias: Decision making and performance in high-tech cockpits. The International Journal of Aviation Psychology, 8(1), 47–63.
-:::
-
-::: {.reference}
-Rudin, C. (2019). Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. Nature Machine Intelligence, 1, 206–215.
 :::
 
 ::: {.reference}

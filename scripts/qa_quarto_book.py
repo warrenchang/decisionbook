@@ -24,7 +24,8 @@ WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:[’'\-][A-Za-zÀ-ÖØ-öø-ÿ
 H1 = re.compile(r"^# (.+)$", re.MULTILINE)
 HEADING = re.compile(r"^(#{2,6})\s+(.+?)\s*$", re.MULTILINE)
 ID = re.compile(r"\{[^}\n]*#([A-Za-z][\w:.-]*)[^}\n]*\}")
-FIGURE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)\{([^}\n]*)\}")
+# Captions may contain brackets in mathematics, such as E[Y | X].
+FIGURE = re.compile(r"!\[([^\n]*?)\]\(([^)]+)\)\{([^}\n]*)\}")
 QMD_LINK = re.compile(r"\[[^\]]+\]\(([^)#?]+\.qmd)(?:#[^)]+)?\)")
 REDUNDANT_FIGURE_XREF = re.compile(r"\bFigures?\s+@fig-[A-Za-z0-9_-]+")
 LEGACY_INLINE_MATH_DELIMITER = re.compile(r"\\[()]")
@@ -45,9 +46,10 @@ EPIGRAPH_METADISCOURSE_EXCEPTIONS = {
         "Evidence is reviewed which suggests that there may be little or no direct introspective access to higher order cognitive processes.",
 }
 PART_MOVEMENT_LABEL = re.compile(r"^\*\*(?:Book\s+[IVX]+|Coda)\b.*\*\*\s*$", re.MULTILINE)
+# Chapter-specific openings replace the former repeated loop-location box.
+# Keep the learning, application, closing, and reference requirements.
 REQUIRED_PREFIXES = (
     "Learning goals",
-    "Where this chapter enters the loop",
     "Take it forward",
     "Practice Lab",
     "References cited in this chapter",

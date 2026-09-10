@@ -13,24 +13,6 @@ aliases:
 > — Martin A. Nowak, [“Five Rules for the Evolution of Cooperation”](https://pmc.ncbi.nlm.nih.gov/articles/PMC3279745/), 2006, p. 1560
 :::
 
-::: {.callout-note .core-idea icon=false}
-## Core Idea
-
-Strategic models can show when cooperation is sustainable, and observed cooperation can reveal that a social system produced coordinated action. But the action does not identify the motive: repetition, reputation, punishment, communication, group boundaries, norms, or concern for others can produce cooperation, while distrust or punitive incentives can produce defection. Therefore this chapter separates material incentives, beliefs, social preferences, and social norms before drawing conclusions about cooperative or selfish character.
-:::
-
-## Learning goals
-
-- Diagnose cooperation through a ladder of repeated incentives, reputation and enforcement, social preferences, and norms or identity.
-- Distinguish mechanisms that generate the same cooperative outcome but different responses to anonymity, noise, intentions, or exit.
-- Redesign one social dilemma while auditing sanctions, outsiders, power, and the right to leave.
-
-::: {.callout-note .loop-location icon=false}
-## Where this chapter enters the loop
-
-Cooperation extends **Coordinate** across time. Future consequences, institutions, concern for others, norms, and identity can all change the experienced payoff—even when the material action looks the same.
-:::
-
 ## Opening puzzle: why cooperate when defection dominates?
 
 Two people choose simultaneously between Cooperate and Defect. Consider this illustrative matrix:
@@ -45,13 +27,28 @@ If Player 2 cooperates, Player 1 receives 6 by defecting instead of 4 by coopera
 
 The matrix produces a dilemma only under its stated payoffs. If a player feels guilt, values the other person's payoff, expects reputational consequences, or treats a promise as binding, the experienced payoff differs from the material table. If the interaction continues, the game itself differs. Before declaring behavior inconsistent with self-interest, decide which self-interest and which game are being modeled.
 
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+People can cooperate because they expect a future return, because rules make cooperation worthwhile, or because they care about others and about doing what seems right. Understanding which explanation matters lets us design a more dependable relationship—and see when apparent cooperation is serving a harmful goal.
+:::
+
+## Learning goals
+
+- Diagnose cooperation through a ladder of repeated incentives, reputation and enforcement, social preferences, and norms or identity.
+- Distinguish mechanisms that generate the same cooperative outcome but different responses to anonymity, noise, intentions, or exit.
+- Redesign one social dilemma while auditing sanctions, outsiders, power, and the right to leave.
+
 ### Is the scene really a Prisoner's Dilemma?
 
-Fictional interrogation and betrayal scenes are useful because their omitted details are visible. Choose one linked scene from [*Murder by Numbers*](https://youtu.be/UAR7WDrL3Ec), [*Numb3rs*](https://youtu.be/dSOrAQMXTcc), [*L.A. Confidential*](https://youtu.be/-opqUSOUDQY), or [*The Dark Knight*](https://youtu.be/Yqvbv-SB4bg). Reconstruct each player's actions and payoff ranking. Check whether Defect truly dominates, whether choices are simultaneous, whether communication changes beliefs, and whether a future relationship remains. The clips are copyrighted illustrations, not empirical evidence; no frames are reproduced here.
+Watch the [ferry dilemma from *The Dark Knight*](https://youtu.be/Yqvbv-SB4bg) and reconstruct each group’s options and payoff ranking. Does defection dominate, who can communicate, and can the threat be trusted? The fictional scene is useful for testing the model’s assumptions; a betrayal story is not automatically a Prisoner’s Dilemma.
 
 ![Robust cooperation can be supported by repeated interaction, reputation, social preferences, norms and institutions, and network structure. Each support changes a different part of the decision and must be audited for noise, exclusion, coercion, and exit.](../figures/cooperation-architecture.svg){#fig-cooperation-architecture fig-alt="A cooperation challenge at the top branches from one centered point to five evenly spaced support boxes: repeated interaction, reputation, social preferences, norms and institutions, and network or spatial structure. Arrows converge from a common line on robust cooperation. A final audit box asks about implementation error, outsiders, punishment, power, transparency, and exit."}
 
 ## The mechanism ladder: same outcome, different cause
+
+::: {.callout-note icon=false collapse=true}
+## Compare the cooperation mechanisms
 
 | Setting | What changes? | Why cooperation may appear | Main boundary |
 | --- | --- | --- | --- |
@@ -61,10 +58,11 @@ Fictional interrogation and betrayal scenes are useful because their omitted det
 | Institution | Rules change payoffs, information, or enforcement. | Contracts, sanctions, matching, insurance, or dispute resolution. | Enforcement can be costly, unequal, or crowd out meaning. |
 | Evolutionary or learning process | Successful strategies become more frequent. | Selection, imitation, reproduction, mutation, or local clustering. | Prevalence is not conscious intention or moral approval. |
 : One-shot, repeated, institutional, and evolutionary cooperation are distinct {#tbl-cooperation-mechanisms}
+:::
 
-This separation prevents a common error. Observing stable cooperation over time does not prove that people have altruistic preferences. Observing cooperation in a one-shot anonymous game does not prove pure altruism either. The action is a starting point for mechanism diagnosis.
+Begin by adding a future to the opening game. If that changes the prediction, we can explain cooperation without yet changing what players value.
 
-## Movement 1: why cooperation persists
+## How a future relationship supports cooperation {#movement-1-why-cooperation-persists}
 
 ### Repetition gives current behavior a future
 
@@ -96,7 +94,7 @@ $$
 
 With $T=6$, $R=4$, and $P=2$, the threshold is $\delta\geq0.5$.
 
-This condition is not a universal cooperation rate. It belongs to a specific strategy, payoff matrix, monitoring environment, and continuation structure. If actions are misobserved, punishment can start after an innocent error. If the end date is known, backward induction can unravel cooperation under narrow assumptions. If relationships can be renewed, rematched, or reputationally connected, the effective future may remain.
+The threshold belongs to this strategy and monitoring environment. Misobserved actions can trigger punishment after an innocent error; a known end date can unravel cooperation by backward induction under narrow assumptions. Renewed relationships or reputational links can preserve future consequences beyond the immediate encounter.
 
 ### Tit-for-tat, forgiveness, and noise
 
@@ -133,17 +131,17 @@ That interpretation is a hypothesis, not a universal lever. The study alternated
 
 The television game *Golden Balls* ended with contestants choosing Split or Steal for large and widely varying prizes. Before reading the evidence, watch [one Split-or-Steal round](https://youtu.be/7FbkwrhW_0I) and an [unusual communication strategy](https://youtu.be/LPwZ3wYoSmA). Record promises, threats, commitments, and the options that remain credible. The linked clips are selected cases, not estimates of average behavior.
 
-Van den Assem, van Dolder, and Thaler (2012) report stakes averaging more than $20,000. Cooperation remained high relative to what a simple own-money-only model would predict. The authors find evidence consistent with reciprocal preferences from earlier interaction, little support in their sample for conditional cooperation based on an opponent's expected action, and an age-dependent gender pattern.
+Van den Assem, van Dolder, and Thaler (2012) report stakes averaging more than $20,000. Many contestants chose Split even though Steal weakly dominated it in immediate monetary payoffs: Steal did better against Split and equally well against Steal. The authors find evidence consistent with reciprocal preferences from earlier interaction, little support in their sample for conditional cooperation based on an opponent's expected action, and an age-dependent gender pattern.
 
 The stakes were consequential, but the setting was not an anonymous one-shot Prisoner's Dilemma: contestants selected into a televised program, interacted before choosing, and experienced the prize inside a larger show. The evidence rejects the claim that high stakes automatically eliminate cooperation. It does not identify one universal motive or transport rate.
 
-## Movement 2: what people value socially
+## What cooperation reveals about motives {#movement-2-what-people-value-socially}
 
 A **social preference** means that utility depends on more than one's own material payoff. People may care about another person's outcome, inequality, total surplus, the minimum payoff, reciprocity, intentions, or identity.
 
 ### Ultimatum game: fairness has strategic force
 
-In the ultimatum game, a proposer divides a sum. A responder accepts—implementing the division—or rejects—giving both zero. Under common knowledge of narrow material self-interest and divisible money, the benchmark predicts that the proposer offers the smallest positive amount and the responder accepts.
+In the ultimatum game, a proposer divides a sum. A responder accepts—implementing the division—or rejects—giving both zero. A responder concerned only with their own money prefers accepting any positive offer to rejecting it. With a smallest positive monetary unit, and if the responder rejects zero, backward reasoning predicts that smallest positive offer. If zero is accepted, a zero offer can be optimal instead; continuously divisible money has no smallest positive amount.
 
 Classic experiments instead commonly find modal offers around 40–50% and mean offers around 30–40%; offers below 20% are often rejected roughly half the time in multi-study summaries (Camerer, 2003; Oosterbeek, Sloof, & van de Kuilen, 2004). These are broad historical regularities, not universal constants. Stakes, anonymity, entitlement, procedure, repetition, population, and cultural setting change behavior.
 
@@ -155,59 +153,10 @@ The linked [ultimatum scene](https://youtu.be/7mETgb-fPRo) provides a communicat
 
 In the dictator game, the recipient cannot reject. Removing strategic punishment usually reduces transfers. In classic comparable treatments, average giving is around 20% in Forsythe and colleagues (1994) and closer to 10% under the double-blind procedures of Hoffman and colleagues (1994).
 
-The difference shows that anonymity and the action environment matter. It does not reveal a pure generosity parameter. Demand effects, experimenter observation, property rights, earned entitlement, menu design, sorting, and the ability to take rather than give can all change the meaning of the action.
+Giving that remains is not a pure generosity parameter. Anonymity, earned entitlement, experimenter observation, and whether the menu allows taking as well as giving can change the meaning of the action.
 
 ![An original redraw compares the ultimatum, dictator, and take-or-menu-variant games. Removing the responder's rejection option separates strategic rejection from giving; changing the allocator's ability to give, take, or leave the study changes property rights and the meaning of the observed allocation. The reported historical ranges come from the cited studies and summaries, not from one universal population.](../figures/social-preference-games-redraw.svg){#fig-social-preference-games-redraw fig-alt="Three cards compare ultimatum, dictator, and take or menu-variant games. Each card states the game mechanics and historical reported patterns. A boundary note says stakes, anonymity, entitlement, population, culture, repetition, and procedure affect the results." width=100%}
 
-@fig-social-preference-games-redraw shows why a result cannot be separated from the action set that produced it. The numerical ranges redraw findings summarized by Forsythe et al. (1994), Hoffman et al. (1994), Camerer (2003), and Oosterbeek et al. (2004); the graphic design is original, and the boundaries prevent the ranges from becoming claims about a universal human type.
-
-::: {.callout-note .research-lens icon=false}
-## Advanced research track: identify social preferences by contrast
-
-This optional track is for readers designing or interpreting social-preference studies. The applied lesson does not require estimating a moral “type”: observe choices across conditions that separate concern for outcomes, intentions, expectations, and enforcement.
-
-### Distributional models make motives testable
-
-### Inequality aversion
-
-For two people, Fehr and Schmidt's (1999) model can be written as
-
-$$
-U_i=x_i-\alpha_i\max(x_j-x_i,0)-\beta_i\max(x_i-x_j,0),
-$$
-
-with the standard restrictions $\alpha_i\geq\beta_i$ and $0\leq\beta_i<1$. The first penalty represents disadvantageous inequality; the second represents advantageous inequality. Because disadvantageous inequality can hurt more, a responder may reject a low ultimatum offer, while a proposer may share even when rejection is impossible.
-
-The model is descriptive and falsifiable. It is not a claim that inequality is the only concern. Bolton and Ockenfels's (2000) ERC model emphasizes one's relative share, while Charness and Rabin (2002) allow concerns for total surplus, the worst-off person, and reciprocity. Efficiency and equality can conflict: giving an extra euro to the better-off person may create several euros of total benefit, while equalization may reduce the sum.
-
-### Revealed preference over allocations
-
-Andreoni and Miller (2002) gave 176 participants 8–11 allocation choices at varying prices of giving, producing more than 1,600 decisions. Fewer than 2% violated the generalized axiom of revealed preference in the reported classification summary, so most choices could be represented by a well-behaved utility function.
-
-A familiar summary assigns 47.2% to a selfish type, 30.4% to an egalitarian or maximin type, and 22.4% to a utilitarian type. But only 43% fit one of the pure categories exactly; the remaining 57% were assigned to the nearest category. The percentages demonstrate structured heterogeneity. They do not show that every person possesses one pure and permanent type.
-
-### Outcomes and intentions are different
-
-Outcome-based models ask who gets what. **Reciprocity** also asks why the other person acted. The same unequal allocation can be judged differently if it was freely chosen, forced by the available menu, produced by chance, or intended to help.
-
-This creates another identification test. Hold final payoffs constant while changing the feasible alternatives or the actor's control. If responses change, allocation alone is insufficient. Intention-based models can explain the difference, but beliefs about intention must be measured rather than inferred from punishment alone.
-
-### Worked identification contrast: same allocation, different control
-
-Suppose a responder faces the same proposed split—€8 for the proposer and €2 for the responder—in two conditions. In one, the proposer freely chose that split while an equal split was available. In the other, a computer assigned the split and the proposer had no control. Keep the responder's consequences and rejection option unchanged. Record the response, perceived intentionality, expected social approval, and belief about the proposer's alternatives.
-
-If rejection changes across conditions, a model based only on final payoffs is incomplete. The contrast does not by itself prove negative reciprocity: perceived intent, responsibility, norm violation, or demand may have changed. The additional records reveal which explanation is plausible and which further treatment is needed.
-
-### Cross-cultural, comparative, and neural evidence generate hypotheses
-
-Henrich and colleagues (2001) conducted ultimatum, public-goods, and dictator-type experiments across 15 small-scale societies. Behavior varied substantially. In Lamalera, Indonesia, offers were often hyperfair and have been discussed in relation to the cooperative organization of whale hunting. Among the Au and Gnau in Papua New Guinea, some high offers were rejected and have been interpreted in relation to obligations created by accepting gifts.
-
-The lesson is not that one society is cooperative and another selfish. Experimental stakes, recruitment, comprehension, market integration, production systems, kinship, and local norms move together. A cultural example should generate a mechanism hypothesis: which shared practice changes entitlements, expectations, or enforcement, and what comparison could test it?
-
-Meta-analysis also shows that ultimatum behavior varies across settings (Oosterbeek et al., 2004). Culture is therefore not a residual label attached after a difference appears. It must be represented by measurable institutions, meanings, experiences, and expectations.
-
-In a well-known capuchin comparison, a monkey that receives cucumber while a neighbor receives a preferred grape sometimes refuses the cucumber. Inequality aversion, frustration, changed reward expectation, and protest against the experimenter remain competing accounts; the demonstration does not establish a human moral concept of fairness (Brosnan & de Waal, 2003). Neural studies of inequality and equity–efficiency trade-offs likewise identify correlates consistent with social valuation, not a unique motive or stable moral type (Hsu et al., 2008; Tricomi et al., 2010). Comparative and neural evidence should determine the next discriminating contrast, not close the diagnosis.
-:::
 
 ## Bridge: preferences, norms, and enforcement are different
 
@@ -224,9 +173,76 @@ A person can dislike inequality privately even when no one else expects sharing.
 
 Bicchieri (2006) emphasizes that social norms depend on empirical and normative expectations within a relevant group. This definition forces specificity: who is the reference group, what behavior is expected, whose approval matters, and what happens after violation?
 
-This chapter needs that distinction because the same cooperative action can come from a preference, a belief, or enforcement. [*Social Norms and Conformity*](26-social-norms-and-conformity-when-other-people-become-evidence.qmd#social-norms-and-conformity-when-other-people-become-evidence) then takes the next step: it separates descriptive, injunctive, and dynamic norms and examines social learning, conformity, pluralistic ignorance, social proof, and information cascades.
+[*Social Norms and Conformity*](26-social-norms-and-conformity-when-other-people-become-evidence.qmd#social-norms-and-conformity-when-other-people-become-evidence) develops how those expectations form and change.
 
-::: {.callout-note .research-lens icon=false}
+
+## Application: build cooperation around the diagnosed failure
+
+Members of a project team withhold information, and the manager proposes a penalty. Before adding it, compare three explanations. Individual credit may reward hoarding; members may doubt that colleagues will reciprocate; or they may disagree about what can legitimately be shared.
+
+The first explanation calls for changing recognition, the second for a small reciprocal trial with visible contributions, and the third for an agreed disclosure rule that protects sensitive information. Sanctions require an observable violation and a fair correction process. They cannot create agreement about the rule by themselves.
+
+## Ethics: cooperation for whom?
+
+A cartel cooperates at buyers’ expense, and a cohesive team can enforce silence about harm. Evaluate cooperation from the position of everyone affected, including outsiders and dissenters. Rules need proportionate sanctions, correctable records, and a meaningful way to refuse or leave.
+
+## Practice Lab
+
+Play one anonymous Prisoner's Dilemma round, then four announced rounds with the same partner. Record actions, beliefs, expected continuation, perceived intentions, and stated norms separately after each round. Produce a mechanism ladder explaining the path through (1) repetition, (2) reputation or enforcement, (3) social preference, and (4) norm or identity. Add one treatment that distinguishes two adjacent rungs.
+
+## Take it forward
+
+The opening payoff table makes defection attractive because it leaves out every future encounter and every concern beyond the printed rewards. Add those possibilities deliberately, one at a time, and ask which change predicts the cooperation you observe. That is more useful than deciding whether the players are simply generous or selfish.
+
+Cooperation shows how other people enter value: their actions change what an outcome is worth. Social learning adds a second route. Other people's actions also enter evidence, informing us about what may be true, what others do, and what they appear to approve.
+
+## Optional research and application notes
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Advanced research track: identify social preferences by contrast
+
+These models and contrasts help separate concern for outcomes from responses to intentions.
+
+[]{#distributional-models-make-motives-testable}
+
+### Distributional models: inequality aversion {#inequality-aversion}
+
+For two people, Fehr and Schmidt's (1999) model can be written as
+
+$$
+U_i=x_i-\alpha_i\max(x_j-x_i,0)-\beta_i\max(x_i-x_j,0),
+$$
+
+with the standard restrictions $\alpha_i\geq\beta_i$ and $0\leq\beta_i<1$. The first penalty represents disadvantageous inequality; the second represents advantageous inequality. Because disadvantageous inequality can hurt more, a responder may reject a low ultimatum offer, while a proposer may share even when rejection is impossible.
+
+The model is descriptive and falsifiable. It is not a claim that inequality is the only concern. Bolton and Ockenfels's (2000) ERC model emphasizes one's relative share, while Charness and Rabin (2002) allow concerns for total surplus, the worst-off person, and reciprocity. Efficiency and equality can conflict: giving an extra euro to the better-off person may create several euros of total benefit, while equalization may reduce the sum.
+
+### Revealed preference over allocations
+
+Andreoni and Miller (2002) gave 176 participants 8–11 allocation choices at varying prices of giving, producing more than 1,600 decisions. Eighteen of the 176 participants violated at least one of the revealed-preference axioms tested. Only three—fewer than 2%—had violations classified as severe using a critical cost efficiency index below 0.95. The small severe-violation rate supports approximate consistency for most participants; it should not be reported as the rate of any violation.
+
+A familiar summary assigns 47.2% to a selfish type, 30.4% to an egalitarian or maximin type, and 22.4% to a utilitarian type. But only 43% fit one of the pure categories exactly; the remaining 57% were assigned to the nearest category. The percentages demonstrate structured heterogeneity. They do not show that every person possesses one pure and permanent type.
+
+### Outcomes and intentions are different
+
+Outcome-based models ask who gets what. **Reciprocity** also asks why the other person acted. The same unequal allocation can be judged differently if it was freely chosen, forced by the available menu, produced by chance, or intended to help.
+
+### Worked identification contrast: same allocation, different control
+
+Suppose a responder faces the same proposed split—€8 for the proposer and €2 for the responder—in two conditions. In one, the proposer freely chose that split while an equal split was available. In the other, a computer assigned the split and the proposer had no control. Keep the responder's consequences and rejection option unchanged. Record the response, perceived intentionality, expected social approval, and belief about the proposer's alternatives.
+
+If rejection changes across conditions, a model based only on final payoffs is incomplete. The contrast does not by itself prove negative reciprocity: perceived intent, responsibility, norm violation, or demand may have changed. The additional records reveal which explanation is plausible and which further treatment is needed.
+
+### Cross-cultural, comparative, and neural evidence generate hypotheses
+
+Henrich and colleagues (2001) conducted ultimatum, public-goods, and dictator-type experiments across 15 small-scale societies. Behavior varied substantially. In Lamalera, Indonesia, offers were often hyperfair and have been discussed in relation to the cooperative organization of whale hunting. Among the Au and Gnau in Papua New Guinea, some high offers were rejected and have been interpreted in relation to obligations created by accepting gifts.
+
+These comparisons do not isolate culture from recruitment, comprehension, stakes, markets, kinship, or production systems. Meta-analysis likewise finds variation across settings (Oosterbeek et al., 2004). Use it to generate a specific hypothesis about entitlements or expectations, then test a contrast that separates that hypothesis from the other differences.
+
+In a well-known capuchin comparison, a monkey that receives cucumber while a neighbor receives a preferred grape sometimes refuses the cucumber. Inequality aversion, frustration, changed reward expectation, and protest against the experimenter remain competing accounts; the demonstration does not establish a human moral concept of fairness (Brosnan & de Waal, 2003). Neural studies of inequality and equity–efficiency trade-offs likewise identify correlates consistent with social valuation, not a unique motive or stable moral type (Hsu et al., 2008; Tricomi et al., 2010). Comparative and neural evidence should determine the next discriminating contrast, not close the diagnosis.
+:::
+
+::: {.callout-note .research-lens icon=false collapse=true}
 ## Applied Lens: measuring and enforcing social meaning
 
 ### Eliciting norms as a coordination problem
@@ -249,13 +265,7 @@ People sometimes pay to punish defectors or unfair partners. Punishment can stab
 
 De Quervain and colleagues (2004) found striatal activity associated with decisions to punish a defector in a trust-game setting. The correlation is consistent with punishment having reward value for some participants. It does not prove that punishment is intrinsically pleasurable, just, or effective outside the task.
 
-Before adding sanctions, ask:
-
-1. Can contribution and violation be observed accurately?
-2. Who decides that a violation occurred?
-3. Can the accused correct the record or appeal?
-4. Does punishment repair cooperation or merely impose pain?
-5. Can high-status members punish low-status members without reciprocal accountability?
+Before adding sanctions, establish who judges violations, how errors can be appealed, and whether powerful members face the same accountability. Measure repair of cooperation as well as the punishment imposed.
 
 ### When a fine changes the meaning of the act
 
@@ -265,9 +275,9 @@ The result is a warning, not a universal crowding-out rule. A fine can deter whe
 
 ### Fairness in markets: entitlement constrains price
 
-Kahneman, Knetsch, and Thaler (1986) asked separate samples of respondents to judge market practices. @fig-fairness-entitlements-redraw shows four selected historical vignettes. The two car questions provide the cleaner framing contrast because the final list price is the same but its path differs. The snow-shovel and lettuce questions are not a controlled pair: the products, circumstances, price changes, and samples also differ.
+Kahneman, Knetsch, and Thaler (1986) asked separate samples of respondents to judge market practices. @fig-fairness-entitlements-redraw shows four selected historical vignettes. The car questions hold the size of the price increase at $200 but vary its relation to list price: one adds a surcharge above list, while the other removes a discount below list. Their final prices are different, so this is not a comparison of identical final prices. The snow-shovel and lettuce questions are not a controlled pair: the products, circumstances, price changes, and samples also differ.
 
-![Four selected fairness judgments from Kahneman, Knetsch, and Thaler (1986), redrawn from the reported values. A post-storm snow-shovel increase was rated unfair or very unfair by 82% of respondents, and a lettuce wholesale-cost pass-through was rated unfair by 21%. Charging $200 above a scarce car's list price was rated unfair by 71%, compared with 42% for withdrawing an equivalent $200 discount. Each row is a separate historical Canadian sample; the results are descriptive and do not define universal or normative fairness.](../figures/fairness-entitlements-redraw.svg){#fig-fairness-entitlements-redraw fig-alt="Four horizontal bars report the percentage rating a market action unfair or very unfair. Snow-shovel price rise after a storm is 82 percent, lettuce wholesale-cost pass-through is 21 percent, a scarce-car surcharge above list is 71 percent, and withdrawal of an equivalent discount is 42 percent. Sample sizes are shown, and the footer identifies separate Toronto and Vancouver samples from 1984 to 1985 and warns against universal or normative interpretation." width=100%}
+![Four selected fairness judgments from Kahneman, Knetsch, and Thaler (1986), redrawn from the reported values. A post-storm snow-shovel increase was rated unfair or very unfair by 82% of respondents, and a lettuce wholesale-cost pass-through was rated unfair by 21%. Charging $200 above a scarce car's list price was rated unfair by 71%, compared with 42% for withdrawing a $200 discount. Each row is a separate historical Canadian sample; the results are descriptive and do not define universal or normative fairness.](../figures/fairness-entitlements-redraw.svg){#fig-fairness-entitlements-redraw fig-alt="Four horizontal bars report the percentage rating a market action unfair or very unfair. Snow-shovel price rise after a storm is 82 percent, lettuce wholesale-cost pass-through is 21 percent, a scarce-car surcharge above list is 71 percent, and withdrawal of a $200 discount is 42 percent. Sample sizes are shown, and the footer identifies separate Toronto and Vancouver samples from 1984 to 1985 and warns against universal or normative interpretation." width=100%}
 
 Two additional vignettes preserve the broader evidence without overloading the figure: 74% rated auctioning one scarce doll to the highest bidder unfair ($N=101$), and 91% rated a rent increase exploiting a tenant's location-specific dependence unfair ($N=157$). “Unfair” combines the two unfavorable response categories; these rows come from separate samples rather than one pooled survey.
 
@@ -281,45 +291,6 @@ Minimal-group experiments show that arbitrary categorization can produce in-grou
 
 The evidence does not show that favoritism is biologically fixed. Nor does the ethnocentrism simulation in the previous chapter supply human causal evidence. Identity can enlarge cooperation inside a boundary while shrinking concern outside it. A cooperation design must therefore ask not only “Can we make this group cooperate?” but also “Who becomes the out-group, and who bears the cost?”
 :::
-
-## Application: build cooperation around the diagnosed failure
-
-Suppose members of a project team withhold information.
-
-1. **Map material incentives.** Does sharing help the project but reduce individual credit or bargaining power?
-2. **Measure beliefs.** Do members expect others to share? Do they expect sharing to be valued?
-3. **Check repetition and reputation.** Will contributors meet again, and is the record accurate?
-4. **Test social preferences.** Do people sacrifice to help the team when strategic consequences are removed?
-5. **Elicit the norm.** What do members believe a responsible colleague should disclose, and when?
-6. **Change the institution.** Align credit, create reciprocal access, document contributions, provide a safe correction process, and protect sensitive information.
-7. **Audit boundaries.** Could “sharing” expose a vulnerable person, violate consent, or become compulsory surveillance?
-
-Do not begin with a team-building slogan if the payoff system rewards hoarding. Do not begin with punishment if the behavior is unobservable or the norm is contested. Match the lever to the mechanism.
-
-## Ethics: cooperation for whom?
-
-Cooperation is not automatically good.
-
-- A cartel is cooperation among sellers against buyers.
-- Silence can be cooperation with a harmful organizational norm.
-- Strong in-group reciprocity can finance exclusion of outsiders.
-- Reputation can sustain trust or create an unerasable social score.
-- Punishment can protect a commons or suppress dissent.
-- Commitment can stabilize a relationship or trap someone who needs to leave.
-
-The ethical test asks whether affected people understand the rule, whose objective it serves, how evidence is corrected, whether sanctions are proportionate, and whether refusal or exit remains meaningful.
-
-## Practice Lab
-
-Play one anonymous Prisoner's Dilemma round, then four announced rounds with the same partner. Record actions, beliefs, expected continuation, perceived intentions, and stated norms separately after each round. Produce a mechanism ladder explaining the path through (1) repetition, (2) reputation or enforcement, (3) social preference, and (4) norm or identity. Add one treatment that distinguishes two adjacent rungs.
-
-## Take it forward
-
-- **Use this when** a team, market, or community creates joint value yet gives each actor a reason to free ride or defect.
-- **Do not infer** altruism, selfishness, fairness, or norm compliance from cooperation or defection alone.
-- **Try this next** by locating the failure on the mechanism ladder and changing the narrowest rule that addresses it.
-
-Cooperation shows how other people enter value: their actions change what an outcome is worth. Social learning adds a second route. Other people's actions also enter evidence, informing us about what may be true, what others do, and what they appear to approve.
 
 ## References cited in this chapter
 

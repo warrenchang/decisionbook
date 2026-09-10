@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2df1c134e8a8f9a6c8318e4ae69a9baa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aeb761aecd5c5ae153118da15ab1f1a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -529,10 +558,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#choose-a-tool-in-thirty-seconds" id="toc-choose-a-tool-in-thirty-seconds" class="nav-link active" data-scroll-target="#choose-a-tool-in-thirty-seconds">Choose a tool in thirty seconds</a></li>
-  <li><a href="#twelve-canonical-tools" id="toc-twelve-canonical-tools" class="nav-link" data-scroll-target="#twelve-canonical-tools">Twelve canonical tools</a></li>
+  <li><a href="#choose-a-tool-in-thirty-seconds" id="toc-choose-a-tool-in-thirty-seconds" class="nav-link active" data-scroll-target="#choose-a-tool-in-thirty-seconds">Choose a tool</a></li>
+  <li><a href="#twelve-canonical-tools" id="toc-twelve-canonical-tools" class="nav-link" data-scroll-target="#twelve-canonical-tools">Twelve core tools</a></li>
   <li><a href="#individual-judgment-and-decision-process" id="toc-individual-judgment-and-decision-process" class="nav-link" data-scroll-target="#individual-judgment-and-decision-process">Individual judgment and decision process</a></li>
   <li><a href="#probability-risk-time-and-well-being" id="toc-probability-risk-time-and-well-being" class="nav-link" data-scroll-target="#probability-risk-time-and-well-being">Probability, risk, time, and well-being</a></li>
+  <li><a href="#social-and-strategic-decisions" id="toc-social-and-strategic-decisions" class="nav-link" data-scroll-target="#social-and-strategic-decisions">Social and strategic decisions</a></li>
   <li><a href="#behavior-and-self-regulation" id="toc-behavior-and-self-regulation" class="nav-link" data-scroll-target="#behavior-and-self-regulation">Behavior and self-regulation</a></li>
   <li><a href="#persuasion-communication-and-connection" id="toc-persuasion-communication-and-connection" class="nav-link" data-scroll-target="#persuasion-communication-and-connection">Persuasion, communication, and connection</a></li>
   <li><a href="#negotiation" id="toc-negotiation" class="nav-link" data-scroll-target="#negotiation">Negotiation</a></li>
@@ -563,16 +593,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Use these tools as printable work surfaces, not as another sequence to memorize. Each tool points back to a mechanism in the main text and produces an inspectable output. Do not complete the appendix from top to bottom.</p>
+<p>Choose a tool for a decision you are working on, then complete its record or exercise. These worksheets turn the chapter ideas into practical prompts. A useful output is a forecast you can resolve, a question you can ask, or a change you can try and review.</p>
 <section id="choose-a-tool-in-thirty-seconds" class="level2">
-<h2 data-anchor-id="choose-a-tool-in-thirty-seconds">Choose a tool in thirty seconds</h2>
-<ol type="1">
-<li><strong>Reviewing a result whose reasoning was not preserved?</strong> Start with the <strong>Decision Audit Studio</strong>.</li>
-<li><strong>Making a consequential decision whose outcome is still unknown?</strong> Start with the <strong>One-Page Decision Journal</strong>.</li>
-<li><strong>Already know the weak stage?</strong> Choose the single canonical tool in the table below that matches it.</li>
-<li><strong>Two tools seem relevant?</strong> Start with the earlier failure in the decision loop. For example, make missing evidence visible before calculating risk, and separate predictions from values before negotiating a trade-off.</li>
-<li><strong>Stop after an inspectable output.</strong> Add a specialized extension only when that output reveals a specific unanswered problem.</li>
-</ol>
+<h2 data-anchor-id="choose-a-tool-in-thirty-seconds">Choose a tool</h2>
+<p>If the outcome is still unknown, the <strong>One-Page Decision Journal</strong> helps preserve your reasoning. If you are reviewing a completed decision, the <strong>Decision Audit Studio</strong> helps separate the process from the result. For a more specific difficulty, use the table below. Add another tool only when the first reveals a question it cannot answer.</p>
 <div id="tbl-tool-levels" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tool-levels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -599,14 +623,14 @@ Table&nbsp;C.1: Scale the tool to the decision rather than the number of availab
 <td>A five-minute diagnosis and one next action</td>
 </tr>
 <tr class="even">
-<td><strong>Canonical tool</strong></td>
+<td><strong>Core tool</strong></td>
 <td>A consequential or repeated task that needs a reusable record</td>
 <td>One completed page or map</td>
 </tr>
 <tr class="odd">
 <td><strong>Specialized extension</strong></td>
-<td>A narrower research, classroom, clinical-safety, contract, or governance problem</td>
-<td>The canonical output plus the named extension—not the entire appendix</td>
+<td>A specific question left unresolved by a core tool</td>
+<td>An additional check or exercise</td>
 </tr>
 </tbody>
 </table>
@@ -615,20 +639,15 @@ Table&nbsp;C.1: Scale the tool to the decision rather than the number of availab
 </div>
 </section>
 <section id="twelve-canonical-tools" class="level2">
-<h2 data-anchor-id="twelve-canonical-tools">Twelve canonical tools</h2>
-<p>Begin with the smallest tool that fits the diagnosed problem. The remaining worksheets in this appendix are specialized extensions, not additional stages that every decision must pass through.</p>
+<h2 data-anchor-id="twelve-canonical-tools">Twelve core tools</h2>
+<p>The first column identifies the task. Follow the tool link to its instructions; the final column tells you what to produce.</p>
 <div id="tbl-canonical-tools" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-canonical-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the output each must produce.
+Table&nbsp;C.2: Twelve tools matched to the task and the output.
 </figcaption>
 <div aria-describedby="tbl-canonical-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Decision task</th>
@@ -639,62 +658,62 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 <tbody>
 <tr class="odd">
 <td>Preserve reasoning before outcomes are known</td>
-<td>One-Page Decision Journal</td>
+<td><a href="#tool-one-page-decision-journal">One-Page Decision Journal</a></td>
 <td>Dated alternatives, forecasts, values, assumptions, and review rule</td>
 </tr>
 <tr class="even">
 <td>Diagnose an entire decision</td>
-<td>Decision Audit Studio</td>
+<td><a href="#tool-decision-audit-studio">Decision Audit Studio</a></td>
 <td>Process map, weakest link, and separate process/outcome ratings</td>
 </tr>
 <tr class="odd">
 <td>Correct selective evidence</td>
-<td>Attention Audit</td>
+<td><a href="#tool-attention-audit">Attention Audit</a></td>
 <td>Missing-information map and visibility redesign</td>
 </tr>
 <tr class="even">
-<td>Separate factual and moral disagreement</td>
-<td>Prediction–Valuation Split</td>
+<td>Separate forecasts from values</td>
+<td><a href="#tool-prediction-valuation-split">Prediction–Valuation Split</a></td>
 <td>Forecasts, values, and the next useful test or conversation</td>
 </tr>
 <tr class="odd">
 <td>Audit intuitive judgment</td>
-<td>Heuristic Detector</td>
+<td><a href="#tool-heuristic-detector">Heuristic Detector</a></td>
 <td>Target, substituted question, cue, boundary, and correction</td>
 </tr>
 <tr class="even">
 <td>Make uncertainty answerable to evidence</td>
-<td>Probability Judgment Audit</td>
+<td><a href="#tool-probability-judgment-audit">Probability Judgment Audit</a></td>
 <td>Reference class, natural frequencies, forecast, and score</td>
 </tr>
 <tr class="odd">
 <td>Compare risky alternatives</td>
-<td>Risky-Choice Audit</td>
+<td><a href="#tool-risky-choice-audit">Risky-Choice Audit</a></td>
 <td>Outcomes, probabilities, values, reference point, and affordable loss</td>
 </tr>
 <tr class="even">
 <td>Diagnose strategic dependence</td>
-<td>Strategic Interdependence Map</td>
+<td><a href="#tool-strategic-interdependence-map">Strategic Interdependence Map</a></td>
 <td>Players, options, payoffs, information, timing, and rule change</td>
 </tr>
 <tr class="odd">
 <td>Redesign repeated behavior</td>
-<td>Behavior Redesign Canvas</td>
+<td><a href="#tool-behavior-redesign-canvas">Behavior Redesign Canvas</a></td>
 <td>Target action, bottleneck, prompt, friction change, feedback, and recovery</td>
 </tr>
 <tr class="even">
-<td>Make meaning recoverable</td>
-<td>Verified Understanding Loop</td>
+<td>Check mutual understanding</td>
+<td><a href="#tool-verified-understanding-loop">Verified Understanding Loop</a></td>
 <td>Interpretation, reflection, correction, and agreed next action</td>
 </tr>
 <tr class="odd">
 <td>Prepare a joint decision</td>
-<td>Negotiation Preparation</td>
+<td><a href="#tool-negotiation-preparation">Negotiation Preparation</a></td>
 <td>Alternatives, reservation values, priorities, uncertainty, and authority</td>
 </tr>
 <tr class="even">
 <td>Redesign an organizational decision</td>
-<td>Structured Judgment Pipeline</td>
+<td><a href="#tool-structured-judgment-pipeline">Structured Judgment Pipeline</a></td>
 <td>Decomposed judgments, independent estimates, challenge, record, and review</td>
 </tr>
 </tbody>
@@ -705,8 +724,9 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </section>
 <section id="individual-judgment-and-decision-process" class="level2">
 <h2 data-anchor-id="individual-judgment-and-decision-process">Individual judgment and decision process</h2>
-<p><strong>Canonical tools in this group:</strong> One-Page Decision Journal, Decision Audit Studio, Attention Audit, Prediction–Valuation Split, and Heuristic Detector. Expectation Loop Map and Bias Redesign Studio are extensions for a diagnosed feedback loop or recurring process failure.</p>
+<p>Preserve a decision before its outcome with the journal, or examine an earlier decision with the audit. The shorter tools below focus on evidence, disagreement, and intuitive judgment.</p>
 <p><span id="one-page-decision-journal"></span></p>
+<p><span id="tool-one-page-decision-journal"></span></p>
 <div class="one-page-decision-journal callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -774,6 +794,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 <p>Keep access and retention proportionate to the stakes. The journal is a learning aid, not a substitute for required minutes, approvals, professional records, or privacy safeguards.</p>
 </div>
 </div>
+<p><span id="tool-decision-audit-studio"></span></p>
 <div class="decision-audit-studio callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -789,6 +810,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 <p>The audit cannot prove that the chosen road was best or recover the counterfactual road not taken. It can make missing options, weak evidence, hidden values, social influence, and unresolved uncertainty visible.</p>
 </div>
 </div>
+<p><span id="tool-attention-audit"></span></p>
 <div class="attention-audit callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -799,9 +821,10 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>What captured attention? What was missing? Which question, role, metric, order, device, or time pressure made that pattern likely? What design would make the neglected variable visible?</p>
+<p>Write down what received attention and what was overlooked. Identify a feature of the situation that could explain the difference—for example, a vivid story, the order of information, or time pressure. Propose one change that would make the missing evidence easier to notice.</p>
 </div>
 </div>
+<p><span id="tool-prediction-valuation-split"></span></p>
 <div class="prediction-valuation-split callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -825,7 +848,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose a belief about yourself, another person, a group, a market, or a negotiation. Map: belief → attention → interpretation → emotion or physiology → action → response from others or environment → feedback. Mark the strongest confirmation point and one intervention point. Ask whether the final evidence was independent or partly produced by the original expectation.</p>
+<p>Choose one expectation and draw a possible path through which it could help change an outcome. The links might involve attention, interpretation, action, another person’s response, or physiology where relevant. Mark which links are observed and which are conjectures. Identify one comparison that could distinguish an expectation’s causal influence from an accurate forecast.</p>
 </div>
 </div>
 <div class="bias-redesign-studio callout callout-style-default callout-note no-icon callout-titled">
@@ -841,6 +864,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 <p>Choose one process—hiring, investing, exam preparation, project planning, purchasing, or negotiation. Name a likely trigger such as an early anchor, vivid anecdote, identity threat, global impression, or time pressure. Redesign the process <em>before</em> the trigger appears: specify who does what, when, using which independent evidence. Prefer a changed environment to a promise of willpower.</p>
 </div>
 </div>
+<p><span id="tool-heuristic-detector"></span></p>
 <div class="heuristic-detector callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -852,19 +876,19 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What target question should be answered?</li>
-<li>What easier question did the mind appear to answer?</li>
-<li>Which cue made that substitution tempting?</li>
-<li>When would that cue be ecologically useful?</li>
-<li>What denominator, comparison, or disconfirming evidence is needed here?</li>
+<li>What question needs an answer?</li>
+<li>Which cue or rule appears to guide the judgment? If an easier question was substituted, name it.</li>
+<li>When would that cue or rule give a useful answer?</li>
+<li>What comparison or missing evidence could reveal a mistake here?</li>
 </ol>
-<p>Finish with a redesign that changes the judgment process, not merely a warning to “be less biased.”</p>
+<p>Finish with one change to the judgment process that addresses the identified weakness.</p>
 </div>
 </div>
 </section>
 <section id="probability-risk-time-and-well-being" class="level2">
 <h2 data-anchor-id="probability-risk-time-and-well-being">Probability, risk, time, and well-being</h2>
-<p><strong>Canonical tools in this group:</strong> Probability Judgment Audit, Risky-Choice Audit, and Strategic Interdependence Map. Use the other worksheets only for the narrower sampling, intertemporal, accounting, market, or well-being problem named in their title.</p>
+<p>Start with the Probability Judgment Audit for a forecast or the Risky-Choice Audit for a choice among uncertain outcomes. The remaining tools address the specific problems named in their titles.</p>
+<p><span id="tool-probability-judgment-audit"></span></p>
 <div class="probability-judgment-audit callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -875,9 +899,10 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Define the target event, reference class, time horizon, and conditioning direction. Write the complement. For AND questions, check whether a detailed conjunction has been made more likely than one of its parts; for OR questions, check overlap before adding. Translate percentages into natural frequencies with a common denominator. Separate correlation from a causal claim. Record the forecast, probability, resolution rule, and later Brier score.</p>
+<p>Define the event, population, time horizon, and the condition on which the probability depends. Translate percentages into counts within a shared population, keeping clear which subgroup each conditional rate refers to. For a conjunction, check that it is no more likely than either component; when adding probabilities, account for overlap. Record the forecast and a rule for resolving it. After resolution, score the same event—for a binary outcome, the Brier score is <span class="math inline">\((p-y)^2\)</span>, where <span class="math inline">\(p\)</span> is the forecast probability between 0 and 1 and <span class="math inline">\(y\)</span> is 1 if the event occurred and 0 otherwise.</p>
 </div>
 </div>
+<p><span id="tool-risky-choice-audit"></span></p>
 <div class="risky-choice-audit callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -888,7 +913,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>List outcomes, probabilities or ambiguity, expected value, utility-relevant consequences, and the maximum affordable loss. Elicit the certainty equivalent before naming a risk attitude. State the reference point and whether the same prospect was described as a gain or a loss. Ask whether insurance, diversification, or an information purchase changes the distribution. Finish by naming what expected utility explains, what prospect theory describes, and what neither model identifies from one choice.</p>
+<p>List outcomes, probabilities or ambiguity, expected value, utility-relevant consequences, and the maximum affordable loss. Elicit the certainty equivalent before naming a risk attitude. State the reference point and whether the same prospect was described as a gain or a loss. Ask how insurance or diversification changes the possible payoffs. Separately, ask whether new information would change the probability estimates or the chosen action enough to justify its cost. Finish by naming what expected utility explains, what prospect theory describes, and what neither model identifies from one choice.</p>
 </div>
 </div>
 <div class="experience-sample-audit callout callout-style-default callout-note no-icon callout-titled">
@@ -914,7 +939,7 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Map the complete outcome stream for every option. Check <strong>M</strong>agnitude, <strong>O</strong>pportunity cost and hidden zeros, <strong>S</strong>ign, and <strong>T</strong>ime frame. Then test liquidity, future-payment reliability, inflation, transaction costs, subjective time, future-self distance, and anticipation. Compare within-option integration with across-attribute comparison. Use commitment only when it protects a goal the chooser endorses and preserves a proportionate recovery path.</p>
+<p>Write the full stream of outcomes for each option. Use <strong>MOST</strong> to check magnitude, opportunity cost (including hidden zeros), sign, and time frame. Then ask whether cash needs, trust in future payment, inflation, or transaction costs explain the choice before attributing it to impatience. If you propose a commitment, specify the goal it protects and what happens after a missed step.</p>
 </div>
 </div>
 <div class="mental-accounting-audit callout callout-style-default callout-note no-icon callout-titled">
@@ -943,19 +968,6 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 <p>State the information set and expected-return model behind an efficiency claim. For an anomaly, ask about risk, mispricing, data mining, transaction costs, financing, short-sale constraints, and post-publication decay. For a bubble claim, separate uncertain fundamental value from evidence of feedback, resale motives, leverage, liquidity, and arbitrage limits. Historical patterns are evidence to diagnose, not trading instructions.</p>
 </div>
 </div>
-<div class="strategic-interdependence-map callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Strategic Interdependence Map
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Identify players, actions, payoffs, information, timing, repetition, and enforcement. Mark dominant actions, best responses, Nash equilibria, focal points, and mixed motives. Predict what each player believes the other will do—and what each thinks the other believes. Keep one-shot reasoning, repeated-game incentives, social preferences, norms, and evolutionary selection as distinct candidate mechanisms.</p>
-</div>
-</div>
 <div class="well-being-measurement-audit callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -970,9 +982,27 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 </section>
+<section id="social-and-strategic-decisions" class="level2">
+<h2 data-anchor-id="social-and-strategic-decisions">Social and strategic decisions</h2>
+<p><span id="tool-strategic-interdependence-map"></span></p>
+<div class="strategic-interdependence-map callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Strategic Interdependence Map
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Identify the players, their available actions, and how each person’s outcome depends on the combination of choices. Record what they know and when they move. Find best responses under the stated beliefs, then ask how repetition, social preferences, norms, or enforcement could change the prediction. Mark the assumptions you would need to check before applying the game to a real situation.</p>
+</div>
+</div>
+</section>
 <section id="behavior-and-self-regulation" class="level2">
 <h2 data-anchor-id="behavior-and-self-regulation">Behavior and self-regulation</h2>
-<p><strong>Canonical tool in this group:</strong> Behavior Redesign Canvas. Habit diagnosis is now its first step; the urge-observation exercise is a bounded extension for a mild impulse.</p>
+<p>Use the Behavior Redesign Canvas to change a repeated action. The short urge-observation exercise is useful when a noticeable impulse is part of the episode.</p>
+<p><span id="tool-behavior-redesign-canvas"></span></p>
 <div class="behavior-redesign-canvas callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -983,8 +1013,8 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose one mild, real repeated behavior. First diagnose the current loop: <strong>cue → impulse → action → outcome</strong>. An impulse is readiness to act and need not be consciously felt; learning through repetition shapes how readily the cue brings the action to mind next time. Name the local problem the action solves. Then specify the smallest replacement, one cue or prompt, one friction change, immediate feedback or reinforcement, a seven-day measure, a review date, a recovery rule, and whose goal the redesign serves.</p>
-<p>The inspectable output is one old loop, one redesigned loop, and one measure—not a completed inventory of every behavior-change framework.</p>
+<p>Choose one mild, repeated behavior. Reconstruct <strong>cue → impulse → action → outcome</strong>, using <em>impulse</em> to mean readiness to act even when it was not consciously noticed. Record what the action accomplished in the moment.</p>
+<p>Specify one feasible replacement and one change to the setting that would help it occur. Decide what you will record for a week, when you will review it, and how you will resume after a lapse. The output is the old routine, the proposed change, and a measure of whether it helped the person’s own goal.</p>
 </div>
 </div>
 <div class="urge-surf callout callout-style-default callout-note no-icon callout-titled">
@@ -997,13 +1027,13 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use a mild impulse, not a clinical crisis. Recognize the cue; breathe; allow the sensation to be present; investigate its location, image, emotion, and promise; name it as an experience rather than an identity; choose the next wise action. After sixty seconds, record what changed and what did not. This is practice in observing an urge, not a substitute for professional support where medical or addiction risk is present.</p>
+<p>Choose a mild everyday impulse. Pause, breathe, and notice what the urge feels like without requiring it to disappear. After about a minute, record what changed and choose the next action. This is an observation exercise; a minute is a practical interval, not a prediction of how quickly an urge should fade. It is not treatment for addiction or a crisis.</p>
 </div>
 </div>
 </section>
 <section id="persuasion-communication-and-connection" class="level2">
 <h2 data-anchor-id="persuasion-communication-and-connection">Persuasion, communication, and connection</h2>
-<p><strong>Canonical tool in this group:</strong> Verified Understanding Loop. Model-Updating Message and Layered Listening are extensions for a diagnosed communication task. Classroom production and paired-conversation activities appear together at the end of the appendix.</p>
+<p>Use the Verified Understanding Loop when people may be interpreting the same words differently. The message and listening tools help you prepare what to say or ask.</p>
 <div class="model-updating-message callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1014,8 +1044,8 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Build the audience model before the message: who decides; desired response; current model; protected value or identity; main barrier; evidence the audience would accept; costs, risks, status concerns, or practical constraints; strongest counterargument; and material uncertainty. Then draft: current model → meaningful mismatch → candidate model → credible evidence → feasible, agency-preserving action.</p>
-<p>For a short form, use <strong>AND–BUT–THEREFORE</strong>: shared reality, a consequential contradiction, and the necessary next model or action. For a fuller pitch, use <strong>STORY</strong>: Shared reality; Trouble; Opportunity; Reasons to believe; Yes to a specific decision. A strong Yes names who does what, by when, with what commitment, while preserving meaningful choice.</p>
+<p>Before drafting, state who the audience is, what they currently believe, what concerns them, and what evidence could reasonably change their view. Name the desired response and the strongest objection to it.</p>
+<p>For a short message, use <strong>AND–BUT–THEREFORE</strong>: establish shared reality, explain the problem, and propose the next step. For a fuller message, <strong>STORY</strong> means Shared reality, Trouble, Opportunity, Reasons to believe, and Yes to a specific decision. Make the action feasible and the uncertainty visible. Both are writing prompts; neither guarantees persuasion.</p>
 </div>
 </div>
 <div class="layered-listening callout callout-style-default callout-note no-icon callout-titled">
@@ -1028,9 +1058,10 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>WHAT happened? HOW did it feel or unfold? WHY does it matter? WHO is implicated in identity or relationship? WHEN is the timing or history relevant? ACTION: what does the person want now - understanding, advice, decision, repair, or commitment?</p>
+<p>Begin with what happened, then ask what it meant to the speaker. Explore feelings, history, or relationships when they are relevant and the person welcomes the question. Check what is wanted from the conversation: understanding, advice, a decision, repair, or a commitment. The layers guide curiosity; they are not a required interrogation sequence.</p>
 </div>
 </div>
+<p><span id="tool-verified-understanding-loop"></span></p>
 <div class="verified-understanding-loop callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1041,13 +1072,14 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ask; listen; reflect the meaning in your own words; invite correction; repeat until the speaker can say, “Yes, that is it.” Agreement is optional. Accuracy, dignity, and the speaker’s authority to correct your model are not.</p>
+<p>Ask, listen, and restate the meaning in your own words. Invite the speaker to correct what you missed, then check again. The aim is an account the speaker recognizes as accurate. You can understand a position while continuing to disagree with it.</p>
 </div>
 </div>
 </section>
 <section id="negotiation" class="level2">
 <h2 data-anchor-id="negotiation">Negotiation</h2>
-<p><strong>Canonical tool in this group:</strong> Negotiation Preparation. Tactic diagnosis, dispute-process choice, and package or contingency design are extensions used only after the corresponding problem has been identified.</p>
+<p>Begin with Negotiation Preparation. Use the later tools when an offer, tactic, disagreement, or implementation problem needs closer attention.</p>
+<p><span id="tool-negotiation-preparation"></span></p>
 <div class="negotiation-preparation callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1058,7 +1090,12 @@ Table&nbsp;C.2: Twelve canonical tools organized by the decision task and the ou
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>BATNA and how to improve it; reservation value; target; opening offer; objective standards; issues and priorities; estimate of their interests and alternatives; questions; packages; concession plan; ethical boundaries; implementation and review.</p>
+<ol type="1">
+<li>State your <strong>best alternative to a negotiated agreement (BATNA)</strong> and how you could improve it. Use it to determine the least acceptable agreement, allowing for risk and implementation costs.</li>
+<li>List the issues, priorities, target, proposed opening, and supporting standards.</li>
+<li>Record what you know about the other side’s interests and alternatives, and what you need to ask.</li>
+<li>Prepare possible packages, a concession plan, and terms for implementation and review.</li>
+</ol>
 </div>
 </div>
 <div class="negotiation-tactic-diagnostic callout callout-style-default callout-note no-icon callout-titled">
@@ -1095,7 +1132,7 @@ Table&nbsp;C.3: A diagnostic response to common bargaining tactics.
 <tr class="odd">
 <td>Flinch or visible shock</td>
 <td>Your proposal is unreasonable</td>
-<td>Return to standards and ask for the basis of the reaction; emotion is not evidence.</td>
+<td>Return to standards and ask for the basis of the reaction; visible emotion alone does not establish that the offer is unreasonable.</td>
 </tr>
 <tr class="even">
 <td>Nibble</td>
@@ -1144,7 +1181,7 @@ Table&nbsp;C.3: A diagnostic response to common bargaining tactics.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A <strong>mediator</strong> helps parties communicate, clarify interests, and design a voluntary agreement but ordinarily does not impose the outcome. An <strong>arbitrator</strong> hears the dispute and issues a decision that may be binding or nonbinding under the agreed procedure. In <strong>final-offer arbitration</strong>, the arbitrator selects one complete submitted proposal rather than constructing a compromise. Arbitration therefore transfers more outcome control to a third party. Before accepting either process, verify the neutral’s authority, the decision rule, confidentiality, costs, enforceability, and any right of review or appeal.</p>
+<p>A <strong>mediator</strong> helps parties seek a voluntary agreement and ordinarily does not impose the result. An <strong>arbitrator</strong> hears the dispute and issues a decision under the applicable procedure. In <strong>final-offer arbitration</strong>, the arbitrator chooses between submitted final offers; whether that choice concerns a whole package or individual issues depends on the rules. Before choosing a process, establish the neutral’s authority, costs, confidentiality, and whether the decision is binding or reviewable.</p>
 </div>
 </div>
 <div class="meso-contingency callout callout-style-default callout-note no-icon callout-titled">
@@ -1157,13 +1194,14 @@ Table&nbsp;C.3: A diagnostic response to common bargaining tactics.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>List all negotiable issues. For each side, estimate priority, threshold, and the evidence that would update the estimate. Build three multiple equivalent simultaneous offers that are approximately equal in value to you but trade differently across issues. If disagreement concerns the future, ask whether a contingent term can be made measurable, enforceable, resistant to sabotage, and compatible with both parties’ risk capacity. After a signed deal, keep it as the fallback while searching for a voluntary post-settlement improvement.</p>
+<p>List the negotiable issues and estimate what matters to each side. Prepare several packages of approximately equal value to you that trade differently across issues; these are <strong>multiple equivalent simultaneous offers (MESOs)</strong>. Use the response to learn about priorities.</p>
+<p>If the disagreement concerns a future event, consider a contingent term with a clear measure and verification process. Check whether either side could manipulate the measure or bear a risk it cannot manage. A signed agreement can remain the fallback while the parties voluntarily search for an improvement.</p>
 </div>
 </div>
 </section>
 <section id="organizational-choice-and-decision-systems" class="level2">
 <h2 data-anchor-id="organizational-choice-and-decision-systems">Organizational choice and decision systems</h2>
-<p><strong>Canonical tool in this group:</strong> Structured Judgment Pipeline. Choice-architecture, ethics, and AI-use records are extensions for decisions with those diagnosed design or governance risks.</p>
+<p>Use the Structured Judgment Pipeline to organize a group decision. Add the choice-architecture or AI-use record when the design involves those features, and use the ethical audit to examine who is affected.</p>
 <div class="choice-architecture-audit callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1177,6 +1215,7 @@ Table&nbsp;C.3: A diagnostic response to common bargaining tactics.
 <p>Trace one real path: objective → menu → understanding → action → feedback. Mark the options, order, categories, default, mapping, friction, timing, social information, and exit. Write the mechanism as a testable sentence: “Changing ___ should affect ___ because ___.” Compare a nudge with a boost, incentive, mandate, or structural change. Check purpose, welfare, evidence, transparency, exit, and distribution of burden.</p>
 </div>
 </div>
+<p><span id="tool-structured-judgment-pipeline"></span></p>
 <div class="structured-judgment-pipeline callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1187,7 +1226,8 @@ Table&nbsp;C.3: A diagnostic response to common bargaining tactics.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Produce one page with eight matched stages: <strong>define</strong> the decision, owner, affected people, and error costs; <strong>decompose</strong> three to five criteria; <strong>ground</strong> the judgment in a reference class or transparent baseline; <strong>judge independently</strong> before discussion or AI output; <strong>compare</strong> estimates, dispersion, and reasons; <strong>challenge</strong> with the strongest objection and one disconfirming test; <strong>decide and document</strong> trade-offs, authority, implementation, and exceptions; and <strong>review and learn</strong> using an observable outcome, threshold, and date. For a low-stakes reversible choice, use only define → challenge → decide → review.</p>
+<p>Define the decision, its owner, and the people affected. Break the judgment into relevant criteria and establish a comparison or reference class. Have members record estimates independently before hearing the group or an AI recommendation.</p>
+<p>Compare estimates and the reasons behind them, then examine the strongest objection. Record the decision, trade-offs, implementation responsibility, and conditions for reconsidering it. Set a review date and an outcome that can be checked. Use fewer steps when the stakes and complexity are low.</p>
 </div>
 </div>
 <p><span id="ai-use-record"></span></p>

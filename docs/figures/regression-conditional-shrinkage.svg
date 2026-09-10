@@ -109,16 +109,16 @@
 
   <path class="identity" d="M 130 620 L 820 160"/>
   <path class="prediction" d="M 130 482 L 820 298"/>
-  <text class="label" x="808" y="217" text-anchor="end">No-noise identity: z₂ = z₁</text>
-  <text class="orange" x="808" y="286" text-anchor="end">Prediction: E[z₂|z₁] = 0.40z₁</text>
+  <text x="150" y="153" font-family="Arial, sans-serif" font-size="21" fill="#536879">Dashed: z₂ = z₁</text>
+  <text x="805" y="153" text-anchor="end" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#a94c17">Orange: E[z₂|z₁] = 0.40z₁</text>
 
   <line class="guide" x1="705" y1="620" x2="705" y2="328.7"/>
   <line class="guide" x1="130" y1="328.7" x2="705" y2="328.7"/>
   <circle cx="705" cy="328.7" r="10" fill="#ffffff" stroke="#3f7f54" stroke-width="4"/>
-  <text class="green" x="685" y="363" text-anchor="end">z₁ = +2 → predicted z₂ = +0.8</text>
+  <text class="green" x="808" y="595" text-anchor="end">z₁ = +2 → prediction +0.8</text>
 
   <rect x="75" y="712" width="750" height="112" rx="18" fill="#eef5ef" stroke="#8db29a" stroke-width="2"/>
-  <text class="noteStrong" x="450" y="746" text-anchor="middle">Regression concerns the conditional average—not every case.</text>
+  <text class="noteStrong" x="450" y="746" text-anchor="middle">Regression predicts an average, not each outcome.</text>
   <text class="note" x="450" y="780" text-anchor="middle">Individual outcomes can move either way.</text>
   <text class="note" x="450" y="812" text-anchor="middle">Treatment effects still require a counterfactual.</text>
 </svg>

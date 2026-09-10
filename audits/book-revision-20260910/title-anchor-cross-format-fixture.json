@@ -1,0 +1,25 @@
+{
+  "fixture": "/private/tmp/decision-title-anchor-check",
+  "html_target_id_occurrences": 1,
+  "html_title_link_found": true,
+  "epub_target_id_occurrences": [
+    [
+      "EPUB/text/ch002.xhtml",
+      1
+    ]
+  ],
+  "epub_title_links": [
+    [
+      "EPUB/nav.xhtml",
+      "text/ch002.xhtml#risky-decision-making-a-probability-is-not-yet-a-feeling"
+    ],
+    [
+      "EPUB/text/ch001.xhtml",
+      "ch002.xhtml#risky-decision-making-a-probability-is-not-yet-a-feeling"
+    ]
+  ],
+  "epub_unresolved_qmd_links": [],
+  "passed": true,
+  "solution": "Original title fragments plus explicit anchor inside content-visible unless-format=epub after the source H1.",
+  "rejected_fixture": "when-format=html retained a duplicate EPUB anchor, so was not applied to book."
+}

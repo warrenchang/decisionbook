@@ -89,7 +89,7 @@ REQUIRED_CONTENT = [
     "Famous findings after replication",
     "Elderly-word priming slows walking",
     "Ill-fated disease–birth-year combinations shorten Chinese-American lives",
-    "Four category errors to avoid",
+    "Find out what kind of check was performed",
     "The same-name rule",
     "freeze → compare → update",
     "A Decision Is Already in the Making",

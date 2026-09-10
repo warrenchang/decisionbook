@@ -30,6 +30,7 @@ function chromeExecutable() {
 async function inspectPage(page, file, viewportName) {
   const relative = path.relative(docs, file);
   await page.goto(pathToFileURL(file).href, { waitUntil: "domcontentloaded" });
+  await revealResearchNotes(page);
   await page.waitForFunction(() => [...document.images].every((image) => image.complete), null, { timeout: 30000 });
 
   const result = await page.evaluate((name) => {
@@ -89,9 +90,21 @@ async function inspectPage(page, file, viewportName) {
 
 async function screenshotFigure(page, relative, selector, outputName) {
   await page.goto(pathToFileURL(path.join(docs, relative)).href, { waitUntil: "domcontentloaded" });
+  await revealResearchNotes(page);
   const locator = page.locator(selector).first();
   await locator.scrollIntoViewIfNeeded();
   await locator.screenshot({ path: path.join(screenshotDir, outputName) });
+}
+
+// Inspect figures inside optional notes as well as the main reading route.
+// This changes only the test page's display state, not the published default.
+async function revealResearchNotes(page) {
+  await page.evaluate(() => {
+    document.querySelectorAll('.callout-collapse.collapse').forEach((body) => {
+      body.classList.add('show');
+    });
+    document.querySelectorAll('details').forEach((details) => { details.open = true; });
+  });
 }
 
 async function main() {
@@ -208,8 +221,8 @@ async function main() {
     }
     if (rowgroups !== 2) issues.push(`The self-fulfilling and self-defeating table has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");
-    if (!/System 2/.test(daughterCaption) || !/System 1/.test(daughterCaption) || !/4 \+ 1/.test(daughterCaption)) {
-      issues.push("Figure 8.3 caption does not state the System 2 to System 1 transition");
+    if (!/practice/.test(daughterCaption) || !/learning/.test(daughterCaption)) {
+      issues.push("Figure 8.3 caption does not explain the practice and learning illustration");
     }
 
     const report = {

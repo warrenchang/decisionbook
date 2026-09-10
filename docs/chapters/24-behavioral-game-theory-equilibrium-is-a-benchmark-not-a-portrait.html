@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2df1c134e8a8f9a6c8318e4ae69a9baa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aeb761aecd5c5ae153118da15ab1f1a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -558,8 +558,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#opening-puzzle-should-a-sophisticated-player-choose-zero" id="toc-opening-puzzle-should-a-sophisticated-player-choose-zero" class="nav-link" data-scroll-target="#opening-puzzle-should-a-sophisticated-player-choose-zero">Opening puzzle: should a sophisticated player choose zero?</a>
+  <li><a href="#opening-puzzle-should-a-sophisticated-player-choose-zero" id="toc-opening-puzzle-should-a-sophisticated-player-choose-zero" class="nav-link active" data-scroll-target="#opening-puzzle-should-a-sophisticated-player-choose-zero">Opening puzzle: should a sophisticated player choose zero?</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a>
   <ul class="collapse">
   <li><a href="#two-beauty-contests" id="toc-two-beauty-contests" class="nav-link" data-scroll-target="#two-beauty-contests">Two beauty contests</a></li>
   </ul></li>
@@ -607,6 +607,12 @@ window.Quarto = {
 <p>— Colin F. Camerer, Teck-Hua Ho, and Juin-Kuan Chong, <a href="https://academic.oup.com/qje/article-abstract/119/3/861/1938841">“A Cognitive Hierarchy Model of Games”</a>, 2004, p.&nbsp;861</p>
 </blockquote>
 </div>
+<section id="opening-puzzle-should-a-sophisticated-player-choose-zero" class="level2">
+<h2 data-anchor-id="opening-puzzle-should-a-sophisticated-player-choose-zero">Opening puzzle: should a sophisticated player choose zero?</h2>
+<p>In a group of at least three people, everyone chooses a real number from 0 to 100. The player closest to two-thirds of the group’s mean wins a fixed prize, shared equally in a tie.</p>
+<p>If others choose uniformly at random, their expected mean is 50. A simple first approximation aims at two-thirds of that, about 33; if others aim at 33, the next step aims near 22, then near 15. This familiar ladder treats the group mean as given, which is more plausible in a large group. Exact best responses in a finite prize game also depend on one’s own influence on the mean, the distribution of others’ choices, and the tie rule.</p>
+<p>Under common knowledge of rationality, iterated elimination removes choices above <span class="math inline">\(66\frac{2}{3}\)</span>, then above <span class="math inline">\(44\frac{4}{9}\)</span>, and so on. The unique Nash equilibrium is zero.</p>
+<p>But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. The equilibrium calculation is correct under its assumptions. A prediction of the actual choice distribution can therefore be more useful for winning than the equilibrium number alone.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -617,9 +623,10 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Game theory supplies conditional equilibrium benchmarks for strategically interdependent choices. But real players may represent a different game, reason only a few steps, hold different beliefs, or learn from feedback; an observed departure does not identify which explanation is correct. Therefore behavioral game theory turns the gap between benchmark and behavior into evidence to explain, not permission to call people irrational or infer a reasoning type from one action. Population dynamics remain available below as an advanced extension with a different unit of analysis.</p>
+<p>Predicting a strategic choice requires a view of what players believe about one another. Equilibrium provides one benchmark; limited reasoning and learning provide alternatives. Comparing their predictions helps us explain behavior without treating one observed action as a window into a person’s mind.</p>
 </div>
 </div>
+</section>
 <section id="learning-goals" class="level2">
 <h2 data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
@@ -627,31 +634,10 @@ window.Quarto = {
 <li>Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.</li>
 <li>Design an observation or treatment that distinguishes competing explanations for the same strategic action.</li>
 </ul>
-<div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Where this chapter enters the loop
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Behavioral game theory examines how people <strong>Predict</strong> other minds and <strong>Learn</strong> from strategic feedback. The same action can follow from different beliefs, depths of reasoning, or adaptation histories.</p>
-</div>
-</div>
-</section>
-<section id="opening-puzzle-should-a-sophisticated-player-choose-zero" class="level2">
-<h2 data-anchor-id="opening-puzzle-should-a-sophisticated-player-choose-zero">Opening puzzle: should a sophisticated player choose zero?</h2>
-<p>Everyone chooses a number from 0 to 100. The winner is closest to two-thirds of the group’s mean.</p>
-<p>If choices were random, the mean would be about 50, so a best response would be about 33. If others make that calculation, a best response is about 22. If they expect one more step, the answer is about 15. Repeating the reasoning drives the choice toward zero.</p>
-<p>Under common knowledge of rationality, iterated elimination removes choices above <span class="math inline">\(66\frac{2}{3}\)</span>, then above <span class="math inline">\(44\frac{4}{9}\)</span>, and so on. The unique Nash equilibrium is zero.</p>
-<p>But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. The equilibrium calculation is correct under its assumptions. The decision is poor because the population is not at equilibrium.</p>
-<p>This is the central puzzle. Strategic sophistication is not the number of steps one can calculate in isolation. It is choosing the depth of reasoning that fits other people’s reasoning.</p>
 <section id="two-beauty-contests" class="level3">
 <h3 data-anchor-id="two-beauty-contests">Two beauty contests</h3>
-<p>The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for preference; the second asks for a prediction about a prediction. Any class changes are an activity result, not population evidence.</p>
-<p>The <a href="https://youtu.be/0sPVEBAtwmg">poisoned-goblet scene from <em>The Princess Bride</em></a> dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The clip is copyrighted fiction and illustrates a puzzle; it does not estimate human reasoning depth.</p>
+<p>The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections. Any class changes are an activity result, not population evidence.</p>
+<p>The <a href="https://youtu.be/0sPVEBAtwmg">poisoned-goblet scene from <em>The Princess Bride</em></a> dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The scene illustrates recursive reasoning, without providing evidence about how many steps people normally use.</p>
 <div id="fig-three-lenses-strategic-behavior" class="quarto-float quarto-figure quarto-figure-center" alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions, followed by an audit box warning that stability, observed choice, and evolutionary prevalence are different claims.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-three-lenses-strategic-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -666,6 +652,18 @@ Figure&nbsp;24.1: Strategic behavior can be examined through three distinct lens
 </section>
 <section id="three-lenses-three-questions" class="level2">
 <h2 data-anchor-id="three-lenses-three-questions">Three lenses, three questions</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Compare the three lenses
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div id="tbl-three-strategic-lenses" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-three-strategic-lenses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -711,8 +709,10 @@ Table&nbsp;24.1: Three lenses on strategic behavior
 </div>
 </figure>
 </div>
-<p>The lenses can complement one another. They cannot be substituted without changing the claim. A Nash equilibrium is not an estimate of average behavior. A level-2 choice is not an evolutionarily stable strategy. A strategy that spreads in a spatial simulation need not be anyone’s conscious best response.</p>
-<p>The core narrative uses the first two lenses to predict other minds and explain adjustment after feedback. The population-dynamics lens is optional: it asks how strategies change in frequency under a declared update rule, not how one person reasons.</p>
+</div>
+</div>
+</div>
+<p>Equilibrium asks which choices fit together; a reasoning model asks how a player predicts other players; population dynamics asks which strategies spread under an update rule. Begin with the prediction problem in the number game, then examine what feedback changes.</p>
 </section>
 <section id="limited-strategic-depth-level-k" class="level2">
 <h2 data-anchor-id="limited-strategic-depth-level-k">Limited strategic depth: level-<em>k</em></h2>
@@ -723,16 +723,15 @@ Table&nbsp;24.1: Three lenses on strategic behavior
 <img src="../figures/level-k-reasoning-ladder.svg" class="img-fluid figure-img" style="width:100.0%" alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes. A lower audit box warns that the observed number does not uniquely identify beliefs or reasoning depth.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-level-k-reasoning-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24.2: In a game where the target is two-thirds of the group mean, a theoretical level-<em>k</em> ladder begins from a random-choice anchor of 50, then moves to 33, 22, and 15 as each level best responds to the level below; continued iteration reaches the equilibrium at 0.
+Figure&nbsp;24.2: In a game where the target is two-thirds of the group mean, an illustrative level-<em>k</em> ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-level-k-reasoning-ladder" class="quarto-xref">Figure&nbsp;<span>24.2</span></a> makes the theoretical recursion visible. It should not be read backward as a psychological scanner. A choice of 22 can reflect a level-2 best response, but also a different belief, arithmetic error, anchoring, or a focal point. Beliefs and comprehension are needed before a strategic level is assigned.</p>
 <ul>
 <li><strong>Level 0</strong> is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.</li>
-<li><strong>Level 1</strong> best responds to level 0 and chooses about <span class="math inline">\(\frac{2}{3}\times50=33\)</span>.</li>
-<li><strong>Level 2</strong> best responds to level 1 and chooses about <span class="math inline">\(\frac{2}{3}\times33=22\)</span>.</li>
-<li><strong>Level 3</strong> best responds to level 2 and chooses about 15.</li>
+<li><strong>Level 1</strong> responds to the level-0 anchor and aims near <span class="math inline">\(\frac{2}{3}\times50=33\)</span>.</li>
+<li><strong>Level 2</strong> responds to the level-1 anchor and aims near <span class="math inline">\(\frac{2}{3}\times33=22\)</span>.</li>
+<li><strong>Level 3</strong> responds to the level-2 anchor and aims near 15.</li>
 </ul>
 <p>The labels describe a model of choice in one task. They are not ranks of intelligence. The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.</p>
 <section id="cognitive-hierarchy-best-respond-to-a-mixture" class="level3">
@@ -834,15 +833,7 @@ Table&nbsp;24.2: Descriptive number-game results used to illustrate heterogeneou
 <section id="the-action-does-not-identify-the-thought" class="level2">
 <h2 data-anchor-id="the-action-does-not-identify-the-thought">The action does not identify the thought</h2>
 <p>Suppose someone chooses 22. They may be level 2. But they may also believe the mean will be 33 for another reason, copy a familiar answer, misunderstand the target, anchor on a previous round, or choose strategically after observing the participant pool.</p>
-<p>This is an <strong>identification problem</strong>. Choice data can be consistent with several combinations of beliefs and preferences. Better evidence may include:</p>
-<ul>
-<li>an incentive-compatible belief report;</li>
-<li>response time and information search;</li>
-<li>repeated choices across games with different best responses;</li>
-<li>exogenous changes in information about opponents;</li>
-<li>learning after feedback;</li>
-<li>process measures interpreted alongside, not instead of, behavior.</li>
-</ul>
+<p>This is an <strong>identification problem</strong>: several beliefs and choice rules can produce the same action. An incentivized belief report, information-search record, or experimental change in what is known about opponents can help distinguish them. Each needs to generate predictions on which the rival accounts disagree.</p>
 <p>Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. Yet a brain region is not a unique label for “level 2,” and correlational activation cannot by itself identify the computation or show that the process caused the choice. Neural evidence narrows some accounts; it does not eliminate the behavioral identification problem.</p>
 </section>
 <section id="learning-is-not-the-same-as-deeper-initial-reasoning" class="level2">
@@ -858,17 +849,20 @@ Table&nbsp;24.2: Descriptive number-game results used to illustrate heterogeneou
 </ul>
 <p>Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Note</span>Advanced research track: evolutionary and spatial models
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith &amp; Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.</p>
 <p>A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner’s-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules, not evidence that the same process or motive produced a real population pattern (Schelling, 1969; Hammond &amp; Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html#population-model-provenance">Appendix B</a> preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.</p>
+</div>
 </div>
 </div>
 </section>
@@ -924,15 +918,7 @@ Table&nbsp;24.3: Four mechanisms that can produce the same diffusion pattern
 </section>
 <section id="ethics-strategic-classification-can-become-a-weapon" class="level2">
 <h2 data-anchor-id="ethics-strategic-classification-can-become-a-weapon">Ethics: strategic classification can become a weapon</h2>
-<p>Level labels, brain images, and evolutionary language can give a fragile inference an aura of inevitability.</p>
-<ul>
-<li>A low number-game choice is not proof of superior intelligence.</li>
-<li>An equilibrium is not a moral endorsement.</li>
-<li>A neural correlate is not a diagnosis.</li>
-<li>A simulated group pattern is not proof of an innate tendency.</li>
-<li>A successful strategy can impose costs on people outside the modeled population.</li>
-</ul>
-<p>The defensible use of a strategic model makes its payoff assumptions, population, update rule, uncertainty, and failure conditions inspectable. People affected should be able to ask what the model leaves out and how a classification can be corrected.</p>
+<p>Calling an employee “level 1” can turn a tentative model fit into a durable label. Keep the classification tied to the task and the evidence, and make it correctable. A defensible use also examines costs to people outside the modeled game; success for its players does not settle whether the resulting arrangement is acceptable.</p>
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
@@ -940,11 +926,7 @@ Table&nbsp;24.3: Four mechanisms that can produce the same diffusion pattern
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<ul>
-<li><strong>Use this when</strong> equilibrium is a useful benchmark but initial play or adjustment does not match it.</li>
-<li><strong>Do not infer</strong> a person’s belief, reasoning level, or stable type from one observed action.</li>
-<li><strong>Try this next</strong> by writing two mechanisms that predict the action and one treatment on which their predictions diverge.</li>
-</ul>
+<p>Before the next number-game round, write down the mean you expect and why. Afterward, compare that prediction with the distribution rather than merely asking whether your chosen number was low. The record reveals what you learned about the group and which assumption needs revision.</p>
 <p>Knowing how people reason strategically does not yet explain why they cooperate. The same cooperative action may arise from future consequences, reputation, enforcement, concern for others, or norms. The next chapter separates those mechanisms before treating cooperation as evidence about motive.</p>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">

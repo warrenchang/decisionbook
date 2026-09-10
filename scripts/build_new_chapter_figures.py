@@ -5,6 +5,14 @@ The source figures are SVG so text remains crisp in the HTML book. PNG
 companions can also be generated when CairoSVG is available. Journal
 screenshots are not copied: quantitative panels redraw reported values, while
 conceptual panels are explicitly labelled as schematics.
+
+Some SVGs received scientific and visual revisions directly during the
+September 2026 book edit. Their declarative SVG files are now the canonical
+source, and the historical builder functions below must not replace them.
+HAND_MAINTAINED_SVGS records that boundary explicitly. Missing canonical
+files are an error: restore the reviewed source instead of regenerating an
+older version. Render their PNG companions from the current SVG with
+scripts/render_svg_png_fallbacks.cjs (the book's standard renderer).
 """
 
 from __future__ import annotations
@@ -488,6 +496,46 @@ FIGURE_BUILDERS = {
 }
 
 
+# These are the revised SVGs among this script's actual output names. The
+# other revised book assets have different generators or are SVG-only sources.
+HAND_MAINTAINED_SVGS = frozenset({
+    "bubble-trader-strategies-redraw",
+    "experience-rare-event-sampling",
+    "income-wellbeing-evidence-synthesis",
+    "level-k-reasoning-ladder",
+    "mental-accounting-evidence-redraw",
+    "social-preference-games-redraw",
+})
+
+
+def validate_canonical_svgs(figures_dir: Path) -> None:
+    """Fail before writing any output if a reviewed source is missing."""
+    missing = sorted(
+        str(figures_dir / f"{stem}.svg")
+        for stem in HAND_MAINTAINED_SVGS
+        if not (figures_dir / f"{stem}.svg").is_file()
+    )
+    if missing:
+        raise FileNotFoundError(
+            "Missing hand-maintained canonical SVG(s); restore the reviewed "
+            "source rather than regenerate stale artwork:\n" + "\n".join(missing)
+        )
+
+
+def write_svg(stem: str, builder, figures_dir: Path) -> Path:
+    """Preserve canonical artwork; generate only still-generated figures."""
+    svg_path = figures_dir / f"{stem}.svg"
+    if stem in HAND_MAINTAINED_SVGS:
+        if not svg_path.is_file():
+            raise FileNotFoundError(
+                f"Missing hand-maintained canonical SVG: {svg_path}; "
+                "restore the reviewed source."
+            )
+        return svg_path
+    svg_path.write_text(builder(), encoding="utf-8")
+    return svg_path
+
+
 def build_png(svg_path: Path, png_path: Path) -> None:
     try:
         import cairosvg
@@ -506,13 +554,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--png", action="store_true", help="also generate EPUB PNG companions")
     args = parser.parse_args()
+    validate_canonical_svgs(FIGURES)
     FIGURES.mkdir(parents=True, exist_ok=True)
     for stem, builder in FIGURE_BUILDERS.items():
-        svg_path = FIGURES / f"{stem}.svg"
-        svg_path.write_text(builder(), encoding="utf-8")
+        svg_path = write_svg(stem, builder, FIGURES)
         if args.png:
             build_png(svg_path, FIGURES / f"{stem}.png")
-        print(svg_path.relative_to(ROOT))
+        status = " (canonical SVG retained)" if stem in HAND_MAINTAINED_SVGS else ""
+        print(f"{svg_path.relative_to(ROOT)}{status}")
 
 
 if __name__ == "__main__":

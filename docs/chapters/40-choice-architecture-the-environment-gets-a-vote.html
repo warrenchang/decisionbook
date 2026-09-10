@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2df1c134e8a8f9a6c8318e4ae69a9baa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aeb761aecd5c5ae153118da15ab1f1a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -529,8 +529,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#opening-puzzle-the-form-that-already-chose" id="toc-opening-puzzle-the-form-that-already-chose" class="nav-link" data-scroll-target="#opening-puzzle-the-form-that-already-chose">Opening puzzle: the form that already chose</a></li>
+  <li><a href="#opening-puzzle-the-form-that-already-chose" id="toc-opening-puzzle-the-form-that-already-chose" class="nav-link active" data-scroll-target="#opening-puzzle-the-form-that-already-chose">Opening puzzle: the form that already chose</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#from-behavior-design-to-choice-architecture" id="toc-from-behavior-design-to-choice-architecture" class="nav-link" data-scroll-target="#from-behavior-design-to-choice-architecture">From behavior design to choice architecture</a></li>
   <li><a href="#the-plausible-path-where-architecture-enters-the-loop" id="toc-the-plausible-path-where-architecture-enters-the-loop" class="nav-link" data-scroll-target="#the-plausible-path-where-architecture-enters-the-loop">The plausible path: where architecture enters the loop</a></li>
   <li><a href="#construct-and-explain-the-choice" id="toc-construct-and-explain-the-choice" class="nav-link" data-scroll-target="#construct-and-explain-the-choice">Construct and explain the choice</a>
@@ -585,6 +585,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><span id="choice-architecture-the-environment-gets-a-vote"></span></p>
 <p><em>Every choice is presented somehow. The question is whether that presentation helps people act on informed goals or quietly substitutes someone else’s goals for their own.</em></p>
 <div class="chapter-epigraph">
 <blockquote class="blockquote">
@@ -592,6 +593,12 @@ ul.task-list li input[type="checkbox"] {
 <p>— Richard H. Thaler and Cass R. Sunstein, <a href="https://pages.ucsd.edu/~mckenzie/Nudge%20Intro%20Ch1.pdf"><em>Nudge</em></a>, 2008, p.&nbsp;3</p>
 </blockquote>
 </div>
+<section id="opening-puzzle-the-form-that-already-chose" class="level2">
+<h2 data-anchor-id="opening-puzzle-the-form-that-already-chose">Opening puzzle: the form that already chose</h2>
+<p>Imagine enrolling in a retirement plan. The contribution field already says 6 percent, a recommended fund sits first, and the opt-out link is in smaller type. You can choose another arrangement, but doing so requires more attention than accepting the form as it stands.</p>
+<p>The prefilled contribution is both a suggested number and, if inaction implements it, a default. The highlighted fund may look like advice. Whether these features help depends on how well they fit the person’s circumstances and how easily alternatives can be understood and selected.</p>
+<p>Now reverse the example. A subscription site makes enrollment one click and cancellation nine screens. A travel site labels an expensive option “most popular” without explaining the comparison. A checkout page adds a warranty unless the buyer notices a faint checkbox. These designs use the same behavioral mechanisms, but their objective and treatment of exit are different.</p>
+<p>The teaching question is therefore not, “Does architecture influence choice?” Every environment does. The useful questions are: <strong>Which objective does it serve? Which mechanism does it use? What evidence says it helps? Who may be harmed? Can a person understand, refuse, and recover from it?</strong></p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -602,9 +609,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Behavior design can help one person act on an endorsed goal, and every institution also designs the path through which many people notice options, understand consequences, act, and learn. But the same architecture can expand practical agency or exploit limited attention, effort, and inference in service of someone else’s objective; a nudge changes the path without forbidding options or substantially changing material incentives. Therefore this chapter asks how to design and test choice environments that improve understanding and action while preserving welfare, meaningful exit, and refusal.</p>
+<p>Menus, defaults, forms, and feedback shape how people choose. A useful design helps them understand consequences and act on informed goals; a harmful one profits from confusion or makes refusal difficult. Evaluate the whole path, including what happens when someone tries to change their mind.</p>
 </div>
 </div>
+</section>
 <section id="learning-goals" class="level2">
 <h2 data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
@@ -612,33 +620,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Compare nudges with boosts, incentives, mandates, and structural change for the same barrier.</li>
 <li>Design and test an intervention that protects understanding, welfare, and meaningful exit.</li>
 </ul>
-<div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Where this chapter enters the loop
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Choice architecture redesigns the path from context and menu through understanding, action, and feedback. Unlike individual behavior design, it asks how an institution presents recurring choices to many people.</p>
-</div>
-</div>
-</section>
-<section id="opening-puzzle-the-form-that-already-chose" class="level2">
-<h2 data-anchor-id="opening-puzzle-the-form-that-already-chose">Opening puzzle: the form that already chose</h2>
-<p>Imagine enrolling in a retirement plan. The contribution field already says 6 percent. The recommended fund sits first. The opt-out link is in smaller type. Projected income is shown per month rather than as a distant lump sum. A reminder arrives on payday, and a progress bar shows how close you are to the employer match.</p>
-<p>Nothing has been forbidden. Yet the choice is not untouched. The prefilled number anchors valuation. The default turns inaction into an outcome. Order directs attention. Monthly income changes how future consequences are mapped. Timing brings the decision closer to the moment of ability. The progress bar makes feedback visible. The form has not merely displayed a decision; it has helped construct one.</p>
-<p>Now reverse the example. A subscription site makes enrollment one click and cancellation nine screens. A travel site labels an expensive option “most popular” without explaining the comparison. A checkout page adds a warranty unless the buyer notices a faint checkbox. These designs use the same behavioral mechanisms, but their objective and treatment of exit are different.</p>
-<p>The teaching question is therefore not, “Does architecture influence choice?” Every environment does. The useful questions are: <strong>Which objective does it serve? Which mechanism does it use? What evidence says it helps? Who may be harmed? Can a person understand, refuse, and recover from it?</strong></p>
+<p>Choice architecture asks how an institution presents recurring choices to many people, extending the individual behavior-design tools of the previous chapter.</p>
 </section>
 <section id="from-behavior-design-to-choice-architecture" class="level2">
 <h2 data-anchor-id="from-behavior-design-to-choice-architecture">From behavior design to choice architecture</h2>
 <p>Behavior design often begins with a person who wants to perform a behavior but does not reliably do so. Choice architecture widens the lens to the menu, sequence, interface, institution, and rules that organize recurring choices for many people. This chapter is a synthesis: earlier chapters established option construction, framing, defaults, probability formats, mental accounts, social norms, and implementation plans. The task here is to diagnose how those mechanisms combine along one choice path, not to treat them as a new list of effects.</p>
 <p>Richard Thaler and Cass Sunstein use <strong>choice architecture</strong> for the way choices are organized and <strong>nudge</strong> for an intervention that predictably changes behavior without banning options or substantially altering economic incentives (Thaler &amp; Sunstein, 2008). Defaults, reminders, simpler forms, social-norm messages, and rearranged menus can be nudges. A large tax, a prohibition, or a compulsory rule is not merely a nudge, although it may be justified on other grounds.</p>
 <p>Keep three levels separate. <strong>Choice architecture</strong> is the broad environment. A <strong>nudge</strong> is one feature of that environment. <strong>Libertarian paternalism</strong> is a normative argument for some welfare-oriented nudges: preserve meaningful choice while helping people act in ways they themselves would endorse under reflection. Calling a design a nudge therefore does not establish that its objective is legitimate or that its use is ethical.</p>
-<p>The boundary matters because “nudge” should not become a flattering label for every intervention. At least five families of tools should be kept distinct:</p>
+<p>Before choosing an intervention, compare the tools available:</p>
 <div id="tbl-35-policy-tools" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-policy-tools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -706,13 +695,13 @@ Table&nbsp;40.1: Different tools for different barriers
 </section>
 <section id="the-plausible-path-where-architecture-enters-the-loop" class="level2">
 <h2 data-anchor-id="the-plausible-path-where-architecture-enters-the-loop">The plausible path: where architecture enters the loop</h2>
-<div id="fig-choice-architecture" class="quarto-float quarto-figure quarto-figure-center" alt="An author's hypothesis map connects objective, menu, understanding, action, and feedback. Aligned levers and a governance bar indicate relationships to test, not a validated universal sequence.">
+<div id="fig-choice-architecture" class="quarto-float quarto-figure quarto-figure-center" alt="Five panels ask whose goal is served, what options are offered, whether consequences can be compared, what makes action easy or difficult, and whether mistakes can be corrected. A footer asks whether people can decline and report harm.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-choice-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/choice-architecture.svg" class="img-fluid figure-img" alt="An author's hypothesis map connects objective, menu, understanding, action, and feedback. Aligned levers and a governance bar indicate relationships to test, not a validated universal sequence.">
+<img src="../figures/choice-architecture.svg" class="img-fluid figure-img" alt="Five panels ask whose goal is served, what options are offered, whether consequences can be compared, what makes action easy or difficult, and whether mistakes can be corrected. A footer asks whether people can decline and report harm.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-choice-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;40.1: The plausible-path model is an author’s hypothesis map from objective through menu, understanding, action, and feedback. Each proposed link and lever must be diagnosed, tested, and governed rather than assumed.
+Figure&nbsp;40.1: Five questions locate possible problems in the objective, menu, understanding, action, and feedback. This author’s diagnostic map identifies places to inspect; it is not a universal sequence of psychological stages.
 </figcaption>
 </figure>
 </div>
@@ -731,16 +720,8 @@ Figure&nbsp;40.1: The plausible-path model is an author’s hypothesis map from 
 <section id="construct-the-menu-options-order-and-overload" class="level3">
 <h3 data-anchor-id="construct-the-menu-options-order-and-overload">Construct the menu: options, order, and overload</h3>
 <p>The first architecture is the option set itself. A menu can create a false binary, hide a combination, make delay invisible, or omit the option of gathering more information. Categories and order also shape comparison. People do not evaluate every item in isolation; they interpret an option relative to what appears beside it.</p>
-<p>More options can increase fit and autonomy, but more is not automatically better. Iyengar and Lepper’s jam study made choice overload vivid: a large display attracted attention, while a smaller display produced more purchases (Iyengar &amp; Lepper, 2000). Later reviews show that overload is not universal. It is more likely when preferences are uncertain, options are hard to compare, the task is difficult, and the decision goal is unclear (Scheibehenne et al., 2010; Chernev et al., 2015).</p>
-<p>The practical response is not simply to shrink every menu. It is to <strong>structure</strong> the menu:</p>
-<ul>
-<li>remove dominated or genuinely redundant options;</li>
-<li>organize by a decision-relevant dimension rather than by administrative history;</li>
-<li>provide a small, explainable shortlist while preserving access to the full set;</li>
-<li>support filtering without turning the filter into a hidden recommendation;</li>
-<li>make “do nothing,” “decide later,” “pilot,” and “seek advice” visible when they are legitimate;</li>
-<li>reveal conflicts of interest behind featured or sponsored options.</li>
-</ul>
+<p>More options can increase fit and autonomy, but more is not automatically better. Iyengar and Lepper’s jam study made choice overload vivid: a large display attracted attention, while a smaller display produced more purchases (Iyengar &amp; Lepper, 2000). Later reviews show that overload is not universal. It is more likely when preferences are uncertain, options are hard to compare, the task is difficult, or the chooser is trying to minimize effort (Scheibehenne et al., 2010; Chernev et al., 2015).</p>
+<p>A useful response is to structure comparison. Offer filters or an explainable shortlist, preserve access to the fuller menu, and make a legitimate option to wait or seek advice visible. Removing an apparent duplicate is sensible only after checking whether it serves a distinct need. Disclose why a featured option is prominent, especially when sponsorship plays a role.</p>
 <p>Choice also contains sacrifice. A well-designed menu makes opportunity cost legible: “Choosing this means giving up…” When alternatives remain invisible, the visible benefit of one option can crowd out the cost of the path displaced by it (Frederick et al., 2009).</p>
 <div class="personal-example callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -773,16 +754,7 @@ Figure&nbsp;40.1: The plausible-path model is an author’s hypothesis map from 
 <section id="make-consequences-understandable-mapping-and-metrics" class="level3">
 <h3 data-anchor-id="make-consequences-understandable-mapping-and-metrics">Make consequences understandable: mapping and metrics</h3>
 <p>People choose an option, but they care about its consequences. <strong>Mapping</strong> is the connection between the selectable feature and the outcome that matters. A mortgage rate must be mapped to total cost and payment risk. A medical probability must be mapped to natural frequencies and meaningful time horizons. Energy use must be mapped to money, emissions, or another metric the audience can interpret.</p>
-<p>Poor mapping creates an architecture of confusion even when every legal fact is technically present. Better mapping can use:</p>
-<ul>
-<li>natural frequencies instead of conditional percentages;</li>
-<li>absolute risk alongside relative risk;</li>
-<li>a consistent time horizon and denominator;</li>
-<li>total cost rather than a tempting installment alone;</li>
-<li>side-by-side consequences under the same assumptions;</li>
-<li>uncertainty ranges rather than a single false-precision forecast;</li>
-<li>labels that explain the comparison class behind “recommended” or “popular.”</li>
-</ul>
+<p>Make the comparison reconstructable: use the same time horizon and denominator, show total cost alongside installments, and distinguish an estimate from a guarantee. For probabilities, natural frequencies and absolute risks can help readers see quantities that relative percentages obscure. Chapter 14 develops those formats.</p>
 <p>Metrics are frames. <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html">Chapter 12</a> showed why equivalent descriptions can change choice; architecture determines which description becomes the default view. “Save €40 per month” and “save €480 per year” are equivalent arithmetically but not psychologically. A fair design does not pretend framing can be eliminated; it uses symmetric, decision-relevant representations and makes important alternative frames available.</p>
 <p>Even familiar units can map poorly. Miles per gallon is nonlinear in fuel consumed: an improvement from 10 to 20 MPG saves much more fuel over a fixed distance than an improvement from 30 to 40 MPG. Gallons per hundred miles makes that consequence easier to compare (Larrick &amp; Soll, 2008). The design question is not which unit looks intuitive, but which one reveals the welfare-relevant difference.</p>
 <div id="fig-mpg-fuel-use" class="quarto-float quarto-figure quarto-figure-center" alt="A reciprocal curve plots US gallons used over 100 miles against miles per gallon. The highlighted 10-to-20-MPG segment falls from 10 to 5 gallons, while the 30-to-40-MPG segment falls only from 3.33 to 2.50 gallons. Comparison cards show that the first change saves 5 gallons and the second saves five-sixths of a gallon, so the first saves exactly six times as much fuel.">
@@ -795,7 +767,7 @@ Figure&nbsp;40.2: Over a fixed 100-mile trip, fuel use equals 100 divided by MPG
 </figcaption>
 </figure>
 </div>
-<p><a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html">Chapter 20</a> developed mental accounting as cognitive bookkeeping. Here the implication is architectural: an interface can either reinforce narrow accounts or reveal the broader balance sheet. People may treat a refund as free money, recent gains as “house money,” a credit balance as less real than cash, or a sunk ticket price as a reason to continue an unenjoyable activity (Thaler, 1985). Categories can support self-control, but they can also conceal total exposure. A responsible interface preserves useful budgets while also showing the whole budget, forward-looking costs and benefits, monthly and total cost, aggregate risk, and opportunity cost.</p>
+<p>The same principle applies to mental accounting. A budget category can help someone control spending while hiding the total cost across accounts. Show both the local choice and its effect on the whole budget, as discussed in <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html">Chapter 20</a>.</p>
 </section>
 </section>
 <section id="make-action-feasible-and-feedback-visible" class="level2">
@@ -825,14 +797,7 @@ Figure&nbsp;40.3: Masking seldom-used controls makes the simplification problem 
 <section id="support-action-at-the-right-moment" class="level3">
 <h3 data-anchor-id="support-action-at-the-right-moment">Support action at the right moment</h3>
 <p>Information delivered at the wrong time is often inert. A reminder can close an intention–action gap when the person has already formed an intention, forgetting is plausible, and the action is feasible at the moment of contact. Reminders fail when the real barrier is cost, fear, low trust, no available appointment, or disagreement with the goal.</p>
-<p>Timing and planning tools connect architecture to behavior design:</p>
-<ul>
-<li>a prompt should arrive when attention and ability can meet;</li>
-<li>an implementation intention specifies, “If situation X occurs, I will do Y” (Gollwitzer, 1999);</li>
-<li>a date-and-time prompt converts a distant intention into an appointment with context;</li>
-<li>a deadline can motivate, but excessive urgency can suppress inspection and manufacture consent;</li>
-<li>temptation bundling connects a delayed-benefit action with an immediate, controlled reward (Milkman et al., 2014).</li>
-</ul>
+<p>Forgetting is one possible barrier; planning is another. A reminder can include a concrete opportunity to act, such as choosing a date and time, while making rescheduling easy. Urgency should reflect a real constraint rather than pressure the person to decide before inspecting the terms.</p>
 <p>Salience is selective. Making one action vivid necessarily pushes something else toward the background. Ethical design therefore asks not only what the cue reveals, but what it makes easier to forget.</p>
 </section>
 <section id="an-arrow-that-changed-the-action-path" class="level3">
@@ -871,21 +836,16 @@ Figure&nbsp;40.4: The same generic hotel offer is shown before and after a bundl
 <section id="digital-architecture-operates-at-full-path-scale" class="level3">
 <h3 data-anchor-id="digital-architecture-operates-at-full-path-scale">Digital architecture operates at full-path scale</h3>
 <p>Digital systems can personalize menus, defaults, ranking, timing, social evidence, and feedback simultaneously. That makes them powerful and difficult to audit. A platform does not merely host choices; its recommender system decides what becomes visible, its interface defines the next easiest action, and its metrics determine what the system learns to optimize.</p>
-<p>Three separations are essential:</p>
-<ol type="1">
-<li><strong>User objective versus platform metric.</strong> Time on site, clicks, or conversion may be measurable without being the user’s welfare.</li>
-<li><strong>Short-term response versus long-term effect.</strong> An intervention can increase immediate engagement while degrading attention, satisfaction, or trust.</li>
-<li><strong>Personalization versus accountability.</strong> Tailoring can improve relevance while making discrimination, inconsistent treatment, and hidden experimentation harder to see.</li>
-</ol>
-<p>Good digital governance includes explainable recommendations, accessible settings, symmetric cancellation, data minimization, meaningful consent, monitoring across groups, and an appeals or correction path when the system is wrong.</p>
+<p>Audit the platform’s metric against the user’s objective. Time on site can rise while satisfaction falls, and a successful purchase may be followed by a difficult cancellation. Personalization adds another problem: different users may encounter different terms or obstacles, making a single screenshot an inadequate audit.</p>
+<p>Keep records of the paths shown, provide understandable controls, and examine outcomes across relevant groups. Users need a way to correct a mistaken recommendation or challenge an unwanted consequence.</p>
 <p>Dark patterns are not only hypothetical. Design research has catalogued interfaces that obstruct, sneak, pressure, or misdirect, and a large crawl documented such patterns across shopping websites (Gray et al., 2018; Mathur et al., 2019). Continuous personalization and experimentation raise the governance burden: the same system can expose different people to different paths while leaving no shared interface for outsiders to inspect.</p>
 </section>
 <section id="treat-every-intervention-as-a-hypothesis" class="level3">
 <h3 data-anchor-id="treat-every-intervention-as-a-hypothesis">Treat every intervention as a hypothesis</h3>
-<p>Behavioral effects are heterogeneous. An average effect may conceal strong benefit for one group, no effect for another, and harm for a third. Context, trust, baseline behavior, implementation quality, and the availability of good options all matter. Meta-analytic evidence suggests that choice-architecture interventions can change behavior, but effects vary substantially across domains, intervention types, and study settings (Mertens et al., 2022).</p>
-<p>Scale is a separate test. Quantitative reviews find substantial variation across nudge designs, and trials run at scale by public nudge units have produced more modest average effects than prominent academic studies might lead designers to expect (Hummel &amp; Maedche, 2019; DellaVigna &amp; Linos, 2022). The response is not “nudges work” or “nudges fail,” but diagnosis, comparison, and evidence in the setting where the design will operate.</p>
+<p>Behavioral effects are heterogeneous. An average effect may conceal strong benefit for one group, no effect for another, and harm for a third. Context, trust, baseline behavior, implementation quality, and the availability of good options all matter. Mertens et al.&nbsp;(2022) reported an average behavioral effect across diverse choice-architecture studies, but its magnitude and robustness to publication bias have been disputed. A reanalysis using different publication-bias adjustments found no clear average effect (Maier et al., 2022). These aggregate disagreements do not establish that every intervention works or that none does; they make evidence for the particular design and setting essential.</p>
+<p>Scale is a separate test. Quantitative reviews find substantial variation across nudge designs, and trials run at scale by public nudge units have produced more modest average effects than prominent academic studies might lead designers to expect (Hummel &amp; Maedche, 2019; DellaVigna &amp; Linos, 2022). DellaVigna and Linos found average increases in take-up of 1.4 percentage points in the nudge-unit trials and 8.7 points in the academic-journal comparison. These are averages from different collections of interventions, not a randomized test of making the same intervention larger. The response is not “nudges work” or “nudges fail,” but diagnosis, comparison, and evidence in the setting where the design will operate.</p>
 <p>Evaluation should therefore precede celebration. Define the target outcome, mechanism, baseline, comparison, time horizon, and possible harm before launch. When feasible, pilot or randomize. Measure behavior rather than intention alone. Check persistence and spillovers. Compare the nudge with plausible alternatives, including a boost, an incentive, service redesign, or no intervention.</p>
-<p>A null result is informative if the mechanism was explicit. It may show that forgetting was not the barrier, the prompt arrived at the wrong time, the action was infeasible, or the target metric did not capture welfare. Iteration should revise the model, not merely intensify the same tactic.</p>
+<p>A null result narrows the inquiry only when the study can distinguish the explanations. Check delivery, precision, timing, and access before concluding that forgetting was unimportant. Repeating the reminder more often will not resolve a transport barrier.</p>
 </section>
 <section id="ethics-and-governance-helping-steering-or-manipulating" class="level3">
 <h3 data-anchor-id="ethics-and-governance-helping-steering-or-manipulating">Ethics and governance: helping, steering, or manipulating?</h3>
@@ -958,16 +918,7 @@ Table&nbsp;40.2: An ethical choice-architecture audit
 </section>
 <section id="apply-the-plausible-path-design-cycle" class="level2">
 <h2 data-anchor-id="apply-the-plausible-path-design-cycle">Apply the plausible-path design cycle</h2>
-<p>Use the following sequence before changing an environment:</p>
-<ol type="1">
-<li><strong>Define the behavior precisely.</strong> Describe an observable action, population, context, and time—not a trait such as “careless” or “unmotivated.”</li>
-<li><strong>Diagnose the barrier.</strong> Is the failure in attention, understanding, value, ability, trust, timing, habit, social meaning, or access?</li>
-<li><strong>Map the path.</strong> Show how the proposed feature changes that barrier and how the change reaches the target outcome.</li>
-<li><strong>Compare instruments.</strong> Consider a nudge, boost, incentive, mandate, structural change, or combination.</li>
-<li><strong>Protect agency.</strong> Make important information legible, avoid deception, and provide meaningful exit.</li>
-<li><strong>Pilot and measure.</strong> Predefine success, subgroup effects, harms, persistence, and a stop rule.</li>
-<li><strong>Learn and govern.</strong> Publish or record what happened, revise the model, and remove architecture that does not earn its place.</li>
-</ol>
+<p>Use a short record linking the target outcome, diagnosed barrier, proposed change, comparison, and review date. Include a competing intervention and a possible harm. The two examples below show why following the full path can change the diagnosis.</p>
 <section id="worked-example-missed-appointments" class="level3">
 <h3 data-anchor-id="worked-example-missed-appointments">Worked example: missed appointments</h3>
 <p>Suppose a clinic wants to reduce missed appointments. “Patients forget” is a hypothesis, not a diagnosis. The team first checks whether missed visits cluster by time, transport access, language, cost, waiting time, or difficulty cancelling.</p>
@@ -994,11 +945,7 @@ Table&nbsp;40.2: An ethical choice-architecture audit
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<ul>
-<li><strong>Use this when:</strong> a recurring choice path makes one option unusually visible, easy, normal, or difficult to escape.</li>
-<li><strong>Do not infer:</strong> keeping options technically available makes an architecture neutral, effective, or ethical.</li>
-<li><strong>Try this next:</strong> map one real path from objective to menu, understanding, action, feedback, and exit; then name the barrier and one competing intervention.</li>
-</ul>
+<p>Follow the choice path as the person using it would: from the first prompt to the action and its consequences. Look especially at the point where an understandable intention becomes difficult to carry out. A useful redesign makes that point easier while keeping costs, alternatives, and exit visible.</p>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
@@ -1007,9 +954,6 @@ Table&nbsp;40.2: An ethical choice-architecture audit
 </div>
 <div class="reference">
 <p>Frederick, S., Novemsky, N., Wang, J., Dhar, R., &amp; Nowlis, S. (2009). Opportunity cost neglect. Journal of Consumer Research, 36(4), 553–561.</p>
-</div>
-<div class="reference">
-<p>Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.</p>
 </div>
 <div class="reference">
 <p>Iyengar, S. S., &amp; Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? Journal of Personality and Social Psychology, 79(6), 995–1006.</p>
@@ -1085,6 +1029,9 @@ Table&nbsp;40.2: An ethical choice-architecture audit
 </div>
 <div class="reference">
 <p>Thaler, R. H., &amp; Benartzi, S. (2004). Save More Tomorrow: Using behavioral economics to increase employee saving. Journal of Political Economy, 112(S1), S164–S187.</p>
+</div>
+<div class="reference">
+<p>Maier, M., Bartoš, F., Stanley, T. D., Shanks, D. R., Harris, A. J. L., &amp; Wagenmakers, E.-J. (2022). No evidence for nudging after adjusting for publication bias. Proceedings of the National Academy of Sciences, 119(31), e2200300119. https://doi.org/10.1073/pnas.2200300119</p>
 </div>
 
 

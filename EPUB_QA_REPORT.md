@@ -90,7 +90,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Famous findings after replication | **PASS** |
 | Required content: Elderly-word priming slows walking | **PASS** |
 | Required content: Ill-fated disease–birth-year combinations shorten Chinese-American lives | **PASS** |
-| Required content: Four category errors to avoid | **PASS** |
+| Required content: Find out what kind of check was performed | **PASS** |
 | Required content: The same-name rule | **PASS** |
 | Required content: freeze → compare → update | **PASS** |
 | Required content: A Decision Is Already in the Making | **PASS** |

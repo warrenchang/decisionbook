@@ -181,3 +181,43 @@ pre code {
 th[scope="rowgroup"] {
   vertical-align: middle;
 }
+
+/* Preserve readable diagram type on narrow EPUB screens. Captions remain in
+   the text column; wide diagrams get their own horizontal reading pane. */
+@media (max-width: 600px) {
+  figure.quarto-float-fig > div[aria-describedby] {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  figure.quarto-float-fig > div[aria-describedby] > img[src$=".svg"] {
+    width: 900px !important;
+    min-width: 900px;
+    max-width: none !important;
+  }
+  #fig-agreement-design img,
+  #fig-behavior-design img,
+  #fig-choice-architecture img,
+  #fig-claim-to-design-pipeline img,
+  #fig-communication-iceberg img,
+  #fig-conversation-repair img,
+  #fig-decision-audit img,
+  #fig-first-offer-information-matrix img,
+  #fig-habit-loop img,
+  #fig-master-loop img,
+  #fig-master-loop-finale img,
+  #fig-participant-flow-threats img,
+  #fig-persuasion-update img,
+  #fig-random-sampling-vs-assignment img,
+  #fig-selected-evidence-pipeline img,
+  #fig-story-evidence-braid img,
+  #fig-story-update img,
+  #fig-structured-judgment-pipeline img,
+  #fig-zopa img {
+    width: 100% !important;
+    min-width: 0;
+    max-width: 100% !important;
+  }
+}

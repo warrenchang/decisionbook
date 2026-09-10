@@ -13,10 +13,18 @@ aliases:
 > — Ralph Hertwig, Greg Barron, Elke U. Weber, and Ido Erev, [“Decisions from Experience and the Effect of Rare Events in Risky Choice”](https://doi.org/10.1111/j.0956-7976.2004.00715.x), 2004, p. 537
 :::
 
+## Opening puzzle: the rare outcome that did not happen
+
+Option A always pays €3. Option B pays €32 with probability 10% and €0 otherwise. You may sample either option as often as you wish before making one consequential choice.
+
+The description gives everything required to calculate expected value: A is worth €3; B is worth €3.20. Experience creates another problem. A learner who samples B five times has a probability of about 59% of seeing no €32 outcome at all. For that learner, B has so far looked like a machine that pays zero. Another learner may encounter €32 on the first draw and see B as extraordinarily attractive. Although both learners face the same distribution, they have encountered very different evidence.
+
+A learner must first discover the distribution from a sequence of events. That problem also confronts a team deciding whether to add a second supplier after eight years of reliable deliveries. Its experience is reassuring, but did those years include the kinds of disruption it needs to prepare for? We will return to that decision after examining what experience reveals and conceals.
+
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Descriptions can state outcomes and probabilities explicitly, and prospect theory helps explain how such stated risks may be represented. But experience does not hand the decision-maker the full distribution: learning comes from a path that may be short, selective, recent, memorable, or partly produced by earlier choices. Therefore decisions from experience require a second diagnosis—what evidence was encountered and sampled—before probability weighting or stable preference is inferred.
+Experience teaches us through the outcomes we encounter, which may be a small and selective part of what could happen. Before interpreting a risky choice as a preference, ask what the person had an opportunity to learn—and what remained unseen.
 :::
 
 ## Learning goals
@@ -25,27 +33,9 @@ Descriptions can state outcomes and probabilities explicitly, and prospect theor
 - Diagnose sampling, stopping, recency, avoidance, and feedback mechanisms in one supplier-risk case.
 - Design a learning system that combines calibrated description with representative experience.
 
-::: {.callout-note .loop-location icon=false}
-## Where this chapter enters the loop
-
-Experience changes **Predict** through **Learn**. The outcomes encountered today update tomorrow's model, but earlier choices determine which outcomes can be encountered at all.
-:::
-
-## Opening puzzle: the rare outcome that did not happen
-
-Option A always pays €3. Option B pays €32 with probability 10% and €0 otherwise. You may sample either option as often as you wish before making one consequential choice.
-
-The description gives everything required to calculate expected value: A is worth €3; B is worth €3.20. Experience creates another problem. A learner who samples B five times has a probability of about 59% of seeing no €32 outcome at all. For that learner, B has so far looked like a machine that pays zero. Another learner may encounter €32 on the first draw and see B as extraordinarily attractive. The underlying distribution is identical. The evidence they encountered is not.
-
-This is the central move in decisions from experience:
-
-> The learner does not merely respond to a probability distribution. The learner first has to discover it from a path.
-
-The path matters in computer backups, maintenance failures, floods, side effects, investment returns, hiring, supply disruptions, and negotiations. Long stretches without trouble can make prevention feel unnecessary. One painful incident can make a safe option feel dangerous. Feedback can teach the wrong lesson when a good process produces a bad outcome or a bad process is rescued by luck.
-
 ## Description and experience are different information conditions
 
-A **decision from description** states the possible outcomes and their probabilities. A weather forecast gives a probability of rain. A medicine fact box reports estimated benefits and harms. An insurance contract specifies covered events and deductibles. The decision-maker may misunderstand, neglect, or transform these numbers, but the distribution is externally represented.
+A **decision from description** states the possible outcomes and their probabilities. A weather forecast gives a probability of rain. A medicine fact box reports estimated benefits and harms. An insurer may provide estimated claim frequencies and loss amounts. The decision-maker may misunderstand, neglect, or transform these numbers, but the distribution is externally represented.
 
 A **decision from experience** requires the distribution to be learned from observations. A driver infers how dangerous a familiar road is from previous journeys. A manager estimates supplier reliability from deliveries that happened to be observed. A person decides whether to back up a computer after years without a disk failure. Outcomes and probabilities are not fully listed; the person samples, remembers, and updates.
 
@@ -53,7 +43,7 @@ Many consequential decisions contain both. A physician can read trial evidence a
 
 ![Four information states created by the presence or absence of statistical description and personal experience. Having neither source is information-poor; it becomes deep uncertainty only when no credible stable model can be specified.](../figures/decision-experience-states.svg){#fig-decision-experience-states fig-alt="A two-by-two matrix. Columns indicate description absent or present; rows indicate experience absent or present. Neither is labeled information-poor, with deep uncertainty possible if no stable model exists. Description only means an explicit model without personal feedback; experience only means a sampled path without an explicit distribution; both means evidence sources can reinforce or conflict. A bottom band recommends calibrated description, representative experience, and transparent updating."}
 
-### Four epistemic states
+### Four sources-of-information situations {#four-epistemic-states}
 
 Hertwig and Wulff (2022) organize risk situations by asking whether description and experience are present or absent. The resulting four states prevent a false choice between “numbers” and “intuition.”
 
@@ -65,7 +55,7 @@ Hertwig and Wulff (2022) organize risk situations by asking whether description 
 | Both | Statistical description and personal or simulated experience | Vivid experience can contradict representative evidence, or abstract numbers can fail to become usable | Reconcile the sources; explain why they differ and what each can identify |
 : Four information states require different diagnoses {#tbl-experience-states}
 
-The fourth state—neither description nor experience—is not an empty residual. It is first an **information-poor condition**. It may involve **deep uncertainty** when outcomes, probabilities, or even the relevant model cannot be specified credibly; it need not do so if reliable evidence can be obtained from another population, model, or expert source. A new technology, emerging disease, or unprecedented operational shock may provide neither reliable frequencies nor a stable personal history. The honest response is not to manufacture a probability. It is to stress-test, diversify information, use reversible steps, and specify what would trigger revision (Hertwig & Wulff, 2022).
+Having neither source leaves the chooser **information-poor**. This becomes **deep uncertainty** when no credible model can yet specify the relevant outcomes and probabilities; it need not remain so if evidence can be obtained elsewhere. With a new technology or an unprecedented disruption, scenarios and reversible trials may be more useful than an unjustifiably precise estimate (Hertwig & Wulff, 2022).
 
 ## The description–experience gap
 
@@ -115,7 +105,7 @@ The practical question is not only “How many cases did we see?” It is also:
 - Were failures more likely to be documented than uneventful cases?
 - Did the decision rule remove an option before it could reveal its long-run distribution?
 
-A ten-year record without supplier failure is weak reassurance if the firm quietly dropped vulnerable suppliers after one early problem. The experience sample was produced by policy.
+A ten-year record for retained suppliers describes performance under the firm’s screening and replacement policy. If vulnerable suppliers were dropped after early problems, the successful survivors cannot by themselves tell us how well an untested supplier would perform.
 
 ### Recent and memorable outcomes receive more influence
 
@@ -125,7 +115,7 @@ Memory adds another selection layer. Frequent ordinary outcomes blur together; a
 
 ### Contingent sampling retrieves “similar” histories
 
-Real-world experience is seldom a random draw from all past events. Firefighters recall fires that resemble the current situation. Managers recall projects from the same market. Negotiators recall counterparts who looked or behaved similarly. This **contingent sampling** can extract relevant structure, but it can also create a small, biased reference class.
+Managers tend to recall projects from a similar market rather than draw randomly from every project they have known. This **contingent sampling** can extract relevant structure, but it can also create a small, biased reference class.
 
 Similarity needs an explicit test. Which features made the prior case comparable? Which disconfirming cases were excluded? A compelling analogy is not yet a representative sample.
 
@@ -139,9 +129,9 @@ The useful comparison holds the information constant. Show absolute risks with t
 
 ### The hot-stove effect
 
-A forager who touches a hot stove once may avoid it forever. In organizations, a team may abandon a promising strategy after an unlucky early loss. Denrell and March (2001) show why adaptive sampling can create this pattern: actions with uncertain outcomes are sampled less after bad experiences, so the learner receives fewer opportunities to discover their higher mean.
+After one painful encounter with a hot stove, avoiding it is sensible. The same learning rule can mislead a team that abandons a promising but variable strategy after one unlucky trial. Denrell and March (2001) show why adaptive sampling can create this pattern: actions with uncertain outcomes are sampled less after bad experiences, so the learner receives fewer opportunities to discover their higher mean.
 
-This is “as-if” overweighting of a rare adverse outcome. It does not require a stable probability-weighting preference. The bad outcome changes future exposure. Avoidance protects itself from correction.
+This is “as-if” overweighting of a rare adverse outcome. It does not require a stable probability-weighting preference. Because the bad outcome reduces future exposure, the learner may never encounter the evidence that would correct the initial impression.
 
 Exploration therefore has value. But exploration is not automatically wise. A hospital should not repeatedly sample a treatment suspected of severe harm merely to learn its distribution. The value of information must be weighed against the cost and reversibility of experimentation.
 
@@ -159,41 +149,10 @@ Yechiam, Barron, and Erev (2005) reported that residents of areas exposed to rep
 
 This does not show that residents had irrationally forgotten danger or that tourists had calculated it correctly. Locals and tourists differed in exposure, incentives, routines, alternatives, and information. The study is useful because it makes the information path visible: repeated ordinary days coexist with rare attacks for residents, while media descriptions can make the rare event central for visitors.
 
-::: {.callout-note .research-lens icon=false}
-## Research Lens: transporting the sampling diagnosis
-
-The core mechanism is now in place: the environment generates a path, sampling selects what enters that path, and the encountered path becomes the learned representation. Disaster preparedness and other domains show how that mechanism travels, but they add domain-specific constraints that should not be mistaken for the laboratory paradigm itself.
-
-### Disasters and the experience trap
-
-Mount Vesuvius, the 2021 eruption on La Palma, and floods in Passau provide vivid teaching cases. A city can go decades without a catastrophic event. Everyday experience then supplies thousands of “safe” observations, while historical and scientific description carries the tail risk. The absence of a recent disaster is evidence about frequency—but not evidence that the hazard is zero.
-
-These examples should not become a morality tale about people who live in dangerous places. Location reflects family, employment, housing prices, insurance, identity, public protection, and the feasibility of moving. Nor should a dramatic photograph substitute for a probability model. The decision requires at least four layers:
-
-1. **Hazard:** What is the best available estimate of event frequency and severity?
-2. **Exposure:** Who and what would be in harm's way?
-3. **Vulnerability:** How much damage would follow, given infrastructure and preparation?
-4. **Agency:** Which protections, insurance, evacuation plans, or relocation options are feasible?
-
-Long calm periods can produce underpreparedness. A recent disaster can produce excessive avoidance after conditions have changed. Good design keeps historical evidence available between events and updates it after each event without letting one experience stand for the whole distribution.
-
-### Beyond rare-event lotteries
-
-The description–experience framework travels beyond one-shot monetary risk, but it should be transported with care.
-
-- **Ambiguity:** Sampling can make an unknown probability feel learnable, yet the sample may create false precision.
-- **Intertemporal choice:** Waiting through a delay can feel different from reading a date; experienced delay includes boredom, uncertainty, anticipation, and changing states.
-- **Adolescence:** Age differences in risky choice can depend on whether risks are described or learned through feedback; “adolescents are risk seeking” is too coarse.
-- **Generalization:** Experience can teach frequent local regularities while a description supplies an abstract rule that transfers to new cases.
-- **Reinforcement learning:** Outcomes update expected values through prediction errors; partial feedback teaches only about chosen options, whereas full feedback also reveals forgone outcomes.
-- **Operations:** Inventory, maintenance, and quality decisions are learned from demand and failure histories whose samples may be censored by earlier policy.
-
-The boundary condition is always the same: specify what description and experience contain. A simulated animation is an experience-like presentation, not actual repeated exposure to the consequence. A numerical history is a description of other people's experience. Labels alone do not identify the mechanism.
-:::
 
 ## Learning from outcomes without being fooled by luck
 
-Experience is feedback, but an outcome is an imperfect teacher under uncertainty. The process–outcome distinction introduced in [*How Decisions Should Be Made—and How They Actually Are*](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) and applied to risk in [*Risky Decision-Making*](16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#risk-process-check) now meets a further problem: experience supplies only the outcomes actually encountered. A good decision can therefore produce a bad result, a bad decision can be rescued by luck, and an unobserved rare outcome can remain outside the learner's sample.
+An outcome teaches us something, but it does not reveal all the paths a choice could have taken. The [process–outcome distinction](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) therefore matters especially when learning from a selective record: a lucky success can reinforce an unreliable rule, while a rare harm remains unseen.
 
 |  | Good outcome | Bad outcome |
 | --- | --- | --- |
@@ -201,35 +160,11 @@ Experience is feedback, but an outcome is an imperfect teacher under uncertainty
 | **Bad process** | Treat success as a warning: luck can reinforce a fragile rule | Diagnose the process without pretending the bad outcome was inevitable |
 : Process quality and outcome quality must be reviewed separately {#tbl-process-outcome}
 
-Several retrospective biases introduced earlier interfere with learning from that selective sample:
-
-- **outcome bias:** evaluating the earlier decision by the result rather than by what was knowable then;
-- **hindsight bias:** after learning the result, treating it as more predictable than it was;
-- **self-serving attribution:** crediting success to skill while assigning failure to circumstances;
-- **rationalization:** constructing a coherent reason that protects the choice or identity after the fact.
-
-Introspection cannot reliably recover every cause of a choice. Choice-blindness and position-effect studies show that people can offer sincere quality-based explanations for decisions influenced by unnoticed substitutions or context (Nisbett & Wilson, 1977; Johansson et al., 2005). The remedy is not cynicism. It is a record made before the outcome.
+Hindsight, self-serving attribution, and rationalization make this review difficult. People can sincerely explain choices whose causes they did not notice (Nisbett & Wilson, 1977; Johansson et al., 2005), so a retrospective account needs something firmer than memory to compare with.
 
 ### A decision record for experiential learning
 
-Before choosing, record:
-
-- the alternatives considered;
-- the evidence and reference class;
-- predictions with ranges or probabilities;
-- values and trade-offs;
-- the principal unknowns;
-- the review date and evidence that would change the rule.
-
-After the outcome, ask:
-
-- What happened, and what remains unobserved?
-- Which part reflects process and which part reflects luck?
-- Which assumption failed or gained support?
-- Did the choice itself determine the feedback received?
-- What should change next time—and what should not change?
-
-This turns reflection into an update rather than a defense.
+Before choosing, preserve the alternatives, evidence, predictions, trade-offs, unknowns, and review rule. Afterward, compare the outcome with those predictions and identify which assumption gained or lost support. Add the question distinctive to learning from experience: **Did our choice determine what we could observe?** A successful supplier audit is less reassuring if it never tests the conditions most likely to cause failure.
 
 ## Exploration, exploitation, and feedback design
 
@@ -261,7 +196,7 @@ A strong risk display therefore combines:
 4. **Reflection:** a prompt to state what was learned and which outcomes were not encountered.
 5. **Agency:** time to decide, access to advice, and freedom to refuse.
 
-In medicine, neither a calm personal history nor a dramatic side-effect story should replace current clinical evidence and professional guidance. A fact box can make a rare event salient because it names it; omitting the event would not make the communication more truthful. The ethical task is to show the numerator, denominator, benefits, harms, uncertainty, and feasible alternatives together.
+In medicine, these displays support deliberation with current clinical evidence and professional guidance. A calm personal history or dramatic side-effect story cannot supply the missing comparison on its own.
 
 ## Worked application: a supplier has never failed us
 
@@ -281,16 +216,7 @@ The redesign does not assume failure is imminent. It refuses to treat “not yet
 
 Experience is persuasive because it is concrete. That makes it easy to exploit. A seller can curate favorable testimonials, let users sample only winning outcomes, stop an animation before losses appear, or present one victim's story without a denominator. An institution can also dismiss lived experience because it conflicts with an aggregate average.
 
-Both moves are errors. Representative statistics may miss subgroup harm, implementation failure, or outcomes that were never measured. Personal experience can reveal a mechanism worth investigating without estimating its prevalence. A defensible system asks:
-
-- Who generated the experience sample, and who is absent?
-- Which choices or institutions selected what became visible?
-- Does the description match the chooser's reference class?
-- Can rare harms be discovered and reported?
-- Are uncertainty and conflicts between evidence sources shown?
-- Could the person inspect, refuse, or revise the learning process?
-
-Good judgment uses experience as evidence, not as proof; description as a model, not as reality.
+Representative statistics may miss subgroup harm, implementation failure, or unmeasured outcomes; personal experience can reveal a mechanism without estimating its prevalence. Keep both sources open to scrutiny. Show who is absent from each record, provide a way to report rare harms, and preserve disagreements between evidence sources until they can be investigated.
 
 ## Practice Lab
 
@@ -298,9 +224,39 @@ Audit a supplier judged “reliable because it has never failed us.” Produce a
 
 ## Take it forward
 
-- **Use this when** confidence rests on personal history, repeated feedback, or a reassuring run without failure.
-- **Do not infer** the underlying distribution from a short, selected path—or one mechanism from an experience–description gap.
-- **Try this next** by pairing the lived record with a base rate, a counterfactual sample, and an explicit exploration rule.
+Eight reliable years count as evidence. The supplier team’s task is to find out what those years cover, add evidence about conditions they did not include, and choose a proportionate way to test resilience. Confidence then rests on a record whose limits are visible.
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: transporting the sampling diagnosis
+
+The sampling problem also matters in disaster preparedness and other settings, where opportunities to learn come with constraints that laboratory draws do not reproduce.
+
+### Disasters and the experience trap
+
+Mount Vesuvius, the 2021 eruption on La Palma, and floods in Passau provide vivid teaching cases. A city can go decades without a catastrophic event. Everyday experience then supplies thousands of “safe” observations, while historical and scientific description carries the tail risk. The absence of a recent disaster is evidence about frequency—but not evidence that the hazard is zero.
+
+These examples should not become a morality tale about people who live in dangerous places. Location reflects family, employment, housing prices, insurance, identity, public protection, and the feasibility of moving. Nor should a dramatic photograph substitute for a probability model. The decision requires at least four layers:
+
+1. **Hazard:** What is the best available estimate of event frequency and severity?
+2. **Exposure:** Who and what would be in harm's way?
+3. **Vulnerability:** How much damage would follow, given infrastructure and preparation?
+4. **Agency:** Which protections, insurance, evacuation plans, or relocation options are feasible?
+
+Long calm periods can produce underpreparedness. A recent disaster can produce excessive avoidance after conditions have changed. Good design keeps historical evidence available between events and updates it after each event without letting one experience stand for the whole distribution.
+
+### Beyond rare-event lotteries
+
+The description–experience framework travels beyond one-shot monetary risk, but it should be transported with care.
+
+- **Ambiguity:** Sampling can make an unknown probability feel learnable, yet the sample may create false precision.
+- **Intertemporal choice:** Waiting through a delay can feel different from reading a date; experienced delay includes boredom, uncertainty, anticipation, and changing states.
+- **Adolescence:** Age differences in risky choice can depend on whether risks are described or learned through feedback; “adolescents are risk seeking” is too coarse.
+- **Generalization:** Experience can teach frequent local regularities while a description supplies an abstract rule that transfers to new cases.
+- **Reinforcement learning:** Outcomes update expected values through prediction errors; partial feedback teaches only about chosen options, whereas full feedback also reveals forgone outcomes.
+- **Operations:** Inventory, maintenance, and quality decisions are learned from demand and failure histories whose samples may be censored by earlier policy.
+
+The boundary condition is always the same: specify what description and experience contain. A simulated animation is an experience-like presentation, not actual repeated exposure to the consequence. A numerical history is a description of other people's experience. Labels alone do not identify the mechanism.
+:::
 
 ## References cited in this chapter
 

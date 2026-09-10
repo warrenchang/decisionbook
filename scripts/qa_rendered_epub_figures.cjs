@@ -108,6 +108,19 @@ async function main() {
       ["fig-watched-eyes-evidence-update", "epub-watched-eyes.png"],
       ["fig-digital-arrow-affordance", "epub-digital-arrow.png"],
       ["tbl-self-fulfilling-self-defeating", "epub-table-6-1.png"],
+      ["fig-master-loop", "epub-master-loop.png"],
+      ["fig-habit-loop", "epub-habit-loop.png"],
+      ["fig-claim-to-design-pipeline", "epub-claim-to-design.png"],
+      ["fig-random-sampling-vs-assignment", "epub-sampling-assignment.png"],
+      ["fig-participant-flow-threats", "epub-participant-flow.png"],
+      ["fig-selected-evidence-pipeline", "epub-evidence-selection.png"],
+      ["fig-selected-literature-simulation", "epub-selection-simulation.png"],
+      ["fig-persuasion-update", "epub-persuasion-update.png"],
+      ["fig-story-update", "epub-story-update.png"],
+      ["fig-conversation-repair", "epub-conversation-repair.png"],
+      ["fig-zopa", "epub-zopa.png"],
+      ["fig-agreement-design", "epub-agreement-design.png"],
+      ["fig-decision-audit", "epub-decision-audit.png"],
     ];
     for (const [id, output] of captures) {
       const file = fileContaining(files, `id="${id}"`);

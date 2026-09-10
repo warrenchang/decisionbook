@@ -1,0 +1,343 @@
+{
+  "status": "Final HTML all-page audit passes; root reports final EPUB package QA passes with zero errors.",
+  "prior_attempt": "Removing chapter-title fragments resolves HTML but leaves literal bare QMD links in this book EPUB. The 21 fragment removals have been reversed.",
+  "tested_solution": "Preserve title fragment links; add matching content-visible unless-format=epub anchor after each target H1. Exact two-page Quarto HTML+EPUB fixture passes actual ID and link checks.",
+  "fixture_report": "title-anchor-cross-format-fixture.json",
+  "changes": [
+    {
+      "path": "how-to-use-this-book.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "how-to-read-evidence.qmd",
+      "fragment": "how-to-read-the-evidence-in-this-book"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",
+      "fragment": "rational-choice-and-decision-analysis"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd",
+      "fragment": "risky-decision-making-a-probability-is-not-yet-a-feeling"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/13-accessibility-familiarity-and-ease.qmd",
+      "fragment": "accessibility-familiarity-and-ease"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd",
+      "fragment": "the-narrator-after-choice-why-reasons-are-not-always-causes"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/41-decision-hygiene-build-a-process-that-can-learn.qmd",
+      "fragment": "decision-hygiene-build-a-process-that-can-learn"
+    },
+    {
+      "path": "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",
+      "fragment": "rational-choice-and-decision-analysis"
+    },
+    {
+      "path": "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/08-fast-and-frugal-thinking.qmd",
+      "fragment": "fast-and-frugal-thinking"
+    },
+    {
+      "path": "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd",
+      "fragment": "risky-decision-making-a-probability-is-not-yet-a-feeling"
+    },
+    {
+      "path": "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/40-choice-architecture-the-environment-gets-a-vote.qmd",
+      "fragment": "choice-architecture-the-environment-gets-a-vote"
+    },
+    {
+      "path": "chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd",
+      "fragment": "mental-accounting-money-is-fungible-minds-label-it"
+    },
+    {
+      "path": "chapters/19-intertemporal-decision-making-why-later-loses-to-now.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "appendices/appendix-f-when-evidence-breaks.qmd",
+      "fragment": "when-evidence-breaks-the-replication-crisis-and-research-integrity"
+    },
+    {
+      "path": "chapters/19-intertemporal-decision-making-why-later-loses-to-now.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.qmd",
+      "fragment": "deciding-for-a-better-life-satisfaction-connection-and-meaning"
+    },
+    {
+      "path": "chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/21-habits-wanting-and-self-control.qmd",
+      "fragment": "habits-wanting-and-self-control"
+    },
+    {
+      "path": "chapters/21-habits-wanting-and-self-control.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.qmd",
+      "fragment": "deciding-for-a-better-life-satisfaction-connection-and-meaning"
+    },
+    {
+      "path": "chapters/21-habits-wanting-and-self-control.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/39-behavior-design-make-the-better-action-easier.qmd",
+      "fragment": "behavior-design-make-the-better-action-easier"
+    },
+    {
+      "path": "chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "fragment": "social-norms-and-conformity-when-other-people-become-evidence"
+    },
+    {
+      "path": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/40-choice-architecture-the-environment-gets-a-vote.qmd",
+      "fragment": "choice-architecture-the-environment-gets-a-vote"
+    },
+    {
+      "path": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/28-authority-groupthink-and-shared-responsibility.qmd",
+      "fragment": "authority-groupthink-and-shared-responsibility"
+    },
+    {
+      "path": "chapters/28-authority-groupthink-and-shared-responsibility.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "fragment": "social-norms-and-conformity-when-other-people-become-evidence"
+    },
+    {
+      "path": "chapters/28-authority-groupthink-and-shared-responsibility.qmd",
+      "type": "restore_title_fragment_for_epub",
+      "target": "chapters/41-decision-hygiene-build-a-process-that-can-learn.qmd",
+      "fragment": "decision-hygiene-build-a-process-that-can-learn"
+    },
+    {
+      "path": "how-to-read-evidence.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "how-to-read-the-evidence-in-this-book"
+    },
+    {
+      "path": "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "rational-choice-and-decision-analysis"
+    },
+    {
+      "path": "chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "risky-decision-making-a-probability-is-not-yet-a-feeling"
+    },
+    {
+      "path": "chapters/13-accessibility-familiarity-and-ease.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "accessibility-familiarity-and-ease"
+    },
+    {
+      "path": "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "the-narrator-after-choice-why-reasons-are-not-always-causes"
+    },
+    {
+      "path": "chapters/41-decision-hygiene-build-a-process-that-can-learn.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "decision-hygiene-build-a-process-that-can-learn"
+    },
+    {
+      "path": "chapters/08-fast-and-frugal-thinking.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "fast-and-frugal-thinking"
+    },
+    {
+      "path": "chapters/40-choice-architecture-the-environment-gets-a-vote.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "choice-architecture-the-environment-gets-a-vote"
+    },
+    {
+      "path": "chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "mental-accounting-money-is-fungible-minds-label-it"
+    },
+    {
+      "path": "appendices/appendix-f-when-evidence-breaks.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "when-evidence-breaks-the-replication-crisis-and-research-integrity"
+    },
+    {
+      "path": "chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "deciding-for-a-better-life-satisfaction-connection-and-meaning"
+    },
+    {
+      "path": "chapters/21-habits-wanting-and-self-control.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "habits-wanting-and-self-control"
+    },
+    {
+      "path": "chapters/39-behavior-design-make-the-better-action-easier.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "behavior-design-make-the-better-action-easier"
+    },
+    {
+      "path": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "social-norms-and-conformity-when-other-people-become-evidence"
+    },
+    {
+      "path": "chapters/28-authority-groupthink-and-shared-responsibility.qmd",
+      "type": "html_title_anchor_excluded_from_epub",
+      "anchor": "authority-groupthink-and-shared-responsibility"
+    }
+  ],
+  "checks": [
+    {
+      "path": "how-to-use-this-book.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "86f175acf5376a9947cfbc313cf9d70e34b7692fdcc91f2543cf0af7325d88cd",
+      "sha256_after": "974f7d9448827c5512f38fe1fa4e174d5a324e4d5c09d07b7d91d0f5a1e44f67"
+    },
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "b91d56a4ab370a7674ce17a4a5de30180e96eb7dad5b523dc6ca9d0c4bc89081",
+      "sha256_after": "2af577473473ad344539bb61e00fcc3dc336e86b71d5d5446784ce3ffbac5363"
+    },
+    {
+      "path": "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "160e98c0940f9e8e49c3852001e287b21b3a51dae7ec40b1e523feca5b56e134",
+      "sha256_after": "9055bfa80e91efc6bec187d4932adf2e23f5b16a42987079645716f8b3cbde68"
+    },
+    {
+      "path": "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "985a24ea2d2a4762e8d2e5d1af44214afb3f49c35d946d309be824715b91fad4",
+      "sha256_after": "3f9b53af9c63edd68558f48c13c4ba032e21575d0d0638018d4f654ae45d0b15"
+    },
+    {
+      "path": "chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "3eef8026b07b2ee6bbabfd752dc3d7f0214ed18ccf9ff349a213eb0dc90e6ab2",
+      "sha256_after": "e1973145e3aded430fa44abb10dedc88b8f79983d968f0d53742300e1a0d63b4"
+    },
+    {
+      "path": "chapters/19-intertemporal-decision-making-why-later-loses-to-now.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "341875b5c38ea9c35a315ac741ec6007cd8e05ac13bbf3f2cf8bb49cc18b550b",
+      "sha256_after": "55fa00e951e11e76ab779f87be118b568f1baea132b7398079baebd056b0ee5f"
+    },
+    {
+      "path": "chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "c731e1123acc8650557c44a840f60c3183fd84cfb3ea4a10c7df72466dc9b357",
+      "sha256_after": "f4a45de75d7fb64f1eefc4d2be59bfe21532a4a8069af1f0a6eec6633adcc323"
+    },
+    {
+      "path": "chapters/21-habits-wanting-and-self-control.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "0d844060a9c65a6c750d85e4a214e9392ccd52410bd307b7bef013ca9147042c",
+      "sha256_after": "b36b11998ff8f8b9084396dbadceba58af4430f8a6d79ecc20ea3d169615d0b7"
+    },
+    {
+      "path": "chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "5dad1f9abf0b8f6281a100b6c14cc8a6fb9eea7e52339fe1ea35432094802224",
+      "sha256_after": "ffe5a0a5db8089ae5e050040123f210c5689bc287f9787554781d6c65c861e4c"
+    },
+    {
+      "path": "chapters/26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "607bb8d0db6cc79ada6525df1af72facaee2d53876d3e583324efaef62689fcd",
+      "sha256_after": "061892b51897ad1d248a631f55b2a4589006e5dbc72dbfe15bb41cc8fde42256"
+    },
+    {
+      "path": "chapters/28-authority-groupthink-and-shared-responsibility.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "ad247c87cb2714e280949582148e16a32d138dc4fdaa5660569d09a7abb3a036",
+      "sha256_after": "63d017216bd8cfba469e9b9bbfc0f1d957f219dd90ad9eda213cd9723f34ba12"
+    },
+    {
+      "path": "how-to-read-evidence.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "d46abd5a29d662238375cbbfe6a06a9c735e1c56bac41355ba7630cfaee65a7e",
+      "sha256_after": "37c8e6ff6f992db66fea1dae18889a6a6bb2f5df613703fbb9f008ca18daa943"
+    },
+    {
+      "path": "appendices/appendix-a-rational-choice-and-decision-analysis.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "40a87b770e22d4ae1a6dccdff9faf29f2106c62c8a4381694f42722bacede68e",
+      "sha256_after": "fd7c13be9f2d18ef084ef7afac38bd843d251a827f19f88d6dfb40df414324f9"
+    },
+    {
+      "path": "chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "2c2a90f55f228de2ed35f4e1bd1aed1fe573f853239bf63c77abbfc251d94cf5",
+      "sha256_after": "b318b5248732969831c4b476c5bf513e32ebbad9ac5b27ff84b4904aaea125de"
+    },
+    {
+      "path": "chapters/13-accessibility-familiarity-and-ease.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "c4ee70b96e0c6738af3ba51a9ceb6cb5608ddce78df623115adde3be38f90526",
+      "sha256_after": "bd7da3e015130f0f555379d18b26687e0d77d73946ecde789b92190ef4d4ed5b"
+    },
+    {
+      "path": "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "96df0283a1ea2f0705062a9abe2a74e701da41c7e5d1995a731e5dd3aef397b4",
+      "sha256_after": "a131fb1e29e1684a582a511725f0f76e69668eb342497b63ca6e9e5151215347"
+    },
+    {
+      "path": "chapters/41-decision-hygiene-build-a-process-that-can-learn.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "3c33d59acffcc30b34c3ab4541968009f3734d68eaae9d31d5301e66db0ea17f",
+      "sha256_after": "d36439a7fc280329bad5de321568e3704a64187a2d32282a2d7b7674745b1414"
+    },
+    {
+      "path": "chapters/08-fast-and-frugal-thinking.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "6e640e968ecb9e534cd5b250c9a8cb381c68baa52aeacaabc4b5504ed83e4f57",
+      "sha256_after": "caa89cae865ad11f0b22c56fba64571d98b157eeee92c5bacbe1150789666b2e"
+    },
+    {
+      "path": "chapters/40-choice-architecture-the-environment-gets-a-vote.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "3d9806ec63846cbcd4f57f659eac9297668d4a42800983170e197ebadd722155",
+      "sha256_after": "a1f6ceb0b1416449a8f78897f5d399b5d385d5e748b448c3ad52cfef3e95e11e"
+    },
+    {
+      "path": "appendices/appendix-f-when-evidence-breaks.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "38c73c9a8e278667bee4fe5281cee041b4fad3bc1cea83f48c2a80fe7412decd",
+      "sha256_after": "949d5963fd2afe7d822f179329f6bf9a494075bcda0053d2dd129932c16fffa5"
+    },
+    {
+      "path": "chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "733f21c9fee83a70f2adf633b2be4c02633f5bad662a3acadad7db8e52f164ed",
+      "sha256_after": "83b84eb8e65733209973e497803fb95177fc23fb107feb690469eb23e2a832ae"
+    },
+    {
+      "path": "chapters/39-behavior-design-make-the-better-action-easier.qmd",
+      "visible_text_preserved": true,
+      "sha256_before": "95322459cdc8cfc48fa65b71e26729f757cf58a84754c3250b17863e3c835bda",
+      "sha256_after": "20be465b72bf174ce770af8a9b79691dbe55183590a713751e78d7ef375a6df1"
+    }
+  ]
+}

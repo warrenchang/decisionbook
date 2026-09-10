@@ -1,72 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
-  <title id="title">Structured judgment pipeline</title>
-  <desc id="desc">Six connected stages run from defining and decomposing a decision through independent judgment, comparison, decision recording, and review and learning. A return arrow carries learning back to the next definition.</desc>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#2b75a0"/>
-    </marker>
-    <marker id="arrowGreen" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#4f8b61"/>
-    </marker>
-    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
-      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#17324a" flood-opacity="0.13"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="650" fill="#ffffff"/>
-  <text x="600" y="60" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#183047">Structure the process before debating the answer</text>
-  <text x="600" y="96" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#60758a">Independence protects information; recording and review turn outcomes into learning.</text>
-
-  <g stroke="#2b75a0" stroke-width="5" fill="none">
-    <line x1="205" y1="264" x2="233" y2="264" stroke-width="3" marker-end="url(#arrow)"/>
-    <line x1="395" y1="264" x2="423" y2="264" stroke-width="3" marker-end="url(#arrow)"/>
-    <line x1="585" y1="264" x2="613" y2="264" stroke-width="3" marker-end="url(#arrow)"/>
-    <line x1="775" y1="264" x2="803" y2="264" stroke-width="3" marker-end="url(#arrow)"/>
-    <line x1="965" y1="264" x2="993" y2="264" stroke-width="3" marker-end="url(#arrow)"/>
-  </g>
-
-  <g filter="url(#shadow)" font-family="Arial, Helvetica, sans-serif">
-    <g>
-      <rect x="45" y="204" width="160" height="120" rx="20" fill="#edf5fa" stroke="#2b75a0" stroke-width="3"/>
-      <text x="125" y="248" text-anchor="middle" font-size="21" font-weight="700" fill="#183047">DEFINE</text>
-      <text x="125" y="278" text-anchor="middle" font-size="17" fill="#60758a">target · rights</text>
-      <text x="125" y="302" text-anchor="middle" font-size="17" fill="#60758a">error costs</text>
-    </g>
-    <g>
-      <rect x="235" y="204" width="160" height="120" rx="20" fill="#f2f6f9" stroke="#7892a8" stroke-width="3"/>
-      <text x="315" y="248" text-anchor="middle" font-size="21" font-weight="700" fill="#183047">DECOMPOSE</text>
-      <text x="315" y="278" text-anchor="middle" font-size="17" fill="#60758a">criteria · evidence</text>
-      <text x="315" y="302" text-anchor="middle" font-size="17" fill="#60758a">reference class</text>
-    </g>
-    <g>
-      <rect x="425" y="204" width="160" height="120" rx="20" fill="#f2eef8" stroke="#80639a" stroke-width="3"/>
-      <text x="505" y="238" text-anchor="middle" font-size="19" font-weight="700" fill="#183047">JUDGE</text>
-      <text x="505" y="263" text-anchor="middle" font-size="17" font-weight="700" fill="#183047">INDEPENDENTLY</text>
-      <text x="505" y="298" text-anchor="middle" font-size="17" fill="#60758a">estimate first</text>
-    </g>
-    <g>
-      <rect x="615" y="204" width="160" height="120" rx="20" fill="#fff8ea" stroke="#d39b34" stroke-width="3"/>
-      <text x="695" y="242" text-anchor="middle" font-size="20" font-weight="700" fill="#183047">AGGREGATE</text>
-      <text x="695" y="270" text-anchor="middle" font-size="17" fill="#60758a">compare spread</text>
-      <text x="695" y="296" text-anchor="middle" font-size="17" fill="#60758a">challenge model</text>
-    </g>
-    <g>
-      <rect x="805" y="204" width="160" height="120" rx="20" fill="#f8f2ec" stroke="#bd6a35" stroke-width="3"/>
-      <text x="885" y="242" text-anchor="middle" font-size="20" font-weight="700" fill="#183047">DECIDE</text>
-      <text x="885" y="268" text-anchor="middle" font-size="20" font-weight="700" fill="#183047">AND RECORD</text>
-      <text x="885" y="298" text-anchor="middle" font-size="17" fill="#60758a">trade-offs · owner</text>
-    </g>
-    <g>
-      <rect x="995" y="204" width="160" height="120" rx="20" fill="#edf7ef" stroke="#4f8b61" stroke-width="3"/>
-      <text x="1075" y="242" text-anchor="middle" font-size="20" font-weight="700" fill="#183047">REVIEW</text>
-      <text x="1075" y="268" text-anchor="middle" font-size="20" font-weight="700" fill="#183047">AND LEARN</text>
-      <text x="1075" y="298" text-anchor="middle" font-size="17" fill="#60758a">outcome · fairness</text>
-    </g>
-  </g>
-
-  <path d="M1075 324 C1075 475 925 514 600 514 C275 514 125 475 125 324" fill="none" stroke="#4f8b61" stroke-width="5" marker-end="url(#arrowGreen)"/>
-  <rect x="218" y="463" width="764" height="40" rx="12" fill="#ffffff"/>
-  <text x="600" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#2d6740">The review changes the next process—not the memory of what was known before.</text>
-
-  <rect x="165" y="548" width="870" height="58" rx="18" fill="#edf5fa" stroke="#b3c4d1" stroke-width="2"/>
-  <text x="600" y="583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#183047">Scale the structure with stakes · uncertainty · repetition · irreversibility · power · automation</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1010" viewBox="0 0 760 1010" role="img" aria-labelledby="title desc">
+<title id="title">Protect independent judgment, then learn</title><desc id="desc">Six practical steps define a decision, separate its criteria, obtain independent judgments, compare and combine them, decide and record, then review. Review informs the next process while preserving the original record. This author’s workflow should be adapted and tested for the task.</desc>
+<rect width="760" height="1010" fill="white"/>
+<defs>
+<marker id="a" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#2f6f9f"/></marker>
+<marker id="g" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#3f7c59"/></marker>
+<marker id="o" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#b95f2d"/></marker>
+</defs>
+<text x="380" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17324d">Protect independent judgment,</text>
+<text x="380" y="89.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17324d">then learn</text>
+<rect x="96" y="130" width="620" height="98" rx="18" fill="#edf5fa" stroke="#2f6f9f" stroke-width="2.5"/>
+<text x="406" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Define the decision</text>
+<text x="406" y="204" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Name the goal, rights, and cost of error.</text>
+<path d="M406 228 V262" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="262" width="620" height="98" rx="18" fill="#f3f6f9" stroke="#53697d" stroke-width="2.5"/>
+<text x="406" y="299" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Separate the criteria</text>
+<text x="406" y="336" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Choose the evidence each criterion needs.</text>
+<path d="M406 360 V394" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="394" width="620" height="98" rx="18" fill="#f4eff8" stroke="#795a8a" stroke-width="2.5"/>
+<text x="406" y="431" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Judge independently</text>
+<text x="406" y="468" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Record estimates before discussing them.</text>
+<path d="M406 492 V526" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="526" width="620" height="98" rx="18" fill="#fff5ec" stroke="#b95f2d" stroke-width="2.5"/>
+<text x="406" y="563" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Compare and combine</text>
+<text x="406" y="600" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Compare reasons; challenge assumptions.</text>
+<path d="M406 624 V658" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="658" width="620" height="98" rx="18" fill="#f3f6f9" stroke="#53697d" stroke-width="2.5"/>
+<text x="406" y="695" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Decide and record</text>
+<text x="406" y="732" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Save the reasons, uncertainty, and owner.</text>
+<path d="M406 756 V790" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="790" width="620" height="98" rx="18" fill="#edf7ef" stroke="#3f7c59" stroke-width="2.5"/>
+<text x="406" y="827" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">Review the result</text>
+<text x="406" y="864" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Check outcomes and who was harmed.</text>
+<path d="M96 839 H35 V179 H96" fill="none" stroke="#3f7c59" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#g)"/>
+<text x="380" y="941" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#3f7c59">Use the review to improve the next process;</text>
+<text x="380" y="977.4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#3f7c59">preserve the record of what was known before.</text>
 </svg>

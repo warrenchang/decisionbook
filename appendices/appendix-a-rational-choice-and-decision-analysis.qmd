@@ -5,15 +5,17 @@ aliases:
 
 # Rational Choice and Decision Analysis
 
+::: {.content-visible unless-format="epub"}
+[]{#rational-choice-and-decision-analysis}
+:::
+
 *Formal details supporting Chapters 1 and 2*
 
-::: {.callout-note title="Purpose of this appendix" icon=false}
-This appendix formalizes the benchmark introduced in [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and turned into a practical decision process in [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd). The notation makes feasibility, preferences, beliefs, values, information, and sensitivity inspectable. It is not a claim that decision-makers consciously calculate these expressions, that the model predicts how attention and interpretation actually work, or that any internally coherent objective is ethically legitimate.
-:::
+Suppose you are comparing two job offers. You want to know which options are feasible, how their consequences differ, and whether another conversation with an employer could change your choice. This appendix puts the reasoning from [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd) into mathematical form. Use the equations to expose an assumption or test a recommendation; the model still depends on the evidence and objectives supplied to it.
 
 ## 1. Feasible and consideration sets {#feasible-and-consideration-sets}
 
-Let $\mathcal{A}$ denote the set of imaginable actions. An action is feasible only if it satisfies the relevant constraints. Suppose the decision contains inequality constraints $g_j(a)\leq 0$ and equality constraints $h_\ell(a)=0$. The feasible set is
+Let $\mathcal{A}$ denote the set of actions under discussion, including options whose feasibility has not yet been checked. An action is feasible only if it satisfies the relevant constraints. Suppose the decision contains inequality constraints $g_j(a)\leq 0$ and equality constraints $h_\ell(a)=0$. The feasible set is
 
 $$
 A
@@ -26,17 +28,17 @@ A
 \right\}.
 $$
 
-Budget, time, law, authority, technology, physical capacity, and contractual commitments can all enter through the constraint functions. Once $A$ has been defined, those constraints have determined membership in the feasible set; they are not an additional primitive beside the feasible alternatives.
+The constraint functions determine which actions belong to $A$. A job that requires a licence you cannot obtain in time, for example, may be imaginable without being feasible.
 
 This formulation also explains why prescriptive analysis tests apparent constraints. If a deadline can be negotiated, a role redesigned, or a commitment staged, the relevant constraint changes and the feasible set may expand. The best imaginable action need not be feasible, and the current visible menu need not contain every feasible action.
 
-Actual decision-makers often choose from a smaller **consideration set** $K$:
+The **consideration set** $K$ contains the alternatives a person notices, recalls, generates, or takes seriously:
 
 $$
-K(z,m)\subseteq A,
+K(z,m)\subseteq \mathcal{A},
 $$
 
-where $z$ represents external context and $m$ represents internal state. The set contains feasible alternatives that are noticed, recalled, generated, or taken seriously in that context and state. A person may therefore compare the considered alternatives coherently while overlooking a better action in the full feasible set. This is why option generation is part of decision quality rather than a decorative step before calculation.
+where $z$ represents external context and $m$ represents internal state. Considered options can include ones that later prove infeasible, while feasible options may be overlooked. After feasibility has been checked, the available considered options are $K(z,m)\cap A$. Comparing that intersection coherently can still miss a better option elsewhere in $A$, which is why generating alternatives matters.
 
 ## 2. Preferences and the choice correspondence {#preferences-and-choice-correspondence}
 
@@ -48,7 +50,7 @@ $$
 
 means that alternative $a$ is at least as good as alternative $b$ for the purposes represented by the model.
 
-For a finite feasible set, completeness and transitivity are sufficient for a numerical value representation $V$ such that
+For a finite, nonempty feasible set, completeness and transitivity are sufficient for a numerical value representation $V$ such that
 
 $$
 a\succeq b
@@ -56,7 +58,7 @@ a\succeq b
 V(a)\geq V(b).
 $$
 
-For infinite domains, completeness and transitivity alone need not guarantee a useful numerical representation; additional continuity, measurability, topological, or related regularity conditions are required depending on the domain. The maximization expression below also assumes that a maximum exists. With a finite $A$, existence is immediate. With an infinite $A$, compactness, continuity, or another existence argument may be needed. This reduced-form distinction between a coherent benchmark and a descriptive theory has long organized decision research (Edwards, 1954).
+For infinite domains, completeness and transitivity alone need not guarantee a useful numerical representation; additional continuity, measurability, topological, or related regularity conditions are required depending on the domain. The maximization expression below also assumes that a maximum exists. With a finite, nonempty $A$, existence is immediate. With an infinite $A$, compactness, continuity, or another existence argument may be needed. This reduced-form distinction between a coherent benchmark and a descriptive theory has long organized decision research (Edwards, 1954).
 
 The model's **choice correspondence** returns all feasible maximizers:
 
@@ -71,7 +73,7 @@ C(A)
 \right\}.
 $$
 
-If several alternatives tie, $C(A)$ contains several actions. A separate tie-breaking rule is required to predict which one will be observed. Once $V$ and any tie-breaking rule have been defined, there is no further substantive “comparison input”: the decision rule selects an element of $C(A)$.
+If several alternatives tie, $C(A)$ contains several actions. Predicting a single observed choice then requires a tie-breaking rule. For the job offers, equal scores mean that the model has not yet selected one job over the other.
 
 ::: {.callout-important title="Do not subtract ordinal scores" icon=false}
 A value representation of a ranking is ordinal: any strictly increasing transformation represents the same preferences. Numerical gaps such as $V(a)-V(b)$ therefore have no substantive magnitude unless $V$ is placed on a cardinal scale. Expected-utility indices are unique up to positive affine transformations, and multiattribute scores require explicit normalization. This appendix uses value differences only after those scale assumptions are stated.
@@ -87,7 +89,7 @@ $$
 V(a)=u\bigl(x(a)\bigr).
 $$
 
-Under uncertainty, let $O$ be a finite set of possible consequences. Let $P(o\mid a)$ be the probability assigned to consequence $o$ conditional on choosing action $a$, and let $u(o)$ represent preferences over consequences. A standard expected-utility evaluation is
+Under uncertainty, let $O$ be a finite set of possible consequences. Let $P(o\mid a)$ be the probability assigned to consequence $o$ if action $a$ is taken, and let $u(o)$ represent preferences over consequences. A standard expected-utility evaluation is
 
 $$
 V(a)
@@ -112,7 +114,7 @@ This representation separates three objects:
 - $P(o\mid a)$: beliefs or specified probabilities over consequences; and
 - $u(o)$: values or preferences over consequences.
 
-The formula is not implied by completeness and transitivity alone. For lotteries with specified probabilities, the von Neumann–Morgenstern expected-utility representation additionally relies on continuity and independence conditions (von Neumann & Morgenstern, 1944). A subjective-probability interpretation requires further assumptions connecting choices to beliefs. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#expected-utility-value-over-final-consequences) develops expected value, expected utility, final consequences, curvature, and the independence axiom in the setting of risky choice.
+These are probabilities for the consequences of taking each action; an observed association between an action and an outcome does not automatically supply them. The formula also requires more than completeness and transitivity. For lotteries with specified probabilities, the von Neumann–Morgenstern expected-utility representation additionally relies on continuity and independence conditions (von Neumann & Morgenstern, 1944). A subjective-probability interpretation requires further assumptions connecting choices to beliefs. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#expected-utility-value-over-final-consequences) develops expected value, expected utility, final consequences, curvature, and the independence axiom in the setting of risky choice.
 
 Nothing in the expression requires selfish values. A consequence may include effects on other people, fairness, identity, environmental outcomes, duties, or future generations. Some rights and obligations may instead be represented as constraints that remove impermissible actions from $A$. Neither placement settles the normative question of whose interests count or which trade-offs are legitimate.
 
@@ -126,15 +128,15 @@ V(a\mid z,m)
 \sum_{o\in O}
 P(o\mid a,z,m)\,
 u(o\mid z,m),
-\qquad a\in K(z,m).
+\qquad a\in K(z,m)\cap A.
 $$
 
-Observed selection can then be written as
+After feasibility checking, and assuming at least one considered option remains feasible, observed selection can then be written as
 
 $$
 a^{\mathrm{choice}}
 \in
-\operatorname*{arg\,max}_{a\in K(z,m)}
+\operatorname*{arg\,max}_{a\in K(z,m)\cap A}
 V(a\mid z,m).
 $$
 
@@ -230,11 +232,11 @@ w_jv_j\bigl(x_j(a,o)\bigr)
 \right].
 $$
 
-This expression keeps prediction and valuation separate. $P(o\mid a)$ represents what is expected to happen; $v_j$ and $w_j$ represent how performance over defined attribute ranges is valued. Under uncertainty, the $v_j$ terms must function as cardinal von Neumann–Morgenstern utility components on compatible scales, and the additive form requires stronger utility-independence conditions than a deterministic scoring table. Without those conditions, the expression is only a pragmatic expected-score model, not an expected-utility representation. The model remains an aid to disciplined discussion, not a machine for discovering ethically correct weights (Keeney & Raiffa, 1976).
+This expression keeps prediction and valuation separate. $P(o\mid a)$ represents what is expected to happen; $v_j$ and $w_j$ represent how performance over defined attribute ranges is valued. Under uncertainty, the $v_j$ terms must function as cardinal von Neumann–Morgenstern utility components on compatible scales, and the additive form requires additive independence over the relevant lotteries, which is stronger than the assumptions behind a deterministic scoring table. Without those conditions, the expression is only a pragmatic expected-score model, not an expected-utility representation. The model remains an aid to disciplined discussion, not a machine for discovering ethically correct weights (Keeney & Raiffa, 1976).
 
 ## 7. Value of information {#value-of-information}
 
-Information has instrumental value when it permits action to respond to uncertainty in a way that improves expected value.
+Would a further conversation with an employer be worth your time? Information has instrumental value when its possible answers let you choose better. A question that cannot affect any relevant action has no instrumental value for that decision, even if the answer is interesting.
 
 Let $\theta\in\Theta$ denote an uncertain state of the world, where $\Theta$ is finite or countable and the relevant expectations converge. Let $p(\theta)$ be the prior probability and $u(a,\theta)$ the value produced by action $a$ in state $\theta$. Without additional information, the best expected value is
 
@@ -307,7 +309,7 @@ $$
 0\leq EVSI(Y)\leq EVPI.
 $$
 
-If the total cost of obtaining and using the information is $c(Y)$, its net value is
+If the total cost of obtaining and using the information is $c(Y)$, expressed in the same cardinal units as $V$, its net value is
 
 $$
 NVSI(Y)=EVSI(Y)-c(Y).
@@ -319,7 +321,7 @@ If every possible signal leads to the same action and the signal changes no othe
 
 ## 8. Sensitivity and robustness {#sensitivity-and-robustness}
 
-Sensitivity analysis studies how a recommendation changes when uncertain inputs vary. On a declared cardinal scale, the value difference between alternatives $a$ and $b$ is
+A job recommendation may depend on a forecast of promotion prospects or on the weight you give flexibility. Sensitivity analysis asks how far those inputs would have to change before the recommendation changes. On a declared cardinal scale, the value difference between alternatives $a$ and $b$ is
 
 $$
 \Delta_{ab}=V(a)-V(b).
@@ -416,23 +418,11 @@ Low-stakes, familiar, reversible decisions often justify routines or simple rule
 
 ## 10. What formal analysis can and cannot establish {#what-formal-analysis-can-and-cannot-establish}
 
-A formal model is useful because it:
+Return to the job offers. The analysis is useful if it reveals an overlooked option, a forecast that deserves checking, or a trade-off hidden inside a single score. It can tell you which assumptions support the recommendation and what would change it.
 
-1. makes explicit whether a restriction defines feasibility, enters consequences, or changes value;
-2. separates predictions about consequences from values over consequences;
-3. reveals which assumptions generate a recommendation; and
-4. permits explicit analysis of opportunity cost, information, sensitivity, and future flexibility.
+The equations cannot supply accurate forecasts or settle whose interests should count. They also do not guarantee that the chosen action will be carried out or that its outcome will be interpreted fairly. Formal analysis provides a precise account of the assumptions; behavioral evidence, practical knowledge, and ethical reasoning determine whether they are appropriate.
 
-It does not automatically provide:
-
-- a complete feasible or consideration set;
-- accurate probabilities or a correctly specified signal model;
-- ethically legitimate objectives, weights, or trade-offs;
-- a predictive account of attention, interpretation, emotion, or social meaning;
-- successful implementation; or
-- valid learning from noisy outcomes.
-
-Those limits explain why normative, descriptive, and prescriptive decision science must remain distinct and connected. Chapter 1 develops that distinction; Chapter 2 develops the prescriptive workflow. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd) gives risky choice its fuller treatment, while [Chapter 20](../chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd) shows how labels and brackets can pull choice away from a forward-looking, whole-consequence benchmark. Formal analysis supplies a disciplined language for assumptions. Behavioral evidence and ethical reasoning determine whether those assumptions describe the decision and deserve to guide it.
+[Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd) develops risky choice further, while [Chapter 20](../chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd) examines how labels and mental accounts change the way consequences are compared.
 
 ## References cited in this appendix
 

@@ -8,21 +8,13 @@ aliases:
 
 *A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments*
 
-::: {.callout-note .research-lens icon=false}
-## Research Companion
+A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it, but attendance might also have risen because the season changed or a different group of patients received appointments. What would let them attribute the improvement to the reminder?
 
-This appendix is optional for readers following the book's professional pathway and central for students who must design, run, analyze, or evaluate an experimental study. It can be read as one methods chapter or used phase by phase while a study is in progress.
-:::
-
-::: {.callout-note .core-idea icon=false}
-## Core idea
-
-This appendix is a practical chapter about **running an experimental study**. The work begins before participants arrive and continues after the last result is reported: define the question, build the treatment and measure, plan the assignment and analysis, implement the protocol, protect the data, estimate the effect, and document what happened. Evidence is not a result with a small *p*-value. It is the entire chain.
-:::
+This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data, so you can reproduce its calculations without mistaking them for evidence about real patients. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.
 
 ## The experimental workflow
 
-Use this appendix as a working protocol in five phases. Each phase leaves a record that the next phase can inspect.
+The work has five phases. Each leaves a record needed to interpret what follows.
 
 | Phase | What you do | What you preserve |
 | --- | --- | --- |
@@ -33,26 +25,26 @@ Use this appendix as a working protocol in five phases. Each phase leaves a reco
 | **5. Report and preserve** | Report estimates and uncertainty, match the claim to the design, share what can be shared, and archive what must be protected | Manuscript, tables and figures, reproducibility package, access conditions, correction path |
 : Running an experimental study from definition to preservation {#tbl-experimental-workflow}
 
-Before collecting data, complete the design card in @tbl-evidence-design-card. During implementation, monitor assignment, exposure, attrition, contamination, measurement, and deviations without looking for a preferred result. After data collection, state the estimand first, report uncertainty and all planned outcomes, distinguish confirmatory from exploratory analysis, and narrow the claim to what the experiment actually learned.
-
-The point is not to make every study maximally complicated. It is to stop complexity from remaining hidden.
+The [design card](#the-one-page-evidence-design-card) collects the decisions to make before data collection. The sections below explain why each matters.
 
 ## Start with the claim you want to earn
 
-Suppose sales rise after a company introduces a negotiation workshop. Four questions can be asked:
+The reminder example allows four different questions:
 
-- **Description:** By how much did sales rise?
-- **Prediction:** Which teams are likely to improve next quarter?
-- **Causation:** What would sales have been for these teams without the workshop?
-- **Mechanism:** Did the workshop work through preparation, information sharing, confidence, manager attention, or something else?
+- **Description:** By how much did attendance rise?
+- **Prediction:** Which patients are likely to miss a future appointment?
+- **Causation:** What would attendance have been without the new reminder?
+- **Mechanism:** Did the reminder work by improving comprehension, attracting attention, or changing something else?
 
-The same dataset may answer the first question and fail on the other three. A time trend describes. A predictive model forecasts under a data-generating environment. A causal design compares potential outcomes under interventions. A mechanism claim needs further variation or measurement that distinguishes pathways.
+A before–after count could answer the descriptive question while leaving the others unresolved. To estimate the reminder's effect, we need a credible comparison; to explain its mechanism, we need evidence that separates the possible pathways.
 
-![A five-stage evidence pipeline from question and hypothesis through construct and measure, assignment and comparison, estimand and analysis, to the final claim, with common threats and a feedback path for reproduction, replication, and revision.](../figures/claim-to-design-pipeline.svg){#fig-claim-to-design-pipeline fig-alt="A left-to-right pipeline begins with question, then measure, compare, estimate, and claim. Under each stage is a common failure: vague target, invalid measure, confounding, fragile estimate, and overclaiming. A lower arrow labeled reproduce, replicate, revise returns from the claim to the question."}
+![Five questions connect an experimental design to the claim it can support. Revisit earlier steps when the evidence exposes a weakness.](../figures/claim-to-design-pipeline.svg){#fig-claim-to-design-pipeline fig-alt="A vertical sequence asks what to learn, what to measure, what to compare, how large and uncertain the estimate is, and what the design justifies."}
 
-@fig-claim-to-design-pipeline shows the discipline: each arrow carries assumptions. A transparent failure at one stage can improve the next design. An opaque success cannot.
+The figure helps locate a weakness before it becomes a confident conclusion. If the attendance record is incomplete, for example, a sound assignment procedure alone will not rescue the final estimate.
 
-## 1. Turn a topic into a question and hypothesis
+## Define the question
+
+### 1. Turn a topic into a question and hypothesis
 
 “Anchoring,” “happiness,” and “AI advice” are topics. A research question specifies what would count as an answer.
 
@@ -62,15 +54,13 @@ For an empirical study, write:
 
 Not every question needs every element in its title. The design does.
 
-A hypothesis should make a risky prediction before the outcome is known. “Anchoring matters” is too elastic. “Participants who see a high initial price will report a higher willingness to pay than those who see a low initial price, for the preregistered product and estimator” can be contradicted.
+A hypothesis should specify a prediction that could be contradicted. For the clinic, that might be: assignment to the shorter reminder increases recorded attendance within thirty days relative to assignment to the standard reminder. The outcome and comparison make the proposal testable.
 
 Three distinctions prevent later confusion:
 
 - **Confirmatory** analysis evaluates a claim and analysis plan specified without using the outcome pattern.
 - **Exploratory** analysis uses the data to discover patterns and generate explanations.
 - **Post hoc prediction** can be valuable, but it must not be narrated as if it was specified in advance.
-
-ABT—AND, BUT, THEREFORE—can make the motivation clear. It cannot establish novelty, measurement quality, or identification. A compelling contradiction earns attention; a design earns the claim.
 
 ### Research question check
 
@@ -80,7 +70,7 @@ ABT—AND, BUT, THEREFORE—can make the motivation clear. It cannot establish n
 - Is the study feasible with the available sample, ethics, time, access, and measurement?
 - Would the answer change theory, a decision, a design, or a boundary condition?
 
-## 2. Define the construct before choosing the instrument
+### 2. Define the construct before choosing the instrument
 
 A **construct** is the theoretical object: trust, impatience, fairness, experienced affect, cooperation. An **operationalization** is how the study makes that object observable: an item, scale, choice, response time, transfer, physiological signal, or coded behavior.
 
@@ -101,7 +91,7 @@ Manipulation checks need care. A post-treatment check can be a useful diagnostic
 
 Measurement is not clerical work after theory. It is the bridge between theory and data (Flake & Fried, 2020).
 
-## 3. Separate description, prediction, causation, and mechanism
+### 3. Separate description, prediction, causation, and mechanism
 
 | Claim family | Target question | Design requirement | Common overreach |
 | --- | --- | --- | --- |
@@ -116,7 +106,9 @@ Prediction and causation can point in different directions. An excellent predict
 
 Mechanism is harder still. Showing that treatment changes a proposed mediator and the mediator correlates with the outcome is not, by itself, a causal mechanism test. The mediator is post-treatment and can be confounded with unmeasured responses. Mechanism evidence becomes stronger when designs manipulate or otherwise identify the pathway, rule out alternatives, and predict boundary conditions.
 
-## 4. Make the counterfactual and confounding visible
+## Design the comparison
+
+### 4. Make the counterfactual and confounding visible
 
 For person $i$, let $Y_i(1)$ denote the outcome under treatment and $Y_i(0)$ the outcome under control. The individual causal effect is:
 
@@ -126,7 +118,7 @@ $$
 
 Only one potential outcome is observed. The missing one is the **counterfactual problem**. A comparison group is useful when its observed outcome represents what would have happened to the treated units without treatment.
 
-**Confounding** occurs when the groups differ in causes of the outcome apart from the treatment. Employees who volunteer for training may be more motivated. People who marry differ from people who do not. Countries with stronger institutions differ in many ways from countries with weaker institutions. Regression adjustment removes confounding only under assumptions about what was measured, how it was modeled, and what was not measured.
+**Confounding** occurs when the treatment comparison also reflects other causes of the outcome. If staff send the new reminder only to patients who are easier to contact, contactability may help explain an attendance difference. Statistical adjustment addresses that problem only under assumptions about the measured causes, the model, and what remains unmeasured.
 
 Ask of every causal claim:
 
@@ -136,7 +128,7 @@ Ask of every causal claim:
 - Did treatment affect observation, attrition, reporting, or exposure to the outcome?
 - Could one unit's treatment change another unit's outcome?
 
-## 5. Choose the design that identifies the contrast
+### 5. Choose the design that identifies the contrast
 
 | Design | What creates the comparison? | Strong use | Central assumption or limit |
 | --- | --- | --- | --- |
@@ -152,19 +144,19 @@ Ask of every causal claim:
 
 No design dominates on every dimension. Control can improve internal validity and narrow realism. Field context can increase realism and add uncontrolled pathways. Build a body of evidence whose weaknesses do not all point in the same direction.
 
-## 6. Random sampling and random assignment solve different problems
+### 6. Random sampling and random assignment solve different problems
 
 **Random sampling** selects units from a population and supports population description under the sampling design. **Random assignment** allocates eligible units to conditions and supports causal comparison within the experimental sample.
 
 A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.
 
-![Random sampling and random assignment solve different inferential problems. Sampling supports a claim to a defined population under the sampling design; assignment supports an internal contrast under the randomization and implementation assumptions. Neither process alone resolves attrition, interference, or transportability.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two side-by-side panels distinguish random sampling from random assignment. On the left, units move from a defined population to a probability sample and then to a population claim. On the right, an eligible study sample is randomly divided into two conditions whose outcomes are compared. A boundary band says that neither process alone fixes noncompliance, missing outcomes, attrition, interference, or transportability."}
+![Sampling connects observed people to a population; assignment creates a comparison within the study. Both inferences depend on the design and its implementation.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast under appropriate assumptions."}
 
 @fig-random-sampling-vs-assignment keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.
 
-### Random assignment balances in expectation
+#### Random assignment balances in expectation
 
-Random assignment does not guarantee that realized groups are identical. It makes assignment independent of baseline potential outcomes and covariates according to a known mechanism. Across repeated randomizations, differences average to zero; in one realized sample, chance imbalance can occur (Imbens & Rubin, 2015).
+Random assignment does not guarantee that realized groups are identical. With a common assignment probability, it makes assignment independent of baseline potential outcomes and covariates. Stratified designs provide the corresponding independence within strata; unequal assignment probabilities require the appropriate weighting or adjustment. Across repeated allocations under a balanced design, baseline differences average to zero; in one realized sample, chance imbalance can occur (Imbens & Rubin, 2015).
 
 This changes how balance should be used.
 
@@ -174,13 +166,13 @@ This changes how balance should be used.
 4. Pre-specify adjustment for strong predictors to improve precision; do not select controls by whether their baseline test is significant.
 5. Investigate patterns that suggest coding errors, differential recruitment after assignment, or implementation failure.
 
-### Rerandomization is a design, not a rescue
+#### Rerandomization is a design, not a rescue
 
 Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. **Rerandomization** can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan & Rubin, 2012).
 
-Stratification, pair matching, blocking, clustering, and covariate-adaptive allocation can also improve balance or logistics. Record the procedure completely; it becomes part of the estimand and inference.
+Stratification and pair matching can improve balance or precision; cluster assignment may be needed when treatment is delivered to groups or spills across individuals. Record the procedure and use an analysis appropriate to it.
 
-## 7. Plan precision before collecting outcomes
+### 7. Plan precision before collecting outcomes
 
 Power is the probability that a specified analysis will meet its decision criterion under a specified effect and data-generating process. It is not a property of sample size alone.
 
@@ -199,25 +191,27 @@ Low power causes more than missed significance. Conditional on passing a signifi
 
 After data collection, observed power computed from the observed effect adds little. Report the estimate, compatible interval, design assumptions, and what effect sizes the study could or could not distinguish.
 
-## 8. Protect the assignment during implementation
+## Run the study
+
+### 8. Protect the assignment during implementation
 
 A randomized design can lose its meaning after allocation. Track a participant or unit flow from eligibility through assignment, delivery, outcome observation, and analysis.
 
-![A participant-flow audit separates assignment, treatment receipt, outcome observation, analysis, and cross-arm spillovers. ITT follows the original assignment groups; noncompliance, missingness, and interference are different problems. There is no universally safe attrition percentage.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Two randomized arms proceed through treatment receipt, outcome observation, and analysis. Dashed curved arrows between arms mark spillovers or interference. A lower band distinguishes noncompliance, missingness, and interference and states that no fixed attrition percentage is universally safe."}
+![Assignment, treatment receipt, and outcome observation are different events. An intention-to-treat comparison keeps the original assignment groups while addressing missing outcomes and interference.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Two assigned groups proceed through treatment receipt, outcome observation, and analysis. The diagram asks who received treatment and who was observed, and reminds the reader to track effects between groups."}
 
 @fig-participant-flow-threats prevents several losses from being collapsed into “dropout.” **Noncompliance** separates assignment from treatment receipt. **Missingness or attrition** separates assignment from outcome observation. **Interference** means that one unit's assignment or treatment changes another unit's exposure or outcome. Each changes the estimand or the assumptions needed for interpretation.
 
-### Attrition and missing outcomes
+#### Attrition and missing outcomes
 
 Attrition is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.
 
 Report rates and reasons by arm, timing, baseline predictors of missingness, and sensitivity analyses under plausible missing-data assumptions. Do not silently replace the randomized sample with complete cases and retain the original causal language.
 
-### Noncompliance: assignment is not receipt
+#### Noncompliance: assignment is not receipt
 
 Let $Z$ be assignment and $D$ treatment received.
 
-The **intention-to-treat (ITT)** effect compares outcomes by assignment:
+With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the **intention-to-treat (ITT)** effect is estimated by comparing outcomes in the assigned groups:
 
 $$
 ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
@@ -225,12 +219,12 @@ $$
 
 ITT answers the effect of offering, assigning, or implementing the treatment under observed compliance. It preserves the randomized comparison and is often the policy-relevant estimand.
 
-The effect among those who actually received treatment is not obtained by simply comparing receivers with nonreceivers; receipt is selected. Under a valid binary instrument, the assignment can identify a **local average treatment effect (LATE)** for compliers. The standard interpretation requires:
+The effect among those who actually received treatment is not obtained by simply comparing receivers with nonreceivers; receipt is selected. With binary assignment and treatment receipt, consistently defined treatment versions, and no interference between units, assignment can identify a **local average treatment effect (LATE)** for compliers. The standard interpretation also requires:
 
 - **relevance:** assignment changes treatment receipt;
 - **independence:** assignment is as good as random relative to potential outcomes and compliance types;
 - **exclusion:** assignment affects the outcome only through treatment receipt;
-- **monotonicity:** no unit systematically does the opposite of assignment.
+- **monotonicity:** assignment never makes a unit less likely to receive treatment; in the binary potential-receipt model, $D_i(1)\geq D_i(0)$ for every unit.
 
 Then the Wald ratio is:
 
@@ -238,9 +232,9 @@ $$
 LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 $$
 
-LATE is local to compliers induced by that instrument. It is not automatically the average treatment effect for all participants, always larger than ITT, or portable to another implementation (Angrist et al., 1996).
+LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude. That rescaling does not make LATE the population-wide effect or establish that it will travel to another implementation.
 
-### Spillovers, interference, and displacement
+#### Spillovers, interference, and displacement
 
 The usual no-interference assumption says one unit's outcome does not depend on other units' assignments. Social information, contagion, peer effects, congestion, and markets often violate it.
 
@@ -248,13 +242,15 @@ Spillovers can make the standard difference too small, too large, or simply answ
 
 Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. None is automatic. State whose outcome depends on whose treatment.
 
-### Evaluation can change behavior
+#### Evaluation can change behavior
 
-Participants can respond to being studied, surveyed, observed, encouraged, or assigned to control. Labels such as demand, Hawthorne, John Henry, demoralization, anticipation, and survey effects describe possibilities, not guaranteed biases of one sign.
+Participants may change behavior because they know they are being studied or because they infer what the researcher expects. The clinic should therefore consider whether the two reminder groups receive different attention beyond the intended message. These responses are possibilities to investigate, with no guaranteed direction.
 
 Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
 
-## 9. Make multiplicity and flexibility visible
+## Analyze the planned comparison
+
+### 9. Make multiplicity and flexibility visible
 
 With many outcomes, subgroups, exclusions, transformations, models, and stopping rules, some apparently strong results will arise by chance. The problem is not only a researcher consciously “fishing.” Undocumented flexibility makes the effective analysis set unknowable.
 
@@ -269,7 +265,9 @@ Preregistration time-stamps decisions. It does not make a poor hypothesis import
 
 Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.
 
-## 10. Replication is estimation under a declared protocol
+## Report, reproduce, and extend
+
+### 10. Replication is estimation under a declared protocol
 
 A replication is not a ritual in which an effect “works” or “fails.” It asks whether an estimate appears under a specified protocol, sample, setting, measure, and analysis—and how the new estimate changes cumulative uncertainty.
 
@@ -282,7 +280,7 @@ Large replication projects in psychology and experimental economics found both r
 
 For a useful replication, document fidelity and departures, compare effect estimates with intervals, analyze protocol heterogeneity, and update the cumulative claim. A statistically significant original and nonsignificant replication can still have compatible estimates. A binary verdict discards that information.
 
-## 11. Build an open and reproducible workflow
+### 11. Build an open and reproducible workflow
 
 Transparency is not “put everything online.” Human-subject data can contain confidential or re-identifiable information. The target is **as open as possible and as protected as necessary**.
 
@@ -302,7 +300,7 @@ Run the pipeline in a clean environment before release. Check that figures and t
 
 Preregistration, open materials, open code, and registered reports change different incentives. They should be evaluated and improved rather than treated as badges of truth (Munafò et al., 2017; Nosek et al., 2018).
 
-## 12. Transport the result only as far as the evidence travels
+### 12. Transport the result only as far as the evidence travels
 
 **Internal validity** concerns whether the comparison supports the causal claim in the studied setting. **External validity** concerns where the result travels: to which people, tasks, institutions, treatments, outcomes, and times.
 
@@ -318,7 +316,7 @@ Build a transport argument:
 
 External validity is not a yes/no property of a study. It is an argument supported by design, theory, and accumulated evidence.
 
-## 13. Match the final sentence to the design
+### 13. Match the final sentence to the design
 
 | Evidence obtained | Defensible sentence | Sentence to avoid |
 | --- | --- | --- |
@@ -342,9 +340,9 @@ Scientific writing becomes clearer when it states the estimand and scope before 
 | Construct | Definition and competing interpretations |
 | Measure | Exact operation; scoring; reliability; validity; primary/secondary status |
 | Assignment/comparison | Unit; probabilities; strata/clusters; counterfactual logic |
-| Estimand | ITT, ATE, LATE, direct, spillover, total, predictive loss, or other quantity |
+| Estimand | Effect of assignment (ITT), average treatment effect (ATE), complier effect (LATE), spillover, predictive loss, or another defined quantity |
 | Threats | Confounding; attrition; noncompliance; interference; demand; measurement change |
-| Precision | Plausible effect; MDE; variance; dependence; attrition; multiplicity |
+| Precision | Plausible effect; minimum detectable effect; variance; dependence; attrition; multiplicity |
 | Analysis | Estimator; covariates; exclusions; missingness; uncertainty; family corrections |
 | Ethics | Respect; consent; beneficence; justice; privacy; data access; stopping rules |
 | Reproducibility | Registration; materials; code; environment; provenance; access plan |
@@ -353,11 +351,11 @@ Scientific writing becomes clearer when it states the estimand and scope before 
 
 ## Worked study: from question to report
 
-The following example is a **simulated teaching study**, not evidence about any real clinic. Its purpose is to show how the records connect from question to final sentence.
+Here is the complete calculation for the imagined clinic. This **simulated teaching study** connects the design record to generated outcomes and an estimate; it supplies no evidence about a real reminder programme.
 
 **Question.** Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?
 
-**Preregistered design.** Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.
+**Design specified for this teaching example.** Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.
 
 | Design-card field | Declared choice |
 | --- | --- |
@@ -369,7 +367,7 @@ The following example is a **simulated teaching study**, not evidence about any 
 | Main threats | Delivery failure, wrong contact information, spillovers within households, missing administrative records, and outcome-definition errors |
 | Mechanism boundary | The contrast tests the reminder package; it does not separately identify comprehension, fear reduction, salience, or lower friction |
 | Decision rule | Report estimate and interval; the clinic evaluates operational cost, distribution across patient groups, and implementation errors before scaling |
-: Preregistered design card for the simulated reminder study {#tbl-worked-reminder-design}
+: Planned design for the simulated reminder study {#tbl-worked-reminder-design}
 
 The data below are generated with a declared seed and fixed probabilities solely to make the workflow reproducible:
 
@@ -396,7 +394,7 @@ The generated data contain 380 attendances among 600 control assignments and 417
 
 **Design-matched interpretation.** In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.
 
-**Deviation and preservation record.** This simulated analysis has no analytical deviations because the code follows the declared generation and estimation procedure. It bypasses recruitment, delivery, attrition, spillovers, implementation failure, and measurement operations, so it does **not** demonstrate treatment fidelity or the absence of protocol deviations in a real study. A real study would preserve the eligibility extract, assignment file, delivered-message log, undeliverable contacts, outcome pull, code, environment, consent or waiver decision, preregistration, and every departure from the protocol. A model answer is credible because each sentence can be traced back through that record—not because the estimate happens to exclude zero.
+**What the simulation leaves out.** The code follows the declared generation and estimation procedure, but it bypasses recruitment, delivery, missing outcomes, and spillovers. A real study would need records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Reproducing the calculation checks the calculation; it does not verify real-world treatment delivery.
 
 ## Ethics is part of identification
 
@@ -408,27 +406,15 @@ Institutional review, data-protection law, registration, and local procedures ch
 
 ## Key ideas
 
-- Begin with the claim family and estimand, not with a preferred method.
-- Define the construct and justify the operation before collecting numbers.
-- Association, prediction, causation, and mechanism answer different questions.
-- Random assignment creates comparability in expectation; realized balance is a diagnostic, not a significance-test ritual.
-- Predeclared rerandomization or covariate-adaptive assignment can be valid; outcome-informed rescue is not the same design.
-- Power depends on an effect, variance, dependence, allocation, attrition, multiplicity, and analysis—not sample size alone.
-- ITT estimates assignment; LATE identifies an effect for compliers only under relevance, independence, exclusion, and monotonicity.
-- Attrition, noncompliance, spillovers, displacement, and evaluation-driven behavior change the estimand.
-- Preregistration distinguishes planned from discovered analysis; replication estimates cumulative evidence rather than issuing a pass/fail verdict.
-- A claim should never be stronger or broader than the design that earned it.
+- A useful experimental question names the comparison, outcome, population, and period.
+- Random assignment supports a comparison only when implementation and analysis preserve its meaning.
+- The final claim should be traceable to the design, records, and reported uncertainty.
 
 ## Study and practice
 
-1. Rewrite “Does social media affect happiness?” as a descriptive, predictive, and causal question.
-2. Give an example of a reliable but invalid measure.
-3. Why does a valid random assignment not guarantee identical observed groups?
-4. When is rerandomization defensible?
-5. Distinguish ITT from LATE in a job-training offer with partial take-up.
-6. How can spillovers reverse a policy conclusion even when the direct effect is positive?
-7. Why can a significant estimate from a low-powered study have an exaggerated magnitude?
-8. Convert one causal overclaim in a news story into a design-matched sentence.
+1. Design a comparison for the clinic that would separate the reminder package's effect from a seasonal change.
+2. Explain what you would record if some messages were not delivered or some attendance outcomes were missing.
+3. Propose a further comparison that could distinguish comprehension from attention as a mechanism.
 
 ::: {.callout-tip .activity icon=false}
 ## Activity: break and repair the evidence chain

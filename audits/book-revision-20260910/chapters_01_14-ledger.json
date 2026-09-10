@@ -1,0 +1,1630 @@
+{
+  "owner": "chapters_01_14",
+  "baseline_commit": "d0a1f75d5b6584cf738c0a6de94290b0b70dab36",
+  "status": "Editorial and standalone figure revision complete; destination integration owned by root.",
+  "source_count": 14,
+  "figure_count": 30,
+  "svg_count": 28,
+  "modified_svg_count": 16,
+  "sources": [
+    {
+      "path": "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 5313,
+      "sha256_before": "a5042171f3f1ef71ff730642cd8f6489324b2729d893b0e3fa8f6e5710f36bf9",
+      "full_read": true,
+      "words_after": 4186,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "2af577473473ad344539bb61e00fcc3dc336e86b71d5d5446784ce3ffbac5363",
+      "substantive_changes": [
+        "Moved the hiring scene ahead of terminology and shortened the opening conceptual load.",
+        "Consolidated repeated rational-choice qualifications, process summaries, and end-of-chapter previews.",
+        "Placed the corporate redesign and Mars anecdote in an optional evidence note; retained their limitations.",
+        "Kept all six cases, tables, figure IDs, and explicitly linked section anchors; ended by resolving the opening vote."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Internal consistency review",
+          "finding": "Kept the normative/behavioral distinction, conditional benchmark claims, and company anecdote limitations; no newly verified external claim.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop"
+        },
+        "new_headings": {
+          "two-suggestive-cases-with-weaker-evidence": "Two suggestive cases, with weaker evidence"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 4035,
+      "sha256_before": "c29ec7b30d5fc436accbbf8fcbb4e8b9133896b3a8f6e25983aa471f607eeb5a",
+      "full_read": true,
+      "words_after": 3193,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "6c79d632a19eaaeb1926597d4e3d6fb64bc24e5522c7d45ab5058d38c514c0f0",
+      "substantive_changes": [
+        "Introduced the job-choice scene early and used it to explain options, forecasts, value trade-offs, and sensitivity.",
+        "Removed a repeated end-of-chapter worked framework and ten-item record that duplicated the practice.",
+        "Converted overlapping checklists into concrete explanations while retaining useful comparison tables.",
+        "Corrected the consideration-set definition: considered alternatives can be infeasible, so it is not necessarily a subset of the feasible set."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Set definitions",
+          "finding": "Considered alternatives may be infeasible. Consideration is not necessarily a subset of feasibility; communicated to Appendix A owner.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        },
+        {
+          "topic": "Maguire et al. denominator discrepancy",
+          "finding": "The primary article reports 14,005 participants in the abstract but 12,093 in methods and discussion. Retained the common total of 39 experiments and omitted a participant count; Chapter 2 already used this formulation at final follow-up.",
+          "sources": [
+            "https://link.springer.com/article/10.1007/s40881-023-00134-6"
+          ],
+          "status": "primary publisher article checked"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "worked-framework-from-two-offers-to-a-decision-architecture": "Worked framework: from two offers to a decision architecture",
+          "the-first-visible-menu": "The first visible menu",
+          "constructed-alternatives": "Constructed alternatives",
+          "predictions": "Predictions",
+          "values": "Values",
+          "opportunity-cost": "Opportunity cost",
+          "sensitivity-and-action": "Sensitivity and action"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/03-attention-what-becomes-evidence.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3457,
+      "sha256_before": "3ff19a7a5cac73d60f935c4b19c5caf1b71ad51e36acf87fd2705012170e48af",
+      "full_read": true,
+      "words_after": 2907,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "d717ff27c0265a641f5925ca6bcbea750ea0ee2789494678a5e713da840a6644",
+      "substantive_changes": [
+        "Moved the attention test before the gorilla reveal and removed duplicate expert-search callouts.",
+        "Replaced the inaccurate inference from sensory/behavioral bit rates with a bounded optional research note; removed streaming analogy and consciousness equivalence.",
+        "Distinguished experimental texting evidence from academic-performance correlations and added the expert study denominator.",
+        "Consolidated organizational examples and repeated energy/attention disclaimers."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Attention information rates",
+          "finding": "The sensory and deliberate-behavior rate estimates use different channels/measurements; the ratio is not measured information discarded by attention.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/39694032/",
+            "https://meisterlab.caltech.edu/documents/30100/Zheng_2024_The_unbearable_slowness_of_being-_Why_do_we_live_at_10_bitss.pdf"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Expert inattention",
+          "finding": "Checked n=24 radiologists, 83% misses, and gaze qualification. This is an unexpected-object task, not a clinical error rate.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/23863753/"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Texting and learning",
+          "finding": "Distinguished randomized experiment from classroom selection and observational academic-performance correlations.",
+          "sources": [
+            "https://butler.elsevierpure.com/en/publications/omg-texting-in-class-u-fail-empirical-evidence-that-text-messagin-2/"
+          ],
+          "status": "new external source verification"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "the-invisible-gorilla-in-expert-search": "The invisible gorilla in expert search",
+          "watch-and-test-count-first-explain-second": "Watch and test: count first, explain second",
+          "mental-effort-is-not-a-simple-energy-meter": "Mental effort is not a simple energy meter"
+        },
+        "new_headings": {
+          "research-note-two-very-different-information-rates": "Research note: two very different information rates"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/04-the-predictive-mind-perception-is-inference.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3860,
+      "sha256_before": "9c924ac0155b6ea9d0b8b4486e4842a509e640205b255239481ad10f59bffb08",
+      "full_read": true,
+      "words_after": 2560,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "1532e0671108a5acfe3ce3fc696a0efea334761fedc6b0dafda4b59c629fd215",
+      "substantive_changes": [
+        "Built the chapter around recognizing and checking a chair in a dim kitchen, then introduced priors, error, and precision in sequence.",
+        "Removed repeated predictive-processing descriptions and unnecessary evolutionary/clinical tangents; retained model-testing qualifications.",
+        "Corrected precision from reliability or importance to estimated reliability and explained the model/process distinction concretely.",
+        "Moved active-inference detail to a collapsed research note and conditioned pilot value on costs.",
+        "Removed local reference entries left uncited after eliminating the tangents: Balcetis, Bennett, Proffitt, Ramsay, Stefanucci, Sterzer, Yeo."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Theoretical precision and inference",
+          "finding": "Corrected precision to estimated reliability, preserved theory boundaries, and separated incoming signals from expectations in the illustration. Removed weakly connected clinical and wishful-perception examples rather than treating them as established mechanism tests.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "a-network-label-is-not-a-cognitive-process": "A network label is not a cognitive process",
+          "evidence-boundary-a-framework-must-be-allowed-to-fail": "Evidence Boundary: a framework must be allowed to fail",
+          "evidence-boundary-clinical-cases-need-clinical-explanations": "Evidence Boundary: clinical cases need clinical explanations"
+        },
+        "new_headings": {
+          "when-context-changes-what-appears": "When context changes what appears"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/05-expectations-when-predictions-become-causes.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 5617,
+      "sha256_before": "c8e60fbdc03b3c14691768912fbf1dcff7c431c585b7fa981ab8fdda48325a0d",
+      "full_read": true,
+      "words_after": 4155,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "9117a84ba176094affcd9c00e6e1d7c404fb310ae255556cf41a9d0afa3e0954",
+      "substantive_changes": [
+        "Made the manager–employee opportunity loop the narrative thread and reduced repeated relationship examples.",
+        "Clarified placebo/nocebo effects as treatment-context effects; distinguished placebo-group improvement from identified effect.",
+        "Specified the growth-mindset trial population and outcome boundary; explained the revised learned-helplessness account in an optional note.",
+        "Replaced seven overlapping improvement steps and repeated ethical disclaimers with a supported, observable test."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Placebo/nocebo",
+          "finding": "Treatment-context effects can occur alongside active treatment; a placebo-group change alone does not identify a placebo effect.",
+          "sources": [
+            "https://www.nejm.org/doi/full/10.1056/NEJMra1907805"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Growth mindset",
+          "finding": "Restricted grade improvement claim to lower-achieving students in the US national ninth-grade experiment; kept the separate advanced-mathematics outcome.",
+          "sources": [
+            "https://www.nature.com/articles/s41586-019-1466-y"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Learned helplessness",
+          "finding": "Explained the revised learned-control account and bounded animal-to-human generalization.",
+          "sources": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/"
+          ],
+          "status": "new external source verification"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "expectations-are-pathways-not-magic": "Expectations are pathways, not magic",
+          "effects-depend-on-context-and-support": "Effects depend on context and support"
+        },
+        "new_headings": {
+          "research-note-learning-that-an-action-can-help": "Research note: learning that an action can help"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/06-valuation-how-options-become-worth-choosing.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 8232,
+      "sha256_before": "7b1a763b93d009dba0e67da588a25a8c207aa7bd701480f41b533af598777482",
+      "full_read": true,
+      "words_after": 6444,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "497d2f63d5803a65c6a613b8439d5a5a4afb80b19a70eb8b124f1ec64d538172",
+      "substantive_changes": [
+        "Replaced stacked opening concepts with an invitation whose appeal changes as consequences become salient.",
+        "Reduced repeated emotion, identity, social-value, and motive catalogues; explicitly defined integral and incidental emotion.",
+        "Moved evolutionary distinctions, motive hierarchies, and arousal/discounting mechanisms into optional notes while preserving their evidence and figure.",
+        "Qualified causal claims about gaze, ownership, and mediation; removed the unsupported strongest-study ranking."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Causal interpretation",
+          "finding": "Qualified gaze direction, ownership, mediation, and imaging null results; preserved multi-study distinction and proposed status of motive taxonomy. Retained-source consistency review, not new verification of every study.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop"
+        },
+        "new_headings": {
+          "research-note-are-needs-a-hierarchy": "Research note: are needs a hierarchy?",
+          "research-note-arousal-and-impatience-can-come-apart": "Research note: arousal and impatience can come apart"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3360,
+      "sha256_before": "7b8188d368deac4aef8ad52af32f1e656ddb27f1cadd5895d05eaa93c1480797",
+      "full_read": true,
+      "words_after": 2978,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "96df0283a1ea2f0705062a9abe2a74e701da41c7e5d1995a731e5dd3aef397b4",
+      "substantive_changes": [
+        "Opened with the face-switch experiment and removed duplicate explanations of sincere rationalization.",
+        "Added the free-choice measurement artifact to the Brehm dissonance account and the verified Expression of Concern for Mazar et al. (2008).",
+        "Consolidated repeated decision-journal guidance; distinguished a reconstructed record from a record actually made before the choice.",
+        "Removed a tangential free-will debate while preserving the chapter focus on bounded introspection.",
+        "Removed local reference entries left uncited after eliminating the tangents: Sapolsky."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Choice-induced preference artifact",
+          "finding": "Initial noisy ratings and revealed choice can generate apparent spreading without a causal attitude change.",
+          "sources": [
+            "https://www.anderson.ucla.edu/faculty_pages/keith.chen/papers.htm",
+            "https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-9004.2010.00323.x"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Expression of Concern",
+          "finding": "Added the journal 2024 Expression of Concern on Mazar, Amir, and Ariely (2008); the study no longer serves as unqualified support. Does not call it retracted.",
+          "sources": [
+            "https://journals.sagepub.com/doi/10.1177/00222437241285882"
+          ],
+          "status": "new external source verification"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "introspection-is-incomplete-not-useless": "Introspection is incomplete, not useless"
+        },
+        "new_headings": {
+          "evidence-note-self-concept-maintenance": "Evidence note: self-concept maintenance"
+        }
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/08-fast-and-frugal-thinking.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 4947,
+      "sha256_before": "b976b30b3b4e31ac40918b2cf98cb4fecf4f10aa4ade72561c90f0b9ab495c99",
+      "full_read": true,
+      "words_after": 3051,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "6e640e968ecb9e534cd5b250c9a8cb381c68baa52aeacaabc4b5504ed83e4f57",
+      "substantive_changes": [
+        "Put the bat-and-ball challenge first and eliminated repeated fast/slow catalogues and expertise summaries.",
+        "Corrected the claim that a correct CRT answer necessarily requires slow inhibition.",
+        "Qualified the claim that comprehension always implies belief and the use of pupil dilation as an effort measure.",
+        "Revised the personal-photo caption so it illustrates learning without diagnosing literal systems; removed categorical parallel/serial claims."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Correct fast responses",
+          "finding": "Added direct experimental evidence that correct initial responses can occur under time pressure/load; did not claim all correct responses are intuitive or identify a literal System 1.",
+          "sources": [
+            "https://wdeneys.org/data/Smart%20system%201%20accepted%20TAR.pdf",
+            "https://www.iast.fr/articles/smart-system-1-evidence-intuitive-nature-correct-responding-bat-and-ball-problem"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Measurement interpretation",
+          "finding": "Pupil dilation is not a unique effort meter; a personal photograph cannot establish which literal system is operating.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "watch-and-test-when-the-question-supplies-the-answer": "Watch and test: when the question supplies the answer",
+          "two-systems-are-teaching-labels": "Two systems are teaching labels",
+          "slow-thinking-can-rationalize": "Slow thinking can rationalize"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/09-what-feels-likely-availability-affect-and-resemblance.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3253,
+      "sha256_before": "daa9c0429c542d5e8e06c9f1efce2a631cd9d9bd900d96acc27609894e1e2b93",
+      "full_read": true,
+      "words_after": 2520,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "4a4cc99de035a330ad0feecaa872f526f54d58337ef1be14c93155fd492d7595",
+      "substantive_changes": [
+        "Introduced a repeated product-failure story and moved the correlated-cues synthesis until after the three shortcuts.",
+        "Removed repetitive risk and organizational catalogues while retaining denominator/reference-class reasoning.",
+        "Corrected conservation exercise to a stated hypothetical rather than an unsupported ranking of panda versus sea-star value.",
+        "Restricted the facial-competence study inference to prediction, not causal influence or actual competence."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Risk and resemblance",
+          "finding": "Removed unsupported panda-versus-sea-star conservation ranking; limited facial-competence findings to prediction; revised probability diagram to remove guaranteed calibration.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/10-beliefs-that-defend-themselves.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3159,
+      "sha256_before": "7c83b8e691e5a598ed4ec5db5852ee570bbf42b6e832fa2e4a3bd3912a989c88",
+      "full_read": true,
+      "words_after": 2397,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "3eabb9972f0c5d30ecc7799e845227ab589e6e75664f9f6cf1d80ade5ae11c51",
+      "substantive_changes": [
+        "Replaced the opening bias catalogue with two competing explanations of customer comments.",
+        "Explained Wason as diagnostic versus nondiagnostic testing, rather than declaring all positive tests irrational.",
+        "Qualified reported polarization and the proposed Barnum mechanism.",
+        "Consolidated repeated self-serving attribution examples and anchored the application in symmetric evidential standards.",
+        "Removed local reference entries left uncited after eliminating the tangents: Taylor.",
+        "Aligned the kiss-test debrief with the distinction between positive testing and diagnostic testing; they are not mutually exclusive categories."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Diagnostic testing",
+          "finding": "Positive tests are not inherently irrational; their value depends on what rival hypotheses predict. Qualified Barnum mechanism and polarization scope.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/11-when-context-rewrites-comparison.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3052,
+      "sha256_before": "bf99971f64d971f22de2648bab9bf392019fed1942ab1c99734b8b3343647409",
+      "full_read": true,
+      "words_after": 2309,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "d6f485d45b74ba618e5de8fd32f097055fcc41b4dfee4e9f5b77045be203ff78",
+      "substantive_changes": [
+        "Started with the subscription puzzle, then separated anchors, halo, and asymmetric dominance.",
+        "Removed repeated application lists and overlapping correction sections.",
+        "Corrected conflation of decoy, compromise, and price-contrast examples.",
+        "Clarified that an independent estimate must precede exposure or come from an unexposed observer."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Attraction versus contrast",
+          "finding": "Separated asymmetric dominance from price contrast/compromise; independent estimate must precede exposure or come from an unexposed observer.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "evidence-boundary": "Evidence Boundary"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 4625,
+      "sha256_before": "33af8c5ff1b4617a705c01701dff6d64251bd9a5e39b92da3ea18ef8439c7843",
+      "full_read": true,
+      "words_after": 2823,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "3f9b53af9c63edd68558f48c13c4ba032e21575d0d0638018d4f654ae45d0b15",
+      "substantive_changes": [
+        "Opened with a concrete survival/mortality pair and separated numerical equivalence from broader problem framing.",
+        "Corrected false equivalences such as low volatility/limited upside and experienced/old.",
+        "Separated the two Loftus–Palmer experiments and qualified the inference from reports to memory mechanism.",
+        "Removed repeated organizational/reframing catalogues and consolidated ethical guidance into concrete checks."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Loftus–Palmer values and design",
+          "finding": "Checked the original paper: Experiment 1 N=45, nine per verb, means 40.8/39.3/38.1/34.0/31.8 mph; Experiment 2 N=150, fifty per condition, broken-glass reports 16/50, 7/50, 6/50. Preserved distinction between a report effect and one identified storage mechanism.",
+          "sources": [
+            "https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Equivalent descriptions",
+          "finding": "Replaced non-equivalent pairs and fixed the opening outcome/time horizon.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "no-frame-is-perfectly-neutral": "No frame is perfectly neutral"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/13-accessibility-familiarity-and-ease.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 3598,
+      "sha256_before": "11adc4eb1f93993fd7cba305cf1bcf87b3739c51ccc2b32e6a292a548fcdcaa1",
+      "full_read": true,
+      "words_after": 3410,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "267ecf8adba4a046d3f3b361e548a382cceee254d45feac692afad7319436a84",
+      "substantive_changes": [
+        "Moved the repeated launch explanation ahead of terminology and clarified that the opening manipulation is framing, with possible later priming.",
+        "Updated the correction/repetition discussion using direct experiments on the elusive familiarity backfire effect.",
+        "Marked both numerical and workplace pilot examples explicitly fictional.",
+        "Reduced repeated clarity/evidence guidance and removed an unjustified claim that improved fluency identifies the cause of discomfort."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Correction and familiarity",
+          "finding": "Added direct experiments finding little evidence for the proposed familiarity backfire effect; repetition does not make corrections generally counterproductive.",
+          "sources": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7447737/",
+            "https://link.springer.com/article/10.1186/s41235-020-00241-6"
+          ],
+          "status": "new external source verification"
+        },
+        {
+          "topic": "Fictional examples and causal diagram",
+          "finding": "Marked pilot values/examples as fictional. Corrected priming arrows so accessible meaning and new input converge on interpretation.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    },
+    {
+      "path": "chapters/14-base-rates-conditional-probability-and-bayesian-updating.qmd",
+      "owner": "chapters_01_14",
+      "words_before": 2157,
+      "sha256_before": "00e09d005e3c3a0cf43069c984bc98adb82ef10f7187a0fa6b8eca7bccd19a83",
+      "full_read": true,
+      "words_after": 2073,
+      "word_count_method": "Root inventory word regex; includes metadata, captions, and references.",
+      "sha256_after": "74f52965152d7803de55ec780c1da42f2c8e37a05dad3a9706634869e436e878",
+      "substantive_changes": [
+        "Moved the hiring-screen question first and the two-pool worked update before formal probability rules.",
+        "Preserved all probability equations, numerical branches, and diagnostic exercises.",
+        "Clarified prior probability versus prevalence and explicitly marked the disease calculation hypothetical.",
+        "Removed a repeated model-dependence callout and resolved the opening accuracy claim at the end."
+      ],
+      "scientific_checks": [
+        {
+          "topic": "Probability arithmetic and structure",
+          "finding": "Recomputed hiring posteriors (1600/4000=40%; 4000/5500≈72.7%) and disease posterior (90/981≈9.17%); retained conditional-rate transport assumptions, set identities, and denominator distinctions.",
+          "sources": [],
+          "status": "internal consistency and causal-interpretation review"
+        }
+      ],
+      "explicit_anchors_preserved": true,
+      "heading_changes": {
+        "removed_headings": {
+          "where-this-chapter-enters-the-loop": "Where this chapter enters the loop",
+          "evidence-boundary": "Evidence Boundary"
+        },
+        "new_headings": {}
+      },
+      "unresolved_substantive_issues": [],
+      "destination_checks": "Final book HTML/EPUB layout and global links are coordinated by root."
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/affect-availability.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/09-what-feels-likely-availability-affect-and-resemblance.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Replaced an overbroad adaptive/biased rule with an evidence check.",
+      "modified_svg": true,
+      "modifications": "Replaced an overbroad adaptive/biased rule with an evidence check.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/affect-availability.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/affect-panda-sea-star.png",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/09-what-feels-likely-availability-affect-and-resemblance.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Illustrative species comparison; revised exercise supplies an explicit hypothetical cost-benefit premise rather than an empirical ecological ranking.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "rendered_fallback": "figures/affect-panda-sea-star.png",
+      "rendered_fallback_pixels": [
+        1536,
+        1024
+      ],
+      "individual_inspection_size": [
+        820,
+        547
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": "not applicable to raster",
+      "transformed_text_outside_viewbox": "not applicable to raster",
+      "minimum_svg_font_px": null,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/anchor-decoy.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/11-when-context-rewrites-comparison.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Anchoring and asymmetric dominance are separate panels; observed patterns are distinguished from proposed mechanisms. Numeric values are not new experimental results.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1400,
+        800
+      ],
+      "rendered_fallback": "figures/anchor-decoy.png",
+      "rendered_fallback_pixels": [
+        2100,
+        1200
+      ],
+      "individual_inspection_size": [
+        820,
+        469
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 18,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/assumed-choice-eggs.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "The offered menu changes from whether to eat to a quantity conditional on eating; caption preserves the implicit option of none.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        620
+      ],
+      "rendered_fallback": "figures/assumed-choice-eggs.png",
+      "rendered_fallback_pixels": [
+        1800,
+        930
+      ],
+      "individual_inspection_size": [
+        820,
+        424
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/attention-bottleneck.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/03-attention-what-becomes-evidence.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "The two information rates have a caution between them, not a funnel claiming directly measured loss; attention research is stated separately.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1600,
+        900
+      ],
+      "rendered_fallback": "figures/attention-bottleneck.png",
+      "rendered_fallback_pixels": [
+        2400,
+        1350
+      ],
+      "individual_inspection_size": [
+        820,
+        461
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 23,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/attention-filter.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/03-attention-what-becomes-evidence.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Prioritization is not total exclusion. Dashed unreported influence remains explicitly possible.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        680
+      ],
+      "rendered_fallback": "figures/attention-filter.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1020
+      ],
+      "individual_inspection_size": [
+        820,
+        465
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 18,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/belief-protection-loop.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/10-beliefs-that-defend-themselves.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Replaced a dense four-term intervention list with an understandable test and bounded the loop title.",
+      "modified_svg": true,
+      "modifications": "Replaced a dense four-term intervention list with an understandable test and bounded the loop title.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/belief-protection-loop.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/choice-blindness-swap.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Abstract cards explain an experimental substitution; the caption states some switches are detected and bounds the inference.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        690
+      ],
+      "rendered_fallback": "figures/choice-blindness-swap.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1035
+      ],
+      "individual_inspection_size": [
+        820,
+        472
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 16,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/context-b13-demonstration.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/04-the-predictive-mind-perception-is-inference.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Both middle marks are the same vector geometry; different neighboring contexts permit different readings.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        760
+      ],
+      "rendered_fallback": "figures/context-b13-demonstration.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1140
+      ],
+      "individual_inspection_size": [
+        820,
+        519
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 20,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/context-mechanisms.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Defined fluency and default without conflating each with possible consequences.",
+      "modified_svg": true,
+      "modifications": "Defined fluency and default without conflating each with possible consequences.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/context-mechanisms.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/daughter-finger-counting.png",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/08-fast-and-frugal-thinking.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Personal learning illustration, retained as an anecdotal photograph. Caption does not diagnose brain systems.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        372,
+        810
+      ],
+      "rendered_fallback": "figures/daughter-finger-counting.png",
+      "rendered_fallback_pixels": [
+        372,
+        810
+      ],
+      "individual_inspection_size": [
+        372,
+        810
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": "not applicable to raster",
+      "transformed_text_outside_viewbox": "not applicable to raster",
+      "minimum_svg_font_px": null,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/decision-loop.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Separated observed feedback from the possibility of learning.",
+      "modified_svg": true,
+      "modifications": "Separated observed feedback from the possibility of learning.",
+      "source_size": [
+        1670,
+        736
+      ],
+      "rendered_fallback": "figures/decision-loop.png",
+      "rendered_fallback_pixels": [
+        2505,
+        1104
+      ],
+      "individual_inspection_size": [
+        820,
+        361
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 31,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/decision-making-according-to-behavioral-evidence.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Selection and interpretation interact with prediction/value; contextual and internal influences are separated; feedback only may update the model.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1600,
+        700
+      ],
+      "rendered_fallback": "figures/decision-making-according-to-behavioral-evidence.png",
+      "rendered_fallback_pixels": [
+        2400,
+        1050
+      ],
+      "individual_inspection_size": [
+        820,
+        359
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 21,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/economist-subscription-decoy.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/11-when-context-rewrites-comparison.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Shortened the title while preserving the reported classroom counts and evidence boundary.",
+      "modified_svg": true,
+      "modifications": "Shortened the title while preserving the reported classroom counts and evidence boundary.",
+      "source_size": [
+        1400,
+        850
+      ],
+      "rendered_fallback": "figures/economist-subscription-decoy.png",
+      "rendered_fallback_pixels": [
+        2100,
+        1275
+      ],
+      "individual_inspection_size": [
+        820,
+        498
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 18,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/expectation-loop.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/05-expectations-when-predictions-become-causes.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Four possible causal routes are connected by readable buses; feedback can strengthen or counteract expectations. Does not guarantee self-fulfillment.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1400,
+        790
+      ],
+      "rendered_fallback": "figures/expectation-loop.png",
+      "rendered_fallback_pixels": [
+        2100,
+        1185
+      ],
+      "individual_inspection_size": [
+        820,
+        463
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-1.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 18,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/fast-slow.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/08-fast-and-frugal-thinking.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Clusters of typical processing features with a warning that they can combine, change with practice, and are not inherently rational/irrational.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        680
+      ],
+      "rendered_fallback": "figures/fast-slow.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1020
+      ],
+      "individual_inspection_size": [
+        820,
+        465
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 16,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/fluency-pathway.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/13-accessibility-familiarity-and-ease.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Several sources of ease and possible judgments are separated; direction depends on attribution/task/context. The evidence audit is a reader intervention.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        760
+      ],
+      "rendered_fallback": "figures/fluency-pathway.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1140
+      ],
+      "individual_inspection_size": [
+        820,
+        519
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/heuristic-substitution.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/08-fast-and-frugal-thinking.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Removed the categorical cue-validity rule and unnecessary heuristic catalogue.",
+      "modified_svg": true,
+      "modifications": "Removed the categorical cue-validity rule and unnecessary heuristic catalogue.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/heuristic-substitution.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 17,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/judgment-and-decision-making-according-to-predictive-processing.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/04-the-predictive-mind-perception-is-inference.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Replaced eight sequential stages with four elements: expectations and signals converge on perception; action changes sampling and mismatch is feedback. Reliability is a weight, not an extra processing stage.",
+      "modified_svg": true,
+      "modifications": "Replaced eight sequential stages with four elements: expectations and signals converge on perception; action changes sampling and mismatch is feedback. Reliability is a weight, not an extra processing stage.",
+      "source_size": [
+        1100,
+        780
+      ],
+      "rendered_fallback": "figures/judgment-and-decision-making-according-to-predictive-processing.png",
+      "rendered_fallback_pixels": [
+        1650,
+        1170
+      ],
+      "individual_inspection_size": [
+        820,
+        581
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 21,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/narrator-learning.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Corrected the unsupported claim that a decision record prevents retrospective bias.",
+      "modified_svg": true,
+      "modifications": "Corrected the unsupported claim that a decision record prevents retrospective bias.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/narrator-learning.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 16.13,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/option-information-portrait.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Scoped the information-value advice to its instrumental decision purpose.",
+      "modified_svg": true,
+      "modifications": "Scoped the information-value advice to its instrumental decision purpose.",
+      "source_size": [
+        800,
+        1160
+      ],
+      "rendered_fallback": "figures/option-information-portrait.png",
+      "rendered_fallback_pixels": [
+        1200,
+        1740
+      ],
+      "individual_inspection_size": [
+        800,
+        1160
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 22,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/overlapping-motive-systems.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/06-valuation-how-options-become-worth-choosing.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Made the proposed status of the developmental hierarchy explicit in the title.",
+      "modified_svg": true,
+      "modifications": "Made the proposed status of the developmental hierarchy explicit in the title.",
+      "source_size": [
+        1100,
+        980
+      ],
+      "rendered_fallback": "figures/overlapping-motive-systems.png",
+      "rendered_fallback_pixels": [
+        1650,
+        1470
+      ],
+      "individual_inspection_size": [
+        820,
+        731
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 25,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/perception-context-lab.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/04-the-predictive-mind-perception-is-inference.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Made the geometric unit precise; both target circles have radius 34.",
+      "modified_svg": true,
+      "modifications": "Made the geometric unit precise; both target circles have radius 34.",
+      "source_size": [
+        1200,
+        690
+      ],
+      "rendered_fallback": "figures/perception-context-lab.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1035
+      ],
+      "individual_inspection_size": [
+        820,
+        472
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 18,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/priming-pathway.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/13-accessibility-familiarity-and-ease.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Rebuilt four elements with converging inputs; removed the scientifically misleading accessibility-to-input arrow and the dense boundary-condition box.",
+      "modified_svg": true,
+      "modifications": "Rebuilt four elements with converging inputs; removed the scientifically misleading accessibility-to-input arrow and the dense boundary-condition box.",
+      "source_size": [
+        1000,
+        640
+      ],
+      "rendered_fallback": "figures/priming-pathway.png",
+      "rendered_fallback_pixels": [
+        1500,
+        960
+      ],
+      "individual_inspection_size": [
+        820,
+        525
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 22,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/probability-judgment-map.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/14-base-rates-conditional-probability-and-bayesian-updating.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Reduced three competing lessons to one natural-frequency tree; retained all disease-example values and removed the unexplained Brier score. Branch labels and denominator are explicit.",
+      "modified_svg": true,
+      "modifications": "Reduced three competing lessons to one natural-frequency tree; retained all disease-example values and removed the unexplained Brier score. Branch labels and denominator are explicit.",
+      "source_size": [
+        800,
+        950
+      ],
+      "rendered_fallback": "figures/probability-judgment-map.png",
+      "rendered_fallback_pixels": [
+        1200,
+        1425
+      ],
+      "individual_inspection_size": [
+        820,
+        974
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 20,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/prototype-probability.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/09-what-feels-likely-availability-affect-and-resemblance.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Separated intuitive resemblance from a probability update. Base rate and diagnostic evidence are independent inputs; removed the guarantee of calibration and the additive sample-size label.",
+      "modified_svg": true,
+      "modifications": "Separated intuitive resemblance from a probability update. Base rate and diagnostic evidence are independent inputs; removed the guarantee of calibration and the additive sample-size label.",
+      "source_size": [
+        1100,
+        670
+      ],
+      "rendered_fallback": "figures/prototype-probability.png",
+      "rendered_fallback_pixels": [
+        1650,
+        1005
+      ],
+      "individual_inspection_size": [
+        820,
+        499
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 20,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/sensory-windows-partial-world.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/03-attention-what-becomes-evidence.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Physical detection across modalities is distinguished from subjective experience and from attention.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        720,
+        1160
+      ],
+      "rendered_fallback": "figures/sensory-windows-partial-world.png",
+      "rendered_fallback_pixels": [
+        1080,
+        1740
+      ],
+      "individual_inspection_size": [
+        720,
+        1160
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 21,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/stroop-interference-lab.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/08-fast-and-frugal-thinking.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Same ink-color sequence in neutral and conflicting word rows; a demonstration of conflict rather than a personal ability or effect-size estimate.",
+      "modified_svg": false,
+      "modifications": "Retained after full text/semantic and visual inspection.",
+      "source_size": [
+        1200,
+        650
+      ],
+      "rendered_fallback": "figures/stroop-interference-lab.png",
+      "rendered_fallback_pixels": [
+        1800,
+        975
+      ],
+      "individual_inspection_size": [
+        820,
+        444
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 16,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/valuation.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/06-valuation-how-options-become-worth-choosing.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Grouped eight spokes into four understandable influences and a readable path to choice, while explicitly retaining its teaching-synthesis status.",
+      "modified_svg": true,
+      "modifications": "Grouped eight spokes into four understandable influences and a readable path to choice, while explicitly retaining its teaching-synthesis status.",
+      "source_size": [
+        1100,
+        770
+      ],
+      "rendered_fallback": "figures/valuation.png",
+      "rendered_fallback_pixels": [
+        1650,
+        1155
+      ],
+      "individual_inspection_size": [
+        820,
+        574
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 22,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    },
+    {
+      "path": "figures/wording-memory-study-redraw.svg",
+      "owner": "chapters_01_14",
+      "used_by": [
+        "chapters/12-framing-when-the-same-facts-become-different-decisions.qmd"
+      ],
+      "semantic_review": true,
+      "semantic_notes": "Used an outcome-based title instead of an identified memory-storage mechanism and added verified study denominators.",
+      "modified_svg": true,
+      "modifications": "Used an outcome-based title instead of an identified memory-storage mechanism and added verified study denominators.",
+      "source_size": [
+        1200,
+        700
+      ],
+      "rendered_fallback": "figures/wording-memory-study-redraw.png",
+      "rendered_fallback_pixels": [
+        1800,
+        1050
+      ],
+      "individual_inspection_size": [
+        820,
+        478
+      ],
+      "individual_visual_inspection": true,
+      "contact_sheet_inspection": true,
+      "contact_sheet": "chapters_01_14-contact-2.jpg",
+      "visual_status": "Passed at the recorded standalone inspection size; no clipped labels, accidental connector crossings, or meaning-altering collisions observed.",
+      "caption_and_alt_reviewed": true,
+      "caption_and_alt_consistent": true,
+      "connector_qa": [],
+      "transformed_text_outside_viewbox": [],
+      "minimum_svg_font_px": 16,
+      "narrow_destination_status": "Needs root final HTML/EPUB verification; diagrams with small source labels must retain readable-width scrolling on narrow HTML views."
+    }
+  ],
+  "verification_summary": {
+    "all_sources_read_completely": true,
+    "all_figures_individually_and_contact_sheet_inspected": true,
+    "all_explicit_source_anchors_preserved": true,
+    "all_28_svg_connector_checks_passed": true,
+    "all_28_transformed_svg_text_bounds_passed": true,
+    "changed_svg_png_fallbacks_regenerated": true,
+    "owned_qmd_diff_whitespace_check_passed": true,
+    "full_book_build_run_by_worker": false,
+    "external_publication_or_git_commit": false
+  },
+  "limits": [
+    "External checks were targeted to disputed, consequential, or revised claims; this was not a fresh replication audit of every historical study cited.",
+    "All diagram inspections recorded here are standalone; root verifies final desktop/mobile HTML and EPUB placement."
+  ]
+}

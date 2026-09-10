@@ -1,0 +1,22 @@
+# Independent review of Appendix B, Appendix C, and the evidence guide
+
+Reviewer: chapters_01_14. All three current QMD files were read completely, including the optional notes and references. This was a bounded independent check of root's completed edits, with precise corrections authorized by root. Reading paths, headings, tool names, and anchors were preserved. All three sources parse successfully with Quarto's Pandoc, and the scoped whitespace check passes.
+
+## Corrections implemented
+
+- **Appendix B, evolutionary stability:** specified resistance to any sufficiently rare alternative strategy within the declared strategy space. Resistance to only some tested alternatives is insufficient for the definition. This is a mathematical-definition clarification; the primary Maynard Smith–Price publisher page could not be fetched, so it is not reported as a fresh source verification.
+- **Appendix B, Schelling provenance:** declared the generator's isolated-agent convention: no occupied neighbors means satisfied, with a same-group share of one. Checked against `same_share` in `scripts/build_schelling_sequence.py`. Root had independently reproduced the reported .48 → .64 → .68 trajectory; this review did not rerun it or alter the model.
+- **Appendix C, probability tool:** replaced a potentially misleading instruction to force a common denominator with counts in a shared population and explicit conditional subgroups. Added the 0–1 scale for a Brier probability. These are mathematical and teaching clarifications, not new empirical effectiveness claims.
+- **Appendix C, risky-choice tool:** separated changes to payoffs through insurance/diversification from information that changes estimates or subsequent choice. Information does not by itself change a fixed lottery's underlying outcomes.
+- **Appendix C, negotiation tactic table:** replaced “emotion is not evidence” with the narrower point that visible emotion alone does not establish an offer is unreasonable. Communicated emotion can inform inferences, although it may be strategic and need not reveal an actual constraint. The authors' institutional abstract reports that opponents' communicated emotion affected inferences about their limits in a specified laboratory negotiation: https://research.rug.nl/en/publications/the-interpersonal-effects-of-anger-and-happiness-in-negotiations/ ; https://doi.org/10.1037/0022-3514.86.1.57 . No effect magnitude or universal tactical recommendation was added.
+- **Evidence guide, source types:** stated explicitly that field studies may be observational or experimental. The label “field” does not itself identify a causal design or uniquely distinguish consequential from inconsequential behavior.
+
+## Claims checked and retained
+
+- Bennett's five capacities are labeled a proposed, simplified lineage account throughout. The original hypothesis article uses the reported bilaterian/vertebrate/mammal/primate/human sequence and includes future mental states, theory of mind, and observational learning under mentalizing. The appendix does not repeat the article's more categorical exclusions of these capacities from other species. https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2021.693346/full
+- Tay and Diener's abstract supports the 123-country coverage, associations between distinct needs and well-being outcomes, and substantial independence from fulfillment of other needs. The appendix retains the observational boundary. https://pubmed.ncbi.nlm.nih.gov/21688922/
+- Replicator weights are nonnegative with a positive denominator; the updated share remains in [0,1]. Arbitrary negative game payoffs are not silently interpreted as reproductive weights.
+- Fitness, current subjective value, welfare, and moral obligation remain separated; the optional Sapolsky account is attributed and does not present rejection of free will as consensus.
+- The portable tools remain prompts and records, with explicit limits for the journal, urge observation, communication scripts, and claims of persuasive success. The evidence guide separates prediction, causation, mechanism, generality, effect size, and uncertainty.
+
+No further substantive error was identified in this bounded read. Targeted external checks are listed above; this is not a claim that every retained reference was freshly verified. Final HTML/EPUB destination verification belongs to root's integration pass.

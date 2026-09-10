@@ -1,67 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
-  <title id="title">Behavior design is an iterative test, not a pyramid</title>
-  <desc id="desc">A five-step horizontal workflow moves from defining a target behavior through diagnosis, redesign, testing, and learning. A feedback arrow returns learning to diagnosis. Recovery is shown as a conditional branch after a lapse or harm, not as a foundation or universal stage.</desc>
-  <defs>
-    <marker id="arrow-navy" markerWidth="9" markerHeight="9" refX="7.7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.8,0.8 L7.7,4.5 L0.8,8.2 Z" fill="#47647e"/></marker>
-    <marker id="arrow-green" markerWidth="9" markerHeight="9" refX="7.7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.8,0.8 L7.7,4.5 L0.8,8.2 Z" fill="#3f7c59"/></marker>
-    <marker id="arrow-orange" markerWidth="9" markerHeight="9" refX="7.7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.8,0.8 L7.7,4.5 L0.8,8.2 Z" fill="#bf682d"/></marker>
-  </defs>
-
-  <rect x="1.5" y="1.5" width="1197" height="697" rx="28" fill="#ffffff" stroke="#d5e1ea" stroke-width="3"/>
-  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#17324d">Behavior design is an iterative test—not a pyramid</text>
-  <text x="600" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#53697d">Diagnose interacting conditions, change a plausible lever, and let observed consequences revise the design.</text>
-
-  <g font-family="Arial, sans-serif">
-    <rect x="40" y="128" width="198" height="160" rx="18" fill="#eef4f8" stroke="#7892a8" stroke-width="3"/>
-    <circle cx="68" cy="157" r="18" fill="#47647e"/><text x="68" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">1</text>
-    <text x="139" y="164" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">DEFINE</text>
-    <text x="139" y="203" text-anchor="middle" font-size="18" fill="#40566a"><tspan x="139" dy="0">Observable action</tspan><tspan x="139" dy="25">and endorsed</tspan><tspan x="139" dy="25">outcome</tspan></text>
-
-    <rect x="278" y="128" width="222" height="160" rx="18" fill="#e5f1f7" stroke="#2f6f9f" stroke-width="3"/>
-    <circle cx="306" cy="157" r="18" fill="#2f6f9f"/><text x="306" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">2</text>
-    <text x="393" y="164" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">DIAGNOSE</text>
-    <text x="389" y="202" text-anchor="middle" font-size="18" fill="#40566a"><tspan x="389" dy="0">COM-B conditions</tspan><tspan x="389" dy="25">B=MAP at the</tspan><tspan x="389" dy="25">critical moment</tspan></text>
-
-    <rect x="540" y="128" width="222" height="160" rx="18" fill="#f8f1e7" stroke="#bf682d" stroke-width="3"/>
-    <circle cx="568" cy="157" r="18" fill="#bf682d"/><text x="568" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">3</text>
-    <text x="656" y="164" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">REDESIGN</text>
-    <text x="651" y="202" text-anchor="middle" font-size="18" fill="#40566a"><tspan x="651" dy="0">Change a plausible</tspan><tspan x="651" dy="25">cue, friction, plan,</tspan><tspan x="651" dy="25">support, or feedback</tspan></text>
-
-    <rect x="802" y="128" width="170" height="160" rx="18" fill="#eef4f8" stroke="#7892a8" stroke-width="3"/>
-    <circle cx="830" cy="157" r="18" fill="#47647e"/><text x="830" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">4</text>
-    <text x="890" y="164" text-anchor="middle" font-size="22" font-weight="700" fill="#17324d">TEST</text>
-    <text x="887" y="203" text-anchor="middle" font-size="18" fill="#40566a"><tspan x="887" dy="0">Smallest credible</tspan><tspan x="887" dy="25">reversible</tspan><tspan x="887" dy="25">intervention</tspan></text>
-
-    <rect x="1012" y="128" width="148" height="160" rx="18" fill="#eaf4ec" stroke="#3f7c59" stroke-width="3"/>
-    <circle cx="1040" cy="157" r="18" fill="#3f7c59"/><text x="1040" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff">5</text>
-    <text x="1106" y="164" text-anchor="middle" font-size="20" font-weight="700" fill="#17324d">LEARN</text>
-    <text x="1086" y="203" text-anchor="middle" font-size="18" fill="#40566a"><tspan x="1086" dy="0">Compare with</tspan><tspan x="1086" dy="25">baseline; revise</tspan><tspan x="1086" dy="25">or stop</tspan></text>
-
-    <path d="M238 208 H266" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M500 208 H528" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M762 208 H790" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-    <path d="M972 208 H1000" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-navy)"/>
-  </g>
-
-  <rect x="92" y="338" width="1016" height="94" rx="18" fill="#f7f9fb" stroke="#b7c8d6" stroke-width="2.5"/>
-  <text x="132" y="371" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">MEASURE</text>
-  <g font-family="Arial, sans-serif" font-size="18" fill="#40566a" text-anchor="middle">
-    <rect x="295" y="357" width="150" height="52" rx="26" fill="#ffffff" stroke="#b7c8d6" stroke-width="2"/><text x="370" y="389">Behavior</text>
-    <rect x="470" y="357" width="150" height="52" rx="26" fill="#ffffff" stroke="#b7c8d6" stroke-width="2"/><text x="545" y="389">Process</text>
-    <rect x="645" y="357" width="150" height="52" rx="26" fill="#ffffff" stroke="#b7c8d6" stroke-width="2"/><text x="720" y="389">Outcome</text>
-    <rect x="820" y="357" width="250" height="52" rx="26" fill="#ffffff" stroke="#b7c8d6" stroke-width="2"/><text x="945" y="389">Equity + side effects</text>
-  </g>
-
-  <path d="M1050 288 V464 Q1050 482 1032 482 H276 Q258 482 258 464 V268 Q258 250 276 250" fill="none" stroke="#3f7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-green)"/>
-  <rect x="448" y="455" width="362" height="54" rx="27" fill="#eaf4ec" stroke="#3f7c59" stroke-width="2.5"/>
-  <text x="629" y="489" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#315f45">Feedback revises the diagnosis</text>
-
-  <path d="M1125 288 V526" fill="none" stroke="#bf682d" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 7" marker-end="url(#arrow-orange)"/>
-  <rect x="730" y="536" width="430" height="100" rx="18" fill="#fff5ec" stroke="#bf682d" stroke-width="3"/>
-  <text x="945" y="567" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#8f4d22">IF A LAPSE OR HARM OCCURS</text>
-  <text x="945" y="597" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#40566a">Recover, seek support, or revise the goal or context.</text>
-  <text x="945" y="621" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7a6658">Conditional feedback—not a foundation or universal stage.</text>
-  <path d="M730 586 H629 V513" fill="none" stroke="#bf682d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 7" marker-end="url(#arrow-orange)"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="930" viewBox="0 0 760 930" role="img" aria-labelledby="title desc">
+<title id="title">Change one thing, then learn</title><desc id="desc">A practical workflow defines an observable action, finds an obstacle, changes one condition, tries and measures the change, and reviews the results. Feedback returns the review to diagnosis. After a lapse or harm, recovery and support may require a different goal or design; recovery is not a mandatory stage.</desc>
+<rect width="760" height="930" fill="white"/>
+<defs>
+<marker id="a" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#2f6f9f"/></marker>
+<marker id="g" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#3f7c59"/></marker>
+<marker id="o" viewBox="0 0 12 10" markerWidth="9" markerHeight="8" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 5 L1 9 Z" fill="#b95f2d"/></marker>
+</defs>
+<text x="380" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#17324d">Change one thing, then learn</text>
+<rect x="96" y="105" width="620" height="102" rx="18" fill="#f3f6f9" stroke="#53697d" stroke-width="2.5"/>
+<text x="406" y="144" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">1  Define the action</text>
+<text x="406" y="182" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">What would someone actually do?</text>
+<path d="M406 207 V245" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="245" width="620" height="102" rx="18" fill="#edf5fa" stroke="#2f6f9f" stroke-width="2.5"/>
+<text x="406" y="284" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">2  Find the obstacle</text>
+<text x="406" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">What makes that action difficult?</text>
+<path d="M406 347 V385" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="385" width="620" height="102" rx="18" fill="#fff5ec" stroke="#b95f2d" stroke-width="2.5"/>
+<text x="406" y="424" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">3  Change one condition</text>
+<text x="406" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Choose a plausible cue, support, or plan.</text>
+<path d="M406 487 V525" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="525" width="620" height="102" rx="18" fill="#f3f6f9" stroke="#53697d" stroke-width="2.5"/>
+<text x="406" y="564" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">4  Try and measure</text>
+<text x="406" y="602" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Record the action, outcome, and harms.</text>
+<path d="M406 627 V665" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+<rect x="96" y="665" width="620" height="102" rx="18" fill="#edf7ef" stroke="#3f7c59" stroke-width="2.5"/>
+<text x="406" y="704" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d">5  Review the result</text>
+<text x="406" y="742" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">Compare; keep, revise, or stop the change.</text>
+<path d="M96 716 H35 V296 H96" fill="none" stroke="#3f7c59" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#g)"/>
+<text x="380" y="818" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#3f7c59">Results can change the diagnosis.</text>
+<text x="380" y="866" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">After a lapse or harm, recover and seek support</text>
+<text x="380" y="902.4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#53697d">as needed; reconsider the goal or conditions.</text>
 </svg>

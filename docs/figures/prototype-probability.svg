@@ -1,32 +1,50 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" height="650" version="1.1" viewBox="0 0 1200 650" width="1200">
-  <defs />
-  <title>Prototype resemblance versus probability</title>
-  <desc>Resemblance generates a quick category match, but probability also requires a base rate and evidence diagnosticity.</desc>
-  <rect fill="white" height="650" width="1200" x="0" y="0" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="34" font-weight="bold" text-anchor="middle" x="600" y="48">A representative story is not yet a probability</text>
-  <rect fill="#f7f1e8" height="155" rx="16" ry="16" stroke="#c56a2d" stroke-width="3" width="300" x="65" y="160" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="215" y="221.44"><tspan x="215" dy="0">Prototype match</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="215" y="249.56"><tspan x="215" dy="0">How much does this case</tspan><tspan x="215" dy="20.06">resemble the category?</tspan></text>
-  <line stroke="#c56a2d" stroke-width="4" x1="365" x2="535" y1="238" y2="238" />
-  <polygon fill="#c56a2d" points="535,238 522.0096189432334,245.5 522.0096189432334,230.5" />
-  <rect fill="#f9e7e7" height="115" rx="16" ry="16" stroke="#a74343" stroke-width="3" width="230" x="535" y="180" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="23.69" font-weight="bold" text-anchor="middle" x="650" y="208.896"><tspan x="650" dy="0">Quick</tspan><tspan x="650" dy="27.9485">likelihood</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="650" y="262.906"><tspan x="650" dy="0">“It fits, so it is</tspan><tspan x="650" dy="20">likely.”</tspan></text>
-  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="300" x="65" y="405" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="215" y="461.47"><tspan x="215" dy="0">Base rate</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="215" y="489.59"><tspan x="215" dy="0">How common is the category?</tspan></text>
-  <rect fill="#eaf3f8" height="125" rx="16" ry="16" stroke="#2f6f9f" stroke-width="3" width="300" x="455" y="405" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="605" y="451.44"><tspan x="605" dy="0">Diagnosticity</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="605" y="479.56"><tspan x="605" dy="0">How different is this</tspan><tspan x="605" dy="20.06">evidence under alternatives?</tspan></text>
-  <line stroke="#17324d" stroke-width="4" x1="365" x2="455" y1="468" y2="468" />
-  <polygon fill="#17324d" points="455,468 442.0096189432334,475.5 442.0096189432334,460.5" />
-  <line stroke="#2b7a78" stroke-width="4" x1="755" x2="895" y1="468" y2="365" />
-  <polygon fill="#2b7a78" points="895,365 888.9809607598165,378.73940197479976 880.0918092369255,366.65706009902567" />
-  <line stroke="#2b7a78" stroke-width="4" x1="765" x2="895" y1="238" y2="300" />
-  <polygon fill="#2b7a78" points="895,300 880.0462903013146,301.1775254763449 886.5033781745393,287.6384702582931" />
-  <rect fill="#edf4ed" height="170" rx="16" ry="16" stroke="#447c55" stroke-width="3" width="255" x="895" y="245" />
-  <text fill="#17324d" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" x="1022.5" y="288.57"><tspan x="1022.5" dy="0">Calibrated</tspan><tspan x="1022.5" dy="30.68">probability</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="middle" x="1022.5" y="347.37"><tspan x="1022.5" dy="0">prior + diagnostic</tspan><tspan x="1022.5" dy="20.06">evidence</tspan><tspan x="1022.5" dy="20.06">+ sample size</tspan></text>
-  <text fill="#66737f" font-family="Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="middle" x="600" y="595">More detail can improve narrative fit while reducing statistical probability.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="670" viewBox="0 0 1100 670">
+<title>Resemblance and probability answer different questions</title><desc>A category resemblance can produce a quick impression. A probability update instead combines a prior probability with the comparative likelihood of the evidence; this does not guarantee calibration.</desc>
+<rect width="1100" height="670" fill="white"/>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L9 4 L0 8 Z" fill="context-stroke"/></marker></defs>
+<g font-family="Arial, sans-serif" fill="#17324d">
+<text x="550" y="48" font-size="32" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="550" dy="0">Resemblance and probability answer different questions</tspan>
+</text>
+<rect x="55" y="125" width="330" height="130" rx="17" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
+<text x="220.0" y="163" font-size="27" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="220.0" dy="0">Resemblance</tspan>
+</text>
+<text x="220.0" y="198.0" font-size="22" font-weight="normal" fill="#52677b" text-anchor="middle">
+<tspan x="220.0" dy="0">How well does the case</tspan>
+<tspan x="220.0" dy="27.5">fit a familiar category?</tspan>
+</text>
+<rect x="550" y="125" width="450" height="130" rx="17" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
+<text x="775.0" y="163" font-size="27" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="775.0" dy="0">Quick impression</tspan>
+</text>
+<text x="775.0" y="198.0" font-size="22" font-weight="normal" fill="#52677b" text-anchor="middle">
+<tspan x="775.0" dy="0">“It fits, so it seems likely.”</tspan>
+</text>
+<path d="M385 190 H550" fill="none" stroke="#c56a2d" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="55" y="350" width="345" height="110" rx="17" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+<text x="227.5" y="388" font-size="27" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="227.5" dy="0">Prior probability</tspan>
+</text>
+<text x="227.5" y="423.0" font-size="21" font-weight="normal" fill="#52677b" text-anchor="middle">
+<tspan x="227.5" dy="0">How common is the category?</tspan>
+</text>
+<rect x="55" y="510" width="345" height="110" rx="17" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
+<text x="227.5" y="548" font-size="27" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="227.5" dy="0">Diagnostic evidence</tspan>
+</text>
+<text x="227.5" y="583.0" font-size="20" font-weight="normal" fill="#52677b" text-anchor="middle">
+<tspan x="227.5" dy="0">How well does it distinguish</tspan>
+<tspan x="227.5" dy="25.0">the competing explanations?</tspan>
+</text>
+<rect x="650" y="410" width="350" height="150" rx="17" fill="#edf4ed" stroke="#447c55" stroke-width="3"/>
+<text x="825.0" y="448" font-size="27" font-weight="bold" fill="#17324d" text-anchor="middle">
+<tspan x="825.0" dy="0">Updated probability</tspan>
+</text>
+<text x="825.0" y="483.0" font-size="22" font-weight="normal" fill="#52677b" text-anchor="middle">
+<tspan x="825.0" dy="0">Combine the prior with the</tspan>
+<tspan x="825.0" dy="27.5">likelihood of this evidence.</tspan>
+</text>
+<path d="M400 405 H530 V455 H650" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M400 565 H530 V515 H650" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+</g></svg>
