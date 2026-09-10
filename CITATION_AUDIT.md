@@ -2,9 +2,9 @@
 
 Canonical chapters: **41**
 
-Unique references in the master union: **805**
+Unique references in the master union: **803**
 
-Chapter reference blocks: **833**
+Chapter reference blocks: **828**
 
 Unresolved author–year citations: **0**
 
@@ -32,7 +32,7 @@ Unresolved author–year citations: **0**
 | Decisions from Experience: When Rare Events Are Not Encountered | 18 | 0 |
 | Intertemporal Decision-Making: Why Later Loses to Now | 27 | 0 |
 | Mental Accounting: Money Is Fungible; Minds Label It | 21 | 0 |
-| Habits, Wanting, and Self-Control | 17 | 0 |
+| Habits, Wanting, and Self-Control | 12 | 0 |
 | Deciding for a Better Life: Satisfaction, Connection, and Meaning | 18 | 0 |
 | Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
 | Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |

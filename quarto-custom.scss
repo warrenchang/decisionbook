@@ -147,9 +147,10 @@ th[scope="rowgroup"] { vertical-align: middle; }
     max-height: none;
   }
 
-  // Portrait figures are composed specifically for a narrow reading column.
+  // Compact figures are composed to remain readable in a narrow reading column.
   // Let them fit the screen instead of forcing the wide-diagram scroll pane.
   figure.quarto-float-fig > div[aria-describedby] > img[src$="-portrait.svg"],
+  figure.quarto-float-fig > div[aria-describedby] > img[src$="habit-loop.svg"],
   figure.quarto-float-fig > div[aria-describedby] > img[src$="context-enters-choice.svg"] {
     width: 100%;
     min-width: 0;
