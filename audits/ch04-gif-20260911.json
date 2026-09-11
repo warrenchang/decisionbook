@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "desktop",
+      "width": 360,
+      "height": 720,
+      "naturalWidth": 360,
+      "naturalHeight": 720,
+      "left": 460,
+      "right": 820,
+      "viewport": 1280,
+      "animatedInitially": true,
+      "animatedAfterFirstCycle": true,
+      "iframeCount": 0
+    },
+    {
+      "name": "mobile",
+      "width": 330.5,
+      "height": 661,
+      "naturalWidth": 360,
+      "naturalHeight": 720,
+      "left": 29.75,
+      "right": 360.25,
+      "viewport": 390,
+      "animatedInitially": true,
+      "animatedAfterFirstCycle": true,
+      "iframeCount": 0
+    }
+  ],
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hollow-face_illusion_with_rotating_mask_and_featureless_control_surface.webm",
+  "source_sha256": "ac3cc320589fadc664b4cdca8dd66397e3ec5447e8f5a625b85c03288b074372",
+  "gif_sha256": "5c568b05216d058abc08db3be4db0a0b5475730e829f00187a1713d9abb01233",
+  "gif_bytes": 5565282,
+  "infinite_loop_extension": true,
+  "duration_seconds": 6,
+  "frames": 120,
+  "ffmpeg_version": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "conversion_filter": "[0:v]fps=20,scale=360:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=sierra2_4a",
+  "conversion_output_options": "-loop 0",
+  "visual_review": "Inspected six frames from original and GIF, plus rendered desktop and mobile screenshots. Both surfaces and the full rotation are preserved; no clipping observed.",
+  "epub_behavior": "Existing web-only media gate retained; EPUB includes description, original-video link, and updated attribution.",
+  "epub_description_verified": true,
+  "epub_qa_passed": true,
+  "source_qa_passed": true,
+  "build_note": "Initial HTML post-render hook encountered an older 41-chapter staged EPUB. Rebuilding the current 42-chapter EPUB and rerunning the synchronization hook completed successfully; no configuration changes were needed.",
+  "published_asset_matches_source": true
+}
