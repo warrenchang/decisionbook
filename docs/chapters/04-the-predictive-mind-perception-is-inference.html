@@ -544,13 +544,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#hollow-face-illusion" id="toc-hollow-face-illusion" class="nav-link" data-scroll-target="#hollow-face-illusion">A hollow face that seems to look back</a></li>
   </ul></li>
   <li><a href="#prediction-error-and-precision" id="toc-prediction-error-and-precision" class="nav-link" data-scroll-target="#prediction-error-and-precision">Prediction, error, and precision</a></li>
-  <li><a href="#generative-ai-and-predictive-processing" id="toc-generative-ai-and-predictive-processing" class="nav-link" data-scroll-target="#generative-ai-and-predictive-processing">Generative AI: context changes what comes next</a>
-  <ul class="collapse">
-  <li><a href="#what-does-a-language-model-predict" id="toc-what-does-a-language-model-predict" class="nav-link" data-scroll-target="#what-does-a-language-model-predict">What does a language model predict?</a></li>
-  <li><a href="#a-prompt-supplies-a-setting-for-interpretation" id="toc-a-prompt-supplies-a-setting-for-interpretation" class="nav-link" data-scroll-target="#a-prompt-supplies-a-setting-for-interpretation">A prompt supplies a setting for interpretation</a></li>
-  <li><a href="#images-and-videos-generation-is-broader-than-next-token-prediction" id="toc-images-and-videos-generation-is-broader-than-next-token-prediction" class="nav-link" data-scroll-target="#images-and-videos-generation-is-broader-than-next-token-prediction">Images and videos: generation is broader than next-token prediction</a></li>
-  <li><a href="#change-the-questionand-then-seek-evidence" id="toc-change-the-questionand-then-seek-evidence" class="nav-link" data-scroll-target="#change-the-questionand-then-seek-evidence">Change the question—and then seek evidence</a></li>
-  </ul></li>
   <li><a href="#when-inner-models-helpand-when-they-stop-learning" id="toc-when-inner-models-helpand-when-they-stop-learning" class="nav-link" data-scroll-target="#when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</a></li>
   <li><a href="#research-lens-restored-sight-as-a-bounded-calibration-case" id="toc-research-lens-restored-sight-as-a-bounded-calibration-case" class="nav-link" data-scroll-target="#research-lens-restored-sight-as-a-bounded-calibration-case">Research Lens: Shirl Jennings and learning to see</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
@@ -609,7 +602,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Explain perception as inference rather than recording.</li>
 <li>Describe priors, sensory evidence, prediction error, and precision in plain language.</li>
 <li>Distinguish perceptual prediction from a decision forecast, and specify an observation that could distinguish two competing interpretations.</li>
-<li>Explain how context guides generative AI, and where the analogy with predictive processing stops.</li>
 </ul>
 <p>The idea of perception as <strong>inference</strong> goes back at least to Helmholtz: the mind uses incomplete signals to infer their causes without requiring conscious calculation (Helmholtz, 1867/1962). Later accounts differ in how they explain this process (Gregory, 1980; Kersten et al., 2004; Knill &amp; Richards, 1996; Rock, 1983). A <strong>prior</strong> is an expectation formed before the current evidence is considered. In the kitchen, familiarity with the room helps make a chair a plausible interpretation.</p>
 <p>Predictive processing offers one influential family of models for how expectations and incoming signals might interact.</p>
@@ -649,7 +641,7 @@ Table&nbsp;4.1: Predictive processing and predictive judgment ask different ques
 </figure>
 </div>
 <p>The first asks, in effect, <strong>“What is producing the signals I am receiving?”</strong> The second asks <strong>“What is likely to happen if this option is chosen?”</strong> Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence.</p>
-<p>This chapter concentrates on interpreting current signals. It also uses generative AI to illuminate how learned patterns and context work together, while distinguishing content generation from forecasting real events. The later chapters on expectations and probability judgment ask how people forecast consequences.</p>
+<p>This chapter concentrates on interpreting current signals. The later chapters on expectations and probability judgment ask how people forecast consequences.</p>
 </section>
 <section id="when-context-changes-what-appears" class="level2">
 <h2 data-anchor-id="when-context-changes-what-appears">When context changes what appears</h2>
@@ -765,32 +757,6 @@ Figure&nbsp;4.5: A simplified predictive-processing account. Expectations and in
 </div>
 </div>
 </section>
-<section id="generative-ai-and-predictive-processing" class="level2">
-<h2 data-anchor-id="generative-ai-and-predictive-processing">Generative AI: context changes what comes next</h2>
-<p>Consider the unfinished sentence <strong>“At the bank, she…”</strong> After a paragraph about fishing, <em>cast her line</em> would be a plausible continuation. After a paragraph about opening a savings account, <em>asked about interest rates</em> would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in <a href="#fig-context-b13-demonstration" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.</p>
-<p>A <strong>large language model</strong>, or <strong>LLM</strong>, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.</p>
-<section id="what-does-a-language-model-predict" class="level3">
-<h3 data-anchor-id="what-does-a-language-model-predict">What does a language model predict?</h3>
-<p>In an <strong>autoregressive</strong> language model, generation proceeds by estimating probabilities for the next <strong>token</strong>: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).</p>
-<p>Here, <strong>“next” means the next position in the output</strong>, not necessarily the next event in the world. The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al.&nbsp;(2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.</p>
-</section>
-<section id="a-prompt-supplies-a-setting-for-interpretation" class="level3">
-<h3 data-anchor-id="a-prompt-supplies-a-setting-for-interpretation">A prompt supplies a setting for interpretation</h3>
-<p>A <strong>prompt</strong> can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model’s learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies <strong>in-context learning</strong>: examples can alter how a task is performed without a training update to the model’s weights (Brown et al., 2020).</p>
-<p>In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person’s current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is <strong>learned structure interacting with current information</strong>.</p>
-</section>
-<section id="images-and-videos-generation-is-broader-than-next-token-prediction" class="level3">
-<h3 data-anchor-id="images-and-videos-generation-is-broader-than-next-token-prediction">Images and videos: generation is broader than next-token prediction</h3>
-<p>An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.</p>
-<p>The family of generative models extends beyond language and uses several generation procedures. <strong>Diffusion models</strong> can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).</p>
-<p>Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.</p>
-</section>
-<section id="change-the-questionand-then-seek-evidence" class="level3">
-<h3 data-anchor-id="change-the-questionand-then-seek-evidence">Change the question—and then seek evidence</h3>
-<p>This comparison suggests a practical discipline for both thinking and prompting. <strong>“Why did my team resist a useful change?”</strong> already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.</p>
-<p>Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. <a href="../chapters/42-data-driven-decision-making.html#ai-workbench">Chapter 42</a> builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.</p>
-</section>
-</section>
 <section id="when-inner-models-helpand-when-they-stop-learning" class="level2">
 <h2 data-anchor-id="when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</h2>
 <p>The illusions might suggest that we should strip away expectations and rely on incoming evidence alone. Yet without learned structure, the evidence would be much harder to use. The challenge is to keep the interpretive advantage while allowing a mistaken model to change.</p>
@@ -833,11 +799,52 @@ Figure&nbsp;4.5: A simplified predictive-processing account. Expectations and in
 <p>For one disputed perception or interpretation, write four lines: <strong>prior model</strong>, <strong>current evidence</strong>, <strong>why each source deserves its present weight</strong>, and <strong>what observation would change that weight</strong>. “Use less intuition” is not yet a test; specify what evidence should become more diagnostic.</p>
 </div>
 </div>
+<div id="generative-ai-and-predictive-processing" class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: an analogy with generative AI
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Consider the unfinished sentence <strong>“At the bank, she…”</strong> After a paragraph about fishing, <em>cast her line</em> would be a plausible continuation. After a paragraph about opening a savings account, <em>asked about interest rates</em> would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in <a href="#fig-context-b13-demonstration" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.</p>
+<p>A <strong>large language model</strong>, or <strong>LLM</strong>, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.</p>
+<section id="what-does-a-language-model-predict" class="level3 unlisted">
+<h3 class="unlisted" data-anchor-id="what-does-a-language-model-predict">What does a language model predict?</h3>
+<p>In an <strong>autoregressive</strong> language model, generation proceeds by estimating probabilities for the next <strong>token</strong>: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).</p>
+<p>Here, <strong>“next” means the next position in the output</strong>, not necessarily the next event in the world. The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al.&nbsp;(2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.</p>
+</section>
+<section id="a-prompt-supplies-a-setting-for-interpretation" class="level3 unlisted">
+<h3 class="unlisted" data-anchor-id="a-prompt-supplies-a-setting-for-interpretation">A prompt supplies a setting for interpretation</h3>
+<p>A <strong>prompt</strong> can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model’s learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies <strong>in-context learning</strong>: examples can alter how a task is performed without a training update to the model’s weights (Brown et al., 2020).</p>
+<p>In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person’s current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is <strong>learned structure interacting with current information</strong>.</p>
+</section>
+<section id="images-and-videos-generation-is-broader-than-next-token-prediction" class="level3 unlisted">
+<h3 class="unlisted" data-anchor-id="images-and-videos-generation-is-broader-than-next-token-prediction">Images and videos: generation is broader than next-token prediction</h3>
+<p>An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.</p>
+<p>The family of generative models extends beyond language and uses several generation procedures. <strong>Diffusion models</strong> can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).</p>
+<p>Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.</p>
+</section>
+<section id="change-the-questionand-then-seek-evidence" class="level3 unlisted">
+<h3 class="unlisted" data-anchor-id="change-the-questionand-then-seek-evidence">Change the question—and then seek evidence</h3>
+<p>This comparison suggests a practical discipline for both thinking and prompting. <strong>“Why did my team resist a useful change?”</strong> already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.</p>
+<p>Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. <a href="../chapters/42-data-driven-decision-making.html#ai-workbench">Chapter 42</a> builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.</p>
+</section>
+<section id="optional-exercise-change-the-frame" class="level3 unlisted">
+<h3 class="unlisted" data-anchor-id="optional-exercise-change-the-frame">Optional exercise: change the frame</h3>
+<p>For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.</p>
+</section>
+</div>
+</div>
+</div>
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
 <p>Choose a disagreement in which two people received similar information but inferred different situations. Produce a two-model test: state each person’s prior model, identify the signal each treated as most precise, and name one feasible observation that would be expected under one model but not the other. End by stating what action would follow from each possible result.</p>
-<p>For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.</p>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>

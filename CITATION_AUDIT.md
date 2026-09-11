@@ -4,7 +4,7 @@ Canonical chapters: **42**
 
 Unique references in the master union: **838**
 
-Chapter reference blocks: **858**
+Chapter reference blocks: **859**
 
 Unresolved author–year citations: **0**
 
@@ -12,7 +12,7 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| How Decisions Should Be Made—and How They Actually Are | 16 | 0 |
+| How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | 9 | 0 |
 | Attention: What Becomes Evidence? | 29 | 0 |
 | The Predictive Mind: Perception Is Inference | 35 | 0 |

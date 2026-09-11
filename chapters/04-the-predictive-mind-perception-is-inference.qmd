@@ -29,7 +29,6 @@ Sensory evidence often fits more than one possible cause. Prior experience and c
 - Explain perception as inference rather than recording.
 - Describe priors, sensory evidence, prediction error, and precision in plain language.
 - Distinguish perceptual prediction from a decision forecast, and specify an observation that could distinguish two competing interpretations.
-- Explain how context guides generative AI, and where the analogy with predictive processing stops.
 
 The idea of perception as **inference** goes back at least to Helmholtz: the mind uses incomplete signals to infer their causes without requiring conscious calculation (Helmholtz, 1867/1962). Later accounts differ in how they explain this process (Gregory, 1980; Kersten et al., 2004; Knill & Richards, 1996; Rock, 1983). A **prior** is an expectation formed before the current evidence is considered. In the kitchen, familiarity with the room helps make a chair a plausible interpretation.
 
@@ -47,7 +46,7 @@ Recognizing a chair and forecasting the result of taking a job both draw on prio
 
 The first asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence.
 
-This chapter concentrates on interpreting current signals. It also uses generative AI to illuminate how learned patterns and context work together, while distinguishing content generation from forecasting real events. The later chapters on expectations and probability judgment ask how people forecast consequences.
+This chapter concentrates on interpreting current signals. The later chapters on expectations and probability judgment ask how people forecast consequences.
 
 ## When context changes what appears
 
@@ -157,38 +156,6 @@ that evidence can distinguish from its rivals.
 :::
 
 
-## Generative AI: context changes what comes next {#generative-ai-and-predictive-processing}
-
-Consider the unfinished sentence **“At the bank, she…”** After a paragraph about fishing, *cast her line* would be a plausible continuation. After a paragraph about opening a savings account, *asked about interest rates* would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in @fig-context-b13-demonstration, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.
-
-A **large language model**, or **LLM**, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.
-
-### What does a language model predict?
-
-In an **autoregressive** language model, generation proceeds by estimating probabilities for the next **token**: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).
-
-Here, **“next” means the next position in the output**, not necessarily the next event in the world. The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al. (2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.
-
-### A prompt supplies a setting for interpretation
-
-A **prompt** can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model's learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies **in-context learning**: examples can alter how a task is performed without a training update to the model's weights (Brown et al., 2020).
-
-In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person's current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is **learned structure interacting with current information**.
-
-### Images and videos: generation is broader than next-token prediction
-
-An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.
-
-The family of generative models extends beyond language and uses several generation procedures. **Diffusion models** can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).
-
-Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.
-
-### Change the question—and then seek evidence
-
-This comparison suggests a practical discipline for both thinking and prompting. **“Why did my team resist a useful change?”** already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.
-
-Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. [Chapter 42](42-data-driven-decision-making.qmd#ai-workbench) builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.
-
 ## When inner models help—and when they stop learning
 
 The illusions might suggest that we should strip away expectations and rely on incoming evidence alone. Yet without learned structure, the evidence would be much harder to use. The challenge is to keep the interpretive advantage while allowing a mistaken model to change.
@@ -242,11 +209,47 @@ intuition” is not yet a test; specify what evidence should become more
 diagnostic.
 :::
 
+::: {#generative-ai-and-predictive-processing .callout-note .research-lens icon=false collapse=true}
+## Research Lens: an analogy with generative AI
+
+Consider the unfinished sentence **“At the bank, she…”** After a paragraph about fishing, *cast her line* would be a plausible continuation. After a paragraph about opening a savings account, *asked about interest rates* would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in @fig-context-b13-demonstration, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.
+
+A **large language model**, or **LLM**, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.
+
+### What does a language model predict? {.unlisted}
+
+In an **autoregressive** language model, generation proceeds by estimating probabilities for the next **token**: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).
+
+Here, **“next” means the next position in the output**, not necessarily the next event in the world. The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al. (2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.
+
+### A prompt supplies a setting for interpretation {.unlisted}
+
+A **prompt** can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model's learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies **in-context learning**: examples can alter how a task is performed without a training update to the model's weights (Brown et al., 2020).
+
+In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person's current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is **learned structure interacting with current information**.
+
+### Images and videos: generation is broader than next-token prediction {.unlisted}
+
+An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.
+
+The family of generative models extends beyond language and uses several generation procedures. **Diffusion models** can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).
+
+Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.
+
+### Change the question—and then seek evidence {.unlisted}
+
+This comparison suggests a practical discipline for both thinking and prompting. **“Why did my team resist a useful change?”** already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.
+
+Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. [Chapter 42](42-data-driven-decision-making.qmd#ai-workbench) builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.
+
+### Optional exercise: change the frame {.unlisted}
+
+For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.
+:::
+
 ## Practice Lab
 
 Choose a disagreement in which two people received similar information but inferred different situations. Produce a two-model test: state each person's prior model, identify the signal each treated as most precise, and name one feasible observation that would be expected under one model but not the other. End by stating what action would follow from each possible result.
-
-For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.
 
 ## Take it forward
 

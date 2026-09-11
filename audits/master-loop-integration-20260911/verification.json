@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "source_and_epub_qa": "passed with zero errors",
+  "reference_sync": "passed; 838 unique entries",
+  "visual_review": "Final SVG, narrow standalone render, and the figure with its caption in HTML and extracted EPUB were inspected at desktop and mobile widths. No clipping or crossed feedback arrows.",
+  "format_scope": "Chromium HTML and extracted EPUB XHTML; not a device-specific e-reader certification.",
+  "checks": {
+    "source-layout-checks": [
+      {
+        "width": 700,
+        "minFontPx": 26,
+        "feedbackArrows": 5,
+        "errors": []
+      },
+      {
+        "width": 350,
+        "minFontPx": 13,
+        "feedbackArrows": 5,
+        "errors": []
+      }
+    ],
+    "html-placement-checks": [
+      {
+        "width": 778,
+        "height": 620,
+        "left": 251,
+        "right": 1029,
+        "viewport": 1280,
+        "objectFit": "contain",
+        "artworkWidth": 442.3312883435583,
+        "artworkHeight": 618,
+        "minLabelPx": 16.429447852760738,
+        "src": "figures/master-loop.svg",
+        "loaded": true,
+        "format": "html",
+        "size": "desktop",
+        "pass": true
+      },
+      {
+        "width": 330.5,
+        "height": 460.953125,
+        "left": 29.75,
+        "right": 360.25,
+        "viewport": 390,
+        "objectFit": "contain",
+        "artworkWidth": 328.5276073619632,
+        "artworkHeight": 459,
+        "minLabelPx": 12.202453987730062,
+        "src": "figures/master-loop.svg",
+        "loaded": true,
+        "format": "html",
+        "size": "mobile",
+        "pass": true
+      }
+    ],
+    "epub-placement-checks": [
+      {
+        "width": 1264,
+        "height": 1765.984375,
+        "left": 8,
+        "right": 1272,
+        "viewport": 1280,
+        "objectFit": "contain",
+        "artworkWidth": 1264,
+        "artworkHeight": 1765.9885714285713,
+        "minLabelPx": 46.94857142857143,
+        "src": "../media/file0.svg",
+        "loaded": true,
+        "format": "epub",
+        "size": "desktop",
+        "pass": true
+      },
+      {
+        "width": 374,
+        "height": 522.53125,
+        "left": 8,
+        "right": 382,
+        "viewport": 390,
+        "objectFit": "contain",
+        "artworkWidth": 374,
+        "artworkHeight": 522.5314285714286,
+        "minLabelPx": 13.89142857142857,
+        "src": "../media/file0.svg",
+        "loaded": true,
+        "format": "epub",
+        "size": "mobile",
+        "pass": true
+      }
+    ]
+  }
+}

@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="940" viewBox="0 0 700 940" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="978" viewBox="0 0 700 978" role="img" aria-labelledby="title desc">
 <title id="title">A decision in the making</title>
-<desc id="desc">Seven functions from context and information to observation and learning. A return arrow represents feedback; an enclosing frame shows that people, institutions, and design can affect every function. Functions may overlap, repeat, or be skipped.</desc>
+<desc id="desc">An organizing map of a decision, with current context and information as inputs. Observe and learn sends feedback through one shared path to notice and interpret, construct options, predict consequences, value consequences, and choose, commit and act. These arrows indicate possible revisions, not guaranteed improvement or a fixed sequence. The enclosing frame shows that people, institutions, and design can shape the whole process. Actions and learning can change the context and information available for a later decision.</desc>
 <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.5 L8 4.5 L0.5 8.5 Z" fill="#47647e"/></marker></defs>
-<rect width="700" height="940" fill="#fff"/>
+<rect width="700" height="978" fill="#fff"/>
+<defs><marker id="feedback-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9 Z" fill="#267766"/></marker></defs>
 <text text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#17324d"><tspan x="350" y="44">A decision in the making</tspan></text>
-<rect x="44" y="70" width="612" height="850" rx="24" fill="#f7f9fc" stroke="#9fb2c3" stroke-width="2"/>
+<rect x="44" y="70" width="612" height="888" rx="24" fill="#f7f9fc" stroke="#9fb2c3" stroke-width="2"/>
 <text text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="600" fill="#17324d"><tspan x="350" y="108">People, institutions, and design</tspan></text>
 <text text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#53677a"><tspan x="350" y="142">can shape the whole process</tspan></text>
-<g id="function-1"><rect x="110" y="167" width="480" height="72" rx="16" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/><text text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#17324d"><tspan x="350" y="214">Context &amp; information</tspan></text></g>
+<g id="function-1"><rect x="110" y="167" width="480" height="72" rx="16" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/><text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#17324d"><tspan x="350" y="214">Current context &amp; information</tspan></text></g>
 <path d="M350 239 V271" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <g id="function-2"><rect x="110" y="271" width="480" height="72" rx="16" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/><text text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#17324d"><tspan x="350" y="318">Notice &amp; interpret</tspan></text></g>
 <path d="M350 343 V375" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
@@ -20,6 +21,17 @@
 <g id="function-6"><rect x="110" y="687" width="480" height="72" rx="16" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/><text text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#17324d"><tspan x="350" y="734">Choose, commit &amp; act</tspan></text></g>
 <path d="M350 759 V791" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <g id="function-7"><rect x="110" y="791" width="480" height="72" rx="16" fill="#eaf4f1" stroke="#2f6f9f" stroke-width="2.5"/><text text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#17324d"><tspan x="350" y="838">Observe &amp; learn</tspan></text></g>
-<path d="M590 827 H620 Q638 827 638 809 V221 Q638 203 620 203 H590" fill="none" stroke="#47647e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<text text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#53677a"><tspan x="350" y="899">Feedback can revise earlier judgments</tspan></text>
+<g id="learning-feedback" fill="none" stroke="#267766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="feedback-to-notice" d="M590 827 H620 Q638 827 638 809 V325 Q638 307 620 307 H590" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+<path id="feedback-to-options" d="M638 411 H590" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+<circle cx="638" cy="411" r="3.5" fill="#267766" stroke="none"/>
+<path id="feedback-to-prediction" d="M638 515 H590" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+<circle cx="638" cy="515" r="3.5" fill="#267766" stroke="none"/>
+<path id="feedback-to-value" d="M638 619 H590" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+<circle cx="638" cy="619" r="3.5" fill="#267766" stroke="none"/>
+<path id="feedback-to-action" d="M638 723 H590" stroke-width="3" marker-end="url(#feedback-arrow)"/>
+<circle cx="638" cy="723" r="3.5" fill="#267766" stroke="none"/>
+</g>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#267766"><tspan x="350" y="899">Feedback can revise earlier decision steps</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#53677a"><tspan x="350" y="937">Functions can overlap or recur</tspan></text>
 </svg>
