@@ -8,9 +8,9 @@ aliases:
 
 *A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments*
 
-A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it, but attendance might also have risen because the season changed or a different group of patients received appointments. What would let them attribute the improvement to the reminder?
+A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it and expand its use. Yet attendance might also have risen because the season changed or a different group of patients received appointments. Acting on the wrong explanation could direct time and money toward a reminder that made no difference. What comparison would let the clinic decide whether the change deserves credit?
 
-This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data, so you can reproduce its calculations without mistaking them for evidence about real patients. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.
+This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data so you can reproduce its calculations. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.
 
 ## The experimental workflow
 
@@ -150,7 +150,7 @@ No design dominates on every dimension. Control can improve internal validity an
 
 A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.
 
-![Sampling connects observed people to a population; assignment creates a comparison within the study. Both inferences depend on the design and its implementation.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast under appropriate assumptions."}
+![Sampling connects observed people to a population; assignment creates a comparison within the study.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast."}
 
 @fig-random-sampling-vs-assignment keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.
 
@@ -232,7 +232,7 @@ $$
 LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 $$
 
-LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude. That rescaling does not make LATE the population-wide effect or establish that it will travel to another implementation.
+LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.
 
 #### Spillovers, interference, and displacement
 
@@ -240,11 +240,11 @@ The usual no-interference assumption says one unit's outcome does not depend on 
 
 Spillovers can make the standard difference too small, too large, or simply answer the wrong question. A job-placement program can help treated workers while displacing untreated workers from a fixed number of jobs. The direct effect and the total labor-market effect are different estimands.
 
-Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. None is automatic. State whose outcome depends on whose treatment.
+Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. State whose outcome depends on whose treatment.
 
 #### Evaluation can change behavior
 
-Participants may change behavior because they know they are being studied or because they infer what the researcher expects. The clinic should therefore consider whether the two reminder groups receive different attention beyond the intended message. These responses are possibilities to investigate, with no guaranteed direction.
+Participants may change behavior because they know they are being studied or because they infer what the researcher expects. The clinic should therefore consider whether the two reminder groups receive different attention beyond the intended message.
 
 Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
 
@@ -261,7 +261,7 @@ Before outcomes are observed:
 - define a family for error-rate or false-discovery control where appropriate;
 - preserve space for exploration and label it as exploration.
 
-Preregistration time-stamps decisions. It does not make a poor hypothesis important, an invalid measure valid, or a biased design causal. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.
+Preregistration time-stamps decisions. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.
 
 Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.
 
@@ -276,7 +276,7 @@ A replication is not a ritual in which an effect “works” or “fails.” It 
 - **Multi-site replication** estimates average effects and heterogeneity across implementations, populations, and settings.
 - **Reanalysis or reproduction** checks whether reported results follow from the declared data and code; it is not the same as collecting new data.
 
-Large replication projects in psychology and experimental economics found both replicated effects and substantial attenuation or heterogeneity (Camerer et al., 2016; Open Science Collaboration, 2015). The lesson is not that an entire field is false. It is that single studies—especially small, flexible, selected ones—provide less certainty than clean narratives imply.
+Large replication projects in psychology and experimental economics found both replicated effects and substantial attenuation or heterogeneity (Camerer et al., 2016; Open Science Collaboration, 2015). These projects show why estimates should be evaluated across studies.
 
 For a useful replication, document fidelity and departures, compare effect estimates with intervals, analyze protocol heterogeneity, and update the cumulative claim. A statistically significant original and nonsignificant replication can still have compatible estimates. A binary verdict discards that information.
 
@@ -351,7 +351,7 @@ Scientific writing becomes clearer when it states the estimand and scope before 
 
 ## Worked study: from question to report
 
-Here is the complete calculation for the imagined clinic. This **simulated teaching study** connects the design record to generated outcomes and an estimate; it supplies no evidence about a real reminder programme.
+Here is the complete calculation for the imagined clinic. This **simulated teaching study** connects the design record to generated outcomes and an estimate.
 
 **Question.** Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?
 
@@ -392,9 +392,9 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)
 
 The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is **6.2 percentage points**, with an approximate 95% confidence interval from **0.8 to 11.5 percentage points**.
 
-**Design-matched interpretation.** In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.
+**Design-matched interpretation.** In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The approximate interval ranges from 0.8 to 11.5 points. The result estimates the effect of the reminder package in the simulated study population.
 
-**What the simulation leaves out.** The code follows the declared generation and estimation procedure, but it bypasses recruitment, delivery, missing outcomes, and spillovers. A real study would need records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Reproducing the calculation checks the calculation; it does not verify real-world treatment delivery.
+**Implementing the study in a clinic.** Preserve records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Use them to check recruitment, delivery, missing outcomes, and spillovers.
 
 ## Ethics is part of identification
 
@@ -402,7 +402,7 @@ The Belmont principles remain a useful starting point: **respect for persons**, 
 
 Ethics also affects evidence. Coercive recruitment selects participants. Privacy fears change answers. An intervention that cannot be implemented ethically may have little policy relevance. Excluding affected groups for convenience can make the sample uninformative about those who bear the decision.
 
-Institutional review, data-protection law, registration, and local procedures change over time. Check current requirements with the relevant institution before collecting data; a historical lecture link is not approval.
+Institutional review, data-protection law, registration, and local procedures change over time. Check current requirements with the relevant institution before collecting data.
 
 ## Key ideas
 

@@ -41,7 +41,7 @@ A **decision from experience** requires the distribution to be learned from obse
 
 Many consequential decisions contain both. A physician can read trial evidence and also remember patients. A resident can see a flood map and also remember years without flooding. An investor can study a long return series and still give special weight to the market experienced during early adulthood. Description and experience need not agree, and neither is automatically superior.
 
-![Four information states created by the presence or absence of statistical description and personal experience. Having neither source is information-poor; it becomes deep uncertainty only when no credible stable model can be specified.](../figures/decision-experience-states.svg){#fig-decision-experience-states fig-alt="A two-by-two matrix. Columns indicate description absent or present; rows indicate experience absent or present. Neither is labeled information-poor, with deep uncertainty possible if no stable model exists. Description only means an explicit model without personal feedback; experience only means a sampled path without an explicit distribution; both means evidence sources can reinforce or conflict. A bottom band recommends calibrated description, representative experience, and transparent updating."}
+![Four information states created by the presence or absence of statistical description and personal experience.](../figures/decision-experience-states.svg){#fig-decision-experience-states fig-alt="A two-by-two matrix. Columns indicate description absent or present; rows indicate experience absent or present. Neither is labeled information-poor. Description only means an explicit model without personal feedback; experience only means a sampled path without an explicit distribution; both means evidence sources can reinforce or conflict. A bottom band recommends calibrated description, representative experience, and transparent updating."}
 
 ### Four sources-of-information situations {#four-epistemic-states}
 
@@ -49,13 +49,13 @@ Hertwig and Wulff (2022) organize risk situations by asking whether description 
 
 | Information state | What the chooser has | Central danger | Useful response |
 | --- | --- | --- | --- |
-| Neither | No credible description and little relevant personal experience | Missing information can be mistaken for zero risk; deep uncertainty is possible when no stable model can be specified | Seek information, use scenarios, preserve reversibility, and state what is unknown |
+| Neither | No credible description and little relevant personal experience | Missing information can be mistaken for zero risk | Seek information, use scenarios, preserve reversibility, and state what is unknown |
 | Description only | Outcomes and probabilities, but no lived feedback | Rare outcomes can be unusually salient, misunderstood, or detached from action | Use natural frequencies, absolute risks, denominators, and comparisons |
 | Experience only | A sequence of observed outcomes, but no explicit distribution | Small or selective samples can miss rare events and conceal the generating process | Enlarge the sample, examine selection, and add base rates |
 | Both | Statistical description and personal or simulated experience | Vivid experience can contradict representative evidence, or abstract numbers can fail to become usable | Reconcile the sources; explain why they differ and what each can identify |
 : Four information states require different diagnoses {#tbl-experience-states}
 
-Having neither source leaves the chooser **information-poor**. This becomes **deep uncertainty** when no credible model can yet specify the relevant outcomes and probabilities; it need not remain so if evidence can be obtained elsewhere. With a new technology or an unprecedented disruption, scenarios and reversible trials may be more useful than an unjustifiably precise estimate (Hertwig & Wulff, 2022).
+Having neither source leaves the chooser **information-poor**. This becomes **deep uncertainty** when no credible model can yet specify the relevant outcomes and probabilities. With a new technology or an unprecedented disruption, scenarios and reversible trials may be more useful than an unjustifiably precise estimate (Hertwig & Wulff, 2022).
 
 ## The description–experience gap
 
@@ -68,7 +68,7 @@ This contrast is often summarized as:
 - **description:** rare events tend to receive relatively high decision weight;
 - **experience:** rare events often receive relatively low decision weight.
 
-The word **often** is essential. Wulff, Mergenthaler-Canseco, and Hertwig's (2018) meta-analysis found a robust aggregate description–experience gap, but its size and even its behavioral expression depend on the structure of the problem and the learning procedure. Experience does not contain a universal reverse probability-weighting function. Sometimes the sample is unrepresentative; sometimes memory or learning changes the use of observed outcomes; sometimes a single severe event produces lasting avoidance.
+Wulff, Mergenthaler-Canseco, and Hertwig's (2018) meta-analysis found a robust aggregate description–experience gap whose size and behavioral expression depended on the structure of the problem and the learning procedure. Sometimes the sample is unrepresentative; sometimes memory or learning changes the use of observed outcomes; sometimes a single severe event produces lasting avoidance.
 
 ### Prospect theory does not absorb the experience problem
 
@@ -88,9 +88,9 @@ That distinction prevents a common conceptual mistake. Underweighting a rare eve
 
 In sampling-paradigm experiments, participants often stop after surprisingly few draws; medians around 11–19 observations per problem have appeared in this literature. A sample of that size can easily omit a 1% or 5% event. It can also overrepresent it. Sampling error therefore creates heterogeneity across learners before psychological weighting begins.
 
-![The probability that an independently occurring rare event is entirely absent from an experience sample is $(1-p)^n$. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time. The highlighted band marks the 11–19-observation range often reported in sampling-paradigm studies.](../figures/experience-rare-event-sampling.svg){#fig-experience-rare-event-sampling fig-alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. A side panel reports that at fifteen observations a one-percent event is absent with probability eighty-six percent and a five-percent event is absent with probability forty-six percent. The figure warns that absence from a sample is not evidence of impossibility." width=100%}
+![The probability that an independently occurring rare event is entirely absent from an experience sample is $(1-p)^n$. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time. The highlighted band marks the 11–19-observation range often reported in sampling-paradigm studies.](../figures/experience-rare-event-sampling.svg){#fig-experience-rare-event-sampling fig-alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. A side panel reports that at fifteen observations a one-percent event is absent with probability eighty-six percent and a five-percent event is absent with probability forty-six percent." width=100%}
 
-@fig-experience-rare-event-sampling isolates the sampling mechanism. It is a mathematical derivation, not an empirical effect-size estimate. Real experience can depart from the calculation because exposure may be selective, outcomes may be dependent, feedback may be censored, and memory may weight observations unevenly.
+@fig-experience-rare-event-sampling isolates the sampling mechanism. The following sections examine how selective exposure, stopping, and memory shape the experienced record.
 
 Larger forced samples reduce this source of the gap, but do not always eliminate the gap (Hau et al., 2008, 2010; Wulff et al., 2018). That residual matters. If exposure were the entire explanation, choices should converge once experienced frequencies are controlled. Remaining differences direct attention to memory, recency, learning, format, and choice rules.
 
@@ -139,7 +139,7 @@ Exploration therefore has value. But exploration is not automatically wise. A ho
 
 Experience effects extend beyond laboratory sampling. Malmendier and Nagel (2011) studied U.S. household data from 1960–2007 and found that people whose lifetimes included lower stock-market returns reported less willingness to take financial risk, participated less in the stock market, invested a smaller share in stocks when participating, and expected lower returns. More recent lifetime experiences received more weight, especially among younger people.
 
-The result is sometimes called the **Depression Baby hypothesis**, but the mechanism should be stated carefully. The evidence links lifetime macroeconomic experience to later financial beliefs and behavior; it does not imply that one generation shares one immutable risk preference. Cohort, age, wealth, institutions, and selection remain important, and experience can change beliefs as well as preferences.
+This link between lifetime macroeconomic experience and later financial beliefs and behavior is sometimes called the **Depression Baby hypothesis**.
 
 Lejarraga, Woike, and Hertwig (2016) created experimental investment environments with booms and busts. Whether people learned through descriptions or sequential experience changed their stock allocations and responses to market regimes. The teaching point is broader than one graph: investors do not encounter a timeless return distribution. They observe a path, and the path teaches them which world they think they inhabit.
 
@@ -147,7 +147,7 @@ Lejarraga, Woike, and Hertwig (2016) created experimental investment environment
 
 Yechiam, Barron, and Erev (2005) reported that residents of areas exposed to repeated terrorist attacks appeared less behaviorally sensitive to the risk than international tourists, with sensitivity among residents diminishing over time even while attacks continued. Their laboratory task produced a related description–experience contrast.
 
-This does not show that residents had irrationally forgotten danger or that tourists had calculated it correctly. Locals and tourists differed in exposure, incentives, routines, alternatives, and information. The study is useful because it makes the information path visible: repeated ordinary days coexist with rare attacks for residents, while media descriptions can make the rare event central for visitors.
+Repeated ordinary days coexist with rare attacks for residents, while media descriptions can make the rare event central for visitors.[^ch18-residents]
 
 
 ## Learning from outcomes without being fooled by luck
@@ -182,11 +182,11 @@ Platforms often optimize feedback for engagement rather than calibration. A trad
 
 ## Communicating risk: combine numbers and experience
 
-The description–experience gap is not solved by replacing numbers with animation. Description and simulation provide different benefits.
+A clear risk table can state every outcome while leaving a reader unable to imagine the variability. A simulation makes a sequence tangible, but the particular draws may leave a rare loss unseen. Risk communication needs to make the distribution both understandable and available for judgment. The studies below examine what each presentation contributes.
 
-Kaufmann, Weber, and Haisley (2013) compared investment-risk presentations, including experience-sampling displays of return distributions. Experience-like tools increased risky allocation in their setting and helped participants recall features such as expected return and loss probability. The conclusion is not that greater risk taking was inherently better, nor that every underinvested group should be nudged toward stocks. The tool changed what participants could encounter and retrieve.
+Kaufmann, Weber, and Haisley (2013) compared investment-risk presentations, including experience-sampling displays of return distributions. Experience-like tools increased risky allocation in their setting and helped participants recall features such as expected return and loss probability. The tool changed what participants could encounter and retrieve.
 
-Wegwarth and colleagues (2022) randomly assigned 300 German patients with chronic noncancer pain to a descriptive fact box or an interactive simulated-experience format about long-term strong-opioid use. Both formats improved objective risk perception. The fact box produced more accurate estimates for some outcomes, while the simulation group showed a larger reduction or termination of opioid use and greater uptake of alternative therapies. The trial was exploratory, and behavior at follow-up was self-reported; the study supports complementarity, not the blanket claim that simulation is superior.
+Wegwarth and colleagues (2022) randomly assigned 300 German patients with chronic noncancer pain to a descriptive fact box or an interactive simulated-experience format about long-term strong-opioid use. Both formats improved objective risk perception. The fact box produced more accurate estimates for some outcomes, while the simulation group showed a larger reduction or termination of opioid use and greater uptake of alternative therapies.[^ch18-simulated-risk]
 
 A strong risk display therefore combines:
 
@@ -200,7 +200,7 @@ In medicine, these displays support deliberation with current clinical evidence 
 
 ## Worked application: a supplier has never failed us
 
-A team rejects dual sourcing because its supplier has delivered reliably for eight years.
+A team rejects dual sourcing because its supplier has delivered reliably for eight years. Paying to qualify another supplier seems to buy protection against a problem the team has never faced. Yet relying on the existing supplier leaves the team exposed if those years omitted the disruption that would stop production. The decision turns on what the record actually covers:
 
 **Experience audit.** How many relevant disruptions occurred in the wider industry? Did the eight years include the geopolitical, climate, logistics, and financial states that matter now? Did earlier screening remove fragile suppliers, making the observed history conditional on a successful policy?
 
@@ -235,7 +235,7 @@ The sampling problem also matters in disaster preparedness and other settings, w
 
 Mount Vesuvius, the 2021 eruption on La Palma, and floods in Passau provide vivid teaching cases. A city can go decades without a catastrophic event. Everyday experience then supplies thousands of “safe” observations, while historical and scientific description carries the tail risk. The absence of a recent disaster is evidence about frequency—but not evidence that the hazard is zero.
 
-These examples should not become a morality tale about people who live in dangerous places. Location reflects family, employment, housing prices, insurance, identity, public protection, and the feasibility of moving. Nor should a dramatic photograph substitute for a probability model. The decision requires at least four layers:
+Location reflects family, employment, housing prices, insurance, identity, public protection, and the feasibility of moving. The decision requires at least four layers:
 
 1. **Hazard:** What is the best available estimate of event frequency and severity?
 2. **Exposure:** Who and what would be in harm's way?
@@ -246,7 +246,7 @@ Long calm periods can produce underpreparedness. A recent disaster can produce e
 
 ### Beyond rare-event lotteries
 
-The description–experience framework travels beyond one-shot monetary risk, but it should be transported with care.
+The description–experience framework also helps organize other choices:
 
 - **Ambiguity:** Sampling can make an unknown probability feel learnable, yet the sample may create false precision.
 - **Intertemporal choice:** Waiting through a delay can feel different from reading a date; experienced delay includes boredom, uncertainty, anticipation, and changing states.
@@ -255,8 +255,12 @@ The description–experience framework travels beyond one-shot monetary risk, bu
 - **Reinforcement learning:** Outcomes update expected values through prediction errors; partial feedback teaches only about chosen options, whereas full feedback also reveals forgone outcomes.
 - **Operations:** Inventory, maintenance, and quality decisions are learned from demand and failure histories whose samples may be censored by earlier policy.
 
-The boundary condition is always the same: specify what description and experience contain. A simulated animation is an experience-like presentation, not actual repeated exposure to the consequence. A numerical history is a description of other people's experience. Labels alone do not identify the mechanism.
+Specify what description and experience contain: simulated outcomes, personal consequences, or a numerical history of other people's experience.
 :::
+
+[^ch18-residents]: Locals and tourists also differed in incentives, routines, alternatives, and information, so the field comparison does not isolate exposure alone (Yechiam et al., 2005).
+
+[^ch18-simulated-risk]: The trial was exploratory, and behavior at follow-up was self-reported (Wegwarth et al., 2022).
 
 ## References cited in this chapter
 

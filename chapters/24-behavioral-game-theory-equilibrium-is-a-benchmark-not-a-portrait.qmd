@@ -17,16 +17,16 @@ aliases:
 
 In a group of at least three people, everyone chooses a real number from 0 to 100. The player closest to two-thirds of the group’s mean wins a fixed prize, shared equally in a tie.
 
-If others choose uniformly at random, their expected mean is 50. A simple first approximation aims at two-thirds of that, about 33; if others aim at 33, the next step aims near 22, then near 15. This familiar ladder treats the group mean as given, which is more plausible in a large group. Exact best responses in a finite prize game also depend on one’s own influence on the mean, the distribution of others’ choices, and the tie rule.
+If others choose uniformly at random, their expected mean is 50. A simple first approximation aims at two-thirds of that, about 33; if others aim at 33, the next step aims near 22, then near 15. This ladder uses a large-group approximation.[^ch24-number-game]
 
 Under common knowledge of rationality, iterated elimination removes choices above $66\frac{2}{3}$, then above $44\frac{4}{9}$, and so on. The unique Nash equilibrium is zero.
 
-But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. The equilibrium calculation is correct under its assumptions. A prediction of the actual choice distribution can therefore be more useful for winning than the equilibrium number alone.
+But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. A prediction of the actual choice distribution can therefore be more useful for winning than the equilibrium number alone.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Predicting a strategic choice requires a view of what players believe about one another. Equilibrium provides one benchmark; limited reasoning and learning provide alternatives. Comparing their predictions helps us explain behavior without treating one observed action as a window into a person’s mind.
+Predicting a strategic choice requires a view of what players believe about one another. Equilibrium provides one benchmark; limited reasoning and learning provide alternatives. Comparing their predictions helps us explain behavior.
 :::
 
 ## Learning goals
@@ -37,22 +37,22 @@ Predicting a strategic choice requires a view of what players believe about one 
 
 ### Two beauty contests
 
-The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections. Any class changes are an activity result, not population evidence.
+The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections.
 
-The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The scene illustrates recursive reasoning, without providing evidence about how many steps people normally use.
+The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The scene illustrates recursive reasoning.
 
-![Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game but answers a different question and requires a different evidentiary boundary.](../figures/three-lenses-strategic-behavior.svg){#fig-three-lenses-strategic-behavior fig-alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions, followed by an audit box warning that stability, observed choice, and evolutionary prevalence are different claims."}
+![Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game and answers a different question.](../figures/three-lenses-strategic-behavior.svg){#fig-three-lenses-strategic-behavior fig-alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions."}
 
 ## Three lenses, three questions
 
 ::: {.callout-note icon=false collapse=true}
 ## Compare the three lenses
 
-| Lens | Decision rule | Primary question | What it does not establish |
-| --- | --- | --- | --- |
-| Equilibrium benchmark | Each strategy is a best response to the others. | Which strategy profiles are mutually stable? | That people know the game, reach equilibrium, or approve of it. |
-| Behavioral reasoning | Players respond to beliefs about less or differently sophisticated players. | How many strategic steps fit observed play? | A fixed intelligence trait or the true belief behind one action. |
-| Population dynamics | More successful strategies become more common through selection, imitation, or reproduction. | Which strategies grow, shrink, or coexist under a specified update rule? | Deliberate reasoning, moral endorsement, or transport to human populations. |
+| Lens | Decision rule | Primary question |
+| --- | --- | --- |
+| Equilibrium benchmark | Each strategy is a best response to the others. | Which strategy profiles are mutually stable? |
+| Behavioral reasoning | Players respond to beliefs about less or differently sophisticated players. | How many strategic steps fit observed play? |
+| Population dynamics | More successful strategies become more common through selection, imitation, or reproduction. | Which strategies grow, shrink, or coexist under a specified update rule? |
 : Three lenses on strategic behavior {#tbl-three-strategic-lenses}
 :::
 
@@ -60,28 +60,28 @@ Equilibrium asks which choices fit together; a reasoning model asks how a player
 
 ## Limited strategic depth: level-*k*
 
-A level-*k* model replaces the assumption of perfectly matched equilibrium beliefs with a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
+The number game rewards anticipating the group, but knowing the equilibrium does not tell a player how far others have reasoned. A model of limited strategic depth supplies a prediction between random choice and fully matched equilibrium beliefs. A level-*k* model builds it from a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
 
-![In a game where the target is two-thirds of the group mean, an illustrative level-*k* ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes. A lower audit box warns that the observed number does not uniquely identify beliefs or reasoning depth." width=100%}
+![In a game where the target is two-thirds of the group mean, an illustrative level-*k* ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes." width=100%}
 
 - **Level 0** is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.
 - **Level 1** responds to the level-0 anchor and aims near $\frac{2}{3}\times50=33$.
 - **Level 2** responds to the level-1 anchor and aims near $\frac{2}{3}\times33=22$.
 - **Level 3** responds to the level-2 anchor and aims near 15.
 
-The labels describe a model of choice in one task. They are not ranks of intelligence. The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.
+The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.
 
 ### Cognitive hierarchy: best respond to a mixture
 
-Cognitive hierarchy makes a different assumption. A step-$k$ thinker best responds not to one lower type, but to a distribution of steps $0$ through $k-1$ (Camerer, Ho, & Chong, 2004). The population frequency of step $h$ is often modeled with a Poisson distribution,
+A player may expect the group to contain several reasoning depths. Responding only to a single lower type would then miss part of the competition. Cognitive hierarchy incorporates this mixture: a step-$k$ thinker best responds to a distribution of steps $0$ through $k-1$ (Camerer, Ho, & Chong, 2004). The population frequency of step $h$ is often modeled with a Poisson distribution,
 
 $$
 f(h)=\frac{e^{-\tau}\tau^h}{h!},
 $$
 
-and a step-$k$ player renormalizes this distribution over the lower steps they believe exist. The parameter $\tau$ governs the population's average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games. That is a model fit across tasks—not a law that every person takes one and a half steps.
+and a step-$k$ player renormalizes this distribution over the lower steps they believe exist. The parameter $\tau$ governs the population's average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games.
 
-The following cross-group number-game summary makes heterogeneity visible. It is descriptive, drawn from different settings and samples, and should not be read as a causal ranking of occupations or education.
+The following number-game summary shows the variation across settings and participant groups.
 
 | Participant group | Group size | Mean choice | Modal choice | Fitted $\tau$ |
 | --- | ---: | ---: | ---: | ---: |
@@ -95,7 +95,7 @@ The following cross-group number-game summary makes heterogeneity visible. It is
 | Game theorists | 136 | 19.1 | 0 | 3.7 |
 : Descriptive number-game results used to illustrate heterogeneous strategic depth {#tbl-beauty-contest-groups}
 
-Large within-group dispersion remains. A fitted $\tau$ is a population-and-model parameter. It should not be converted into an individual psychological diagnosis.
+Large within-group dispersion remains.
 
 ## The action does not identify the thought
 
@@ -103,7 +103,7 @@ Suppose someone chooses 22. They may be level 2. But they may also believe the m
 
 This is an **identification problem**: several beliefs and choice rules can produce the same action. An incentivized belief report, information-search record, or experimental change in what is known about opponents can help distinguish them. Each needs to generate predictions on which the rival accounts disagree.
 
-Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. Yet a brain region is not a unique label for “level 2,” and correlational activation cannot by itself identify the computation or show that the process caused the choice. Neural evidence narrows some accounts; it does not eliminate the behavioral identification problem.
+Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. These neural and behavioral comparisons can help distinguish accounts when they predict different responses to the opponent.
 
 ## Learning is not the same as deeper initial reasoning
 
@@ -124,12 +124,12 @@ Different models predict different responses to these information treatments. A 
 
 Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith & Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.
 
-A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner's-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules, not evidence that the same process or motive produced a real population pattern (Schelling, 1969; Hammond & Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.
+A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner's-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules (Schelling, 1969; Hammond & Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.
 :::
 
 ## Application: choose the model after diagnosing the process
 
-Suppose a team asks why one work routine is spreading. First ask whether employees are deliberately best responding to colleagues or anticipating what colleagues will anticipate. If the claim is about diffusion, use four distinct tests:
+Suppose a team sees a work routine spreading and wants to support it. The spread could mean that employees are learning from success, copying visible colleagues, or complying with a changed rule. Each explanation calls for a different intervention, and rewarding the apparent success could reinforce a routine whose value has never been tested. First ask whether employees are deliberately best responding to colleagues or anticipating what colleagues will anticipate. For a claim about diffusion, use four distinct tests:
 
 | Candidate process | Diagnostic question | Discriminating evidence |
 | --- | --- | --- |
@@ -154,6 +154,8 @@ Run five rounds of the two-thirds number game. Record the full distribution, ind
 Before the next number-game round, write down the mean you expect and why. Afterward, compare that prediction with the distribution rather than merely asking whether your chosen number was low. The record reveals what you learned about the group and which assumption needs revision.
 
 Knowing how people reason strategically does not yet explain why they cooperate. The same cooperative action may arise from future consequences, reputation, enforcement, concern for others, or norms. The next chapter separates those mechanisms before treating cooperation as evidence about motive.
+
+[^ch24-number-game]: The approximation treats the group mean as given. Exact best responses in a finite prize game also depend on one’s own influence on the mean, the distribution of others’ choices, and the tie rule.
 
 ## References cited in this chapter
 

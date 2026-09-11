@@ -48,7 +48,7 @@ In a textbook lottery, outcomes and probabilities are specified: a coin gives a 
 
 **Ambiguity** describes uncertainty about the probability model itself. A jar with a known 30 red and 60 black balls is risky; a jar with 30 red and 60 balls of unknown black–yellow composition introduces ambiguity. A precise-looking spreadsheet can still be ambiguous if the probability estimates rest on one historical period or an untested causal model.
 
-The categories are useful, but the boundary is not natural law. Even “known” probabilities depend on a trusted randomization mechanism, and real-world risks often combine sampling variation with model uncertainty.
+Real-world risks often combine sampling variation with model uncertainty.
 
 ## Expected value: the monetary benchmark
 
@@ -109,7 +109,7 @@ $$
 
 Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.
 
-This is an illustration, not an estimate of anyone's utility. If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.
+If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.
 
 ### Insurance: expected loss is not the whole premium
 
@@ -140,7 +140,7 @@ Many people prefer $A$ to $B$ but $D$ to $C$ (Allais, 1953). In Pair 1, certaint
 
 Under expected utility and independence, the pattern is inconsistent. If $A\succ B$, subtracting the common 89% chance of receiving 1 implies $C\succ D$. Choosing $A$ and $D$ gives special weight to the move from 99% to 100% or to the presentation of certainty.
 
-The Allais pattern identifies a violated axiom; it does not prove that every participant used the same psychology. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.
+The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.
 
 ## The Ellsberg urn: risk is not ambiguity
 
@@ -155,7 +155,7 @@ Now choose a bet that pays if **red or yellow** is drawn or a bet that pays if *
 
 Preferring red to black suggests $P(R)>P(B)$. Preferring black-or-yellow to red-or-yellow suggests $P(B)>P(R)$. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).
 
-This pattern is called **ambiguity aversion**, but it has boundaries. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:
+This pattern is called **ambiguity aversion**. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:
 
 1. variability given a model;
 2. uncertainty about parameters;
@@ -174,7 +174,7 @@ The distinction between [process and outcome](01-how-decisions-should-be-made-an
 
 ## Risk communication: show the denominator and the consequence
 
-Suppose a treatment reduces an adverse outcome from 2 in 1,000 to 1 in 1,000 over one year. The relative reduction is 50%. The absolute reduction is 1 in 1,000, or 0.1 percentage points. Both are correct; neither is sufficient alone.
+Suppose a treatment reduces an adverse outcome from 2 in 1,000 to 1 in 1,000 over one year. The relative reduction is 50%. The absolute reduction is 1 in 1,000, or 0.1 percentage points. The relative figure makes the improvement sound substantial; the absolute figure shows the change in outcome frequency. A person weighing that benefit against costs and harms needs both views of the same change.
 
 Responsible risk communication reports:
 
@@ -203,7 +203,7 @@ improves prediction—not when it merely relabels a behavioral result.
 
 ## Worked application: should we insure this exposure?
 
-Return to the insurance quote. Instead of voting on whether the premium “feels high,” the team can organize its discussion around four questions:
+Return to the insurance quote. Declining it saves money the team can use elsewhere, but accepting an unaffordable loss could interrupt the very service that money supports. The team needs to identify which exposure it can carry and which protection the contract actually buys. Four questions organize that comparison:
 
 1. **Exposure:** list final consequences—restoration cost, interrupted service, legal liability, reputation, and possible ruin—not only the insurer's payout.
 2. **Probability:** use base rates for comparable organizations, internal controls, and uncertainty ranges. Separate known event frequency from model uncertainty.
@@ -244,7 +244,7 @@ The insurance discussion ends with a more useful comparison: what the organizati
 ::: {.callout-note icon=false collapse=true}
 ## Application box: the single-period newsvendor
 
-A retailer orders once before uncertain demand $D$ is known. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
+A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand $D$ is uncertain. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
 
 $$
 C_u=p-c,
@@ -264,7 +264,7 @@ $$
 
 For discrete demand, choose the smallest quantity whose cumulative probability reaches the fractile. Shortage penalties, disposal costs, capacity constraints, ambiguity, and risk preferences change the rule.
 
-Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.
+Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms.
 :::
 
 ::: {.callout-note .research-lens icon=false collapse=true}
@@ -280,7 +280,7 @@ $$
 
 Yet few people would pay an enormous entry price. Bernoulli's solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.
 
-The puzzle does not prove diminishing marginal utility: finite wealth, bounded liability, mistrust, transaction costs, or a limit on tosses can also change willingness to pay. Expected value depends on a realizable contract.
+Finite wealth, bounded liability, mistrust, transaction costs, and a limit on tosses can also change willingness to pay. Expected value depends on a realizable contract.
 :::
 
 ::: {.callout-note .research-lens icon=false collapse=true}

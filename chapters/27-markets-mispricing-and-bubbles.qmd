@@ -63,11 +63,11 @@ Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly i
 
 ## Fast price discovery is possible
 
-The US Federal Reserve’s [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) establishes its release at 14:00 on September 18, 2013. To measure how quickly the market responded, an event study must pair that timestamp with price and volume data. The announcement alone cannot establish the reaction.
+If public news changes a price before an investor can trade, recognizing the news correctly may still come too late to earn a return. The useful question is how quickly the adjustment occurs relative to an executable order. The US Federal Reserve’s [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) establishes its release at 14:00 on September 18, 2013. To measure how quickly the market responded, an event study must pair that timestamp with price and volume data.
 
 Price discovery can also aggregate dispersed clues. The space shuttle *Challenger* exploded at 11:39 a.m. on January 28, 1986; the news appeared on a major financial wire minutes later. Four publicly traded contractors were connected to the launch. By the end of the trading response, Morton Thiokol experienced the distinctive loss. A presidential commission identified the failure of booster O-ring seals made by Thiokol months later. Maloney and Mulherin (2003) found no simple news story or obvious insider-trading trail that fully explained the early discrimination. The market appeared to combine dispersed information, inference, and trading.
 
-But “the market knew” is too strong. Price discovery can be correct for the wrong reason, and a single case does not show that markets always identify responsibility. It establishes a possibility: collective trading can reveal information no single public announcement states.
+Collective trading can reveal information no single public announcement states.
 
 The wisdom of a market depends on conditions also familiar from crowd judgment: dispersed information, some independence, incentives to reveal beliefs, and an aggregation mechanism. If participants copy the same signal or face the same constraint, the crowd can amplify error instead.
 
@@ -121,11 +121,11 @@ $$
 V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 $$
 
-Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. But correct notation must not create false precision. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
+Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
 
 ![A possible reinforcing loop links rising prices, expectations of further gains, and more buying. Fundamentals affect price separately, and financing can amplify demand without being required for the loop. Supply, short selling, risk limits, and skeptical capital can weaken the process.](../figures/asset-bubble-feedback.svg){#fig-asset-bubble-feedback fig-alt="Three boxes arranged in a loop show rising prices, expecting more gains, and more buying. A separate fundamentals box points to price; a dashed arrow from financing points to buying as an optional amplifier. A lower band lists possible brakes and notes that correction can be delayed."}
 
-A boom can begin with genuine innovation and later acquire a feedback component. Credit can amplify buying, but neither borrowing nor any other amplifier in the figure is required in every episode.
+A boom can begin with genuine innovation and later acquire a feedback component, which credit can amplify.
 
 ### Strategic resale and synchronization risk
 
@@ -137,13 +137,13 @@ Skeptical traders face the mirror problem. Even when many privately judge the pr
 
 From the January 3, 1995 close of 743.58 to the March 10, 2000 peak close of 5,048.62, the NASDAQ Composite rose about 579%. By October 9, 2002, it closed at 1,114.11—a 77.9% decline from the peak (Federal Reserve Bank of St. Louis, 2026). Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
 
-The internet was not imaginary. The mistake would be to infer that every firm exposed to a transformative technology deserved every price. Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
+Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
 
 ### One laboratory market: a known risk-neutral benchmark can still be exceeded
 
-Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark**, with no final redemption and negligible discounting over the short experimental session, is $FV_t=kd$. This benchmark is transparent, but it is not a unique subjective value for participants with different risk preferences. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
+Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark**, with no final redemption and negligible discounting over the short experimental session, is $FV_t=kd$. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
 
-The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them; learning is representation-specific rather than universal immunity (Dufwenberg et al., 2005; Hussam et al., 2008).
+The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them (Dufwenberg et al., 2005; Hussam et al., 2008).
 
 Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair's (2006) rule classified behavior only when a trader's highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications were:
 
@@ -159,21 +159,21 @@ Different strategies can sustain the same path. Passive trading can remain broad
 : Rule-based behavioral classifications in Haruvy and Noussair (2006): 162 classifications from 18 sessions, fractional allocation of ties, and a highest consistency score of at least 8 of 15 periods. {#tbl-bubble-strategies}
 :::
 
-![An original redraw reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other or unclassified behavior. These are 162 rule-based trader classifications from one experimental design, with fractional allocation of ties—not stable investor types.](../figures/bubble-trader-strategies-redraw.svg){#fig-bubble-trader-strategies-redraw fig-alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A side panel identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods." width=100%}
+![An original redraw reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other or unclassified behavior. These are 162 rule-based trader classifications from one experimental design, with fractional allocation of ties.](../figures/bubble-trader-strategies-redraw.svg){#fig-bubble-trader-strategies-redraw fig-alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A side panel identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods." width=100%}
 
-These are behaviors under one design and classification rule, not permanent investor types or population estimates. The evidence supports interaction among heterogeneous strategies; it does not license a personality label.
+The evidence supports interaction among heterogeneous trading strategies.
 
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: what laboratory markets can transport
 
 Laboratory markets identify mechanisms by changing conditions that field markets rarely hold constant. Bubble-like deviations have appeared with known, declining fundamentals and also with flat fundamentals; raising cash relative to asset value can enlarge deviations (Caginalp et al., 1998). Forecast data show that traders' expectations can lag turning points and help explain price paths (Haruvy et al., 2007; Holt et al., 2017).
 
-The design strength is control over fundamentals, liquidity, experience, and trading rules. The boundary is transport: participants, stakes, institutions, leverage, information, and asset supply differ from field markets. A laboratory result can rule out one proposed necessity or estimate the effect of a randomized design change. It does not by itself establish the cause, prevalence, or magnitude of a mechanism in a particular historical boom.
+Control over fundamentals, liquidity, experience, and trading rules lets researchers isolate how changes in these conditions affect the price path.[^ch27-laboratory-markets]
 :::
 
 ## A two-direction bubble dashboard
 
-A useful diagnosis should be able to weaken as well as strengthen. Record what currently makes the price look fragile, what could justify it, and which observation would change your assessment. A probability can help when the event and horizon are well defined; an unexplained number adds little.
+A rising price can reflect improving prospects, a reinforcing trading process, or both. Treating every rise as confirmation of a bubble would make the diagnosis impossible to correct; dismissing every concern as innovation could leave growing exposure unchecked. Record what makes the price look fragile, what could justify it, and which observation would change your assessment. A probability can help when the event and horizon are well defined.
 
 | Domain | Evidence that raises concern | Evidence that lowers concern |
 | --- | --- | --- |
@@ -199,13 +199,13 @@ Return to the earnings announcement. A vivid company story can attract [attentio
 
 After buying, the problem changes. You may search for reasons to defend the position, treat its purchase price as the point to recover, or evaluate every fluctuation in isolation. The chapters on [defended beliefs](10-beliefs-that-defend-themselves.qmd), [mental accounts](20-mental-accounting-money-is-fungible-minds-label-it.qmd), and [reference points](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd) explain these possibilities. In a market, their consequences also depend on other traders, the size of the position, and the cost of changing it.
 
-Barber and Odean (2000) found that the individual investors who traded most in their brokerage sample earned substantially lower net returns than those who traded least. The result is consistent with overconfidence plus trading costs; it is not a claim that every trade is mistaken or that passive investing fits every objective.
+Barber and Odean (2000) found that the individual investors who traded most in their brokerage sample earned substantially lower net returns than those who traded least. The result is consistent with overconfidence plus trading costs.
 
 Preserve the pre-purchase record to apply the [process–outcome distinction](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process). A later gain should test the recorded thesis rather than erase weaknesses in the reasoning that produced it.
 
 ## A falsifiable investment memo
 
-Before the outcome is known, write one page:
+An investment story can adapt easily to the next price move: a rise appears to vindicate it, while a fall becomes an opportunity to buy more. Then no outcome teaches the investor when the reasoning has failed. Before buying, turn the story into a record that specifies what must happen, what would count against it, and what action follows. Write one page:
 
 1. **Decision and noninvestment option.** What exactly will be done, in what size, and why is doing nothing inferior?
 2. **Thesis.** State the causal claim in one sentence.
@@ -250,18 +250,18 @@ For an audit, record the published answer to each step and mark missing informat
 
 If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.
 
-![An event-study schematic distinguishes the estimation window, the event's first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift; they are not digitized effect-size estimates.](../figures/finance-event-study-drift.svg){#fig-finance-event-study-drift fig-alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs." width=100%}
+![An event-study schematic distinguishes the estimation window, the event's first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift.](../figures/finance-event-study-drift.svg){#fig-finance-event-study-drift fig-alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs." width=100%}
 
-Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study. It does not guarantee that a modern trader can observe the surprise, transact at the assumed price, and earn the reported return after risk and costs.
+Historical research on earnings announcements documented **post-earnings-announcement drift**: firms with high unexpected earnings continued, on average, to outperform firms with low unexpected earnings after the immediate announcement response in the studied samples (Rendleman et al., 1982). The pattern challenges the joint model used in the study.
 
 :::
 
 ::: {.callout-note .research-lens icon=false collapse=true #research-lens-five-patterns-five-open-diagnoses}
 ### Research Lens: five patterns, five open diagnoses {#research-lens-five-patterns-five-open-diagnoses-title}
 
-The table summarizes several historically important findings without treating any of them as a timeless law or a ready-made strategy. Each row begins with a result in a specified sample; the behavioral account remains one hypothesis among several.
+The table compares five historical findings, their behavioral explanations, and rival accounts.
 
-| Pattern | Scoped historical finding | Behavioral possibility | Rival account and implementation gate |
+| Pattern | Historical finding | Behavioral possibility | Rival account and implementation gate |
 | --- | --- | --- | --- |
 | Size | Smaller firms earned higher average returns in an early U.S. sample (Banz, 1981). | Neglect, limited attention, or segmented demand | Priced risk, illiquidity, micro-cap trading costs, sample sensitivity, and later attenuation |
 | Value | Stocks priced low relative to book value, earnings, or cash flow outperformed higher-priced “growth” stocks in influential U.S. and international samples (Fama & French, 1992, 1998). | Extrapolation of growth stories or overreaction to past performance | Distress or another priced risk, changing definitions, portfolio construction, and costs |
@@ -272,6 +272,8 @@ The table summarizes several historically important findings without treating an
 
 Momentum over months and reversal over years are not logically inconsistent because different mechanisms, horizons, or samples may dominate. But explaining momentum after prices rise and reversal after they fall would make the theory difficult to falsify. A prospective claim should specify the horizon, mechanism, benchmark, and failure condition before the return path is known.
 :::
+
+[^ch27-laboratory-markets]: Applying a laboratory estimate to a field market requires comparing participants, stakes, institutions, leverage, information, and asset supply.
 
 ## References cited in this chapter
 

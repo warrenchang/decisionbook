@@ -26,7 +26,7 @@ This chapter brings the book’s tools together around that task: making consequ
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Protect judgment before the answer becomes obvious: define the criteria, gather independent assessments, examine disagreement, and record what is expected. Afterward, compare the outcome with that original record. The process should help people revise what the evidence challenges while recognizing what one result cannot tell them.
+Protect judgment before the answer becomes obvious: define the criteria, gather independent assessments, examine disagreement, and record what is expected. Afterward, compare the outcome with that original record. The process should help people revise what the evidence challenges.
 :::
 
 ## Learning goals
@@ -43,11 +43,11 @@ A useful intervention should remain defensible if the people affected understand
 
 ## Why judgment systems fail: bias, noise, and misplaced intuition
 
-Bias has a direction relative to a defensible target. A forecaster who is consistently too optimistic or a scale that always reads two kilograms high is biased when later outcomes or a calibrated standard supplies that target. In many value-laden decisions, however, there is no simple observable bullseye; the benchmark must be specified and defended rather than smuggled into the picture. **Noise** is unwanted variation among repeated, commensurable judgments that should be similar. If qualified teachers grade the same essay very differently, physicians use different thresholds for the same case, or managers rate the same candidate from 4 to 9 on a ten-point scale, the system is noisy (Kahneman et al., 2021).
+A hiring process can repeatedly favor the wrong cue, or it can produce different judgments depending on which qualified panel reviews the same evidence. Both can change who gets the job, but correcting the favored cue will not necessarily reduce the variation. Before redesigning the process, distinguish the direction of error from its inconsistency. Bias has a direction relative to a defensible target. A forecaster who is consistently too optimistic or a scale that always reads two kilograms high is biased when later outcomes or a calibrated standard supplies that target. In value-laden decisions, the benchmark must be specified and defended. **Noise** is unwanted variation among repeated, commensurable judgments that should be similar. If qualified teachers grade the same essay very differently, physicians use different thresholds for the same case, or managers rate the same candidate from 4 to 9 on a ten-point scale, the system is noisy (Kahneman et al., 2021).
 
-![Target diagrams distinguish systematic error from unwanted variability when judgments are repeated, commensurable, and compared with an observable or defensible benchmark. Level noise concerns persistent differences in judges’ average levels; pattern noise concerns different reactions to case features. Occasion noise adds within-judge variation across occasions.](../figures/bias-and-noise.svg){#fig-bias-and-noise fig-alt="Four target diagrams compare low and high bias with low and high noise. A banner says that the analogy requires repeated commensurable judgments and an observable or defensible accepted target. Separate panels define level noise as persistent differences in judges' average levels and pattern noise as different reactions to case features."}
+![Target diagrams distinguish systematic error from unwanted variability around a benchmark. Level noise concerns persistent differences in judges’ average levels; pattern noise concerns different reactions to case features. Occasion noise adds within-judge variation across occasions.](../figures/bias-and-noise.svg){#fig-bias-and-noise fig-alt="Four target diagrams compare low and high bias with low and high noise. Separate panels define level noise as persistent differences in judges' average levels and pattern noise as different reactions to case features."}
 
-The bullseye is an analogy, not a universal measurement model. It summarizes the location and spread of a set of comparable judgments when a target can be observed or normatively accepted; it cannot establish that the target is legitimate, identify why errors occurred, or decompose the spread by itself. **Level noise** is persistent variation in judges' average severity or generosity. **Pattern noise** arises when judges react differently to features of particular cases. **Occasion noise** is additional within-judge variation across times or contexts. Estimating these components requires an appropriate repeated-judgment design, not one isolated decision.
+The bullseye summarizes the location and spread of comparable judgments around an observed or accepted target. **Level noise** is persistent variation in judges' average severity or generosity. **Pattern noise** arises when judges react differently to features of particular cases. **Occasion noise** is additional within-judge variation across times or contexts. Estimate these components with a repeated-judgment design.
 
 Noise is easy to miss because people usually encounter one judgment, not the distribution of judgments they might have received. One candidate meets one panel. One paper receives one set of reviews. One patient sees one clinician. Yet fairness requires that similar cases receive similar treatment unless a relevant difference justifies the variation.
 
@@ -70,9 +70,9 @@ The rule is therefore not “ignore intuition.” It is **delay the global impre
 
 ## The structured judgment pipeline
 
-A workflow helps connect preparation with later review. The one below is a practical synthesis to adapt to the decision:
+By the time the hiring committee recognizes the chair’s influence, members may no longer be able to recover their independent first judgments. By the review meeting, memory has changed as well. A process that can learn must protect evidence before these losses occur and preserve a connection to the outcome. The workflow below links those stages:
 
-![This author's prescriptive synthesis structures judgment by defining, decomposing, eliciting independent assessments, aggregating, recording, and reviewing. It is a design proposal whose components should be scaled and tested for the task.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="Six steps define a decision, separate its criteria, elicit independent judgments, compare and combine them, record a decision, and review the result. A return arrow informs the next process while preserving the original record. This is a proposed workflow rather than a universal stage order."}
+![A structured judgment workflow connects definition, decomposition, independent assessment, aggregation, recording, and review.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="Six steps define a decision, separate its criteria, elicit independent judgments, compare and combine them, record a decision, and review the result. A return arrow informs the next process while preserving the original record."}
 
 1. **Define.** State the decision, prediction target, values, decision rights, affected people, and error costs.
 2. **Decompose.** Evaluate distinct criteria before forming a coherent global story.
@@ -83,7 +83,7 @@ A workflow helps connect preparation with later review. The one below is a pract
 7. **Decide and document.** State the choice, trade-offs, authority, assumptions, exceptions, and implementation conditions.
 8. **Review and learn.** Compare forecasts with outcomes, audit fairness and drift, and change the process where the evidence warrants it.
 
-This is a proportional pipeline, not a command to make every choice slow. A low-stakes reversible decision may need only a quick check. A repeated, consequential, uncertain, contested, difficult-to-reverse, or partly automated decision deserves more structure.
+A low-stakes reversible decision may need only a quick check. A repeated, consequential, uncertain, contested, difficult-to-reverse, or partly automated decision deserves more structure.
 
 ## Before the decision: improve the input
 
@@ -143,7 +143,7 @@ Senior people should normally speak after independent input is captured. Anonymo
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: AI and accountable judgment
 
-In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). That advantage is task-specific. A model can be consistently wrong when its target, data, or deployment context is wrong.
+In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). The target, data, and deployment context determine whether the model serves the decision.
 
 AI is often valuable because it improves **prediction**, but prediction is only one task inside a decision. Building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for assigning payoffs to consequences. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere, **judgment** retains its broader meaning of forming beliefs and assessments.]
 
@@ -187,9 +187,9 @@ Some choices should also be designed to learn. A pilot, diagnostic test, negotia
 
 ## During the decision: structure disagreement
 
-Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when "too risky" is decomposed into probability and consequence.
+Two committee members can call a candidate “too risky” for different reasons: one expects poor performance, while the other finds even a small chance of failure too costly. More debate about the candidate will go in circles until the disagreement is located. Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when "too risky" is decomposed into probability and consequence.
 
-Checklists can protect against omissions in repeated work when they are short, located at a useful pause, and tied to known failures. Haynes et al. (2009) observed lower complication and mortality rates after introducing a surgical safety checklist in eight hospitals. This was a before-and-after study, so the change cannot be attributed to the document alone; implementation and concurrent changes matter. A hiring checklist likewise needs to address an actual failure, such as scoring work samples before discussing impressions.
+Checklists can protect against omissions in repeated work when they are short, located at a useful pause, and tied to known failures. In a before-and-after study of eight hospitals, Haynes et al. (2009) observed lower complication and mortality rates after introducing a surgical safety checklist. A hiring checklist likewise needs to address an actual failure, such as scoring work samples before discussing impressions.
 
 
 
@@ -237,21 +237,21 @@ Now slow the story into six inspectable components:
 | Feedback | What was supposed to be learned, and when? | Letting hindsight rewrite the original forecast. | Record assumptions and set a review date. |
 : A decision-loop diagnostic {#tbl-35-decision-audit}
 
-The audit does not prove that the chosen option was best, recover the road not taken, or reveal how every counterfactual future would have unfolded. It can reveal missing options, unsupported predictions, hidden values, invisible opportunity costs, contextual pressures, and feedback that was never designed. Its purpose is prospective: make the next decision more testable than the last one.
+The audit can reveal missing options, unsupported predictions, hidden values, invisible opportunity costs, contextual pressures, and feedback that was never designed. Its purpose is prospective: make the next decision more testable than the last one.
 
-![A sound or weak process can be followed by either a favorable or unfavorable outcome.](../figures/decision-audit.svg){#fig-decision-audit fig-alt="A two-by-two matrix crosses sound and weak decision processes with favorable and unfavorable outcomes. A sound process can still meet an unfavorable outcome, and a weak process can receive a favorable one. Neither pairing alone identifies luck or the cause of the result."}
+![A sound or weak process can be followed by either a favorable or unfavorable outcome.](../figures/decision-audit.svg){#fig-decision-audit fig-alt="A two-by-two matrix crosses sound and weak decision processes with favorable and unfavorable outcomes. A sound process can still meet an unfavorable outcome, and a weak process can receive a favorable one."}
 
 ## After the outcome: learn without worshipping luck
 
 ### What a decision journal is—and is not {#what-a-decision-journal-is}
 
-A **decision journal** is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned **without overwriting the original entry**. Its unit is a consequential decision, not a day in the writer's life.
+The hiring committee wants to learn from the appointment, but its members now remember having anticipated the problem. If the review relies on those recollections, a disappointing outcome can confirm everyone’s judgment while correcting no one’s process. Learning requires a record the outcome cannot rewrite. A **decision journal** is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned **without overwriting the original entry**. Its unit is a consequential decision, not a day in the writer's life.
 
 The journal links two different records: what you believed before choosing and what later happened. Meeting minutes can document the choice, but usually do not preserve the alternative forecasts and learning rules needed for this comparison.
 
-Its research basis is in components, rather than a trial of one universal journal template. Decision analysis identifies the options, consequences, and values to record (Raiffa, 1968; Keeney & Raiffa, 1976). Hindsight and outcome-bias research explains why later recollection cannot substitute for a contemporary record (Fischhoff, 1975; Baron & Hershey, 1988). Forecasting research makes predictions resolvable across repeated decisions (Brier, 1950; Mellers et al., 2014).
+Several research traditions inform the journal. Decision analysis identifies the options, consequences, and values to record (Raiffa, 1968; Keeney & Raiffa, 1976). Hindsight and outcome-bias research explains why later recollection cannot substitute for a contemporary record (Fischhoff, 1975; Baron & Hershey, 1988). Forecasting research makes predictions resolvable across repeated decisions (Brier, 1950; Mellers et al., 2014).
 
-Writing and review also depend on the conditions. In a study of Chinese judges, reason writing before judgment reduced the influence of an induced negative feeling, but forced deliberation produced a similar effect (Liu, 2018). A meta-analysis found benefits of structured debriefing across 46 samples ($N = 2{,}136$; average $d = 0.67$), not evidence that this entire journal format works for every decision (Tannenbaum & Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner & Tetlock, 1999).
+Writing and review also depend on the conditions. In a study of Chinese judges, reason writing before judgment reduced the influence of an induced negative feeling, but forced deliberation produced a similar effect (Liu, 2018). A meta-analysis found benefits of structured debriefing across 46 samples ($N = 2{,}136$; average $d = 0.67$) (Tannenbaum & Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner & Tetlock, 1999).
 
 The practical sequence is **freeze, compare, update**: preserve the original account, compare each prediction or assumption with relevant evidence, then change a rule or forecast where warranted. A record helps only if it is candid, reviewed, and protected from retrospective editing.
 
@@ -265,15 +265,15 @@ Every after-outcome prompt should answer the before-choosing record with the **s
 
 ### A simplified decision journal {#decision-journal-example}
 
-The table below illustrates the two-stage structure. The case and numbers are hypothetical: a university teacher is deciding whether to pilot an AI-assisted feedback tool. The point is not to fill every possible field, but to create a short record that can later contradict convenient memory.
+The table below illustrates the two-stage structure. The case and numbers are hypothetical: a university teacher is deciding whether to pilot an AI-assisted feedback tool. The short record can later contradict convenient memory.
 
 | Matched learning loop | Before choosing — freeze | After the outcome — compare and update |
 | --- | --- | --- |
 | **1. Decision and execution** | By 15 September, decide whether to keep the current feedback process, run a four-week pilot in one course, or adopt the tool in all courses. | The four-week pilot was implemented for 100 assignments as planned. Record any deviations before interpreting its results. |
 | **2. Alternatives and opportunity cost** | The best forgone option is the current process with additional teaching-assistant time. | The teaching-assistant option was not tested, so its counterfactual result remains unknown. No clearly feasible option omitted from the original menu emerged. |
-| **3. Evidence and reference class** | A local test of 20 assignments reduced average editing time from 12 to 8 minutes, but 4 drafts needed major correction. The sample is small and local; no external comparison is available. | Across 100 assignments, editing averaged 8.5 minutes, 8% needed major correction, 62% of students rated the feedback helpful, and no privacy breach was reported. This strengthens local evidence but does not establish performance elsewhere. |
-| **4. Predictions and assumptions** | Pilot forecasts: 60% chance editing time is below 9 minutes; 70% chance at least 70% of students rate feedback helpful; 15% chance more than 10% of drafts need major correction. Assumptions: instructors catch material errors and opting out is meaningful. | Resolve the same forecasts: time below 9 minutes—yes; helpfulness at least 70%—no; correction above 10%—no. The recorded correction rate is below the threshold; unrecognized errors and whether opting out felt meaningful remain untested. One realized event does not by itself prove that a stated probability was well calibrated. |
-| **5. Values and stakeholders** | Faster feedback matters, but accuracy, privacy, student trust, and a genuine option to decline are protected values. A privacy breach is unacceptable even if time is saved. | The observed major-correction rate met the threshold and no privacy breach was reported; this does not rule out undetected errors or breaches. Helpfulness was weaker than hoped. Trust and the experience of students who opted out were not measured, so those original values cannot yet be evaluated. |
+| **3. Evidence and reference class** | A local test of 20 assignments reduced average editing time from 12 to 8 minutes, but 4 drafts needed major correction. | Across 100 assignments, editing averaged 8.5 minutes, 8% needed major correction, 62% of students rated the feedback helpful, and no privacy breach was reported. |
+| **4. Predictions and assumptions** | Pilot forecasts: 60% chance editing time is below 9 minutes; 70% chance at least 70% of students rate feedback helpful; 15% chance more than 10% of drafts need major correction. Assumptions: instructors catch material errors and opting out is meaningful. | Resolve the same forecasts: time below 9 minutes—yes; helpfulness at least 70%—no; correction above 10%—no. The recorded correction rate is below the threshold; unrecognized errors and whether opting out felt meaningful remain untested. |
+| **5. Values and stakeholders** | Faster feedback matters, but accuracy, privacy, student trust, and a genuine option to decline are protected values. A privacy breach is unacceptable even if time is saved. | The observed major-correction rate met the threshold and no privacy breach was reported. Helpfulness was weaker than hoped. Trust and the experience of students who opted out were not measured, so those original values cannot yet be evaluated. |
 | **6. Context, incentives, dissent, and tools** | Instructors want to reduce workload and may be unusually receptive to the tool. The strongest objection is that verification could consume the time saved. Record any model or AI advice and why it was followed or overridden. | Verification did not eliminate the time saving, but student concerns received less measurement than instructor workload. Reassess whether dissent was answered and whether reliance on the tool was calibrated to where it actually added value. |
 | **7. Choice, thresholds, and learning rule** | Run the limited pilot; review after 100 assignments. Stop after a confirmed privacy breach. Do not scale if major correction exceeds 10% or helpfulness is below 70%. | The recorded implementation and review thresholds were followed, and the measured outcome was mixed. Do not scale: helpfulness missed the stated threshold. Continue only as a limited test, improve the student explanation, measure trust and opt-out experience, and set the next review before collecting more outcomes. |
 : A hypothetical decision journal in which every ex-post entry answers its ex-ante counterpart {#tbl-simplified-decision-journal}
@@ -307,7 +307,7 @@ Reflection differs from rationalization because it produces a testable change. �
 
 ## The decision-improvement cycle: notice, test, ask, design, learn
 
-![Part VII follows a practical reading route: find the obstacle, change the conditions, and check the results. This is a guide to the chapters, not a universal psychological sequence.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="Three reading questions connect finding the obstacle, changing the conditions, and checking the results. They organize Part VII's design and learning tools."}
+![Part VII follows a practical reading route: find the obstacle, change the conditions, and check the results.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="Three reading questions connect finding the obstacle, changing the conditions, and checking the results. They organize Part VII's design and learning tools."}
 
 The three questions in the part map can guide a brief review: What is getting in the way? What condition could change? What result would tell us whether the change helped? For a more detailed diagnosis, the five verbs below locate the work that remains.
 
@@ -328,7 +328,7 @@ Before reviewing candidates, the committee defines job-relevant outcomes, error 
 
 Only then does the committee compare the distribution. A spread in scores is information: perhaps the criterion is vague, members possess different evidence, or one feature has created a halo. The chair speaks after independent input. The group tests its leading account against the strongest alternative, records the choice, uncertainty, trade-offs, and reasons for any exception, and sets an implementation and review plan.
 
-After the outcome, the committee reviews what was knowable at the time. It does not treat the selected candidate's success or failure as proof that every earlier inference was correct. Across hires, it examines calibration, predictive validity, subgroup outcomes, exceptions, and process variation. The opening choice has become an inspectable learning system.
+After the outcome, the committee reviews what was knowable at the time. Across hires, it examines calibration, predictive validity, subgroup outcomes, exceptions, and process variation. The opening choice has become an inspectable learning system.
 
 ## Ethics, governance, and proportionality
 
@@ -371,7 +371,7 @@ The submitted artifact is the completed pipeline, not an essay about decision hy
 ## Take it forward
 
 
-Return to the hiring meeting that opened the book. A better process cannot promise the best hire every time, but it can make the reasons for the choice clearer, expose disagreement before commitment, and preserve what the outcome can teach. Start with one recurring decision and build the conditions under which the next decision can improve.
+Return to the hiring meeting that opened the book. A better process makes the reasons for the choice clearer, exposes disagreement before commitment, and preserves what the outcome can teach. Start with one recurring decision and build the conditions under which the next decision can improve.
 
 The [final chapter](42-data-driven-decision-making.qmd#separate-prediction-and-valuation) matters because AI changes the information and assistance available within this process. It brings the book's lessons to a setting in which a forecast or draft analysis can arrive within seconds, while its purpose and consequences still require judgment. Attention determines which problem reaches the agenda; framing shapes the comparison; calibration helps us assess the estimate; social influence affects whether people challenge it; and design connects it to action and feedback. These earlier lessons help us decide what to delegate, what to verify, and which commitments people must own. Chapter 42 brings them together around one practical question: how can better machine assistance strengthen the whole decision loop?
 

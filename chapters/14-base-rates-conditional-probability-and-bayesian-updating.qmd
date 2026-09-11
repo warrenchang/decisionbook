@@ -13,9 +13,9 @@ aliases:
 > — Thomas Bayes, [“An Essay towards Solving a Problem in the Doctrine of Chances”](https://doi.org/10.1098/rstl.1763.0053), 1763, p. 376
 :::
 
-A candidate passes a screening test that is described as “80 percent accurate.” How confident should the hiring committee be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of *what*? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?
+A candidate passes a screening test that is described as “80 percent accurate.” The committee wants to use the result to reduce hiring mistakes. How confident should it now be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of *what*? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?
 
-The committee's target is $P(\text{strong performance}\mid\text{positive screen})$. A report may instead provide $P(\text{positive screen}\mid\text{strong performance})$. Those quantities reverse the conditioning and use different denominators. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.
+The committee's target is $P(\text{strong performance}\mid\text{positive screen})$. A report may instead provide $P(\text{positive screen}\mid\text{strong performance})$. Those quantities reverse the conditioning and use different denominators. Confusing them could turn an informative screen into unjustified confidence about whom to hire. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -31,10 +31,11 @@ A positive screen can come from someone who meets the standard or someone who do
 - Diagnose base-rate neglect, reversed conditionals, conjunction errors, and information dilution.
 
 
-
 ## Worked update: the same screen in two applicant pools
 
-Return to the hiring screen. Suppose, for teaching purposes, that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:
+A validated screen may look like a portable measure of candidate quality. Yet the same positive result can mean different things in different applicant pools. To see why, return to the hiring screen.
+
+Suppose that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:
 
 - 2,000 would meet the standard; 1,600 pass the screen.
 - 8,000 would not; 2,400 nevertheless pass.
@@ -46,7 +47,9 @@ Now place the same screen in a carefully preselected pool where 50% would meet t
 
 ## Probability begins with a model
 
-The screen example works by dividing a common population into cases. Probability notation makes the same logic available for other decisions. A **sample space** $\Omega$ lists the elementary outcomes allowed by a model. An **event** $A$ is a subset of those outcomes. A probability measure assigns numbers satisfying
+The hiring calculation became useful only after the applicants and possible results were organized into a common population. Without that structure, a percentage can answer a different question from the one the decision requires. Probability notation makes the same logic available for other decisions.
+
+A **sample space** $\Omega$ lists the elementary outcomes allowed by a model. An **event** $A$ is a subset of those outcomes. A probability measure assigns numbers satisfying
 
 $$
 0\le P(A)\le 1, \qquad P(\Omega)=1,
@@ -100,6 +103,8 @@ Conditional probability also makes independence explicit. Events are independent
 
 ## Bayes' rule restores the alternatives
 
+A positive result supports an explanation when it is more expected under that explanation than under its alternatives. Counting only the cases where the explanation is true leaves out the competing route to the same evidence. Bayes’ rule brings both routes into the comparison.
+
 If $A$ and $A^c$ partition the cases, total probability rebuilds the denominator:
 
 $$
@@ -116,11 +121,12 @@ $$
 
 The **prior** $P(A)$ gives the starting probability, which is a prevalence in this screening example. The **likelihood** $P(B\mid A)$ asks how probable the evidence would be if $A$ held. The competing likelihood $P(B\mid A^c)$ asks how often the same evidence appears without $A$. The **posterior** is the probability after incorporating the evidence (Bayes, 1763).
 
-Bayes' rule cannot rescue a poor hypothesis set. Missing alternatives, selected samples, changing environments, weak measurements, and uncertain parameters remain problems. A posterior is precise only conditional on the model and inputs that produced it.
-
+A useful Bayesian model includes the relevant alternatives and accounts for sample selection, environmental change, measurement quality, and parameter uncertainty.
 
 
 ## Natural frequencies make Bayes visible
+
+Knowing the formula does not guarantee that the relevant denominator stays visible. Translating percentages into people makes it easier to inspect who could have produced a positive result.
 
 For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that is $P(+\mid D)$ rather than $P(D\mid +)$.
 
@@ -138,11 +144,11 @@ $$
 
 ![A positive result can come from either group. In this hypothetical population, the much larger group without disease supplies most of the positive tests.](../figures/probability-judgment-map.svg){#fig-probability-judgment-map fig-alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease." width=100%}
 
-Natural frequencies preserve the nested sets and denominator, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer & Hoffrage, 1995). They do not solve measurement error or transportability; they make the assumed structure visible.
+Natural frequencies preserve the nested sets and denominator, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer & Hoffrage, 1995). They make the assumed structure visible.
 
 ## Reference classes are judgment calls
 
-A base rate is only as useful as its reference class. Should a start-up be compared with all new firms, firms in the same sector, firms at the same funding stage, or firms with similarly experienced founders? A narrow class may be more relevant but noisier. A broad class is more stable but less tailored.
+The calculation asks for a base rate, but the decision rarely supplies an uncontested comparison group. Should a start-up be compared with all new firms, firms in the same sector, firms at the same funding stage, or firms with similarly experienced founders? A narrow class may be more relevant but noisier. A broad class is more stable but less tailored. Choosing the class is therefore part of the substantive judgment, and it can change the recommendation even when the arithmetic is correct.
 
 Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman & Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. “This case is unique” is a hypothesis, not a denominator.
 
@@ -175,7 +181,6 @@ For each prompt, write the target conditional before answering.
 
 A complete answer names the conditioning event, denominator, relevant overlap or alternative, and at least one assumption about how the evidence was generated.
 :::
-
 
 
 ## Practice Lab

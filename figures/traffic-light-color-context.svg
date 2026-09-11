@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="670" viewBox="0 0 800 670" role="img" aria-labelledby="title desc">
+  <title id="title">The same gray lens alone and in a traffic-signal scene</title>
+  <desc id="desc">On the left, a neutral-gray lens sits against a neutral surround. On the right, exactly the same opaque gray lens artwork is the upper lamp of a signal in a blue-green scene. Surrounding colors and the familiar arrangement can encourage a reddish appearance.</desc>
+  <defs>
+    <pattern id="gray-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2.1" fill="#b3b3b3"/>
+    </pattern>
+    <clipPath id="lens-clip"><circle r="62"/></clipPath>
+    <g id="neutral-lens">
+      <circle r="62" fill="#8b8b8b"/>
+      <circle r="62" fill="url(#gray-grid)" clip-path="url(#lens-clip)"/>
+      <circle r="60" fill="none" stroke="#767676" stroke-width="2"/>
+    </g>
+    <pattern id="amber-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2.1" fill="#b4d985"/>
+    </pattern>
+    <pattern id="green-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2.1" fill="#a6ede0"/>
+    </pattern>
+    <clipPath id="scene-clip"><rect x="420" y="94" width="350" height="546" rx="18"/></clipPath>
+  </defs>
+  <rect width="800" height="670" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#183047">
+    <text x="205" y="55">Lens alone</text>
+    <text x="595" y="55">In a scene</text>
+  </g>
+  <rect x="30" y="94" width="350" height="546" rx="18" fill="#eeeeee"/>
+  <circle cx="205" cy="220" r="79" fill="#585858"/>
+  <circle cx="205" cy="220" r="69" fill="#343434"/>
+  <use href="#neutral-lens" transform="translate(205 220)"/>
+  <g clip-path="url(#scene-clip)">
+    <rect x="420" y="94" width="350" height="546" fill="#49c1bb"/>
+    <path d="M420 310 L457 289 L487 316 V640 H420Z" fill="#299e98"/>
+    <path d="M713 284 L748 261 L781 284 V640 H713Z" fill="#38aaa3"/>
+    <path d="M424 130 Q475 108 510 131 T602 130 T720 119 L785 143 V183 H420Z" fill="#65d0c8"/>
+    <path d="M429 588 L499 552 L562 572 L625 549 L693 581 L770 555 V640 H420Z" fill="#269b94"/>
+    <path d="M572 564 H618 V651 H572Z" fill="#66c7ba"/>
+    <path d="M608 564 H618 V651 H608Z" fill="#207b76"/>
+    <rect x="493" y="127" width="204" height="453" rx="29" fill="#2d9c92" stroke="#197c76" stroke-width="5"/>
+    <path d="M507 148 Q595 102 683 148 V168 Q595 145 507 168Z" fill="#51b6a9"/>
+    <g fill="#237f76" stroke="#1b716d" stroke-width="3">
+      <circle cx="595" cy="220" r="79"/>
+      <circle cx="595" cy="370" r="79"/>
+      <circle cx="595" cy="520" r="79"/>
+    </g>
+    <g fill="#155f5b">
+      <circle cx="595" cy="220" r="69"/>
+      <circle cx="595" cy="370" r="69"/>
+      <circle cx="595" cy="520" r="69"/>
+    </g>
+    <use href="#neutral-lens" transform="translate(595 220)"/>
+    <circle cx="595" cy="370" r="62" fill="#91b65f"/>
+    <circle cx="595" cy="370" r="60" fill="url(#amber-grid)"/>
+    <circle cx="595" cy="520" r="62" fill="#68cdb9"/>
+    <circle cx="595" cy="520" r="60" fill="url(#green-grid)"/>
+  </g>
+</svg>

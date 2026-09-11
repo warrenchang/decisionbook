@@ -33,7 +33,7 @@ When the outcome depends on other people’s choices, a good move must fit what 
 - Distinguish coordination, mixed motives, and escalation while separating equilibrium from welfare and advice.
 - Redesign one strategic situation by changing communication, commitment, timing, monitoring, or exit.
 
-## A game is a model, not the situation itself
+## Representing the strategic situation {#a-game-is-a-model-not-the-situation-itself}
 
 A **game** is a mathematical representation of a strategic situation. At minimum, it specifies:
 
@@ -43,7 +43,7 @@ A **game** is a mathematical representation of a strategic situation. At minimum
 4. **Information:** What does each player know, observe, or believe?
 5. **Timing:** Who moves when, and can later players observe earlier moves?
 
-Payoffs need not be money. They may include safety, time, status, fairness, identity, reputation, legal exposure, regret, or future access. A payoff table does not prove that these motives are correctly measured. It makes the proposed motives inspectable.
+Payoffs need not be money. They may include safety, time, status, fairness, identity, reputation, legal exposure, regret, or future access. A payoff table makes the proposed motives inspectable.
 
 Timing also changes the game. Simultaneous price choices differ from a market in which one firm moves first and the other observes. A one-shot interaction differs from a relationship with an uncertain end. A public action differs from a private one because reputation and sanction become possible.
 
@@ -67,7 +67,7 @@ Consider a stylized price-war game. The numbers are illustrative profit units.
 
 If Firm 2 chooses a high price, Firm 1 earns 15 by choosing low rather than 10 by choosing high. If Firm 2 chooses low, Firm 1 earns 5 by choosing low rather than 2 by choosing high. Low is therefore Firm 1's best response to either action. The same reasoning holds for Firm 2. The unique Nash equilibrium is low–low, with payoffs 5,5, even though both firms would earn more at high–high.
 
-The matrix clarifies an incentive conflict. It does not establish that real firms face these payoffs. Nor does “cooperation” between competitors automatically improve welfare: coordinated high prices may benefit firms while harming consumers and violating competition law. Efficiency must be defined for everyone affected, not only the players shown in the matrix.
+The matrix clarifies an incentive conflict: coordinated high prices may benefit firms while harming consumers and violating competition law. Efficiency must be defined for everyone affected, not only the players shown in the matrix.
 
 
 ### What equilibrium does—and does not—tell us
@@ -88,7 +88,7 @@ Coordination games often have several equilibria. The problem is not finding an 
 
 Software formats and keyboard layouts become more useful when others use the same standard. These **network benefits** can make switching costly even when an alternative has attractive features.
 
-QWERTY is a useful teaching case only if its history is handled carefully. David (1985) used it to motivate path dependence, while Liebowitz and Margolis (1990) challenged the familiar claim that QWERTY survived because it was deliberately designed to slow typists and was technically inferior. The defensible lesson is not that bad standards always persist. It is that historical adoption, installed bases, learning, compatibility, and switching costs can make a standard self-reinforcing. Whether the selected standard is inferior is a separate empirical question.
+David (1985) used QWERTY to motivate path dependence, while Liebowitz and Margolis (1990) challenged the familiar claim that QWERTY survived because it was deliberately designed to slow typists and was technically inferior. Historical adoption, installed bases, learning, compatibility, and switching costs can make a standard self-reinforcing.
 
 ### Focality, payoff dominance, and evidence
 
@@ -100,7 +100,7 @@ Culture can supply common expectations, but it can also divide them. When groups
 
 ### Strategic uncertainty: the stag hunt
 
-The **stag hunt** separates a high-value coordinated action from a safe individual action. Consider this illustrative matrix:
+Both players could gain more by pursuing the stag together. Yet each risks being left with little if the other hunts hare. Agreement about the better joint outcome is therefore insufficient: each needs enough confidence that the other will follow through. The **stag hunt** makes that strategic uncertainty visible:
 
 | Player 1 \ Player 2 | Stag | Hare |
 | --- | ---: | ---: |
@@ -116,9 +116,9 @@ $$
 EU(\text{Stag})=15p+2(1-p)=2+13p,
 $$
 
-while $EU(\text{Hare})=10$. Under that linear-payoff assumption, Stag is strictly better when $p>8/13\approx0.615$; at the threshold, both actions are best responses. With nonlinear utility over the consequences, the threshold must be calculated from their utilities rather than the printed money or point values. The illustration makes one barrier visible: **strategic uncertainty** about whether others will coordinate can matter separately from ordinary outcome risk.
+while $EU(\text{Hare})=10$. Stag is strictly better when $p>8/13\approx0.615$; at the threshold, both actions are best responses. The illustration makes one barrier visible: **strategic uncertainty** about whether others will coordinate can matter separately from ordinary outcome risk.
 
-A new software platform poses a similar coordination problem. Users hesitate when few applications are available, while developers hesitate when few users have joined. A pilot, compatibility guarantee, or initial investment can change what each side expects the other to do. The stag-hunt model helps identify that dependence; applying it requires evidence about the actual payoffs and alternatives (Skyrms, 2004).
+A new software platform poses a similar coordination problem. Users hesitate when few applications are available, while developers hesitate when few users have joined. A pilot, compatibility guarantee, or initial investment can change what each side expects the other to do. The stag-hunt model helps identify that dependence (Skyrms, 2004).
 
 ## Mixed motives, anti-coordination, and escalation
 
@@ -148,9 +148,9 @@ The lesson across these games is simple: “coordinate” is incomplete advice. 
 
 ### Commitment changes the game
 
-A credible commitment alters another player's expectations because reversing course becomes costly, observable, or impossible. Schelling (1960) emphasized that deliberately limiting one's future freedom can sometimes increase bargaining power.
+Keeping options open usually seems like an advantage. In bargaining, however, the other side may disregard a promise or threat precisely because you could cheaply abandon it. A credible commitment alters their expectations by making reversal costly, observable, or impossible. Schelling (1960) emphasized that deliberately limiting one's future freedom can sometimes increase bargaining power. The gain comes from changing the other player's response; the cost is the flexibility surrendered.
 
-The Ford Price Promise provides a useful stylized case. A promise to reimburse buyers if the recommended price later fell could reassure consumers who expected a future price cut. It also raised Ford's cost of cutting price after the sale. If rivals adopted similar guarantees, the strategic incentives surrounding later price reductions could change. The case demonstrates how a customer promise may also operate as a competitive commitment. It does not by itself establish the policy's market-wide causal effect; price-war remedies remain conditional on the competitive structure (Rao et al., 2000).
+The Ford Price Promise provides a useful stylized case. A promise to reimburse buyers if the recommended price later fell could reassure consumers who expected a future price cut. It also raised Ford's cost of cutting price after the sale. If rivals adopted similar guarantees, the strategic incentives surrounding later price reductions could change. The case demonstrates how a customer promise may also operate as a competitive commitment (Rao et al., 2000).
 
 Commitment and escalation can both make retreat difficult. To distinguish them, identify the response the commitment is supposed to change, check whether the audience can observe and believe it, and compare that future benefit with the flexibility sacrificed if circumstances change.
 
@@ -163,7 +163,7 @@ In Shubik's dollar-auction game, the highest bidder wins the prize, but the seco
 
 The game makes it possible to examine two explanations: **competition neglect**, when bidders enter without accounting for rivals’ persistence, and **escalation of commitment**, when earlier choices make stopping difficult (Staw, 1976). A further bid can also be a forward-looking best response to a belief that the rival will stop. Bidding beyond the prize therefore does not by itself establish either psychological failure.
 
-The demonstration suggests a precaution before entry: set a reservation value and a stop rule based on future consequences, with an independent reviewer to challenge escalation. Applying the lesson to an acquisition still requires information about synergies, alternatives, and rivals.
+The demonstration suggests a precaution before entry: set a reservation value and a stop rule based on future consequences, with an independent reviewer to challenge escalation.
 
 Competitive acquisition creates a related trap. A bidder can value a target in isolation, then discover that the price is determined by rivals who saw the same target. When bidders have noisy estimates of a common value, winning can be bad news: the winner may simply be the most optimistic bidder (Bazerman & Samuelson, 1983). Before bidding, separate private synergies from common value, model likely rival entry, and set a reservation price that does not rise merely because competition becomes visible.
 :::
@@ -194,7 +194,7 @@ The same visible behavior can arise from different games. Two firms may keep pri
 
 ## Application: run a strategic audit before giving advice
 
-When a strategic problem appears, use this sequence:
+A forceful move can fail when it solves the wrong strategic problem: pressure may harden a distributional conflict, while reassurance may leave an incentive to defect unchanged. Before choosing the move, establish which dependence makes the current outcome persist. Use this sequence:
 
 1. **Name the players.** Include absent stakeholders, regulators, customers, and future selves whose responses matter.
 2. **List actions.** Include delay, exit, communication, delegation, and rule changes—not only the two visible moves.
@@ -252,7 +252,7 @@ A market is not only buyers, sellers, and values. Its trading rule determines wh
 | Call market | Orders are pooled and matched at a scheduled clearing time. | Pooling reduces continuous speed competition but makes the clearing and rationing rule consequential. |
 : Market institutions alter information, timing, and bargaining power {#tbl-market-institutions}
 
-A fish-market activity can assign private buyer values and vary available supply across rounds, extending the experimental-market tradition of Smith (1962). Run the same underlying values under different trading rules, then compare transaction prices, quantity, total surplus, and how surplus is divided between buyers and sellers. Classroom numbers are outcomes of that implementation—not empirical estimates of real markets. The scientific question is which rule changes price discovery, allocative efficiency, adaptation to a supply shock, and bargaining power, holding the economic environment as constant as possible.
+A fish-market activity can assign private buyer values and vary available supply across rounds, extending the experimental-market tradition of Smith (1962). Run the same underlying values under different trading rules, then compare transaction prices, quantity, total surplus, and how surplus is divided between buyers and sellers. The scientific question is which rule changes price discovery, allocative efficiency, adaptation to a supply shock, and bargaining power, holding the economic environment as constant as possible.
 :::
 
 ## References cited in this chapter

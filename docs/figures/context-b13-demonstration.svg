@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="760" viewBox="0 0 1200 760"
+     width="1200" height="720" viewBox="0 0 1200 720"
      role="img" aria-labelledby="title desc"
      preserveAspectRatio="xMidYMid meet">
   <title id="title">One ambiguous mark, two context-dependent readings</title>
-  <desc id="desc">Two rows contain the same central vector mark. Between 12 and 14, it is readily read as 13. Between A and C, it is readily read as B. A boundary note states that this is a demonstration of context-sensitive interpretation, not evidence for a specific neural mechanism.</desc>
+  <desc id="desc">Two rows contain the same central vector mark, made from the same bold typeface at the same size and baseline as the surrounding characters. Between 12 and 14, it is readily read as 13. Between A and C, it is readily read as B.</desc>
 
   <defs>
     <style>
@@ -17,15 +17,24 @@
       .boundary { font: 20px Arial, Helvetica, sans-serif; fill: #53697a; }
     </style>
 
-    <!-- Original ambiguous glyph: a separated stem and two-lobed curve can be read as 13 or B. -->
-    <g id="ambiguous-mark" fill="none" stroke="#17324d" stroke-width="11"
-       stroke-linecap="round" stroke-linejoin="round">
-      <path d="M -28,-58 L -28,58"/>
-      <path d="M -8,-58 C 37,-58 47,-31 14,0 C 47,29 37,58 -8,58"/>
-    </g>
+    <!-- Context glyphs share Arial-BoldMT outlines at 74 pt, preserving font weight and baseline across readers. -->
+    <path id="glyph-1" d="M29.1230 -0.0000 L18.9697 -0.0000 L18.9697 -38.2646 Q13.4053 -33.0615 5.8535 -30.5684 L5.8535 -39.7822 Q9.8281 -41.0830 14.4893 -44.7144 Q19.1504 -48.3457 20.8848 -53.1875 L29.1230 -53.1875 Z"/>
+    <path id="glyph-2" d="M37.4336 -9.4307 L37.4336 -0.0000 L1.8428 -0.0000 Q2.4209 -5.3477 5.3115 -10.1353 Q8.2021 -14.9229 16.7295 -22.8359 Q23.5947 -29.2314 25.1484 -31.5078 Q27.2441 -34.6514 27.2441 -37.7227 Q27.2441 -41.1191 25.4194 -42.9438 Q23.5947 -44.7686 20.3789 -44.7686 Q17.1992 -44.7686 15.3203 -42.8535 Q13.4414 -40.9385 13.1523 -36.4941 L3.0352 -37.5059 Q3.9385 -45.8887 8.7080 -49.5381 Q13.4775 -53.1875 20.6318 -53.1875 Q28.4727 -53.1875 32.9531 -48.9600 Q37.4336 -44.7324 37.4336 -38.4453 Q37.4336 -34.8682 36.1509 -31.6343 Q34.8682 -28.4004 32.0859 -24.8594 Q30.2432 -22.5107 25.4375 -18.1025 Q20.6318 -13.6943 19.3491 -12.2490 Q18.0664 -10.8037 17.2715 -9.4307 Z"/>
+    <path id="glyph-4" d="M23.0527 -0.0000 L23.0527 -10.6592 L1.3730 -10.6592 L1.3730 -19.5479 L24.3535 -53.1875 L32.8809 -53.1875 L32.8809 -19.5840 L39.4570 -19.5840 L39.4570 -10.6592 L32.8809 -10.6592 L32.8809 -0.0000 Z M23.0527 -19.5840 L23.0527 -37.6865 L10.8760 -19.5840 Z"/>
+    <path id="glyph-A" d="M53.1514 -0.0000 L41.5166 -0.0000 L36.8916 -12.0322 L15.7178 -12.0322 L11.3457 -0.0000 L0.0000 -0.0000 L20.6318 -52.9707 L31.9414 -52.9707 Z M33.4590 -20.9570 L26.1602 -40.6133 L19.0059 -20.9570 Z"/>
+    <path id="glyph-B" d="M5.4199 -52.9707 L26.5938 -52.9707 Q32.8809 -52.9707 35.9702 -52.4468 Q39.0596 -51.9229 41.4985 -50.2607 Q43.9375 -48.5986 45.5635 -45.8345 Q47.1895 -43.0703 47.1895 -39.6377 Q47.1895 -35.9160 45.1841 -32.8086 Q43.1787 -29.7012 39.7461 -28.1475 Q44.5879 -26.7383 47.1895 -23.3418 Q49.7910 -19.9453 49.7910 -15.3564 Q49.7910 -11.7432 48.1108 -8.3286 Q46.4307 -4.9141 43.5220 -2.8726 Q40.6133 -0.8311 36.3496 -0.3613 Q33.6758 -0.0723 23.4502 -0.0000 L5.4199 -0.0000 Z M16.1152 -44.1543 L16.1152 -31.9053 L23.1250 -31.9053 Q29.3760 -31.9053 30.8936 -32.0859 Q33.6396 -32.4111 35.2114 -33.9829 Q36.7832 -35.5547 36.7832 -38.1201 Q36.7832 -40.5771 35.4282 -42.1128 Q34.0732 -43.6484 31.3994 -43.9736 Q29.8096 -44.1543 22.2578 -44.1543 Z M16.1152 -23.0889 L16.1152 -8.9248 L26.0156 -8.9248 Q31.7969 -8.9248 33.3506 -9.2500 Q35.7354 -9.6836 37.2349 -11.3638 Q38.7344 -13.0439 38.7344 -15.8623 Q38.7344 -18.2471 37.5781 -19.9092 Q36.4219 -21.5713 34.2358 -22.3301 Q32.0498 -23.0889 24.7510 -23.0889 Z"/>
+    <path id="glyph-C" d="M39.2764 -19.4756 L49.6465 -16.1875 Q47.2617 -7.5156 41.7153 -3.3062 Q36.1689 0.9033 27.6416 0.9033 Q17.0908 0.9033 10.2979 -6.3052 Q3.5049 -13.5137 3.5049 -26.0156 Q3.5049 -39.2402 10.3340 -46.5571 Q17.1631 -53.8740 28.2920 -53.8740 Q38.0117 -53.8740 44.0820 -48.1289 Q47.6953 -44.7324 49.5020 -38.3730 L38.9150 -35.8438 Q37.9756 -39.9629 34.9946 -42.3477 Q32.0137 -44.7324 27.7500 -44.7324 Q21.8604 -44.7324 18.1929 -40.5049 Q14.5254 -36.2773 14.5254 -26.8105 Q14.5254 -16.7656 18.1387 -12.5020 Q21.7520 -8.2383 27.5332 -8.2383 Q31.7969 -8.2383 34.8682 -10.9482 Q37.9395 -13.6582 39.2764 -19.4756 Z"/>
+    <g id="glyph-12"><use href="#glyph-1"/><use href="#glyph-2" transform="translate(41.1553 0)"/></g>
+    <g id="glyph-14"><use href="#glyph-1"/><use href="#glyph-4" transform="translate(41.1553 0)"/></g>
+    <!-- Split the bold B immediately after its stem; both rows reuse this exact glyph. -->
+    <clipPath id="stem-separation" clipPathUnits="userSpaceOnUse">
+      <rect x="-1" y="-75" width="17.1152" height="80"/>
+      <rect x="18.7152" y="-75" width="45" height="80"/>
+    </clipPath>
+    <g id="ambiguous-mark" clip-path="url(#stem-separation)"><use href="#glyph-B"/></g>
   </defs>
 
-  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect width="1200" height="720" fill="#ffffff"/>
 
   <text class="figure-title" x="600" y="58" text-anchor="middle">One mark, two readings</text>
   <text class="subtitle" x="600" y="92" text-anchor="middle">Read the middle mark in each row before comparing them.</text>
@@ -38,9 +47,9 @@
 
   <rect x="530" y="205" width="140" height="118" rx="18"
         fill="#fff4dc" stroke="#d89b3c" stroke-width="2.5"/>
-  <text class="sequence" x="420" y="295" text-anchor="middle">12</text>
-  <use href="#ambiguous-mark" transform="translate(600 264)"/>
-  <text class="sequence" x="780" y="295" text-anchor="middle">14</text>
+  <use class="sequence" href="#glyph-12" transform="translate(378.8447 295)"/>
+  <use class="sequence" href="#ambiguous-mark" transform="translate(573.2798 295)"/>
+  <use class="sequence" href="#glyph-14" transform="translate(738.8447 295)"/>
 
   <!-- Letter-context row -->
   <rect x="90" y="370" width="1020" height="210" rx="24"
@@ -50,13 +59,13 @@
 
   <rect x="530" y="445" width="140" height="118" rx="18"
         fill="#fff4dc" stroke="#d89b3c" stroke-width="2.5"/>
-  <text class="sequence" x="420" y="535" text-anchor="middle">A</text>
-  <use href="#ambiguous-mark" transform="translate(600 504)"/>
-  <text class="sequence" x="780" y="535" text-anchor="middle">C</text>
+  <use class="sequence" href="#glyph-A" transform="translate(393.2798 535)"/>
+  <use class="sequence" href="#ambiguous-mark" transform="translate(573.2798 535)"/>
+  <use class="sequence" href="#glyph-C" transform="translate(753.2798 535)"/>
 
   <rect x="415" y="602" width="370" height="38" rx="19" fill="#fff4dc" stroke="#d89b3c" stroke-width="2"/>
   <text class="same-label" x="600" y="627" text-anchor="middle">IDENTICAL VECTOR MARK</text>
 
   <text class="takeaway" x="600" y="684" text-anchor="middle">Context changes the most plausible interpretation.</text>
-  <text class="boundary" x="600" y="719" text-anchor="middle">Demonstration—not evidence of a specific neural mechanism or effect size.</text>
+
 </svg>

@@ -11,7 +11,9 @@ aliases:
 
 *Formal details supporting Chapters 1 and 2*
 
-Suppose you are comparing two job offers. You want to know which options are feasible, how their consequences differ, and whether another conversation with an employer could change your choice. This appendix puts the reasoning from [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd) into mathematical form. Use the equations to expose an assumption or test a recommendation; the model still depends on the evidence and objectives supplied to it.
+Suppose one job offer pays more while another leaves more time and flexibility. A salary comparison favors the first; a comparison of daily life may favor the second. Then an employer offers to negotiate, changing the menu you thought you had to choose from. You need a recommendation, but it keeps moving as forecasts, priorities, and feasible options change. Which assumptions actually decide the result, and which further question is worth asking?
+
+This appendix puts the reasoning from [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd) into mathematical form. Use the equations to expose an assumption or test a recommendation.
 
 ## 1. Feasible and consideration sets {#feasible-and-consideration-sets}
 
@@ -58,7 +60,9 @@ a\succeq b
 V(a)\geq V(b).
 $$
 
-For infinite domains, completeness and transitivity alone need not guarantee a useful numerical representation; additional continuity, measurability, topological, or related regularity conditions are required depending on the domain. The maximization expression below also assumes that a maximum exists. With a finite, nonempty $A$, existence is immediate. With an infinite $A$, compactness, continuity, or another existence argument may be needed. This reduced-form distinction between a coherent benchmark and a descriptive theory has long organized decision research (Edwards, 1954).
+With a finite, nonempty $A$, a maximum exists.[^appa-infinite-domains] This benchmark has long organized decision research (Edwards, 1954).
+
+[^appa-infinite-domains]: Infinite domains require additional regularity conditions for numerical representation and existence of a maximum. The appropriate conditions depend on the domain; continuity and compactness provide familiar sufficient conditions for maximization.
 
 The model's **choice correspondence** returns all feasible maximizers:
 
@@ -75,13 +79,13 @@ $$
 
 If several alternatives tie, $C(A)$ contains several actions. Predicting a single observed choice then requires a tie-breaking rule. For the job offers, equal scores mean that the model has not yet selected one job over the other.
 
-::: {.callout-important title="Do not subtract ordinal scores" icon=false}
-A value representation of a ranking is ordinal: any strictly increasing transformation represents the same preferences. Numerical gaps such as $V(a)-V(b)$ therefore have no substantive magnitude unless $V$ is placed on a cardinal scale. Expected-utility indices are unique up to positive affine transformations, and multiattribute scores require explicit normalization. This appendix uses value differences only after those scale assumptions are stated.
+::: {.callout-note title="Value scales" icon=false}
+A value representation of a ranking is ordinal: any strictly increasing transformation represents the same preferences. Interpreting numerical gaps such as $V(a)-V(b)$ requires a cardinal scale. Expected-utility indices are unique up to positive affine transformations, and multiattribute scores require explicit normalization.
 :::
 
 ## 3. Consequences, beliefs, and expected utility {#consequences-beliefs-and-expected-utility}
 
-The reduced-form function $V(a)$ can be unpacked into beliefs about consequences and values over those consequences.
+Two advisers may recommend different jobs because they predict different promotion prospects—or because they agree about those prospects but value the extra income differently. Combining both judgments in one score hides which disagreement needs to be resolved. The reduced-form function $V(a)$ can be unpacked into beliefs about consequences and values over those consequences.
 
 If action $a$ produces a known consequence $x(a)$, and $u(x)$ represents the value of consequence $x$, then
 
@@ -114,9 +118,9 @@ This representation separates three objects:
 - $P(o\mid a)$: beliefs or specified probabilities over consequences; and
 - $u(o)$: values or preferences over consequences.
 
-These are probabilities for the consequences of taking each action; an observed association between an action and an outcome does not automatically supply them. The formula also requires more than completeness and transitivity. For lotteries with specified probabilities, the von Neumann–Morgenstern expected-utility representation additionally relies on continuity and independence conditions (von Neumann & Morgenstern, 1944). A subjective-probability interpretation requires further assumptions connecting choices to beliefs. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#expected-utility-value-over-final-consequences) develops expected value, expected utility, final consequences, curvature, and the independence axiom in the setting of risky choice.
+The probabilities describe the consequences of taking each action. For lotteries with specified probabilities, the von Neumann–Morgenstern expected-utility representation relies on completeness, transitivity, continuity, and independence conditions (von Neumann & Morgenstern, 1944). A subjective-probability interpretation adds assumptions connecting choices to beliefs. [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#expected-utility-value-over-final-consequences) develops expected value, expected utility, final consequences, curvature, and the independence axiom in the setting of risky choice.
 
-Nothing in the expression requires selfish values. A consequence may include effects on other people, fairness, identity, environmental outcomes, duties, or future generations. Some rights and obligations may instead be represented as constraints that remove impermissible actions from $A$. Neither placement settles the normative question of whose interests count or which trade-offs are legitimate.
+A consequence may include effects on other people, fairness, identity, environmental outcomes, duties, or future generations. Some rights and obligations may instead be represented as constraints that remove impermissible actions from $A$.
 
 ## 4. Invariance, regularity, and omitted variables {#invariance-regularity-and-omitted-variables}
 
@@ -140,7 +144,7 @@ a^{\mathrm{choice}}
 V(a\mid z,m).
 $$
 
-This decomposition is not by itself a predictive psychological theory. If $K$, $P$, and $u$ are adjusted only after the choice has been observed, almost any behavior can be rationalized. The representation becomes testable only when the relevant variables and their response to context are specified or measured independently of the outcome. It also represents selection, not successful execution. A model of implementation would require a separate mapping from chosen action to performed action and realized consequence.
+To test this representation, specify or measure $K$, $P$, $u$, and their response to context independently of the observed choice. A model of implementation adds a mapping from chosen action to performed action and realized consequence.
 
 Let $d_1$ and $d_2$ be two descriptions of a decision. If they leave the feasible set, consequence distributions, and values unchanged, then description invariance requires the same choice correspondence:
 
@@ -150,7 +154,7 @@ $$
 
 This condition does not require the same single action to be observed when the common correspondence contains several tied maximizers. An invariant point prediction requires either a unique maximizer or a tie-breaking rule that is itself held fixed.
 
-The survival-versus-mortality result is informative because the descriptions were designed to express complementary versions of the same outcome information, yet preferences shifted (McNeil et al., 1982). The result challenges description invariance under that representation; it does not show that every wording change is normatively irrelevant or that all readers understand complementary descriptions identically.
+The survival-versus-mortality result challenges description invariance: descriptions designed to express complementary versions of the same outcome information produced different preferences (McNeil et al., 1982).
 
 In stochastic choice models satisfying **regularity**, adding a new alternative $d$ cannot increase the probability of choosing an existing alternative $a$:
 
@@ -160,7 +164,7 @@ $$
 \Pr(a\mid A).
 $$
 
-An attraction effect occurs when an asymmetrically dominated decoy raises the choice share of a target, violating regularity for that menu comparison (Huber et al., 1982). The formal condition concerns probabilities across otherwise comparable menus. It does not imply that every added option creates an attraction effect.
+An attraction effect occurs when an asymmetrically dominated decoy raises the choice share of a target, violating regularity across otherwise comparable menus (Huber et al., 1982).
 
 Defaults illustrate a different boundary. An opt-in and an opt-out design are not the same decision merely because both responses are physically available. A default may change effort, delay, perceived recommendation, responsibility, anticipated regret, or the consequence of inaction. If action costs matter, they should enter the consequences or a consistently defined net value; they should not appear as an extra primitive after $V$ has already absorbed them. [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd) use these distinctions to separate a challenge to an invariant benchmark from a variable omitted by a thin model.
 
@@ -218,7 +222,7 @@ $$
 
 A transparent normalization sets $v_j=0$ at the least-preferred relevant level and $v_j=1$ at the most-preferred relevant level for the decision. The resulting $w_j$ are **swing weights**: they represent the importance of moving across the stated range of attribute $j$, not a context-free claim that “health matters 30 percent.” Changing the range changes the meaning of the weight.
 
-The additive form requires appropriate preferential-independence and scaling assumptions. It is not justified merely because a worksheet has several columns. If workload affects health, learning affects future income, or two attributes describe the same consequence, a simple sum can double-count value. The analyst should first redefine overlapping attributes. If a substantively important interaction remains, it should be modeled and elicited explicitly rather than hidden in an unexplained adjustment.
+The additive form requires appropriate preferential-independence and scaling assumptions. If workload affects health, learning affects future income, or two attributes describe the same consequence, a simple sum can double-count value. Redefine overlapping attributes first, then model and elicit any substantively important interaction.
 
 When consequences are uncertain, an additive multiattribute utility model can be nested inside expected utility:
 
@@ -232,11 +236,13 @@ w_jv_j\bigl(x_j(a,o)\bigr)
 \right].
 $$
 
-This expression keeps prediction and valuation separate. $P(o\mid a)$ represents what is expected to happen; $v_j$ and $w_j$ represent how performance over defined attribute ranges is valued. Under uncertainty, the $v_j$ terms must function as cardinal von Neumann–Morgenstern utility components on compatible scales, and the additive form requires additive independence over the relevant lotteries, which is stronger than the assumptions behind a deterministic scoring table. Without those conditions, the expression is only a pragmatic expected-score model, not an expected-utility representation. The model remains an aid to disciplined discussion, not a machine for discovering ethically correct weights (Keeney & Raiffa, 1976).
+This expression keeps prediction and valuation separate. $P(o\mid a)$ represents what is expected to happen; $v_j$ and $w_j$ represent how performance over defined attribute ranges is valued. An expected-utility interpretation requires cardinal von Neumann–Morgenstern utility components on compatible scales and additive independence over the relevant lotteries (Keeney & Raiffa, 1976).[^appa-additive-utility]
+
+[^appa-additive-utility]: Additive independence under uncertainty is stronger than the assumptions behind a deterministic scoring table. Without the required lottery preferences, the expression can still serve as an expected-score model, but it is not an expected-utility representation.
 
 ## 7. Value of information {#value-of-information}
 
-Would a further conversation with an employer be worth your time? Information has instrumental value when its possible answers let you choose better. A question that cannot affect any relevant action has no instrumental value for that decision, even if the answer is interesting.
+You could spend another evening researching an employer and still choose the same job regardless of what you find. Meanwhile, one short question about flexible hours might reverse the decision. Information has instrumental value when its possible answers let you choose better. A question that cannot affect any relevant action has no instrumental value for that decision, even if the answer is interesting.
 
 Let $\theta\in\Theta$ denote an uncertain state of the world, where $\Theta$ is finite or countable and the relevant expectations converge. Let $p(\theta)$ be the prior probability and $u(a,\theta)$ the value produced by action $a$ in state $\theta$. Without additional information, the best expected value is
 
@@ -266,7 +272,7 @@ EVPI
 V_{\mathrm{PI}}-V_0.
 $$
 
-Under the stated model, finite expectations, the same action set, and costless accurate revelation of the relevant state, $EVPI\geq 0$. It is a gross upper bound on the value of any signal about that same $\theta$ for that same decision. It is not an upper bound on information that changes the action set, reveals a different state, creates strategic consequences, or serves another objective.
+With finite expectations, a fixed action set, and costless accurate revelation of the relevant state, $EVPI\geq 0$. It is a gross upper bound on the value of any signal about that $\theta$ for the same decision.
 
 Now suppose a test, pilot, interview, or study produces a finite or countable signal $Y$, with likelihood $p(y\mid\theta)$. A coherent joint probability model implies
 
@@ -321,7 +327,7 @@ If every possible signal leads to the same action and the signal changes no othe
 
 ## 8. Sensitivity and robustness {#sensitivity-and-robustness}
 
-A job recommendation may depend on a forecast of promotion prospects or on the weight you give flexibility. Sensitivity analysis asks how far those inputs would have to change before the recommendation changes. On a declared cardinal scale, the value difference between alternatives $a$ and $b$ is
+A precise-looking ranking can conceal a fragile recommendation: a small revision to promotion prospects or the value of flexibility may put the other job first. Before committing, you need to know whether the recommendation survives the uncertainty you actually face. Sensitivity analysis asks how far those inputs would have to change before the recommendation changes. On a declared cardinal scale, the value difference between alternatives $a$ and $b$ is
 
 $$
 \Delta_{ab}=V(a)-V(b).
@@ -379,7 +385,7 @@ s\in
 \{\text{favorable},\text{central},\text{unfavorable}\}.
 $$
 
-A recommendation is robust over the declared scenario set when the same alternative remains preferred throughout it. That statement is conditional on the scenarios being substantively plausible; it does not prove global optimality or assign probabilities to scenarios that were never estimated. When rankings change, the analysis should report the conditions producing each recommendation rather than hide them inside an average score.
+A recommendation is robust over the declared scenario set when the same alternative remains preferred throughout it. When rankings change, report the conditions producing each recommendation.
 
 ## 9. Sequential choice, reversibility, and the cost of analysis {#sequential-choice-and-reversibility}
 
@@ -414,13 +420,13 @@ $$
 
 Under this stylized metareasoning rule, conduct the step when $G(r)>0$. The analysis-dependent action set represents options that expire, emerge, or become infeasible during deliberation; any other consequence of delay belongs in $V(a\mid y,r)$ or $c(r)$, but not both. This is a normative comparison of the expected benefit and cost of one more analysis step. It is not Simon's satisficing model itself. Bounded rationality supplies the motivation—search, attention, time, memory, and computation are scarce—while satisficing describes a different stopping strategy based on aspiration levels (Simon, 1955, 1956).
 
-Low-stakes, familiar, reversible decisions often justify routines or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback decisions often justify more structure. These are reasons to vary the depth of analysis, not proof that a particular formula should govern every decision.
+Low-stakes, familiar, reversible decisions often justify routines or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback decisions often justify more structure.
 
-## 10. What formal analysis can and cannot establish {#what-formal-analysis-can-and-cannot-establish}
+## 10. Put the analysis to work {#what-formal-analysis-can-and-cannot-establish}
 
 Return to the job offers. The analysis is useful if it reveals an overlooked option, a forecast that deserves checking, or a trade-off hidden inside a single score. It can tell you which assumptions support the recommendation and what would change it.
 
-The equations cannot supply accurate forecasts or settle whose interests should count. They also do not guarantee that the chosen action will be carried out or that its outcome will be interpreted fairly. Formal analysis provides a precise account of the assumptions; behavioral evidence, practical knowledge, and ethical reasoning determine whether they are appropriate.
+Formal analysis makes the assumptions precise. Behavioral evidence, practical knowledge, and ethical reasoning help determine which assumptions to use and how to act on the result.
 
 [Chapter 16](../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd) develops risky choice further, while [Chapter 20](../chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd) examines how labels and mental accounts change the way consequences are compared.
 

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-34c7abfd9a2c37ec5dbcf238d516f91e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-49e46666a4e6181e671b3ac5e9934df2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -627,8 +627,8 @@ window.Quarto = {
 
 
 <p><em>A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments</em></p>
-<p>A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it, but attendance might also have risen because the season changed or a different group of patients received appointments. What would let them attribute the improvement to the reminder?</p>
-<p>This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data, so you can reproduce its calculations without mistaking them for evidence about real patients. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.</p>
+<p>A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it and expand its use. Yet attendance might also have risen because the season changed or a different group of patients received appointments. Acting on the wrong explanation could direct time and money toward a reminder that made no difference. What comparison would let the clinic decide whether the change deserves credit?</p>
+<p>This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data so you can reproduce its calculations. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.</p>
 <section id="the-experimental-workflow" class="level2">
 <h2 data-anchor-id="the-experimental-workflow">The experimental workflow</h2>
 <p>The work has five phases. Each leaves a record needed to interpret what follows.</p>
@@ -905,13 +905,13 @@ Table&nbsp;E.3: Designs answer different questions under different assumptions
 <h3 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h3>
 <p><strong>Random sampling</strong> selects units from a population and supports population description under the sampling design. <strong>Random assignment</strong> allocates eligible units to conditions and supports causal comparison within the experimental sample.</p>
 <p>A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.</p>
-<div id="fig-random-sampling-vs-assignment" class="quarto-float quarto-figure quarto-figure-center" alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast under appropriate assumptions.">
+<div id="fig-random-sampling-vs-assignment" class="quarto-float quarto-figure quarto-figure-center" alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/random-sampling-vs-assignment.svg" class="img-fluid figure-img" alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast under appropriate assumptions.">
+<img src="../figures/random-sampling-vs-assignment.svg" class="img-fluid figure-img" alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;E.2: Sampling connects observed people to a population; assignment creates a comparison within the study. Both inferences depend on the design and its implementation.
+Figure&nbsp;E.2: Sampling connects observed people to a population; assignment creates a comparison within the study.
 </figcaption>
 </figure>
 </div>
@@ -991,17 +991,17 @@ ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
 <p><span class="math display">\[
 LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 \]</span></p>
-<p>LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude. That rescaling does not make LATE the population-wide effect or establish that it will travel to another implementation.</p>
+<p>LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.</p>
 </section>
 <section id="spillovers-interference-and-displacement" class="level4">
 <h4 data-anchor-id="spillovers-interference-and-displacement">Spillovers, interference, and displacement</h4>
 <p>The usual no-interference assumption says one unit’s outcome does not depend on other units’ assignments. Social information, contagion, peer effects, congestion, and markets often violate it.</p>
 <p>Spillovers can make the standard difference too small, too large, or simply answer the wrong question. A job-placement program can help treated workers while displacing untreated workers from a fixed number of jobs. The direct effect and the total labor-market effect are different estimands.</p>
-<p>Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. None is automatic. State whose outcome depends on whose treatment.</p>
+<p>Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. State whose outcome depends on whose treatment.</p>
 </section>
 <section id="evaluation-can-change-behavior" class="level4">
 <h4 data-anchor-id="evaluation-can-change-behavior">Evaluation can change behavior</h4>
-<p>Participants may change behavior because they know they are being studied or because they infer what the researcher expects. The clinic should therefore consider whether the two reminder groups receive different attention beyond the intended message. These responses are possibilities to investigate, with no guaranteed direction.</p>
+<p>Participants may change behavior because they know they are being studied or because they infer what the researcher expects. The clinic should therefore consider whether the two reminder groups receive different attention beyond the intended message.</p>
 <p>Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.</p>
 </section>
 </section>
@@ -1018,7 +1018,7 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 <li>define a family for error-rate or false-discovery control where appropriate;</li>
 <li>preserve space for exploration and label it as exploration.</li>
 </ul>
-<p>Preregistration time-stamps decisions. It does not make a poor hypothesis important, an invalid measure valid, or a biased design causal. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.</p>
+<p>Preregistration time-stamps decisions. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.</p>
 <p>Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.</p>
 </section>
 </section>
@@ -1033,7 +1033,7 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 <li><strong>Multi-site replication</strong> estimates average effects and heterogeneity across implementations, populations, and settings.</li>
 <li><strong>Reanalysis or reproduction</strong> checks whether reported results follow from the declared data and code; it is not the same as collecting new data.</li>
 </ul>
-<p>Large replication projects in psychology and experimental economics found both replicated effects and substantial attenuation or heterogeneity (Camerer et al., 2016; Open Science Collaboration, 2015). The lesson is not that an entire field is false. It is that single studies—especially small, flexible, selected ones—provide less certainty than clean narratives imply.</p>
+<p>Large replication projects in psychology and experimental economics found both replicated effects and substantial attenuation or heterogeneity (Camerer et al., 2016; Open Science Collaboration, 2015). These projects show why estimates should be evaluated across studies.</p>
 <p>For a useful replication, document fidelity and departures, compare effect estimates with intervals, analyze protocol heterogeneity, and update the cumulative claim. A statistically significant original and nonsignificant replication can still have compatible estimates. A binary verdict discards that information.</p>
 </section>
 <section id="build-an-open-and-reproducible-workflow" class="level3">
@@ -1209,7 +1209,7 @@ Table&nbsp;E.5: A compact evidence design card
 </section>
 <section id="worked-study-from-question-to-report" class="level2">
 <h2 data-anchor-id="worked-study-from-question-to-report">Worked study: from question to report</h2>
-<p>Here is the complete calculation for the imagined clinic. This <strong>simulated teaching study</strong> connects the design record to generated outcomes and an estimate; it supplies no evidence about a real reminder programme.</p>
+<p>Here is the complete calculation for the imagined clinic. This <strong>simulated teaching study</strong> connects the design record to generated outcomes and an estimate.</p>
 <p><strong>Question.</strong> Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?</p>
 <p><strong>Design specified for this teaching example.</strong> Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.</p>
 <div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">
@@ -1285,14 +1285,14 @@ se = math.sqrt(
 )
 ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
 <p>The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is <strong>6.2 percentage points</strong>, with an approximate 95% confidence interval from <strong>0.8 to 11.5 percentage points</strong>.</p>
-<p><strong>Design-matched interpretation.</strong> In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The interval remains compatible with effects from about 0.8 to 11.5 points under the stated standard-error approximation. The result estimates the reminder package in the simulated study population. It does not establish which component caused the difference, whether the effect would persist in another clinic, or whether the redesign is ethically and operationally preferable for every patient group.</p>
-<p><strong>What the simulation leaves out.</strong> The code follows the declared generation and estimation procedure, but it bypasses recruitment, delivery, missing outcomes, and spillovers. A real study would need records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Reproducing the calculation checks the calculation; it does not verify real-world treatment delivery.</p>
+<p><strong>Design-matched interpretation.</strong> In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The approximate interval ranges from 0.8 to 11.5 points. The result estimates the effect of the reminder package in the simulated study population.</p>
+<p><strong>Implementing the study in a clinic.</strong> Preserve records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Use them to check recruitment, delivery, missing outcomes, and spillovers.</p>
 </section>
 <section id="ethics-is-part-of-identification" class="level2">
 <h2 data-anchor-id="ethics-is-part-of-identification">Ethics is part of identification</h2>
 <p>The Belmont principles remain a useful starting point: <strong>respect for persons</strong>, <strong>beneficence</strong>, and <strong>justice</strong>. Respect requires meaningful information and voluntary participation where consent applies. Beneficence requires risks to be minimized and justified by potential value. Justice asks who bears research burdens and who can benefit.</p>
 <p>Ethics also affects evidence. Coercive recruitment selects participants. Privacy fears change answers. An intervention that cannot be implemented ethically may have little policy relevance. Excluding affected groups for convenience can make the sample uninformative about those who bear the decision.</p>
-<p>Institutional review, data-protection law, registration, and local procedures change over time. Check current requirements with the relevant institution before collecting data; a historical lecture link is not approval.</p>
+<p>Institutional review, data-protection law, registration, and local procedures change over time. Check current requirements with the relevant institution before collecting data.</p>
 </section>
 <section id="key-ideas" class="level2">
 <h2 data-anchor-id="key-ideas">Key ideas</h2>

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-34c7abfd9a2c37ec5dbcf238d516f91e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-49e46666a4e6181e671b3ac5e9934df2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -656,7 +656,7 @@ window.Quarto = {
 <h2 data-anchor-id="risk-uncertainty-and-ambiguity">Risk, uncertainty, and ambiguity</h2>
 <p>In a textbook lottery, outcomes and probabilities are specified: a coin gives a 50% chance of each result. This is <strong>risk</strong> in the narrow decision-theory sense. In many real decisions, the probabilities are estimated, disputed, or partly unknown. This broader <strong>uncertainty</strong> includes model error, missing outcomes, changing environments, and ambiguous evidence.</p>
 <p><strong>Ambiguity</strong> describes uncertainty about the probability model itself. A jar with a known 30 red and 60 black balls is risky; a jar with 30 red and 60 balls of unknown black–yellow composition introduces ambiguity. A precise-looking spreadsheet can still be ambiguous if the probability estimates rest on one historical period or an untested causal model.</p>
-<p>The categories are useful, but the boundary is not natural law. Even “known” probabilities depend on a trusted randomization mechanism, and real-world risks often combine sampling variation with model uncertainty.</p>
+<p>Real-world risks often combine sampling variation with model uncertainty.</p>
 </section>
 <section id="expected-value-the-monetary-benchmark" class="level2">
 <h2 data-anchor-id="expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</h2>
@@ -710,7 +710,7 @@ u(W+c)=\sum_i p_i u(W+x_i).
 EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 \]</span></p>
 <p>Because <span class="math inline">\(\sqrt{25}=5\)</span>, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.</p>
-<p>This is an illustration, not an estimate of anyone’s utility. If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.</p>
+<p>If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.</p>
 </section>
 <section id="insurance-expected-loss-is-not-the-whole-premium" class="level3">
 <h3 data-anchor-id="insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss is not the whole premium</h3>
@@ -737,7 +737,7 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 </ul>
 <p>Many people prefer <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> but <span class="math inline">\(D\)</span> to <span class="math inline">\(C\)</span> (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.</p>
 <p>Under expected utility and independence, the pattern is inconsistent. If <span class="math inline">\(A\succ B\)</span>, subtracting the common 89% chance of receiving 1 implies <span class="math inline">\(C\succ D\)</span>. Choosing <span class="math inline">\(A\)</span> and <span class="math inline">\(D\)</span> gives special weight to the move from 99% to 100% or to the presentation of certainty.</p>
-<p>The Allais pattern identifies a violated axiom; it does not prove that every participant used the same psychology. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.</p>
+<p>The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.</p>
 </section>
 <section id="the-ellsberg-urn-risk-is-not-ambiguity" class="level2">
 <h2 data-anchor-id="the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: risk is not ambiguity</h2>
@@ -749,7 +749,7 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 <p>First choose a bet that pays if <strong>red</strong> is drawn or a bet that pays if <strong>black</strong> is drawn. Many choose red because its probability is known to be <span class="math inline">\(1/3\)</span>.</p>
 <p>Now choose a bet that pays if <strong>red or yellow</strong> is drawn or a bet that pays if <strong>black or yellow</strong> is drawn. Many choose black-or-yellow because its probability is known to be <span class="math inline">\(2/3\)</span>.</p>
 <p>Preferring red to black suggests <span class="math inline">\(P(R)&gt;P(B)\)</span>. Preferring black-or-yellow to red-or-yellow suggests <span class="math inline">\(P(B)&gt;P(R)\)</span>. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).</p>
-<p>This pattern is called <strong>ambiguity aversion</strong>, but it has boundaries. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:</p>
+<p>This pattern is called <strong>ambiguity aversion</strong>. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:</p>
 <ol type="1">
 <li>variability given a model;</li>
 <li>uncertainty about parameters;</li>
@@ -774,7 +774,7 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 </section>
 <section id="risk-communication-show-the-denominator-and-the-consequence" class="level2">
 <h2 data-anchor-id="risk-communication-show-the-denominator-and-the-consequence">Risk communication: show the denominator and the consequence</h2>
-<p>Suppose a treatment reduces an adverse outcome from 2 in 1,000 to 1 in 1,000 over one year. The relative reduction is 50%. The absolute reduction is 1 in 1,000, or 0.1 percentage points. Both are correct; neither is sufficient alone.</p>
+<p>Suppose a treatment reduces an adverse outcome from 2 in 1,000 to 1 in 1,000 over one year. The relative reduction is 50%. The absolute reduction is 1 in 1,000, or 0.1 percentage points. The relative figure makes the improvement sound substantial; the absolute figure shows the change in outcome frequency. A person weighing that benefit against costs and harms needs both views of the same change.</p>
 <p>Responsible risk communication reports:</p>
 <ul>
 <li>the reference population and time period;</li>
@@ -802,7 +802,7 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 </section>
 <section id="worked-application-should-we-insure-this-exposure" class="level2">
 <h2 data-anchor-id="worked-application-should-we-insure-this-exposure">Worked application: should we insure this exposure?</h2>
-<p>Return to the insurance quote. Instead of voting on whether the premium “feels high,” the team can organize its discussion around four questions:</p>
+<p>Return to the insurance quote. Declining it saves money the team can use elsewhere, but accepting an unaffordable loss could interrupt the very service that money supports. The team needs to identify which exposure it can carry and which protection the contract actually buys. Four questions organize that comparison:</p>
 <ol type="1">
 <li><strong>Exposure:</strong> list final consequences—restoration cost, interrupted service, legal liability, reputation, and possible ruin—not only the insurer’s payout.</li>
 <li><strong>Probability:</strong> use base rates for comparable organizations, internal controls, and uncertainty ranges. Separate known event frequency from model uncertainty.</li>
@@ -847,7 +847,7 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A retailer orders once before uncertain demand <span class="math inline">\(D\)</span> is known. Each unit sells for <span class="math inline">\(p\)</span>, costs <span class="math inline">\(c\)</span>, and has salvage value <span class="math inline">\(s\)</span>, with <span class="math inline">\(p&gt;c&gt;s\)</span>. Ordering one unit too few sacrifices the margin</p>
+<p>A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand <span class="math inline">\(D\)</span> is uncertain. Each unit sells for <span class="math inline">\(p\)</span>, costs <span class="math inline">\(c\)</span>, and has salvage value <span class="math inline">\(s\)</span>, with <span class="math inline">\(p&gt;c&gt;s\)</span>. Ordering one unit too few sacrifices the margin</p>
 <p><span class="math display">\[
 C_u=p-c,
 \]</span></p>
@@ -860,7 +860,7 @@ C_o=c-s.
 F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
 \]</span></p>
 <p>For discrete demand, choose the smallest quantity whose cumulative probability reaches the fractile. Shortage penalties, disposal costs, capacity constraints, ambiguity, and risk preferences change the rule.</p>
-<p>Experiments often find <strong>pull-to-center</strong> ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon’s (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms that require separate tests. Pull-to-center alone identifies none of them.</p>
+<p>Experiments often find <strong>pull-to-center</strong> ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon’s (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms.</p>
 </div>
 </div>
 </div>
@@ -883,7 +883,7 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 =\infty.
 \]</span></p>
 <p>Yet few people would pay an enormous entry price. Bernoulli’s solution was to distinguish money from the utility of money: an additional unit matters less when one already has more (Bernoulli, 1738/1954). If utility grows slowly enough—for example, logarithmically—the expected utility can be finite even when expected money is infinite.</p>
-<p>The puzzle does not prove diminishing marginal utility: finite wealth, bounded liability, mistrust, transaction costs, or a limit on tosses can also change willingness to pay. Expected value depends on a realizable contract.</p>
+<p>Finite wealth, bounded liability, mistrust, transaction costs, and a limit on tosses can also change willingness to pay. Expected value depends on a realizable contract.</p>
 </div>
 </div>
 </div>

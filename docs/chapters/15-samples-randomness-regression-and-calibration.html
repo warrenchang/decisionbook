@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-34c7abfd9a2c37ec5dbcf238d516f91e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-49e46666a4e6181e671b3ac5e9934df2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -609,7 +609,7 @@ window.Quarto = {
 </blockquote>
 </div>
 <p>A branch manager arrives after the worst quarter in the company’s history. Three months later, sales have recovered and headquarters praises the rescue. Perhaps the manager changed something that mattered. But a branch selected because it had an exceptionally bad quarter may also improve when temporary setbacks pass. How much of the recovery should count as evidence of good management?</p>
-<p>The same question appears in smaller decisions: whether two successful hires validate an interview method, whether a winning streak reveals skill, or whether a missed deadline was foreseeable. We need to learn what variation alone can produce before deciding what a striking result means.</p>
+<p>Headquarters needs to recognize effective management and decide which practices to repeat. Crediting the entire recovery to the rescue could spread a policy that contributed little; dismissing it as luck could discard a useful change. The same question appears in smaller decisions: whether two successful hires validate an interview method, whether a winning streak reveals skill, or whether a missed deadline was foreseeable. We need to learn what variation alone can produce before deciding what a striking result means.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -656,13 +656,13 @@ SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
 \]</span></p>
 <p>When <span class="math inline">\(p=0.5\)</span>, the standard error is about 0.158 for <span class="math inline">\(n=10\)</span> and 0.050 for <span class="math inline">\(n=100\)</span>. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.</p>
 <p>Selection magnifies the problem. The branch reached headquarters’ agenda because its quarter was unusually bad, just as a fund enters a performance ranking because its returns were unusually good. In both cases, temporary variation has helped select the evidence we are about to explain.</p>
-<p>The correction is not “wait for a large sample” in every setting. Some decisions cannot wait and some populations are inherently small. Report uncertainty, pool comparable evidence cautiously, use hierarchical or shrinkage estimates where appropriate, and identify which conclusion depends on one or two observations. A small sample can provide information; it cannot provide the stability of a large one by force of narrative.</p>
+<p>When decisions cannot wait or populations are inherently small, the available sample must still inform action. Report uncertainty, pool comparable evidence cautiously, use hierarchical or shrinkage estimates where appropriate, and identify which conclusion depends on one or two observations.</p>
 </section>
 <section id="streaks-require-a-process-model" class="level2">
 <h2 data-anchor-id="streaks-require-a-process-model">Streaks require a process model</h2>
 <p>After five reds at roulette, black may feel due. Under independent fair spins, it is not. The wheel has no memory. The <strong>gambler’s fallacy</strong> treats short-run balancing as a physical correction because the sequence is expected to look representative quickly (Clotfelter &amp; Cook, 1993).</p>
 <p>The opposite intuition appears after success: a basketball player who has made several shots seems more likely to make the next. That <strong>hot-hand belief</strong> could misread random clustering, or it could reflect genuine state dependence through confidence, fatigue, strategy, defense, learning, or shot selection.</p>
-<p>Gilovich, Vallone, and Tversky (1985) famously argued that observers saw more hot-hand dependence than basketball data supported. Later work identified a finite-sample bias in common comparisons of success following success and showed that some earlier tests understated streakiness (Miller &amp; Sanjurjo, 2018). The correction is not to replace “hot hands are illusions” with “hot hands are real.” It is to specify and test the process:</p>
+<p>Gilovich, Vallone, and Tversky (1985) famously argued that observers saw more hot-hand dependence than basketball data supported. Later work identified a finite-sample bias in common comparisons of success following success and showed that some earlier tests understated streakiness (Miller &amp; Sanjurjo, 2018). Resolving the question requires specifying and testing the process:</p>
 <ol type="1">
 <li>What would independent outcomes produce?</li>
 <li>Was the streak pattern chosen before or after examining the data?</li>
@@ -672,15 +672,15 @@ SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
 </section>
 <section id="clusters-and-the-search-for-causes" class="level2">
 <h2 data-anchor-id="clusters-and-the-search-for-causes">Clusters and the search for causes</h2>
-<p>Searching more units, periods, or subgroups gives chance more opportunities to produce an impressive cluster (Nickerson, 2002).</p>
-<p>This does not make clusters meaningless. A disease cluster may reveal a local exposure; a manufacturing cluster may reveal a faulty machine; a set of related forecast errors may reveal a missing variable. The test needs a denominator that includes the number of units, periods, outcomes, subgroups, and models searched. It also needs a mechanism or independent replication that was not selected by the same extreme pattern.</p>
+<p>A cluster of failures deserves attention because it may reveal a preventable cause. Yet searching more units, periods, or subgroups gives chance more opportunities to produce an impressive cluster (Nickerson, 2002). The practical challenge is to investigate a possible hazard without treating the most striking pattern as its own explanation.</p>
+<p>A disease cluster may reveal a local exposure; a manufacturing cluster may reveal a faulty machine; a set of related forecast errors may reveal a missing variable. The test needs a denominator that includes the number of units, periods, outcomes, subgroups, and models searched. It also needs a mechanism or independent replication that was not selected by the same extreme pattern.</p>
 <p>A useful sequence is:</p>
 <p><strong>Describe → compare with chance → specify a mechanism → predict new observations → replicate.</strong></p>
 <p>Stopping after description rewards the most surprising pattern. Jumping directly to a favored mechanism invites confirmation. A new prediction forces the proposed cause to do work outside the data that suggested it.</p>
 </section>
 <section id="regression-to-the-mean" class="level2">
 <h2 data-anchor-id="regression-to-the-mean">Regression to the mean</h2>
-<p>Suppose observed performance is</p>
+<p>The branch improved after the manager arrived. To decide how much that timing tells us, we need to separate persistent performance from the temporary variation that helped make the earlier quarter exceptional. Suppose observed performance is</p>
 <p><span class="math display">\[
 Y=\theta+\varepsilon,
 \]</span></p>
@@ -692,13 +692,13 @@ Y=\theta+\varepsilon,
 <p>If a measure two standard deviations above average has test–retest correlation <span class="math inline">\(r=0.40\)</span>, the best linear prediction under that model is 0.8 standard deviations above average. The predicted person remains above average; the extreme observation is shrunk because part of it was unreliable.</p>
 <p>The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman &amp; Tversky, 1973).</p>
 <p>Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.</p>
-<div id="fig-regression-conditional-shrinkage" class="quarto-float quarto-figure quarto-figure-center" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average. A note says individual outcomes may move either way and intervention effects need a counterfactual.">
+<div id="fig-regression-conditional-shrinkage" class="quarto-float quarto-figure quarto-figure-center" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/regression-conditional-shrinkage.svg" class="img-fluid figure-img" style="width:100.0%" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average. A note says individual outcomes may move either way and intervention effects need a counterfactual.">
+<img src="../figures/regression-conditional-shrinkage.svg" class="img-fluid figure-img" style="width:100.0%" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.1: A fixed-seed teaching simulation draws 50 observations from <span class="math inline">\(z_1,\varepsilon\sim N(0,1)\)</span> and <span class="math inline">\(z_2=0.40z_1+\sqrt{0.84}\varepsilon\)</span> (seed 50273; displayed sample <span class="math inline">\(r\approx0.40\)</span>). The model’s conditional mean is <span class="math inline">\(E[z_2\mid z_1]=0.40z_1\)</span>: <span class="math inline">\(z_1=+2\)</span> predicts <span class="math inline">\(z_2=+0.8\)</span>. Regression describes conditional averages; an individual outcome need not reverse, and before–after movement does not identify an intervention effect.
+Figure&nbsp;15.1: A fixed-seed teaching simulation draws 50 observations from <span class="math inline">\(z_1,\varepsilon\sim N(0,1)\)</span> and <span class="math inline">\(z_2=0.40z_1+\sqrt{0.84}\varepsilon\)</span> (seed 50273; displayed sample <span class="math inline">\(r\approx0.40\)</span>). The model’s conditional mean is <span class="math inline">\(E[z_2\mid z_1]=0.40z_1\)</span>: <span class="math inline">\(z_1=+2\)</span> predicts <span class="math inline">\(z_2=+0.8\)</span>.
 </figcaption>
 </figure>
 </div>
@@ -706,7 +706,7 @@ Figure&nbsp;15.1: A fixed-seed teaching simulation draws 50 observations from <s
 </section>
 <section id="confidence-must-face-a-distribution" class="level2">
 <h2 data-anchor-id="confidence-must-face-a-distribution">Confidence must face a distribution</h2>
-<p>Confidence is not one quantity. Moore and Healy (2008) distinguish three patterns:</p>
+<p>Confidence helps people commit, but it can be mistaken in different ways. A team may overestimate its performance, place itself too high relative to competitors, or give forecasts an unjustifiably narrow range. Each error could misdirect action, and each requires different feedback. Confidence is not one quantity. Moore and Healy (2008) distinguish three patterns:</p>
 <ul>
 <li><strong>Overestimation:</strong> believing one’s performance or ability is better than it is.</li>
 <li><strong>Overplacement:</strong> believing one ranks above other people.</li>
@@ -774,13 +774,13 @@ Table&nbsp;15.1: Different confidence problems require different feedback
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Monty Hall and the two-child problem are useful only when the information protocol is explicit. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Switching then wins with probability <span class="math inline">\(2/3\)</span> (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
-<div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds. A boundary note says that different host rules can change the answer.">
+<div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/monty-hall-protocol.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds. A boundary note says that different host rules can change the answer.">
+<img src="../figures/monty-hall-protocol.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch; a different host rule can change the inference.
+Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.
 </figcaption>
 </figure>
 </div>
@@ -790,13 +790,14 @@ Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generat
 </section>
 <section id="calibration-makes-confidence-answerable" class="level2">
 <h2 data-anchor-id="calibration-makes-confidence-answerable">Calibration makes confidence answerable</h2>
+<p>A correct prediction can look like evidence of skill, but even a poor forecaster will sometimes be right. To decide whose probabilities deserve weight, we need a record of how stated confidence compares with outcomes across forecasts.</p>
 <p>A forecaster is <strong>calibrated</strong> when events assigned 70 percent occur about 70 percent of the time, events assigned 20 percent occur about 20 percent of the time, and so forth. Calibration is a property of repeated forecasts, not one dramatic success.</p>
 <p>Accuracy also requires <strong>resolution</strong> or discrimination. A forecaster who assigns 50 percent to everything may be calibrated in a balanced environment but contributes little separation. Useful forecasts move away from the base rate when evidence warrants it and remain calibrated across those movements.</p>
 <p>For a binary event with forecast <span class="math inline">\(p\)</span> and outcome <span class="math inline">\(o\in\{0,1\}\)</span>, the Brier score is</p>
 <p><span class="math display">\[
 BS=(p-o)^2.
 \]</span></p>
-<p>Lower is better. A 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Across forecasts, average the scores. The scoring convention for multicategory forecasts must be stated because scales can differ (Brier, 1950; Murphy, 1973).</p>
+<p>Lower is better. A 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Across forecasts, average the scores (Brier, 1950; Murphy, 1973).</p>
 <p>Forecasting research suggests that performance can improve through habits rather than clairvoyance: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.</p>
 <div id="tbl-probability-forecast-ledger" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -854,22 +855,11 @@ Table&nbsp;15.2: A minimal forecast ledger
 </section>
 <section id="from-a-project-story-to-a-forecast-system" class="level2">
 <h2 data-anchor-id="from-a-project-story-to-a-forecast-system">From a project story to a forecast system</h2>
+<p>Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.</p>
 <p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. Adding them gives 45 percent only if the events are mutually exclusive. They are not: supplier delay can cause software delay, and regulatory change can affect both.</p>
 <p>The team should draw an event tree or build a small simulation with conditional pathways, then compare the combined estimate with the empirical delay rate for similar projects. The inside model explains mechanisms; the outside view checks whether the combined answer is plausible. If the inside model gives 18 percent while comparable projects miss the date 55 percent of the time, the discrepancy is evidence. It requires investigation, not automatic rejection of the base rate.</p>
-<p>Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. One project cannot establish calibration, but it can begin the ledger.</p>
-<div class="evidence-boundary callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence Boundary
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>An unusual pattern is not automatically noise, and regression is not an explanation for every reversal. Chance models need justified assumptions; genuine dependence and causal change require tests that can distinguish them from selection and ordinary variation.</p>
-</div>
-</div>
+<p>Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. Each project adds observations to the calibration ledger.</p>
+<p><span id="ch15-research-findings"></span></p>
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>

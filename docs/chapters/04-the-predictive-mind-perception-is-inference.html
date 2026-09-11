@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-34c7abfd9a2c37ec5dbcf238d516f91e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-49e46666a4e6181e671b3ac5e9934df2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -537,10 +537,22 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#two-meanings-of-prediction" id="toc-two-meanings-of-prediction" class="nav-link" data-scroll-target="#two-meanings-of-prediction">Two meanings of prediction</a></li>
-  <li><a href="#when-context-changes-what-appears" id="toc-when-context-changes-what-appears" class="nav-link" data-scroll-target="#when-context-changes-what-appears">When context changes what appears</a></li>
+  <li><a href="#when-context-changes-what-appears" id="toc-when-context-changes-what-appears" class="nav-link" data-scroll-target="#when-context-changes-what-appears">When context changes what appears</a>
+  <ul class="collapse">
+  <li><a href="#color-and-illumination-context" id="toc-color-and-illumination-context" class="nav-link" data-scroll-target="#color-and-illumination-context">Color belongs to a scene</a></li>
+  <li><a href="#ambiguous-animals-and-seasonal-context" id="toc-ambiguous-animals-and-seasonal-context" class="nav-link" data-scroll-target="#ambiguous-animals-and-seasonal-context">One drawing, two animals</a></li>
+  <li><a href="#hollow-face-illusion" id="toc-hollow-face-illusion" class="nav-link" data-scroll-target="#hollow-face-illusion">A hollow face that seems to look back</a></li>
+  </ul></li>
   <li><a href="#prediction-error-and-precision" id="toc-prediction-error-and-precision" class="nav-link" data-scroll-target="#prediction-error-and-precision">Prediction, error, and precision</a></li>
+  <li><a href="#generative-ai-and-predictive-processing" id="toc-generative-ai-and-predictive-processing" class="nav-link" data-scroll-target="#generative-ai-and-predictive-processing">Generative AI: context changes what comes next</a>
+  <ul class="collapse">
+  <li><a href="#what-does-a-language-model-predict" id="toc-what-does-a-language-model-predict" class="nav-link" data-scroll-target="#what-does-a-language-model-predict">What does a language model predict?</a></li>
+  <li><a href="#a-prompt-supplies-a-setting-for-interpretation" id="toc-a-prompt-supplies-a-setting-for-interpretation" class="nav-link" data-scroll-target="#a-prompt-supplies-a-setting-for-interpretation">A prompt supplies a setting for interpretation</a></li>
+  <li><a href="#images-and-videos-generation-is-broader-than-next-token-prediction" id="toc-images-and-videos-generation-is-broader-than-next-token-prediction" class="nav-link" data-scroll-target="#images-and-videos-generation-is-broader-than-next-token-prediction">Images and videos: generation is broader than next-token prediction</a></li>
+  <li><a href="#change-the-questionand-then-seek-evidence" id="toc-change-the-questionand-then-seek-evidence" class="nav-link" data-scroll-target="#change-the-questionand-then-seek-evidence">Change the question—and then seek evidence</a></li>
+  </ul></li>
   <li><a href="#when-inner-models-helpand-when-they-stop-learning" id="toc-when-inner-models-helpand-when-they-stop-learning" class="nav-link" data-scroll-target="#when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</a></li>
-  <li><a href="#research-lens-restored-sight-as-a-bounded-calibration-case" id="toc-research-lens-restored-sight-as-a-bounded-calibration-case" class="nav-link" data-scroll-target="#research-lens-restored-sight-as-a-bounded-calibration-case">Research Lens: restored sight as a bounded calibration case</a></li>
+  <li><a href="#research-lens-restored-sight-as-a-bounded-calibration-case" id="toc-research-lens-restored-sight-as-a-bounded-calibration-case" class="nav-link" data-scroll-target="#research-lens-restored-sight-as-a-bounded-calibration-case">Research Lens: Shirl Jennings and learning to see</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -577,7 +589,7 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 </div>
 <p>Walking into a dim kitchen, you recognize the table before you can make out its edges. A familiar shape beside it is probably a chair, although a coat draped over the back makes the outline uncertain. You move closer, and the shape becomes easier to identify.</p>
-<p>Perception worked before all the details were available because experience helped you interpret the incomplete signal. The same advantage creates a question: what happens when the familiar interpretation is wrong?</p>
+<p>You need a usable picture of the room before every edge becomes clear, and experience supplies it. But familiarity can also make the wrong interpretation feel immediately right. The difficulty is knowing when to act on what seems obvious and when to seek a better view. This chapter asks how expectations help construct perception—and what allows evidence to correct it.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -597,13 +609,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Explain perception as inference rather than recording.</li>
 <li>Describe priors, sensory evidence, prediction error, and precision in plain language.</li>
 <li>Distinguish perceptual prediction from a decision forecast, and specify an observation that could distinguish two competing interpretations.</li>
+<li>Explain how context guides generative AI, and where the analogy with predictive processing stops.</li>
 </ul>
 <p>The idea of perception as <strong>inference</strong> goes back at least to Helmholtz: the mind uses incomplete signals to infer their causes without requiring conscious calculation (Helmholtz, 1867/1962). Later accounts differ in how they explain this process (Gregory, 1980; Kersten et al., 2004; Knill &amp; Richards, 1996; Rock, 1983). A <strong>prior</strong> is an expectation formed before the current evidence is considered. In the kitchen, familiarity with the room helps make a chair a plausible interpretation.</p>
-<p>Predictive processing offers one influential family of models for how expectations and incoming signals might interact. Context-sensitive perception supports the need to explain that interaction; it does not uniquely establish one neural implementation.</p>
+<p>Predictive processing offers one influential family of models for how expectations and incoming signals might interact.</p>
 </section>
 <section id="two-meanings-of-prediction" class="level2">
 <h2 data-anchor-id="two-meanings-of-prediction">Two meanings of prediction</h2>
-<p>The word <strong>prediction</strong> creates a possible confusion. Predictive processing and decision science use the same word for related but different functions.</p>
+<p>Recognizing a chair and forecasting the result of taking a job both draw on prior information. Yet a model that explains the first has not thereby supplied a reliable forecast of the second. To connect perception with decision-making, we need to specify what <strong>prediction</strong> is about in each case.</p>
 <div id="tbl-two-meanings-prediction" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-two-meanings-prediction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -635,34 +648,81 @@ Table&nbsp;4.1: Predictive processing and predictive judgment ask different ques
 </div>
 </figure>
 </div>
-<p>The first asks, in effect, <strong>“What is producing the signals I am receiving?”</strong> The second asks <strong>“What is likely to happen if this option is chosen?”</strong> Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. A theory of perceptual inference does not by itself forecast hospital readmission, estimate a project’s probability of success, or determine whether an outcome is desirable.</p>
-<p>This chapter concentrates on interpreting current signals. The later chapters on expectations and probability judgment ask how people forecast consequences. Keeping these uses separate prevents a theory about recognizing the chair from becoming an explanation of every future-oriented decision.</p>
+<p>The first asks, in effect, <strong>“What is producing the signals I am receiving?”</strong> The second asks <strong>“What is likely to happen if this option is chosen?”</strong> Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence.</p>
+<p>This chapter concentrates on interpreting current signals. It also uses generative AI to illuminate how learned patterns and context work together, while distinguishing content generation from forecasting real events. The later chapters on expectations and probability judgment ask how people forecast consequences.</p>
 </section>
 <section id="when-context-changes-what-appears" class="level2">
 <h2 data-anchor-id="when-context-changes-what-appears">When context changes what appears</h2>
 <p>Read the middle symbol in each row below. Its shape is identical in the two rows, but the neighbors invite different readings. The example isolates a useful question: how much of the interpretation came from the mark, and how much came from its setting?</p>
-<div id="fig-context-b13-demonstration" class="quarto-float quarto-figure quarto-figure-center" alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B. A boundary note says the graphic is a demonstration, not evidence of a specific neural mechanism or effect size.">
+<div id="fig-context-b13-demonstration" class="quarto-float quarto-figure quarto-figure-center" alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-context-b13-demonstration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/context-b13-demonstration.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B. A boundary note says the graphic is a demonstration, not evidence of a specific neural mechanism or effect size.">
+<img src="../figures/context-b13-demonstration.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-context-b13-demonstration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.1: An original perceptual-context demonstration uses exactly the same middle vector mark in two rows. Number context invites a reading of “13,” while letter context invites a reading of “B.” This is a demonstration of context-sensitive interpretation, not evidence for a particular neural mechanism or effect size.
+Figure&nbsp;4.1: An original perceptual-context demonstration uses exactly the same middle vector mark in two rows. Number context invites a reading of “13,” while letter context invites a reading of “B.”
 </figcaption>
 </figure>
 </div>
-<p>The figure demonstrates context-sensitive interpretation; it does not measure an effect size or identify the neural computation. Other demonstrations use shadows, shading, or synchronized touch to show how sensory signals are organized into an experience (Adelson, 2000; Ramachandran, 1988; Botvinick &amp; Cohen, 1998).</p>
+<p>Other demonstrations use shadows, shading, or synchronized touch to show how sensory signals are organized into an experience (Adelson, 2000; Ramachandran, 1988; Botvinick &amp; Cohen, 1998).</p>
 <p>The same teaching logic works when the target can be measured directly. In <a href="#fig-perception-context-lab" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>, the paired shafts, centre circles, and grey patches are physically identical within each comparison. The surrounding geometry or luminance changes their appearance. Measuring the target can correct the judgment without necessarily turning off the impression.</p>
-<div id="fig-perception-context-lab" class="quarto-float quarto-figure quarto-figure-center" alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality, and a footer says to measure the target rather than infer a single neural mechanism.">
+<div id="fig-perception-context-lab" class="quarto-float quarto-figure quarto-figure-center" alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality and invites readers to measure the target.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-perception-context-lab-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/perception-context-lab.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality, and a footer says to measure the target rather than infer a single neural mechanism.">
+<img src="../figures/perception-context-lab.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality and invites readers to measure the target.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-perception-context-lab-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2: Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields. These demonstrate context-dependent appearance, not a single neural mechanism or an estimated effect size.
+Figure&nbsp;4.2: Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields.
 </figcaption>
 </figure>
 </div>
+<section id="color-and-illumination-context" class="level3">
+<h3 data-anchor-id="color-and-illumination-context">Color belongs to a scene</h3>
+<p>Compare the isolated lens on the left with the upper lamp on the right in <a href="#fig-traffic-light-color-context" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>. The lens artwork is identical and uses only shades of gray. Within the blue-green traffic scene, however, it may look warmer or reddish. Cover the surrounding scene, then reveal it again. Does the apparent color change even though the lens itself stays the same?</p>
+<div id="fig-traffic-light-color-context" class="quarto-float quarto-figure quarto-figure-center" alt="Two panels show the same gray dotted lens. On the left it has a neutral-gray surround. On the right it is the upper lamp of a traffic signal, with yellow-green and turquoise lamps below, within a blue-green streetscape. The upper lens may appear warmer or reddish despite sharing the left lens's gray artwork.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-traffic-light-color-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/traffic-light-color-context.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two panels show the same gray dotted lens. On the left it has a neutral-gray surround. On the right it is the upper lamp of a traffic signal, with yellow-green and turquoise lamps below, within a blue-green streetscape. The upper lens may appear warmer or reddish despite sharing the left lens's gray artwork.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-traffic-light-color-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: The same gray lens artwork appears alone and as the upper lamp of an original, stylized traffic signal in a blue-green scene. Context may give the right lens a warmer or reddish appearance. The lens interior has identical neutral-gray color values in both placements.
+</figcaption>
+</figure>
+</div>
+<p>The broader problem is <strong>color constancy</strong>: an object’s perceived color can remain relatively stable even when the light reaching the eye changes with illumination. A white shirt can still look white in warm indoor light or cool daylight. Visual adaptation and relationships across a scene contribute to this stability; information about illumination can help distinguish an object’s properties from the light falling on it (Foster, 2011).</p>
+<p>Interpreting a scene can also change color appearance. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). Our traffic drawing combines surrounding colors, a suggestion of a blue-green cast, and a familiar signal arrangement.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <strong>The same pixel values can produce different color experiences in different surroundings.</strong></p>
+</section>
+<section id="ambiguous-animals-and-seasonal-context" class="level3">
+<h3 data-anchor-id="ambiguous-animals-and-seasonal-context">One drawing, two animals</h3>
+<p>Before reading the caption, name the animal in <a href="#fig-duck-rabbit-context" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>. Then try to find another animal without rotating the image. The challenge is to reorganize the same marks, not discover a second hidden drawing.</p>
+<div id="fig-duck-rabbit-context" class="quarto-float quarto-figure quarto-figure-center" alt="A single navy outline on white has a shared eye, rounded head, and two long extensions pointing right. It can be interpreted as a duck facing right, with the extensions forming its bill, or as a rabbit facing left, with the extensions forming its ears.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-duck-rabbit-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/duck-rabbit-context.svg" class="img-fluid figure-img" style="width:100.0%" alt="A single navy outline on white has a shared eye, rounded head, and two long extensions pointing right. It can be interpreted as a duck facing right, with the extensions forming its bill, or as a rabbit facing left, with the extensions forming its ears.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-duck-rabbit-context-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: An original line drawing can be read as a duck facing right or a rabbit facing left. The two long extensions become a bill in one interpretation and ears in the other.
+</figcaption>
+</figure>
+</div>
+<p>Once one interpretation takes hold, the parts seem to fall into place: the same extension that was a bill becomes an ear. What is already accessible in memory is one possible influence on which reading arrives first. Around Easter, rabbits may be especially accessible to people familiar with that celebration. Brugger and Brugger (1993) reported a striking seasonal pattern: Zurich Zoo visitors tested on Easter Sunday predominantly named a rabbit, whereas a different group tested on an October Sunday predominantly named a bird.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>The seasonal story also needs an update. A later study conducted in the weeks around Easter found predominantly bird responses, failing to reproduce rabbit predominance (Dudda et al., 2026). The evidence for a seasonal influence is mixed. The drawing makes the perceptual point directly: <strong>one set of marks can support more than one coherent interpretation</strong>.</p>
+</section>
+<section id="hollow-face-illusion" class="level3">
+<h3 data-anchor-id="hollow-face-illusion">A hollow face that seems to look back</h3>
+<p>Imagine looking into the inside of a face mask. Its nose recedes into the surface, yet you may see a normal face with a nose projecting toward you. This is the <strong>hollow-face illusion</strong>: a concave face can appear convex. Even knowing that the mask is hollow need not make it look hollow (Hill &amp; Johnston, 2007).</p>
+<p>Watch the upper mask in the demonstration, then compare it with the featureless hollow surface below. Does the face seem to bulge toward you? Does its apparent shape change as it turns? Try separating what you <strong>know about the shape</strong> from what you <strong>see</strong>.</p>
+<div class="book-video-portrait">
+  <iframe width="640" height="1280" title="Hollow-face illusion: rotating concave face above a featureless concave surface" aria-describedby="hollow-face-media-description" frameborder="0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" allowfullscreen="" src="https://commons.wikimedia.org/wiki/File:Hollow-face_illusion_with_rotating_mask_and_featureless_control_surface.webm?embedplayer=true"></iframe>
+</div>
+<div id="hollow-face-media-description">
+<p><strong>Video demonstration.</strong> Two computer-rendered hollow surfaces rotate: a face above and a featureless surface below. The face may look solid while the lower surface is easier to see as hollow. <a href="https://commons.wikimedia.org/wiki/File:Hollow-face_illusion_with_rotating_mask_and_featureless_control_surface.webm">Watch or replay the video on Wikimedia Commons</a>.</p>
+<p>Video by Co (uploaded as Iljsdf), 2026, shown unchanged; <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+</div>
+<p>Familiar faces provide a powerful expectation about shape. Experiments find that upright orientation strengthens the illusion, while lighting and information from binocular vision also influence it (Hill &amp; Bruce, 1993). Familiar facial shading and coloration can enhance the effect further (Hill &amp; Johnston, 2007). The explanation therefore involves both learned expectations and the available visual cues.</p>
+<p>For a closer look, <a href="https://3dviewer.net/#model=https://upload.wikimedia.org/wikipedia/commons/d/db/Hollow_face_illusion.stl">rotate the 3D face model yourself</a>. Drag to inspect it from the side and behind, where its hollow geometry is easier to check. Then return toward a frontal view. <strong>An impression can remain convincing even after another observation reveals why it is misleading.</strong> In decision-making, this is a reason to seek a diagnostic view of the evidence rather than rely on how certain an interpretation feels.</p>
+<p>The linked <a href="https://commons.wikimedia.org/wiki/File:Hollow_face_illusion.stl">3D model</a> was designed by Wael Tsar, recentered, symmetrized, and converted to STL by cmglee; <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</section>
 </section>
 <section id="prediction-error-and-precision" class="level2">
 <h2 data-anchor-id="prediction-error-and-precision">Prediction, error, and precision</h2>
@@ -675,11 +735,11 @@ Figure&nbsp;4.2: Three perceptual demonstrations hold a measurable target consta
 <img src="../figures/judgment-and-decision-making-according-to-predictive-processing.svg" class="img-fluid figure-img" alt="Expectations and incoming signals converge on perception. Perception informs action and sampling, which changes the next evidence. A feedback arrow shows that mismatch can update the internal model; a note explains that estimated reliability affects the weight of signals.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-predictive-processing-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.
+Figure&nbsp;4.5: A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.
 </figcaption>
 </figure>
 </div>
-<p>The diagram is a theoretical teaching synthesis, not a map of established neural stages. Predictive-processing variants differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman &amp; Friston, 2010), but precision and attention are not interchangeable. A smaller prediction error also need not mean a better account of the world if the system sampled only evidence that its model already explains.</p>
+<p>Predictive-processing models differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman &amp; Friston, 2010), but precision and attention are not interchangeable. A smaller prediction error also need not mean a better account of the world if the system sampled only evidence that its model already explains.</p>
 <div id="research-lens-from-predictive-processing-to-active-inference" class="research-lens callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -698,15 +758,42 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <li><strong>Outcome value:</strong> Which action is most likely to produce the outcome I currently prefer?</li>
 <li><strong>Information value:</strong> Which feasible action would most reduce an uncertainty that could change the decision?</li>
 </ul>
-<p>A small pilot may be preferable to immediate scaling when the expected value of resolving a decisive uncertainty exceeds the pilot’s costs; once that uncertainty is resolved, further exploration may add little (Friston et al., 2015). The point is not that people consciously calculate an equation. It is that some actions both produce outcomes and improve the evidence available for the next choice.</p>
+<p>A small pilot may be preferable to immediate scaling when the expected value of resolving a decisive uncertainty exceeds the pilot’s costs; once that uncertainty is resolved, further exploration may add little (Friston et al., 2015). Some actions both produce outcomes and improve the evidence available for the next choice.</p>
 <p>In formal models, variational and expected free energy are technical quantities, not synonyms for surprise as a feeling, anxiety, discomfort, or “negative energy” (Friston, 2010; Parr et al., 2022). A research application must specify hidden states, observations, policies, preferred outcomes, learning rules, and free parameters; it should test parameter recovery where parameters carry psychological meaning, predict new data, and be compared with simpler alternatives rather than redescribing every result after it occurs. Readers who need the formal derivations should use the cited technical sources. <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html#separate-description-prediction-causation-and-mechanism">Appendix E</a> provides the complementary discipline for turning a model into a claim that evidence can distinguish from its rivals.</p>
 </div>
 </div>
 </div>
 </section>
+<section id="generative-ai-and-predictive-processing" class="level2">
+<h2 data-anchor-id="generative-ai-and-predictive-processing">Generative AI: context changes what comes next</h2>
+<p>Consider the unfinished sentence <strong>“At the bank, she…”</strong> After a paragraph about fishing, <em>cast her line</em> would be a plausible continuation. After a paragraph about opening a savings account, <em>asked about interest rates</em> would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in <a href="#fig-context-b13-demonstration" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.</p>
+<p>A <strong>large language model</strong>, or <strong>LLM</strong>, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.</p>
+<section id="what-does-a-language-model-predict" class="level3">
+<h3 data-anchor-id="what-does-a-language-model-predict">What does a language model predict?</h3>
+<p>In an <strong>autoregressive</strong> language model, generation proceeds by estimating probabilities for the next <strong>token</strong>: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).</p>
+<p>Here, <strong>“next” means the next position in the output</strong>, not necessarily the next event in the world. The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al.&nbsp;(2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.</p>
+</section>
+<section id="a-prompt-supplies-a-setting-for-interpretation" class="level3">
+<h3 data-anchor-id="a-prompt-supplies-a-setting-for-interpretation">A prompt supplies a setting for interpretation</h3>
+<p>A <strong>prompt</strong> can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model’s learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies <strong>in-context learning</strong>: examples can alter how a task is performed without a training update to the model’s weights (Brown et al., 2020).</p>
+<p>In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person’s current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is <strong>learned structure interacting with current information</strong>.</p>
+</section>
+<section id="images-and-videos-generation-is-broader-than-next-token-prediction" class="level3">
+<h3 data-anchor-id="images-and-videos-generation-is-broader-than-next-token-prediction">Images and videos: generation is broader than next-token prediction</h3>
+<p>An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.</p>
+<p>The family of generative models extends beyond language and uses several generation procedures. <strong>Diffusion models</strong> can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).</p>
+<p>Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.</p>
+</section>
+<section id="change-the-questionand-then-seek-evidence" class="level3">
+<h3 data-anchor-id="change-the-questionand-then-seek-evidence">Change the question—and then seek evidence</h3>
+<p>This comparison suggests a practical discipline for both thinking and prompting. <strong>“Why did my team resist a useful change?”</strong> already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.</p>
+<p>Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. <a href="../chapters/42-data-driven-decision-making.html#ai-workbench">Chapter 42</a> builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.</p>
+</section>
+</section>
 <section id="when-inner-models-helpand-when-they-stop-learning" class="level2">
 <h2 data-anchor-id="when-inner-models-helpand-when-they-stop-learning">When inner models help—and when they stop learning</h2>
-<p>Inner models are not defects. They make perception usable. Reading requires models of letters, words, and grammar; crossing a street requires expectations about vehicles, signals, and speed. Expertise develops when repeated experience builds models that detect meaningful patterns. A radiologist sees structure in an image that a novice cannot, and an experienced firefighter may notice that a fire is behaving abnormally.</p>
+<p>The illusions might suggest that we should strip away expectations and rely on incoming evidence alone. Yet without learned structure, the evidence would be much harder to use. The challenge is to keep the interpretive advantage while allowing a mistaken model to change.</p>
+<p>Inner models make perception usable. Reading requires models of letters, words, and grammar; crossing a street requires expectations about vehicles, signals, and speed. Expertise develops when repeated experience builds models that detect meaningful patterns. A radiologist sees structure in an image that a novice cannot, and an experienced firefighter may notice that a fire is behaving abnormally.</p>
 <p>Models also determine what can be noticed. An organization without a concept of psychological safety may interpret silence as agreement. A manager without a model of incentive conflict may explain strategic behavior as personality. A student without the concept of opportunity cost may see only the chosen benefit and not the best alternative forgone. Better concepts can make previously invisible features of a decision visible.</p>
 <p>When applying these ideas to everyday judgment, three possible obstacles are worth investigating:</p>
 <ol type="1">
@@ -726,9 +813,12 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <p>These questions prepare the way for later chapters on heuristics, belief protection, framing, and probability judgment. Many errors begin before a final choice, in what attention selects and what the current model makes plausible.</p>
 </section>
 <section id="research-lens-restored-sight-as-a-bounded-calibration-case" class="level2">
-<h2 data-anchor-id="research-lens-restored-sight-as-a-bounded-calibration-case">Research Lens: restored sight as a bounded calibration case</h2>
-<p>Restored sight offers one unusually clear illustration without serving as a general clinical theory. Optical input can return before objects, faces, depth, and cross-modal mappings form a coherent visual world. Newly sighted participants initially struggled to match a seen object with one known by touch, then learned rapidly (Held et al., 2011). The result shows that usable perception depends on learned organization as well as incoming signals. It does not show that mature perception appears immediately when the eye works, nor does it isolate one neural mechanism: prior experience, residual impairment, development, and rehabilitation remain relevant.</p>
-<p>The target is therefore not perception with fewer predictions. Without learned structure, sensory signals do not organize themselves into a usable world. Nor is the target prediction that overrides every mismatch. A calibrated system uses priors to interpret incomplete input, weights current evidence by its reliability, and remains capable of updating when persistent error deserves trust.</p>
+<h2 data-anchor-id="research-lens-restored-sight-as-a-bounded-calibration-case">Research Lens: Shirl Jennings and learning to see</h2>
+<p>Shirl Jennings knew his world through touch, sound, and movement long before surgery offered a new way into it. His eyesight had deteriorated after a serious illness at three. In 1991, at age 51, cataract surgery restored some vision after decades of severe visual impairment (Associated Press, 1999).</p>
+<p>Restoring visual input might seem to be enough to reveal a world Jennings already knew by touch. Receiving visual information, however, did not make familiar objects instantly recognizable. Jennings sometimes needed to touch an object to distinguish a table from a chair (Associated Press, 1999). His surgeon identifies him as the man Oliver Sacks described under the name <strong>Virgil</strong> (Woodhams, n.d.). In Sacks’s account, colors, movements, and shapes became visible, while organizing them into recognizable objects and coherent scenes remained difficult (Sacks, 1993).</p>
+<p><strong>Detecting visual features and understanding what they belong to are different achievements.</strong> Jennings already had knowledge of objects and ways of navigating his surroundings. The challenge was connecting newly available visual patterns with that knowledge. His experience makes the work of perceptual learning concrete.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Systematic research offers a complementary test. Newly sighted participants initially struggled to match a seen object with one known by touch, then improved rapidly (Held et al., 2011). That improvement matters as much as the initial difficulty: new connections could develop through experience.</p>
+<p>The target is therefore not perception with fewer predictions. Learned structure helps sensory signals become a usable account of the world. Nor is the target prediction that overrides every mismatch. A calibrated system uses priors to interpret incomplete input, weights current evidence by its reliability, and remains capable of updating when persistent error deserves trust.</p>
 <div class="calibration-test callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -746,6 +836,7 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
 <p>Choose a disagreement in which two people received similar information but inferred different situations. Produce a two-model test: state each person’s prior model, identify the signal each treated as most precise, and name one feasible observation that would be expected under one model but not the other. End by stating what action would follow from each possible result.</p>
+<p>For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.</p>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
@@ -757,7 +848,19 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <p>Adelson, E. H. (2000). Lightness perception and lightness illusions. In M. Gazzaniga (Ed.), The new cognitive neurosciences (2nd ed., pp.&nbsp;339–351). MIT Press.</p>
 </div>
 <div class="reference">
+<p>Associated Press. (1999, February 1). Gift of sight brought fear, frustration. <em>Deseret News</em>. <a href="https://www.deseret.com/1999/2/1/19421794/gift-of-sight-brought-fear-frustration/">Original reporting</a>.</p>
+</div>
+<div class="reference">
+<p>Bloj, M. G., Kersten, D., &amp; Hurlbert, A. C. (1999). Perception of three-dimensional shape influences colour perception through mutual illumination. <em>Nature, 402</em>(6764), 877–879. <a href="https://doi.org/10.1038/47245">Published paper</a>.</p>
+</div>
+<div class="reference">
 <p>Botvinick, M., &amp; Cohen, J. (1998). Rubber hands “feel” touch that eyes see. Nature, 391(6669), 756.</p>
+</div>
+<div class="reference">
+<p>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin, M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A., Sutskever, I., &amp; Amodei, D. (2020). Language models are few-shot learners. <em>Advances in Neural Information Processing Systems, 33</em>. <a href="https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Brugger, P., &amp; Brugger, S. (1993). The Easter bunny in October: Is it disguised as a duck? <em>Perceptual and Motor Skills, 76</em>(2), 577–578. <a href="https://doi.org/10.2466/pms.1993.76.2.577">Published paper</a>.</p>
 </div>
 <div class="reference">
 <p>Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36(3), 181–204.</p>
@@ -766,7 +869,13 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <p>Da Costa, L., Parr, T., Sajid, N., Veselic, S., Neacsu, V., &amp; Friston, K. (2020). Active inference on discrete state-spaces: A synthesis. <em>Journal of Mathematical Psychology, 99</em>, 102447.</p>
 </div>
 <div class="reference">
+<p>Dudda, L., Van der Hulst, E., Sahan, M. I., &amp; Verheyen, S. (2026). Replication is child’s play. <em>Open Education Studies, 8</em>(1), Article 20250134. <a href="https://doi.org/10.1515/edu-2025-0134">Published paper</a>.</p>
+</div>
+<div class="reference">
 <p>Feldman, H., &amp; Friston, K. J. (2010). Attention, uncertainty, and free-energy. Frontiers in Human Neuroscience, 4, Article 215.</p>
+</div>
+<div class="reference">
+<p>Foster, D. H. (2011). Color constancy. <em>Vision Research, 51</em>(7), 674–700. <a href="https://doi.org/10.1016/j.visres.2010.09.006">Published paper</a>.</p>
 </div>
 <div class="reference">
 <p>Friston, K. (2010). The free-energy principle: A unified brain theory? Nature Reviews Neuroscience, 11(2), 127–138.</p>
@@ -785,6 +894,15 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 </div>
 <div class="reference">
 <p>Helmholtz, H. von. (1962). Treatise on physiological optics (J. P. C. Southall, Trans.). Dover. (Original work published 1867)</p>
+</div>
+<div class="reference">
+<p>Hill, H., &amp; Bruce, V. (1993). Independent effects of lighting, orientation, and stereopsis on the hollow-face illusion. <em>Perception, 22</em>(8), 887–897. <a href="https://doi.org/10.1068/p220887">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Hill, H., &amp; Johnston, A. (2007). The hollow-face illusion: Object-specific knowledge, general assumptions or properties of the stimulus? <em>Perception, 36</em>(2), 199–223. <a href="https://doi.org/10.1068/p5523">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Ho, J., Salimans, T., Gritsenko, A., Chan, W., Norouzi, M., &amp; Fleet, D. J. (2022). Video diffusion models. <em>Advances in Neural Information Processing Systems, 35</em>, 8633–8646. <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/39235c56aef13fb05a6adc95eb9d8d66-Abstract-Conference.html">Published paper</a>.</p>
 </div>
 <div class="reference">
 <p>Hohwy, J. (2013). The predictive mind. Oxford University Press.</p>
@@ -807,8 +925,31 @@ Figure&nbsp;4.3: A simplified predictive-processing account. Expectations and in
 <div class="reference">
 <p>Rock, I. (1983). The logic of perception. MIT Press.</p>
 </div>
+<div class="reference">
+<p>Rombach, R., Blattmann, A., Lorenz, D., Esser, P., &amp; Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 10684–10695. <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Sacks, O. (1993, May 10). To see and not see. <em>The New Yorker</em>. <a href="https://www.newyorker.com/magazine/1993/05/10/to-see-and-not-see-oliver-sacks">Published essay</a>.</p>
+</div>
+<div class="reference">
+<p>Shevell, S. K., &amp; Kingdom, F. A. A. (2008). Color in complex scenes. <em>Annual Review of Psychology, 59</em>, 143–166. <a href="https://doi.org/10.1146/annurev.psych.59.103006.093619">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., &amp; Polosukhin, I. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems, 30</em>. <a href="https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html">Published paper</a>.</p>
+</div>
+<div class="reference">
+<p>Woodhams, J. T. (n.d.). Do people who are blind who all of a sudden gain eyesight feel overwhelmed with colors, seeing how people really look like, etc.? <em>Woodhams Eye Clinic</em>. <a href="https://woodhamseye.com/do-people-who-are-blind-who-all-of-a-sudden-gain-eyesight-feel-overwhelmed-with-colors/">Treating surgeon’s account</a>.</p>
+</div>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The drawing combines illumination cues with color contrast and adaptation, processes discussed by Shevell and Kingdom (2008).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Brugger and Brugger (1993) compared different visitor groups on two dates. Dudda et al.&nbsp;(2026) sampled in the weeks around Easter, using different collection procedures and without an October comparison.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Residual eye damage and later serious illness also affected Jennings’s vision (Sacks, 1993).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
