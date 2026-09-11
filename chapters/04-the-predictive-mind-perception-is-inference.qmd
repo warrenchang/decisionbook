@@ -61,15 +61,17 @@ The same teaching logic works when the target can be measured directly. In @fig-
 
 ![Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields.](../figures/perception-context-lab.svg){#fig-perception-context-lab fig-alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality and invites readers to measure the target." width=100%}
 
-### Color belongs to a scene {#color-and-illumination-context}
+### Learned context gives color a meaning {#color-and-illumination-context}
 
-Compare the isolated lens on the left with the upper lamp on the right in @fig-traffic-light-color-context. The lens artwork is identical and uses only shades of gray. Within the blue-green traffic scene, however, it may look warmer or reddish. Cover the surrounding scene, then reveal it again. Does the apparent color change even though the lens itself stays the same?
+Look first at the isolated light on the left in @fig-traffic-light-color-context. What color would you call it? Now look at the upper lamp on the right. Both show the same lens, but only the right supplies its familiar setting. Does recognizing the traffic signal make the upper light seem redder?
 
-![The same gray lens artwork appears alone and as the upper lamp of an original, stylized traffic signal in a blue-green scene. Context may give the right lens a warmer or reddish appearance. The lens interior has identical neutral-gray color values in both placements.](../figures/traffic-light-color-context.svg){#fig-traffic-light-color-context fig-alt="Two panels show the same gray dotted lens. On the left it has a neutral-gray surround. On the right it is the upper lamp of a traffic signal, with yellow-green and turquoise lamps below, within a blue-green streetscape. The upper lens may appear warmer or reddish despite sharing the left lens's gray artwork." width=100%}
+![The same gray lens appears alone on a blue-green field and at the top of a familiar traffic signal. The housing, other lamps, and street scene provide context only on the right.](../figures/traffic-light-color-context.svg){#fig-traffic-light-color-context fig-alt="The left panel contains only a gray textured lens on a plain blue-green background, with no frame or other objects. The right places the identical lens at the same size and height at the top of a three-lamp traffic signal in a blue-green scene. The familiar upper position supplies the learned expectation of red." width=100%}
 
-The broader problem is **color constancy**: an object's perceived color can remain relatively stable even when the light reaching the eye changes with illumination. A white shirt can still look white in warm indoor light or cool daylight. Visual adaptation and relationships across a scene contribute to this stability; information about illumination can help distinguish an object's properties from the light falling on it (Foster, 2011).
+The scene brings learned knowledge into play: in a familiar vertical traffic signal, the top lamp is red. Recognizing the signal makes red an expected interpretation of the upper lens. The isolated circle offers no such positional clue. Cover the housing and lower lamps, then reveal them again; notice both the color you assign to the lens and how it appears.[^ch04-color-cues] **The context tells us what the sensory evidence is likely to mean.**
 
-Interpreting a scene can also change color appearance. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). Our traffic drawing combines surrounding colors, a suggestion of a blue-green cast, and a familiar signal arrangement.[^ch04-color-cues] **The same pixel values can produce different color experiences in different surroundings.**
+Laboratory studies capture a related influence of familiar colors. When observers adjusted banana images until they looked gray, they shifted them slightly toward blue compared with their gray settings for unfamiliar control patches—the direction opposite to a banana's familiar yellow (Hansen et al., 2006). Related effects occur for familiar manufactured objects whose typical colors are learned through experience (Witzel et al., 2011).
+
+The blue-green scene also supplies information about illumination. **Color constancy** helps an object's perceived color remain relatively stable as illumination changes: a white shirt can still look white in warm indoor light or cool daylight (Foster, 2011). Interpreting a scene can change that judgment. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). The familiar object and the light falling on it jointly inform the interpretation.
 
 ### One drawing, two animals {#ambiguous-animals-and-seasonal-context}
 
@@ -250,7 +252,7 @@ For an AI extension, describe the same fictional workplace incident in two promp
 
 In the kitchen, moving closer or switching on the light can settle what the uncertain shape is. In a disagreement, the equivalent move is to ask what observation would separate the competing interpretations. Before gathering more information, write down what each account predicts; otherwise, the same evidence may simply be absorbed into the explanation you already prefer.
 
-[^ch04-color-cues]: The drawing combines illumination cues with color contrast and adaptation, processes discussed by Shevell and Kingdom (2008).
+[^ch04-color-cues]: The display combines learned signal identity with chromatic contrast, adaptation, and inferred illumination (Shevell & Kingdom, 2008). The lens is identical, but other surrounding cues differ. Memory-color effects in judgments need not always imply a corresponding change in visual appearance (Valenti & Firestone, 2019).
 [^ch04-seasonal-design]: Brugger and Brugger (1993) compared different visitor groups on two dates. Dudda et al. (2026) sampled in the weeks around Easter, using different collection procedures and without an October comparison.
 [^ch04-jennings-vision]: Residual eye damage and later serious illness also affected Jennings’s vision (Sacks, 1993).
 
@@ -317,6 +319,10 @@ Gregory, R. L. (1980). Perceptions as hypotheses. Philosophical Transactions of 
 :::
 
 ::: {.reference}
+Hansen, T., Olkkonen, M., Walter, S., & Gegenfurtner, K. R. (2006). Memory modulates color appearance. *Nature Neuroscience, 9*(11), 1367–1368. [Published paper](https://doi.org/10.1038/nn1794).
+:::
+
+::: {.reference}
 Held, R., Ostrovsky, Y., de Gelder, B., Gandhi, T., Ganesh, S., Mathur, U., & Sinha, P. (2011). The newly sighted fail to match seen with felt. *Nature Neuroscience, 14*(5), 551–553.
 :::
 
@@ -377,7 +383,15 @@ Shevell, S. K., & Kingdom, F. A. A. (2008). Color in complex scenes. *Annual Rev
 :::
 
 ::: {.reference}
+Valenti, J. J., & Firestone, C. (2019). Finding the “odd one out”: Memory color effects and the logic of appearance. *Cognition, 191*, 103934. [Published paper](https://doi.org/10.1016/j.cognition.2019.04.003).
+:::
+
+::: {.reference}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30*. [Published paper](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html).
+:::
+
+::: {.reference}
+Witzel, C., Valkova, H., Hansen, T., & Gegenfurtner, K. R. (2011). Object knowledge modulates colour appearance. *i-Perception, 2*(1), 13–49. [Published paper](https://doi.org/10.1068/i0396).
 :::
 
 ::: {.reference}

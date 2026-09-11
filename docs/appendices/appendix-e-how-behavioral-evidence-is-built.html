@@ -710,7 +710,7 @@ Figure&nbsp;E.1: Five questions connect an experimental design to the claim it c
 <h2 data-anchor-id="define-the-question">Define the question</h2>
 <section id="turn-a-topic-into-a-question-and-hypothesis" class="level3">
 <h3 data-anchor-id="turn-a-topic-into-a-question-and-hypothesis">1. Turn a topic into a question and hypothesis</h3>
-<p>“Anchoring,” “happiness,” and “AI advice” are topics. A research question specifies what would count as an answer.</p>
+<p>“Anchoring,” “happiness,” and “AI advice” are topics. They tell a research team where to look, but leave room for incompatible decisions about what to measure and which comparison matters. A research question specifies what would count as an answer, so that collecting the data can resolve the uncertainty that motivated the study.</p>
 <p>For an empirical study, write:</p>
 <blockquote class="blockquote">
 <p>For <strong>population P</strong>, what is the effect or association of <strong>intervention/exposure X</strong>, relative to <strong>comparison C</strong>, on <strong>outcome Y</strong>, over <strong>time T</strong>, and through which proposed <strong>mechanism M</strong>?</p>
@@ -903,8 +903,7 @@ Table&nbsp;E.3: Designs answer different questions under different assumptions
 </section>
 <section id="random-sampling-and-random-assignment-solve-different-problems" class="level3">
 <h3 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h3>
-<p><strong>Random sampling</strong> selects units from a population and supports population description under the sampling design. <strong>Random assignment</strong> allocates eligible units to conditions and supports causal comparison within the experimental sample.</p>
-<p>A convenience sample can support an internally valid randomized comparison but not a population prevalence estimate. A representative survey can estimate population characteristics yet fail to identify a causal effect. Keep the two random processes separate.</p>
+<p>The clinic wants to know both whether the reminder works and whose attendance it could improve. Calling the study “randomized” does not settle both questions: a fair treatment comparison can come from a narrow sample, and a representative sample can contain a confounded comparison. We need to distinguish how patients enter the study from how they receive a reminder. <strong>Random sampling</strong> selects units from a population and supports population description under the sampling design. <strong>Random assignment</strong> allocates eligible units to conditions and supports causal comparison within the experimental sample.</p>
 <div id="fig-random-sampling-vs-assignment" class="quarto-float quarto-figure quarto-figure-center" alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -936,7 +935,7 @@ Figure&nbsp;E.2: Sampling connects observed people to a population; assignment c
 </section>
 <section id="plan-precision-before-collecting-outcomes" class="level3">
 <h3 data-anchor-id="plan-precision-before-collecting-outcomes">7. Plan precision before collecting outcomes</h3>
-<p>Power is the probability that a specified analysis will meet its decision criterion under a specified effect and data-generating process. It is not a property of sample size alone.</p>
+<p>The clinic could run a small pilot quickly, yet learn too little to choose between continuing and abandoning the reminder. A study needs enough precision to distinguish effects that would lead to different decisions. Power is the probability that a specified analysis will meet its decision criterion under a specified effect and data-generating process. It is not a property of sample size alone.</p>
 <p>A defensible design calculation declares:</p>
 <ul>
 <li>primary outcome and estimator;</li>
@@ -955,7 +954,7 @@ Figure&nbsp;E.2: Sampling connects observed people to a population; assignment c
 <h2 data-anchor-id="run-the-study">Run the study</h2>
 <section id="protect-the-assignment-during-implementation" class="level3">
 <h3 data-anchor-id="protect-the-assignment-during-implementation">8. Protect the assignment during implementation</h3>
-<p>A randomized design can lose its meaning after allocation. Track a participant or unit flow from eligibility through assignment, delivery, outcome observation, and analysis.</p>
+<p>Random assignment gives the clinic a basis for comparing reminder offers. Failed delivery can make the effect of assignment differ from the effect of receiving a message; missing attendance records can also compromise the comparison between assigned groups. Track each participant or unit from eligibility through assignment, delivery, outcome observation, and analysis to establish which effect the records can support.</p>
 <div id="fig-participant-flow-threats" class="quarto-float quarto-figure quarto-figure-center" alt="Two assigned groups proceed through treatment receipt, outcome observation, and analysis. The diagram asks who received treatment and who was observed, and reminds the reader to track effects between groups.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1038,7 +1037,7 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 </section>
 <section id="build-an-open-and-reproducible-workflow" class="level3">
 <h3 data-anchor-id="build-an-open-and-reproducible-workflow">11. Build an open and reproducible workflow</h3>
-<p>Transparency is not “put everything online.” Human-subject data can contain confidential or re-identifiable information. The target is <strong>as open as possible and as protected as necessary</strong>.</p>
+<p>Another researcher should be able to check how the clinic reached its conclusion. Making the records public, however, could expose patients’ identities or confidential information. The practical question is how to make the analysis verifiable while protecting the people whose data make it possible. The target is <strong>as open as possible and as protected as necessary</strong>.</p>
 <p>A minimum project structure preserves:</p>
 <ul>
 <li>immutable raw inputs with provenance and checksums;</li>
@@ -1056,7 +1055,7 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 </section>
 <section id="transport-the-result-only-as-far-as-the-evidence-travels" class="level3">
 <h3 data-anchor-id="transport-the-result-only-as-far-as-the-evidence-travels">12. Transport the result only as far as the evidence travels</h3>
-<p><strong>Internal validity</strong> concerns whether the comparison supports the causal claim in the studied setting. <strong>External validity</strong> concerns where the result travels: to which people, tasks, institutions, treatments, outcomes, and times.</p>
+<p>Suppose the clinic establishes that its new reminder improves attendance. A neighboring clinic wants to adopt it, but serves patients with different needs and uses a different booking system. The original comparison cannot by itself tell that clinic what to expect. <strong>Internal validity</strong> concerns whether the comparison supports the causal claim in the studied setting. <strong>External validity</strong> concerns where the result travels: to which people, tasks, institutions, treatments, outcomes, and times.</p>
 <p>“The laboratory is artificial” is not a complete criticism. Every design abstracts. A lab can identify a mechanism that is hidden in the field. A field experiment can be realistic and highly local. A representative sample can improve population description but not guarantee that an intervention effect transports across institutions.</p>
 <p>Build a transport argument:</p>
 <ol type="1">
@@ -1209,7 +1208,7 @@ Table&nbsp;E.5: A compact evidence design card
 </section>
 <section id="worked-study-from-question-to-report" class="level2">
 <h2 data-anchor-id="worked-study-from-question-to-report">Worked study: from question to report</h2>
-<p>Here is the complete calculation for the imagined clinic. This <strong>simulated teaching study</strong> connects the design record to generated outcomes and an estimate.</p>
+<p>The imagined clinic began with an attendance increase that could have had several causes. We can now replace that before–after comparison with a planned assignment comparison and examine what its estimate would mean. This <strong>simulated teaching study</strong> connects the design record to generated outcomes and an estimate.</p>
 <p><strong>Question.</strong> Among patients already eligible for a routine appointment, what is the intention-to-treat effect of assignment to a shorter, plain-language reminder, relative to the standard reminder, on attending within thirty days?</p>
 <p><strong>Design specified for this teaching example.</strong> Randomly assign 1,200 eligible patients in equal numbers after eligibility is fixed. The primary outcome is an administrative indicator for attendance within thirty days. The primary estimator is the difference in mean attendance by assignment, with an unpooled standard error and 95% confidence interval. Analyze every assigned patient in the assigned arm; report missing administrative outcomes rather than excluding them silently. Secondary outcomes, subgroup comparisons, and mechanism measures are exploratory unless separately declared.</p>
 <div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">

@@ -111,11 +111,11 @@ Compare three designs:
 
 A **smart default** uses relevant, legitimate information to improve fit—for example, a retirement contribution that responds to age and employer match. It also raises governance questions: Which data are used? Can the recommendation be explained? Does personalization create discrimination? How easily can a person choose otherwise?
 
-Automatic enrollment substantially increased participation in one large 401(k) plan, while active-decision designs have raised participation relative to ordinary opt-in systems (Madrian & Shea, 2001; Carroll et al., 2009). Organ-donation consent is highly sensitive to default format, but actual donation also depends on eligibility, family involvement, trust, coordination, and health-system capacity (Johnson & Goldstein, 2003).
+Automatic enrollment substantially increased participation in one large 401(k) plan compared with its previous opt-in system, while active-decision designs have raised participation relative to ordinary opt-in systems (Madrian & Shea, 2001; Carroll et al., 2009). Organ-donation consent is highly sensitive to default format, but actual donation also depends on eligibility, family involvement, trust, coordination, and health-system capacity (Johnson & Goldstein, 2003).
 
 ### Make consequences understandable: mapping and metrics
 
-People choose an option, but they care about its consequences. **Mapping** is the connection between the selectable feature and the outcome that matters. A mortgage rate must be mapped to total cost and payment risk. A medical probability must be mapped to natural frequencies and meaningful time horizons. Energy use must be mapped to money, emissions, or another metric the audience can interpret.
+A menu can make features easy to compare while leaving their consequences obscure. If the most prominent number is a poor guide to cost or risk, easier comparison can still lead to a poor trade-off. **Mapping** connects the selectable feature to the outcome that matters. A mortgage rate must be mapped to total cost and payment risk. A medical probability must be mapped to natural frequencies and meaningful time horizons. Energy use must be mapped to money, emissions, or another metric the audience can interpret.
 
 Make the comparison reconstructable: use the same time horizon and denominator, show total cost alongside installments, and distinguish an estimate from a guarantee. For probabilities, natural frequencies and absolute risks can help readers see quantities that relative percentages obscure. Chapter 14 develops those formats.
 
@@ -147,7 +147,7 @@ Simplification must preserve meaning. Shortening a form helps only if the remain
 
 ![Masking seldom-used controls simplifies a remote. Keep the controls needed for the user's actual tasks.](../figures/choice-architecture-simplified-remote.png){#fig-choice-architecture-simplified-remote fig-alt="Two generic black remote controls lie side by side. The left has many small controls; most of the right remote is covered with removable white tape, leaving only a power button, navigation ring, and a few large controls exposed." width="68%"}
 
-Administrative burden has at least three components: learning what exists and whether one qualifies, complying with procedures, and bearing the stress, stigma, or loss of autonomy attached to the process (Herd & Moynihan, 2018). Field studies show why this distinction matters. Simplifying benefit notices increased take-up of an earned-income tax credit, while hands-on assistance with financial-aid forms improved aid receipt and college enrollment; information by itself was not the whole bottleneck (Bhargava & Manoli, 2015; Bettinger et al., 2012). A sludge audit should therefore count time and steps **and** ask who must translate, disclose, wait, travel, or absorb psychological cost.
+Administrative burden has at least three components: learning what exists and whether one qualifies, complying with procedures, and bearing the stress, stigma, or loss of autonomy attached to the process (Herd & Moynihan, 2018). Field studies show why this distinction matters. Simpler benefit notices increased take-up of an earned-income tax credit compared with a more complex notice based on the original IRS letter. Hands-on assistance with financial-aid forms, combined with personalized aid information, improved aid receipt and college enrollment relative to a control group receiving general information; personalized information without assistance did not produce the same gains (Bhargava & Manoli, 2015; Bettinger et al., 2012). A sludge audit should therefore count time and steps **and** ask who must translate, disclose, wait, travel, or absorb psychological cost.
 
 ### Support action at the right moment
 
@@ -185,7 +185,7 @@ Error-proofing designs around predictable mistakes. Examples include showing the
 
 Feedback also belongs to the designer. An intervention should generate evidence about who receives it, who acts, who benefits, who is burdened, and which unintended effects appear. Without that loop, a nudge can persist because it is elegant rather than because it works.
 
-Home-energy reports illustrate the full learning problem. Repeated comparison and action feedback reduced electricity use, and some effects persisted after reports stopped, although they decayed over time (Allcott & Rogers, 2014). The relevant outcome is not merely whether one message moved behavior once, but whether the architecture produced useful, durable learning without making already-efficient households regress.
+Home-energy reports illustrate the full learning problem. Households sent repeated comparison and action feedback used less electricity than households assigned to receive no reports. Some of that difference persisted after reports stopped, although it decayed over time (Allcott & Rogers, 2014). The relevant outcome is not merely whether one message moved behavior once, but whether the architecture produced useful, durable learning without making already-efficient households regress.
 
 ## Test and govern the whole path
 
@@ -237,7 +237,7 @@ Use a short record linking the target outcome, diagnosed barrier, proposed chang
 
 ### Worked example: missed appointments
 
-Suppose a clinic wants to reduce missed appointments. “Patients forget” is a hypothesis, not a diagnosis. The team first checks whether missed visits cluster by time, transport access, language, cost, waiting time, or difficulty cancelling.
+Suppose a clinic wants to reduce missed appointments. A reminder seems a direct way to recover unused slots, but a patient who cannot reach the clinic gains no transport from another message. The same missed visit can call for a different intervention. Before spending effort on reminders, the team checks whether missed visits cluster by time, transport access, language, cost, waiting time, or difficulty cancelling.
 
 If forgetting is important, a reminder can state the time, place, preparation, and one-tap paths to confirm, reschedule, or cancel. The message arrives while action is possible. The clinic measures attendance, timely cancellation, rescheduling, staff burden, and subgroup effects. If transport or unpredictable work is the real barrier, reminders alone will disappoint; flexible scheduling or service redesign is needed.
 

@@ -18,7 +18,7 @@ Flint, Michigan, needed to find and replace hazardous water-service lines. The p
 
 A method that helped crews find more dangerous pipes might seem easy to welcome. **Yet the machine-learning-guided priorities met angry opposition from some residents.** Homes judged more likely to have hazardous lines were inspected sooner, while other households waited. Agrawal and colleagues describe anxious residents in streets left out of the immediate search, including wealthier residents angry that their pipes were not being checked. They wanted an inspection of their own connection; a low predicted risk did not provide the reassurance they sought (Agrawal et al., 2022a, chapter 15).
 
-The conflict changed the programme. The city brought in a new contractor and directed excavation across its wards without following the model's risk priorities. More residents could see work taking place in their area, but crews increasingly dug up lines that did not need replacement. In 2018, hazardous material was found in only 15 percent of excavations (Agrawal et al., 2022a; Webb et al., 2020).
+The conflict changed the programme. The city brought in a new contractor and directed excavation across its wards without following the model's risk priorities. More residents could see work taking place in their area, but crews increasingly dug up lines that did not need replacement. **The share of excavations finding hazardous pipes fell from about 80 percent under model-guided targeting to just 15 percent in 2018 under the new priorities** (Agrawal et al., 2022a; Webb et al., 2020).
 
 Concentrating work where dangerous pipes are most likely can remove more of them with limited money and crews. Spreading inspections more widely can answer residents who fear being overlooked. Those aims can pull the next excavation in different directions. **How should the city use these predictions when residents contest the priorities built around them—and who has authority to decide whose claim comes first?**
 
@@ -33,9 +33,23 @@ Use validated AI to improve estimates of what may happen. Keep valuation and con
 ## Learning goals
 
 - Separate a prediction from a value judgment, an intervention effect, and an authorization to act.
-- Match machine learning, language models, and other analytical tools to a specific decision task.
+- Explain how AI, machine learning, and algorithms relate, and match tools to a specific decision task.
 - Explain why probability thresholds, data labels, and evaluation criteria embody human choices.
 - Design a small, testable AI-assisted workflow with a baseline, an owner, and a learning rule.
+
+## AI, machine learning, and algorithms: a short guide {#ai-a-short-guide}
+
+A pipe-risk model, a chatbot, and a chess-playing program do different jobs, yet all can be described as AI. Treating them as one general-purpose solution makes it difficult to decide what to use. What do these terms tell us about how a tool works and where it can help?
+
+**Artificial intelligence (AI)** is the broad field of building computer systems that perform tasks associated with intelligence: recognizing patterns, working with language, reasoning, and planning. Such systems can use inputs such as records, text, images, or sound to produce predictions, recommendations, content, or actions (National Institute of Standards and Technology, 2023; OECD, 2024).
+
+An **algorithm** is a step-by-step procedure for carrying out a task. Sorting names alphabetically uses an algorithm; so does training a pipe-risk model. Algorithms are building blocks of ordinary software as well as AI. Some AI systems reason with explicitly supplied rules or search through possible moves; others learn patterns from data.
+
+**Machine learning** is a major approach within AI in which a learning algorithm uses data to build or adjust a **model**. The model captures patterns that can be applied to new inputs. In Flint, examples linking property characteristics to observed pipe materials help the model estimate what lies beneath an uninspected property. **Training** builds or adjusts the model; **inference** applies it to an input to produce an output (James et al., 2023; OECD, 2024).
+
+These capabilities extend beyond numerical forecasts. **Generative AI** produces content such as text, images, audio, or video using patterns learned from data. **Large language models (LLMs)** are machine-learning models that work with language; those used in chatbots can draft an explanation, summarize a document, or suggest questions. Other AI tools can flag unusual transactions, recognize objects in images, or help plan a sequence of actions (OECD, 2024).
+
+For decision making, the useful question is which task needs help: estimating demand, finding relevant information, generating alternatives, or planning how to act. Specifying that task gives us something concrete to test—and keeps the choice of technology connected to the decision it should improve.
 
 ## Why this is the final chapter {#why-this-final-chapter}
 
@@ -57,7 +71,7 @@ A bakery wants every customer to find fresh bread, yet producing enough for an u
 
 In *Prediction Machines*, Agrawal, Gans, and Goldfarb frame the economic significance of AI as a fall in the cost of prediction (Agrawal et al., 2022b). Their use of **prediction** includes filling in missing information about the present: whether a transaction is fraudulent, what an image contains, or which material lies underground. It is broader than forecasting the future. *Power and Prediction* extends the argument from improving individual tasks to reorganizing the systems in which decisions depend on one another (Agrawal et al., 2022a).
 
-The fall in cost is striking. Stanford's 2025 AI Index reports that the inference price of achieving approximately GPT-3.5-level performance on the MMLU benchmark fell by more than 280-fold between November 2022 and October 2024 (Stanford Institute for Human-Centered Artificial Intelligence, 2025).
+The fall in cost is striking. Stanford's 2025 AI Index reports that the inference price of achieving approximately GPT-3.5-level performance on the MMLU benchmark fell from **US\$20 per million tokens in November 2022 to US\$0.07 in October 2024**—a reduction of more than 280-fold (Stanford Institute for Human-Centered Artificial Intelligence, 2025).
 
 A cheap answer still needs suitable data, a valid target, a working interface, and a way to catch mistakes. Nevertheless, a substantial fall in one input's cost changes what is worth attempting. A small organization may be able to classify more incoming requests, inspect more documents, or update forecasts more frequently. Problems once handled by one broad rule may support more differentiated responses.
 
@@ -123,7 +137,11 @@ Return to Flint's contested excavation plan. To judge what went wrong, we need t
 
 A **decision tree** divides cases through a sequence of feature-based splits. A tree ensemble combines many trees; in boosting, successive trees help improve the model's predictions under a specified loss function. The resulting score can express an estimated probability of a class, rather than only a yes-or-no label (James et al., 2023). Here the target was the material of the service line.
 
-The 2018 technical paper compared an actual unnecessary-visit rate of 18.8 percent with 2.0 percent under a proposed procedure in a **backtesting simulation** (Abernethy et al., 2018). The later author report documents the policy reversal introduced in the opening: in 2018, the new contractor's excavation choices largely bypassed high-risk areas, and the hazardous-line hit rate fell to 15 percent. A 2019 legal settlement required the city to return to model-guided prioritization, after which the hit rate rose again (Webb et al., 2020).
+The field record makes the contrast clear. Model-guided targeting found hazardous pipes in about **80 percent** of excavations. When the new contractor largely bypassed high-risk areas in **2018**, the hit rate fell to **15 percent**. A **2019** legal settlement required the city to return to model-guided prioritization, after which the hit rate recovered to about **70 percent** (Agrawal et al., 2022a, chapter 15; Webb et al., 2020).[^ch42-flint-hit-rates]
+
+The earlier technical paper asked a further question: could the search become more efficient still? It compared an actual unnecessary-visit rate of 18.8 percent with 2.0 percent under a proposed procedure in a **backtesting simulation** (Abernethy et al., 2018).
+
+[^ch42-flint-hit-rates]: The hit rate is the share of excavations that uncover a service line containing hazardous material. Agrawal and colleagues report the approximate 80 percent and 70 percent rates for model-guided phases; Webb and colleagues report 15 percent for the whole of 2018. These are successive phases of the field programme, with changing excavation locations and remaining pipe stock, rather than randomized groups of otherwise identical properties.
 
 The residents' objections exposed a question that the probability map could not answer: how much weight should the city give to reassurance and visible coverage across neighborhoods relative to finding hazardous pipes quickly? The settlement changed who could settle that trade-off and which priorities the programme had to follow. In Agrawal and colleagues' account, better prediction became a struggle over decision authority (Agrawal et al., 2022a).
 
@@ -171,13 +189,13 @@ Suppose the city asks a team to “use AI” to improve pipe replacement. One me
 | Allocate resources under explicit rules | Optimization, possibly using model estimates | A feasible schedule or allocation | Are the objective, constraints, and uncertainty acceptable? |
 : Select functions for a decision workflow; these tool families overlap {#tbl-ai-workbench}
 
-A **large language model**, or LLM, learns statistical structure from language and other training material. A central training task for many LLMs is predicting subsequent tokens—pieces of text—given a context. Additional training and connected tools can support instruction following, retrieval, coding, and other tasks. A fluent answer is therefore not equivalent to a calibrated forecast about the external world. Generated facts and references can be false; asking the model to sound more certain does not validate them (Ji et al., 2023).
+A central training task for many LLMs is predicting subsequent tokens—pieces of text—given a context. Additional training and connected tools can support instruction following, retrieval, coding, and other tasks. A fluent answer is therefore not equivalent to a calibrated forecast about the external world. Generated facts and references can be false; asking the model to sound more certain does not validate them (Ji et al., 2023).
 
 [Chapter 4](04-the-predictive-mind-perception-is-inference.qmd#generative-ai-and-predictive-processing) explains how prompts guide generation through context, why this offers a limited analogy with human perception, and why plausible content still needs external evidence. Much organizational work consists of turning scattered information into something another person can understand and use. A useful LLM can lower that cost, provided the workflow preserves the evidence and gives someone the means to check it.
 
 ### Customer support: help at the moment of action {#ai-customer-support}
 
-A support worker needs a useful answer while the customer is still waiting. Searching a long manual costs time, but an immediate answer that is wrong leaves the problem unresolved. An assistant that brings relevant guidance into the live conversation could change that trade-off. Brynjolfsson and colleagues studied a staggered rollout of a generative-AI assistant among 5,172 customer-support agents. Access increased issues resolved per hour by 15 percent on average, with substantial differences across workers (Brynjolfsson et al., 2025).
+A support worker needs a useful answer while the customer is still waiting. Searching a long manual costs time, but an immediate answer that is wrong leaves the problem unresolved. An assistant that brings relevant guidance into the live conversation could change that trade-off. Brynjolfsson and colleagues studied a staggered rollout of a generative-AI assistant among 5,172 customer-support agents. Compared with working without the assistant, access increased issues resolved per hour by 15 percent on average, with substantial differences across workers (Brynjolfsson et al., 2025).
 
 The assistant's value was connected to an immediate task: helping a worker respond to a customer. Translating that idea elsewhere requires identifying what the worker needs at the moment of action. A draft that arrives too late, cannot be checked, or contradicts the organization's obligations may save writing time while worsening the service.
 
@@ -185,13 +203,13 @@ The assistant's value was connected to an immediate task: helping a worker respo
 
 Screening programmes need to find cancers while managing the work of reading large numbers of examinations. Reducing the number of human readings would save effort, but missed cancers could make that saving costly. The Swedish MASAI trial tested an AI-supported mammography workflow in which scores helped route examinations to one or two radiologists and supported detection. In the 2023 interim analysis of about 80,000 women, screen-reading workload fell by 44.3 percent relative to standard double reading (Lång et al., 2023).
 
-The later randomized analysis examined **interval cancers**: cancers diagnosed between scheduled screening rounds. Rates were 1.55 versus 1.76 per 1,000, meeting the trial's **non-inferiority** criterion: ruling out worsening beyond a prespecified margin. The rate ratio was 0.88, with a 95 percent confidence interval of 0.65–1.18. The AI-supported workflow detected a larger share of cancers (**sensitivity**) while correctly clearing a similar share of women without cancer (**specificity**) (Gommers et al., 2026).
+The later randomized analysis examined **interval cancers**: cancers diagnosed between scheduled screening rounds. Rates were **1.55 per 1,000 women with AI-supported screening versus 1.76 with standard double reading**, meeting the trial's **non-inferiority** criterion: ruling out worsening beyond a prespecified margin. The rate ratio was 0.88, with a 95 percent confidence interval of 0.65–1.18. The AI-supported workflow detected 80.5 percent of cancers, compared with 73.8 percent under standard double reading (**sensitivity**). Both workflows correctly cleared 98.5 percent of women without cancer (**specificity**) (Gommers et al., 2026).
 
 The lesson is practical: the intervention included a division of work, a comparison condition, and patient-relevant evaluation. It was more specific than making an algorithm available and hoping it helped.
 
 ### A capable assistant can still fail to improve the user {#ai-physician-vignettes}
 
-A model that reasons well through a clinical case appears to offer physicians a useful second opinion. Giving doctors access should then improve their answers—but will that advantage survive the way they actually consult and use the tool? In a randomized study, 50 physicians solved clinical vignettes with or without access to an LLM. Access did not significantly improve diagnostic reasoning: the adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8 (Goh et al., 2024).
+A model that reasons well through a clinical case appears to offer physicians a useful second opinion. Giving doctors access should then improve their answers—but will that advantage survive the way they actually consult and use the tool? In a randomized study, 50 physicians solved clinical vignettes using conventional resources, with half also given access to an LLM. Their median diagnostic-reasoning scores per case were **76 percent with LLM access and 74 percent without it**. The adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8. Yet in a separate assessment using a standardized prompt, the LLM alone achieved a median score of **92 percent** on the same scoring rubric. A strong standalone result had not translated into a significant improvement for physicians given access to the tool (Goh et al., 2024).
 
 A tool's standalone performance and its effect on a person using it are different quantities. The user must recognize when to consult it, interpret its output, detect errors, and change an appropriate action. Interface design, training, time pressure, and incentives can all become part of the intervention. Their contribution has to be tested rather than assumed.
 
@@ -227,7 +245,7 @@ Compare a complex model with a credible simple rule on the same cases and under 
 
 ### Evaluate probabilities and decisions separately
 
-**Discrimination** concerns how well scores distinguish cases with different outcomes. **Calibration** concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event. Good ranking does not by itself establish good probabilities.
+A city may use a risk cutoff to decide whether an inspection is worth its cost. A model can rank properties correctly while overstating their probabilities; the ranking then looks useful, but more properties may cross the action threshold than the evidence justifies. Evaluation needs to test both what the scores separate and what their numerical values mean. **Discrimination** concerns how well scores distinguish cases with different outcomes. **Calibration** concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event. Good ranking does not by itself establish good probabilities.
 
 Then evaluate the action rule. Count the important kinds of error, inspect subgroup performance, and apply the stated costs and capacity limits. A model with a slightly better ranking metric can still produce a worse decision if its probabilities are poorly calibrated around the action threshold. Conversely, an improvement far from any threshold may change almost no actions.
 
@@ -361,6 +379,10 @@ National Institute of Standards and Technology. (2023). Artificial intelligence 
 
 ::: {.reference}
 Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453.
+:::
+
+::: {.reference}
+OECD. (2024). *Explanatory memorandum on the updated OECD definition of an AI system*. OECD Artificial Intelligence Papers, No. 8. OECD Publishing. https://doi.org/10.1787/623da898-en
 :::
 
 ::: {.reference}
