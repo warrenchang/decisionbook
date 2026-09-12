@@ -13,38 +13,38 @@ Unresolved author–year citations: **0**
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
-| Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | 9 | 0 |
+| Building a Better Decision | 9 | 0 |
 | Attention: What Becomes Evidence? | 29 | 0 |
 | The Predictive Mind: Perception Is Inference | 35 | 0 |
 | Expectations: When Predictions Become Causes | 32 | 0 |
 | Valuation: How Options Become Worth Choosing | 55 | 0 |
-| The Narrator After Choice: Why Reasons Are Not Always Causes | 19 | 0 |
+| The Narrator After Choice | 19 | 0 |
 | Fast and Frugal Thinking | 28 | 0 |
-| What Feels Likely: Availability, Affect, and Resemblance | 15 | 0 |
+| What Feels Likely | 15 | 0 |
 | Beliefs That Defend Themselves | 18 | 0 |
 | When Context Rewrites Comparison | 11 | 0 |
-| Framing: When the Same Facts Become Different Decisions | 15 | 0 |
-| Accessibility, Familiarity, and Ease | 24 | 0 |
-| Base Rates, Conditional Probability, and Bayesian Updating | 7 | 0 |
+| Framing | 15 | 0 |
+| Fluency and Familiarity | 24 | 0 |
+| Base Rates and Updating | 7 | 0 |
 | Samples, Randomness, Regression, and Calibration | 17 | 0 |
 | Risky Decision-Making: A Probability Is Not Yet a Feeling | 15 | 0 |
 | Prospect Theory: Gains and Losses Begin at a Reference Point | 14 | 0 |
 | Decisions from Experience: When Rare Events Are Not Encountered | 18 | 0 |
-| Intertemporal Decision-Making: Why Later Loses to Now | 27 | 0 |
+| Intertemporal Decision Making | 27 | 0 |
 | Mental Accounting: Money Is Fungible; Minds Label It | 21 | 0 |
 | Habits, Wanting, and Self-Control | 12 | 0 |
 | Deciding for a Better Life: Satisfaction, Connection, and Meaning | 19 | 0 |
 | Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
-| Behavioral Game Theory: Equilibrium Is a Benchmark, Not a Portrait | 14 | 0 |
+| Behavioral Game Theory | 14 | 0 |
 | Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 26 | 0 |
 | Social Norms and Conformity: When Other People Become Evidence | 29 | 0 |
-| Markets, Mispricing, and Bubbles | 31 | 0 |
+| Prices as Social Signals | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
 | Persuasion: Changing Minds Means Updating Models | 28 | 0 |
 | Why Stories Move Minds | 12 | 0 |
 | Building an Evidence-Aligned Message | 12 | 0 |
-| Communication: Language Is Not a File Transfer | 18 | 0 |
+| Communication | 18 | 0 |
 | Connection and Repair: Warm Honesty Makes Truth Usable | 29 | 0 |
 | Negotiation as Joint Decision Design | 12 | 0 |
 | Preparing and Claiming Value | 10 | 0 |

@@ -58,16 +58,19 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
 | Required content: How Decisions Should Be Made—and How They Actually Are | **PASS** |
-| Required content: Building a Better Decision: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
+| Required content: Building a Better Decision | **PASS** |
+| Required content: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
 | Required content: Rational Choice and Decision Analysis | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision-Making | **PASS** |
 | Required content: Prospect Theory | **PASS** |
 | Required content: Decisions from Experience | **PASS** |
-| Required content: Intertemporal Decision-Making | **PASS** |
+| Required content: Intertemporal Decision Making | **PASS** |
+| Required content: Why Later Loses to Now | **PASS** |
 | Required content: Mental Accounting | **PASS** |
 | Required content: Deciding for a Better Life | **PASS** |
 | Required content: Behavioral Finance | **PASS** |
+| Required content: Prices as Social Signals | **PASS** |
 | Required content: Asset Bubbles | **PASS** |
 | Required content: Subjective Well-Being | **PASS** |
 | Required content: Social Norms and Conformity | **PASS** |
