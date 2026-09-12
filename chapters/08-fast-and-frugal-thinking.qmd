@@ -11,7 +11,7 @@ aliases:
 
 *A shortcut is useful when its cue fits the environment—and dangerous when fluency replaces the target question*
 
-::: {.chapter-epigraph}
+::: {#chapter-08-start .chapter-epigraph}
 > “Heuristics are efficient cognitive processes, conscious or unconscious, that ignore part of the information.”
 >
 > — Gerd Gigerenzer and Wolfgang Gaissmaier, [“Heuristic Decision Making”](https://doi.org/10.1146/annurev-psych-120709-145346), 2011, p. 452
@@ -46,7 +46,7 @@ An error on a simple puzzle might suggest that shortcuts should always give way 
 
 A **heuristic** is a simplifying process that uses limited information to reach a workable judgment or action. It is not an error by definition. Under bounded time, attention, and computation, a simple cue can be more usable—and sometimes more accurate—than a complex model fitted to noise (Gigerenzer & Gaissmaier, 2011).
 
-![A heuristic often answers an easier question than the one the decision actually requires.](../figures/heuristic-substitution.svg){#fig-heuristic-substitution fig-alt="A target question is replaced by an easier question and then produces a quick answer."}
+![A heuristic often answers an easier question than the one the decision actually requires.](../figures/heuristic-substitution.svg){#fig-heuristic-substitution fig-alt="A target question is replaced by an easier question and then produces a quick answer." .phone-fit}
 
 The bat-and-ball response illustrates **attribute substitution**: the mind answers an easier question that resembles the target. The same substitution occurs when “How likely is this risk?” becomes “How easily can I picture it?” or “How well will this applicant perform?” becomes “How confident did the applicant sound?” (Kahneman & Frederick, 2002). The substituted answer may be informative. The error begins when its cue is assigned more evidential weight than it has earned.
 
@@ -84,6 +84,10 @@ At age three, my daughter used her fingers as an external counting tool to compu
 Fast thinking is also central to expertise. An experienced chess player sees meaningful patterns that a novice does not. A skilled physician may recognize a disease pattern quickly. A firefighter may sense that a building is unsafe before being able to articulate why. Such intuition can be powerful when it is built in environments with regular patterns and clear feedback (Kahneman & Klein, 2009).
 
 Klein's **recognition-primed decision model** makes the mechanism more specific: experts often recognize a familiar situation, retrieve a plausible action, mentally simulate whether it will work, and act if it appears adequate rather than exhaustively comparing alternatives (Klein, 1998). This is skilled satisficing, not intuition detached from evidence. It becomes trustworthy only when recurring patterns can be learned through sufficiently clear and timely feedback.
+
+Imagine an experienced operations engineer responding to a service outage. An alarm pattern resembles a previous failure, so she considers isolating one component. Before acting, she mentally checks what should recover and what the isolation might disrupt. A contradictory reading sends her back to another explanation. This fictional example makes the model's checking step visible: recognizing a pattern proposes an action; it does not excuse ignoring a mismatch.
+
+Under time pressure, the useful safeguard may be one decisive check, a reversible first action, and a clear condition for escalating to another expert. When the situation is unfamiliar, recognition deserves less confidence, even if it feels immediate. Afterward, a [decision review](41-decision-hygiene-build-a-process-that-can-learn.qmd#what-a-decision-journal-is) should retain the cue, expected result, and mismatch so the next fast judgment can learn from this one.
 
 Evolution can also shape response thresholds. When a missed danger is much costlier than a false alarm, a cautious criterion can be favored even though it generates many false alarms (Haselton & Buss, 2000; Nesse, 2005). Time pressure may create an additional speed–accuracy trade-off. Signal-detection reasoning shows how a cautious threshold can be optimal under stated base rates and error costs. [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#heuristics-tools-and-biases) separates modeled performance, actual strategy use, and evolutionary origin.
 
@@ -150,11 +154,11 @@ The bat-and-ball problem can be checked against two conditions. Many real judgme
 ## References cited in this chapter
 
 ::: {.reference}
-Bago, B., & De Neys, W. (2019). The smart System 1: Evidence for the intuitive nature of correct responding on the bat-and-ball problem. *Thinking & Reasoning, 25*(3), 257–299. https://doi.org/10.1080/13546783.2018.1507949
+Baddeley, A. (1992). Working memory. Science, 255(5044), 556–559.
 :::
 
 ::: {.reference}
-Baddeley, A. (1992). Working memory. Science, 255(5044), 556–559.
+Bago, B., & De Neys, W. (2019). The smart System 1: Evidence for the intuitive nature of correct responding on the bat-and-ball problem. *Thinking & Reasoning, 25*(3), 257–299. https://doi.org/10.1080/13546783.2018.1507949
 :::
 
 ::: {.reference}
@@ -190,15 +194,15 @@ Gigerenzer, G., & Goldstein, D. G. (1996). Reasoning the fast and frugal way: Mo
 :::
 
 ::: {.reference}
-Goldstein, D. G., & Gigerenzer, G. (2002). Models of ecological rationality: The recognition heuristic. Psychological Review, 109(1), 75–90.
-:::
-
-::: {.reference}
 Gilbert, D. T. (1991). How mental systems believe. American Psychologist, 46(2), 107–119.
 :::
 
 ::: {.reference}
 Gilbert, D. T., Tafarodi, R. W., & Malone, P. S. (1993). You cannot not believe everything you read. Journal of Personality and Social Psychology, 65(2), 221–233.
+:::
+
+::: {.reference}
+Goldstein, D. G., & Gigerenzer, G. (2002). Models of ecological rationality: The recognition heuristic. Psychological Review, 109(1), 75–90.
 :::
 
 ::: {.reference}
@@ -214,15 +218,15 @@ Kahneman, D., & Beatty, J. (1966). Pupil diameter and load on memory. Science, 1
 :::
 
 ::: {.reference}
+Kahneman, D., & Frederick, S. (2002). Representativeness revisited: Attribute substitution in intuitive judgment. In T. Gilovich, D. Griffin, & D. Kahneman (Eds.), Heuristics and biases: The psychology of intuitive judgment (pp. 49–81). Cambridge University Press.
+:::
+
+::: {.reference}
 Kahneman, D., & Klein, G. (2009). Conditions for intuitive expertise: A failure to disagree. American Psychologist, 64(6), 515-526.
 :::
 
 ::: {.reference}
 Klein, G. (1998). *Sources of power: How people make decisions*. MIT Press.
-:::
-
-::: {.reference}
-Kahneman, D., & Frederick, S. (2002). Representativeness revisited: Attribute substitution in intuitive judgment. In T. Gilovich, D. Griffin, & D. Kahneman (Eds.), Heuristics and biases: The psychology of intuitive judgment (pp. 49–81). Cambridge University Press.
 :::
 
 ::: {.reference}
@@ -246,11 +250,11 @@ Schneider, W., & Shiffrin, R. M. (1977). Controlled and automatic human informat
 :::
 
 ::: {.reference}
-Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18(6), 643–662.
+Shiffrin, R. M., & Schneider, W. (1977). Controlled and automatic human information processing: II. Perceptual learning, automatic attending, and a general theory. Psychological Review, 84(2), 127–190.
 :::
 
 ::: {.reference}
-Shiffrin, R. M., & Schneider, W. (1977). Controlled and automatic human information processing: II. Perceptual learning, automatic attending, and a general theory. Psychological Review, 84(2), 127–190.
+Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18(6), 643–662.
 :::
 
 ::: {.reference}

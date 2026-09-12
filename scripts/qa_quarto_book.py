@@ -32,7 +32,7 @@ LEGACY_INLINE_MATH_DELIMITER = re.compile(r"\\[()]")
 BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULTILINE)
 REFERENCE_BLOCK = re.compile(r"^::: \{\.reference\}\s*\n(.*?)\n:::\s*$", re.MULTILINE | re.DOTALL)
 CHAPTER_EPIGRAPH = re.compile(
-    r'^::: \{\.chapter-epigraph\}\s*\n> “([^”]+)”\s*\n>\s*\n> — (.+?)\n:::\s*$',
+    r'^::: \{(?:#[A-Za-z0-9_-]+\s+)?\.chapter-epigraph\}\s*\n> “([^”]+)”\s*\n>\s*\n> — (.+?)\n:::\s*$',
     re.MULTILINE,
 )
 EPIGRAPH_METADISCOURSE = re.compile(

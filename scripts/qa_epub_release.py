@@ -61,9 +61,9 @@ REQUIRED_CONTENT = [
     "Alternatives, Opportunity Cost, Information, and Robustness",
     "Rational Choice and Decision Analysis",
     "Probability Judgment",
-    "Risky Decision-Making",
+    "Risky Decision Making",
     "Prospect Theory",
-    "Decisions from Experience",
+    "Decisions From Experience",
     "Intertemporal Decision Making",
     "Why Later Loses to Now",
     "Mental Accounting",
@@ -101,7 +101,7 @@ REQUIRED_CONTENT = [
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
     "no strengthening, but no reset",
-    "median 66 days",
+    "median of 66 days",
     "Index of Concepts",
 ]
 

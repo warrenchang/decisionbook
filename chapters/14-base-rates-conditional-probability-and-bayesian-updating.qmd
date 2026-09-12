@@ -9,7 +9,7 @@ aliases:
 
 *A plausible story becomes a probability only after the event, denominator, and competing explanations are specified*
 
-::: {.chapter-epigraph}
+::: {#chapter-14-start .chapter-epigraph}
 > “Given the number of times in which an unknown event has happened and failed …”
 >
 > — Thomas Bayes, [“An Essay towards Solving a Problem in the Doctrine of Chances”](https://doi.org/10.1098/rstl.1763.0053), 1763, p. 376
@@ -146,13 +146,13 @@ $$
 
 ![A positive result can come from either group. In this hypothetical population, the much larger group without disease supplies most of the positive tests.](../figures/probability-judgment-map.svg){#fig-probability-judgment-map fig-alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease." width=100%}
 
-Natural frequencies preserve the nested sets and denominator, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer & Hoffrage, 1995). They make the assumed structure visible.
+The two branches in @fig-probability-judgment-map answer the crucial question: who could have produced this positive result? Natural frequencies preserve those nested sets, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer & Hoffrage, 1995). They expose the denominator that the 90% sensitivity figure leaves implicit.
 
 ## Reference classes are judgment calls
 
 The calculation asks for a base rate, but the decision rarely supplies an uncontested comparison group. Should a start-up be compared with all new firms, firms in the same sector, firms at the same funding stage, or firms with similarly experienced founders? A narrow class may be more relevant but noisier. A broad class is more stable but less tailored. Choosing the class is therefore part of the substantive judgment, and it can change the recommendation even when the arithmetic is correct.
 
-Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman & Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. “This case is unique” is a hypothesis, not a denominator.
+Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman & Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. “This case is unique” is a hypothesis, not a denominator. [Chapter 15](15-samples-randomness-regression-and-calibration.qmd#small-samples-swing-widely) examines the sampling uncertainty that remains even after the class is well chosen.
 
 Return to hiring. The base rate should concern future performance under the organization's role, support, and criterion—not an undefined pool of “talent.” The screen's sensitivity and false-positive rate must come from a comparable applicant population. If the criterion rewards manager similarity rather than job output, the posterior can be mathematically correct and substantively wrong.
 
@@ -161,7 +161,7 @@ Return to hiring. The base rate should concern future performance under the orga
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: conjunction, disjunction, and dilution
 
-The resemblance chapter showed why a coherent story can feel probable. Probability supplies a non-negotiable set relation:
+[Chapter 9](09-what-feels-likely-availability-affect-and-resemblance.qmd#when-category-fit-substitutes-for-probability-resemblance) showed why a coherent story can feel probable. Probability supplies a non-negotiable set relation:
 
 $$
 P(A\cap B)\le P(A), \qquad P(A\cup B)\ge P(A).

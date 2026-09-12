@@ -9,7 +9,7 @@ aliases:
 
 *Three useful cues become misleading when they silently replace value, frequency, or conditional probability*
 
-::: {.chapter-epigraph}
+::: {#chapter-09-start .chapter-epigraph}
 > “People rely on a limited number of heuristic principles which reduce the complex tasks of assessing probabilities and predicting values to simpler judgmental operations.”
 >
 > — Amos Tversky and Daniel Kahneman, [“Judgment under Uncertainty: Heuristics and Biases”](https://doi.org/10.1126/science.185.4157.1124), 1974, p. 1124
@@ -41,7 +41,7 @@ The affect heuristic occurs when people use feelings of goodness or badness as a
 
 A feeling can summarize relevant experience or reveal something we care about. The problem arises when an overall impression supplies an answer to a different question, such as how often harm occurs.
 
-The affect heuristic becomes visible when feelings substitute for analysis. Suppose people are asked about a technology. If they feel positively toward it, they may judge it as highly beneficial and relatively safe. If they feel negatively toward it, they may judge it as risky and less beneficial. Alhakami and Slovic (1994) found that perceived risks and perceived benefits of activities were often negatively related in people’s judgments, even though in the world risks and benefits can both be high. Finucane and colleagues (2000) showed that manipulating affective information could change perceived risks and benefits.
+Alhakami and Slovic (1994) found that perceived risks and perceived benefits of activities were often negatively related in people’s judgments, even though risks and benefits can both be high. Finucane and colleagues (2000) then manipulated information about technologies: presenting benefits more favorably could also lower judged risk, although the message had supplied no corresponding evidence about safety. The same feeling was answering two questions. [Chapter 6](06-valuation-how-options-become-worth-choosing.qmd#emotion-tells-the-mind-what-matters) separates what an outcome means to us from how likely it is.
 
 The illustration below invites a first impression about two species.
 
@@ -83,17 +83,19 @@ Hiring creates the same risk without a puzzle. A committee may treat confidence,
 
 Brief impressions can nevertheless predict how people respond to a prototype. Todorov et al. (2005) found that competence impressions formed from photographs of unfamiliar political candidates predicted election winners above chance.[^ch09-face-prediction] The hiring lesson is the same: a first impression can predict a chooser's reaction without measuring the job-relevant quality the chooser believes it sees.
 
-The next statistical chapters provide the formal correction. At this stage, use three questions: **How common is the category? How diagnostic is the resemblance? What alternative category could produce the same features?** A good match to a story is not the same as a high conditional probability.
+[Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#worked-update-the-same-screen-in-two-applicant-pools) turns this hiring problem into a numerical comparison. At this stage, use three questions: **How common is the category? How diagnostic is the resemblance? What alternative category could produce the same features?** A good match to a story is not the same as a high conditional probability.
 
 ## When correlated cues look like independent evidence
 
 Affect, availability, and resemblance often point in the same direction, which makes their conclusion feel multiply supported. A vivid case is easy to retrieve, emotionally charged, and representative of a familiar danger story. The three experiences can look like three pieces of evidence even when they come from one exposure.
 
-Consider a dramatic product failure shared repeatedly online. Availability makes the failure easy to recall. Affect supplies anger or fear. Resemblance makes another product with similar packaging feel like the same kind of threat. If the repeated posts all trace back to one incident, the apparent convergence is not independent confirmation. It is one event echoed through memory, feeling, and categorization.
+Return to the product failure in the opening. Three reports and three psychological responses can all trace back to one incident. Before counting them as converging evidence, establish whether they add an observation or repeat one.
 
 The same problem appears in hiring. One charismatic candidate reminds committee members of a successful former colleague. That remembered example becomes available; similarity activates a prototype; positive affect spills into forecasts of competence. The committee may say that “all the signals point the same way,” even though the signals are correlated outputs of one first impression.
 
 The corrective is an **independence audit**. List each reason for the judgment, then trace its source. Did two reasons arise from the same anecdote? Did the feeling arise because the case was vivid? Did the prototype come from a success story selected after the outcome? Independent work samples, base rates, and criterion-specific ratings add genuinely new information. Rephrasing the same impression does not.
+
+[Chapter 13](13-accessibility-familiarity-and-ease.qmd#repetition-can-become-liking-and-truth) explains why repetition can nevertheless increase a claim's apparent credibility. The source trail tells us whether the added confidence has earned any new support.
 
 This is why the book treats mechanisms before labels. Naming three heuristics can create the illusion of three causes. A causal map asks whether one upstream cue generated all three.
 
@@ -162,15 +164,19 @@ Lichtenstein, S., Slovic, P., Fischhoff, B., Layman, M., & Combs, B. (1978). Jud
 :::
 
 ::: {.reference}
-Schwarz, N., & Clore, G. L. (1983). Mood, misattribution, and judgments of well-being: Informative and directive functions of affective states. Journal of Personality and Social Psychology, 45(3), 513-523.
-:::
-
-::: {.reference}
 Schwarz, N., Bless, H., Strack, F., Klumpp, G., Rittenauer-Schatka, H., & Simons, A. (1991). Ease of retrieval as information: Another look at the availability heuristic. *Journal of Personality and Social Psychology, 61*(2), 195–202.
 :::
 
 ::: {.reference}
+Schwarz, N., & Clore, G. L. (1983). Mood, misattribution, and judgments of well-being: Informative and directive functions of affective states. Journal of Personality and Social Psychology, 45(3), 513-523.
+:::
+
+::: {.reference}
 Slovic, P., Finucane, M. L., Peters, E., & MacGregor, D. G. (2002). The affect heuristic. In T. Gilovich, D. Griffin, & D. Kahneman (Eds.), *Heuristics and biases: The psychology of intuitive judgment* (pp. 397–420). Cambridge University Press.
+:::
+
+::: {.reference}
+Todorov, A., Mandisodza, A. N., Goren, A., & Hall, C. C. (2005). Inferences of competence from faces predict election outcomes. Science, 308(5728), 1623–1626.
 :::
 
 ::: {.reference}
@@ -183,8 +189,4 @@ Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and b
 
 ::: {.reference}
 Tversky, A., & Kahneman, D. (1983). Extensional versus intuitive reasoning: The conjunction fallacy in probability judgment. Psychological Review, 90(4), 293–315.
-:::
-
-::: {.reference}
-Todorov, A., Mandisodza, A. N., Goren, A., & Hall, C. C. (2005). Inferences of competence from faces predict election outcomes. Science, 308(5728), 1623–1626.
 :::

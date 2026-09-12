@@ -197,31 +197,21 @@ th[scope="rowgroup"] {
     min-width: 900px;
     max-width: none !important;
   }
-  #fig-traffic-light-color-context img,
-  #fig-duck-rabbit-context img,
-  #fig-ai-same-forecast-different-values img,
-  #fig-ai-risk-is-not-benefit img,
-  #fig-agreement-design img,
-  #fig-behavior-design img,
-  #fig-choice-architecture img,
-  #fig-claim-to-design-pipeline img,
-  #fig-communication-iceberg img,
-  #fig-conversation-repair img,
-  #fig-decision-audit img,
-  #fig-first-offer-information-matrix img,
-  #fig-habit-loop img,
-  #fig-master-loop img,
-  #fig-master-loop-finale img,
-  #fig-participant-flow-threats img,
-  #fig-persuasion-update img,
-  #fig-random-sampling-vs-assignment img,
-  #fig-selected-evidence-pipeline img,
-  #fig-story-evidence-braid img,
-  #fig-story-update img,
-  #fig-structured-judgment-pipeline img,
-  #fig-zopa img {
+  figure.quarto-float-fig > div[aria-describedby] > img.phone-fit {
     width: 100% !important;
     min-width: 0;
     max-width: 100% !important;
   }
 }
+
+/* Reading cues remain explicit text as well as color in the EPUB. */
+.predict-first {
+  border-left: .25em solid #b95f2d;
+  padding-left: .8em;
+  background: #fff8f3;
+}
+.tool { border-left: .25em solid #cbd5df; padding-left: .8em; }
+.tool-core { border-left-color: #25678f; }
+.tool-quick { border-left-color: #2b7a78; }
+.tool-extension { border-left-color: #6f5d9b; }
+.tool-level, .reading-label { font-size: .85em; font-weight: bold; color: #43586c; }

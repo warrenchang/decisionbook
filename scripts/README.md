@@ -44,6 +44,8 @@ After changing an SVG, regenerate its high-resolution PNG companion from the fin
 NODE_PATH=/path/to/node_modules node scripts/render_svg_png_fallbacks.cjs figures/example.svg
 ```
 
+`build_reading_figures.py` regenerates the compact conceptual diagrams it owns. Its SVGs carry `data-layout="compact"` and are excluded from the text-normalizer’s default sweep. Add `.phone-fit` to a QMD figure only after checking its labels and connectors at a 390-pixel viewport. Other wide diagrams keep a contained scroll pane; changing that class alone does not make a dense drawing readable.
+
 The renderer requires Playwright and a local Chrome or Chromium executable. It uses the SVG's declared canvas and an opaque light background so the fallback does not acquire extra whitespace or disappear in dark readers.
 
 For a labeled visual-review set covering every configured book figure, use the bundled artifact Python runtime (or any Python with Pillow):

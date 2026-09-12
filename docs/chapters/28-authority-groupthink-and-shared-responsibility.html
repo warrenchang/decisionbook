@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-49e46666a4e6181e671b3ac5e9934df2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-131d2a85259cd7471ddd36e78694cbf2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -238,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/15-samples-randomness-regression-and-calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, Regression, and Calibration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Samples, Randomness, and Calibration</span></span></a>
   </div>
 </li>
       </ul>
@@ -255,19 +284,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision-Making: A Probability Is Not Yet a Feeling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision Making</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory: Gains and Losses Begin at a Reference Point</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions from Experience: When Rare Events Are Not Encountered</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions From Experience</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -279,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting: Money Is Fungible; Minds Label It</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Mental Accounting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -291,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life: Satisfaction, Connection, and Meaning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life</span></span></a>
   </div>
 </li>
       </ul>
@@ -308,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence: The Best Move Depends on Other Minds</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -320,13 +349,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity: When Other People Become Evidence</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -344,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity</span></span></a>
   </div>
 </li>
       </ul>
@@ -361,7 +390,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion: Changing Minds Means Updating Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -385,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair: Warm Honesty Makes Truth Usable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair</span></span></a>
   </div>
 </li>
       </ul>
@@ -437,19 +466,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/39-behavior-design-make-the-better-action-easier.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design: Make the Better Action Easier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/40-choice-architecture-the-environment-gets-a-vote.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture: The Environment Gets a Vote</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container">
   <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene: Build a Process That Can Learn</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -538,11 +567,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#authority-and-responsibility" id="toc-authority-and-responsibility" class="nav-link" data-scroll-target="#authority-and-responsibility">Authority and responsibility</a></li>
   <li><a href="#groupthink-a-familiar-but-contested-umbrella" id="toc-groupthink-a-familiar-but-contested-umbrella" class="nav-link" data-scroll-target="#groupthink-a-familiar-but-contested-umbrella">Groupthink: a familiar but contested umbrella</a></li>
+  <li><a href="#when-the-group-knows-more-than-the-discussion-reveals" id="toc-when-the-group-knows-more-than-the-discussion-reveals" class="nav-link" data-scroll-target="#when-the-group-knows-more-than-the-discussion-reveals">When the group knows more than the discussion reveals</a></li>
   <li><a href="#bystanders-and-pluralistic-ignorance" id="toc-bystanders-and-pluralistic-ignorance" class="nav-link" data-scroll-target="#bystanders-and-pluralistic-ignorance">Bystanders and pluralistic ignorance</a></li>
+  <li><a href="#match-the-safeguard-to-the-missing-step" id="toc-match-the-safeguard-to-the-missing-step" class="nav-link" data-scroll-target="#match-the-safeguard-to-the-missing-step">Match the safeguard to the missing step</a></li>
   <li><a href="#two-links-outward" id="toc-two-links-outward" class="nav-link" data-scroll-target="#two-links-outward">Keeping the decision accountable</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
-  <li><a href="#optional-diagnostic-detail" id="toc-optional-diagnostic-detail" class="nav-link" data-scroll-target="#optional-diagnostic-detail">Optional diagnostic detail</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/28-authority-groupthink-and-shared-responsibility.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/28-authority-groupthink-and-shared-responsibility.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -571,13 +601,13 @@ ul.task-list li input[type="checkbox"] {
 
 <p><span id="authority-groupthink-and-shared-responsibility"></span></p>
 <p><em>Signals that coordinate behavior—and can be counterfeited</em></p>
-<div class="chapter-epigraph">
+<div id="chapter-28-start" class="chapter-epigraph">
 <blockquote class="blockquote">
 <p>“Obedience is the psychological mechanism that links individual action to political purpose.”</p>
 <p>— Stanley Milgram, <a href="https://doi.org/10.1037/h0040525">“Behavioral Study of Obedience”</a>, 1963, p.&nbsp;371</p>
 </blockquote>
 </div>
-<p>An engineer emails a possible safety fault to seven colleagues. A senior manager replies, “It is probably fine,” and nobody adds a comment. By noon, the issue has no named owner. Does the silence mean that the others checked the evidence and agreed, that they are reluctant to challenge the manager, or that each expects someone else to investigate?</p>
+<p>Lena, a test engineer, emails seven colleagues after a component fails its safety check for the second time that week. The senior manager, Sam, replies, “It is probably fine,” and nobody adds a comment. By noon, the issue has no named owner. Does the silence mean that the others checked the evidence and agreed, that they are reluctant to challenge the manager, or that each expects someone else to investigate?</p>
 <p>Those explanations call for different remedies. An invitation to speak may help with withheld doubts, but it will not assign an inspection to anyone. This chapter follows the gap between a group seeing a concern and somebody taking responsibility for it.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -603,64 +633,61 @@ ul.task-list li input[type="checkbox"] {
 <section id="authority-and-responsibility" class="level2">
 <h2 data-anchor-id="authority-and-responsibility">Authority and responsibility</h2>
 <p>The manager may know more than the engineer: perhaps the component was tested yesterday, or the apparent fault is normal under these conditions. Deferring to relevant expertise can save time and coordinate action. Yet a managerial title alone does not establish that this evidence exists. If the engineer stops asking because disagreement seems disloyal, authority has changed the decision through the social cost of speaking.</p>
-<p>Stanley Milgram’s obedience experiments remain among the most famous and disturbing studies in psychology. Participants were instructed by an experimenter to administer increasingly severe electric shocks to a learner whenever the learner made mistakes. The shocks were not real, but participants were led to believe that they were. Credibility was not uniform: archival reanalysis indicates that skepticism varied and may itself have increased continuation in some variants (Perry et al., 2020). Many participants nevertheless continued after the learner protested when the experimenter urged them onward (Milgram, 1963, 1974).</p>
-<p>Institutional trust, uncertainty about harm, gradual escalation, pressure to complete the task, and identification with the scientific project offer competing or interacting explanations (Haslam &amp; Reicher, 2017). Together, these studies show how a legitimate-looking institutional sequence can produce continuation with apparently harmful actions despite visible discomfort, especially when responsibility seems to move upward. Burger (2009) reproduced substantial continuation to a lower stopping point in a modified protocol designed around modern ethical constraints.</p>
+<p>In the condition Milgram reported in 1963, forty men sat at a board of switches labelled from 15 to 450 volts. Each wrong answer from a learner in another room was to receive a stronger shock. At 300 volts, the learner pounded on the wall and stopped answering; the experimenter instructed the participant to count silence as an error. All forty reached 300 volts, five stopped there, and twenty-six reached 450. The learner was an actor and the shocks were simulated, but participants had been told they were administering real shocks.</p>
+<p>What that continuation means remains contested. Milgram reported visible distress, yet later archival analysis found that belief in the setup varied and that skepticism may itself have increased continuation in some variants (Perry et al., 2020). Institutional trust, uncertainty about harm, gradual escalation, pressure to finish, and identification with the scientific project offer competing or interacting explanations (Haslam &amp; Reicher, 2017). The wider series changed the situation and obtained different patterns (Milgram, 1974); the 26-of-40 result is evidence about one particular condition, not a population-wide obedience rate.</p>
+<p>Burger (2009) tested a modified version of a different Milgram condition, stopping after the learner’s protest at 150 volts. In his baseline group, 28 of 40 participants began the next task item and had to be stopped by the experimenter. This was willingness to continue at that point; the study did not observe whether they would reach 450 volts. Its earlier cutoff and screening procedures also underline why the original distressing protocol cannot simply be repeated under present ethical standards.</p>
 <p>The engineer may reasonably leave a wider safety assessment to management, provided the concern reaches someone who can assess it and accepts responsibility for responding. Before closing the issue, ask what evidence supports the reassurance and who checked it. A credential or title can help locate expertise; it cannot replace that connection between reasons and accountable action.</p>
 </section>
 <section id="groupthink-a-familiar-but-contested-umbrella" class="level2">
 <h2 data-anchor-id="groupthink-a-familiar-but-contested-umbrella">Groupthink: a familiar but contested umbrella</h2>
-<p>A cohesive team can reach agreement quickly and carry out a decision together. But if preserving agreement makes objections costly, the same cohesion can keep a serious problem out of the discussion. The challenge is to preserve coordination while making disagreement usable. Janis (1982) made <strong>groupthink</strong> a familiar account of how pressure for concurrence could narrow the appraisal of evidence and alternatives in policy groups. In his model, antecedent conditions could produce self-censorship, pressure on dissenters, and an illusion of unanimity, followed by defective decision processes. The framework remains a useful warning that agreement can be socially produced rather than evidentially earned.</p>
+<p>Suppose one of Lena’s colleagues privately shares her concern but says nothing after Sam’s reassurance. If everyone reads that silence as agreement, the group gains apparent confidence without gaining evidence. A cohesive team can coordinate quickly, yet protecting that agreement can make an objection feel like a personal betrayal. Janis (1982) made <strong>groupthink</strong> a familiar account of how pressure for concurrence could narrow the appraisal of evidence and alternatives in policy groups. In his model, antecedent conditions could produce self-censorship, pressure on dissenters, and an illusion of unanimity, followed by defective decision processes. The framework remains a useful warning that agreement can be socially produced rather than evidentially earned.</p>
 <p>It is also contested. Aldag and Fuller (1993) found that research did not convincingly validate the complete syndrome or a simple path from its proposed characteristics to poor outcomes. Esser’s (1998) review found mixed results and continuing heuristic value, while emphasizing theoretical and methodological problems. The responsible use of the term is therefore as an umbrella that prompts diagnosis, not as a diagnosis supplied by hindsight.</p>
 <p><strong>A bad outcome, apparent unanimity, or cohesion alone does not establish groupthink.</strong> A bad result can follow from uncertainty, missing expertise, poor incentives, implementation failure, or chance. Unanimity can reflect genuinely convergent evidence or shared values. A meta-analysis found no significant overall effect of cohesion on decision quality; poorer decisions appeared under additional conditions such as directive leadership, and the result depended partly on what “cohesion” meant (Mullen et al., 1994).</p>
-<div id="fig-silence-mechanisms" class="quarto-float quarto-figure quarto-figure-center" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard." style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;">
+<p>Silence has several possible causes. <a href="#fig-silence-mechanisms" class="quarto-xref">Figure&nbsp;<span>28.1</span></a> separates five pathways and asks what observation would distinguish them.</p>
+<div id="fig-silence-mechanisms" class="phone-fit quarto-float quarto-figure quarto-figure-center" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silence-mechanisms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/silence-mechanism-diagnostic.svg" class="img-fluid figure-img" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard.">
+<img src="../figures/silence-mechanism-diagnostic.svg" class="phone-fit img-fluid figure-img" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silence-mechanisms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;28.1: Five pathways connect group processes to missing evidence, suppressed dissent, or unassigned responsibility. Match the safeguard to the pathway.
 </figcaption>
 </figure>
 </div>
-<p>Check whether each safeguard reveals previously hidden evidence or disagreement. A formal dissenter can be ignored as merely performing a role, and independent answers cannot supply missing expertise. Psychological safety—a shared belief that interpersonal risk taking is safe—was associated with learning behavior in 51 work teams (Edmondson, 1999).</p>
+<p>A safeguard earns its place by revealing evidence, disagreement, or responsibility that the group previously lacked. Psychological safety—a shared belief that interpersonal risk taking is safe—was associated with learning behavior in 51 work teams (Edmondson, 1999). That association gives a reason to examine the cost of speaking; it does not show that announcing an “open door” makes a workplace safe. A colleague who raises a concern needs to see it considered, with a response that makes the next concern possible to raise.</p>
 <p>The informational and normative routes in <a href="../chapters/26-social-norms-and-conformity-when-other-people-become-evidence.html#social-norms-and-conformity-when-other-people-become-evidence">Social Norms and Conformity: When Other People Become Evidence</a> can contribute to apparent consensus without being identical to groupthink. <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#decision-hygiene-build-a-process-that-can-learn">Decision Hygiene</a> carries the safeguards forward as a repeatable process for independent evidence, structured disagreement, explicit authority, and learning.</p>
+</section>
+<section id="when-the-group-knows-more-than-the-discussion-reveals" class="level2">
+<h2 data-anchor-id="when-the-group-knows-more-than-the-discussion-reveals">When the group knows more than the discussion reveals</h2>
+<p>There is another possibility in the safety thread: nobody is hiding a doubt, but each person holds only part of the relevant evidence. One has the new test result, another remembers a similar fault, and Sam has yesterday’s reassuring supplier report. A meeting can repeat that shared report while leaving the two warning signs unconnected.</p>
+<p>Stasser and Titus (1985) studied this problem by distributing information about candidates among group members. Some facts were shared; others were known to only one member. In the hidden-profile condition, combining the unshared facts could reveal an alternative that each person’s initial information made less attractive. Discussion tended to favor shared and preference-consistent information, so having the relevant facts somewhere in the group did not ensure that they shaped its choice.</p>
+<p>For Lena’s team, an evidence round should precede advocacy: what did each person observe that others may not know? Record the observations together before asking for a vote. This addresses <strong>shared-information bias</strong>. A private poll alone would preserve initial judgments while leaving the missing evidence unpooled.</p>
 </section>
 <section id="bystanders-and-pluralistic-ignorance" class="level2">
 <h2 data-anchor-id="bystanders-and-pluralistic-ignorance">Bystanders and pluralistic ignorance</h2>
 <p>Even when people agree that a problem is serious, action can still stall. The safety email has several recipients, which seems to give it several chances of being handled, yet each may wait for someone else. The next problem is how shared awareness becomes—or fails to become—personal responsibility.</p>
-<p>In emergencies, one might expect that more witnesses would mean more help. But research on the bystander effect shows that the presence of others can reduce an individual’s probability of intervention in many ambiguous settings. Darley and Latané (1968) found that participants were less likely to help a person apparently having a seizure when they believed other bystanders were present. A meta-analysis covering more than 7,700 participants found an overall negative individual-level effect, but it was attenuated in dangerous emergencies; some conditions produced non-negative effects when other bystanders could provide physical support (Fischer et al., 2011). Latané and Darley (1970) described helping as a sequence: notice the event, interpret it as an emergency, accept responsibility, know how to help, and decide to act. A failure at any step can prevent intervention.</p>
+<p>Darley and Latané (1968) placed participants alone in cubicles for what appeared to be a group discussion over an intercom. A recorded voice then appeared to suffer a seizure. Among the thirteen participants who believed they were the only other person listening, <strong>85%</strong> sought help before that speaker’s allotted turn ended; among thirteen who believed four additional listeners were present, <strong>31%</strong> did. Those percentages describe reporting within a particular time window. By the study’s six-minute cutoff, the corresponding proportions were 100% and 62%.</p>
+<p>The experiment changed how many <em>other potential helpers</em> a participant believed were present. It measured an individual’s response, not the probability that at least one member of a real crowd would help. That distinction matters when applying the bystander effect outside the laboratory.</p>
+<p>Across more than 7,700 participants and 105 independent effect sizes, Fischer and colleagues (2011) estimated an overall standardized effect of <span class="math inline">\(g=-0.35\)</span>: others’ presence reduced individual helping on average. The reduction was smaller in dangerous emergencies, and some conditions showed no reduction or a positive effect when bystanders could provide physical support. Other people can spread responsibility, but they can also make intervention feasible.</p>
+<p>Latané and Darley (1970) described helping as a sequence: notice the event, interpret it as an emergency, accept responsibility, know how to help, and decide to act. A failure at any step can prevent intervention.</p>
 <p>Other people can interfere at several stages. If no one else reacts, the situation may seem less serious. This is pluralistic ignorance: people privately feel concern but infer from others’ calm behavior that nothing is wrong. If many people are present, responsibility diffuses: “Someone else will act.” If action might be embarrassing, people hesitate.</p>
 <p>The same gap can appear in a classroom. Several students privately feel confused, yet each takes the absence of questions as evidence that everyone else understands. Asking separately what students understand and how well they think their classmates understand would reveal the gap more directly than observing silence. In a different setting, Prentice and Miller (1993) found that students misperceived their peers’ comfort with campus drinking norms.</p>
 <p>An organization can make a similar comparison between private views and beliefs about colleagues’ views. Anonymous input may uncover concerns that a public “Any objections?” misses, although silence can also reflect fatigue, uncertainty, or lack of relevant information. The purpose is to discover what people think before deciding why they did not speak.</p>
 <p>The unanswered safety email raises a separate possibility: all seven recipients may agree that the issue deserves attention, while each expects another person to act. Here the missing information concerns ownership. Naming an investigator, confirming receipt, setting a response time, and specifying a backup if the investigation stalls would address that gap. These arrangements still leave room to question the manager’s reassurance and to obtain any evidence the group lacks.</p>
 </section>
-<section id="two-links-outward" class="level2">
-<h2 data-anchor-id="two-links-outward">Keeping the decision accountable</h2>
-<p>Expertise can guide judgment, but an instruction does not transfer moral accountability away from the actor or the institution that designed the role. <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html#influence-cues-are-signals-not-buttons">Persuasion</a> extends this question to other signals that can inform a choice or exploit trust.</p>
-<p><span id="authority-evidence-boundary"></span></p>
-</section>
-<section id="practice-lab" class="level2">
-<h2 data-anchor-id="practice-lab">Practice Lab</h2>
-<p>Take one near miss, disputed group decision, safety concern, unethical instruction, or ambiguous request for help. Diagnose the most plausible pathway—directive authority, suppressed dissent, unshared information, pluralistic ignorance, or diffused responsibility—without inferring it from the outcome alone. Then produce an escalation map showing who must notice, what observation triggers action, who owns the next step, how receipt is confirmed, where dissent can be raised, and when the matter escalates again. Include one sentence a junior person can use to question authority without first proving wrongdoing.</p>
-</section>
-<section id="take-it-forward" class="level2">
-<h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<p>The safety email can now end differently: “Lena will inspect the component by 3 p.m. and post the evidence here. Until then, we will follow the existing safety procedure; if the inspection cannot be completed, Sam will escalate it.” Colleagues can still challenge the assessment, but they no longer need to guess who owns the next step.</p>
-<p>Authority, silence, dissent, and compliance do not carry fixed meanings. Their interpretation depends on identity, hierarchy, face, relationships, norms, and institutional history. The final chapter of this part therefore asks what the same observable action means here.</p>
-</section>
-<section id="optional-diagnostic-detail" class="level2">
-<h2 data-anchor-id="optional-diagnostic-detail">Optional diagnostic detail</h2>
+<section id="match-the-safeguard-to-the-missing-step" class="level2">
+<h2 data-anchor-id="match-the-safeguard-to-the-missing-step">Match the safeguard to the missing step</h2>
+<p>An invitation to speak may uncover a withheld doubt, but it still leaves Lena’s inspection unassigned. Naming an inspector solves that ownership problem without supplying evidence the inspector does not hold. An anonymous poll can expose mistaken beliefs about colleagues’ views, but it cannot create expertise absent from the group. A mismatched safeguard can leave everyone feeling that the matter has been handled while the original gap remains.</p>
+<p>Use <a href="#tbl-group-failure-pathways" class="quarto-xref">Table&nbsp;<span>28.1</span></a> to select the next observation and action. Several pathways may coexist, so record what each safeguard is expected to change.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 <span class="screen-reader-only">Note</span>Diagnose the pathway
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div id="tbl-group-failure-pathways" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -694,7 +721,7 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
 </tr>
 <tr class="odd">
 <td><strong>Shared-information bias and hidden profiles</strong></td>
-<td>Discussion repeats information everyone already holds while unique or preference-inconsistent evidence remains unpooled. In a controlled hidden-profile paradigm, discussion favored shared and preference-consistent information (Stasser &amp; Titus, 1985).</td>
+<td>Discussion repeats information everyone already holds while unique or preference-inconsistent evidence remains unpooled.</td>
 <td>Inventory who holds which evidence before advocacy, give unique information a dedicated round, and delay preference aggregation until the evidence map is visible.</td>
 </tr>
 <tr class="even">
@@ -714,7 +741,26 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
 </div>
 </div>
 </div>
-</div>
+</section>
+<section id="two-links-outward" class="level2">
+<h2 data-anchor-id="two-links-outward">Keeping the decision accountable</h2>
+<p>Expertise can guide judgment, but an instruction does not transfer moral accountability away from the actor or the institution that designed the role. <a href="../chapters/30-persuasion-changing-minds-means-updating-models.html#influence-cues-are-signals-not-buttons">Persuasion</a> extends this question to other signals that can inform a choice or exploit trust.</p>
+<p><span id="authority-evidence-boundary"></span></p>
+</section>
+<section id="practice-lab" class="level2">
+<h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<p>Use the safety-email example or one near miss, disputed group decision, or ambiguous request for help.</p>
+<ol type="1">
+<li>Name the most plausible pathway and the observation that supports it. A bad outcome alone does not identify the cause.</li>
+<li>Draw an escalation map: who must notice, what triggers action, who owns the next step, how receipt is confirmed, where dissent can be raised, and when the matter escalates again.</li>
+<li>Write a sentence a junior colleague could use before proving wrongdoing: “I may be missing something, but can we check the test results before closing this?”</li>
+<li>State what you expect the redesign to reveal or change, and what would make you revise the diagnosis.</li>
+</ol>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<p>The safety email can now end differently: “Lena will inspect the component by 3 p.m. and post the evidence here. Until then, we will follow the existing safety procedure; if the inspection cannot be completed, Sam will escalate it.” Colleagues can still challenge the assessment, but they no longer need to guess who owns the next step.</p>
+<p>Authority, silence, dissent, and compliance do not carry fixed meanings. Their interpretation depends on identity, hierarchy, face, relationships, norms, and institutional history. <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html#chapter-29-start">Culture and Identity</a> therefore asks what the same observable action means here.</p>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
@@ -723,6 +769,9 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
 </div>
 <div class="reference">
 <p>Burger, J. M. (2009). Replicating Milgram: Would people still obey today? American Psychologist, 64(1), 1–11.</p>
+</div>
+<div class="reference">
+<p>Darley, J. M., &amp; Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. Journal of Personality and Social Psychology, 8(4), 377–383.</p>
 </div>
 <div class="reference">
 <p>Edmondson, A. C. (1999). Psychological safety and learning behavior in work teams. Administrative Science Quarterly, 44(2), 350–383.</p>
@@ -740,9 +789,6 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
 <p>Janis, I. L. (1982). Groupthink: Psychological studies of policy decisions and fiascoes (2nd ed.). Houghton Mifflin.</p>
 </div>
 <div class="reference">
-<p>Darley, J. M., &amp; Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. Journal of Personality and Social Psychology, 8(4), 377–383.</p>
-</div>
-<div class="reference">
 <p>Latané, B., &amp; Darley, J. M. (1970). The unresponsive bystander: Why doesn’t he help? Appleton-Century-Crofts.</p>
 </div>
 <div class="reference">
@@ -755,10 +801,10 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
 <p>Mullen, B., Anthony, T., Salas, E., &amp; Driskell, J. E. (1994). Group cohesiveness and quality of decision making: An integration of tests of the groupthink hypothesis. Small Group Research, 25(2), 189–204. https://doi.org/10.1177/1046496494252003</p>
 </div>
 <div class="reference">
-<p>Prentice, D. A., &amp; Miller, D. T. (1993). Pluralistic ignorance and alcohol use on campus: Some consequences of misperceiving the social norm. Journal of Personality and Social Psychology, 64(2), 243–256.</p>
+<p>Perry, G., Brannigan, A., Wanner, R. A., &amp; Stam, H. (2020). Credibility and incredulity in Milgram’s obedience experiments: A reanalysis of an unpublished test. Social Psychology Quarterly, 83(1), 88–106. https://doi.org/10.1177/0190272519861952</p>
 </div>
 <div class="reference">
-<p>Perry, G., Brannigan, A., Wanner, R. A., &amp; Stam, H. (2020). Credibility and incredulity in Milgram’s obedience experiments: A reanalysis of an unpublished test. Social Psychology Quarterly, 83(1), 88–106. https://doi.org/10.1177/0190272519861952</p>
+<p>Prentice, D. A., &amp; Miller, D. T. (1993). Pluralistic ignorance and alcohol use on campus: Some consequences of misperceiving the social norm. Journal of Personality and Social Psychology, 64(2), 243–256.</p>
 </div>
 <div class="reference">
 <p>Stasser, G., &amp; Titus, W. (1985). Pooling of unshared information in group decision making: Biased information sampling during discussion. Journal of Personality and Social Psychology, 48(6), 1467–1478. https://doi.org/10.1037/0022-3514.48.6.1467</p>
@@ -831,8 +877,8 @@ Table&nbsp;28.1: Distinct pathways through which groups can suppress evidence, d
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="pagination-link" aria-label="Culture and Identity: The Same Action Is Not the Same Act">
-        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity: The Same Action Is Not the Same Act</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html" class="pagination-link" aria-label="Culture and Identity">
+        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

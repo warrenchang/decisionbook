@@ -63,6 +63,26 @@ h2 { margin-top: 2.8rem; padding-top: 1.1rem; border-top: 1px solid var(--book-l
 .callout { border-radius: .6rem; }
 .callout.core-idea { border-left-color: var(--book-warm); }
 .callout.activity { border-left-color: #2b7a78; }
+.callout.callout-style-default.predict-first,
+.callout.callout-style-simple.predict-first {
+  border-left-color: var(--book-warm);
+  background: #fff8f3;
+}
+.callout.callout-style-default.tool,
+.callout.callout-style-simple.tool { border-left-color: var(--book-line); }
+.callout.callout-style-default.tool-core,
+.callout.callout-style-simple.tool-core { border-left-color: var(--book-accent); }
+.callout.callout-style-default.tool-quick,
+.callout.callout-style-simple.tool-quick { border-left-color: #2b7a78; }
+.callout.callout-style-default.tool-extension,
+.callout.callout-style-simple.tool-extension { border-left-color: #6f5d9b; }
+.tool-level, .reading-label {
+  display: inline-block;
+  color: var(--book-muted);
+  font-size: .82rem;
+  font-weight: 650;
+  letter-spacing: .02em;
+}
 .callout.part-overview { border-left-color: var(--book-accent); }
 .callout.loop-location {
   border-left-color: #6b78a8;
@@ -149,29 +169,7 @@ th[scope="rowgroup"] { vertical-align: middle; }
 
   // Compact figures are composed to remain readable in a narrow reading column.
   // Let them fit the screen instead of forcing the wide-diagram scroll pane.
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="traffic-light-color-context.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="duck-rabbit-context.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="ai-same-forecast-different-values.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="ai-risk-is-not-benefit.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="habit-loop.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src*="/master-loop"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="agreement-design.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="behavior-design.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="choice-architecture.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="communication-iceberg.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="conversation-repair.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="persuasion-update.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="story-evidence-braid.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="story-update.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="structured-judgment-pipeline.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="decision-audit.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="first-offer-information-matrix.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="zopa.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="claim-to-design-pipeline.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="selected-evidence-pipeline.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="random-sampling-vs-assignment.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="participant-flow-threats.svg"],
-  figure.quarto-float-fig > div[aria-describedby] > img[src$="context-enters-choice.svg"] {
+  figure.quarto-float-fig > div[aria-describedby] > img.phone-fit {
     width: 100%;
     min-width: 0;
     max-width: 100%;

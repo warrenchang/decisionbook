@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **838**
+Unique references in the master union: **849**
 
-Chapter reference blocks: **859**
+Chapter reference blocks: **871**
 
 Unresolved author–year citations: **0**
 
@@ -14,45 +14,45 @@ Unresolved author–year citations: **0**
 | --- | ---: | ---: |
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision | 9 | 0 |
-| Attention: What Becomes Evidence? | 29 | 0 |
+| Attention: What Becomes Evidence? | 30 | 0 |
 | The Predictive Mind: Perception Is Inference | 35 | 0 |
 | Expectations: When Predictions Become Causes | 32 | 0 |
-| Valuation: How Options Become Worth Choosing | 55 | 0 |
+| Valuation: How Options Become Worth Choosing | 54 | 0 |
 | The Narrator After Choice | 19 | 0 |
 | Fast and Frugal Thinking | 28 | 0 |
 | What Feels Likely | 15 | 0 |
 | Beliefs That Defend Themselves | 18 | 0 |
-| When Context Rewrites Comparison | 11 | 0 |
+| When Context Rewrites Comparison | 13 | 0 |
 | Framing | 15 | 0 |
-| Fluency and Familiarity | 24 | 0 |
+| Fluency and Familiarity | 25 | 0 |
 | Base Rates and Updating | 7 | 0 |
-| Samples, Randomness, Regression, and Calibration | 17 | 0 |
-| Risky Decision-Making: A Probability Is Not Yet a Feeling | 15 | 0 |
-| Prospect Theory: Gains and Losses Begin at a Reference Point | 14 | 0 |
-| Decisions from Experience: When Rare Events Are Not Encountered | 18 | 0 |
-| Intertemporal Decision Making | 27 | 0 |
-| Mental Accounting: Money Is Fungible; Minds Label It | 21 | 0 |
+| Samples, Randomness, and Calibration | 17 | 0 |
+| Risky Decision Making | 15 | 0 |
+| Prospect Theory | 14 | 0 |
+| Decisions From Experience | 18 | 0 |
+| Intertemporal Decision Making | 28 | 0 |
+| Mental Accounting | 22 | 0 |
 | Habits, Wanting, and Self-Control | 12 | 0 |
-| Deciding for a Better Life: Satisfaction, Connection, and Meaning | 19 | 0 |
-| Strategic Interdependence: The Best Move Depends on Other Minds | 11 | 0 |
+| Deciding for a Better Life | 19 | 0 |
+| Strategic Interdependence | 11 | 0 |
 | Behavioral Game Theory | 14 | 0 |
-| Cooperation and Social Preferences: Self-Interest Is Not the Only Payoff | 26 | 0 |
-| Social Norms and Conformity: When Other People Become Evidence | 29 | 0 |
+| Cooperation and Social Preferences | 26 | 0 |
+| Social Norms and Conformity | 30 | 0 |
 | Prices as Social Signals | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
-| Culture and Identity: The Same Action Is Not the Same Act | 29 | 0 |
-| Persuasion: Changing Minds Means Updating Models | 28 | 0 |
+| Culture and Identity | 29 | 0 |
+| Persuasion | 28 | 0 |
 | Why Stories Move Minds | 12 | 0 |
 | Building an Evidence-Aligned Message | 12 | 0 |
 | Communication | 18 | 0 |
-| Connection and Repair: Warm Honesty Makes Truth Usable | 29 | 0 |
-| Negotiation as Joint Decision Design | 12 | 0 |
-| Preparing and Claiming Value | 10 | 0 |
-| Creating Value Across Differences | 9 | 0 |
+| Connection and Repair | 29 | 0 |
+| Negotiation as Joint Decision Design | 13 | 0 |
+| Preparing and Claiming Value | 11 | 0 |
+| Creating Value Across Differences | 10 | 0 |
 | Designing Better Agreements | 19 | 0 |
-| Behavior Design: Make the Better Action Easier | 18 | 0 |
-| Choice Architecture: The Environment Gets a Vote | 28 | 0 |
-| Decision Hygiene: Build a Process That Can Learn | 31 | 0 |
+| Behavior Design | 19 | 0 |
+| Choice Architecture | 29 | 0 |
+| Decision Hygiene | 32 | 0 |
 | Data Driven Decision Making | 21 | 0 |
 
 ## Unresolved citation strings

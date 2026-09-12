@@ -9,7 +9,7 @@ aliases:
 
 *Facts arrive with attention, meaning, reference points, and implied causality*
 
-::: {.chapter-epigraph}
+::: {#chapter-12-start .chapter-epigraph}
 > “The dependence of preferences on the formulation of decision problems is a significant concern for the theory of rational choice.”
 >
 > — Amos Tversky and Daniel Kahneman, [“The Framing of Decisions and the Psychology of Choice”](https://doi.org/10.1126/science.7455683), 1981, p. 453
@@ -32,9 +32,11 @@ A frame organizes what a decision appears to be about. Sometimes equivalent desc
 - Explain how equivalent descriptions and different problem definitions alter judgment.
 - Build an ethical complementary-frame protocol.
 
+## What a frame changes
+
 **Framing** concerns how information or a problem is described and organized. In the survival example, the outcome is held constant while the emphasis changes. In “Should we cut costs?” versus “Which service must we preserve?”, different objectives become focal. These are related questions about representation, but only the first is a test using complementary numerical descriptions.
 
-Reference points can also change evaluation. A €60,000 salary may feel generous against an expectation of €50,000 and disappointing against €70,000. Prospect theory develops this reference dependence; here we examine how the representation guides attention and comparison (Tversky & Kahneman, 1981).
+Reference points can also change evaluation. A €60,000 salary may feel generous against an expectation of €50,000 and disappointing against €70,000. This **reference-point shift** changes what counts as a gain or loss. [Chapter 17](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#reference-dependence-the-zero-is-psychologically-constructed) develops the model; here we examine how a representation guides attention and comparison (Tversky & Kahneman, 1981).
 
 ::: {.callout-note .personal-example icon=false}
 ## A personal illustration: from a fall to a somersault
@@ -48,9 +50,9 @@ A frame differs from a **prime**, which changes the mental context before or aro
 
 ## Equivalent facts, different meanings
 
-![Framing, priming, fluency, and defaults influence choice through different mechanisms.](../figures/context-mechanisms.svg){#fig-context-mechanisms fig-alt="Four cards distinguish framing, priming, fluency, and defaults by the question each mechanism answers."}
+![Framing, priming, fluency, and defaults influence choice through different mechanisms.](../figures/context-mechanisms.svg){#fig-context-mechanisms fig-alt="Four cards distinguish framing, priming, fluency, and defaults by the question each mechanism answers." .phone-fit}
 
-The clearest framing effects occur when two descriptions are logically equivalent but psychologically different.
+In @fig-context-mechanisms, the relevant distinction is what changed: the description, the preceding cue, processing ease, or the result of inaction. The clearest tests of framing hold the other ingredients fixed and compare logically equivalent descriptions.
 
 One classic category is attribute framing. An object or outcome is described in positive or negative terms, even though the underlying information is the same. Levin and Gaeth (1988) found that people evaluated beef more favorably when it was labeled “75% lean” than when it was labeled “25% fat.” The two labels are equivalent. But “lean” directs attention to health and quality, while “fat” directs attention to unhealthiness and excess.
 
@@ -60,9 +62,25 @@ Another category is goal framing, where messages emphasize either the benefits o
 
 Goal framing matters because it changes motivation. A gain frame says, “Here is what you can obtain.” A loss frame says, “Here is what you may lose.” The same action becomes pursuit or avoidance.
 
-A third category is risky-choice framing. Here, choices involving uncertainty are described in terms of gains or losses. Tversky and Kahneman’s “Asian disease problem” is the classic example. Participants were told to imagine a disease expected to kill 600 people. In the gain frame, one program would save 200 people for sure, while another had a one-third chance of saving all 600 and a two-thirds chance of saving none. In the loss frame, one program would result in 400 deaths for sure, while another had a one-third chance that nobody would die and a two-thirds chance that all 600 would die. The outcomes were logically equivalent, but preferences changed. People tended to be risk averse in the gain frame and risk seeking in the loss frame (Tversky & Kahneman, 1981).
+A third category is **risky-choice framing**, illustrated by Tversky and Kahneman's (1981) hypothetical disease problem. Six hundred people are at risk, and the chooser must select one of two programs.
 
-The wording shifted aggregate preferences between a sure outcome and a gamble. The risky-choice chapter examines how probabilities, amounts, and reference points affect that comparison.
+::: {.callout-note .predict-first icon=false}
+## Choose before reading the result
+
+[Predict first]{.reading-label}
+
+Read the first row and record your choice. Then read the second row. Assuming the stated outcomes are complete, would you choose the corresponding program again?
+
+| Description | Sure program | Risky program |
+| --- | --- | --- |
+| Lives saved | 200 people survive. | One-third chance that all 600 survive; otherwise nobody survives. |
+| Lives lost | 400 people die. | One-third chance that nobody dies; otherwise all 600 die. |
+: Two descriptions of the same programs {#tbl-disease-framing}
+:::
+
+Of the **152 respondents** given the lives-saved version, **72% chose the sure program**. In a different group of **155** given the lives-lost version, only **22% chose it**; **78% preferred the gamble**. The majority preference reversed across descriptions. These are comparisons between groups, not a count of individuals who changed their minds.
+
+The rows of @tbl-disease-framing preserve the same final possibilities and probabilities. The first makes a guaranteed rescue focal; the second foregrounds a guaranteed loss. [Chapter 17](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#the-prospect-theory-model) uses the example to examine how reference points and probability weighting can produce that pattern.
 
 If equivalent frames produce different choices, the ethical answer is not to search for a perfectly neutral sentence. Every description highlights something. Present complementary frames, preserve the same denominator and horizon, and ask which trade-off each wording makes easier to see. Equivalent facts can become different decisions because people process meaning, not equivalence alone.
 
@@ -74,7 +92,7 @@ A restaurant server can ask, “Do you want an egg with your ramen?” Or the se
 
 ![Two questions make different options salient. “Do you want an egg?” keeps no and yes visible, whereas “Would you like one egg or two?” makes eating implicit and asks only about quantity.](../figures/assumed-choice-eggs.svg){#fig-assumed-choice-eggs fig-alt="Two side-by-side menu panels. The first asks whether the person wants an egg and displays no and yes. The second asks whether the person wants one or two eggs and displays only one and two. The second question makes adding an egg implicit." width=100%}
 
-“Would you prefer delivery this week or next week?” similarly treats purchase as settled. A useful response is to restore the earlier question: whether to buy at all. This kind of framing changes option salience and implied commitment, rather than merely expressing an unchanged proposition.
+In @fig-assumed-choice-eggs, adding “no egg” restores an option hidden by the second question. “Would you prefer delivery this week or next week?” similarly treats purchase as settled. These are cases of **substantive reframing**: the inquiry changes which options, objectives, or causal accounts receive consideration. They deserve scrutiny even though they are not tests of equivalent numerical descriptions.
 
 Survey questions can also direct attention to different consequences of a policy. Asking about protecting local jobs highlights workers, while asking about restrictions on lower-priced imports highlights consumers. The descriptions may concern one policy without supplying equivalent information.
 
@@ -88,7 +106,9 @@ Changing the wording changes which explanations receive a hearing.
 
 Asking a witness what happened should help recover information about an event. Yet the question can supply an interpretation that influences the report itself. When later decisions or judgments of responsibility rely on that report, the wording becomes part of the evidence-generating process.
 
-Loftus and Palmer’s classic study showed participants films of car accidents and asked them to estimate speed. The wording of the question mattered. Participants gave higher speed estimates when asked how fast the cars were going when they “smashed” into each other than when asked how fast they were going when they “hit” each other. In a separate experiment, wording also affected reports one week later: participants asked about cars that “smashed” were more likely to report broken glass than those asked about cars that “hit,” although the film contained none (Loftus & Palmer, 1974).
+Loftus and Palmer (1974) showed 45 students seven films of car accidents, varying one verb in the speed question across five groups of nine. Mean estimates ranged from **31.8 mph** for “contacted” to **34.0 mph** for “hit” and **40.8 mph** for “smashed.” The cars on film had not sped up; a word in the question produced a nine-mile-per-hour spread in the estimates.
+
+That first result could reflect a changed report without a changed memory. A second experiment therefore asked about broken glass one week later. There was none in the film, yet **16 of 50** students previously asked about “smashed” reported seeing it, compared with **7 of 50** asked about “hit” and **6 of 50** controls who received no speed question. @fig-wording-memory-study-redraw keeps the immediate estimate and later report separate.
 
 ![Question wording changed both immediate speed estimates and later reports of nonexistent broken glass. Published values from Loftus and Palmer (1974).](../figures/wording-memory-study-redraw.svg){#fig-wording-memory-study-redraw fig-alt="A two-panel original chart. In Experiment 1, with 45 students in five groups of nine, mean speed estimates rise from 31.8 miles per hour for contacted to 40.8 for smashed. In Experiment 2, with 50 students per group, 32 percent of the smashed group reported broken glass versus 14 percent of the hit group and 12 percent of controls, although no broken glass appeared."}
 
@@ -104,7 +124,7 @@ For decision-making, this means that frames do not merely describe situations. T
 
 Framing a negotiation as joint problem-solving can invite the information needed to discover a useful trade. But sharing that information can also expose a party to pressure. Calling the meeting a battle instead can emphasize winning and withholding while hiding possible agreement. A useful frame must guide the search without settling the disclosure decision in advance: the parties still need to assess incentives, alternatives, and safeguards.
 
-Similarly, describing dissent as a contribution can support speaking up, but language alone does not create psychological safety. People need evidence that questions and mistakes can be raised without interpersonal punishment (Edmondson, 1999, 2019). In politics, competing frames interact with source credibility, prior beliefs, and the audience's values (Chong & Druckman, 2007).
+Similarly, describing dissent as a contribution can support speaking up, but language alone does not create psychological safety. [Chapter 28](28-authority-groupthink-and-shared-responsibility.qmd#groupthink-a-familiar-but-contested-umbrella) examines the responses to questions and mistakes that make such an invitation credible (Edmondson, 1999, 2019). In politics, competing frames interact with source credibility, prior beliefs, and the audience's values (Chong & Druckman, 2007).
 
 ## Reframing as a decision skill
 
@@ -198,5 +218,5 @@ Schuman, H., & Presser, S. (1981). Questions and answers in attitude surveys: Ex
 :::
 
 ::: {.reference}
-Tversky, A., & Kahneman, D. (1981). The framing of decisions and the psychology of choice. Science, 211(4481), 453-458.
+Tversky, A., & Kahneman, D. (1981). The framing of decisions and the psychology of choice. *Science, 211*(4481), 453–458. https://doi.org/10.1126/science.7455683
 :::

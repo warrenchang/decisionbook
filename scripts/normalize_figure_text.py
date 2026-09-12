@@ -229,7 +229,7 @@ def main() -> int:
     parser.add_argument("paths", nargs="*", type=Path)
     parser.add_argument("--check", action="store_true", help="Analyze without rewriting files.")
     args = parser.parse_args()
-    paths = args.paths or sorted(path for path in FIGURES.glob("*.svg") if path.name not in HAND_AUTHORED)
+    paths = args.paths or sorted(path for path in FIGURES.glob("*.svg") if path.name not in HAND_AUTHORED and 'data-layout="compact"' not in path.read_text(encoding="utf-8"))
     total = {"boxes": 0, "labels": 0, "removed": 0, "wraps": 0}
     for path in paths:
         stats = normalize(path, write=not args.check)

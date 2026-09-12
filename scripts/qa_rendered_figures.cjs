@@ -214,14 +214,14 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // The book contains 117 rendered placements, including Chapter 4's two new
-    // context demonstrations and the loops repeated across Part openers.
-    if (totalByViewport.desktop !== 117 || totalByViewport.mobile !== 117) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 117 in each viewport`);
+    // Current source inventory: 116 Markdown figures, one raw HTML GIF,
+    // and the cover inserted by Quarto into the preface (118 placements).
+    if (totalByViewport.desktop !== 118 || totalByViewport.mobile !== 118) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 118 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`The self-fulfilling and self-defeating table has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");
-    if (!/practice/.test(daughterCaption) || !/learning/.test(daughterCaption)) {
+    if (!/practice/.test(daughterCaption) || !/feedback/.test(daughterCaption) || !/retriev/.test(daughterCaption)) {
       issues.push("Figure 8.3 caption does not explain the practice and learning illustration");
     }
 

@@ -61,9 +61,52 @@ def reference_key(value: str) -> str:
     return value
 
 
-def sort_key(value: str) -> str:
+def _alphabetic_text(value: str) -> str:
     decomposed = unicodedata.normalize("NFKD", value.casefold())
-    return "".join(char for char in decomposed if not unicodedata.combining(char))
+    return "".join(char for char in decomposed if char.isalnum() and not unicodedata.combining(char))
+
+
+def _author_sort_key(author_text: str) -> tuple[tuple[str, str], ...]:
+    # Reference authors use surname/initial pairs. An ampersand is punctuation,
+    # not a name: Wood, Quinn ... must precede Wood & Runger, for example.
+    author_text = re.sub(r"\((?:Ed|Eds|Trans)\.\)", "", author_text)
+    author_text = re.sub(r"(?:,\s*)?\bet al\.\s*$", "", author_text, flags=re.IGNORECASE)
+    author_text = re.sub(r",\s*(?:Jr\.|Sr\.|II|III|IV)(?=,|\s*$)", "", author_text)
+    fields = [field.strip().lstrip("& ") for field in author_text.rstrip(". ").split(",")]
+    initials = re.compile(r"(?:[A-ZÀ-ÖØ-Þ][.\-\s]*)+")
+    if len(fields) % 2 == 0 and all(initials.fullmatch(fields[i]) for i in range(1, len(fields), 2)):
+        return tuple((_alphabetic_text(fields[i]), _alphabetic_text(fields[i + 1])) for i in range(0, len(fields), 2))
+    # Corporate authors and other unpaired author credits sort as one name.
+    return ((_alphabetic_text(author_text), ""),)
+
+
+def sort_key(value: str) -> tuple:
+    """Order author lists, then date and title, without changing citation text.
+
+    Tuple prefixes put a sole author before that author with collaborators,
+    and a shorter author list before the same list extended by another author.
+
+    >>> sort_key("Wood, W., Quinn, J. M., & Kashy, D. A. (2002). Habits.") < sort_key("Wood, W., & Rünger, D. (2016). Psychology of habit.")
+    True
+    >>> sort_key("Strayer, D. L., Drews, F. A., & Johnston, W. A. (2003). Driving.") < sort_key("Strayer, D. L., & Johnston, W. A. (2001). Distraction.")
+    True
+    >>> sort_key("Wood, W. (2025). Sole author.") < sort_key("Wood, W., & Neal, D. T. (2007). Collaborators.")
+    True
+    >>> sort_key("Doe, J., & Roe, A. (2025). Two authors.") < sort_key("Doe, J., Roe, A., & Smith, B. (1990). Three authors.")
+    True
+    >>> sort_key("Ho, M. Y., Worthington, E. L., Jr., Cowden, R. G., et al. (2024). Forgiveness.") < sort_key("Holt-Lunstad, J., Smith, T. B., & Layton, J. B. (2010). Relationships.")
+    True
+    """
+    plain = re.sub(r"[*_`]", "", value)
+    date = re.search(r"\((?:(\d{4})([a-z]?)(?:,[^)]*)?|(n\.d\.))\)", plain)
+    if date is None:
+        return (_author_sort_key(plain), -1, "", "", _alphabetic_text(plain))
+    authors = _author_sort_key(plain[:date.start()].strip())
+    year = int(date.group(1)) if date.group(1) else -1
+    suffix = date.group(2) or ""
+    title = plain[date.end():].lstrip(". ")
+    title = re.sub(r"^(?:a|an|the)\s+", "", title, flags=re.IGNORECASE)
+    return (authors, year, suffix, _alphabetic_text(title), _alphabetic_text(plain))
 
 
 def chapter_references() -> list[str]:

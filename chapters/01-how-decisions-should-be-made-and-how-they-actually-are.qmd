@@ -8,7 +8,7 @@ aliases:
 
 *A rational benchmark is not a psychological portrait*
 
-::: {.chapter-epigraph}
+::: {#chapter-01-start .chapter-epigraph}
 > “Economics needs two completely different types of theories: normative and descriptive.”
 >
 > — Richard H. Thaler, [“From Cashews to Nudges”](https://doi.org/10.1257/aer.108.6.1265), 2018, p. 1267
@@ -74,7 +74,7 @@ If everyone recommends the “best” candidate, apparent agreement can hide dis
 
 The beliefs describe what may follow; the values say how much those consequences matter. Together they support a ranking, from which the decision-maker selects a highest-ranked feasible alternative. The diagram makes these relationships visible and adds feedback from experience.
 
-![A normative decision process built around the rational-choice benchmark. Information about alternatives supports prediction; prediction informs valuation; valuation supports choice; and outcomes can provide feedback for later judgment.](../figures/decision-loop.svg){#fig-normative-decision-loop fig-alt="A normative decision loop. Information about alternatives enters a judgment box containing prediction followed by valuation. Valuation supports choice, choice leads to an outcome, and feedback from the outcome can inform later judgment."}
+![A normative decision process built around the rational-choice benchmark. Information about alternatives supports prediction; prediction informs valuation; valuation supports choice; and outcomes can provide feedback for later judgment.](../figures/decision-loop.svg){#fig-normative-decision-loop fig-alt="A normative decision loop. Information about alternatives enters a judgment box containing prediction followed by valuation. Valuation supports choice, choice leads to an outcome, and feedback from the outcome can inform later judgment." .phone-fit}
 
 ### Judgment, prediction, valuation, and choice
 
@@ -134,24 +134,21 @@ A default can alter effort, perceived recommendation, normality, responsibility,
 
 Moving from agreement to transplantation also requires registration, clinical capacity, and successful organ recovery. A longitudinal analysis of five countries that changed from opt-in to opt-out found no average increase in deceased donation after the policy switch, emphasizing the importance of clinical capacity, public trust, family involvement, and implementation (Dallacker et al., 2024). [*Choice Architecture*](40-choice-architecture-the-environment-gets-a-vote.qmd#set-the-starting-point-defaults-and-active-choice) treats a default as one component of a system.
 
-::: {.callout-note icon=false collapse=true}
-## Two examples from commercial practice {#two-suggestive-cases-with-weaker-evidence}
+### Two examples from commercial practice {#two-suggestive-cases-with-weaker-evidence}
+
+The next two cases suggest useful mechanisms, but their evidence is weaker than the controlled comparisons above. Read them as questions to investigate, not established estimates of what an arrow or a product name will cause.
 
 #### 4. A right-pointing arrow and a more visible action path
 
-In 2012, Google changed text advertisements on its Display Network by adding a clickable right-pointing arrow while also changing typography, spacing, and layout. The advertised hotel or product did not become objectively better because the arrow appeared, but the route from seeing the offer to clicking it became more salient. Google reported higher clicks after this bundled redesign (Land & Yuan, 2012).[^ch01-ad-redesign]
+In 2012, Google added a clickable right-pointing arrow to text advertisements on its Display Network while also changing typography, spacing, and layout. Google reported higher clicks after the bundled redesign; the report cannot isolate what the arrow contributed (Land & Yuan, 2012).[^ch01-ad-redesign]
 
-The example highlights the path from evaluation to action. A preference can exist without becoming action. Attention, visibility, friction, and affordance lie between evaluating an option and implementing it. A model that predicts clicks solely from the value of the advertised product omits the interface through which intention becomes behavior. [*Choice Architecture*](40-choice-architecture-the-environment-gets-a-vote.qmd#an-arrow-that-changed-the-action-path) returns to the case as a design problem.
+The product did not improve, but the route to acting on an interest became more visible. This makes the case useful for examining the path between evaluation and action. [*Choice Architecture*](40-choice-architecture-the-environment-gets-a-vote.qmd#an-arrow-that-changed-the-action-path) returns to the design and the evidence needed to test it.
 
 #### 5. Mars publicity and Mars-bar accessibility
 
-News reports in 1997 linked rising sales of Mars bars to intense publicity around NASA's Pathfinder mission. The bar's name came from its creator's family name, not the planet, so the story offers an intuitive accessibility hypothesis: repeated references to *Mars* may have made the product name easier to retrieve.
+News reports in 1997 linked rising Mars-bar sales to publicity around NASA's Pathfinder mission. Repeated references to *Mars* offer an intuitive hypothesis: the product name may have become easier to retrieve without any change in the chocolate. The available sales account cannot establish that causal connection (Grant, 1997).[^ch01-mars-sales]
 
-Berger and Fitzsimons (2008) later used this reported association to motivate experiments on environmental cues, accessibility, product evaluation, and choice.[^ch01-mars-sales]
-
-The case belongs here as a lesson in both decision-making and causal inference. A product can become easier to recall without changing its attributes. That accessibility may influence the consideration set or make evaluation easier. But an association that fits a mechanism is not yet evidence that the mechanism caused the outcome. [*Fluency and Familiarity*](13-accessibility-familiarity-and-ease.qmd#accessibility-familiarity-and-ease) supplies the experimentally grounded concepts.
-
-:::
+Berger and Fitzsimons (2008) later used the association to motivate experiments on environmental cues and choice. The distinction is worth keeping: a memorable story suggests a mechanism; a suitable comparison tests it. [*Fluency and Familiarity*](13-accessibility-familiarity-and-ease.qmd#accessibility-familiarity-and-ease) develops the experimentally grounded account.
 
 ### When an active motive changes the message {#social-meaning-accessibility-and-active-motive}
 
@@ -189,7 +186,7 @@ Long before the committee votes, members have selected evidence, interpreted it,
 
 The next diagram opens the earlier loop to show these influences. It also shows why an outcome must be interpreted before it can inform another decision.
 
-![How decisions are made. External context shapes presented information and the decision-maker's internal state and model. Within judgment, selection and interpretation interact with prediction and valuation. Judgment supports choice and action; outcomes provide feedback that may update, reinforce, or fail to correct the internal model.](../figures/decision-making-according-to-behavioral-evidence.svg){#fig-behavioral-decision-loop fig-alt="A behavioral decision loop. External context shapes presented information and the decision-maker's internal state and model. Within judgment, selection and interpretation have two-way connections with prediction and valuation. Judgment supports choice and action, choice leads to an outcome, and feedback may update the internal model."}
+![How decisions are made. External context shapes presented information and the decision-maker's internal state and model. Within judgment, selection and interpretation interact with prediction and valuation. Judgment supports choice and action; outcomes provide feedback that may update, reinforce, or fail to correct the internal model.](../figures/decision-making-according-to-behavioral-evidence.svg){#fig-behavioral-decision-loop fig-alt="A behavioral decision loop. External context shapes presented information and the decision-maker's internal state and model. Within judgment, selection and interpretation have two-way connections with prediction and valuation. Judgment supports choice and action, choice leads to an outcome, and feedback may update the internal model." .phone-fit}
 
 In @fig-behavioral-decision-loop, the functions can overlap, recur, become compressed through practice, or be distributed across people and technologies. The arrows show their dependencies and routes of influence.
 

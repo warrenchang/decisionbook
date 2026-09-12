@@ -3,11 +3,13 @@ aliases:
   - 12b-samples-randomness-regression-calibration.html
 ---
 
-# Samples, Randomness, Regression, and Calibration
+# Samples, Randomness, and Calibration
+
+*Samples, Randomness, Regression, and Calibration*
 
 *A pattern becomes evidence only after we ask how much variation the process could produce on its own*
 
-::: {.chapter-epigraph}
+::: {#chapter-15-start .chapter-epigraph}
 > “People have erroneous intuitions about the laws of chance.”
 >
 > — Amos Tversky and Daniel Kahneman, [“Belief in the Law of Small Numbers”](https://doi.org/10.1037/h0031322), 1971, p. 105
@@ -63,7 +65,7 @@ When $p=0.5$, the standard error is about 0.158 for $n=10$ and 0.050 for $n=100$
 
 Selection magnifies the problem. The branch reached headquarters’ agenda because its quarter was unusually bad, just as a fund enters a performance ranking because its returns were unusually good. In both cases, temporary variation has helped select the evidence we are about to explain.
 
-When decisions cannot wait or populations are inherently small, the available sample must still inform action. Report uncertainty, pool comparable evidence cautiously, use hierarchical or shrinkage estimates where appropriate, and identify which conclusion depends on one or two observations.
+When decisions cannot wait or populations are inherently small, the available sample must still inform action. Report uncertainty and identify which conclusion depends on one or two observations. Where cases are sufficiently comparable, shrinkage methods pull unstable estimates toward the wider average rather than taking each small sample at face value; the regression section below explains that logic.
 
 ## Streaks require a process model
 
@@ -114,7 +116,7 @@ Regression does not show that an intervention had no effect. It shows why before
 
 ![A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average." width=100%}
 
-Return to the branch manager. The recovery is real, but attributing all of it to the rescue plan would confuse improvement with evidence of its cause. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
+Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. @fig-regression-conditional-shrinkage shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
 
 ## Confidence must face a distribution
 
@@ -164,7 +166,7 @@ $$
 
 Lower is better. A 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Across forecasts, average the scores (Brier, 1950; Murphy, 1973).
 
-Forecasting research suggests that performance can improve through habits rather than clairvoyance: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.
+Research in geopolitical forecasting tournaments suggests that **probabilistic forecasting** can improve through repeatable practices: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.
 
 | Field | Example |
 | --- | --- |
@@ -185,9 +187,15 @@ The same discipline is needed when AI supplies the forecast. [Chapter 42](42-dat
 
 Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.
 
-A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. Adding them gives 45 percent only if the events are mutually exclusive. They are not: supplier delay can cause software delay, and regulatory change can affect both.
+A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of **at least one of these delays** must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, it would be
 
-The team should draw an event tree or build a small simulation with conditional pathways, then compare the combined estimate with the empirical delay rate for similar projects. The inside model explains mechanisms; the outside view checks whether the combined answer is plausible. If the inside model gives 18 percent while comparable projects miss the date 55 percent of the time, the discrepancy is evidence. It requires investigation, not automatic rejection of the base rate.
+$$
+1-(1-0.15)(1-0.10)(1-0.20)=0.388,
+$$
+
+or 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the [probability rules in Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#chapter-14-start) provide the first consistency check.
+
+Missing the **final deadline** is a separate event. Schedule slack may absorb a component delay, while an omitted failure route may jeopardize completion. Define that final event and model how each route affects it before comparing the forecast with the deadline-miss rate for similar projects. If the estimates differ sharply, investigate the reference class, schedule assumptions, dependencies, and missing routes. The outside view cannot correct the inside view until both refer to the same outcome.
 
 Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. Each project adds observations to the calibration ledger.
 
@@ -225,11 +233,11 @@ Gilovich, T., Vallone, R., & Tversky, A. (1985). The hot hand in basketball: On 
 :::
 
 ::: {.reference}
-Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. *Psychological Review, 80*(4), 237–251.
+Kahneman, D., & Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. *Management Science, 39*(1), 17–31.
 :::
 
 ::: {.reference}
-Kahneman, D., & Lovallo, D. (1993). Timid choices and bold forecasts: A cognitive perspective on risk taking. *Management Science, 39*(1), 17–31.
+Kahneman, D., & Tversky, A. (1973). On the psychology of prediction. *Psychological Review, 80*(4), 237–251.
 :::
 
 ::: {.reference}

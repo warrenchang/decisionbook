@@ -7,7 +7,7 @@ aliases:
 
 *How markets aggregate beliefs—and amplify them into bubbles*
 
-::: {.chapter-epigraph}
+::: {#chapter-27-start .chapter-epigraph}
 > “A market in which prices always ‘fully reflect’ available information is called ‘efficient.’”
 >
 > — Eugene F. Fama, [“Efficient Capital Markets”](https://doi.org/10.2307/2325486), 1970, p. 383
@@ -123,7 +123,9 @@ $$
 V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 $$
 
-Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable. A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
+Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.
+
+A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
 
 ![A possible reinforcing loop links rising prices, expectations of further gains, and more buying. Fundamentals affect price separately, and financing can amplify demand without being required for the loop. Supply, short selling, risk limits, and skeptical capital can weaken the process.](../figures/asset-bubble-feedback.svg){#fig-asset-bubble-feedback fig-alt="Three boxes arranged in a loop show rising prices, expecting more gains, and more buying. A separate fundamentals box points to price; a dashed arrow from financing points to buying as an optional amplifier. A lower band lists possible brakes and notes that correction can be delayed."}
 
@@ -131,7 +133,7 @@ A boom can begin with genuine innovation and later acquire a feedback component,
 
 ### Strategic resale and synchronization risk
 
-A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers' beliefs and on exiting before the correction. This makes a bubble partly a problem of strategic interdependence.
+A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers' beliefs and on exiting before the correction. This is the recursive prediction problem in [Behavioral Game Theory](24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.qmd#chapter-24-start), now with a financial consequence: accurately forecasting the next buyer can reward a trade the buyer would reject on cash-flow value alone.
 
 Skeptical traders face the mirror problem. Even when many privately judge the price fragile, each may be uncertain about when the others will act. Selling or shorting too early can be costly, and funding or career pressure can force an informed trader out before convergence. Abreu and Brunnermeier (2003) formalize how this **synchronization risk** can delay correction. Shared doubt is not the same as coordinated correction.
 
@@ -197,9 +199,9 @@ Policy should therefore target the mechanism rather than the label: disclosure t
 
 ## Investor behavior: the decision process matters
 
-Return to the earnings announcement. A vivid company story can attract [attention](09-what-feels-likely-availability-affect-and-resemblance.qmd), while a subsequent price rise appears to confirm that other investors share your information. If those investors are responding to the same announcement or copying the price, their behavior supplies less [independent evidence](26-social-norms-and-conformity-when-other-people-become-evidence.qmd) than it seems.
+Return to the earnings announcement. A vivid company story can attract [attention](09-what-feels-likely-availability-affect-and-resemblance.qmd#chapter-09-start), while a subsequent price rise appears to confirm that other investors share your information. If those investors are responding to the same announcement or copying the price, their behavior supplies less [independent evidence](26-social-norms-and-conformity-when-other-people-become-evidence.qmd#chapter-26-start) than it seems.
 
-After buying, the problem changes. You may search for reasons to defend the position, treat its purchase price as the point to recover, or evaluate every fluctuation in isolation. The chapters on [defended beliefs](10-beliefs-that-defend-themselves.qmd), [mental accounts](20-mental-accounting-money-is-fungible-minds-label-it.qmd), and [reference points](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd) explain these possibilities. In a market, their consequences also depend on other traders, the size of the position, and the cost of changing it.
+After buying, the problem changes. You may search for reasons to defend the position, treat its purchase price as the point to recover, or evaluate every fluctuation in isolation. The chapters on [defended beliefs](10-beliefs-that-defend-themselves.qmd#chapter-10-start), [mental accounts](20-mental-accounting-money-is-fungible-minds-label-it.qmd#chapter-20-start), and [reference points](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#chapter-17-start) explain these possibilities. In a market, their consequences also depend on other traders, the size of the position, and the cost of changing it.
 
 Barber and Odean (2000) found that, from February 1991 through January 1997, the most active fifth of brokerage households earned an annualized net return of 11.4%, compared with 18.5% for the least active fifth. The result is consistent with overconfidence plus trading costs.
 
@@ -232,7 +234,7 @@ Choose a published event study discussed in this chapter or a course-provided ca
 
 The earnings announcement now poses a sharper question: what would have to be missing from the current price for buying at your available execution price to make sense? If the evidence does not answer it, a favorable headline alone cannot complete the argument. Keep the original record; later returns can then test a prediction instead of supplying a convenient explanation.
 
-Prices can coordinate dispersed action without a single commander. Organizations also coordinate through leaders, roles, meetings, and assigned responsibilities. The next chapter asks when these concentrated social signals improve coordination and when they suppress evidence, dissent, ownership, or action.
+Prices can coordinate dispersed action without a single commander. Organizations also coordinate through leaders, roles, meetings, and assigned responsibilities. [Authority, Groupthink, and Shared Responsibility](28-authority-groupthink-and-shared-responsibility.qmd#authority-groupthink-and-shared-responsibility) asks when these concentrated social signals improve coordination and when they suppress evidence, dissent, ownership, or action.
 
 ## Optional research notes
 
@@ -280,11 +282,7 @@ Momentum over months and reversal over years are not logically inconsistent beca
 ## References cited in this chapter
 
 ::: {.reference}
-Barber, B. M., & Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. Journal of Finance, 55(2), 773–806.
-:::
-
-::: {.reference}
-Barberis, N., & Thaler, R. (2003). A survey of behavioral finance. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 1B, pp. 1053–1128). Elsevier.
+Abreu, D., & Brunnermeier, M. K. (2003). Bubbles and crashes. Econometrica, 71(1), 173–204.
 :::
 
 ::: {.reference}
@@ -292,7 +290,11 @@ Banz, R. W. (1981). The relationship between return and market value of common s
 :::
 
 ::: {.reference}
-Abreu, D., & Brunnermeier, M. K. (2003). Bubbles and crashes. Econometrica, 71(1), 173–204.
+Barber, B. M., & Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. Journal of Finance, 55(2), 773–806.
+:::
+
+::: {.reference}
+Barberis, N., & Thaler, R. (2003). A survey of behavioral finance. In G. M. Constantinides, M. Harris, & R. Stulz (Eds.), Handbook of the economics of finance (Vol. 1B, pp. 1053–1128). Elsevier.
 :::
 
 ::: {.reference}
@@ -305,6 +307,10 @@ Caginalp, G., Porter, D. P., & Smith, V. L. (1998). Initial cash/asset ratio and
 
 ::: {.reference}
 De Bondt, W. F. M., & Thaler, R. (1985). Does the stock market overreact? Journal of Finance, 40(3), 793–805.
+:::
+
+::: {.reference}
+Dufwenberg, M., Lindqvist, T., & Moore, E. (2005). Bubbles and experience: An experiment. American Economic Review, 95(5), 1731–1737.
 :::
 
 ::: {.reference}
@@ -328,7 +334,19 @@ Federal Reserve Bank of St. Louis. (2026). NASDAQ Composite [NASDAQCOM]. *FRED*.
 :::
 
 ::: {.reference}
+Greenwood, R., & Shleifer, A. (2014). Expectations of returns and expected returns. Review of Financial Studies, 27(3), 714–746.
+:::
+
+::: {.reference}
 Grossman, S. J., & Stiglitz, J. E. (1980). On the impossibility of informationally efficient markets. American Economic Review, 70(3), 393–408.
+:::
+
+::: {.reference}
+Haruvy, E., Lahav, Y., & Noussair, C. N. (2007). Traders' expectations in asset markets: Experimental evidence. American Economic Review, 97(5), 1901–1920.
+:::
+
+::: {.reference}
+Haruvy, E., & Noussair, C. N. (2006). The effect of short selling on bubbles and crashes in experimental spot asset markets. Journal of Finance, 61(3), 1119–1157.
 :::
 
 ::: {.reference}
@@ -336,7 +354,19 @@ Harvey, C. R., Liu, Y., & Zhu, H. (2016). … and the cross-section of expected 
 :::
 
 ::: {.reference}
+Holt, C. A., Porzio, M., & Song, M. Y. (2017). Price bubbles, gender, and expectations in experimental asset markets. European Economic Review, 100, 72–94.
+:::
+
+::: {.reference}
+Hussam, R. N., Porter, D., & Smith, V. L. (2008). Thar she blows: Can bubbles be rekindled with experienced subjects? American Economic Review, 98(3), 924–937.
+:::
+
+::: {.reference}
 Jegadeesh, N., & Titman, S. (1993). Returns to buying winners and selling losers: Implications for stock market efficiency. Journal of Finance, 48(1), 65–91.
+:::
+
+::: {.reference}
+Lamont, O. A., & Thaler, R. H. (2003). Can the market add and subtract? Mispricing in tech stock carve-outs. Journal of Political Economy, 111(2), 227–268.
 :::
 
 ::: {.reference}
@@ -352,42 +382,6 @@ McLean, R. D., & Pontiff, J. (2016). Does academic research destroy stock return
 :::
 
 ::: {.reference}
-Rendleman, R. J., Jr., Jones, C. P., & Latané, H. A. (1982). Empirical anomalies based on unexpected earnings and the importance of risk adjustments. Journal of Financial Economics, 10(3), 269–287.
-:::
-
-::: {.reference}
-Shleifer, A., & Vishny, R. W. (1997). The limits of arbitrage. Journal of Finance, 52(1), 35–55.
-:::
-
-::: {.reference}
-Dufwenberg, M., Lindqvist, T., & Moore, E. (2005). Bubbles and experience: An experiment. American Economic Review, 95(5), 1731–1737.
-:::
-
-::: {.reference}
-Greenwood, R., & Shleifer, A. (2014). Expectations of returns and expected returns. Review of Financial Studies, 27(3), 714–746.
-:::
-
-::: {.reference}
-Haruvy, E., Lahav, Y., & Noussair, C. N. (2007). Traders' expectations in asset markets: Experimental evidence. American Economic Review, 97(5), 1901–1920.
-:::
-
-::: {.reference}
-Haruvy, E., & Noussair, C. N. (2006). The effect of short selling on bubbles and crashes in experimental spot asset markets. Journal of Finance, 61(3), 1119–1157.
-:::
-
-::: {.reference}
-Hussam, R. N., Porter, D., & Smith, V. L. (2008). Thar she blows: Can bubbles be rekindled with experienced subjects? American Economic Review, 98(3), 924–937.
-:::
-
-::: {.reference}
-Holt, C. A., Porzio, M., & Song, M. Y. (2017). Price bubbles, gender, and expectations in experimental asset markets. European Economic Review, 100, 72–94.
-:::
-
-::: {.reference}
-Lamont, O. A., & Thaler, R. H. (2003). Can the market add and subtract? Mispricing in tech stock carve-outs. Journal of Political Economy, 111(2), 227–268.
-:::
-
-::: {.reference}
 Ofek, E., & Richardson, M. (2003). DotCom mania: The rise and fall of internet stock prices. Journal of Finance, 58(3), 1113–1137.
 :::
 
@@ -396,7 +390,15 @@ Porter, D. P., & Smith, V. L. (2003). Stock market bubbles in the laboratory. Jo
 :::
 
 ::: {.reference}
+Rendleman, R. J., Jr., Jones, C. P., & Latané, H. A. (1982). Empirical anomalies based on unexpected earnings and the importance of risk adjustments. Journal of Financial Economics, 10(3), 269–287.
+:::
+
+::: {.reference}
 Shiller, R. J. (2000). Irrational exuberance. Princeton University Press.
+:::
+
+::: {.reference}
+Shleifer, A., & Vishny, R. W. (1997). The limits of arbitrage. Journal of Finance, 52(1), 35–55.
 :::
 
 ::: {.reference}

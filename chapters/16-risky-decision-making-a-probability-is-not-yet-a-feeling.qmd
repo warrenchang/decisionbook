@@ -3,15 +3,15 @@ aliases:
   - 39-risky-decision-making.html
 ---
 
-# Risky Decision-Making: A Probability Is Not Yet a Feeling
+# Risky Decision Making
 
-::: {.content-visible unless-format="epub"}
+*A Probability Is Not Yet a Feeling*
+
 []{#risky-decision-making-a-probability-is-not-yet-a-feeling}
-:::
 
 *Probability describes what may happen. Choice still requires a theory of what those outcomes mean to the decision-maker.*
 
-::: {.chapter-epigraph}
+::: {#chapter-16-start .chapter-epigraph}
 > “To do this the determination of the value of an item must not be based on its price, but rather on the utility it yields.”
 >
 > — Daniel Bernoulli, [“Exposition of a New Theory on the Measurement of Risk”](https://doi.org/10.2307/1909829), 1738/1954, p. 24
@@ -85,8 +85,6 @@ The independence axiom is central. If lottery $A$ is preferred to lottery $B$, m
 
 Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.
 
-![A 50–50 lottery paying 0 or 100 has expected value 50. Under the illustrative utility function u(x)=square root of x, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and reminds the reader to evaluate process before outcome.](../figures/risky-decision-map.svg){#fig-risky-decision-map fig-alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win." width=100%}
-
 ### Certainty equivalents and risk premia
 
 For payoff changes $x_i$ around initial wealth $W$, the **certainty-equivalent payoff** $c$ solves
@@ -109,7 +107,11 @@ $$
 
 Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.
 
-If the outcomes are changes around wealth, then wealth must enter the calculation. Treating gains and losses as if utility were defined only over the change can produce different predictions—the issue that motivates prospect theory in the next chapter.
+@fig-risky-decision-map shows the first calculation: the lottery’s average utility lies below the utility of its average wealth.
+
+![A 50–50 lottery paying 0 or 100 has expected value 50. Under the illustrative utility function u(x)=square root of x, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and reminds the reader to evaluate process before outcome.](../figures/risky-decision-map.svg){#fig-risky-decision-map fig-alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win." width=100%}
+
+If the outcomes are changes around wealth, then wealth must enter the calculation. With €10,000 in initial wealth and the same square-root utility, a 50–50 chance of gaining €0 or €100 has a certainty-equivalent payoff of about €49.94: its risk premium is only about €0.06. The same payoff lottery and utility function look very different when the starting resources change. [Prospect Theory](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#chapter-17-start) asks what happens when people instead evaluate changes around a reference point.
 
 ### Insurance: expected loss is not the whole premium
 
@@ -222,7 +224,7 @@ $$
 
 Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.
 
-The mental-accounting chapter later shows why decision-makers often evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
+[Mental Accounting](20-mental-accounting-money-is-fungible-minds-label-it.qmd#mental-accounting-money-is-fungible-minds-label-it) examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
 
 
 ## Ethics: who receives the expected benefit, and who bears the tail?

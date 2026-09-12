@@ -6,10 +6,10 @@
 
 *When prediction becomes cheaper, deciding what is worth doing becomes more important.*
 
-::: {.chapter-epigraph}
+::: {#chapter-42-start .chapter-epigraph}
 > “Prediction is the process of filling in missing information.”
 >
-> — Ajay Agrawal, Joshua Gans, and Avi Goldfarb, [*Prediction Machines*](https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/e/1511/files/2023/05/Prediction-Machines-Simple-Economics-of-AI-2018.pdf), 2018, chapter 2, “Cheap Creates Value”
+> — Ajay Agrawal, Joshua Gans, and Avi Goldfarb, [*Prediction Machines*](https://bpb-us-e1.wpmucdn.com/sites.uw.edu/dist/e/1511/files/2023/05/Prediction-Machines-Simple-Economics-of-AI-2018.pdf), 2018, chapter 2, section “Cheap Creates Value”
 :::
 
 ## Opening puzzle: why did better predictions provoke opposition? {#opening-puzzle-where-should-the-city-dig}
@@ -119,7 +119,7 @@ $$
 
 The thresholds are therefore 20 percent and 60 percent. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.
 
-![A 30% rain forecast exceeds one organizer's 20% action threshold but falls below another's 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.](../figures/ai-same-forecast-different-values.svg){#fig-ai-same-forecast-different-values fig-alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss." width=100%}
+![A 30% rain forecast exceeds one organizer's 20% action threshold but falls below another's 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.](../figures/ai-same-forecast-different-values.svg){#fig-ai-same-forecast-different-values fig-alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss." width=100% .phone-fit}
 
 Real choices can include reserving a tent, delaying a decision, accepting some weather exposure, or cancelling. They may also involve fixed costs, uncertain forecasts, capacity limits, and protected rights that cannot simply be priced away. The arithmetic reveals where valuation enters.
 
@@ -168,7 +168,7 @@ Risk tells us what is expected under the existing conditions. The policy questio
 
 Consider two hypothetical groups. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.
 
-![Hypothetical group-average dropout rates show how baseline risk and intervention benefit can rank groups differently.](../figures/ai-risk-is-not-benefit.svg){#fig-ai-risk-is-not-benefit fig-alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention." width=100%}
+![Hypothetical group-average dropout rates show how baseline risk and intervention benefit can rank groups differently.](../figures/ai-risk-is-not-benefit.svg){#fig-ai-risk-is-not-benefit fig-alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention." width=100% .phone-fit}
 
 For one student, we cannot observe both outcomes at the same time: leaving after receiving outreach and leaving without it. Causal inference uses research designs and assumptions to estimate such comparisons across appropriate groups. Randomized assignment is one route; credible observational designs require other defensible assumptions (Cunningham, 2021). Machine learning can assist estimation, but predictive flexibility does not by itself establish the causal comparison.
 
@@ -233,7 +233,7 @@ The design goal is therefore accountable human control with well-tested machine 
 
 Imagine receiving a report that a model is “95 percent accurate.” Before celebrating, ask what was predicted, which cases were included, and what comparison matters. If an event occurs in only 5 percent of cases, a rule that always predicts its absence is already 95 percent accurate. It may still be useless for finding the cases that require action.
 
-Evaluation should follow the decision from data to consequences. The statistical-learning approach emphasizes performance on observations that did not determine the fitted model, with validation separated from final testing (James et al., 2023). The course materials for strategic and data-driven decision-making add the managerial questions: which errors matter, what capacity exists, and who will act on the result?
+Evaluation should follow the decision from data to consequences. The statistical-learning approach emphasizes performance on observations that did not determine the fitted model, with validation separated from final testing (James et al., 2023). Add the managerial questions: which errors matter, what capacity exists, and who will act on the result?
 
 ### Make the test resemble the task
 
@@ -267,7 +267,7 @@ For the city, a map should make missing inspections visible. For the event organ
 
 ## Practice Lab: build a small AI decision system
 
-Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases.
+Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before consulting the model and preserve that version. You can study how advice changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.
 
 ### The AI decision canvas {#ai-decision-canvas}
 
@@ -285,7 +285,7 @@ Complete the following canvas before selecting a product or writing a prompt.
 | **Learning rule** | What is logged, when is it reviewed, and what result triggers continuation, revision, or withdrawal? |
 : An AI decision canvas that keeps prediction, valuation, causal evidence, and responsibility distinct {#tbl-ai-decision-canvas}
 
-**Round 1: preserve independent judgment.** Give two people the same case. Each records the available actions, a forecast, the consequences that matter, and a provisional choice before seeing model output. This uses the independence principle from [Chapter 41](41-decision-hygiene-build-a-process-that-can-learn.qmd).
+**Round 1: preserve independent judgment.** Give two people the same case. Each records the available actions, a forecast, the consequences that matter, and a provisional choice before seeing model output. This uses the independence principle from [Chapter 41](41-decision-hygiene-build-a-process-that-can-learn.qmd#chapter-41-start).
 
 **Round 2: assign the tool a bounded job.** Ask for the missing estimate, a source-grounded comparison, or alternatives that the team may have omitted. If the system cannot justify a probability from an appropriate model and validation, keep its suggestions qualitative rather than inventing precision.
 
