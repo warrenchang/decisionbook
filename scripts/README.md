@@ -2,6 +2,10 @@
 
 The checked-in QMD files are the canonical book source. The prebuilt `docs/` directory is the student-facing HTML release.
 
+## Chapter openings
+
+Each chapter starts with its H1/sidebar title, one italic subtitle, an epigraph, and an opening scene without a section heading. The Core Idea and Learning goals follow the scene. When shortening a title, retain its explanatory phrase as the subtitle and remove any older tagline that would create a second subtitle. Keep legacy anchors when removing a heading. Numbered stages of the main discussion begin after the Learning goals.
+
 ## Release checks
 
 First synchronize the master bibliography and render both release formats:
@@ -44,7 +48,7 @@ After changing an SVG, regenerate its high-resolution PNG companion from the fin
 NODE_PATH=/path/to/node_modules node scripts/render_svg_png_fallbacks.cjs figures/example.svg
 ```
 
-`build_reading_figures.py` regenerates the compact conceptual diagrams it owns. Its SVGs carry `data-layout="compact"` and are excluded from the text-normalizer’s default sweep. Add `.phone-fit` to a QMD figure only after checking its labels and connectors at a 390-pixel viewport. Other wide diagrams keep a contained scroll pane; changing that class alone does not make a dense drawing readable.
+`build_reading_figures.py` regenerates the compact conceptual diagrams it owns. Chapter 1’s `decision-loop.svg` and `decision-making-according-to-behavioral-evidence.svg` are preserved illustrations and are not regenerated here. Figure 2.1 (`option-information-portrait.svg`) is maintained by this generator. Its SVGs carry `data-layout="compact"` and are excluded from the text-normalizer’s default sweep. Add `.phone-fit` to a QMD figure only after checking its labels and connectors at a 390-pixel viewport. Other wide diagrams keep a contained scroll pane; changing that class alone does not make a dense drawing readable.
 
 The renderer requires Playwright and a local Chrome or Chromium executable. It uses the SVG's declared canvas and an opaque light background so the fallback does not acquire extra whitespace or disappear in dark readers.
 

@@ -43,46 +43,29 @@ text {{font-family:Arial,Helvetica,sans-serif;fill:{INK}}}
         (ROOT/'figures'/f'{name}.svg').write_text('\n'.join(self.items+['</svg>'])+'\n')
 
 
-def decision_loop():
-    f=Figure('A benchmark for comparing alternatives', 'Information informs prediction and valuation within judgment. Judgment supports choice and an outcome. Outcome feedback can inform later judgment. This is an analytical benchmark, not a fixed sequence of mental events.', 1170)
-    f.text(380,53,['A benchmark for comparing','alternatives'],css='title')
-    f.box(150,139,460,113,'Information on alternatives', ['What could happen?'],title_size=30)
-    f.items.append(f'<rect x="115" y="305" width="530" height="380" rx="24" fill="none" stroke="{BLUE}" stroke-width="2.5" stroke-dasharray="9 7"/>')
-    f.text(380,346,'Judgment',32,'bold')
-    f.box(170,373,420,114,'Prediction',['How likely is each outcome?'])
-    f.box(170,543,420,114,'Valuation',['How much does it matter?'])
-    f.box(170,743,420,110,'Choice',['Commit to an option'])
-    f.box(170,910,420,110,'Outcome',['Observe what happened'])
-    f.arrow('M380 252 V305');f.arrow('M380 487 V543');f.arrow('M380 657 V743');f.arrow('M380 853 V910')
-    f.arrow('M590 965 H700 V329 H645','green')
-    f.text(685,719,'Feedback',28,'bold',GREEN,anchor='end')
-    f.text(380,1080,['An analytical benchmark;','actual judgment can move back and forth.'])
-    f.save('decision-loop')
-
-
-def behavioral_decision():
-    f=Figure('How context enters a decision', 'External context shapes presented information and internal state. Presented information and internal state shape selection and interpretation. Selection, prediction, and valuation interact within judgment. Choice produces an outcome; feedback can revise the internal state and model. The arrows are selected influences, not a complete causal model.', 1240)
-    f.text(380,52,'How context enters a decision',css='title')
-    f.box(35,92,305,187,'External context',['Frames and defaults','Format and friction','Social cues'],WARM,'#fff8f3',30)
-    f.box(420,92,305,187,'Internal state',['Beliefs, goals, affect','Memory and identity','Attention and models'],WARM,'#fff8f3',30)
-    f.arrow('M340 183 H420','warm')
-    f.box(35,332,305,126,'What is presented',['About the alternatives'],title_size=28)
-    f.arrow('M188 279 V332','warm')
-    f.items.append(f'<rect x="45" y="497" width="670" height="381" rx="25" fill="none" stroke="{BLUE}" stroke-width="2.5" stroke-dasharray="9 7"/>')
-    f.text(380,536,'Judgment',32,'bold')
-    f.box(165,565,430,115,'Selection and interpretation',['What becomes evidence?'],title_size=28)
-    f.box(70,742,265,110,'Prediction',['What is likely?'])
-    f.box(425,742,265,110,'Valuation',['What matters?'])
-    f.arrow('M188 458 V477 H285 V565')
-    f.arrow('M570 279 V477 H480 V565','warm')
-    f.arrow('M280 680 L205 742',both=True);f.arrow('M480 680 L555 742',both=True);f.arrow('M335 797 H425',both=True)
-    f.box(70,940,265,110,'Choice',['Commit to action'])
-    f.box(425,940,265,110,'Outcome',['What happened?'])
-    f.arrow('M205 878 V940');f.arrow('M335 995 H425')
-    f.box(405,1110,310,103,'Feedback',['May revise the model'],GREEN,'#edf7f3')
-    f.arrow('M555 1050 V1110','green');f.arrow('M715 1163 H746 V187 H725','green')
-    f.text(192,1136,['Selected influences,','not a fixed mental','sequence.'])
-    f.save('decision-making-according-to-behavioral-evidence')
+def option_information():
+    f=Figure('Better decisions begin before comparison', 'Four questions for building a better decision: expand the feasible set, name the best forgone option, seek information that could improve the choice, and stress-test the ranking. Earlier steps can be revisited.', 1190)
+    f.text(380,54,['Better decisions begin','before comparison'],css='title')
+    cards=[
+        ('Expand the feasible set', ['Generate, combine, negotiate, stage,', 'keep searching, or walk away.']),
+        ('Name the best forgone option', ['What is the best feasible alternative', 'you would give up by committing?']),
+        (['Ask what information', 'could change your choice'], ['Seek it when it could improve action', 'enough to justify its cost.']),
+        ('Stress-test the ranking', ['Vary assumptions; check thresholds,', 'reversibility, and safeguards.']),
+    ]
+    for i,(title,lines) in enumerate(cards):
+        y=146+i*221
+        color=BLUE if i<2 else WARM
+        fill='#edf5fa' if i<2 else '#fff8f3'
+        f.items.append(f'<rect x="30" y="{y}" width="700" height="177" rx="20" fill="{fill}" stroke="{color}" stroke-width="2.5"/>')
+        f.items.append(f'<circle cx="77" cy="{y+46}" r="24" fill="{color}"/>')
+        f.text(77,y+56,str(i+1),30,'bold','white')
+        multiline=isinstance(title, list)
+        f.text(411,y+(36 if multiline else 44),title,32,'bold',color)
+        f.text(380,y+(122 if multiline else 115),lines,30)
+        if i<3: f.arrow(f'M380 {y+177} V{y+221}')
+    f.text(380,1060,['A precise calculation cannot rescue', 'an incomplete menu.'],30,'bold')
+    f.text(380,1154,'Revisit earlier steps as you learn more.',30)
+    f.save('option-information-portrait')
 
 
 def urge_observation():
@@ -190,7 +173,7 @@ def silence_diagnostic():
     f.save('silence-mechanism-diagnostic')
 
 
-BUILDERS = [decision_loop, behavioral_decision, urge_observation, habit_formation,
+BUILDERS = [option_information, urge_observation, habit_formation,
             digital_arrow, heuristic_substitution, context_mechanisms,
             fluency_pathway, communication_grounding, conversation_needs,
             silence_diagnostic]
