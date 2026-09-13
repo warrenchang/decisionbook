@@ -95,7 +95,7 @@ REQUIRED_CONTENT = [
     "Find out what kind of check was performed",
     "The same-name rule",
     "freeze → compare → update",
-    "A Decision Is Already in the Making",
+    "Preface",
     "Five hands rise for one candidate, two for another. A decision is made.",
     "We should pay attention to our decisions while they are still in the making.",
     "Predictive processing and predictive judgment ask different questions",
@@ -251,7 +251,7 @@ def main() -> int:
                 item
                 for item in top_items
                 if (anchor := item.find(f"{{{XHTML}}}a")) is not None
-                and normalized_text(anchor).startswith("Preface:")
+                and normalized_text(anchor) == "Preface"
             ),
             None,
         )
