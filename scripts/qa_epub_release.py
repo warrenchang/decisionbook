@@ -96,8 +96,8 @@ REQUIRED_CONTENT = [
     "The same-name rule",
     "freeze → compare → update",
     "A Decision Is Already in the Making",
-    "At 3:17 p.m.",
-    "The decision is already in the making.",
+    "Five hands rise for one candidate, two for another. A decision is made.",
+    "We should pay attention to our decisions while they are still in the making.",
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
     "no strengthening, but no reset",
@@ -263,12 +263,12 @@ def main() -> int:
             preface_text = normalized_text(ET.fromstring(archive.read(preface_path)))
         check(
             "Preface contains the current hiring-committee opening",
-            "At 3:17 p.m." in preface_text,
+            "Five hands rise for one candidate, two for another. A decision is made." in preface_text,
             preface_path,
         )
         check(
             "Preface contains the current closing sentence",
-            "The decision is already in the making." in preface_text,
+            "We should pay attention to our decisions while they are still in the making." in preface_text,
             preface_path,
         )
 
@@ -609,8 +609,13 @@ def main() -> int:
             for name in sorted(names)
             if name.endswith((".xhtml", ".svg", ".opf"))
         )
+        searchable_text = "\n".join(
+            normalized_text(ET.fromstring(archive.read(name)))
+            for name in sorted(names)
+            if name.endswith((".xhtml", ".svg", ".opf"))
+        )
         for phrase in REQUIRED_CONTENT:
-            check(f"Required content: {phrase}", phrase.lower() in searchable.lower())
+            check(f"Required content: {phrase}", phrase.lower() in searchable_text.lower())
         check(
             "Rendered EPUB contains no duplicated Figure Figure cross-reference labels",
             re.search(r">\s*Figures?\s+<a\b[^>]*>\s*Figure", searchable, flags=re.DOTALL | re.I) is None,

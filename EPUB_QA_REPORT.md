@@ -97,8 +97,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: The same-name rule | **PASS** |
 | Required content: freeze → compare → update | **PASS** |
 | Required content: A Decision Is Already in the Making | **PASS** |
-| Required content: At 3:17 p.m. | **PASS** |
-| Required content: The decision is already in the making. | **PASS** |
+| Required content: Five hands rise for one candidate, two for another. A decision is made. | **PASS** |
+| Required content: We should pay attention to our decisions while they are still in the making. | **PASS** |
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
 | Required content: no strengthening, but no reset | **PASS** |

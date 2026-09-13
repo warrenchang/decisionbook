@@ -3,7 +3,7 @@ aliases:
   - 12b-samples-randomness-regression-calibration.html
 ---
 
-# Samples, Randomness, and Calibration
+# Randomness and Overconfidence {#samples-randomness-and-calibration}
 
 *Samples, Randomness, Regression, and Calibration*
 
@@ -27,7 +27,7 @@ A striking result becomes useful evidence when we compare it with what the under
 
 - Explain why small samples, streaks, and clusters can look more informative than they are.
 - Diagnose regression to the mean without dismissing real change or causal effects.
-- Distinguish overestimation, overplacement, and overprecision, then record and score forecasts for calibration and resolution.
+- Distinguish three forms of overconfidence, use an outside view to challenge the planning fallacy, and score forecasts for calibration and resolution.
 
 ## Which sequence looks random?
 
@@ -116,17 +116,37 @@ Regression does not show that an intervention had no effect. It shows why before
 
 Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. @fig-regression-conditional-shrinkage shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
 
-## Confidence must face a distribution
+### Illusion of control: did the action change the odds? {#illusion-of-control}
 
-Confidence helps people commit, but it can be mistaken in different ways. A team may overestimate its performance, place itself too high relative to competitors, or give forecasts an unjustifiably narrow range. Each error could misdirect action, and each requires different feedback. Confidence is not one quantity. Moore and Healy (2008) distinguish three patterns:
+An **illusion of control** occurs when someone overestimates their causal influence over an outcome. The branch manager may control staffing and training but cannot thereby control every market shock. Naming the controllable action and comparing what would happen without it is more informative than asking whether the manager feels in charge.
 
-- **Overestimation:** believing one's performance or ability is better than it is.
-- **Overplacement:** believing one ranks above other people.
-- **Overprecision:** expressing more certainty than the evidence supports.
+Langer's (1975) classic studies helped establish the topic, but one familiar inference needs care: preferring a lottery ticket one selected does not show a belief that selecting it improved the odds. Preference, ownership, and anticipated regret can also matter. Across 17 experiments with 10,825 participants, Klusowski, Small, and Simmons (2021) found little support for the claim that choice itself creates inflated success expectations when options are functionally identical. This challenges that particular route to illusory control, not every possible mistaken belief about causation.
+
+The lesson for the manager is to measure causal beliefs and compare outcomes, rather than treating active involvement—or recovery after a bad quarter—as evidence of effectiveness.
+
+## Overconfidence: three different errors {#confidence-must-face-a-distribution}
+
+The branch manager is now sure the rescue plan will work elsewhere. But what exactly is the claim: a large improvement, better results than other managers, or very little uncertainty? **Overconfidence** means that confidence exceeds the accuracy or justification it warrants. Moore and Healy (2008) distinguish three forms that should be measured separately:
+
+- **Overestimation:** overestimating one's performance or ability. Predicting a score of 80 and obtaining 60 is an overestimate on that occasion.
+- **Overplacement:** overestimating one's position relative to a defined comparison group. Someone who expects to rank in the top tenth but ranks near the middle has misplaced their relative standing. Being above average is not itself a bias.
+- **Overprecision:** being too certain that a judgment is correct, for example by giving uncertainty intervals that are too narrow.
 
 Each requires a different comparison, as @tbl-confidence-calibration shows. Asking a confident person to “think harder” supplies none of them.
 
+The forms can move in opposite directions. In Moore and Healy's experiments, difficult tasks could produce overestimation of one's score alongside underplacement relative to others; easy tasks could reverse that combination. An error therefore needs a specified task, scale, comparison group, and repeated assessment. A confident manner, an ambitious goal, or one failed prediction cannot establish a general tendency.
+
+::: {#overprecision-interval-check .callout-tip .activity icon=false}
+## Test the width of your uncertainty
+
+Before checking results, choose ten comparable quantities whose answers can later be verified, such as completion times for routine tasks. For each, record a central estimate and a **90% subjective prediction interval**: a lower and upper bound that you believe together leave a 10% chance outside. A well-calibrated set should contain the answers about 90% of the time across many comparable forecasts, not exactly nine times in every batch of ten.
+
+Afterward, examine both coverage and width. Repeatedly missing many intervals suggests overprecision; making every interval enormous avoids misses but supplies little useful information. Revise the forecasting process, then assess it on new cases. Ten cases start a learning record; they do not diagnose a personality.
+:::
+
 The familiar Dunning–Kruger pattern requires the same discipline. Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. But a quartile plot alone does not identify that mechanism. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
+
+### Planning fallacy: the plan needs an outside view {#planning-fallacy-and-outside-view}
 
 The **planning fallacy** is a related forecast error: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman & Tversky, 1979). It can produce optimistic point estimates, intervals that are too narrow, or both. The **outside view** begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman & Lovallo, 1993; Lovallo & Kahneman, 2003).
 
@@ -135,7 +155,7 @@ Suppose a city team proposes an 18-month rail-project schedule. Before hearing w
 | Confidence problem | Comparison required | Observable correction |
 | --- | --- | --- |
 | Overestimation | Forecast versus measured performance | Record the estimate and outcome on the same scale. |
-| Overplacement | Self versus a defined comparison distribution | Specify the population and criterion before ranking. |
+| Overplacement | Predicted versus measured relative standing | Specify the population and criterion before ranking. |
 | Overprecision | Stated interval or probability versus repeated coverage | Widen or update ranges when outcomes fall outside too often. |
 | Planning fallacy | Inside plan versus comparable completed cases | Start from the reference-class distribution; justify each adjustment. |
 : Different confidence problems require different feedback {#tbl-confidence-calibration}
@@ -243,7 +263,15 @@ Kahneman, D., & Tversky, A. (1979). Intuitive prediction: Biases and corrective 
 :::
 
 ::: {.reference}
+Klusowski, J., Small, D. A., & Simmons, J. P. (2021). Does choice cause an illusion of control? Psychological Science, 32(2), 159–172. https://doi.org/10.1177/0956797620958009
+:::
+
+::: {.reference}
 Kruger, J., & Dunning, D. (1999). Unskilled and unaware of it: How difficulties in recognizing one's own incompetence lead to inflated self-assessments. *Journal of Personality and Social Psychology, 77*(6), 1121–1134.
+:::
+
+::: {.reference}
+Langer, E. J. (1975). The illusion of control. Journal of Personality and Social Psychology, 32(2), 311–328. https://doi.org/10.1037/0022-3514.32.2.311
 :::
 
 ::: {.reference}

@@ -1,10 +1,6 @@
-# Data Driven Decision Making
+# Deciding With Data and AI {#data-driven-decision-making}
 
-::: {.content-visible unless-format="epub"}
-[]{#data-driven-decision-making}
-:::
-
-*When prediction becomes cheaper, deciding what is worth doing becomes more important.*
+*Data Driven Decision Making*
 
 ::: {#chapter-42-start .chapter-epigraph}
 > “Prediction is the process of filling in missing information.”
@@ -215,7 +211,7 @@ Together, these cases suggest a more demanding measure of progress: **Does this 
 
 ## Trust, valuation, and responsibility {#trust-and-responsibility}
 
-Flint's residents could be offered a better estimate while still disputing the decision made with it. The conflict asks us to separate confidence in a forecast from willingness to let a system determine what happens to one's household. People's willingness to accept algorithmic advice depends on what the advice is for. Bigman and Gray's experiments found reluctance to let machines make morally consequential decisions, with less aversion when machines advised rather than decided. Other experiments found that people sometimes placed more weight on advice attributed to an algorithm than on advice attributed to a person (Bigman & Gray, 2018; Logg et al., 2019).
+Flint's residents could be offered a better estimate while still disputing the decision made with it. The conflict asks us to separate confidence in a forecast from willingness to let a system determine what happens to one's household. People's willingness to accept algorithmic advice depends on what the advice is for. Bigman and Gray's experiments found reluctance to let machines make morally consequential decisions, with less aversion when machines advised rather than decided. Other experiments found **algorithm appreciation**: people sometimes placed more weight on advice attributed to an algorithm than on advice attributed to a person (Bigman & Gray, 2018; Logg et al., 2019).
 
 Distinguish between **trust in a prediction**, **acceptance of a value trade-off**, and **recognition of legitimate authority**. A resident can believe that a pipe-risk model is useful while still expecting public officials to justify whose street is excavated next.
 
@@ -235,7 +231,7 @@ Evaluation should follow the decision from data to consequences. The statistical
 
 ### Make the test resemble the task
 
-Begin with the unit and moment of decision. Are we predicting a property, a customer session, a student term, or tomorrow's demand? Use only information available at that moment. A variable recorded after the outcome can make a model look excellent by leaking the answer into its inputs.
+Begin with the unit and moment of decision. Are we predicting a property, a customer session, a student term, or tomorrow's demand? Use only information available at that moment. **Data leakage** occurs when information that should be unavailable to the prediction enters its development or evaluation. A variable recorded after the outcome can make a model look excellent by leaking the answer into its inputs.
 
 Keep an untouched test set for the final comparison. Use the training and validation data to fit and tune the model. When future performance is the target, respect time order; when the same person or organization appears repeatedly, avoid treating their related observations as independent evidence of generalization. Apply preprocessing within the relevant training partitions. Document exclusions, missingness, source versions, and the exact model that produced the result.
 
