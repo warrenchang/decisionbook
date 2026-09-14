@@ -143,14 +143,14 @@ def fluency_pathway():
 
 
 def communication_grounding():
-    f=Figure('Understanding develops through checking', 'Person A expresses words and signals that person B interprets in context. Questions, paraphrasing, and corrections provide a return path to the speaker. Understanding remains sufficient for the current purpose and open to repair.', 1000)
+    f=Figure('Understanding develops through checking', 'Person A expresses words and signals that person B interprets in context. Questions, paraphrasing, and corrections provide a return path to the speaker. The aim is enough understanding for the current purpose, kept open to correction.', 1000)
     f.text(380,58,['Understanding develops','through checking'],css='title')
     nodes=[('Person A',['Intention and context']),('Words and signals',['Content, tone, and timing']),('Person B',['Interpretation and context']),('Check and repair',['Ask, paraphrase, and correct'])]
     for i,(title,lines) in enumerate(nodes):
         f.box(115,177+i*183,530,116,title,lines,GREEN if i==3 else BLUE)
         if i<3:f.arrow(f'M380 {293+i*183} V{360+i*183}')
     f.arrow('M115 784 H47 V235 H115','green')
-    f.text(380,919,['Understanding is sufficient for this purpose','and can be revised in the next exchange.'])
+    f.text(380,919,['Seek enough understanding for this purpose','and check it again in the next exchange.'])
     f.save('communication-grounding')
 
 

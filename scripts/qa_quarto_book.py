@@ -170,6 +170,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         "appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd",
         "appendices/appendix-c-portable-course-tools.qmd",
         "appendices/appendix-d-index-of-major-course-examples.qmd",
+        "appendices/appendix-literature-review.qmd",
         "appendices/appendix-e-how-behavioral-evidence-is-built.qmd",
         "appendices/appendix-f-when-evidence-breaks.qmd",
     ]

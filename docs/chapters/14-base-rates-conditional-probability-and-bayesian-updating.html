@@ -524,14 +524,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-literature-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Conducting and Writing a Literature Review</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -612,7 +618,7 @@ window.Quarto = {
 </blockquote>
 </div>
 <p>A candidate passes a screening test that is described as “80 percent accurate.” The committee wants to use the result to reduce hiring mistakes. How confident should it now be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of <em>what</em>? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?</p>
-<p>The committee’s target is <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span>. A report may instead provide <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span>. Those quantities reverse the conditioning and use different denominators. Confusing them could turn an informative screen into unjustified confidence about whom to hire. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.</p>
+<p>The committee needs to know how many applicants who pass will perform well. The report may instead say how many strong performers pass. One starts with everyone who passed; the other starts with everyone who meets the performance standard. Confusing the two groups could turn an informative screen into unjustified confidence about whom to hire. We will begin by counting them separately, then use probability notation to keep the distinction clear.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -644,7 +650,7 @@ window.Quarto = {
 <li>Of 4,000 positive screens, 1,600 are true positives.</li>
 </ul>
 <p>Under those assumptions, <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40\)</span>. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
-<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. If its sensitivity and false-positive rate transport unchanged, then among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the posterior is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot travel on its own: the receiving population and the transportability of both error rates are part of its meaning.</p>
+<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. Assume its <strong>sensitivity</strong>, the share of strong performers who pass, and its <strong>false-positive rate</strong>, the share of others who pass, remain unchanged. Among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the probability of strong performance after a positive screen is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot be interpreted on its own. We also need the starting population and evidence that the test performs similarly in it.</p>
 </section>
 <section id="probability-begins-with-a-model" class="level2">
 <h2 data-anchor-id="probability-begins-with-a-model">Probability begins with a model</h2>
@@ -685,7 +691,7 @@ P(A\cup B)=P(A)+P(B)-P(A\cap B).
 <p><span class="math display">\[
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 \]</span></p>
-<p>“How often does the test turn positive among people with the condition?” is not “How often do people with a positive test have the condition?” The first conditions on the condition; the second conditions on the positive tests.</p>
+<p>In the hiring example, <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span> asks what share of strong performers pass. The committee instead needs <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span>, the share of those who pass who are strong performers. Everything after the vertical bar specifies the group we are counting within.</p>
 <p>The same reversal appears in court. A one-in-a-million probability of a DNA profile among unrelated people is not a one-in-a-million probability that a matched defendant is innocent. The latter depends on how the suspect was selected, how many people were compared, laboratory error, relatedness, the prior probability of different sources, and the rest of the case (Thompson &amp; Schumann, 1987).</p>
 <p>Conditional probability also makes independence explicit. Events are independent when learning one does not change the probability of the other. Zero correlation is not generally equivalent to independence: it rules out one linear relationship, not every probabilistic dependence.</p>
 </section>
@@ -703,7 +709,7 @@ P(A\mid B)=
 {P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}.
 \]</span></p>
 <p>The <strong>prior</strong> <span class="math inline">\(P(A)\)</span> gives the starting probability, which is a prevalence in this screening example. The <strong>likelihood</strong> <span class="math inline">\(P(B\mid A)\)</span> asks how probable the evidence would be if <span class="math inline">\(A\)</span> held. The competing likelihood <span class="math inline">\(P(B\mid A^c)\)</span> asks how often the same evidence appears without <span class="math inline">\(A\)</span>. The <strong>posterior</strong> is the probability after incorporating the evidence (Bayes, 1763).</p>
-<p>A useful Bayesian model includes the relevant alternatives and accounts for sample selection, environmental change, measurement quality, and parameter uncertainty.</p>
+<p>For the committee, the formula is useful only if these inputs describe the applicants and performance standard it actually faces. Selection into the pool, changes in working conditions, and uncertainty about the test’s error rates all affect that judgment.</p>
 </section>
 <section id="natural-frequencies-make-bayes-visible" class="level2">
 <h2 data-anchor-id="natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</h2>

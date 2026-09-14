@@ -31,7 +31,7 @@ A striking result becomes useful evidence when we compare it with what the under
 
 ## Which sequence looks random?
 
-A fair coin will be tossed six times. Rank these exact sequences from most to least likely:
+Before explaining the branch’s recovery, consider a simpler problem: recognizing what chance can produce. A fair coin will be tossed six times. Rank these exact sequences from most to least likely:
 
 1. H H H H H H
 2. H H H T T T
@@ -51,7 +51,7 @@ Randomness is clumpier than intuition expects. When many sequences, people, scho
 
 ## Small samples swing widely
 
-People often expect a small sample to resemble its population too closely, a tendency Tversky and Kahneman (1971) called belief in the **law of small numbers**. After three successful hires, an interview panel may feel it has found a reliable method. Yet three outcomes can change dramatically with the next appointment, especially if applicants and jobs vary. The question is how much confidence that sample can support.
+The expectation that a short sequence should look balanced extends to evidence about people and organizations. Tversky and Kahneman (1971) called this belief in the **law of small numbers**: expecting a small sample to resemble its population too closely. After three successful hires, an interview panel may feel it has found a reliable method. Yet three outcomes can change dramatically with the next appointment, especially if applicants and jobs vary. The question is how much confidence that sample can support.
 
 For an independent Bernoulli event with probability $p$, the standard error of the sample proportion is
 
@@ -144,7 +144,7 @@ Before checking results, choose ten comparable quantities whose answers can late
 Afterward, examine both coverage and width. Repeatedly missing many intervals suggests overprecision; making every interval enormous avoids misses but supplies little useful information. Revise the forecasting process, then assess it on new cases. Ten cases start a learning record; they do not diagnose a personality.
 :::
 
-The familiar Dunning–Kruger pattern requires the same discipline. Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. But a quartile plot alone does not identify that mechanism. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
+The familiar Dunning–Kruger pattern raises a further measurement question: what explains the relationship between performance and errors in self-assessment? Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. But a quartile plot alone does not identify that mechanism. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
 
 ### Planning fallacy: the plan needs an outside view {#planning-fallacy-and-outside-view}
 
@@ -182,7 +182,7 @@ $$
 BS=(p-o)^2.
 $$
 
-Lower is better. A 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Across forecasts, average the scores (Brier, 1950; Murphy, 1973).
+A lower score is better: a 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).
 
 Research in geopolitical forecasting tournaments suggests that **probabilistic forecasting** can improve through repeatable practices: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.
 
@@ -221,7 +221,7 @@ Record one forecast for the final date and separate forecasts for leading mechan
 
 ## Practice Lab
 
-Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. For a quantity such as cost or completion time, add the 10th, 50th, and 90th percentiles and explain every adjustment away from the outside-view distribution. When the date arrives, enter the outcome and score without revising the original entry. The observable output is the preserved ledger plus a diagnosis of whether any error came from sampling, model, or confidence.
+Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. For a quantity such as cost or completion time, add the 10th, 50th, and 90th percentiles and explain every adjustment away from the outside-view distribution. When the date arrives, enter the outcome and score without revising the original entry. Keep the ledger and identify which assumptions the outcome gives you reason to reconsider. One result may reveal a missing pathway, but calibration and systematic overconfidence require a longer record.
 
 ## Take it forward
 

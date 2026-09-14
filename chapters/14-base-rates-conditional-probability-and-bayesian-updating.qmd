@@ -15,7 +15,7 @@ aliases:
 
 A candidate passes a screening test that is described as “80 percent accurate.” The committee wants to use the result to reduce hiring mistakes. How confident should it now be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of *what*? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?
 
-The committee's target is $P(\text{strong performance}\mid\text{positive screen})$. A report may instead provide $P(\text{positive screen}\mid\text{strong performance})$. Those quantities reverse the conditioning and use different denominators. Confusing them could turn an informative screen into unjustified confidence about whom to hire. The distinction is the spine of this chapter: before calculating, specify the event, comparison set, and process that produced the evidence.
+The committee needs to know how many applicants who pass will perform well. The report may instead say how many strong performers pass. One starts with everyone who passed; the other starts with everyone who meets the performance standard. Confusing the two groups could turn an informative screen into unjustified confidence about whom to hire. We will begin by counting them separately, then use probability notation to keep the distinction clear.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -43,7 +43,7 @@ Suppose that 20% of applicants in a broad pool would meet a clearly defined perf
 
 Under those assumptions, $P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40$. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.
 
-Now place the same screen in a carefully preselected pool where 50% would meet the standard. If its sensitivity and false-positive rate transport unchanged, then among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the posterior is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot travel on its own: the receiving population and the transportability of both error rates are part of its meaning.
+Now place the same screen in a carefully preselected pool where 50% would meet the standard. Assume its **sensitivity**, the share of strong performers who pass, and its **false-positive rate**, the share of others who pass, remain unchanged. Among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the probability of strong performance after a positive screen is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot be interpreted on its own. We also need the starting population and evidence that the test performs similarly in it.
 
 ## Probability begins with a model
 
@@ -95,7 +95,7 @@ $$
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 $$
 
-“How often does the test turn positive among people with the condition?” is not “How often do people with a positive test have the condition?” The first conditions on the condition; the second conditions on the positive tests.
+In the hiring example, $P(\text{positive screen}\mid\text{strong performance})$ asks what share of strong performers pass. The committee instead needs $P(\text{strong performance}\mid\text{positive screen})$, the share of those who pass who are strong performers. Everything after the vertical bar specifies the group we are counting within.
 
 The same reversal appears in court. A one-in-a-million probability of a DNA profile among unrelated people is not a one-in-a-million probability that a matched defendant is innocent. The latter depends on how the suspect was selected, how many people were compared, laboratory error, relatedness, the prior probability of different sources, and the rest of the case (Thompson & Schumann, 1987).
 
@@ -121,7 +121,7 @@ $$
 
 The **prior** $P(A)$ gives the starting probability, which is a prevalence in this screening example. The **likelihood** $P(B\mid A)$ asks how probable the evidence would be if $A$ held. The competing likelihood $P(B\mid A^c)$ asks how often the same evidence appears without $A$. The **posterior** is the probability after incorporating the evidence (Bayes, 1763).
 
-A useful Bayesian model includes the relevant alternatives and accounts for sample selection, environmental change, measurement quality, and parameter uncertainty.
+For the committee, the formula is useful only if these inputs describe the applicants and performance standard it actually faces. Selection into the pool, changes in working conditions, and uncertainty about the test’s error rates all affect that judgment.
 
 
 ## Natural frequencies make Bayes visible

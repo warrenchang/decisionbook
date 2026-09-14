@@ -524,14 +524,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-literature-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Conducting and Writing a Literature Review</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -610,8 +616,8 @@ window.Quarto = {
 
 <p><span id="rational-choice-and-decision-analysis"></span></p>
 <p><em>Formal details supporting Chapters 1 and 2</em></p>
-<p>Suppose one job offer pays more while another leaves more time and flexibility. A salary comparison favors the first; a comparison of daily life may favor the second. Then an employer offers to negotiate, changing the menu you thought you had to choose from. You need a recommendation, but it keeps moving as forecasts, priorities, and feasible options change. Which assumptions actually decide the result, and which further question is worth asking?</p>
-<p>This appendix puts the reasoning from <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#chapter-01-start">Chapter 1</a> and <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html#chapter-02-start">Chapter 2</a> into mathematical form. Use the equations to expose an assumption or test a recommendation.</p>
+<p>Suppose one job offer pays more while another leaves more time and flexibility. A salary comparison favors the first; a comparison of daily life may favor the second. Then an employer offers to negotiate, changing the menu you thought you had to choose from. What looked like a simple ranking now depends on which terms can change and what the alternatives would mean for your life. Which assumptions determine the recommendation, and which further question is worth asking?</p>
+<p>This appendix puts the reasoning from <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html#chapter-01-start">Chapter 1</a> and <a href="../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.html#chapter-02-start">Chapter 2</a> into mathematical form. Use the equations to expose an assumption or test a recommendation. Start with feasible options, beliefs, and values; then use the information and sensitivity sections to find out what could change the answer. The final section asks when further analysis is worth its own cost.</p>
 <section id="feasible-and-consideration-sets" class="level2">
 <h2 data-anchor-id="feasible-and-consideration-sets">1. Feasible and consideration sets</h2>
 <p>Let <span class="math inline">\(\mathcal{A}\)</span> denote the set of actions under discussion, including options whose feasibility has not yet been checked. An action is feasible only if it satisfies the relevant constraints. Suppose the decision contains inequality constraints <span class="math inline">\(g_j(a)\leq 0\)</span> and equality constraints <span class="math inline">\(h_\ell(a)=0\)</span>. The feasible set is</p>
@@ -675,7 +681,7 @@ V(a)\geq V(b)\ \text{for every }b\in A
 </section>
 <section id="consequences-beliefs-and-expected-utility" class="level2">
 <h2 data-anchor-id="consequences-beliefs-and-expected-utility">3. Consequences, beliefs, and expected utility</h2>
-<p>Two advisers may recommend different jobs because they predict different promotion prospects—or because they agree about those prospects but value the extra income differently. Combining both judgments in one score hides which disagreement needs to be resolved. The reduced-form function <span class="math inline">\(V(a)\)</span> can be unpacked into beliefs about consequences and values over those consequences.</p>
+<p>Two advisers may recommend different jobs because they predict different promotion prospects, or because they value the same prospect differently. A single score can hide that distinction: evidence about promotion addresses the first disagreement, while the second requires a discussion of priorities. The reduced-form function <span class="math inline">\(V(a)\)</span> can be unpacked into beliefs about consequences and values over those consequences.</p>
 <p>If action <span class="math inline">\(a\)</span> produces a known consequence <span class="math inline">\(x(a)\)</span>, and <span class="math inline">\(u(x)\)</span> represents the value of consequence <span class="math inline">\(x\)</span>, then</p>
 <p><span class="math display">\[
 V(a)=u\bigl(x(a)\bigr).
@@ -937,7 +943,7 @@ G(r)
 c(r).
 \]</span></p>
 <p>Under this stylized metareasoning rule, conduct the step when <span class="math inline">\(G(r)&gt;0\)</span>. The analysis-dependent action set represents options that expire, emerge, or become infeasible during deliberation; any other consequence of delay belongs in <span class="math inline">\(V(a\mid y,r)\)</span> or <span class="math inline">\(c(r)\)</span>, but not both. This is a normative comparison of the expected benefit and cost of one more analysis step. It is not Simon’s satisficing model itself. Bounded rationality supplies the motivation—search, attention, time, memory, and computation are scarce—while satisficing describes a different stopping strategy based on aspiration levels (Simon, 1955, 1956).</p>
-<p>Low-stakes, familiar, reversible decisions often justify routines or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback decisions often justify more structure.</p>
+<p>This comparison helps decide how much structure to use. Familiar, reversible decisions with little at stake often justify a routine or simple rule. More analysis may be worthwhile when the stakes are high, commitment is difficult to reverse, outcomes depend on other people, or experience provides little useful feedback.</p>
 </section>
 <section id="what-formal-analysis-can-and-cannot-establish" class="level2">
 <h2 data-anchor-id="what-formal-analysis-can-and-cannot-establish">10. Put the analysis to work</h2>

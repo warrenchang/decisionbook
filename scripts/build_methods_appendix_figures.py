@@ -117,8 +117,8 @@ def selected_evidence() -> str:
 def sampling_vs_assignment() -> str:
     body = [text(380, 52, 'Two different uses of randomness', 34, weight=700)]
     for x, center, color, fill, heading, stages in [
-        (25, 195, BLUE, PALE_BLUE, 'SAMPLING', [('Population', 'Who is eligible?'), ('Sample', 'Who is selected?'), ('Population claim', 'What can we infer?')]),
-        (395, 565, GREEN, PALE_GREEN, 'ASSIGNMENT', [('Study sample', 'Who takes part?'), ('Groups A and B', 'Who gets what?'), ('Causal contrast', 'What differs?')])
+        (25, 195, BLUE, PALE_BLUE, 'SAMPLING', [('Population', 'Who is eligible?'), ('Sample', 'Who is selected?'), ('External validity', 'To whom does it apply?')]),
+        (395, 565, GREEN, PALE_GREEN, 'ASSIGNMENT', [('Study sample', 'Who takes part?'), ('Groups A and B', 'Who gets what?'), ('Internal validity', 'Is the contrast causal?')])
     ]:
         body.append(text(center, 109, heading, 30, weight=700, fill=color))
         for i, (label, question) in enumerate(stages):
@@ -127,7 +127,7 @@ def sampling_vs_assignment() -> str:
             if i < 2:
                 body.append(f'<path d="M{center} {y+110} V{y+150}" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>')
     body.extend([text(380, 612, 'Inference still depends on the design', 28, weight=700), text(380, 648, 'and on how the study is carried out.', 28)])
-    return svg_document('Sampling and assignment answer different questions', 'Random sampling selects people from a population and supports inference to that population under the sampling design. Random assignment allocates study participants to conditions and supports an internal causal comparison under the design and implementation assumptions.', '\n'.join(body), 760, 690)
+    return svg_document('Sampling and assignment answer different questions', 'Random sampling supports population generalization, one aspect of external validity. Random assignment supports internal validity by creating a causal comparison within the sample. Both depend on the sampling or assignment design and on how the study is carried out.', '\n'.join(body), 760, 690)
 
 
 def participant_flow() -> str:

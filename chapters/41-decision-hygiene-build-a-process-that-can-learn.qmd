@@ -19,7 +19,7 @@ A hiring committee is ready to compare candidates when its chair says, “I was 
 
 The problem spans two meetings: one in which judgments became correlated before the evidence was compared, and another in which memory rewrote the earlier uncertainty. Recognizing bias is useful, but the committee also needs a procedure that preserves independent views and a record that later events cannot silently change.
 
-This chapter brings the book’s tools together around that task: making consequential decisions easier to inspect and learn from.
+This chapter brings the book’s tools together around that task. We will follow what needs to be protected before a discussion, what disagreement can reveal during it, and what a later review can establish from the original record.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -68,7 +68,7 @@ The rule is therefore not “ignore intuition.” It is **delay the global impre
 
 ## The structured judgment pipeline
 
-By the time the hiring committee recognizes the chair’s influence, members may no longer be able to recover their independent first judgments. By the review meeting, memory has changed as well. A process that can learn must protect evidence before these losses occur and preserve a connection to the outcome. The workflow in @fig-structured-judgment-pipeline groups the process into six stages. The checklist expands two checks that deserve explicit attention: ground independent judgments in a baseline, then challenge the emerging conclusion before commitment.
+An instruction to “ignore the chair’s opinion” comes too late if members have already heard it. The process must capture their assessments earlier and preserve them for review. @fig-structured-judgment-pipeline groups that work into six stages. The checklist below expands two of them: establish a baseline before gathering judgments, and challenge the emerging conclusion before committing. Use this as the chapter’s main workflow; the later audits and record templates help carry out particular steps.
 
 ![A structured judgment workflow connects definition, decomposition, independent assessment, aggregation, recording, and review.](../figures/structured-judgment-pipeline.svg){#fig-structured-judgment-pipeline fig-alt="Six steps define a decision, separate its criteria, elicit independent judgments, compare and combine them, record a decision, and review the result. A return arrow informs the next process while preserving the original record." .phone-fit}
 
@@ -128,7 +128,7 @@ When the choice involves a rare project with poor direct precedents, use several
 
 ### Preserve independence, then aggregate
 
-Discussion is valuable after information has been captured. Before discussion, it creates correlation. Early speakers anchor the range; senior people change what feels safe; repeated arguments sound more supported than they are; and private doubts disappear behind public consensus.
+Discussion can expose missing information and test an interpretation, but hearing others first can also change what a member reports. The chair’s enthusiasm may shift the comparison, make a reservation harder to voice, or lead several members to repeat the same reason. Capture the separate assessments before asking the group to work through them.
 
 Use the sequence **estimate first, discuss second**. Ask members to record a score, forecast, strongest reason, and key uncertainty. Then display the distribution. Simple averaging can outperform immediate debate when individual errors are partly independent. Weighted aggregation can help when weights are earned through relevant calibration rather than status. Disagreement is not merely an obstacle to eliminate; it is evidence about ambiguous criteria, different information, or different models.
 
@@ -181,7 +181,7 @@ For low-stakes drafting or search assistance, a brief record may be enough. As c
 
 [Chapter 42, Deciding With Data and AI](42-data-driven-decision-making.qmd#data-driven-decision-making) makes this a design opportunity: what becomes possible when prediction and some analytical assistance cost less? The process developed here supplies the conditions for using that opportunity well: compare estimates independently, state values and trade-offs, authorize an action, and preserve evidence for later review. The final chapter applies that process to machine learning, language models, and practical cases, asking when a better or cheaper estimate actually changes what it is worth doing.
 
-Some choices should also be designed to learn. A pilot, diagnostic test, negotiation question, or request for supporting sources can reveal a hidden state before commitment. Ask not only which option currently looks best, but which safe action would most improve the next decision.
+Sometimes the comparison reveals that the next useful action is to gather information. A pilot, work sample, diagnostic test, or negotiation question may resolve an uncertainty before a larger commitment. Ask what could be learned, whether it could change the decision, and whether the expected benefit justifies the cost.
 
 ## During the decision: structure disagreement
 
@@ -201,7 +201,7 @@ Safety and accountability are complements. High safety without evidence standard
 
 ## Design choices, not just advice
 
-Advice leaves the surrounding process intact. Chapters 30–40 supplied stronger design moves: diagnose the audience model, make meaning testable, map alternatives and interests, redesign recurring cues and friction, and govern the whole choice path. Decision hygiene does not reteach those mechanisms. It asks which one repairs the diagnosed weak stage while preserving agency, challenge, and feedback.
+Once the weak stage is identified, choose a change that addresses it. If members misunderstand a criterion, another independent score will not supply a shared meaning; they need examples they can compare. If concerns are understood but withheld, the reporting procedure and the response to dissent need attention. Chapters 30–40 provide tools for these different problems. Decision hygiene puts the selected tool into a process whose effect can be reviewed.
 
 ## Better meetings: do not let the presentation become the decision
 
@@ -212,7 +212,7 @@ Many organizations call a meeting before defining what must be decided. Particip
 | Before | Define the decision, criteria, evidence, authority, and affected people. | The agenda does not silently set the target. |
 | Independent input | Collect estimates and concerns before advocacy, discussion, or AI output. | Information diversity and unanchored forecasts. |
 | Evidence | Separate facts, assumptions, predictions, values, and recommendations. | Disagreement becomes diagnosable rather than personal. |
-| Challenge | Use an outside view, premortem, strongest objection, and “what would change our minds?” | Doubt becomes a role, not an act of disloyalty. |
+| Challenge | Use an outside view, premortem, strongest objection, and “what would change our minds?” | Concerns have a place in the decision and can change it. |
 | Decision | State the choice, trade-offs, exceptions, owner, and implementation conditions. | Conversation becomes accountable action. |
 | Review | Set indicators, thresholds, and a review date. | Outcomes can update the process without rewriting it. |
 : A decision meeting organized around judgment rather than presentation {#tbl-36-meeting}
@@ -245,7 +245,7 @@ The audit can reveal missing options, unsupported predictions, hidden values, in
 
 The hiring committee wants to learn from the appointment, but its members now remember having anticipated the problem. If the review relies on those recollections, a disappointing outcome can confirm everyone’s judgment while correcting no one’s process. Learning requires a record the outcome cannot rewrite. A **decision journal** is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned **without overwriting the original entry**. Its unit is a consequential decision, not a day in the writer's life.
 
-The journal links two different records: what you believed before choosing and what later happened. Meeting minutes can document the choice, but usually do not preserve the alternative forecasts and learning rules needed for this comparison.
+Meeting minutes may document the choice without preserving what was expected under the alternatives. The journal adds those forecasts and a rule for interpreting later evidence, so the review can examine more than whether the chosen option turned out well.
 
 Several research traditions inform the journal. Decision analysis identifies the options, consequences, and values to record (Raiffa, 1968; Keeney & Raiffa, 1976). Hindsight and outcome-bias research explains why later recollection cannot substitute for a contemporary record (Fischhoff, 1975; Baron & Hershey, 1988). Forecasting research makes predictions resolvable across repeated decisions (Brier, 1950; Mellers et al., 2014).
 
@@ -276,7 +276,7 @@ A university teacher hopes an AI-assisted feedback tool will save editing time. 
 | **7. Choice, thresholds, and learning rule** | Run the limited pilot; review after 100 assignments. Stop after a confirmed privacy breach. Do not scale if major correction exceeds 10% or helpfulness is below 70%. | The recorded implementation and review thresholds were followed, and the measured outcome was mixed. Do not scale: helpfulness missed the stated threshold. Continue only as a limited test, improve the student explanation, measure trust and opt-out experience, and set the next review before collecting more outcomes. |
 : A hypothetical decision journal in which every ex-post entry answers its ex-ante counterpart {#tbl-simplified-decision-journal}
 
-Review the process using what was knowable at the time. A good decision can produce a bad outcome, and a poor process can get lucky. Compare forecasts with outcomes, not stories with feelings. Ask which assumptions failed, which information was missing, which values changed, and which parts of the process should remain even though the outcome was disappointing.
+The pilot saved time, yet failed the teacher’s stated helpfulness threshold. The record prevents one favorable result from redefining success. It also shows what remains unknown: student trust, the experience of opting out, and the alternative use of teaching-assistant time. Review each claim against the evidence that can resolve it, rather than turning the mixed outcome into a single verdict.
 
 Do not update from one noisy result more than the evidence warrants. Regression to the mean, random variation, and selective feedback can create false lessons. Calibrate over many predictions. Reward accurate uncertainty and timely revision, not only confident success.
 
@@ -301,13 +301,13 @@ The minimum useful entry identifies the decision, separates prediction from valu
 | **7. Choice, thresholds, and learning rule** | Choice, implementation owner, review date, and continue/stop/revise rules | Whether rules were followed; process and outcome assessed separately; next test |
 : A matched decision-journal template: freeze, compare, and update {#tbl-35-decision-journal}
 
-Reflection differs from rationalization because it produces a testable change. “How can I defend what I did?” searches for coherence. “What process produced this choice?” separates evidence, values, context, and luck. “What will I do differently next time?” turns the answer into a new rule, forecast, or experiment.
+The review should end with a reasoned next step. Change a forecast, rule, or information-gathering practice when the evidence warrants it; retain a sound procedure when the unfavorable result provides no reason to replace it. Being able to explain what will change—and what will stay—makes the review useful for the next decision.
 
 ## The decision-improvement cycle: notice, test, ask, design, learn
 
 ![Part VII follows a practical reading route: find the obstacle, change the conditions, and check the results.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="Three reading questions connect finding the obstacle, changing the conditions, and checking the results. They organize Part VII's design and learning tools." .phone-fit}
 
-The three questions in the part map can guide a brief review: What is getting in the way? What condition could change? What result would tell us whether the change helped? For a more detailed diagnosis, the five verbs below locate the work that remains.
+The part map offers a brief way back into the main workflow: identify the obstacle, choose a change, and check its effect. If a review leaves the next step unclear, use the prompts below to locate the unanswered question. They help select work within the process, rather than add another sequence to complete.
 
 
 
@@ -369,7 +369,7 @@ The submitted artifact is the completed pipeline, not an essay about decision hy
 
 Return to the hiring meeting that opened the book. A better process makes the reasons for the choice clearer, exposes disagreement before commitment, and preserves what the outcome can teach. Start with one recurring decision and build the conditions under which the next decision can improve.
 
-The [final chapter](42-data-driven-decision-making.qmd#separate-prediction-and-valuation) matters because AI changes the information and assistance available within this process. It brings the book's lessons to a setting in which a forecast or draft analysis can arrive within seconds, while its purpose and consequences still require judgment. Attention determines which problem reaches the agenda; framing shapes the comparison; calibration helps us assess the estimate; social influence affects whether people challenge it; and design connects it to action and feedback. These earlier lessons help us decide what to delegate, what to verify, and which commitments people must own. Chapter 42 brings them together around one practical question: how can better machine assistance strengthen the whole decision loop?
+The [final chapter](42-data-driven-decision-making.qmd#separate-prediction-and-valuation) asks what changes when machine assistance makes a forecast or draft analysis available within seconds. The estimate may improve while the decision remains poor because the target is wrong, an important alternative is missing, or nobody can challenge the recommended action. The process developed here gives us a way to test whether the tool improves the whole decision.
 
 ## References cited in this chapter
 

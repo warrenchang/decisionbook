@@ -11,9 +11,9 @@ aliases:
 
 *Formal details supporting Chapters 1 and 2*
 
-Suppose one job offer pays more while another leaves more time and flexibility. A salary comparison favors the first; a comparison of daily life may favor the second. Then an employer offers to negotiate, changing the menu you thought you had to choose from. You need a recommendation, but it keeps moving as forecasts, priorities, and feasible options change. Which assumptions actually decide the result, and which further question is worth asking?
+Suppose one job offer pays more while another leaves more time and flexibility. A salary comparison favors the first; a comparison of daily life may favor the second. Then an employer offers to negotiate, changing the menu you thought you had to choose from. What looked like a simple ranking now depends on which terms can change and what the alternatives would mean for your life. Which assumptions determine the recommendation, and which further question is worth asking?
 
-This appendix puts the reasoning from [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd#chapter-01-start) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#chapter-02-start) into mathematical form. Use the equations to expose an assumption or test a recommendation.
+This appendix puts the reasoning from [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd#chapter-01-start) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#chapter-02-start) into mathematical form. Use the equations to expose an assumption or test a recommendation. Start with feasible options, beliefs, and values; then use the information and sensitivity sections to find out what could change the answer. The final section asks when further analysis is worth its own cost.
 
 ## 1. Feasible and consideration sets {#feasible-and-consideration-sets}
 
@@ -85,7 +85,7 @@ A value representation of a ranking is ordinal: any strictly increasing transfor
 
 ## 3. Consequences, beliefs, and expected utility {#consequences-beliefs-and-expected-utility}
 
-Two advisers may recommend different jobs because they predict different promotion prospects—or because they agree about those prospects but value the extra income differently. Combining both judgments in one score hides which disagreement needs to be resolved. The reduced-form function $V(a)$ can be unpacked into beliefs about consequences and values over those consequences.
+Two advisers may recommend different jobs because they predict different promotion prospects, or because they value the same prospect differently. A single score can hide that distinction: evidence about promotion addresses the first disagreement, while the second requires a discussion of priorities. The reduced-form function $V(a)$ can be unpacked into beliefs about consequences and values over those consequences.
 
 If action $a$ produces a known consequence $x(a)$, and $u(x)$ represents the value of consequence $x$, then
 
@@ -426,7 +426,7 @@ $$
 
 Under this stylized metareasoning rule, conduct the step when $G(r)>0$. The analysis-dependent action set represents options that expire, emerge, or become infeasible during deliberation; any other consequence of delay belongs in $V(a\mid y,r)$ or $c(r)$, but not both. This is a normative comparison of the expected benefit and cost of one more analysis step. It is not Simon's satisficing model itself. Bounded rationality supplies the motivation—search, attention, time, memory, and computation are scarce—while satisficing describes a different stopping strategy based on aspiration levels (Simon, 1955, 1956).
 
-Low-stakes, familiar, reversible decisions often justify routines or simple rules. High-stakes, novel, irreversible, strategically interdependent, or low-feedback decisions often justify more structure.
+This comparison helps decide how much structure to use. Familiar, reversible decisions with little at stake often justify a routine or simple rule. More analysis may be worthwhile when the stakes are high, commitment is difficult to reverse, outcomes depend on other people, or experience provides little useful feedback.
 
 ## 10. Put the analysis to work {#what-formal-analysis-can-and-cannot-establish}
 

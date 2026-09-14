@@ -29,7 +29,7 @@ A probability becomes a decision only when we consider what each outcome would m
 - Distinguish known risk, ambiguity, tail exposure, and the limits of risk-preference measures.
 - Produce an uncertainty-aware recommendation that separates process quality from realized outcome.
 
-## Opening puzzle: the same expected value, a different choice
+## The same expected value, a different choice {#opening-puzzle-the-same-expected-value-a-different-choice}
 
 Choose between:
 
@@ -46,7 +46,7 @@ In a textbook lottery, outcomes and probabilities are specified: a coin gives a 
 
 **Ambiguity** describes uncertainty about the probability model itself. A jar with a known 30 red and 60 black balls is risky; a jar with 30 red and 60 balls of unknown black–yellow composition introduces ambiguity. A precise-looking spreadsheet can still be ambiguous if the probability estimates rest on one historical period or an untested causal model.
 
-Real-world risks often combine sampling variation with model uncertainty.
+For the insurance team, this distinction changes what to investigate. Even a well-estimated frequency of familiar incidents may omit a new kind of attack; a precise average cannot settle whether the model covers the exposure.
 
 ## Expected value: the monetary benchmark
 
@@ -124,7 +124,7 @@ A globally concave utility function over money cannot explain paying for an unfa
 
 ## The Allais pattern: certainty does not cancel cleanly
 
-Consider two pairs of choices, with monetary units scaled to “millions.”
+Expected utility gives us a consistent way to compare risky options. The following choices test whether people preserve that consistency when a sure outcome becomes available. Consider two pairs of choices, with monetary units scaled to “millions.”
 
 **Pair 1**
 
@@ -144,7 +144,7 @@ The Allais pattern identifies a violated axiom. Certainty, regret, misunderstand
 
 ## The Ellsberg urn: risk is not ambiguity
 
-An urn contains 90 balls:
+Certainty about an outcome is one issue; confidence in the probabilities is another. To separate them, consider an urn containing 90 balls:
 
 - exactly 30 are red;
 - the remaining 60 are black or yellow in an unknown proportion.
@@ -169,7 +169,7 @@ Collapsing all four into one probability hides the reason for caution.
 ::: {.callout-tip icon=false}
 ## Process check: risk does not rewrite decision quality
 
-The distinction between [process and outcome](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) matters whenever uncertainty can obscure the quality of a choice (Baron & Hershey, 1988): a calibrated choice can lose, while a reckless choice can be rescued by luck. Preserve the probabilities, alternatives, constraints, and reasons available before the uncertainty resolves; otherwise one realized path becomes a false measure of ex ante judgment.
+The distinction between [process and outcome](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) matters whenever uncertainty can obscure the quality of a choice (Baron & Hershey, 1988): a well-supported choice can lose, while a reckless choice can be rescued by luck. Preserve the probabilities, alternatives, constraints, and reasons available before the uncertainty resolves; otherwise the result can replace the information that was available when the choice was made.
 :::
 
 ## Risk communication: show the denominator and the consequence

@@ -6,15 +6,21 @@ aliases:
 
 # Running an Experimental Study: From Question to Credible Evidence
 
+::: {.content-visible unless-format="epub"}
+[]{#running-an-experimental-study-from-question-to-credible-evidence}
+:::
+
 *A practical workflow for designing, implementing, analyzing, and reporting behavioral experiments*
 
 A clinic introduces a shorter appointment reminder, and attendance rises. The staff would like to keep it and expand its use. Yet attendance might also have risen because the season changed or a different group of patients received appointments. Acting on the wrong explanation could direct time and money toward a reminder that made no difference. What comparison would let the clinic decide whether the change deserves credit?
+
+Before planning that comparison, the clinic needs to establish what earlier reminder research has already answered. [Appendix E](appendix-literature-review.qmd#review-to-study) explains how a literature review can identify the remaining uncertainty and show why a new study would matter.
 
 This appendix follows an imagined study from that question to a report another researcher could examine. The final worked example uses generated data so you can reproduce its calculations. Read the appendix as a methods chapter or return to the relevant phase while planning your own study.
 
 ## The experimental workflow
 
-The work has five phases. Each leaves a record needed to interpret what follows.
+The clinic's question will guide five phases of work. Each leaves a record needed to interpret the next: the question determines the comparison, the design determines what must be recorded, and those records determine which conclusion the analysis can support.
 
 | Phase | What you do | What you preserve |
 | --- | --- | --- |
@@ -25,7 +31,7 @@ The work has five phases. Each leaves a record needed to interpret what follows.
 | **5. Report and preserve** | Report estimates and uncertainty, match the claim to the design, share what can be shared, and archive what must be protected | Manuscript, tables and figures, reproducibility package, access conditions, correction path |
 : Running an experimental study from definition to preservation {#tbl-experimental-workflow}
 
-The [design card](#the-one-page-evidence-design-card) collects the decisions to make before data collection. The sections below explain why each matters.
+The [design card](#the-one-page-evidence-design-card) collects the decisions to make before data collection. In the sections below, return to the clinic whenever a technical distinction becomes difficult to follow: what would it change about the reminder comparison?
 
 ## Start with the claim you want to earn
 
@@ -72,7 +78,7 @@ Three distinctions prevent later confusion:
 
 ### 2. Define the construct before choosing the instrument
 
-A **construct** is the theoretical object: trust, impatience, fairness, experienced affect, cooperation. An **operationalization** is how the study makes that object observable: an item, scale, choice, response time, transfer, physiological signal, or coded behavior.
+Suppose the clinic wants to explain whether the reminder improves understanding. Understanding is the **construct**, the property the study seeks to investigate. A question asking patients to identify the appointment time is one possible **operationalization**, a procedure for making that property observable. Other studies use scales, choices, response times, transfers, or physiological signals to investigate constructs such as trust, impatience, fairness, or experienced affect.
 
 Similar labels can hide different constructs. A one-shot transfer, a self-report of generosity, and repeated helping behavior are not interchangeable measures of “prosociality.” Different labels can also hide near-identical measures. Name the construct first, then justify why the operation captures it in this population and setting.
 
@@ -89,9 +95,11 @@ Before data collection, record:
 
 Manipulation checks need care. A post-treatment check can be a useful diagnostic, but conditioning the main analysis on passing it can break randomization. If the treatment changes how people interpret the check, the check is also an outcome.
 
-Measurement is not clerical work after theory. It is the bridge between theory and data (Flake & Fried, 2020).
+These measurement decisions determine what the data can tell us about the theory (Flake & Fried, 2020).
 
 ### 3. Separate description, prediction, causation, and mechanism
+
+With the outcome defined, return to the question the study is meant to answer. The following table connects each kind of claim to the comparison or check it requires.
 
 | Claim family | Target question | Design requirement | Common overreach |
 | --- | --- | --- | --- |
@@ -160,11 +168,23 @@ Those are different questions. State which one matters before allocating the sam
 
 ### 6. Random sampling and random assignment solve different problems
 
-The clinic wants to know both whether the reminder works and whose attendance it could improve. Calling the study “randomized” does not settle both questions: a fair treatment comparison can come from a narrow sample, and a representative sample can contain a confounded comparison. We need to distinguish how patients enter the study from how they receive a reminder. **Random sampling** selects units from a population and supports population description under the sampling design. **Random assignment** allocates eligible units to conditions and supports causal comparison within the experimental sample.
+The clinic wants to know both whether the reminder works and whose attendance it could improve. These questions concern different forms of validity. **Internal validity** asks whether the study supports its causal conclusion for the comparison it makes. **External validity** asks how far the finding applies to other people, settings, treatments, or times. We therefore need to distinguish how patients enter the study from how they receive a reminder (Shadish et al., 2002; Stuart et al., 2011).
 
-![Sampling connects observed people to a population; assignment creates a comparison within the study.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns distinguish selecting a sample from a population from allocating study participants to groups. Sampling supports a population claim; assignment supports a causal contrast." .phone-fit}
+#### Random sampling and external validity {#sampling-and-external-validity}
 
-@fig-random-sampling-vs-assignment keeps the direction of inference visible. Sampling asks how observed units connect to a defined population. Assignment asks whether outcomes differ because units were allocated to different conditions. A study can do either, both, or neither.
+**Random sampling** selects units from a defined population using known, nonzero selection probabilities. It supports inference from the sample to that population, one aspect of external validity. A random sample from the clinic's patient list can therefore support a population estimate more directly than recruiting only patients who respond to an advertisement. The analysis still needs to respect the sampling design, including unequal selection probabilities, and account for incomplete coverage or selective nonresponse.
+
+That support has a boundary. A patient list excludes people who never reached the clinic, and a sample from this clinic does not automatically represent another health system or a later period. Generalizing a treatment effect also requires a credible causal estimate in the first place and attention to factors that could change the effect across populations and settings.
+
+#### Random assignment and internal validity {#assignment-and-internal-validity}
+
+**Random assignment** allocates study participants to treatment conditions by chance. It supports internal validity by separating treatment allocation from pre-existing causes of the outcome. The assigned groups are comparable in expectation, allowing their outcomes to estimate the effect of assignment when implementation and analysis preserve the comparison.
+
+For example, the clinic could recruit volunteers and randomly assign them to the standard or shorter reminder. That design can support a causal conclusion about the volunteers even though their response may differ from other patients'. Conversely, drawing a random sample of patients and then letting staff choose which reminder each receives would leave the treatment comparison open to confounding. Random sampling and random assignment can be used together, but neither substitutes for the other (Stuart et al., 2011).
+
+![Random sampling supports population generalization, an aspect of external validity. Random assignment supports the internal validity of a causal comparison. Both depend on how the study is designed and carried out.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns connect random sampling to external validity and random assignment to internal validity. Sampling selects people from a population; assignment allocates participants to conditions. The footer qualifies both inferences by design and implementation." .phone-fit}
+
+@fig-random-sampling-vs-assignment separates the two tasks. Recruitment determines whose experience the study can describe; assignment creates the comparison used to estimate a causal effect. Attrition, treatment delivery, and spillovers can still threaten that comparison, as the following sections explain.
 
 #### Random assignment balances in expectation
 
@@ -355,7 +375,7 @@ External validity is not a yes/no property of a study. It is an argument support
 | Mediator correlation | “The pattern is consistent with the proposed pathway.” | “The mediator caused the effect.” |
 : Claim-to-design matching {#tbl-claim-design-matching}
 
-Scientific writing becomes clearer when it states the estimand and scope before the interpretation.
+For the clinic, the first sentence should identify which reminder groups were compared, how attendance differed, and how uncertain the estimate is. The explanation of why the reminder helped must stay within what that comparison can establish.
 
 ## The one-page evidence design card
 
@@ -418,7 +438,7 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)
 
 The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is **6.2 percentage points**, with an approximate 95% confidence interval from **0.8 to 11.5 percentage points**.
 
-**Design-matched interpretation.** In this simulated study, assignment to the plain-language reminder increased recorded attendance by 6.2 percentage points relative to assignment to the standard reminder. The approximate interval ranges from 0.8 to 11.5 points. The result estimates the effect of the reminder package in the simulated study population.
+**Design-matched interpretation.** The estimate concerns assignment to the reminder package in the simulated study population. It does not establish which feature of the message caused the difference or predict the effect in a real clinic. Those conclusions would require further comparisons and actual patient data.
 
 **Implementing the study in a clinic.** Preserve records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Use them to check recruitment, delivery, missing outcomes, and spillovers.
 
@@ -506,6 +526,10 @@ Senn, S. (1994). Testing for baseline balance in clinical trials. *Statistics in
 
 ::: {.reference}
 Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). *Experimental and quasi-experimental designs for generalized causal inference.* Houghton Mifflin.
+:::
+
+::: {.reference}
+Stuart, E. A., Cole, S. R., Bradshaw, C. P., & Leaf, P. J. (2011). The use of propensity scores to assess the generalizability of results from randomized trials. *Journal of the Royal Statistical Society: Series A (Statistics in Society), 174*(2), 369–386. https://doi.org/10.1111/j.1467-985X.2010.00673.x
 :::
 
 ::: {.reference}

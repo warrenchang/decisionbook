@@ -6,7 +6,7 @@ aliases:
 
 # Portable Tools
 
-You can recognize a bias after a decision and still repeat it next time. When the next deadline arrives, the missing forecast, unasked question, or unexamined trade-off may be just as easy to overlook. These worksheets put the chapter ideas into a record you can use while the decision is still open. Choose a tool for a decision you are working on, then complete its record or exercise. A useful output is a forecast you can resolve, a question you can ask, or a change you can try and review.
+You can recognize a bias after a decision and still repeat it next time. When the next deadline arrives, the missing forecast, unasked question, or unexamined trade-off may be just as easy to overlook. These worksheets put the chapter ideas into a record you can use while the decision is still open. Choose one tool for the difficulty you face. Its value lies in what it helps you produce: a forecast you can check, a question you can ask, or a change you can try and review.
 
 ## Choose a tool {#choose-a-tool-in-thirty-seconds}
 
@@ -30,7 +30,7 @@ The first column identifies the task. Follow the tool link to its instructions; 
 | Correct selective evidence | [Attention Audit](#tool-attention-audit) | Missing-information map and visibility redesign |
 | Separate forecasts from values | [Prediction–Valuation Split](#tool-prediction-valuation-split) | Forecasts, values, and the next useful test or conversation |
 | Audit intuitive judgment | [Heuristic Detector](#tool-heuristic-detector) | Target, substituted question, cue, boundary, and correction |
-| Make uncertainty answerable to evidence | [Probability Judgment Audit](#tool-probability-judgment-audit) | Reference class, natural frequencies, forecast, and score |
+| Base a probability judgment on evidence | [Probability Judgment Audit](#tool-probability-judgment-audit) | Reference class, natural frequencies, forecast, and score |
 | Compare risky alternatives | [Risky-Choice Audit](#tool-risky-choice-audit) | Outcomes, probabilities, values, reference point, and affordable loss |
 | Diagnose strategic dependence | [Strategic Interdependence Map](#tool-strategic-interdependence-map) | Players, options, payoffs, information, timing, and rule change |
 | Redesign repeated behavior | [Behavior Redesign Canvas](#tool-behavior-redesign-canvas) | Target action, bottleneck, prompt, friction change, feedback, and recovery |
@@ -83,7 +83,7 @@ Keep access and retention proportionate to the stakes. Keep any required minutes
 
 **Part 2 — expose the process.** Reconstruct alternatives, predictions, valuation, opportunity cost, context or state, and intended feedback. Identify the weakest link. Rate process quality and outcome quality separately. Finish: “The weakest link was ___ because ___. Process quality: __/7. Outcome quality: __/7. Next time I will improve it by ___.”
 
-The audit makes missing options, weak evidence, hidden values, social influence, and unresolved uncertainty visible.
+Use the difference between your two ratings to identify what the outcome alone would have hidden. A good result may conceal a weak process, while a disappointing result may follow a reasonable choice.
 :::
 
 []{#tool-attention-audit}
@@ -148,7 +148,9 @@ Start with the Probability Judgment Audit for a forecast or the Risky-Choice Aud
 
 [Core tool]{.tool-level}
 
-Define the event, population, time horizon, and the condition on which the probability depends. Translate percentages into counts within a shared population, keeping clear which subgroup each conditional rate refers to. For a conjunction, check that it is no more likely than either component; when adding probabilities, account for overlap. Record the forecast and a rule for resolving it. After resolution, score the same event—for a binary outcome, the Brier score is $(p-y)^2$, where $p$ is the forecast probability between 0 and 1 and $y$ is 1 if the event occurred and 0 otherwise.
+Define the event, population, time horizon, and the condition on which the probability depends. Translate percentages into counts within a shared population, keeping clear which subgroup each conditional rate refers to. For a conjunction, check that it is no more likely than either component; when adding probabilities, account for overlap.
+
+Record the forecast and a rule for deciding whether the event occurred. After resolution, score that same event. For a binary outcome, the Brier score is $(p-y)^2$, where $p$ is the forecast probability between 0 and 1 and $y$ is 1 if the event occurred and 0 otherwise. Lower scores indicate better forecasts. [Chapter 15](../chapters/15-samples-randomness-regression-and-calibration.qmd#chapter-15-start) explains how to learn from a series of forecasts.
 :::
 
 []{#tool-risky-choice-audit}
@@ -158,7 +160,7 @@ Define the event, population, time horizon, and the condition on which the proba
 
 [Core tool]{.tool-level}
 
-List outcomes, probabilities or ambiguity, expected value, utility-relevant consequences, and the maximum affordable loss. Elicit the certainty equivalent before naming a risk attitude. State the reference point and whether the same prospect was described as a gain or a loss. Ask how insurance or diversification changes the possible payoffs. Separately, ask whether new information would change the probability estimates or the chosen action enough to justify its cost. Finish by naming what expected utility explains, what prospect theory describes, and what neither model identifies from one choice.
+List each option's possible outcomes and what is known about their probabilities. For monetary outcomes with specified probabilities, calculate expected monetary value. Evaluate other consequences in terms appropriate to the decision. Consider what the gains and losses would mean for the chooser, including the maximum affordable loss. Ask what certain outcome the chooser considers equivalent to the risky option before naming a risk attitude. State the reference point and whether the same prospect was described as a gain or a loss. Ask how insurance or diversification changes the possible payoffs. Separately, ask whether new information would change the probability estimates or the chosen action enough to justify its cost. Finish by naming what expected utility explains, what prospect theory describes, and what neither model identifies from one choice.
 :::
 
 ::: {.callout-note .experience-sample-audit .tool .tool-extension icon=false}
@@ -182,7 +184,7 @@ Write the full stream of outcomes for each option. Use **MOST** to check magnitu
 
 [Specialized extension]{.tool-level}
 
-Name the label, reference point, budget boundary, opening and closing date, and payment–consumption link. Separate acquisition utility from transaction utility and sunk costs from future consequences. Reconstruct the choice once inside the current account and once across the full balance sheet or portfolio. Preserve a boundary when it protects a valued goal; relax it when the label, rather than future value, drives the decision.
+Identify the mental account being used: its label, budget, reference point, opening and closing dates, and the connection between payment and consumption. Separate whether what you obtain is worth its total cost from how attractive the deal feels, and distinguish payments that cannot be recovered from consequences that can still change. Reconstruct the choice once within that account and once across the full balance sheet or portfolio. [Chapter 20](../chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd#chapter-20-start) develops these distinctions. Preserve a boundary when it protects a valued goal; relax it when the label, rather than future value, drives the decision.
 :::
 
 ::: {.callout-note .market-claim-audit .tool .tool-extension icon=false}
@@ -273,7 +275,7 @@ Ask, listen, and restate the meaning in your own words. Invite the speaker to co
 
 ## Negotiation
 
-Begin with Negotiation Preparation. Use the later tools when an offer, tactic, disagreement, or implementation problem needs closer attention.
+Begin with Negotiation Preparation to establish what would make an agreement worth accepting. Use the Package and Contingency Worksheet to explore differences that could create value. The other tools help when a tactic, dispute, or implementation problem needs closer attention.
 
 []{#tool-negotiation-preparation}
 
@@ -407,7 +409,7 @@ Assign an activity that serves the learning objective.
 
 **Case or video debrief.** Before viewing or reading, predict the central difficulty. During the case, record observable behavior rather than inferred motive. Afterward, identify the proposed mechanism, a plausible alternative explanation, information learned or lost, economic or relational cost, one boundary condition, and one better action to test. Linked videos remain with their rights holders.
 
-**Message production.** Create a 3–5 minute message for a real audience and attach a design note of no more than 200 words: current audience model; meaningful contradiction; proposed update; strongest evidence; protected value or identity; specific action; uncertainty; and ethical safeguard. Peer feedback diagnoses the message rather than the presenter.
+**Message production.** Create a 3–5 minute message for a real audience and attach a design note of no more than 200 words. State what the audience currently believes, what observation or problem gives it a reason to reconsider, and what you want it to understand or do. Identify the strongest evidence, a value or identity concern to respect, the remaining uncertainty, and an ethical safeguard. Peer feedback should address how the message works rather than judge the presenter.
 
 **Connection prediction.** Before a four-minute paired conversation, privately predict enjoyment, awkwardness, and connection. Compare forecast with experience. Participation and depth must be voluntary.
 

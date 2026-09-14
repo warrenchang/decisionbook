@@ -19,9 +19,9 @@ aliases:
 
 The prefilled contribution is both a suggested number and, if inaction implements it, a default. The highlighted fund may look like advice. Whether these features help depends on how well they fit the person’s circumstances and how easily alternatives can be understood and selected.
 
-Now reverse the example. A subscription site makes enrollment one click and cancellation nine screens. A travel site labels an expensive option “most popular” without explaining the comparison. A checkout page adds a warranty unless the buyer notices a faint checkbox. These designs use the same behavioral mechanisms, but their objective and treatment of exit are different.
+The same attention and effort can also be used to make an unwanted commitment persist. A subscription site makes enrollment one click and cancellation nine screens. A travel site labels an expensive option “most popular” without explaining the comparison. A checkout page adds a warranty unless the buyer notices a faint checkbox. These designs use the same behavioral mechanisms, but their objective and treatment of exit are different.
 
-The teaching question is therefore not, “Does architecture influence choice?” Every environment does. The useful questions are: **Which objective does it serve? Which mechanism does it use? What evidence says it helps? Who may be harmed? Can a person understand, refuse, and recover from it?**
+In each case, someone designed the path through the decision. To evaluate it, we need to follow that path from the first prompt through acceptance, refusal, or a later change of mind. The question is whether it helps people act on informed goals, or makes a choice profitable for the designer at their expense.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -35,11 +35,9 @@ Menus, defaults, forms, and feedback shape how people choose. A useful design he
 - Compare nudges with boosts, incentives, mandates, and structural change for the same barrier.
 - Design and test an intervention that protects understanding, welfare, and meaningful exit.
 
-Choice architecture asks how an institution presents recurring choices to many people, extending the individual behavior-design tools of the previous chapter.
-
 ## From behavior design to choice architecture
 
-Behavior design often begins with a person who wants to perform a behavior but does not reliably do so. Choice architecture widens the lens to the menu, sequence, interface, institution, and rules that organize recurring choices for many people. This chapter is a synthesis: earlier chapters established option construction, framing, defaults, probability formats, mental accounts, social norms, and implementation plans. The task here is to diagnose how those mechanisms combine along one choice path, not to treat them as a new list of effects.
+The previous chapter began with a person trying to change a recurring action. Here the designer may be an institution shaping choices for many people with different needs. A retirement-plan administrator, for example, decides which funds are offered, how contributions are explained, and what happens if an employee leaves a field unanswered. Earlier chapters help us examine each influence; the task now is to understand how they work together along the whole path.
 
 Richard Thaler and Cass Sunstein use **choice architecture** for the way choices are organized and **nudge** for an intervention that predictably changes behavior without banning options or substantially altering economic incentives (Thaler & Sunstein, 2008). Defaults, reminders, simpler forms, social-norm messages, and rearranged menus can be nudges. A large tax, a prohibition, or a compulsory rule is not merely a nudge, although it may be justified on other grounds.
 
@@ -57,7 +55,7 @@ Before choosing an intervention, compare the tools available:
 | Structural change | The conditions producing the problem | Staffing, access, pricing, transport, or workload reform | Is individual choice really the main bottleneck? |
 : Different tools for different barriers {#tbl-35-policy-tools}
 
-A reminder cannot repair an unaffordable service. A literacy module cannot compensate for a deliberately deceptive contract. A default cannot create a good option that is absent from the menu. The first discipline of design is diagnosis.
+The choice among these tools depends on the obstacle. A reminder may help someone who forgets an appointment; an unaffordable service calls for a response to cost. Likewise, a clearer menu cannot supply a useful option that the institution never offered.
 
 ## The plausible path: where architecture enters the loop
 
@@ -71,7 +69,7 @@ An intervention is plausible only when the proposed design can be connected to a
 4. **Action.** Can intention survive attention limits, timing, friction, and competing demands?
 5. **Feedback.** Can people see what happened and revise the next choice?
 
-This sequence prevents magical thinking. “Add a reminder” is not a mechanism. A defensible claim is narrower: eligible people already intend to book; forgetting at the relevant moment is a major barrier; a timely reminder makes the action salient; the booking path is feasible; and attendance can be measured without creating new burdens.
+These questions connect an intervention to the problem it should solve. “Add a reminder” names a change, but leaves its purpose unexplained. A testable proposal is more specific: eligible people already intend to book; forgetting at the relevant moment is a major barrier; a timely reminder makes the action salient; the booking path is feasible; and attendance can be measured without creating new burdens.
 
 ## Construct and explain the choice
 
@@ -151,17 +149,17 @@ Information delivered at the wrong time is often inert. A reminder can close an 
 
 Forgetting is one possible barrier; planning is another. A reminder can include a concrete opportunity to act, such as choosing a date and time, while making rescheduling easy. If the barrier is an unattractive immediate experience, the [temptation-bundling example in Chapter 39](39-behavior-design-make-the-better-action-easier.qmd#optional-tools-for-a-diagnosed-bottleneck) illustrates a different mechanism: link the activity to an immediate reward (Milkman et al., 2014). Urgency should reflect a real constraint rather than pressure the person to decide before inspecting the terms.
 
+A planning field has direct experimental support: prompting employees to write the date and time of a flu clinic increased vaccination relative to a reminder without that field (Milkman et al., 2011). Commitment devices address a different problem by letting a person constrain a predictable future choice; because they may impose costs, they are not always nudges in the strict sense. Save More Tomorrow illustrates a hybrid: workers committed part of future salary increases to saving, combining advance commitment, timing, and inertia (Thaler & Benartzi, 2004).
+
 Salience is selective. Making one action vivid necessarily pushes something else toward the background. Ethical design therefore asks not only what the cue reveals, but what it makes easier to forget.
 
 ### An arrow that changed the action path
 
 An input can be irrelevant to an option's objective consequences and still be causally relevant to the decision process. In 2012, Google added a clickable right-pointing arrow while also changing font size, spacing, and text layout in advertisements on its Display Network. The hotel offer did not become better merely because an arrow appeared, but the route from noticing the offer to clicking it became more prominent. Google reported higher clicks after the bundled redesign (Land & Yuan, 2012).[^ch40-bundled-redesign]
 
-The example shows where action affordances enter the decision path. Evaluate the redesign against the outcome that matters to its users.
+The arrow makes the next action easier to recognize. Whether the increased clicking helped users requires a further comparison with outcomes they value, such as finding a suitable service.
 
 ![An illustrative action cue within a bundled interface redesign. These generic hotel advertisements show how an arrow can make the next action prominent; they are not the original test stimuli. Google reported higher clicks after combining the arrow with typography, spacing, and layout changes, so the comparison does not isolate the arrow’s effect.](../figures/digital-arrow-affordance.svg){#fig-digital-arrow-affordance fig-alt="Two generic hotel advertisements show the same offer. The second contains a prominent right-pointing arrow. A result box reports higher clicks after Google's bundled redesign." width="100%" .phone-fit}
-
-Planning evidence makes the mechanism concrete: prompting employees to write the date and time of a flu clinic increased vaccination relative to a reminder without that planning field (Milkman et al., 2011). Commitment devices solve a different problem by letting a person constrain a predictable future state; because they may impose costs, they are not always nudges in the strict sense. Save More Tomorrow illustrates a hybrid: workers committed part of future salary increases to saving, combining advance commitment, timing, and inertia (Thaler & Benartzi, 2004).
 
 ### Use social information carefully
 
@@ -207,7 +205,7 @@ A null result narrows the inquiry only when the study can distinguish the explan
 
 ### Ethics and governance: helping, steering, or manipulating?
 
-The ethical issue is not solved by saying that choices remain technically available. An option that requires exceptional attention, time, literacy, or courage may exist legally while being inaccessible in practice. Ethical architecture should be assessed on the following ten dimensions:
+A technically available option may still be difficult to exercise. If leaving a subscription requires exceptional time or persistence, the mere presence of a cancellation route does little to protect choice. Use the audit below to examine both what the design offers and what using it actually requires:
 
 | Test | Question |
 | --- | --- |
@@ -324,7 +322,7 @@ Larrick, R. P., & Soll, J. B. (2008). The MPG illusion. Science, 320(5883), 1593
 :::
 
 ::: {.reference}
-Madrian, B. C., & Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. Quarterly Journal of Economics, 116(4), 1149–1187.
+Madrian, B. C., & Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. *Quarterly Journal of Economics, 116*(4), 1149–1187. https://doi.org/10.1162/003355301753265543
 :::
 
 ::: {.reference}

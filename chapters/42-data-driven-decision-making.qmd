@@ -16,7 +16,7 @@ The conflict changed the programme. The city brought in a new contractor and dir
 
 Concentrating work where dangerous pipes are most likely can remove more of them with limited money and crews. Spreading inspections more widely can answer residents who fear being overlooked. Those aims can pull the next excavation in different directions. **How should the city use these predictions when residents contest the priorities built around them—and who has authority to decide whose claim comes first?**
 
-The [previous chapter](41-decision-hygiene-build-a-process-that-can-learn.qmd#ai-accountable-judgment) provides a process for separating estimates from valuations and learning from results. This chapter puts that distinction under pressure. As AI makes prediction cheaper, the question becomes how to turn its estimates into actions whose objectives, trade-offs, and authority people can examine and challenge.
+The [previous chapter](41-decision-hygiene-build-a-process-that-can-learn.qmd#ai-accountable-judgment) separated forecasts from the priorities and authority that turn them into a choice. Flint shows why that separation matters: residents could dispute the excavation policy without resolving their dispute by improving the pipe estimates. We will examine what AI can contribute, what decisions its output leaves open, and how to test whether the resulting arrangement works better.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -57,7 +57,7 @@ Using that opportunity draws on the whole book:
 - **Other minds and institutions:** [Chapter 28](28-authority-groupthink-and-shared-responsibility.qmd#authority-and-responsibility) examines authority and responsibility, while [Chapter 35](35-negotiation-as-joint-decision-design.qmd#prepare-the-joint-decision) treats negotiation as joint decision design. An AI-supported policy still needs a way to address conflicting interests, hear objections, and assign authority over the final choice.
 - **Design and learning:** [Chapters 39](39-behavior-design-make-the-better-action-easier.qmd#one-primary-workflow) through [41](41-decision-hygiene-build-a-process-that-can-learn.qmd#decision-hygiene-build-a-process-that-can-learn) turn these distinctions into changes that can be implemented and tested. A forecast becomes useful when someone can act on it, record the result, and revise the process.
 
-Chapter 41 assembles a process that can learn. This final chapter puts that process to work with AI. Its practical test is whether cheaper prediction, combined with explicit values and accountable action, improves the decisions people actually make. The behavioral lessons matter at every point where people build, interpret, authorize, or challenge the system.
+These connections give the chapter its practical test: identify the uncertainty a tool could reduce, decide what action would follow, and compare that arrangement with the existing process. A model’s score matters because of what it enables people to do.
 
 ## What becomes possible when prediction becomes cheap? {#cheap-prediction}
 
@@ -73,7 +73,7 @@ The opportunity reaches beyond doing the same work faster. If a bakery can antic
 
 Cheaper prediction can therefore increase the value of its **complements**: useful observations, clear objectives, good interventions, implementation capacity, and feedback. If the city cannot obtain access to a property, a better pipe-risk score cannot make the excavation happen. If nobody is authorized to adjust a production schedule, a better demand forecast may remain an attractive dashboard.
 
-The useful starting question is concrete: **Which uncertainty is currently preventing a better action, and what would we change if we could reduce it?**
+Before selecting a tool, complete the connection: **If we could estimate this more accurately, we would change this decision.** If the intended action is unclear, the project may need work on its objective or options before another forecast.
 
 ## Separate the forecast from the value of its consequences {#separate-prediction-and-valuation}
 
@@ -158,7 +158,7 @@ This is one reason a map should distinguish predicted risk from uncertainty and 
 
 A university has more students at risk of leaving than its advisers can contact. An algorithm identifies those most likely to leave, so directing outreach to them seems sensible. But the students facing the greatest risk may be facing problems a call cannot change, while others could stay with timely advice. Which ranking should determine who receives the limited places: risk of leaving or benefit from the intervention?
 
-Risk tells us what is expected under the existing conditions. The policy question asks how much outreach would change that outcome. Some high-risk students may face obstacles that a telephone call cannot address. Others with lower baseline risk may benefit substantially from timely help. Both groups may deserve support, but the most useful form of support need not be the same.
+The risk estimate describes what is expected under the existing conditions. Allocating outreach requires an additional estimate: how much this particular intervention would change the outcome. Both groups may deserve support, while needing different forms of it.
 
 Consider two hypothetical groups. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.
 
@@ -203,11 +203,11 @@ The lesson is practical: the intervention included a division of work, a compari
 
 ### A capable assistant can still fail to improve the user {#ai-physician-vignettes}
 
-A model that reasons well through a clinical case appears to offer physicians a useful second opinion. Giving doctors access should then improve their answers—but will that advantage survive the way they actually consult and use the tool? In a randomized study, 50 physicians solved clinical vignettes using conventional resources, with half also given access to an LLM. Their median diagnostic-reasoning scores per case were **76 percent with LLM access and 74 percent without it**. The adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8. Yet in a separate assessment using a standardized prompt, the LLM alone achieved a median score of **92 percent** on the same scoring rubric. A strong standalone result had not translated into a significant improvement for physicians given access to the tool (Goh et al., 2024).
+Strong performance on a clinical case gives a reason to test a model as a physician’s assistant. The physician must still know when to consult it, recognize a useful answer, and change the relevant judgment. A study can therefore find capable model output without finding better performance by people given access to it. In a randomized study, 50 physicians solved clinical vignettes using conventional resources, with half also given access to an LLM. Their median diagnostic-reasoning scores per case were **76 percent with LLM access and 74 percent without it**. The adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8. Yet in a separate assessment using a standardized prompt, the LLM alone achieved a median score of **92 percent** on the same scoring rubric. A strong standalone result had not translated into a significant improvement for physicians given access to the tool (Goh et al., 2024).
 
 A tool's standalone performance and its effect on a person using it are different quantities. The user must recognize when to consult it, interpret its output, detect errors, and change an appropriate action. Interface design, training, time pressure, and incentives can all become part of the intervention. Their contribution has to be tested rather than assumed.
 
-Together, these cases suggest a more demanding measure of progress: **Does this particular arrangement improve the work and its consequences, compared with a credible alternative?**
+The cases differ in setting and research design, but each directs attention to the arrangement around the tool. The useful comparison concerns the work and its consequences under that arrangement, rather than the impressive output considered alone.
 
 ## Trust, valuation, and responsibility {#trust-and-responsibility}
 
@@ -221,13 +221,13 @@ Human authority must also have substance. A reviewer who cannot inspect the rele
 
 For a consequential decision, retain a person or authorized body who can hear reasons, approve or refuse the action, explain exceptions, and arrange review. People can authorize bounded automated actions under an explicit policy, while retaining responsibility for the policy, monitoring, escalation, and withdrawal of that authority. The boundary should be chosen in advance and scaled to the consequences (National Institute of Standards and Technology, 2023).
 
-The design goal is therefore accountable human control with well-tested machine assistance.
+In Flint, this would mean distinguishing a challenge to the risk estimate from a challenge to the allocation policy, and identifying who can respond to each. Accountability becomes meaningful when an objection has somewhere to go and can change the relevant decision.
 
 ## Test the whole decision, not just the model {#test-the-whole-decision}
 
 Imagine receiving a report that a model is “95 percent accurate.” Before celebrating, ask what was predicted, which cases were included, and what comparison matters. If an event occurs in only 5 percent of cases, a rule that always predicts its absence is already 95 percent accurate. It may still be useless for finding the cases that require action.
 
-Evaluation should follow the decision from data to consequences. The statistical-learning approach emphasizes performance on observations that did not determine the fitted model, with validation separated from final testing (James et al., 2023). Add the managerial questions: which errors matter, what capacity exists, and who will act on the result?
+Begin by testing the estimate on observations that did not determine the fitted model, keeping validation separate from final testing (James et al., 2023). Then follow the estimate into use: which errors change actions, what capacity limits those actions, and what consequences follow? The sections below separate these checks so a favorable model score cannot stand in for an evaluation of the decision.
 
 ### Make the test resemble the task
 
@@ -303,7 +303,7 @@ Choose one recurring decision this week. Write down the uncertain fact that matt
 
 Return finally to the hiring committee that opened the book. AI might help compare applications or estimate later performance. The committee still has to define which kinds of performance matter, examine how evidence was selected and presented, hear disagreement, and justify its choice. It then needs to check what happened without letting the outcome rewrite the original reasoning. Attention, prediction, valuation, influence, design, and learning meet in that one decision.
 
-The process in @fig-normative-decision-loop gives us a common reference from the first chapter to the last. We can now ask which parts a tool improves, which judgments people must own, and what feedback would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.
+The decision map in @fig-normative-decision-loop gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.
 
 ## References cited in this chapter
 

@@ -33,18 +33,18 @@ Predicting a strategic choice requires a view of what players believe about one 
 - Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.
 - Design an observation or treatment that distinguishes competing explanations for the same strategic action.
 
-### Two beauty contests
+## Two beauty contests
 
 The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections.
 
-The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the information that makes the displayed reasoning unproductive. The scene illustrates recursive reasoning.
+The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the missing information that prevents the chain of guesses from settling the choice. More steps help only if they begin from a useful account of the opponent.
 
 ![Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game and answers a different question.](../figures/three-lenses-strategic-behavior.svg){#fig-three-lenses-strategic-behavior fig-alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions."}
 
 ## Three lenses, three questions
 
 
-Equilibrium asks which choices fit together; a reasoning model asks how a player predicts other players; population dynamics asks which strategies spread under an update rule. Begin with the prediction problem in the number game, then examine what feedback changes.
+To predict the first round, we can ask which choices would be mutual best responses, or model how players actually reason about one another. To explain change across rounds or populations, we also need an account of how ways of playing become more common. These are distinct tasks for equilibrium, reasoning models, and population dynamics.
 
 ## Limited strategic depth: level-*k*
 
@@ -83,7 +83,7 @@ The following number-game summary shows the variation across settings and partic
 | Game theorists | 136 | 19.1 | 0 | 3.7 |
 : Descriptive number-game results used to illustrate heterogeneous strategic depth {#tbl-beauty-contest-groups}
 
-Large within-group dispersion remains.
+These averages do not turn occupations or participant groups into reasoning types. Substantial variation remains within each group, and the next section explains why a particular number does not reveal a unique thought process.
 
 ## The action does not identify the thought
 
@@ -130,7 +130,9 @@ A formal model must therefore name its payoffs, initial state, transmission or u
 
 ## Application: choose the model after diagnosing the process
 
-Suppose a team sees a work routine spreading and wants to support it. The spread could mean that employees are learning from success, copying visible colleagues, or complying with a changed rule. Each explanation calls for a different intervention, and rewarding the apparent success could reinforce a routine whose value has never been tested. First ask whether employees are deliberately best responding to colleagues or anticipating what colleagues will anticipate. For a claim about diffusion, use four distinct tests:
+The same distinction matters outside a number game. Suppose a team sees a work routine spreading and wants to support it. Employees may be learning from success, copying visible colleagues, or complying with a changed rule. Rewarding the routine before investigating these possibilities could reinforce a practice whose value has never been tested.
+
+Begin with what the action achieves for the employee. If it is a deliberate response to what colleagues do or expect, a strategic-reasoning model may help. If the question is how the routine spreads, compare the four processes below:
 
 | Candidate process | Diagnostic question | Discriminating evidence |
 | --- | --- | --- |
@@ -140,7 +142,7 @@ Suppose a team sees a work routine spreading and wants to support it. The spread
 | Institution | Did software, incentives, defaults, or management make one routine easier or mandatory? | Identify the rule change and compare behavior under otherwise similar institutional conditions. |
 : Four mechanisms that can produce the same diffusion pattern {#tbl-strategy-diffusion-diagnostic}
 
-The processes can coexist, so record which signal each account requires and what observation would weaken it. Do not call every spread behavior “evolutionary” merely because its frequency changes.
+The processes can coexist, so record which signal each account requires and what observation would weaken it. An evolutionary explanation must specify the process that makes a strategy more common; observing its spread is only the starting point.
 
 ## Ethics: strategic classification can become a weapon
 

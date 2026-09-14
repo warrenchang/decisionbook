@@ -77,7 +77,7 @@ This creates two risks:
 
 Gelman and Carlin (2014) emphasize that design analysis should examine these risks, not only conventional power. Button et al. (2013) showed how low power can undermine reliability in neuroscience, a warning that applies more broadly wherever small, noisy studies pass through a significance filter.
 
-The reporting gate does not improve the underlying studies. A nonsignificant estimate may be too imprecise to rule out an important effect, while a significant estimate can still be badly exaggerated. Planning a useful study therefore begins with the effect worth detecting and the uncertainty a decision can tolerate, as in [Appendix E](appendix-e-how-behavioral-evidence-is-built.qmd).
+The reporting gate does not improve the underlying studies. A nonsignificant estimate may be too imprecise to rule out an important effect, while a significant estimate can still be badly exaggerated. Planning a useful study therefore begins with the effect worth detecting and the uncertainty a decision can tolerate, as in [Appendix F](appendix-e-how-behavioral-evidence-is-built.qmd).
 
 ## Flexible analysis creates many paths to a result
 
@@ -115,7 +115,7 @@ Publication bias changes interpretation. A literature containing ten positive pa
 
 ## Honest error, questionable practice, and misconduct are not the same
 
-Scientific records contain mistakes. A cell is mislabeled. A merge duplicates rows. A reverse-coded item is not reversed. A researcher misunderstands a package default. Honest errors can be consequential, and scientists remain responsible for checking and correcting them. But an error is not automatically misconduct.
+Scientific records can contain serious mistakes: a mislabeled cell, a merge that duplicates rows, a reverse-coded item left unchanged, or a misunderstood software default. Researchers remain responsible for checking and correcting these errors. Establishing what went wrong, however, is a different task from establishing misconduct.
 
 The United States Office of Research Integrity defines research misconduct as fabrication, falsification, or plagiarism in proposing, performing, reviewing, or reporting research, and explicitly excludes honest error and differences of opinion from the definition (Office of Research Integrity, n.d.). Its terms are useful beyond one jurisdiction:
 
@@ -142,9 +142,11 @@ The design task is therefore two-level:
 - **Researcher level:** make choices traceable, distinguish planned from discovered analysis, preserve data provenance, and correct errors.
 - **Institutional level:** reward credible process, replication, data stewardship, team contributions, and correction—not merely the count and novelty of positive findings.
 
-Reform works when it changes both information and incentives.
+A useful reform therefore asks both what would make the evidence easier to check and what would make careful work worth doing.
 
 ## Safeguards and complementary checks {#safeguards-what-each-reform-can-and-cannot-do}
+
+Choose a safeguard for the problem it can address. Recording an analysis plan makes later changes visible; sharing code makes calculations inspectable. Neither alone establishes that the outcome measures what the researcher intended.
 
 | Safeguard | What it strengthens | Complementary check |
 | --- | --- | --- |
@@ -164,7 +166,7 @@ The Transparency and Openness Promotion guidelines encourage journals to state s
 
 ## How to interpret a replication
 
-When an original and a replication disagree, proceed in this order.
+When an original and a replication appear to disagree, first establish what each study estimated. Work through the following checks, recording any information that is unavailable rather than treating it as verified.
 
 1. **Reproduce each result.** Do the reported data and code generate the claims?
 2. **Compare the estimands.** Did both studies estimate the same effect for the same treatment, outcome, population, and horizon?
@@ -211,7 +213,7 @@ Submit the completed pipeline, two distinct threats stated without alleging inte
 
 ## Famous findings after replication: an evidence-status map {#famous-findings-after-replication}
 
-A list of “studies that failed to replicate” sounds simple but usually mixes different scientific events. A close direct replication may estimate almost no effect. A multilab project may find a much smaller average effect. A meta-analysis may find substantial heterogeneity. Better controls may weaken a predictive association without repeating the original study. A reanalysis may reveal a statistical artifact. A retraction concerns the reliability of the research record, not merely whether another team obtained a different estimate.
+A list of “studies that failed to replicate” can mix events that have different implications. A direct replication may estimate almost no effect, while a multilab project or meta-analysis may reveal a smaller average or substantial variation. Better controls can weaken a predictive association without repeating the original study, and a reanalysis can expose a statistical artifact. A retraction concerns the reliability of the research record. Read each update for what changed and what that change allows us to conclude.
 
 This map covers influential cases used in or closely related to the book. Each entry connects the memorable claim to a later test or correction. The [FORRT Replication Database](https://forrt.org/fred-apps/) provides a broader, evolving index of replication studies (Röseler et al., 2024).
 
