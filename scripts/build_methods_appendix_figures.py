@@ -15,6 +15,7 @@ import math
 import random
 from pathlib import Path
 from xml.sax.saxutils import escape
+from reviewed_figure_cleanup import clean_svg
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -326,7 +327,7 @@ def selected_literature_simulation() -> tuple[str, list[dict[str, float | int | 
         "selected_wrong_sign": type_s,
         "theoretical_power": theoretical_power,
     }
-    return "\n".join(line.rstrip() for line in simulation_svg.splitlines())+"\n", rows, metadata
+    return clean_svg('selected-literature-simulation.svg', "\n".join(line.rstrip() for line in simulation_svg.splitlines())+"\n"), rows, metadata
 
 
 

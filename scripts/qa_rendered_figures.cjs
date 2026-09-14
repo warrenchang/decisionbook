@@ -214,10 +214,10 @@ async function main() {
       ["desktop", "mobile"].map((name) => [name, results.filter((result) => result.viewport === name).reduce((sum, result) => sum + result.imageCount, 0)]),
     );
     const issues = results.flatMap((result) => result.issues.map((issue) => `${result.viewport}/${result.page}: ${issue}`));
-    // Current source inventory: 116 Markdown figures, one raw HTML GIF,
-    // and the cover inserted by Quarto into the preface (118 placements).
-    if (totalByViewport.desktop !== 118 || totalByViewport.mobile !== 118) {
-      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 118 in each viewport`);
+    // Current source inventory: 117 Markdown figure placements, one raw HTML GIF,
+    // and the cover inserted by Quarto into the preface (119 placements).
+    if (totalByViewport.desktop !== 119 || totalByViewport.mobile !== 119) {
+      issues.push(`configured rendered figure placement count is ${JSON.stringify(totalByViewport)}, expected 119 in each viewport`);
     }
     if (rowgroups !== 2) issues.push(`The self-fulfilling and self-defeating table has ${rowgroups} two-row rowgroups; expected 2`);
     if (!/Valuation/.test(valuation) || /\nJudgment\n/.test(valuation)) issues.push("Table 4.1 terminology is not Valuation");

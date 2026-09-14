@@ -1,0 +1,60 @@
+{
+  "status": "PASS_WITH_MINOR_WORDING_SUGGESTION",
+  "scope": "Read-only independent check of stage chapter 21 dopamine illustrations; no source or figures edited.",
+  "assets": [
+    {
+      "svg": "book/figures/reward-prediction-error-abcd.svg",
+      "png": "book/figures/reward-prediction-error-abcd.png",
+      "png_dimensions": [
+        1200,
+        1530
+      ],
+      "narrow_preview": "group-1-work/reward-prediction-error-abcd-independent-narrow.png",
+      "narrow_dimensions": [
+        350,
+        446
+      ],
+      "native_visual_result": "Inspected at native image size; labels, curve signs, and event alignment clear.",
+      "narrow_visual_result": "Inspected at 350px width; labels readable, curves distinct, and no clipping/overlap observed.",
+      "sha256": "228e2317350818da00b18c4a0b9d88585e1ff9d5df0fe25b94031b0038110dd9"
+    },
+    {
+      "svg": "book/figures/reward-uncertainty-comparison.svg",
+      "png": "book/figures/reward-uncertainty-comparison.png",
+      "png_dimensions": [
+        1200,
+        720
+      ],
+      "narrow_preview": "group-1-work/reward-uncertainty-comparison-independent-narrow.png",
+      "narrow_dimensions": [
+        350,
+        210
+      ],
+      "native_visual_result": "Inspected at native image size; labels, curve signs, and event alignment clear.",
+      "narrow_visual_result": "Inspected at 350px width; labels readable, curves distinct, and no clipping/overlap observed.",
+      "sha256": "3fdb3955734f611a566042d631c465d0bec7b8ef7c830a1d36c2a51834881028"
+    }
+  ],
+  "checks": {
+    "cue_present_in_A": true,
+    "A_caption_explains_cue_before_learning": true,
+    "ABCD_redundant_title_subtitle_baseline_footer_removed": true,
+    "E_redundant_title_measurement_label_explanatory_footers_removed": true,
+    "E_reward_and_no_reward_use_distinct_colors": true,
+    "E_shared_pre_outcome_paths_equal": true,
+    "E_shared_pre_outcome_points": 236,
+    "D_distinguishes_unexpected_delay_from_known_wait": true,
+    "captions_distinguish_change_from_baseline_firing_release_and_pleasure": true,
+    "E_waiting_result_not_generalized_to_work_effort": true
+  },
+  "issues": [
+    {
+      "severity": "minor",
+      "source": "chapters/21-habits-wanting-and-self-control.qmd",
+      "location": "fig-reward-uncertainty-comparison fig-alt",
+      "old": "Curves measure change in firing around baseline, not absolute dopamine release.",
+      "suggested": "Curves show schematic changes in firing around baseline, not absolute dopamine release.",
+      "reason": "Show schematic changes describes the drawing more precisely than measure; surrounding caption already states that it is schematic."
+    }
+  ]
+}

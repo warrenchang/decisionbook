@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import random
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 
 
 OUT = Path(__file__).resolve().parents[1] / "figures" / "schelling-emergence.svg"
@@ -115,7 +116,7 @@ def build_svg() -> str:
            '<circle cx="745" cy="598" r="10" fill="white" stroke="#8b9dab"/><text x="766" y="607">Vacancy</text>',
            '<text x="1005" y="607">Seed: 20260830</text>',
            '<text x="700" y="651" text-anchor="middle">One sweep visits the agents once; neighbor shares exclude vacant cells.</text>', '</svg>']
-    return "\n".join(parts)
+    return clean_svg('schelling-emergence.svg', "\n".join(parts))
 
 
 if __name__ == "__main__":

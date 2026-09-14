@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **887**
+Unique references in the master union: **896**
 
-Chapter reference blocks: **894**
+Chapter reference blocks: **903**
 
 Unresolved author–year citations: **0**
 
@@ -27,12 +27,12 @@ Unresolved author–year citations: **0**
 | Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 27 | 0 |
 | Base Rates and Updating | 7 | 0 |
 | Randomness and Overconfidence {#samples-randomness-and-calibration} | 24 | 0 |
-| Risky Decision Making | 15 | 0 |
+| Risky Decision Making | 16 | 0 |
 | Prospect Theory | 14 | 0 |
 | Decisions From Experience | 19 | 0 |
-| Intertemporal Decision Making | 28 | 0 |
+| Intertemporal Decision Making | 29 | 0 |
 | Mental Accounting | 23 | 0 |
-| Habits, Wanting, and Self-Control | 14 | 0 |
+| Habits, Wanting, and Self-Control | 21 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 11 | 0 |
 | Behavioral Game Theory | 14 | 0 |

@@ -70,28 +70,22 @@ def option_information():
 
 
 def urge_observation():
-    f=Figure('An urge can change without being acted on', 'A schematic curve shows one possible rise and fall of urge intensity. Below it, breathe, recognize, allow, investigate, and non-identify and nurture are optional observation prompts, not phases of the curve or guaranteed steps to relief.', 1000)
+    f=Figure('An urge can change without being acted on', 'A schematic curve shows one possible rise and fall of urge intensity without a fixed timescale. The note explains that this is not a timetable: urges can persist or return.', 610)
     f.text(380,56,['An urge can change','without being acted on'],css='title')
     f.items.append(f'<path d="M104 182 V439 H702" fill="none" stroke="{INK}" stroke-width="2.5"/><path d="M120 422 C230 422 262 222 367 229 S473 416 680 422" fill="none" stroke="{WARM}" stroke-width="7" stroke-linecap="round"/>')
     f.text(390,480,'Time',30);f.items.append(f'<text x="51" y="315" text-anchor="middle" font-size="30" transform="rotate(-90 51 315)">Urge intensity</text>')
     f.text(380,535,['One possible pattern, not a timetable.','Urges can persist or return.'],30)
-    f.box(63,631,634,307,'An optional observation practice',[],GREEN,'#edf7f3',32)
-    for i,line in enumerate(['Breathe and pause.','Recognize what you feel.','Allow it without requiring relief.','Investigate what the urge is like.',['Non-identify and nurture','a caring response.']]):
-        f.text(100,715+i*40,line,30,anchor='start')
     f.save('urge-wave-observation')
 
 
 def habit_formation():
-    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve approaches a plateau. The study summary separately reports modeled time to reach 95 percent of the plateau: 18 to 254 days, median 66. These are study estimates, not a guarantee for an individual habit.', 930)
+    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve approaches a plateau. A single line below reports modeled days to reach 95 percent of the plateau: 18 to 254, median 66. These are study estimates, not a guarantee for an individual habit.', 615)
     f.text(380,56,['Habit formation has','no fixed deadline'],css='title')
     f.text(380,156,'Illustrative shape of automaticity')
     f.items.append(f'<path d="M115 204 V475 H692" fill="none" stroke="{INK}" stroke-width="2.5"/><path d="M127 454 C165 250 271 239 675 229" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linecap="round"/><path d="M127 217 H681" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/>')
     f.text(380,519,'Time');f.items.append('<text x="52" y="353" font-size="28" text-anchor="middle" transform="rotate(-90 52 353)">Automaticity</text>')
     f.text(675,201,'Plateau',28,anchor='end')
-    f.box(55,587,650,280,'What Lally et al. (2010) estimated',[],title_size=31)
-    f.text(380,681,['Modeled days to reach','95% of the plateau'])
-    f.text(202,782,'18–254',44,'bold',BLUE);f.text(202,827,'Range')
-    f.text(558,782,'66',44,'bold',WARM);f.text(558,827,'Median')
+    f.text(380,580,'Modeled days to 95% of plateau: 18–254 (median 66)')
     f.save('habit-formation-curve')
 
 

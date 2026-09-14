@@ -6,12 +6,13 @@
     "ai-risk-is-not-benefit.svg": {
       "generator": "build_data_driven_figures.py",
       "input_sha256": "0f8b7ff3b3ba4345c9a9dd5611a12c9b73ae5879154b1d2b943965b524a1c502",
-      "output_sha256": "36c45e31f4266a92cf37370a45e856359691eebc6af33a47146e82b6ca13b8a9",
+      "output_sha256": "6d7925382e1e7a40391d1c7447c294c172336be3ca6fdc555a5f702409eb4f4e",
       "source_viewBox": "0 0 800 642",
       "reviewed_viewBox": "0 54 800 524",
       "removed_texts": [
         "Risk is not the same as benefit",
-        "Risk ranks A first; benefit ranks B first"
+        "Risk ranks A first; benefit ranks B first",
+        "Hypothetical group dropout rates"
       ],
       "review_notes": "Removed the outer headline and repeated ranking conclusion. Kept both group contrasts, all rates, percentage-point benefits, and axis. Hypothetical group-average nature remains explicit in accessible metadata, caption, and body.",
       "information_review": {
@@ -31,278 +32,100 @@
       "patches": [
         {
           "start": 0,
-          "end": 39,
-          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
-          "after": ""
+          "end": 167,
+          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"642\" viewBox=\"0 0 800 642\" role=\"img\" aria-labelledby=\"title desc\">\n",
+          "after": "<?xml version='1.0' encoding='utf-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"524\" viewBox=\"0 54 800 524\" role=\"img\" aria-labelledby=\"title desc\">\n"
         },
         {
-          "start": 99,
-          "end": 100,
-          "before": "6",
-          "after": "52"
+          "start": 227,
+          "end": 1206,
+          "before": "  <desc id=\"desc\">Completely hypothetical group-average causal comparison, not empirical data or a claim that outreach is effective. Group A's dropout probability is assumed to be 60 percent without outreach and 55 percent with outreach, a reduction of 5 percentage points. Group B's probabilities are 40 percent and 20 percent, a reduction of 20 percentage points. Orange points show probabilities without outreach; green points show probabilities with outreach. The common horizontal axis runs from 0 to 70 percent. Baseline risk ranks A first, but the expected average benefit of outreach ranks B first. The benefit ranking is relevant if outreach costs, feasibility, and the value of preventing a dropout are equal; other values or constraints can change the allocation. Effects are group averages, not identified individual effects. Estimating outcomes with versus without outreach requires causal evidence; a baseline risk model alone does not supply those effects.</desc>\n",
+          "after": "  <desc id=\"desc\">Hypothetical group-average comparison of dropout probabilities with and without outreach. Group A's dropout probability is assumed to be 60 percent without outreach and 55 percent with outreach, a reduction of 5 percentage points. Group B's probabilities are 40 percent and 20 percent, a reduction of 20 percentage points. Orange points show probabilities without outreach; green points show probabilities with outreach. The common horizontal axis runs from 0 to 70 percent. Baseline risk ranks A first, but the expected average benefit of outreach ranks B first. The benefit ranking is relevant if outreach costs, feasibility, and the value of preventing a dropout are equal; other values or constraints can change the allocation.</desc>\n"
         },
         {
-          "start": 101,
-          "end": 102,
-          "before": "2",
-          "after": ""
+          "start": 1481,
+          "end": 2018,
+          "before": "<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">Risk is not the same as benefit</text>\n<text x=\"400\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"30\" font-weight=\"400\" fill=\"#17324d\">Dropout probability</text>\n<line x1=\"170\" y1=\"139\" x2=\"170\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"170\" y1=\"505\" x2=\"170\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<text x=\"400\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"30\" font-weight=\"400\" fill=\"#17324d\">Dropout rate</text>\n<line x1=\"170\" y1=\"139\" x2=\"170\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"170\" y1=\"505\" x2=\"170\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 115,
-          "end": 116,
-          "before": "0",
-          "after": "54"
+          "start": 2162,
+          "end": 2382,
+          "before": "<line x1=\"247.143\" y1=\"139\" x2=\"247.143\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"247.143\" y1=\"505\" x2=\"247.143\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"247.143\" y1=\"139\" x2=\"247.143\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"247.143\" y1=\"505\" x2=\"247.143\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 121,
-          "end": 122,
-          "before": "6",
-          "after": "52"
+          "start": 2531,
+          "end": 2751,
+          "before": "<line x1=\"324.286\" y1=\"139\" x2=\"324.286\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"324.286\" y1=\"505\" x2=\"324.286\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"324.286\" y1=\"139\" x2=\"324.286\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"324.286\" y1=\"505\" x2=\"324.286\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 123,
-          "end": 124,
-          "before": "2",
-          "after": ""
+          "start": 2900,
+          "end": 3120,
+          "before": "<line x1=\"401.429\" y1=\"139\" x2=\"401.429\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"401.429\" y1=\"505\" x2=\"401.429\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"401.429\" y1=\"139\" x2=\"401.429\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"401.429\" y1=\"505\" x2=\"401.429\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 245,
-          "end": 257,
-          "before": "Completely h",
-          "after": "H"
+          "start": 3269,
+          "end": 3489,
+          "before": "<line x1=\"478.571\" y1=\"139\" x2=\"478.571\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"478.571\" y1=\"505\" x2=\"478.571\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"478.571\" y1=\"139\" x2=\"478.571\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"478.571\" y1=\"505\" x2=\"478.571\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 284,
-          "end": 291,
-          "before": "ausal c",
-          "after": ""
+          "start": 3638,
+          "end": 3858,
+          "before": "<line x1=\"555.714\" y1=\"139\" x2=\"555.714\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"555.714\" y1=\"505\" x2=\"555.714\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"555.714\" y1=\"139\" x2=\"555.714\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"555.714\" y1=\"505\" x2=\"555.714\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 300,
-          "end": 301,
-          "before": ",",
-          "after": ""
+          "start": 4007,
+          "end": 4227,
+          "before": "<line x1=\"632.857\" y1=\"139\" x2=\"632.857\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"632.857\" y1=\"505\" x2=\"632.857\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"632.857\" y1=\"139\" x2=\"632.857\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"632.857\" y1=\"505\" x2=\"632.857\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 302,
-          "end": 303,
-          "before": "n",
-          "after": ""
+          "start": 4376,
+          "end": 4580,
+          "before": "<line x1=\"710\" y1=\"139\" x2=\"710\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<line x1=\"710\" y1=\"505\" x2=\"710\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"710\" y1=\"139\" x2=\"710\" y2=\"505\" stroke=\"#edf1f4\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"710\" y1=\"505\" x2=\"710\" y2=\"515\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 304,
-          "end": 304,
-          "before": "",
-          "after": "f dropou"
+          "start": 4889,
+          "end": 4999,
+          "before": "<line x1=\"594.286\" y1=\"203\" x2=\"632.857\" y2=\"203\" stroke=\"#526778\" stroke-width=\"5\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"594.286\" y1=\"203\" x2=\"632.857\" y2=\"203\" stroke=\"#526778\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 306,
-          "end": 306,
-          "before": "",
-          "after": "probabiliti"
+          "start": 5818,
+          "end": 5928,
+          "before": "<line x1=\"324.286\" y1=\"383\" x2=\"478.571\" y2=\"383\" stroke=\"#526778\" stroke-width=\"5\" stroke-linecap=\"round\" />\n",
+          "after": "<line x1=\"324.286\" y1=\"383\" x2=\"478.571\" y2=\"383\" stroke=\"#526778\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 307,
-          "end": 309,
-          "before": "mp",
-          "after": "s w"
-        },
-        {
-          "start": 310,
-          "end": 318,
-          "before": "rical da",
-          "after": ""
-        },
-        {
-          "start": 319,
-          "end": 323,
-          "before": "a or",
-          "after": "h"
-        },
-        {
-          "start": 325,
-          "end": 325,
-          "before": "",
-          "after": "nd"
-        },
-        {
-          "start": 326,
-          "end": 329,
-          "before": "cla",
-          "after": "w"
-        },
-        {
-          "start": 330,
-          "end": 332,
-          "before": "m ",
-          "after": ""
-        },
-        {
-          "start": 334,
-          "end": 335,
-          "before": "a",
-          "after": "ou"
-        },
-        {
-          "start": 345,
-          "end": 358,
-          "before": " is effective",
-          "after": ""
-        },
-        {
-          "start": 1001,
-          "end": 1198,
-          "before": " Effects are group averages, not identified individual effects. Estimating outcomes with versus without outreach requires causal evidence; a baseline risk model alone does not supply those effects.",
-          "after": ""
-        },
-        {
-          "start": 1406,
-          "end": 1406,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1478,
-          "end": 1478,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1479,
-          "end": 1651,
-          "before": ">\n<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">Risk is not the same as benefit</text",
-          "after": ""
-        },
-        {
-          "start": 1787,
-          "end": 1788,
-          "before": "D",
-          "after": "Hypothetical group d"
-        },
-        {
-          "start": 1795,
-          "end": 1796,
-          "before": "p",
-          "after": ""
-        },
-        {
-          "start": 1797,
-          "end": 1799,
-          "before": "ob",
-          "after": ""
-        },
-        {
-          "start": 1800,
-          "end": 1804,
-          "before": "bili",
-          "after": ""
-        },
-        {
-          "start": 1805,
-          "end": 1806,
-          "before": "y",
-          "after": "es"
-        },
-        {
-          "start": 5082,
-          "end": 5082,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 5168,
-          "end": 5168,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 6011,
-          "end": 6011,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 6097,
-          "end": 6097,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 6703,
-          "end": 6706,
-          "before": "605",
-          "after": "137"
-        },
-        {
-          "start": 6783,
-          "end": 6784,
-          "before": "3",
-          "after": ""
-        },
-        {
-          "start": 6785,
-          "end": 6785,
-          "before": "",
-          "after": "6\" fill=\"#526778"
-        },
-        {
-          "start": 6800,
-          "end": 6801,
-          "before": "7",
-          "after": "4"
-        },
-        {
-          "start": 6804,
-          "end": 6819,
-          "before": " fill=\"#17324d\"",
-          "after": ""
-        },
-        {
-          "start": 6820,
-          "end": 6845,
-          "before": "Risk ranks A first; benef",
-          "after": "W"
-        },
-        {
-          "start": 6847,
-          "end": 6847,
-          "before": "",
-          "after": "hout"
-        },
-        {
-          "start": 6848,
-          "end": 6848,
-          "before": "",
-          "after": "vs. with out"
-        },
-        {
-          "start": 6849,
-          "end": 6849,
-          "before": "",
-          "after": "e"
-        },
-        {
-          "start": 6850,
-          "end": 6861,
-          "before": "nks B first",
-          "after": "ch"
-        },
-        {
-          "start": 6868,
-          "end": 6869,
-          "before": "\n",
-          "after": ""
+          "start": 6584,
+          "end": 6876,
+          "before": "<line x1=\"170\" y1=\"505\" x2=\"710\" y2=\"505\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\" />\n<text x=\"400\" y=\"605\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\">Risk ranks A first; benefit ranks B first</text>\n</svg>\n",
+          "after": "<line x1=\"170\" y1=\"505\" x2=\"710\" y2=\"505\" stroke=\"#526778\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<text x=\"400\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"26\" fill=\"#526778\" font-weight=\"400\">Without vs. with outreach</text></svg>"
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [
+          "Hypothetical group dropout rates"
+        ],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     },
     "ai-same-forecast-different-values.svg": {
       "generator": "build_data_driven_figures.py",
       "input_sha256": "cc08ae282242120e306b400deabf5106c98025f618e8458c0ceff1d98adca39a",
-      "output_sha256": "1bf4cb191769ffd363981b0ea1e99443f5466b23c4583986d992e788dff58436",
+      "output_sha256": "3b7ababe3cd3eaea1f5b201455391f20be0ca5c0ef4d373a3000f0e07423fa56",
       "source_viewBox": "0 0 800 820",
-      "reviewed_viewBox": "0 62 800 752",
+      "reviewed_viewBox": "0 62 800 722",
       "removed_texts": [
-        "One forecast, two decisions"
+        "One forecast, two decisions",
+        "Hypothetical losses: indoors/rain or outdoors/dry = 0"
       ],
       "review_notes": "Removed the general headline only. All common-forecast, hypothetical-loss, threshold, and action labels remain; the caption retains the zero-incremental-loss modeling assumption.",
       "information_review": {
@@ -337,197 +160,60 @@
       "patches": [
         {
           "start": 0,
-          "end": 39,
-          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+          "end": 167,
+          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"820\" viewBox=\"0 0 800 820\" role=\"img\" aria-labelledby=\"title desc\">\n",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"722\" viewBox=\"0 62 800 722\" role=\"img\" aria-labelledby=\"title desc\" data-text-review=\"2026-09-14\">\n"
+        },
+        {
+          "start": 223,
+          "end": 1113,
+          "before": "  <desc id=\"desc\">Hypothetical error-loss example, not observed data or advice for an actual event. Both organizers forecast rain with probability 30 percent. Correct choices have zero incremental loss. A false alarm means moving indoors on a dry day; a miss means remaining outdoors in rain. Organizer A has losses 2 and 8, respectively, so the switching threshold is 2/(2+8)=20 percent. Expected losses are 1.4 for moving and 2.4 for staying: move indoors. Organizer B has losses 6 and 4, so the threshold is 60 percent. Expected losses are 4.2 for moving and 1.2 for staying: keep outdoors. The blue dot marks the shared forecast on each 0 to 100 percent strip; the vertical tick marks the organizer's switching threshold. Losses are in hypothetical common units, with risk-neutral expected-loss comparison, two actions, and two weather states. At the threshold, the actions tie.</desc>\n",
+          "after": "  <desc id=\"desc\">Hypothetical error-loss example. Both organizers forecast rain with probability 30 percent. Matching the venue to the weather—indoors in rain or outdoors on a dry day—has zero incremental loss. A false alarm means moving indoors on a dry day; a miss means remaining outdoors in rain. Organizer A has losses 2 and 8, respectively, so the switching threshold is 2/(2+8)=20 percent. Expected losses are 1.4 for moving and 2.4 for staying: move indoors. Organizer B has losses 6 and 4, so the threshold is 60 percent. Expected losses are 4.2 for moving and 1.2 for staying: keep outdoors. The blue dot marks the shared forecast on each 0 to 100 percent strip; the vertical tick marks the organizer's switching threshold. Losses are in hypothetical common units, with risk-neutral expected-loss comparison, two actions, and two weather states. At the threshold, the actions tie.</desc>\n"
+        },
+        {
+          "start": 1388,
+          "end": 1556,
+          "before": "<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">One forecast, two decisions</text>\n",
           "after": ""
         },
         {
-          "start": 99,
-          "end": 100,
-          "before": "8",
-          "after": "75"
+          "start": 1823,
+          "end": 1844,
+          "before": "<g id=\"organizer-a\">\n",
+          "after": "<g id=\"organizer-a\" transform=\"translate(0,-30)\">\n"
         },
         {
-          "start": 101,
-          "end": 102,
-          "before": "0",
-          "after": ""
+          "start": 2098,
+          "end": 2611,
+          "before": "<text x=\"70\" y=\"311\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\">False alarm: 2</text>\n<text x=\"430\" y=\"311\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\">Missed rain: 8</text>\n<line x1=\"90\" y1=\"368\" x2=\"710\" y2=\"368\" stroke=\"#d8e2e9\" stroke-width=\"12\" stroke-linecap=\"round\" />\n<line x1=\"214\" y1=\"351\" x2=\"214\" y2=\"386\" stroke=\"#17324d\" stroke-width=\"3\" stroke-linecap=\"round\" />\n",
+          "after": "<text x=\"70\" y=\"303.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" font-weight=\"400\" fill=\"#17324d\">False alarm: indoors, dry</text>\n<text x=\"430\" y=\"303.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" font-weight=\"400\" fill=\"#17324d\">Missed rain: outdoors, rain</text>\n<line x1=\"90\" y1=\"368\" x2=\"710\" y2=\"368\" stroke=\"#d8e2e9\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n<line x1=\"214\" y1=\"351\" x2=\"214\" y2=\"386\" stroke=\"#17324d\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n"
         },
         {
-          "start": 115,
-          "end": 116,
-          "before": "0",
-          "after": "62"
+          "start": 3440,
+          "end": 3461,
+          "before": "<g id=\"organizer-b\">\n",
+          "after": "<g id=\"organizer-b\" transform=\"translate(0,-30)\">\n"
         },
         {
-          "start": 121,
-          "end": 122,
-          "before": "8",
-          "after": "75"
-        },
-        {
-          "start": 123,
-          "end": 124,
-          "before": "0",
-          "after": ""
-        },
-        {
-          "start": 272,
-          "end": 321,
-          "before": ", not observed data or advice for an actual event",
-          "after": ""
-        },
-        {
-          "start": 382,
-          "end": 383,
-          "before": "C",
-          "after": "Matching the venue to the weather—indo"
-        },
-        {
-          "start": 385,
-          "end": 396,
-          "before": "rect choice",
-          "after": ""
-        },
-        {
-          "start": 398,
-          "end": 398,
-          "before": "",
-          "after": "in rain or outdoors on a dry day—"
-        },
-        {
-          "start": 400,
-          "end": 402,
-          "before": "ve",
-          "after": "s"
-        },
-        {
-          "start": 1313,
-          "end": 1313,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1385,
-          "end": 1385,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1386,
-          "end": 1554,
-          "before": ">\n<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">One forecast, two decisions</text",
-          "after": ""
-        },
-        {
-          "start": 1657,
-          "end": 1657,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1944,
-          "end": 1944,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 2115,
-          "end": 2117,
-          "before": "11",
-          "after": "03.0"
-        },
-        {
-          "start": 2194,
-          "end": 2195,
-          "before": "8",
-          "after": "4"
-        },
-        {
-          "start": 2243,
-          "end": 2244,
-          "before": "2",
-          "after": "indoors, dry"
-        },
-        {
-          "start": 2270,
-          "end": 2272,
-          "before": "11",
-          "after": "03.0"
-        },
-        {
-          "start": 2349,
-          "end": 2350,
-          "before": "8",
-          "after": "4"
-        },
-        {
-          "start": 2398,
-          "end": 2399,
-          "before": "8",
-          "after": "outdoors, rain"
-        },
-        {
-          "start": 2690,
-          "end": 2690,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 3561,
-          "end": 3561,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 3732,
-          "end": 3734,
-          "before": "11",
-          "after": "03.0"
-        },
-        {
-          "start": 3811,
-          "end": 3812,
-          "before": "8",
-          "after": "4"
-        },
-        {
-          "start": 3860,
-          "end": 3861,
-          "before": "6",
-          "after": "indoors, dry"
-        },
-        {
-          "start": 3887,
-          "end": 3889,
-          "before": "11",
-          "after": "03.0"
-        },
-        {
-          "start": 3966,
-          "end": 3967,
-          "before": "8",
-          "after": "4"
-        },
-        {
-          "start": 4015,
-          "end": 4016,
-          "before": "4",
-          "after": "outdoors, rain"
-        },
-        {
-          "start": 4307,
-          "end": 4307,
-          "before": "",
-          "after": " "
+          "start": 3715,
+          "end": 4228,
+          "before": "<text x=\"70\" y=\"611\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\">False alarm: 6</text>\n<text x=\"430\" y=\"611\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\">Missed rain: 4</text>\n<line x1=\"90\" y1=\"668\" x2=\"710\" y2=\"668\" stroke=\"#d8e2e9\" stroke-width=\"12\" stroke-linecap=\"round\" />\n<line x1=\"462\" y1=\"651\" x2=\"462\" y2=\"686\" stroke=\"#17324d\" stroke-width=\"3\" stroke-linecap=\"round\" />\n",
+          "after": "<text x=\"70\" y=\"603.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" font-weight=\"400\" fill=\"#17324d\">False alarm: indoors, dry</text>\n<text x=\"430\" y=\"603.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" font-weight=\"400\" fill=\"#17324d\">Missed rain: outdoors, rain</text>\n<line x1=\"90\" y1=\"668\" x2=\"710\" y2=\"668\" stroke=\"#d8e2e9\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n<line x1=\"462\" y1=\"651\" x2=\"462\" y2=\"686\" stroke=\"#17324d\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n"
         },
         {
           "start": 5058,
-          "end": 5058,
-          "before": "",
-          "after": "<text x=\"400\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#526778\" font-weight=\"400\">Hypothetical losses: indoors/rain or outdoors/dry = 0</text><text x=\"70.0\" y=\"334.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 2</text><text x=\"430.0\" y=\"334.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 8</text><text x=\"70.0\" y=\"634.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 6</text><text x=\"430.0\" y=\"634.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 4</text>"
+          "end": 5065,
+          "before": "</svg>\n",
+          "after": "<text x=\"70.0\" y=\"304.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 2</text><text x=\"430.0\" y=\"304.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 8</text><text x=\"70.0\" y=\"604.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 6</text><text x=\"430.0\" y=\"604.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 4</text></svg>"
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [
+          "Hypothetical losses: indoors/rain or outdoors/dry = 0"
+        ],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     },
     "communication-grounding.svg": {
       "generator": "build_reading_figures.py",
@@ -1019,9 +705,9 @@
     "fast-slow.svg": {
       "generator": "build_judgment_figures.py",
       "input_sha256": "aad85399ce1ab14c7ff415d06fe79c2490677386ec7458a19fa023e2c87675c4",
-      "output_sha256": "8db9b8cafeaf90edc9d6548301c3c9d098b1c26653773a05977512c704609ae9",
+      "output_sha256": "99689d1084c49634e0369cfd6837439c574b95cdc19fb6a0b4e98f50bf0f2953",
       "source_viewBox": "0 0 760 992",
-      "reviewed_viewBox": "0 60 760 872",
+      "reviewed_viewBox": "0 115 760 704",
       "removed_texts": [
         "System 1 and System 2",
         "Neither family guarantees accuracy."
@@ -1035,55 +721,36 @@
       },
       "patches": [
         {
-          "start": 60,
-          "end": 62,
-          "before": "99",
-          "after": "87"
+          "start": 0,
+          "end": 128,
+          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"992\" viewBox=\"0 0 760 992\" role=\"img\" aria-labelledby=\"title desc\">\n",
+          "after": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"704\" viewBox=\"0 115 760 704\" role=\"img\" aria-labelledby=\"title desc\">\n"
         },
         {
-          "start": 76,
-          "end": 76,
-          "before": "",
-          "after": "6"
+          "start": 905,
+          "end": 1314,
+          "before": "<rect width=\"760\" height=\"992\" fill=\"white\"/>\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"380\" y=\"52\">System 1 and System 2</tspan></text>\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\"><tspan x=\"380\" y=\"96\">Families of processes, not separate brain structures</tspan></text>\n",
+          "after": "<rect width=\"760\" height=\"704\" fill=\"white\" x=\"0\" y=\"115\"/>\n\n"
         },
         {
-          "start": 82,
-          "end": 84,
-          "before": "99",
-          "after": "87"
-        },
-        {
-          "start": 951,
-          "end": 1116,
-          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"380\" y=\"52\">System 1 and System 2</tspan></text>",
-          "after": ""
-        },
-        {
-          "start": 4604,
-          "end": 4606,
-          "before": "12",
-          "after": ""
-        },
-        {
-          "start": 4607,
-          "end": 4607,
-          "before": "",
-          "after": "0"
-        },
-        {
-          "start": 4853,
-          "end": 4919,
-          "before": "tspan x=\"380\" y=\"917\">Neither family guarantees accuracy.</tspan><",
+          "start": 4563,
+          "end": 4926,
+          "before": "<rect x=\"38\" y=\"832\" width=\"684\" height=\"128\" rx=\"18\" fill=\"#f5f8fa\" stroke=\"#9eb1bf\" stroke-width=\"2.5\"/>\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\"><tspan x=\"380\" y=\"881\">Practice can change how a task is performed.</tspan><tspan x=\"380\" y=\"917\">Neither family guarantees accuracy.</tspan></text>\n",
           "after": ""
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     },
     "finance-euro-efficiency.svg": {
       "generator": "build_new_chapter_figures.py",
       "input_sha256": "53412ed9c7e76e5d404349fc8af6e60423b539077b1156472fec8db227775c61",
-      "output_sha256": "ac5cbe9c78c97a64d15ce257c3eed34521676fc7bc69372e92c32bbea8099c88",
+      "output_sha256": "cf0e941f482752cc229304c5fb38a9b9f527b6b657d696904a3119a106f6a185",
       "source_viewBox": "0 0 1200 740",
-      "reviewed_viewBox": "0 120 1200 580",
+      "reviewed_viewBox": "0 120 1200 530",
       "removed_texts": [
         "The €20 note: three different efficiency claims",
         "Finding a reward is not the same as proving that prices are always right.",
@@ -1101,318 +768,47 @@
       },
       "patches": [
         {
-          "start": 14,
-          "end": 15,
-          "before": "\"",
-          "after": "'"
+          "start": 0,
+          "end": 169,
+          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"740\" viewBox=\"0 0 1200 740\" role=\"img\" aria-labelledby=\"title desc\">\n",
+          "after": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"530\" viewBox=\"0 120 1200 530\" role=\"img\" aria-labelledby=\"title desc\">\n"
         },
         {
-          "start": 18,
-          "end": 19,
-          "before": "\"",
-          "after": "'"
+          "start": 1060,
+          "end": 1621,
+          "before": "  <rect width=\"1200\" height=\"740\" fill=\"#ffffff\"/>\n<text x=\"600\" y=\"48\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"33.0\" font-weight=\"700\" fill=\"#17324d\" >The €20 note: three different efficiency claims</text>\n<text x=\"600\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"20.0\" font-weight=\"400\" fill=\"#66737f\" >Finding a reward is not the same as proving that prices are always right.</text>\n<rect x=\"55\" y=\"145\" width=\"365\" height=\"455\" rx=\"26\" fill=\"#f7fafc\" stroke=\"#665b9a\" stroke-width=\"3\" filter=\"url(#shadow)\"/>\n",
+          "after": "  <rect width=\"1200\" height=\"530\" fill=\"#ffffff\" x=\"0\" y=\"120\"/>\n<rect x=\"55\" y=\"145\" width=\"365\" height=\"290\" rx=\"26\" fill=\"#f7fafc\" stroke=\"#665b9a\" stroke-width=\"3\" filter=\"url(#shadow)\"/>\n"
         },
         {
-          "start": 29,
-          "end": 30,
-          "before": "\"",
-          "after": "'"
-        },
-        {
-          "start": 35,
-          "end": 36,
-          "before": "\"",
-          "after": "'"
-        },
-        {
-          "start": 100,
-          "end": 102,
-          "before": "74",
-          "after": "58"
-        },
-        {
-          "start": 116,
-          "end": 116,
-          "before": "",
-          "after": "12"
-        },
-        {
-          "start": 123,
-          "end": 125,
-          "before": "74",
-          "after": "58"
-        },
-        {
-          "start": 711,
-          "end": 711,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 915,
-          "end": 915,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1038,
-          "end": 1038,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1089,
-          "end": 1091,
-          "before": "74",
-          "after": "58"
-        },
-        {
-          "start": 1108,
-          "end": 1116,
-          "before": "/>\n<text",
+          "start": 355432,
+          "end": 356190,
+          "before": "<text x=\"238\" y=\"448\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"700\" fill=\"#544981\" >A €20 NOTE STILL ON THE GROUND</text>\n<text x=\"238\" y=\"480\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >Finding it required someone to notice,</text>\n<text x=\"238\" y=\"504\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >stop, and pick it up.</text>\n<rect x=\"80\" y=\"540\" width=\"315\" height=\"42\" rx=\"8\" fill=\"#fff0e9\" stroke=\"#a74343\" stroke-width=\"2\" />\n<text x=\"237\" y=\"567\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#a74343\" >SEARCH AND ATTENTION ARE COSTLY</text>\n",
           "after": ""
         },
         {
-          "start": 1120,
-          "end": 1122,
-          "before": "60",
-          "after": ""
+          "start": 356577,
+          "end": 357224,
+          "before": "<text x=\"548\" y=\"183\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\" >1  INFORMATION MOVES QUICKLY</text>\n<text x=\"548\" y=\"215\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >A specified signal can enter price</text>\n<text x=\"548\" y=\"239\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >within a short event window.</text>\n<text x=\"1117\" y=\"261\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2f6f9f\" >Speed is an empirical claim.</text>\n",
+          "after": "<text x=\"548\" y=\"183\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\">1  INFORMATION MOVES QUICKLY</text>\n<text x=\"548\" y=\"215\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">A specified signal can enter price</text>\n<text x=\"548\" y=\"239\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">within a short event window.</text>\n"
         },
         {
-          "start": 1128,
-          "end": 1196,
-          "before": "48\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"33.",
-          "after": "12"
+          "start": 357459,
+          "end": 358114,
+          "before": "<text x=\"548\" y=\"353\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\" >2  NO FREE LUNCH</text>\n<text x=\"548\" y=\"385\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >A public rule does not reliably earn</text>\n<text x=\"548\" y=\"409\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >abnormal return after risk and costs.</text>\n<text x=\"1117\" y=\"431\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#447c55\" >Search and implementation are costly.</text>\n",
+          "after": "<text x=\"548\" y=\"353\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\">2  NO FREE LUNCH</text>\n<text x=\"548\" y=\"385\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">A public rule does not reliably earn</text>\n<text x=\"548\" y=\"409\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">abnormal return after risk and costs.</text>\n"
         },
         {
-          "start": 1199,
-          "end": 1281,
-          "before": "font-weight=\"700\" fill=\"#17324d\" >The €20 note: three different efficiency claims<",
-          "after": ""
-        },
-        {
-          "start": 1282,
-          "end": 1492,
-          "before": "text>\n<text x=\"600\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"20.0\" font-weight=\"400\" fill=\"#66737f\" >Finding a reward is not the same as proving that prices are always right.</text",
-          "after": ""
-        },
-        {
-          "start": 1535,
-          "end": 1535,
-          "before": "",
-          "after": "3"
-        },
-        {
-          "start": 1536,
-          "end": 1538,
-          "before": "55",
-          "after": "0"
-        },
-        {
-          "start": 1618,
-          "end": 1618,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1709,
-          "end": 1709,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 355327,
-          "end": 355327,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 355429,
-          "end": 355429,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 355430,
-          "end": 355921,
-          "before": ">\n<text x=\"238\" y=\"448\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"700\" fill=\"#544981\" >A €20 NOTE STILL ON THE GROUND</text>\n<text x=\"238\" y=\"480\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >Finding it required someone to notice,</text>\n<text x=\"238\" y=\"504\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >stop, and pick it up.</text",
-          "after": ""
-        },
-        {
-          "start": 355939,
-          "end": 355940,
-          "before": "5",
-          "after": ""
-        },
-        {
-          "start": 355941,
-          "end": 355942,
-          "before": "0",
-          "after": "28"
-        },
-        {
-          "start": 356044,
-          "end": 356044,
-          "before": "",
-          "after": "4"
-        },
-        {
-          "start": 356045,
-          "end": 356047,
-          "before": "67",
-          "after": "5"
-        },
-        {
-          "start": 356149,
-          "end": 356150,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 356263,
-          "end": 356263,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 356339,
-          "end": 356339,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 356446,
-          "end": 356446,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 356574,
-          "end": 356574,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 356700,
-          "end": 356701,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 356861,
-          "end": 356862,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 357028,
-          "end": 357029,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 357186,
-          "end": 357187,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 357328,
-          "end": 357328,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 357456,
-          "end": 357456,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 357582,
-          "end": 357583,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 357731,
-          "end": 357732,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 357900,
-          "end": 357901,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 358067,
-          "end": 358068,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 358218,
-          "end": 358218,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 358346,
-          "end": 358346,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 358472,
-          "end": 358473,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 358626,
-          "end": 358627,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 358793,
-          "end": 358794,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 358941,
-          "end": 358942,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 359021,
-          "end": 359022,
-          "before": "6",
-          "after": "4"
-        },
-        {
-          "start": 359209,
-          "end": 359210,
-          "before": " ",
-          "after": ""
-        },
-        {
-          "start": 359282,
-          "end": 359545,
-          "before": "text x=\"600\" y=\"703\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"400\" fill=\"#66737f\" >An opportunity may exist because discovering and exploiting it consumes attention, information, capital, and risk-bearing capacity.</text>\n<",
-          "after": ""
-        },
-        {
-          "start": 359550,
-          "end": 359551,
-          "before": "\n",
-          "after": ""
+          "start": 358349,
+          "end": 359544,
+          "before": "<text x=\"548\" y=\"523\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\" >3  THE PRICE IS RIGHT</text>\n<text x=\"548\" y=\"555\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >Market price equals a well-defined</text>\n<text x=\"548\" y=\"579\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\" >fundamental value.</text>\n<text x=\"1117\" y=\"601\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#c56a2d\" >This is the strongest claim.</text>\n<rect x=\"110\" y=\"650\" width=\"980\" height=\"64\" rx=\"16\" fill=\"#f7fafc\" stroke=\"#c8d7e2\" stroke-width=\"2\" />\n<text x=\"600\" y=\"679\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\" >The first two claims do not automatically establish the third.</text>\n<text x=\"600\" y=\"703\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"400\" fill=\"#66737f\" >An opportunity may exist because discovering and exploiting it consumes attention, information, capital, and risk-bearing capacity.</text>\n",
+          "after": "<text x=\"548\" y=\"523\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"21.0\" font-weight=\"700\" fill=\"#17324d\">3  THE PRICE IS RIGHT</text>\n<text x=\"548\" y=\"555\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">Market price equals a well-defined</text>\n<text x=\"548\" y=\"579\" text-anchor=\"start\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"400\" fill=\"#66737f\">fundamental value.</text>\n"
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     },
     "finance-event-study-drift.svg": {
       "generator": "build_new_chapter_figures.py",
@@ -1945,136 +1341,57 @@
     },
     "habit-formation-curve.svg": {
       "generator": "build_reading_figures.py",
-      "input_sha256": "e9f364259ce21be6b0a0e9ed48ed7afbb9ca404f3a9dba9b41a283dc1f0e8c18",
-      "output_sha256": "4e4f7a13fa14038284b4c9c7380dc615517cc5ae27e7744b69b9d9b9482e858d",
-      "source_viewBox": "0 0 760 930",
-      "reviewed_viewBox": "0 125 760 770",
+      "input_sha256": "629ebe5ed84d747137c522605ec6d5a95bcf4acf6206dd92271af1ca521ae241",
+      "output_sha256": "eaada0a9143c612371d053f85669889471903fcf314356c0aa7b50075a8d81f6",
+      "source_viewBox": "0 0 760 615",
+      "reviewed_viewBox": "0 165 760 390",
       "removed_texts": [
-        "Habit formation hasno fixed deadline"
+        "Habit formation hasno fixed deadline",
+        "What Lally et al. (2010) estimated",
+        "Illustrative shape of automaticity",
+        "Modeled days to 95% of plateau: 18–254 (median 66)"
       ],
-      "review_notes": "Retain illustrative-shape label, Lally study attribution, 95 percent plateau criterion, range and median.",
+      "review_notes": "Retain the schematic curve, axes, plateau, and one line with modeled days to 95% of the plateau, range 18–254 and median 66. Attribution remains in the caption.",
       "information_review": {
-        "status": "PASS",
-        "purpose": "Separate a schematic increase in automaticity from observed modeled formation times.",
-        "rationale": "Illustrative shape, axes, plateau, source, 95-percent criterion and range/median are visible.",
-        "changed_labels": []
+        "status": "REVISED",
+        "purpose": "Distinguish a schematic increase in automaticity from modeled formation times.",
+        "rationale": "Replace the study-summary box with one line; preserve the 95-percent criterion, range, median, and caption citation.",
+        "changed_labels": [
+          {
+            "before": "What Lally et al. (2010) estimated / Modeled days to reach 95% of the plateau / 18–254 Range / 66 Median",
+            "after": "Modeled days to 95% of plateau: 18–254 (median 66)",
+            "attributes": {}
+          }
+        ]
       },
       "patches": [
         {
           "start": 0,
-          "end": 0,
-          "before": "",
-          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+          "end": 456,
+          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"615\" viewBox=\"0 0 760 615\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\">\n<title id=\"title\">Habit formation has no fixed deadline</title><desc id=\"desc\">A schematic automaticity curve approaches a plateau. A single line below reports modeled days to reach 95 percent of the plateau: 18 to 254, median 66. These are study estimates, not a guarantee for an individual habit.</desc>\n",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"390\" viewBox=\"0 165 760 390\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\" data-text-review=\"2026-09-14\">\n<title id=\"title\">Habit formation has no fixed deadline</title><desc id=\"desc\">A schematic automaticity curve rises with diminishing gains and approaches a plateau. The caption reports study estimates for the time to reach 95 percent of the plateau, which are not a guarantee for an individual habit.</desc>\n"
         },
         {
-          "start": 60,
-          "end": 62,
-          "before": "93",
-          "after": "77"
+          "start": 1143,
+          "end": 1598,
+          "before": "</defs><rect width=\"760\" height=\"615\" fill=\"white\"/>\n<text x=\"380\" y=\"56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Habit formation has</tspan><tspan x=\"380\" dy=\"47.12\">no fixed deadline</tspan></text>\n<text x=\"380\" y=\"156\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Illustrative shape of automaticity</tspan></text>\n",
+          "after": "</defs><rect width=\"760\" height=\"490\" fill=\"white\" x=\"0\" y=\"125\"/>\n"
         },
         {
-          "start": 76,
-          "end": 77,
-          "before": "0",
-          "after": "125"
-        },
-        {
-          "start": 82,
-          "end": 84,
-          "before": "93",
-          "after": "77"
-        },
-        {
-          "start": 786,
-          "end": 786,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 966,
-          "end": 966,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1145,
-          "end": 1145,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1190,
-          "end": 1192,
-          "before": "93",
-          "after": "77"
-        },
-        {
-          "start": 1207,
-          "end": 1215,
-          "before": "/>\n<text",
-          "after": ""
-        },
-        {
-          "start": 1219,
-          "end": 1221,
-          "before": "38",
-          "after": ""
-        },
-        {
-          "start": 1227,
-          "end": 1227,
-          "before": "",
-          "after": "12"
-        },
-        {
-          "start": 1228,
-          "end": 1229,
-          "before": "6",
-          "after": ""
-        },
-        {
-          "start": 1231,
-          "end": 1365,
-          "before": "text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Habit formation has<",
-          "after": ""
-        },
-        {
-          "start": 1366,
-          "end": 1429,
-          "before": "tspan><tspan x=\"380\" dy=\"47.12\">no fixed deadline</tspan></text",
-          "after": ""
-        },
-        {
-          "start": 1688,
-          "end": 1688,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1802,
-          "end": 1802,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1884,
-          "end": 1884,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 2401,
-          "end": 2401,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 3416,
-          "end": 3417,
-          "before": "\n",
-          "after": ""
+          "start": 2283,
+          "end": 2487,
+          "before": "<text x=\"380\" y=\"580\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Modeled days to 95% of plateau: 18–254 (median 66)</tspan></text>\n</svg>\n",
+          "after": "</svg>"
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [
+          "Illustrative shape of automaticity",
+          "Modeled days to 95% of plateau: 18–254 (median 66)"
+        ],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     },
     "heuristic-substitution.svg": {
       "generator": "build_reading_figures.py",
@@ -3148,166 +2465,529 @@
     },
     "urge-wave-observation.svg": {
       "generator": "build_reading_figures.py",
-      "input_sha256": "48ad705a62a3b94b99fbf44acd5665e38cf16ce7b753c471d0311ef6cc47237e",
-      "output_sha256": "ae7a6faea5063422e7a2710300b84156e491ce1e3bc4c1cd6ffc28b1549bf841",
-      "source_viewBox": "0 0 760 1000",
-      "reviewed_viewBox": "0 170 760 780",
+      "input_sha256": "c2471ad5ba36c4419cc39064bafd5353514c199b7dcedcf6afe0516c30e7dbca",
+      "output_sha256": "813b9d8e385003fd154de8fb7a66fad0cde59f4cca1d5763112462de6a48eafd",
+      "source_viewBox": "0 0 760 610",
+      "reviewed_viewBox": "0 170 760 330",
       "removed_texts": [
-        "An urge can changewithout being acted on"
+        "An urge can changewithout being acted on",
+        "BRAIN: an optional practice",
+        "Breathe and pause.",
+        "Recognize what you feel.",
+        "Allow it without requiring relief.",
+        "Investigate what the urge is like.",
+        "Non-identify and nurturea caring response."
       ],
-      "review_notes": "Retain time/intensity axes and explicit non-timetable qualifier; optional BRAIN prompts provide a distinct practice.",
+      "review_notes": "Retain the curve, time/intensity axes, and the non-timetable qualifier. Remove the BRAIN box because Table 21.1 provides those prompts.",
       "information_review": {
         "status": "REVISED",
-        "purpose": "Show one possible urge trajectory and a separate optional observation practice.",
-        "rationale": "Name BRAIN beside its five expanded prompts while retaining the non-timetable qualification.",
-        "changed_labels": [
-          {
-            "before": "An optional observation practice",
-            "after": "BRAIN: an optional practice",
-            "attributes": {}
-          }
-        ]
+        "purpose": "Show one possible urge trajectory without prescribing a time course.",
+        "rationale": "Remove the repeated BRAIN practice box and crop excess space; the full prompts remain in Table 21.1.",
+        "changed_labels": []
       },
       "patches": [
         {
           "start": 0,
-          "end": 0,
-          "before": "",
-          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+          "end": 413,
+          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"610\" viewBox=\"0 0 760 610\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\">\n<title id=\"title\">An urge can change without being acted on</title><desc id=\"desc\">A schematic curve shows one possible rise and fall of urge intensity without a fixed timescale. The note explains that this is not a timetable: urges can persist or return.</desc>\n",
+          "after": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"330\" viewBox=\"0 170 760 330\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\">\n<title id=\"title\">An urge can change without being acted on</title><desc id=\"desc\">A schematic curve shows one possible rise and fall of urge intensity without a fixed timescale. This is not a timetable: urges can persist or return.</desc>\n"
         },
         {
-          "start": 60,
-          "end": 63,
-          "before": "100",
-          "after": "78"
+          "start": 1100,
+          "end": 1378,
+          "before": "</defs><rect width=\"760\" height=\"610\" fill=\"white\"/>\n<text x=\"380\" y=\"56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">An urge can change</tspan><tspan x=\"380\" dy=\"47.12\">without being acted on</tspan></text>\n",
+          "after": "</defs><rect width=\"760\" height=\"330\" fill=\"white\" x=\"0\" y=\"170\"/>\n"
         },
         {
-          "start": 77,
-          "end": 77,
-          "before": "",
-          "after": "17"
-        },
-        {
-          "start": 83,
-          "end": 86,
-          "before": "100",
-          "after": "78"
-        },
-        {
-          "start": 796,
-          "end": 796,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 976,
-          "end": 976,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1155,
-          "end": 1155,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1200,
-          "end": 1203,
-          "before": "100",
-          "after": "78"
-        },
-        {
-          "start": 1218,
-          "end": 1226,
-          "before": "/>\n<text",
-          "after": ""
-        },
-        {
-          "start": 1230,
-          "end": 1232,
-          "before": "38",
-          "after": ""
-        },
-        {
-          "start": 1238,
-          "end": 1312,
-          "before": "56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#",
-          "after": ""
-        },
-        {
-          "start": 1313,
-          "end": 1317,
-          "before": "8304",
-          "after": ""
-        },
-        {
-          "start": 1318,
-          "end": 1346,
-          "before": "\" class=\"title\"><tspan x=\"38",
-          "after": ""
-        },
-        {
-          "start": 1349,
-          "end": 1375,
-          "before": "dy=\"0\">An urge can change<",
-          "after": ""
-        },
-        {
-          "start": 1376,
-          "end": 1444,
-          "before": "tspan><tspan x=\"380\" dy=\"47.12\">without being acted on</tspan></text",
-          "after": ""
-        },
-        {
-          "start": 1522,
-          "end": 1522,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 1653,
-          "end": 1653,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 2267,
-          "end": 2267,
-          "before": "",
-          "after": " "
-        },
-        {
-          "start": 2379,
-          "end": 2383,
-          "before": "<tsp",
-          "after": "BRAIN: "
-        },
-        {
-          "start": 2384,
-          "end": 2404,
-          "before": "n x=\"380.0\" dy=\"0\">A",
-          "after": ""
-        },
-        {
-          "start": 2414,
-          "end": 2426,
-          "before": " observation",
-          "after": ""
-        },
-        {
-          "start": 2438,
-          "end": 2446,
-          "before": "span></t",
-          "after": ""
-        },
-        {
-          "start": 3372,
-          "end": 3373,
-          "before": "\n",
+          "start": 1849,
+          "end": 2095,
+          "before": "<text x=\"380\" y=\"535\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">One possible pattern, not a timetable.</tspan><tspan x=\"380\" dy=\"37.2\">Urges can persist or return.</tspan></text>\n",
           "after": ""
         }
-      ]
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
+    },
+    "schelling-emergence.svg": {
+      "generator": "build_schelling_sequence.py",
+      "input_sha256": "492821ff5bac4240d5d7327239852453236bfbbe54bd7e2bb606b5c8fc548bf7",
+      "source_viewBox": "0 62 1400 610",
+      "removed_texts": [],
+      "output_sha256": "82491992bfe3d97419b69c8170e5aa95a57408c313219bc6090ca50bbab55b85",
+      "reviewed_viewBox": "0 112 1400 518",
+      "patches": [
+        {
+          "start": 0,
+          "end": 131,
+          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1400\" height=\"610\" viewBox=\"0 62 1400 610\" role=\"img\" aria-labelledby=\"title desc\">\n",
+          "after": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1400\" height=\"518\" viewBox=\"0 112 1400 518\" role=\"img\" aria-labelledby=\"title desc\">\n"
+        },
+        {
+          "start": 750,
+          "end": 924,
+          "before": "<rect width=\"1400\" height=\"672\" fill=\"#f7f9fc\"/>\n<text x=\"700\" y=\"97\" text-anchor=\"middle\">One teaching run; each agent seeks at least one-third same-group neighbors.</text>\n",
+          "after": "<rect width=\"1400\" height=\"518\" fill=\"#f7f9fc\" x=\"0\" y=\"112\"/>\n"
+        },
+        {
+          "start": 67353,
+          "end": 67799,
+          "before": "<circle cx=\"365\" cy=\"598\" r=\"10\" fill=\"#236b8e\"/><text x=\"386\" y=\"607\">Group A</text>\n<circle cx=\"555\" cy=\"598\" r=\"10\" fill=\"#c44e52\"/><text x=\"576\" y=\"607\">Group B</text>\n<circle cx=\"745\" cy=\"598\" r=\"10\" fill=\"white\" stroke=\"#8b9dab\"/><text x=\"766\" y=\"607\">Vacancy</text>\n<text x=\"1005\" y=\"607\">Seed: 20260830</text>\n<text x=\"700\" y=\"651\" text-anchor=\"middle\">One sweep visits the agents once; neighbor shares exclude vacant cells.</text>\n</svg>",
+          "after": "<circle cx=\"465.0\" cy=\"598\" r=\"10\" fill=\"#236b8e\"/><text x=\"486.0\" y=\"607\">Group A</text>\n<circle cx=\"655.0\" cy=\"598\" r=\"10\" fill=\"#c44e52\"/><text x=\"676.0\" y=\"607\">Group B</text>\n<circle cx=\"845.0\" cy=\"598\" r=\"10\" fill=\"white\" stroke=\"#8b9dab\"/><text x=\"866.0\" y=\"607\">Vacancy</text>\n</svg>\n"
+        }
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
+    },
+    "selected-literature-simulation.svg": {
+      "generator": "build_methods_appendix_figures.py",
+      "input_sha256": "7488f1467a4e0e90352010c94f857bddfb78533f5bfc2e7ae64eadd0b32420a2",
+      "source_viewBox": "0 34 691.2 636",
+      "removed_texts": [
+        "Teaching simulation · dashed line: true effect = 0.20 SD"
+      ],
+      "output_sha256": "f80771ef6a426b58386c9fdd88c5035af5d0137bdb2683c692b8f5c46360b6e2",
+      "reviewed_viewBox": "0 65 691.2 605",
+      "patches": [
+        {
+          "start": 0,
+          "end": 755,
+          "before": "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n  \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg role=\"img\" aria-labelledby=\"simulation-title simulation-desc\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"691.2pt\" height=\"636pt\" viewBox=\"0 34 691.2 636\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"><title id=\"simulation-title\">Selective reporting inflates visible effect estimates</title><desc id=\"simulation-desc\">Two histograms show 2000 simulated estimates and the 328 that pass a two-sided p less than .05 gate. Both axes share the same scales. The true effect is .20 standard deviations; the selected mean is .490. Bar heights are percentages within each displayed set.</desc>\n",
+          "after": "<?xml version='1.0' encoding='utf-8'?>\n<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"simulation-title simulation-desc\" width=\"691.2pt\" height=\"605pt\" viewBox=\"0 65 691.2 605\" version=\"1.1\"><title id=\"simulation-title\">Selective reporting inflates visible effect estimates</title><desc id=\"simulation-desc\">Two histograms show 2000 simulated estimates and the 328 that pass a two-sided p less than .05 gate. Both axes share the same scales. The true effect is .20 standard deviations; the selected mean is .490. Bar heights are percentages within each displayed set.</desc>\n"
+        },
+        {
+          "start": 1359,
+          "end": 1439,
+          "before": "   <path d=\"M 0 705.6\nL 691.2 705.6\nL 691.2 0\nL 0 0\nz\n\" style=\"fill: #ffffff\"/>\n",
+          "after": "   <path d=\"M 0 705.6 L 691.2 705.6 L 691.2 0 L 0 0 z \" style=\"fill: #ffffff\"/>\n"
+        },
+        {
+          "start": 1484,
+          "end": 1599,
+          "before": "    <path d=\"M 89.856 295.404179\nL 670.464 295.404179\nL 670.464 105.84\nL 89.856 105.84\nz\n\" style=\"fill: #ffffff\"/>\n",
+          "after": "    <path d=\"M 89.856 295.404179 L 670.464 295.404179 L 670.464 105.84 L 89.856 105.84 z \" style=\"fill: #ffffff\"/>\n"
+        },
+        {
+          "start": 1694,
+          "end": 1788,
+          "before": "       <path id=\"m0808f021c7\" d=\"M 0 0\nL 0 3.5\n\" style=\"stroke: #000000; stroke-width: 0.8\"/>\n",
+          "after": "       <path id=\"m0808f021c7\" d=\"M 0 0 L 0 3.5 \" style=\"stroke: #000000; stroke-width: 0.8\"/>\n"
+        },
+        {
+          "start": 4155,
+          "end": 4346,
+          "before": "      <path d=\"M 89.856 295.404179\nL 670.464 295.404179\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 295.404179 L 670.464 295.404179 \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 4392,
+          "end": 4487,
+          "before": "       <path id=\"mcf01bff27f\" d=\"M 0 0\nL -3.5 0\n\" style=\"stroke: #000000; stroke-width: 0.8\"/>\n",
+          "after": "       <path id=\"mcf01bff27f\" d=\"M 0 0 L -3.5 0 \" style=\"stroke: #000000; stroke-width: 0.8\"/>\n"
+        },
+        {
+          "start": 4878,
+          "end": 5067,
+          "before": "      <path d=\"M 89.856 200.62209\nL 670.464 200.62209\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 200.62209 L 670.464 200.62209 \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 5479,
+          "end": 5662,
+          "before": "      <path d=\"M 89.856 105.84\nL 670.464 105.84\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 105.84 L 670.464 105.84 \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 6258,
+          "end": 6456,
+          "before": "    <path d=\"M 89.856 295.404179\nL 113.08032 295.404179\nL 113.08032 295.404179\nL 89.856 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 89.856 295.404179 L 113.08032 295.404179 L 113.08032 295.404179 L 89.856 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 6484,
+          "end": 6688,
+          "before": "    <path d=\"M 113.08032 295.404179\nL 136.30464 295.404179\nL 136.30464 295.404179\nL 113.08032 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 113.08032 295.404179 L 136.30464 295.404179 L 136.30464 295.404179 L 113.08032 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 6716,
+          "end": 6920,
+          "before": "    <path d=\"M 136.30464 295.404179\nL 159.52896 295.404179\nL 159.52896 295.404179\nL 136.30464 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 136.30464 295.404179 L 159.52896 295.404179 L 159.52896 295.404179 L 136.30464 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 6948,
+          "end": 7152,
+          "before": "    <path d=\"M 159.52896 295.404179\nL 182.75328 295.404179\nL 182.75328 295.025051\nL 159.52896 295.025051\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 159.52896 295.404179 L 182.75328 295.404179 L 182.75328 295.025051 L 159.52896 295.025051 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 7180,
+          "end": 7382,
+          "before": "    <path d=\"M 182.75328 295.404179\nL 205.9776 295.404179\nL 205.9776 295.025051\nL 182.75328 295.025051\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 182.75328 295.404179 L 205.9776 295.404179 L 205.9776 295.025051 L 182.75328 295.025051 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 7410,
+          "end": 7610,
+          "before": "    <path d=\"M 205.9776 295.404179\nL 229.20192 295.404179\nL 229.20192 294.07723\nL 205.9776 294.07723\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 205.9776 295.404179 L 229.20192 295.404179 L 229.20192 294.07723 L 205.9776 294.07723 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 7638,
+          "end": 7842,
+          "before": "    <path d=\"M 229.20192 295.404179\nL 252.42624 295.404179\nL 252.42624 293.318973\nL 229.20192 293.318973\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 229.20192 295.404179 L 252.42624 295.404179 L 252.42624 293.318973 L 229.20192 293.318973 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 7871,
+          "end": 8075,
+          "before": "    <path d=\"M 252.42624 295.404179\nL 275.65056 295.404179\nL 275.65056 285.736406\nL 252.42624 285.736406\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 252.42624 295.404179 L 275.65056 295.404179 L 275.65056 285.736406 L 252.42624 285.736406 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 8104,
+          "end": 8308,
+          "before": "    <path d=\"M 275.65056 295.404179\nL 298.87488 295.404179\nL 298.87488 280.049481\nL 275.65056 280.049481\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 275.65056 295.404179 L 298.87488 295.404179 L 298.87488 280.049481 L 275.65056 280.049481 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 8337,
+          "end": 8539,
+          "before": "    <path d=\"M 298.87488 295.404179\nL 322.0992 295.404179\nL 322.0992 269.244322\nL 298.87488 269.244322\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 298.87488 295.404179 L 322.0992 295.404179 L 322.0992 269.244322 L 298.87488 269.244322 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 8568,
+          "end": 8770,
+          "before": "    <path d=\"M 322.0992 295.404179\nL 345.32352 295.404179\nL 345.32352 251.804418\nL 322.0992 251.804418\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 322.0992 295.404179 L 345.32352 295.404179 L 345.32352 251.804418 L 322.0992 251.804418 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 8799,
+          "end": 9003,
+          "before": "    <path d=\"M 345.32352 295.404179\nL 368.54784 295.404179\nL 368.54784 237.207976\nL 345.32352 237.207976\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 345.32352 295.404179 L 368.54784 295.404179 L 368.54784 237.207976 L 345.32352 237.207976 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 9032,
+          "end": 9236,
+          "before": "    <path d=\"M 368.54784 295.404179\nL 391.77216 295.404179\nL 391.77216 231.331487\nL 368.54784 231.331487\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 368.54784 295.404179 L 391.77216 295.404179 L 391.77216 231.331487 L 368.54784 231.331487 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 9265,
+          "end": 9469,
+          "before": "    <path d=\"M 391.77216 295.404179\nL 414.99648 295.404179\nL 414.99648 237.587104\nL 391.77216 237.587104\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 391.77216 295.404179 L 414.99648 295.404179 L 414.99648 237.587104 L 391.77216 237.587104 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 9498,
+          "end": 9700,
+          "before": "    <path d=\"M 414.99648 295.404179\nL 438.2208 295.404179\nL 438.2208 252.183546\nL 414.99648 252.183546\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 414.99648 295.404179 L 438.2208 295.404179 L 438.2208 252.183546 L 414.99648 252.183546 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 9729,
+          "end": 9931,
+          "before": "    <path d=\"M 438.2208 295.404179\nL 461.44512 295.404179\nL 461.44512 269.623451\nL 438.2208 269.623451\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 438.2208 295.404179 L 461.44512 295.404179 L 461.44512 269.623451 L 438.2208 269.623451 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 9960,
+          "end": 10164,
+          "before": "    <path d=\"M 461.44512 295.404179\nL 484.66944 295.404179\nL 484.66944 278.722531\nL 461.44512 278.722531\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 461.44512 295.404179 L 484.66944 295.404179 L 484.66944 278.722531 L 461.44512 278.722531 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 10193,
+          "end": 10395,
+          "before": "    <path d=\"M 484.66944 295.404179\nL 507.89376 295.404179\nL 507.89376 285.92597\nL 484.66944 285.92597\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 484.66944 295.404179 L 507.89376 295.404179 L 507.89376 285.92597 L 484.66944 285.92597 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 10424,
+          "end": 10626,
+          "before": "    <path d=\"M 507.89376 295.404179\nL 531.11808 295.404179\nL 531.11808 291.80246\nL 507.89376 291.80246\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 507.89376 295.404179 L 531.11808 295.404179 L 531.11808 291.80246 L 507.89376 291.80246 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 10655,
+          "end": 10857,
+          "before": "    <path d=\"M 531.11808 295.404179\nL 554.3424 295.404179\nL 554.3424 294.456358\nL 531.11808 294.456358\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 531.11808 295.404179 L 554.3424 295.404179 L 554.3424 294.456358 L 531.11808 294.456358 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 10886,
+          "end": 11088,
+          "before": "    <path d=\"M 554.3424 295.404179\nL 577.56672 295.404179\nL 577.56672 295.025051\nL 554.3424 295.025051\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 554.3424 295.404179 L 577.56672 295.404179 L 577.56672 295.025051 L 554.3424 295.025051 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 11117,
+          "end": 11321,
+          "before": "    <path d=\"M 577.56672 295.404179\nL 600.79104 295.404179\nL 600.79104 295.404179\nL 577.56672 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 577.56672 295.404179 L 600.79104 295.404179 L 600.79104 295.404179 L 577.56672 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 11350,
+          "end": 11554,
+          "before": "    <path d=\"M 600.79104 295.404179\nL 624.01536 295.404179\nL 624.01536 295.404179\nL 600.79104 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 600.79104 295.404179 L 624.01536 295.404179 L 624.01536 295.404179 L 600.79104 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 11583,
+          "end": 11787,
+          "before": "    <path d=\"M 624.01536 295.404179\nL 647.23968 295.404179\nL 647.23968 295.404179\nL 624.01536 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 624.01536 295.404179 L 647.23968 295.404179 L 647.23968 295.404179 L 624.01536 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 11816,
+          "end": 12016,
+          "before": "    <path d=\"M 647.23968 295.404179\nL 670.464 295.404179\nL 670.464 295.404179\nL 647.23968 295.404179\nz\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 647.23968 295.404179 L 670.464 295.404179 L 670.464 295.404179 L 647.23968 295.404179 z \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: #2f6f9f; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 12046,
+          "end": 12232,
+          "before": "    <path d=\"M 380.16 295.404179\nL 380.16 105.84\n\" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #447c55; stroke-width: 2.5\"/>\n",
+          "after": "    <path d=\"M 380.16 295.404179 L 380.16 105.84 \" clip-path=\"url(#p26dcf8982e)\" style=\"fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #447c55; stroke-width: 2.5\"/>\n"
+        },
+        {
+          "start": 12261,
+          "end": 12417,
+          "before": "    <path d=\"M 89.856 295.404179\nL 89.856 105.84\n\" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n",
+          "after": "    <path d=\"M 89.856 295.404179 L 89.856 105.84 \" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 12446,
+          "end": 12607,
+          "before": "    <path d=\"M 89.856 295.404179\nL 670.464 295.404179\n\" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n",
+          "after": "    <path d=\"M 89.856 295.404179 L 670.464 295.404179 \" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 12878,
+          "end": 12995,
+          "before": "    <path d=\"M 89.856 613.872\nL 670.464 613.872\nL 670.464 424.307821\nL 89.856 424.307821\nz\n\" style=\"fill: #ffffff\"/>\n",
+          "after": "    <path d=\"M 89.856 613.872 L 670.464 613.872 L 670.464 424.307821 L 89.856 424.307821 z \" style=\"fill: #ffffff\"/>\n"
+        },
+        {
+          "start": 15649,
+          "end": 15834,
+          "before": "      <path d=\"M 89.856 613.872\nL 670.464 613.872\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 613.872 L 670.464 613.872 \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 16244,
+          "end": 16433,
+          "before": "      <path d=\"M 89.856 519.08991\nL 670.464 519.08991\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 519.08991 L 670.464 519.08991 \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 16844,
+          "end": 17035,
+          "before": "      <path d=\"M 89.856 424.307821\nL 670.464 424.307821\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n",
+          "after": "      <path d=\"M 89.856 424.307821 L 670.464 424.307821 \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.8; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 17635,
+          "end": 17821,
+          "before": "    <path d=\"M 89.856 613.872\nL 113.08032 613.872\nL 113.08032 613.872\nL 89.856 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 89.856 613.872 L 113.08032 613.872 L 113.08032 613.872 L 89.856 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 17850,
+          "end": 18042,
+          "before": "    <path d=\"M 113.08032 613.872\nL 136.30464 613.872\nL 136.30464 613.872\nL 113.08032 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 113.08032 613.872 L 136.30464 613.872 L 136.30464 613.872 L 113.08032 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 18071,
+          "end": 18263,
+          "before": "    <path d=\"M 136.30464 613.872\nL 159.52896 613.872\nL 159.52896 613.872\nL 136.30464 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 136.30464 613.872 L 159.52896 613.872 L 159.52896 613.872 L 136.30464 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 18292,
+          "end": 18490,
+          "before": "    <path d=\"M 159.52896 613.872\nL 182.75328 613.872\nL 182.75328 611.560242\nL 159.52896 611.560242\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 159.52896 613.872 L 182.75328 613.872 L 182.75328 611.560242 L 159.52896 611.560242 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 18519,
+          "end": 18715,
+          "before": "    <path d=\"M 182.75328 613.872\nL 205.9776 613.872\nL 205.9776 611.560242\nL 182.75328 611.560242\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 182.75328 613.872 L 205.9776 613.872 L 205.9776 611.560242 L 182.75328 611.560242 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 18744,
+          "end": 18934,
+          "before": "    <path d=\"M 205.9776 613.872\nL 229.20192 613.872\nL 229.20192 613.872\nL 205.9776 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 205.9776 613.872 L 229.20192 613.872 L 229.20192 613.872 L 205.9776 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 18963,
+          "end": 19155,
+          "before": "    <path d=\"M 229.20192 613.872\nL 252.42624 613.872\nL 252.42624 613.872\nL 229.20192 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 229.20192 613.872 L 252.42624 613.872 L 252.42624 613.872 L 229.20192 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 19184,
+          "end": 19376,
+          "before": "    <path d=\"M 252.42624 613.872\nL 275.65056 613.872\nL 275.65056 613.872\nL 252.42624 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 252.42624 613.872 L 275.65056 613.872 L 275.65056 613.872 L 252.42624 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 19405,
+          "end": 19597,
+          "before": "    <path d=\"M 275.65056 613.872\nL 298.87488 613.872\nL 298.87488 613.872\nL 275.65056 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 275.65056 613.872 L 298.87488 613.872 L 298.87488 613.872 L 275.65056 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 19626,
+          "end": 19816,
+          "before": "    <path d=\"M 298.87488 613.872\nL 322.0992 613.872\nL 322.0992 613.872\nL 298.87488 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 298.87488 613.872 L 322.0992 613.872 L 322.0992 613.872 L 298.87488 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 19845,
+          "end": 20035,
+          "before": "    <path d=\"M 322.0992 613.872\nL 345.32352 613.872\nL 345.32352 613.872\nL 322.0992 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 322.0992 613.872 L 345.32352 613.872 L 345.32352 613.872 L 322.0992 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 20064,
+          "end": 20256,
+          "before": "    <path d=\"M 345.32352 613.872\nL 368.54784 613.872\nL 368.54784 613.872\nL 345.32352 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 345.32352 613.872 L 368.54784 613.872 L 368.54784 613.872 L 345.32352 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 20285,
+          "end": 20477,
+          "before": "    <path d=\"M 368.54784 613.872\nL 391.77216 613.872\nL 391.77216 613.872\nL 368.54784 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 368.54784 613.872 L 391.77216 613.872 L 391.77216 613.872 L 368.54784 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 20506,
+          "end": 20698,
+          "before": "    <path d=\"M 391.77216 613.872\nL 414.99648 613.872\nL 414.99648 613.872\nL 391.77216 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 391.77216 613.872 L 414.99648 613.872 L 414.99648 613.872 L 391.77216 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 20727,
+          "end": 20923,
+          "before": "    <path d=\"M 414.99648 613.872\nL 438.2208 613.872\nL 438.2208 586.130901\nL 414.99648 586.130901\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 414.99648 613.872 L 438.2208 613.872 L 438.2208 586.130901 L 414.99648 586.130901 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 20952,
+          "end": 21148,
+          "before": "    <path d=\"M 438.2208 613.872\nL 461.44512 613.872\nL 461.44512 456.672437\nL 438.2208 456.672437\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 438.2208 613.872 L 461.44512 613.872 L 461.44512 456.672437 L 438.2208 456.672437 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 21177,
+          "end": 21375,
+          "before": "    <path d=\"M 461.44512 613.872\nL 484.66944 613.872\nL 484.66944 512.154636\nL 461.44512 512.154636\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 461.44512 613.872 L 484.66944 613.872 L 484.66944 512.154636 L 461.44512 512.154636 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 21404,
+          "end": 21602,
+          "before": "    <path d=\"M 484.66944 613.872\nL 507.89376 613.872\nL 507.89376 556.078043\nL 484.66944 556.078043\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 484.66944 613.872 L 507.89376 613.872 L 507.89376 556.078043 L 484.66944 556.078043 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 21631,
+          "end": 21829,
+          "before": "    <path d=\"M 507.89376 613.872\nL 531.11808 613.872\nL 531.11808 591.910296\nL 507.89376 591.910296\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 507.89376 613.872 L 531.11808 613.872 L 531.11808 591.910296 L 507.89376 591.910296 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 21858,
+          "end": 22054,
+          "before": "    <path d=\"M 531.11808 613.872\nL 554.3424 613.872\nL 554.3424 608.092604\nL 531.11808 608.092604\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 531.11808 613.872 L 554.3424 613.872 L 554.3424 608.092604 L 531.11808 608.092604 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 22083,
+          "end": 22279,
+          "before": "    <path d=\"M 554.3424 613.872\nL 577.56672 613.872\nL 577.56672 611.560242\nL 554.3424 611.560242\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 554.3424 613.872 L 577.56672 613.872 L 577.56672 611.560242 L 554.3424 611.560242 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 22308,
+          "end": 22500,
+          "before": "    <path d=\"M 577.56672 613.872\nL 600.79104 613.872\nL 600.79104 613.872\nL 577.56672 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 577.56672 613.872 L 600.79104 613.872 L 600.79104 613.872 L 577.56672 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 22529,
+          "end": 22721,
+          "before": "    <path d=\"M 600.79104 613.872\nL 624.01536 613.872\nL 624.01536 613.872\nL 600.79104 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 600.79104 613.872 L 624.01536 613.872 L 624.01536 613.872 L 600.79104 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 22750,
+          "end": 22942,
+          "before": "    <path d=\"M 624.01536 613.872\nL 647.23968 613.872\nL 647.23968 613.872\nL 624.01536 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 624.01536 613.872 L 647.23968 613.872 L 647.23968 613.872 L 624.01536 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 22971,
+          "end": 23159,
+          "before": "    <path d=\"M 647.23968 613.872\nL 670.464 613.872\nL 670.464 613.872\nL 647.23968 613.872\nz\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 647.23968 613.872 L 670.464 613.872 L 670.464 613.872 L 647.23968 613.872 z \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: #c56a2d; stroke: #ffffff; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 23189,
+          "end": 23376,
+          "before": "    <path d=\"M 380.16 613.872\nL 380.16 424.307821\n\" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #447c55; stroke-width: 2.5\"/>\n",
+          "after": "    <path d=\"M 380.16 613.872 L 380.16 424.307821 \" clip-path=\"url(#pcacd34dbf4)\" style=\"fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #447c55; stroke-width: 2.5\"/>\n"
+        },
+        {
+          "start": 23405,
+          "end": 23562,
+          "before": "    <path d=\"M 89.856 613.872\nL 89.856 424.307821\n\" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n",
+          "after": "    <path d=\"M 89.856 613.872 L 89.856 424.307821 \" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 23591,
+          "end": 23746,
+          "before": "    <path d=\"M 89.856 613.872\nL 670.464 613.872\n\" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n",
+          "after": "    <path d=\"M 89.856 613.872 L 670.464 613.872 \" style=\"fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square\"/>\n"
+        },
+        {
+          "start": 24009,
+          "end": 24215,
+          "before": "   <text style=\"font-size: 16px; font-family: 'Arial'; text-anchor: middle\" x=\"345.6\" y=\"57.8592\" transform=\"rotate(-0 345.6 57.8592)\">Teaching simulation · dashed line: true effect = 0.20 SD</text>\n  </g>\n",
+          "after": "   </g>\n"
+        },
+        {
+          "start": 24255,
+          "end": 24596,
+          "before": "    <path d=\"M 198.8625 371.98295\nL 561.4575 371.98295\nQ 571.8575 371.98295 571.8575 361.58295\nL 571.8575 345.5817\nQ 571.8575 335.1817 561.4575 335.1817\nL 198.8625 335.1817\nQ 188.4625 335.1817 188.4625 345.5817\nL 188.4625 361.58295\nQ 188.4625 371.98295 198.8625 371.98295\nz\n\" style=\"fill: #fff0e9; stroke: #a74343; stroke-linejoin: miter\"/>\n",
+          "after": "    <path d=\"M 198.8625 371.98295 L 561.4575 371.98295 Q 571.8575 371.98295 571.8575 361.58295 L 571.8575 345.5817 Q 571.8575 335.1817 561.4575 335.1817 L 198.8625 335.1817 Q 188.4625 335.1817 188.4625 345.5817 L 188.4625 361.58295 Q 188.4625 371.98295 198.8625 371.98295 z \" style=\"fill: #fff0e9; stroke: #a74343; stroke-linejoin: miter\"/>\n"
+        },
+        {
+          "start": 25074,
+          "end": 25081,
+          "before": "</svg>\n",
+          "after": "</svg>"
+        }
+      ],
+      "text_review_20260914": {
+        "purpose": "Keep essential figure labels; transfer repeated headings and explanatory notes to captions.",
+        "removed_texts": [
+          "Teaching simulation · dashed line: true effect = 0.20 SD"
+        ],
+        "accessibility": "Descriptions aligned with final visible elements."
+      }
     }
   }
 }

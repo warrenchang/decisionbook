@@ -50,6 +50,8 @@ Keep an editable source such as `figures-src/decision-loop.drawio`, export it as
 
 ### Keep the figure informative
 
+Keep visible text to what readers need to interpret the graphic: panel labels, concepts, axes, units, conditions, legends, and necessary task instructions. Put repeated figure titles, subtitles, source lines, explanatory footers, and interpretation in the caption or adjacent prose. After moving text, update alternative text so it does not describe a note or panel that is no longer visible.
+
 Before deleting text, identify what a reader should learn from the illustration. Read the image without the surrounding chapter and check that it supplies the information needed for that purpose:
 
 - Name the central concepts using standard terms, with a short definition or concrete example where the term alone is insufficient.
