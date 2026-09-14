@@ -21,7 +21,7 @@ for name in ['Arial.ttf','Arial Bold.ttf']:
     path=Path('/System/Library/Fonts/Supplemental')/name
     if path.exists():font_manager.fontManager.addfont(path)
 plt.rcParams.update({'font.family':'Arial','font.size':19,'svg.fonttype':'none','svg.hashsalt':'be06-ch21-dopamine','axes.labelcolor':'#183047','text.color':'#183047','xtick.color':'#53677a','ytick.color':'#53677a','savefig.facecolor':'white'})
-INK='#183047';TEAL='#087F8C';ORANGE='#B64F23';BLUE='#315C95';GRAY='#69777d';LIGHT='#d8e0e4'
+INK='#183047';TEAL='#087F8C';GREEN='#24834B';RED='#C43B3B';BLUE='#315C95';GRAY='#69777d';LIGHT='#d8e0e4'
 
 def save(fig,name,title,description):
     dest=ROOT/'figures'/f'{name}.svg'
@@ -55,7 +55,7 @@ fig.text(.53,.012,'Time within each trial',ha='center',fontsize=24)
 save(fig,'reward-prediction-error-abcd','Reward prediction error: panels A–D','A cue that does not yet predict reward elicits no learned reward response in panel A; an unexpected reward elicits a burst. Later panels show a learned cue, reward omission and unexpected delay. Curves show schematic neuronal firing changes around baseline, not absolute dopamine levels.')
 
 fig=plt.figure(figsize=(8,4.8))
-fig.legend(handles=[Line2D([0],[0],color=TEAL,lw=3,label='100%: certain reward'),Line2D([0],[0],color=ORANGE,lw=3,ls=(0,(6,4)),label='50%: uncertain reward')],loc='upper left',bbox_to_anchor=(.11,1.02),frameon=False,fontsize=24,handlelength=1.6,labelspacing=.3)
+fig.legend(handles=[Line2D([0],[0],color=TEAL,lw=3,label='Certain reward'),Line2D([0],[0],color=BLUE,lw=3,ls=(0,(6,4)),label='Uncertain reward')],loc='upper left',bbox_to_anchor=(.11,1.02),frameon=False,fontsize=24,handlelength=1.6,labelspacing=.3)
 ax=fig.add_axes([.12,.16,.83,.53]);axes_style(ax,[(.8,'Cue'),(4.7,'Outcome')],(-.80,1.60))
 ax.set_yticks([0],['0'])
 shared=None
@@ -68,11 +68,11 @@ for s in DATA['E']:
     after=[(x,y) for x,y in zip(s['xVal'],s['yVal']) if x>=4.7]
     if shared is None:
         shared=before
-        ax.plot(*zip(*before),color=ORANGE,lw=3,ls=(0,(6,4)))
+        ax.plot(*zip(*before),color=BLUE,lw=3,ls=(0,(6,4)))
     else:assert before==shared,'Uncertain paths must be identical before the outcome.'
     omitted='omitt' in s['name'].lower()
-    ax.plot(*zip(*after),color=ORANGE if omitted else BLUE,lw=3,ls=(0,(6,4)))
-ax.text(5.52,1.38,'Reward',ha='center',color=BLUE,fontsize=24)
-ax.text(5.43,-.74,'No reward',ha='center',color=ORANGE,fontsize=24)
-save(fig,'reward-uncertainty-comparison','Certain and uncertain rewards','The solid teal curve represents certain reward. The dashed orange curve shows shared anticipation under fifty-percent reward probability. At the outcome, the blue dashed branch rises for reward received and the orange dashed branch falls for reward omitted. Curves are schematic neuronal firing changes around baseline.')
+    ax.plot(*zip(*after),color=RED if omitted else GREEN,lw=3,ls=(0,(6,4)))
+ax.text(5.52,1.38,'Reward',ha='center',color=GREEN,fontsize=24)
+ax.text(5.43,-.74,'No reward',ha='center',color=RED,fontsize=24)
+save(fig,'reward-uncertainty-comparison','Certain and uncertain rewards','The solid teal curve represents certain reward. The dashed blue curve shows shared anticipation under fifty-percent reward probability. At the outcome, the green dashed branch rises for reward received and the red dashed branch falls for reward omitted. Curves are schematic neuronal firing changes around baseline.')
 print('Rendered A–D and E from the shared BE06 schematic coordinates.')

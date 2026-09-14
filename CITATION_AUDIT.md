@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **896**
+Unique references in the master union: **901**
 
-Chapter reference blocks: **903**
+Chapter reference blocks: **908**
 
 Unresolved author–year citations: **0**
 
@@ -30,8 +30,8 @@ Unresolved author–year citations: **0**
 | Risky Decision Making | 16 | 0 |
 | Prospect Theory | 14 | 0 |
 | Decisions From Experience | 19 | 0 |
-| Intertemporal Decision Making | 29 | 0 |
 | Mental Accounting | 23 | 0 |
+| Intertemporal Decision Making | 29 | 0 |
 | Habits, Wanting, and Self-Control | 21 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 11 | 0 |
@@ -50,7 +50,7 @@ Unresolved author–year citations: **0**
 | Distributive Negotiation {#preparing-and-claiming-value} | 11 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 10 | 0 |
 | Designing Better Agreements | 19 | 0 |
-| Behavior Design | 19 | 0 |
+| Behavior Design | 24 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
 | Deciding With Data and AI {#data-driven-decision-making} | 21 | 0 |
