@@ -44,13 +44,13 @@ Recognizing a chair and forecasting the result of taking a job both draw on prio
 | **Prediction in judgment and decision-making** | A person or model forecasts a state or consequence that may occur, often under a specified option and time horizon. The forecast becomes one input into valuation and choice. |
 : Predictive processing and predictive judgment ask different questions {#tbl-two-meanings-prediction}
 
-The first asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. In the hiring case, interpreting a quiet answer as thoughtfulness is an inference about what just happened; predicting reliable future work is a further claim. One should not silently stand in for the other.
+The first row of @tbl-two-meanings-prediction asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. In the hiring case, interpreting a quiet answer as thoughtfulness is an inference about what just happened; predicting reliable future work is a further claim. One should not silently stand in for the other.
 
 This chapter concentrates on interpreting current signals. The later chapters on expectations and probability judgment ask how people forecast consequences.
 
 ## When context changes what appears
 
-Read the middle symbol in each row below. Its shape is identical in the two rows, but the neighbors invite different readings. The example isolates a useful question: how much of the interpretation came from the mark, and how much came from its setting?
+Read the middle symbol in each row of @fig-context-b13-demonstration. Its shape is identical in the two rows, but the neighbors invite different readings. The example isolates a useful question: how much of the interpretation came from the mark, and how much came from its setting?
 
 ![An original perceptual-context demonstration uses exactly the same middle vector mark in two rows. Number context invites a reading of “13,” while letter context invites a reading of “B.”](../figures/context-b13-demonstration.svg){#fig-context-b13-demonstration fig-alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B." width=100%}
 
@@ -58,7 +58,7 @@ The ambiguous symbol invites two readings. The next demonstrations let us compar
 
 In @fig-perception-context-lab, the paired shafts, centre circles, and grey patches are physically identical within each comparison. The surrounding geometry or luminance changes their appearance. Measuring the target can correct the judgment without necessarily turning off the impression.
 
-![Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields.](../figures/perception-context-lab.svg){#fig-perception-context-lab fig-alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality and invites readers to measure the target." width=100%}
+![Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields.](../figures/perception-context-lab.svg){#fig-perception-context-lab fig-alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds. Each panel states the physical equality." width=100%}
 
 ### Learned context gives color a meaning {#color-and-illumination-context}
 
@@ -86,14 +86,22 @@ The seasonal story also needs an update. A later study conducted in the weeks ar
 
 Imagine looking into the inside of a face mask. Its nose recedes into the surface, yet you may see a normal face with a nose projecting toward you. This is the **hollow-face illusion**: a concave face can appear convex. Even knowing that the mask is hollow need not make it look hollow (Hill & Johnston, 2007).
 
-Watch the upper mask in the demonstration, then compare it with the featureless hollow surface below. Does the face seem to bulge toward you? Does its apparent shape change as it turns? Try separating what you **know about the shape** from what you **see**.
+:::: {.content-visible unless-format="epub"}
+Watch the upper mask in @fig-hollow-face-illusion, then compare it with the featureless hollow surface below. Does the face seem to bulge toward you? Does its apparent shape change as it turns? Try separating what you **know about the shape** from what you **see**.
 
-::: {.content-visible unless-format="epub"}
+::: {#fig-hollow-face-illusion}
 ```{=html}
 <div class="book-video-portrait">
   <img src="../figures/hollow-face-illusion.gif" width="360" height="720" style="display: block; width: 100%; height: auto;" alt="A rotating hollow face above a featureless hollow surface, shown together for comparison." aria-describedby="hollow-face-media-description">
 </div>
 ```
+
+A rotating hollow face above a featureless hollow surface.
+:::
+::::
+
+::: {.content-visible when-format="epub"}
+Watch the upper mask in the linked demonstration, then compare it with the featureless hollow surface below. Does the face seem to bulge toward you? Does its apparent shape change as it turns? Try separating what you **know about the shape** from what you **see**.
 :::
 
 ::: {#hollow-face-media-description}
@@ -118,7 +126,7 @@ The **generative process** is the world and body producing the observations; the
 
 ![A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="Expectations and incoming signals converge on perception. Perception informs action and sampling, which changes the next evidence. A feedback arrow shows that mismatch can update the internal model; a note explains that estimated reliability affects the weight of signals."}
 
-Predictive-processing models differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman & Friston, 2010), but precision and attention are not interchangeable. A smaller prediction error also need not mean a better account of the world if the system sampled only evidence that its model already explains.
+Predictive-processing models differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman & Friston, 2010), but precision and attention are not interchangeable. The return path through action and sampling in @fig-predictive-processing-decision also explains why a smaller prediction error need not mean a better account of the world: the system may have sampled only evidence its model already explains.
 
 ::: {.callout-note .research-lens icon=false collapse=true #research-lens-from-predictive-processing-to-active-inference}
 ## Research Lens: from predictive processing to active inference {#research-lens-from-predictive-processing-to-active-inference-title}

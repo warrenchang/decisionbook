@@ -2,6 +2,7 @@
 """Build the two compact judgment diagrams, without touching other figures."""
 from html import escape
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 
 OUT = Path(__file__).resolve().parents[1] / "figures"
 
@@ -49,7 +50,7 @@ def processing():
           arrow("M432 650 H328", "orange"), text(380, 687, ["check", "or train"], 28),
           box(38, 832, 684, 128, "#f5f8fa", "#9eb1bf"),
           text(380, 881, ["Practice can change how a task is performed.", "Neither family guarantees accuracy."], 28)]
-    return '\n'.join(s+['</svg>'])+'\n'
+    return clean_svg('fast-slow.svg', '\n'.join(s+['</svg>'])+'\n')
 
 
 def representativeness():
@@ -74,7 +75,7 @@ def representativeness():
           text(380, 900, ["Updated probability"], 32, 700),
           text(380, 947, ["Combine the prior with how likely", "the evidence is under each alternative."], 28),
           text(380, 1083, ["Similarity can suggest a hypothesis."], 28)]
-    return '\n'.join(s+['</svg>'])+'\n'
+    return clean_svg('prototype-probability.svg', '\n'.join(s+['</svg>'])+'\n')
 
 
 if __name__ == "__main__":

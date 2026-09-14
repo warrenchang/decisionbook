@@ -21,6 +21,7 @@ import argparse
 import base64
 import math
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -532,7 +533,7 @@ def write_svg(stem: str, builder, figures_dir: Path) -> Path:
                 "restore the reviewed source."
             )
         return svg_path
-    svg_path.write_text(builder(), encoding="utf-8")
+    svg_path.write_text(clean_svg(f"{stem}.svg", builder()), encoding="utf-8")
     return svg_path
 
 

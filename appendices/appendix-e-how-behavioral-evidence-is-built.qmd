@@ -20,7 +20,7 @@ This appendix follows an imagined study from that question to a report another r
 
 ## The experimental workflow
 
-The clinic's question will guide five phases of work. Each leaves a record needed to interpret the next: the question determines the comparison, the design determines what must be recorded, and those records determine which conclusion the analysis can support.
+The five phases in @tbl-experimental-workflow turn the clinic's question into a study whose decisions and results can be examined. Each leaves a record needed to interpret the next: the question determines the comparison, the design determines what must be recorded, and those records determine which conclusion the analysis can support.
 
 | Phase | What you do | What you preserve |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ A before–after count could answer the descriptive question while leaving the o
 
 ![Five questions connect an experimental design to the claim it can support. Revisit earlier steps when the evidence exposes a weakness.](../figures/claim-to-design-pipeline.svg){#fig-claim-to-design-pipeline fig-alt="A vertical sequence asks what to learn, what to measure, what to compare, how large and uncertain the estimate is, and what the design justifies." .phone-fit}
 
-The figure helps locate a weakness before it becomes a confident conclusion. If the attendance record is incomplete, for example, a sound assignment procedure alone will not rescue the final estimate.
+The sequence in @fig-claim-to-design-pipeline helps locate a weakness before it becomes a confident conclusion. If the attendance record is incomplete, for example, a sound assignment procedure alone will not rescue the final estimate.
 
 ## Define the question
 
@@ -99,7 +99,7 @@ These measurement decisions determine what the data can tell us about the theory
 
 ### 3. Separate description, prediction, causation, and mechanism
 
-With the outcome defined, return to the question the study is meant to answer. The following table connects each kind of claim to the comparison or check it requires.
+With the outcome defined, return to the question the study is meant to answer. @tbl-claim-families connects each kind of claim to the comparison or check it requires, preventing an accurate prediction from being mistaken for evidence about an intervention.
 
 | Claim family | Target question | Design requirement | Common overreach |
 | --- | --- | --- | --- |
@@ -139,6 +139,8 @@ Ask of every causal claim:
 - Could one unit's treatment change another unit's outcome?
 
 ### 5. Choose the design that identifies the contrast
+
+@tbl-evidence-designs compares approaches by what generates the contrast and what assumptions support it. Start with that process: an experiment, a naturally occurring difference, and a simulated outcome provide different grounds for inference.
 
 | Approach to evidence | What creates the comparison? | Strong use | Central assumption or limit |
 | --- | --- | --- | --- |
@@ -249,9 +251,9 @@ After data collection, observed power computed from the observed effect adds lit
 
 Random assignment gives the clinic a basis for comparing reminder offers. Failed delivery can make the effect of assignment differ from the effect of receiving a message; missing attendance records can also compromise the comparison between assigned groups. Track each participant or unit from eligibility through assignment, delivery, outcome observation, and analysis to establish which effect the records can support.
 
-![Assignment, treatment receipt, and outcome observation are different events. An intention-to-treat comparison keeps the original assignment groups while addressing missing outcomes and interference.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Two assigned groups proceed through treatment receipt, outcome observation, and analysis. The diagram asks who received treatment and who was observed, and reminds the reader to track effects between groups." .phone-fit}
+![Three distinct problems in a randomized evaluation: treatment receipt can differ from assignment, follow-up can leave outcomes missing, and treatment can affect other people. An intention-to-treat comparison retains the original assignment groups; missingness and spillovers require additional attention.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Three panels name and explain noncompliance, attrition, and spillovers or interference. Noncompliance separates treatment assigned from treatment received; attrition separates randomized participants from those whose outcomes are observed; spillovers connect one person's treatment to another person's outcome. A fourth panel defines intention-to-treat as comparison by original assignment and states that it does not itself resolve attrition or spillovers." .phone-fit}
 
-@fig-participant-flow-threats prevents several losses from being collapsed into “dropout.” **Noncompliance** separates assignment from treatment receipt. **Missingness or attrition** separates assignment from outcome observation. **Interference** means that one unit's assignment or treatment changes another unit's exposure or outcome. Each changes the estimand or the assumptions needed for interpretation.
+The three panels in @fig-participant-flow-threats distinguish problems that are easily collapsed into “dropout.” **Noncompliance** concerns treatment receipt, **attrition** concerns missing outcomes after loss to follow-up, and **spillovers or interference** concern effects on other people. They can occur together, but they change different parts of the comparison. The final panel states the starting point for analysis: retain original assignment when estimating the intention-to-treat effect, then address the assumptions threatened by missing outcomes and interference.
 
 #### Attrition and missing outcomes
 
@@ -392,6 +394,8 @@ External validity is not a yes/no property of a study. It is an argument support
 
 ### 13. Match the final sentence to the design
 
+@tbl-claim-design-matching shows how wording can preserve or exceed what a design establishes. In particular, an effect of assignment should not become a claim about everyone who receives treatment, and a modeled pattern should not become proof of a human mechanism.
+
 | Evidence obtained | Defensible sentence | Sentence to avoid |
 | --- | --- | --- |
 | Cross-sectional association | “X and Y were associated in this sample.” | “X changed Y.” |
@@ -406,6 +410,8 @@ External validity is not a yes/no property of a study. It is an argument support
 For the clinic, the first sentence should identify which reminder groups were compared, how attendance differed, and how uncertain the estimate is. The explanation of why the reminder helped must stay within what that comparison can establish.
 
 ## The one-page evidence design card
+
+Complete @tbl-evidence-design-card before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.
 
 | Field | Complete before data |
 | --- | --- |
@@ -443,7 +449,7 @@ The imagined clinic began with an attendance increase that could have had severa
 | Decision rule | Report estimate and interval; the clinic evaluates operational cost, distribution across patient groups, and implementation errors before scaling |
 : Planned design for the simulated reminder study {#tbl-worked-reminder-design}
 
-The data below are generated with a declared seed and fixed probabilities solely to make the workflow reproducible:
+@tbl-worked-reminder-design fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:
 
 ```python
 import math

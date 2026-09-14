@@ -7,6 +7,7 @@ companions with render_svg_png_fallbacks.cjs after changes.
 """
 from html import escape
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 
 ROOT = Path(__file__).resolve().parents[1]
 INK, BLUE, GREEN, WARM = '#183047', '#25678f', '#2b7a78', '#b95f2d'
@@ -40,7 +41,7 @@ text {{font-family:Arial,Helvetica,sans-serif;fill:{INK}}}
         self.items.append(f'<path d="{d}" fill="none" stroke="{paint}" stroke-width="3" stroke-linejoin="round" marker-end="url(#{color})"'+(f' marker-start="url(#{color})"' if both else '')+(' stroke-dasharray="7 6"' if dash else '')+'/>')
 
     def save(self, name):
-        (ROOT/'figures'/f'{name}.svg').write_text('\n'.join(self.items+['</svg>'])+'\n')
+        (ROOT/'figures'/f'{name}.svg').write_text(clean_svg(f'{name}.svg', '\n'.join(self.items+['</svg>'])+'\n'))
 
 
 def option_information():

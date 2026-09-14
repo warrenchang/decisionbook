@@ -698,11 +698,11 @@ window.Quarto = {
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Zheng and Meister (2025) compare estimates of sensory acquisition on the order of <span class="math inline">\(10^9\)</span> bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. The contrast raises a question about how rich sensory signals support much slower observable responses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div id="fig-attention-bottleneck" class="quarto-float quarto-figure quarto-figure-center" alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second. A separate lower panel summarizes what attention research supports.">
+<p>Zheng and Meister (2025) compare estimates of sensory acquisition on the order of <span class="math inline">\(10^9\)</span> bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. The contrast in <a href="#fig-attention-bottleneck" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> raises a question about how rich sensory signals support much slower observable responses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div id="fig-attention-bottleneck" class="quarto-float quarto-figure quarto-figure-center" alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-attention-bottleneck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/attention-bottleneck.svg" class="img-fluid figure-img" alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second. A separate lower panel summarizes what attention research supports.">
+<img src="../figures/attention-bottleneck.svg" class="img-fluid figure-img" alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-attention-bottleneck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3.1: Sensory acquisition and deliberate behavior have very different estimated information rates. Orders of magnitude from Zheng and Meister (2025).
@@ -750,9 +750,9 @@ Figure&nbsp;3.2: Attention selects and prioritizes information for conscious rep
 </figcaption>
 </figure>
 </div>
-<p>Even a perfect search of the available information could miss a consequential signal if the sensory or measurement system never captured it. Before asking whether we noticed everything, we therefore need to ask what the system made possible to notice.</p>
-<p>Attention filters information that a sensory or measurement system first makes available. That initial sample is already partial. Jakob von Uexküll called an organism’s species-specific perceptual world its <em>Umwelt</em> (von Uexküll, 1934/2010). Bees can use ultraviolet-sensitive vision, pit-bearing snakes detect radiant heating, some elephant calls contain infrasonic components, and migratory birds use geomagnetic cues (Chittka &amp; Menzel, 1992; Gracheva et al., 2010; Payne et al., 1986; Wiltschko &amp; Wiltschko, 2005).</p>
-<div id="fig-sensory-windows" class="quarto-float quarto-figure quarto-figure-center" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="A shared flower supplies reflected light, but human and bee visual systems have access to different spectral cues. Three vertically arranged examples show infrared detection by pit-bearing snakes, infrasonic components in elephant calls, and geomagnetic orientation cues used by migratory birds.">
+<p>The selection in <a href="#fig-attention-filter" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> determines which available signals enter conscious report and deliberate use. Yet even a perfect search could miss a consequential signal if the sensory or measurement system never captured it. Before asking whether we noticed everything, we therefore need to ask what the system made possible to notice.</p>
+<p>Attention filters information that a sensory or measurement system first makes available. That initial sample is already partial, as the different sensory windows in <a href="#fig-sensory-windows" class="quarto-xref">Figure&nbsp;<span>3.3</span></a> illustrate. Jakob von Uexküll called an organism’s species-specific perceptual world its <em>Umwelt</em> (von Uexküll, 1934/2010). Bees can use ultraviolet-sensitive vision, pit-bearing snakes detect radiant heating, some elephant calls contain infrasonic components, and migratory birds use geomagnetic cues (Chittka &amp; Menzel, 1992; Gracheva et al., 2010; Payne et al., 1986; Wiltschko &amp; Wiltschko, 2005).</p>
+<div id="fig-sensory-windows" class="quarto-float quarto-figure quarto-figure-center" alt="A shared flower supplies reflected light, but human and bee visual systems have access to different spectral cues. Three vertically arranged examples show infrared detection by pit-bearing snakes, infrasonic components in elephant calls, and geomagnetic orientation cues used by migratory birds." style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sensory-windows-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../figures/sensory-windows-partial-world.svg" class="img-fluid figure-img" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="A shared flower supplies reflected light, but human and bee visual systems have access to different spectral cues. Three vertically arranged examples show infrared detection by pit-bearing snakes, infrasonic components in elephant calls, and geomagnetic orientation cues used by migratory birds.">
@@ -776,7 +776,7 @@ Figure&nbsp;3.3: Different sensory systems make different physical cues availabl
 <p>These moves treat attention as an environment and process problem, not merely a personal virtue.</p>
 <section id="attention-architecture-the-organization-chooses-what-can-be-seen" class="level3">
 <h3 data-anchor-id="attention-architecture-the-organization-chooses-what-can-be-seen">Attention architecture: the organization chooses what can be seen</h3>
-<p>Meetings and dashboards allocate attention before any participant begins to reason. Five design choices deserve an explicit audit:</p>
+<p>Meetings and dashboards allocate attention before any participant begins to reason. <a href="#tbl-attention-architecture" class="quarto-xref">Table&nbsp;<span>3.1</span></a> traces five design choices from what they make visible to what can be missed:</p>
 <div id="tbl-attention-architecture" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-attention-architecture-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -841,6 +841,7 @@ Table&nbsp;3.1: Attention architecture before deliberation
 <p>In this <a href="https://youtu.be/E26V363_k8o">short scene from <em>Focus</em></a>, track how one person deliberately constructs the other person’s field of attention. After viewing, list the cues that were present, the cues that became psychologically prominent, and the decision that prominence supported.</p>
 </div>
 </div>
+<p>Use <a href="#tbl-05-1" class="quarto-xref">Table&nbsp;<span>3.2</span></a> to match the redesign to the failure: protecting focus addresses distraction, whereas an issue excluded from the agenda needs a route into discussion.</p>
 <div id="tbl-05-1" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-05-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">

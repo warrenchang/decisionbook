@@ -44,13 +44,13 @@ The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtw
 ## Three lenses, three questions
 
 
-To predict the first round, we can ask which choices would be mutual best responses, or model how players actually reason about one another. To explain change across rounds or populations, we also need an account of how ways of playing become more common. These are distinct tasks for equilibrium, reasoning models, and population dynamics.
+To predict the first round, we can ask which choices would be mutual best responses, or model how players actually reason about one another. To explain change across rounds or populations, we also need an account of how ways of playing become more common. The three branches in @fig-three-lenses-strategic-behavior keep these tasks distinct: finding mutual best responses, explaining a player’s reasoning, and tracing population change.
 
 ## Limited strategic depth: level-*k*
 
-The number game rewards anticipating the group, but knowing the equilibrium does not tell a player how far others have reasoned. A model of limited strategic depth supplies a prediction between random choice and fully matched equilibrium beliefs. A level-*k* model builds it from a hierarchy of simple responses (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
+The number game rewards anticipating the group, but knowing the equilibrium does not tell a player how far others have reasoned. A model of limited strategic depth supplies a prediction between random choice and fully matched equilibrium beliefs. The ladder in @fig-level-k-reasoning-ladder illustrates a level-*k* model: each strategic level responds to the preceding level, starting from a specified nonstrategic anchor (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
 
-![In a game where the target is two-thirds of the group mean, an illustrative level-*k* ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Five evenly spaced boxes form a reasoning ladder. Level zero shows fifty as a random-choice anchor; level one shows thirty-three, level two twenty-two, level three fifteen, and equilibrium zero. Arrows connect the boxes." width=100%}
+![In a game where the target is two-thirds of the group mean, an illustrative level-*k* ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Players choose a number from zero to one hundred, aiming at two-thirds of the group mean. An illustrative reasoning ladder starts from an expected random-choice anchor of fifty, then gives approximately thirty-three, twenty-two, fifteen, and the equilibrium zero." width=100%}
 
 - **Level 0** is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.
 - **Level 1** responds to the level-0 anchor and aims near $\frac{2}{3}\times50=33$.
@@ -69,7 +69,7 @@ $$
 
 and a step-$k$ player renormalizes this distribution over the lower steps they believe exist. The parameter $\tau$ governs the population's average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games.
 
-The following number-game summary shows the variation across settings and participant groups.
+Comparing the means, modes, and fitted reasoning depths in @tbl-beauty-contest-groups shows how the distribution a player needs to anticipate varies across settings and participant pools.
 
 | Participant group | Group size | Mean choice | Modal choice | Fitted $\tau$ |
 | --- | ---: | ---: | ---: | ---: |
@@ -132,7 +132,7 @@ A formal model must therefore name its payoffs, initial state, transmission or u
 
 The same distinction matters outside a number game. Suppose a team sees a work routine spreading and wants to support it. Employees may be learning from success, copying visible colleagues, or complying with a changed rule. Rewarding the routine before investigating these possibilities could reinforce a practice whose value has never been tested.
 
-Begin with what the action achieves for the employee. If it is a deliberate response to what colleagues do or expect, a strategic-reasoning model may help. If the question is how the routine spreads, compare the four processes below:
+Begin with what the action achieves for the employee. If it is a deliberate response to what colleagues do or expect, a strategic-reasoning model may help. If the question is how the routine spreads, compare the four processes in @tbl-strategy-diffusion-diagnostic and the evidence that would separate them:
 
 | Candidate process | Diagnostic question | Discriminating evidence |
 | --- | --- | --- |

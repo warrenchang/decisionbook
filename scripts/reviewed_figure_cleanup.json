@@ -1,0 +1,3313 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-14",
+  "purpose": "Exact, guarded patches preserve reviewed figure text cleanup, restored information essential to self-contained figures, viewBox crops, and earlier reviewed font/wrapping repairs. These are transparent deltas, not replacement SVG snapshots. Regenerated inputs must match the declared fingerprint; future builder edits require a new review. Canonical SVG assets remain the visual source of truth.",
+  "figures": {
+    "ai-risk-is-not-benefit.svg": {
+      "generator": "build_data_driven_figures.py",
+      "input_sha256": "0f8b7ff3b3ba4345c9a9dd5611a12c9b73ae5879154b1d2b943965b524a1c502",
+      "output_sha256": "36c45e31f4266a92cf37370a45e856359691eebc6af33a47146e82b6ca13b8a9",
+      "source_viewBox": "0 0 800 642",
+      "reviewed_viewBox": "0 54 800 524",
+      "removed_texts": [
+        "Risk is not the same as benefit",
+        "Risk ranks A first; benefit ranks B first"
+      ],
+      "review_notes": "Removed the outer headline and repeated ranking conclusion. Kept both group contrasts, all rates, percentage-point benefits, and axis. Hypothetical group-average nature remains explicit in accessible metadata, caption, and body.",
+      "information_review": {
+        "status": "REVISED",
+        "changes": [
+          {
+            "before": "Dropout probability",
+            "after": "Hypothetical group dropout rates"
+          },
+          {
+            "added": "Without vs. with outreach"
+          }
+        ],
+        "purpose": "Distinguish baseline-risk ranking from intervention-benefit ranking.",
+        "rationale": "Made hypothetical group rates and the specific outreach comparison explicit. Without/with labels now have an identified intervention; all rates, benefit differences, and plot geometry are unchanged."
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 39,
+          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+          "after": ""
+        },
+        {
+          "start": 99,
+          "end": 100,
+          "before": "6",
+          "after": "52"
+        },
+        {
+          "start": 101,
+          "end": 102,
+          "before": "2",
+          "after": ""
+        },
+        {
+          "start": 115,
+          "end": 116,
+          "before": "0",
+          "after": "54"
+        },
+        {
+          "start": 121,
+          "end": 122,
+          "before": "6",
+          "after": "52"
+        },
+        {
+          "start": 123,
+          "end": 124,
+          "before": "2",
+          "after": ""
+        },
+        {
+          "start": 245,
+          "end": 257,
+          "before": "Completely h",
+          "after": "H"
+        },
+        {
+          "start": 284,
+          "end": 291,
+          "before": "ausal c",
+          "after": ""
+        },
+        {
+          "start": 300,
+          "end": 301,
+          "before": ",",
+          "after": ""
+        },
+        {
+          "start": 302,
+          "end": 303,
+          "before": "n",
+          "after": ""
+        },
+        {
+          "start": 304,
+          "end": 304,
+          "before": "",
+          "after": "f dropou"
+        },
+        {
+          "start": 306,
+          "end": 306,
+          "before": "",
+          "after": "probabiliti"
+        },
+        {
+          "start": 307,
+          "end": 309,
+          "before": "mp",
+          "after": "s w"
+        },
+        {
+          "start": 310,
+          "end": 318,
+          "before": "rical da",
+          "after": ""
+        },
+        {
+          "start": 319,
+          "end": 323,
+          "before": "a or",
+          "after": "h"
+        },
+        {
+          "start": 325,
+          "end": 325,
+          "before": "",
+          "after": "nd"
+        },
+        {
+          "start": 326,
+          "end": 329,
+          "before": "cla",
+          "after": "w"
+        },
+        {
+          "start": 330,
+          "end": 332,
+          "before": "m ",
+          "after": ""
+        },
+        {
+          "start": 334,
+          "end": 335,
+          "before": "a",
+          "after": "ou"
+        },
+        {
+          "start": 345,
+          "end": 358,
+          "before": " is effective",
+          "after": ""
+        },
+        {
+          "start": 1001,
+          "end": 1198,
+          "before": " Effects are group averages, not identified individual effects. Estimating outcomes with versus without outreach requires causal evidence; a baseline risk model alone does not supply those effects.",
+          "after": ""
+        },
+        {
+          "start": 1406,
+          "end": 1406,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1478,
+          "end": 1478,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1479,
+          "end": 1651,
+          "before": ">\n<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">Risk is not the same as benefit</text",
+          "after": ""
+        },
+        {
+          "start": 1787,
+          "end": 1788,
+          "before": "D",
+          "after": "Hypothetical group d"
+        },
+        {
+          "start": 1795,
+          "end": 1796,
+          "before": "p",
+          "after": ""
+        },
+        {
+          "start": 1797,
+          "end": 1799,
+          "before": "ob",
+          "after": ""
+        },
+        {
+          "start": 1800,
+          "end": 1804,
+          "before": "bili",
+          "after": ""
+        },
+        {
+          "start": 1805,
+          "end": 1806,
+          "before": "y",
+          "after": "es"
+        },
+        {
+          "start": 5082,
+          "end": 5082,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 5168,
+          "end": 5168,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 6011,
+          "end": 6011,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 6097,
+          "end": 6097,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 6703,
+          "end": 6706,
+          "before": "605",
+          "after": "137"
+        },
+        {
+          "start": 6783,
+          "end": 6784,
+          "before": "3",
+          "after": ""
+        },
+        {
+          "start": 6785,
+          "end": 6785,
+          "before": "",
+          "after": "6\" fill=\"#526778"
+        },
+        {
+          "start": 6800,
+          "end": 6801,
+          "before": "7",
+          "after": "4"
+        },
+        {
+          "start": 6804,
+          "end": 6819,
+          "before": " fill=\"#17324d\"",
+          "after": ""
+        },
+        {
+          "start": 6820,
+          "end": 6845,
+          "before": "Risk ranks A first; benef",
+          "after": "W"
+        },
+        {
+          "start": 6847,
+          "end": 6847,
+          "before": "",
+          "after": "hout"
+        },
+        {
+          "start": 6848,
+          "end": 6848,
+          "before": "",
+          "after": "vs. with out"
+        },
+        {
+          "start": 6849,
+          "end": 6849,
+          "before": "",
+          "after": "e"
+        },
+        {
+          "start": 6850,
+          "end": 6861,
+          "before": "nks B first",
+          "after": "ch"
+        },
+        {
+          "start": 6868,
+          "end": 6869,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "ai-same-forecast-different-values.svg": {
+      "generator": "build_data_driven_figures.py",
+      "input_sha256": "cc08ae282242120e306b400deabf5106c98025f618e8458c0ceff1d98adca39a",
+      "output_sha256": "1bf4cb191769ffd363981b0ea1e99443f5466b23c4583986d992e788dff58436",
+      "source_viewBox": "0 0 800 820",
+      "reviewed_viewBox": "0 62 800 752",
+      "removed_texts": [
+        "One forecast, two decisions"
+      ],
+      "review_notes": "Removed the general headline only. All common-forecast, hypothetical-loss, threshold, and action labels remain; the caption retains the zero-incremental-loss modeling assumption.",
+      "information_review": {
+        "status": "REVISED",
+        "changes": [
+          {
+            "added": "Hypothetical losses: indoors/rain or outdoors/dry = 0"
+          },
+          {
+            "before": "False alarm: 2",
+            "after": "False alarm: indoors, dry; loss = 2"
+          },
+          {
+            "before": "Missed rain: 8",
+            "after": "Missed rain: outdoors, rain; loss = 8"
+          },
+          {
+            "before": "False alarm: 6",
+            "after": "False alarm: indoors, dry; loss = 6"
+          },
+          {
+            "before": "Missed rain: 4",
+            "after": "Missed rain: outdoors, rain; loss = 4"
+          },
+          {
+            "metadata": "Zero incremental loss is explicitly assigned to matching the venue to the weather, rather than forecasting correctly."
+          }
+        ],
+        "purpose": "Show why the same probability supports different decisions when error losses differ.",
+        "rationale": "Added hypothetical-loss assumptions, explicitly assigning zero loss to indoors/rain and outdoors/dry, and spelled out the false-alarm/missed-rain outcomes next to each loss. All costs, thresholds, forecast values, and resulting actions are unchanged."
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 39,
+          "before": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+          "after": ""
+        },
+        {
+          "start": 99,
+          "end": 100,
+          "before": "8",
+          "after": "75"
+        },
+        {
+          "start": 101,
+          "end": 102,
+          "before": "0",
+          "after": ""
+        },
+        {
+          "start": 115,
+          "end": 116,
+          "before": "0",
+          "after": "62"
+        },
+        {
+          "start": 121,
+          "end": 122,
+          "before": "8",
+          "after": "75"
+        },
+        {
+          "start": 123,
+          "end": 124,
+          "before": "0",
+          "after": ""
+        },
+        {
+          "start": 272,
+          "end": 321,
+          "before": ", not observed data or advice for an actual event",
+          "after": ""
+        },
+        {
+          "start": 382,
+          "end": 383,
+          "before": "C",
+          "after": "Matching the venue to the weather—indo"
+        },
+        {
+          "start": 385,
+          "end": 396,
+          "before": "rect choice",
+          "after": ""
+        },
+        {
+          "start": 398,
+          "end": 398,
+          "before": "",
+          "after": "in rain or outdoors on a dry day—"
+        },
+        {
+          "start": 400,
+          "end": 402,
+          "before": "ve",
+          "after": "s"
+        },
+        {
+          "start": 1313,
+          "end": 1313,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1385,
+          "end": 1385,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1386,
+          "end": 1554,
+          "before": ">\n<text x=\"400\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\">One forecast, two decisions</text",
+          "after": ""
+        },
+        {
+          "start": 1657,
+          "end": 1657,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1944,
+          "end": 1944,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2115,
+          "end": 2117,
+          "before": "11",
+          "after": "03.0"
+        },
+        {
+          "start": 2194,
+          "end": 2195,
+          "before": "8",
+          "after": "4"
+        },
+        {
+          "start": 2243,
+          "end": 2244,
+          "before": "2",
+          "after": "indoors, dry"
+        },
+        {
+          "start": 2270,
+          "end": 2272,
+          "before": "11",
+          "after": "03.0"
+        },
+        {
+          "start": 2349,
+          "end": 2350,
+          "before": "8",
+          "after": "4"
+        },
+        {
+          "start": 2398,
+          "end": 2399,
+          "before": "8",
+          "after": "outdoors, rain"
+        },
+        {
+          "start": 2690,
+          "end": 2690,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3561,
+          "end": 3561,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3732,
+          "end": 3734,
+          "before": "11",
+          "after": "03.0"
+        },
+        {
+          "start": 3811,
+          "end": 3812,
+          "before": "8",
+          "after": "4"
+        },
+        {
+          "start": 3860,
+          "end": 3861,
+          "before": "6",
+          "after": "indoors, dry"
+        },
+        {
+          "start": 3887,
+          "end": 3889,
+          "before": "11",
+          "after": "03.0"
+        },
+        {
+          "start": 3966,
+          "end": 3967,
+          "before": "8",
+          "after": "4"
+        },
+        {
+          "start": 4015,
+          "end": 4016,
+          "before": "4",
+          "after": "outdoors, rain"
+        },
+        {
+          "start": 4307,
+          "end": 4307,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 5058,
+          "end": 5058,
+          "before": "",
+          "after": "<text x=\"400\" y=\"208\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#526778\" font-weight=\"400\">Hypothetical losses: indoors/rain or outdoors/dry = 0</text><text x=\"70.0\" y=\"334.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 2</text><text x=\"430.0\" y=\"334.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 8</text><text x=\"70.0\" y=\"634.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 6</text><text x=\"430.0\" y=\"634.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"24\" fill=\"#17324d\" font-weight=\"400\">loss = 4</text>"
+        }
+      ]
+    },
+    "communication-grounding.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "8dd2c74a74af616ecfc9f1f97a2d2c8d1981436818f09c0446412cf634cb677b",
+      "output_sha256": "1b97b4a2d8ea6928a9f7ffd54e2a95ac7da1a6a21d8b22bbbb82e98b74d109be",
+      "source_viewBox": "0 0 760 1000",
+      "reviewed_viewBox": "0 153 760 713",
+      "removed_texts": [
+        "Understanding developsthrough checking",
+        "Seek enough understanding for this purposeand check it again in the next exchange."
+      ],
+      "review_notes": "Removed the outer heading and repeated closing explanation. Person/context distinctions, words/signals, correction, and return path are unchanged.",
+      "information_review": {
+        "status": "REVISED",
+        "changes": [
+          {
+            "before": "Check and repair",
+            "after": "Grounding: check and repair"
+          }
+        ],
+        "purpose": "Explain grounding as an exchange that checks and repairs interpretations.",
+        "rationale": "Added the conventional term Grounding to the existing check-and-repair node; its question/paraphrase/correction definition remains directly underneath."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 60,
+          "before": "",
+          "after": "7"
+        },
+        {
+          "start": 61,
+          "end": 64,
+          "before": "000",
+          "after": "3"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "153"
+        },
+        {
+          "start": 83,
+          "end": 83,
+          "before": "",
+          "after": "7"
+        },
+        {
+          "start": 84,
+          "end": 87,
+          "before": "000",
+          "after": "3"
+        },
+        {
+          "start": 791,
+          "end": 791,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 971,
+          "end": 971,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1150,
+          "end": 1150,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1213,
+          "end": 1213,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1214,
+          "end": 1437,
+          "before": ">\n<text x=\"380\" y=\"58\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Understanding develops</tspan><tspan x=\"380\" dy=\"47.12\">through checking</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 1544,
+          "end": 1544,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1993,
+          "end": 1993,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2101,
+          "end": 2101,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2563,
+          "end": 2563,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2671,
+          "end": 2671,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3125,
+          "end": 3125,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3233,
+          "end": 3233,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3293,
+          "end": 3294,
+          "before": "2",
+          "after": "0"
+        },
+        {
+          "start": 3345,
+          "end": 3350,
+          "before": "<tspa",
+          "after": "Grou"
+        },
+        {
+          "start": 3351,
+          "end": 3351,
+          "before": "",
+          "after": "ding:"
+        },
+        {
+          "start": 3352,
+          "end": 3370,
+          "before": "x=\"380.0\" dy=\"0\">C",
+          "after": "c"
+        },
+        {
+          "start": 3388,
+          "end": 3396,
+          "before": "span></t",
+          "after": ""
+        },
+        {
+          "start": 3707,
+          "end": 3707,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3710,
+          "end": 3973,
+          "before": "<text x=\"380\" y=\"919\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Seek enough understanding for this purpose</tspan><tspan x=\"380\" dy=\"34.72\">and check it again in the next exchange.</tspan></text>\n",
+          "after": ""
+        }
+      ]
+    },
+    "context-mechanisms.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "e43012a281b8895d69101eed7a8c7e3e5249ba1d7f6cbc16d1ccbf25586715e6",
+      "output_sha256": "06f94612e060d896136de492bd6eb2f59da0441b679a09e5f94240846b2aca4a",
+      "source_viewBox": "0 0 760 1040",
+      "reviewed_viewBox": "0 145 760 820",
+      "removed_texts": [
+        "Four questions about context",
+        "Ask which mechanism the evidence supports."
+      ],
+      "review_notes": "Removed broad heading and bottom reminder. Kept four named mechanisms and their distinct diagnostic questions.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "Framing, priming, fluency, and defaults influence choice through different mechanisms.",
+        "rationale": "The four standard mechanism names each carry a distinct diagnostic question and a short explanation. This already supplies the intended conceptual comparison.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "104",
+          "after": "82"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "145"
+        },
+        {
+          "start": 83,
+          "end": 86,
+          "before": "104",
+          "after": "82"
+        },
+        {
+          "start": 1112,
+          "end": 1323,
+          "before": "<text x=\"380\" y=\"60\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Four questions</tspan><tspan x=\"380\" dy=\"47.12\">about context</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 3352,
+          "end": 3541,
+          "before": "<text x=\"380\" y=\"1003\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Ask which mechanism the evidence supports.</tspan></text>",
+          "after": ""
+        }
+      ]
+    },
+    "conversation-needs-map.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "a86958858f28667e106291fc506f5402e4a5e1f04e04fe05e7a1bc700d5c1e4b",
+      "output_sha256": "9402f635bc24c46d6204f511d51c31dbaf9749851906607517ff090478081f59",
+      "source_viewBox": "0 0 760 1200",
+      "reviewed_viewBox": "0 86 760 941",
+      "removed_texts": [
+        "Ask what would help, then listen and update.The same conversation can involve several needs.",
+        "What kind of help is wanted?"
+      ],
+      "review_notes": "Kept the common quoted utterance as the input; removed its redundant question and closing summary. Moved the retained quote closer to the cards. All three kinds of need and clarifying examples remain. Overlapping needs are explained in Chapter 34 Core Idea.",
+      "information_review": {
+        "status": "PASS",
+        "changes": [],
+        "purpose": "Show three possible needs behind one utterance and questions that test them.",
+        "rationale": "The shared utterance, named practical/emotional/identity needs, and three clarifying responses already make the alternatives understandable without prose. The questions avoid diagnosing intent from the words alone."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 60,
+          "before": "",
+          "after": "94"
+        },
+        {
+          "start": 61,
+          "end": 64,
+          "before": "200",
+          "after": ""
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "86"
+        },
+        {
+          "start": 83,
+          "end": 83,
+          "before": "",
+          "after": "94"
+        },
+        {
+          "start": 84,
+          "end": 87,
+          "before": "200",
+          "after": ""
+        },
+        {
+          "start": 758,
+          "end": 758,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 938,
+          "end": 938,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1117,
+          "end": 1117,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1180,
+          "end": 1180,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1200,
+          "end": 1201,
+          "before": "6",
+          "after": ""
+        },
+        {
+          "start": 1202,
+          "end": 1202,
+          "before": "",
+          "after": "45"
+        },
+        {
+          "start": 1353,
+          "end": 1415,
+          "before": "tspan x=\"380\" dy=\"47.12\">What kind of help is wanted?</tspan><",
+          "after": ""
+        },
+        {
+          "start": 1526,
+          "end": 1526,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2126,
+          "end": 2126,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2726,
+          "end": 2726,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3240,
+          "end": 3514,
+          "before": "<text x=\"380\" y=\"1101\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Ask what would help, then listen and update.</tspan><tspan x=\"380\" dy=\"34.72\">The same conversation can involve several needs.</tspan></text>\n",
+          "after": ""
+        }
+      ]
+    },
+    "digital-arrow-affordance.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "64051e580918903883d93f9bab3ab339b815f6bb48d35fddd4875853e782ea65",
+      "output_sha256": "ae29ba995249f53bf155f1de4d040f3171694fabc737350866d1ab2919022702",
+      "source_viewBox": "0 0 760 1130",
+      "reviewed_viewBox": "0 144 760 756",
+      "removed_texts": [
+        "Make the next stepeasier to notice",
+        "Reported clicks rose after the bundle.That does not isolate the arrow’s effector show that choices improved."
+      ],
+      "review_notes": "Removed the outer slogan and repeated reported-result paragraph. Renamed Original presentation to Illustrative baseline so the graphic does not imply original test stimuli. Kept identical generic ad copy, the cue comparison, and the bundled-redesign label; causal limitations and provenance remain explicit in the caption/body.",
+      "information_review": {
+        "status": "PASS",
+        "changes": [],
+        "purpose": "Illustrate a more visible action cue within a bundled redesign.",
+        "rationale": "Illustrative baseline explicitly prevents confusion with original test stimuli; the change is labeled as an arrow/type/spacing/layout bundle. There is no isolated-effect estimate in the figure, so its visual comparison does not claim one."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 64,
+          "before": "1130",
+          "after": "756"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "144"
+        },
+        {
+          "start": 83,
+          "end": 87,
+          "before": "1130",
+          "after": "756"
+        },
+        {
+          "start": 813,
+          "end": 813,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 993,
+          "end": 993,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1172,
+          "end": 1172,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1235,
+          "end": 1235,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1236,
+          "end": 1455,
+          "before": ">\n<text x=\"380\" y=\"57\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Make the next step</tspan><tspan x=\"380\" dy=\"47.12\">easier to notice</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 1561,
+          "end": 1561,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1697,
+          "end": 1698,
+          "before": "O",
+          "after": "Illust"
+        },
+        {
+          "start": 1699,
+          "end": 1713,
+          "before": "iginal present",
+          "after": ""
+        },
+        {
+          "start": 1716,
+          "end": 1717,
+          "before": "o",
+          "after": "ve baseli"
+        },
+        {
+          "start": 1718,
+          "end": 1718,
+          "before": "",
+          "after": "e"
+        },
+        {
+          "start": 1839,
+          "end": 1839,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2354,
+          "end": 2354,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2474,
+          "end": 2474,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2594,
+          "end": 2594,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2931,
+          "end": 2931,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3213,
+          "end": 3213,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3696,
+          "end": 3696,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3816,
+          "end": 3816,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3819,
+          "end": 4142,
+          "before": "<text x=\"380\" y=\"946\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Reported clicks rose after the bundle.</tspan><tspan x=\"380\" dy=\"34.72\">That does not isolate the arrow’s effect</tspan><tspan x=\"380\" dy=\"34.72\">or show that choices improved.</tspan></text>\n",
+          "after": ""
+        }
+      ]
+    },
+    "fast-slow.svg": {
+      "generator": "build_judgment_figures.py",
+      "input_sha256": "aad85399ce1ab14c7ff415d06fe79c2490677386ec7458a19fa023e2c87675c4",
+      "output_sha256": "8db9b8cafeaf90edc9d6548301c3c9d098b1c26653773a05977512c704609ae9",
+      "source_viewBox": "0 0 760 992",
+      "reviewed_viewBox": "0 60 760 872",
+      "removed_texts": [
+        "System 1 and System 2",
+        "Neither family guarantees accuracy."
+      ],
+      "review_notes": "Removed heading repeating the column labels. Kept the process-family/nonliteral-brain qualification, paired process features, arrows, and practice-dependent change. Removed only the final accuracy sentence, which duplicates the fallibility row in each column.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "System 1 and System 2 name clusters of processing features. Automatic processes often supply candidate answers; working-memory-dependent processes can sometimes inspect, inhibit, redirect, or train them.",
+        "rationale": "Both conventional system names, parallel features, uncertainty/fallibility, checking and training, and the nonliteral-brain qualification are visible. No glossary additions are warranted.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 62,
+          "before": "99",
+          "after": "87"
+        },
+        {
+          "start": 76,
+          "end": 76,
+          "before": "",
+          "after": "6"
+        },
+        {
+          "start": 82,
+          "end": 84,
+          "before": "99",
+          "after": "87"
+        },
+        {
+          "start": 951,
+          "end": 1116,
+          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"380\" y=\"52\">System 1 and System 2</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 4604,
+          "end": 4606,
+          "before": "12",
+          "after": ""
+        },
+        {
+          "start": 4607,
+          "end": 4607,
+          "before": "",
+          "after": "0"
+        },
+        {
+          "start": 4853,
+          "end": 4919,
+          "before": "tspan x=\"380\" y=\"917\">Neither family guarantees accuracy.</tspan><",
+          "after": ""
+        }
+      ]
+    },
+    "finance-euro-efficiency.svg": {
+      "generator": "build_new_chapter_figures.py",
+      "input_sha256": "53412ed9c7e76e5d404349fc8af6e60423b539077b1156472fec8db227775c61",
+      "output_sha256": "ac5cbe9c78c97a64d15ce257c3eed34521676fc7bc69372e92c32bbea8099c88",
+      "source_viewBox": "0 0 1200 740",
+      "reviewed_viewBox": "0 120 1200 580",
+      "removed_texts": [
+        "The €20 note: three different efficiency claims",
+        "Finding a reward is not the same as proving that prices are always right.",
+        "A €20 NOTE STILL ON THE GROUND",
+        "Finding it required someone to notice,",
+        "stop, and pick it up.",
+        "An opportunity may exist because discovering and exploiting it consumes attention, information, capital, and risk-bearing capacity."
+      ],
+      "review_notes": "Photograph makes its removed description obvious; retained search-cost label, three distinct claims and nonimplication qualification.",
+      "information_review": {
+        "status": "PASS",
+        "purpose": "Separate three market-efficiency claims prompted by the banknote illustration.",
+        "rationale": "All three claims are defined, risk/cost qualifications are explicit, and the nonimplication between the weaker and stronger claims remains.",
+        "changed_labels": []
+      },
+      "patches": [
+        {
+          "start": 14,
+          "end": 15,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 29,
+          "end": 30,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 35,
+          "end": 36,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 100,
+          "end": 102,
+          "before": "74",
+          "after": "58"
+        },
+        {
+          "start": 116,
+          "end": 116,
+          "before": "",
+          "after": "12"
+        },
+        {
+          "start": 123,
+          "end": 125,
+          "before": "74",
+          "after": "58"
+        },
+        {
+          "start": 711,
+          "end": 711,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 915,
+          "end": 915,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1038,
+          "end": 1038,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1089,
+          "end": 1091,
+          "before": "74",
+          "after": "58"
+        },
+        {
+          "start": 1108,
+          "end": 1116,
+          "before": "/>\n<text",
+          "after": ""
+        },
+        {
+          "start": 1120,
+          "end": 1122,
+          "before": "60",
+          "after": ""
+        },
+        {
+          "start": 1128,
+          "end": 1196,
+          "before": "48\" text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"33.",
+          "after": "12"
+        },
+        {
+          "start": 1199,
+          "end": 1281,
+          "before": "font-weight=\"700\" fill=\"#17324d\" >The €20 note: three different efficiency claims<",
+          "after": ""
+        },
+        {
+          "start": 1282,
+          "end": 1492,
+          "before": "text>\n<text x=\"600\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"20.0\" font-weight=\"400\" fill=\"#66737f\" >Finding a reward is not the same as proving that prices are always right.</text",
+          "after": ""
+        },
+        {
+          "start": 1535,
+          "end": 1535,
+          "before": "",
+          "after": "3"
+        },
+        {
+          "start": 1536,
+          "end": 1538,
+          "before": "55",
+          "after": "0"
+        },
+        {
+          "start": 1618,
+          "end": 1618,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1709,
+          "end": 1709,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 355327,
+          "end": 355327,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 355429,
+          "end": 355429,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 355430,
+          "end": 355921,
+          "before": ">\n<text x=\"238\" y=\"448\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"17.0\" font-weight=\"700\" fill=\"#544981\" >A €20 NOTE STILL ON THE GROUND</text>\n<text x=\"238\" y=\"480\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >Finding it required someone to notice,</text>\n<text x=\"238\" y=\"504\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16.0\" font-weight=\"400\" fill=\"#66737f\" >stop, and pick it up.</text",
+          "after": ""
+        },
+        {
+          "start": 355939,
+          "end": 355940,
+          "before": "5",
+          "after": ""
+        },
+        {
+          "start": 355941,
+          "end": 355942,
+          "before": "0",
+          "after": "28"
+        },
+        {
+          "start": 356044,
+          "end": 356044,
+          "before": "",
+          "after": "4"
+        },
+        {
+          "start": 356045,
+          "end": 356047,
+          "before": "67",
+          "after": "5"
+        },
+        {
+          "start": 356149,
+          "end": 356150,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 356263,
+          "end": 356263,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 356339,
+          "end": 356339,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 356446,
+          "end": 356446,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 356574,
+          "end": 356574,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 356700,
+          "end": 356701,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 356861,
+          "end": 356862,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 357028,
+          "end": 357029,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 357186,
+          "end": 357187,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 357328,
+          "end": 357328,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 357456,
+          "end": 357456,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 357582,
+          "end": 357583,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 357731,
+          "end": 357732,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 357900,
+          "end": 357901,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 358067,
+          "end": 358068,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 358218,
+          "end": 358218,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 358346,
+          "end": 358346,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 358472,
+          "end": 358473,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 358626,
+          "end": 358627,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 358793,
+          "end": 358794,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 358941,
+          "end": 358942,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 359021,
+          "end": 359022,
+          "before": "6",
+          "after": "4"
+        },
+        {
+          "start": 359209,
+          "end": 359210,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 359282,
+          "end": 359545,
+          "before": "text x=\"600\" y=\"703\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"400\" fill=\"#66737f\" >An opportunity may exist because discovering and exploiting it consumes attention, information, capital, and risk-bearing capacity.</text>\n<",
+          "after": ""
+        },
+        {
+          "start": 359550,
+          "end": 359551,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "finance-event-study-drift.svg": {
+      "generator": "build_new_chapter_figures.py",
+      "input_sha256": "65ad77f9cdd7829c26c4c0483c3be369fed7dcf9ef1dfba659ef9cb1312fca8a",
+      "output_sha256": "2116b838a21b20e524fc43f302cada83918eb1ddc7112b04d3d91c7a53c40f54",
+      "source_viewBox": "0 0 1200 750",
+      "reviewed_viewBox": "0 175 1200 550",
+      "removed_texts": [
+        "An event study separates reaction from drift",
+        "Define the windows before reading the return path"
+      ],
+      "review_notes": "Retain event windows, first-public-time definition, return-path panel and audit inputs; curves remain explicitly schematic in caption/metadata.",
+      "information_review": {
+        "status": "REVISED",
+        "purpose": "Explain event windows, abnormal returns and post-event drift without presenting empirical estimates.",
+        "rationale": "Mark the return panel as schematic and define its vertical quantity as cumulative observed minus expected return.",
+        "changed_labels": [
+          {
+            "before": "Cumulative abnormal return",
+            "after": "Schematic cumulative abnormal return",
+            "attributes": {}
+          },
+          {
+            "before": null,
+            "after": "Cumulative observed − expected return",
+            "attributes": {
+              "x": "95",
+              "y": "497",
+              "font-family": "Arial, sans-serif",
+              "font-size": "16",
+              "font-weight": "400",
+              "fill": "#536879",
+              "text-anchor": "middle",
+              "transform": "rotate(-90 95 497)"
+            }
+          }
+        ]
+      },
+      "patches": [
+        {
+          "start": 14,
+          "end": 15,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 29,
+          "end": 30,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 35,
+          "end": 36,
+          "before": "\"",
+          "after": "'"
+        },
+        {
+          "start": 100,
+          "end": 101,
+          "before": "7",
+          "after": "5"
+        },
+        {
+          "start": 116,
+          "end": 117,
+          "before": "0",
+          "after": "175"
+        },
+        {
+          "start": 123,
+          "end": 124,
+          "before": "7",
+          "after": "5"
+        },
+        {
+          "start": 801,
+          "end": 801,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1005,
+          "end": 1005,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1128,
+          "end": 1128,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1179,
+          "end": 1180,
+          "before": "7",
+          "after": "5"
+        },
+        {
+          "start": 1198,
+          "end": 1206,
+          "before": "/>\n<text",
+          "after": ""
+        },
+        {
+          "start": 1210,
+          "end": 1212,
+          "before": "60",
+          "after": ""
+        },
+        {
+          "start": 1218,
+          "end": 1220,
+          "before": "48",
+          "after": "175"
+        },
+        {
+          "start": 1222,
+          "end": 1368,
+          "before": "text-anchor=\"middle\" font-family=\"Georgia, serif\" font-size=\"33.0\" font-weight=\"700\" fill=\"#17324d\" >An event study separates reaction from drift<",
+          "after": ""
+        },
+        {
+          "start": 1369,
+          "end": 1616,
+          "before": "text>\n<text x=\"600\" y=\"80\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"20.0\" font-weight=\"400\" fill=\"#66737f\" >A schematic of the design logic behind post-earnings-announcement drift—not a reproduced effect-size estimate.</text",
+          "after": ""
+        },
+        {
+          "start": 1635,
+          "end": 1637,
+          "before": "12",
+          "after": "80"
+        },
+        {
+          "start": 1661,
+          "end": 1663,
+          "before": "75",
+          "after": "02"
+        },
+        {
+          "start": 1723,
+          "end": 1906,
+          "before": ">\n<text x=\"600\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"22.0\" font-weight=\"700\" fill=\"#17324d\" >Define the windows before reading the return path</text",
+          "after": ""
+        },
+        {
+          "start": 1984,
+          "end": 1984,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2088,
+          "end": 2088,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2215,
+          "end": 2216,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 2364,
+          "end": 2365,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 2504,
+          "end": 2504,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2631,
+          "end": 2632,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 2768,
+          "end": 2769,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 2896,
+          "end": 2896,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3023,
+          "end": 3024,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 3172,
+          "end": 3173,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 3440,
+          "end": 3440,
+          "before": "",
+          "after": ">Schematic"
+        },
+        {
+          "start": 3441,
+          "end": 3443,
+          "before": ">C",
+          "after": "c"
+        },
+        {
+          "start": 3468,
+          "end": 3480,
+          "before": " (schematic)",
+          "after": ""
+        },
+        {
+          "start": 3567,
+          "end": 3567,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3797,
+          "end": 3798,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 3918,
+          "end": 3918,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4043,
+          "end": 4044,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 4181,
+          "end": 4182,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 4296,
+          "end": 4296,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4505,
+          "end": 4505,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4714,
+          "end": 4714,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4765,
+          "end": 4765,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4891,
+          "end": 4892,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5041,
+          "end": 5042,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5300,
+          "end": 5301,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5440,
+          "end": 5441,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5585,
+          "end": 5586,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5735,
+          "end": 5736,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 5875,
+          "end": 5876,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 6019,
+          "end": 6020,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 6165,
+          "end": 6166,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 6315,
+          "end": 6316,
+          "before": " ",
+          "after": ""
+        },
+        {
+          "start": 6330,
+          "end": 6330,
+          "before": "",
+          "after": "\n"
+        },
+        {
+          "start": 6339,
+          "end": 6342,
+          "before": "600",
+          "after": "95"
+        },
+        {
+          "start": 6347,
+          "end": 6347,
+          "before": "",
+          "after": "49"
+        },
+        {
+          "start": 6348,
+          "end": 6371,
+          "before": "25\" text-anchor=\"middle",
+          "after": ""
+        },
+        {
+          "start": 6445,
+          "end": 6445,
+          "before": "",
+          "after": "53"
+        },
+        {
+          "start": 6446,
+          "end": 6447,
+          "before": "6",
+          "after": "8"
+        },
+        {
+          "start": 6448,
+          "end": 6451,
+          "before": "37f",
+          "after": "9"
+        },
+        {
+          "start": 6453,
+          "end": 6453,
+          "before": "",
+          "after": "text-anchor=\"middle\" transform=\"rotate(-90 95 497)\""
+        },
+        {
+          "start": 6454,
+          "end": 6458,
+          "before": "A de",
+          "after": "Cumu"
+        },
+        {
+          "start": 6460,
+          "end": 6461,
+          "before": "y",
+          "after": "tive observ"
+        },
+        {
+          "start": 6464,
+          "end": 6560,
+          "before": "separation can indicate slow updating, but also benchmark error, overlapping news, frictions, or",
+          "after": "−"
+        },
+        {
+          "start": 6563,
+          "end": 6564,
+          "before": "-",
+          "after": ""
+        },
+        {
+          "start": 6565,
+          "end": 6574,
+          "before": "ost sampl",
+          "after": ""
+        },
+        {
+          "start": 6575,
+          "end": 6583,
+          "before": " constru",
+          "after": ""
+        },
+        {
+          "start": 6585,
+          "end": 6587,
+          "before": "io",
+          "after": "ed retur"
+        },
+        {
+          "start": 6588,
+          "end": 6589,
+          "before": ".",
+          "after": ""
+        },
+        {
+          "start": 6596,
+          "end": 6597,
+          "before": "\n",
+          "after": ""
+        },
+        {
+          "start": 6603,
+          "end": 6604,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "fluency-pathway.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "820189921ed640049167eb9b1c6a42b95d6bebd0151ef9d2316ddd725853f179",
+      "output_sha256": "32bf22827d38666e72f0ffcc7499e01b2b87154700e250e34d49a8dd5f8e1e2c",
+      "source_viewBox": "0 0 760 1040",
+      "reviewed_viewBox": "0 140 760 882",
+      "removed_texts": [
+        "When ease becomes evidence"
+      ],
+      "review_notes": "Removed title repeating the mechanism; retained sources, possible judgments, and evidence-check questions, including their uncertainty wording.",
+      "information_review": {
+        "status": "REVISED",
+        "teaching_purpose": "Repetition, clarity, familiarity, and pronounceability can alter processing ease. Ease can influence perceived truth, liking, confidence, and judgments of risk or safety.",
+        "rationale": "The mechanism used only the informal label processing ease. Its standard term now labels the same node; the retained explanation immediately defines the feeling of smooth, familiar or coherent processing.",
+        "terms_changed": [
+          "processing fluency"
+        ]
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 64,
+          "before": "1040",
+          "after": "882"
+        },
+        {
+          "start": 77,
+          "end": 77,
+          "before": "",
+          "after": "14"
+        },
+        {
+          "start": 83,
+          "end": 87,
+          "before": "1040",
+          "after": "882"
+        },
+        {
+          "start": 298,
+          "end": 298,
+          "before": "",
+          "after": "fluency, the feeling that information is "
+        },
+        {
+          "start": 301,
+          "end": 301,
+          "before": "",
+          "after": "y to proc"
+        },
+        {
+          "start": 302,
+          "end": 302,
+          "before": "",
+          "after": "ss"
+        },
+        {
+          "start": 1188,
+          "end": 1397,
+          "before": "<text x=\"380\" y=\"59\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">When ease</tspan><tspan x=\"380\" dy=\"47.12\">becomes evidence</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 2161,
+          "end": 2161,
+          "before": "",
+          "after": "flu"
+        },
+        {
+          "start": 2162,
+          "end": 2165,
+          "before": "ase",
+          "after": "ncy"
+        }
+      ]
+    },
+    "habit-formation-curve.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "e9f364259ce21be6b0a0e9ed48ed7afbb9ca404f3a9dba9b41a283dc1f0e8c18",
+      "output_sha256": "4e4f7a13fa14038284b4c9c7380dc615517cc5ae27e7744b69b9d9b9482e858d",
+      "source_viewBox": "0 0 760 930",
+      "reviewed_viewBox": "0 125 760 770",
+      "removed_texts": [
+        "Habit formation hasno fixed deadline"
+      ],
+      "review_notes": "Retain illustrative-shape label, Lally study attribution, 95 percent plateau criterion, range and median.",
+      "information_review": {
+        "status": "PASS",
+        "purpose": "Separate a schematic increase in automaticity from observed modeled formation times.",
+        "rationale": "Illustrative shape, axes, plateau, source, 95-percent criterion and range/median are visible.",
+        "changed_labels": []
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 0,
+          "before": "",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+        },
+        {
+          "start": 60,
+          "end": 62,
+          "before": "93",
+          "after": "77"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "125"
+        },
+        {
+          "start": 82,
+          "end": 84,
+          "before": "93",
+          "after": "77"
+        },
+        {
+          "start": 786,
+          "end": 786,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 966,
+          "end": 966,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1145,
+          "end": 1145,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1190,
+          "end": 1192,
+          "before": "93",
+          "after": "77"
+        },
+        {
+          "start": 1207,
+          "end": 1215,
+          "before": "/>\n<text",
+          "after": ""
+        },
+        {
+          "start": 1219,
+          "end": 1221,
+          "before": "38",
+          "after": ""
+        },
+        {
+          "start": 1227,
+          "end": 1227,
+          "before": "",
+          "after": "12"
+        },
+        {
+          "start": 1228,
+          "end": 1229,
+          "before": "6",
+          "after": ""
+        },
+        {
+          "start": 1231,
+          "end": 1365,
+          "before": "text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Habit formation has<",
+          "after": ""
+        },
+        {
+          "start": 1366,
+          "end": 1429,
+          "before": "tspan><tspan x=\"380\" dy=\"47.12\">no fixed deadline</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 1688,
+          "end": 1688,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1802,
+          "end": 1802,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1884,
+          "end": 1884,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2401,
+          "end": 2401,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3416,
+          "end": 3417,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "heuristic-substitution.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "5a67e9b3eed6bcf30897a65b41069880b41a3544dc0cf867e7cf0a138e4d998f",
+      "output_sha256": "ad5ea4e9ab90b3cec9e4a8edc2cabda428a6222a684c640a00a6cfc3afcfd160",
+      "source_viewBox": "0 0 760 940",
+      "reviewed_viewBox": "0 140 760 615",
+      "removed_texts": [
+        "Notice when the question changes",
+        "Does the founder’s impression provide good evidence about project success?",
+        "An informative cue can still receive too much weight."
+      ],
+      "review_notes": "Removed opening slogan and two bottom recaps. The concrete target question, substitute question, and substituted answer remain; surrounding prose explicitly explains diagnosticity and overweighting. Accessible description presents cue diagnosticity as a separate check, not a retained visual panel.",
+      "information_review": {
+        "status": "REVISED",
+        "teaching_purpose": "A heuristic often answers an easier question than the one the decision actually requires.",
+        "rationale": "The two questions and quick answer already explain the example, but the standard mechanism was absent. A connector label names the substitution at the point where the easier question replaces the target.",
+        "terms_changed": [
+          "attribute substitution"
+        ]
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "940",
+          "after": "615"
+        },
+        {
+          "start": 76,
+          "end": 76,
+          "before": "",
+          "after": "14"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "940",
+          "after": "615"
+        },
+        {
+          "start": 225,
+          "end": 225,
+          "before": "",
+          "after": "ttribute substitution: a"
+        },
+        {
+          "start": 369,
+          "end": 387,
+          "before": "The audit checks w",
+          "after": "W"
+        },
+        {
+          "start": 438,
+          "end": 438,
+          "before": "",
+          "after": " requires a separate check"
+        },
+        {
+          "start": 1187,
+          "end": 1402,
+          "before": "<text x=\"380\" y=\"58\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Notice when the</tspan><tspan x=\"380\" dy=\"47.12\">question changes</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 3039,
+          "end": 3039,
+          "before": "",
+          "after": "\n\n"
+        },
+        {
+          "start": 3048,
+          "end": 3050,
+          "before": "38",
+          "after": "4"
+        },
+        {
+          "start": 3051,
+          "end": 3051,
+          "before": "",
+          "after": "4"
+        },
+        {
+          "start": 3056,
+          "end": 3058,
+          "before": "79",
+          "after": "36"
+        },
+        {
+          "start": 3074,
+          "end": 3074,
+          "before": "",
+          "after": "start\" font-fa"
+        },
+        {
+          "start": 3076,
+          "end": 3078,
+          "before": "dd",
+          "after": ""
+        },
+        {
+          "start": 3079,
+          "end": 3079,
+          "before": "",
+          "after": "y=\"Arial, sans-s"
+        },
+        {
+          "start": 3080,
+          "end": 3080,
+          "before": "",
+          "after": "rif"
+        },
+        {
+          "start": 3094,
+          "end": 3095,
+          "before": "8",
+          "after": "5"
+        },
+        {
+          "start": 3097,
+          "end": 3125,
+          "before": "font-weight=\"normal\" style=\"",
+          "after": ""
+        },
+        {
+          "start": 3129,
+          "end": 3144,
+          "before": ":#183047\" class",
+          "after": ""
+        },
+        {
+          "start": 3146,
+          "end": 3146,
+          "before": "",
+          "after": "#52677b"
+        },
+        {
+          "start": 3148,
+          "end": 3149,
+          "before": "<",
+          "after": "A"
+        },
+        {
+          "start": 3150,
+          "end": 3175,
+          "before": "span x=\"380\" dy=\"0\">Does ",
+          "after": ""
+        },
+        {
+          "start": 3176,
+          "end": 3177,
+          "before": "h",
+          "after": "ribut"
+        },
+        {
+          "start": 3179,
+          "end": 3181,
+          "before": "fo",
+          "after": "s"
+        },
+        {
+          "start": 3182,
+          "end": 3187,
+          "before": "nder’",
+          "after": "b"
+        },
+        {
+          "start": 3188,
+          "end": 3189,
+          "before": " ",
+          "after": "t"
+        },
+        {
+          "start": 3190,
+          "end": 3196,
+          "before": "mpress",
+          "after": "tut"
+        },
+        {
+          "start": 3199,
+          "end": 3285,
+          "before": " provide</tspan><tspan x=\"380\" dy=\"34.72\">good evidence about project success?</tspan>",
+          "after": ""
+        },
+        {
+          "start": 3293,
+          "end": 3493,
+          "before": "<text x=\"380\" y=\"887\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">An informative cue can still receive too much weight.</tspan></text>\n",
+          "after": ""
+        }
+      ]
+    },
+    "master-loop-part-1.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "b5d6cb4bff938a17f83bf5199807fbd3002c472275e7dd89dccfbff94a373a50",
+      "output_sha256": "ef43e2c4d376b2644aca55827eccf9d16214c65445304f78d87d15a25d1e888b",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 55 640 448",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Removed generic heading; the three reading questions remain as the figure itself.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "What is the decision, how does the judgment form, and what can we learn afterward? Part I moves from defining a choice to examining the process behind it.",
+        "rationale": "A reading route: the three questions and their order supply the complete intended information. No extra heading or glossary is needed.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "448"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "55"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "448"
+        },
+        {
+          "start": 608,
+          "end": 771,
+          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"320\" y=\"43\">The questions ahead</tspan></text>",
+          "after": ""
+        }
+      ]
+    },
+    "master-loop-part-2.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "954f5184c991d30054dafd60f333d3815cda365940fab895e91fce599158e89e",
+      "output_sha256": "bee07093b7a40062a96d44413bfbbf0f8698460d181e7af82b7807b24965ed86",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 55 640 448",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Removed generic heading; retained the three distinct reading questions.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "What guides intuition, when does it mislead, and how can we check it? Part II connects quick judgments to comparisons and statistical tests.",
+        "rationale": "The three ordered questions constitute the reading route. Restoring a generic heading adds no conceptual information.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "448"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "55"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "448"
+        },
+        {
+          "start": 589,
+          "end": 752,
+          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"320\" y=\"43\">The questions ahead</tspan></text>",
+          "after": ""
+        }
+      ]
+    },
+    "master-loop-part-3.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "a340b5e49cc1cf59858839a47a8bcf932be2257aa5fd2a78f2206eaf570b9529",
+      "output_sha256": "57f216baaabcc997a89fbe185ef22e68e3eb53bcb4330c46b55d2e87ee8bf0d7",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 62 640 436",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Retain all three reading questions and their order; remove generic repeated heading.",
+      "information_review": {
+        "status": "PASS",
+        "purpose": "Preview the part's questions about outcomes, time and life quality.",
+        "rationale": "All three questions and their reading sequence are explicit; a separate heading adds no missing information.",
+        "changed_labels": []
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 0,
+          "before": "",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "62"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 534,
+          "end": 534,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 579,
+          "end": 582,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 595,
+          "end": 711,
+          "before": "/>\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan",
+          "after": ""
+        },
+        {
+          "start": 715,
+          "end": 717,
+          "before": "32",
+          "after": ""
+        },
+        {
+          "start": 723,
+          "end": 725,
+          "before": "43",
+          "after": "62"
+        },
+        {
+          "start": 726,
+          "end": 730,
+          "before": ">The",
+          "after": ""
+        },
+        {
+          "start": 731,
+          "end": 747,
+          "before": "questions ahead<",
+          "after": ""
+        },
+        {
+          "start": 748,
+          "end": 760,
+          "before": "tspan></text",
+          "after": ""
+        },
+        {
+          "start": 884,
+          "end": 884,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1203,
+          "end": 1203,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1329,
+          "end": 1329,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1645,
+          "end": 1645,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1771,
+          "end": 1771,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1952,
+          "end": 1953,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "master-loop-part-4.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "4c8b8f452198677897c191d00d0011596a4a26d6d305eb3163742c4b6ca4e0b8",
+      "output_sha256": "bb0d2a2df5eb1fe38dc984ca43bb5ac6b053509db4ecca16d95da1697b4eb49b",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 62 640 436",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Retain three reading questions and their order; remove repeated generic heading.",
+      "information_review": {
+        "status": "PASS",
+        "purpose": "Preview questions about strategic dependence, cooperation and collective outcomes.",
+        "rationale": "Three explicit questions and their sequence are sufficient for a part route.",
+        "changed_labels": []
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 0,
+          "before": "",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "62"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 554,
+          "end": 554,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 599,
+          "end": 602,
+          "before": "520",
+          "after": "436"
+        },
+        {
+          "start": 615,
+          "end": 731,
+          "before": "/>\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan",
+          "after": ""
+        },
+        {
+          "start": 735,
+          "end": 737,
+          "before": "32",
+          "after": ""
+        },
+        {
+          "start": 743,
+          "end": 745,
+          "before": "43",
+          "after": "62"
+        },
+        {
+          "start": 746,
+          "end": 750,
+          "before": ">The",
+          "after": ""
+        },
+        {
+          "start": 751,
+          "end": 767,
+          "before": "questions ahead<",
+          "after": ""
+        },
+        {
+          "start": 768,
+          "end": 780,
+          "before": "tspan></text",
+          "after": ""
+        },
+        {
+          "start": 904,
+          "end": 904,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1259,
+          "end": 1259,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1385,
+          "end": 1385,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1703,
+          "end": 1703,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1829,
+          "end": 1829,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2052,
+          "end": 2053,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "master-loop-part-5.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "86e359fdfd186e7b42a7d0e3f02659214f6c672f7ed576bc752583296ba2f3ff",
+      "output_sha256": "5fbb1e8ad1309f0664440d20cbc34375655abaa8c43be7aa22bdc878230e886e",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 58 640 444",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Removed The questions ahead; the three reading questions and their order remain the complete figure.",
+      "information_review": {
+        "status": "PASS",
+        "changes": [],
+        "purpose": "Show the three questions organizing communication and persuasion.",
+        "rationale": "Each stage is a complete question and the arrows show the reading order. A repeated outer title would not improve understanding."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "58"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 553,
+          "end": 553,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 614,
+          "end": 614,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 615,
+          "end": 779,
+          "before": ">\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"320\" y=\"43\">The questions ahead</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 903,
+          "end": 903,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1257,
+          "end": 1257,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1383,
+          "end": 1383,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1736,
+          "end": 1736,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1862,
+          "end": 1862,
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    "master-loop-part-6.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "d9b36e1b30206bffd2ae2dbfeed02c2a68c48e55730fb9bac0751c606db1292c",
+      "output_sha256": "8770aafa4cc67c6b6bc6da68d616aafbf744ff6f4c914aee5086e2a991194f47",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 58 640 444",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Removed The questions ahead; retained all three reading questions and arrows.",
+      "information_review": {
+        "status": "PASS",
+        "changes": [],
+        "purpose": "Organize negotiation around alternatives, value, and implementation.",
+        "rationale": "All three questions remain complete and explicit. No content depends on the removed decorative heading."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "58"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 550,
+          "end": 550,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 611,
+          "end": 611,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 612,
+          "end": 776,
+          "before": ">\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"320\" y=\"43\">The questions ahead</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 900,
+          "end": 900,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1219,
+          "end": 1219,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1345,
+          "end": 1345,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1702,
+          "end": 1702,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1828,
+          "end": 1828,
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    "master-loop-part-7.svg": {
+      "generator": "build_master_loop_figures.py:reading_map",
+      "input_sha256": "c2ceb10015dbdfcafbef9ce98b6cfd4e0f4fb3ea60bfb57d693b72bb9d99fcc0",
+      "output_sha256": "b7d33ff16064a8088ec87fa47c033f8740c17be66c3ac414b2e4ad381a8f12b8",
+      "source_viewBox": "0 0 640 520",
+      "reviewed_viewBox": "0 58 640 444",
+      "removed_texts": [
+        "The questions ahead"
+      ],
+      "review_notes": "Removed The questions ahead; the complete three-stage reading route remains for both uses.",
+      "information_review": {
+        "status": "PASS",
+        "changes": [],
+        "purpose": "Organize improvement around diagnosis, changed conditions, and results.",
+        "rationale": "Three complete questions remain the full teaching device; the route needs no extra title or definition."
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 76,
+          "end": 77,
+          "before": "0",
+          "after": "58"
+        },
+        {
+          "start": 82,
+          "end": 85,
+          "before": "520",
+          "after": "444"
+        },
+        {
+          "start": 536,
+          "end": 536,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 597,
+          "end": 597,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 598,
+          "end": 762,
+          "before": ">\n<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"32\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"320\" y=\"43\">The questions ahead</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 886,
+          "end": 886,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1201,
+          "end": 1201,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1327,
+          "end": 1327,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1677,
+          "end": 1677,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1803,
+          "end": 1803,
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    "option-information-portrait.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "cb92508a6bd06aacb15b66cac5526189daac4a58819f5db0643feb9c9e70ccf0",
+      "output_sha256": "3f3530dba4332eb66c606e9fc7c9bbe37d6c825f011ade0b1d43552e6cdbfe81",
+      "source_viewBox": "0 0 760 1190",
+      "reviewed_viewBox": "0 116 760 900",
+      "removed_texts": [
+        "Better decisions begin before comparison",
+        "A precise calculation cannot rescue an incomplete menu.",
+        "Revisit earlier steps as you learn more."
+      ],
+      "review_notes": "Removed title and two prose recaps. All four steps and concrete operational guidance remain; the adjacent body explicitly explains revisiting earlier steps.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "A practical sequence for better decisions: expand the feasible set, name the best forgone option, ask what information could change the choice, and stress-test the ranking.",
+        "rationale": "Each of four practical steps includes its question or operational examples. The purpose is a usable workflow, not a glossary; adding parallel technical names would duplicate adequately explained steps.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 62,
+          "before": "11",
+          "after": ""
+        },
+        {
+          "start": 63,
+          "end": 63,
+          "before": "",
+          "after": "0"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "116"
+        },
+        {
+          "start": 83,
+          "end": 85,
+          "before": "11",
+          "after": ""
+        },
+        {
+          "start": 86,
+          "end": 86,
+          "before": "",
+          "after": "0"
+        },
+        {
+          "start": 1193,
+          "end": 1416,
+          "before": "<text x=\"380\" y=\"54\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Better decisions begin</tspan><tspan x=\"380\" dy=\"47.12\">before comparison</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 4683,
+          "end": 4915,
+          "before": "<text x=\"380\" y=\"1060\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"bold\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">A precise calculation cannot rescue</tspan><tspan x=\"380\" dy=\"37.2\">an incomplete menu.</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 4916,
+          "end": 5103,
+          "before": "<text x=\"380\" y=\"1154\" text-anchor=\"middle\" font-size=\"30\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Revisit earlier steps as you learn more.</tspan></text>",
+          "after": ""
+        }
+      ]
+    },
+    "prototype-probability.svg": {
+      "generator": "build_judgment_figures.py",
+      "input_sha256": "e860bbe86ba3144fb30ac35d77e8c121de9b6cebc21c1312fed68560db0b0a15",
+      "output_sha256": "049d9b026aa231fedbf9f7e799650767e49ffce6b03ba731a3f8bcea788e5991",
+      "source_viewBox": "0 0 760 1120",
+      "reviewed_viewBox": "0 125 760 930",
+      "removed_texts": [
+        "Representativeness and probability",
+        "Similarity can suggest a hypothesis."
+      ],
+      "review_notes": "Removed overarching title repeating the two paths and the bottom similarity recap. Kept all node labels, prior probability, diagnostic evidence, and the updating instruction.",
+      "information_review": {
+        "status": "PASS",
+        "teaching_purpose": "A category resemblance can suggest a hypothesis; updating its probability requires the prior and evidence that distinguishes competing explanations.",
+        "rationale": "Representativeness, prior probability, diagnostic evidence and updating are all named and immediately explained. The two distinct paths remain self-contained.",
+        "terms_changed": []
+      },
+      "patches": [
+        {
+          "start": 60,
+          "end": 63,
+          "before": "112",
+          "after": "93"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "125"
+        },
+        {
+          "start": 83,
+          "end": 86,
+          "before": "112",
+          "after": "93"
+        },
+        {
+          "start": 877,
+          "end": 1084,
+          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"36\" font-weight=\"700\" fill=\"#17324d\"><tspan x=\"380\" y=\"54\">Representativeness</tspan><tspan x=\"380\" y=\"98\">and probability</tspan></text>",
+          "after": ""
+        },
+        {
+          "start": 4043,
+          "end": 4225,
+          "before": "<text text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"28\" font-weight=\"400\" fill=\"#17324d\"><tspan x=\"380\" y=\"1083\">Similarity can suggest a hypothesis.</tspan></text>",
+          "after": ""
+        }
+      ]
+    },
+    "silence-mechanism-diagnostic.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "7eaee91d6b879c389990382489576e67defe28feeb9f60a8e895336e14c32c82",
+      "output_sha256": "630d55f0e0268c74b81e60708b5939d98fd7f172951d250ca2d9bf540a3fe2ef",
+      "source_viewBox": "0 0 760 1300",
+      "reviewed_viewBox": "0 185 760 1005",
+      "removed_texts": [
+        "Silence can havedifferent causes",
+        "Diagnose before choosing a safeguard.",
+        "Test whether the safeguard addresses the problem."
+      ],
+      "review_notes": "The five named pathways each retain their diagnostic question and matched safeguard; remove repetitive instruction header/footer.",
+      "information_review": {
+        "status": "PASS",
+        "purpose": "Distinguish five reasons a group may lose information, dissent or responsibility.",
+        "rationale": "Every named mechanism has a diagnostic question and a matched safeguard; neither a generic heading nor a slogan supplies missing content.",
+        "changed_labels": []
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 0,
+          "before": "",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+        },
+        {
+          "start": 61,
+          "end": 62,
+          "before": "3",
+          "after": ""
+        },
+        {
+          "start": 64,
+          "end": 64,
+          "before": "",
+          "after": "5"
+        },
+        {
+          "start": 77,
+          "end": 78,
+          "before": "0",
+          "after": "185"
+        },
+        {
+          "start": 84,
+          "end": 85,
+          "before": "3",
+          "after": ""
+        },
+        {
+          "start": 87,
+          "end": 87,
+          "before": "",
+          "after": "5"
+        },
+        {
+          "start": 804,
+          "end": 804,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 984,
+          "end": 984,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1163,
+          "end": 1163,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1209,
+          "end": 1210,
+          "before": "3",
+          "after": ""
+        },
+        {
+          "start": 1212,
+          "end": 1212,
+          "before": "",
+          "after": "5"
+        },
+        {
+          "start": 1226,
+          "end": 1234,
+          "before": "/>\n<text",
+          "after": ""
+        },
+        {
+          "start": 1238,
+          "end": 1457,
+          "before": "380\" y=\"56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Silence can have</tspan><tspan x=\"380\" dy=\"47.12\">different causes</tspan></text>\n<text x=\"38",
+          "after": ""
+        },
+        {
+          "start": 1464,
+          "end": 1464,
+          "before": "",
+          "after": "8"
+        },
+        {
+          "start": 1465,
+          "end": 1466,
+          "before": "6",
+          "after": ""
+        },
+        {
+          "start": 1468,
+          "end": 1615,
+          "before": "text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Diagnose before choosing a safeguard.<",
+          "after": ""
+        },
+        {
+          "start": 1616,
+          "end": 1628,
+          "before": "tspan></text",
+          "after": ""
+        },
+        {
+          "start": 1734,
+          "end": 1734,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2278,
+          "end": 2278,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2831,
+          "end": 2831,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3385,
+          "end": 3385,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 3948,
+          "end": 3948,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 4405,
+          "end": 4602,
+          "before": "<text x=\"380\" y=\"1256\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Test whether the safeguard addresses the problem.</tspan></text>\n",
+          "after": ""
+        },
+        {
+          "start": 4608,
+          "end": 4609,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    },
+    "urge-wave-observation.svg": {
+      "generator": "build_reading_figures.py",
+      "input_sha256": "48ad705a62a3b94b99fbf44acd5665e38cf16ce7b753c471d0311ef6cc47237e",
+      "output_sha256": "ae7a6faea5063422e7a2710300b84156e491ce1e3bc4c1cd6ffc28b1549bf841",
+      "source_viewBox": "0 0 760 1000",
+      "reviewed_viewBox": "0 170 760 780",
+      "removed_texts": [
+        "An urge can changewithout being acted on"
+      ],
+      "review_notes": "Retain time/intensity axes and explicit non-timetable qualifier; optional BRAIN prompts provide a distinct practice.",
+      "information_review": {
+        "status": "REVISED",
+        "purpose": "Show one possible urge trajectory and a separate optional observation practice.",
+        "rationale": "Name BRAIN beside its five expanded prompts while retaining the non-timetable qualification.",
+        "changed_labels": [
+          {
+            "before": "An optional observation practice",
+            "after": "BRAIN: an optional practice",
+            "attributes": {}
+          }
+        ]
+      },
+      "patches": [
+        {
+          "start": 0,
+          "end": 0,
+          "before": "",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "before": "100",
+          "after": "78"
+        },
+        {
+          "start": 77,
+          "end": 77,
+          "before": "",
+          "after": "17"
+        },
+        {
+          "start": 83,
+          "end": 86,
+          "before": "100",
+          "after": "78"
+        },
+        {
+          "start": 796,
+          "end": 796,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 976,
+          "end": 976,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1155,
+          "end": 1155,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1200,
+          "end": 1203,
+          "before": "100",
+          "after": "78"
+        },
+        {
+          "start": 1218,
+          "end": 1226,
+          "before": "/>\n<text",
+          "after": ""
+        },
+        {
+          "start": 1230,
+          "end": 1232,
+          "before": "38",
+          "after": ""
+        },
+        {
+          "start": 1238,
+          "end": 1312,
+          "before": "56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#",
+          "after": ""
+        },
+        {
+          "start": 1313,
+          "end": 1317,
+          "before": "8304",
+          "after": ""
+        },
+        {
+          "start": 1318,
+          "end": 1346,
+          "before": "\" class=\"title\"><tspan x=\"38",
+          "after": ""
+        },
+        {
+          "start": 1349,
+          "end": 1375,
+          "before": "dy=\"0\">An urge can change<",
+          "after": ""
+        },
+        {
+          "start": 1376,
+          "end": 1444,
+          "before": "tspan><tspan x=\"380\" dy=\"47.12\">without being acted on</tspan></text",
+          "after": ""
+        },
+        {
+          "start": 1522,
+          "end": 1522,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 1653,
+          "end": 1653,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2267,
+          "end": 2267,
+          "before": "",
+          "after": " "
+        },
+        {
+          "start": 2379,
+          "end": 2383,
+          "before": "<tsp",
+          "after": "BRAIN: "
+        },
+        {
+          "start": 2384,
+          "end": 2404,
+          "before": "n x=\"380.0\" dy=\"0\">A",
+          "after": ""
+        },
+        {
+          "start": 2414,
+          "end": 2426,
+          "before": " observation",
+          "after": ""
+        },
+        {
+          "start": 2438,
+          "end": 2446,
+          "before": "span></t",
+          "after": ""
+        },
+        {
+          "start": 3372,
+          "end": 3373,
+          "before": "\n",
+          "after": ""
+        }
+      ]
+    }
+  }
+}

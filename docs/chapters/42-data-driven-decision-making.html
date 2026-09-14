@@ -745,7 +745,7 @@ Table&nbsp;42.1: The same forecast can imply different actions under different v
 </div>
 </figure>
 </div>
-<p>The first organizer moves indoors; the second remains outdoors. Neither needs a different weather forecast. They face different consequences.</p>
+<p>The expected-loss comparison in <a href="#tbl-ai-rain-losses" class="quarto-xref">Table&nbsp;<span>42.1</span></a> favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.</p>
 <p>More generally, let <span class="math inline">\(p\)</span> be the probability of rain, <span class="math inline">\(C_F\)</span> the false-alarm loss, and <span class="math inline">\(C_M\)</span> the missed-rain loss. In this model, moving indoors has lower expected loss when</p>
 <p><span class="math display">\[
 (1-p)C_F &lt; pC_M,
@@ -754,7 +754,7 @@ Table&nbsp;42.1: The same forecast can imply different actions under different v
 <p><span class="math display">\[
 p &gt; \frac{C_F}{C_F+C_M}.
 \]</span></p>
-<p>The thresholds are therefore 20 percent and 60 percent. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
+<p>The thresholds in <a href="#fig-ai-same-forecast-different-values" class="quarto-xref">Figure&nbsp;<span>42.1</span></a> are therefore 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
 <div id="fig-ai-same-forecast-different-values" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ai-same-forecast-different-values-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -781,7 +781,7 @@ Figure&nbsp;42.1: A 30% rain forecast exceeds one organizer’s 20% action thres
 <p>The field record makes the contrast clear. Model-guided targeting found hazardous pipes in about <strong>80 percent</strong> of excavations. When the new contractor largely bypassed high-risk areas in <strong>2018</strong>, the hit rate fell to <strong>15 percent</strong>. A <strong>2019</strong> legal settlement required the city to return to model-guided prioritization, after which the hit rate recovered to about <strong>70 percent</strong> (Agrawal et al., 2022a, chapter 15; Webb et al., 2020).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>The earlier technical paper asked a further question: could the search become more efficient still? It compared an actual unnecessary-visit rate of 18.8 percent with 2.0 percent under a proposed procedure in a <strong>backtesting simulation</strong> (Abernethy et al., 2018).</p>
 <p>The residents’ objections exposed a question that the probability map could not answer: how much weight should the city give to reassurance and visible coverage across neighborhoods relative to finding hazardous pipes quickly? The settlement changed who could settle that trade-off and which priorities the programme had to follow. In Agrawal and colleagues’ account, better prediction became a struggle over decision authority (Agrawal et al., 2022a).</p>
-<p>The following decisions determine how the map becomes a programme:</p>
+<p>The distinctions in <a href="#tbl-ai-flint-decision" class="quarto-xref">Table&nbsp;<span>42.2</span></a> show what turns the probability map into a programme: an objective, feasible actions, operating constraints, and authority to decide and review.</p>
 <div id="tbl-ai-flint-decision" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-flint-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -832,7 +832,7 @@ Table&nbsp;42.2: Decisions in a pipe-replacement program
 <h2 data-anchor-id="risk-is-not-treatment-benefit">Predicting risk does not tell us whom an intervention will help</h2>
 <p>A university has more students at risk of leaving than its advisers can contact. An algorithm identifies those most likely to leave, so directing outreach to them seems sensible. But the students facing the greatest risk may be facing problems a call cannot change, while others could stay with timely advice. Which ranking should determine who receives the limited places: risk of leaving or benefit from the intervention?</p>
 <p>The risk estimate describes what is expected under the existing conditions. Allocating outreach requires an additional estimate: how much this particular intervention would change the outcome. Both groups may deserve support, while needing different forms of it.</p>
-<p>Consider two hypothetical groups. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.</p>
+<p>Consider the two hypothetical groups in <a href="#fig-ai-risk-is-not-benefit" class="quarto-xref">Figure&nbsp;<span>42.2</span></a>. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.</p>
 <div id="fig-ai-risk-is-not-benefit" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ai-risk-is-not-benefit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -849,7 +849,7 @@ Figure&nbsp;42.2: Hypothetical group-average dropout rates show how baseline ris
 </section>
 <section id="ai-workbench" class="level2">
 <h2 data-anchor-id="ai-workbench">Choose an AI tool by the work it must do</h2>
-<p>Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents’ questions, and a third a scheduling tool for crews. Each addresses a different obstacle; choosing the most impressive demonstration could leave the main obstacle untouched. Begin by identifying the work the decision needs. Predictive models, language models, retrieval systems, and optimizers can then supply different parts of the workflow.</p>
+<p>Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents’ questions, and a third a scheduling tool for crews. Each addresses a different obstacle; choosing the most impressive demonstration could leave the main obstacle untouched. Begin by identifying the work the decision needs. The workbench in <a href="#tbl-ai-workbench" class="quarto-xref">Table&nbsp;<span>42.3</span></a> matches predictive models, language models, retrieval systems, and optimizers to different parts of the workflow and identifies the human check each output needs.</p>
 <div id="tbl-ai-workbench" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-workbench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -969,7 +969,7 @@ Table&nbsp;42.3: Select functions for a decision workflow; these tool families o
 <p>Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before consulting the model and preserve that version. You can study how advice changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.</p>
 <section id="ai-decision-canvas" class="level3">
 <h3 data-anchor-id="ai-decision-canvas">The AI decision canvas</h3>
-<p>Complete the following canvas before selecting a product or writing a prompt.</p>
+<p>Use <a href="#tbl-ai-decision-canvas" class="quarto-xref">Table&nbsp;<span>42.4</span></a> to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.</p>
 <div id="tbl-ai-decision-canvas" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-decision-canvas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">

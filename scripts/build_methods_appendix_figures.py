@@ -85,13 +85,13 @@ def svg_document(title: str, description: str, body: str, width: int, height: in
 
 
 def vertical_steps(title: str, steps: list[tuple[str, str]], description: str) -> str:
-    body = [text(350, 52, title, 34, weight=700)]
+    body = []
     for i, (label, question) in enumerate(steps):
-        y = 90 + 135 * i
+        y = 20 + 135 * i
         body.extend([f'<g id="stage-{i + 1}">', rect(60, y, 580, 100, fill=PALE_BLUE if i < 4 else PALE_GREEN, stroke=BLUE if i < 4 else GREEN, sw=2), text(350, y + 39, f'{i + 1}. {label}', 30, weight=700), text(350, y + 77, question, 28), '</g>'])
         if i < len(steps) - 1:
             body.append(f'<path d="M350 {y+100} V{y+135}" fill="none" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>')
-    return svg_document(title, description, '\n'.join(body), 700, 780)
+    return svg_document(title, description, '\n'.join(body), 700, 680)
 
 
 def claim_to_design() -> str:
@@ -109,8 +109,8 @@ def selected_evidence() -> str:
         ('Question', 'Which possibilities are investigated?'),
         ('Design', 'Who and what get measured?'),
         ('Data', 'Which observations are recorded?'),
-        ('Analysis', 'Which results are reported?'),
-        ('Literature', 'Which findings reach readers?'),
+        ('Analysis & reporting', 'Which analyses and results are reported?'),
+        ('Publication', 'Which findings reach readers?'),
     ], 'Five stages show how choices about questions, design, data, analysis, and publication determine what readers see. Selection can occur at every stage.')
 
 
@@ -124,12 +124,12 @@ def sampling_vs_assignment() -> str:
          [(380, 98, 'Target population', 34)]),
         ('random-sampling', 255, 185, 250, 110, procedure_color,
          [(380, 230, 'Random', 32), (380, 268, 'sampling', 32)]),
-        ('evaluation-sample', 25, 365, 305, 130, population_color,
-         [(177.5, 442, 'Evaluation sample', 32)]),
-        ('not-in-evaluation', 370, 365, 365, 130, population_color,
-         [(552.5, 442, 'Not in evaluation', 32)]),
-        ('random-assignment', 50, 548, 255, 110, procedure_color,
-         [(177.5, 593, 'Random', 32), (177.5, 631, 'assignment', 32)]),
+        ('evaluation-sample', 87.5, 365, 305, 130, population_color,
+         [(240, 442, 'Evaluation sample', 32)]),
+        ('not-in-evaluation', 425, 365, 310, 130, population_color,
+         [(580, 442, 'Not in evaluation', 32)]),
+        ('random-assignment', 112.5, 548, 255, 110, procedure_color,
+         [(240, 593, 'Random', 32), (240, 631, 'assignment', 32)]),
         ('treatment-group', 25, 718, 200, 102, population_color,
          [(125, 760, 'Treatment', 32), (125, 798, 'group', 32)]),
         ('control-group', 255, 718, 200, 102, population_color,
@@ -144,19 +144,19 @@ def sampling_vs_assignment() -> str:
     connectors = [
         ('M380 145 V185', True),
         ('M380 295 V327', False),
-        ('M380 327 H177.5 V365', True),
-        ('M380 327 H552.5 V365', True),
-        ('M177.5 495 V548', True),
-        ('M177.5 658 V684', False),
-        ('M177.5 684 H125 V718', True),
-        ('M177.5 684 H355 V718', True),
+        ('M380 327 H240 V365', True),
+        ('M380 327 H580 V365', True),
+        ('M240 495 V548', True),
+        ('M240 658 V684', False),
+        ('M240 684 H125 V718', True),
+        ('M240 684 H355 V718', True),
     ]
     for path, arrow in connectors:
         marker = ' marker-end="url(#arrow)"' if arrow else ''
         body.append(f'<path d="{path}" fill="none" stroke="{MUTED}" stroke-width="3" '
                     f'stroke-linecap="round" stroke-linejoin="round"{marker}/>')
     # Horizontal annotations concern inference; they do not move participants.
-    for path in ['M505 240 H565', 'M305 603 H375']:
+    for path in ['M505 240 H565', 'M367.5 603 H437.5']:
         body.append(f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="3" '
                     'stroke-linecap="round" marker-end="url(#blue-arrow)"/>')
     body.extend([
@@ -164,7 +164,7 @@ def sampling_vs_assignment() -> str:
         lines(585, 230, ['External', 'validity'], 32, leading=38, anchor='start', fill=BLUE),
         '</g>',
         '<g id="internal-validity">',
-        lines(395, 593, ['Internal', 'validity'], 32, leading=38, anchor='start', fill=BLUE),
+        lines(457.5, 593, ['Internal', 'validity'], 32, leading=38, anchor='start', fill=BLUE),
         '</g>',
     ])
     return svg_document(
@@ -178,19 +178,61 @@ def sampling_vs_assignment() -> str:
 
 
 def participant_flow() -> str:
-    body = [text(380, 49, 'Follow people from assignment', 34, weight=700), text(380, 88, 'to the final comparison', 34, weight=700), rect(180, 126, 400, 82, fill=PALE_PURPLE, stroke=PURPLE), text(380, 178, 'Random assignment', 30, weight=700)]
-    body += [f'<path d="M380 208 V244 H185 V284 M380 244 H575 V284" fill="none" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>']
-    # Give the left branch its own arrowhead without doubling the shared stem.
-    body[-1] = f'<path d="M380 208 V244 H185 V284" fill="none" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>'
-    body.append(f'<path d="M380 244 H575 V284" fill="none" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>')
-    for x, c, label in [(25,185,'Assigned A'),(415,575,'Assigned B')]:
-        for i, (head, notes) in enumerate([(label,['Did they receive','the treatment?']), ('Outcomes',['Who was observed?']), ('Analysis',['Compare groups','as assigned.'])]):
-            y = 284 + 173*i
-            body.extend([f'<g id="arm-{label[-1]}-{i}">', rect(x,y,320,133,fill=PALE_GREEN if i==0 else PALE_BLUE if i==1 else PALE_ORANGE,stroke=GREEN if i==0 else BLUE if i==1 else ORANGE), text(c,y+39,head,30,weight=700), lines(c,y+79,notes,28,leading=34), '</g>'])
-            if i<2:
-                body.append(f'<path d="M{c} {y+133} V{y+173}" fill="none" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>')
-    body.extend([text(380,825,'Track nonreceipt and missing outcomes.',28,weight=700), text(380,865,'Check whether one group affects the other.',28)])
-    return svg_document('Participant flow from assignment through analysis', 'Two assigned groups are followed through receipt, outcome observation, and analysis. The comparison keeps original assignment labels; researchers must account for missing outcomes and possible effects between groups.', '\n'.join(body), 760, 910)
+    # These are distinct mechanisms, not successive stages or interchangeable
+    # forms of dropout. Each panel names and depicts its own comparison.
+    body = []
+    panels = [
+        ('noncompliance', 20, 260, 'Noncompliance', PALE_ORANGE, ORANGE,
+         ['Treatment', 'assigned'], ['Treatment', 'received'], 'may differ',
+         ['Some assigned participants may not receive it.',
+          'Some controls may receive it.']),
+        ('attrition', 310, 260, 'Attrition', PALE_RED, RED,
+         ['Randomized', 'participants'], ['Participants', 'observed'], 'follow-up',
+         ['Loss to follow-up leaves outcomes missing.',
+          'Observed groups may no longer be comparable.']),
+        ('interference', 600, 220, 'Spillovers (interference)', PALE_PURPLE, PURPLE,
+         ["Person A’s", 'treatment'], ["Person B’s", 'outcome'], 'can affect',
+         ['Effects can cross treatment and control groups.']),
+    ]
+    for ident, y, height, label, fill, color, left, right, link, explanation in panels:
+        body.extend([
+            f'<g id="{ident}">',
+            rect(20, y, 720, height, fill=fill, stroke=color),
+            text(45, y + 42, label, 32, anchor='start', weight=700, fill=color),
+        ])
+        for side, x, values in [('left', 45, left), ('right', 460, right)]:
+            body.extend([
+                f'<g id="{ident}-{side}">',
+                rect(x, y + 75, 255, 90, stroke=color, radius=12),
+                lines(x + 127.5, y + 111, values, 28, leading=35, weight=600),
+                '</g>',
+            ])
+        body.extend([
+            text(380, y + 93, link, 28),
+            f'<path d="M300 {y+120} H460" fill="none" stroke="{MUTED}" '
+            'stroke-width="3" marker-end="url(#arrow)"/>',
+            lines(45, y + 202, explanation, 28, leading=36, anchor='start'),
+            '</g>',
+        ])
+    body.extend([
+        '<g id="intention-to-treat">',
+        rect(20, 850, 720, 145, fill=PALE_GREEN, stroke=GREEN),
+        text(45, 893, 'Intention-to-treat (ITT)', 32, anchor='start', weight=700, fill=GREEN),
+        text(45, 936, 'Compare outcomes by original assignment.', 28, anchor='start'),
+        text(45, 975, 'ITT alone does not resolve attrition or spillovers.', 28, anchor='start'),
+        '</g>',
+    ])
+    return svg_document(
+        'Noncompliance, attrition, spillovers, and the assigned-group comparison',
+        'Three separate panels distinguish threats in a randomized evaluation. Noncompliance '
+        'means treatment receipt differs from assignment: some assigned participants do not '
+        'receive treatment and some controls do. Attrition leaves outcomes missing after loss '
+        'to follow-up, so observed groups may no longer be comparable. Spillovers, or interference, '
+        'mean one person’s treatment affects another person’s outcome, possibly across study '
+        'groups. Intention-to-treat compares outcomes by original assignment; it does not by '
+        'itself resolve missing outcomes or spillovers. The panels are distinct mechanisms, '
+        'not successive stages of one participant’s progress.',
+        '\n'.join(body), 760, 1015)
 
 
 def normal_cdf(x: float) -> float:
@@ -240,8 +282,7 @@ def selected_literature_simulation() -> tuple[str, list[dict[str, float | int | 
                          "svg.fonttype": "none", "svg.hashsalt": "selected-literature-20260910"})
     fig, axes = plt.subplots(2, 1, figsize=(9.6, 9.8), sharex=True, sharey=True)
     fig.subplots_adjust(left=.13, right=.97, top=.85, bottom=.13, hspace=.68)
-    fig.suptitle("Selection makes noisy effects look larger", fontsize=20, weight="bold", y=.98)
-    fig.text(.5,.918, "Teaching simulation: true effect = 0.20 SD", ha="center", fontsize=16)
+    fig.text(.5,.918, "Teaching simulation · dashed line: true effect = 0.20 SD", ha="center", fontsize=16)
     bins = [-.8 + .08*i for i in range(26)]
     for ax, data, color, heading in zip(axes, [rows, selected], [BLUE, ORANGE],
             [f"All {len(rows):,} studies · mean {mean_all:.3f}",
@@ -257,14 +298,13 @@ def selected_literature_simulation() -> tuple[str, list[dict[str, float | int | 
         ax.grid(axis="y", alpha=.18); ax.set_axisbelow(True)
         ax.spines[["right","top"]].set_visible(False)
         ax.tick_params(axis="both", labelsize=14)
-        ax.text(.02,.90,"Dashed line: true effect",transform=ax.transAxes,fontsize=14,color=GREEN)
     axes[0].tick_params(labelbottom=True)
     axes[1].set_xlabel("Estimated effect (standard deviations)", labelpad=10)
     fig.text(.55,.493,"Reporting gate: retain only two-sided p < .05",ha="center",fontsize=16,color=RED,
              bbox={"boxstyle":"round,pad=.65", "facecolor":PALE_RED,"edgecolor":RED})
-    fig.text(.5,.04,"The selected mean is 2.5 times the true effect.",ha="center",fontsize=16,weight="bold")
     buffer=io.StringIO(); fig.savefig(buffer,format="svg",metadata={"Date":None}); plt.close(fig)
     simulation_svg=buffer.getvalue().replace("DejaVu Sans", "Arial")
+    simulation_svg=simulation_svg.replace('height="705.6pt" viewBox="0 0 691.2 705.6"', 'height="636pt" viewBox="0 34 691.2 636"', 1)
     simulation_svg=simulation_svg.replace('<svg ', '<svg role="img" aria-labelledby="simulation-title simulation-desc" ',1)
     start=simulation_svg.index('>',simulation_svg.index('<svg '))+1
     simulation_svg=simulation_svg[:start]+f'<title id="simulation-title">Selective reporting inflates visible effect estimates</title><desc id="simulation-desc">Two histograms show {len(rows)} simulated estimates and the {len(selected)} that pass a two-sided p less than .05 gate. Both axes share the same scales. The true effect is .20 standard deviations; the selected mean is .490. Bar heights are percentages within each displayed set.</desc>'+simulation_svg[start:]

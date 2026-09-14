@@ -84,9 +84,9 @@ Holding one task in mind leaves less capacity for some competing tasks. Attentio
 ::: {.callout-note icon=false collapse=true}
 ## Research note: two very different information rates
 
-Zheng and Meister (2025) compare estimates of sensory acquisition on the order of $10^9$ bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. The contrast raises a question about how rich sensory signals support much slower observable responses.[^ch03-information-rates]
+Zheng and Meister (2025) compare estimates of sensory acquisition on the order of $10^9$ bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. The contrast in @fig-attention-bottleneck raises a question about how rich sensory signals support much slower observable responses.[^ch03-information-rates]
 
-![Sensory acquisition and deliberate behavior have very different estimated information rates. Orders of magnitude from Zheng and Meister (2025).](../figures/attention-bottleneck.svg){#fig-attention-bottleneck fig-alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second. A separate lower panel summarizes what attention research supports."}
+![Sensory acquisition and deliberate behavior have very different estimated information rates. Orders of magnitude from Zheng and Meister (2025).](../figures/attention-bottleneck.svg){#fig-attention-bottleneck fig-alt="Two separate cards compare sensory acquisition at approximately one billion bits per second with deliberate behavioral throughput at approximately ten bits per second."}
 
 The brain has substantial resting energy demands; tasks redistribute activity within this already active system (Attwell & Laughlin, 2001; Raichle & Gusnard, 2002).
 :::
@@ -119,9 +119,9 @@ A change therefore has to be detected against what the observer encoded and reta
 
 ![Attention selects and prioritizes information for conscious report and deliberate use.](../figures/attention-filter.svg){#fig-attention-filter fig-alt="Many information streams compete for selection. Goals, salience, expectations, and load influence which signals become consciously reportable and deliberately usable. Unselected information may still receive limited processing."}
 
-Even a perfect search of the available information could miss a consequential signal if the sensory or measurement system never captured it. Before asking whether we noticed everything, we therefore need to ask what the system made possible to notice.
+The selection in @fig-attention-filter determines which available signals enter conscious report and deliberate use. Yet even a perfect search could miss a consequential signal if the sensory or measurement system never captured it. Before asking whether we noticed everything, we therefore need to ask what the system made possible to notice.
 
-Attention filters information that a sensory or measurement system first makes available. That initial sample is already partial. Jakob von Uexküll called an organism's species-specific perceptual world its *Umwelt* (von Uexküll, 1934/2010). Bees can use ultraviolet-sensitive vision, pit-bearing snakes detect radiant heating, some elephant calls contain infrasonic components, and migratory birds use geomagnetic cues (Chittka & Menzel, 1992; Gracheva et al., 2010; Payne et al., 1986; Wiltschko & Wiltschko, 2005).
+Attention filters information that a sensory or measurement system first makes available. That initial sample is already partial, as the different sensory windows in @fig-sensory-windows illustrate. Jakob von Uexküll called an organism's species-specific perceptual world its *Umwelt* (von Uexküll, 1934/2010). Bees can use ultraviolet-sensitive vision, pit-bearing snakes detect radiant heating, some elephant calls contain infrasonic components, and migratory birds use geomagnetic cues (Chittka & Menzel, 1992; Gracheva et al., 2010; Payne et al., 1986; Wiltschko & Wiltschko, 2005).
 
 ![Different sensory systems make different physical cues available. Attention selects among the cues a sensory system makes available.](../figures/sensory-windows-partial-world.svg){#fig-sensory-windows fig-alt="A shared flower supplies reflected light, but human and bee visual systems have access to different spectral cues. Three vertically arranged examples show infrared detection by pit-bearing snakes, infrasonic components in elephant calls, and geomagnetic orientation cues used by migratory birds." style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;"}
 
@@ -140,7 +140,7 @@ These moves treat attention as an environment and process problem, not merely a 
 
 ### Attention architecture: the organization chooses what can be seen
 
-Meetings and dashboards allocate attention before any participant begins to reason. Five design choices deserve an explicit audit:
+Meetings and dashboards allocate attention before any participant begins to reason. @tbl-attention-architecture traces five design choices from what they make visible to what can be missed:
 
 | Design choice | What it makes visible | Failure when unmanaged |
 | --- | --- | --- |
@@ -159,6 +159,8 @@ Suppose a project meeting begins with one question: “How do we cut costs?” T
 
 In this [short scene from *Focus*](https://youtu.be/E26V363_k8o), track how one person deliberately constructs the other person’s field of attention. After viewing, list the cues that were present, the cues that became psychologically prominent, and the decision that prominence supported.
 :::
+
+Use @tbl-05-1 to match the redesign to the failure: protecting focus addresses distraction, whereas an issue excluded from the agenda needs a route into discussion.
 
 | Failure | Mechanism | Design response |
 | --- | --- | --- |

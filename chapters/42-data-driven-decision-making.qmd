@@ -97,7 +97,7 @@ To see the logic clearly, use an **error-loss model**. A false alarm means movin
 | Moving indoors would sacrifice much of the event | 6 | 4 | $0.70\times6=4.2$ | $0.30\times4=1.2$ |
 : The same forecast can imply different actions under different values {#tbl-ai-rain-losses}
 
-The first organizer moves indoors; the second remains outdoors. Neither needs a different weather forecast. They face different consequences.
+The expected-loss comparison in @tbl-ai-rain-losses favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.
 
 More generally, let $p$ be the probability of rain, $C_F$ the false-alarm loss, and $C_M$ the missed-rain loss. In this model, moving indoors has lower expected loss when
 
@@ -111,7 +111,7 @@ $$
 p > \frac{C_F}{C_F+C_M}.
 $$
 
-The thresholds are therefore 20 percent and 60 percent. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.
+The thresholds in @fig-ai-same-forecast-different-values are therefore 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.
 
 ![A 30% rain forecast exceeds one organizer's 20% action threshold but falls below another's 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.](../figures/ai-same-forecast-different-values.svg){#fig-ai-same-forecast-different-values fig-alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss." width=100% .phone-fit}
 
@@ -139,7 +139,7 @@ The earlier technical paper asked a further question: could the search become mo
 
 The residents' objections exposed a question that the probability map could not answer: how much weight should the city give to reassurance and visible coverage across neighborhoods relative to finding hazardous pipes quickly? The settlement changed who could settle that trade-off and which priorities the programme had to follow. In Agrawal and colleagues' account, better prediction became a struggle over decision authority (Agrawal et al., 2022a).
 
-The following decisions determine how the map becomes a programme:
+The distinctions in @tbl-ai-flint-decision show what turns the probability map into a programme: an objective, feasible actions, operating constraints, and authority to decide and review.
 
 | Decision component | In a pipe-replacement program |
 | --- | --- |
@@ -160,7 +160,7 @@ A university has more students at risk of leaving than its advisers can contact.
 
 The risk estimate describes what is expected under the existing conditions. Allocating outreach requires an additional estimate: how much this particular intervention would change the outcome. Both groups may deserve support, while needing different forms of it.
 
-Consider two hypothetical groups. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.
+Consider the two hypothetical groups in @fig-ai-risk-is-not-benefit. Without outreach, their expected dropout rates are 60 and 40 percent. Suppose valid intervention evidence suggested rates of 55 and 20 percent with outreach. The expected reductions would be 5 and 20 percentage points. Ranking only baseline risk would prioritize the first group; ranking expected benefit per equal-cost place, with equal value assigned to each prevented dropout, would prioritize the second.
 
 ![Hypothetical group-average dropout rates show how baseline risk and intervention benefit can rank groups differently.](../figures/ai-risk-is-not-benefit.svg){#fig-ai-risk-is-not-benefit fig-alt="Group A has hypothetical dropout rates of 60 percent without outreach and 55 percent with it, a reduction of 5 percentage points. Group B has rates of 40 and 20 percent, a reduction of 20 percentage points. Group A has higher baseline risk, while Group B has greater expected benefit from this specific intervention." width=100% .phone-fit}
 
@@ -172,7 +172,7 @@ Even a credible benefit estimate does not finish the allocation decision. A univ
 
 ## Choose an AI tool by the work it must do {#ai-workbench}
 
-Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents' questions, and a third a scheduling tool for crews. Each addresses a different obstacle; choosing the most impressive demonstration could leave the main obstacle untouched. Begin by identifying the work the decision needs. Predictive models, language models, retrieval systems, and optimizers can then supply different parts of the workflow.
+Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents' questions, and a third a scheduling tool for crews. Each addresses a different obstacle; choosing the most impressive demonstration could leave the main obstacle untouched. Begin by identifying the work the decision needs. The workbench in @tbl-ai-workbench matches predictive models, language models, retrieval systems, and optimizers to different parts of the workflow and identifies the human check each output needs.
 
 | Work inside the decision | Possible tool | Output to request | Human check that matters |
 | --- | --- | --- | --- |
@@ -265,7 +265,7 @@ Work with a recurring decision that is important enough to improve but small eno
 
 ### The AI decision canvas {#ai-decision-canvas}
 
-Complete the following canvas before selecting a product or writing a prompt.
+Use @tbl-ai-decision-canvas to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.
 
 | Field | What to write before the pilot |
 | --- | --- |

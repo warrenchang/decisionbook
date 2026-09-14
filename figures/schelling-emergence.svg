@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="665" viewBox="0 0 1400 665" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="610" viewBox="0 62 1400 610" role="img" aria-labelledby="title desc">
 <title id="title">Local moves can create separation</title>
 <desc id="desc">One seeded Schelling-style simulation shows the same agents initially, after one sweep, and after convergence. The mean share of same-group neighbors increases from .48 to .64 to .68. No agent seeks an aggregate segregation pattern.</desc>
 <style>text{font:26px Arial,Helvetica,sans-serif;fill:#183047}.head{font-size:28px;font-weight:700}</style>
 <defs><marker id="arrow" viewBox="0 0 10 8" markerWidth="9" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L9 4L0 8Z" fill="#587189"/></marker></defs>
-<rect width="1400" height="665" fill="#f7f9fc"/>
-<text x="700" y="56" text-anchor="middle" style="font-size:36px;font-weight:700">Local moves can create separation</text>
+<rect width="1400" height="672" fill="#f7f9fc"/>
 <text x="700" y="97" text-anchor="middle">One teaching run; each agent seeks at least one-third same-group neighbors.</text>
-<g id="panel-45"><rect x="45" y="125" width="390" height="420" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
+<g id="panel-45"><rect x="45" y="125" width="390" height="440" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
 <text x="240" y="170" text-anchor="middle" class="head">1. Random start</text>
 <text x="240" y="211" text-anchor="middle">Same population</text>
 <circle cx="95" cy="244" r="6.5" fill="#236b8e" stroke="#8b9dab" stroke-width=".7"/>
@@ -261,9 +260,9 @@
 <circle cx="350" cy="465" r="6.5" fill="#236b8e" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="367" cy="465" r="6.5" fill="#236b8e" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="384" cy="465" r="6.5" fill="white" stroke="#8b9dab" stroke-width=".7"/>
-<text x="240" y="514" text-anchor="middle">Same-group share: 0.48</text></g>
+<text x="240" y="506" text-anchor="middle">Same-group neighbors</text><text x="240" y="542" text-anchor="middle">Mean share: 0.48</text></g>
 <path d="M435 335H505" stroke="#587189" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="panel-505"><rect x="505" y="125" width="390" height="420" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
+<g id="panel-505"><rect x="505" y="125" width="390" height="440" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
 <text x="700" y="170" text-anchor="middle" class="head">2. After one sweep</text>
 <text x="700" y="211" text-anchor="middle">36 moves</text>
 <circle cx="555" cy="244" r="6.5" fill="white" stroke="#8b9dab" stroke-width=".7"/>
@@ -518,9 +517,9 @@
 <circle cx="810" cy="465" r="6.5" fill="#236b8e" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="827" cy="465" r="6.5" fill="#c44e52" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="844" cy="465" r="6.5" fill="#c44e52" stroke="#8b9dab" stroke-width=".7"/>
-<text x="700" y="514" text-anchor="middle">Same-group share: 0.64</text></g>
+<text x="700" y="506" text-anchor="middle">Same-group neighbors</text><text x="700" y="542" text-anchor="middle">Mean share: 0.64</text></g>
 <path d="M895 335H965" stroke="#587189" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="panel-965"><rect x="965" y="125" width="390" height="420" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
+<g id="panel-965"><rect x="965" y="125" width="390" height="440" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>
 <text x="1160" y="170" text-anchor="middle" class="head">3. No further moves</text>
 <text x="1160" y="211" text-anchor="middle">4 sweeps; 44 moves total</text>
 <circle cx="1015" cy="244" r="6.5" fill="white" stroke="#8b9dab" stroke-width=".7"/>
@@ -775,9 +774,10 @@
 <circle cx="1270" cy="465" r="6.5" fill="white" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="1287" cy="465" r="6.5" fill="#c44e52" stroke="#8b9dab" stroke-width=".7"/>
 <circle cx="1304" cy="465" r="6.5" fill="#c44e52" stroke="#8b9dab" stroke-width=".7"/>
-<text x="1160" y="514" text-anchor="middle">Same-group share: 0.68</text></g>
+<text x="1160" y="506" text-anchor="middle">Same-group neighbors</text><text x="1160" y="542" text-anchor="middle">Mean share: 0.68</text></g>
 <circle cx="365" cy="598" r="10" fill="#236b8e"/><text x="386" y="607">Group A</text>
 <circle cx="555" cy="598" r="10" fill="#c44e52"/><text x="576" y="607">Group B</text>
 <circle cx="745" cy="598" r="10" fill="white" stroke="#8b9dab"/><text x="766" y="607">Vacancy</text>
 <text x="1005" y="607">Seed: 20260830</text>
+<text x="700" y="651" text-anchor="middle">One sweep visits the agents once; neighbor shares exclude vacant cells.</text>
 </svg>

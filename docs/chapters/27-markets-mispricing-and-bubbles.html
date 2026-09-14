@@ -667,7 +667,7 @@ window.Quarto = {
 <li><strong>No free lunch.</strong> A public rule does not reliably earn abnormal return after appropriate risk and realistic costs.</li>
 <li><strong>The price is right.</strong> Market price equals a well-defined fundamental value.</li>
 </ol>
-<p>The first two do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.</p>
+<p>The first two claims in <a href="#fig-finance-euro-efficiency" class="quarto-xref">Figure&nbsp;<span>27.1</span></a> do not automatically establish the third. A price can be difficult to beat and still differ from a later estimate of fundamental value. Conversely, a price can be noisy without offering a low-risk implementable profit.</p>
 <div id="fig-finance-euro-efficiency" class="quarto-float quarto-figure quarto-figure-center" alt="A photograph shows a twenty-euro note lying on pavement. From the photograph, one common branch points to three boxes distinguishing rapid information incorporation, no free lunch after risk and costs, and the stronger claim that market price equals fundamental value. A final note states that the first two claims do not automatically establish the third.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-finance-euro-efficiency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -700,7 +700,7 @@ Figure&nbsp;27.2: A documented return pattern passes through a joint-test audit 
 </figcaption>
 </figure>
 </div>
-<p>An <strong>event study</strong> measures returns around a defined event against a stated expected-return model. The <a href="#advanced-research-track-auditing-an-event-study">optional research track</a> shows how to audit its timing, comparison, and uncertainty, using earnings announcements as an example.</p>
+<p><a href="#fig-behavioral-finance-audit" class="quarto-xref">Figure&nbsp;<span>27.2</span></a> separates explaining a return pattern from establishing whether it survives realistic trading conditions and new observations. An <strong>event study</strong> measures returns around a defined event against a stated expected-return model. The <a href="#advanced-research-track-auditing-an-event-study">optional research track</a> shows how to audit its timing, comparison, and uncertainty, using earnings announcements as an example.</p>
 <div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -754,7 +754,7 @@ Figure&nbsp;27.3: A possible reinforcing loop links rising prices, expectations 
 </figcaption>
 </figure>
 </div>
-<p>A boom can begin with genuine innovation and later acquire a feedback component, which credit can amplify.</p>
+<p>The separate paths in <a href="#fig-asset-bubble-feedback" class="quarto-xref">Figure&nbsp;<span>27.3</span></a> allow a boom to begin with genuine innovation and later acquire a feedback component. Credit can amplify buying, but the loop does not require it.</p>
 <section id="strategic-resale-and-synchronization-risk" class="level3">
 <h3 data-anchor-id="strategic-resale-and-synchronization-risk">Strategic resale and synchronization risk</h3>
 <p>A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers’ beliefs and on exiting before the correction. This is the recursive prediction problem in <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html#chapter-24-start">Behavioral Game Theory</a>, now with a financial consequence: accurately forecasting the next buyer can reward a trade the buyer would reject on cash-flow value alone.</p>
@@ -769,7 +769,7 @@ Figure&nbsp;27.3: A possible reinforcing loop links rising prices, expectations 
 <h3 data-anchor-id="one-laboratory-market-a-known-risk-neutral-benchmark-can-still-be-exceeded">One laboratory market: a known risk-neutral benchmark can still be exceeded</h3>
 <p>Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is <span class="math inline">\(d\)</span> and <span class="math inline">\(k\)</span> periods remain, the <strong>risk-neutral expected-dividend benchmark</strong>, with no final redemption and negligible discounting over the short experimental session, is <span class="math inline">\(FV_t=kd\)</span>. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter &amp; Smith, 2003).</p>
 <p>The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them (Dufwenberg et al., 2005; Hussam et al., 2008).</p>
-<p>Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair’s (2006) rule classified behavior only when a trader’s highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications were:</p>
+<p>Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair’s (2006) rule classified behavior only when a trader’s highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications in <a href="#tbl-bubble-strategies" class="quarto-xref">Table&nbsp;<span>27.1</span></a> split across several patterns:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -820,17 +820,17 @@ Table&nbsp;27.1: Rule-based behavioral classifications in Haruvy and Noussair (2
 </div>
 </div>
 </div>
-<div id="fig-bubble-trader-strategies-redraw" class="quarto-float quarto-figure quarto-figure-center" alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A side panel identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods.">
+<div id="fig-bubble-trader-strategies-redraw" class="quarto-float quarto-figure quarto-figure-center" alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A footer identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bubble-trader-strategies-redraw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/bubble-trader-strategies-redraw.svg" class="img-fluid figure-img" style="width:100.0%" alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A side panel identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods.">
+<img src="../figures/bubble-trader-strategies-redraw.svg" class="img-fluid figure-img" style="width:100.0%" alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent. A footer identifies 162 rule-based trader classifications in 18 sessions, with fractional tie weights and a highest-score threshold of eight of fifteen periods.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bubble-trader-strategies-redraw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;27.4: An original redraw reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other or unclassified behavior. These are 162 rule-based trader classifications from one experimental design, with fractional allocation of ties.
 </figcaption>
 </figure>
 </div>
-<p>The classifications show several patterns of trading within the same market. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.</p>
+<p>The mixture in <a href="#fig-bubble-trader-strategies-redraw" class="quarto-xref">Figure&nbsp;<span>27.4</span></a> shows several patterns of trading within the same experimental design. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -849,7 +849,7 @@ Figure&nbsp;27.4: An original redraw reports 36.5% feedback or momentum-consiste
 </section>
 <section id="a-two-direction-bubble-dashboard" class="level2">
 <h2 data-anchor-id="a-two-direction-bubble-dashboard">A two-direction bubble dashboard</h2>
-<p>A rising price can reflect improving prospects, a reinforcing trading process, or both. Treating every rise as confirmation of a bubble would make the diagnosis impossible to correct; dismissing every concern as innovation could leave growing exposure unchecked. Record what makes the price look fragile, what could justify it, and which observation would change your assessment. A probability can help when the event and horizon are well defined.</p>
+<p>A rising price can reflect improving prospects, a reinforcing trading process, or both. Treating every rise as confirmation of a bubble would make the diagnosis impossible to correct; dismissing every concern as innovation could leave growing exposure unchecked. Use both evidence columns in <a href="#tbl-bubble-dashboard" class="quarto-xref">Table&nbsp;<span>27.2</span></a> to record what makes the price look fragile, what could justify it, and which observation would change your assessment. A probability can help when the event and horizon are well defined.</p>
 <div id="tbl-bubble-dashboard" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bubble-dashboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -969,7 +969,7 @@ Table&nbsp;27.2: A two-direction bubble diagnostic
 <li>Test uncertainty and inspect confounding events.</li>
 </ol>
 <p>For an audit, record the published answer to each step and mark missing information rather than inventing a price, return, or model. A full reproduction additionally requires the original sample-construction rules, data vintage, corporate-action handling, code, and trading assumptions.</p>
-<p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. A delayed pattern can indicate slow updating—but also a weak benchmark, overlapping news, trading frictions, or a sample construction that would not have been available in real time.</p>
+<p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. The continued separation after the announcement in <a href="#fig-finance-event-study-drift" class="quarto-xref">Figure&nbsp;<span>27.5</span></a> can illustrate slow updating, but an observed pattern like this could also reflect a weak benchmark, overlapping news, trading frictions, or sample construction that would not have been available in real time.</p>
 <div id="fig-finance-event-study-drift" class="quarto-float quarto-figure quarto-figure-center" alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-finance-event-study-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -996,7 +996,7 @@ Figure&nbsp;27.5: An event-study schematic distinguishes the estimation window, 
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The table compares five historical findings, their behavioral explanations, and rival accounts.</p>
+<p>Read each row of <a href="#tbl-finance-anomalies" class="quarto-xref">Table&nbsp;<span>27.3</span></a> from the historical finding through the behavioral possibility to the rival account: a familiar label alone cannot identify the mechanism or establish an implementable trade.</p>
 <div id="tbl-finance-anomalies" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-finance-anomalies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">

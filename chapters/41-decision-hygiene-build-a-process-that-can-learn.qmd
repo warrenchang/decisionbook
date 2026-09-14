@@ -45,11 +45,11 @@ A hiring process can repeatedly favor the wrong cue, or it can produce different
 
 ![Target diagrams distinguish systematic error from unwanted variability around a benchmark. Level noise concerns persistent differences in judges’ average levels; pattern noise concerns different reactions to case features. Occasion noise adds within-judge variation across occasions.](../figures/bias-and-noise.svg){#fig-bias-and-noise fig-alt="Four target diagrams compare low and high bias with low and high noise. Separate panels define level noise as persistent differences in judges' average levels and pattern noise as different reactions to case features."}
 
-The bullseye summarizes the location and spread of comparable judgments around an observed or accepted target. **Level noise** is persistent variation in judges' average severity or generosity. **Pattern noise** concerns differences in reactions to particular cases. It has two components: **stable pattern noise**, such as a judge consistently giving unusual weight to a case feature, and **occasion noise**, variation in the same judge’s response across times or contexts. Estimate level noise, stable pattern noise, and occasion noise with a repeated-judgment design (Kahneman et al., 2021, ch. 16).
+The four targets in @fig-bias-and-noise separate the location and spread of comparable judgments around an observed or accepted benchmark. **Level noise** is persistent variation in judges' average severity or generosity. **Pattern noise** concerns differences in reactions to particular cases. It has two components: **stable pattern noise**, such as a judge consistently giving unusual weight to a case feature, and **occasion noise**, variation in the same judge’s response across times or contexts. Estimate level noise, stable pattern noise, and occasion noise with a repeated-judgment design (Kahneman et al., 2021, ch. 16).
 
 Noise is easy to miss because people usually encounter one judgment, not the distribution of judgments they might have received. One candidate meets one panel. One paper receives one set of reviews. One patient sees one clinician. Yet fairness requires that similar cases receive similar treatment unless a relevant difference justifies the variation.
 
-To investigate systematic bias, ask which recurring factor shifts the average away from the defensible target. For noise, distinguish the components below:
+To investigate systematic bias, ask which recurring factor shifts the average away from the defensible target. For noise, use @tbl-36-noise to distinguish generally different severity, different weighting of case features, and variation across occasions:
 
 | Noise component | What it looks like | First diagnostic question |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ Senior people should normally speak after independent input is captured. Anonymo
 
 In repeated predictive tasks with measurable outcomes, simple mechanical or statistical rules often match or outperform unaided human judgment because they apply weights consistently (Meehl, 1954; Dawes et al., 1989; Grove et al., 2000). The target, data, and deployment context determine whether the model serves the decision.
 
-AI is often valuable because it improves **prediction**, but prediction is only one task inside a decision. Building on Agrawal et al. (2019), keep four tasks separate.^[Agrawal et al. (2019) use *judgment* for assigning payoffs to consequences. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere, **judgment** retains its broader meaning of forming beliefs and assessments.]
+AI is often valuable because it improves **prediction**, but prediction is only one task inside a decision. Building on Agrawal et al. (2019), @tbl-ai-prediction-judgment-causation separates forecasting from deciding what matters, what could change the outcome, and who can authorize an action.^[Agrawal et al. (2019) use *judgment* for assigning payoffs to consequences. In standard decision-science terminology, and throughout this book, that task is **valuation**. Elsewhere, **judgment** retains its broader meaning of forming beliefs and assessments.]
 
 | Task | Accountable question |
 | --- | --- |
@@ -167,7 +167,7 @@ A practical test is: **Could we explain to an affected person what the system co
 
 ### Minimum AI-use record {#minimum-ai-use-record}
 
-When a model materially informs a consequential decision, record five fields. The purpose is not to preserve every keystroke. It is to make the contribution, verification, authority, and correction path inspectable.
+When a model materially informs a consequential decision, complete the five fields in @tbl-minimum-ai-use-record. The purpose is not to preserve every keystroke. It is to make the contribution, verification, authority, and correction path inspectable.
 
 | Field | Minimum record |
 | --- | --- |
@@ -207,7 +207,7 @@ Once the weak stage is identified, choose a change that addresses it. If members
 
 ## Better meetings: do not let the presentation become the decision
 
-Many organizations call a meeting before defining what must be decided. Participants hear a polished recommendation, then try to recover independent judgment from inside its frame. A better meeting separates the stages:
+Many organizations call a meeting before defining what must be decided. Participants hear a polished recommendation, then try to recover independent judgment from inside its frame. The stages in @tbl-36-meeting protect independent input before a recommendation can frame the discussion, then give challenge, decision, and review their own place:
 
 | Phase | Process rule | What it protects |
 | --- | --- | --- |
@@ -225,7 +225,7 @@ Roles can make the process visible: one person tracks criteria, one assumptions,
 
 A coherent account of a decision is not the same thing as the process that produced it. Begin an audit by writing the ordinary five-sentence story: What decision did I face? What did I choose? Why did it seem right? What happened? How good was the decision? That story is useful because it captures what is currently retrievable. It is also dangerous because it tends to blend what was known then with what became known later.
 
-Now examine the story through six audit questions:
+Use the six questions in @tbl-35-decision-audit to separate what was predicted, valued, and left out of the story, then identify a change to the next decision process:
 
 | Audit focus | Audit question | Common failure | Process redesign |
 | --- | --- | --- | --- |
@@ -237,7 +237,7 @@ Now examine the story through six audit questions:
 | Feedback | What was supposed to be learned, and when? | Letting hindsight rewrite the original forecast. | Record assumptions and set a review date. |
 : A decision-loop diagnostic {#tbl-35-decision-audit}
 
-The audit can reveal missing options, unsupported predictions, hidden values, invisible opportunity costs, contextual pressures, and feedback that was never designed. Its purpose is prospective: make the next decision more testable than the last one.
+The audit can reveal missing options, unsupported predictions, hidden values, invisible opportunity costs, contextual pressures, and feedback that was never designed. Its purpose is prospective: make the next decision more testable than the last one. The four cells in @fig-decision-audit keep that process assessment separate from the outcome: a favorable result can hide a weakness, while an unfavorable result can follow sound work.
 
 ![A sound or weak process can be followed by either a favorable or unfavorable outcome.](../figures/decision-audit.svg){#fig-decision-audit fig-alt="A two-by-two matrix crosses sound and weak decision processes with favorable and unfavorable outcomes. A sound process can still meet an unfavorable outcome, and a weak process can receive a favorable one." .phone-fit}
 
@@ -265,7 +265,7 @@ Every after-outcome prompt should answer the before-choosing record with the **s
 
 ### A simplified decision journal {#decision-journal-example}
 
-A university teacher hopes an AI-assisted feedback tool will save editing time. An initial test suggests it can, but some drafts need major correction; faster production could come at the expense of feedback students can use. Before a pilot, the teacher must decide which results would justify adoption and which would stop it. The case and numbers in the table are hypothetical. Its two-stage record preserves those commitments so that a later time saving cannot quietly replace the original standard of success.
+A university teacher hopes an AI-assisted feedback tool will save editing time. An initial test suggests it can, but some drafts need major correction; faster production could come at the expense of feedback students can use. Before a pilot, the teacher must decide which results would justify adoption and which would stop it. The case and numbers in @tbl-simplified-decision-journal are hypothetical. Its two-stage record preserves those commitments so that a later time saving cannot quietly replace the original standard of success.
 
 | Matched learning loop | Before choosing — freeze | After the outcome — compare and update |
 | --- | --- | --- |
@@ -290,7 +290,7 @@ The hiring committee’s later review should begin with its original scores and 
 
 []{#decision-journal-after-outcome}
 
-The minimum useful entry identifies the decision, separates prediction from valuation, and defines how later evidence will be interpreted. Append the review; never edit the original entry into agreement with what occurred.
+The matched rows in @tbl-35-decision-journal identify the decision, separate prediction from valuation, and require the later review to answer the same questions recorded before choosing. Append the review; never edit the original entry into agreement with what occurred.
 
 | Learning loop | Before choosing — freeze | After the outcome — compare |
 | --- | --- | --- |
@@ -309,7 +309,7 @@ The review should end with a reasoned next step. Change a forecast, rule, or inf
 
 ![Part VII follows a practical reading route: find the obstacle, change the conditions, and check the results.](../figures/master-loop-part-7.svg){#fig-master-loop-finale fig-alt="Three reading questions connect finding the obstacle, changing the conditions, and checking the results. They organize Part VII's design and learning tools." .phone-fit}
 
-The part map offers a brief way back into the main workflow: identify the obstacle, choose a change, and check its effect. If a review leaves the next step unclear, use the prompts below to locate the unanswered question. They help select work within the process, rather than add another sequence to complete.
+The three questions in @fig-master-loop-finale offer a brief way back into the main workflow: identify the obstacle, choose a change, and check its effect. If a review leaves the next step unclear, use the prompts in @tbl-35-1 to locate the unanswered question. They help select work within the process, rather than add another sequence to complete.
 
 
 
@@ -336,7 +336,7 @@ Structure is not automatically fair. A rubric can make the wrong values consiste
 
 Ask whether the criteria serve legitimate goals, whether exceptions are reasoned and reviewable, and whether affected people can challenge errors. Inspect how benefits and burdens are distributed. A model, committee, or consultant should not obscure who has authority and responsibility.
 
-Scale the procedure to the stakes. A low-cost reversible choice may need a short note and a review date; a repeated hiring process needs stronger evidence and checks for unfair treatment. Remove a control when its burden exceeds its useful contribution.
+Use the two levels of protection in @tbl-36-proportionality to scale the procedure to the stakes. A low-cost reversible choice may need a short note and a review date; a repeated hiring process needs stronger evidence and checks for unfair treatment. Remove a control when its burden exceeds its useful contribution.
 
 
 

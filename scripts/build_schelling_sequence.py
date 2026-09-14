@@ -85,26 +85,25 @@ def run() -> tuple[list[int], list[int], list[int], list[int]]:
 
 def panel(grid: list[int], x: int, title: str, subtitle: str) -> str:
     pitch=17
-    parts=[f'<g id="panel-{x}"><rect x="{x}" y="125" width="390" height="420" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>',
+    parts=[f'<g id="panel-{x}"><rect x="{x}" y="125" width="390" height="440" rx="20" fill="white" stroke="#bfd0dd" stroke-width="2"/>',
            f'<text x="{x+195}" y="170" text-anchor="middle" class="head">{title}</text>',
            f'<text x="{x+195}" y="211" text-anchor="middle">{subtitle}</text>']
     colors={0:"white",1:"#236b8e",2:"#c44e52"}
     for i,value in enumerate(grid):
         r,c=divmod(i,COLS)
         parts.append(f'<circle cx="{x+50+c*pitch}" cy="{244+r*pitch}" r="6.5" fill="{colors[value]}" stroke="#8b9dab" stroke-width=".7"/>')
-    parts.append(f'<text x="{x+195}" y="514" text-anchor="middle">Same-group share: {segregation_index(grid):.2f}</text></g>')
+    parts.append(f'<text x="{x+195}" y="506" text-anchor="middle">Same-group neighbors</text><text x="{x+195}" y="542" text-anchor="middle">Mean share: {segregation_index(grid):.2f}</text></g>')
     return "\n".join(parts)
 
 
 def build_svg() -> str:
     initial,after_one,final,moves=run()
-    parts=['<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="665" viewBox="0 0 1400 665" role="img" aria-labelledby="title desc">',
+    parts=['<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="610" viewBox="0 62 1400 610" role="img" aria-labelledby="title desc">',
            '<title id="title">Local moves can create separation</title>',
            '<desc id="desc">One seeded Schelling-style simulation shows the same agents initially, after one sweep, and after convergence. The mean share of same-group neighbors increases from .48 to .64 to .68. No agent seeks an aggregate segregation pattern.</desc>',
            '<style>text{font:26px Arial,Helvetica,sans-serif;fill:#183047}.head{font-size:28px;font-weight:700}</style>',
            '<defs><marker id="arrow" viewBox="0 0 10 8" markerWidth="9" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L9 4L0 8Z" fill="#587189"/></marker></defs>',
-           '<rect width="1400" height="665" fill="#f7f9fc"/>',
-           '<text x="700" y="56" text-anchor="middle" style="font-size:36px;font-weight:700">Local moves can create separation</text>',
+           '<rect width="1400" height="672" fill="#f7f9fc"/>',
            '<text x="700" y="97" text-anchor="middle">One teaching run; each agent seeks at least one-third same-group neighbors.</text>',
            panel(initial,45,"1. Random start","Same population"),
            '<path d="M435 335H505" stroke="#587189" stroke-width="3" marker-end="url(#arrow)"/>',
@@ -114,7 +113,8 @@ def build_svg() -> str:
            '<circle cx="365" cy="598" r="10" fill="#236b8e"/><text x="386" y="607">Group A</text>',
            '<circle cx="555" cy="598" r="10" fill="#c44e52"/><text x="576" y="607">Group B</text>',
            '<circle cx="745" cy="598" r="10" fill="white" stroke="#8b9dab"/><text x="766" y="607">Vacancy</text>',
-           '<text x="1005" y="607">Seed: 20260830</text>', '</svg>']
+           '<text x="1005" y="607">Seed: 20260830</text>',
+           '<text x="700" y="651" text-anchor="middle">One sweep visits the agents once; neighbor shares exclude vacant cells.</text>', '</svg>']
     return "\n".join(parts)
 
 

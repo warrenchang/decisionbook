@@ -14,6 +14,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from qa_figure_connectors import audit as audit_connectors
+from qa_float_references import audit as audit_float_references
 from sync_references import canonical_chapters, chapter_references, reference_key
 
 
@@ -432,6 +433,10 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
                 rendered_alt_missing += 1
                 issues.append(Issue("error", "rendered-alt", rel(html_path), "Rendered image lacks alternative text."))
 
+    float_coverage = audit_float_references(rendered=True)
+    for detail in float_coverage["issues"]:
+        issues.append(Issue("error", "float-reference-coverage", "_quarto-html.yml", detail))
+
     summary: dict[str, object] = {
         "canonical_chapters": len(chapters),
         "chapter_body_words": sum(body_words.values()),
@@ -442,6 +447,8 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
         "chapter_figures": len(figure_paths),
         "book_figures": len(book_figure_paths),
         "chapter_tables": table_count,
+        "book_numbered_figures": float_coverage["counts"].get("fig", 0),
+        "book_numbered_tables": float_coverage["counts"].get("tbl", 0),
         "rendered_chapters_missing": rendered_missing,
         "rendered_images_missing_alt": rendered_alt_missing,
         "unresolved_citations": len(unresolved_citations),
@@ -507,7 +514,7 @@ def render_report(summary: dict[str, object], issues: list[Issue]) -> str:
             "",
             "## Scope",
             "",
-            "The audit checks canonical chapter membership, required learning sections, every figure referenced by configured book sources, alternative text, SVG metadata, PNG fallbacks, connector attachment, duplicate cross-reference IDs, source links, and exact master-bibliography union. Visual aesthetics are also reviewed separately from rendered figure contact sheets; scientific source support still requires editorial judgment.",
+            "The audit checks canonical chapter membership, required learning sections, every figure referenced by configured book sources, alternative text, SVG metadata, PNG fallbacks, connector attachment, duplicate cross-reference IDs, local prose references to all numbered figures and tables, unnumbered teaching tables, source links, and exact master-bibliography union. Visual aesthetics and the usefulness of the accompanying discussion require separate editorial review; scientific source support still requires scholarly judgment.",
             "",
         ]
     )

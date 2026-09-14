@@ -10,6 +10,7 @@ PNG fallbacks can be refreshed with scripts/render_svg_png_fallbacks.cjs.
 from __future__ import annotations
 
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 from xml.etree import ElementTree as ET
 from xml.sax.saxutils import escape
 
@@ -203,7 +204,7 @@ def main():
         assert len(ids) == len(set(ids)), f"Duplicate IDs in {filename}"
         assert parsed.attrib["viewBox"].startswith("0 0 800 ")
         path_out = FIGURES / filename
-        path_out.write_text(svg, encoding="utf-8")
+        path_out.write_text(clean_svg(filename, svg), encoding="utf-8")
         print(path_out.relative_to(ROOT))
 
 

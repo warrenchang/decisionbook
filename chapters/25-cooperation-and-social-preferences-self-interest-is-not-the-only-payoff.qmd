@@ -21,7 +21,7 @@ aliases:
 | **Defect** | 6, 0 | 2, 2 |
 : One-shot Prisoner's Dilemma {#tbl-one-shot-pd}
 
-If Player 2 cooperates, Player 1 receives 6 by defecting instead of 4 by cooperating. If Player 2 defects, Player 1 receives 2 by defecting instead of 0 by cooperating. Defection is therefore a dominant strategy for both players, and Defect–Defect is the unique Nash equilibrium. Yet Cooperate–Cooperate gives both a higher payoff.
+In @tbl-one-shot-pd, if Player 2 cooperates, Player 1 receives 6 by defecting instead of 4 by cooperating. If Player 2 defects, Player 1 receives 2 by defecting instead of 0 by cooperating. Defection is therefore a dominant strategy for both players, and Defect–Defect is the unique Nash equilibrium. Yet Cooperate–Cooperate gives both a higher payoff.
 
 Each player can improve their own payoff by defecting, yet following that incentive leaves both worse off than mutual cooperation. Asking them to seek the shared gain does not remove the temptation to depart from it. What would make cooperation dependable? Guilt, concern for the other person, reputational consequences, or a binding promise can change the experienced payoff. Continued interaction changes the game itself. This chapter examines which change addresses the dilemma and what it predicts.
 
@@ -43,7 +43,7 @@ Watch the [ferry dilemma from *The Dark Knight*](https://youtu.be/Yqvbv-SB4bg) a
 
 ![Robust cooperation can be supported by repeated interaction, reputation, social preferences, norms and institutions, and network structure. Each support changes a different part of the decision and must be audited for noise, exclusion, coercion, and exit.](../figures/cooperation-architecture.svg){#fig-cooperation-architecture fig-alt="A cooperation challenge at the top branches from one centered point to five evenly spaced support boxes: repeated interaction, reputation, social preferences, norms and institutions, and network or spatial structure. Arrows converge from a common line on robust cooperation. A final audit box asks about implementation error, outsiders, punishment, power, transparency, and exit."}
 
-Begin by adding a future to the opening game. If that changes the prediction, we can explain cooperation without yet changing what players value.
+Begin with the repeated-interaction branch of @fig-cooperation-architecture by adding a future to the opening game. If that changes the prediction, we can explain cooperation without yet changing what players value.
 
 ## How a future relationship supports cooperation {#movement-1-why-cooperation-persists}
 
@@ -89,7 +89,7 @@ The “live-and-let-live” system that emerged in parts of the Western Front du
 
 ### Reputation, networks, and institutions change incentives
 
-One recurring condition is **positive assortment**: cooperators interact with other cooperators more often than random mixing would predict. The explanation must then specify how partners are encountered or selected. Nowak (2006) organizes cooperation mechanisms into five rules.
+One recurring condition is **positive assortment**: cooperators interact with other cooperators more often than random mixing would predict. The explanation must then specify how partners are encountered or selected. The five rules in @tbl-five-rules separate how relatedness, repeated encounters, reputation, and population structure can support cooperation (Nowak, 2006).
 
 | Rule | Link that supports cooperation | Diagnostic question |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ The evolutionary label must not erase institutions. Kin, repeated contact, reput
 
 A reputation incentive usually depends on someone observing what you do. A coffee-room honesty box raises a sharper possibility: could an image suggesting observation change payment even when no observer is added? If so, the appearance of accountability could influence behavior before its actual consequences change. Bateson, Nettle, and Roberts (2006) alternated eye and flower images above a price list beside an honesty box for ten weeks. Contributions per unit consumed were nearly three times as high in eye-image weeks as in flower-image weeks. No additional observer had been introduced, but the cue may have made possible observation or reputation more salient.
 
-Two later meta-analyses found no reliable overall increase in generosity from artificial surveillance cues (Northover et al., 2017). The next question is when a cue alters perceived observability, for whom, and with what consequence. [Appendix G](../appendices/appendix-f-when-evidence-breaks.qmd#a-concrete-update-watched-eyes-and-the-honesty-box) uses this case to show how a memorable result should be revised as evidence accumulates.
+The two panels in @fig-watched-eyes-evidence-update keep that field result beside the later cumulative evidence: two meta-analyses found no reliable overall increase in generosity from artificial surveillance cues (Northover et al., 2017). The next question is when a cue alters perceived observability, for whom, and with what consequence. [Appendix G](../appendices/appendix-f-when-evidence-breaks.qmd#a-concrete-update-watched-eyes-and-the-honesty-box) uses this case to show how a memorable result should be revised as evidence accumulates.
 
 ![In one university coffee-room field study, eye and flower images alternated above an honesty box for ten weeks, and contributions per unit consumed were nearly three times as high in eye-image weeks as in flower-image weeks. Two later meta-analyses found no reliable overall increase in generosity from artificial surveillance cues.](../figures/watched-eyes-evidence-update.svg){#fig-watched-eyes-evidence-update fig-alt="A two-panel evidence update. The left panel depicts ten alternating weeks of eye and flower posters above a university coffee-room honesty box and reports contributions per unit consumed nearly three times as high in eye-image weeks as in flower-image weeks. The right panel shows the later cumulative conclusion that two meta-analyses found no reliable overall increase in generosity." width="100%"}
 
@@ -138,14 +138,14 @@ The linked [ultimatum scene](https://youtu.be/7mETgb-fPRo) provides a communicat
 
 A generous ultimatum offer can express care or simply buy acceptance. To test how much acceptance matters, remove the recipient's power to reject. That is the **dictator game**: the allocator can now keep the money without risking strategic punishment. Removing that punishment usually reduces transfers. In classic comparable treatments, average giving is around 20% in Forsythe and colleagues (1994) and closer to 10% under the double-blind procedures of Hoffman and colleagues (1994).
 
-Removing rejection does not remove the rest of the setting. Anonymity, earned entitlement, experimenter observation, and whether the menu allows taking as well as giving can change the meaning of the action. The contrast narrows the explanation without turning a transfer into a pure measure of generosity.
+Removing rejection does not remove the rest of the setting. Anonymity, earned entitlement, experimenter observation, and whether the menu allows taking as well as giving can change the meaning of the action. The progression across @fig-social-preference-games-redraw shows which rights and options change between games; these contrasts narrow the explanation without turning a transfer into a pure measure of generosity.
 
 ![An original redraw compares the ultimatum, dictator, and take-or-menu-variant games. Removing the responder's rejection option separates strategic rejection from giving; changing the allocator's ability to give, take, or leave the study changes property rights and the meaning of the observed allocation.](../figures/social-preference-games-redraw.svg){#fig-social-preference-games-redraw fig-alt="Three cards compare ultimatum, dictator, and take or menu-variant games. Each card states the game mechanics and historical reported patterns." width=100%}
 
 
 ## Bridge: preferences, norms, and enforcement are different
 
-A person can dislike inequality even when no one else expects sharing; that private concern is a social preference. Another person may keep all the money while believing that others would approve of sharing. In that case, a norm belief is outweighed by another motive. To explain or change the choice, distinguish what the person values from what they expect others to do or approve. The table also separates these influences from rewards and sanctions.
+A person can dislike inequality even when no one else expects sharing; that private concern is a social preference. Another person may keep all the money while believing that others would approve of sharing. In that case, a norm belief is outweighed by another motive. To explain or change the choice, distinguish what the person values from what they expect others to do or approve. @tbl-preference-norm separates these influences from rewards and sanctions, matching each to the evidence needed to identify it.
 
 | Concept | What enters the account? | How to measure it | Typical intervention |
 | --- | --- | --- | --- |

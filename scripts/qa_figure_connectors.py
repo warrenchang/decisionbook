@@ -33,7 +33,7 @@ FREE_ENDPOINTS = {
     # Side arrows point to unboxed validity labels, not participant-flow nodes.
     # Their 20px label gaps are verified in the rendered F.2 figure audit.
     ("random-sampling-vs-assignment.svg", 565.0, 240.0),  # external validity
-    ("random-sampling-vs-assignment.svg", 375.0, 603.0),  # internal validity
+    ("random-sampling-vs-assignment.svg", 437.5, 603.0),  # internal validity
 }
 
 
