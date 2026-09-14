@@ -1,14 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 170 760 330" role="img" aria-labelledby="title desc" data-layout="compact">
-<title id="title">An urge can change without being acted on</title><desc id="desc">A schematic curve shows one possible rise and fall of urge intensity without a fixed timescale. This is not a timetable: urges can persist or return.</desc>
-<defs><style>
-text {font-family:Arial,Helvetica,sans-serif;fill:#183047}
-.title {font-family:Georgia,serif;font-size:38px;font-weight:bold}
-</style>
-<marker id="blue" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#25678f"/></marker>
-<marker id="green" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#2b7a78"/></marker>
-<marker id="warm" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#b95f2d"/></marker>
-</defs><rect width="760" height="330" fill="white" x="0" y="170"/>
-<path d="M104 182 V439 H702" fill="none" stroke="#183047" stroke-width="2.5"/><path d="M120 422 C230 422 262 222 367 229 S473 416 680 422" fill="none" stroke="#b95f2d" stroke-width="7" stroke-linecap="round"/>
-<text x="390" y="480" text-anchor="middle" font-size="30" font-weight="normal" style="fill:#183047" class=""><tspan x="390" dy="0">Time</tspan></text>
-<text x="51" y="315" text-anchor="middle" font-size="30" transform="rotate(-90 51 315)">Urge intensity</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="370" viewBox="0 0 760 370" role="img" aria-labelledby="title desc" data-layout="compact">
+  <title id="title">An urge can change without being acted on</title>
+  <desc id="desc">A schematic urge-intensity curve rises to a rounded peak, then gradually declines. Its line changes from yellow through orange to red around the peak, then through purple and blue to green as intensity declines. There is no numerical scale or fixed timescale; urges can persist or return.</desc>
+  <defs>
+    <linearGradient id="urge-colors" x1="112" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D4A017"/>
+      <stop offset="0.18" stop-color="#E88420"/>
+      <stop offset="0.34" stop-color="#D34336"/>
+      <stop offset="0.50" stop-color="#D34336"/>
+      <stop offset="0.64" stop-color="#8751A6"/>
+      <stop offset="0.82" stop-color="#347EB7"/>
+      <stop offset="1" stop-color="#4E8C50"/>
+    </linearGradient>
+    <style>
+      text {font-family:Arial,Helvetica,sans-serif;fill:#183047;font-size:32px}
+    </style>
+  </defs>
+  <rect width="760" height="370" fill="#FFFFFF"/>
+  <rect x="94" y="22" width="630" height="290" fill="#FAF8F1"/>
+  <g id="guides" fill="none" stroke="#D8E0E3" stroke-width="1.5">
+    <path d="M94 32H724 M94 72H724 M94 112H724 M94 152H724 M94 192H724 M94 232H724 M94 272H724"/>
+  </g>
+  <path id="axes" d="M94 22V312H724" fill="none" stroke="#637986" stroke-width="2"/>
+  <path id="urge-curve" d="M112 296 C160 264 207 239 240 196 C273 153 301 45 353 45 C405 45 451 94 494 124 C537 154 600 224 700 268" fill="none" stroke="url(#urge-colors)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="409" y="356" text-anchor="middle">Time</text>
+  <text x="40" y="167" text-anchor="middle" transform="rotate(-90 40 167)">Urge intensity</text>
 </svg>
