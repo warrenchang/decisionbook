@@ -216,7 +216,7 @@ def rare_event_sampling() -> str:
 def mental_accounting_evidence() -> str:
     body = [title_block(
         "Two ways a narrow bracket changes an investment decision",
-        "Original redraws of reported results; neither panel supplies a universal effect size.",
+        "Reported results; neither panel supplies a universal effect size.",
     )]
     body += [
         rect(45, 115, 540, 565, fill="#f7fafc", stroke="#c8d7e2", sw=2, rx=20),
@@ -327,7 +327,7 @@ def bubble_strategies() -> str:
     ]
     body = [title_block(
         "A bubble can contain several strategies at once",
-        "Original redraw of one experimental classification reported by Haruvy and Noussair (2006).",
+        "Experimental classifications reported by Haruvy and Noussair (2006).",
     )]
     body += [rect(55, 112, 760, 540, fill="#f7fafc", stroke="#c8d7e2", sw=2, rx=18)]
     x0, maxw = 315, 435

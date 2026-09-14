@@ -40,6 +40,10 @@ git commit -m "Revise textbook"
 git push origin main
 ```
 
+## Reorder appendices
+
+Appendix letters follow the order in `_quarto-html.yml` and `_quarto-epub.yml`, not the letters in historical filenames. When the order changes, update both profiles, reader-facing appendix labels and ranges, and the expected order in the publication checks. Preserve filenames and anchors so saved links still resolve. Rebuild both editions and check that headings, navigation, figure and table numbers, and labeled links agree with the new order.
+
 ## Edit a figure
 
 Keep an editable source such as `figures-src/decision-loop.drawio`, export it as `figures/decision-loop.svg`, and run `quarto render`. The same filename lets the chapter update without changing its source.
@@ -53,6 +57,7 @@ Before deleting text, identify what a reader should learn from the illustration.
 - Identify comparison groups, experimental conditions, units, denominators, abbreviations, and hypothetical or schematic assumptions needed to interpret the visual.
 - Retain qualifications that prevent an incorrect inference. A compact diagram must not imply that intention-to-treat analysis automatically resolves attrition or spillovers, for example.
 - Remove repeated slogans and decorative headings only when the remaining figure still teaches its intended point. Meaningful labels are not redundant merely because the chapter also explains them.
+- Keep captions and alternative text focused on what readers should understand. Omit generic production notes about how an image was made or redrawn; retain production provenance in the project records. Preserve scholarly source citations, required credits and licenses, and distinctions between hypothetical illustrations, simulations, and observed results.
 
 A planning-question diagram, an activity, and a research-results plot serve different purposes. Preserve the task instructions needed for an activity without adding a visible answer banner; give alternative text equivalent access to the displayed information. Photographs should retain their illustrative role without implying evidence for an unobserved mechanism.
 

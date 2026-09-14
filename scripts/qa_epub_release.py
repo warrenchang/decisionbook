@@ -49,11 +49,11 @@ EXPECTED_PART_CHAPTERS = [
 EXPECTED_APPENDICES = [
     ("Appendix A", "Rational Choice and Decision Analysis"),
     ("Appendix B", "Evolutionary Explanations of Value, Choice, and Rationality"),
-    ("Appendix C", "Portable Tools"),
-    ("Appendix D", "Index of Major Examples"),
-    ("Appendix E", "Conducting and Writing a Literature Review"),
-    ("Appendix F", "Running an Experimental Study"),
-    ("Appendix G", "When Evidence Breaks"),
+    ("Appendix C", "Conducting and Writing a Literature Review"),
+    ("Appendix D", "Running an Experimental Study"),
+    ("Appendix E", "When Evidence Breaks"),
+    ("Appendix F", "Portable Tools"),
+    ("Appendix G", "Index of Major Examples"),
 ]
 
 REQUIRED_CONTENT = [
