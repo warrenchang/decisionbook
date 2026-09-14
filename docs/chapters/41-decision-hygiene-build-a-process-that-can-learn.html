@@ -679,12 +679,13 @@ Figure&nbsp;41.1: Target diagrams distinguish systematic error from unwanted var
 </figcaption>
 </figure>
 </div>
-<p>The bullseye summarizes the location and spread of comparable judgments around an observed or accepted target. <strong>Level noise</strong> is persistent variation in judges’ average severity or generosity. <strong>Pattern noise</strong> arises when judges react differently to features of particular cases. <strong>Occasion noise</strong> is additional within-judge variation across times or contexts. Estimate these components with a repeated-judgment design.</p>
+<p>The bullseye summarizes the location and spread of comparable judgments around an observed or accepted target. <strong>Level noise</strong> is persistent variation in judges’ average severity or generosity. <strong>Pattern noise</strong> concerns differences in reactions to particular cases. It has two components: <strong>stable pattern noise</strong>, such as a judge consistently giving unusual weight to a case feature, and <strong>occasion noise</strong>, variation in the same judge’s response across times or contexts. Estimate level noise, stable pattern noise, and occasion noise with a repeated-judgment design (Kahneman et al., 2021, ch.&nbsp;16).</p>
 <p>Noise is easy to miss because people usually encounter one judgment, not the distribution of judgments they might have received. One candidate meets one panel. One paper receives one set of reviews. One patient sees one clinician. Yet fairness requires that similar cases receive similar treatment unless a relevant difference justifies the variation.</p>
+<p>To investigate systematic bias, ask which recurring factor shifts the average away from the defensible target. For noise, distinguish the components below:</p>
 <div id="tbl-36-noise" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-36-noise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41.1: Different sources of disagreement in a judgment system
+Table&nbsp;41.1: Three components of noise in a judgment system
 </figcaption>
 <div aria-describedby="tbl-36-noise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -695,42 +696,33 @@ Table&nbsp;41.1: Different sources of disagreement in a judgment system
 </colgroup>
 <thead>
 <tr class="header">
-<th>Failure</th>
+<th>Noise component</th>
 <th>What it looks like</th>
 <th>First diagnostic question</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Bias</td>
-<td>Judgments are wrong in a systematic direction.</td>
-<td>What recurring factor shifts the average?</td>
-</tr>
-<tr class="even">
 <td>Level noise</td>
 <td>Some judges are generally harsher or more generous.</td>
 <td>Does the result depend on which judge was assigned?</td>
 </tr>
-<tr class="odd">
-<td>Pattern noise</td>
-<td>Judges weight features idiosyncratically.</td>
+<tr class="even">
+<td>Stable pattern noise</td>
+<td>Judges persistently weight features idiosyncratically.</td>
 <td>Are the criteria and their weights shared?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Occasion noise</td>
 <td>The same judge varies with time, order, fatigue, or context.</td>
 <td>Would this person decide the same way tomorrow?</td>
-</tr>
-<tr class="odd">
-<td>Legitimate discretion</td>
-<td>Variation reflects relevant information, values, or circumstances.</td>
-<td>Can the exception be explained and documented?</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
+<p><strong>Legitimate discretion</strong> is different: variation can reflect relevant information, values, or circumstances. Ask whether the exception can be explained and documented before treating it as an error to remove.</p>
 <p>The distinction matters statistically and ethically. Error increases when judgments are shifted in the wrong direction, widely dispersed, or both. Reducing dispersion around a bad target does not create a good system. Nor should consistency erase morally relevant differences. A noise audit measures variation first; responsible judgment then decides which variation is arbitrary and which is justified.</p>
 <p>Decision hygiene is broader than teaching a catalogue of biases. The analogy is medical hygiene: handwashing can prevent infection without identifying the exact germ in advance. Independent scoring, explicit criteria, reference classes, checklists, and decision records can reduce several errors without requiring the user to diagnose the precise bias operating in the moment.</p>
 <p>Intuition still has a place. It deserves more trust when the environment contains stable patterns and the judge receives rapid, accurate, attributable feedback. Chess and some skilled emergency work can provide such learning conditions. Long-range strategy, one-off hiring, political forecasting, and innovation often do not. Repetition can create confidence even when feedback is delayed, selective, or confounded (Kahneman &amp; Klein, 2009).</p>
@@ -995,7 +987,7 @@ Table&nbsp;41.4: A decision meeting organized around judgment rather than presen
 <section id="the-decision-audit-from-a-smooth-story-to-an-inspectable-process" class="level2">
 <h2 data-anchor-id="the-decision-audit-from-a-smooth-story-to-an-inspectable-process">The decision audit: from a smooth story to an inspectable process</h2>
 <p>A coherent account of a decision is not the same thing as the process that produced it. Begin an audit by writing the ordinary five-sentence story: What decision did I face? What did I choose? Why did it seem right? What happened? How good was the decision? That story is useful because it captures what is currently retrievable. It is also dangerous because it tends to blend what was known then with what became known later.</p>
-<p>Now slow the story into six inspectable components:</p>
+<p>Now examine the story through six audit questions:</p>
 <div id="tbl-35-decision-audit" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-35-decision-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1011,7 +1003,7 @@ Table&nbsp;41.5: A decision-loop diagnostic
 </colgroup>
 <thead>
 <tr class="header">
-<th>Component</th>
+<th>Audit focus</th>
 <th>Audit question</th>
 <th>Common failure</th>
 <th>Process redesign</th>
@@ -1344,12 +1336,12 @@ Table&nbsp;41.9: Proportionate decision hygiene
 <td>Forecast scoring and portfolio-level analysis</td>
 </tr>
 <tr class="odd">
-<td>Repeated prediction</td>
+<td>Inconsistent repeated predictions</td>
 <td>Transparent statistical baseline</td>
 <td>Validated model with fairness and drift audit</td>
 </tr>
 <tr class="even">
-<td>AI-supported judgment</td>
+<td>Uncritical reliance on AI</td>
 <td>Independent human view and verification</td>
 <td>Contestability, subgroup audit, human review board</td>
 </tr>

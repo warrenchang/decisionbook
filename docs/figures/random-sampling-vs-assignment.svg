@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="690" viewBox="0 0 760 690" role="img" aria-labelledby="title desc">
-  <title id="title">Sampling and assignment answer different questions</title>
-  <desc id="desc">Random sampling supports population generalization, one aspect of external validity. Random assignment supports internal validity by creating a causal comparison within the sample. Both depend on the sampling or assignment design and on how the study is carried out.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="840" viewBox="0 0 760 840" role="img" aria-labelledby="title desc">
+  <title id="title">Random sampling and random assignment</title>
+  <desc id="desc">The target population passes through random sampling into an evaluation sample and people not in the evaluation. Only the evaluation sample proceeds to random assignment, which divides it into treatment and control groups. Unboxed side labels connect sampling to external validity and assignment to internal validity; they describe the inferences supported, not additional study procedures. Neither procedure alone guarantees validity.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#5f7080"/>
@@ -13,44 +13,55 @@
       <path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#a74343"/>
     </marker>
   </defs>
-  <rect width="760" height="690" fill="#f8fafc"/>
-<text x="380" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#17324d" >Two different uses of randomness</text>
-<text x="195" y="109" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#2f6f9f" >SAMPLING</text>
-<g id="sampling-0">
-<rect x="25" y="140" width="340" height="110" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2"/>
-<text x="195" y="182" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >Population</text>
-<text x="195" y="223" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >Who is eligible?</text>
+  <rect width="760" height="840" fill="#f8fafc"/>
+<g id="target-population">
+<rect x="25" y="20" width="710" height="125" rx="18" fill="#b55b25" stroke="#b55b25" stroke-width="2"/>
+<text x="380" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" fill="#ffffff" >Target population</text>
 </g>
-<path d="M195 250 V290" stroke="#5f7080" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="sampling-1">
-<rect x="25" y="290" width="340" height="110" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2"/>
-<text x="195" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >Sample</text>
-<text x="195" y="373" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >Who is selected?</text>
+<g id="random-sampling">
+<rect x="255" y="185" width="250" height="110" rx="18" fill="#2b7a78" stroke="#2b7a78" stroke-width="2"/>
+<text x="380" y="230" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Random</text>
+<text x="380" y="268" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >sampling</text>
 </g>
-<path d="M195 400 V440" stroke="#5f7080" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="sampling-2">
-<rect x="25" y="440" width="340" height="110" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2"/>
-<text x="195" y="482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >External validity</text>
-<text x="195" y="523" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >To whom does it apply?</text>
+<g id="evaluation-sample">
+<rect x="25" y="365" width="305" height="130" rx="18" fill="#b55b25" stroke="#b55b25" stroke-width="2"/>
+<text x="177.5" y="442" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Evaluation sample</text>
 </g>
-<text x="565" y="109" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#447c55" >ASSIGNMENT</text>
-<g id="assignment-0">
-<rect x="395" y="140" width="340" height="110" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="2"/>
-<text x="565" y="182" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >Study sample</text>
-<text x="565" y="223" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >Who takes part?</text>
+<g id="not-in-evaluation">
+<rect x="370" y="365" width="365" height="130" rx="18" fill="#b55b25" stroke="#b55b25" stroke-width="2"/>
+<text x="552.5" y="442" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Not in evaluation</text>
 </g>
-<path d="M565 250 V290" stroke="#5f7080" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="assignment-1">
-<rect x="395" y="290" width="340" height="110" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="2"/>
-<text x="565" y="332" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >Groups A and B</text>
-<text x="565" y="373" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >Who gets what?</text>
+<g id="random-assignment">
+<rect x="50" y="548" width="255" height="110" rx="18" fill="#2b7a78" stroke="#2b7a78" stroke-width="2"/>
+<text x="177.5" y="593" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Random</text>
+<text x="177.5" y="631" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >assignment</text>
 </g>
-<path d="M565 400 V440" stroke="#5f7080" stroke-width="3" marker-end="url(#arrow)"/>
-<g id="assignment-2">
-<rect x="395" y="440" width="340" height="110" rx="18" fill="#edf4ed" stroke="#447c55" stroke-width="2"/>
-<text x="565" y="482" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#17324d" >Internal validity</text>
-<text x="565" y="523" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >Is the contrast causal?</text>
+<g id="treatment-group">
+<rect x="25" y="718" width="200" height="102" rx="18" fill="#b55b25" stroke="#b55b25" stroke-width="2"/>
+<text x="125" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Treatment</text>
+<text x="125" y="798" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >group</text>
 </g>
-<text x="380" y="612" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17324d" >Inference still depends on the design</text>
-<text x="380" y="648" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#17324d" >and on how the study is carried out.</text>
+<g id="control-group">
+<rect x="255" y="718" width="200" height="102" rx="18" fill="#b55b25" stroke="#b55b25" stroke-width="2"/>
+<text x="355" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >Control</text>
+<text x="355" y="798" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#ffffff" >group</text>
+</g>
+<path d="M380 145 V185" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M380 295 V327" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M380 327 H177.5 V365" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M380 327 H552.5 V365" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177.5 495 V548" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177.5 658 V684" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M177.5 684 H125 V718" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M177.5 684 H355 V718" fill="none" stroke="#5f7080" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M505 240 H565" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linecap="round" marker-end="url(#blue-arrow)"/>
+<path d="M305 603 H375" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linecap="round" marker-end="url(#blue-arrow)"/>
+<g id="external-validity">
+<text x="585" y="230" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" fill="#2f6f9f" >External</text>
+<text x="585" y="268" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" fill="#2f6f9f" >validity</text>
+</g>
+<g id="internal-validity">
+<text x="395" y="593" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" fill="#2f6f9f" >Internal</text>
+<text x="395" y="631" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="400" fill="#2f6f9f" >validity</text>
+</g>
 </svg>

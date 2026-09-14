@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **876**
+Unique references in the master union: **884**
 
-Chapter reference blocks: **888**
+Chapter reference blocks: **894**
 
 Unresolved author–year citations: **0**
 
@@ -19,14 +19,14 @@ Unresolved author–year citations: **0**
 | Expectations {#expectations-when-predictions-become-causes} | 32 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 55 | 0 |
 | The Narrator After Choice | 19 | 0 |
-| Intuition and Deliberation {#fast-and-frugal-thinking} | 28 | 0 |
+| Intuition and Deliberation {#fast-and-frugal-thinking} | 29 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 16 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 18 | 0 |
 | Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 15 | 0 |
 | Framing | 15 | 0 |
 | Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 27 | 0 |
 | Base Rates and Updating | 7 | 0 |
-| Randomness and Overconfidence {#samples-randomness-and-calibration} | 19 | 0 |
+| Randomness and Overconfidence {#samples-randomness-and-calibration} | 24 | 0 |
 | Risky Decision Making | 15 | 0 |
 | Prospect Theory | 14 | 0 |
 | Decisions From Experience | 19 | 0 |

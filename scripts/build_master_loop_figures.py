@@ -17,7 +17,7 @@ PARTS = {
     6: [('What are the alternatives?',), ('Where is value', 'claimed or created?'), ('How will the', 'agreement work?')],
     7: [('Where is the obstacle?',), ('What conditions', 'can change?'), ('What do the results show?',)],
 }
-NAVIGATION = ['Current context & information', 'Notice & interpret', 'Construct options', 'Predict consequences', 'Value consequences', 'Choose & commit', 'Observe & learn']
+NAVIGATION = ['Context & Information', 'Notice & interpret', 'Construct options', 'Predict consequences', 'Value consequences', 'Choose & commit', 'Observe & learn']
 
 def begin(width, height, title, desc):
     return [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">', f'<title id="title">{escape(title)}</title>', f'<desc id="desc">{escape(desc)}</desc>', '<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.5 L8 4.5 L0.5 8.5 Z" fill="#47647e"/></marker></defs>', f'<rect width="{width}" height="{height}" fill="#fff"/>']

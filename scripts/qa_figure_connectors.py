@@ -6,8 +6,8 @@ polygons following a line.  This check recognizes both forms, extracts the
 arrow tip, and measures it against rectangle, circle, polygon, and filled-path
 node boundaries.  Marker-based arrows are also screened for unstable
 stroke-scaled markers, oversized heads, and gaps so short that the connector
-renders as an arrowhead without a visible shaft.  Axis arrows in the Pareto
-plot are the only intentional free endpoints.
+renders as an arrowhead without a visible shaft. Explicitly listed axis and
+unboxed-annotation endpoints are checked visually rather than against boxes.
 """
 
 from __future__ import annotations
@@ -30,6 +30,10 @@ MIN_SUPPORTING_TEXT_CSS_PX = 10.5
 FREE_ENDPOINTS = {
     ("pareto.svg", 1120.0, 540.0),  # horizontal axis
     ("pareto.svg", 150.0, 70.0),  # vertical axis
+    # Side arrows point to unboxed validity labels, not participant-flow nodes.
+    # Their 20px label gaps are verified in the rendered F.2 figure audit.
+    ("random-sampling-vs-assignment.svg", 565.0, 240.0),  # external validity
+    ("random-sampling-vs-assignment.svg", 375.0, 603.0),  # internal validity
 }
 
 

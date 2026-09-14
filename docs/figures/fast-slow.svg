@@ -1,49 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
-  <title id="title">Type 1 and Type 2 processing features</title>
-  <desc id="desc">Two columns summarize features commonly associated with Type 1 and Type 2 processing. Type 1 is typically fast, automatic, low effort, associative, and cue driven. Type 2 is typically working-memory dependent, effortful, rule guided, and capable of hypothetical reasoning. Arrows show that reflective processing can inspect and train responses and that automatic processing supplies candidate answers.</desc>
-  <defs>
-    <marker id="arrow-blue" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#2f6f9f"/></marker>
-    <marker id="arrow-orange" viewBox="0 0 10 8" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0.5 0.8 L9 4 L0.5 7.2 Z" fill="#c56a2d"/></marker>
-    <style>
-      .title{font:700 34px Arial,sans-serif;fill:#17324d}
-      .subtitle{font:19px Arial,sans-serif;fill:#607080}
-      .label{font:700 26px Arial,sans-serif;fill:#17324d}
-      .body{font:20px Arial,sans-serif;fill:#3f5668}
-      .small{font:18px Arial,sans-serif;fill:#607080}
-      .flow{fill:none;stroke-width:4;stroke-linecap:round}
-    </style>
-  </defs>
-  <rect width="1200" height="680" fill="#ffffff"/>
-  <text class="title" x="600" y="50" text-anchor="middle">Two clusters of processing features</text>
-
-  <rect x="70" y="125" width="430" height="365" rx="24" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="3"/>
-  <text class="label" x="285" y="174" text-anchor="middle">Type 1 features</text>
-  <text class="small" x="285" y="207" text-anchor="middle">often called “System 1”</text>
-  <g class="body">
-    <text x="120" y="258">• fast and relatively automatic</text>
-    <text x="120" y="304">• low demand on working memory</text>
-    <text x="120" y="350">• associative and cue driven</text>
-    <text x="120" y="396">• includes learned skills and habits</text>
-    <text x="120" y="442">• supplies impressions and responses</text>
-  </g>
-
-  <rect x="700" y="125" width="430" height="365" rx="24" fill="#f7f1e8" stroke="#c56a2d" stroke-width="3"/>
-  <text class="label" x="915" y="174" text-anchor="middle">Type 2 features</text>
-  <text class="small" x="915" y="207" text-anchor="middle">often called “System 2”</text>
-  <g class="body">
-    <text x="750" y="258">• working-memory dependent</text>
-    <text x="750" y="304">• effortful and capacity limited</text>
-    <text x="750" y="350">• rule guided and sequential</text>
-    <text x="750" y="396">• supports hypothetical reasoning</text>
-    <text x="750" y="442">• can inspect or inhibit responses</text>
-  </g>
-
-  <path class="flow" d="M500 255 H700" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow-blue)"/>
-  <text class="small" x="595" y="238" text-anchor="middle">candidate answer</text>
-  <path class="flow" d="M700 390 H500" stroke="#c56a2d" stroke-width="4" marker-end="url(#arrow-orange)"/>
-  <text x="600" y="421" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#607080">inspect • redirect • train</text>
-
-  <rect x="170" y="535" width="860" height="95" rx="20" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2.5"/>
-  <text class="body" x="600" y="570" text-anchor="middle">Practice can change how a task is performed.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="992" viewBox="0 0 760 992" role="img" aria-labelledby="title desc">
+<title id="title">System 1 and System 2</title><desc id="desc">Two families of processes are compared on the same dimensions: autonomy, common contributions, working-memory demands, typical speed and effort, and fallibility. An arrow carries a candidate answer from System 1 to System 2; a return arrow indicates possible checking or training. The families are not separate brain structures or a fixed sequence.</desc>
+<defs><marker id="blue-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4 L0 8 Z" fill="#2f6f9f"/></marker><marker id="orange-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4 L0 8 Z" fill="#c56a2d"/></marker></defs>
+<rect width="760" height="992" fill="white"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#17324d"><tspan x="380" y="52">System 1 and System 2</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="380" y="96">Families of processes, not separate brain structures</tspan></text>
+<rect x="28" y="137" width="300" height="659" rx="18" fill="#eaf3f8" stroke="#2f6f9f" stroke-width="2.5"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17324d"><tspan x="178" y="187">System 1</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="178" y="252">Relatively</tspan><tspan x="178" y="288">autonomous</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="178" y="362">Associations and</tspan><tspan x="178" y="398">learned responses</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="178" y="476">Little demand on</tspan><tspan x="178" y="512">working memory</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="178" y="590">Often fast and</tspan><tspan x="178" y="626">effortless</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="178" y="705">Can be skilled</tspan><tspan x="178" y="741">or misleading</tspan></text>
+<rect x="432" y="137" width="300" height="659" rx="18" fill="#f7f1e8" stroke="#c56a2d" stroke-width="2.5"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17324d"><tspan x="582" y="187">System 2</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="582" y="252">Depends on</tspan><tspan x="582" y="288">cognitive control</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="582" y="362">Holds goals,</tspan><tspan x="582" y="398">compares, simulates</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="582" y="476">Requires</tspan><tspan x="582" y="512">working memory</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="582" y="590">Often slower</tspan><tspan x="582" y="626">and effortful</tspan></text>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="582" y="705">Can correct errors</tspan><tspan x="582" y="741">or rationalize them</tspan></text>
+<path d="M328 320 H432" fill="none" stroke="#2f6f9f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#blue-arrow)"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="380" y="261">initial</tspan><tspan x="380" y="295">answer</tspan></text>
+<path d="M432 650 H328" fill="none" stroke="#c56a2d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#orange-arrow)"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="380" y="687">check</tspan><tspan x="380" y="723">or train</tspan></text>
+<rect x="38" y="832" width="684" height="128" rx="18" fill="#f5f8fa" stroke="#9eb1bf" stroke-width="2.5"/>
+<text text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#17324d"><tspan x="380" y="881">Practice can change how a task is performed.</tspan><tspan x="380" y="917">Neither family guarantees accuracy.</tspan></text>
 </svg>

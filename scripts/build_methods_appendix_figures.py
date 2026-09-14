@@ -115,19 +115,66 @@ def selected_evidence() -> str:
 
 
 def sampling_vs_assignment() -> str:
-    body = [text(380, 52, 'Two different uses of randomness', 34, weight=700)]
-    for x, center, color, fill, heading, stages in [
-        (25, 195, BLUE, PALE_BLUE, 'SAMPLING', [('Population', 'Who is eligible?'), ('Sample', 'Who is selected?'), ('External validity', 'To whom does it apply?')]),
-        (395, 565, GREEN, PALE_GREEN, 'ASSIGNMENT', [('Study sample', 'Who takes part?'), ('Groups A and B', 'Who gets what?'), ('Internal validity', 'Is the contrast causal?')])
-    ]:
-        body.append(text(center, 109, heading, 30, weight=700, fill=color))
-        for i, (label, question) in enumerate(stages):
-            y = 140 + i * 150
-            body.extend([f'<g id="{heading.lower()}-{i}">', rect(x, y, 340, 110, fill=fill, stroke=color), text(center, y+42, label, 29, weight=700), text(center, y+83, question, 28), '</g>'])
-            if i < 2:
-                body.append(f'<path d="M{center} {y+110} V{y+150}" stroke="{MUTED}" stroke-width="3" marker-end="url(#arrow)"/>')
-    body.extend([text(380, 612, 'Inference still depends on the design', 28, weight=700), text(380, 648, 'and on how the study is carried out.', 28)])
-    return svg_document('Sampling and assignment answer different questions', 'Random sampling supports population generalization, one aspect of external validity. Random assignment supports internal validity by creating a causal comparison within the sample. Both depend on the sampling or assignment design and on how the study is carried out.', '\n'.join(body), 760, 690)
+    # Flow boxes contain populations or study procedures. Validity is annotated
+    # outside that flow, following the original lecture diagram's distinction.
+    population_color, procedure_color = '#b55b25', '#2b7a78'
+    body = []
+    nodes = [
+        ('target-population', 25, 20, 710, 125, population_color,
+         [(380, 98, 'Target population', 34)]),
+        ('random-sampling', 255, 185, 250, 110, procedure_color,
+         [(380, 230, 'Random', 32), (380, 268, 'sampling', 32)]),
+        ('evaluation-sample', 25, 365, 305, 130, population_color,
+         [(177.5, 442, 'Evaluation sample', 32)]),
+        ('not-in-evaluation', 370, 365, 365, 130, population_color,
+         [(552.5, 442, 'Not in evaluation', 32)]),
+        ('random-assignment', 50, 548, 255, 110, procedure_color,
+         [(177.5, 593, 'Random', 32), (177.5, 631, 'assignment', 32)]),
+        ('treatment-group', 25, 718, 200, 102, population_color,
+         [(125, 760, 'Treatment', 32), (125, 798, 'group', 32)]),
+        ('control-group', 255, 718, 200, 102, population_color,
+         [(355, 760, 'Control', 32), (355, 798, 'group', 32)]),
+    ]
+    for node_id, x, y, width, height, color, labels in nodes:
+        body.extend([f'<g id="{node_id}">', rect(x, y, width, height, fill=color, stroke=color)])
+        body.extend(text(tx, ty, label, size, weight=600, fill='#ffffff')
+                    for tx, ty, label, size in labels)
+        body.append('</g>')
+
+    connectors = [
+        ('M380 145 V185', True),
+        ('M380 295 V327', False),
+        ('M380 327 H177.5 V365', True),
+        ('M380 327 H552.5 V365', True),
+        ('M177.5 495 V548', True),
+        ('M177.5 658 V684', False),
+        ('M177.5 684 H125 V718', True),
+        ('M177.5 684 H355 V718', True),
+    ]
+    for path, arrow in connectors:
+        marker = ' marker-end="url(#arrow)"' if arrow else ''
+        body.append(f'<path d="{path}" fill="none" stroke="{MUTED}" stroke-width="3" '
+                    f'stroke-linecap="round" stroke-linejoin="round"{marker}/>')
+    # Horizontal annotations concern inference; they do not move participants.
+    for path in ['M505 240 H565', 'M305 603 H375']:
+        body.append(f'<path d="{path}" fill="none" stroke="{BLUE}" stroke-width="3" '
+                    'stroke-linecap="round" marker-end="url(#blue-arrow)"/>')
+    body.extend([
+        '<g id="external-validity">',
+        lines(585, 230, ['External', 'validity'], 32, leading=38, anchor='start', fill=BLUE),
+        '</g>',
+        '<g id="internal-validity">',
+        lines(395, 593, ['Internal', 'validity'], 32, leading=38, anchor='start', fill=BLUE),
+        '</g>',
+    ])
+    return svg_document(
+        'Random sampling and random assignment',
+        'The target population passes through random sampling into an evaluation sample and people '
+        'not in the evaluation. Only the evaluation sample proceeds to random assignment, which '
+        'divides it into treatment and control groups. Unboxed side labels connect sampling to '
+        'external validity and assignment to internal validity; they describe the inferences '
+        'supported, not additional study procedures. Neither procedure alone guarantees validity.',
+        '\n'.join(body), 760, 840)
 
 
 def participant_flow() -> str:

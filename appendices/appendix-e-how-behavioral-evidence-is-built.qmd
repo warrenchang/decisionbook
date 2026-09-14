@@ -58,7 +58,7 @@ For an empirical study, write:
 
 > For **population P**, what is the effect or association of **intervention/exposure X**, relative to **comparison C**, on **outcome Y**, over **time T**, and through which proposed **mechanism M**?
 
-Not every question needs every element in its title. The design does.
+The title need not contain every element, but the design must specify enough to make the question and comparison interpretable.
 
 A hypothesis should specify a prediction that could be contradicted. For the clinic, that might be: assignment to the shorter reminder increases recorded attendance within thirty days relative to assignment to the standard reminder. The outcome and comparison make the proposal testable.
 
@@ -106,8 +106,8 @@ With the outcome defined, return to the question the study is meant to answer. T
 | Description | What happened, to whom, and how variable was it? | Defined population, measure, sampling, missingness | Generalizing beyond the observed population |
 | Association | How do measured variables co-vary? | Transparent adjustment and measurement | Calling an adjusted coefficient an effect |
 | Prediction | How well does a model forecast new observations? | Honest out-of-sample evaluation and distribution-shift checks | Treating predictive importance as a causal lever |
-| Causation | What would change under an intervention? | Credible counterfactual and identification assumptions | Treating before–after change as treatment effect |
-| Mechanism | Through which pathway did the effect arise? | Variation or evidence that separates pathways | Relabeling a mediator correlation as a process |
+| Causal effect | What would change under an intervention? | Credible counterfactual and identification assumptions | Treating before–after change as treatment effect |
+| Causal mechanism | Through which pathway did the effect arise? | Variation or evidence that separates pathways | Relabeling a mediator correlation as a process |
 : Claim families require different evidence {#tbl-claim-families}
 
 Prediction and causation can point in different directions. An excellent predictor may be impossible or unethical to intervene on. A weak predictor can still be a useful treatment if its manipulated change affects the outcome. “The model predicts who defaults” does not answer “What policy reduces default?”
@@ -124,7 +124,9 @@ $$
 Y_i(1)-Y_i(0).
 $$
 
-Only one potential outcome is observed. The missing one is the **counterfactual problem**. A comparison group is useful when its observed outcome represents what would have happened to the treated units without treatment.
+Only one potential outcome is observed. The missing one is the **counterfactual problem**. A comparison group is useful when its average outcome represents what would have happened to the treated group without treatment. It cannot reveal each treated person's individual effect.
+
+Last year's attendance does not supply that counterfactual for this year's patients: the weather, patient mix, and appointment system may all have changed. A concurrent randomized comparison exposes both reminder groups to the same period. If allocation and follow-up preserve that comparison, the difference in their average attendance can estimate the reminder's effect without attributing the common seasonal change to it (Duflo et al., 2007).
 
 **Confounding** occurs when the treatment comparison also reflects other causes of the outcome. If staff send the new reminder only to patients who are easier to contact, contactability may help explain an attendance difference. Statistical adjustment addresses that problem only under assumptions about the measured causes, the model, and what remains unmeasured.
 
@@ -138,25 +140,33 @@ Ask of every causal claim:
 
 ### 5. Choose the design that identifies the contrast
 
-| Design | What creates the comparison? | Strong use | Central assumption or limit |
+| Approach to evidence | What creates the comparison? | Strong use | Central assumption or limit |
 | --- | --- | --- | --- |
 | Randomized experiment | Known random assignment | Average effects of assignment in the study population | Implementation, attrition, interference, and sampling still matter |
-| Laboratory experiment | Randomization in a controlled task | Mechanisms and comparative statics | Task, stakes, participants, and institution bound transport |
-| Field experiment | Randomization in a natural setting | Causal effects under field implementation | Less control; treatment delivery and spillovers may vary |
 | Natural or quasi-experiment | Rule, threshold, shock, timing, or instrument | Causal effects when the assignment process is credible | Each design has specific untestable assumptions |
-| Observational study | Naturally occurring differences | Description, prediction, hypothesis generation; sometimes causal analysis with strong assumptions | Unmeasured confounding and selection |
+| Other observational comparison | Naturally occurring differences | Description, prediction, hypothesis generation; sometimes causal analysis with strong assumptions | Unmeasured confounding and selection |
 | Simulation | Outcomes generated by an explicit model | Logic, mechanisms, sensitivity, boundary results | A result about the model is not automatically evidence about people |
-: Designs answer different questions under different assumptions {#tbl-evidence-designs}
+: Approaches to evidence differ in how the comparison is generated {#tbl-evidence-designs}
+
+Laboratory and field settings are a separate design choice. A randomized **laboratory experiment** uses a controlled task to examine mechanisms or comparative statics, with conclusions bounded by the task, stakes, participants, and institution. A randomized **field experiment** tests effects in a natural setting, often with less control over treatment delivery and spillovers. Both are randomized experiments in the table above; the setting does not itself establish how treatment was assigned.
 
 “Quasi-experiment” is not a stamp of causality. A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.
 
 No design dominates on every dimension. Control can improve internal validity and narrow realism. Field context can increase realism and add uncontrolled pathways. Build a body of evidence whose weaknesses do not all point in the same direction.
 
+#### Fit randomization to how the program operates {#randomization-in-practice}
+
+The clinic may have capacity to offer additional appointment support to only some eligible patients. A lottery within that eligible group can allocate scarce places and create a comparison. Fix eligibility before the draw; if only borderline cases enter the lottery, the causal conclusion concerns that group.
+
+A randomized **phase-in** can compare patients or clinics receiving a program earlier with those scheduled to receive it later. Compare outcomes while their exposure differs, account for calendar time, and consider whether the announcement changes behavior before delivery. Once everyone has received the program, there is no contemporaneous untreated group for that same contrast.
+
+When participation cannot be assigned, an **encouragement design** randomizes an invitation or incentive to participate. It directly identifies the effect of that encouragement. Inferring the effect of participation itself requires the additional assumptions in the noncompliance section below. Each approach uses an operational feature to create an informative comparison; none removes the need for ethical review and a clear estimand (Duflo et al., 2007).
+
 #### Between-person and within-person comparisons {#between-and-within-subject-designs}
 
 A **between-subjects design** assigns different people to different conditions. A **within-subjects design** exposes the same person to multiple conditions, allowing comparisons that account for stable individual differences. The latter can improve precision, but exposure to the first condition may change responses to the next through learning, fatigue, contrast, or carryover. Randomizing or counterbalancing order helps diagnose some of these problems; it does not erase an irreversible treatment effect (Shadish et al., 2002).
 
-For a reminder study, repeated appointments could support a within-person comparison only if earlier messages do not contaminate the later contrast in an unaddressed way. Choose the unit and sequence to identify the effect, rather than choosing repeated measurement simply because it produces more rows.
+For a reminder study, randomly rotating message versions across repeated appointments could support a within-person comparison only if earlier messages do not contaminate the later contrast in an unaddressed way. An intervention that permanently changes knowledge cannot simply be switched off for the next period. Choose the unit and sequence to identify the effect, rather than choosing repeated measurement simply because it produces more rows.
 
 #### Factorial designs separate components and their interaction {#factorial-designs}
 
@@ -182,9 +192,17 @@ That support has a boundary. A patient list excludes people who never reached th
 
 For example, the clinic could recruit volunteers and randomly assign them to the standard or shorter reminder. That design can support a causal conclusion about the volunteers even though their response may differ from other patients'. Conversely, drawing a random sample of patients and then letting staff choose which reminder each receives would leave the treatment comparison open to confounding. Random sampling and random assignment can be used together, but neither substitutes for the other (Stuart et al., 2011).
 
-![Random sampling supports population generalization, an aspect of external validity. Random assignment supports the internal validity of a causal comparison. Both depend on how the study is designed and carried out.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Two columns connect random sampling to external validity and random assignment to internal validity. Sampling selects people from a population; assignment allocates participants to conditions. The footer qualifies both inferences by design and implementation." .phone-fit}
+![Random sampling supports generalization to the target population; random assignment supports a causal comparison within the evaluation sample.](../figures/random-sampling-vs-assignment.svg){#fig-random-sampling-vs-assignment fig-alt="Target population branches through random sampling into an evaluation sample and people not in the evaluation. Only the evaluation sample proceeds through random assignment to treatment and control groups. External validity and internal validity appear as unboxed side labels beside the corresponding procedures." .phone-fit}
 
-@fig-random-sampling-vs-assignment separates the two tasks. Recruitment determines whose experience the study can describe; assignment creates the comparison used to estimate a causal effect. Attrition, treatment delivery, and spillovers can still threaten that comparison, as the following sections explain.
+Follow the two forks in @fig-random-sampling-vs-assignment. The first determines who enters the evaluation; the second determines which condition those participants are assigned to. The control group is part of the evaluation sample and must be followed for outcomes. People outside the evaluation are not that control group. The figure shows one possible design: a trial can use random assignment without random sampling, as in the volunteer example above, while requiring a separate argument about generalization.
+
+#### Choose the unit of randomization {#unit-of-randomization}
+
+The **unit of randomization** is the entity whose treatment assignment is drawn. The clinic could assign individual patients, households, or whole clinics. The choice should reflect how the intervention is delivered and how people may affect one another. If family members share messages, household assignment may contain some spillovers; if a clinic changes its entire reminder system, assigning individual patients may be impractical.
+
+The unit of randomization can differ from the unit of measurement. A study may assign clinics but record each patient's attendance. Those patient records provide information, yet patients in the same clinic share an assignment and may share other influences. The analysis must account for that dependence, for example through inference at the level of the randomized clusters. A thousand patients across two randomized clinics do not provide a thousand independently randomized comparisons.
+
+Choose the level that supports credible delivery and the intended effect, then plan the number of randomized units and the analysis together. Assigning larger groups can reduce contamination while leaving fewer independent groups and less precision; it does not guarantee that effects stop at the group boundary (Duflo et al., 2007).
 
 #### Random assignment balances in expectation
 
@@ -202,7 +220,7 @@ This changes how balance should be used.
 
 Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. **Rerandomization** can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan & Rubin, 2012).
 
-Stratification and pair matching can improve balance or precision; cluster assignment may be needed when treatment is delivered to groups or spills across individuals. Record the procedure and use an analysis appropriate to it.
+**Stratification**, or blocking, forms groups using important baseline characteristics and randomizes within each one. For example, the reminder study could divide patients by clinic and prior attendance, then allocate both reminder versions within each stratum. This makes the comparison less dependent on a chance concentration of frequent attenders in one arm. Pair matching similarly assigns treatment within preformed pairs of comparable units. Specify these groups before assignment and preserve the allocation structure in the analysis (Bruhn & McKenzie, 2009).
 
 ### 7. Plan precision before collecting outcomes
 
@@ -218,6 +236,8 @@ A defensible design calculation declares:
 - significance or interval criterion and analysis model.
 
 Do not take the largest published estimate from a small study, insert it into a calculator, and call the resulting sample adequate. Selective publication and sampling variation tend to make early significant effects too large.
+
+In a cluster trial, adding patients to the same clinics and adding more randomized clinics are different design changes. When outcomes within a clinic are positively correlated, additional patients provide less new information than the same number of independent observations. A power calculation that ignores this structure can promise precision the study will not deliver (Duflo et al., 2007).
 
 Low power causes more than missed significance. Conditional on passing a significance filter, estimates can have the wrong sign (**Type S error**) or a seriously exaggerated magnitude (**Type M error**). Design analysis should therefore examine plausible estimates and uncertainty, not only a binary rejection probability (Gelman & Carlin, 2014).
 
@@ -235,9 +255,11 @@ Random assignment gives the clinic a basis for comparing reminder offers. Failed
 
 #### Attrition and missing outcomes
 
-Attrition is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.
+Attrition occurs when outcomes cannot be collected for people originally included in the study. It is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.
 
-Report rates and reasons by arm, timing, baseline predictors of missingness, and sensitivity analyses under plausible missing-data assumptions. Do not silently replace the randomized sample with complete cases and retain the original causal language.
+Suppose the clinic measures patients' understanding only when they attend. If the new reminder brings previously absent patients into the clinic, the observed groups may now contain different kinds of patients. A difference in understanding among attenders would mix the reminder's influence with this change in who was measured. Follow-up should seek outcomes for all assigned patients, including nonattenders and people who never received the message.
+
+Report rates and reasons by arm, timing, and baseline predictors of missingness. These checks can reveal selective loss; they cannot prove that the missing outcomes resemble the observed ones. Keep missing attendance records distinct from confirmed nonattendance. Weighting or imputation requires assumptions about missingness, while bounds and sensitivity analyses show what conclusions survive less favorable possibilities. Do not silently replace the randomized sample with complete cases and retain the original causal language (Duflo et al., 2007).
 
 #### Noncompliance: assignment is not receipt
 
@@ -266,13 +288,19 @@ $$
 
 LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.
 
+**Hypothetical calculation.** Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is $0.03/(0.45-0.20)=0.12$, or 12 percentage points. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.
+
 #### Spillovers, interference, and displacement
 
 The usual no-interference assumption says one unit's outcome does not depend on other units' assignments. Social information, contagion, peer effects, congestion, and markets often violate it.
 
 Spillovers can make the standard difference too small, too large, or simply answer the wrong question. A job-placement program can help treated workers while displacing untreated workers from a fixed number of jobs. The direct effect and the total labor-market effect are different estimands.
 
-Possible responses include randomizing at a higher level, varying treatment saturation, measuring networks, defining exposure mappings, and using pure control markets. State whose outcome depends on whose treatment.
+To separate these effects, **treatment saturation** designs vary the proportion offered treatment within a group or market. Comparing offered and unoffered people within a market estimates a contrast at that exposure level. Comparing unoffered people in exposed markets with people in markets receiving no offers helps identify spillovers. Comparing average outcomes across markets addresses the wider effect of the policy at each tested saturation. Each comparison needs its own assignment, measurement, and analysis plan.
+
+Crépon and colleagues (2013) used this approach to evaluate job-placement assistance across 235 French labor markets. They randomized the proportion of eligible young, educated job seekers offered assistance to 0%, 25%, 50%, 75%, or 100%, then randomized individual offers within the relevant markets. Gains in stable employment visible after eight months were transitory and appeared partly to come at other eligible workers' expense. The study found little net benefit, rather than establishing that the effect was exactly zero.
+
+The markets receiving no offers were deliberately included and measured as **pure controls**. They are different from the people outside the evaluation in @fig-random-sampling-vs-assignment. Higher-level assignment, buffer areas, or network measurement may also help, but none should be treated as proof that interference has disappeared. State whose outcome depends on whose treatment and whether the study estimates an individual gain, an effect on others, or a broader policy effect.
 
 #### Evaluation can change behavior {#research-reactivity}
 
@@ -292,7 +320,7 @@ Imagine that clinic staff tell the comparison group it has received the “ordin
 
 @tbl-research-reactivity is a set of design questions, not a claim that all six effects occur in every study. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.
 
-Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
+Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Where possible, keep outcome assessors unaware of assignment and define scoring rules before outcomes are examined, so that expectations about the treatment do not influence measurement. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
 
 ## Analyze the planned comparison
 
@@ -348,7 +376,7 @@ Preregistration, open materials, open code, and registered reports change differ
 
 ### 12. Transport the result only as far as the evidence travels
 
-Suppose the clinic establishes that its new reminder improves attendance. A neighboring clinic wants to adopt it, but serves patients with different needs and uses a different booking system. The original comparison cannot by itself tell that clinic what to expect. **Internal validity** concerns whether the comparison supports the causal claim in the studied setting. **External validity** concerns where the result travels: to which people, tasks, institutions, treatments, outcomes, and times.
+Suppose the clinic establishes that its new reminder improves attendance. A neighboring clinic wants to adopt it, but serves patients with different needs and uses a different booking system. The original comparison cannot by itself tell that clinic what to expect. The sampling step in @fig-random-sampling-vs-assignment supports inference to a defined population; extending the result to a different setting requires examining what else has changed.
 
 “The laboratory is artificial” is not a complete criticism. Every design abstracts. A lab can identify a mechanism that is hidden in the field. A field experiment can be realistic and highly local. A representative sample can improve population description but not guarantee that an intervention effect transports across institutions.
 
@@ -373,7 +401,7 @@ External validity is not a yes/no property of a study. It is an argument support
 | Laboratory treatment effect | “Under this task, institution, stakes, and sample, treatment changed behavior.” | “Humans always behave this way.” |
 | Simulation result | “Under these model rules and parameters, the mechanism can produce the pattern.” | “The simulation proves the human mechanism.” |
 | Mediator correlation | “The pattern is consistent with the proposed pathway.” | “The mediator caused the effect.” |
-: Claim-to-design matching {#tbl-claim-design-matching}
+: Examples of matching claims to the evidence and assumptions that support them {#tbl-claim-design-matching}
 
 For the clinic, the first sentence should identify which reminder groups were compared, how attendance differed, and how uncertain the estimate is. The explanation of why the reminder helped must stay within what that comparison can establish.
 
@@ -382,10 +410,10 @@ For the clinic, the first sentence should identify which reminder groups were co
 | Field | Complete before data |
 | --- | --- |
 | Question | Population; treatment/exposure; comparison; outcome; horizon; mechanism |
-| Claim family | Description; association; prediction; causation; mechanism |
+| Claim family | Description; association; prediction; causal effect; causal mechanism |
 | Construct | Definition and competing interpretations |
 | Measure | Exact operation; scoring; reliability; validity; primary/secondary status |
-| Assignment/comparison | Unit; probabilities; strata/clusters; counterfactual logic |
+| Assignment/comparison | Randomization and measurement units; probabilities; strata/clusters; timing; counterfactual logic |
 | Estimand | Effect of assignment (ITT), average treatment effect (ATE), complier effect (LATE), spillover, predictive loss, or another defined quantity |
 | Threats | Confounding; attrition; noncompliance; interference; demand; measurement change |
 | Precision | Plausible effect; minimum detectable effect; variance; dependence; attrition; multiplicity |
@@ -453,14 +481,16 @@ Institutional review, data-protection law, registration, and local procedures ch
 ## Key ideas
 
 - A useful experimental question names the comparison, outcome, population, and period.
+- Sampling determines who enters the evaluation; random assignment forms the treatment and control groups within it.
 - Random assignment supports a comparison only when implementation and analysis preserve its meaning.
 - The final claim should be traceable to the design, records, and reported uncertainty.
 
 ## Study and practice
 
 1. Design a comparison for the clinic that would separate the reminder package's effect from a seasonal change.
-2. Explain what you would record if some messages were not delivered or some attendance outcomes were missing.
-3. Propose a further comparison that could distinguish comprehension from attention as a mechanism.
+2. Trace a patient through @fig-random-sampling-vs-assignment. Explain how being outside the evaluation differs from assignment to its control group, and when household assignment might be preferable.
+3. Explain what you would record if some messages were not delivered or some attendance outcomes were missing. Identify which problem changes receipt and which changes observation.
+4. Propose a further comparison that could distinguish comprehension from attention as a mechanism, or an individual benefit from a spillover onto others.
 
 ::: {.callout-tip .activity icon=false}
 ## Activity: break and repair the evidence chain
@@ -486,6 +516,14 @@ Camerer, C. F., Dreber, A., Forsell, E., Ho, T.-H., Huber, J., Johannesson, M., 
 
 ::: {.reference}
 Collins, L. M., Dziak, J. J., & Li, R. (2009). Design of experiments with multiple independent variables: A resource management perspective on complete and reduced factorial designs. Psychological Methods, 14(3), 202–224. https://doi.org/10.1037/a0015826
+:::
+
+::: {.reference}
+Crépon, B., Duflo, E., Gurgand, M., Rathelot, R., & Zamora, P. (2013). Do labor market policies have displacement effects? Evidence from a clustered randomized experiment. *Quarterly Journal of Economics, 128*(2), 531–580. https://doi.org/10.1093/qje/qjt001
+:::
+
+::: {.reference}
+Duflo, E., Glennerster, R., & Kremer, M. (2007). Using randomization in development economics research: A toolkit. In T. P. Schultz & J. Strauss (Eds.), *Handbook of Development Economics* (Vol. 4, pp. 3895–3962). Elsevier. https://doi.org/10.1016/S1573-4471(07)04061-2
 :::
 
 ::: {.reference}

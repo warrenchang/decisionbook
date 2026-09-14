@@ -36,7 +36,7 @@ Even “survival and reproduction” needs precision. Survival matters evolution
 
 Before judging whether the attraction serves the person well, distinguish four questions. How much does the person want it, what experience follows, what evolutionary history is proposed, and what ought they to pursue? The table keeps these questions separate:
 
-| Quantity | Unit of analysis | The question it answers |
+| Kind of assessment | Unit of analysis | The question it answers |
 | --- | --- | --- |
 | Subjective decision value | A person choosing in a current state and context | How much weight does the option receive now? |
 | Experienced value or well-being | A person's experience and evaluation over a stated horizon | What pleasure, pain, satisfaction, connection, or meaning follows? |
@@ -77,7 +77,7 @@ Maslow offered a taxonomy of recurring needs; Kenrick and colleagues proposed an
 
 A quick choice of food might be consistent with a person's preference, sensible given limited time, and unhelpful for a long-term health goal. Different standards can therefore produce different assessments of the same choice. [Appendix A](appendix-a-rational-choice-and-decision-analysis.qmd) develops the formal benchmark. Here the task is to keep its purpose distinct from ecological and evolutionary questions.
 
-| Lens or standard | Central question | A possible failure or limit |
+| Rationality standard | Central question | A possible failure or limit |
 | --- | --- | --- |
 | Coherence rationality | Do beliefs and preferences satisfy stated logical, probabilistic, and consistency relations? | Intransitive choice or a probability judgment that violates the named rule |
 | Epistemic rationality | Are beliefs and confidence appropriately responsive to the available evidence? | Confidence can exceed what the evidence warrants. |
@@ -85,8 +85,9 @@ A quick choice of food might be consistent with a person's preference, sensible 
 | Procedural rationality under bounds | Is the process appropriate to the stakes and the limits of information, time, attention, and computation? | A feasible process can still spend far too much or too little effort for the decision. |
 | Ecological rationality | How well does this strategy exploit the structure of this environment? | A reliable cue in one ecology can become misleading in another. |
 | Resource rationality | Does the procedure use limited computational resources efficiently for the modeled objective and costs? | The conclusion changes when the assumed resource, prior, objective, or cost changes. |
-| Evolutionary explanation—not a rationality criterion | What historical fitness consequences could have favored this mechanism over variants? | Historical success need not produce present coherence, welfare, or moral value. |
-: Different standards and an evolutionary lens can produce different assessments of one behavior {#tbl-rationality-standards}
+: Different rationality standards can produce different assessments of one behavior {#tbl-rationality-standards}
+
+An **evolutionary explanation** asks a different question: what historical fitness consequences could have favored this mechanism over alternatives? It is not an additional rationality standard. Historical success need not produce present coherence, welfare, or moral value.
 
 Simon (1955, 1956) made limits and environmental structure central to theories of choice. The heuristics-and-biases program then documented systematic departures from specified benchmarks (Tversky & Kahneman, 1974), while the adaptive-toolbox program formalized simple procedures and asked when they succeed (Gigerenzer & Goldstein, 1996; Gigerenzer & Gaissmaier, 2011). These are not mutually exclusive questions. A judgment can violate a coherence rule, arise from an identifiable heuristic, and perform well under one environment but badly under another.
 
@@ -111,17 +112,15 @@ A richer model may vindicate a simple rule or reveal why it no longer fits the s
 
 A familiar cue can make a good shortcut when it tracks the outcome we care about. If the relationship changes, the same shortcut can mislead. To evaluate it, we need to specify the information available, the cost of mistakes, and the feedback through which the person could learn.
 
-| Process | Why it can work | When it can fail |
+| Heuristic | Why it can work | When it can fail |
 | --- | --- | --- |
 | Recognition | Exposure may covary with prominence, size, quality, or another target. | Advertising or unequal exposure breaks the relation. |
-| Skilled intuition | Repeated valid patterns and sufficiently clear feedback can compress learning into rapid recognition. | Rare, unstable, strategically manipulated, or delayed-feedback environments do not calibrate confidence. |
-| Sensitive threat threshold | If a missed danger is much costlier than a false alarm, many cheap false positives can minimize expected loss. | Error costs, base rates, or cues differ from those assumed. |
 | Availability | Ease of retrieval can track frequency or recency in a representative sample of experience. | Vivid news, selective memory, and engineered exposure distort what is retrievable. |
 : Heuristics and the conditions that support or weaken them {#tbl-heuristics-fit-and-failure}
 
-Kahneman and Klein (2009) provide a useful bridge: intuitive expertise deserves trust when an environment contains learnable regularities and the decision-maker has substantial practice with sufficiently clear feedback. Confidence is not one of those conditions.
+**Skilled intuition** is a broader capacity, rather than another heuristic in this comparison. Kahneman and Klein (2009) argue that intuitive expertise deserves trust when an environment contains learnable regularities and the decision-maker has substantial practice with sufficiently clear feedback. Rare, unstable, or strategically manipulated events and delayed feedback can prevent that learning. Confidence alone does not establish expertise.
 
-Error-management theory makes the evolutionary logic precise in a different way. If the fitness costs of false negatives and false positives were systematically asymmetric, selection could favor a decision threshold that produces many errors of the cheaper kind (Haselton & Buss, 2000). Nesse's (2005) smoke-detector model applies the same signal-detection logic to defensive responses. The model shows that apparently excessive alarms **can** be optimal under specified costs and base rates.
+Error-management theory makes the evolutionary logic precise in a different way. If the fitness costs of false negatives and false positives were systematically asymmetric, selection could favor a decision threshold that produces many errors of the cheaper kind (Haselton & Buss, 2000). Nesse's (2005) smoke-detector model applies the same signal-detection logic to defensive responses. A **sensitive threat threshold** can therefore produce many cheap false alarms when missed dangers are much costlier. This specifies when to act given asymmetric error costs, whereas recognition and availability specify which cue guides a judgment. The model shows that apparently excessive alarms **can** be optimal under specified costs and base rates; changed cues, base rates, or costs can make the same threshold inappropriate.
 
 Three empirical claims must remain separate:
 
@@ -234,7 +233,7 @@ These restrictions keep the updated share between zero and one. Arbitrary game p
 
 Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. Before interpreting a formal or simulated population result, preserve this minimum record:
 
-| Model component | Minimum provenance |
+| Aspect to document | Minimum provenance |
 | --- | --- |
 | Frequency update | Payoffs, initial shares, update rule, and horizon |
 | Spatial interaction | Topology, neighborhood, timing, mobility, vacancies, and tie-breaking |
