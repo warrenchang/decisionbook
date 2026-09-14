@@ -53,3 +53,7 @@ Seven works were added to the synchronized bibliography: Blumenstock et al., Che
 - EPUB visual QA: **PASS**, 64 XHTML documents and 116 image placements at 768px and 390px, with no broken images or page overflow. Focused screenshots confirmed readable Appendix E openings, the complete three-study table (Table E.3), and the sampling/assignment diagram (Figure F.2) at both widths. The EPUB study table fits at phone width. Reports: `rendered-epub-figure-qa.json` and `literature-review-appendix-20260913-epub-layout.json`.
 
 Earlier book-wide editorial changes in the working tree were preserved. This revision is local; no commit or push was performed.
+
+## Update: 14 September 2026
+
+At the author's request, removed the unpublished lecture-slide reference and both in-text citations from Appendix E. The instructional material remains, supported where appropriate by its published methodological sources. The synchronized bibliography now contains 876 entries; no published study was removed. The teaching-source record above documents the revision's provenance, rather than a citation retained in the book.
