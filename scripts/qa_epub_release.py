@@ -78,6 +78,8 @@ REQUIRED_CONTENT = [
     "Injunctive norm",
     "Groupthink",
     "Strategic Interdependence",
+    "Coordination and Focal Points",
+    "Cooperation and Social Preferences",
     "Behavioral Game Theory",
     "panda",
     "monkey",

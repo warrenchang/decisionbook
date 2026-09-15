@@ -8,7 +8,7 @@
 
 <meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
 
-<title>24&nbsp; Behavioral Game Theory – Decision in the Making</title>
+<title>24&nbsp; Coordination and Focal Points – Decision in the Making</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -114,7 +114,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -343,7 +343,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -571,16 +571,25 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#two-beauty-contests" id="toc-two-beauty-contests" class="nav-link" data-scroll-target="#two-beauty-contests">Two beauty contests</a></li>
-  <li><a href="#three-lenses-three-questions" id="toc-three-lenses-three-questions" class="nav-link" data-scroll-target="#three-lenses-three-questions">Three lenses, three questions</a></li>
-  <li><a href="#limited-strategic-depth-level-k" id="toc-limited-strategic-depth-level-k" class="nav-link" data-scroll-target="#limited-strategic-depth-level-k">Limited strategic depth: level-<em>k</em></a>
+  <li><a href="#a-game-is-a-model-not-the-situation-itself" id="toc-a-game-is-a-model-not-the-situation-itself" class="nav-link" data-scroll-target="#a-game-is-a-model-not-the-situation-itself">Representing the interaction</a>
   <ul class="collapse">
-  <li><a href="#cognitive-hierarchy-best-respond-to-a-mixture" id="toc-cognitive-hierarchy-best-respond-to-a-mixture" class="nav-link" data-scroll-target="#cognitive-hierarchy-best-respond-to-a-mixture">Cognitive hierarchy: best respond to a mixture</a></li>
+  <li><a href="#reading-a-payoff-matrix" id="toc-reading-a-payoff-matrix" class="nav-link" data-scroll-target="#reading-a-payoff-matrix">Reading a payoff matrix</a></li>
+  <li><a href="#best-responses-and-nash-equilibrium" id="toc-best-responses-and-nash-equilibrium" class="nav-link" data-scroll-target="#best-responses-and-nash-equilibrium">Best responses and beliefs</a></li>
+  <li><a href="#mutual-best-responses-checking-equilibrium" id="toc-mutual-best-responses-checking-equilibrium" class="nav-link" data-scroll-target="#mutual-best-responses-checking-equilibrium">Mutual best responses: checking equilibrium</a></li>
   </ul></li>
-  <li><a href="#the-action-does-not-identify-the-thought" id="toc-the-action-does-not-identify-the-thought" class="nav-link" data-scroll-target="#the-action-does-not-identify-the-thought">The action does not identify the thought</a></li>
-  <li><a href="#learning-is-not-the-same-as-deeper-initial-reasoning" id="toc-learning-is-not-the-same-as-deeper-initial-reasoning" class="nav-link" data-scroll-target="#learning-is-not-the-same-as-deeper-initial-reasoning">Learning is not the same as deeper initial reasoning</a></li>
-  <li><a href="#application-choose-the-model-after-diagnosing-the-process" id="toc-application-choose-the-model-after-diagnosing-the-process" class="nav-link" data-scroll-target="#application-choose-the-model-after-diagnosing-the-process">Application: choose the model after diagnosing the process</a></li>
-  <li><a href="#ethics-strategic-classification-can-become-a-weapon" id="toc-ethics-strategic-classification-can-become-a-weapon" class="nav-link" data-scroll-target="#ethics-strategic-classification-can-become-a-weapon">Ethics: strategic classification can become a weapon</a></li>
+  <li><a href="#coordination-shared-expectations-can-do-the-work" id="toc-coordination-shared-expectations-can-do-the-work" class="nav-link" data-scroll-target="#coordination-shared-expectations-can-do-the-work">Knowing what would work is not enough</a></li>
+  <li><a href="#focality-payoff-dominance-and-evidence" id="toc-focality-payoff-dominance-and-evidence" class="nav-link" data-scroll-target="#focality-payoff-dominance-and-evidence">What makes an answer stand out?</a>
+  <ul class="collapse">
+  <li><a href="#a-ten-cent-difference-can-disrupt-a-common-answer" id="toc-a-ten-cent-difference-can-disrupt-a-common-answer" class="nav-link" data-scroll-target="#a-ten-cent-difference-can-disrupt-a-common-answer">A ten-cent difference can disrupt a common answer</a></li>
+  </ul></li>
+  <li><a href="#strategic-uncertainty-the-stag-hunt" id="toc-strategic-uncertainty-the-stag-hunt" class="nav-link" data-scroll-target="#strategic-uncertainty-the-stag-hunt">When the better outcome feels too risky</a></li>
+  <li><a href="#conventions-and-path-dependence" id="toc-conventions-and-path-dependence" class="nav-link" data-scroll-target="#conventions-and-path-dependence">How a convention becomes difficult to leave</a></li>
+  <li><a href="#mixed-motives-and-compatible-claims" id="toc-mixed-motives-and-compatible-claims" class="nav-link" data-scroll-target="#mixed-motives-and-compatible-claims">Sharing a destination does not settle who gains</a>
+  <ul class="collapse">
+  <li><a href="#compatible-bargaining-claims" id="toc-compatible-bargaining-claims" class="nav-link" data-scroll-target="#compatible-bargaining-claims">Compatible bargaining claims</a></li>
+  </ul></li>
+  <li><a href="#commitment-changes-the-game" id="toc-commitment-changes-the-game" class="nav-link" data-scroll-target="#commitment-changes-the-game">Making an agreement credible</a></li>
+  <li><a href="#application-diagnose-the-obstacle-before-choosing-the-tool" id="toc-application-diagnose-the-obstacle-before-choosing-the-tool" class="nav-link" data-scroll-target="#application-diagnose-the-obstacle-before-choosing-the-tool">Application: diagnose the obstacle before choosing the tool</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -590,9 +599,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-4.html">Part IV. Strategic and Social Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Behavioral Game Theory</span></h1>
+<h1 class="title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></h1>
 </div>
 
 
@@ -609,17 +618,16 @@ window.Quarto = {
 </header>
 
 
-<p><em>Equilibrium Is a Benchmark, Not a Portrait</em></p>
+<p><em>Finding a Way to Act Together</em></p>
 <div id="chapter-24-start" class="chapter-epigraph">
 <blockquote class="blockquote">
-<p>“Players in a game are ‘in equilibrium’ if they are rational, and accurately predict other players’ strategies.”</p>
-<p>— Colin F. Camerer, Teck-Hua Ho, and Juin-Kuan Chong, <a href="https://academic.oup.com/qje/article-abstract/119/3/861/1938841">“A Cognitive Hierarchy Model of Games”</a>, 2004, p.&nbsp;861</p>
+<p>“People can often concert their intentions or expectations with others if each knows that the other is trying to do the same.”</p>
+<p>— Thomas C. Schelling, <a href="https://www.sackett.net/Strategy-of-Conflict.pdf"><em>The Strategy of Conflict</em></a>, 1960, p.&nbsp;57</p>
 </blockquote>
 </div>
-<p><span id="opening-puzzle-should-a-sophisticated-player-choose-zero"></span>In a group of at least three people, everyone chooses a real number from 0 to 100. The player closest to two-thirds of the group’s mean wins a fixed prize, shared equally in a tie.</p>
-<p>If others choose uniformly at random, their expected mean is 50. A simple first approximation aims at two-thirds of that, about 33; if others aim at 33, the next step aims near 22, then near 15. This ladder uses a large-group approximation.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Under common knowledge of rationality, iterated elimination removes choices above <span class="math inline">\(66\frac{2}{3}\)</span>, then above <span class="math inline">\(44\frac{4}{9}\)</span>, and so on. The unique Nash equilibrium is zero.</p>
-<p>But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. A prediction of the actual choice distribution can therefore be more useful for winning than the equilibrium number alone.</p>
+<p>Two departments need to exchange reports. Each has tested a different system, and each can explain why its preferred system works better. Department A values integration with its existing software; Department B values flexibility. Both agree that adopting incompatible systems would waste time and create errors.</p>
+<p>The deadline approaches, but neither commits. A manager calls the delay resistance to change. Yet accepting the other department’s preferred system would solve only part of the problem: someone must still arrange training, move the records, and ensure that both departments switch at the same time. A department can reasonably support the shared plan while hesitating to act first.</p>
+<p>The disagreement contains several questions. Which standard should they use? Can each rely on the other to adopt it? Who should bear the transition costs? These questions require different answers, even though all three can look like a failure to cooperate.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -630,187 +638,200 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Predicting a strategic choice requires a view of what players believe about one another. Equilibrium provides one benchmark; limited reasoning and learning provide alternatives. Comparing their predictions helps us explain behavior.</p>
+<p>A payoff matrix makes the dependence between choices visible. Finding mutual best responses identifies equilibria, but several may remain. Successful coordination then requires a shared expectation about which outcome to pursue and enough confidence that others will act on it.</p>
 </div>
 </div>
 <section id="learning-goals" class="level2">
 <h2 data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
-<li>Compare equilibrium, level-<em>k</em>, and cognitive-hierarchy accounts of one beauty-contest dataset.</li>
-<li>Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.</li>
-<li>Design an observation or treatment that distinguishes competing explanations for the same strategic action.</li>
+<li>Construct and read a payoff matrix, then identify best responses and pure- and mixed-strategy equilibria.</li>
+<li>Distinguish focality, payoff dominance, and risk dominance as explanations for which coordinated outcome people pursue.</li>
+<li>Diagnose whether a common plan needs a shared signal, credible assurance, or an agreed division of benefits and responsibilities.</li>
 </ul>
 </section>
-<section id="two-beauty-contests" class="level2">
-<h2 data-anchor-id="two-beauty-contests">Two beauty contests</h2>
-<p>The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections.</p>
-<p>The <a href="https://youtu.be/0sPVEBAtwmg">poisoned-goblet scene from <em>The Princess Bride</em></a> dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the missing information that prevents the chain of guesses from settling the choice. More steps help only if they begin from a useful account of the opponent.</p>
-<div id="fig-three-lenses-strategic-behavior" class="quarto-float quarto-figure quarto-figure-center" alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-three-lenses-strategic-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/three-lenses-strategic-behavior.svg" class="img-fluid figure-img" alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-lenses-strategic-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24.1: Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game and answers a different question.
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="three-lenses-three-questions" class="level2">
-<h2 data-anchor-id="three-lenses-three-questions">Three lenses, three questions</h2>
-<p>To predict the first round, we can ask which choices would be mutual best responses, or model how players actually reason about one another. To explain change across rounds or populations, we also need an account of how ways of playing become more common. The three branches in <a href="#fig-three-lenses-strategic-behavior" class="quarto-xref">Figure&nbsp;<span>24.1</span></a> keep these tasks distinct: finding mutual best responses, explaining a player’s reasoning, and tracing population change.</p>
-</section>
-<section id="limited-strategic-depth-level-k" class="level2">
-<h2 data-anchor-id="limited-strategic-depth-level-k">Limited strategic depth: level-<em>k</em></h2>
-<p>The number game rewards anticipating the group, but knowing the equilibrium does not tell a player how far others have reasoned. A model of limited strategic depth supplies a prediction between random choice and fully matched equilibrium beliefs. The ladder in <a href="#fig-level-k-reasoning-ladder" class="quarto-xref">Figure&nbsp;<span>24.2</span></a> illustrates a level-<em>k</em> model: each strategic level responds to the preceding level, starting from a specified nonstrategic anchor (Nagel, 1995; Stahl &amp; Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).</p>
-<div id="fig-level-k-reasoning-ladder" class="quarto-float quarto-figure quarto-figure-center" alt="Players choose a number from zero to one hundred, aiming at two-thirds of the group mean. An illustrative reasoning ladder starts from an expected random-choice anchor of fifty, then gives approximately thirty-three, twenty-two, fifteen, and the equilibrium zero.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-level-k-reasoning-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/level-k-reasoning-ladder.svg" class="img-fluid figure-img" style="width:100.0%" alt="Players choose a number from zero to one hundred, aiming at two-thirds of the group mean. An illustrative reasoning ladder starts from an expected random-choice anchor of fifty, then gives approximately thirty-three, twenty-two, fifteen, and the equilibrium zero.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-level-k-reasoning-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24.2: In the two-thirds-of-the-mean game (Nagel, 1995), an illustrative level-<em>k</em> ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.
-</figcaption>
-</figure>
-</div>
+<section id="a-game-is-a-model-not-the-situation-itself" class="level2">
+<h2 data-anchor-id="a-game-is-a-model-not-the-situation-itself">Representing the interaction</h2>
+<p>The departments’ arguments mix the quality of a system with the benefits of compatibility and the costs of changing. A game-theoretic model separates these features so that we can inspect how each department’s choice depends on the other’s. Begin with a simpler version of the <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html#opening-puzzle-meet-me-in-odense">meeting problem</a>, where the shared objective is easier to represent.</p>
+<p>A <strong>game</strong> is a model that specifies the players, their possible actions, and how their choices jointly determine payoffs. Five features make the meeting model explicit:</p>
 <ul>
-<li><strong>Level 0</strong> is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.</li>
-<li><strong>Level 1</strong> responds to the level-0 anchor and aims near <span class="math inline">\(\frac{2}{3}\times50=33\)</span>.</li>
-<li><strong>Level 2</strong> responds to the level-1 anchor and aims near <span class="math inline">\(\frac{2}{3}\times33=22\)</span>.</li>
-<li><strong>Level 3</strong> responds to the level-2 anchor and aims near 15.</li>
+<li><strong>Players:</strong> the two people trying to meet.</li>
+<li><strong>Actions:</strong> the places and times each can choose.</li>
+<li><strong>Payoffs:</strong> how each person values meeting or failing to meet.</li>
+<li><strong>Information:</strong> what each knows about the city, the other person, and the situation.</li>
+<li><strong>Timing:</strong> each chooses where to go before learning the other’s destination.</li>
 </ul>
-<p>The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.</p>
-<section id="cognitive-hierarchy-best-respond-to-a-mixture" class="level3">
-<h3 data-anchor-id="cognitive-hierarchy-best-respond-to-a-mixture">Cognitive hierarchy: best respond to a mixture</h3>
-<p>A player may expect the group to contain several reasoning depths. Responding only to a single lower type would then miss part of the competition. Cognitive hierarchy incorporates this mixture: a step-<span class="math inline">\(k\)</span> thinker best responds to a distribution of steps <span class="math inline">\(0\)</span> through <span class="math inline">\(k-1\)</span> (Camerer, Ho, &amp; Chong, 2004). The population frequency of step <span class="math inline">\(h\)</span> is often modeled with a Poisson distribution,</p>
-<p><span class="math display">\[
-f(h)=\frac{e^{-\tau}\tau^h}{h!},
-\]</span></p>
-<p>and a step-<span class="math inline">\(k\)</span> player renormalizes this distribution over the lower steps they believe exist. The parameter <span class="math inline">\(\tau\)</span> governs the population’s average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games.</p>
-<p>Comparing the means, modes, and fitted reasoning depths in <a href="#tbl-beauty-contest-groups" class="quarto-xref">Table&nbsp;<span>24.1</span></a> shows how the distribution a player needs to anticipate varies across settings and participant pools.</p>
-<div id="tbl-beauty-contest-groups" class="quarto-float quarto-figure quarto-figure-center">
+<p>An <strong>action</strong> is a particular move. A <strong>strategy</strong> is a complete plan for what to do at every point where a player might have to choose. In a one-move meeting game, choosing a place and time specifies the whole strategy. If messages or later decisions were allowed, a strategy would also specify how to respond to them.</p>
+<p>The model need not express every concern in money. Safety, time, fairness, and the relationship can all affect how someone values an outcome. Allowing communication or letting one person observe the other’s choice changes the game even if the possible destinations stay the same.</p>
+<section id="reading-a-payoff-matrix" class="level3">
+<h3 data-anchor-id="reading-a-payoff-matrix">Reading a payoff matrix</h3>
+<p>To isolate the problem of choosing compatible destinations, suppose the station and town hall are equally safe and accessible. Hold the time at noon. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The <strong>payoff matrix</strong> in <a href="#tbl-meeting-coordination" class="quarto-xref">Table&nbsp;<span>24.1</span></a> records what each receives under every combination of choices.</p>
+<div id="tbl-meeting-coordination" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-beauty-contest-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.1: Descriptive number-game results used to illustrate heterogeneous strategic depth
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-meeting-coordination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.1: A simplified meeting game; your payoff appears first
 </figcaption>
-<div aria-describedby="tbl-beauty-contest-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-meeting-coordination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Participant group</th>
-<th style="text-align: right;">Group size</th>
-<th style="text-align: right;">Mean choice</th>
-<th style="text-align: right;">Modal choice</th>
-<th style="text-align: right;">Fitted <span class="math inline">\(\tau\)</span></th>
+<th>Your choice \ Other person’s choice</th>
+<th style="text-align: right;">Station</th>
+<th style="text-align: right;">Town hall</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Chief executives</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">37.9</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">1.0</td>
+<td><strong>Station</strong></td>
+<td style="text-align: right;">50, 50</td>
+<td style="text-align: right;">0, 0</td>
 </tr>
 <tr class="even">
-<td>German students</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">37.2</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">1.1</td>
-</tr>
-<tr class="odd">
-<td>U.S. high-school students</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">32.5</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">1.6</td>
-</tr>
-<tr class="even">
-<td>Economics PhDs</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">27.4</td>
-<td style="text-align: right;">—</td>
-<td style="text-align: right;">2.3</td>
-</tr>
-<tr class="odd">
-<td>Portfolio managers</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">24.3</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">2.8</td>
-</tr>
-<tr class="even">
-<td>Caltech students</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">23.0</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">3.0</td>
-</tr>
-<tr class="odd">
-<td>Newspaper participants</td>
-<td style="text-align: right;">7,884</td>
-<td style="text-align: right;">23.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3.0</td>
-</tr>
-<tr class="even">
-<td>Game theorists</td>
-<td style="text-align: right;">136</td>
-<td style="text-align: right;">19.1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3.7</td>
+<td><strong>Town hall</strong></td>
+<td style="text-align: right;">0, 0</td>
+<td style="text-align: right;">50, 50</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>These averages do not turn occupations or participant groups into reasoning types. Substantial variation remains within each group, and the next section explains why a particular number does not reveal a unique thought process.</p>
+<p>Read the rows as your actions and the columns as the other person’s actions. Within each cell, your payoff comes first and theirs second. If you choose the station and they choose the town hall, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.</p>
+</section>
+<section id="best-responses-and-nash-equilibrium" class="level3">
+<h3 data-anchor-id="best-responses-and-nash-equilibrium">Best responses and beliefs</h3>
+<p>A <strong>best response</strong> gives a player the highest payoff against specified choices by the others. If the other person chooses the station, compare your first payoff in that column: choosing the station gives 50, while the town hall gives zero. Your best response is the station. If they choose the town hall, your best response changes to the town hall.</p>
+<p>Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the station. Your expected payoff from choosing it is <span class="math inline">\(0.70\times50=35\)</span>, compared with <span class="math inline">\(0.30\times50=15\)</span> for the town hall. Choosing the station is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.</p>
+</section>
+<section id="mutual-best-responses-checking-equilibrium" class="level3">
+<h3 data-anchor-id="mutual-best-responses-checking-equilibrium">Mutual best responses: checking equilibrium</h3>
+<p>To check a <strong>Nash equilibrium</strong>, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the station passes this test: neither person gains by going alone to the town hall. Both choosing the town hall passes it too. Choosing different places fails because either person could improve their payoff by joining the other.</p>
+<p>These choices are <strong>pure strategies</strong>, which specify a definite action at each decision point. A <strong>mixed strategy</strong> assigns probabilities to pure strategies. In this one-move game, that means randomizing between destinations. Independent 50–50 randomization by both players is also an equilibrium in this particular symmetric matrix: either destination offers an expected payoff of 25 against the other’s randomization, so neither player can improve it by changing their own mix. Yet they meet only half the time on average.</p>
+<p>The meeting game therefore has two pure-strategy equilibria and a mixed-strategy equilibrium. Finding them does not tell the people where to go, and the mixed equilibrium does not deliver the highest available joint payoff. We still need to explain which expectations can bring their actions together.</p>
 </section>
 </section>
-<section id="the-action-does-not-identify-the-thought" class="level2">
-<h2 data-anchor-id="the-action-does-not-identify-the-thought">The action does not identify the thought</h2>
-<p>Suppose someone chooses 22. They may be level 2. But they may also believe the mean will be 33 for another reason, copy a familiar answer, misunderstand the target, anchor on a previous round, or choose strategically after observing the participant pool.</p>
-<p>This is an <strong>identification problem</strong>: several beliefs and choice rules can produce the same action. An incentivized belief report, information-search record, or experimental change in what is known about opponents can help distinguish them. Each needs to generate predictions on which the rival accounts disagree.</p>
-<p>Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. These neural and behavioral comparisons can help distinguish accounts when they predict different responses to the opponent.</p>
+<section id="coordination-shared-expectations-can-do-the-work" class="level2">
+<h2 data-anchor-id="coordination-shared-expectations-can-do-the-work">Knowing what would work is not enough</h2>
+<p><span id="fig-strategic-situation-diagnostic"></span></p>
+<p>The departments face the same selection problem. Suppose either common standard is preferable to incompatible systems, even though each department has a favorite. Both adopting A and both adopting B are then Nash equilibria: at either matched outcome, one department would lose by switching alone. The meeting matrix’s two successful destinations become two compatible standards.</p>
+<p>If A expects B to adopt standard A, choosing A makes sense. If both expect standard B, their choices can sustain that outcome instead. Everyone can respond sensibly to what they expect and still end up at a convention that nobody selected through a joint comparison of the alternatives.</p>
 </section>
-<section id="learning-is-not-the-same-as-deeper-initial-reasoning" class="level2">
-<h2 data-anchor-id="learning-is-not-the-same-as-deeper-initial-reasoning">Learning is not the same as deeper initial reasoning</h2>
-<p>After several rounds, choices in a number game often move toward lower values. That path may reflect belief learning, reinforcement, imitation, comprehension, or selection among participants. Calling it “more rational” skips the mechanism.</p>
-<p>To distinguish accounts, vary what participants receive:</p>
-<ul>
-<li><strong>choices only:</strong> participants see others’ actions but not payoffs;</li>
-<li><strong>payoffs only:</strong> participants learn success but not the full action distribution;</li>
-<li><strong>belief information:</strong> participants receive a credible signal about others;</li>
-<li><strong>counterfactual feedback:</strong> participants see what alternative actions would have earned;</li>
-<li><strong>no feedback:</strong> repeated choices reveal mere task familiarity or self-generated change.</li>
-</ul>
-<p>Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.</p>
-<p>The distinctions can now be collected in <a href="#tbl-three-strategic-lenses" class="quarto-xref">Table&nbsp;<span>24.2</span></a>. Choose a lens by the question it answers: a stable profile, a player’s reasoning, or change in a population.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
+<section id="focality-payoff-dominance-and-evidence" class="level2">
+<h2 data-anchor-id="focality-payoff-dominance-and-evidence">What makes an answer stand out?</h2>
+<p>A <strong>focal point</strong> is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The station at noon might work because each person expects the other to recognize it as an obvious meeting point. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.</p>
+<p>A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which station entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.</p>
+<p>Focality also differs from <strong>payoff dominance</strong>. An equilibrium is payoff dominant if it gives every player a higher payoff than the other equilibrium being compared. A salient outcome need not have that advantage. Nor does the existence of a better common outcome ensure that people will select it.</p>
+<section id="a-ten-cent-difference-can-disrupt-a-common-answer" class="level3">
+<h3 data-anchor-id="a-ten-cent-difference-can-disrupt-a-common-answer">A ten-cent difference can disrupt a common answer</h3>
+<p>Crawford, Gneezy, and Rottenstreich (2008) studied matching games in which two players independently chose X or Y and earned nothing if they failed to match. With matching payoffs of $5 each, the observed choice frequencies implied a 64% coordination rate. In another condition, matching on X paid $5 to one player and $5.10 to the other, while matching on Y reversed those payoffs. The implied coordination rate fell to 38%.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Only ten cents separated the preferred coordinated outcomes, while a mismatch cost each player at least $5. Nevertheless, a shared label became less effective when payoffs pulled expectations in different directions. The finding does not establish that everyone simply pursued the extra ten cents; people also had to anticipate what the difference would mean to their partner.</p>
+<p>The practical implication is precise. Naming an obvious option may help when interests align closely. Once people prefer different coordinated outcomes, they may need an agreed selection rule as well as a salient answer.</p>
+</section>
+</section>
+<section id="strategic-uncertainty-the-stag-hunt" class="level2">
+<h2 data-anchor-id="strategic-uncertainty-the-stag-hunt">When the better outcome feels too risky</h2>
+<p>Now suppose both departments agree that a new common system would be better than keeping the old one. The conflict over which system to choose has disappeared, but the danger of switching alone remains. Each may wait for evidence that the other will follow, leaving both with the old system.</p>
+<p>The <strong>stag hunt</strong> isolates this problem (Skyrms, 2004). Two hunters can secure the larger return only by hunting stag together. Each can instead hunt hare independently. In the illustrative payoff matrix in <a href="#tbl-stag-hunt" class="quarto-xref">Table&nbsp;<span>24.2</span></a>, the first number belongs to Player 1.</p>
+<div id="tbl-stag-hunt" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.2: Stag hunt: mutual commitment offers more, but acting alone is costly
+</figcaption>
+<div aria-describedby="tbl-stag-hunt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Player 1 \ Player 2</th>
+<th style="text-align: right;">Stag</th>
+<th style="text-align: right;">Hare</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stag</strong></td>
+<td style="text-align: right;">15, 15</td>
+<td style="text-align: right;">2, 10</td>
+</tr>
+<tr class="even">
+<td><strong>Hare</strong></td>
+<td style="text-align: right;">10, 2</td>
+<td style="text-align: right;">10, 10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner’s action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.</p>
+<p>How much confidence is enough? Suppose the displayed numbers are utility payoffs and Player 1 assigns probability <span class="math inline">\(p\)</span> to Player 2 choosing Stag. The expected payoff from Stag is</p>
+<p><span class="math display">\[
+15p+2(1-p)=2+13p,
+\]</span></p>
+<p>while Hare yields 10. Stag is strictly better when</p>
+<p><span class="math display">\[
+p&gt;\frac{8}{13}\approx0.615.
+\]</span></p>
+<p>At the threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. The threshold follows from these illustrative payoffs; it is not a measured level of trust that people universally require.</p>
+<p>Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the <strong>risk-dominant equilibrium</strong>: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.</p>
+<p>This is <strong>strategic uncertainty</strong>: uncertainty about what others will do. A pilot, staged adoption, or compatibility guarantee could make the departmental switch more attractive by increasing confidence in the partner’s action or reducing the loss from being left alone. Improving the promised system matters less if the unresolved obstacle is whether anybody else will use it.</p>
+<p>Van Huyck, Battalio, and Beil (1990) tested a related problem with groups choosing effort levels from 1 to 7. Each person’s payoff increased with the group’s lowest effort, but choosing more effort than the minimum incurred an extra cost. Everyone would earn more if everyone chose the highest level. Yet in seven large-group experiments, the minimum effort reached 1 within four rounds. This does not mean every participant immediately chose 1; one low choice was enough to determine the minimum.</p>
+<p>The design made higher effort attractive only when others also supplied it. Seeing a low minimum could therefore make reducing one’s own effort a sensible response, while helping the group remain at the lower outcome. Learning from experience can reinforce a disappointing convention as well as improve coordination.</p>
+</section>
+<section id="conventions-and-path-dependence" class="level2">
+<h2 data-anchor-id="conventions-and-path-dependence">How a convention becomes difficult to leave</h2>
+<p>Once a common standard is established, using it can become valuable precisely because others already do. Colleagues know the file format, support staff know how to repair failures, and suppliers build compatible products. These <strong>network benefits</strong> reinforce the initial choice. Training and conversion costs add further reasons to stay.</p>
+<p>The resulting <strong>path dependence</strong> means that earlier events can influence which outcome persists. It does not mean the outcome must be inefficient. The relevant comparison includes the benefits of compatibility and the costs of a coordinated transition, not just the technical features of two isolated products.</p>
+<p>David (1985) used the history of QWERTY to develop the path-dependence argument. Liebowitz and Margolis (1990) challenged the evidence that the keyboard persisted despite a demonstrably superior alternative. The familiar story that QWERTY was designed to slow typists should therefore not carry the explanation. Installed bases, learned skills, and compatibility provide mechanisms worth investigating without treating a contested historical verdict as established fact.</p>
+<p>For the departments, this suggests a useful distinction: evidence that a new system is better in isolation differs from evidence that changing together is worthwhile. A credible transition plan addresses the second question by making costs, timing, and support explicit.</p>
+<p><span id="ethics-a-convention-can-work-and-still-exclude"></span></p>
+<p>A familiar convention can make work easier for insiders while leaving newcomers unable to anticipate what is expected. Compatibility alone does not settle whether a standard is fair: the people bearing its training and conversion costs also need a voice in choosing it.</p>
+</section>
+<section id="mixed-motives-and-compatible-claims" class="level2">
+<h2 data-anchor-id="mixed-motives-and-compatible-claims">Sharing a destination does not settle who gains</h2>
+<p>Return to the original disagreement: Department A prefers integration; Department B prefers flexibility. Both want compatibility, but each coordinated outcome distributes benefits differently. This structure is conventionally called the <strong>Battle of the Sexes</strong>, named after an older example in which two people want to spend an evening together but prefer different activities. Finding a common choice and deciding whose preference prevails are separate problems.</p>
+<p>A lottery, rotation, or neutral tie-breaker can provide an answer both sides anticipate. The appropriate rule depends on the activity. Taking turns may work for recurring meeting times but waste resources if it requires replacing the reporting system every month. For a durable standard, compensating concentrated training costs or sharing implementation work may produce a more acceptable agreement.</p>
+<section id="compatible-bargaining-claims" class="level3">
+<h3 data-anchor-id="compatible-bargaining-claims">Compatible bargaining claims</h3>
+<p>A simple bargaining game makes the distribution problem explicit. Two players simultaneously claim shares of a total of 4. If their claims sum to at most 4, each receives the amount claimed; if they exceed 4, both receive 0.</p>
+<p>The claims 2 and 2 fit together, as do 3 and 1. In either of those pairs, raising one’s claim would destroy the agreement, while lowering it would reduce one’s payoff. Both are Nash equilibria. Equilibrium alone does not decide which division should prevail. Equal shares may be focal, but contribution, alternatives, past agreements, and power can support other expectations.</p>
+<p>The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. <a href="../chapters/35-negotiation-as-joint-decision-design.html#chapter-35-start">Negotiation as Joint Decision Design</a> develops that task. Even an agreement that improves both parties’ outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.</p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Compare the three lenses
+<span class="screen-reader-only">Note</span>Research Lens: coordination can require different actions
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="tbl-three-strategic-lenses" class="quarto-float quarto-figure quarto-figure-center">
+<p>Matching is only one form of coordination. In <strong>chicken</strong>, two drivers approach a one-lane bridge. Each would rather proceed while the other yields, but both prefer avoiding a collision. The desirable actions are complementary. A right-of-way rule can select who yields; commitments by both drivers to keep going can instead make the worst outcome more likely.</p>
+<p>In a <strong>volunteer’s dilemma</strong>, everyone benefits if someone acts, and each values getting the task done more than the personal cost of volunteering, but prefers someone else to bear that cost. A team may need one person to report a software failure, but an open request can leave everyone waiting. Assigning the task or rotating responsibility addresses who acts. <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html#bystanders-and-pluralistic-ignorance">Shared Responsibility</a> examines the psychological evidence and distinguishes this incentive problem from uncertainty about whether help is needed.</p>
+<p>These cases extend the chapter’s question: which combination of actions is needed, and what rule makes each person’s role predictable? Coordination does not always mean doing the same thing.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="commitment-changes-the-game" class="level2">
+<h2 data-anchor-id="commitment-changes-the-game">Making an agreement credible</h2>
+<p>Communication can identify a common option, reveal transition costs, and establish who will do what. Its effectiveness depends on the incentives that remain after the conversation. In the stag hunt, a credible expectation that the partner will hunt Stag makes Stag attractive. A message that creates no such confidence may leave the safer action preferable.</p>
+<p>A public agreement can also help people know what others have heard. <strong>Common knowledge</strong> means everyone knows something, everyone knows that everyone knows it, and so on. This is an ideal benchmark: an announcement supports it only insofar as people understand the message and recognize that others have received and understood it too.</p>
+<p>Words can matter even without a binding commitment. In a stag-hunt experiment, Charness (2000) found much more efficient coordination when a player could send a costless, nonbinding message before choosing an action than when communication was unavailable. Reversing the order of message and action changed behavior. The result shows why the opportunity to communicate and the timing of a message belong in the design of a joint decision.</p>
+<p>A <strong>credible commitment</strong> makes a future action believable by changing the cost or feasibility of departing from it. Booking shared training, allocating an implementation budget, or signing a contract can strengthen a plan when the other party can observe the commitment and understands what it implies. Schelling (1960) emphasized the strategic value of limiting one’s future freedom: the restriction can change someone else’s response.</p>
+<p>The same mechanism can serve competitive purposes. In 1999, Ford promised UK buyers a refund if it cut prices before the end of the year (Motor Trader, 1999b). The strategic logic is that a later reduction would then cost Ford money on qualifying earlier sales as well as on new ones. Yet a contemporary report described buyers postponing purchases until January, when they expected the guarantee to expire and prices to fall (Motor Trader, 1999a). The report illustrates how a commitment might shift expectations in an unintended direction, without isolating its causal effect on purchases.</p>
+<p>Commitment has a cost: the flexibility surrendered. A public promise to use one system may persuade the other department to invest, but it can also make managers defend that system after serious defects emerge. A useful commitment specifies the response it is intended to change and preserves a clear review condition. If persistence mainly protects an earlier decision rather than a worthwhile future arrangement, the escalation problem discussed in <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html#research-lens-the-50-auction-and-competitive-escalation">Strategic Interdependence</a> deserves attention.</p>
+</section>
+<section id="application-diagnose-the-obstacle-before-choosing-the-tool" class="level2">
+<h2 data-anchor-id="application-diagnose-the-obstacle-before-choosing-the-tool">Application: diagnose the obstacle before choosing the tool</h2>
+<p>The reporting dispute can now be separated into actionable problems. The rows of <a href="#tbl-strategic-structures" class="quarto-xref">Table&nbsp;<span>24.3</span></a> identify obstacles that can coexist; each suggests a different first intervention.</p>
+<div id="tbl-strategic-structures" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-three-strategic-lenses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.2: Three lenses on strategic behavior
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-strategic-structures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.3: Different coordination obstacles call for different responses
 </figcaption>
-<div aria-describedby="tbl-three-strategic-lenses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-strategic-structures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -819,159 +840,174 @@ Table&nbsp;24.2: Three lenses on strategic behavior
 </colgroup>
 <thead>
 <tr class="header">
-<th>Lens</th>
-<th>Decision rule</th>
-<th>Primary question</th>
+<th>Obstacle</th>
+<th>Evidence to look for</th>
+<th>Possible response</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Equilibrium benchmark</td>
-<td>Each strategy is a best response to the others.</td>
-<td>Which strategy profiles are mutually stable?</td>
+<td>Different expectations about the common choice</td>
+<td>Each department assumes its own standard is the obvious answer.</td>
+<td>Choose one standard explicitly and confirm that both understand the choice.</td>
 </tr>
 <tr class="even">
-<td>Behavioral reasoning</td>
-<td>Players respond to beliefs about less or differently sophisticated players.</td>
-<td>How many strategic steps fit observed play?</td>
+<td>Fear of acting alone</td>
+<td>Both prefer the joint switch but doubt the other’s readiness.</td>
+<td>Set a shared launch condition or reduce the cost of a failed transition.</td>
 </tr>
 <tr class="odd">
-<td>Population dynamics</td>
-<td>More successful strategies become more common through selection, imitation, or reproduction.</td>
-<td>Which strategies grow, shrink, or coexist under a specified update rule?</td>
+<td>Disagreement over benefits and burdens</td>
+<td>Both want compatibility, but one bears more training or conversion costs.</td>
+<td>Compare total gains and agree how to share transition costs.</td>
+</tr>
+<tr class="even">
+<td>Unassigned or conflicting roles</td>
+<td>Each waits for the other to act, or both claim the same decision right.</td>
+<td>Name responsibilities and agree on a tie-breaker.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
+<p>Begin with a joint pilot that uses the same evaluation criteria and records costs for both departments. Agree on the decision rule before results are available, then specify who transfers the records, who trains staff, and what must be ready before launch. A review date creates a way to respond to evidence without making every temporary difficulty a reason to abandon the common plan. The rule should also remain understandable and open to challenge by the people expected to follow it.</p>
+<p>The diagnostic also marks a boundary. If one department benefits from abandoning the agreement even when the other fulfills it, reassurance alone will not solve the problem. The incentives or the agreement itself need to change.</p>
+<p>After specifying the game, keep the answers supplied by equilibrium analysis separate from questions that require evidence about the people involved. <a href="#tbl-equilibrium-boundary" class="quarto-xref">Table&nbsp;<span>24.4</span></a> collects that distinction: identifying a stable combination is one step in evaluating a joint decision.</p>
+<div id="tbl-equilibrium-boundary" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-equilibrium-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.4: Questions answered by equilibrium analysis and questions requiring further evidence
+</figcaption>
+<div aria-describedby="tbl-equilibrium-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equilibrium can clarify</th>
+<th>Equilibrium alone cannot establish</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whether each strategy is a best response to the others.</td>
+<td>Whether players understand the game or hold those expectations.</td>
+</tr>
+<tr class="even">
+<td>Whether anyone gains by changing their strategy alone.</td>
+<td>Whether the outcome is fair or best for the people affected.</td>
+</tr>
+<tr class="odd">
+<td>Which strategy combinations remain stable under specified rules.</td>
+<td>Which equilibrium people select when several exist.</td>
+</tr>
+<tr class="even">
+<td>How changing incentives alters that stability.</td>
+<td>Whether the proposed payoffs capture actual motives.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</figure>
 </div>
+</section>
+<section id="practice-lab" class="level2">
+<h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<p>Choose a real situation in which two people or groups must adopt compatible actions. Specify their options and construct a payoff matrix, stating the assumptions behind the numbers. Mark each player’s best responses and identify any pure-strategy equilibria. If more than one coordinated outcome could work, explain why the people have not settled on one: different expectations, fear of acting alone, conflicting benefits, or an unassigned role.</p>
+<p>Propose one change that addresses the identified obstacle. State whose expectation or incentive should change and what behavior would count as evidence that the diagnosis was useful. If you propose a guarantee, calculate what it protects against; if you propose a rule, explain how the people bearing its costs can take part in choosing it.</p>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<p>At the next stalled meeting, separate “Which plan would work?” from “What makes each person willing to act on it?” A shared answer to the first question may leave the second unresolved. Look for the missing assurance, decision rule, or allocation of responsibility before treating hesitation as unwillingness.</p>
+<p><a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html#chapter-25-start">Cooperation and Social Preferences</a> takes the next step: what if a person gains by departing from the common plan even when everyone else keeps it? Future relationships, institutions, and concern for others can change that decision in different ways.</p>
+<p><span id="research-lens-dependence-without-a-changing-best-response"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Advanced research track: evolutionary and spatial models
+<span class="screen-reader-only">Note</span>Research Lens: dependence without a changing best response
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith &amp; Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.</p>
-<p>A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner’s-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules (Schelling, 1969; Hammond &amp; Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html#population-model-provenance">Appendix B</a> preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="application-choose-the-model-after-diagnosing-the-process" class="level2">
-<h2 data-anchor-id="application-choose-the-model-after-diagnosing-the-process">Application: choose the model after diagnosing the process</h2>
-<p>The same distinction matters outside a number game. Suppose a team sees a work routine spreading and wants to support it. Employees may be learning from success, copying visible colleagues, or complying with a changed rule. Rewarding the routine before investigating these possibilities could reinforce a practice whose value has never been tested.</p>
-<p>Begin with what the action achieves for the employee. If it is a deliberate response to what colleagues do or expect, a strategic-reasoning model may help. If the question is how the routine spreads, compare the four processes in <a href="#tbl-strategy-diffusion-diagnostic" class="quarto-xref">Table&nbsp;<span>24.3</span></a> and the evidence that would separate them:</p>
-<div id="tbl-strategy-diffusion-diagnostic" class="quarto-float quarto-figure quarto-figure-center">
+<p>In the meeting game, your best response changes with the other person’s choice. Strategic dependence can also exist when one action is best regardless of what the other player does. A <strong>strictly dominant strategy</strong> yields a higher payoff than every alternative against every strategy combination of the others.</p>
+<p>The illustrative price-war matrix in <a href="#tbl-price-war" class="quarto-xref">Table&nbsp;<span>24.5</span></a> shows the distinction. Its numbers represent profit units and omit many features of an actual market. Rao and colleagues (2000) examine how responses to price competition depend on such details of the competitive setting.</p>
+<div id="tbl-price-war" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-strategy-diffusion-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;24.3: Four mechanisms that can produce the same diffusion pattern
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-price-war-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24.5: Illustrative price-war payoff matrix; Firm 1’s payoff appears first
 </figcaption>
-<div aria-describedby="tbl-strategy-diffusion-diagnostic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-price-war-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Candidate process</th>
-<th>Diagnostic question</th>
-<th>Discriminating evidence</th>
+<th>Firm 1 \ Firm 2</th>
+<th style="text-align: right;">High price</th>
+<th style="text-align: right;">Low price</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Reinforcement</td>
-<td>Did the employee repeat a routine after it worked for them?</td>
-<td>Hold information about others constant and vary feedback about the employee’s own outcome.</td>
+<td><strong>High price</strong></td>
+<td style="text-align: right;">10, 10</td>
+<td style="text-align: right;">2, 15</td>
 </tr>
 <tr class="even">
-<td>Imitation</td>
-<td>Are employees copying visible or prestigious performers?</td>
-<td>Hold own-outcome feedback constant and vary whose behavior is visible.</td>
-</tr>
-<tr class="odd">
-<td>Selection</td>
-<td>Are routines spreading because teams or employees using alternatives disappear or lose resources?</td>
-<td>Separate change within continuing units from replacement or differential survival of units.</td>
-</tr>
-<tr class="even">
-<td>Institutional change</td>
-<td>Did software, incentives, defaults, or management make one routine easier or mandatory?</td>
-<td>Identify the rule change and compare behavior under otherwise similar institutional conditions.</td>
+<td><strong>Low price</strong></td>
+<td style="text-align: right;">15, 2</td>
+<td style="text-align: right;">5, 5</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>The processes can coexist, so record which signal each account requires and what observation would weaken it. An evolutionary explanation must specify the process that makes a strategy more common; observing its spread is only the starting point.</p>
-</section>
-<section id="ethics-strategic-classification-can-become-a-weapon" class="level2">
-<h2 data-anchor-id="ethics-strategic-classification-can-become-a-weapon">Ethics: strategic classification can become a weapon</h2>
-<p>Calling an employee “level 1” can turn a tentative model fit into a durable label. Keep the classification tied to the task and the evidence, and make it correctable. A defensible use also examines costs to people outside the modeled game; success for its players does not settle whether the resulting arrangement is acceptable.</p>
-</section>
-<section id="practice-lab" class="level2">
-<h2 data-anchor-id="practice-lab">Practice Lab</h2>
-<p>Run five rounds of the two-thirds number game. Record the full distribution, individual revisions, the mean, and the target each round. Produce three rival accounts of any movement—deeper reasoning, belief learning, and imitation or reinforcement—then design one additional treatment that gives them different predictions. The output is the annotated path plus the discriminating treatment.</p>
-</section>
-<section id="take-it-forward" class="level2">
-<h2 data-anchor-id="take-it-forward">Take it forward</h2>
-<p>Before the next number-game round, write down the mean you expect and why. Afterward, compare that prediction with the distribution rather than merely asking whether your chosen number was low. The record reveals what you learned about the group and which assumption needs revision.</p>
-<p>Knowing how people reason strategically does not yet explain why they cooperate. The same cooperative action may arise from future consequences, reputation, enforcement, concern for others, or norms. <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html#chapter-25-start">Cooperation and Social Preferences</a> separates those mechanisms before treating cooperation as evidence about motive.</p>
+<p>Against a high price, Firm 1 earns 15 by choosing low rather than 10 by choosing high. Against a low price, it earns 5 rather than 2. Low strictly dominates high for both firms. Low–low is the unique Nash equilibrium, even though each firm’s profit remains affected by its rival’s action.</p>
+<p>Both firms would earn more at high–high, but an agreement to charge high prices would harm customers and may be unlawful. The firms’ joint profit is not a measure of social welfare. <a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html#chapter-25-start">Chapter 25</a> develops the incentive conflict in a Prisoner’s Dilemma and examines what can sustain cooperation.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
 <div class="reference">
-<p>Axelrod, R. (1984). <em>The evolution of cooperation</em>. Basic Books.</p>
+<p>Charness, G. (2000). Self-serving cheap talk: A test of Aumann’s conjecture. <em>Games and Economic Behavior, 33</em>(2), 177–194.</p>
 </div>
 <div class="reference">
-<p>Camerer, C. F. (2003). <em>Behavioral game theory: Experiments in strategic interaction</em>. Princeton University Press.</p>
+<p>Crawford, V. P., Gneezy, U., &amp; Rottenstreich, Y. (2008). The power of focal points is limited: Even minute payoff asymmetry may yield large coordination failures. <em>American Economic Review, 98</em>(4), 1443–1458.</p>
 </div>
 <div class="reference">
-<p>Camerer, C. F., Ho, T.-H., &amp; Chong, J.-K. (2004). A cognitive hierarchy model of games. <em>Quarterly Journal of Economics, 119</em>(3), 861–898. https://doi.org/10.1162/0033553041502225</p>
+<p>David, P. A. (1985). Clio and the economics of QWERTY. <em>American Economic Review, 75</em>(2), 332–337.</p>
 </div>
 <div class="reference">
-<p>Coricelli, G., &amp; Nagel, R. (2009). Neural correlates of depth of strategic reasoning in medial prefrontal cortex. <em>Proceedings of the National Academy of Sciences, 106</em>(23), 9163–9168. https://doi.org/10.1073/pnas.0807721106</p>
+<p>Liebowitz, S. J., &amp; Margolis, S. E. (1990). The fable of the keys. <em>Journal of Law &amp; Economics, 33</em>(1), 1–25.</p>
 </div>
 <div class="reference">
-<p>Crawford, V. P., Costa-Gomes, M. A., &amp; Iriberri, N. (2013). Structural models of nonequilibrium strategic thinking: Theory, evidence, and applications. <em>Journal of Economic Literature, 51</em>(1), 5–62. https://doi.org/10.1257/jel.51.1.5</p>
+<p>Motor Trader. (1999a, December 13). <a href="https://www.motortrader.com/general-news/car-makers-hold-out-on-price-cuts-13-12-1999">Car makers hold out on price cuts</a>.</p>
 </div>
 <div class="reference">
-<p>Hammond, R. A., &amp; Axelrod, R. (2006). The evolution of ethnocentrism. <em>Journal of Conflict Resolution, 50</em>(6), 926–936. https://doi.org/10.1177/0022002706293470</p>
+<p>Motor Trader. (1999b, November 1). <a href="https://www.motortrader.com/general-news/going-off-list-on-line-01-11-1999">Going off list on-line</a>.</p>
 </div>
 <div class="reference">
-<p>Imhof, L. A., Fudenberg, D., &amp; Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? <em>Journal of Theoretical Biology, 247</em>(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027</p>
+<p>Nash, J. F. (1950). Equilibrium points in n-person games. <em>Proceedings of the National Academy of Sciences, 36</em>(1), 48–49.</p>
 </div>
 <div class="reference">
-<p>Maynard Smith, J., &amp; Price, G. R. (1973). The logic of animal conflict. <em>Nature, 246</em>, 15–18. https://doi.org/10.1038/246015a0</p>
+<p>Rao, A. R., Bergen, M. E., &amp; Davis, S. (2000). How to fight a price war. <em>Harvard Business Review, 78</em>(2), 107–116.</p>
 </div>
 <div class="reference">
-<p>Nagel, R. (1995). Unraveling in guessing games: An experimental study. <em>American Economic Review, 85</em>(5), 1313–1326.</p>
+<p>Schelling, T. C. (1960). <em>The strategy of conflict</em>. Harvard University Press.</p>
 </div>
 <div class="reference">
-<p>Schelling, T. C. (1969). Models of segregation. <em>American Economic Review, 59</em>(2), 488–493.</p>
+<p>Skyrms, B. (2004). <em>The stag hunt and the evolution of social structure</em>. Cambridge University Press.</p>
 </div>
 <div class="reference">
-<p>Stahl, D. O., &amp; Wilson, P. W. (1995). On players’ models of other players: Theory and experimental evidence. <em>Games and Economic Behavior, 10</em>(1), 218–254. https://doi.org/10.1006/game.1995.1031</p>
-</div>
-<div class="reference">
-<p>Wilensky, U. (1997). <em>NetLogo Segregation model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation</p>
-</div>
-<div class="reference">
-<p>Wilensky, U. (2002). <em>NetLogo PD Basic Evolutionary model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary</p>
-</div>
-<div class="reference">
-<p>Wilensky, U. (2003). <em>NetLogo Ethnocentrism Alternative Visualization model</em>. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization</p>
+<p>Van Huyck, J. B., Battalio, R. C., &amp; Beil, R. O. (1990). Tacit coordination games, strategic uncertainty, and coordination failure. <em>American Economic Review, 80</em>(1), 234–248.</p>
 </div>
 
 
@@ -979,7 +1015,7 @@ Table&nbsp;24.3: Four mechanisms that can produce the same diffusion pattern
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>The approximation treats the group mean as given. Exact best responses in a finite prize game also depend on one’s own influence on the mean, the distribution of others’ choices, and the tie rule.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Table 2 reports rates implied by choices, not observed pair-success rates. There were 50 participants in the symmetric condition and 23 and 25 in the asymmetric roles.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

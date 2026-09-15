@@ -3,217 +3,290 @@ aliases:
   - 47-behavioral-game-theory.html
 ---
 
-# Behavioral Game Theory
+# Coordination and Focal Points
 
-*Equilibrium Is a Benchmark, Not a Portrait*
+*Finding a Way to Act Together*
 
 ::: {#chapter-24-start .chapter-epigraph}
-> “Players in a game are ‘in equilibrium’ if they are rational, and accurately predict other players’ strategies.”
+> “People can often concert their intentions or expectations with others if each knows that the other is trying to do the same.”
 >
-> — Colin F. Camerer, Teck-Hua Ho, and Juin-Kuan Chong, [“A Cognitive Hierarchy Model of Games”](https://academic.oup.com/qje/article-abstract/119/3/861/1938841), 2004, p. 861
+> — Thomas C. Schelling, [*The Strategy of Conflict*](https://www.sackett.net/Strategy-of-Conflict.pdf), 1960, p. 57
 :::
 
-[]{#opening-puzzle-should-a-sophisticated-player-choose-zero}In a group of at least three people, everyone chooses a real number from 0 to 100. The player closest to two-thirds of the group’s mean wins a fixed prize, shared equally in a tie.
+Two departments need to exchange reports. Each has tested a different system, and each can explain why its preferred system works better. Department A values integration with its existing software; Department B values flexibility. Both agree that adopting incompatible systems would waste time and create errors.
 
-If others choose uniformly at random, their expected mean is 50. A simple first approximation aims at two-thirds of that, about 33; if others aim at 33, the next step aims near 22, then near 15. This ladder uses a large-group approximation.[^ch24-number-game]
+The deadline approaches, but neither commits. A manager calls the delay resistance to change. Yet accepting the other department's preferred system would solve only part of the problem: someone must still arrange training, move the records, and ensure that both departments switch at the same time. A department can reasonably support the shared plan while hesitating to act first.
 
-Under common knowledge of rationality, iterated elimination removes choices above $66\frac{2}{3}$, then above $44\frac{4}{9}$, and so on. The unique Nash equilibrium is zero.
-
-But now imagine that most participants choose between 20 and 40. A player who chooses zero because “zero is the equilibrium” may lose to a player who predicts the group. A prediction of the actual choice distribution can therefore be more useful for winning than the equilibrium number alone.
+The disagreement contains several questions. Which standard should they use? Can each rely on the other to adopt it? Who should bear the transition costs? These questions require different answers, even though all three can look like a failure to cooperate.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-Predicting a strategic choice requires a view of what players believe about one another. Equilibrium provides one benchmark; limited reasoning and learning provide alternatives. Comparing their predictions helps us explain behavior.
+A payoff matrix makes the dependence between choices visible. Finding mutual best responses identifies equilibria, but several may remain. Successful coordination then requires a shared expectation about which outcome to pursue and enough confidence that others will act on it.
 :::
 
 ## Learning goals
 
-- Compare equilibrium, level-*k*, and cognitive-hierarchy accounts of one beauty-contest dataset.
-- Separate initial bounded reasoning from belief learning, imitation, and reinforcement across rounds.
-- Design an observation or treatment that distinguishes competing explanations for the same strategic action.
+- Construct and read a payoff matrix, then identify best responses and pure- and mixed-strategy equilibria.
+- Distinguish focality, payoff dominance, and risk dominance as explanations for which coordinated outcome people pursue.
+- Diagnose whether a common plan needs a shared signal, credible assurance, or an agreed division of benefits and responsibilities.
 
-## Two beauty contests
+## Representing the interaction {#a-game-is-a-model-not-the-situation-itself}
 
-The same contrast can be taught without numbers. First choose the face you personally find most attractive from a set. Then choose the face you expect most other people to select. The first question asks for personal preference; the second asks for a prediction of others’ selections.
+The departments' arguments mix the quality of a system with the benefits of compatibility and the costs of changing. A game-theoretic model separates these features so that we can inspect how each department's choice depends on the other's. Begin with a simpler version of the [meeting problem](23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd#opening-puzzle-meet-me-in-odense), where the shared objective is easier to represent.
 
-The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) dramatizes recursive reasoning: “I think that you think that I think….” Pause before the reveal and map each step. Then identify the missing information that prevents the chain of guesses from settling the choice. More steps help only if they begin from a useful account of the opponent.
+A **game** is a model that specifies the players, their possible actions, and how their choices jointly determine payoffs. Five features make the meeting model explicit:
 
-![Strategic behavior can be examined through three distinct lenses: equilibrium, bounded strategic reasoning, and population dynamics. Each lens begins with the game and answers a different question.](../figures/three-lenses-strategic-behavior.svg){#fig-three-lenses-strategic-behavior fig-alt="A game specification feeds three evenly spaced columns. The equilibrium benchmark asks which strategies are mutual best responses. Behavioral reasoning asks what players believe and how many steps they take. Population dynamics asks which strategies spread through imitation, selection, and mutation. The three paths converge on conditional predictions."}
+- **Players:** the two people trying to meet.
+- **Actions:** the places and times each can choose.
+- **Payoffs:** how each person values meeting or failing to meet.
+- **Information:** what each knows about the city, the other person, and the situation.
+- **Timing:** each chooses where to go before learning the other's destination.
 
-## Three lenses, three questions
+An **action** is a particular move. A **strategy** is a complete plan for what to do at every point where a player might have to choose. In a one-move meeting game, choosing a place and time specifies the whole strategy. If messages or later decisions were allowed, a strategy would also specify how to respond to them.
 
+The model need not express every concern in money. Safety, time, fairness, and the relationship can all affect how someone values an outcome. Allowing communication or letting one person observe the other's choice changes the game even if the possible destinations stay the same.
 
-To predict the first round, we can ask which choices would be mutual best responses, or model how players actually reason about one another. To explain change across rounds or populations, we also need an account of how ways of playing become more common. The three branches in @fig-three-lenses-strategic-behavior keep these tasks distinct: finding mutual best responses, explaining a player’s reasoning, and tracing population change.
+### Reading a payoff matrix
 
-## Limited strategic depth: level-*k*
+To isolate the problem of choosing compatible destinations, suppose the station and town hall are equally safe and accessible. Hold the time at noon. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The **payoff matrix** in @tbl-meeting-coordination records what each receives under every combination of choices.
 
-The number game rewards anticipating the group, but knowing the equilibrium does not tell a player how far others have reasoned. A model of limited strategic depth supplies a prediction between random choice and fully matched equilibrium beliefs. The ladder in @fig-level-k-reasoning-ladder illustrates a level-*k* model: each strategic level responds to the preceding level, starting from a specified nonstrategic anchor (Nagel, 1995; Stahl & Wilson, 1995). Behavioral game theory uses such models as disciplined alternatives to treating equilibrium as a literal description of first-round play (Camerer, 2003; Crawford et al., 2013).
+| Your choice \\ Other person's choice | Station | Town hall |
+| --- | ---: | ---: |
+| **Station** | 50, 50 | 0, 0 |
+| **Town hall** | 0, 0 | 50, 50 |
+: A simplified meeting game; your payoff appears first {#tbl-meeting-coordination}
 
-![In the two-thirds-of-the-mean game (Nagel, 1995), an illustrative level-*k* ladder begins from an expected random-choice anchor of 50, then aims near 33, 22, and 15 under a large-group approximation; continued iteration reaches the equilibrium at 0.](../figures/level-k-reasoning-ladder.svg){#fig-level-k-reasoning-ladder fig-alt="Players choose a number from zero to one hundred, aiming at two-thirds of the group mean. An illustrative reasoning ladder starts from an expected random-choice anchor of fifty, then gives approximately thirty-three, twenty-two, fifteen, and the equilibrium zero." width=100%}
+Read the rows as your actions and the columns as the other person's actions. Within each cell, your payoff comes first and theirs second. If you choose the station and they choose the town hall, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.
 
-- **Level 0** is a specified nonstrategic anchor. In the number game, it is often modeled as uniform random choice with mean 50.
-- **Level 1** responds to the level-0 anchor and aims near $\frac{2}{3}\times50=33$.
-- **Level 2** responds to the level-1 anchor and aims near $\frac{2}{3}\times33=22$.
-- **Level 3** responds to the level-2 anchor and aims near 15.
+### Best responses and beliefs {#best-responses-and-nash-equilibrium}
 
-The same person can use different depths when the game, incentives, time, experience, presentation, or opponent changes. Level 0 is also a modeling decision: random play may be plausible in one game and implausible in another.
+A **best response** gives a player the highest payoff against specified choices by the others. If the other person chooses the station, compare your first payoff in that column: choosing the station gives 50, while the town hall gives zero. Your best response is the station. If they choose the town hall, your best response changes to the town hall.
 
-### Cognitive hierarchy: best respond to a mixture
+Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the station. Your expected payoff from choosing it is $0.70\times50=35$, compared with $0.30\times50=15$ for the town hall. Choosing the station is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
 
-A player may expect the group to contain several reasoning depths. Responding only to a single lower type would then miss part of the competition. Cognitive hierarchy incorporates this mixture: a step-$k$ thinker best responds to a distribution of steps $0$ through $k-1$ (Camerer, Ho, & Chong, 2004). The population frequency of step $h$ is often modeled with a Poisson distribution,
+### Mutual best responses: checking equilibrium
+
+To check a **Nash equilibrium**, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the station passes this test: neither person gains by going alone to the town hall. Both choosing the town hall passes it too. Choosing different places fails because either person could improve their payoff by joining the other.
+
+These choices are **pure strategies**, which specify a definite action at each decision point. A **mixed strategy** assigns probabilities to pure strategies. In this one-move game, that means randomizing between destinations. Independent 50–50 randomization by both players is also an equilibrium in this particular symmetric matrix: either destination offers an expected payoff of 25 against the other's randomization, so neither player can improve it by changing their own mix. Yet they meet only half the time on average.
+
+The meeting game therefore has two pure-strategy equilibria and a mixed-strategy equilibrium. Finding them does not tell the people where to go, and the mixed equilibrium does not deliver the highest available joint payoff. We still need to explain which expectations can bring their actions together.
+
+## Knowing what would work is not enough {#coordination-shared-expectations-can-do-the-work}
+
+[]{#fig-strategic-situation-diagnostic}
+
+The departments face the same selection problem. Suppose either common standard is preferable to incompatible systems, even though each department has a favorite. Both adopting A and both adopting B are then Nash equilibria: at either matched outcome, one department would lose by switching alone. The meeting matrix's two successful destinations become two compatible standards.
+
+If A expects B to adopt standard A, choosing A makes sense. If both expect standard B, their choices can sustain that outcome instead. Everyone can respond sensibly to what they expect and still end up at a convention that nobody selected through a joint comparison of the alternatives.
+
+## What makes an answer stand out? {#focality-payoff-dominance-and-evidence}
+
+A **focal point** is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The station at noon might work because each person expects the other to recognize it as an obvious meeting point. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.
+
+A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which station entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.
+
+Focality also differs from **payoff dominance**. An equilibrium is payoff dominant if it gives every player a higher payoff than the other equilibrium being compared. A salient outcome need not have that advantage. Nor does the existence of a better common outcome ensure that people will select it.
+
+### A ten-cent difference can disrupt a common answer
+
+Crawford, Gneezy, and Rottenstreich (2008) studied matching games in which two players independently chose X or Y and earned nothing if they failed to match. With matching payoffs of $5 each, the observed choice frequencies implied a 64% coordination rate. In another condition, matching on X paid $5 to one player and $5.10 to the other, while matching on Y reversed those payoffs. The implied coordination rate fell to 38%.[^ch24-coordination-rate]
+
+Only ten cents separated the preferred coordinated outcomes, while a mismatch cost each player at least $5. Nevertheless, a shared label became less effective when payoffs pulled expectations in different directions. The finding does not establish that everyone simply pursued the extra ten cents; people also had to anticipate what the difference would mean to their partner.
+
+The practical implication is precise. Naming an obvious option may help when interests align closely. Once people prefer different coordinated outcomes, they may need an agreed selection rule as well as a salient answer.
+
+## When the better outcome feels too risky {#strategic-uncertainty-the-stag-hunt}
+
+Now suppose both departments agree that a new common system would be better than keeping the old one. The conflict over which system to choose has disappeared, but the danger of switching alone remains. Each may wait for evidence that the other will follow, leaving both with the old system.
+
+The **stag hunt** isolates this problem (Skyrms, 2004). Two hunters can secure the larger return only by hunting stag together. Each can instead hunt hare independently. In the illustrative payoff matrix in @tbl-stag-hunt, the first number belongs to Player 1.
+
+| Player 1 \\ Player 2 | Stag | Hare |
+| --- | ---: | ---: |
+| **Stag** | 15, 15 | 2, 10 |
+| **Hare** | 10, 2 | 10, 10 |
+: Stag hunt: mutual commitment offers more, but acting alone is costly {#tbl-stag-hunt}
+
+Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner's action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.
+
+How much confidence is enough? Suppose the displayed numbers are utility payoffs and Player 1 assigns probability $p$ to Player 2 choosing Stag. The expected payoff from Stag is
 
 $$
-f(h)=\frac{e^{-\tau}\tau^h}{h!},
+15p+2(1-p)=2+13p,
 $$
 
-and a step-$k$ player renormalizes this distribution over the lower steps they believe exist. The parameter $\tau$ governs the population's average number of steps. Camerer, Ho, and Chong report that an average of about 1.5 steps fits behavior across many games.
+while Hare yields 10. Stag is strictly better when
 
-Comparing the means, modes, and fitted reasoning depths in @tbl-beauty-contest-groups shows how the distribution a player needs to anticipate varies across settings and participant pools.
+$$
+p>\frac{8}{13}\approx0.615.
+$$
 
-| Participant group | Group size | Mean choice | Modal choice | Fitted $\tau$ |
-| --- | ---: | ---: | ---: | ---: |
-| Chief executives | 20 | 37.9 | 33 | 1.0 |
-| German students | 66 | 37.2 | 25 | 1.1 |
-| U.S. high-school students | 52 | 32.5 | 33 | 1.6 |
-| Economics PhDs | 16 | 27.4 | — | 2.3 |
-| Portfolio managers | 26 | 24.3 | 22 | 2.8 |
-| Caltech students | 42 | 23.0 | 35 | 3.0 |
-| Newspaper participants | 7,884 | 23.0 | 1 | 3.0 |
-| Game theorists | 136 | 19.1 | 0 | 3.7 |
-: Descriptive number-game results used to illustrate heterogeneous strategic depth {#tbl-beauty-contest-groups}
+At the threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. The threshold follows from these illustrative payoffs; it is not a measured level of trust that people universally require.
 
-These averages do not turn occupations or participant groups into reasoning types. Substantial variation remains within each group, and the next section explains why a particular number does not reveal a unique thought process.
+Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the **risk-dominant equilibrium**: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.
 
-## The action does not identify the thought
+This is **strategic uncertainty**: uncertainty about what others will do. A pilot, staged adoption, or compatibility guarantee could make the departmental switch more attractive by increasing confidence in the partner's action or reducing the loss from being left alone. Improving the promised system matters less if the unresolved obstacle is whether anybody else will use it.
 
-Suppose someone chooses 22. They may be level 2. But they may also believe the mean will be 33 for another reason, copy a familiar answer, misunderstand the target, anchor on a previous round, or choose strategically after observing the participant pool.
+Van Huyck, Battalio, and Beil (1990) tested a related problem with groups choosing effort levels from 1 to 7. Each person's payoff increased with the group's lowest effort, but choosing more effort than the minimum incurred an extra cost. Everyone would earn more if everyone chose the highest level. Yet in seven large-group experiments, the minimum effort reached 1 within four rounds. This does not mean every participant immediately chose 1; one low choice was enough to determine the minimum.
 
-This is an **identification problem**: several beliefs and choice rules can produce the same action. An incentivized belief report, information-search record, or experimental change in what is known about opponents can help distinguish them. Each needs to generate predictions on which the rival accounts disagree.
+The design made higher effort attractive only when others also supplied it. Seeing a low minimum could therefore make reducing one's own effort a sensible response, while helping the group remain at the lower outcome. Learning from experience can reinforce a disappointing convention as well as improve coordination.
 
-Coricelli and Nagel (2009) compared strategic reasoning against human and computer opponents using behavioral and neural measures. Their results are consistent with different processing as strategic depth increases. These neural and behavioral comparisons can help distinguish accounts when they predict different responses to the opponent.
+## How a convention becomes difficult to leave {#conventions-and-path-dependence}
 
-## Learning is not the same as deeper initial reasoning
+Once a common standard is established, using it can become valuable precisely because others already do. Colleagues know the file format, support staff know how to repair failures, and suppliers build compatible products. These **network benefits** reinforce the initial choice. Training and conversion costs add further reasons to stay.
 
-After several rounds, choices in a number game often move toward lower values. That path may reflect belief learning, reinforcement, imitation, comprehension, or selection among participants. Calling it “more rational” skips the mechanism.
+The resulting **path dependence** means that earlier events can influence which outcome persists. It does not mean the outcome must be inefficient. The relevant comparison includes the benefits of compatibility and the costs of a coordinated transition, not just the technical features of two isolated products.
 
-To distinguish accounts, vary what participants receive:
+David (1985) used the history of QWERTY to develop the path-dependence argument. Liebowitz and Margolis (1990) challenged the evidence that the keyboard persisted despite a demonstrably superior alternative. The familiar story that QWERTY was designed to slow typists should therefore not carry the explanation. Installed bases, learned skills, and compatibility provide mechanisms worth investigating without treating a contested historical verdict as established fact.
 
-- **choices only:** participants see others' actions but not payoffs;
-- **payoffs only:** participants learn success but not the full action distribution;
-- **belief information:** participants receive a credible signal about others;
-- **counterfactual feedback:** participants see what alternative actions would have earned;
-- **no feedback:** repeated choices reveal mere task familiarity or self-generated change.
+For the departments, this suggests a useful distinction: evidence that a new system is better in isolation differs from evidence that changing together is worthwhile. A credible transition plan addresses the second question by making costs, timing, and support explicit.
 
-Different models predict different responses to these information treatments. A learning claim becomes useful when it states what is learned, from which signal, under which update rule.
+[]{#ethics-a-convention-can-work-and-still-exclude}
 
-The distinctions can now be collected in @tbl-three-strategic-lenses. Choose a lens by the question it answers: a stable profile, a player’s reasoning, or change in a population.
+A familiar convention can make work easier for insiders while leaving newcomers unable to anticipate what is expected. Compatibility alone does not settle whether a standard is fair: the people bearing its training and conversion costs also need a voice in choosing it.
 
-::: {.callout-note icon=false}
-## Compare the three lenses
+## Sharing a destination does not settle who gains {#mixed-motives-and-compatible-claims}
 
-| Lens | Decision rule | Primary question |
-| --- | --- | --- |
-| Equilibrium benchmark | Each strategy is a best response to the others. | Which strategy profiles are mutually stable? |
-| Behavioral reasoning | Players respond to beliefs about less or differently sophisticated players. | How many strategic steps fit observed play? |
-| Population dynamics | More successful strategies become more common through selection, imitation, or reproduction. | Which strategies grow, shrink, or coexist under a specified update rule? |
-: Three lenses on strategic behavior {#tbl-three-strategic-lenses}
-:::
+Return to the original disagreement: Department A prefers integration; Department B prefers flexibility. Both want compatibility, but each coordinated outcome distributes benefits differently. This structure is conventionally called the **Battle of the Sexes**, named after an older example in which two people want to spend an evening together but prefer different activities. Finding a common choice and deciding whose preference prevails are separate problems.
+
+A lottery, rotation, or neutral tie-breaker can provide an answer both sides anticipate. The appropriate rule depends on the activity. Taking turns may work for recurring meeting times but waste resources if it requires replacing the reporting system every month. For a durable standard, compensating concentrated training costs or sharing implementation work may produce a more acceptable agreement.
+
+### Compatible bargaining claims
+
+A simple bargaining game makes the distribution problem explicit. Two players simultaneously claim shares of a total of 4. If their claims sum to at most 4, each receives the amount claimed; if they exceed 4, both receive 0.
+
+The claims 2 and 2 fit together, as do 3 and 1. In either of those pairs, raising one's claim would destroy the agreement, while lowering it would reduce one's payoff. Both are Nash equilibria. Equilibrium alone does not decide which division should prevail. Equal shares may be focal, but contribution, alternatives, past agreements, and power can support other expectations.
+
+The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. [Negotiation as Joint Decision Design](35-negotiation-as-joint-decision-design.qmd#chapter-35-start) develops that task. Even an agreement that improves both parties' outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.
 
 ::: {.callout-note .research-lens icon=false collapse=true}
-## Advanced research track: evolutionary and spatial models
+## Research Lens: coordination can require different actions
 
-Evolutionary game theory asks which strategies become more common under a declared process linking payoff to replication or selection (Maynard Smith & Price, 1973). Spatial models add a rule for who meets whom. These models are useful when the research question concerns population change, but frequency change alone does not identify selection: people may instead learn from their own outcomes, imitate visible others, or respond to an institution.
+Matching is only one form of coordination. In **chicken**, two drivers approach a one-lane bridge. Each would rather proceed while the other yields, but both prefer avoiding a collision. The desirable actions are complementary. A right-of-way rule can select who yields; commitments by both drivers to keep going can instead make the worst outcome more likely.
 
-A formal model must therefore name its payoffs, initial state, transmission or update rule, interaction structure, horizon, and—when simulated—seeds and replications. Schelling-style segregation, evolutionary prisoner's-dilemma dynamics, and ethnocentrism models are executable hypotheses under declared rules (Schelling, 1969; Hammond & Axelrod, 2006; Wilensky, 1997, 2002, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability are also different criteria; success under one does not imply success under the others (Axelrod, 1984; Imhof et al., 2007). [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) preserves the formal model-provenance track; its broader claim audit separates evolutionary function, current mechanism, and normative interpretation.
+In a **volunteer's dilemma**, everyone benefits if someone acts, and each values getting the task done more than the personal cost of volunteering, but prefers someone else to bear that cost. A team may need one person to report a software failure, but an open request can leave everyone waiting. Assigning the task or rotating responsibility addresses who acts. [Shared Responsibility](28-authority-groupthink-and-shared-responsibility.qmd#bystanders-and-pluralistic-ignorance) examines the psychological evidence and distinguishes this incentive problem from uncertainty about whether help is needed.
+
+These cases extend the chapter's question: which combination of actions is needed, and what rule makes each person's role predictable? Coordination does not always mean doing the same thing.
 :::
 
-## Application: choose the model after diagnosing the process
+## Making an agreement credible {#commitment-changes-the-game}
 
-The same distinction matters outside a number game. Suppose a team sees a work routine spreading and wants to support it. Employees may be learning from success, copying visible colleagues, or complying with a changed rule. Rewarding the routine before investigating these possibilities could reinforce a practice whose value has never been tested.
+Communication can identify a common option, reveal transition costs, and establish who will do what. Its effectiveness depends on the incentives that remain after the conversation. In the stag hunt, a credible expectation that the partner will hunt Stag makes Stag attractive. A message that creates no such confidence may leave the safer action preferable.
 
-Begin with what the action achieves for the employee. If it is a deliberate response to what colleagues do or expect, a strategic-reasoning model may help. If the question is how the routine spreads, compare the four processes in @tbl-strategy-diffusion-diagnostic and the evidence that would separate them:
+A public agreement can also help people know what others have heard. **Common knowledge** means everyone knows something, everyone knows that everyone knows it, and so on. This is an ideal benchmark: an announcement supports it only insofar as people understand the message and recognize that others have received and understood it too.
 
-| Candidate process | Diagnostic question | Discriminating evidence |
+Words can matter even without a binding commitment. In a stag-hunt experiment, Charness (2000) found much more efficient coordination when a player could send a costless, nonbinding message before choosing an action than when communication was unavailable. Reversing the order of message and action changed behavior. The result shows why the opportunity to communicate and the timing of a message belong in the design of a joint decision.
+
+A **credible commitment** makes a future action believable by changing the cost or feasibility of departing from it. Booking shared training, allocating an implementation budget, or signing a contract can strengthen a plan when the other party can observe the commitment and understands what it implies. Schelling (1960) emphasized the strategic value of limiting one's future freedom: the restriction can change someone else's response.
+
+The same mechanism can serve competitive purposes. In 1999, Ford promised UK buyers a refund if it cut prices before the end of the year (Motor Trader, 1999b). The strategic logic is that a later reduction would then cost Ford money on qualifying earlier sales as well as on new ones. Yet a contemporary report described buyers postponing purchases until January, when they expected the guarantee to expire and prices to fall (Motor Trader, 1999a). The report illustrates how a commitment might shift expectations in an unintended direction, without isolating its causal effect on purchases.
+
+Commitment has a cost: the flexibility surrendered. A public promise to use one system may persuade the other department to invest, but it can also make managers defend that system after serious defects emerge. A useful commitment specifies the response it is intended to change and preserves a clear review condition. If persistence mainly protects an earlier decision rather than a worthwhile future arrangement, the escalation problem discussed in [Strategic Interdependence](23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd#research-lens-the-50-auction-and-competitive-escalation) deserves attention.
+
+## Application: diagnose the obstacle before choosing the tool
+
+The reporting dispute can now be separated into actionable problems. The rows of @tbl-strategic-structures identify obstacles that can coexist; each suggests a different first intervention.
+
+| Obstacle | Evidence to look for | Possible response |
 | --- | --- | --- |
-| Reinforcement | Did the employee repeat a routine after it worked for them? | Hold information about others constant and vary feedback about the employee's own outcome. |
-| Imitation | Are employees copying visible or prestigious performers? | Hold own-outcome feedback constant and vary whose behavior is visible. |
-| Selection | Are routines spreading because teams or employees using alternatives disappear or lose resources? | Separate change within continuing units from replacement or differential survival of units. |
-| Institutional change | Did software, incentives, defaults, or management make one routine easier or mandatory? | Identify the rule change and compare behavior under otherwise similar institutional conditions. |
-: Four mechanisms that can produce the same diffusion pattern {#tbl-strategy-diffusion-diagnostic}
+| Different expectations about the common choice | Each department assumes its own standard is the obvious answer. | Choose one standard explicitly and confirm that both understand the choice. |
+| Fear of acting alone | Both prefer the joint switch but doubt the other's readiness. | Set a shared launch condition or reduce the cost of a failed transition. |
+| Disagreement over benefits and burdens | Both want compatibility, but one bears more training or conversion costs. | Compare total gains and agree how to share transition costs. |
+| Unassigned or conflicting roles | Each waits for the other to act, or both claim the same decision right. | Name responsibilities and agree on a tie-breaker. |
+: Different coordination obstacles call for different responses {#tbl-strategic-structures}
 
-The processes can coexist, so record which signal each account requires and what observation would weaken it. An evolutionary explanation must specify the process that makes a strategy more common; observing its spread is only the starting point.
+Begin with a joint pilot that uses the same evaluation criteria and records costs for both departments. Agree on the decision rule before results are available, then specify who transfers the records, who trains staff, and what must be ready before launch. A review date creates a way to respond to evidence without making every temporary difficulty a reason to abandon the common plan. The rule should also remain understandable and open to challenge by the people expected to follow it.
 
-## Ethics: strategic classification can become a weapon
+The diagnostic also marks a boundary. If one department benefits from abandoning the agreement even when the other fulfills it, reassurance alone will not solve the problem. The incentives or the agreement itself need to change.
 
-Calling an employee “level 1” can turn a tentative model fit into a durable label. Keep the classification tied to the task and the evidence, and make it correctable. A defensible use also examines costs to people outside the modeled game; success for its players does not settle whether the resulting arrangement is acceptable.
+After specifying the game, keep the answers supplied by equilibrium analysis separate from questions that require evidence about the people involved. @tbl-equilibrium-boundary collects that distinction: identifying a stable combination is one step in evaluating a joint decision.
+
+| Equilibrium can clarify | Equilibrium alone cannot establish |
+| --- | --- |
+| Whether each strategy is a best response to the others. | Whether players understand the game or hold those expectations. |
+| Whether anyone gains by changing their strategy alone. | Whether the outcome is fair or best for the people affected. |
+| Which strategy combinations remain stable under specified rules. | Which equilibrium people select when several exist. |
+| How changing incentives alters that stability. | Whether the proposed payoffs capture actual motives. |
+: Questions answered by equilibrium analysis and questions requiring further evidence {#tbl-equilibrium-boundary}
 
 ## Practice Lab
 
-Run five rounds of the two-thirds number game. Record the full distribution, individual revisions, the mean, and the target each round. Produce three rival accounts of any movement—deeper reasoning, belief learning, and imitation or reinforcement—then design one additional treatment that gives them different predictions. The output is the annotated path plus the discriminating treatment.
+Choose a real situation in which two people or groups must adopt compatible actions. Specify their options and construct a payoff matrix, stating the assumptions behind the numbers. Mark each player's best responses and identify any pure-strategy equilibria. If more than one coordinated outcome could work, explain why the people have not settled on one: different expectations, fear of acting alone, conflicting benefits, or an unassigned role.
+
+Propose one change that addresses the identified obstacle. State whose expectation or incentive should change and what behavior would count as evidence that the diagnosis was useful. If you propose a guarantee, calculate what it protects against; if you propose a rule, explain how the people bearing its costs can take part in choosing it.
 
 ## Take it forward
 
-Before the next number-game round, write down the mean you expect and why. Afterward, compare that prediction with the distribution rather than merely asking whether your chosen number was low. The record reveals what you learned about the group and which assumption needs revision.
+At the next stalled meeting, separate “Which plan would work?” from “What makes each person willing to act on it?” A shared answer to the first question may leave the second unresolved. Look for the missing assurance, decision rule, or allocation of responsibility before treating hesitation as unwillingness.
 
-Knowing how people reason strategically does not yet explain why they cooperate. The same cooperative action may arise from future consequences, reputation, enforcement, concern for others, or norms. [Cooperation and Social Preferences](25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd#chapter-25-start) separates those mechanisms before treating cooperation as evidence about motive.
+[Cooperation and Social Preferences](25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd#chapter-25-start) takes the next step: what if a person gains by departing from the common plan even when everyone else keeps it? Future relationships, institutions, and concern for others can change that decision in different ways.
 
-[^ch24-number-game]: The approximation treats the group mean as given. Exact best responses in a finite prize game also depend on one’s own influence on the mean, the distribution of others’ choices, and the tie rule.
+[]{#research-lens-dependence-without-a-changing-best-response}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: dependence without a changing best response
+
+In the meeting game, your best response changes with the other person's choice. Strategic dependence can also exist when one action is best regardless of what the other player does. A **strictly dominant strategy** yields a higher payoff than every alternative against every strategy combination of the others.
+
+The illustrative price-war matrix in @tbl-price-war shows the distinction. Its numbers represent profit units and omit many features of an actual market. Rao and colleagues (2000) examine how responses to price competition depend on such details of the competitive setting.
+
+| Firm 1 \\ Firm 2 | High price | Low price |
+| --- | ---: | ---: |
+| **High price** | 10, 10 | 2, 15 |
+| **Low price** | 15, 2 | 5, 5 |
+: Illustrative price-war payoff matrix; Firm 1's payoff appears first {#tbl-price-war}
+
+Against a high price, Firm 1 earns 15 by choosing low rather than 10 by choosing high. Against a low price, it earns 5 rather than 2. Low strictly dominates high for both firms. Low–low is the unique Nash equilibrium, even though each firm's profit remains affected by its rival's action.
+
+Both firms would earn more at high–high, but an agreement to charge high prices would harm customers and may be unlawful. The firms' joint profit is not a measure of social welfare. [Chapter 25](25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd#chapter-25-start) develops the incentive conflict in a Prisoner's Dilemma and examines what can sustain cooperation.
+:::
+
+[^ch24-coordination-rate]: Table 2 reports rates implied by choices, not observed pair-success rates. There were 50 participants in the symmetric condition and 23 and 25 in the asymmetric roles.
 
 ## References cited in this chapter
 
 ::: {.reference}
-Axelrod, R. (1984). *The evolution of cooperation*. Basic Books.
+Charness, G. (2000). Self-serving cheap talk: A test of Aumann's conjecture. *Games and Economic Behavior, 33*(2), 177–194.
 :::
 
 ::: {.reference}
-Camerer, C. F. (2003). *Behavioral game theory: Experiments in strategic interaction*. Princeton University Press.
+Crawford, V. P., Gneezy, U., & Rottenstreich, Y. (2008). The power of focal points is limited: Even minute payoff asymmetry may yield large coordination failures. *American Economic Review, 98*(4), 1443–1458.
 :::
 
 ::: {.reference}
-Camerer, C. F., Ho, T.-H., & Chong, J.-K. (2004). A cognitive hierarchy model of games. *Quarterly Journal of Economics, 119*(3), 861–898. https://doi.org/10.1162/0033553041502225
+David, P. A. (1985). Clio and the economics of QWERTY. *American Economic Review, 75*(2), 332–337.
 :::
 
 ::: {.reference}
-Coricelli, G., & Nagel, R. (2009). Neural correlates of depth of strategic reasoning in medial prefrontal cortex. *Proceedings of the National Academy of Sciences, 106*(23), 9163–9168. https://doi.org/10.1073/pnas.0807721106
+Liebowitz, S. J., & Margolis, S. E. (1990). The fable of the keys. *Journal of Law & Economics, 33*(1), 1–25.
 :::
 
 ::: {.reference}
-Crawford, V. P., Costa-Gomes, M. A., & Iriberri, N. (2013). Structural models of nonequilibrium strategic thinking: Theory, evidence, and applications. *Journal of Economic Literature, 51*(1), 5–62. https://doi.org/10.1257/jel.51.1.5
+Motor Trader. (1999a, December 13). [Car makers hold out on price cuts](https://www.motortrader.com/general-news/car-makers-hold-out-on-price-cuts-13-12-1999).
 :::
 
 ::: {.reference}
-Hammond, R. A., & Axelrod, R. (2006). The evolution of ethnocentrism. *Journal of Conflict Resolution, 50*(6), 926–936. https://doi.org/10.1177/0022002706293470
+Motor Trader. (1999b, November 1). [Going off list on-line](https://www.motortrader.com/general-news/going-off-list-on-line-01-11-1999).
 :::
 
 ::: {.reference}
-Imhof, L. A., Fudenberg, D., & Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? *Journal of Theoretical Biology, 247*(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027
+Nash, J. F. (1950). Equilibrium points in n-person games. *Proceedings of the National Academy of Sciences, 36*(1), 48–49.
 :::
 
 ::: {.reference}
-Maynard Smith, J., & Price, G. R. (1973). The logic of animal conflict. *Nature, 246*, 15–18. https://doi.org/10.1038/246015a0
+Rao, A. R., Bergen, M. E., & Davis, S. (2000). How to fight a price war. *Harvard Business Review, 78*(2), 107–116.
 :::
 
 ::: {.reference}
-Nagel, R. (1995). Unraveling in guessing games: An experimental study. *American Economic Review, 85*(5), 1313–1326.
+Schelling, T. C. (1960). *The strategy of conflict*. Harvard University Press.
 :::
 
 ::: {.reference}
-Schelling, T. C. (1969). Models of segregation. *American Economic Review, 59*(2), 488–493.
+Skyrms, B. (2004). *The stag hunt and the evolution of social structure*. Cambridge University Press.
 :::
 
 ::: {.reference}
-Stahl, D. O., & Wilson, P. W. (1995). On players' models of other players: Theory and experimental evidence. *Games and Economic Behavior, 10*(1), 218–254. https://doi.org/10.1006/game.1995.1031
-:::
-
-::: {.reference}
-Wilensky, U. (1997). *NetLogo Segregation model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation
-:::
-
-::: {.reference}
-Wilensky, U. (2002). *NetLogo PD Basic Evolutionary model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary
-:::
-
-::: {.reference}
-Wilensky, U. (2003). *NetLogo Ethnocentrism Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization
+Van Huyck, J. B., Battalio, R. C., & Beil, R. O. (1990). Tacit coordination games, strategic uncertainty, and coordination failure. *American Economic Review, 80*(1), 234–248.
 :::

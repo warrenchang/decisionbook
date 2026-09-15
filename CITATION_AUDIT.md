@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **906**
+Unique references in the master union: **912**
 
-Chapter reference blocks: **916**
+Chapter reference blocks: **921**
 
 Unresolved author–year citations: **0**
 
@@ -34,9 +34,9 @@ Unresolved author–year citations: **0**
 | Intertemporal Decision Making | 29 | 0 |
 | Habits, Wanting, and Self-Control | 25 | 0 |
 | Deciding for a Better Life | 19 | 0 |
-| Strategic Interdependence | 11 | 0 |
-| Behavioral Game Theory | 14 | 0 |
-| Cooperation and Social Preferences | 26 | 0 |
+| Strategic Interdependence | 13 | 0 |
+| Coordination and Focal Points | 11 | 0 |
+| Cooperation and Social Preferences | 32 | 0 |
 | Social Norms and Conformity | 30 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |

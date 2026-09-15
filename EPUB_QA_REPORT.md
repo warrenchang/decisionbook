@@ -78,6 +78,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Injunctive norm | **PASS** |
 | Required content: Groupthink | **PASS** |
 | Required content: Strategic Interdependence | **PASS** |
+| Required content: Coordination and Focal Points | **PASS** |
+| Required content: Cooperation and Social Preferences | **PASS** |
 | Required content: Behavioral Game Theory | **PASS** |
 | Required content: panda | **PASS** |
 | Required content: monkey | **PASS** |
