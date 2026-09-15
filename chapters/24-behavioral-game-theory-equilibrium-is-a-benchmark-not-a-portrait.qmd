@@ -40,7 +40,7 @@ A **game** is a model that specifies the players, their possible actions, and ho
 - **Players:** the two people trying to meet.
 - **Actions:** the places and times each can choose.
 - **Payoffs:** how each person values meeting or failing to meet.
-- **Information:** what each knows about the city, the other person, and the situation.
+- **Information:** what each knows about the venue, the other person, and the situation.
 - **Timing:** each chooses where to go before learning the other's destination.
 
 An **action** is a particular move. A **strategy** is a complete plan for what to do at every point where a player might have to choose. In a one-move meeting game, choosing a place and time specifies the whole strategy. If messages or later decisions were allowed, a strategy would also specify how to respond to them.
@@ -49,25 +49,25 @@ The model need not express every concern in money. Safety, time, fairness, and t
 
 ### Reading a payoff matrix
 
-To isolate the problem of choosing compatible destinations, suppose the station and town hall are equally safe and accessible. Hold the time at noon. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The **payoff matrix** in @tbl-meeting-coordination records what each receives under every combination of choices.
+To isolate the choice of destination, suppose each of you goes to either the main entrance or the information desk and waits there. Assume that you find each other if you choose the same place, and set aside differences in walking distance or the view of the performance. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The **payoff matrix** in @tbl-meeting-coordination records what each receives under every combination of choices.
 
-| Your choice \\ Other person's choice | Station | Town hall |
+| Your choice \\ Other person's choice | Entrance | Information desk |
 | --- | ---: | ---: |
-| **Station** | 50, 50 | 0, 0 |
-| **Town hall** | 0, 0 | 50, 50 |
+| **Entrance** | 50, 50 | 0, 0 |
+| **Information desk** | 0, 0 | 50, 50 |
 : A simplified meeting game; your payoff appears first {#tbl-meeting-coordination}
 
-Read the rows as your actions and the columns as the other person's actions. Within each cell, your payoff comes first and theirs second. If you choose the station and they choose the town hall, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.
+Read the rows as your actions and the columns as the other person's actions. Within each cell, your payoff comes first and theirs second. If you choose the entrance and they choose the information desk, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.
 
 ### Best responses and beliefs {#best-responses-and-nash-equilibrium}
 
-A **best response** gives a player the highest payoff against specified choices by the others. If the other person chooses the station, compare your first payoff in that column: choosing the station gives 50, while the town hall gives zero. Your best response is the station. If they choose the town hall, your best response changes to the town hall.
+A **best response** gives a player the highest payoff against specified choices by the others. If the other person chooses the entrance, compare your first payoff in that column: choosing the entrance gives 50, while the information desk gives zero. Your best response is the entrance. If they choose the information desk, your best response changes to the information desk.
 
-Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the station. Your expected payoff from choosing it is $0.70\times50=35$, compared with $0.30\times50=15$ for the town hall. Choosing the station is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
+Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Your expected payoff from choosing it is $0.70\times50=35$, compared with $0.30\times50=15$ for the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
 
 ### Mutual best responses: checking equilibrium
 
-To check a **Nash equilibrium**, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the station passes this test: neither person gains by going alone to the town hall. Both choosing the town hall passes it too. Choosing different places fails because either person could improve their payoff by joining the other.
+To check a **Nash equilibrium**, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the entrance passes this test: neither person gains by going alone to the information desk. Both choosing the information desk passes it too. Choosing different places fails because either person could improve their payoff by joining the other.
 
 These choices are **pure strategies**, which specify a definite action at each decision point. A **mixed strategy** assigns probabilities to pure strategies. In this one-move game, that means randomizing between destinations. Independent 50–50 randomization by both players is also an equilibrium in this particular symmetric matrix: either destination offers an expected payoff of 25 against the other's randomization, so neither player can improve it by changing their own mix. Yet they meet only half the time on average.
 
@@ -83,9 +83,9 @@ If A expects B to adopt standard A, choosing A makes sense. If both expect stand
 
 ## What makes an answer stand out? {#focality-payoff-dominance-and-evidence}
 
-A **focal point** is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The station at noon might work because each person expects the other to recognize it as an obvious meeting point. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.
+A **focal point** is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The main entrance might serve this role at the concert because both people remember arriving there together and expect the other to see it as a natural place to return. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.
 
-A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which station entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.
+A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.
 
 Focality also differs from **payoff dominance**. An equilibrium is payoff dominant if it gives every player a higher payoff than the other equilibrium being compared. A salient outcome need not have that advantage. Nor does the existence of a better common outcome ensure that people will select it.
 

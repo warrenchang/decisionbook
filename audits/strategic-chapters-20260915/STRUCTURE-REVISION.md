@@ -1,5 +1,7 @@
 # Chapters 23–25: structure follow-up — 15 September 2026
 
+Subsequent opening revision: [CONCERT-OPENING.md](CONCERT-OPENING.md) replaces the earthquake scene with a concert encounter and updates the related examples.
+
 This record supersedes the earlier opening and allocation descriptions in OPENING-REVISION.md and REVISION-NOTES.md. It records the author's subsequent request to use unfamiliar people in the meeting scene, postpone payoff matrices until Chapter 24, introduce equilibrium late in Chapter 23, replace Chapter 24's epigraph, and integrate the book's formulaic standalone ethics sections.
 
 ## Allocation and narrative

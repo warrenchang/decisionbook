@@ -657,14 +657,14 @@ window.Quarto = {
 <li><strong>Players:</strong> the two people trying to meet.</li>
 <li><strong>Actions:</strong> the places and times each can choose.</li>
 <li><strong>Payoffs:</strong> how each person values meeting or failing to meet.</li>
-<li><strong>Information:</strong> what each knows about the city, the other person, and the situation.</li>
+<li><strong>Information:</strong> what each knows about the venue, the other person, and the situation.</li>
 <li><strong>Timing:</strong> each chooses where to go before learning the other’s destination.</li>
 </ul>
 <p>An <strong>action</strong> is a particular move. A <strong>strategy</strong> is a complete plan for what to do at every point where a player might have to choose. In a one-move meeting game, choosing a place and time specifies the whole strategy. If messages or later decisions were allowed, a strategy would also specify how to respond to them.</p>
 <p>The model need not express every concern in money. Safety, time, fairness, and the relationship can all affect how someone values an outcome. Allowing communication or letting one person observe the other’s choice changes the game even if the possible destinations stay the same.</p>
 <section id="reading-a-payoff-matrix" class="level3">
 <h3 data-anchor-id="reading-a-payoff-matrix">Reading a payoff matrix</h3>
-<p>To isolate the problem of choosing compatible destinations, suppose the station and town hall are equally safe and accessible. Hold the time at noon. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The <strong>payoff matrix</strong> in <a href="#tbl-meeting-coordination" class="quarto-xref">Table&nbsp;<span>24.1</span></a> records what each receives under every combination of choices.</p>
+<p>To isolate the choice of destination, suppose each of you goes to either the main entrance or the information desk and waits there. Assume that you find each other if you choose the same place, and set aside differences in walking distance or the view of the performance. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The <strong>payoff matrix</strong> in <a href="#tbl-meeting-coordination" class="quarto-xref">Table&nbsp;<span>24.1</span></a> records what each receives under every combination of choices.</p>
 <div id="tbl-meeting-coordination" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-meeting-coordination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -675,18 +675,18 @@ Table&nbsp;24.1: A simplified meeting game; your payoff appears first
 <thead>
 <tr class="header">
 <th>Your choice \ Other person’s choice</th>
-<th style="text-align: right;">Station</th>
-<th style="text-align: right;">Town hall</th>
+<th style="text-align: right;">Entrance</th>
+<th style="text-align: right;">Information desk</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Station</strong></td>
+<td><strong>Entrance</strong></td>
 <td style="text-align: right;">50, 50</td>
 <td style="text-align: right;">0, 0</td>
 </tr>
 <tr class="even">
-<td><strong>Town hall</strong></td>
+<td><strong>Information desk</strong></td>
 <td style="text-align: right;">0, 0</td>
 <td style="text-align: right;">50, 50</td>
 </tr>
@@ -695,16 +695,16 @@ Table&nbsp;24.1: A simplified meeting game; your payoff appears first
 </div>
 </figure>
 </div>
-<p>Read the rows as your actions and the columns as the other person’s actions. Within each cell, your payoff comes first and theirs second. If you choose the station and they choose the town hall, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.</p>
+<p>Read the rows as your actions and the columns as the other person’s actions. Within each cell, your payoff comes first and theirs second. If you choose the entrance and they choose the information desk, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.</p>
 </section>
 <section id="best-responses-and-nash-equilibrium" class="level3">
 <h3 data-anchor-id="best-responses-and-nash-equilibrium">Best responses and beliefs</h3>
-<p>A <strong>best response</strong> gives a player the highest payoff against specified choices by the others. If the other person chooses the station, compare your first payoff in that column: choosing the station gives 50, while the town hall gives zero. Your best response is the station. If they choose the town hall, your best response changes to the town hall.</p>
-<p>Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the station. Your expected payoff from choosing it is <span class="math inline">\(0.70\times50=35\)</span>, compared with <span class="math inline">\(0.30\times50=15\)</span> for the town hall. Choosing the station is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.</p>
+<p>A <strong>best response</strong> gives a player the highest payoff against specified choices by the others. If the other person chooses the entrance, compare your first payoff in that column: choosing the entrance gives 50, while the information desk gives zero. Your best response is the entrance. If they choose the information desk, your best response changes to the information desk.</p>
+<p>Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Your expected payoff from choosing it is <span class="math inline">\(0.70\times50=35\)</span>, compared with <span class="math inline">\(0.30\times50=15\)</span> for the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.</p>
 </section>
 <section id="mutual-best-responses-checking-equilibrium" class="level3">
 <h3 data-anchor-id="mutual-best-responses-checking-equilibrium">Mutual best responses: checking equilibrium</h3>
-<p>To check a <strong>Nash equilibrium</strong>, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the station passes this test: neither person gains by going alone to the town hall. Both choosing the town hall passes it too. Choosing different places fails because either person could improve their payoff by joining the other.</p>
+<p>To check a <strong>Nash equilibrium</strong>, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the entrance passes this test: neither person gains by going alone to the information desk. Both choosing the information desk passes it too. Choosing different places fails because either person could improve their payoff by joining the other.</p>
 <p>These choices are <strong>pure strategies</strong>, which specify a definite action at each decision point. A <strong>mixed strategy</strong> assigns probabilities to pure strategies. In this one-move game, that means randomizing between destinations. Independent 50–50 randomization by both players is also an equilibrium in this particular symmetric matrix: either destination offers an expected payoff of 25 against the other’s randomization, so neither player can improve it by changing their own mix. Yet they meet only half the time on average.</p>
 <p>The meeting game therefore has two pure-strategy equilibria and a mixed-strategy equilibrium. Finding them does not tell the people where to go, and the mixed equilibrium does not deliver the highest available joint payoff. We still need to explain which expectations can bring their actions together.</p>
 </section>
@@ -717,8 +717,8 @@ Table&nbsp;24.1: A simplified meeting game; your payoff appears first
 </section>
 <section id="focality-payoff-dominance-and-evidence" class="level2">
 <h2 data-anchor-id="focality-payoff-dominance-and-evidence">What makes an answer stand out?</h2>
-<p>A <strong>focal point</strong> is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The station at noon might work because each person expects the other to recognize it as an obvious meeting point. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.</p>
-<p>A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which station entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.</p>
+<p>A <strong>focal point</strong> is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The main entrance might serve this role at the concert because both people remember arriving there together and expect the other to see it as a natural place to return. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.</p>
+<p>A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.</p>
 <p>Focality also differs from <strong>payoff dominance</strong>. An equilibrium is payoff dominant if it gives every player a higher payoff than the other equilibrium being compared. A salient outcome need not have that advantage. Nor does the existence of a better common outcome ensure that people will select it.</p>
 <section id="a-ten-cent-difference-can-disrupt-a-common-answer" class="level3">
 <h3 data-anchor-id="a-ten-cent-difference-can-disrupt-a-common-answer">A ten-cent difference can disrupt a common answer</h3>
