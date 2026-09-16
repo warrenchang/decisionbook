@@ -578,11 +578,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#curvature-and-attitudes-toward-a-mean-preserving-risk" id="toc-curvature-and-attitudes-toward-a-mean-preserving-risk" class="nav-link" data-scroll-target="#curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</a></li>
   <li><a href="#certainty-equivalents-and-risk-premia" id="toc-certainty-equivalents-and-risk-premia" class="nav-link" data-scroll-target="#certainty-equivalents-and-risk-premia">Certainty equivalents and risk premia</a></li>
-  <li><a href="#insurance-expected-loss-is-not-the-whole-premium" id="toc-insurance-expected-loss-is-not-the-whole-premium" class="nav-link" data-scroll-target="#insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss is not the whole premium</a></li>
+  <li><a href="#insurance-expected-loss-is-not-the-whole-premium" id="toc-insurance-expected-loss-is-not-the-whole-premium" class="nav-link" data-scroll-target="#insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss and willingness to pay</a></li>
   <li><a href="#why-do-people-buy-insurance-and-lottery-tickets" id="toc-why-do-people-buy-insurance-and-lottery-tickets" class="nav-link" data-scroll-target="#why-do-people-buy-insurance-and-lottery-tickets">Why do people buy insurance and lottery tickets?</a></li>
   </ul></li>
-  <li><a href="#the-allais-pattern-certainty-does-not-cancel-cleanly" id="toc-the-allais-pattern-certainty-does-not-cancel-cleanly" class="nav-link" data-scroll-target="#the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais pattern: certainty does not cancel cleanly</a></li>
-  <li><a href="#the-ellsberg-urn-risk-is-not-ambiguity" id="toc-the-ellsberg-urn-risk-is-not-ambiguity" class="nav-link" data-scroll-target="#the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: risk is not ambiguity</a></li>
+  <li><a href="#the-allais-pattern-certainty-does-not-cancel-cleanly" id="toc-the-allais-pattern-certainty-does-not-cancel-cleanly" class="nav-link" data-scroll-target="#the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais paradox: certainty and the independence axiom</a></li>
+  <li><a href="#the-ellsberg-urn-risk-is-not-ambiguity" id="toc-the-ellsberg-urn-risk-is-not-ambiguity" class="nav-link" data-scroll-target="#the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: choosing with unknown probabilities</a></li>
   <li><a href="#risk-communication-show-the-denominator-and-the-consequence" id="toc-risk-communication-show-the-denominator-and-the-consequence" class="nav-link" data-scroll-target="#risk-communication-show-the-denominator-and-the-consequence">Risk communication: show the denominator and the consequence</a></li>
   <li><a href="#worked-application-should-we-insure-this-exposure" id="toc-worked-application-should-we-insure-this-exposure" class="nav-link" data-scroll-target="#worked-application-should-we-insure-this-exposure">Worked application: should we insure this exposure?</a>
   <ul class="collapse">
@@ -665,7 +665,7 @@ window.Quarto = {
 </section>
 <section id="expected-value-the-monetary-benchmark" class="level2">
 <h2 data-anchor-id="expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</h2>
-<p>Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.</p>
+<p>Expected value is a probability-weighted average. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.</p>
 <p>Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.</p>
 <p>The benchmark also exposes missing costs. A gamble that pays €100 with probability one-half and zero otherwise does not have expected <strong>net</strong> value €50 if entry costs €60. The expected net value is −€10.</p>
 <div id="math-expected-value">
@@ -693,7 +693,7 @@ EV(X)=\sum_{i=1}^{n}p_i x_i.
 </section>
 <section id="expected-utility-value-over-final-consequences" class="level2">
 <h2 data-anchor-id="expected-utility-value-over-final-consequences">Expected utility: value over final consequences</h2>
-<p>Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented <em>as if</em> they maximize expected utility (von Neumann &amp; Morgenstern, 1944).</p>
+<p>Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. It states conditions under which consistent choices can be represented <em>as if</em> they maximize expected utility (von Neumann &amp; Morgenstern, 1944).</p>
 <p>The independence axiom is central. If one lottery is preferred to another, mixing both with the same third lottery in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.</p>
 <section id="curvature-and-attitudes-toward-a-mean-preserving-risk" class="level3">
 <h3 data-anchor-id="curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</h3>
@@ -780,7 +780,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>If the outcomes are changes around wealth, then wealth must enter the calculation. With €10,000 in initial wealth and the same square-root utility, a 50–50 chance of gaining €0 or €100 has a certainty-equivalent payoff of about €49.94: its risk premium is only about €0.06. The same payoff lottery and utility function look very different when the starting resources change. <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html#chapter-17-start">Prospect Theory</a> asks what happens when people instead evaluate changes around a reference point.</p>
 </section>
 <section id="insurance-expected-loss-is-not-the-whole-premium" class="level3">
-<h3 data-anchor-id="insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss is not the whole premium</h3>
+<h3 data-anchor-id="insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss and willingness to pay</h3>
 <p>Insurance exchanges an uncertain loss for a certain premium. Under concave utility, a person may pay more than the actuarially fair expected loss to remove variability. The difference can reflect a risk premium, but real insurance decisions also include insurer costs, exclusions, deductibles, counterparty risk, liquidity, legal requirements, and protection against ruin.</p>
 <p>The key comparison is not “premium versus expected loss” alone. It is final wealth and feasible action in each state. Insurance can be valuable because a rare loss would be unaffordable even when its expected amount is modest.</p>
 </section>
@@ -790,7 +790,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </section>
 </section>
 <section id="the-allais-pattern-certainty-does-not-cancel-cleanly" class="level2">
-<h2 data-anchor-id="the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais pattern: certainty does not cancel cleanly</h2>
+<h2 data-anchor-id="the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais paradox: certainty and the independence axiom</h2>
 <p>Expected utility gives us a consistent way to compare risky options. The following choices test whether people preserve that consistency when a sure outcome becomes available. Consider two pairs of choices, with monetary units scaled to “millions.”</p>
 <p><strong>Pair 1</strong></p>
 <ul>
@@ -807,7 +807,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.</p>
 </section>
 <section id="the-ellsberg-urn-risk-is-not-ambiguity" class="level2">
-<h2 data-anchor-id="the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: risk is not ambiguity</h2>
+<h2 data-anchor-id="the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: choosing with unknown probabilities</h2>
 <p>Certainty about an outcome is one issue; confidence in the probabilities is another. To separate them, consider an urn containing 90 balls:</p>
 <ul>
 <li>exactly 30 are red;</li>
@@ -837,7 +837,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Knowing that a gamble pays half the time differs from having too little information to assess its chances. Hsu and colleagues (2005) found that greater ambiguity was associated with stronger fMRI responses in the amygdala and orbitofrontal cortex and weaker responses in the striatum. This shows that missing probability information can change how a choice is processed; it does not directly measure dopamine or establish that ambiguity “switches off” reward signaling. Nor does it show that known risk is inherently addictive or ambiguity invariably distressing.</p>
+<p>Knowing that a gamble pays half the time differs from having too little information to assess its chances. Hsu and colleagues (2005) found that greater ambiguity was associated with stronger fMRI responses in the amygdala and orbitofrontal cortex and weaker responses in the striatum. This shows that missing probability information can change how a choice is processed; it does not directly measure dopamine or establish that ambiguity “switches off” reward signaling.</p>
 <p>The <a href="../chapters/21-habits-wanting-and-self-control.html#uncertain-rewards-and-near-misses">uncertain-reward discussion in Chapter 21</a> concerns a different question: how anticipation and apparent progress can sustain pursuit even when many attempts bring no reward.</p>
 </div>
 </div>
@@ -850,7 +850,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Process check: risk does not rewrite decision quality
+<span class="screen-reader-only">Tip</span>Process check: evaluate a risky choice using the evidence available
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -878,7 +878,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Evidence Boundary: a brain region is not a risk explanation
+<span class="screen-reader-only">Caution</span>Evidence Boundary: interpreting neural evidence about risk
 </div>
 </div>
 <div class="callout-body-container callout-body">

@@ -83,7 +83,7 @@ The face task rewarded matching another person's answer. Here the target itself 
 
 One starting guess is that people will choose roughly at random across the range, giving an expected mean of 50. Two-thirds of that is about 33. But the other players can see the same rule. If you expect them to take that step, a number around 22 becomes attractive. If you expect them to anticipate that step too, you may aim near 15.
 
-These numbers approximate where a player might aim; they are not a guaranteed winning sequence. Your own number influences the mean, and winning depends on how close the other numbers are to the target. Reasoning from an expected average becomes more useful in a large group, where your own effect on that average is small.
+These numbers approximate where a player might aim. Your own number influences the mean, and winning depends on how close the other numbers are to the target. Reasoning from an expected average becomes more useful in a large group, where your own effect on that average is small.
 
 ### Does thinking further always help? {#limited-strategic-depth-level-k}
 
@@ -95,7 +95,7 @@ The starting assumption matters as much as the number of steps. A sophisticated 
 
 The [poisoned-goblet scene from *The Princess Bride*](https://youtu.be/0sPVEBAtwmg) makes this vulnerability memorable: each additional “I think that you think” rests on assumptions about the opponent. More reasoning cannot rescue a mistaken premise merely by extending it.
 
-### The action does not identify the thought
+### Different reasoning can produce the same choice {#the-action-does-not-identify-the-thought}
 
 A choice of 22 could reflect two steps from a random anchor. It could also come from remembering a previous classroom game, predicting a mean of 33 for another reason, or copying a familiar answer. Behavioral game theory compares such explanations rather than assigning a reasoning type from one number (Camerer, 2003; Crawford et al., 2013).
 
@@ -162,7 +162,7 @@ $$
 
 and renormalize the distribution over the lower steps the player believes exist. The parameter $\tau$ controls the average number of steps. The authors report that a value around 1.5 fits behavior across many games, although fitted values differ by task and participant pool.
 
-@tbl-beauty-contest-groups reproduces selected guessing-game results from their Table II. The sample sizes count participants across the reported groups; they are not necessarily the number playing together in one group. The fitted $\tau$ values in this table were chosen to match the observed mean, so matching those means is not an independent prediction test.
+@tbl-beauty-contest-groups reproduces selected guessing-game results from their Table II. The sample sizes count participants across the reported groups. The fitted $\tau$ values in this table were chosen to match the observed mean.
 
 | Participant pool | Sample size | Mean choice | Modal choice | Fitted $\tau$ |
 | --- | ---: | ---: | ---: | ---: |
@@ -176,11 +176,11 @@ and renormalize the distribution over the lower steps the player believes exist.
 | Game theorists | 136 | 19.1 | 0 | 3.7 |
 : Descriptive guessing-game results and fitted reasoning depths (Camerer et al., 2004, Table II) {#tbl-beauty-contest-groups}
 
-The mean was 37.9 among the chief executives and 19.1 among the game theorists, but these are comparisons across settings and selected participant pools. They do not establish that occupation caused the difference. Substantial variation remains within pools, and alternative beliefs can produce the same number. Model evaluation should compare predictions against new choices or against experimental changes on which rival explanations disagree.
+The mean was 37.9 among the chief executives and 19.1 among the game theorists, but these are comparisons across settings and selected participant pools. Substantial variation remains within pools, and alternative beliefs can produce the same number. Model evaluation should compare predictions against new choices or against experimental changes on which rival explanations disagree.
 
 The zero endpoint in the guessing game can also be approached through iterated elimination of weakly dominated high choices. The target cannot exceed $66\frac{2}{3}$; after excluding choices above that bound, the next upper bound is $44\frac{4}{9}$, then $29\frac{17}{27}$, and so on toward zero (Nagel, 1995). A weakly dominated choice never yields more than an alternative against the others' possible choices and yields less in at least some cases. This is a stronger assumption about what players rule out than simply saying that they want to win. [Chapter 24](24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.qmd#chapter-24-start) develops the comparison of strategies.
 
-Coricelli and Nagel (2009) compared play against human and computer opponents using behavioral and neural measures. Their findings associate strategic reasoning with differences in processing when the opponent changes. Such evidence can help discriminate between accounts, but brain activation does not make a chosen number a unique indicator of the player's thought process.
+Coricelli and Nagel (2009) compared play against human and computer opponents using behavioral and neural measures. Their findings associate strategic reasoning with differences in processing when the opponent changes. Such evidence can help discriminate between accounts.
 :::
 
 []{#research-lens-the-50-auction-and-competitive-escalation}

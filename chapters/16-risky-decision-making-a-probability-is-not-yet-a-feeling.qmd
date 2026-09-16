@@ -50,7 +50,7 @@ For the insurance team, this distinction changes what to investigate. Even a wel
 
 ## Expected value: the monetary benchmark
 
-Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.
+Expected value is a probability-weighted average. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.
 
 Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.
 
@@ -73,7 +73,7 @@ Multiply each possible monetary outcome by its probability, then add the weighte
 
 ## Expected utility: value over final consequences
 
-Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
+Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
 
 The independence axiom is central. If one lottery is preferred to another, mixing both with the same third lottery in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.
 
@@ -147,7 +147,7 @@ Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected fin
 
 If the outcomes are changes around wealth, then wealth must enter the calculation. With €10,000 in initial wealth and the same square-root utility, a 50–50 chance of gaining €0 or €100 has a certainty-equivalent payoff of about €49.94: its risk premium is only about €0.06. The same payoff lottery and utility function look very different when the starting resources change. [Prospect Theory](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#chapter-17-start) asks what happens when people instead evaluate changes around a reference point.
 
-### Insurance: expected loss is not the whole premium
+### Insurance: expected loss and willingness to pay {#insurance-expected-loss-is-not-the-whole-premium}
 
 Insurance exchanges an uncertain loss for a certain premium. Under concave utility, a person may pay more than the actuarially fair expected loss to remove variability. The difference can reflect a risk premium, but real insurance decisions also include insurer costs, exclusions, deductibles, counterparty risk, liquidity, legal requirements, and protection against ruin.
 
@@ -158,7 +158,7 @@ The key comparison is not “premium versus expected loss” alone. It is final 
 A globally concave utility function over money cannot explain paying for an unfavorable monetary gamble. Yet a lottery ticket may also buy entertainment and anticipation, while insurance protects against an unaffordable loss. Separate mental accounts, misunderstanding, or extra weight on tiny probabilities offer other explanations. Buying both products challenges a simple account of monetary risk preference without identifying which alternative is right.
 
 
-## The Allais pattern: certainty does not cancel cleanly
+## The Allais paradox: certainty and the independence axiom {#the-allais-pattern-certainty-does-not-cancel-cleanly}
 
 Expected utility gives us a consistent way to compare risky options. The following choices test whether people preserve that consistency when a sure outcome becomes available. Consider two pairs of choices, with monetary units scaled to “millions.”
 
@@ -178,7 +178,7 @@ Under expected utility and independence, the pattern is inconsistent. If A is pr
 
 The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.
 
-## The Ellsberg urn: risk is not ambiguity
+## The Ellsberg urn: choosing with unknown probabilities {#the-ellsberg-urn-risk-is-not-ambiguity}
 
 Certainty about an outcome is one issue; confidence in the probabilities is another. To separate them, consider an urn containing 90 balls:
 
@@ -204,7 +204,7 @@ Collapsing all four into one probability hides the reason for caution.
 ::: {.callout-note .research-lens icon=false collapse=true}
 ## Research Lens: ambiguity and brain signals
 
-Knowing that a gamble pays half the time differs from having too little information to assess its chances. Hsu and colleagues (2005) found that greater ambiguity was associated with stronger fMRI responses in the amygdala and orbitofrontal cortex and weaker responses in the striatum. This shows that missing probability information can change how a choice is processed; it does not directly measure dopamine or establish that ambiguity “switches off” reward signaling. Nor does it show that known risk is inherently addictive or ambiguity invariably distressing.
+Knowing that a gamble pays half the time differs from having too little information to assess its chances. Hsu and colleagues (2005) found that greater ambiguity was associated with stronger fMRI responses in the amygdala and orbitofrontal cortex and weaker responses in the striatum. This shows that missing probability information can change how a choice is processed; it does not directly measure dopamine or establish that ambiguity “switches off” reward signaling.
 
 The [uncertain-reward discussion in Chapter 21](21-habits-wanting-and-self-control.qmd#uncertain-rewards-and-near-misses) concerns a different question: how anticipation and apparent progress can sustain pursuit even when many attempts bring no reward.
 :::
@@ -213,7 +213,7 @@ The [uncertain-reward discussion in Chapter 21](21-habits-wanting-and-self-contr
 []{#risk-process-check}
 
 ::: {.callout-tip icon=false}
-## Process check: risk does not rewrite decision quality
+## Process check: evaluate a risky choice using the evidence available
 
 The distinction between [process and outcome](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#outcome-is-not-process) matters whenever uncertainty can obscure the quality of a choice (Baron & Hershey, 1988): a well-supported choice can lose, while a reckless choice can be rescued by luck. Preserve the probabilities, alternatives, constraints, and reasons available before the uncertainty resolves; otherwise the result can replace the information that was available when the choice was made.
 :::
@@ -235,7 +235,7 @@ Responsible risk communication reports:
 Natural frequencies and icon arrays can make rare outcomes more legible (Gigerenzer & Edwards, 2003). But visual clarity cannot replace a relevant reference class. “1 in 1,000” among whom, under which baseline care, over what period?
 
 ::: {.callout-caution .evidence-and-boundary-conditions icon=false}
-## Evidence Boundary: a brain region is not a risk explanation
+## Evidence Boundary: interpreting neural evidence about risk
 
 Risk, value, salience, arousal, and learning recruit distributed and
 overlapping processes (Mohr et al., 2010; Bartra et al., 2013). A claim

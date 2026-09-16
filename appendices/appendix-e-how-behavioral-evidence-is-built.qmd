@@ -172,7 +172,7 @@ The clinic may have capacity to offer additional appointment support to only som
 
 A randomized **phase-in** can compare patients or clinics receiving a program earlier with those scheduled to receive it later. Compare outcomes while their exposure differs, account for calendar time, and consider whether the announcement changes behavior before delivery. Once everyone has received the program, there is no contemporaneous untreated group for that same contrast.
 
-When participation cannot be assigned, an **encouragement design** randomizes an invitation or incentive to participate. It directly identifies the effect of that encouragement. Inferring the effect of participation itself requires the additional assumptions in the noncompliance section below. Each approach uses an operational feature to create an informative comparison; none removes the need for ethical review and a clear estimand (Duflo et al., 2007).
+When participation cannot be assigned, an **encouragement design** randomizes an invitation or incentive to participate. It directly identifies the effect of that encouragement. Inferring the effect of participation itself requires the additional assumptions in the noncompliance section below. Each approach uses an operational feature to create an informative comparison (Duflo et al., 2007).
 
 #### Between-person and within-person comparisons {#between-and-within-subject-designs}
 
@@ -228,7 +228,7 @@ This changes how balance should be used.
 4. Pre-specify adjustment for strong predictors to improve precision; do not select controls by whether their baseline test is significant.
 5. Investigate patterns that suggest coding errors, differential recruitment after assignment, or implementation failure.
 
-#### Rerandomization is a design, not a rescue
+#### Prespecified rerandomization and blocking {#rerandomization-is-a-design-not-a-rescue}
 
 Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. **Rerandomization** can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan & Rubin, 2012).
 
@@ -273,7 +273,7 @@ Suppose the clinic measures patients' understanding only when they attend. If th
 
 Report rates and reasons by arm, timing, and baseline predictors of missingness. These checks can reveal selective loss; they cannot prove that the missing outcomes resemble the observed ones. Keep missing attendance records distinct from confirmed nonattendance. Weighting or imputation requires assumptions about missingness, while bounds and sensitivity analyses show what conclusions survive less favorable possibilities. Do not silently replace the randomized sample with complete cases and retain the original causal language (Duflo et al., 2007).
 
-#### Noncompliance: assignment is not receipt
+#### Noncompliance: effects of assignment and treatment receipt {#noncompliance-assignment-is-not-receipt}
 
 With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the **intention-to-treat (ITT)** effect is estimated by comparing average outcomes in the assigned groups.
 
@@ -322,7 +322,7 @@ Spillovers can make the standard difference too small, too large, or simply answ
 
 To separate these effects, **treatment saturation** designs vary the proportion offered treatment within a group or market. Comparing offered and unoffered people within a market estimates a contrast at that exposure level. Comparing unoffered people in exposed markets with people in markets receiving no offers helps identify spillovers. Comparing average outcomes across markets addresses the wider effect of the policy at each tested saturation. Each comparison needs its own assignment, measurement, and analysis plan.
 
-Crépon and colleagues (2013) used this approach to evaluate job-placement assistance across 235 French labor markets. They randomized the proportion of eligible young, educated job seekers offered assistance to 0%, 25%, 50%, 75%, or 100%, then randomized individual offers within the relevant markets. Gains in stable employment visible after eight months were transitory and appeared partly to come at other eligible workers' expense. The study found little net benefit, rather than establishing that the effect was exactly zero.
+Crépon and colleagues (2013) used this approach to evaluate job-placement assistance across 235 French labor markets. They randomized the proportion of eligible young, educated job seekers offered assistance to 0%, 25%, 50%, 75%, or 100%, then randomized individual offers within the relevant markets. Gains in stable employment visible after eight months were transitory and appeared partly to come at other eligible workers' expense. The study found little net benefit.
 
 The markets receiving no offers were deliberately included and measured as **pure controls**. They are different from the people outside the evaluation in @fig-random-sampling-vs-assignment. Higher-level assignment, buffer areas, or network measurement may also help, but none should be treated as proof that interference has disappeared. State whose outcome depends on whose treatment and whether the study estimates an individual gain, an effect on others, or a broader policy effect.
 
@@ -342,7 +342,7 @@ Imagine that clinic staff tell the comparison group it has received the “ordin
 | Survey reactivity | Asking about a choice changes its salience or subsequent enactment. | Consider randomizing survey exposure or using consented administrative outcomes. |
 : Participation can alter the comparison through different pathways {#tbl-research-reactivity}
 
-@tbl-research-reactivity is a set of design questions, not a claim that all six effects occur in every study. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.
+Use @tbl-research-reactivity to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.
 
 Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Where possible, keep outcome assessors unaware of assignment and define scoring rules before outcomes are examined, so that expectations about the treatment do not influence measurement. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
 
@@ -500,7 +500,7 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)
 
 The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is **6.2 percentage points**, with an approximate 95% confidence interval from **0.8 to 11.5 percentage points**.
 
-**Design-matched interpretation.** The estimate concerns assignment to the reminder package in the simulated study population. It does not establish which feature of the message caused the difference or predict the effect in a real clinic. Those conclusions would require further comparisons and actual patient data.
+**Design-matched interpretation.** The estimate concerns assignment to the reminder package in the simulated study population.
 
 **Implementing the study in a clinic.** Preserve records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Use them to check recruitment, delivery, missing outcomes, and spillovers.
 

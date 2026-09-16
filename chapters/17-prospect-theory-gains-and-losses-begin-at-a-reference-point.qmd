@@ -41,7 +41,7 @@ To explain why equivalent descriptions can produce different choices, prospect t
 2. value changes nonlinearly over gains and losses;
 3. probabilities become decision weights rather than entering linearly.
 
-Together, these elements let the model explain why a person might protect a likely gain yet gamble to escape a likely loss. This is a descriptive account of recurring choices, rather than a rule for which risks people ought to take.
+Together, these elements let the model explain why a person might protect a likely gain yet gamble to escape a likely loss.
 
 ## The prospect-theory model
 
@@ -65,7 +65,7 @@ The value function describes how the impact of a gain or loss changes with its s
 
 Concavity over gains tends to support risk aversion; convexity over losses tends to support risk seeking. But the value function alone is not the whole theory. Probability weighting can reverse those tendencies, especially for rare events.
 
-Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. Their estimates are useful for illustration; their small, specific sample does not make them universal constants.
+Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford.
 
 :::: {#math-prospect-value}
 ::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
@@ -90,17 +90,17 @@ The parameters represent three ideas:
 - **Diminishing sensitivity:** with $\alpha,\beta<1$, the move from 0 to 100 changes value more than the move from 1,000 to 1,100.
 - **Loss aversion:** when $\alpha=\beta$, $\lambda>1$ makes a loss carry more value impact than an equally sized gain. If the exponents differ, that comparison also depends on the amount; $\lambda$ alone no longer settles it.
 
-Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. The median individual estimates were $\alpha=\beta=0.88$ and $\lambda=2.25$. These values are useful for illustrating the model; their small, specific sample does not make them universal constants.
+Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. The median individual estimates were $\alpha=\beta=0.88$ and $\lambda=2.25$.
 :::
 ::::
 
-### Probability weighting: decision weight is not belief
+### Probability weighting: how chances influence choice {#probability-weighting-decision-weight-is-not-belief}
 
 Prospect theory uses **decision weights** to describe the influence of probabilities on choice. Under commonly fitted models, small probabilities receive disproportionately high weight, while moderate and high probabilities receive less weight than their numerical size would suggest.
 
 A decision weight is not necessarily a judged probability. A person can correctly report a 1% chance while giving that possibility more influence on choice than expected utility would. Vividness, affect, attention, and the possibility of zero can all affect impact without changing stated belief.
 
-For prospects with several outcomes, cumulative prospect theory does not weight each outcome by transforming its individual probability in isolation. Outcomes are ranked, cumulative probabilities are transformed, and decision weights are differences between those transformed cumulative probabilities. With increasing value and weighting functions, this construction respects first-order stochastic dominance: improving an outcome without worsening any other should not make the prospect less attractive.
+For prospects with several outcomes, cumulative prospect theory ranks the outcomes, transforms cumulative probabilities, and assigns decision weights as differences between those transformed cumulative probabilities. With increasing value and weighting functions, this construction respects first-order stochastic dominance: improving an outcome without worsening any other should not make the prospect less attractive.
 
 :::: {#math-probability-weighting}
 ::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
@@ -186,7 +186,7 @@ Gal and Rucker (2018) argue that evidence does not justify loss aversion as a co
 
 ## One applied audit across three settings
 
-The model suggests where to look, but a label such as loss aversion cannot settle a practical decision. In each setting below, identify the reference point, reconstruct the future consequences, and ask what else could explain the choice.
+In each setting below, identify the reference point, reconstruct the future consequences, and ask what else could explain the choice.
 
 ### Investment: look beyond the purchase price
 
@@ -221,7 +221,7 @@ Look again at the outbreak programs. Translate each into the final number of sur
 
 Endowment effects, effort-based valuation, status quo bias, and narrow framing are often placed under the prospect-theory umbrella. The following cases show how to distinguish those explanations.
 
-### Endowment effects: giving up is not the same as owning
+### Endowment effects: how ownership changes valuation {#endowment-effects-giving-up-is-not-the-same-as-owning}
 
 A mug can serve the same purpose before and after it becomes yours. Yet ownership may change the price you require to give it up, making an otherwise attractive trade harder to complete. An **endowment effect** occurs when ownership changes valuation or willingness to trade. In classic experiments, randomly endowed participants were often less willing to exchange an object, and sellers demanded more than buyers offered for similar goods (Kahneman et al., 1990). What has ownership added to the comparison?
 
@@ -247,7 +247,7 @@ Assembling a product costs time and effort that a finished purchase would save. 
 
 Successful creation may change value through competence, authorship, customization, or familiarity; effort justification and anticipated loss are further possibilities.
 
-The mechanism matters for design. Inviting customers or employees to co-create can build agency and knowledge. It can also exploit sunk effort to keep them in a poor product or project. Successful labor may add real experiential value, so a higher valuation is not automatically an error.
+The mechanism matters for design. Inviting customers or employees to co-create can build agency and knowledge. It can also exploit sunk effort to keep them in a poor product or project. Successful labor may add real experiential value.
 
 ### Status quo bias: staying can be rational, psychological, or designed
 

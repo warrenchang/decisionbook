@@ -164,7 +164,7 @@ There is also a learning problem. If crews inspect only properties with high sco
 
 This is one reason a map should distinguish predicted risk from uncertainty and missing information. An uninspected property should not look as though it has been verified safe. A color-coded display can otherwise give incomplete records the authority of physical inspection.
 
-## Predicting risk does not tell us whom an intervention will help {#risk-is-not-treatment-benefit}
+## Predicting risk and estimating intervention benefits {#risk-is-not-treatment-benefit}
 
 A university has more students at risk of leaving than its advisers can contact. An algorithm identifies those most likely to leave, so directing outreach to them seems sensible. But the students facing the greatest risk may be facing problems a call cannot change, while others could stay with timely advice. Which ranking should determine who receives the limited places: risk of leaving or benefit from the intervention?
 
@@ -249,7 +249,7 @@ Compare a complex model with a credible simple rule on the same cases and under 
 
 ### Evaluate probabilities and decisions separately
 
-A city may use a risk cutoff to decide whether an inspection is worth its cost. A model can rank properties correctly while overstating their probabilities; the ranking then looks useful, but more properties may cross the action threshold than the evidence justifies. Evaluation needs to test both what the scores separate and what their numerical values mean. **Discrimination** concerns how well scores distinguish cases with different outcomes. **Calibration** concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event. Good ranking does not by itself establish good probabilities.
+A city may use a risk cutoff to decide whether an inspection is worth its cost. A model can rank properties correctly while overstating their probabilities; the ranking then looks useful, but more properties may cross the action threshold than the evidence justifies. Evaluation needs to test both what the scores separate and what their numerical values mean. **Discrimination** concerns how well scores distinguish cases with different outcomes. **Calibration** concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event.
 
 Then evaluate the action rule. Count the important kinds of error, inspect subgroup performance, and apply the stated costs and capacity limits. A model with a slightly better ranking metric can still produce a worse decision if its probabilities are poorly calibrated around the action threshold. Conversely, an improvement far from any threshold may change almost no actions.
 
