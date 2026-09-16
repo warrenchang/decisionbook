@@ -665,33 +665,90 @@ window.Quarto = {
 </section>
 <section id="expected-value-the-monetary-benchmark" class="level2">
 <h2 data-anchor-id="expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</h2>
+<p>Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.</p>
+<p>Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.</p>
+<p>The benchmark also exposes missing costs. A gamble that pays €100 with probability one-half and zero otherwise does not have expected <strong>net</strong> value €50 if entry costs €60. The expected net value is −€10.</p>
+<div id="math-expected-value">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: expected monetary value
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For outcomes <span class="math inline">\(x_1,\ldots,x_n\)</span> with probabilities <span class="math inline">\(p_1,\ldots,p_n\)</span>, expected monetary value is</p>
 <p><span class="math display">\[
 EV(X)=\sum_{i=1}^{n}p_i x_i.
 \]</span></p>
-<p>Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.</p>
-<p>Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.</p>
-<p>The benchmark also exposes missing costs. A gamble that pays €100 with probability one-half and zero otherwise does not have expected <strong>net</strong> value €50 if entry costs €60. The expected net value is −€10.</p>
+<p>Multiply each possible monetary outcome by its probability, then add the weighted outcomes. Subtract any entry cost to obtain expected net value.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="expected-utility-value-over-final-consequences" class="level2">
 <h2 data-anchor-id="expected-utility-value-over-final-consequences">Expected utility: value over final consequences</h2>
+<p>Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented <em>as if</em> they maximize expected utility (von Neumann &amp; Morgenstern, 1944).</p>
+<p>The independence axiom is central. If one lottery is preferred to another, mixing both with the same third lottery in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.</p>
+<section id="curvature-and-attitudes-toward-a-mean-preserving-risk" class="level3">
+<h3 data-anchor-id="curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</h3>
+<ul>
+<li>A <strong>linear</strong> utility function implies risk neutrality: a sure amount and a lottery with that same average are equally attractive.</li>
+<li>A <strong>concave</strong> utility function implies weak risk aversion: the sure average is at least as attractive as the lottery. Additional wealth brings smaller increments of utility.</li>
+<li>A <strong>convex</strong> utility function implies weak risk seeking over that range: the lottery is at least as attractive as its sure average. Additional wealth brings larger increments of utility.</li>
+</ul>
+<p>The preferences become strict when the curve is strictly concave or convex over outcomes that genuinely vary.</p>
+<p>Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.</p>
+<div id="math-expected-utility">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: expected utility and curvature
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Expected utility theory evaluates a lottery over final wealth or consequences:</p>
 <p><span class="math display">\[
 EU(X)=\sum_{i=1}^{n}p_i u(W+x_i),
 \]</span></p>
-<p>where <span class="math inline">\(W\)</span> is initial wealth and <span class="math inline">\(u(\cdot)\)</span> represents preferences over final wealth. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented <em>as if</em> they maximize expected utility (von Neumann &amp; Morgenstern, 1944).</p>
-<p>The independence axiom is central. If lottery <span class="math inline">\(A\)</span> is preferred to lottery <span class="math inline">\(B\)</span>, mixing both with the same third lottery <span class="math inline">\(C\)</span> in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.</p>
-<section id="curvature-and-attitudes-toward-a-mean-preserving-risk" class="level3">
-<h3 data-anchor-id="curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</h3>
-<ul>
-<li>A <strong>linear</strong> utility function implies risk neutrality: utility of the expected value equals expected utility.</li>
-<li>A <strong>concave</strong> utility function implies weak risk aversion: <span class="math inline">\(u(E[X])\geq E[u(X)]\)</span>. The inequality is strict for a nondegenerate lottery when utility is strictly concave over its outcomes.</li>
-<li>A <strong>convex</strong> utility function implies weak risk seeking over that range: <span class="math inline">\(u(E[X])\leq E[u(X)]\)</span>, with a strict inequality under the corresponding strict-convexity conditions.</li>
-</ul>
-<p>Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.</p>
+<p>where <span class="math inline">\(W\)</span> is initial wealth and <span class="math inline">\(u(\cdot)\)</span> represents preferences over final wealth.</p>
+<p>For final wealth <span class="math inline">\(X\)</span>, the curvature comparison is</p>
+<p><span class="math display">\[
+u(E[X])\geq E[u(X)]
+\]</span></p>
+<p>under concavity, with the reverse inequality under convexity and equality under linearity. Strict concavity or convexity gives a strict comparison for a nondegenerate lottery over that range.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="certainty-equivalents-and-risk-premia" class="level3">
 <h3 data-anchor-id="certainty-equivalents-and-risk-premia">Certainty equivalents and risk premia</h3>
+<p>The <strong>certainty-equivalent payoff</strong> is the sure payoff that makes the person indifferent to the lottery. The <strong>risk premium</strong> is the gap between the lottery’s expected payoff and that certainty equivalent.</p>
+<p>For illustration, treat the opening lottery’s outcomes of 0 and 100 as final wealth, starting from zero. Under an illustrative square-root utility function, a sure final wealth of 25 is as attractive as this 50–50 lottery. Expected final wealth is 50, so the risk premium is 25. These values follow from the chosen utility function and starting resources.</p>
+<div id="math-certainty-equivalent">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: certainty equivalents and risk premia
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For payoff changes <span class="math inline">\(x_i\)</span> around initial wealth <span class="math inline">\(W\)</span>, the <strong>certainty-equivalent payoff</strong> <span class="math inline">\(c\)</span> solves</p>
 <p><span class="math display">\[
 u(W+c)=\sum_i p_i u(W+x_i).
@@ -705,14 +762,18 @@ u(W+c)=\sum_i p_i u(W+x_i).
 EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 \]</span></p>
 <p>Because <span class="math inline">\(\sqrt{25}=5\)</span>, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.</p>
-<p><a href="#fig-risky-decision-map" class="quarto-xref">Figure&nbsp;<span>16.1</span></a> shows the first calculation: the lottery’s average utility lies below the utility of its average wealth.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#fig-risky-decision-map" class="quarto-xref">Figure&nbsp;<span>16.1</span></a> shows the comparison: the lottery’s average utility lies below the utility of its average wealth.</p>
 <div id="fig-risky-decision-map" class="quarto-float quarto-figure quarto-figure-center" alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-risky-decision-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../figures/risky-decision-map.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-risky-decision-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under the illustrative utility function u(x)=square root of x, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and shows why the process should be assessed using information available before the outcome.
+Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under an illustrative square-root utility function, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and shows why the process should be assessed using information available before the outcome.
 </figcaption>
 </figure>
 </div>
@@ -733,16 +794,16 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>Expected utility gives us a consistent way to compare risky options. The following choices test whether people preserve that consistency when a sure outcome becomes available. Consider two pairs of choices, with monetary units scaled to “millions.”</p>
 <p><strong>Pair 1</strong></p>
 <ul>
-<li><span class="math inline">\(A\)</span>: 1 for certain.</li>
-<li><span class="math inline">\(B\)</span>: 89% chance of 1, 10% chance of 5, and 1% chance of 0.</li>
+<li>A: 1 for certain.</li>
+<li>B: 89% chance of 1, 10% chance of 5, and 1% chance of 0.</li>
 </ul>
 <p><strong>Pair 2</strong></p>
 <ul>
-<li><span class="math inline">\(C\)</span>: 11% chance of 1 and 89% chance of 0.</li>
-<li><span class="math inline">\(D\)</span>: 10% chance of 5 and 90% chance of 0.</li>
+<li>C: 11% chance of 1 and 89% chance of 0.</li>
+<li>D: 10% chance of 5 and 90% chance of 0.</li>
 </ul>
-<p>Many people prefer <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> but <span class="math inline">\(D\)</span> to <span class="math inline">\(C\)</span> (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.</p>
-<p>Under expected utility and independence, the pattern is inconsistent. If <span class="math inline">\(A\succ B\)</span>, subtracting the common 89% chance of receiving 1 implies <span class="math inline">\(C\succ D\)</span>. Choosing <span class="math inline">\(A\)</span> and <span class="math inline">\(D\)</span> gives special weight to the move from 99% to 100% or to the presentation of certainty.</p>
+<p>Many people prefer A to B but D to C (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.</p>
+<p>Under expected utility and independence, the pattern is inconsistent. If A is preferred to B, removing the common 89% chance of receiving 1 implies that C should be preferred to D. Choosing A and D gives special weight to the move from 99% to 100% or to the presentation of certainty.</p>
 <p>The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.</p>
 </section>
 <section id="the-ellsberg-urn-risk-is-not-ambiguity" class="level2">
@@ -752,9 +813,9 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <li>exactly 30 are red;</li>
 <li>the remaining 60 are black or yellow in an unknown proportion.</li>
 </ul>
-<p>First choose a bet that pays if <strong>red</strong> is drawn or a bet that pays if <strong>black</strong> is drawn. Many choose red because its probability is known to be <span class="math inline">\(1/3\)</span>.</p>
-<p>Now choose a bet that pays if <strong>red or yellow</strong> is drawn or a bet that pays if <strong>black or yellow</strong> is drawn. Many choose black-or-yellow because its probability is known to be <span class="math inline">\(2/3\)</span>.</p>
-<p>Preferring red to black suggests <span class="math inline">\(P(R)&gt;P(B)\)</span>. Preferring black-or-yellow to red-or-yellow suggests <span class="math inline">\(P(B)&gt;P(R)\)</span>. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).</p>
+<p>First choose a bet that pays if <strong>red</strong> is drawn or a bet that pays if <strong>black</strong> is drawn. Many choose red because its probability is known to be one-third.</p>
+<p>Now choose a bet that pays if <strong>red or yellow</strong> is drawn or a bet that pays if <strong>black or yellow</strong> is drawn. Many choose black-or-yellow because its probability is known to be two-thirds.</p>
+<p>If the choices reflected only a single probability judgment, preferring red to black would imply that red is more likely. Preferring black-or-yellow to red-or-yellow would imply the opposite: once the common yellow outcome is set aside, black would have to be more likely. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).</p>
 <p>This pattern is called <strong>ambiguity aversion</strong>. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:</p>
 <ol type="1">
 <li>variability given a model;</li>
@@ -765,7 +826,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>Collapsing all four into one probability hides the reason for caution.</p>
 <div id="ambiguity-and-brain-signals">
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -774,7 +835,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Knowing that a gamble pays half the time differs from having too little information to assess its chances. Hsu and colleagues (2005) found that greater ambiguity was associated with stronger fMRI responses in the amygdala and orbitofrontal cortex and weaker responses in the striatum. This shows that missing probability information can change how a choice is processed; it does not directly measure dopamine or establish that ambiguity “switches off” reward signaling. Nor does it show that known risk is inherently addictive or ambiguity invariably distressing.</p>
 <p>The <a href="../chapters/21-habits-wanting-and-self-control.html#uncertain-rewards-and-near-misses">uncertain-reward discussion in Chapter 21</a> concerns a different question: how anticipation and apparent progress can sustain pursuit even when many attempts bring no reward.</p>
@@ -839,10 +900,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>For the insurance decision, identify whose losses the policy covers and whose remain exposed. A policy that protects the organization’s balance sheet may leave clients carrying the cost of interrupted service. Those people’s capacity to bear the harm, and their ability to understand and refuse the exposure, belong in the decision alongside the premium.</p>
 <section id="extension-one-project-or-a-portfolio" class="level3">
 <h3 data-anchor-id="extension-one-project-or-a-portfolio">Extension: one project or a portfolio?</h3>
-<p>A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. One project has expected net value</p>
-<p><span class="math display">\[
-0.30(200{,}000)-40{,}000=20{,}000.
-\]</span></p>
+<p>A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. The probability-weighted return is €60,000 per project. Subtracting its €40,000 cost leaves an expected net value of €20,000.</p>
 <p>Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.</p>
 <p>The portfolio comparison must also identify whose returns and losses enter the calculation. A portfolio can be attractive to the firm while exposing employees, customers, or other parties to losses they cannot absorb; expected value does not settle distribution, rights, consent, or ruin.</p>
 <p><a href="../chapters/20-mental-accounting-money-is-fungible-minds-label-it.html#mental-accounting-money-is-fungible-minds-label-it">Mental Accounting</a> examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.</p>
@@ -858,19 +916,19 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </section>
 <section id="optional-research-and-application-notes" class="level2">
 <h2 data-anchor-id="optional-research-and-application-notes">Optional research and application notes</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Application box: the single-period newsvendor
+<span class="screen-reader-only">Note</span>Mathematical analysis: the single-period newsvendor
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand <span class="math inline">\(D\)</span> is uncertain. Each unit sells for <span class="math inline">\(p\)</span>, costs <span class="math inline">\(c\)</span>, and has salvage value <span class="math inline">\(s\)</span>, with <span class="math inline">\(p&gt;c&gt;s\)</span>. Ordering one unit too few sacrifices the margin</p>
+<p>A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand D is uncertain. Each unit sells for <span class="math inline">\(p\)</span>, costs <span class="math inline">\(c\)</span>, and has salvage value <span class="math inline">\(s\)</span>, with <span class="math inline">\(p&gt;c&gt;s\)</span>. Ordering one unit too few sacrifices the margin</p>
 <p><span class="math display">\[
 C_u=p-c,
 \]</span></p>
@@ -887,17 +945,17 @@ F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
 </div>
 </div>
 </div>
-<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Optional theory lens: the St Petersburg puzzle
+<span class="screen-reader-only">Note</span>Mathematical analysis: the St Petersburg puzzle
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss <span class="math inline">\(n\)</span>, the game pays <span class="math inline">\(2^n\)</span> monetary units. The probability of that outcome is <span class="math inline">\(2^{-n}\)</span>. Its expected monetary value is</p>
 <p><span class="math display">\[
@@ -911,7 +969,7 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 </div>
 </div>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -920,7 +978,7 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A risk-preference measure seems useful because it could help predict choices beyond the task. Yet changing the task can change a person’s classification. Before using that label in another setting, we need to identify what the task measured. <a href="#tbl-risk-elicitation" class="quarto-xref">Table&nbsp;<span>16.1</span></a> pairs each task with what it can reveal and what complicates the inference. A model maps choices back to a parameter, but comprehension, probability format, reference point, response mode, and noise can also affect the result.</p>
 <div id="tbl-risk-elicitation" class="quarto-float quarto-figure quarto-figure-center">
@@ -989,17 +1047,17 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 </div>
 </div>
 <p><span id="multiplicative-risk"></span></p>
-<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Research Lens: a positive arithmetic average can conceal multiplicative collapse
+<span class="screen-reader-only">Note</span>Mathematical analysis: a positive average can conceal multiplicative collapse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Suppose a deliberately extreme gamble risks <strong>all current wealth</strong> in every round. It multiplies wealth by 1.8 with probability one half and by 0.4 with probability one half, independently across 52 rounds. The one-round arithmetic mean return is +10%, so expected terminal wealth from €10,000 is</p>
 <p><span class="math display">\[

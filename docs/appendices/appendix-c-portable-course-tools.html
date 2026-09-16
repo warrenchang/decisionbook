@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -929,7 +900,7 @@ Table&nbsp;F.3: A decision journal that compares the original reasoning with the
 <div class="callout-body-container callout-body">
 <p><span class="tool-level">Core tool</span></p>
 <p>Define the event, population, time horizon, and the condition on which the probability depends. Translate percentages into counts within a shared population, keeping clear which subgroup each conditional rate refers to. For a conjunction, check that it is no more likely than either component; when adding probabilities, account for overlap.</p>
-<p>Record the forecast and a rule for deciding whether the event occurred. After resolution, score that same event. For a binary outcome, the Brier score is <span class="math inline">\((p-y)^2\)</span>, where <span class="math inline">\(p\)</span> is the forecast probability between 0 and 1 and <span class="math inline">\(y\)</span> is 1 if the event occurred and 0 otherwise. Lower scores indicate better forecasts. <a href="../chapters/15-samples-randomness-regression-and-calibration.html#chapter-15-start">Chapter 15</a> explains how to learn from a series of forecasts.</p>
+<p>Record the forecast and a rule for deciding whether the event occurred. After resolution, score that same event. For a binary outcome, the Brier score is the squared difference between the forecast probability and the outcome, coded as one if the event occurred and zero otherwise. Lower scores indicate better forecasts. The <a href="../chapters/15-samples-randomness-regression-and-calibration.html#math-brier-score">mathematical analysis in Chapter 15</a> gives the formula and a worked example; the chapter explains how to learn from a series of forecasts.</p>
 </div>
 </div>
 <p><span id="tool-risky-choice-audit"></span></p>

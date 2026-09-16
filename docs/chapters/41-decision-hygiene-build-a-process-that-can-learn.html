@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -1069,7 +1040,7 @@ Figure&nbsp;41.3: A sound or weak process can be followed by either a favorable 
 <p>The hiring committee wants to learn from the appointment, but its members now remember having anticipated the problem. If the review relies on those recollections, a disappointing outcome can confirm everyone’s judgment while correcting no one’s process. Learning requires a record the outcome cannot rewrite. A <strong>decision journal</strong> is a collection of structured, time-stamped records created at two different moments. Before the outcome is known, an entry preserves what was knowable, expected, valued, and chosen. After a specified review date or trigger, a linked review records what happened and what should be learned <strong>without overwriting the original entry</strong>. Its unit is a consequential decision, not a day in the writer’s life.</p>
 <p>Meeting minutes may document the choice without preserving what was expected under the alternatives. The journal adds those forecasts and a rule for interpreting later evidence, so the review can examine more than whether the chosen option turned out well.</p>
 <p>Several research traditions inform the journal. Decision analysis identifies the options, consequences, and values to record (Raiffa, 1968; Keeney &amp; Raiffa, 1976). Hindsight and outcome-bias research explains why later recollection cannot substitute for a contemporary record (Fischhoff, 1975; Baron &amp; Hershey, 1988). Forecasting research makes predictions resolvable across repeated decisions (Brier, 1950; Mellers et al., 2014).</p>
-<p>Writing and review also depend on the conditions. In a study of Chinese judges, judges who wrote reasons before deciding were less influenced by an induced negative feeling than judges who proceeded directly to judgment; forced deliberation produced a similar effect (Liu, 2018). A meta-analysis across 46 samples (<span class="math inline">\(N = 2{,}136\)</span>) found higher individual and team performance after structured debriefing than before it or in no-debrief control groups (average standardized difference <span class="math inline">\(d = 0.67\)</span>) (Tannenbaum &amp; Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner &amp; Tetlock, 1999).</p>
+<p>Writing and review also depend on the conditions. In a study of Chinese judges, judges who wrote reasons before deciding were less influenced by an induced negative feeling than judges who proceeded directly to judgment; forced deliberation produced a similar effect (Liu, 2018). A meta-analysis across 46 samples with 2,136 participants found higher individual and team performance after structured debriefing than before it or in no-debrief control groups (an average standardized difference of 0.67) (Tannenbaum &amp; Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner &amp; Tetlock, 1999).</p>
 <p>The practical sequence is <strong>freeze, compare, update</strong>: preserve the original account, compare each prediction or assumption with relevant evidence, then change a rule or forecast where warranted. A record helps only if it is candid, reviewed, and protected from retrospective editing.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">

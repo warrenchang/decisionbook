@@ -93,11 +93,21 @@ To see the logic clearly, use an **error-loss model**. A false alarm means movin
 
 | Organizer | Loss from an unnecessary move indoors | Loss from staying outdoors in rain | Expected loss if moving indoors | Expected loss if staying outdoors |
 | --- | ---: | ---: | ---: | ---: |
-| Rain would be especially damaging | 2 | 8 | $0.70\times2=1.4$ | $0.30\times8=2.4$ |
-| Moving indoors would sacrifice much of the event | 6 | 4 | $0.70\times6=4.2$ | $0.30\times4=1.2$ |
+| Rain would be especially damaging | 2 | 8 | 1.4 | 2.4 |
+| Moving indoors would sacrifice much of the event | 6 | 4 | 4.2 | 1.2 |
 : The same forecast can imply different actions under different values {#tbl-ai-rain-losses}
 
-The expected-loss comparison in @tbl-ai-rain-losses favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.
+Expected loss weights each possible error by its probability: 70% for dry weather and 30% for rain. The comparison in @tbl-ai-rain-losses favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.
+
+The more costly it would be to miss rain, relative to making an unnecessary move, the less confidence in rain is needed to justify moving indoors.
+
+With these hypothetical losses, the thresholds in @fig-ai-same-forecast-different-values are 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.
+
+![A 30% rain forecast exceeds one organizer's 20% action threshold but falls below another's 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.](../figures/ai-same-forecast-different-values.svg){#fig-ai-same-forecast-different-values fig-alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss." width=100% .phone-fit}
+
+:::: {#math-rain-decision-threshold}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the action threshold for a rain forecast
 
 More generally, let $p$ be the probability of rain, $C_F$ the false-alarm loss, and $C_M$ the missed-rain loss. In this model, moving indoors has lower expected loss when
 
@@ -111,9 +121,9 @@ $$
 p > \frac{C_F}{C_F+C_M}.
 $$
 
-The thresholds in @fig-ai-same-forecast-different-values are therefore 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.
-
-![A 30% rain forecast exceeds one organizer's 20% action threshold but falls below another's 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.](../figures/ai-same-forecast-different-values.svg){#fig-ai-same-forecast-different-values fig-alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss." width=100% .phone-fit}
+For the first organizer, the threshold is $2/(2+8)=0.20$; for the second it is $6/(6+4)=0.60$. At a 30% rain probability, the expected losses are $0.70\times2=1.4$ versus $0.30\times8=2.4$, and $0.70\times6=4.2$ versus $0.30\times4=1.2$, respectively. Correct matches have zero incremental loss in this illustrative model.
+:::
+::::
 
 Real choices can include reserving a tent, delaying a decision, accepting some weather exposure, or cancelling. They may also involve fixed costs, uncertain forecasts, capacity limits, and protected rights that cannot simply be priced away. The arithmetic reveals where valuation enters.
 

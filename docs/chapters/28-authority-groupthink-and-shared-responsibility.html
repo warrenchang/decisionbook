@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -651,7 +622,7 @@ window.Quarto = {
 <p>It is also contested. Aldag and Fuller (1993) found that research did not convincingly validate the complete syndrome or a simple path from its proposed characteristics to poor outcomes. Esser’s (1998) review found mixed results and continuing heuristic value, while emphasizing theoretical and methodological problems. The responsible use of the term is therefore as an umbrella that prompts diagnosis, not as a diagnosis supplied by hindsight.</p>
 <p><strong>A bad outcome, apparent unanimity, or cohesion alone does not establish groupthink.</strong> A bad result can follow from uncertainty, missing expertise, poor incentives, implementation failure, or chance. Unanimity can reflect genuinely convergent evidence or shared values. A meta-analysis found no significant overall effect of cohesion on decision quality; poorer decisions appeared under additional conditions such as directive leadership, and the result depended partly on what “cohesion” meant (Mullen et al., 1994).</p>
 <p>For Lena’s team, the next step is to distinguish the causes hidden by the shared silence. Each card in <a href="#fig-silence-mechanisms" class="quarto-xref">Figure&nbsp;<span>28.1</span></a> pairs a diagnostic question with a safeguard: collecting independent judgments addresses a different failure from assigning responsibility for action.</p>
-<div id="fig-silence-mechanisms" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard." style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;">
+<div id="fig-silence-mechanisms" class="phone-fit quarto-float quarto-figure quarto-figure-center" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silence-mechanisms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../figures/silence-mechanism-diagnostic.svg" class="phone-fit img-fluid figure-img" style="width:100%;min-width:0;max-width:100%;max-height:none;height:auto;" alt="Five vertically arranged diagnostic cards distinguish directive authority, suppressed dissent, shared-information bias, pluralistic ignorance, and diffusion of responsibility. Each card pairs an observable test with a safeguard.">
@@ -675,7 +646,7 @@ Figure&nbsp;28.1: Five pathways connect group processes to missing evidence, sup
 <p>Even when people agree that a problem is serious, action can still stall. The safety email has several recipients, which seems to give it several chances of being handled, yet each may wait for someone else. The next problem is how shared awareness becomes—or fails to become—personal responsibility.</p>
 <p>Darley and Latané (1968) placed participants alone in cubicles for what appeared to be a group discussion over an intercom. A recorded voice then appeared to suffer a seizure. Among the thirteen participants who believed they were the only other person listening, <strong>85%</strong> sought help before that speaker’s allotted turn ended; among thirteen who believed four additional listeners were present, <strong>31%</strong> did. Those percentages describe reporting within a particular time window. By the study’s six-minute cutoff, the corresponding proportions were 100% and 62%.</p>
 <p>The experiment changed how many <em>other potential helpers</em> a participant believed were present. It measured an individual’s response, not the probability that at least one member of a real crowd would help. That distinction matters when applying the bystander effect outside the laboratory.</p>
-<p>Across more than 7,700 participants and 105 independent effect sizes, Fischer and colleagues (2011) estimated an overall standardized effect of <span class="math inline">\(g=-0.35\)</span>: others’ presence reduced individual helping on average. The reduction was smaller in dangerous emergencies, and some conditions showed no reduction or a positive effect when bystanders could provide physical support. Other people can spread responsibility, but they can also make intervention feasible.</p>
+<p>Across more than 7,700 participants and 105 independent effect sizes, Fischer and colleagues (2011) estimated an overall reduction in individual helping equivalent to 0.35 standard deviations (Hedges’ g of −0.35) when others were present. The reduction was smaller in dangerous emergencies, and some conditions showed no reduction or a positive effect when bystanders could provide physical support. Other people can spread responsibility, but they can also make intervention feasible.</p>
 <p>Latané and Darley (1970) described helping as a sequence: notice the event, interpret it as an emergency, accept responsibility, know how to help, and decide to act. A failure at any step can prevent intervention.</p>
 <p>Other people can interfere at several stages. If no one else reacts, the situation may seem less serious. This is pluralistic ignorance: people privately feel concern but infer from others’ calm behavior that nothing is wrong. If many people are present, responsibility diffuses: “Someone else will act.” If action might be embarrassing, people hesitate.</p>
 <p>The same gap can appear in a classroom. Several students privately feel confused, yet each takes the absence of questions as evidence that everyone else understands. Asking separately what students understand and how well they think their classmates understand would reveal the gap more directly than observing silence. In a different setting, Prentice and Miller (1993) found that students misperceived their peers’ comfort with campus drinking norms.</p>

@@ -33,13 +33,9 @@ A plan can lose its appeal when its effort becomes immediate. Understanding that
 
 ## The benchmark: value across time
 
-The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In a simple exponential form,
+The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In its simple **exponential** form, each additional period of delay reduces the weight by the same proportion.
 
-$$
-U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 < \delta \leq 1.
-$$
-
-Here, $u(c_t)$ is the utility of consumption or another outcome at time $t$, and $\delta$ is the weight placed on each additional period of delay. With preferences and relevant circumstances held fixed, exponential discounting preserves the relative ranking of two future outcomes as time passes. If €120 in thirteen months is preferred to €100 in twelve months, moving both rewards eleven months closer should not reverse the preference.
+With preferences and relevant circumstances held fixed, exponential discounting preserves the relative ranking of two future outcomes as time passes. If €120 in thirteen months is preferred to €100 in twelve months, moving both rewards eleven months closer should not reverse the preference.
 
 The benchmark is useful even when it is not descriptively accurate. It forces a decision-maker to state the outcome stream, time horizon, assumptions, and trade-off between present and future. It also separates two ideas that ordinary language blends:
 
@@ -54,7 +50,7 @@ Observed choices usually identify neither component cleanly. A person choosing m
 
 Exponential discounting treats each added period proportionally. Human choices often display **declining impatience**: the difference between now and soon feels larger than an equal difference between two distant dates. Hyperbolic models capture this pattern by making the implied discount rate fall with delay (Ainslie, 1975). Quasi-hyperbolic models simplify it into a special penalty for anything not immediate, followed by more regular discounting across later periods (Laibson, 1997).
 
-![Three discount functions illustrate different implications: exponential $D(t)=0.95^t$, hyperbolic $D(t)=1/(1+0.15t)$, and quasi-hyperbolic $D(0)=1$ and $D(t>0)=0.70(0.95^t)$. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.](../figures/discount-model-crossover.svg){#fig-discount-model-crossover fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent." width=100%}
+![Three discount models illustrate different implications. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. The optional analysis specifies the plotted functions and parameters.](../figures/discount-model-crossover.svg){#fig-discount-model-crossover fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent." width=100%}
 
 The worked example in @fig-discount-model-crossover shows **dynamic inconsistency**: a plan that looks best from a distance can lose when temptation or effort becomes immediate. O'Donoghue and Rabin (1999) show how present bias can produce two familiar failures:
 
@@ -62,6 +58,24 @@ The worked example in @fig-discount-model-crossover shows **dynamic inconsistenc
 - **premature indulgence:** an action has an immediate reward and delayed cost, so the person repeatedly brings it forward.
 
 The manager’s postponed conversation contains both sides: delaying avoids discomfort now while moving the unresolved problem into the future.
+
+:::: {#math-discount-models}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: discounted utility and the plotted models
+
+The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In a simple exponential form,
+
+$$
+U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 < \delta \leq 1.
+$$
+
+Here, $u(c_t)$ is the utility of consumption or another outcome at time $t$, and $\delta$ is the weight placed on each additional period of delay.
+
+Three discount functions illustrate different implications: exponential $D(t)=0.95^t$, hyperbolic $D(t)=1/(1+0.15t)$, and quasi-hyperbolic $D(0)=1$ and $D(t>0)=0.70(0.95^t)$. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.
+
+These are illustrative functions. Their parameters describe the plotted comparison rather than estimates for a particular person.
+:::
+::::
 
 A person can also differ in awareness. A **sophisticated** present-biased chooser anticipates future reversal and seeks a commitment device. A **naïve** chooser expects future intentions to survive unchanged. A partly sophisticated chooser knows there is a problem but underestimates its size.
 
@@ -245,8 +259,8 @@ For the manager, “have the conversation” becomes an appointment, an opening 
 
 A plan can also lose out without a fresh comparison of now and later. Checking a phone or opening an inbox may begin because a familiar setting brings that action to mind. [Habits, Wanting, and Self-Control](21-habits-wanting-and-self-control.qmd#habits-wanting-and-self-control) examines how a repeated response can become easier to start even when it no longer serves the goal.
 
-::: {.callout-note .research-lens icon=false collapse=true}
-## Interest compounds; discounting runs the calculation backward {#interest-compounds-discounting-runs-the-calculation-backward}
+::: {.callout-note .mathematical-analysis .research-lens icon=false collapse=true}
+## Mathematical analysis: interest and discounting {#interest-compounds-discounting-runs-the-calculation-backward}
 
 Financial interest transfers purchasing power across time. If a principal $P$ earns a per-period interest rate $r$ for $n$ periods, its future value is
 

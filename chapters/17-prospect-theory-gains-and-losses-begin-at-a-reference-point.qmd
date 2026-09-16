@@ -31,11 +31,7 @@ An outcome can feel like a gain or a loss depending on what it is compared with.
 
 ## The benchmark: final wealth should absorb the frame
 
-For a monetary choice, expected utility evaluates final wealth:
-
-$$
-EU=\sum_i p_i u(W+x_i).
-$$
+For a monetary choice, expected utility evaluates the value of final wealth, weighting each possible outcome by its probability. The [mathematical analysis in Chapter 16](16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd#math-expected-utility) sets out this benchmark.
 
 If two descriptions generate the same final outcomes with the same probabilities, a consistent expected-utility chooser should rank them the same. In that monetary model, gains and losses enter through final wealth. For the outbreak problem, the consequences being evaluated are lives and deaths rather than money; equivalent descriptions should still preserve the ranking.
 
@@ -51,7 +47,7 @@ Together, these elements let the model explain why a person might protect a like
 
 ### Reference dependence: the zero is psychologically constructed
 
-Let $r$ be a reference point and $x$ an outcome. Prospect value depends on $x-r$, not only $x$. The same salary can feel like a gain relative to last year's pay, a loss relative to an expected promotion, and an insult relative to a colleague's salary.
+Prospect value depends on how an outcome compares with a reference point, rather than on the outcome alone. The same salary can feel like a gain relative to last year's pay, a loss relative to an expected promotion, and an insult relative to a colleague's salary.
 
 A current endowment, expectation, goal, social comparison, or imagined alternative can supply the reference point. These comparisons can conflict, so the active reference must be investigated rather than chosen retrospectively to fit the result.
 
@@ -61,7 +57,21 @@ Expectations can also become reference points. A €10,000 bonus may feel like a
 
 ### The value function: sensitivity diminishes with distance
 
-A common functional form is
+The value function describes how the impact of a gain or loss changes with its size. Three features matter:
+
+- **Reference dependence:** the comparison point determines what counts as a gain or loss.
+- **Diminishing sensitivity:** the move from no gain to a gain of 100 can matter more than the same increase from 1,000 to 1,100. A similar flattening can occur as losses grow.
+- **Loss aversion:** a loss can have greater impact than an equally sized gain. How much greater can depend on the amount and the shape of the value function.
+
+Concavity over gains tends to support risk aversion; convexity over losses tends to support risk seeking. But the value function alone is not the whole theory. Probability weighting can reverse those tendencies, especially for rare events.
+
+Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. Their estimates are useful for illustration; their small, specific sample does not make them universal constants.
+
+:::: {#math-prospect-value}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the prospect-theory value function
+
+Let $x$ be the outcome and $r$ the reference point. A common functional form is
 
 $$
 v(z)=
@@ -80,11 +90,21 @@ The parameters represent three ideas:
 - **Diminishing sensitivity:** with $\alpha,\beta<1$, the move from 0 to 100 changes value more than the move from 1,000 to 1,100.
 - **Loss aversion:** when $\alpha=\beta$, $\lambda>1$ makes a loss carry more value impact than an equally sized gain. If the exponents differ, that comparison also depends on the amount; $\lambda$ alone no longer settles it.
 
-Concavity over gains tends to support risk aversion; convexity over losses tends to support risk seeking. But the value function alone is not the whole theory. Probability weighting can reverse those tendencies, especially for rare events.
-
 Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. The median individual estimates were $\alpha=\beta=0.88$ and $\lambda=2.25$. These values are useful for illustrating the model; their small, specific sample does not make them universal constants.
+:::
+::::
 
 ### Probability weighting: decision weight is not belief
+
+Prospect theory uses **decision weights** to describe the influence of probabilities on choice. Under commonly fitted models, small probabilities receive disproportionately high weight, while moderate and high probabilities receive less weight than their numerical size would suggest.
+
+A decision weight is not necessarily a judged probability. A person can correctly report a 1% chance while giving that possibility more influence on choice than expected utility would. Vividness, affect, attention, and the possibility of zero can all affect impact without changing stated belief.
+
+For prospects with several outcomes, cumulative prospect theory does not weight each outcome by transforming its individual probability in isolation. Outcomes are ranked, cumulative probabilities are transformed, and decision weights are differences between those transformed cumulative probabilities. With increasing value and weighting functions, this construction respects first-order stochastic dominance: improving an outcome without worsening any other should not make the prospect less attractive.
+
+:::: {#math-probability-weighting}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: probability weighting
 
 Prospect theory replaces objective probabilities with **decision weights**. A common one-parameter display is
 
@@ -95,10 +115,8 @@ w(p)=\frac{p^\gamma}
 $$
 
 For commonly fitted parameter values below one, the curve is inverse-S shaped: small probabilities receive disproportionately high weight, while moderate and high probabilities receive lower weight than their numerical size would suggest. Tversky and Kahneman (1992) estimated separate weighting parameters of $\gamma=0.61$ for gains and $\delta=0.69$ for losses in their fitted model. The formula requires a parameter range that keeps it increasing: very low positive values can make it nonmonotonic and yield invalid negative cumulative decision weights (Ingersoll, 2008).
-
-A decision weight is not necessarily a judged probability. A person can correctly report a 1% chance while giving that possibility more influence on choice than expected utility would. Vividness, affect, attention, and the possibility of zero can all affect impact without changing stated belief.
-
-For prospects with several outcomes, cumulative prospect theory does not simply multiply each outcome by $w(p_i)$. Outcomes are ranked, cumulative probabilities are transformed, and decision weights are differences between those transformed cumulative probabilities. With increasing value and weighting functions, this construction respects first-order stochastic dominance: improving an outcome without worsening any other should not make the prospect less attractive.
+:::
+::::
 
 ![Schematic curves illustrate prospect theory’s S-shaped value function around a reference point and inverse-S probability-weighting function. Under commonly used parameterizations, they can produce the fourfold pattern: caution for high-probability gains and low-probability losses, but risk seeking for low-probability gains and high-probability losses.](../figures/prospect-theory-map.svg){#fig-prospect-theory-map fig-alt="Three-part diagram. The left panel shows a value function centered at a reference point: concave for gains, convex and steeper for losses. The right panel shows an inverse-S probability-weighting curve relative to the forty-five-degree objective-probability line, emphasizing possibility and certainty. The bottom panel is a four-cell table mapping high- and low-probability gains and losses to typical risk attitudes and examples." width=100%}
 
@@ -124,11 +142,19 @@ We can now combine the two influences. Curvature describes the value of the poss
 
 A person can buy insurance and a lottery ticket: the probability range and gain–loss domain differ.
 
-### Worked calculation: a low-probability gain
+### A low-probability gain {#worked-calculation-a-low-probability-gain}
 
 Consider a 1% chance of €10,000 and otherwise zero. Its expected monetary value is €100. Under expected utility with linear utility, €100 certain and the lottery are equal.
 
-To see both model components at work, take the gain parameters just introduced: $\alpha=0.88$ and $\gamma=0.61$. Assume a reference point of zero and no ticket price. Because the alternative outcome is zero, the cumulative-prospect calculation reduces to
+With the illustrative prospect-theory parameters, a reference point of zero, and no ticket price, this lottery is as attractive as approximately **€372 for certain**. The small chance receives enough extra weight to outweigh the value function's diminishing sensitivity to the size of the prize.
+
+That figure is a model prediction, not a measured willingness to pay. Changing probability weighting changes the answer; charging for a ticket requires specifying how its cost is combined with the outcomes and whether it is coded as a loss. The calculation shows how weighting can outweigh diminishing sensitivity without turning the model into advice to buy a lottery ticket.
+
+:::: {#math-low-probability-gain}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: valuing the low-probability gain
+
+The illustrative gain calculation uses $\alpha=0.88$ and $\gamma=0.61$. Assume a reference point of zero and no ticket price. Because the alternative outcome is zero, the cumulative-prospect calculation reduces to
 
 $$
 w(0.01)\approx0.0553,\qquad
@@ -136,8 +162,8 @@ V=w(0.01)\,10{,}000^{0.88}\approx183.0.
 $$
 
 A certain €100 has value $100^{0.88}\approx57.5$. Under these illustrative assumptions, the lottery therefore receives more value than its expected monetary amount. Its **certainty equivalent** solves $c^{0.88}=183.0$, giving approximately **€372**.
-
-That figure is a model prediction, not a measured willingness to pay. Changing probability weighting changes the answer; charging for a ticket requires specifying how its cost is combined with the outcomes and whether it is coded as a loss. The calculation shows how weighting can outweigh diminishing sensitivity without turning the model into advice to buy a lottery ticket.
+:::
+::::
 
 ## Framing changes the comparison; check equivalence {#framing-changes-the-reference-point-but-equivalence-must-be-checked}
 
@@ -153,7 +179,7 @@ The original Asian-disease results came from separate groups answering hypotheti
 
 Loss aversion means that, around a reference point, a loss changes value more than a comparable gain. It is not the same as risk aversion. A person can be loss averse yet risk seeking over losses, and risk averse without coding an outcome as a loss.
 
-The familiar statement “losses loom about twice as large as gains” turns a model estimate into a law. Estimated $\lambda$ depends on the assumed reference point, outcome range, weighting and value functions, response noise, and institutional setting. It can also change when the task involves certain exchanges rather than risky choices.
+The familiar statement “losses loom about twice as large as gains” turns a model estimate into a law. The estimated loss-aversion parameter depends on the assumed reference point, outcome range, weighting and value functions, response noise, and institutional setting. It can also change when the task involves certain exchanges rather than risky choices.
 
 Gal and Rucker (2018) argue that evidence does not justify loss aversion as a context-free general principle. Other work supports loss aversion in particular tasks and populations. To compare estimates, specify the domain, measurement model, and reference point.
 
@@ -199,7 +225,7 @@ Endowment effects, effort-based valuation, status quo bias, and narrow framing a
 
 A mug can serve the same purpose before and after it becomes yours. Yet ownership may change the price you require to give it up, making an otherwise attractive trade harder to complete. An **endowment effect** occurs when ownership changes valuation or willingness to trade. In classic experiments, randomly endowed participants were often less willing to exchange an object, and sellers demanded more than buyers offered for similar goods (Kahneman et al., 1990). What has ownership added to the comparison?
 
-Loss aversion offers one explanation: giving up an owned mug is coded as a loss. But a willingness-to-accept/willingness-to-pay gap can also reflect transaction costs, income effects, misunderstanding, strategic answers, attachment, or different information and attention among buyers and sellers. The gap is not a direct measure of $\lambda$.
+Loss aversion offers one explanation: giving up an owned mug is coded as a loss. But a willingness-to-accept/willingness-to-pay gap can also reflect transaction costs, income effects, misunderstanding, strategic answers, attachment, or different information and attention among buyers and sellers. The gap is not a direct measure of the loss-aversion parameter.
 
 Plott and Zeiler (2005) found no WTA–WTP gap in their mug and lottery experiments when they used extensive training, incentive-compatible procedures, anonymity, and controls aimed at misconceptions. List (2003) found that the anomaly diminished with market experience in field and experimental evidence. Morewedge and Giblin (2015) review evidence for several cognitive and strategic accounts.
 

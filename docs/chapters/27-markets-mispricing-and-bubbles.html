@@ -751,23 +751,44 @@ Figure&nbsp;27.2: A documented return pattern passes through a joint-test audit 
 </section>
 <section id="the-palm3com-case-visible-inconsistency-costly-correction" class="level2">
 <h2 data-anchor-id="the-palm3com-case-visible-inconsistency-costly-correction">The Palm–3Com case: visible inconsistency, costly correction</h2>
-<p>On March 2, 2000, 3Com sold about 5% of its Palm subsidiary and announced an intention—subject to conditions—to distribute the remaining Palm shares to 3Com shareholders at roughly 1.5 Palm shares per 3Com share. Ignoring timing, taxes, and frictions, the relative-value relation was:</p>
-<p><span class="math display">\[
-P(3Com) \approx 1.5P(Palm) + \text{value of 3Com's other businesses}.
-\]</span></p>
+<p>On March 2, 2000, 3Com sold about 5% of its Palm subsidiary and announced an intention—subject to conditions—to distribute the remaining Palm shares to 3Com shareholders at roughly 1.5 Palm shares per 3Com share. Ignoring timing, taxes, and frictions, a 3Com share should therefore reflect the value of roughly 1.5 Palm shares plus its claim on 3Com’s other businesses.</p>
 <p>After Palm’s first trading day, observed prices implied that the residual 3Com businesses were worth about negative $22 billion in Lamont and Thaler’s (2003) calculation. Simple addition makes that hard to defend. Yet Palm shares were scarce to borrow, shorting was costly and risky, and the distribution was delayed and conditional. The case is unusually strong evidence of relative-value mispricing—and equally strong evidence that a visible inconsistency need not create a riskless free lunch.</p>
 </section>
 <section id="what-gives-an-asset-fundamental-value" class="level2">
 <h2 data-anchor-id="what-gives-an-asset-fundamental-value">What gives an asset fundamental value?</h2>
 <p>An <strong>asset</strong> is a resource or claim expected to provide economic benefits. A share of stock represents fractional ownership of a company; a bond promises payments to a lender, subject to default risk and its contractual terms. These are the equity and debt forms of financial capital. Banks channel deposits and other funding into loans, investment banks help firms issue and underwrite securities, arranging their sale and sometimes bearing the risk of unsold issues, and mutual funds and pension funds pool investments. These institutions matter for bubbles because they influence who can buy, how purchases are financed, and where losses go.</p>
 <p>For a shareholder, profits can support dividends or share repurchases, or remain in the firm to finance investment, acquisitions, and debt repayment. Retained earnings create value when their use improves future benefits to shareholders sufficiently to justify the resources committed. Accounting earnings are therefore informative about value, but they are not identical to cash immediately available to an investor. Buying back shares is a distribution to selling shareholders, not the creation of additional operating profit.</p>
-<p>The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. Let <span class="math inline">\(D_t\)</span> denote the discount factor appropriate to a cash flow at horizon <span class="math inline">\(t\)</span>, and let <span class="math inline">\(P_T\)</span> be the ex-dividend terminal price. A deliberately simplified discounted-cash-flow model can discipline the debate:</p>
+<p>The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. A simplified discounted-cash-flow model adds the present value of the expected payments and the expected sale price at the end of the chosen horizon.</p>
+<p>The adjustment must reflect both timing and risk. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. The assumed terminal price also needs a valuation argument; extrapolating recent price gains simply moves the disputed belief to the end of the calculation. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.</p>
+<p>A constant-growth example makes the sensitivity concrete. In a hypothetical model where dividends grow indefinitely, a next-period dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.</p>
+<div id="math-asset-valuation">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: discounted cash flows and constant growth
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(D_t\)</span> denote the discount factor appropriate to a cash flow at horizon <span class="math inline">\(t\)</span>, and <span class="math inline">\(P_T\)</span> the ex-dividend terminal price. A simplified valuation is</p>
 <p><span class="math display">\[
 V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 \]</span></p>
-<p>Here <span class="math inline">\(D_t\)</span> must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. The assumed terminal price also needs a valuation argument; extrapolating recent price gains simply moves the disputed belief to the end of the calculation. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.</p>
-<p>A constant-growth example makes the sensitivity concrete. If next period’s expected dividend is <span class="math inline">\(d_1\)</span>, dividends grow indefinitely at rate <span class="math inline">\(g\)</span>, and the appropriate required return is a constant <span class="math inline">\(r&gt;g\)</span>, then <span class="math inline">\(V_0=d_1/(r-g)\)</span>. In a hypothetical example, a dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.</p>
-<p>The <strong>price-to-earnings ratio</strong>, <span class="math inline">\(P/E\)</span>, divides the share price by earnings per share. It summarizes how much investors pay for one year’s reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.</p>
+<p>Each <span class="math inline">\(D_t\)</span> must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. The terminal price needs its own defensible valuation assumptions.</p>
+<p>If next period’s expected dividend is <span class="math inline">\(d_1\)</span>, dividends grow indefinitely at rate <span class="math inline">\(g\)</span>, and the appropriate required return is a constant <span class="math inline">\(r&gt;g\)</span>, then</p>
+<p><span class="math display">\[
+V_0=\frac{d_1}{r-g}.
+\]</span></p>
+<p>The examples give <span class="math inline">\(2/(0.08-0.03)=40\)</span> and <span class="math inline">\(2/(0.08-0.04)=50\)</span>. These are conditional model values, not observed market estimates.</p>
+</div>
+</div>
+</div>
+</div>
+<p>The <strong>price-to-earnings ratio</strong>, or P/E, divides the share price by earnings per share. It summarizes how much investors pay for one year’s reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.</p>
 <p>Long historical price-and-earnings charts motivate the question of whether valuations have become detached from plausible future payouts. Shiller’s (1981) excess-volatility analysis compared observed price variation with a benchmark based on discounted subsequent dividends. Its interpretation depends on the assumptions about expected returns and the dividend process. However, a visual gap between two series drawn on different axes is not a valuation test. The <strong>cyclically adjusted P/E ratio</strong>, or CAPE, divides real prices by average real earnings over the preceding ten years to reduce sensitivity to a single year’s earnings. Historical valuation peaks, including 1901, 1929, 1966, and 2000, are useful comparisons, not a calendar for the next crash (Shiller, 2000, 2013).</p>
 </section>
 <section id="a-bubble-is-a-reinforcing-process-hypothesis" class="level2">
@@ -921,21 +942,45 @@ Table&nbsp;27.1: Historical episodes, with distinctions between asset-price and 
 </section>
 <section id="one-laboratory-market-a-known-risk-neutral-benchmark-can-still-be-exceeded" class="level2">
 <h2 data-anchor-id="one-laboratory-market-a-known-risk-neutral-benchmark-can-still-be-exceeded">Experimental markets: making the valuation benchmark observable</h2>
-<p>Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is <span class="math inline">\(d\)</span> and <span class="math inline">\(k\)</span> periods remain, the <strong>risk-neutral expected-dividend benchmark</strong>, with no final redemption and negligible discounting over the short experimental session, is <span class="math inline">\(FV_t=kd\)</span>. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter &amp; Smith, 2003).</p>
+<p>Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. With no final redemption and negligible discounting over the short experimental session, the <strong>risk-neutral expected-dividend benchmark</strong> is the expected dividend per period multiplied by the number of periods remaining. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter &amp; Smith, 2003).</p>
 <section id="a-finite-lived-asset-and-a-declining-benchmark" class="level3">
 <h3 data-anchor-id="a-finite-lived-asset-and-a-declining-benchmark">A finite-lived asset and a declining benchmark</h3>
-<p>In a common baseline parameterization, the asset lasts 15 periods and each period’s dividend is equally likely to be 0, 8, 28, or 60 cents. The expected dividend is therefore <span class="math inline">\((0+8+28+60)/4=24\)</span> cents. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is <span class="math inline">\(15\times24=360\)</span> cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. For comparison, an asset that pays 12 or 20 cents with equal probability has an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.</p>
+<p>In a common baseline parameterization, the asset lasts 15 periods and each period’s dividend is equally likely to be 0, 8, 28, or 60 cents. Averaging the four equally likely dividends gives 24 cents per period. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is 360 cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. For comparison, an asset that pays 12 or 20 cents with equal probability has an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.</p>
 <p>Participants begin with cash and shares. In a <strong>double auction</strong>, buyers can submit bids and sellers can submit asks while observing other offers. Under the classroom implementation used here, an incoming order that crosses the best standing offer executes at that standing offer’s price. A trader can buy to collect remaining dividends or to sell again during the experiment. A resale changes who receives those dividends; it does not add dividends to the asset.</p>
 <p>Prices in many inexperienced markets begin below the expected-dividend benchmark, rise above it, and fall late in the session. Initial underpricing could reflect risk aversion or uncertainty about the task and other traders. Later overpricing cannot be explained merely by learning that the asset has a larger expected dividend: the distribution is already given. Still, an expected-value benchmark is not every risk-averse trader’s certainty equivalent, and a price deviation alone does not identify the belief or preference producing it.</p>
 <p>Bubble-like paths are not confined to groups of a dozen participants. Williams (2008) reports large computerized classroom markets, including one with 304 traders that exhibited a substantial boom and crash. Adding traders therefore does not automatically create independent judgments or eliminate feedback. These markets differ from professional exchanges in incentives and institutions, so their size establishes a useful possibility rather than complete field realism.</p>
 </section>
 <section id="flat-fundamentals-the-bubble-is-not-just-a-falling-value-task" class="level3">
 <h3 data-anchor-id="flat-fundamentals-the-bubble-is-not-just-a-falling-value-task">Flat fundamentals: the bubble is not just a falling-value task</h3>
-<p>Many real assets do not mechanically lose one dividend’s expected value each short trading period. A useful design therefore pays interest <span class="math inline">\(r\)</span> on cash and gives the asset an expected dividend <span class="math inline">\(d\)</span> each period, with a final redemption payment <span class="math inline">\(R=d/r\)</span>. With <span class="math inline">\(k\)</span> periods remaining, the risk-neutral discounted benchmark is</p>
+<p>Many real assets do not mechanically lose one dividend’s expected value each short trading period. A useful experimental design therefore pays interest on cash, provides an expected dividend each period, and adds a final redemption payment. Choosing the redemption payment appropriately offsets the shortening dividend horizon, so the risk-neutral discounted benchmark stays constant.</p>
+<p>For example, an expected dividend of $0.70 with 10% interest per period and one of $1.40 with 20% interest both imply a constant benchmark of $7 under this design. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders’ accounts even though the benchmark is unchanged.</p>
+<div id="math-market-benchmarks">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: declining and constant market benchmarks
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Without final redemption and with negligible discounting, an asset with expected dividend <span class="math inline">\(d\)</span> and <span class="math inline">\(k\)</span> periods remaining has the risk-neutral benchmark</p>
+<p><span class="math display">\[
+FV_t=kd.
+\]</span></p>
+<p>In the baseline example, <span class="math inline">\((0+8+28+60)/4=24\)</span> cents and <span class="math inline">\(15\times24=360\)</span> cents initially.</p>
+<p>For the constant-benchmark design, let cash earn interest <span class="math inline">\(r&gt;0\)</span> per period, let the expected dividend be <span class="math inline">\(d\)</span>, and set final redemption to <span class="math inline">\(R=d/r\)</span>. With <span class="math inline">\(k\)</span> periods remaining,</p>
 <p><span class="math display">\[
 FV_t=\sum_{j=1}^{k}\frac{d}{(1+r)^j}+\frac{d/r}{(1+r)^k}=\frac{d}{r}.
 \]</span></p>
-<p>The redemption payment offsets the shortening dividend horizon. For example, <span class="math inline">\(d=\$0.70\)</span> with <span class="math inline">\(r=10\%\)</span> and <span class="math inline">\(d=\$1.40\)</span> with <span class="math inline">\(r=20\%\)</span> both imply a constant benchmark of $7. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders’ accounts even though <span class="math inline">\(d/r\)</span> is unchanged.</p>
+<p>Thus <span class="math inline">\(d=\$0.70\)</span> with <span class="math inline">\(r=10\%\)</span> and <span class="math inline">\(d=\$1.40\)</span> with <span class="math inline">\(r=20\%\)</span> both give <span class="math inline">\(d/r=\$7\)</span>. The identity holds under the stated risk-neutral discounting and redemption assumptions.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Bostian and Holt (2009) describe this design and report prices rising above the flat benchmark. Their higher-payment example illustrates how faster wealth accumulation can support larger price deviations. Because the dividend and interest processes change together, that comparison should not be described as a pure manipulation of initial cash. Experiments that vary initial cash directly provide complementary evidence (Caginalp et al., 1998).</p>
 </section>
 <section id="experience-liquidity-and-trading-rules-change-the-result" class="level3">
@@ -1005,7 +1050,7 @@ Table&nbsp;27.2: Experimental conditions that alter price formation. Results are
 <p>A rising market does not imply that participants accurately predict its next movement. Holt et al.&nbsp;(2017) elicited short-term price forecasts and found that predictions typically trailed prices during the rise and remained above them during the decline. Forecast paths were too flat and did not generally anticipate the turning point. Haruvy et al.&nbsp;(2007) likewise show why measuring expectations adds information beyond observing transactions: the same purchase can reflect different views about value and future resale prices.</p>
 <p>Different strategies can sustain the same path. A passive or fundamental-value trader buys below the benchmark and sells above it. A feedback trader increases demand after price rises and reduces it after falls, potentially amplifying the trend. A speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair’s (2006) rule classified behavior only when a trader’s highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications in <a href="#tbl-bubble-strategies" class="quarto-xref">Table&nbsp;<span>27.3</span></a> split across several patterns:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1014,7 +1059,7 @@ Table&nbsp;27.2: Experimental conditions that alter price formation. Results are
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div id="tbl-bubble-strategies" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1195,7 +1240,7 @@ Table&nbsp;27.4: A two-direction bubble diagnostic
 <section id="optional-research-notes" class="level2">
 <h2 data-anchor-id="optional-research-notes">Optional research notes</h2>
 <div id="advanced-research-track-auditing-an-event-study" class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1204,7 +1249,7 @@ Table&nbsp;27.4: A two-direction bubble diagnostic
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>An <strong>event study</strong> estimates security returns around a defined event (MacKinlay, 1997). Audit its inferential chain in this order:</p>
 <ol type="1">
@@ -1232,7 +1277,7 @@ Figure&nbsp;27.5: An event-study schematic distinguishes the estimation window, 
 </div>
 </div>
 <div id="research-lens-five-patterns-five-open-diagnoses" class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1241,7 +1286,7 @@ Figure&nbsp;27.5: An event-study schematic distinguishes the estimation window, 
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Read each row of <a href="#tbl-finance-anomalies" class="quarto-xref">Table&nbsp;<span>27.5</span></a> from the historical finding through the behavioral possibility to the rival account: a familiar label alone cannot identify the mechanism or establish an implementable trade.</p>
 <div id="tbl-finance-anomalies" class="quarto-float quarto-figure quarto-figure-center">

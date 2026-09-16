@@ -37,21 +37,37 @@ Before explaining the branch’s recovery, consider a simpler problem: recognizi
 2. H H H T T T
 3. H T H T H T
 
-The first looks designed, while the third looks comfortably random. Yet every specified sequence has probability
+The first looks designed, while the third looks comfortably random. Yet every specified sequence has the same probability: one in 64.
+
+The intuition answers a different question: *Which sequence resembles my prototype of randomness?* Alternation looks random; a run looks meaningful. Probability asks which event was specified before the tosses and how many elementary outcomes it contains.
+
+The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains twenty exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.
+
+Randomness is clumpier than intuition expects. When many sequences, people, schools, funds, products, or locations are observed, some will display striking runs and clusters even when the underlying process is unchanged. A pattern invites explanation; a statistical model asks how surprising that pattern was given all the opportunities for one to appear.
+
+:::: {#math-coin-sequences}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: counting coin sequences
+
+For six independent fair tosses, each specified sequence has probability
 
 $$
 \left(\frac{1}{2}\right)^6=\frac{1}{64}.
 $$
 
-The intuition answers a different question: *Which sequence resembles my prototype of randomness?* Alternation looks random; a run looks meaningful. Probability asks which event was specified before the tosses and how many elementary outcomes it contains.
-
-The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains $\binom{6}{3}=20$ exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.
-
-Randomness is clumpier than intuition expects. When many sequences, people, schools, funds, products, or locations are observed, some will display striking runs and clusters even when the underlying process is unchanged. A pattern invites explanation; a statistical model asks how surprising that pattern was given all the opportunities for one to appear.
+There are $\binom{6}{3}=20$ ways to place three heads among six positions. All heads and all tails account for only two sequences. The comparison changes when the question concerns a category rather than one exact sequence.
+:::
+::::
 
 ## Small samples swing widely
 
 The expectation that a short sequence should look balanced extends to evidence about people and organizations. Tversky and Kahneman (1971) called this belief in the **law of small numbers**: expecting a small sample to resemble its population too closely. After three successful hires, an interview panel may feel it has found a reliable method. Yet three outcomes can change dramatically with the next appointment, especially if applicants and jobs vary. The question is how much confidence that sample can support.
+
+Small samples produce more extreme proportions because each observation carries more weight. When an outcome has a 50% chance on each independent trial, the **standard error**, a measure of typical sampling fluctuation, is about 15.8 percentage points with ten observations, compared with 5.0 points with one hundred. The population did not become steadier; the estimate did.
+
+:::: {#math-sampling-uncertainty}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: sampling uncertainty
 
 For an independent Bernoulli event with probability $p$, the standard error of the sample proportion is
 
@@ -60,6 +76,8 @@ SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
 $$
 
 When $p=0.5$, the standard error is about 0.158 for $n=10$ and 0.050 for $n=100$. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.
+:::
+::::
 
 Selection magnifies the problem. The branch reached headquarters’ agenda because its quarter was unusually bad, just as a fund enters a performance ranking because its returns were unusually good. In both cases, temporary variation has helped select the evidence we are about to explain.
 
@@ -92,7 +110,23 @@ Stopping after description rewards the most surprising pattern. Jumping directly
 
 ## Regression to the mean
 
-The branch improved after the manager arrived. To decide how much that timing tells us, we need to separate persistent performance from the temporary variation that helped make the earlier quarter exceptional. Suppose observed performance is
+The branch improved after the manager arrived. To decide how much that timing tells us, we need to separate persistent performance from the temporary variation that helped make the earlier quarter exceptional. An unusually high result can reflect high persistent ability, favorable temporary circumstances, or both. When the next temporary influence is less extreme, performance tends to move toward average even if the underlying ability does not change.
+
+For illustration, suppose two measurements have a correlation of 0.40. A first result two standard deviations above average then predicts a second result only 0.8 standard deviations above average under a simple linear model. The person remains above average; the prediction is less extreme because the first observation was partly unreliable.
+
+The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman & Tversky, 1973).
+
+Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.
+
+![A teaching simulation of 50 measurement pairs illustrates regression to the mean. With a correlation near 0.40, an initial result two standard deviations above average predicts a second result only 0.8 standard deviations above average. The optional analysis gives the simulation specification.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average." width=100%}
+
+Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. @fig-regression-conditional-shrinkage shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
+
+:::: {#math-regression-model}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: regression and the teaching simulation
+
+Suppose observed performance is
 
 $$
 Y=\theta+\varepsilon,
@@ -108,13 +142,9 @@ $$
 
 If a measure two standard deviations above average has test–retest correlation $r=0.40$, the best linear prediction under that model is 0.8 standard deviations above average. The predicted person remains above average; the extreme observation is shrunk because part of it was unreliable.
 
-The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman & Tversky, 1973).
-
-Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.
-
-![A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average." width=100%}
-
-Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. @fig-regression-conditional-shrinkage shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.
+A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$.
+:::
+::::
 
 ### Superstition: when a coincidence becomes a rule {#superstition}
 
@@ -188,13 +218,21 @@ A forecaster is **calibrated** when events assigned 70 percent occur about 70 pe
 
 Accuracy also requires **resolution** or discrimination. A forecaster who assigns 50 percent to everything may be calibrated in a balanced environment but contributes little separation. Useful forecasts move away from the base rate when evidence warrants it and remain calibrated across those movements.
 
+The **Brier score** measures the squared gap between a forecast probability and what happened, coding occurrence as one and nonoccurrence as zero. A lower score is better: a 70% forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).
+
+:::: {#math-brier-score}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: scoring a probability forecast
+
 For a binary event with forecast $p$ and outcome $o\in\{0,1\}$, the Brier score is
 
 $$
 BS=(p-o)^2.
 $$
 
-A lower score is better: a 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).
+Thus a forecast of $p=0.70$ scores $(0.70-1)^2=0.09$ if the event occurs and $(0.70-0)^2=0.49$ otherwise.
+:::
+::::
 
 Research in geopolitical forecasting tournaments suggests that **probabilistic forecasting** can improve through repeatable practices: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.
 
@@ -217,13 +255,21 @@ The same discipline is needed when AI supplies the forecast. [Chapter 42](42-dat
 
 Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.
 
-A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of **at least one of these delays** must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, it would be
+A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of **at least one of these delays** must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the [probability rules in Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#chapter-14-start) provide the first consistency check.
+
+:::: {#math-combined-delays}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: combining independent delay risks
+
+Under independence, multiply the probabilities that each delay does *not* occur, then subtract that joint no-delay probability from one:
 
 $$
-1-(1-0.15)(1-0.10)(1-0.20)=0.388,
+1-(1-0.15)(1-0.10)(1-0.20)=0.388.
 $$
 
-or 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the [probability rules in Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#chapter-14-start) provide the first consistency check.
+This calculation concerns at least one of the three named delays. It does not establish that the final deadline will be missed.
+:::
+::::
 
 Missing the **final deadline** is a separate event. Schedule slack may absorb a component delay, while an omitted failure route may jeopardize completion. Define that final event and model how each route affects it before comparing the forecast with the deadline-miss rate for similar projects. If the estimates differ sharply, investigate the reference class, schedule assumptions, dependencies, and missing routes. The outside view cannot correct the inside view until both refer to the same outcome.
 

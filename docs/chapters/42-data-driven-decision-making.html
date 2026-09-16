@@ -730,31 +730,24 @@ Table&nbsp;42.1: The same forecast can imply different actions under different v
 <td>Rain would be especially damaging</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: right;"><span class="math inline">\(0.70\times2=1.4\)</span></td>
-<td style="text-align: right;"><span class="math inline">\(0.30\times8=2.4\)</span></td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">2.4</td>
 </tr>
 <tr class="even">
 <td>Moving indoors would sacrifice much of the event</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;"><span class="math inline">\(0.70\times6=4.2\)</span></td>
-<td style="text-align: right;"><span class="math inline">\(0.30\times4=1.2\)</span></td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">1.2</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>The expected-loss comparison in <a href="#tbl-ai-rain-losses" class="quarto-xref">Table&nbsp;<span>42.1</span></a> favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.</p>
-<p>More generally, let <span class="math inline">\(p\)</span> be the probability of rain, <span class="math inline">\(C_F\)</span> the false-alarm loss, and <span class="math inline">\(C_M\)</span> the missed-rain loss. In this model, moving indoors has lower expected loss when</p>
-<p><span class="math display">\[
-(1-p)C_F &lt; pC_M,
-\]</span></p>
-<p>or equivalently</p>
-<p><span class="math display">\[
-p &gt; \frac{C_F}{C_F+C_M}.
-\]</span></p>
-<p>The thresholds in <a href="#fig-ai-same-forecast-different-values" class="quarto-xref">Figure&nbsp;<span>42.1</span></a> are therefore 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
+<p>Expected loss weights each possible error by its probability: 70% for dry weather and 30% for rain. The comparison in <a href="#tbl-ai-rain-losses" class="quarto-xref">Table&nbsp;<span>42.1</span></a> favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.</p>
+<p>The more costly it would be to miss rain, relative to making an unnecessary move, the less confidence in rain is needed to justify moving indoors.</p>
+<p>With these hypothetical losses, the thresholds in <a href="#fig-ai-same-forecast-different-values" class="quarto-xref">Figure&nbsp;<span>42.1</span></a> are 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
 <div id="fig-ai-same-forecast-different-values" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ai-same-forecast-different-values-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -764,6 +757,32 @@ p &gt; \frac{C_F}{C_F+C_M}.
 Figure&nbsp;42.1: A 30% rain forecast exceeds one organizer’s 20% action threshold but falls below another’s 60% threshold. The thresholds follow from the hypothetical error losses, with zero incremental loss for correct matches.
 </figcaption>
 </figure>
+</div>
+<div id="math-rain-decision-threshold">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: the action threshold for a rain forecast
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>More generally, let <span class="math inline">\(p\)</span> be the probability of rain, <span class="math inline">\(C_F\)</span> the false-alarm loss, and <span class="math inline">\(C_M\)</span> the missed-rain loss. In this model, moving indoors has lower expected loss when</p>
+<p><span class="math display">\[
+(1-p)C_F &lt; pC_M,
+\]</span></p>
+<p>or equivalently</p>
+<p><span class="math display">\[
+p &gt; \frac{C_F}{C_F+C_M}.
+\]</span></p>
+<p>For the first organizer, the threshold is <span class="math inline">\(2/(2+8)=0.20\)</span>; for the second it is <span class="math inline">\(6/(6+4)=0.60\)</span>. At a 30% rain probability, the expected losses are <span class="math inline">\(0.70\times2=1.4\)</span> versus <span class="math inline">\(0.30\times8=2.4\)</span>, and <span class="math inline">\(0.70\times6=4.2\)</span> versus <span class="math inline">\(0.30\times4=1.2\)</span>, respectively. Correct matches have zero incremental loss in this illustrative model.</p>
+</div>
+</div>
+</div>
 </div>
 <p>Real choices can include reserving a tent, delaying a decision, accepting some weather exposure, or cancelling. They may also involve fixed costs, uncertain forecasts, capacity limits, and protected rights that cannot simply be priced away. The arithmetic reveals where valuation enters.</p>
 </section>

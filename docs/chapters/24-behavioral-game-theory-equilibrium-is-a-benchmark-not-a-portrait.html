@@ -705,7 +705,7 @@ Table&nbsp;24.1: A simplified meeting game; your payoff appears first
 <section id="best-responses-and-nash-equilibrium" class="level3">
 <h3 data-anchor-id="best-responses-and-nash-equilibrium">Best responses and beliefs</h3>
 <p>A <strong>best response</strong> gives a player the highest payoff against specified choices by the others. If the other person chooses the entrance, compare your first payoff in that column: choosing the entrance gives 50, while the information desk gives zero. Your best response is the entrance. If they choose the information desk, your best response changes to the information desk.</p>
-<p>Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Your expected payoff from choosing it is <span class="math inline">\(0.70\times50=35\)</span>, compared with <span class="math inline">\(0.30\times50=15\)</span> for the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.</p>
+<p>Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Weighting the reward of 50 by each matching probability gives an expected payoff of 35 at the entrance, compared with 15 at the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.</p>
 </section>
 <section id="mutual-best-responses-checking-equilibrium" class="level3">
 <h3 data-anchor-id="mutual-best-responses-checking-equilibrium">Mutual best responses: checking equilibrium</h3>
@@ -846,7 +846,22 @@ Table&nbsp;24.3: Stag hunt: mutual commitment offers more, but acting alone is c
 </figure>
 </div>
 <p>Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner’s action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.</p>
-<p>How much confidence is enough? Suppose the displayed numbers are utility payoffs and Player 1 assigns probability <span class="math inline">\(p\)</span> to Player 2 choosing Stag. The expected payoff from Stag is</p>
+<p>How much confidence is enough? With these numbers treated as utility payoffs, Stag is strictly better when the player believes the partner’s chance of choosing Stag exceeds about <strong>61.5%</strong>. At the exact threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. This threshold follows from the illustrative payoffs; it is not a measured level of trust that people universally require.</p>
+<p>Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the <strong>risk-dominant equilibrium</strong>: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.</p>
+<div id="math-stag-hunt-threshold">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: the stag-hunt confidence threshold
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose the displayed numbers are utility payoffs and Player 1 assigns probability <span class="math inline">\(p\)</span> to Player 2 choosing Stag. The expected payoff from Stag is</p>
 <p><span class="math display">\[
 15p+2(1-p)=2+13p,
 \]</span></p>
@@ -854,8 +869,11 @@ Table&nbsp;24.3: Stag hunt: mutual commitment offers more, but acting alone is c
 <p><span class="math display">\[
 p&gt;\frac{8}{13}\approx0.615.
 \]</span></p>
-<p>At the threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. The threshold follows from these illustrative payoffs; it is not a measured level of trust that people universally require.</p>
-<p>Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the <strong>risk-dominant equilibrium</strong>: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.</p>
+<p>At <span class="math inline">\(p=8/13\)</span>, the player is indifferent; below that threshold, Hare gives the higher expected payoff.</p>
+</div>
+</div>
+</div>
+</div>
 <p>This is <strong>strategic uncertainty</strong>: uncertainty about what others will do. A pilot, staged adoption, or compatibility guarantee could make the departmental switch more attractive by increasing confidence in the partner’s action or reducing the loss from being left alone. Improving the promised system matters less if the unresolved obstacle is whether anybody else will use it.</p>
 <p>Van Huyck, Battalio, and Beil (1990) tested a related problem with groups choosing effort levels from 1 to 7. Each person’s payoff increased with the group’s lowest effort, but choosing more effort than the minimum incurred an extra cost. Everyone would earn more if everyone chose the highest level. Yet in seven large-group experiments, the minimum effort reached 1 within four rounds. This does not mean every participant immediately chose 1; one low choice was enough to determine the minimum.</p>
 <p>The design made higher effort attractive only when others also supplied it. Seeing a low minimum could therefore make reducing one’s own effort a sensible response, while helping the group remain at the lower outcome. Learning from experience can reinforce a disappointing convention as well as improve coordination.</p>
@@ -879,7 +897,7 @@ p&gt;\frac{8}{13}\approx0.615.
 <p>The claims 2 and 2 fit together, as do 3 and 1. In either of those pairs, raising one’s claim would destroy the agreement, while lowering it would reduce one’s payoff. Both are Nash equilibria. Equilibrium alone does not decide which division should prevail. Equal shares may be focal, but contribution, alternatives, past agreements, and power can support other expectations.</p>
 <p>The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. <a href="../chapters/35-negotiation-as-joint-decision-design.html#chapter-35-start">Negotiation as Joint Decision Design</a> develops that task. Even an agreement that improves both parties’ outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -888,7 +906,7 @@ p&gt;\frac{8}{13}\approx0.615.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Matching is only one form of coordination. In <strong>chicken</strong>, two drivers approach a one-lane bridge. Each would rather proceed while the other yields, but both prefer avoiding a collision. The desirable actions are complementary. A right-of-way rule can select who yields; commitments by both drivers to keep going can instead make the worst outcome more likely.</p>
 <p>In a <strong>volunteer’s dilemma</strong>, everyone benefits if someone acts, and each values getting the task done more than the personal cost of volunteering, but prefers someone else to bear that cost. A team may need one person to report a software failure, but an open request can leave everyone waiting. Assigning the task or rotating responsibility addresses who acts. <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html#bystanders-and-pluralistic-ignorance">Shared Responsibility</a> examines the psychological evidence and distinguishes this incentive problem from uncertainty about whether help is needed.</p>
@@ -1015,7 +1033,7 @@ Table&nbsp;24.5: Questions answered by equilibrium analysis and questions requir
 <p><a href="../chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html#chapter-25-start">Cooperation and Social Preferences</a> takes the next step: what if a person gains by departing from the common plan even when everyone else keeps it? Future relationships, institutions, and concern for others can change that decision in different ways.</p>
 <p><span id="research-lens-dependence-without-a-changing-best-response"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1024,7 +1042,7 @@ Table&nbsp;24.5: Questions answered by equilibrium analysis and questions requir
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In the meeting game, your best response changes with the other person’s choice. Strategic dependence can also exist when one action is best regardless of what the other player does. A <strong>strictly dominant strategy</strong> yields a higher payoff than every alternative against every strategy combination of the others.</p>
 <p>The illustrative price-war matrix in <a href="#tbl-price-war" class="quarto-xref">Table&nbsp;<span>24.6</span></a> shows the distinction. Its numbers represent profit units and omit many features of an actual market. Rao and colleagues (2000) examine how responses to price competition depend on such details of the competitive setting.</p>

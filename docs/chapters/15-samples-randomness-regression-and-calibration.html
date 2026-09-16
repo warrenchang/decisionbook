@@ -652,22 +652,59 @@ window.Quarto = {
 <li>H H H T T T</li>
 <li>H T H T H T</li>
 </ol>
-<p>The first looks designed, while the third looks comfortably random. Yet every specified sequence has probability</p>
+<p>The first looks designed, while the third looks comfortably random. Yet every specified sequence has the same probability: one in 64.</p>
+<p>The intuition answers a different question: <em>Which sequence resembles my prototype of randomness?</em> Alternation looks random; a run looks meaningful. Probability asks which event was specified before the tosses and how many elementary outcomes it contains.</p>
+<p>The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains twenty exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.</p>
+<p>Randomness is clumpier than intuition expects. When many sequences, people, schools, funds, products, or locations are observed, some will display striking runs and clusters even when the underlying process is unchanged. A pattern invites explanation; a statistical model asks how surprising that pattern was given all the opportunities for one to appear.</p>
+<div id="math-coin-sequences">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: counting coin sequences
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For six independent fair tosses, each specified sequence has probability</p>
 <p><span class="math display">\[
 \left(\frac{1}{2}\right)^6=\frac{1}{64}.
 \]</span></p>
-<p>The intuition answers a different question: <em>Which sequence resembles my prototype of randomness?</em> Alternation looks random; a run looks meaningful. Probability asks which event was specified before the tosses and how many elementary outcomes it contains.</p>
-<p>The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains <span class="math inline">\(\binom{6}{3}=20\)</span> exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.</p>
-<p>Randomness is clumpier than intuition expects. When many sequences, people, schools, funds, products, or locations are observed, some will display striking runs and clusters even when the underlying process is unchanged. A pattern invites explanation; a statistical model asks how surprising that pattern was given all the opportunities for one to appear.</p>
+<p>There are <span class="math inline">\(\binom{6}{3}=20\)</span> ways to place three heads among six positions. All heads and all tails account for only two sequences. The comparison changes when the question concerns a category rather than one exact sequence.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="small-samples-swing-widely" class="level2">
 <h2 data-anchor-id="small-samples-swing-widely">Small samples swing widely</h2>
 <p>The expectation that a short sequence should look balanced extends to evidence about people and organizations. Tversky and Kahneman (1971) called this belief in the <strong>law of small numbers</strong>: expecting a small sample to resemble its population too closely. After three successful hires, an interview panel may feel it has found a reliable method. Yet three outcomes can change dramatically with the next appointment, especially if applicants and jobs vary. The question is how much confidence that sample can support.</p>
+<p>Small samples produce more extreme proportions because each observation carries more weight. When an outcome has a 50% chance on each independent trial, the <strong>standard error</strong>, a measure of typical sampling fluctuation, is about 15.8 percentage points with ten observations, compared with 5.0 points with one hundred. The population did not become steadier; the estimate did.</p>
+<div id="math-sampling-uncertainty">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: sampling uncertainty
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For an independent Bernoulli event with probability <span class="math inline">\(p\)</span>, the standard error of the sample proportion is</p>
 <p><span class="math display">\[
 SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
 \]</span></p>
 <p>When <span class="math inline">\(p=0.5\)</span>, the standard error is about 0.158 for <span class="math inline">\(n=10\)</span> and 0.050 for <span class="math inline">\(n=100\)</span>. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Selection magnifies the problem. The branch reached headquarters’ agenda because its quarter was unusually bad, just as a fund enters a performance ranking because its returns were unusually good. In both cases, temporary variation has helped select the evidence we are about to explain.</p>
 <p>When decisions cannot wait or populations are inherently small, the available sample must still inform action. Report uncertainty and identify which conclusion depends on one or two observations. Where cases are sufficiently comparable, shrinkage methods pull unstable estimates toward the wider average rather than taking each small sample at face value; the regression section below explains that logic.</p>
 </section>
@@ -693,7 +730,35 @@ SE(\hat p)=\sqrt{\frac{p(1-p)}{n}}.
 </section>
 <section id="regression-to-the-mean" class="level2">
 <h2 data-anchor-id="regression-to-the-mean">Regression to the mean</h2>
-<p>The branch improved after the manager arrived. To decide how much that timing tells us, we need to separate persistent performance from the temporary variation that helped make the earlier quarter exceptional. Suppose observed performance is</p>
+<p>The branch improved after the manager arrived. To decide how much that timing tells us, we need to separate persistent performance from the temporary variation that helped make the earlier quarter exceptional. An unusually high result can reflect high persistent ability, favorable temporary circumstances, or both. When the next temporary influence is less extreme, performance tends to move toward average even if the underlying ability does not change.</p>
+<p>For illustration, suppose two measurements have a correlation of 0.40. A first result two standard deviations above average then predicts a second result only 0.8 standard deviations above average under a simple linear model. The person remains above average; the prediction is less extreme because the first observation was partly unreliable.</p>
+<p>The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman &amp; Tversky, 1973).</p>
+<p>Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.</p>
+<div id="fig-regression-conditional-shrinkage" class="quarto-float quarto-figure quarto-figure-center" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/regression-conditional-shrinkage.svg" class="img-fluid figure-img" style="width:100.0%" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15.1: A teaching simulation of 50 measurement pairs illustrates regression to the mean. With a correlation near 0.40, an initial result two standard deviations above average predicts a second result only 0.8 standard deviations above average. The optional analysis gives the simulation specification.
+</figcaption>
+</figure>
+</div>
+<p>Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. <a href="#fig-regression-conditional-shrinkage" class="quarto-xref">Figure&nbsp;<span>15.1</span></a> shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.</p>
+<div id="math-regression-model">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: regression and the teaching simulation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose observed performance is</p>
 <p><span class="math display">\[
 Y=\theta+\varepsilon,
 \]</span></p>
@@ -703,19 +768,11 @@ Y=\theta+\varepsilon,
 \widehat z_2=r z_1.
 \]</span></p>
 <p>If a measure two standard deviations above average has test–retest correlation <span class="math inline">\(r=0.40\)</span>, the best linear prediction under that model is 0.8 standard deviations above average. The predicted person remains above average; the extreme observation is shrunk because part of it was unreliable.</p>
-<p>The flight-instructor example illustrates the attribution trap. Praise follows unusually good performance and criticism follows unusually poor performance. The next attempt often looks worse after praise and better after criticism. An instructor may conclude that criticism improves performance and praise harms it, although part of both movements reflects regression (Kahneman &amp; Tversky, 1973).</p>
-<p>Regression does not show that an intervention had no effect. It shows why before–after change among units selected for extreme outcomes does not identify the effect by itself. Use comparison groups, repeated pre-periods, credible counterfactuals, and uncertainty intervals. A real treatment effect and regression can occur together.</p>
-<div id="fig-regression-conditional-shrinkage" class="quarto-float quarto-figure quarto-figure-center" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/regression-conditional-shrinkage.svg" class="img-fluid figure-img" style="width:100.0%" alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average.">
+<p>A fixed-seed teaching simulation draws 50 observations from <span class="math inline">\(z_1,\varepsilon\sim N(0,1)\)</span> and <span class="math inline">\(z_2=0.40z_1+\sqrt{0.84}\varepsilon\)</span> (seed 50273; displayed sample <span class="math inline">\(r\approx0.40\)</span>). The model’s conditional mean is <span class="math inline">\(E[z_2\mid z_1]=0.40z_1\)</span>: <span class="math inline">\(z_1=+2\)</span> predicts <span class="math inline">\(z_2=+0.8\)</span>.</p>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regression-conditional-shrinkage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.1: A fixed-seed teaching simulation draws 50 observations from <span class="math inline">\(z_1,\varepsilon\sim N(0,1)\)</span> and <span class="math inline">\(z_2=0.40z_1+\sqrt{0.84}\varepsilon\)</span> (seed 50273; displayed sample <span class="math inline">\(r\approx0.40\)</span>). The model’s conditional mean is <span class="math inline">\(E[z_2\mid z_1]=0.40z_1\)</span>: <span class="math inline">\(z_1=+2\)</span> predicts <span class="math inline">\(z_2=+0.8\)</span>.
-</figcaption>
-</figure>
 </div>
-<p>Return to the branch manager. If the bad quarter was two standard deviations below average and the same illustrative correlation of 0.40 applied, the model would predict the next quarter at 0.8 standard deviations below average without any managerial change. That is a visible recovery of 1.2 standard deviations. <a href="#fig-regression-conditional-shrinkage" class="quarto-xref">Figure&nbsp;<span>15.1</span></a> shows the corresponding geometry. The recovery can be real while its attribution to the rescue plan remains unproven. Compare the branch with similarly troubled branches, examine several earlier periods, and identify which changes the manager actually introduced. That makes room for a managerial effect while accounting for the recovery that might have happened anyway.</p>
+</div>
+</div>
 <section id="superstition" class="level3">
 <h3 data-anchor-id="superstition">Superstition: when a coincidence becomes a rule</h3>
 <p>A basketball player tosses chalk into the air before a game; a golfer wears red on Sunday. LeBron James’s chalk toss and Tiger Woods’s red shirt are familiar sporting rituals (NBA, 2009; PGA TOUR, 2024). In a humorous interview, Woods recalled winning in red, then unsuccessfully trying blue to challenge his mother’s belief that red was his “power color.” The sequence makes a memorable story, but different tournaments also bring different opponents, conditions, and performances. It cannot establish what the shirt contributed.</p>
@@ -801,7 +858,7 @@ Table&nbsp;15.1: Three forms of overconfidence require different comparisons
 <p>The <strong>planning fallacy</strong> illustrates how optimistic forecasts can affect a project: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman &amp; Tversky, 1979). Underestimating the time a task needs can express overestimation of what one can accomplish in that time; an unduly narrow completion window also expresses overprecision. Planning fallacy is therefore an application, rather than a fourth form alongside those in <a href="#tbl-confidence-calibration" class="quarto-xref">Table&nbsp;<span>15.1</span></a>. The <strong>outside view</strong> begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman &amp; Lovallo, 1993; Lovallo &amp; Kahneman, 2003).</p>
 <p>Suppose a city team proposes an 18-month rail-project schedule. Before hearing why this project is special, obtain the completion-time distribution for comparable projects. Then require each departure from that range to name a causal difference and evidence that the difference changed outcomes elsewhere. The inside view remains useful because it reveals mechanisms and dependencies; the outside view prevents an elegant plan from erasing how projects actually unfold.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -810,7 +867,7 @@ Table&nbsp;15.1: Three forms of overconfidence require different comparisons
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In Monty Hall, seeing two unopened doors can make staying and switching look equally promising. Yet the host’s rule for revealing a goat determines what the reveal tells us: similar-looking endings can carry different evidence. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Following the unchosen-door branch in <a href="#fig-monty-hall-protocol" class="quarto-xref">Figure&nbsp;<span>15.2</span></a> shows why switching wins with probability <span class="math inline">\(2/3\)</span>, compared with <span class="math inline">\(1/3\)</span> for staying (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
 <div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
@@ -833,11 +890,29 @@ Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generat
 <p>A correct prediction can look like evidence of skill, but even a poor forecaster will sometimes be right. To decide whose probabilities deserve weight, we need a record of how stated confidence compares with outcomes across forecasts.</p>
 <p>A forecaster is <strong>calibrated</strong> when events assigned 70 percent occur about 70 percent of the time, events assigned 20 percent occur about 20 percent of the time, and so forth. Calibration is a property of repeated forecasts, not one dramatic success.</p>
 <p>Accuracy also requires <strong>resolution</strong> or discrimination. A forecaster who assigns 50 percent to everything may be calibrated in a balanced environment but contributes little separation. Useful forecasts move away from the base rate when evidence warrants it and remain calibrated across those movements.</p>
+<p>The <strong>Brier score</strong> measures the squared gap between a forecast probability and what happened, coding occurrence as one and nonoccurrence as zero. A lower score is better: a 70% forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).</p>
+<div id="math-brier-score">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: scoring a probability forecast
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For a binary event with forecast <span class="math inline">\(p\)</span> and outcome <span class="math inline">\(o\in\{0,1\}\)</span>, the Brier score is</p>
 <p><span class="math display">\[
 BS=(p-o)^2.
 \]</span></p>
-<p>A lower score is better: a 0.70 forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).</p>
+<p>Thus a forecast of <span class="math inline">\(p=0.70\)</span> scores <span class="math inline">\((0.70-1)^2=0.09\)</span> if the event occurs and <span class="math inline">\((0.70-0)^2=0.49\)</span> otherwise.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Research in geopolitical forecasting tournaments suggests that <strong>probabilistic forecasting</strong> can improve through repeatable practices: define the event precisely, start from reference classes, decompose the problem, update in small increments, seek disconfirming information, aggregate independent views, and obtain feedback (Mellers et al., 2014). Numeric probabilities also reveal false agreement. Two colleagues may both say “likely” while one means 55 percent and the other 90 percent.</p>
 <div id="tbl-probability-forecast-ledger" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -896,11 +971,29 @@ Table&nbsp;15.2: A minimal forecast ledger
 <section id="from-a-project-story-to-a-forecast-system" class="level2">
 <h2 data-anchor-id="from-a-project-story-to-a-forecast-system">From a project story to a forecast system</h2>
 <p>Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.</p>
-<p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, it would be</p>
+<p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
+<div id="math-combined-delays">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: combining independent delay risks
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Under independence, multiply the probabilities that each delay does <em>not</em> occur, then subtract that joint no-delay probability from one:</p>
 <p><span class="math display">\[
-1-(1-0.15)(1-0.10)(1-0.20)=0.388,
+1-(1-0.15)(1-0.10)(1-0.20)=0.388.
 \]</span></p>
-<p>or 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
+<p>This calculation concerns at least one of the three named delays. It does not establish that the final deadline will be missed.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Missing the <strong>final deadline</strong> is a separate event. Schedule slack may absorb a component delay, while an omitted failure route may jeopardize completion. Define that final event and model how each route affects it before comparing the forecast with the deadline-miss rate for similar projects. If the estimates differ sharply, investigate the reference class, schedule assumptions, dependencies, and missing routes. The outside view cannot correct the inside view until both refer to the same outcome.</p>
 <p>Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. Each project adds observations to the calibration ledger.</p>
 <p><span id="ch15-research-findings"></span></p>

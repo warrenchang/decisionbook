@@ -63,7 +63,7 @@ Read the rows as your actions and the columns as the other person's actions. Wit
 
 A **best response** gives a player the highest payoff against specified choices by the others. If the other person chooses the entrance, compare your first payoff in that column: choosing the entrance gives 50, while the information desk gives zero. Your best response is the entrance. If they choose the information desk, your best response changes to the information desk.
 
-Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Your expected payoff from choosing it is $0.70\times50=35$, compared with $0.30\times50=15$ for the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
+Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Weighting the reward of 50 by each matching probability gives an expected payoff of 35 at the entrance, compared with 15 at the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
 
 ### Mutual best responses: checking equilibrium
 
@@ -164,7 +164,15 @@ The **stag hunt** isolates this problem (Skyrms, 2004). Two hunters can secure t
 
 Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner's action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.
 
-How much confidence is enough? Suppose the displayed numbers are utility payoffs and Player 1 assigns probability $p$ to Player 2 choosing Stag. The expected payoff from Stag is
+How much confidence is enough? With these numbers treated as utility payoffs, Stag is strictly better when the player believes the partner's chance of choosing Stag exceeds about **61.5%**. At the exact threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. This threshold follows from the illustrative payoffs; it is not a measured level of trust that people universally require.
+
+Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the **risk-dominant equilibrium**: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.
+
+:::: {#math-stag-hunt-threshold}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the stag-hunt confidence threshold
+
+Suppose the displayed numbers are utility payoffs and Player 1 assigns probability $p$ to Player 2 choosing Stag. The expected payoff from Stag is
 
 $$
 15p+2(1-p)=2+13p,
@@ -176,9 +184,9 @@ $$
 p>\frac{8}{13}\approx0.615.
 $$
 
-At the threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting. The threshold follows from these illustrative payoffs; it is not a measured level of trust that people universally require.
-
-Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the **risk-dominant equilibrium**: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.
+At $p=8/13$, the player is indifferent; below that threshold, Hare gives the higher expected payoff.
+:::
+::::
 
 This is **strategic uncertainty**: uncertainty about what others will do. A pilot, staged adoption, or compatibility guarantee could make the departmental switch more attractive by increasing confidence in the partner's action or reducing the loss from being left alone. Improving the promised system matters less if the unresolved obstacle is whether anybody else will use it.
 

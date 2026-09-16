@@ -60,6 +60,16 @@ The opening matrix also leaves out future encounters and concerns beyond the sta
 
 Suppose the colleagues will work together again. Withholding notes may save effort today but cost access to useful notes later. Cooperation can now serve each person's own interests, provided the future relationship is valuable enough and the response to defection is credible.
 
+Consider an indefinitely repeated version of the opening game. Under a **grim-trigger strategy**, each player cooperates until someone defects, then defects forever. Defecting brings a larger reward today but replaces future mutual cooperation with mutual defection.
+
+Whether that trade is worthwhile depends on how strongly the future relationship counts, allowing for both the chance of another encounter and the discounting of later payoffs. With the opening payoffs, cooperation can remain a best response when each next round carries at least half the weight of the current round. The optional analysis derives that threshold. The practical point is that a short-term gain can be outweighed by losing a sufficiently valuable stream of future cooperation.
+
+This identifies when cooperation can be sustained by these strategies, not that players will necessarily reach it. The comparison assumes reliable observation and the specified response to defection. Misobserved actions can trigger punishment after an innocent error. A known final round can also unravel cooperation by backward induction when the stage-game incentives and rationality assumptions apply throughout. Experimental evidence reviewed by Dal Bó and Fréchette (2018) makes continuation and incentives central to understanding when repeated cooperation emerges. Reputational links or further relationships can preserve future consequences after one particular project ends.
+
+:::: {#math-repeated-cooperation}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: when future cooperation outweighs defection
+
 Consider an indefinitely repeated version of the opening game. Under a **grim-trigger strategy**, each player cooperates until someone defects, then defects forever. Let $T$ be the temptation payoff from defecting against a cooperator, $R$ the reward from mutual cooperation, and $P$ the payoff from mutual defection. The continuation weight $\delta$, between 0 and 1, captures how strongly the next round counts, allowing for both the chance of another encounter and discounting of future payoffs.
 
 Continued cooperation yields
@@ -83,8 +93,8 @@ $$
 $$
 
 With $T=6$, $R=4$, and $P=2$, the threshold is $\delta\geq0.5$. At $\delta=0.5$, continued cooperation is worth $4/(1-0.5)=8$; defecting is worth $6+0.5\times2/(1-0.5)=8$ as well. At $\delta=0.75$, cooperation is worth 16 and defection followed by punishment only 12. The current gain of 2 is outweighed by the loss of future cooperation.
-
-This establishes when cooperation can be sustained by these strategies, not that players will necessarily reach it. The calculation assumes reliable observation and the specified response to defection. Misobserved actions can trigger punishment after an innocent error. A known final round can also unravel cooperation by backward induction when the stage-game incentives and rationality assumptions apply throughout. Experimental evidence reviewed by Dal Bó and Fréchette (2018) makes continuation and incentives central to understanding when repeated cooperation emerges. Reputational links or further relationships can preserve future consequences after one particular project ends.
+:::
+::::
 
 ### Reciprocity needs a way to repair mistakes {#tit-for-tat-forgiveness-and-noise}
 

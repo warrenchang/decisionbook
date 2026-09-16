@@ -827,11 +827,30 @@ Table&nbsp;D.2: Claim families require different evidence
 <h2 data-anchor-id="design-the-comparison">Design the comparison</h2>
 <section id="make-the-counterfactual-and-confounding-visible" class="level3">
 <h3 data-anchor-id="make-the-counterfactual-and-confounding-visible">4. Make the counterfactual and confounding visible</h3>
+<p>An individual’s causal effect is the difference between what would happen to that person under treatment and what would happen under control in the same setting.</p>
+<p>Only one potential outcome is observed. The missing one is the <strong>counterfactual problem</strong>. A comparison group is useful when its average outcome represents what would have happened to the treated group without treatment. It cannot reveal each treated person’s individual effect.</p>
+<div id="math-potential-outcomes">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: potential outcomes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For person <span class="math inline">\(i\)</span>, let <span class="math inline">\(Y_i(1)\)</span> denote the outcome under treatment and <span class="math inline">\(Y_i(0)\)</span> the outcome under control. The individual causal effect is:</p>
 <p><span class="math display">\[
 Y_i(1)-Y_i(0).
 \]</span></p>
-<p>Only one potential outcome is observed. The missing one is the <strong>counterfactual problem</strong>. A comparison group is useful when its average outcome represents what would have happened to the treated group without treatment. It cannot reveal each treated person’s individual effect.</p>
+<p>Only one of these outcomes is observed for a person in the study; the other is counterfactual.</p>
+</div>
+</div>
+</div>
+</div>
 <p>Last year’s attendance does not supply that counterfactual for this year’s patients: the weather, patient mix, and appointment system may all have changed. A concurrent randomized comparison exposes both reminder groups to the same period. If allocation and follow-up preserve that comparison, the difference in their average attendance can estimate the reminder’s effect without attributing the common seasonal change to it (Duflo et al., 2007).</p>
 <p><strong>Confounding</strong> occurs when the treatment comparison also reflects other causes of the outcome. If staff send the new reminder only to patients who are easier to contact, contactability may help explain an attendance difference. Statistical adjustment addresses that problem only under assumptions about the measured causes, the model, and what remains unmeasured.</p>
 <p>Ask of every causal claim:</p>
@@ -1008,25 +1027,45 @@ Figure&nbsp;D.3: Three distinct problems in a randomized evaluation: treatment r
 </section>
 <section id="noncompliance-assignment-is-not-receipt" class="level4">
 <h4 data-anchor-id="noncompliance-assignment-is-not-receipt">Noncompliance: assignment is not receipt</h4>
-<p>Let <span class="math inline">\(Z\)</span> be assignment and <span class="math inline">\(D\)</span> treatment received.</p>
-<p>With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the <strong>intention-to-treat (ITT)</strong> effect is estimated by comparing outcomes in the assigned groups:</p>
-<p><span class="math display">\[
-ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
-\]</span></p>
+<p>With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the <strong>intention-to-treat (ITT)</strong> effect is estimated by comparing average outcomes in the assigned groups.</p>
 <p>ITT answers the effect of offering, assigning, or implementing the treatment under observed compliance. It preserves the randomized comparison and is often the policy-relevant estimand.</p>
 <p>The effect among those who actually received treatment is not obtained by simply comparing receivers with nonreceivers; receipt is selected. With binary assignment and treatment receipt, consistently defined treatment versions, and no interference between units, assignment can identify a <strong>local average treatment effect (LATE)</strong> for compliers. The standard interpretation also requires:</p>
 <ul>
 <li><strong>relevance:</strong> assignment changes treatment receipt;</li>
 <li><strong>independence:</strong> assignment is as good as random relative to potential outcomes and compliance types;</li>
 <li><strong>exclusion:</strong> assignment affects the outcome only through treatment receipt;</li>
-<li><strong>monotonicity:</strong> assignment never makes a unit less likely to receive treatment; in the binary potential-receipt model, <span class="math inline">\(D_i(1)\geq D_i(0)\)</span> for every unit.</li>
+<li><strong>monotonicity:</strong> assignment never makes a unit less likely to receive treatment.</li>
 </ul>
-<p>Then the Wald ratio is:</p>
+<p>Under these assumptions, divide the effect of assignment on the outcome by its effect on treatment receipt. This is the <strong>Wald ratio</strong>.</p>
+<p>LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.</p>
+<p><strong>Hypothetical calculation.</strong> Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is 12 percentage points: divide the 3-point employment increase by the 25-point increase in participation, expressing both as proportions. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.</p>
+<div id="math-itt-late">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: assignment, receipt, and the Wald ratio
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(Z\)</span> be assignment, <span class="math inline">\(D\)</span> treatment received, and <span class="math inline">\(Y\)</span> the outcome. The intention-to-treat contrast is</p>
+<p><span class="math display">\[
+ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
+\]</span></p>
+<p>Under the assignment, treatment-version, no-interference, relevance, independence, exclusion, and monotonicity assumptions stated above, the Wald ratio identifies the local average treatment effect for compliers:</p>
 <p><span class="math display">\[
 LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 \]</span></p>
-<p>LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.</p>
-<p><strong>Hypothetical calculation.</strong> Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is <span class="math inline">\(0.03/(0.45-0.20)=0.12\)</span>, or 12 percentage points. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.</p>
+<p>For binary potential receipt, monotonicity is <span class="math inline">\(D_i(1)\geq D_i(0)\)</span> for every unit. With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.</p>
+<p>The hypothetical invitation example gives <span class="math inline">\(0.03/(0.45-0.20)=0.12\)</span>, or 12 percentage points. If the invitation changes employment through a route other than participation, the exclusion restriction fails and this quotient loses its stated treatment-effect interpretation.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="spillovers-interference-and-displacement" class="level4">
 <h4 data-anchor-id="spillovers-interference-and-displacement">Spillovers, interference, and displacement</h4>
@@ -1364,6 +1403,19 @@ Table&nbsp;D.7: Planned design for the simulated reminder study
 </figure>
 </div>
 <p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.7</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
+<div id="math-reminder-simulation">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: reproducing the teaching estimate
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <pre class="python"><code>import math
 import random
 
@@ -1380,6 +1432,10 @@ se = math.sqrt(
     + p_treatment * (1 - p_treatment) / n_treatment
 )
 ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
+</div>
+</div>
+</div>
+</div>
 <p>The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is <strong>6.2 percentage points</strong>, with an approximate 95% confidence interval from <strong>0.8 to 11.5 percentage points</strong>.</p>
 <p><strong>Design-matched interpretation.</strong> The estimate concerns assignment to the reminder package in the simulated study population. It does not establish which feature of the message caused the difference or predict the effect in a real clinic. Those conclusions would require further comparisons and actual patient data.</p>
 <p><strong>Implementing the study in a clinic.</strong> Preserve records of eligibility, assignment, message delivery, outcome collection, and every protocol deviation, alongside the analysis code and access conditions. Use them to check recruitment, delivery, missing outcomes, and spillovers.</p>

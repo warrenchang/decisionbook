@@ -50,12 +50,6 @@ For the insurance team, this distinction changes what to investigate. Even a wel
 
 ## Expected value: the monetary benchmark
 
-For outcomes $x_1,\ldots,x_n$ with probabilities $p_1,\ldots,p_n$, expected monetary value is
-
-$$
-EV(X)=\sum_{i=1}^{n}p_i x_i.
-$$
-
 Expected value is a probability-weighted average, not the outcome most likely to occur and not a guarantee. A 1% chance of €10,000 and a 99% chance of zero has expected value €100, although €100 is never paid.
 
 Expected value is powerful when outcomes are repeatable, stakes are small relative to resources, and money is the relevant consequence. A casino can rely on a small expected advantage across millions of plays. One household facing one chance of ruin cannot automatically treat the same average as adequate.
@@ -63,7 +57,39 @@ Expected value is powerful when outcomes are repeatable, stakes are small relati
 The benchmark also exposes missing costs. A gamble that pays €100 with probability one-half and zero otherwise does not have expected **net** value €50 if entry costs €60. The expected net value is −€10.
 
 
+:::: {#math-expected-value}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: expected monetary value
+
+For outcomes $x_1,\ldots,x_n$ with probabilities $p_1,\ldots,p_n$, expected monetary value is
+
+$$
+EV(X)=\sum_{i=1}^{n}p_i x_i.
+$$
+
+Multiply each possible monetary outcome by its probability, then add the weighted outcomes. Subtract any entry cost to obtain expected net value.
+:::
+::::
+
 ## Expected utility: value over final consequences
+
+Expected utility theory weights the value of each final consequence by its probability. For monetary choices, that means considering how the outcome changes total wealth and what that wealth is worth to the person. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
+
+The independence axiom is central. If one lottery is preferred to another, mixing both with the same third lottery in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.
+
+### Curvature and attitudes toward a mean-preserving risk
+
+- A **linear** utility function implies risk neutrality: a sure amount and a lottery with that same average are equally attractive.
+- A **concave** utility function implies weak risk aversion: the sure average is at least as attractive as the lottery. Additional wealth brings smaller increments of utility.
+- A **convex** utility function implies weak risk seeking over that range: the lottery is at least as attractive as its sure average. Additional wealth brings larger increments of utility.
+
+The preferences become strict when the curve is strictly concave or convex over outcomes that genuinely vary.
+
+Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.
+
+:::: {#math-expected-utility}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: expected utility and curvature
 
 Expected utility theory evaluates a lottery over final wealth or consequences:
 
@@ -71,19 +97,27 @@ $$
 EU(X)=\sum_{i=1}^{n}p_i u(W+x_i),
 $$
 
-where $W$ is initial wealth and $u(\cdot)$ represents preferences over final wealth. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
+where $W$ is initial wealth and $u(\cdot)$ represents preferences over final wealth.
 
-The independence axiom is central. If lottery $A$ is preferred to lottery $B$, mixing both with the same third lottery $C$ in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.
+For final wealth $X$, the curvature comparison is
 
-### Curvature and attitudes toward a mean-preserving risk
+$$
+u(E[X])\geq E[u(X)]
+$$
 
-- A **linear** utility function implies risk neutrality: utility of the expected value equals expected utility.
-- A **concave** utility function implies weak risk aversion: $u(E[X])\geq E[u(X)]$. The inequality is strict for a nondegenerate lottery when utility is strictly concave over its outcomes.
-- A **convex** utility function implies weak risk seeking over that range: $u(E[X])\leq E[u(X)]$, with a strict inequality under the corresponding strict-convexity conditions.
-
-Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.
+under concavity, with the reverse inequality under convexity and equality under linearity. Strict concavity or convexity gives a strict comparison for a nondegenerate lottery over that range.
+:::
+::::
 
 ### Certainty equivalents and risk premia
+
+The **certainty-equivalent payoff** is the sure payoff that makes the person indifferent to the lottery. The **risk premium** is the gap between the lottery's expected payoff and that certainty equivalent.
+
+For illustration, treat the opening lottery's outcomes of 0 and 100 as final wealth, starting from zero. Under an illustrative square-root utility function, a sure final wealth of 25 is as attractive as this 50–50 lottery. Expected final wealth is 50, so the risk premium is 25. These values follow from the chosen utility function and starting resources.
+
+:::: {#math-certainty-equivalent}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: certainty equivalents and risk premia
 
 For payoff changes $x_i$ around initial wealth $W$, the **certainty-equivalent payoff** $c$ solves
 
@@ -104,10 +138,12 @@ EU=0.5\sqrt{0}+0.5\sqrt{100}=5.
 $$
 
 Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.
+:::
+::::
 
-@fig-risky-decision-map shows the first calculation: the lottery’s average utility lies below the utility of its average wealth.
+@fig-risky-decision-map shows the comparison: the lottery’s average utility lies below the utility of its average wealth.
 
-![A 50–50 lottery paying 0 or 100 has expected value 50. Under the illustrative utility function u(x)=square root of x, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and shows why the process should be assessed using information available before the outcome.](../figures/risky-decision-map.svg){#fig-risky-decision-map fig-alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win." width=100%}
+![A 50–50 lottery paying 0 or 100 has expected value 50. Under an illustrative square-root utility function, expected utility is 5, the certainty equivalent is 25, and the risk premium is 25. A companion panel separates known risk from ambiguous probabilities and shows why the process should be assessed using information available before the outcome.](../figures/risky-decision-map.svg){#fig-risky-decision-map fig-alt="Two-panel diagram. The left panel plots a concave square-root utility curve from wealth zero to one hundred, marks lottery outcomes zero and one hundred, shows expected value fifty, expected utility five, certainty equivalent twenty-five, and risk premium twenty-five. The right panel contrasts a transparent known-risk urn with an ambiguous urn, then shows a process arrow leading to multiple possible outcomes to emphasize that a good decision can lose and a poor decision can win." width=100%}
 
 If the outcomes are changes around wealth, then wealth must enter the calculation. With €10,000 in initial wealth and the same square-root utility, a 50–50 chance of gaining €0 or €100 has a certainty-equivalent payoff of about €49.94: its risk premium is only about €0.06. The same payoff lottery and utility function look very different when the starting resources change. [Prospect Theory](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd#chapter-17-start) asks what happens when people instead evaluate changes around a reference point.
 
@@ -128,17 +164,17 @@ Expected utility gives us a consistent way to compare risky options. The followi
 
 **Pair 1**
 
-- $A$: 1 for certain.
-- $B$: 89% chance of 1, 10% chance of 5, and 1% chance of 0.
+- A: 1 for certain.
+- B: 89% chance of 1, 10% chance of 5, and 1% chance of 0.
 
 **Pair 2**
 
-- $C$: 11% chance of 1 and 89% chance of 0.
-- $D$: 10% chance of 5 and 90% chance of 0.
+- C: 11% chance of 1 and 89% chance of 0.
+- D: 10% chance of 5 and 90% chance of 0.
 
-Many people prefer $A$ to $B$ but $D$ to $C$ (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.
+Many people prefer A to B but D to C (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.
 
-Under expected utility and independence, the pattern is inconsistent. If $A\succ B$, subtracting the common 89% chance of receiving 1 implies $C\succ D$. Choosing $A$ and $D$ gives special weight to the move from 99% to 100% or to the presentation of certainty.
+Under expected utility and independence, the pattern is inconsistent. If A is preferred to B, removing the common 89% chance of receiving 1 implies that C should be preferred to D. Choosing A and D gives special weight to the move from 99% to 100% or to the presentation of certainty.
 
 The Allais pattern identifies a violated axiom. Certainty, regret, misunderstanding, probability weighting, and response noise can contribute. Prospect theory offers one systematic account in the next chapter.
 
@@ -149,11 +185,11 @@ Certainty about an outcome is one issue; confidence in the probabilities is anot
 - exactly 30 are red;
 - the remaining 60 are black or yellow in an unknown proportion.
 
-First choose a bet that pays if **red** is drawn or a bet that pays if **black** is drawn. Many choose red because its probability is known to be $1/3$.
+First choose a bet that pays if **red** is drawn or a bet that pays if **black** is drawn. Many choose red because its probability is known to be one-third.
 
-Now choose a bet that pays if **red or yellow** is drawn or a bet that pays if **black or yellow** is drawn. Many choose black-or-yellow because its probability is known to be $2/3$.
+Now choose a bet that pays if **red or yellow** is drawn or a bet that pays if **black or yellow** is drawn. Many choose black-or-yellow because its probability is known to be two-thirds.
 
-Preferring red to black suggests $P(R)>P(B)$. Preferring black-or-yellow to red-or-yellow suggests $P(B)>P(R)$. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).
+If the choices reflected only a single probability judgment, preferring red to black would imply that red is more likely. Preferring black-or-yellow to red-or-yellow would imply the opposite: once the common yellow outcome is set aside, black would have to be more likely. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).
 
 This pattern is called **ambiguity aversion**. People may seek ambiguity when they feel competent, suspect favorable hidden information, enjoy exploration, or believe the known option was selected against them. Comparative ignorance matters: an ambiguous option can become less attractive when placed beside a transparent one. The practical response is to separate:
 
@@ -228,11 +264,7 @@ For the insurance decision, identify whose losses the policy covers and whose re
 
 ### Extension: one project or a portfolio?
 
-A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. One project has expected net value
-
-$$
-0.30(200{,}000)-40{,}000=20{,}000.
-$$
+A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. The probability-weighted return is €60,000 per project. Subtracting its €40,000 cost leaves an expected net value of €20,000.
 
 Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.
 
@@ -251,10 +283,10 @@ The insurance discussion ends with a more useful comparison: what the organizati
 
 ## Optional research and application notes
 
-::: {.callout-note icon=false collapse=true}
-## Application box: the single-period newsvendor
+::: {.callout-note .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the single-period newsvendor {#application-box-the-single-period-newsvendor}
 
-A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand $D$ is uncertain. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
+A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand D is uncertain. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
 
 $$
 C_u=p-c,
@@ -277,8 +309,8 @@ For discrete demand, choose the smallest quantity whose cumulative probability r
 Experiments often find **pull-to-center** ordering: too much relative to the optimum when the optimal fractile is low and too little when it is high. Schweitzer and Cachon's (2000) experiments were consistent with anchoring and insufficient adjustment or a preference to reduce ex post inventory error; their pattern did not uniquely support prospect theory. Demand chasing, asymmetric attention to leftover and missed-sales losses, misunderstanding, and loss aversion in other specifications remain candidate mechanisms.
 :::
 
-::: {.callout-note .research-lens icon=false collapse=true}
-## Optional theory lens: the St Petersburg puzzle
+::: {.callout-note .mathematical-analysis .research-lens icon=false collapse=true}
+## Mathematical analysis: the St Petersburg puzzle {#optional-theory-lens-the-st-petersburg-puzzle}
 
 Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
 
@@ -316,8 +348,8 @@ A safe choice might reflect concave utility, distrust of the probabilities, a li
 
 []{#multiplicative-risk}
 
-::: {.callout-note .research-lens icon=false collapse=true}
-## Research Lens: a positive arithmetic average can conceal multiplicative collapse
+::: {.callout-note .mathematical-analysis .research-lens icon=false collapse=true}
+## Mathematical analysis: a positive average can conceal multiplicative collapse {#research-lens-a-positive-arithmetic-average-can-conceal-multiplicative-collapse}
 
 Suppose a deliberately extreme gamble risks **all current wealth** in every round. It multiplies wealth by 1.8 with probability one half and by 0.4 with probability one half, independently across 52 rounds. The one-round arithmetic mean return is +10%, so expected terminal wealth from €10,000 is
 

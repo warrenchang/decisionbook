@@ -648,11 +648,8 @@ window.Quarto = {
 </section>
 <section id="the-benchmark-value-across-time" class="level2">
 <h2 data-anchor-id="the-benchmark-value-across-time">The benchmark: value across time</h2>
-<p>The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In a simple exponential form,</p>
-<p><span class="math display">\[
-U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 &lt; \delta \leq 1.
-\]</span></p>
-<p>Here, <span class="math inline">\(u(c_t)\)</span> is the utility of consumption or another outcome at time <span class="math inline">\(t\)</span>, and <span class="math inline">\(\delta\)</span> is the weight placed on each additional period of delay. With preferences and relevant circumstances held fixed, exponential discounting preserves the relative ranking of two future outcomes as time passes. If €120 in thirteen months is preferred to €100 in twelve months, moving both rewards eleven months closer should not reverse the preference.</p>
+<p>The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In its simple <strong>exponential</strong> form, each additional period of delay reduces the weight by the same proportion.</p>
+<p>With preferences and relevant circumstances held fixed, exponential discounting preserves the relative ranking of two future outcomes as time passes. If €120 in thirteen months is preferred to €100 in twelve months, moving both rewards eleven months closer should not reverse the preference.</p>
 <p>The benchmark is useful even when it is not descriptively accurate. It forces a decision-maker to state the outcome stream, time horizon, assumptions, and trade-off between present and future. It also separates two ideas that ordinary language blends:</p>
 <ul>
 <li><strong>Utility curvature:</strong> an additional €100 may matter less to a wealthy person than to someone who cannot pay rent.</li>
@@ -671,7 +668,7 @@ U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 &lt; \delta \leq 1.
 <img src="../figures/discount-model-crossover.svg" class="img-fluid figure-img" style="width:100.0%" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discount-model-crossover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.1: Three discount functions illustrate different implications: exponential <span class="math inline">\(D(t)=0.95^t\)</span>, hyperbolic <span class="math inline">\(D(t)=1/(1+0.15t)\)</span>, and quasi-hyperbolic <span class="math inline">\(D(0)=1\)</span> and <span class="math inline">\(D(t&gt;0)=0.70(0.95^t)\)</span>. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.
+Figure&nbsp;20.1: Three discount models illustrate different implications. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. The optional analysis specifies the plotted functions and parameters.
 </figcaption>
 </figure>
 </div>
@@ -681,6 +678,30 @@ Figure&nbsp;20.1: Three discount functions illustrate different implications: ex
 <li><strong>premature indulgence:</strong> an action has an immediate reward and delayed cost, so the person repeatedly brings it forward.</li>
 </ul>
 <p>The manager’s postponed conversation contains both sides: delaying avoids discomfort now while moving the unresolved problem into the future.</p>
+<div id="math-discount-models">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: discounted utility and the plotted models
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The discounted-utility model represents a stream of outcomes by reducing the present weight of outcomes that arrive later (Samuelson, 1937). In a simple exponential form,</p>
+<p><span class="math display">\[
+U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 &lt; \delta \leq 1.
+\]</span></p>
+<p>Here, <span class="math inline">\(u(c_t)\)</span> is the utility of consumption or another outcome at time <span class="math inline">\(t\)</span>, and <span class="math inline">\(\delta\)</span> is the weight placed on each additional period of delay.</p>
+<p>Three discount functions illustrate different implications: exponential <span class="math inline">\(D(t)=0.95^t\)</span>, hyperbolic <span class="math inline">\(D(t)=1/(1+0.15t)\)</span>, and quasi-hyperbolic <span class="math inline">\(D(0)=1\)</span> and <span class="math inline">\(D(t&gt;0)=0.70(0.95^t)\)</span>. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.</p>
+<p>These are illustrative functions. Their parameters describe the plotted comparison rather than estimates for a particular person.</p>
+</div>
+</div>
+</div>
+</div>
 <p>A person can also differ in awareness. A <strong>sophisticated</strong> present-biased chooser anticipates future reversal and seeks a commitment device. A <strong>naïve</strong> chooser expects future intentions to survive unchanged. A partly sophisticated chooser knows there is a problem but underestimates its size.</p>
 <p>Commitment devices alter future options or make deviation costly before the tempting state arrives. A voluntary deposit contract is one example; its benefits and limits are examined below.</p>
 </section>
@@ -909,7 +930,7 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 <p>Hershfield and colleagues (2011) tested age-progressed images of participants. In their first study, people shown an older version of their own avatar allocated an average $172 of a hypothetical $1,000 windfall to retirement, compared with $80 among those shown their current avatar. A practical application still needs a feasible action and a way to measure whether people carry it out.</p>
 <div id="research-lens-a-future-reward-can-motivate-now">
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -918,7 +939,7 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Reward-related brain activity is not reserved for immediate gratification. Kable and Glimcher (2007) found that activity in the ventral striatum, medial prefrontal cortex, and posterior cingulate tracked the subjective value of delayed monetary rewards. These fMRI findings challenge a strict division between an impulsive reward system and a patient frontal system; they do not directly measure dopamine or identify a single source of willpower.</p>
 <p><a href="../chapters/21-habits-wanting-and-self-control.html#dopamine-anticipation-and-effort">Chapter 21</a> distinguishes anticipating a reward, working to obtain it, and enjoying it. For a delayed goal, the practical task includes making the future benefit meaningful enough to pursue and the present effort feasible.</p>
@@ -1023,17 +1044,17 @@ Table&nbsp;20.4: A three-part time-stream prompt
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
 <p>For the manager, “have the conversation” becomes an appointment, an opening sentence, and a specific observation to discuss. Preparing them on Friday reduces what must be worked out at the uncomfortable moment on Monday. Afterward, the manager can review how the conversation went and what preparation would help next time.</p>
 <p>A plan can also lose out without a fresh comparison of now and later. Checking a phone or opening an inbox may begin because a familiar setting brings that action to mind. <a href="../chapters/21-habits-wanting-and-self-control.html#habits-wanting-and-self-control">Habits, Wanting, and Self-Control</a> examines how a repeated response can become easier to start even when it no longer serves the goal.</p>
-<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Interest compounds; discounting runs the calculation backward
+<span class="screen-reader-only">Note</span>Mathematical analysis: interest and discounting
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Financial interest transfers purchasing power across time. If a principal <span class="math inline">\(P\)</span> earns a per-period interest rate <span class="math inline">\(r\)</span> for <span class="math inline">\(n\)</span> periods, its future value is</p>
 <p><span class="math display">\[

@@ -70,11 +70,7 @@ Wulff, Mergenthaler-Canseco, and Hertwig's (2018) meta-analysis found a robust a
 
 ### Prospect theory does not absorb the experience problem
 
-Prospect theory begins with represented outcomes and probabilities, then explains how reference dependence, diminishing sensitivity, loss aversion, and probability weighting shape valuation. A decision-from-experience task adds an upstream stage:
-
-$$
-\text{environment} \rightarrow \text{sampled path} \rightarrow \text{learned representation} \rightarrow \text{valuation} \rightarrow \text{choice}.
-$$
+Prospect theory begins with represented outcomes and probabilities, then explains how reference dependence, diminishing sensitivity, loss aversion, and probability weighting shape valuation. A decision-from-experience task adds an upstream stage: the path sampled from the environment shapes what the person learns, which then informs valuation and choice.
 
 The chooser helps create this evidence by deciding where to look, how long to sample, whether to stop after a striking result, and which feedback to revisit. Two people can therefore apply the same valuation process to different learned representations of the same environment.
 
@@ -86,11 +82,25 @@ That distinction prevents a common conceptual mistake. Underweighting a rare eve
 
 In Hertwig and colleagues’ (2004) experiment, participants made a median of only fifteen draws per problem across the two options before choosing. A sample of that size can easily omit a 1% or 5% event. It can also overrepresent it. Sampling error therefore creates heterogeneity across learners before psychological weighting begins.
 
-![The probability that an independently occurring rare event is entirely absent from an experience sample is $(1-p)^n$. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time. The highlighted band shows a small sample of 11–19 observations for comparison.](../figures/experience-rare-event-sampling.svg){#fig-experience-rare-event-sampling fig-alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. A side panel reports that at fifteen observations a one-percent event is absent with probability eighty-six percent and a five-percent event is absent with probability forty-six percent." width=100%}
+![An independently occurring rare event can remain absent from a small experience sample. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time. The highlighted band shows a small sample of 11–19 observations for comparison.](../figures/experience-rare-event-sampling.svg){#fig-experience-rare-event-sampling fig-alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. A side panel reports that at fifteen observations a one-percent event is absent with probability eighty-six percent and a five-percent event is absent with probability forty-six percent." width=100%}
 
 The slowly falling one-percent curve in @fig-experience-rare-event-sampling shows why an uneventful sample can coexist with a real rare-event risk. The following sections examine how selective exposure, stopping, and memory shape the experienced record.
 
 Larger forced samples reduce this source of the gap, but do not always eliminate the gap (Hau et al., 2008, 2010; Wulff et al., 2018). That residual matters. If exposure were the entire explanation, choices should converge once experienced frequencies are controlled. Remaining differences direct attention to memory, recency, learning, format, and choice rules.
+
+:::: {#math-unseen-rare-events}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the chance of never encountering a rare event
+
+If an event occurs independently with probability $p$ on each observation, its chance of being absent from all $n$ observations is
+
+$$
+P(\text{unseen in }n\text{ observations})=(1-p)^n.
+$$
+
+With fifteen observations, $(1-0.01)^{15}\approx0.86$ for a 1% event and $(1-0.05)^{15}\approx0.46$ for a 5% event. These calculations assume independent observations with the same event probability, and do not model selective stopping or memory.
+:::
+::::
 
 ### Stopping is part of the evidence
 

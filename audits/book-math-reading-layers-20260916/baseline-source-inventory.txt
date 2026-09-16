@@ -1,0 +1,399 @@
+chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd
+116 [MAIN] Research on opportunity-cost neglect shows that people do not always generate the displaced alternative spontaneously. Frederick et al. (2009) demonstrated this with a minimal change in how a hypothetical purchase was described. One hundred and fifty students imagined deciding whether to buy a desirable DVD for $14.99. When the alternative was simply “not buy,” 75% chose the DVD. When that same alternative added the reminder “Keep the $14.99 for other purchases,” the purchase rate fell to 55%. The objective options had not changed; the reminder made an otherwise implicit use of the money easier to represent.
+
+chapters/03-attention-what-becomes-evidence.qmd
+87 [BOX] Zheng and Meister (2025) compare estimates of sensory acquisition on the order of $10^9$ bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. The contrast in @fig-attention-bottleneck raises a question about how rich sensory signals support much slower observable responses.[^ch03-information-rates]
+
+chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd
+72 [MAIN] After an hour of repetitive tasks, including turning pegs, participants in Festinger and Carlsmith's (1959) experiment were asked to tell a waiting person that the work was enjoyable. Some received **$1** for the endorsement, others **$20**. Asked later to rate how enjoyable the tasks actually were, the $1 group gave the more favorable answer: an average of **1.35**, compared with **−0.05** in the $20 group, on a scale from −5 to +5. A control group that made no endorsement rated the tasks **−0.45**. Each analyzed group contained twenty participants.[^ch07-forced-compliance-sample]
+74 [MAIN] The smaller payment accompanied the larger attitude shift. Dissonance theory interprets the result as coherence repair: $20 supplies an external explanation for praising dull work, while $1 leaves more tension between the endorsement and the experience. One way to resolve that tension is to judge the work more favorably.
+
+chapters/08-fast-and-frugal-thinking.qmd
+16 [MAIN] A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?
+33 [MAIN] If the ball cost 10 cents, the bat would cost $1.10 and the total would be $1.20. The correct prices are 5 cents and $1.05. The tempting answer uses the numbers fluently while failing to preserve the stated difference.
+
+chapters/11-when-context-rewrites-comparison.qmd
+79 [MAIN] Ariely (2008) reported a classroom demonstration using a subscription menu displayed on *Economist.com*. One group of 100 participants saw three options: web only for US$59, print only for US$125, and print plus web for US$125. Sixteen chose web only, nobody chose print only, and 84 chose print plus web. A different group of 100 saw the same menu without the print-only option. This time, 68 chose web only and 32 chose print plus web. The option nobody selected therefore changed the distribution of choices between the two remaining options.
+
+chapters/14-base-rates-conditional-probability-and-bayesian-updating.qmd
+44 [MAIN] Under those assumptions, $P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40$. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.
+52 [MAIN] A **sample space** $\Omega$ lists the elementary outcomes allowed by a model. An **event** $A$ is a subset of those outcomes. A probability measure assigns numbers satisfying
+54 [MAIN] $$
+56 [MAIN] $$
+62 [MAIN] If $A^c$ means “not $A$,” then
+64 [MAIN] $$
+66 [MAIN] $$
+72 [MAIN] For events $A$ and $B$,
+74 [MAIN] $$
+76 [MAIN] $$
+78 [MAIN] If the events are independent, $P(B\mid A)=P(B)$. Independence is not the same as mutual exclusivity. Rain and traffic delay can occur together and may be dependent. Two cards drawn without replacement are dependent because the first draw changes the deck.
+82 [MAIN] For “$A$ or $B$ or both,”
+84 [MAIN] $$
+86 [MAIN] $$
+92 [MAIN] Provided $P(B)>0$,
+94 [MAIN] $$
+96 [MAIN] $$
+98 [MAIN] In the hiring example, $P(\text{positive screen}\mid\text{strong performance})$ asks what share of strong performers pass. The committee instead needs $P(\text{strong performance}\mid\text{positive screen})$, the share of those who pass who are strong performers. Everything after the vertical bar specifies the group we are counting within.
+108 [MAIN] If $A$ and $A^c$ partition the cases, total probability rebuilds the denominator:
+110 [MAIN] $$
+112 [MAIN] $$
+116 [MAIN] $$
+120 [MAIN] $$
+122 [MAIN] The **prior** $P(A)$ gives the starting probability, which is a prevalence in this screening example. The **likelihood** $P(B\mid A)$ asks how probable the evidence would be if $A$ held. The competing likelihood $P(B\mid A^c)$ asks how often the same evidence appears without $A$. The **posterior** is the probability after incorporating the evidence (Bayes, 1763).
+131 [MAIN] For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that is $P(+\mid D)$ rather than $P(D\mid +)$.
+141 [MAIN] $$
+143 [MAIN] $$
+164 [BOX] $$
+166 [BOX] $$
+
+chapters/15-samples-randomness-regression-and-calibration.qmd
+42 [MAIN] $$
+44 [MAIN] $$
+48 [MAIN] The distinction also explains why “three heads and three tails in any order” is more likely than “all heads or all tails.” The first category contains $\binom{6}{3}=20$ exact sequences; the second contains two. Each exact outcome remains equally likely. Categories differ because they collect different numbers of outcomes.
+56 [MAIN] For an independent Bernoulli event with probability $p$, the standard error of the sample proportion is
+58 [MAIN] $$
+60 [MAIN] $$
+62 [MAIN] When $p=0.5$, the standard error is about 0.158 for $n=10$ and 0.050 for $n=100$. The population did not become steadier; the estimate did. Small samples produce more extreme proportions because each observation carries more weight.
+97 [MAIN] $$
+99 [MAIN] $$
+101 [MAIN] where $\theta$ is a persistent component and $\varepsilon$ is temporary noise. Selecting an unusually high $Y$ selects cases with high persistent ability, favorable noise, or both. When the next noise term is less extreme, performance tends to move toward average even if the underlying ability does not change.
+103 [MAIN] For two standardized measures with correlation $r$, a simple linear prediction is
+105 [MAIN] $$
+107 [MAIN] $$
+109 [MAIN] If a measure two standard deviations above average has test–retest correlation $r=0.40$, the best linear prediction under that model is 0.8 standard deviations above average. The predicted person remains above average; the extreme observation is shrunk because part of it was unreliable.
+115 [MAIN] ![A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim N(0,1)$ and $z_2=0.40z_1+\sqrt{0.84}\varepsilon$ (seed 50273; displayed sample $r\approx0.40$). The model's conditional mean is $E[z_2\mid z_1]=0.40z_1$: $z_1=+2$ predicts $z_2=+0.8$.](../figures/regression-conditional-shrinkage.svg){#fig-regression-conditional-shrinkage fig-alt="A fixed-seed simulation of 50 standardized measurement pairs has an approximately 0.40 sample correlation under a declared normal data-generating process. The conditional prediction line is flatter than the no-noise identity line. Guides show that an initial value two standard deviations above average predicts a second value 0.8 standard deviations above average." width=100%}
+178 [BOX] In Monty Hall, seeing two unopened doors can make staying and switching look equally promising. Yet the host’s rule for revealing a goat determines what the reveal tells us: similar-looking endings can carry different evidence. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Following the unchosen-door branch in @fig-monty-hall-protocol shows why switching wins with probability $2/3$, compared with $1/3$ for staying (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: **How was this information generated?**
+191 [MAIN] For a binary event with forecast $p$ and outcome $o\in\{0,1\}$, the Brier score is
+193 [MAIN] $$
+195 [MAIN] $$
+222 [MAIN] $$
+224 [MAIN] $$
+
+chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.qmd
+53 [MAIN] For outcomes $x_1,\ldots,x_n$ with probabilities $p_1,\ldots,p_n$, expected monetary value is
+55 [MAIN] $$
+57 [MAIN] $$
+70 [MAIN] $$
+72 [MAIN] $$
+74 [MAIN] where $W$ is initial wealth and $u(\cdot)$ represents preferences over final wealth. The theory does not say that people consciously calculate a utility function. It states conditions under which consistent choices can be represented *as if* they maximize expected utility (von Neumann & Morgenstern, 1944).
+76 [MAIN] The independence axiom is central. If lottery $A$ is preferred to lottery $B$, mixing both with the same third lottery $C$ in the same proportion should preserve the ranking. Common components should cancel. The Allais pattern below shows why this attractive requirement is descriptively fragile.
+81 [MAIN] - A **concave** utility function implies weak risk aversion: $u(E[X])\geq E[u(X)]$. The inequality is strict for a nondegenerate lottery when utility is strictly concave over its outcomes.
+82 [MAIN] - A **convex** utility function implies weak risk seeking over that range: $u(E[X])\leq E[u(X)]$, with a strict inequality under the corresponding strict-convexity conditions.
+88 [MAIN] For payoff changes $x_i$ around initial wealth $W$, the **certainty-equivalent payoff** $c$ solves
+90 [MAIN] $$
+92 [MAIN] $$
+96 [MAIN] $$
+98 [MAIN] $$
+100 [MAIN] For the compact opening example, normalize initial wealth to zero and treat 0 and 100 as **final-wealth outcomes**. Let $u(w)=\sqrt{w}$. Then
+102 [MAIN] $$
+104 [MAIN] $$
+106 [MAIN] Because $\sqrt{25}=5$, the certainty-equivalent final wealth is 25. Expected final wealth is 50, so the risk premium is 25. Under this utility function and normalization, the decision-maker is indifferent between the lottery and final wealth of 25 for certain.
+131 [MAIN] - $A$: 1 for certain.
+132 [MAIN] - $B$: 89% chance of 1, 10% chance of 5, and 1% chance of 0.
+136 [MAIN] - $C$: 11% chance of 1 and 89% chance of 0.
+137 [MAIN] - $D$: 10% chance of 5 and 90% chance of 0.
+139 [MAIN] Many people prefer $A$ to $B$ but $D$ to $C$ (Allais, 1953). In Pair 1, certainty is attractive. In Pair 2, neither option is certain, so the larger prize becomes attractive.
+141 [MAIN] Under expected utility and independence, the pattern is inconsistent. If $A\succ B$, subtracting the common 89% chance of receiving 1 implies $C\succ D$. Choosing $A$ and $D$ gives special weight to the move from 99% to 100% or to the presentation of certainty.
+152 [MAIN] First choose a bet that pays if **red** is drawn or a bet that pays if **black** is drawn. Many choose red because its probability is known to be $1/3$.
+154 [MAIN] Now choose a bet that pays if **red or yellow** is drawn or a bet that pays if **black or yellow** is drawn. Many choose black-or-yellow because its probability is known to be $2/3$.
+156 [MAIN] Preferring red to black suggests $P(R)>P(B)$. Preferring black-or-yellow to red-or-yellow suggests $P(B)>P(R)$. No single additive subjective probability can support both comparisons when the payoff is otherwise identical (Ellsberg, 1961).
+233 [MAIN] $$
+235 [MAIN] $$
+257 [BOX] A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand $D$ is uncertain. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
+259 [BOX] $$
+261 [BOX] $$
+265 [BOX] $$
+267 [BOX] $$
+269 [BOX] For risk-neutral expected-profit maximization with a known continuous demand distribution $F$, the optimal order satisfies the critical-fractile rule
+271 [BOX] $$
+273 [BOX] $$
+283 [BOX] Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss $n$, the game pays $2^n$ monetary units. The probability of that outcome is $2^{-n}$. Its expected monetary value is
+285 [BOX] $$
+289 [BOX] $$
+324 [BOX] $$
+328 [BOX] $$
+332 [BOX] $$
+336 [BOX] $$
+338 [BOX] The expected terminal value is pulled upward by rare paths with many gains, while the median or typical compounded outcome nearly exhausts the initial wealth; the geometric mean return per round is $\sqrt{0.72}-1\approx-15.1\%$. Drawdown is different again because it depends on the order of gains and losses. Literal ruin has probability zero in this toy model because neither multiplier is zero, but the probability of crossing a practical solvency threshold can be high and must be defined explicitly. Arithmetic return, expected wealth, median compounded wealth, drawdown, and ruin are therefore different risk questions.
+
+chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd
+36 [MAIN] $$
+38 [MAIN] $$
+54 [MAIN] Let $r$ be a reference point and $x$ an outcome. Prospect value depends on $x-r$, not only $x$. The same salary can feel like a gain relative to last year's pay, a loss relative to an expected promotion, and an insult relative to a colleague's salary.
+66 [MAIN] $$
+73 [MAIN] $$
+75 [MAIN] with $0<\alpha,\beta\le 1$ and often $\lambda>1$.
+79 [MAIN] - **Reference dependence:** $z=0$ is the reference point.
+80 [MAIN] - **Diminishing sensitivity:** with $\alpha,\beta<1$, the move from 0 to 100 changes value more than the move from 1,000 to 1,100.
+81 [MAIN] - **Loss aversion:** when $\alpha=\beta$, $\lambda>1$ makes a loss carry more value impact than an equally sized gain. If the exponents differ, that comparison also depends on the amount; $\lambda$ alone no longer settles it.
+85 [MAIN] Tversky and Kahneman (1992) fitted the model to monetary choices from 25 graduate students at Berkeley and Stanford. The median individual estimates were $\alpha=\beta=0.88$ and $\lambda=2.25$. These values are useful for illustrating the model; their small, specific sample does not make them universal constants.
+91 [MAIN] $$
+95 [MAIN] $$
+97 [MAIN] For commonly fitted parameter values below one, the curve is inverse-S shaped: small probabilities receive disproportionately high weight, while moderate and high probabilities receive lower weight than their numerical size would suggest. Tversky and Kahneman (1992) estimated separate weighting parameters of $\gamma=0.61$ for gains and $\delta=0.69$ for losses in their fitted model. The formula requires a parameter range that keeps it increasing: very low positive values can make it nonmonotonic and yield invalid negative cumulative decision weights (Ingersoll, 2008).
+101 [MAIN] For prospects with several outcomes, cumulative prospect theory does not simply multiply each outcome by $w(p_i)$. Outcomes are ranked, cumulative probabilities are transformed, and decision weights are differences between those transformed cumulative probabilities. With increasing value and weighting functions, this construction respects first-order stochastic dominance: improving an outcome without worsening any other should not make the prospect less attractive.
+131 [MAIN] To see both model components at work, take the gain parameters just introduced: $\alpha=0.88$ and $\gamma=0.61$. Assume a reference point of zero and no ticket price. Because the alternative outcome is zero, the cumulative-prospect calculation reduces to
+133 [MAIN] $$
+136 [MAIN] $$
+138 [MAIN] A certain €100 has value $100^{0.88}\approx57.5$. Under these illustrative assumptions, the lottery therefore receives more value than its expected monetary amount. Its **certainty equivalent** solves $c^{0.88}=183.0$, giving approximately **€372**.
+156 [MAIN] The familiar statement “losses loom about twice as large as gains” turns a model estimate into a law. Estimated $\lambda$ depends on the assumed reference point, outcome range, weighting and value functions, response noise, and institutional setting. It can also change when the task involves certain exchanges rather than risky choices.
+202 [BOX] Loss aversion offers one explanation: giving up an owned mug is coded as a loss. But a willingness-to-accept/willingness-to-pay gap can also reflect transaction costs, income effects, misunderstanding, strategic answers, attachment, or different information and attention among buyers and sellers. The gap is not a direct measure of $\lambda$.
+
+chapters/18-decisions-from-experience-when-rare-events-are-not-encountered.qmd
+75 [MAIN] $$
+77 [MAIN] $$
+89 [MAIN] ![The probability that an independently occurring rare event is entirely absent from an experience sample is $(1-p)^n$. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time. The highlighted band shows a small sample of 11–19 observations for comparison.](../figures/experience-rare-event-sampling.svg){#fig-experience-rare-event-sampling fig-alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. A side panel reports that at fifteen observations a one-percent event is absent with probability eighty-six percent and a five-percent event is absent with probability forty-six percent." width=100%}
+
+chapters/20-mental-accounting-money-is-fungible-minds-label-it.qmd
+25 [MAIN] The example adapts Tversky and Kahneman’s (1981) calculator-and-jacket problem. Respondents imagined buying both items, with a combined price of $140. A twenty-minute drive would save $5 on the calculator: **68%** would make the trip when its price fell from $15 to $10, compared with **29%** when it fell from $125 to $120. The jacket’s price changed in the opposite direction, keeping the original total constant. These were hypothetical choices by separate groups of 93 and 88 respondents, respectively.
+98 [MAIN] But a notional budget can become nonfungible. Someone may reject a worthwhile theatre ticket because the entertainment budget was used on a sports event, yet buy it after an equally costly medical expense or after receiving the sports ticket as a gift. Heath and Soll (1996) used such comparisons to show category-sensitive spending. @tbl-mental-budgets reports the study's **$50 prior-expense condition**. Each entry is the percentage showing the predicted “no after a prior purchase, yes after receiving that item as a gift, yes after an unrelated expense” pattern, averaged across four unrelated-expense controls.
+111 [MAIN] : Percentage underconsumption patterns in the $50 prior-expense condition, averaged across four unrelated-expense controls. Reconstructed from Heath and Soll (1996).[^ch20-budget-denominator] {#tbl-mental-budgets}
+222 [MAIN] [^ch20-budget-denominator]: The $50 condition had 33 respondents and up to 132 respondent-by-control comparisons per cell. Each entry averages the predicted underconsumption pattern across four unrelated-expense controls, rather than giving a simple percentage of unique respondents.
+
+chapters/19-intertemporal-decision-making-why-later-loses-to-now.qmd
+38 [MAIN] $$
+40 [MAIN] $$
+42 [MAIN] Here, $u(c_t)$ is the utility of consumption or another outcome at time $t$, and $\delta$ is the weight placed on each additional period of delay. With preferences and relevant circumstances held fixed, exponential discounting preserves the relative ranking of two future outcomes as time passes. If €120 in thirteen months is preferred to €100 in twelve months, moving both rewards eleven months closer should not reverse the preference.
+57 [MAIN] ![Three discount functions illustrate different implications: exponential $D(t)=0.95^t$, hyperbolic $D(t)=1/(1+0.15t)$, and quasi-hyperbolic $D(0)=1$ and $D(t>0)=0.70(0.95^t)$. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.](../figures/discount-model-crossover.svg){#fig-discount-model-crossover fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate. A note says the exponential example remains time consistent." width=100%}
+251 [BOX] Financial interest transfers purchasing power across time. If a principal $P$ earns a per-period interest rate $r$ for $n$ periods, its future value is
+253 [BOX] $$
+255 [BOX] $$
+257 [BOX] At 5% annual interest, €1,000 becomes €1,050 after one year, about €1,276 after five years, €1,629 after ten years, and €11,467 after fifty years. Compounding becomes powerful because each year's return also earns later returns. The approximate **rule of 72** says that an amount doubles after about $72/r$ years when $r$ is expressed as a percentage.
+261 [BOX] $$
+263 [BOX] $$
+
+chapters/21-habits-wanting-and-self-control.qmd
+270 [BOX] **The human comparison also has a boundary.** Shen, Fishbach, and Hsee (2015) found that uncertainty could increase investment in reward pursuit. In one study, more participants completed a task for a coin toss between $1 and $2 than for a certain $2, conditional on completion. Their auction experiments showed that focusing on the pursuit process could favor uncertain rewards, whereas focusing on the outcome favored certainty. Reported excitement and interest supported an account based on enjoying the pursuit. This was uncertainty about reward size, not a 50% chance of receiving nothing, and dopamine was not measured.
+
+chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.qmd
+145 [MAIN] Kahneman and Deaton (2010), analyzing more than 450,000 US survey responses, found that life evaluation rose with log household income while their measures of emotional well-being flattened around an income category centered near US$75,000 in 2008–2009 dollars. Killingsworth (2021), using repeated experience-sampling reports from employed US adults, found experienced well-being rising beyond that level. An adversarial collaboration reanalyzed the apparent conflict. It found flattening at higher incomes mainly among the least happy part of the distribution, while experienced well-being continued to rise among happier groups (Killingsworth et al., 2023).
+147 [MAIN] ![Schematic curves summarize three analyses of income and subjective well-being; they are not fitted estimates. The 2010 study found rising life evaluation and apparent flattening of emotional well-being near a US income category around $75,000; the 2021 study found experienced well-being continuing to rise beyond that level; and the 2023 adversarial collaboration found flattening mainly among the least happy part of the distribution.](../figures/income-wellbeing-evidence-synthesis.svg){#fig-income-wellbeing-evidence-synthesis fig-alt="Three schematic panels summarize studies from 2010, 2021, and 2023. The first shows life evaluation rising and affect flattening, the second shows experienced well-being rising with log income, and the third separates a flatter line for the least happy group from a rising line for happier groups." width=100%}
+232 [MAIN] Bennedsen, M. (2024). Income and emotional well-being: Evidence for well-being plateauing around $200,000 per year. *Economics Letters, 238*, 111730. https://doi.org/10.1016/j.econlet.2024.111730
+268 [MAIN] Killingsworth, M. A. (2021). Experienced well-being rises with income, even above $75,000 per year. *Proceedings of the National Academy of Sciences, 118*(4), e2016976118.
+
+chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd
+52 [MAIN] If your reward is 15 units, its expected value from selecting face $j$ is
+54 [MAIN] $$
+56 [MAIN] $$
+149 [BOX] In cognitive hierarchy, a step-$k$ thinker best responds to a distribution of steps $0$ through $k-1$. Camerer, Ho, and Chong (2004) model the population frequency of step $h$ with a Poisson distribution,
+151 [BOX] $$
+153 [BOX] $$
+155 [BOX] and renormalize the distribution over the lower steps the player believes exist. The parameter $\tau$ controls the average number of steps. The authors report that a value around 1.5 fits behavior across many games, although fitted values differ by task and participant pool.
+157 [BOX] @tbl-beauty-contest-groups reproduces selected guessing-game results from their Table II. The sample sizes count participants across the reported groups; they are not necessarily the number playing together in one group. The fitted $\tau$ values in this table were chosen to match the observed mean, so matching those means is not an independent prediction test.
+159 [BOX] | Participant pool | Sample size | Mean choice | Modal choice | Fitted $\tau$ |
+173 [BOX] The zero endpoint in the guessing game can also be approached through iterated elimination of weakly dominated high choices. The target cannot exceed $66\frac{2}{3}$; after excluding choices above that bound, the next upper bound is $44\frac{4}{9}$, then $29\frac{17}{27}$, and so on toward zero (Nagel, 1995). A weakly dominated choice never yields more than an alternative against the others' possible choices and yields less in at least some cases. This is a stronger assumption about what players rule out than simply saying that they want to win. [Chapter 24](24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.qmd#chapter-24-start) develops the comparison of strategies.
+
+chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.qmd
+66 [MAIN] Of course, you cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Your expected payoff from choosing it is $0.70\times50=35$, compared with $0.30\times50=15$ for the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs. The calculation identifies what follows from the belief; it does not establish that the 70% estimate is accurate.
+147 [MAIN] Crawford, Gneezy, and Rottenstreich (2008) studied matching games in which two players independently chose X or Y and earned nothing if they failed to match. With matching payoffs of $5 each, the observed choice frequencies implied a 64% coordination rate. In another condition, matching on X paid $5 to one player and $5.10 to the other, while matching on Y reversed those payoffs. The implied coordination rate fell to 38%.[^ch24-coordination-rate]
+149 [MAIN] Only ten cents separated the preferred coordinated outcomes, while a mismatch cost each player at least $5. Nevertheless, a shared label became less effective when payoffs pulled expectations in different directions. The finding does not establish that everyone simply pursued the extra ten cents; people also had to anticipate what the difference would mean to their partner.
+167 [MAIN] How much confidence is enough? Suppose the displayed numbers are utility payoffs and Player 1 assigns probability $p$ to Player 2 choosing Stag. The expected payoff from Stag is
+169 [MAIN] $$
+171 [MAIN] $$
+175 [MAIN] $$
+177 [MAIN] $$
+
+chapters/25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd
+63 [MAIN] Consider an indefinitely repeated version of the opening game. Under a **grim-trigger strategy**, each player cooperates until someone defects, then defects forever. Let $T$ be the temptation payoff from defecting against a cooperator, $R$ the reward from mutual cooperation, and $P$ the payoff from mutual defection. The continuation weight $\delta$, between 0 and 1, captures how strongly the next round counts, allowing for both the chance of another encounter and discounting of future payoffs.
+67 [MAIN] $$
+69 [MAIN] $$
+73 [MAIN] $$
+75 [MAIN] $$
+79 [MAIN] $$
+83 [MAIN] $$
+85 [MAIN] With $T=6$, $R=4$, and $P=2$, the threshold is $\delta\geq0.5$. At $\delta=0.5$, continued cooperation is worth $4/(1-0.5)=8$; defecting is worth $6+0.5\times2/(1-0.5)=8$ as well. At $\delta=0.75$, cooperation is worth 16 and defection followed by punishment only 12. The current gain of 2 is outweighed by the loss of future cooperation.
+125 [MAIN] Van den Assem, van Dolder, and Thaler (2012) report stakes averaging more than $20,000. Many contestants chose Split even though Steal weakly dominated it in immediate monetary payoffs: Steal did better against Split and equally well against Steal. The authors find evidence consistent with reciprocal preferences from earlier interaction, little support in their sample for conditional cooperation based on an opponent's expected action, and an age-dependent gender pattern.
+366 [BOX] $$
+368 [BOX] $$
+370 [BOX] with the standard restrictions $\alpha_i\geq\beta_i$ and $0\leq\beta_i<1$. The first penalty represents disadvantageous inequality; the second represents advantageous inequality. Because disadvantageous inequality can hurt more, a responder may reject a low ultimatum offer, while a proposer may share even when rejection is impossible.
+408 [BOX] $$
+410 [BOX] $$
+412 [BOX] where $\pi(a_k)$ is the material payoff and $N(a_k)$ is the perceived appropriateness of action $a_k$. The weight $\gamma$, the reference group, and the norm score must be measured.
+432 [BOX] Kahneman, Knetsch, and Thaler (1986) asked separate samples of respondents to judge market practices. @fig-fairness-entitlements-redraw shows four selected historical vignettes. The car questions hold the size of the price increase at $200 but vary its relation to list price: one adds a surcharge above list, while the other removes a discount below list.[^ch25-fairness-vignettes]
+434 [BOX] ![Four selected fairness judgments from Kahneman, Knetsch, and Thaler (1986), redrawn from the reported values. A post-storm snow-shovel increase was rated unfair or very unfair by 82% of respondents, and a lettuce wholesale-cost pass-through was rated unfair by 21%. Charging $200 above a scarce car's list price was rated unfair by 71%, compared with 42% for withdrawing a $200 discount. The rows use separate Toronto and Vancouver samples collected in 1984–85.](../figures/fairness-entitlements-redraw.svg){#fig-fairness-entitlements-redraw fig-alt="Four horizontal bars report the percentage rating a market action unfair or very unfair. Snow-shovel price rise after a storm is 82 percent, lettuce wholesale-cost pass-through is 21 percent, a scarce-car surcharge above list is 71 percent, and withdrawal of a $200 discount is 42 percent. Sample sizes are shown for each scenario." width=100%}
+436 [BOX] Two further scenarios show how judgments depend on the transaction: 74% rated auctioning one scarce doll to the highest bidder unfair ($N=101$), and 91% rated a rent increase exploiting a tenant's location-specific dependence unfair ($N=157$). “Unfair” combines the two unfavorable response categories; these results come from separate samples rather than one pooled survey.
+
+chapters/27-markets-mispricing-and-bubbles.qmd
+110 [MAIN] $$
+112 [MAIN] $$
+114 [MAIN] After Palm's first trading day, observed prices implied that the residual 3Com businesses were worth about negative $22 billion in Lamont and Thaler's (2003) calculation. Simple addition makes that hard to defend. Yet Palm shares were scarce to borrow, shorting was costly and risky, and the distribution was delayed and conditional. The case is unusually strong evidence of relative-value mispricing—and equally strong evidence that a visible inconsistency need not create a riskless free lunch.
+122 [MAIN] The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. Let $D_t$ denote the discount factor appropriate to a cash flow at horizon $t$, and let $P_T$ be the ex-dividend terminal price. A deliberately simplified discounted-cash-flow model can discipline the debate:
+124 [MAIN] $$
+126 [MAIN] $$
+128 [MAIN] Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. The assumed terminal price also needs a valuation argument; extrapolating recent price gains simply moves the disputed belief to the end of the calculation. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.
+130 [MAIN] A constant-growth example makes the sensitivity concrete. If next period's expected dividend is $d_1$, dividends grow indefinitely at rate $g$, and the appropriate required return is a constant $r>g$, then $V_0=d_1/(r-g)$. In a hypothetical example, a dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.
+132 [MAIN] The **price-to-earnings ratio**, $P/E$, divides the share price by earnings per share. It summarizes how much investors pay for one year's reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.
+231 [MAIN] Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark**, with no final redemption and negligible discounting over the short experimental session, is $FV_t=kd$. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
+235 [MAIN] In a common baseline parameterization, the asset lasts 15 periods and each period's dividend is equally likely to be 0, 8, 28, or 60 cents. The expected dividend is therefore $(0+8+28+60)/4=24$ cents. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is $15\times24=360$ cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. For comparison, an asset that pays 12 or 20 cents with equal probability has an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.
+245 [MAIN] Many real assets do not mechanically lose one dividend's expected value each short trading period. A useful design therefore pays interest $r$ on cash and gives the asset an expected dividend $d$ each period, with a final redemption payment $R=d/r$. With $k$ periods remaining, the risk-neutral discounted benchmark is
+247 [MAIN] $$
+249 [MAIN] $$
+251 [MAIN] The redemption payment offsets the shortening dividend horizon. For example, $d=\$0.70$ with $r=10\%$ and $d=\$1.40$ with $r=20\%$ both imply a constant benchmark of $7. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders' accounts even though $d/r$ is unchanged.
+299 [MAIN] Two assets can have the same expected dividend while offering very different payoff distributions. In Ackert et al. (2006), a standard asset paid $0.50, $0.90, or $1.20 with probabilities 0.48, 0.48, and 0.04, giving an expected dividend of $0.72. A lottery asset paid $18 with probability 0.04 and zero otherwise, also averaging $0.72. In markets that developed bubbles, traders paid more for the lottery asset. Financing purchases from their own available funds and allowing short sales moderated the price run-ups.
+
+chapters/28-authority-groupthink-and-shared-responsibility.qmd
+83 [MAIN] Across more than 7,700 participants and 105 independent effect sizes, Fischer and colleagues (2011) estimated an overall standardized effect of $g=-0.35$: others’ presence reduced individual helping on average. The reduction was smaller in dangerous emergencies, and some conditions showed no reduction or a positive effect when bystanders could provide physical support. Other people can spread responsibility, but they can also make intervention feasible.
+
+chapters/36-preparing-and-claiming-value.qmd
+89 [MAIN] $$
+94 [MAIN] $$
+98 [MAIN] $$
+103 [MAIN] $$
+107 [MAIN] $$
+112 [MAIN] $$
+
+chapters/37-creating-value-across-differences.qmd
+16 [MAIN] []{#why-would-a-supplier-refuse-a-million-pound-order}In a reported negotiation case, a large buyer and a small European supplier have agreed on $18 per pound for one million pounds of an ingredient each year. The buyer will invest in a new product only if competitors cannot obtain the ingredient, yet the supplier refuses exclusivity—even after the buyer offers minimum orders and more money. The commercial opportunity is substantial, but the condition that makes the investment worthwhile is the very condition the supplier rejects. Raising the price again may simply make an unworkable proposal more expensive. What would the buyer need to learn before deciding whether this agreement is possible?
+
+chapters/41-decision-hygiene-build-a-process-that-can-learn.qmd
+254 [MAIN] Writing and review also depend on the conditions. In a study of Chinese judges, judges who wrote reasons before deciding were less influenced by an induced negative feeling than judges who proceeded directly to judgment; forced deliberation produced a similar effect (Liu, 2018). A meta-analysis across 46 samples ($N = 2{,}136$) found higher individual and team performance after structured debriefing than before it or in no-debrief control groups (average standardized difference $d = 0.67$) (Tannenbaum & Cerasoli, 2013). Accountability can also encourage conformity when the evaluator’s preferred answer is known (Lerner & Tetlock, 1999).
+
+chapters/42-data-driven-decision-making.qmd
+96 [MAIN] | Rain would be especially damaging | 2 | 8 | $0.70\times2=1.4$ | $0.30\times8=2.4$ |
+97 [MAIN] | Moving indoors would sacrifice much of the event | 6 | 4 | $0.70\times6=4.2$ | $0.30\times4=1.2$ |
+102 [MAIN] More generally, let $p$ be the probability of rain, $C_F$ the false-alarm loss, and $C_M$ the missed-rain loss. In this model, moving indoors has lower expected loss when
+104 [MAIN] $$
+106 [MAIN] $$
+110 [MAIN] $$
+112 [MAIN] $$
+
+appendices/appendix-a-rational-choice-and-decision-analysis.qmd
+20 [MAIN] Let $\mathcal{A}$ denote the set of actions under discussion, including options whose feasibility has not yet been checked. An action is feasible only if it satisfies the relevant constraints. Suppose the decision contains inequality constraints $g_j(a)\leq 0$ and equality constraints $h_\ell(a)=0$. The feasible set is
+22 [MAIN] $$
+31 [MAIN] $$
+33 [MAIN] The constraint functions determine which actions belong to $A$. A job that requires a licence you cannot obtain in time, for example, may be imaginable without being feasible.
+37 [MAIN] The **consideration set** $K$ contains the alternatives a person notices, recalls, generates, or takes seriously:
+39 [MAIN] $$
+41 [MAIN] $$
+43 [MAIN] where $z$ represents external context and $m$ represents internal state. Considered options can include ones that later prove infeasible, while feasible options may be overlooked. After feasibility has been checked, the available considered options are $K(z,m)\cap A$. Comparing that intersection coherently can still miss a better option elsewhere in $A$, which is why generating alternatives matters.
+47 [MAIN] Let $\succeq$ be a weak preference relation over the feasible alternatives. The statement
+49 [MAIN] $$
+51 [MAIN] $$
+53 [MAIN] means that alternative $a$ is at least as good as alternative $b$ for the purposes represented by the model.
+55 [MAIN] For a finite, nonempty feasible set, completeness and transitivity are sufficient for a numerical value representation $V$ such that
+57 [MAIN] $$
+61 [MAIN] $$
+63 [MAIN] With a finite, nonempty $A$, a maximum exists.[^appa-infinite-domains] This benchmark has long organized decision research (Edwards, 1954).
+69 [MAIN] $$
+78 [MAIN] $$
+80 [MAIN] If several alternatives tie, $C(A)$ contains several actions. Predicting a single observed choice then requires a tie-breaking rule. For the job offers, equal scores mean that the model has not yet selected one job over the other.
+83 [BOX] A value representation of a ranking is ordinal: any strictly increasing transformation represents the same preferences. Interpreting numerical gaps such as $V(a)-V(b)$ requires a cardinal scale. Expected-utility indices are unique up to positive affine transformations, and multiattribute scores require explicit normalization.
+88 [MAIN] Two advisers may recommend different jobs because they predict different promotion prospects, or because they value the same prospect differently. A single score can hide that distinction: evidence about promotion addresses the first disagreement, while the second requires a discussion of priorities. The reduced-form function $V(a)$ can be unpacked into beliefs about consequences and values over those consequences.
+90 [MAIN] If action $a$ produces a known consequence $x(a)$, and $u(x)$ represents the value of consequence $x$, then
+92 [MAIN] $$
+94 [MAIN] $$
+96 [MAIN] Under uncertainty, let $O$ be a finite set of possible consequences. Let $P(o\mid a)$ be the probability assigned to consequence $o$ if action $a$ is taken, and let $u(o)$ represent preferences over consequences. A standard expected-utility evaluation is
+98 [MAIN] $$
+104 [MAIN] $$
+108 [MAIN] $$
+113 [MAIN] $$
+117 [MAIN] - $A$: feasible alternatives;
+118 [MAIN] - $P(o\mid a)$: beliefs or specified probabilities over consequences; and
+119 [MAIN] - $u(o)$: values or preferences over consequences.
+123 [MAIN] A consequence may include effects on other people, fairness, identity, environmental outcomes, duties, or future generations. Some rights and obligations may instead be represented as constraints that remove impermissible actions from $A$.
+135 [MAIN] $$
+142 [MAIN] $$
+146 [MAIN] $$
+151 [MAIN] $$
+153 [MAIN] To test this representation, specify or measure $K$, $P$, $u$, and their response to context independently of the observed choice. A model of implementation adds a mapping from chosen action to performed action and realized consequence.
+155 [MAIN] Let $d_1$ and $d_2$ be two descriptions of a decision. If they leave the feasible set, consequence distributions, and values unchanged, then description invariance requires the same choice correspondence:
+157 [MAIN] $$
+159 [MAIN] $$
+165 [MAIN] In stochastic choice models satisfying **regularity**, adding a new alternative $d$ cannot increase the probability of choosing an existing alternative $a$:
+167 [MAIN] $$
+171 [MAIN] $$
+175 [MAIN] Defaults illustrate a different boundary. An opt-in and an opt-out design are not the same decision merely because both responses are physically available. A default may change effort, delay, perceived recommendation, responsibility, anticipated regret, or the consequence of inaction. If action costs matter, they should enter the consequences or a consistently defined net value; they should not appear as an extra primitive after $V$ has already absorbed them. [Chapter 1](../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd#chapter-01-start) and [Chapter 2](../chapters/02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#chapter-02-start) use these distinctions to separate a challenge to an invariant benchmark from a variable omitted by a thin model.
+179 [MAIN] Suppose $A$ contains at least two alternatives. For a contemplated action $a$, define a best feasible alternative forgone as
+181 [MAIN] $$
+185 [MAIN] $$
+187 [MAIN] The alternative $b^*(a)$—or the set of tied alternatives that satisfy the expression—is the opportunity-cost benchmark. Discovering a better feasible option can change that benchmark even when the contemplated action itself has not changed.
+189 [MAIN] When $V$ has a declared cardinal scale, including an explicit origin and unit, the opportunity cost can be reported numerically as
+191 [MAIN] $$
+197 [MAIN] $$
+201 [MAIN] $$
+205 [MAIN] $$
+207 [MAIN] If $a$ is uniquely optimal, $M(a)>0$. If the scale is merely ordinal, however, the meaningful statement is that $a$ ranks above or below its best forgone alternative—not that the gap is “small.” Even on a normalized cardinal scale, fragility should be assessed by varying substantive beliefs, values, and constraints rather than interpreting an arbitrary score gap in isolation.
+213 [MAIN] The job offers differ on income, flexibility, and learning. Comparing each attribute separately makes the trade-offs visible but still leaves the choice unresolved. Combining them requires a statement of how much improvement on one attribute compensates for a loss on another. Suppose each alternative produces outcomes on $J$ attributes, such as income, health, autonomy, learning, and security. Let $x_j(a)$ be the performance of alternative $a$ on attribute $j$. A common additive model is
+215 [MAIN] $$
+219 [MAIN] $$
+221 [MAIN] where each $v_j(\cdot)$ maps performance on attribute $j$ to a common normalized scale and the weights satisfy
+223 [MAIN] $$
+227 [MAIN] $$
+229 [MAIN] A transparent normalization sets $v_j=0$ at the least-preferred relevant level and $v_j=1$ at the most-preferred relevant level for the decision. The resulting $w_j$ are **swing weights**: they represent the importance of moving across the stated range of attribute $j$, not a context-free claim that “health matters 30 percent.” Changing the range changes the meaning of the weight.
+235 [MAIN] $$
+243 [MAIN] $$
+245 [MAIN] This expression keeps prediction and valuation separate. $P(o\mid a)$ represents what is expected to happen; $v_j$ and $w_j$ represent how performance over defined attribute ranges is valued. An expected-utility interpretation requires cardinal von Neumann–Morgenstern utility components on compatible scales and additive independence over the relevant lotteries (Keeney & Raiffa, 1976).[^appa-additive-utility]
+253 [MAIN] Let $\theta\in\Theta$ denote an uncertain state of the world, where $\Theta$ is finite or countable and the relevant expectations converge. Let $p(\theta)$ be the prior probability and $u(a,\theta)$ the value produced by action $a$ in state $\theta$. Without additional information, the best expected value is
+255 [MAIN] $$
+261 [MAIN] $$
+263 [MAIN] Perfect information reveals $\theta$ before action is chosen. The expected value attainable with perfect information is
+265 [MAIN] $$
+271 [MAIN] $$
+275 [MAIN] $$
+279 [MAIN] $$
+281 [MAIN] With finite expectations, a fixed action set, and costless accurate revelation of the relevant state, $EVPI\geq 0$. It is a gross upper bound on the value of any signal about that $\theta$ for the same decision.
+283 [MAIN] Now suppose a test, pilot, interview, or study produces a finite or countable signal $Y$, with likelihood $p(y\mid\theta)$. A coherent joint probability model implies
+285 [MAIN] $$
+290 [MAIN] $$
+292 [MAIN] and, whenever $p(y)>0$, Bayes' rule gives
+294 [MAIN] $$
+299 [MAIN] $$
+303 [MAIN] $$
+310 [MAIN] $$
+314 [MAIN] $$
+316 [MAIN] $$
+320 [MAIN] $$
+322 [MAIN] $$
+324 [MAIN] If the total cost of obtaining and using the information is $c(Y)$, expressed in the same cardinal units as $V$, its net value is
+326 [MAIN] $$
+328 [MAIN] $$
+330 [MAIN] False positives, false negatives, and other ordinary signal errors belong in the likelihood $p(y\mid\theta)$. The cost term can include money, delay, attention, privacy loss, implementation effort, and strategic disclosure. Model misspecification—such as an incorrect likelihood or an omitted state—is a separate robustness problem rather than a cost that should be added after the fact.
+336 [MAIN] A precise-looking ranking can conceal a fragile recommendation: a small revision to promotion prospects or the value of flexibility may put the other job first. Before committing, you need to know whether the recommendation survives the uncertainty you actually face. Sensitivity analysis asks how far those inputs would have to change before the recommendation changes. On a declared cardinal scale, the value difference between alternatives $a$ and $b$ is
+338 [MAIN] $$
+340 [MAIN] $$
+342 [MAIN] The sign identifies the ranking: $a$ is preferred when $\Delta_{ab}>0$, the alternatives tie when $\Delta_{ab}=0$, and $b$ is preferred when $\Delta_{ab}<0$. The magnitude has meaning only under the scale assumptions stated earlier.
+346 [MAIN] Suppose action $a$ produces a high outcome $H$ with probability $p$ and a low outcome $L$ otherwise, while action $b$ produces certain outcome $c$. Assume $u(H)>u(L)$. Indifference requires
+348 [MAIN] $$
+350 [MAIN] $$
+354 [MAIN] $$
+359 [MAIN] $$
+361 [MAIN] An interior threshold requires $0<p^*<1$, equivalently $u(L)<u(c)<u(H)$. Weak inequalities allow boundary thresholds at zero or one. When $p^*\in[0,1]$, $a$ is preferred when $p>p^*$. If the plausible range for $p$ lies entirely on one side of the threshold, the ranking is robust to that uncertainty. If the range crosses the threshold, information about $p$ may have decision value.
+367 [MAIN] $$
+370 [MAIN] $$
+372 [MAIN] The weight at which $a$ and $b$ tie is
+374 [MAIN] $$
+379 [MAIN] $$
+381 [MAIN] provided the denominator is nonzero. The threshold is decision-relevant only if $w^*\in[0,1]$; the signs of the attribute differences determine which alternative is preferred on each side. The useful question is whether reasonable stakeholders or elicitation ranges place $w$ on different sides of the threshold, not whether an unsupported point weight equals $0.63$ rather than $0.61$.
+387 [MAIN] $$
+392 [MAIN] $$
+398 [MAIN] Accepting a job lets you learn what working there is like. That knowledge may arrive only after leaving has become costly or another offer has expired. The value of learning therefore depends on which choices remain open. Let $a$ be an action taken now, $y$ information observed later, and $B(a,y)$ the set of actions available after $a$ and $y$. Let $V_0(a)$ be the immediate value of the initial action and $V_1(b;a,y)$ the continuation value of later action $b$. Their sum requires a common cardinal, additively separable intertemporal scale; $V_1$ must be discounted to the decision time where necessary. Under those assumptions, a two-stage evaluation is
+400 [MAIN] $$
+408 [MAIN] $$
+410 [MAIN] Switching costs, exit costs, and implementation burdens should enter $V_1$ or restrict $B(a,y)$. If one initial action preserves a superset of future actions while all immediate consequences, probabilities, and costs remain the same, its continuation value is weakly higher. In practice those “all else equal” conditions often fail: a pilot may preserve flexibility while delaying benefits or imposing a setup cost.
+414 [MAIN] Analysis itself consumes scarce resources. Let $r$ denote one additional analysis step that may produce result $y$, and let $A(r,y)$ be the feasible set remaining after the step and result. Express the direct resource cost $c(r)$, plus any delay cost not already represented through $A(r,y)$ or $V(a\mid y,r)$, in the same cardinal units as $V$. The net expected gain can then be written as
+416 [MAIN] $$
+425 [MAIN] $$
+427 [MAIN] Under this stylized metareasoning rule, conduct the step when $G(r)>0$. The analysis-dependent action set represents options that expire, emerge, or become infeasible during deliberation; any other consequence of delay belongs in $V(a\mid y,r)$ or $c(r)$, but not both. This is a normative comparison of the expected benefit and cost of one more analysis step. It is not Simon's satisficing model itself. Bounded rationality supplies the motivation—search, attention, time, memory, and computation are scarce—while satisficing describes a different stopping strategy based on aspiration levels (Simon, 1955, 1956).
+
+appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd
+226 [BOX] For two strategies, let $x$ be the share using strategy 1. Let $f_1$ and $f_2$ be nonnegative reproductive or imitation weights derived from their payoffs, with $xf_1+(1-x)f_2>0$. A discrete replicator-style rule is
+228 [BOX] $$
+230 [BOX] $$
+
+appendices/appendix-e-how-behavioral-evidence-is-built.qmd
+121 [MAIN] For person $i$, let $Y_i(1)$ denote the outcome under treatment and $Y_i(0)$ the outcome under control. The individual causal effect is:
+123 [MAIN] $$
+125 [MAIN] $$
+268 [MAIN] Let $Z$ be assignment and $D$ treatment received.
+272 [MAIN] $$
+274 [MAIN] $$
+283 [MAIN] - **monotonicity:** assignment never makes a unit less likely to receive treatment; in the binary potential-receipt model, $D_i(1)\geq D_i(0)$ for every unit.
+287 [MAIN] $$
+289 [MAIN] $$
+293 [MAIN] **Hypothetical calculation.** Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is $0.03/(0.45-0.20)=0.12$, or 12 percentage points. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.
+
+appendices/appendix-c-portable-course-tools.qmd
+155 [BOX] Record the forecast and a rule for deciding whether the event occurred. After resolution, score that same event. For a binary outcome, the Brier score is $(p-y)^2$, where $p$ is the forecast probability between 0 and 1 and $y$ is 1 if the event occurred and 0 otherwise. Lower scores indicate better forecasts. [Chapter 15](../chapters/15-samples-randomness-regression-and-calibration.qmd#chapter-15-start) explains how to learn from a series of forecasts.
+
+references.qmd
+314 [MAIN] Bennedsen, M. (2024). Income and emotional well-being: Evidence for well-being plateauing around $200,000 per year. *Economics Letters, 238*, 111730. https://doi.org/10.1016/j.econlet.2024.111730
+1894 [MAIN] Killingsworth, M. A. (2021). Experienced well-being rises with income, even above $75,000 per year. *Proceedings of the National Academy of Sciences, 118*(4), e2016976118.

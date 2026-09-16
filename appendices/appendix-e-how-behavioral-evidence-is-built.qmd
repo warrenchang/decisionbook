@@ -118,13 +118,23 @@ Mechanism is harder still. Showing that treatment changes a proposed mediator an
 
 ### 4. Make the counterfactual and confounding visible
 
+An individual's causal effect is the difference between what would happen to that person under treatment and what would happen under control in the same setting.
+
+Only one potential outcome is observed. The missing one is the **counterfactual problem**. A comparison group is useful when its average outcome represents what would have happened to the treated group without treatment. It cannot reveal each treated person's individual effect.
+
+:::: {#math-potential-outcomes}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: potential outcomes
+
 For person $i$, let $Y_i(1)$ denote the outcome under treatment and $Y_i(0)$ the outcome under control. The individual causal effect is:
 
 $$
 Y_i(1)-Y_i(0).
 $$
 
-Only one potential outcome is observed. The missing one is the **counterfactual problem**. A comparison group is useful when its average outcome represents what would have happened to the treated group without treatment. It cannot reveal each treated person's individual effect.
+Only one of these outcomes is observed for a person in the study; the other is counterfactual.
+:::
+::::
 
 Last year's attendance does not supply that counterfactual for this year's patients: the weather, patient mix, and appointment system may all have changed. A concurrent randomized comparison exposes both reminder groups to the same period. If allocation and follow-up preserve that comparison, the difference in their average attendance can estimate the reminder's effect without attributing the common seasonal change to it (Duflo et al., 2007).
 
@@ -265,13 +275,7 @@ Report rates and reasons by arm, timing, and baseline predictors of missingness.
 
 #### Noncompliance: assignment is not receipt
 
-Let $Z$ be assignment and $D$ treatment received.
-
-With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the **intention-to-treat (ITT)** effect is estimated by comparing outcomes in the assigned groups:
-
-$$
-ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
-$$
+With randomized assignment at a common probability, complete outcome observation, and a treatment contrast defined appropriately for interference, the **intention-to-treat (ITT)** effect is estimated by comparing average outcomes in the assigned groups.
 
 ITT answers the effect of offering, assigning, or implementing the treatment under observed compliance. It preserves the randomized comparison and is often the policy-relevant estimand.
 
@@ -280,17 +284,35 @@ The effect among those who actually received treatment is not obtained by simply
 - **relevance:** assignment changes treatment receipt;
 - **independence:** assignment is as good as random relative to potential outcomes and compliance types;
 - **exclusion:** assignment affects the outcome only through treatment receipt;
-- **monotonicity:** assignment never makes a unit less likely to receive treatment; in the binary potential-receipt model, $D_i(1)\geq D_i(0)$ for every unit.
+- **monotonicity:** assignment never makes a unit less likely to receive treatment.
 
-Then the Wald ratio is:
+Under these assumptions, divide the effect of assignment on the outcome by its effect on treatment receipt. This is the **Wald ratio**.
+
+LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.
+
+**Hypothetical calculation.** Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is 12 percentage points: divide the 3-point employment increase by the 25-point increase in participation, expressing both as proportions. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.
+
+:::: {#math-itt-late}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: assignment, receipt, and the Wald ratio
+
+Let $Z$ be assignment, $D$ treatment received, and $Y$ the outcome. The intention-to-treat contrast is
+
+$$
+ITT = E[Y\mid Z=1]-E[Y\mid Z=0].
+$$
+
+Under the assignment, treatment-version, no-interference, relevance, independence, exclusion, and monotonicity assumptions stated above, the Wald ratio identifies the local average treatment effect for compliers:
 
 $$
 LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 $$
 
-LATE concerns the compliers whose receipt changes with this instrument, rather than everyone offered treatment (Angrist et al., 1996). With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.
+For binary potential receipt, monotonicity is $D_i(1)\geq D_i(0)$ for every unit. With a positive first stage no greater than one, the ratio has the same sign as ITT and at least its absolute magnitude.
 
-**Hypothetical calculation.** Suppose a study randomizes invitations to a job-placement service. Participation is 45% among those invited and 20% among those not invited; employment is 43% and 40%, respectively, at the same follow-up. The effect of the invitation is 3 percentage points. Under the assumptions above, the effect of participation for compliers is $0.03/(0.45-0.20)=0.12$, or 12 percentage points. These are two answers to different questions. If the invitation itself motivates job search without participation, the exclusion restriction fails and the division no longer has that treatment-effect interpretation.
+The hypothetical invitation example gives $0.03/(0.45-0.20)=0.12$, or 12 percentage points. If the invitation changes employment through a route other than participation, the exclusion restriction fails and this quotient loses its stated treatment-effect interpretation.
+:::
+::::
 
 #### Spillovers, interference, and displacement
 
@@ -451,6 +473,10 @@ The imagined clinic began with an attendance increase that could have had severa
 
 @tbl-worked-reminder-design fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:
 
+:::: {#math-reminder-simulation}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: reproducing the teaching estimate
+
 ```python
 import math
 import random
@@ -469,6 +495,8 @@ se = math.sqrt(
 )
 ci = (effect - 1.96 * se, effect + 1.96 * se)
 ```
+:::
+::::
 
 The generated data contain 380 attendances among 600 control assignments and 417 among 600 treatment assignments. Attendance was therefore 63.3% under the standard reminder and 69.5% under the plain-language reminder. The estimated ITT difference is **6.2 percentage points**, with an approximate 95% confidence interval from **0.8 to 11.5 percentage points**.
 

@@ -618,7 +618,7 @@ window.Quarto = {
 </blockquote>
 </div>
 <p>A candidate passes a screening test that is described as “80 percent accurate.” The committee wants to use the result to reduce hiring mistakes. How confident should it now be that the candidate will meet the performance standard? The number sounds decisive, but it does not yet answer the question. Eighty percent of <em>what</em>? How common are strong performers in the applicant pool? How often does the screen pass a weaker candidate? Was the test validated on a comparable population and outcome?</p>
-<p>The committee needs to know how many applicants who pass will perform well. The report may instead say how many strong performers pass. One starts with everyone who passed; the other starts with everyone who meets the performance standard. Confusing the two groups could turn an informative screen into unjustified confidence about whom to hire. We will begin by counting them separately, then use probability notation to keep the distinction clear.</p>
+<p>The committee needs to know how many applicants who pass will perform well. The report may instead say how many strong performers pass. One starts with everyone who passed; the other starts with everyone who meets the performance standard. Confusing the two groups could turn an informative screen into unjustified confidence about whom to hire. We will begin by counting them separately, then use that distinction to interpret the evidence. The optional mathematical analyses express the same reasoning in notation.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -649,55 +649,88 @@ window.Quarto = {
 <li>8,000 would not; 2,400 nevertheless pass.</li>
 <li>Of 4,000 positive screens, 1,600 are true positives.</li>
 </ul>
-<p>Under those assumptions, <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})=1{,}600/4{,}000=0.40\)</span>. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
+<p>Under those assumptions, 1,600 of the 4,000 applicants who pass would perform strongly: 40%. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
 <p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. Assume its <strong>sensitivity</strong>, the share of strong performers who pass, and its <strong>false-positive rate</strong>, the share of others who pass, remain unchanged. Among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the probability of strong performance after a positive screen is about 72.7%. Nothing about the assumed test characteristics changed; the starting population did. This is why an “80% sensitivity” claim cannot be interpreted on its own. We also need the starting population and evidence that the test performs similarly in it.</p>
 </section>
 <section id="probability-begins-with-a-model" class="level2">
 <h2 data-anchor-id="probability-begins-with-a-model">Probability begins with a model</h2>
-<p>The hiring calculation became useful only after the applicants and possible results were organized into a common population. Without that structure, a percentage can answer a different question from the one the decision requires. Probability notation makes the same logic available for other decisions.</p>
-<p>A <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> lists the elementary outcomes allowed by a model. An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of those outcomes. A probability measure assigns numbers satisfying</p>
-<p><span class="math display">\[
-0\le P(A)\le 1, \qquad P(\Omega)=1,
-\]</span></p>
-<p>and adds probabilities for mutually exclusive events. The notation cannot choose a good model for us. Calling a coin fair, successive observations independent, or an applicant pool comparable to the validation sample are substantive assumptions.</p>
+<p>The hiring calculation became useful only after the applicants and possible results were organized into a common population. Without that structure, a percentage can answer a different question from the one the decision requires.</p>
+<p>A <strong>sample space</strong> lists the elementary outcomes allowed by a model. An <strong>event</strong> collects the outcomes of interest, such as finishing a project by Friday. Probabilities range from zero to one, and the probability of some outcome in the complete sample space is one. Probabilities add when events are mutually exclusive. These rules cannot choose a good model for us. Calling a coin fair, successive observations independent, or an applicant pool comparable to the validation sample are substantive assumptions.</p>
 <section id="complement-preserve-the-event-boundary" class="level3">
 <h3 data-anchor-id="complement-preserve-the-event-boundary">Complement: preserve the event boundary</h3>
-<p>If <span class="math inline">\(A^c\)</span> means “not <span class="math inline">\(A\)</span>,” then</p>
-<p><span class="math display">\[
-P(A^c)=1-P(A).
-\]</span></p>
-<p>If a project has a 0.70 probability of finishing by Friday, it has a 0.30 probability of not finishing by Friday under the same model. “Not finished by Friday” is not the same event as “the project fails.” A complement works only when the time horizon and outcome definition remain fixed.</p>
+<p>An event and its <strong>complement</strong> cover all possibilities without overlapping. If a project has a 70% probability of finishing by Friday, the remaining 30% is the probability of not finishing by Friday under the same model. “Not finished by Friday” is not the same event as “the project fails.” A complement works only when the time horizon and outcome definition remain fixed.</p>
 </section>
 <section id="and-use-the-conditional-branch" class="level3">
 <h3 data-anchor-id="and-use-the-conditional-branch">AND: use the conditional branch</h3>
-<p>For events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>,</p>
-<p><span class="math display">\[
-P(A\cap B)=P(A)P(B\mid A).
-\]</span></p>
-<p>If the events are independent, <span class="math inline">\(P(B\mid A)=P(B)\)</span>. Independence is not the same as mutual exclusivity. Rain and traffic delay can occur together and may be dependent. Two cards drawn without replacement are dependent because the first draw changes the deck.</p>
+<p>To find the probability that two events both occur, start with the chance of the first and multiply by the chance of the second <em>among cases where the first occurs</em>. If the events are independent, learning that the first occurred does not change the chance of the second.</p>
+<p>Independence is not the same as mutual exclusivity. Rain and traffic delay can occur together and may be dependent. Two cards drawn without replacement are dependent because the first draw changes the deck.</p>
 </section>
 <section id="or-restore-the-overlap" class="level3">
 <h3 data-anchor-id="or-restore-the-overlap">OR: restore the overlap</h3>
-<p>For “<span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both,”</p>
-<p><span class="math display">\[
-P(A\cup B)=P(A)+P(B)-P(A\cap B).
-\]</span></p>
-<p>The subtraction prevents double counting. A project can be delayed by a supplier problem, a software problem, or both. Adding the separate probabilities as though the routes were disjoint exaggerates total risk; considering only the most vivid route understates it.</p>
+<p>To find the probability that at least one of two events occurs, add their probabilities and subtract the overlap. That last step prevents double counting.</p>
+<p>A project can be delayed by a supplier problem, a software problem, or both. Adding the separate probabilities as though the routes were disjoint exaggerates total risk; considering only the most vivid route understates it.</p>
 </section>
 </section>
 <section id="conditional-direction-matters" class="level2">
 <h2 data-anchor-id="conditional-direction-matters">Conditional direction matters</h2>
-<p>Provided <span class="math inline">\(P(B)&gt;0\)</span>,</p>
+<p>A <strong>conditional probability</strong> concerns a specified group of cases. In the hiring example, asking what share of strong performers pass starts with the strong performers. The committee instead needs the share of those who pass who are strong performers. Changing the starting group changes the question.</p>
+<p>The same reversal appears in court. A one-in-a-million probability of a DNA profile among unrelated people is not a one-in-a-million probability that a matched defendant is innocent. The latter depends on how the suspect was selected, how many people were compared, laboratory error, relatedness, the prior probability of different sources, and the rest of the case (Thompson &amp; Schumann, 1987).</p>
+<p>Conditional probability also makes independence explicit. Events are independent when learning one does not change the probability of the other. Zero correlation is not generally equivalent to independence: it rules out one linear relationship, not every probabilistic dependence.</p>
+<div id="math-probability-rules">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: probability rules and their notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(\Omega\)</span> be the sample space, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> events, and <span class="math inline">\(A^c\)</span> the complement of <span class="math inline">\(A\)</span>. The basic rules are</p>
+<p><span class="math display">\[
+0\le P(A)\le 1, \qquad P(\Omega)=1,
+\]</span></p>
+<p>with additivity for mutually exclusive events. Complement, intersection (AND), and union (OR) are written as</p>
+<p><span class="math display">\[
+P(A^c)=1-P(A),
+\]</span></p>
+<p><span class="math display">\[
+P(A\cap B)=P(A)P(B\mid A),
+\]</span></p>
+<p><span class="math display">\[
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+\]</span></p>
+<p>Provided <span class="math inline">\(P(B)&gt;0\)</span>, conditional probability is</p>
 <p><span class="math display">\[
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 \]</span></p>
-<p>In the hiring example, <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span> asks what share of strong performers pass. The committee instead needs <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span>, the share of those who pass who are strong performers. Everything after the vertical bar specifies the group we are counting within.</p>
-<p>The same reversal appears in court. A one-in-a-million probability of a DNA profile among unrelated people is not a one-in-a-million probability that a matched defendant is innocent. The latter depends on how the suspect was selected, how many people were compared, laboratory error, relatedness, the prior probability of different sources, and the rest of the case (Thompson &amp; Schumann, 1987).</p>
-<p>Conditional probability also makes independence explicit. Events are independent when learning one does not change the probability of the other. Zero correlation is not generally equivalent to independence: it rules out one linear relationship, not every probabilistic dependence.</p>
+<p>Everything after the vertical bar identifies the group being counted within. Thus <span class="math inline">\(P(\text{positive screen}\mid\text{strong performance})\)</span> and <span class="math inline">\(P(\text{strong performance}\mid\text{positive screen})\)</span> answer different questions. For independent events, <span class="math inline">\(P(B\mid A)=P(B)\)</span> when the conditional is defined.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="bayes-rule-restores-the-alternatives" class="level2">
 <h2 data-anchor-id="bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</h2>
 <p>A positive result supports an explanation when it is more expected under that explanation than under its alternatives. Counting only the cases where the explanation is true leaves out the competing route to the same evidence. Bayes’ rule brings both routes into the comparison.</p>
+<p>The <strong>prior</strong> gives the starting probability, which is the prevalence of strong performance in this screening example. The <strong>likelihood</strong> asks how probable the evidence would be if the explanation held. The competing likelihood asks how often the same evidence appears without that explanation. The <strong>posterior</strong> is the probability after incorporating the evidence (Bayes, 1763).</p>
+<p>To update, count the cases where the explanation produces the evidence, then compare them with <em>all</em> cases that could produce it. For the hiring screen, both strong and weaker performers can pass.</p>
+<div id="math-bayes-rule">
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: Bayes’ rule
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(A^c\)</span> partition the cases, total probability rebuilds the denominator:</p>
 <p><span class="math display">\[
 P(B)=P(B\mid A)P(A)+P(B\mid A^c)P(A^c).
@@ -708,23 +741,24 @@ P(A\mid B)=
 \frac{P(B\mid A)P(A)}
 {P(B\mid A)P(A)+P(B\mid A^c)P(A^c)}.
 \]</span></p>
-<p>The <strong>prior</strong> <span class="math inline">\(P(A)\)</span> gives the starting probability, which is a prevalence in this screening example. The <strong>likelihood</strong> <span class="math inline">\(P(B\mid A)\)</span> asks how probable the evidence would be if <span class="math inline">\(A\)</span> held. The competing likelihood <span class="math inline">\(P(B\mid A^c)\)</span> asks how often the same evidence appears without <span class="math inline">\(A\)</span>. The <strong>posterior</strong> is the probability after incorporating the evidence (Bayes, 1763).</p>
-<p>For the committee, the formula is useful only if these inputs describe the applicants and performance standard it actually faces. Selection into the pool, changes in working conditions, and uncertainty about the test’s error rates all affect that judgment.</p>
+<p>Here <span class="math inline">\(P(A)\)</span> is the prior, <span class="math inline">\(P(B\mid A)\)</span> is the likelihood under the explanation, and <span class="math inline">\(P(B\mid A^c)\)</span> is the likelihood under its alternative. The posterior is <span class="math inline">\(P(A\mid B)\)</span>. In the hiring example, this gives <span class="math inline">\(1{,}600/4{,}000=0.40\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>For the committee, the update is useful only if these inputs describe the applicants and performance standard it actually faces. Selection into the pool, changes in working conditions, and uncertainty about the test’s error rates all affect that judgment.</p>
 </section>
 <section id="natural-frequencies-make-bayes-visible" class="level2">
 <h2 data-anchor-id="natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</h2>
-<p>Knowing the formula does not guarantee that the relevant denominator stays visible. Translating percentages into people makes it easier to inspect who could have produced a positive result.</p>
-<p>For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that is <span class="math inline">\(P(+\mid D)\)</span> rather than <span class="math inline">\(P(D\mid +)\)</span>.</p>
+<p>Knowing the updating rule does not guarantee that the relevant denominator stays visible. Translating percentages into people makes it easier to inspect who could have produced a positive result.</p>
+<p>For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that describes how often people with the disease test positive. We need to know how often people with a positive test have the disease.</p>
 <p>Imagine 10,000 people:</p>
 <ul>
 <li>100 have the disease; 90 test positive.</li>
 <li>9,900 do not; 891 test positive.</li>
 <li>Of 981 positive tests, 90 are true positives.</li>
 </ul>
-<p>Therefore,</p>
-<p><span class="math display">\[
-P(D\mid +)=\frac{90}{90+891}=\frac{90}{981}\approx 0.0917.
-\]</span></p>
+<p>Of the 981 people who test positive, 90 have the disease: about 9.17%.</p>
 <div id="fig-probability-judgment-map" class="quarto-float quarto-figure quarto-figure-center" alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -753,10 +787,7 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html#when-category-fit-substitutes-for-probability-resemblance">Chapter 9</a> showed why a coherent story can feel probable. Probability supplies a non-negotiable set relation:</p>
-<p><span class="math display">\[
-P(A\cap B)\le P(A), \qquad P(A\cup B)\ge P(A).
-\]</span></p>
+<p><a href="../chapters/09-what-feels-likely-availability-affect-and-resemblance.html#when-category-fit-substitutes-for-probability-resemblance">Chapter 9</a> showed why a coherent story can feel probable. The set relation is straightforward: requiring two conditions cannot make an event more probable than requiring just one, while allowing either of two routes cannot make it less probable than either route alone.</p>
 <p>Adding a condition makes the event a subset. “A bank teller active in a social movement” cannot be more probable than “a bank teller,” however well the detail matches the description (Tversky &amp; Kahneman, 1983). By contrast, adding alternative routes expands a union. The probability that a project is delayed by <em>at least one</em> of several causes cannot be smaller than the probability of any single route, though overlaps must be handled rather than simply added.</p>
 <p>More detail is not always more information. Weakly diagnostic detail can dilute attention to stronger evidence. Sivanathan and Kakkar (2017) found that adding minor side effects to serious drug side effects could reduce perceived overall severity. The ethical response is not to hide minor effects. It is to group evidence by severity, probability, and decision relevance so completeness does not destroy structure.</p>
 </div>

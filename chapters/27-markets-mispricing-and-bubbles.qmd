@@ -105,11 +105,7 @@ Professional incentives can shorten the horizon precisely when a long-horizon co
 
 ## The Palm–3Com case: visible inconsistency, costly correction
 
-On March 2, 2000, 3Com sold about 5% of its Palm subsidiary and announced an intention—subject to conditions—to distribute the remaining Palm shares to 3Com shareholders at roughly 1.5 Palm shares per 3Com share. Ignoring timing, taxes, and frictions, the relative-value relation was:
-
-$$
-P(3Com) \approx 1.5P(Palm) + \text{value of 3Com's other businesses}.
-$$
+On March 2, 2000, 3Com sold about 5% of its Palm subsidiary and announced an intention—subject to conditions—to distribute the remaining Palm shares to 3Com shareholders at roughly 1.5 Palm shares per 3Com share. Ignoring timing, taxes, and frictions, a 3Com share should therefore reflect the value of roughly 1.5 Palm shares plus its claim on 3Com’s other businesses.
 
 After Palm's first trading day, observed prices implied that the residual 3Com businesses were worth about negative $22 billion in Lamont and Thaler's (2003) calculation. Simple addition makes that hard to defend. Yet Palm shares were scarce to borrow, shorting was costly and risky, and the distribution was delayed and conditional. The case is unusually strong evidence of relative-value mispricing—and equally strong evidence that a visible inconsistency need not create a riskless free lunch.
 
@@ -119,17 +115,35 @@ An **asset** is a resource or claim expected to provide economic benefits. A sha
 
 For a shareholder, profits can support dividends or share repurchases, or remain in the firm to finance investment, acquisitions, and debt repayment. Retained earnings create value when their use improves future benefits to shareholders sufficiently to justify the resources committed. Accounting earnings are therefore informative about value, but they are not identical to cash immediately available to an investor. Buying back shares is a distribution to selling shareholders, not the creation of additional operating profit.
 
-The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. Let $D_t$ denote the discount factor appropriate to a cash flow at horizon $t$, and let $P_T$ be the ex-dividend terminal price. A deliberately simplified discounted-cash-flow model can discipline the debate:
+The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. A simplified discounted-cash-flow model adds the present value of the expected payments and the expected sale price at the end of the chosen horizon.
+
+The adjustment must reflect both timing and risk. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. The assumed terminal price also needs a valuation argument; extrapolating recent price gains simply moves the disputed belief to the end of the calculation. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.
+
+A constant-growth example makes the sensitivity concrete. In a hypothetical model where dividends grow indefinitely, a next-period dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.
+
+:::: {#math-asset-valuation}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: discounted cash flows and constant growth
+
+Let $D_t$ denote the discount factor appropriate to a cash flow at horizon $t$, and $P_T$ the ex-dividend terminal price. A simplified valuation is
 
 $$
 V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 $$
 
-Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. The assumed terminal price also needs a valuation argument; extrapolating recent price gains simply moves the disputed belief to the end of the calculation. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.
+Each $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. The terminal price needs its own defensible valuation assumptions.
 
-A constant-growth example makes the sensitivity concrete. If next period's expected dividend is $d_1$, dividends grow indefinitely at rate $g$, and the appropriate required return is a constant $r>g$, then $V_0=d_1/(r-g)$. In a hypothetical example, a dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.
+If next period's expected dividend is $d_1$, dividends grow indefinitely at rate $g$, and the appropriate required return is a constant $r>g$, then
 
-The **price-to-earnings ratio**, $P/E$, divides the share price by earnings per share. It summarizes how much investors pay for one year's reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.
+$$
+V_0=\frac{d_1}{r-g}.
+$$
+
+The examples give $2/(0.08-0.03)=40$ and $2/(0.08-0.04)=50$. These are conditional model values, not observed market estimates.
+:::
+::::
+
+The **price-to-earnings ratio**, or P/E, divides the share price by earnings per share. It summarizes how much investors pay for one year's reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.
 
 Long historical price-and-earnings charts motivate the question of whether valuations have become detached from plausible future payouts. Shiller's (1981) excess-volatility analysis compared observed price variation with a benchmark based on discounted subsequent dividends. Its interpretation depends on the assumptions about expected returns and the dividend process. However, a visual gap between two series drawn on different axes is not a valuation test. The **cyclically adjusted P/E ratio**, or CAPE, divides real prices by average real earnings over the preceding ten years to reduce sensitivity to a single year's earnings. Historical valuation peaks, including 1901, 1929, 1966, and 2000, are useful comparisons, not a calendar for the next crash (Shiller, 2000, 2013).
 
@@ -228,11 +242,11 @@ On October 19, 1987, the Dow Jones Industrial Average fell 22.6% in one day. Pro
 
 ## Experimental markets: making the valuation benchmark observable {#one-laboratory-market-a-known-risk-neutral-benchmark-can-still-be-exceeded}
 
-Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark**, with no final redemption and negligible discounting over the short experimental session, is $FV_t=kd$. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
+Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. With no final redemption and negligible discounting over the short experimental session, the **risk-neutral expected-dividend benchmark** is the expected dividend per period multiplied by the number of periods remaining. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
 
 ### A finite-lived asset and a declining benchmark
 
-In a common baseline parameterization, the asset lasts 15 periods and each period's dividend is equally likely to be 0, 8, 28, or 60 cents. The expected dividend is therefore $(0+8+28+60)/4=24$ cents. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is $15\times24=360$ cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. For comparison, an asset that pays 12 or 20 cents with equal probability has an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.
+In a common baseline parameterization, the asset lasts 15 periods and each period's dividend is equally likely to be 0, 8, 28, or 60 cents. Averaging the four equally likely dividends gives 24 cents per period. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is 360 cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. For comparison, an asset that pays 12 or 20 cents with equal probability has an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.
 
 Participants begin with cash and shares. In a **double auction**, buyers can submit bids and sellers can submit asks while observing other offers. Under the classroom implementation used here, an incoming order that crosses the best standing offer executes at that standing offer's price. A trader can buy to collect remaining dividends or to sell again during the experiment. A resale changes who receives those dividends; it does not add dividends to the asset.
 
@@ -242,13 +256,31 @@ Bubble-like paths are not confined to groups of a dozen participants. Williams (
 
 ### Flat fundamentals: the bubble is not just a falling-value task
 
-Many real assets do not mechanically lose one dividend's expected value each short trading period. A useful design therefore pays interest $r$ on cash and gives the asset an expected dividend $d$ each period, with a final redemption payment $R=d/r$. With $k$ periods remaining, the risk-neutral discounted benchmark is
+Many real assets do not mechanically lose one dividend's expected value each short trading period. A useful experimental design therefore pays interest on cash, provides an expected dividend each period, and adds a final redemption payment. Choosing the redemption payment appropriately offsets the shortening dividend horizon, so the risk-neutral discounted benchmark stays constant.
+
+For example, an expected dividend of $0.70 with 10% interest per period and one of $1.40 with 20% interest both imply a constant benchmark of $7 under this design. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders' accounts even though the benchmark is unchanged.
+
+:::: {#math-market-benchmarks}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: declining and constant market benchmarks
+
+Without final redemption and with negligible discounting, an asset with expected dividend $d$ and $k$ periods remaining has the risk-neutral benchmark
+
+$$
+FV_t=kd.
+$$
+
+In the baseline example, $(0+8+28+60)/4=24$ cents and $15\times24=360$ cents initially.
+
+For the constant-benchmark design, let cash earn interest $r>0$ per period, let the expected dividend be $d$, and set final redemption to $R=d/r$. With $k$ periods remaining,
 
 $$
 FV_t=\sum_{j=1}^{k}\frac{d}{(1+r)^j}+\frac{d/r}{(1+r)^k}=\frac{d}{r}.
 $$
 
-The redemption payment offsets the shortening dividend horizon. For example, $d=\$0.70$ with $r=10\%$ and $d=\$1.40$ with $r=20\%$ both imply a constant benchmark of $7. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders' accounts even though $d/r$ is unchanged.
+Thus $d=\$0.70$ with $r=10\%$ and $d=\$1.40$ with $r=20\%$ both give $d/r=\$7$. The identity holds under the stated risk-neutral discounting and redemption assumptions.
+:::
+::::
 
 Bostian and Holt (2009) describe this design and report prices rising above the flat benchmark. Their higher-payment example illustrates how faster wealth accumulation can support larger price deviations. Because the dividend and interest processes change together, that comparison should not be described as a pure manipulation of initial cash. Experiments that vary initial cash directly provide complementary evidence (Caginalp et al., 1998).
 
