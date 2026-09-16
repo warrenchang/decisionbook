@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **921**
+Unique references in the master union: **929**
 
-Chapter reference blocks: **931**
+Chapter reference blocks: **939**
 
 Unresolved author–year citations: **0**
 
@@ -19,7 +19,7 @@ Unresolved author–year citations: **0**
 | Expectations {#expectations-when-predictions-become-causes} | 32 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 55 | 0 |
 | The Narrator After Choice | 19 | 0 |
-| Intuition and Deliberation {#fast-and-frugal-thinking} | 29 | 0 |
+| Intuition and Deliberation {#fast-and-frugal-thinking} | 31 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 16 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 18 | 0 |
 | Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 15 | 0 |
@@ -35,8 +35,8 @@ Unresolved author–year citations: **0**
 | Habits, Wanting, and Self-Control | 33 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 13 | 0 |
-| Coordination and Focal Points | 11 | 0 |
-| Cooperation and Social Preferences | 32 | 0 |
+| Coordination and Focal Points | 16 | 0 |
+| Cooperation and Social Preferences | 33 | 0 |
 | Social Norms and Conformity | 30 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 31 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |

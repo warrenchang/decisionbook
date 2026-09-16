@@ -29,7 +29,7 @@ A payoff matrix makes the dependence between choices visible. Finding mutual bes
 
 - Construct and read a payoff matrix, then identify best responses and pure- and mixed-strategy equilibria.
 - Distinguish focality, payoff dominance, and risk dominance as explanations for which coordinated outcome people pursue.
-- Diagnose whether a common plan needs a shared signal, credible assurance, or an agreed division of benefits and responsibilities.
+- Diagnose whether a coordination problem requires a focal point, common knowledge, credible assurance, or an agreed division of benefits and responsibilities.
 
 ## Representing the interaction {#a-game-is-a-model-not-the-situation-itself}
 
@@ -80,6 +80,59 @@ The meeting game therefore has two pure-strategy equilibria and a mixed-strategy
 The departments face the same selection problem. Suppose either common standard is preferable to incompatible systems, even though each department has a favorite. Both adopting A and both adopting B are then Nash equilibria: at either matched outcome, one department would lose by switching alone. The meeting matrix's two successful destinations become two compatible standards.
 
 If A expects B to adopt standard A, choosing A makes sense. If both expect standard B, their choices can sustain that outcome instead. Everyone can respond sensibly to what they expect and still end up at a convention that nobody selected through a joint comparison of the alternatives.
+
+## When everyone knows—but no one knows that everyone knows {#private-mutual-common-knowledge}
+
+Knowing which outcome would be good is only the beginning. In a coordination problem, what matters is also what you know about what other people know.
+
+In *The Emperor's New Clothes*, the emperor walks before a crowd wearing nothing. Read as a parable about coordination, each observer can see what is happening, yet sees everyone else behaving as if the magnificent clothes were real. Speaking up is risky: perhaps others will defend the emperor, leaving the person who objects exposed as the fool.
+
+Then a child says aloud what people could already see: the emperor is wearing no clothes.
+
+The announcement adds little information about the emperor. It changes what observers can infer about one another. Each hears the statement in front of the crowd and can recognize that others heard it too. What had been privately perceived becomes publicly acknowledged. Pinker, Nowak, and Lee (2008) use the story to illustrate **common knowledge**: communication can change what people know about one another's knowledge even when it adds little to their knowledge of the world.
+
+The distinction builds through the levels in @tbl-private-mutual-common-knowledge. Here *X* stands for a fact, such as which migration date the manager has announced.
+
+| State of knowledge | What it means | What remains unresolved |
+| --- | --- | --- |
+| Private knowledge | I know *X*. | Do you know *X*? |
+| Shared or mutual knowledge | Everyone knows *X*. | Does everyone know that everyone knows *X*? |
+| Common knowledge | Everyone knows *X*, everyone knows that everyone knows *X*, and so on through every higher level. | Uncertainty about who knows *X* is removed in the idealized model; how people will act can remain uncertain. |
+: Knowing a fact and knowing that others know it are different informational conditions {#tbl-private-mutual-common-knowledge}
+
+This hierarchy is central to the accounts of convention and common knowledge developed by Lewis (1969) and Aumann (1976). In ordinary conversation, information known by many people is sometimes called *public knowledge*. For strategic reasoning, distinguish that wide distribution from a genuinely public signal: its reception and meaning are themselves commonly recognized. Under those idealized conditions, a truthful public announcement can generate common knowledge. Giving everyone the same information separately need not.
+
+Consider two ways to change the departments' reporting system. The manager could email each department separately: *We will switch to System A on Monday.* Both may read exactly the same plan. Yet Department A may wonder whether B received it, whether B understood the date in the same way, or whether B knows that A has received it.
+
+Alternatively, the manager could announce the decision in a joint meeting, display the migration schedule, and have both teams visibly acknowledge their roles. The plan is identical. What changes is each side's evidence about what the other has heard and expects. Similarly, seeing smoke provides information about a possible fire; a recognizable building-wide alarm also gives occupants reason to believe that others have been alerted. Neither example guarantees that everybody understands or acts as intended.
+
+::: {.callout-note .core-idea icon=false}
+### The information may be old; the social knowledge is new
+
+The child does not make the emperor naked. The joint meeting does not make System A technically better. What changes is what each person can infer about other people's knowledge and expectations.
+
+Communication can therefore do two jobs: tell us something about the world and tell us what others know about the world.
+:::
+
+These **higher-order beliefs** matter because my best action depends on yours, while your action may depend on what you expect me to do. Predicting your choice can therefore require reasoning about your prediction of mine. Common knowledge specifies an idealized information structure in which the chain of *Does she know that I know that she knows?* is settled for a particular fact. It does not by itself select an equilibrium or ensure that people keep an agreement.
+
+### Almost common knowledge is not quite common knowledge
+
+Rubinstein's (1989) **electronic-mail game** shows why unreliable communication complicates coordination. One player learns that circumstances have changed and sends a message to the other. Receipt triggers an automatic confirmation, which triggers another confirmation, and so on. Each message has a small chance of failing, ending the exchange.
+
+Many successful messages establish many levels of *I know that you know that I know*. Yet no finite chain makes the changed circumstances common knowledge: the sender cannot know whether the last message arrived. Under the model's payoff and communication assumptions, even a long exchange fails to recover the coordinated switch supported when the changed circumstances are common knowledge.
+
+This is a result about a particular game, not a claim that people must complete infinite reasoning before acting. People routinely coordinate through conventions, trust, and imperfect signals. The lesson is that uncertainty about what others know can matter greatly when acting together is valuable and acting alone is costly. For the departments, learning that System A is good differs from learning that the other team knows the plan and expects a joint switch.
+
+### Why public events can have disproportionate effects
+
+Chwe (2001) argues that one function of public rituals, ceremonies, and broadcasts is to generate common knowledge. Their strategic importance can come from people recognizing that others are attending to the same message. The same words delivered privately to a thousand people and before a thousand mutually visible participants can therefore have different consequences.
+
+An all-hands meeting can serve this function inside an organization. Employees hear the new standard and see colleagues acknowledge it. But audience size alone does not establish common knowledge. People may miss the message, interpret it differently, or doubt whether others understood it. Even common knowledge of the announcement leaves open whether colleagues will follow it.
+
+The diagnostic question is practical: *Do people merely know the plan, or do they have reason to believe that others know it and expect a joint response?* Sending another explanation may leave this gap untouched. A shared occasion can help make expectations visible.
+
+This also prepares the logic of focal points. A salient answer helps when I expect it to attract your attention and expect you to recognize its salience to me. Shared history and conventions can align these expectations even without a new announcement.
 
 ## What makes an answer stand out? {#focality-payoff-dominance-and-evidence}
 
@@ -173,13 +226,15 @@ These cases extend the chapter's question: which combination of actions is neede
 
 ## Making an agreement credible {#commitment-changes-the-game}
 
-Communication can identify a common option, reveal transition costs, and establish who will do what. Its effectiveness depends on the incentives that remain after the conversation. In the stag hunt, a credible expectation that the partner will hunt Stag makes Stag attractive. A message that creates no such confidence may leave the safer action preferable.
+The earlier distinction between shared and common knowledge explains why a joint announcement can help. Both departments may know the Monday migration plan and know that the other knows it. They can still hesitate if they doubt the other's readiness or expect a last-minute withdrawal.
 
-A public agreement can also help people know what others have heard. **Common knowledge** means everyone knows something, everyone knows that everyone knows it, and so on. This is an ideal benchmark: an announcement supports it only insofar as people understand the message and recognize that others have received and understood it too.
+Communication can identify a common option, reveal transition costs, make expectations more public, and specify who will do what. In the stag hunt, confidence that the partner will hunt Stag can make Stag attractive. But common knowledge of a promise does not establish that fulfilling it will be feasible or worthwhile when the moment arrives.
 
-Words can matter even without a binding commitment. In a stag-hunt experiment, Charness (2000) found much more efficient coordination when a player could send a costless, nonbinding message before choosing an action than when communication was unavailable. Reversing the order of message and action changed behavior. The result shows why the opportunity to communicate and the timing of a message belong in the design of a joint decision.
+Words can matter even without a binding commitment. In a stag-hunt experiment, Charness (2000) found much more efficient coordination when a player could send a costless, nonbinding message before choosing an action than when communication was unavailable. Reversing the order of message and action changed behavior. Communication can therefore coordinate expectations without mechanically enforcing behavior.
 
-A **credible commitment** makes a future action believable by changing the cost or feasibility of departing from it. Booking shared training, allocating an implementation budget, or signing a contract can strengthen a plan when the other party can observe the commitment and understands what it implies. Schelling (1960) emphasized the strategic value of limiting one's future freedom: the restriction can change someone else's response.
+A **credible commitment** goes further by changing the cost or feasibility of departing from a future action. Booking shared training, allocating an implementation budget, making an irreversible investment, or signing an enforceable contract can strengthen a plan when it makes withdrawal harder and the other party understands that consequence. Schelling (1960) emphasized the strategic value of limiting one's future freedom: the restriction can change someone else's response.
+
+The practical sequence is to make the desired outcome identifiable, make the shared expectation visible, and make the promised action credible. A failure can arise at any stage. More explanation of the plan's merits may leave uncertainty about others' knowledge unresolved; a public promise may leave the incentive to withdraw unchanged.
 
 The same mechanism can serve competitive purposes. In 1999, Ford promised UK buyers a refund if it cut prices before the end of the year (Motor Trader, 1999b). The strategic logic is that a later reduction would then cost Ford money on qualifying earlier sales as well as on new ones. Yet a contemporary report described buyers postponing purchases until January, when they expected the guarantee to expire and prices to fall (Motor Trader, 1999a). The report illustrates how a commitment might shift expectations in an unintended direction, without isolating its causal effect on purchases.
 
@@ -192,6 +247,7 @@ The reporting dispute can now be separated into actionable problems. The rows of
 | Obstacle | Evidence to look for | Possible response |
 | --- | --- | --- |
 | Different expectations about the common choice | Each department assumes its own standard is the obvious answer. | Choose one standard explicitly and confirm that both understand the choice. |
+| Uncertainty about what others know | Both have received the plan, but neither knows whether the other received and understood it. | Review the plan together and make each team's acknowledgement visible to the other. |
 | Fear of acting alone | Both prefer the joint switch but doubt the other's readiness. | Set a shared launch condition or reduce the cost of a failed transition. |
 | Disagreement over benefits and burdens | Both want compatibility, but one bears more training or conversion costs. | Compare total gains and agree how to share transition costs. |
 | Unassigned or conflicting roles | Each waits for the other to act, or both claim the same decision right. | Name responsibilities and agree on a tie-breaker. |
@@ -213,13 +269,13 @@ After specifying the game, keep the answers supplied by equilibrium analysis sep
 
 ## Practice Lab
 
-Choose a real situation in which two people or groups must adopt compatible actions. Specify their options and construct a payoff matrix, stating the assumptions behind the numbers. Mark each player's best responses and identify any pure-strategy equilibria. If more than one coordinated outcome could work, explain why the people have not settled on one: different expectations, fear of acting alone, conflicting benefits, or an unassigned role.
+Choose a real situation in which two people or groups must adopt compatible actions. Specify their options and construct a payoff matrix, stating the assumptions behind the numbers. Mark each player's best responses and identify any pure-strategy equilibria. If more than one coordinated outcome could work, explain why the people have not settled on one: different expectations, uncertainty about what others know, fear of acting alone, conflicting benefits, or an unassigned role.
 
-Propose one change that addresses the identified obstacle. State whose expectation or incentive should change and what behavior would count as evidence that the diagnosis was useful. If you propose a guarantee, calculate what it protects against; if you propose a rule, explain how the people bearing its costs can take part in choosing it.
+Propose one change that addresses the identified obstacle. State whose expectation or incentive should change and what behavior would count as evidence that the diagnosis was useful. If you propose communication, explain how participants will know that others received and understood it, and whether it changes any incentive to act. If you propose a guarantee, calculate what it protects against; if you propose a rule, explain how the people bearing its costs can take part in choosing it.
 
 ## Take it forward
 
-At the next stalled meeting, separate “Which plan would work?” from “What makes each person willing to act on it?” A shared answer to the first question may leave the second unresolved. Look for the missing assurance, decision rule, or allocation of responsibility before treating hesitation as unwillingness.
+At the next stalled meeting, separate three questions: “Which plan would work?”, “What does each person know about the others' understanding?”, and “What makes each person willing to act?” Look for the missing shared expectation, assurance, decision rule, or allocation of responsibility before treating hesitation as unwillingness.
 
 [Cooperation and Social Preferences](25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.qmd#chapter-25-start) takes the next step: what if a person gains by departing from the common plan even when everyone else keeps it? Future relationships, institutions, and concern for others can change that decision in different ways.
 
@@ -248,7 +304,15 @@ Both firms would earn more at high–high, but an agreement to charge high price
 ## References cited in this chapter
 
 ::: {.reference}
+Aumann, R. J. (1976). [Agreeing to disagree](https://doi.org/10.1214/aos/1176343654). *The Annals of Statistics, 4*(6), 1236–1239.
+:::
+
+::: {.reference}
 Charness, G. (2000). Self-serving cheap talk: A test of Aumann's conjecture. *Games and Economic Behavior, 33*(2), 177–194.
+:::
+
+::: {.reference}
+Chwe, M. S.-Y. (2001). *[Rational ritual: Culture, coordination, and common knowledge](https://www.jstor.org/stable/j.ctt24hqf1)*. Princeton University Press.
 :::
 
 ::: {.reference}
@@ -257,6 +321,10 @@ Crawford, V. P., Gneezy, U., & Rottenstreich, Y. (2008). The power of focal poin
 
 ::: {.reference}
 David, P. A. (1985). Clio and the economics of QWERTY. *American Economic Review, 75*(2), 332–337.
+:::
+
+::: {.reference}
+Lewis, D. (1969). *Convention: A philosophical study*. Harvard University Press.
 :::
 
 ::: {.reference}
@@ -276,7 +344,15 @@ Nash, J. F. (1950). Equilibrium points in n-person games. *Proceedings of the Na
 :::
 
 ::: {.reference}
+Pinker, S., Nowak, M. A., & Lee, J. J. (2008). [The logic of indirect speech](https://doi.org/10.1073/pnas.0707192105). *Proceedings of the National Academy of Sciences, 105*(3), 833–838.
+:::
+
+::: {.reference}
 Rao, A. R., Bergen, M. E., & Davis, S. (2000). How to fight a price war. *Harvard Business Review, 78*(2), 107–116.
+:::
+
+::: {.reference}
+Rubinstein, A. (1989). [The electronic mail game: Strategic behavior under “almost common knowledge”](https://arielrubinstein.tau.ac.il/papers/32.pdf). *American Economic Review, 79*(3), 385–391.
 :::
 
 ::: {.reference}

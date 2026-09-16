@@ -30,7 +30,9 @@ A market price is a public signal built from many private judgments. It can aggr
 ## Learning goals
 
 - Distinguish rapid information incorporation, no free lunch, fundamental-value accuracy, and bubble dynamics.
-- Evaluate one event study, one limits-to-arbitrage case, one laboratory market, and one field episode without collapsing their evidence.
+- Explain how cash flows, growth, discounting, and financing affect asset values and market prices.
+- Compare historical bubbles and interpret experiments on experience, liquidity, borrowing, expectations, and market composition without treating their evidence as interchangeable.
+- Evaluate an event study and a limits-to-arbitrage case against their stated benchmarks.
 - Produce a falsifiable market memo and a two-direction bubble dashboard with a robust action.
 
 ## Why study behavior in financial markets?
@@ -111,7 +113,11 @@ $$
 
 After Palm's first trading day, observed prices implied that the residual 3Com businesses were worth about negative $22 billion in Lamont and Thaler's (2003) calculation. Simple addition makes that hard to defend. Yet Palm shares were scarce to borrow, shorting was costly and risky, and the distribution was delayed and conditional. The case is unusually strong evidence of relative-value mispricing—and equally strong evidence that a visible inconsistency need not create a riskless free lunch.
 
-## A bubble is a reinforcing-process hypothesis
+## What gives an asset fundamental value?
+
+An **asset** is a resource or claim expected to provide economic benefits. A share of stock represents fractional ownership of a company; a bond promises payments to a lender, subject to default risk and its contractual terms. These are the equity and debt forms of financial capital. Banks channel deposits and other funding into loans, investment banks help firms issue securities, and mutual funds and pension funds pool investments. These institutions matter for bubbles because they influence who can buy, how purchases are financed, and where losses go.
+
+For a shareholder, profits can support dividends or share repurchases, or remain in the firm to finance investment, acquisitions, and debt repayment. Retained earnings create value when their use improves future benefits to shareholders sufficiently to justify the resources committed. Accounting earnings are therefore informative about value, but they are not identical to cash immediately available to an investor. Buying back shares is a distribution to selling shareholders, not the creation of additional operating profit.
 
 The Palm–3Com case offers an unusually direct comparison between related prices. Most claims that a market is overvalued face a harder problem: fundamental value is not printed beside the price. It depends on uncertain cash flows, risk, discounting, and a terminal value. Let $D_t$ denote the discount factor appropriate to a cash flow at horizon $t$, and let $P_T$ be the ex-dividend terminal price. A deliberately simplified discounted-cash-flow model can discipline the debate:
 
@@ -120,6 +126,16 @@ V_0=\sum_{t=1}^{T}D_tE(CF_t)+D_TE(P_T).
 $$
 
 Here $D_t$ must incorporate the timing and risk relevant to that claim. Equivalently, one can discount risk-adjusted certainty-equivalent cash flows at risk-free rates. Discounting risky expected cash flows at a risk-free rate without a risk adjustment can misstate value; it overstates value when the claim requires a positive risk premium. Before calling a price irrational, state the growth, margin, risk-adjustment, discount-rate, and terminal assumptions that would make it reasonable.
+
+A constant-growth example makes the sensitivity concrete. If next period's expected dividend is $d_1$, dividends grow indefinitely at rate $g$, and the appropriate required return is a constant $r>g$, then $V_0=d_1/(r-g)$. In a hypothetical example, a dividend of €2, a required return of 8%, and growth of 3% imply a value of €40. Raising assumed growth to 4% increases it to €50. The arithmetic is exact within the model; the difficult work is defending the assumptions, especially growth continuing indefinitely. A low safe interest rate may support higher valuations, but risky equity generally requires a risk premium as well.
+
+The **price-to-earnings ratio**, $P/E$, divides the share price by earnings per share. It summarizes how much investors pay for one year's reported or forecast earnings. It is not generally the number of years needed to recover the purchase price: that interpretation would require constant earnings paid out entirely, with discounting and risk ignored. A high P/E can reflect expected growth, low required returns, temporarily depressed earnings, or overoptimism. When earnings are negative or close to zero, the ratio becomes especially difficult to interpret.
+
+Long historical price-and-earnings charts motivate the question of whether valuations have become detached from plausible future payouts. Shiller's (1981) excess-volatility analysis made this a formal research question. However, a visual gap between two series drawn on different axes is not a valuation test. The **cyclically adjusted P/E ratio**, or CAPE, divides real prices by average real earnings over the preceding ten years to reduce sensitivity to a single year's earnings. Historical valuation peaks, including 1901, 1929, 1966, and 2000, are useful comparisons, not a calendar for the next crash (Shiller, 2000, 2013).
+
+## A bubble is a reinforcing-process hypothesis
+
+A **price boom** is an observed increase. A **bubble** is a sustained price deviation above a defensible fundamental-value benchmark. Identifying the latter requires more than showing that prices rose dramatically and later fell. Expectations about profits, discount rates, and risk may have changed, and our valuation model may be wrong. Behavioral accounts add a mechanism explaining how demand can reinforce the deviation.
 
 A **bubble diagnosis** becomes more plausible when recent gains increase expectations of further gains, attract attention and financing, induce demand or strategic resale, and thereby validate the forecast temporarily (Shiller, 2000; Greenwood & Shleifer, 2014).
 
@@ -131,19 +147,134 @@ The separate paths in @fig-asset-bubble-feedback allow a boom to begin with genu
 
 A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers' beliefs and on exiting before the correction. This is the recursive prediction problem in [Chapter 23’s beauty contest](23-strategic-interdependence-the-best-move-depends-on-other-minds.qmd#two-beauty-contests), now with a financial consequence: accurately forecasting the next buyer can reward a trade the buyer would reject on cash-flow value alone.
 
+This is often called the **greater fool theory**. The label is provocative, but the mechanism is precise: an anticipated resale price makes buying attractive even when the expected payouts from holding the asset do not. Disagreement and constraints on short selling can give this resale option value (Scheinkman & Xiong, 2003). When expectations reverse, many holders may want to exit together. Buyers need not disappear at every conceivable price; the danger is that sufficient buyers are unavailable near the prices sellers expected, so even a modest sale can require a large price concession.
+
 Skeptical traders face the mirror problem. Even when many privately judge the price fragile, each may be uncertain about when the others will act. Selling or shorting too early can be costly, and funding or career pressure can force an informed trader out before convergence. Abreu and Brunnermeier (2003) formalize how this **synchronization risk** can delay correction. Shared doubt is not the same as coordinated correction.
 
-### One field episode: dot-com innovation and extreme expectations
+### How a boom can become a bubble and a crash
+
+Historical accounts often describe an initial opportunity, widening participation, exuberance, distress, and panic (Kindleberger & Aliber, 2011). The lecture's familiar cycle diagram calls these the stealth, awareness, mania, and blow-off phases. Treat that sequence as a possible feedback process:
+
+1. **An opportunity attracts buyers.** A technology, policy change, new market, or financing innovation can improve genuine prospects.
+2. **The price rise recruits further demand.** Early gains attract attention, imitation, and extrapolation. Successful buyers may appear more knowledgeable than they are.
+3. **Financing and resale expectations sustain participation.** Rising collateral values can permit more borrowing, while people who doubt the valuation may still expect to sell at a profit.
+4. **The process reverses.** Disappointing cash flows, tighter funding, increased supply, or a change in expectations can reduce demand. Falling collateral values and margin calls may then force further selling.
+
+A temporary recovery during the decline can encourage the belief that the market is returning to normal. But the labels in a cycle diagram are usually assigned with hindsight. They do not identify today's phase reliably, establish that early buyers were informed, or imply that every boom follows the same path. Stories such as the shoeshine boy whose stock tips supposedly prompted Joseph Kennedy to exit before 1929 express concern about widespread participation; they are anecdotes, not verified trading signals.
+
+## Historical bubbles: recurring feedback, different institutions
+
+@tbl-historical-bubbles places the episodes discussed in the lecture in chronological order. It preserves their range while distinguishing speculative asset-price booms from broader credit booms and crises. The dates identify broad episodes, not identical national turning points. The central comparison is what investors were buying, what financed the expansion, and how a reversal could spread losses.
+
+| Episode | What expanded | What the comparison teaches |
+| --- | --- | --- |
+| Dutch tulipmania, 1636–1637 | Trading in rare bulbs and contracts for future delivery | Resale expectations can develop around a collectible; later stories can exaggerate participation and economic damage. |
+| South Sea Company, Britain, 1720 | Company shares linked to government-debt conversion and overseas-trade expectations | Public backing and sophisticated investors do not prevent a speculative price rise. |
+| Mississippi scheme, France, 1719–1720 | Company shares, public-debt conversion, and banknote issuance under John Law | Supporting asset prices through money creation can connect speculative demand to the monetary system. |
+| U.S. equities, 1927–1929 | Shares during an economic and technological expansion, including purchases on margin | Genuine prosperity can coexist with fragile financing; a crash and a depression require separate explanations. |
+| Lending to Mexico and other developing economies, 1970s | International bank lending, followed by the debt crisis beginning in 1982 | Optimism about repayment and continued refinancing can create vulnerability without a stock-market bubble. |
+| Japanese property and equities, late 1980s | Land and share valuations supported by credit | Collateral values and lending can reinforce one another and leave prolonged balance-sheet problems. |
+| Finland, Norway, and Sweden, late 1980s into early 1990s | Credit, property, and equity booms followed by banking crises, with different national timing | Liberalized credit markets can expand faster than the capacity to assess and absorb risk. |
+| Mexico, early 1990s, and several Asian economies, 1992–1997 | Capital inflows; property, equity, and credit expansion in parts of Asia | Reversals of foreign financing add currency and refinancing risks. Mexico's 1994–1995 crisis is distinct from the Asian crisis beginning in 1997. |
+| U.S. internet and technology shares, 1995–2000 | Valuations and issuance around the commercialization of the internet | A transformative technology can succeed while prices paid for claims on its profits prove excessive. |
+| Housing and credit, 2000s | Property and lending booms in the United States, Britain, Spain, Ireland, and Iceland, among others | Debt and interconnected intermediaries can turn a property correction into a wider financial crisis; exposures differed across countries. |
+: Historical episodes discussed in the lecture, with distinctions between asset-price and credit booms. Overview: Kindleberger and Aliber (2011); the detailed cases below supply additional evidence and qualifications. {#tbl-historical-bubbles}
+
+### Tulipmania: a real boom surrounded by an exaggerated legend
+
+Rare tulips were valued as cultivated curiosities and markers of taste in the seventeenth-century Netherlands. During 1636–1637, trading extended to contracts for bulbs still in the ground. A buyer could therefore participate partly because another collector or trader might later pay more. When confidence in continued buying failed in early 1637, prices collapsed and disputes arose over honoring contracts.
+
+The familiar version depicts an entire nation gambling away its wealth. Goldgar's (2007) archival research instead finds a much more limited network of participants and much less evidence of economy-wide ruin. Exceptional quoted prices should not be treated as typical completed cash transactions. The episode illustrates speculative resale, the social formation of value, and the importance of trust in promises. It also illustrates a second hazard: a memorable story about irrationality can survive long after historians have challenged its details.
+
+### The South Sea Bubble: Newton could sell early and still lose later
+
+The South Sea Company combined a role in managing British government debt with expectations of overseas trade. Its privileges included participation in the trade in enslaved Africans. The scheme's appeal cannot be understood simply as investment in a productive business: debt conversion, political support, and expectations about future share demand also mattered. In 1720 its share price rose dramatically before collapsing (Kindleberger & Aliber, 2011; Odlyzko, 2020).
+
+Isaac Newton's investment history makes the timing problem vivid. An experienced investor, he sold South Sea holdings during the rise and made a substantial profit, then bought back at much higher prices and suffered large losses. Odlyzko's (2020) reconstruction supports that sequence but also shows why a single exact loss figure is misleading: losses relative to initial wealth differ from losses relative to the wealth Newton could have retained after his early gains. The often-repeated £20,000 is an estimate, and he did not end bankrupt.
+
+The behavioral lesson is the vulnerability of a successful exit to later regret. Watching a price continue to rise can turn a realized gain into a perceived missed opportunity. Newton's trades illustrate that problem, although the surviving records cannot establish his precise thoughts at each purchase.
+
+### The Mississippi scheme: speculation linked to money creation
+
+In France, John Law's system combined a trading company associated with Mississippi development, conversion of public debt into equity, and a bank issuing paper money. The arrangement promised a radical improvement in state finance. As share prices rose, supporting them became entangled with creating additional money. Velde (2003) argues that Law supported equity at an excessively high level, producing uncontrolled money creation; the system unraveled in 1720.
+
+The comparison with South Sea matters because similar price trajectories can arise through different institutions. In the French case, demand for shares, the financing of the state, and confidence in money were directly connected. Explaining the crash therefore requires understanding those obligations as well as investor enthusiasm.
+
+### The 1920s and later credit booms
+
+The U.S. boom of the late 1920s accompanied real economic growth and enthusiasm for technologies and companies. The lecture's selected stock examples show very large gains, but a set of spectacular winners cannot establish how the entire market performed. Buying shares on margin added a separate vulnerability: investors financed part of their purchases with borrowed money and could face demands for additional funds when prices fell. The October 1929 crash damaged wealth and confidence, but the subsequent Depression also involved banking panics, monetary contraction, and other failures. Treating the crash as its complete explanation misses those transmission mechanisms (Richardson et al., 2013).
+
+Later episodes broaden the lesson beyond shares. During the 1970s, international banks expanded lending to Latin America. Higher interest rates, recession, and refinancing difficulties helped turn accumulated debt into a crisis; Mexico announced in August 1982 that it could no longer service its debt (Sims & Romero, 2013). Japan and the Nordic countries subsequently experienced property, equity, and credit booms, while the 1990s added major reversals of international capital flows. These episodes direct attention to who owes whom, in which currency, and at what maturity. A rising asset price and an expanding stock of debt are different facts, but their interaction can make the system fragile.
+
+### Dot-com innovation and extreme expectations {#one-field-episode-dot-com-innovation-and-extreme-expectations}
 
 From the January 3, 1995 close of 743.58 to the March 10, 2000 peak close of 5,048.62, the NASDAQ Composite rose about 579%. By October 9, 2002, it closed at 1,114.11—a 77.9% decline from the peak (Federal Reserve Bank of St. Louis, 2026). Young internet firms faced genuine innovation, profound valuation uncertainty, restricted share supply, disagreement, and optimistic growth narratives (Ofek & Richardson, 2003).
 
-Contemporaneous belief that valuations were high did not force exit: resale expectations, fear of missing out, institutional career pressure, and uncertainty about timing could sustain participation. The episode is useful because the fundamental and feedback stories coexist.
+The broader NASDAQ is not the same portfolio as a selected internet-stock index. Ofek and Richardson (2003) report that their equal-weighted internet index gained more than 1,000% from early 1998 through February 2000, then lost those gains by the end of 2000. Their evidence connects optimistic beliefs and short-sale restrictions to high prices, and the release of previously restricted shares to subsequent declines. The success of the internet as a technology did not guarantee that buyers would earn satisfactory returns at the prices they paid.
 
-### One laboratory market: a known risk-neutral benchmark can still be exceeded
+Beliefs about value and beliefs about the next price also diverged. Shiller (2013) reports that in spring 2000 only about 33% of institutional respondents and 28% of individual respondents in the Yale surveys regarded the market as not overvalued, although most expected it to rise over the following year. These are survey responses, not proof of each respondent's subsequent trades. They nevertheless show how widespread valuation doubts can coexist with expectations of further gains. Resale expectations and uncertainty about timing can sustain participation even when confidence in fundamental value is weak.
+
+### Housing: when a correction reaches balance sheets
+
+The U.S. housing boom connected a familiar asset to a complicated financing system. Buyers could justify higher prices through rents, housing services, limited supply, or lower financing costs, but expectations of continued appreciation also made purchasing and refinancing appear safer. Long historical home-price comparisons in the lecture prompt an appropriate question: did rents, incomes, construction costs, and financing conditions plausibly support the increase? Population growth alone cannot settle it, and national indexes conceal substantial regional differences.
+
+Mortgage borrowing expanded alongside prices. Loans were packaged into securities held across the financial system, and many institutions depended on funding that had to be renewed frequently. When housing prices fell, refinancing became more difficult and mortgage losses increased. Uncertainty about who held the losses weakened confidence in counterparties and funding markets (Weinberg, 2013).
+
+The damage spread beyond housing. The S&P 500 lost about 57% between its October 2007 peak and March 2009 trough (Rich, 2013). The lecture's shorter 2007–2008 price window and its international table illustrate the breadth of the sell-off, but a comparison must specify dates, price versus total returns, and currency. A foreign investor's dollar return can differ sharply from the same market's local-currency return. The explanatory task is to trace exposures and financing, rather than assume that simultaneous losses establish identical national bubbles.
+
+### A crash does not settle the bubble diagnosis
+
+On October 19, 1987, the Dow Jones Industrial Average fell 22.6% in one day. Proposed explanations include changing economic expectations, portfolio-insurance selling, and strains in market liquidity and trading systems (Bernhardt & Eckblad, 2013). A later rebound cannot establish that the preceding valuation was correct, just as a crash alone cannot prove that it was a bubble. The price path leaves the underlying mechanism to be investigated.
+
+## Experimental markets: making the valuation benchmark observable {#one-laboratory-market-a-known-risk-neutral-benchmark-can-still-be-exceeded}
 
 Field data rarely reveal fundamental value with certainty. Laboratory markets can define the dividend distribution, asset life, information, cash, short-selling rules, and trading institution. In the classic Smith, Suchanek, and Williams design, a finite-lived asset paid a dividend after each period. If expected dividend is $d$ and $k$ periods remain, the **risk-neutral expected-dividend benchmark**, with no final redemption and negligible discounting over the short experimental session, is $FV_t=kd$. Prices in many baseline markets nevertheless rose above the benchmark and later fell (Smith et al., 1988; Porter & Smith, 2003).
 
-The experiment shows that ambiguous fundamentals are not necessary for bubble-like paths. Repeated experience often reduces bubbles in the same design, while changed environments can rekindle them (Dufwenberg et al., 2005; Hussam et al., 2008).
+### A finite-lived asset and a declining benchmark
+
+In the baseline parameterization shown in the lecture, the asset lasts 15 periods and each period's dividend is equally likely to be 0, 8, 28, or 60 cents. The expected dividend is therefore $(0+8+28+60)/4=24$ cents. Immediately before trading in the first period, 15 dividends remain, so the risk-neutral benchmark is $15\times24=360$ cents. It falls by 24 cents after each dividend opportunity, reaches 24 cents before the final dividend, and is zero after the asset expires. A separate lecture example pays 12 or 20 cents with equal probability, giving an expected dividend of 16 cents and an initial 15-period benchmark of $2.40. The two parameterizations should not be mixed.
+
+Participants begin with cash and shares. In a **double auction**, buyers can submit bids and sellers can submit asks while observing other offers. Under the classroom implementation illustrated in the lecture, an incoming order that crosses the best standing offer executes at that standing offer's price. A trader can buy to collect remaining dividends or to sell again during the experiment. A resale changes who receives those dividends; it does not add dividends to the asset.
+
+Prices in many inexperienced markets begin below the expected-dividend benchmark, rise above it, and fall late in the session. Initial underpricing could reflect risk aversion or uncertainty about the task and other traders. Later overpricing cannot be explained merely by learning that the asset has a larger expected dividend: the distribution is already given. Still, an expected-value benchmark is not every risk-averse trader's certainty equivalent, and a price deviation alone does not identify the belief or preference producing it.
+
+Bubble-like paths are not confined to groups of a dozen participants. Williams (2008) reports large computerized classroom markets, including one with 304 traders that exhibited a substantial boom and crash. Adding traders therefore does not automatically create independent judgments or eliminate feedback. These markets differ from professional exchanges in incentives and institutions, so their size establishes a useful possibility rather than complete field realism.
+
+### Flat fundamentals: the bubble is not just a falling-value task
+
+Many real assets do not mechanically lose one dividend's expected value each short trading period. A useful design therefore pays interest $r$ on cash and gives the asset an expected dividend $d$ each period, with a final redemption payment $R=d/r$. With $k$ periods remaining, the risk-neutral discounted benchmark is
+
+$$
+FV_t=\sum_{j=1}^{k}\frac{d}{(1+r)^j}+\frac{d/r}{(1+r)^k}=\frac{d}{r}.
+$$
+
+The redemption payment offsets the shortening dividend horizon. In the lecture's examples, $d=\$0.70$ with $r=10\%$ and $d=\$1.40$ with $r=20\%$ both imply a constant benchmark of $7. These are experimental per-period rates, not annual market rates. They also produce different flows of dividends and interest into traders' accounts even though $d/r$ is unchanged.
+
+Bostian and Holt (2009) describe this design and report prices rising above the flat benchmark. Their higher-payment example illustrates how faster wealth accumulation can support larger price deviations. Because the dividend and interest processes change together, that comparison should not be described as a pure manipulation of initial cash. Experiments that vary initial cash directly provide complementary evidence (Caginalp et al., 1998).
+
+### Experience, liquidity, and trading rules change the result
+
+Repeated experience often reduces bubbles in the same environment (Dufwenberg et al., 2005). That finding is more specific than saying that markets inevitably learn. Hussam et al. (2008) rekindled bubbles among experienced traders after changing liquidity and dividend uncertainty. Deck et al. (2014) introduced overlapping generations: new participants arrived with cash and older participants exited with cash, producing recurring price rises and falls within a single asset's life. What the market has learned can change when its participants, resources, or rules change.
+
+The **cash-to-fundamental-value ratio** compares cash available in a market with the aggregate benchmark value of its outstanding shares. More cash can allow optimistic traders to express greater demand without any increase in expected payouts. There is no universal ratio above which a bubble must occur. Prices depend on how participants use their purchasing power and on the institution through which bids become transactions.
+
+@tbl-bubble-experimental-conditions distinguishes the interventions rather than treating all reductions in bubbles as evidence for one mechanism. In particular, supplying cash, allowing borrowing, delaying payouts, and permitting short sales alter different parts of the market.
+
+| Condition studied | Main result in the cited setting | What the result can establish |
+| --- | --- | --- |
+| More initial cash relative to assets | Prices increased when cash was more abundant (Caginalp et al., 1998). | Purchasing power can change prices with the dividend process held fixed. |
+| Looser borrowing constraints | Relaxing credit constraints generated larger bubbles; higher exogenous income also raised prices (Coppock et al., 2021). | Borrowing capacity is one route through which demand expands. |
+| Dividends paid later | Bubbles were less prevalent when dividends were concentrated at the end of the horizon (Smith et al., 2000). | Payment timing changes cash available for reinvestment and may help coordinate expectations; these channels need to be distinguished. |
+| Short selling permitted | Short-sale capacity reduced overpricing but could produce prices below the benchmark (Haruvy & Noussair, 2006). | Giving pessimistic views greater trading capacity need not make prices exactly correct. |
+| Resale ruled out | Bubbles and crashes still occurred when participants could buy or sell but could not speculate by buying and reselling (Lei et al., 2001). | Strategic resale is not necessary for every experimental bubble. |
+| Another useful trading activity available | Much of the excess asset trading diminished when participants had another market activity (Lei et al., 2001). | The opportunity cost of attention and the laboratory's implicit invitation to trade affect behavior. |
+: Experimental conditions that alter price formation. Results are conditional on the respective designs, not universal prescriptions. {#tbl-bubble-experimental-conditions}
+
+The no-resale result is particularly demanding for a pure greater-fool explanation. If traders cannot profit by passing the asset on, some other source of demand must account for the deviation. Confusion, valuation errors, preferences, and features of the trading task remain candidates. Likewise, less trading when another activity is available does not mean that every field bubble results from boredom.
+
+### Expectations and the strategies behind the price path
+
+A rising market does not imply that participants accurately predict its next movement. Holt et al. (2017) elicited short-term price forecasts and found that predictions typically trailed prices during the rise and remained above them during the decline. Forecast paths were too flat and did not generally anticipate the turning point. Haruvy et al. (2007) likewise show why measuring expectations adds information beyond observing transactions: the same purchase can reflect different views about value and future resale prices.
 
 Different strategies can sustain the same path. Passive trading can remain broadly consistent with fundamental value; feedback trading can follow price changes; a speculator may buy above a current value estimate when expecting a still higher next price. Haruvy and Noussair's (2006) rule classified behavior only when a trader's highest consistency score reached at least 8 of 15 periods; ties received fractional weights. Across 18 sessions with nine inexperienced participants each, the 162 trader classifications in @tbl-bubble-strategies split across several patterns:
 
@@ -163,12 +294,26 @@ Different strategies can sustain the same path. Passive trading can remain broad
 
 The mixture in @fig-bubble-trader-strategies-redraw shows several patterns of trading within the same experimental design. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.
 
+### Lottery payoffs and cognitive reflection
+
+Two assets can have the same expected dividend while offering very different payoff distributions. In Ackert et al. (2006), a standard asset paid $0.50, $0.90, or $1.20 with probabilities 0.48, 0.48, and 0.04, giving an expected dividend of $0.72. A lottery asset paid $18 with probability 0.04 and zero otherwise, also averaging $0.72. In markets that developed bubbles, traders paid more for the lottery asset. Financing purchases from their own available funds and allowing short sales moderated the price run-ups.
+
+Equal expected payouts do not imply that every preference model assigns equal value. Attraction to positively skewed payoffs and overweighting a small chance of a large gain are possible interpretations, not separately identified mechanisms established by the price difference. The example connects asset trading to the treatment of small probabilities in [Prospect Theory](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd).
+
+Individual differences also matter without translating automatically into market accuracy. Corgnet et al. (2015) found that higher cognitive reflection test scores were associated with higher earnings and trading more consistent with fundamentals. Bubbles occurred even when participants had earned their initial endowments through a task, although trading volume and earnings dispersion were higher with house money. A correlation between reflection and earnings does not establish that training on the test would prevent bubbles or that reflective traders can always overcome other participants' demand.
+
+### Gender, context, and a distinct hormonal intervention
+
+The suggestion that “Lehman Sisters” would have avoided the crisis is a memorable prompt for a hypothesis. The experiments supply a more conditional answer. Eckel and Füllbrunn (2015) found larger bubbles in all-male than all-female markets in their declining-value design. Their later study did not find a significant difference when gender composition was obscured (Eckel & Füllbrunn, 2017). Holt et al. (2017) found similar bubbles across gender groups with flat fundamentals and unobtrusive sorting, but larger bubbles among men in a declining-value robustness treatment.
+
+Wang et al. (2018) further found that all-female groups in China produced bubbles comparable to those in all-male groups, and larger than those in all-female U.S. groups. This limits any claim that a single stable gender difference determines market outcomes. Cross-country comparisons also change more than one contextual feature and cannot isolate “culture” as if it were a randomly assigned treatment.
+
+Nadler et al. (2018) tested a different question by experimentally administering testosterone or placebo to male participants. Testosterone administration generated larger and longer-lasting bubbles in that setting. This supports a causal claim about the administered intervention in that sample; it does not identify the source of male–female differences, describe all men's behavior, or show that naturally occurring hormone variation caused a historical crisis.
+
 ::: {.callout-note .research-lens icon=false}
 ## Research Lens: what laboratory markets can transport
 
-Laboratory markets identify mechanisms by changing conditions that field markets rarely hold constant. Bubble-like deviations have appeared with known, declining fundamentals and also with flat fundamentals; raising cash relative to asset value can enlarge deviations (Caginalp et al., 1998). Forecast data show that traders' expectations can lag turning points and help explain price paths (Haruvy et al., 2007; Holt et al., 2017).
-
-Control over fundamentals, liquidity, experience, and trading rules lets researchers isolate how changes in these conditions affect the price path.[^ch27-laboratory-markets]
+These experiments establish that known dividend distributions, an announced horizon, larger groups, or prior experience do not invariably prevent mispricing. They also let researchers test how liquidity, financing, information, and trading rules alter the outcome. Transporting the findings requires comparing those conditions with the field market of interest.[^ch27-laboratory-markets] A historical price chart establishes a trajectory; a controlled treatment comparison can establish the effect of a particular intervention. Neither alone supplies a universal explanation for bubbles.
 :::
 
 ## A two-direction bubble dashboard
@@ -222,7 +367,11 @@ Then red-team the memo. Look for an unfalsifiable escape (“the market will rec
 
 ## Practice Lab
 
-Choose a published event study discussed in this chapter or a course-provided case containing the event time, benchmark, reported abnormal return, uncertainty, and potential confounds. Produce a one-page audit that records: first public time, expected-return model, estimation and event windows, main estimate with uncertainty, overlapping news, tradable timing, and costs. End with two sentences: the strongest warranted conclusion and one stronger claim the evidence does not support. Do not invent missing data or results.
+**Bubble investigation.** Choose one historical episode from @tbl-historical-bubbles. Write its fundamental-value story and its feedback story separately. Identify the financing arrangement, the evidence available before the reversal, and one observation that would distinguish the two stories. Compare it with one laboratory intervention from @tbl-bubble-experimental-conditions and explain which institutional difference limits that comparison.
+
+**Classroom-market debrief.** If class trading data are available, first reconstruct the dividend distribution, number of periods, redemption rule, interest rate, and borrowing or short-sale constraints. Then calculate the correct benchmark for that session and compare it with actual transactions and recorded forecasts. A six-period exercise has a different horizon from the classic 15-period market. Describe the observed path without assuming in advance that a bubble or a crash occurred.
+
+**Event-study audit.** Choose a published event study discussed in this chapter or a course-provided case containing the event time, benchmark, reported abnormal return, uncertainty, and potential confounds. Produce a one-page audit that records: first public time, expected-return model, estimation and event windows, main estimate with uncertainty, overlapping news, tradable timing, and costs. End with two sentences: the strongest warranted conclusion and one stronger claim the evidence does not support. Do not invent missing data or results.
 
 **Advanced extension:** reproduce the estimate only when the dataset, data definitions, and analysis code or a specified software template are provided. Compare your result with the published estimate and document every discrepancy before interpreting it.
 
