@@ -7,7 +7,7 @@ const {chromium} = require('playwright');
 (async () => {
   const root = process.cwd();
   const out = __dirname;
-  const html = path.join(root, 'docs/chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html');
+  const html = process.argv[3] ? path.resolve(process.argv[3]) : path.join(root, 'docs/chapters/24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html');
   const targets = [{format:'html', file:html}];
   if (process.argv[2]) targets.push({format:'epub', file:path.resolve(process.argv[2])});
   const browser = await chromium.launch({headless:true, executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
@@ -31,7 +31,8 @@ const {chromium} = require('playwright');
           if(positions.some(p=>p.top===null)) issues.push('Missing chapter section');
           if(positions.some((p,i)=>i && p.top<=positions[i-1].top)) issues.push('Incorrect section order');
           if(!table || table.querySelectorAll('tbody tr').length!==3) issues.push('Knowledge table missing or row count incorrect');
-          if(!document.querySelector('a[href="#tbl-private-mutual-common-knowledge"]')) issues.push('Missing numbered table link');
+          if(table && table.textContent.includes('\\(X\\)')) issues.push('Knowledge table still requires external math rendering');
+          if(!document.querySelector('a[href$="#tbl-private-mutual-common-knowledge"]')) issues.push('Missing numbered table link');
           if(document.documentElement.scrollWidth>window.innerWidth+2) issues.push('Page-wide horizontal overflow');
           if(new Set(allIds).size!==allIds.length) issues.push('Duplicate identifiers');
           if(document.querySelector('.quarto-unresolved-ref')) issues.push('Unresolved cross-reference');

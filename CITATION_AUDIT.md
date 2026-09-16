@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **929**
+Unique references in the master union: **960**
 
-Chapter reference blocks: **939**
+Chapter reference blocks: **970**
 
 Unresolved author–year citations: **0**
 
@@ -17,7 +17,7 @@ Unresolved author–year citations: **0**
 | Limited Attention {#attention-what-becomes-evidence} | 33 | 0 |
 | The Predictive Mind {#the-predictive-mind-perception-is-inference} | 35 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 32 | 0 |
-| Valuation {#valuation-how-options-become-worth-choosing} | 55 | 0 |
+| Valuation {#valuation-how-options-become-worth-choosing} | 58 | 0 |
 | The Narrator After Choice | 19 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 31 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 16 | 0 |
@@ -32,13 +32,13 @@ Unresolved author–year citations: **0**
 | Decisions From Experience | 19 | 0 |
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 29 | 0 |
-| Habits, Wanting, and Self-Control | 33 | 0 |
+| Habits, Wanting, and Self-Control | 35 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 16 | 0 |
 | Cooperation and Social Preferences | 33 | 0 |
 | Social Norms and Conformity | 30 | 0 |
-| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 31 | 0 |
+| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 57 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Culture and Identity | 30 | 0 |
 | Persuasion | 28 | 0 |
