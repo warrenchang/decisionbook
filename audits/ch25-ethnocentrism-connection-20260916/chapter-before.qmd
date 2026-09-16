@@ -203,12 +203,6 @@ An obligation to help still leaves a question: *help whom?* Suppose the colleagu
 
 Favoritism does not necessarily mean hostility. In a meta-analysis of 212 studies, Balliet and colleagues (2014) found greater cooperation with ingroup than outgroup members. Comparisons with unclassified strangers supported a pattern driven mainly by extra cooperation toward insiders, rather than reduced cooperation toward outsiders. The practical distinction matters: someone can sincerely deny disliking another department while giving their own colleagues preferential help. The size of that difference depends on the task, information, and relationship.
 
-[]{#ingroup-favoritism-and-evolution}
-
-An evolutionary model asks how such selective cooperation could become common. Hammond and Axelrod (2006) model agents that recognize a group marker and can help their own group, other groups, both, or neither. Local interaction and reproduction allow cooperation within a group to spread alongside noncooperation across its boundary. Their **ethnocentric strategy** means helping agents with the same marker while withholding help from others; it requires neither hatred nor a belief in the group's superiority. The [evolutionary notes below](#advanced-research-track-evolutionary-and-spatial-models) explain how this pattern can emerge.
-
-These are complementary levels of explanation: experiments examine responses to group labels, whereas the model tracks the spread of conditional strategies. The model does not establish that human favoritism is inevitable. It also keeps the rule for identifying insiders fixed. Shared goals matter because people can change which boundary defines the group whose success they value.
-
 ### A common goal must make joint effort worthwhile {#superordinate-goals-and-cooperation}
 
 Telling rival teams to be friendlier leaves their working relationship largely unchanged. A **superordinate goal** is valuable to both groups and requires their combined efforts or resources. Both wanting the same prize creates competition; needing each other to achieve a valued outcome creates a reason to cooperate.
@@ -325,17 +319,9 @@ The evolutionary label must not erase institutions. Kin, repeated contact, reput
 
 A spatial model adds rules for interaction or movement. Cooperators may persist in clusters where much of the benefit they provide reaches other cooperators. Whether that happens depends on the network, payoffs, and update rule; simply drawing a network does not establish a cooperation advantage.
 
-Schelling's segregation model shows another reason to distinguish an individual's motive from a population pattern: local decisions about neighbors can generate substantial aggregate segregation without a corresponding individual preference for that degree of segregation (Schelling, 1969; Wilensky, 1997). Evolutionary Prisoner's Dilemma models instead examine payoff-dependent strategy transmission (Wilensky, 2002). These are executable hypotheses under specified rules, not direct evidence about human motives.
+Schelling's segregation model shows another reason to distinguish an individual's motive from a population pattern: local decisions about neighbors can generate substantial aggregate segregation without a corresponding individual preference for that degree of segregation (Schelling, 1969; Wilensky, 1997). Evolutionary Prisoner's Dilemma and ethnocentrism models examine different processes, including payoff-dependent strategy transmission and cooperation conditioned on group markers (Hammond & Axelrod, 2006; Wilensky, 2002, 2003). These are executable hypotheses under specified rules, not direct evidence about human motives.
 
 Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat's tournament performance does not make it successful under every population process (Axelrod, 1984; Imhof et al., 2007). A dynamic model needs declared payoffs, initial conditions, transmission or update rules, interaction structure, and time horizon; a stochastic simulation also needs recorded random seeds and independent runs. [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) develops these requirements and separates evolutionary function, current mechanism, and normative interpretation.
-
-#### Ethnocentrism: cooperation stops at a marker {#ethnocentrism-as-selective-cooperation}
-
-The [ingroup favoritism discussed above](#ingroup-favoritism-and-evolution) has a precise counterpart in the ethnocentrism model. In the [NetLogo teaching version](https://ccl.northwestern.edu/netlogo/models/Ethnocentrism-AlternativeVisualization), agents inherit a color marker and two rules: whether to help agents of the same color and whether to help agents of a different color (Wilensky, 2003). Helping reduces the donor's chance of reproducing and raises the recipient's. Offspring occupy vacant neighboring sites and inherit their parent's traits, with occasional mutation; immigration and death also change the population.
-
-Local reproduction creates clusters whose members tend to share markers and strategies. Mutual help can sustain these clusters, while selective helpers avoid the cost of helping differently marked neighbors. The marker does not guarantee cooperation: same-marker free riders can exploit a cooperative cluster. In Hammond and Axelrod's (2006) reported dynamics, selectively cooperative clusters of another marker can spread at those free riders' expense. Ingroup favoritism can therefore coexist with considerable cooperation while leaving a boundary across which help is withheld.
-
-The connection to common goals has a limit. The model defines an insider by marker equality; it does not model rival departments learning to regard themselves as one team. The [shared-goal discussion](#superordinate-goals-and-cooperation) concerns changing that social boundary, not simply making a fixed ethnocentric rule more successful. A simulation of selective helping neither establishes the evolutionary history of human prejudice nor justifies exclusion.
 
 ### A spreading routine can have several explanations {#application-choose-the-model-after-diagnosing-the-process}
 
@@ -598,5 +584,5 @@ Wilensky, U. (2002). *NetLogo PD Basic Evolutionary model*. Center for Connected
 :::
 
 ::: {.reference}
-Wilensky, U. (2003). *NetLogo Ethnocentrism - Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. https://ccl.northwestern.edu/netlogo/models/Ethnocentrism-AlternativeVisualization
+Wilensky, U. (2003). *NetLogo Ethnocentrism Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/EthnocentrismAlternativeVisualization
 :::

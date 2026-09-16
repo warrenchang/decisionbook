@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **965**
+Unique references in the master union: **967**
 
-Chapter reference blocks: **975**
+Chapter reference blocks: **976**
 
 Unresolved author–year citations: **0**
 
@@ -36,7 +36,7 @@ Unresolved author–year citations: **0**
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 16 | 0 |
-| Cooperation and Social Preferences | 38 | 0 |
+| Cooperation and Social Preferences | 39 | 0 |
 | Social Norms and Conformity | 30 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 57 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
