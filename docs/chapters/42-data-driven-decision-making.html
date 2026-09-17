@@ -571,8 +571,12 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#ai-a-short-guide" id="toc-ai-a-short-guide" class="nav-link" data-scroll-target="#ai-a-short-guide">AI, machine learning, and algorithms: a short guide</a></li>
-  <li><a href="#why-this-final-chapter" id="toc-why-this-final-chapter" class="nav-link" data-scroll-target="#why-this-final-chapter">Why this is the final chapter</a></li>
+  <li><a href="#data-and-computation" id="toc-data-and-computation" class="nav-link" data-scroll-target="#data-and-computation">More data and cheaper computation</a></li>
+  <li><a href="#four-uses-of-data" id="toc-four-uses-of-data" class="nav-link" data-scroll-target="#four-uses-of-data">Four questions data analysis can answer</a></li>
+  <li><a href="#ai-a-short-guide" id="toc-ai-a-short-guide" class="nav-link" data-scroll-target="#ai-a-short-guide">AI, machine learning, and algorithms: a short guide</a>
+  <ul class="collapse">
+  <li><a href="#image-recognition-a-historical-gain-in-predictive-capability" id="toc-image-recognition-a-historical-gain-in-predictive-capability" class="nav-link" data-scroll-target="#image-recognition-a-historical-gain-in-predictive-capability">Image recognition: a historical gain in predictive capability</a></li>
+  </ul></li>
   <li><a href="#cheap-prediction" id="toc-cheap-prediction" class="nav-link" data-scroll-target="#cheap-prediction">What becomes possible when prediction becomes cheap?</a></li>
   <li><a href="#separate-prediction-and-valuation" id="toc-separate-prediction-and-valuation" class="nav-link" data-scroll-target="#separate-prediction-and-valuation">Separate the forecast from the value of its consequences</a>
   <ul class="collapse">
@@ -581,7 +585,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#flint-lead-pipes" id="toc-flint-lead-pipes" class="nav-link" data-scroll-target="#flint-lead-pipes">Flint: a probability map becomes a public decision</a></li>
   <li><a href="#risk-is-not-treatment-benefit" id="toc-risk-is-not-treatment-benefit" class="nav-link" data-scroll-target="#risk-is-not-treatment-benefit">Predicting risk and estimating intervention benefits</a></li>
-  <li><a href="#ai-workbench" id="toc-ai-workbench" class="nav-link" data-scroll-target="#ai-workbench">Choose an AI tool by the work it must do</a>
+  <li><a href="#ai-workbench" id="toc-ai-workbench" class="nav-link" data-scroll-target="#ai-workbench">Choose tools by the work they must do</a>
   <ul class="collapse">
   <li><a href="#ai-customer-support" id="toc-ai-customer-support" class="nav-link" data-scroll-target="#ai-customer-support">Customer support: help at the moment of action</a></li>
   <li><a href="#ai-masai-screening" id="toc-ai-masai-screening" class="nav-link" data-scroll-target="#ai-masai-screening">Screening: change the workflow, then test it</a></li>
@@ -595,9 +599,10 @@ window.Quarto = {
   <li><a href="#compare-workflows-before-scaling" id="toc-compare-workflows-before-scaling" class="nav-link" data-scroll-target="#compare-workflows-before-scaling">Compare workflows before scaling</a></li>
   <li><a href="#communicate-enough-uncertainty-to-support-a-choice" id="toc-communicate-enough-uncertainty-to-support-a-choice" class="nav-link" data-scroll-target="#communicate-enough-uncertainty-to-support-a-choice">Communicate enough uncertainty to support a choice</a></li>
   </ul></li>
-  <li><a href="#practice-lab-build-a-small-ai-decision-system" id="toc-practice-lab-build-a-small-ai-decision-system" class="nav-link" data-scroll-target="#practice-lab-build-a-small-ai-decision-system">Practice Lab: build a small AI decision system</a>
+  <li><a href="#why-this-final-chapter" id="toc-why-this-final-chapter" class="nav-link" data-scroll-target="#why-this-final-chapter">Why this is the final chapter</a></li>
+  <li><a href="#practice-lab-build-a-small-ai-decision-system" id="toc-practice-lab-build-a-small-ai-decision-system" class="nav-link" data-scroll-target="#practice-lab-build-a-small-ai-decision-system">Practice Lab: improve a decision with data</a>
   <ul class="collapse">
-  <li><a href="#ai-decision-canvas" id="toc-ai-decision-canvas" class="nav-link" data-scroll-target="#ai-decision-canvas">The AI decision canvas</a></li>
+  <li><a href="#ai-decision-canvas" id="toc-ai-decision-canvas" class="nav-link" data-scroll-target="#ai-decision-canvas">The data and AI decision canvas</a></li>
   </ul></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -637,7 +642,7 @@ window.Quarto = {
 <p>A method that helped crews find more dangerous pipes might seem easy to welcome. <strong>Yet the machine-learning-guided priorities met angry opposition from some residents.</strong> Homes judged more likely to have hazardous lines were inspected sooner, while other households waited. Agrawal and colleagues describe anxious residents in streets left out of the immediate search, including wealthier residents angry that their pipes were not being checked. They wanted an inspection of their own connection; a low predicted risk did not provide the reassurance they sought (Agrawal et al., 2022a, chapter 15).</p>
 <p>The conflict changed the programme. The city brought in a new contractor and directed excavation across its wards without following the model’s risk priorities. More residents could see work taking place in their area, but crews increasingly dug up lines that did not need replacement. <strong>The share of excavations finding hazardous pipes fell from about 80 percent under model-guided targeting to just 15 percent in 2018 under the new priorities</strong> (Agrawal et al., 2022a; Webb et al., 2020).</p>
 <p>Concentrating work where dangerous pipes are most likely can remove more of them with limited money and crews. Spreading inspections more widely can answer residents who fear being overlooked. Those aims can pull the next excavation in different directions. <strong>How should the city use these predictions when residents contest the priorities built around them—and who has authority to decide whose claim comes first?</strong></p>
-<p>The <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#ai-accountable-judgment">previous chapter</a> separated forecasts from the priorities and authority that turn them into a choice. Flint shows why that separation matters: residents could dispute the excavation policy without resolving their dispute by improving the pipe estimates. We will examine what AI can contribute, what decisions its output leaves open, and how to test whether the resulting arrangement works better.</p>
+<p>The <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#ai-accountable-judgment">previous chapter</a> separated forecasts from the priorities and authority that turn them into a choice. Flint shows why that separation matters: residents could dispute the excavation policy without resolving their dispute by improving the pipe estimates. We begin with why data analysis has become more accessible, distinguish the questions it can answer, and then examine how AI can help turn evidence into better decisions. Throughout, the test is whether the resulting process works better for the people affected.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -648,46 +653,103 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use validated AI to improve estimates of what may happen. Keep valuation and consequential final choices under accountable human authority: people must determine what matters, whose interests count, which trade-offs are acceptable, and who answers for the action. Test the whole arrangement, because a capable model helps only when its information improves an actual decision.</p>
+<p>More recorded data and cheaper computation make it feasible to inform many more decisions with evidence. Start with the question: describe what happened, investigate why, predict what is unknown, or compare actions. Use the simplest adequate analysis, including validated AI where it helps. People remain responsible for what matters, whose interests count, and which actions are authorized. Test the whole arrangement, because inexpensive analysis creates value when it improves an actual decision.</p>
 </div>
 </div>
 <section id="learning-goals" class="level2">
 <h2 data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
+<li>Explain how growing data availability and falling costs of computation expand the practical uses of evidence.</li>
+<li>Distinguish descriptive, diagnostic, predictive, and prescriptive analysis, and recognize when a causal claim requires additional evidence.</li>
 <li>Separate a prediction from a value judgment, an intervention effect, and an authorization to act.</li>
 <li>Explain how AI, machine learning, and algorithms relate, and match tools to a specific decision task.</li>
 <li>Explain why probability thresholds, data labels, and evaluation criteria embody human choices.</li>
-<li>Design a small, testable AI-assisted workflow with a baseline, an owner, and a learning rule.</li>
+<li>Design a small, testable decision workflow using data and, where useful, AI, with a baseline, an owner, and a learning rule.</li>
 </ul>
+</section>
+<section id="data-and-computation" class="level2">
+<h2 data-anchor-id="data-and-computation">More data and cheaper computation</h2>
+<p><strong>Data-driven decision making</strong> uses observations and analysis to inform choices and learn from their results. A decision once informed by memory and occasional reports may now leave a continuous digital record. Payments record purchases, booking systems record demand, sensors record equipment conditions, and inspections update information about properties. Documents, photographs, and messages add evidence that does not begin as a tidy spreadsheet. Much of this information is produced while people carry out ordinary work. Reusing appropriate records can make learning less expensive than collecting every observation afresh.</p>
+<p>The scale of recorded activity has grown rapidly. In 2014, IDC estimated that the data created and copied worldwide during 2013 amounted to <strong>4.4 zettabytes</strong> and projected <strong>44 zettabytes for 2020</strong>—ten times as much. A zettabyte is a trillion gigabytes. The second number was a forecast made in 2014, not a later measurement of the 2020 total (IDC, 2014). Nor did this measure count only distinct, useful observations: it included copies and transient data. The practical opportunity is the growing range of activities that can be observed, compared, and learned from.</p>
+<p>Availability has several meanings. Data may exist somewhere without being accessible, lawful to use for this purpose, or relevant to this decision. A city’s property database can contain millions of entries and still omit the pipe material needed for a particular house. More rows can improve precision when the observations are informative, but they do not automatically correct selective coverage, inaccurate labels, or a poorly chosen outcome.</p>
+<p>At the same time, better hardware, more efficient methods, and reusable software have reduced the cost of many analytical tasks. Spreadsheets, databases, and statistical tools let small organizations summarize records, compare groups, and update estimates without building a computing system from scratch. Cloud services can make computing capacity available when needed. What matters economically is the cost of obtaining a useful result at the required scale and quality, rather than the number of calculations alone.</p>
+<p>A recent example concerns the cost of using an already trained AI model. Stanford’s 2025 AI Index reports that the inference price of achieving approximately GPT-3.5-level performance on the MMLU benchmark fell from <strong>US$20 per million tokens in November 2022 to US$0.07 in October 2024</strong>—a reduction of more than 280-fold. Tokens are the pieces of text a language model processes. The same report documents falling hardware costs and improving energy efficiency (Stanford Institute for Human-Centered Artificial Intelligence, 2025). These are dated comparisons at specified performance levels; they do not imply that every model or every computing project becomes cheaper at the same rate.</p>
+<p>The combination matters: more useful observations can improve an analysis, while cheaper processing can make it worth repeating frequently and for smaller decisions. A bakery can examine sales by product and hour; a maintenance team can update inspection priorities after each new finding. Data-informed decision making becomes practical in places where a bespoke analysis for every choice would once have cost too much.</p>
+<p>The complete process still includes collecting and cleaning records, checking results, changing work, and monitoring consequences. Training a new model can also be expensive even when using an existing one is cheap. The opportunity is therefore to lower the cost of useful evidence and bring it closer to action. To realize that opportunity, first specify what the analysis needs to answer.</p>
+</section>
+<section id="four-uses-of-data" class="level2">
+<h2 data-anchor-id="four-uses-of-data">Four questions data analysis can answer</h2>
+<p>Data analysis is the systematic use of observations to answer a question. <strong>Descriptive, diagnostic, predictive, and prescriptive analytics</strong> distinguish four purposes, not four products or mutually exclusive techniques (INFORMS, n.d.). The same records can serve several purposes. In <a href="#tbl-four-uses-of-data" class="quarto-xref">Table&nbsp;<span>42.1</span></a>, Flint provides a common setting so that the change in question is easy to see.</p>
+<div id="tbl-four-uses-of-data" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-four-uses-of-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42.1: Four uses of data, illustrated within one decision
+</figcaption>
+<div aria-describedby="tbl-four-uses-of-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Purpose</th>
+<th>Main question</th>
+<th>Application to the pipe-replacement decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Descriptive</strong></td>
+<td>What happened, or what is happening?</td>
+<td>Count inspections and hazardous pipes found; report hit rates, costs, waiting times, and coverage.</td>
+</tr>
+<tr class="even">
+<td><strong>Diagnostic</strong></td>
+<td>Why did this pattern occur?</td>
+<td>Investigate whether a falling hit rate reflects changes in inspected properties, records, procedures, or the targeting policy.</td>
+</tr>
+<tr class="odd">
+<td><strong>Predictive</strong></td>
+<td>What is likely, including what we cannot yet observe?</td>
+<td>Estimate the probability that an uninspected property has a hazardous service line.</td>
+</tr>
+<tr class="even">
+<td><strong>Prescriptive</strong></td>
+<td>What should we do, given our objectives and constraints?</td>
+<td>Compare excavation schedules using risk estimates, crew capacity, costs, access, and agreed allocation priorities.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><strong>Description establishes the pattern that needs attention.</strong> A hit rate requires both a numerator and a denominator: hazardous lines found divided by lines inspected. A count of successful replacements alone cannot tell us whether targeting improved, because the city may simply have excavated more properties. Descriptive work also makes missing coverage visible and supplies the baseline for judging change.</p>
+<p><strong>Diagnosis investigates explanations.</strong> Breaking results down by neighborhood, property age, or contractor can reveal where a pattern originates and suggest mechanisms to test. Such comparisons do not automatically identify a cause: the groups may differ in several ways, and the inspection policy determines which properties enter the data. A causal answer to “Why did this happen?” needs a research design and assumptions that distinguish the proposed explanation from alternatives (Cunningham, 2021).</p>
+<p><strong>Prediction fills an information gap.</strong> Forecasting next month’s demand is one example; estimating the material of a pipe that already exists is another. A useful predictor can exploit an association without explaining why that association exists. Whether the model predicts well for new cases is an empirical question, and it is different from whether changing one of its inputs would change the outcome.</p>
+<p><strong>Prescription compares feasible actions.</strong> It combines information with an objective, constraints, and consequences. An optimizer can recommend an excavation schedule that performs best under its stated assumptions, but the objective and acceptable trade-offs must come from somewhere. Research on prescriptive analytics formalizes this connection between prediction and constrained decision making (Bertsimas &amp; Kallus, 2020). When an action changes the outcome being predicted, credible evidence of its effect is an additional input; a risk score alone is insufficient.</p>
+<p>These purposes connect <strong>hindsight, insight, and foresight</strong> to action. They do not form a universal ladder of increasing value or difficulty. A reliable count revealing an overlooked street can be more useful than a sophisticated forecast of the wrong target. In practice, the questions recur: an action produces outcomes to describe, unexpected results prompt diagnosis, and new evidence changes predictions and plans. The method should follow the question.</p>
 </section>
 <section id="ai-a-short-guide" class="level2">
 <h2 data-anchor-id="ai-a-short-guide">AI, machine learning, and algorithms: a short guide</h2>
-<p>A pipe-risk model, a chatbot, and a chess-playing program do different jobs, yet all can be described as AI. Treating them as one general-purpose solution makes it difficult to decide what to use. What do these terms tell us about how a tool works and where it can help?</p>
+<p>The four purposes of analysis do not map onto four kinds of AI. A descriptive table may need only a database query; an allocation problem may be solved with conventional optimization. AI offers additional tools, particularly when the task involves complex patterns, language, or images. A pipe-risk model, a chatbot, and a chess-playing program can all be described as AI while doing different jobs. The following terms help identify what each tool contributes.</p>
 <p><strong>Artificial intelligence (AI)</strong> is the broad field of building computer systems that perform tasks associated with intelligence: recognizing patterns, working with language, reasoning, and planning. Such systems can use inputs such as records, text, images, or sound to produce predictions, recommendations, content, or actions (National Institute of Standards and Technology, 2023; OECD, 2024).</p>
 <p>An <strong>algorithm</strong> is a step-by-step procedure for carrying out a task. Sorting names alphabetically uses an algorithm; so does training a pipe-risk model. Algorithms are building blocks of ordinary software as well as AI. Some AI systems reason with explicitly supplied rules or search through possible moves; others learn patterns from data.</p>
 <p><strong>Machine learning</strong> is a major approach within AI in which a learning algorithm uses data to build or adjust a <strong>model</strong>. The model captures patterns that can be applied to new inputs. In Flint, examples linking property characteristics to observed pipe materials help the model estimate what lies beneath an uninspected property. <strong>Training</strong> builds or adjusts the model; <strong>inference</strong> applies it to an input to produce an output (James et al., 2023; OECD, 2024).</p>
 <p>These capabilities extend beyond numerical forecasts. <strong>Generative AI</strong> produces content such as text, images, audio, or video using patterns learned from data. <strong>Large language models (LLMs)</strong> are machine-learning models that work with language; those used in chatbots can draft an explanation, summarize a document, or suggest questions. Other AI tools can flag unusual transactions, recognize objects in images, or help plan a sequence of actions (OECD, 2024).</p>
 <p>For decision making, the useful question is which task needs help: estimating demand, finding relevant information, generating alternatives, or planning how to act. Specifying that task gives us something concrete to test—and keeps the choice of technology connected to the decision it should improve.</p>
+<section id="image-recognition-a-historical-gain-in-predictive-capability" class="level3">
+<h3 data-anchor-id="image-recognition-a-historical-gain-in-predictive-capability">Image recognition: a historical gain in predictive capability</h3>
+<p>Image classification shows how much a defined task can improve. In the ImageNet competition, the best classification error fell from <strong>28.2 percent in 2010</strong> to <strong>3.57 percent in 2015</strong>, when an ensemble of residual neural networks won. These are <strong>top-five error rates</strong>: an image counts as an error when its correct category is absent from the system’s five proposed labels (Russakovsky et al., 2015; He et al., 2016). The widely reproduced human reference of about 5 percent came from a particular trained annotator, not a universal limit on human vision.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The result illustrates gains in capability made possible by the combination of training data, algorithms, and computing resources. Tasks such as sorting images or flagging cases for inspection became more plausible candidates for automation or assistance. It does not directly measure the price of computation, nor establish reliable performance on every new image source. Images from a different setting, different error costs, and a different workflow still require evaluation. Falling costs and improving performance are distinct changes; together they expand the tasks worth testing.</p>
 </section>
-<section id="why-this-final-chapter" class="level2">
-<h2 data-anchor-id="why-this-final-chapter">Why this is the final chapter</h2>
-<p>The book began by asking how a decision should be made and how it actually takes shape. AI brings those two questions together. We can ask a model to estimate a consequence separately from the human discussion of what that consequence is worth. This creates an opportunity to improve prediction while making the remaining judgments easier to identify. A city with better pipe estimates still needs to decide what its replacement program should accomplish.</p>
-<p>Using that opportunity draws on the whole book:</p>
-<ul>
-<li><strong>Attention and interpretation:</strong> <a href="../chapters/03-attention-what-becomes-evidence.html#inattentional-blindness-what-attention-leaves-out">Chapter 3</a> asks what becomes evidence; <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html#equivalent-facts-different-meanings">Chapter 12</a> examines how its presentation changes a decision. These questions apply to the cases included in a dataset, the information supplied to an AI assistant, and the way a score or recommendation is displayed.</li>
-<li><strong>Prediction and evidence:</strong> <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#probability-begins-with-a-model">Chapters 14</a> and <a href="../chapters/15-samples-randomness-regression-and-calibration.html#calibration-makes-confidence-answerable">15</a> supply base rates, updating, and calibration. They help us judge whether an AI forecast deserves reliance and whether an apparent improvement survives an appropriate comparison.</li>
-<li><strong>Valuation and a better life:</strong> <a href="../chapters/06-valuation-how-options-become-worth-choosing.html#using-valuation-wisely">Chapter 6</a> examines how outcomes become worth pursuing; <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html#one-word-several-targets">Chapter 22</a> asks what makes the resulting life better. Together they keep a convenient target—spending, clicks, or speed—from silently defining success.</li>
-<li><strong>Other minds and institutions:</strong> <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html#authority-and-responsibility">Chapter 28</a> examines authority and responsibility, while <a href="../chapters/35-negotiation-as-joint-decision-design.html#prepare-the-joint-decision">Chapter 35</a> treats negotiation as joint decision design. An AI-supported policy still needs a way to address conflicting interests, hear objections, and assign authority over the final choice.</li>
-<li><strong>Design and learning:</strong> <a href="../chapters/39-behavior-design-make-the-better-action-easier.html#one-primary-workflow">Chapters 39</a> through <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#decision-hygiene-build-a-process-that-can-learn">41</a> turn these distinctions into changes that can be implemented and tested. A forecast becomes useful when someone can act on it, record the result, and revise the process.</li>
-</ul>
-<p>These connections give the chapter its practical test: identify the uncertainty a tool could reduce, decide what action would follow, and compare that arrangement with the existing process. A model’s score matters because of what it enables people to do.</p>
 </section>
 <section id="cheap-prediction" class="level2">
 <h2 data-anchor-id="cheap-prediction">What becomes possible when prediction becomes cheap?</h2>
 <p>A bakery wants every customer to find fresh bread, yet producing enough for an unexpectedly busy day can leave shelves full at closing. Baking less cuts waste but risks losing customers. A better demand forecast helps with both pressures. What changes when producing that forecast becomes cheap enough to do repeatedly, by product and time of day?</p>
 <p>In <em>Prediction Machines</em>, Agrawal, Gans, and Goldfarb frame the economic significance of AI as a fall in the cost of prediction (Agrawal et al., 2022b). Their use of <strong>prediction</strong> includes filling in missing information about the present: whether a transaction is fraudulent, what an image contains, or which material lies underground. It is broader than forecasting the future. <em>Power and Prediction</em> extends the argument from improving individual tasks to reorganizing the systems in which decisions depend on one another (Agrawal et al., 2022a).</p>
-<p>The fall in cost is striking. Stanford’s 2025 AI Index reports that the inference price of achieving approximately GPT-3.5-level performance on the MMLU benchmark fell from <strong>US$20 per million tokens in November 2022 to US$0.07 in October 2024</strong>—a reduction of more than 280-fold (Stanford Institute for Human-Centered Artificial Intelligence, 2025).</p>
-<p>A cheap answer still needs suitable data, a valid target, a working interface, and a way to catch mistakes. Nevertheless, a substantial fall in one input’s cost changes what is worth attempting. A small organization may be able to classify more incoming requests, inspect more documents, or update forecasts more frequently. Problems once handled by one broad rule may support more differentiated responses.</p>
+<p>The earlier cost comparison explains why this matters for repeated decisions. When producing a useful estimate becomes inexpensive, a small organization may be able to classify more incoming requests, inspect more documents, or update forecasts more frequently. Problems once handled by one broad rule may support more differentiated responses.</p>
 <p>The opportunity reaches beyond doing the same work faster. If a bakery can anticipate demand by product and time, it may change when batches are baked, how staff are scheduled, and when unsold stock is offered elsewhere. These are linked decisions. Improving a forecast without changing the production schedule may achieve little; redesigning the schedule without reliable forecasts may create new waste.</p>
 <p>Cheaper prediction can therefore increase the value of its <strong>complements</strong>: useful observations, clear objectives, good interventions, implementation capacity, and feedback. If the city cannot obtain access to a property, a better pipe-risk score cannot make the excavation happen. If nobody is authorized to adjust a production schedule, a better demand forecast may remain an attractive dashboard.</p>
 <p>Before selecting a tool, complete the connection: <strong>If we could estimate this more accurately, we would change this decision.</strong> If the intended action is unclear, the project may need work on its objective or options before another forecast.</p>
@@ -705,7 +767,7 @@ window.Quarto = {
 <div id="tbl-ai-rain-losses" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-rain-losses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;42.1: The same forecast can imply different actions under different values
+Table&nbsp;42.2: The same forecast can imply different actions under different values
 </figcaption>
 <div aria-describedby="tbl-ai-rain-losses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -745,7 +807,7 @@ Table&nbsp;42.1: The same forecast can imply different actions under different v
 </div>
 </figure>
 </div>
-<p>Expected loss weights each possible error by its probability: 70% for dry weather and 30% for rain. The comparison in <a href="#tbl-ai-rain-losses" class="quarto-xref">Table&nbsp;<span>42.1</span></a> favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.</p>
+<p>Expected loss weights each possible error by its probability: 70% for dry weather and 30% for rain. The comparison in <a href="#tbl-ai-rain-losses" class="quarto-xref">Table&nbsp;<span>42.2</span></a> favors moving indoors for the first organizer and remaining outdoors for the second. Neither needs a different weather forecast. They face different consequences.</p>
 <p>The more costly it would be to miss rain, relative to making an unnecessary move, the less confidence in rain is needed to justify moving indoors.</p>
 <p>With these hypothetical losses, the thresholds in <a href="#fig-ai-same-forecast-different-values" class="quarto-xref">Figure&nbsp;<span>42.1</span></a> are 20 percent and 60 percent, placing the same 30 percent forecast on opposite sides of the action threshold. At equality, the model leaves the organizer indifferent. A threshold of 50 percent would be appropriate only for equal error losses under these assumptions.</p>
 <div id="fig-ai-same-forecast-different-values" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Both organizers face a 30 percent rain probability. With false-alarm loss 2 and missed-rain loss 8, the threshold is 20 percent and moving indoors minimizes expected loss. With losses 6 and 4, the threshold is 60 percent and remaining outdoors minimizes expected loss.">
@@ -797,14 +859,14 @@ p &gt; \frac{C_F}{C_F+C_M}.
 <h2 data-anchor-id="flint-lead-pipes">Flint: a probability map becomes a public decision</h2>
 <p>Return to Flint’s contested excavation plan. To judge what went wrong, we need to separate the prediction the model supplied from the priorities people chose. Agrawal and colleagues develop this conflict in chapter 15 of <em>Power and Prediction</em>, “The New Judges” (Agrawal et al., 2022a). The technical task was a form of <strong>supervised learning</strong>: use properties with observed service-line materials to learn relationships that help estimate materials at other properties. Features included information about parcels and buildings, historical records, and inspection findings. The work used predictive models including gradient-boosted decision trees, alongside methods for deciding where additional inspection would be informative (Abernethy et al., 2018; Webb et al., 2020).</p>
 <p>A <strong>decision tree</strong> divides cases through a sequence of feature-based splits. A tree ensemble combines many trees; in boosting, successive trees help improve the model’s predictions under a specified loss function. The resulting score can express an estimated probability of a class, rather than only a yes-or-no label (James et al., 2023). Here the target was the material of the service line.</p>
-<p>The field record makes the contrast clear. Model-guided targeting found hazardous pipes in about <strong>80 percent</strong> of excavations. When the new contractor largely bypassed high-risk areas in <strong>2018</strong>, the hit rate fell to <strong>15 percent</strong>. A <strong>2019</strong> legal settlement required the city to return to model-guided prioritization, after which the hit rate recovered to about <strong>70 percent</strong> (Agrawal et al., 2022a, chapter 15; Webb et al., 2020).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The field record makes the contrast clear. Model-guided targeting found hazardous pipes in about <strong>80 percent</strong> of excavations. When the new contractor largely bypassed high-risk areas in <strong>2018</strong>, the hit rate fell to <strong>15 percent</strong>. A <strong>2019</strong> legal settlement required the city to return to model-guided prioritization, after which the hit rate recovered to about <strong>70 percent</strong> (Agrawal et al., 2022a, chapter 15; Webb et al., 2020).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <p>The earlier technical paper asked a further question: could the search become more efficient still? It compared an actual unnecessary-visit rate of 18.8 percent with 2.0 percent under a proposed procedure in a <strong>backtesting simulation</strong> (Abernethy et al., 2018).</p>
 <p>The residents’ objections exposed a question that the probability map could not answer: how much weight should the city give to reassurance and visible coverage across neighborhoods relative to finding hazardous pipes quickly? The settlement changed who could settle that trade-off and which priorities the programme had to follow. In Agrawal and colleagues’ account, better prediction became a struggle over decision authority (Agrawal et al., 2022a).</p>
-<p>The distinctions in <a href="#tbl-ai-flint-decision" class="quarto-xref">Table&nbsp;<span>42.2</span></a> show what turns the probability map into a programme: an objective, feasible actions, operating constraints, and authority to decide and review.</p>
+<p>The distinctions in <a href="#tbl-ai-flint-decision" class="quarto-xref">Table&nbsp;<span>42.3</span></a> show what turns the probability map into a programme: an objective, feasible actions, operating constraints, and authority to decide and review.</p>
 <div id="tbl-ai-flint-decision" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-flint-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;42.2: Decisions in a pipe-replacement program
+Table&nbsp;42.3: Decisions in a pipe-replacement program
 </figcaption>
 <div aria-describedby="tbl-ai-flint-decision-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -867,12 +929,12 @@ Figure&nbsp;42.2: Hypothetical group-average dropout rates show how baseline ris
 <p>Even a credible benefit estimate does not finish the allocation decision. A university may protect a minimum level of access, prioritize people facing severe disadvantage, or provide a different intervention where outreach is insufficient. Those commitments should be explicit. The figure makes the causal input visible alongside those allocation priorities.</p>
 </section>
 <section id="ai-workbench" class="level2">
-<h2 data-anchor-id="ai-workbench">Choose an AI tool by the work it must do</h2>
-<p>Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents’ questions, and a third a scheduling tool for crews. Each addresses a different obstacle; choosing the most impressive demonstration could leave the main obstacle untouched. Begin by identifying the work the decision needs. The workbench in <a href="#tbl-ai-workbench" class="quarto-xref">Table&nbsp;<span>42.3</span></a> matches predictive models, language models, retrieval systems, and optimizers to different parts of the workflow and identifies the human check each output needs.</p>
+<h2 data-anchor-id="ai-workbench">Choose tools by the work they must do</h2>
+<p>Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents’ questions, and a third a scheduling tool for crews. Each addresses a different obstacle. The four analytical purposes help the team identify which obstacle matters before choosing a tool. The workbench in <a href="#tbl-ai-workbench" class="quarto-xref">Table&nbsp;<span>42.4</span></a> includes ordinary reporting and causal analysis alongside predictive models, language models, retrieval systems, and optimizers. A workflow can combine them, with a different check for each output.</p>
 <div id="tbl-ai-workbench" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-workbench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;42.3: Select functions for a decision workflow; these tool families overlap
+Table&nbsp;42.4: Select methods for the work a decision needs; their uses overlap
 </figcaption>
 <div aria-describedby="tbl-ai-workbench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -892,16 +954,28 @@ Table&nbsp;42.3: Select functions for a decision workflow; these tool families o
 </thead>
 <tbody>
 <tr class="odd">
+<td>Describe outcomes and coverage</td>
+<td>Spreadsheet, database query, statistical summary, chart</td>
+<td>Counts, rates, distributions, and missing cases</td>
+<td>Are units, denominators, definitions, and coverage correct?</td>
+</tr>
+<tr class="even">
 <td>Estimate a quantity or probability</td>
 <td>Regression, tree ensembles, neural networks</td>
 <td>Demand range, failure risk, or class probability</td>
 <td>Is it validated for these cases and this time horizon?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Find structure or unusual cases</td>
 <td>Clustering or anomaly detection</td>
 <td>Groups or flagged deviations</td>
 <td>Does the pattern have a useful interpretation, and could the flag be harmless?</td>
+</tr>
+<tr class="even">
+<td>Estimate what an action changes</td>
+<td>Randomized comparison or a credible observational causal design, with suitable estimation</td>
+<td>Expected difference under alternative actions</td>
+<td>Does the design support that causal comparison, and for whom?</td>
 </tr>
 <tr class="odd">
 <td>Find and organize evidence</td>
@@ -957,6 +1031,7 @@ Table&nbsp;42.3: Select functions for a decision workflow; these tool families o
 </section>
 <section id="test-the-whole-decision" class="level2">
 <h2 data-anchor-id="test-the-whole-decision">Test the whole decision, not just the model</h2>
+<p>Evaluation should match the analytical purpose. A descriptive report needs accurate definitions, denominators, and coverage. A diagnostic explanation must address competing accounts; a causal claim needs a defensible comparison. A prediction needs testing on relevant new cases. A prescription needs evaluation against the objective, constraints, costs, and consequences of the action. These checks build on the distinctions in <a href="#tbl-four-uses-of-data" class="quarto-xref">Table&nbsp;<span>42.1</span></a>.</p>
 <p>Imagine receiving a report that a model is “95 percent accurate.” Before celebrating, ask what was predicted, which cases were included, and what comparison matters. If an event occurs in only 5 percent of cases, a rule that always predicts its absence is already 95 percent accurate. It may still be useless for finding the cases that require action.</p>
 <p>Begin by testing the estimate on observations that did not determine the fitted model, keeping validation separate from final testing (James et al., 2023). Then follow the estimate into use: which errors change actions, what capacity limits those actions, and what consequences follow? The sections below separate these checks so a favorable model score cannot stand in for an evaluation of the decision.</p>
 <section id="make-the-test-resemble-the-task" class="level3">
@@ -983,16 +1058,29 @@ Table&nbsp;42.3: Select functions for a decision workflow; these tool families o
 <p>For the city, a map should make missing inspections visible. For the event organizer, the forecast should appear beside the consequences of moving or remaining. For the university, the display should distinguish baseline dropout risk from estimated benefit of outreach. A dashboard earns its place when updated information can trigger a useful decision.</p>
 </section>
 </section>
+<section id="why-this-final-chapter" class="level2">
+<h2 data-anchor-id="why-this-final-chapter">Why this is the final chapter</h2>
+<p>The book began by asking how a decision should be made and how it actually takes shape. Data analysis brings those two questions together. Description makes the current process visible; diagnosis investigates its failures; prediction reduces uncertainty; and prescription compares possible actions. AI can assist this work, while the human discussion of what matters and who may act remains explicit. A city with better pipe estimates still needs to decide what its replacement program should accomplish.</p>
+<p>Using that opportunity draws on the whole book:</p>
+<ul>
+<li><strong>Attention and interpretation:</strong> <a href="../chapters/03-attention-what-becomes-evidence.html#inattentional-blindness-what-attention-leaves-out">Chapter 3</a> asks what becomes evidence; <a href="../chapters/12-framing-when-the-same-facts-become-different-decisions.html#equivalent-facts-different-meanings">Chapter 12</a> examines how its presentation changes a decision. These questions apply to the cases included in a dataset, the information supplied to an AI assistant, and the way a score or recommendation is displayed.</li>
+<li><strong>Prediction and evidence:</strong> <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#probability-begins-with-a-model">Chapters 14</a> and <a href="../chapters/15-samples-randomness-regression-and-calibration.html#calibration-makes-confidence-answerable">15</a> supply base rates, updating, and calibration. They help us judge whether an AI forecast deserves reliance and whether an apparent improvement survives an appropriate comparison.</li>
+<li><strong>Valuation and a better life:</strong> <a href="../chapters/06-valuation-how-options-become-worth-choosing.html#using-valuation-wisely">Chapter 6</a> examines how outcomes become worth pursuing; <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html#one-word-several-targets">Chapter 22</a> asks what makes the resulting life better. Together they keep a convenient target—spending, clicks, or speed—from silently defining success.</li>
+<li><strong>Other minds and institutions:</strong> <a href="../chapters/28-authority-groupthink-and-shared-responsibility.html#authority-and-responsibility">Chapter 28</a> examines authority and responsibility, while <a href="../chapters/35-negotiation-as-joint-decision-design.html#prepare-the-joint-decision">Chapter 35</a> treats negotiation as joint decision design. An AI-supported policy still needs a way to address conflicting interests, hear objections, and assign authority over the final choice.</li>
+<li><strong>Design and learning:</strong> <a href="../chapters/39-behavior-design-make-the-better-action-easier.html#one-primary-workflow">Chapters 39</a> through <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#decision-hygiene-build-a-process-that-can-learn">41</a> turn these distinctions into changes that can be implemented and tested. A forecast becomes useful when someone can act on it, record the result, and revise the process.</li>
+</ul>
+<p>These connections give the chapter its practical test: identify the uncertainty a tool could reduce, decide what action would follow, and compare that arrangement with the existing process. A model’s score matters because of what it enables people to do.</p>
+</section>
 <section id="practice-lab-build-a-small-ai-decision-system" class="level2">
-<h2 data-anchor-id="practice-lab-build-a-small-ai-decision-system">Practice Lab: build a small AI decision system</h2>
-<p>Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before consulting the model and preserve that version. You can study how advice changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.</p>
+<h2 data-anchor-id="practice-lab-build-a-small-ai-decision-system">Practice Lab: improve a decision with data</h2>
+<p>Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. First state whether the missing contribution is descriptive, diagnostic, predictive, or prescriptive. A spreadsheet or simple comparison may be sufficient; add AI when it has a defined job. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before seeing the analysis and preserve that version. You can study how the output changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.</p>
 <section id="ai-decision-canvas" class="level3">
-<h3 data-anchor-id="ai-decision-canvas">The AI decision canvas</h3>
-<p>Use <a href="#tbl-ai-decision-canvas" class="quarto-xref">Table&nbsp;<span>42.4</span></a> to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.</p>
+<h3 data-anchor-id="ai-decision-canvas">The data and AI decision canvas</h3>
+<p>Use <a href="#tbl-ai-decision-canvas" class="quarto-xref">Table&nbsp;<span>42.5</span></a> to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.</p>
 <div id="tbl-ai-decision-canvas" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ai-decision-canvas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal evidence, and responsibility distinct
+Table&nbsp;42.5: A decision canvas that keeps the analytical question, valuation, causal evidence, and responsibility distinct
 </figcaption>
 <div aria-describedby="tbl-ai-decision-canvas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1012,30 +1100,34 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 <td>Who must choose what, by when, from which feasible alternatives?</td>
 </tr>
 <tr class="even">
-<td><strong>Prediction</strong></td>
-<td>What missing information would change that choice? Specify unit, target, horizon, and uncertainty.</td>
+<td><strong>Analytical question</strong></td>
+<td>Is the immediate task description, diagnosis, prediction, or prescription? What would its answer change?</td>
 </tr>
 <tr class="odd">
+<td><strong>Evidence or estimate</strong></td>
+<td>What information is needed? For a prediction, specify unit, target, horizon, and uncertainty.</td>
+</tr>
+<tr class="even">
 <td><strong>Valuation</strong></td>
 <td>Whose benefits, burdens, rights, and error costs count? Which constraints are protected?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>Causal link</strong></td>
 <td>Why would the proposed action improve the outcome? What evidence is still needed?</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>Tool and baseline</strong></td>
 <td>Which function should the tool perform? What simple rule or existing process must it improve upon?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>Evidence and test</strong></td>
 <td>Which data are legitimate and available at decision time? What held-out or prospective comparison will be used?</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>Authority and exceptions</strong></td>
 <td>Who authorizes actions, checks uncertain cases, handles challenges, and can stop the system?</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>Learning rule</strong></td>
 <td>What is logged, when is it reviewed, and what result triggers continuation, revision, or withdrawal?</td>
 </tr>
@@ -1044,22 +1136,22 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 </div>
 </figure>
 </div>
-<p><strong>Round 1: preserve independent judgment.</strong> Give two people the same case. Each records the available actions, a forecast, the consequences that matter, and a provisional choice before seeing model output. This uses the independence principle from <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#chapter-41-start">Chapter 41</a>.</p>
-<p><strong>Round 2: assign the tool a bounded job.</strong> Ask for the missing estimate, a source-grounded comparison, or alternatives that the team may have omitted. If the system cannot justify a probability from an appropriate model and validation, keep its suggestions qualitative rather than inventing precision.</p>
+<p><strong>Round 1: preserve independent judgment.</strong> Give two people the same case. Each records the available actions, the missing information, any relevant forecast, the consequences that matter, and a provisional choice before seeing analytical output. This uses the independence principle from <a href="../chapters/41-decision-hygiene-build-a-process-that-can-learn.html#chapter-41-start">Chapter 41</a>.</p>
+<p><strong>Round 2: assign the analysis a bounded job.</strong> Produce the summary, investigate the pattern, estimate the missing quantity, or compare feasible actions under stated criteria. Select a tool suited to that job and record the time and cost of obtaining and checking the result. If using AI, request a specific contribution. If the system cannot justify a probability from an appropriate model and validation, keep its suggestions qualitative rather than inventing precision.</p>
 <p>For an LLM helping with a document-based decision, a useful instruction is:</p>
 <blockquote class="blockquote">
 <p>Using only the supplied material, make a comparison table for these alternatives. Link each factual claim to its supporting passage. Separate stated facts, assumptions, and missing information. Show which additional evidence could change the comparison. Use our stated criteria; flag any value trade-off that we have not resolved.</p>
 </blockquote>
 <p>This prompt structures a checkable output. Verify the supporting passages and important calculations before using the table.</p>
-<p><strong>Round 3: diagnose the disagreement.</strong> When people and AI differ, classify the reason. Do they disagree about evidence, probability, values, feasibility, or authority? A model cannot settle a disagreement about priorities merely by restating its forecast. A senior person cannot refute a well-validated forecast merely by disliking its implications.</p>
+<p><strong>Round 3: diagnose the disagreement.</strong> When individual assessments and analytical results differ, classify the reason. Do they disagree about evidence, probability, values, feasibility, or authority? A model cannot settle a disagreement about priorities merely by restating its forecast. A senior person cannot refute a well-validated forecast merely by disliking its implications.</p>
 <p><strong>Round 4: record a choice and a test.</strong> Use the canvas to authorize a limited action or decide that more evidence is needed. Preserve the initial forecasts, the advice received, what was checked, and why the advice changed—or did not change—the decision. Set a review date before the outcome can rewrite the story.</p>
-<p>Debrief with one question: <strong>What became better because the tool was present, and what evidence would show that improvement?</strong> A useful answer identifies a changed part of the process and an observable consequence. “The output sounded professional” is not enough.</p>
+<p>Debrief with one question: <strong>What became better because of the analysis, and what evidence would show that improvement?</strong> A useful answer identifies a changed part of the process and an observable consequence, taking the cost of analysis and implementation into account. “The output sounded professional” is not enough.</p>
 </section>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
 <p>Flint needed a replacement policy it could explain to anxious residents and evaluate against the removal of hazardous pipes. Better predictions made the search more informative; the dispute concerned how those predictions should guide action and who could set the priorities. A defensible process needs both useful evidence and accountable authority over the trade-offs.</p>
-<p>Choose one recurring decision this week. Write down the uncertain fact that matters most and the values that would turn that fact into a choice. Test whether an AI tool can improve the first, while making the second more explicit. Keep an identifiable owner and a record that later evidence can challenge.</p>
+<p>More available data and cheaper computation make this discipline feasible for more recurring decisions. Choose one this week. State the question, identify the relevant records, and begin with a simple analysis. Use AI where it improves a defined contribution. Make the values behind the choice explicit, keep an identifiable owner, and preserve a record that later evidence can challenge.</p>
 <p>Return finally to the hiring committee that opened the book. AI might help compare applications or estimate later performance. The committee still has to define which kinds of performance matter, examine how evidence was selected and presented, hear disagreement, and justify its choice. It then needs to check what happened without letting the outcome rewrite the original reasoning. Attention, prediction, valuation, influence, design, and learning meet in that one decision.</p>
 <p>The decision map in <a href="01-how-decisions-should-be-made-and-how-they-actually-are.html#fig-normative-decision-loop" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.</p>
 </section>
@@ -1081,6 +1173,9 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 <p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2022b). <em>Prediction machines: The simple economics of artificial intelligence</em> (Updated and expanded ed.). Harvard Business Review Press. https://store.hbr.org/product/prediction-machines-updated-and-expanded-the-simple-economics-of-artificial-intelligence/10598</p>
 </div>
 <div class="reference">
+<p>Bertsimas, D., &amp; Kallus, N. (2020). <a href="https://doi.org/10.1287/mnsc.2018.3253">From predictive to prescriptive analytics</a>. <em>Management Science, 66</em>(3), 1025–1044.</p>
+</div>
+<div class="reference">
 <p>Bigman, Y. E., &amp; Gray, K. (2018). People are averse to machines making moral decisions. <em>Cognition, 181</em>, 21–34. https://doi.org/10.1016/j.cognition.2018.08.003</p>
 </div>
 <div class="reference">
@@ -1097,6 +1192,15 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 </div>
 <div class="reference">
 <p>Gommers, J., Hernström, V., Josefsson, V., Sartor, H., Schmidt, D., Hjelmgren, A., Larsson, A.-M., Hofvind, S., Andersson, I., Rosso, A., Hagberg, O., &amp; Lång, K. (2026). Interval cancer, sensitivity, and specificity comparing AI-supported mammography screening with standard double reading without AI in the MASAI study: A randomised, controlled, non-inferiority, single-blinded, population-based, screening-accuracy trial. <em>The Lancet, 407</em>(10527), 505–514. https://doi.org/10.1016/S0140-6736(25)02464-X</p>
+</div>
+<div class="reference">
+<p>He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). <a href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">Deep residual learning for image recognition</a>. In <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</em> (pp.&nbsp;770–778).</p>
+</div>
+<div class="reference">
+<p>IDC. (2014). <em><a href="https://idcclients.cycloneinteractive.net/emc-digital-universe-iview-2014/executive-summary.htm">The digital universe of opportunities: Rich data and the increasing value of the Internet of Things</a></em> [EMC-sponsored report].</p>
+</div>
+<div class="reference">
+<p>INFORMS. (n.d.). <em><a href="https://www.informs.org/Professional-Development/INFORMS-Analytics-Framework/Explore">Explore the INFORMS Analytics Framework</a></em>. Retrieved September 17, 2026.</p>
 </div>
 <div class="reference">
 <p>James, G., Witten, D., Hastie, T., Tibshirani, R., &amp; Taylor, J. (2023). <em>An introduction to statistical learning: With applications in Python</em>. Springer. https://doi.org/10.1007/978-3-031-38747-0</p>
@@ -1120,6 +1224,9 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 <p>OECD. (2024). <em>Explanatory memorandum on the updated OECD definition of an AI system</em>. OECD Artificial Intelligence Papers, No.&nbsp;8. OECD Publishing. https://doi.org/10.1787/623da898-en</p>
 </div>
 <div class="reference">
+<p>Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy, A., Khosla, A., Bernstein, M., Berg, A. C., &amp; Fei-Fei, L. (2015). <a href="https://doi.org/10.1007/s11263-015-0816-y">ImageNet large scale visual recognition challenge</a>. <em>International Journal of Computer Vision, 115</em>(3), 211–252.</p>
+</div>
+<div class="reference">
 <p>Stanford Institute for Human-Centered Artificial Intelligence. (2025). <em>The 2025 AI Index report</em> [Report overview]. Stanford University. https://hai.stanford.edu/ai-index/2025-ai-index-report</p>
 </div>
 <div class="reference">
@@ -1134,7 +1241,8 @@ Table&nbsp;42.4: An AI decision canvas that keeps prediction, valuation, causal 
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>The hit rate is the share of excavations that uncover a service line containing hazardous material. Agrawal and colleagues report the approximate 80 percent and 70 percent rates for model-guided phases; Webb and colleagues report 15 percent for the whole of 2018. These are successive phases of the field programme, with changing excavation locations and remaining pipe stock, rather than randomized groups of otherwise identical properties.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Russakovsky et al.&nbsp;(2015) report 5.1% top-five error for a trained annotator on 1,500 test images; a second, less-trained annotator had 12.0% error on 258 images. The often-used human line is therefore a task- and annotator-specific reference. The paper also notes changes in challenge categories between 2010 and 2012. The historical sequence shows progress in the benchmark family, rather than the same test administered unchanged each year. He et al.&nbsp;(2016) report the 2015 winning ensemble’s 3.57% error on the full test set.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The hit rate is the share of excavations that uncover a service line containing hazardous material. Agrawal and colleagues report the approximate 80 percent and 70 percent rates for model-guided phases; Webb and colleagues report 15 percent for the whole of 2018. These are successive phases of the field programme, with changing excavation locations and remaining pipe stock, rather than randomized groups of otherwise identical properties.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

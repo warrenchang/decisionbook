@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **969**
+Unique references in the master union: **974**
 
-Chapter reference blocks: **978**
+Chapter reference blocks: **983**
 
 Unresolved author–year citations: **0**
 
@@ -53,7 +53,7 @@ Unresolved author–year citations: **0**
 | Behavior Design | 30 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
-| Deciding With Data and AI {#data-driven-decision-making} | 21 | 0 |
+| Deciding With Data and AI {#data-driven-decision-making} | 26 | 0 |
 
 ## Unresolved citation strings
 
