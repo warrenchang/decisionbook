@@ -42,10 +42,6 @@ EPIGRAPH_METADISCOURSE = re.compile(
     r"|\bevidence is reviewed\b|\bthe hypothesis is offered\b",
     re.IGNORECASE,
 )
-EPIGRAPH_METADISCOURSE_EXCEPTIONS = {
-    "chapters/07-the-narrator-after-choice-why-reasons-are-not-always-causes.qmd":
-        "Evidence is reviewed which suggests that there may be little or no direct introspective access to higher order cognitive processes.",
-}
 PART_MOVEMENT_LABEL = re.compile(r"^\*\*(?:Book\s+[IVX]+|Coda)\b.*\*\*\s*$", re.MULTILINE)
 # Chapter-specific openings replace the former repeated loop-location box.
 # Keep the learning, application, closing, and reference requirements.
@@ -241,8 +237,7 @@ def audit() -> tuple[dict[str, object], list[Issue], dict[str, object]]:
             quoted_words = len(WORD.findall(quotation))
             if quoted_words > 25:
                 issues.append(Issue("error", "epigraph-length", rel(chapter), f"Epigraph contains {quoted_words} words; maximum is 25."))
-            approved_metadiscourse = EPIGRAPH_METADISCOURSE_EXCEPTIONS.get(rel(chapter)) == quotation
-            if EPIGRAPH_METADISCOURSE.search(quotation) and not approved_metadiscourse:
+            if EPIGRAPH_METADISCOURSE.search(quotation):
                 issues.append(
                     Issue(
                         "error",
