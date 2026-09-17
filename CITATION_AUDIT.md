@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **967**
+Unique references in the master union: **969**
 
-Chapter reference blocks: **976**
+Chapter reference blocks: **978**
 
 Unresolved author–year citations: **0**
 
@@ -35,7 +35,7 @@ Unresolved author–year citations: **0**
 | Habits, Wanting, and Self-Control | 35 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 13 | 0 |
-| Coordination and Focal Points | 16 | 0 |
+| Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
 | Social Norms and Conformity | 30 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 57 | 0 |
