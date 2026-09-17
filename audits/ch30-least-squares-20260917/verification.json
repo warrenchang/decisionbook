@@ -1,0 +1,70 @@
+{
+  "original_points_preserved": true,
+  "fits": [
+    {
+      "model": "steady",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 7560.539999999999,
+      "sse_after": 6864.779741387899,
+      "above": 16,
+      "below": 16,
+      "sum_residuals": -3.552713678800501e-15
+    },
+    {
+      "model": "accelerating",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 7290.891872,
+      "sse_after": 6512.738804982191,
+      "above": 16,
+      "below": 16,
+      "sum_residuals": -8.526512829121202e-14
+    },
+    {
+      "model": "tapering",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 14136.314312066519,
+      "sse_after": 8447.630205289815,
+      "above": 17,
+      "below": 15,
+      "sum_residuals": -5.417888360170764e-14
+    }
+  ],
+  "source_check": "62 sources, 115 figures, 152 tables; zero issues",
+  "deterministic_svg_and_json_regeneration": true,
+  "html_visual_checks": {
+    "desktop_viewport": 1280,
+    "phone_viewport": 390,
+    "phone_image_width": 330.5,
+    "phone_page_width": 390,
+    "all_panels_visible": true,
+    "caption_updated": true,
+    "method_footnote_rendered": true
+  },
+  "native_svg_bounds": {
+    "width": 760,
+    "height": 800,
+    "text_outside": 0,
+    "points_per_panel": 32
+  },
+  "html_build": "PASS",
+  "epub_build": "PASS",
+  "book_qa": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "epub_qa": {
+    "errors": 0
+  },
+  "epub_visual_checks": {
+    "reader_viewport": 768,
+    "phone_viewport": 390,
+    "phone_image_width": 374,
+    "phone_page_width": 390,
+    "all_panels_visible": true,
+    "packaged_svg_matches_source": true,
+    "inspection_method": "Byte-identical HTML copy of extracted XHTML with packaged CSS and SVG; actual EPUB separately checked by release QA."
+  }
+}

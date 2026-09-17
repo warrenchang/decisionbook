@@ -1,0 +1,35 @@
+{
+  "original_points_preserved": true,
+  "fits": [
+    {
+      "model": "steady",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 7560.539999999999,
+      "sse_after": 6864.779741387899,
+      "above": 16,
+      "below": 16,
+      "sum_residuals": -3.552713678800501e-15
+    },
+    {
+      "model": "accelerating",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 7290.891872,
+      "sse_after": 6512.738804982191,
+      "above": 16,
+      "below": 16,
+      "sum_residuals": -8.526512829121202e-14
+    },
+    {
+      "model": "tapering",
+      "independent_solver": "numpy.linalg.lstsq",
+      "parameters_match": true,
+      "sse_before": 14136.314312066519,
+      "sse_after": 8447.630205289815,
+      "above": 17,
+      "below": 15,
+      "sum_residuals": -5.417888360170764e-14
+    }
+  ]
+}

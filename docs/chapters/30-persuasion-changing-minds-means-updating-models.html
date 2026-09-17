@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -614,17 +643,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="from-information-transfer-to-model-updating" class="level2">
 <h2 data-anchor-id="from-information-transfer-to-model-updating">From information transfer to model updating</h2>
 <p>The <a href="../chapters/29-culture-and-identity-the-same-action-is-not-the-same-act.html#chapter-29-start">culture chapter</a> showed why the same action can carry different meanings. The platform proposal reveals the consequence for persuasion: leaders see coordination, while employees also see possible surveillance. Each side is using a different <strong>model</strong>, or working explanation of how the system will affect their work. More facts help when they answer a question within that explanation or give a reason to revise it. They help less when the speaker keeps answering a question the audience has already set aside.</p>
-<p>Evidence constrains the models that deserve belief. But a visible pattern may fit several accounts: steady growth, acceleration, or an approaching plateau. In <a href="#fig-model-underdetermination" class="quarto-xref">Figure&nbsp;<span>30.1</span></a>, all three curves fit the observations so far, but a later observation of 44 favors the plateau. These are synthetic data: the point is to identify an observation that could distinguish the accounts before deciding which story to tell.</p>
-<div id="fig-model-underdetermination" class="quarto-float quarto-figure quarto-figure-center" alt="Three candidate curves match the same five synthetic observations through period five. Beyond the observed window, one curve grows steadily, one accelerates, and one plateaus. A future synthetic observation of 44 at period eight lies near the plateau curve.">
+<p><strong>Facts do not speak for themselves.</strong> In panel A of <a href="#fig-model-underdetermination" class="quarto-xref">Figure&nbsp;<span>30.1</span></a>, the observations are visible, but their meaning remains open. Is the outcome increasing steadily, accelerating, or beginning to level off? Panels B–D place different curves over exactly the same points, on exactly the same scales. Each curve makes a different story salient without changing the observations.</p>
+<div id="fig-model-underdetermination" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Four panels contain identical scattered observations with an overall upward pattern. Time increases from left to right and the outcome from bottom to top. The first panel shows only points. The others show least-squares fits of a straight rising line, an accelerating curve, and a tapering curve. No points or axis scales change between panels.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-model-underdetermination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/model-underdetermination.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three candidate curves match the same five synthetic observations through period five. Beyond the observed window, one curve grows steadily, one accelerates, and one plateaus. A future synthetic observation of 44 at period eight lies near the plateau curve.">
+<img src="../figures/model-underdetermination.svg" class="phone-fit img-fluid figure-img" style="width:100.0%" alt="Four panels contain identical scattered observations with an overall upward pattern. Time increases from left to right and the outcome from bottom to top. The first panel shows only points. The others show least-squares fits of a straight rising line, an accelerating curve, and a tapering curve. No points or axis scales change between panels.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-underdetermination-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30.1: Three candidate curves match the synthetic values 12, 18, 24, 30, and 36 in periods 1–5, then extrapolate as steady growth, acceleration, or a plateau. A new observation of 44 at period 8 favors the plateau.
+Figure&nbsp;30.1: Same evidence, different stories. Every panel repeats the same 32 synthetic observations of an outcome over time, on identical scales. Panel A shows the points alone; B–D show least-squares fits under assumed steady, accelerating, and tapering trend shapes. Each curve minimizes squared vertical residuals within its prescribed form; their goodness of fit differs.
 </figcaption>
 </figure>
 </div>
+<p><strong>Evidence constrains models; assumptions help select among them.</strong> The curves are fitted by minimizing squared errors, but each fit assumes a particular trend shape.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The three stories are not equally credible merely because we can fit them. We need to examine how well each accounts for the observations, what mechanism could produce its shape, and what further evidence would distinguish the alternatives. For the platform proposal, the same rising adoption figures might be presented as steady progress, gathering momentum, or early enthusiasm approaching its limit. A persuasive message should explain why its interpretation deserves more weight and what result would count against it.</p>
 <p>A useful starting point is therefore to identify what the audience expects and what evidence could change that expectation. Predictive processing offers a <strong>theoretical analogy</strong>, especially from perception and action: incoming information is compared with predictions, and discrepancies can lead to revision (Clark, 2013). The sequence in <a href="#tbl-25-model-update" class="quarto-xref">Table&nbsp;<span>30.1</span></a> turns that idea into practical questions for a message:</p>
 <div id="tbl-25-model-update" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1032,6 +1062,12 @@ Table&nbsp;30.4: Influence cues should be audited for cue validity, independence
 </div>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Each model fits an intercept and an amplitude in <span class="math inline">\(y=a+b\,g(t)\)</span>, using <span class="math inline">\(g(t)=t\)</span>, <span class="math inline">\(t^2\)</span>, or <span class="math inline">\(1-e^{-t/3.5}\)</span>. These shapes, including the tapering curve’s time scale of 3.5, are held fixed. The sums of squared residuals are approximately 6,865, 6,513, and 8,448, respectively: the accelerating form fits these data best among the three. With an intercept, least squares makes the signed residuals sum to zero; it does not require equal numbers of points above and below the curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
