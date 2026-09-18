@@ -1,0 +1,39 @@
+# BRAIN practice and responding to urges
+
+Date: 2026-09-18. Scope: Chapter 21, its concept-index entries, references, and generated book outputs. Earlier uncommitted revisions are preserved. No commit or push is part of this revision.
+
+## Editorial decisions
+
+- Moved BRAIN, its table, and the urge-wave figure into the main narrative between making room for an urge and learning after a lapse.
+- Preserved the figure, table, research-lens, and former practice anchors. Chapter 39's existing link to the BRAIN table remains applicable.
+- Distinguished trying to suppress a thought or feeling from deciding not to perform an action. Explained suppressive monitoring through Wegner's account; did not treat attention as literal energy supplied to an urge.
+- Connected the focusing illusion to judgments of importance. Marked the bedtime application as an application of that idea, and separated it from claims about urge duration.
+- Made BRAIN observation brief and concrete, followed by a chosen response. The wave remains an illustration of one possible course, without fixed timing or a promise that acceptance eliminates an urge.
+- Added a specific, non-condemning account of a lapse and experimental evidence that self-compassion can support renewed effort. Did not claim that blame inevitably causes recurrence or that the experiment demonstrated reduced relapse.
+- Added a learning goal and practice-lab step; renamed the end section Research notes now that BRAIN is in the main text.
+
+## Evidence and boundaries
+
+| Source | Design or source type | Verified point | Use and boundary |
+| --- | --- | --- | --- |
+| Wegner, Schneider, Carter, & White (1987), [original paper hosted by Harvard](https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner%2CSchneider%2CCarter%2C%26White%201987.pdf), DOI 10.1037/0022-3514.53.1.5 | Two thought-suppression experiments | Participants initially suppressing white-bear thoughts subsequently produced more such thoughts during instructed expression than participants beginning with expression. A specified distractor reduced later preoccupation in the second experiment. | A bounded example of thought rebound, not evidence that every attempt to control action backfires or that all urges last longer with attention. |
+| Wegner (1994), [original paper hosted by Harvard](https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner%20Ironic%20Processes%201994.pdf), DOI 10.1037/0033-295X.101.1.34; [author's explanation](https://dtg.sites.fas.harvard.edu/DANWEGNER/wjh/seed.htm) | Theory and research synthesis | Effortful operating and monitoring processes can conflict; monitoring for unwanted mental content can increase its accessibility, especially under demands on deliberate control. | Explicitly presented as an explanatory account. Repeated checking for the urge's disappearance is an application to the chapter's example. |
+| Bowen & Marlatt (2009), [original abstract](https://pubmed.ncbi.nlm.nih.gov/20025372/), DOI 10.1037/a0017127 | Random allocation of 123 undergraduate smokers to brief mindfulness instructions or no instructions before cue exposure | No significant between-group difference in reported urges; fewer cigarettes reported over the subsequent seven days in the mindfulness group. | Existing research lens retained. Behavioral response and urge intensity remain separate. This is not a validation of the BRAIN mnemonic. |
+| Breines & Chen (2012), [original full paper](https://self-compassion.org/wp-content/uploads/publications/selfimp.motivation.pdf), [publication metadata](https://pubmed.ncbi.nlm.nih.gov/22645164/), DOI 10.1177/0146167212445599 | Four experiments; the chapter uses Experiment 3, randomized instructions after a difficult vocabulary test | In Experiment 3, 103 recruited and 86 analyzed after excluding non-fluent English speakers. Study time was greater under self-compassion than no intervention (p < .05). The self-esteem comparison was only marginal (p = .085); second-test scores did not differ significantly across groups. | Main text claims increased preparation relative to no encouragement, not superiority to every alternative, improved test performance, or lasting behavior change. |
+| Jung (1969), *Psychology and religion: West and East*, 2nd ed., Collected Works vol. 11, para. 519; [publisher edition metadata on JSTOR](https://www.jstor.org/stable/j.ctt5hhr4b) | Historical quotation, originally in Psychotherapists or the Clergy | Exact eight-word excerpt: “We cannot change anything unless we accept it.” Verified in the printed anthology *Psychological Reflections*, p. 90 (PDF p. 110), marked source 78:519. Its source list, p. 376 (PDF p. 396), identifies item 78 as Psychotherapists or the Clergy (1932), CW 11, 1958/1969; its edition list confirms the 1969 second edition. | Used to express an attitude toward acceptance, not as scientific evidence for a mechanism or a guarantee of disappearance. The user's resistance/persistence and embracing/disappearance wording was not verified as Jung's and was not attributed to him. |
+| Brach (2021), [Two versions of acronym RAIN](https://www.tarabrach.com/blog-two-versions-of-acronym-rain/) | Existing source for the classroom adaptation | Original RAIN ends in Non-identification; the later version uses Nurture. | Preserved the existing BRAIN provenance footnote and Non-identify wording. Breathe is the classroom addition. |
+| Chapter 22's focusing-illusion discussion, based on Schkade & Kahneman (1998) and Wilson et al. (2000) | Existing source-verified treatment of global judgments and affective forecasting | Focal features can have disproportionate weight in judging a larger situation. | Linked as a related perspective on importance. No empirical claim that focusing illusion causes cravings or determines their duration. |
+
+Jung quotation verification copy: [published anthology scan](https://s3.us-west-1.wasabisys.com/luminist/EB/I-J-K/Jung%20-%20Psychological%20Reflections.pdf). The large scan was read from a temporary local copy; it is not included in the repository.
+
+## Verification
+
+Source/reference QA passed with zero errors and warnings after the final edit. The master bibliography contains 1,015 unique references, four more than at the start of this revision. All earlier Chapter 21 references are preserved.
+
+- Rendered the full HTML book, reviewed the layout, then shortened the table prompts for phone reading and rendered Chapter 21 again. Rendered the final EPUB only after the HTML render had finished.
+- `python3 scripts/qa_epub_release.py`: passed, zero errors, including release structure, links, and source freshness.
+- `python3 scripts/qa_float_references.py --rendered --epub-dir /private/tmp/decision-book-brain-epub-final --output audits/brain-urge-practice-20260918/float-reference-qa.json`: passed, 62 sources, 117 figures, 165 tables, zero issues.
+- `check-browser.cjs`: passed at viewport widths 1,280 and 390. BRAIN, its table, and its figure are visible outside collapsed boxes; prior anchors remain unique; the figure loads with alt text; the focusing-illusion cross-reference resolves; no horizontal page overflow. Reviewed saved desktop and phone screenshots, including the full shortened table and the wave-to-lapse transition.
+- `content-checks.json`: confirms unchanged Chapter 21 float IDs, preservation of existing references, eight expected unique EPUB anchors, BRAIN outside callouts in the EPUB, and indexed practice text in the HTML search record. Quarto indexes this third-level heading within the parent section What the explanation suggests changing.
+- Removed only an unrelated generated HTML attribute-order change in Chapter 37 after verifying equality of parsed HTML events with sorted attributes.
+- Final EPUB SHA-256: `19e80f77113f54257da13d5e3da8b55f99308456e92af4103d1653b39defbc9e`.

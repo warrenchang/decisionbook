@@ -117,23 +117,30 @@ For a closer look, [rotate the 3D face model yourself](https://3dviewer.net/#mod
 
 The linked [3D model](https://commons.wikimedia.org/wiki/File:Hollow_face_illusion.stl) was designed by Wael Tsar, recentered, symmetrized, and converted to STL by cmglee; [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-## Research Lens: Shirl Jennings and learning to see {#research-lens-restored-sight-as-a-bounded-calibration-case}
+Context can bring learned structure into use. Learning is also needed to connect visual signals with familiar objects. **Detecting visual features and understanding what they belong to are different achievements.**
 
-Context can bring learned structure into use. But how does a person acquire the connection between visual signals and familiar objects in the first place? Restored sight provides an unusually clear view of that learning problem.
+::: {#research-lens-restored-sight-as-a-bounded-calibration-case}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: Shirl Jennings and learning to see
 
 Shirl Jennings knew his world through touch, sound, and movement long before surgery offered a new way into it. His eyesight had deteriorated after a serious illness at three. In 1991, at age 51, cataract surgery restored some vision after decades of severe visual impairment (Associated Press, 1999).
 
 Restoring visual input might seem to be enough to reveal a world Jennings already knew by touch. Receiving visual information, however, did not make familiar objects instantly recognizable. Jennings sometimes needed to touch an object to distinguish a table from a chair (Associated Press, 1999). His surgeon identifies him as the man Oliver Sacks described under the name **Virgil** (Woodhams, n.d.). In Sacks's account, colors, movements, and shapes became visible, while organizing them into recognizable objects and coherent scenes remained difficult (Sacks, 1993).
 
-**Detecting visual features and understanding what they belong to are different achievements.** Jennings already had knowledge of objects and ways of navigating his surroundings. The challenge was connecting newly available visual patterns with that knowledge. His experience makes the work of perceptual learning concrete.[^ch04-jennings-vision]
+Jennings already had knowledge of objects and ways of navigating his surroundings. The challenge was connecting newly available visual patterns with that knowledge. His experience makes the work of perceptual learning concrete.[^ch04-jennings-vision]
 
 Systematic research offers a complementary test. Newly sighted participants initially struggled to match a seen object with one known by touch, then improved rapidly (Held et al., 2011). That improvement matters as much as the initial difficulty: new connections could develop through experience.
 
-Jennings’s experience reveals why prior learning matters: seeing features is not yet recognizing their arrangement as an object. Together with the illusions, it defines the challenge. We need learned structure to interpret incomplete signals, and reliable new observations to correct an interpretation when that structure misleads us.
+:::
+
+:::
+
+We need learned structure to interpret incomplete signals, and reliable new observations to correct an interpretation when that structure misleads us.
 
 ## Two meanings of prediction
 
-These examples show why learned expectations matter. To explain how they work, we first need to clarify a term that can otherwise cause confusion.
+To explain how learned expectations work, we first need to clarify a term that can otherwise cause confusion.
 
 Recognizing a chair and forecasting the result of taking a job both draw on prior information. Yet a model that explains the first has not thereby supplied a reliable forecast of the second. To connect perception with decision-making, we need to specify what **prediction** is about in each case.
 
@@ -153,7 +160,7 @@ Suppose the chair in the dim kitchen has been moved. Your first interpretation p
 
 How much should a discrepancy matter? In dim light, one uncertain outline may deserve little weight; after the light is switched on, the same location provides clearer evidence. **Precision** means estimated reliability, often formalized as inverse variance. A signal treated as more reliable has greater influence on the relevant update. Precision does not simply mean importance, emotional force, or confidence stated aloud.
 
-The **generative process** is the world and body producing the observations; the **generative model** is the system's account of how those observations could arise. The actual chair belongs to the process, while expectations about its location belong to the model. Keeping them separate matters because a familiar model can be wrong.
+The **generative process** is the world and body producing the observations; the **generative model** is the system's account of how those observations could arise. A model of a chair anticipates what its shape would look like from a particular angle and in particular lighting. Perceptual inference uses incoming signals to work back toward the likely object and setting. The actual chair belongs to the process, while these learned relationships belong to the model. Keeping them separate matters because a familiar model can be wrong.
 
 ![A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="Expectations and incoming signals converge on perception. Perception informs action and sampling, which changes the next evidence. A feedback arrow shows that mismatch can update the internal model."}
 
@@ -251,12 +258,20 @@ intuition” is not yet a test; specify what evidence should become more
 diagnostic.
 :::
 
-::: {#generative-ai-and-predictive-processing .callout-note .research-lens icon=false collapse=true}
-## Research Lens: an analogy with generative AI
+::: {#generative-ai-and-predictive-processing}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: generative models, learning, and AI
 
 Consider the unfinished sentence **“At the bank, she…”** After a paragraph about fishing, *cast her line* would be a plausible continuation. After a paragraph about opening a savings account, *asked about interest rates* would fit better. The words to be continued are unchanged, but the setting changes what a good answer would be. Like the neighbors around the ambiguous symbol in @fig-context-b13-demonstration, surrounding information guides interpretation. This is useful when context clarifies a task; it becomes consequential when an assumption embedded in the question quietly guides the answer.
 
 A **large language model**, or **LLM**, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.
+
+### How a generative model supports perception {.unlisted}
+
+In predictive processing, a generative model represents relationships between hidden causes and the observations they could produce. Seeing a shadowy shape as a chair depends on expectations about how chairs look under different conditions. The model can generate expectations about signals arriving now as well as signals likely to arrive next. The nervous system uses the mismatch with incoming evidence to revise its interpretation or its learned expectations (Rao & Ballard, 1999; Friston, 2010).
+
+Attention participates in this loop. Searching for your keys makes some locations and features especially relevant; noticing a metallic glint can redirect the search. Expectations help guide attention, while attention affects which evidence has influence. Feldman and Friston (2010) model this influence through the estimated precision of sensory signals. On this account, attention and prediction interact continuously, rather than attention simply handing a finished input to a predictor.
 
 ### What does a language model predict? {.unlisted}
 
@@ -264,11 +279,29 @@ In an **autoregressive** language model, generation proceeds by estimating proba
 
 The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al. (2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.
 
-### A prompt supplies a setting for interpretation {.unlisted}
+### Changing the current interpretation and changing the model {.unlisted}
 
 A **prompt** can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model's learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies **in-context learning**: examples can alter how a task is performed without a training update to the model's weights (Brown et al., 2020).
 
-In predictive processing, current context includes sensory input and bodily state, while ongoing action can reveal new evidence. A person's current state is much richer than a written prompt. Predictive-processing theories describe how expectations and mismatches may support perceptual inference; standard text generation does not automatically compare every continuation with a fresh observation of the world (Clark, 2013; Vaswani et al., 2017). The shared principle is **learned structure interacting with current information**.
+Human learning is interwoven with ongoing perception and action. Yet people also distinguish, in effect, between **what is happening now** and **what is generally true**. Discovering that someone moved the chair changes your estimate of its current location. Finding it there every morning may change where you expect chairs to be kept. Predictive-processing accounts distinguish updating a current state estimate from learning more enduring relationships; a momentary correction need not rewrite a lasting expectation (Friston, 2010).
+
+This makes the comparison with AI more precise. Standard LLM use usually separates parameter training from answering a particular prompt. Human brains remain capable of lasting learning during everyday activity. But a fixed-parameter LLM can still adapt its answers to examples within a conversation, and further training can change its parameters. The distinction concerns **where and when change occurs**, not whether one system can respond to new information at all.
+
+The word *weight* can obscure this distinction. A model's **parameters** encode learned relationships; the **weight given to evidence** concerns how strongly an observation should influence the current judgment. A knowledgeable person can give decisive weight to a clear observation that contradicts an expectation. Having learned more does not mechanically mean assigning less weight to new evidence.
+
+### Does experience make the mind less open to evidence? {.unlisted}
+
+Experience can make learning both easier and harder. A familiar pattern lets an expert recognize something a novice misses. The same expectations can make an unfamiliar pattern harder to discover. Lucas et al. (2014) found that four- and five-year-olds were more willing than adults to generalize an unusual causal rule: two objects had to work together to activate a machine. Adults more often carried over a familiar assumption that an individual object would suffice. The children's advantage concerned a particular kind of causal learning in which established expectations could mislead.
+
+Later-life differences also depend on the task. In a changing prediction task, Nassar et al. (2016) found that older adults adjusted their learning less strongly to uncertainty about their current estimate. Both younger and older participants nevertheless increased learning after surprising outcomes. The pattern concerns how learners assessed when an update was needed, rather than a uniform failure to use new input. Older adults also remain capable of acquiring new skills: Boyke et al. (2008) observed learning and associated structural brain changes during juggling training.
+
+There is therefore no single age-controlled dial that steadily turns down the influence of evidence. What matters is how reliable the present evidence is, how well established the relevant expectation is, and whether the environment has changed. For a learner of any age, the useful question is **“Does this observation reveal a temporary exception, or a relationship I need to relearn?”**
+
+### Guiding a process that usually runs outside awareness {.unlisted}
+
+You experience the chair, not the calculations that made its outline recognizable. Much of the inference described by predictive processing happens without deliberate supervision. Conscious goals can nevertheless change the conditions under which it operates: you can switch on a light, inspect another angle, or ask someone what happened. Such actions supply evidence that an unchanged viewpoint would miss (Clark, 2013).
+
+This opens a connection with reflective thinking. We can question a first interpretation and decide what to inspect next without gaining direct access to every process that produced it. [Chapter 8](08-fast-and-frugal-thinking.qmd#monitoring-and-guiding-thought) develops this capacity as **metacognition**, then examines how AI reasoning systems can perform some comparable checking functions.
 
 ### Images and videos: generation is broader than next-token prediction {.unlisted}
 
@@ -278,15 +311,29 @@ The family of generative models extends beyond language and uses several generat
 
 Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.
 
+### Prompts as framing and priming {.unlisted #prompt-framing-and-priming}
+
+A prompt arranges the evidence, instructions, and context from which a model constructs its response. **Framing** and **priming** describe two ways that this arrangement can matter.
+
+Framing concerns how a problem is represented. Compare “90 of the 100 trials succeeded” with “10 of the 100 trials failed,” where success and failure exhaust the possibilities. The information is equivalent, but the wording highlights a different outcome. If a model's recommendation systematically changes with the wording while the outcomes, options, and decision objective remain the same, it exhibits a framing effect. Binz and Schulz (2023) found gain–loss framing effects in GPT-3's responses to equivalent gamble problems. [Chapter 12](12-framing-when-the-same-facts-become-different-decisions.qmd#what-a-frame-changes) develops the corresponding distinction between the underlying decision and its presentation.
+
+Priming concerns how preceding material influences the response to what follows. In human experiments, an earlier word or sentence can facilitate processing related material, as [Chapter 13](13-accessibility-familiarity-and-ease.qmd#accessibility-memory-prepares-an-answer) explains. Language models show a measurable counterpart: after encountering a particular grammatical construction, they can assign greater probability to a subsequent sentence with the same structure. Sinclair et al. (2022) demonstrated this **structural priming** in Transformer language models; later work showed how word overlap and frequency also influence its strength (Jumelet et al., 2024). This is evidence about the model's conditional predictions, without establishing that it uses the same memory mechanisms as a person.
+
+The two influences can coexist. Calling a workplace disagreement “resistance to improvement” frames the issue; preceding it with examples of disloyal employees might also shift which explanation the model generates. The second claim is a hypothesis to test, not something established by the structural-priming studies. A useful test keeps the incident and question fixed while varying only the preceding material.
+
+Other prompt effects have a more direct explanation. “Write three bullet points” specifies a format; examples can teach a task within context; new facts can warrant a new conclusion. A changed answer is therefore not enough to identify framing or priming. The question is **which feature of the prompt changed, and whether that feature should change the answer**.
+
 ### Change the question—and then seek evidence {.unlisted}
 
-This comparison suggests a practical discipline for both thinking and prompting. **“Why did my team resist a useful change?”** already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.
+Framing can also enter through assumptions built into a question. **“Why did my team resist a useful change?”** already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.
 
 Changing the frame can open another possibility. It cannot settle which possibility is correct. That requires evidence beyond the plausibility of the account. [Chapter 42](42-data-driven-decision-making.qmd#ai-workbench) builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.
 
-### Optional exercise: change the frame {.unlisted}
+### Exercise: separate the frame from the preceding cue {.unlisted}
 
-For an AI extension, describe the same fictional workplace incident in two prompts, keeping the observations fixed but changing the framing question. Use a fresh conversation with the same model and settings for each trial. Compare the explanations an LLM offers, and repeat each prompt to see how much outputs vary even without a framing change. Which claims came from the supplied observations, and which were added? Name one external observation needed to evaluate the competing accounts.
+For a framing comparison, present the same fictional project results as successes or failures while keeping the available actions and evaluation question identical. For a separate priming comparison, keep that entire prompt fixed and vary a preceding, unrelated passage. Choose in advance what to compare: the recommended action, the explanation, or a grammatical pattern. Use fresh conversations with the same model and settings, vary the order in which you run the conditions, and repeat them to distinguish a consistent difference from ordinary output variation. Check whether either manipulation accidentally supplied new evidence or instructions. Which claims came from the project facts, and which were added? Name one external observation needed to evaluate the recommendation.
+:::
+
 :::
 
 ## Practice Lab
@@ -313,11 +360,19 @@ Associated Press. (1999, February 1). Gift of sight brought fear, frustration. *
 :::
 
 ::: {.reference}
+Binz, M., & Schulz, E. (2023). Using cognitive psychology to understand GPT-3. *Proceedings of the National Academy of Sciences, 120*(6), e2218523120. https://doi.org/10.1073/pnas.2218523120
+:::
+
+::: {.reference}
 Bloj, M. G., Kersten, D., & Hurlbert, A. C. (1999). Perception of three-dimensional shape influences colour perception through mutual illumination. *Nature, 402*(6764), 877–879. [Published paper](https://doi.org/10.1038/47245).
 :::
 
 ::: {.reference}
 Botvinick, M., & Cohen, J. (1998). Rubber hands “feel” touch that eyes see. Nature, 391(6669), 756.
+:::
+
+::: {.reference}
+Boyke, J., Driemeyer, J., Gaser, C., Büchel, C., & May, A. (2008). Training-induced brain structure changes in the elderly. *Journal of Neuroscience, 28*(28), 7031–7035. https://doi.org/10.1523/JNEUROSCI.0742-08.2008
 :::
 
 ::: {.reference}
@@ -401,11 +456,23 @@ Hohwy, J. (2013). The predictive mind. Oxford University Press.
 :::
 
 ::: {.reference}
+Jumelet, J., Zuidema, W., & Sinclair, A. (2024). Do language models exhibit human-like structural priming effects? In *Findings of the Association for Computational Linguistics: ACL 2024* (pp. 14727–14742). Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.findings-acl.877
+:::
+
+::: {.reference}
 Kersten, D., Mamassian, P., & Yuille, A. (2004). Object perception as Bayesian inference. Annual Review of Psychology, 55, 271–304.
 :::
 
 ::: {.reference}
 Knill, D. C., & Richards, W. (Eds.). (1996). Perception as Bayesian inference. Cambridge University Press.
+:::
+
+::: {.reference}
+Lucas, C. G., Bridgers, S., Griffiths, T. L., & Gopnik, A. (2014). When children are better (or at least more open-minded) learners than adults: Developmental differences in learning the forms of causal relationships. *Cognition, 131*(2), 284–299. https://doi.org/10.1016/j.cognition.2013.12.010
+:::
+
+::: {.reference}
+Nassar, M. R., Bruckner, R., Gold, J. I., Li, S.-C., Heekeren, H. R., & Eppinger, B. (2016). Age differences in learning emerge from an insufficient representation of uncertainty in older adults. *Nature Communications, 7*, 11609. https://doi.org/10.1038/ncomms11609
 :::
 
 ::: {.reference}
@@ -434,6 +501,10 @@ Sacks, O. (1993, May 10). To see and not see. *The New Yorker*. [Published essay
 
 ::: {.reference}
 Shevell, S. K., & Kingdom, F. A. A. (2008). Color in complex scenes. *Annual Review of Psychology, 59*, 143–166. [Published paper](https://doi.org/10.1146/annurev.psych.59.103006.093619).
+:::
+
+::: {.reference}
+Sinclair, A., Jumelet, J., Zuidema, W., & Fernández, R. (2022). Structural persistence in language models: Priming as a window into abstract language representations. *Transactions of the Association for Computational Linguistics, 10*, 1031–1050. https://doi.org/10.1162/tacl_a_00504
 :::
 
 ::: {.reference}

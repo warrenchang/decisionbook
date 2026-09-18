@@ -1,0 +1,374 @@
+---
+aliases:
+  - 36-choice-architecture.html
+---
+
+# Choice Architecture
+
+*The Environment Gets a Vote*
+
+[]{#choice-architecture-the-environment-gets-a-vote}
+
+::: {#chapter-40-start .chapter-epigraph}
+> “We shape our buildings, and afterwards our buildings shape us.”
+>
+> — Winston Churchill, [speech on rebuilding the House of Commons](https://heritagecollections.parliament.uk/exhibits/rebuilding/), 28 October 1943
+:::
+
+[]{#opening-puzzle-the-form-that-already-chose}Imagine enrolling in a retirement plan. The contribution field already says 6 percent, a recommended fund sits first, and the opt-out link is in smaller type. You can choose another arrangement, but doing so requires more attention than accepting the form as it stands.
+
+The prefilled contribution is both a suggested number and, if inaction implements it, a default. The highlighted fund may look like advice. Whether these features help depends on how well they fit the person’s circumstances and how easily alternatives can be understood and selected.
+
+The same attention and effort can also be used to make an unwanted commitment persist. A subscription site makes enrollment one click and cancellation nine screens. A travel site labels an expensive option “most popular” without explaining the comparison. A checkout page adds a warranty unless the buyer notices a faint checkbox. These designs use the same behavioral mechanisms, but their objective and treatment of exit are different.
+
+In each case, someone designed the path through the decision. To evaluate it, we need to follow that path from the first prompt through acceptance, refusal, or a later change of mind. The question is whether it helps people act on informed goals, or makes a choice profitable for the designer at their expense.
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+Menus, defaults, forms, and feedback shape how people choose. A useful design helps them understand consequences and act on informed goals; a harmful one profits from confusion or makes refusal difficult. Evaluate the whole path, including what happens when someone tries to change their mind.
+:::
+
+## Learning goals
+
+- Diagnose where a menu, default, mapping, friction, timing, social signal, or feedback changes a choice path.
+- Compare nudges with boosts, incentives, mandates, and structural change for the same barrier.
+- Design and test an intervention that protects understanding, welfare, and meaningful exit.
+
+## From behavior design to choice architecture
+
+The previous chapter began with a person trying to change a recurring action. Here the designer may be an institution shaping choices for many people with different needs. A retirement-plan administrator, for example, decides which funds are offered, how contributions are explained, and what happens if an employee leaves a field unanswered. Earlier chapters help us examine each influence; the task now is to understand how they work together along the whole path.
+
+Richard Thaler and Cass Sunstein use **choice architecture** for the way choices are organized and **nudge** for an intervention that predictably changes behavior without banning options or substantially altering economic incentives (Thaler & Sunstein, 2008). Defaults, reminders, simpler forms, social-norm messages, and rearranged menus can be nudges. A large tax, a prohibition, or a compulsory rule is not merely a nudge, although it may be justified on other grounds.
+
+Keep three levels separate. **Choice architecture** is the broad environment. A **nudge** is one feature of that environment. **Libertarian paternalism** is a normative argument for some welfare-oriented nudges: preserve meaningful choice while helping people act in ways they themselves would endorse under reflection. Evaluate a nudge’s objective and ethics alongside its effects.
+
+Before choosing an intervention, compare the tools available:
+
+| Instrument | What it changes | Example | Central question |
+| --- | --- | --- | --- |
+| Education | Facts and explanation | Balanced guide to vaccine benefits and risks | Can the person understand and use the information at the relevant moment? |
+| Nudge | The immediate choice environment | Put healthier food first; send a timely reminder | Does the architecture help without closing meaningful options? |
+| Boost | The person's competence | Teach natural frequencies or negotiation preparation | Will the skill transfer beyond this environment? |
+| Incentive | The material payoff | Deposit refund; late fee; performance bonus | Is the reward aligned with the desired outcome and protected from gaming? |
+| Mandate | The available actions or minimum standard | Safety requirement; disclosure rule | Is restriction proportionate to the risk and rights involved? |
+| Structural change | The conditions producing the problem | Staffing, access, pricing, transport, or workload reform | Is individual choice really the main bottleneck? |
+: Different tools for different barriers {#tbl-35-policy-tools}
+
+The choice among the instruments in @tbl-35-policy-tools depends on the obstacle. A reminder may help someone who forgets an appointment; an unaffordable service calls for a response to cost. Likewise, a clearer menu cannot supply a useful option that the institution never offered.
+
+## The plausible path: where architecture enters the loop
+
+![Five questions locate possible problems in the objective, menu, understanding, action, and feedback.](../figures/choice-architecture.svg){#fig-choice-architecture fig-alt="Five panels ask whose goal is served, which options and defaults are offered, whether outcomes can be compared, how friction affects action, and whether people can see results, correct errors, or leave." .phone-fit}
+
+The five questions in @fig-choice-architecture locate the barrier a design must address. Trace the proposal from its objective to what the person can choose, understand, do, and correct:
+
+1. **Objective.** What outcome is being improved, for whom, and according to whose values?
+2. **Menu.** Which options are available, missing, grouped, ordered, or made normal?
+3. **Understanding.** Can people map each option to consequences they can compare?
+4. **Action.** Can intention survive attention limits, timing, friction, and competing demands?
+5. **Feedback.** Can people see what happened and revise the next choice?
+
+These questions connect an intervention to the problem it should solve. “Add a reminder” names a change, but leaves its purpose unexplained. A testable proposal is more specific: eligible people already intend to book; forgetting at the relevant moment is a major barrier; a timely reminder makes the action salient; the booking path is feasible; and attendance can be measured without creating new burdens.
+
+## Construct and explain the choice
+
+### Construct the menu: options, order, and overload
+
+A menu appears to give people freedom by laying out their choices. Yet a perfectly clear menu can still make the decision worse if it hides a useful combination, makes delay invisible, or omits the option of gathering more information. The first design task is therefore to construct the option set before polishing its presentation. Categories and order then shape comparison: people interpret an option relative to what appears beside it.
+
+**Choice overload** occurs when enlarging a menu makes choosing harder in ways that reduce decision quality or satisfaction, or increase deferral. More options can also increase fit and autonomy, so the direction needs testing. At a supermarket tasting booth, Iyengar and Lepper (2000) alternated displays of 6 and 24 jams. The larger display attracted more passers-by, but among those who stopped, about 30% subsequently bought jam after the smaller display, compared with about 3% after the larger one. The study changed the tasting display, while buyers ultimately chose from the store’s full shelf. Scheibehenne and colleagues (2010) found a virtually zero average effect across 50 experiments, with substantial variation. Chernev and colleagues (2015) subsequently identified conditions associated with greater overload: uncertain preferences, complex comparisons, difficult tasks, and goals that favor minimizing effort. The useful diagnosis concerns the demands of this menu for this chooser.
+
+A useful response is to structure comparison. Offer filters or an explainable shortlist, preserve access to the fuller menu, and make a legitimate option to wait or seek advice visible. Removing an apparent duplicate is sensible only after checking whether it serves a distinct need. Disclose why a featured option is prominent, especially when sponsorship plays a role.
+
+Choice also contains sacrifice. A well-designed menu makes opportunity cost legible: “Choosing this means giving up...” When alternatives remain invisible, the visible benefit of one option can crowd out the cost of the path displaced by it (Frederick et al., 2009).
+
+::: {.callout-note .personal-example icon=false}
+### Offer a clear choice within honest limits
+
+When it is time to leave an amusement park, I sometimes ask my daughter, “Would you like to leave now or in ten minutes?” rather than “Do you want to leave now?” At breakfast, I might ask, “Would you like one egg or two?” rather than “Do you want eggs?”
+
+Both questions preserve a small area of agency, but they also make acceptance presumptive. They are therefore better understood as **constrained-menu architecture** than as pure equivalent-description framing. The ethical boundary depends on what is genuinely negotiable. If the family must leave, I should state that boundary honestly and offer a real choice over timing. If eggs are optional, “no egg” must remain an easy, respected answer. “Ask, do not tell” supports agency only when the offered choice is real and the response can matter.
+:::
+
+### Set the starting point: defaults and active choice
+
+The retirement form must handle an unanswered field somehow. Leaving it blank can delay a useful action; filling it in can turn inattention into a consequential commitment. Designers need to decide whose interests the starting point serves and when to require an active choice. A **default** is what happens if a person does nothing. Defaults are powerful because doing nothing is often easier, because the default may be interpreted as advice, and because moving away from a starting point can feel like giving something up (Johnson & Goldstein, 2003; Jachimowicz et al., 2019).
+
+Defaults can be helpful when preferences are broadly aligned, inaction is common, reversibility is high, and the default is a reasonable recommendation. They are more dangerous when preferences vary greatly, switching costs are hidden, the default benefits the designer at the chooser's expense, or non-response is treated as meaningful consent.
+
+Compare three designs:
+
+- **Opt-in:** no enrollment without an affirmative action. Appropriate when consent must be explicit or preferences are highly heterogeneous.
+- **Opt-out:** enrollment occurs unless declined. Appropriate when the default is evidence-based, low-risk, reversible, and aligned with most affected people's considered goals.
+- **Active choice:** the person must select among clearly described options. Appropriate when preference is essential and omission should not decide, but it can become burdensome when the choice is frequent, technical, or badly timed.
+
+A **smart default** uses relevant, legitimate information to improve fit—for example, a retirement contribution that responds to age and employer match. It also raises governance questions: Which data are used? Can the recommendation be explained? Does personalization create discrimination? How easily can a person choose otherwise?
+
+Automatic enrollment substantially increased participation in one large 401(k) plan compared with its previous opt-in system, while active-decision designs have raised participation relative to ordinary opt-in systems (Madrian & Shea, 2001; Carroll et al., 2009). In Johnson and Goldstein’s (2003) experiment, default wording changed stated organ-donation consent. That outcome is different from a completed donation. A later longitudinal analysis of five countries switching to opt-out found no average increase in deceased organ donation after the change (Dallacker et al., 2024). The [opening chapter](01-how-decisions-should-be-made-and-how-they-actually-are.qmd#chapter-01-start) makes the distinction between the form and the system: eligibility, family involvement, trust, coordination, and clinical capacity also matter.
+
+### Make consequences understandable: mapping and metrics
+
+A menu can make features easy to compare while leaving their consequences obscure. If the most prominent number is a poor guide to cost or risk, easier comparison can still lead to a poor trade-off. **Mapping** connects the selectable feature to the outcome that matters. A mortgage rate must be mapped to total cost and payment risk. A medical probability must be mapped to natural frequencies and meaningful time horizons. Energy use must be mapped to money, emissions, or another metric the audience can interpret.
+
+Make the comparison reconstructable: use the same time horizon and denominator, show total cost alongside installments, and distinguish an estimate from a guarantee. For probabilities, natural frequencies and absolute risks can help readers see quantities that relative percentages obscure. [Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#chapter-14-start) develops those formats.
+
+Metrics are frames. [Chapter 12](12-framing-when-the-same-facts-become-different-decisions.qmd#chapter-12-start) showed why equivalent descriptions can change choice; architecture determines which description becomes the default view. “Save €40 per month” and “save €480 per year” are equivalent arithmetically but not psychologically. A fair design does not pretend framing can be eliminated; it uses symmetric, decision-relevant representations and makes important alternative frames available.
+
+Even familiar units can map poorly. The curve in @fig-mpg-fuel-use shows that miles per gallon is nonlinear in fuel consumed: an improvement from 10 to 20 MPG saves much more fuel over a fixed distance than an improvement from 30 to 40 MPG. Gallons per hundred miles makes that consequence easier to compare (Larrick & Soll, 2008). The design question is not which unit looks intuitive, but which one reveals the welfare-relevant difference.
+
+![Over a fixed 100-mile trip, fuel use equals 100 divided by MPG. Moving from 10 to 20 MPG lowers use from 10 to 5 US gallons, saving 5 gallons. Moving from 30 to 40 MPG lowers use from 3.33 to 2.50 gallons, saving 0.83 gallon—exactly one-sixth as much. The conversion makes the fuel savings visible (Larrick & Soll, 2008).](../figures/mpg-fuel-use.svg){#fig-mpg-fuel-use fig-alt="A reciprocal curve plots US gallons used over 100 miles against miles per gallon. The highlighted 10-to-20-MPG segment falls from 10 to 5 gallons, while the 30-to-40-MPG segment falls only from 3.33 to 2.50 gallons. Comparison cards show that the first change saves 5 gallons and the second saves five-sixths of a gallon, so the first saves exactly six times as much fuel." width="100%"}
+
+The same principle applies to mental accounting (Thaler, 1985). A budget category can help someone control spending while hiding the total cost across accounts. Show both the local choice and its effect on the whole budget, as discussed in [Chapter 19](20-mental-accounting-money-is-fungible-minds-label-it.qmd#chapter-20-start).
+
+
+
+## Make action feasible and feedback visible
+
+### Simplification, friction, and sludge
+
+Friction is not trivial. A form, password, waiting period, extra click, inconvenient appointment time, ambiguous instruction, or request for a document can determine whether an intention becomes behavior. Removing unjustified friction can improve access without changing anyone's underlying preference.
+
+But friction also protects. Confirmation screens, cooling-off periods, withdrawal limits, and deliberate pauses can reduce impulsive or irreversible harm. The right question is not “Can we remove a click?” It is “Which error does this friction prevent, and whose interest does it serve?”
+
+**Sludge** is excessive or unjustified friction that makes a beneficial action difficult or an unwanted action hard to escape (Sunstein, 2021). Dark patterns reverse the ethical direction of good design: they exploit attention and effort to obtain consent, extract data, add charges, or obstruct cancellation.
+
+A simple symmetry test is revealing:
+
+> If joining is easy, is leaving comparably easy? If consent is prominent, is refusal equally legible? If the likely benefit is vivid, are material costs and risks comparably recoverable?
+
+Simplification must preserve meaning. Shortening a form helps only if the remaining questions still protect eligibility, safety, and informed choice. The paired remotes in @fig-choice-architecture-simplified-remote make this condition visible: hiding controls helps only if the controls needed for the task remain accessible. Likewise, removing text is not the same as reducing cognitive work; sometimes a comparison table or worked example adds words while making the decision easier.
+
+![Masking seldom-used controls simplifies a remote. Keep the controls needed for the user's actual tasks.](../figures/choice-architecture-simplified-remote.png){#fig-choice-architecture-simplified-remote fig-alt="Two generic black remote controls lie side by side. The left has many small controls; most of the right remote is covered with removable white tape, leaving only a power button, navigation ring, and a few large controls exposed." width="68%"}
+
+Administrative burden has at least three components: learning what exists and whether one qualifies, complying with procedures, and bearing the stress, stigma, or loss of autonomy attached to the process (Herd & Moynihan, 2018). Field studies show why this distinction matters. Simpler benefit notices increased take-up of an earned-income tax credit compared with a more complex notice based on the original IRS letter. Hands-on assistance with financial-aid forms, combined with personalized aid information, improved aid receipt and college enrollment relative to a control group receiving general information; personalized information without assistance did not produce the same gains (Bhargava & Manoli, 2015; Bettinger et al., 2012). A sludge audit should therefore count time and steps **and** ask who must translate, disclose, wait, travel, or absorb psychological cost.
+
+### Support action at the right moment
+
+Information delivered at the wrong time is often inert. A reminder can close an intention–action gap when the person has already formed an intention, forgetting is plausible, and the action is feasible at the moment of contact. Reminders fail when the real barrier is cost, fear, low trust, no available appointment, or disagreement with the goal.
+
+Forgetting is one possible barrier; planning is another. A reminder can include a concrete opportunity to act, such as choosing a date and time, while making rescheduling easy. If the barrier is an unattractive immediate experience, the [temptation-bundling example in Chapter 39](39-behavior-design-make-the-better-action-easier.qmd#friction-rewards-and-commitment) illustrates a different mechanism: link the activity to an immediate reward (Milkman et al., 2014). Urgency should reflect a real constraint rather than pressure the person to decide before inspecting the terms.
+
+A planning field has direct experimental support: prompting employees to write the date and time of a flu clinic increased vaccination relative to a reminder without that field (Milkman et al., 2011). Commitment devices address a different problem by letting a person constrain a predictable future choice; because they may impose costs, they are not always nudges in the strict sense. Save More Tomorrow illustrates a hybrid: workers committed part of future salary increases to saving, combining advance commitment, timing, and inertia (Thaler & Benartzi, 2004).
+
+Salience is selective. Making one action vivid necessarily pushes something else toward the background. Ethical design therefore asks not only what the cue reveals, but what it makes easier to forget.
+
+### An arrow that changed the action path
+
+An input can be irrelevant to an option's objective consequences and still be causally relevant to the decision process. In 2012, Google added a clickable right-pointing arrow while also changing font size, spacing, and text layout in advertisements on its Display Network. The hotel offer did not become better merely because an arrow appeared, but the route from noticing the offer to clicking it became more prominent. Google reported higher clicks after the bundled redesign (Land & Yuan, 2012).[^ch40-bundled-redesign]
+
+The arrow in the illustrative comparison in @fig-digital-arrow-affordance makes the next action easier to recognize without changing the offer. Whether the increased clicking helped users requires a further comparison with outcomes they value, such as finding a suitable service.
+
+![An illustrative action cue within a bundled interface redesign. These generic hotel advertisements show how an arrow can make the next action prominent; they are not the original test stimuli. Google reported higher clicks after combining the arrow with typography, spacing, and layout changes, so the comparison does not isolate the arrow’s effect.](../figures/digital-arrow-affordance.svg){#fig-digital-arrow-affordance fig-alt="Two generic hotel advertisements show the same offer. The second contains a prominent right-pointing arrow." width="100%" .phone-fit}
+
+### Use social information carefully
+
+Social information can help people infer what works, what is safe, or what others approve. It can also create the behavior it reports. A message saying that many people evade taxes, waste energy, or misuse a service may normalize the very conduct it condemns. Descriptive norms tell people what others do; injunctive norms tell them what others approve.
+
+Norm messages should use an honest reference group, avoid inventing consensus, and anticipate boomerang effects. People already performing better than the stated norm may regress toward it unless approval for the better behavior is also made clear (Schultz et al., 2007). “Most guests reuse towels” is not interchangeable with “Most guests in this room reuse towels,” and neither is defensible if the number is fabricated.
+
+[Chapter 26](26-social-norms-and-conformity-when-other-people-become-evidence.qmd#chapter-26-start) distinguished **dynamic norms** from descriptive and injunctive norms. Here the design question is deployment: a dynamic-norm message can describe a verified trend when the desirable behavior is not yet common, and such messages have shifted sustainable choices in experiments (Sparkman & Walton, 2017). The trend, denominator, and reference group must be relevant and honest; “more people” is not a license to manufacture momentum.
+
+Identity can make a choice meaningful, but assigning a flattering or shaming identity can become manipulation. A stronger design invites agency: “People like you do this” pressures the self; “Here is what others did, why it may matter, and how to choose” informs a decision.
+
+### Close the loop: feedback and error-proofing
+
+Feedback is useful when it is timely, interpretable, attributable, and linked to an action the person can take. A vague annual report may arrive too late to guide a repeated behavior. A real-time warning may be ignored if it fires constantly. A progress display may motivate when the target is meaningful, but game behavior when the metric becomes the goal.
+
+Error-proofing designs around predictable mistakes. Examples include showing the selected account before a transfer, warning about duplicate medication, previewing who will receive a message, requiring a second person for an irreversible organizational action, or making the cost of delay visible before a deadline passes.
+
+Feedback also belongs to the designer. An intervention should generate evidence about who receives it, who acts, who benefits, who is burdened, and which unintended effects appear. Without that loop, a nudge can persist because it is elegant rather than because it works.
+
+Home-energy reports illustrate the full learning problem. Households sent repeated comparison and action feedback used less electricity than households assigned to receive no reports. Some of that difference persisted after reports stopped, although it decayed over time (Allcott & Rogers, 2014). The relevant outcome is not merely whether one message moved behavior once, but whether the architecture produced useful, durable learning without making already-efficient households regress.
+
+## Test and govern the whole path
+
+### Digital architecture operates at full-path scale
+
+Digital systems can personalize menus, defaults, ranking, timing, social evidence, and feedback simultaneously. That makes them powerful and difficult to audit. A platform does not merely host choices; its recommender system decides what becomes visible, its interface defines the next easiest action, and its metrics determine what the system learns to optimize.
+
+Audit the platform’s metric against the user’s objective. Time on site can rise while satisfaction falls, and a successful purchase may be followed by a difficult cancellation. Personalization adds another problem: different users may encounter different terms or obstacles, making a single screenshot an inadequate audit.
+
+Keep records of the paths shown, provide understandable controls, and examine outcomes across relevant groups. Users need a way to correct a mistaken recommendation or challenge an unwanted consequence.
+
+Dark patterns are not only hypothetical. Design research has catalogued interfaces that obstruct, sneak, pressure, or misdirect, and a large crawl documented such patterns across shopping websites (Gray et al., 2018; Mathur et al., 2019). Continuous personalization and experimentation raise the governance burden: the same system can expose different people to different paths while leaving no shared interface for outsiders to inspect.
+
+[]{#ethics-and-governance-helping-steering-or-manipulating}
+
+For these digital paths, a technically available option may still be difficult to exercise. A cancellation route that requires exceptional time or persistence provides little practical freedom to leave. Use @tbl-35-ethics to examine both what the design offers and what using it actually requires, including the effort needed to refuse or correct a choice:
+
+| Test | Question |
+| --- | --- |
+| Purpose | Whose objective is being advanced? |
+| Welfare | Would affected people endorse the objective under informed reflection? |
+| Evidence | Is there a credible mechanism and proportionate evidence? |
+| Transparency | Can people understand the material feature and the designer's role? |
+| Exit | Is refusal, switching, or correction practically easy? |
+| Distribution | Who benefits, who bears burdens, and are vulnerable groups protected? |
+| Plural values | Are legitimate preferences diverse enough that active choice is safer than a strong default? |
+| Nonexploitation | Does the feature support informed action rather than use confusion, urgency, or inattention against the chooser? |
+| Accountability | Who monitors the path, answers challenges, and removes a design that does not earn its place? |
+| Proportionality | Is the strength of influence justified by the problem, evidence, stakes, and rights involved? |
+: An ethical choice-architecture audit {#tbl-35-ethics}
+
+Make material facts, sponsorship, data use, and options easy to inspect along the actual user path.
+
+### Treat every intervention as a hypothesis
+
+Behavioral effects are heterogeneous. An average effect may conceal strong benefit for one group, no effect for another, and harm for a third. Context, trust, baseline behavior, implementation quality, and the availability of good options all matter. Mertens et al. (2022) reported an average behavioral effect across diverse choice-architecture studies, but its magnitude and robustness to publication bias have been disputed. A reanalysis using different publication-bias adjustments found no clear average effect (Maier et al., 2022). This disagreement makes evidence for the particular design and setting essential.
+
+Scale is a separate test. Quantitative reviews find substantial variation across nudge designs, and trials run at scale by public nudge units have produced more modest average effects than prominent academic studies might lead designers to expect (Hummel & Maedche, 2019; DellaVigna & Linos, 2022). DellaVigna and Linos found average increases in take-up of 1.4 percentage points in the nudge-unit trials and 8.7 points in the academic-journal comparison.[^ch40-scale-comparison] Evaluate the design in the setting where it will operate.
+
+Evaluation should therefore precede celebration. Define the target outcome, mechanism, baseline, comparison, time horizon, and possible harm before launch. When feasible, pilot or randomize. Measure behavior rather than intention alone. Check persistence and spillovers. Compare the nudge with plausible alternatives, including a boost, an incentive, service redesign, or no intervention.
+
+A null result narrows the inquiry only when the study can distinguish the explanations. Check delivery, precision, timing, and access before concluding that forgetting was unimportant. Repeating the reminder more often will not resolve a transport barrier.
+
+## Apply the plausible-path design cycle
+
+Use a short record linking the target outcome, diagnosed barrier, proposed change, comparison, and review date. Include a competing intervention and a possible harm. The two examples below show why following the full path can change the diagnosis.
+
+
+
+### Worked example: missed appointments
+
+Suppose a clinic wants to reduce missed appointments. A reminder seems a direct way to recover unused slots, but a patient who cannot reach the clinic gains no transport from another message. The same missed visit can call for a different intervention. Before spending effort on reminders, the team checks whether missed visits cluster by time, transport access, language, cost, waiting time, or difficulty cancelling.
+
+If forgetting is important, a reminder can state the time, place, preparation, and one-tap paths to confirm, reschedule, or cancel. The message arrives while action is possible. The clinic measures attendance, timely cancellation, rescheduling, staff burden, and subgroup effects. If transport or unpredictable work is the real barrier, reminders alone will disappoint; flexible scheduling or service redesign is needed.
+
+### Worked example: subscription and cancellation sludge
+
+A digital service can be joined with one prominent button but requires a search, password re-entry, retention offers, and a telephone call to leave. The business may describe each screen as an opportunity to prevent an accidental cancellation. The full path reveals a different objective: friction is asymmetric, the expected revenue from inattention accrues to the designer, and exit exists formally while being costly in practice.
+
+A defensible redesign makes the current plan, renewal date, total cost, data consequences, and cancellation control visible in the same account area. Leaving should require confirmation proportionate to the consequences, not endurance. A brief, freely dismissible offer to pause or change plans may be legitimate when it does not obscure cancellation. Evaluation should include successful cancellation, time and errors, unwanted renewals, complaints, and differential burden—not only retained revenue.
+
+## Practice Lab: architecture autopsy and redesign
+
+In groups, document one real choice path from first cue to feedback. Mark the menu, default, mapping, friction, timing, social information, and exit. Then write a one-sentence causal claim: “Changing **X** should affect **Y** because **mechanism Z**.” Propose one alternative instrument and one harm measure. Exchange designs and ask: Would this remain defensible if users understood it completely?
+
+
+## Take it forward
+
+
+Follow the choice path as the person using it would: from the first prompt to the action and its consequences. Look especially at the point where an understandable intention becomes difficult to carry out. A useful redesign makes that point easier while keeping costs, alternatives, and exit visible.
+
+[^ch40-bundled-redesign]: The public report gave no effect size and did not isolate the arrow from the other changes. It measured clicks rather than profit or user welfare.
+
+[^ch40-scale-comparison]: The two averages come from different collections of interventions, rather than a randomized comparison of the same intervention at different scales.
+
+## References cited in this chapter
+
+::: {.reference}
+Allcott, H., & Rogers, T. (2014). The short-run and long-run effects of behavioral interventions: Experimental evidence from energy conservation. American Economic Review, 104(10), 3003–3037.
+:::
+
+::: {.reference}
+Bettinger, E. P., Long, B. T., Oreopoulos, P., & Sanbonmatsu, L. (2012). The role of application assistance and information in college decisions: Results from the H&R Block FAFSA experiment. Quarterly Journal of Economics, 127(3), 1205–1242.
+:::
+
+::: {.reference}
+Bhargava, S., & Manoli, D. (2015). Psychological frictions and the incomplete take-up of social benefits: Evidence from an IRS field experiment. American Economic Review, 105(11), 3489–3529.
+:::
+
+::: {.reference}
+Carroll, G. D., Choi, J. J., Laibson, D., Madrian, B. C., & Metrick, A. (2009). Optimal defaults and active decisions. Quarterly Journal of Economics, 124(4), 1639–1674.
+:::
+
+::: {.reference}
+Chernev, A., Böckenholt, U., & Goodman, J. (2015). Choice overload: A conceptual review and meta-analysis. Journal of Consumer Psychology, 25(2), 333–358.
+:::
+
+::: {.reference}
+Dallacker, M., Appelius, L., Brandmaier, A. M., Morais, A. S., & Hertwig, R. (2024). Opt-out defaults do not increase organ donation rates. *Public Health, 236*, 436–440. https://doi.org/10.1016/j.puhe.2024.08.009
+:::
+
+::: {.reference}
+DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81–116.
+:::
+
+::: {.reference}
+Frederick, S., Novemsky, N., Wang, J., Dhar, R., & Nowlis, S. (2009). Opportunity cost neglect. Journal of Consumer Research, 36(4), 553–561.
+:::
+
+::: {.reference}
+Gray, C. M., Kou, Y., Battles, B., Hoggatt, J., & Toombs, A. L. (2018). The dark patterns side of UX design. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems, 1–14.
+:::
+
+::: {.reference}
+Herd, P., & Moynihan, D. P. (2018). Administrative burden: Policymaking by other means. Russell Sage Foundation.
+:::
+
+::: {.reference}
+Hummel, D., & Maedche, A. (2019). How effective is nudging? A quantitative review on the effect sizes and limits of empirical nudging studies. Journal of Behavioral and Experimental Economics, 80, 47–58.
+:::
+
+::: {.reference}
+Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? Journal of Personality and Social Psychology, 79(6), 995–1006.
+:::
+
+::: {.reference}
+Jachimowicz, J. M., Duncan, S., Weber, E. U., & Johnson, E. J. (2019). When and why defaults influence decisions: A meta-analysis of default effects. Behavioural Public Policy, 3(2), 159–186.
+:::
+
+::: {.reference}
+Johnson, E. J., & Goldstein, D. G. (2003). Do defaults save lives? *Science, 302*(5649), 1338–1339. https://doi.org/10.1126/science.1091721
+:::
+
+::: {.reference}
+Land, J., & Yuan, S. (2012, December 3). Enhancing text ads on the Google Display Network. *Inside AdSense*. https://adsense.googleblog.com/2012/12/enhancing-text-ads-on-google-display.html
+:::
+
+::: {.reference}
+Larrick, R. P., & Soll, J. B. (2008). The MPG illusion. Science, 320(5883), 1593–1594.
+:::
+
+::: {.reference}
+Madrian, B. C., & Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. *Quarterly Journal of Economics, 116*(4), 1149–1187. https://doi.org/10.1162/003355301753265543
+:::
+
+::: {.reference}
+Maier, M., Bartoš, F., Stanley, T. D., Shanks, D. R., Harris, A. J. L., & Wagenmakers, E.-J. (2022). No evidence for nudging after adjusting for publication bias. Proceedings of the National Academy of Sciences, 119(31), e2200300119. https://doi.org/10.1073/pnas.2200300119
+:::
+
+::: {.reference}
+Mathur, A., Acar, G., Friedman, M. J., Lucherini, E., Mayer, J., Chetty, M., & Narayanan, A. (2019). Dark patterns at scale: Findings from a crawl of 11K shopping websites. Proceedings of the ACM on Human-Computer Interaction, 3(CSCW), 1–32.
+:::
+
+::: {.reference}
+Mertens, S., Herberz, M., Hahnel, U. J. J., & Brosch, T. (2022). The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains. Proceedings of the National Academy of Sciences, 119(1), e2107346118.
+:::
+
+::: {.reference}
+Milkman, K. L., Beshears, J., Choi, J. J., Laibson, D., & Madrian, B. C. (2011). Using implementation intentions prompts to enhance influenza vaccination rates. *Proceedings of the National Academy of Sciences, 108*(26), 10415–10420. https://doi.org/10.1073/pnas.1103170108
+:::
+
+::: {.reference}
+Milkman, K. L., Minson, J. A., & Volpp, K. G. M. (2014). Holding the Hunger Games hostage at the gym: An evaluation of temptation bundling. *Management Science, 60*(2), 283–299. https://doi.org/10.1287/mnsc.2013.1784
+:::
+
+::: {.reference}
+Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. Journal of Consumer Research, 37(3), 409–425.
+:::
+
+::: {.reference}
+Schultz, P. W., Nolan, J. M., Cialdini, R. B., Goldstein, N. J., & Griskevicius, V. (2007). The constructive, destructive, and reconstructive power of social norms. Psychological Science, 18(5), 429–434.
+:::
+
+::: {.reference}
+Sparkman, G., & Walton, G. M. (2017). Dynamic norms promote sustainable behavior, even if it is counternormative. Psychological Science, 28(11), 1663–1674.
+:::
+
+::: {.reference}
+Sunstein, C. R. (2021). Sludge: What stops us from getting things done and what to do about it. MIT Press.
+:::
+
+::: {.reference}
+Thaler, R. H. (1985). Mental accounting and consumer choice. Marketing Science, 4(3), 199–214.
+:::
+
+::: {.reference}
+Thaler, R. H., & Benartzi, S. (2004). Save More Tomorrow: Using behavioral economics to increase employee saving. Journal of Political Economy, 112(S1), S164–S187.
+:::
+
+::: {.reference}
+Thaler, R. H., & Sunstein, C. R. (2008). Nudge: Improving decisions about health, wealth, and happiness. Yale University Press.
+:::

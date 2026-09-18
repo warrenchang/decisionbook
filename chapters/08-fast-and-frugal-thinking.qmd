@@ -28,6 +28,7 @@ A quick answer can reflect skilled recognition or a misleading shortcut. Deliber
 
 - Explain automatic and reflective processing without treating them as literal brain systems.
 - Diagnose a heuristic through its target question, cue, ecological fit, and feedback.
+- Distinguish monitoring a judgment from choosing how to check or revise it.
 - Decide when intuition deserves trust and when a structured check is warranted.
 
 If the ball cost 10 cents, the bat would cost $1.10 and the total would be $1.20. The correct prices are 5 cents and $1.05. The tempting answer uses the numbers fluently while failing to preserve the stated difference.
@@ -107,7 +108,49 @@ Reflection may also work on behalf of an initial impression. An interviewer who 
 
 Distraction, stress, and fatigue can make a check harder. A practical response is to provide the conditions for a useful check: time, a clear question, and evidence that can contradict the first impression.
 
+## Monitoring and guiding thought {#monitoring-and-guiding-thought}
+
+How do we recognize that a thought needs checking? Return to the bat-and-ball problem. “Ten cents” is a judgment about the answer. “That came too easily; I should check the total” is a judgment about your own thinking. **Metacognition** involves monitoring and regulating cognition: assessing what you know, noticing uncertainty, and deciding how to proceed.
+
+Two functions matter. **Monitoring** estimates how well a cognitive process is going. **Control** changes what you do next: reread the question, calculate the total, seek another observation, or stop checking. A feeling of uncertainty can arise quickly; deliberately comparing an answer with the problem's conditions recruits the effortful processes associated with System 2. Metacognition can therefore connect an automatic warning with a controlled response.
+
+Desender et al. (2018) separated confidence from accuracy in a perceptual decision task. Participants requested more information under conditions that reduced confidence, even when accuracy was matched. The study shows how an assessment of one's own judgment can guide evidence gathering. Whether that assessment deserves trust depends on how well confidence tracks performance.
+
+This connects to [Chapter 4's predictive mind](04-the-predictive-mind-perception-is-inference.qmd#generative-ai-and-predictive-processing). The inference that makes a scene recognizable usually unfolds without conscious supervision. Reflection can question the resulting interpretation and guide the next observation. Our operations engineer may initially recognize a familiar failure, then ask which diagnostic reading would distinguish it from an alternative. She changes what evidence becomes available without consciously directing each perceptual computation.
+
+Predictive processing and dual-process theory address different aspects of cognition. The former describes how expectations and incoming evidence may interact; the latter distinguishes processing by its dependence on working memory and control. Predictive processing should therefore not be identified wholesale with System 1. Its proposed computations can also contribute to attention and goal-directed action (Friston, 2010; Evans & Stanovich, 2013).
+
+::: {#ai-reasoning-and-reflective-thought}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: AI reasoning and reflective thought
+
+An AI system can also give an immediate answer or spend more computation developing and checking a solution. This makes reasoning modes a useful comparison with deliberate thought. To understand the comparison, follow what changes between the first candidate answer and the final one.
+
+### Intermediate steps become input for later steps {.unlisted}
+
+An autoregressive LLM continues to generate tokens during an extended reasoning sequence. Those tokens can state subproblems, carry intermediate results, identify contradictions, or propose another approach. Because earlier generated text becomes context for later generation, the system can use its own intermediate work to shape its next step. **Chain-of-thought prompting** elicits such sequences through examples of worked reasoning; Wei et al. (2022) demonstrated improvements on several reasoning benchmarks.
+
+Reasoning behavior can also be learned during training. In the DeepSeek-R1 research, reinforcement learning rewarded successful solutions to verifiable problems and produced patterns of checking and revising intermediate work (Guo et al., 2025). Training changes parameters; using the resulting reasoning strategy on a new problem need not do so. More computation at answer time can improve a solution while the underlying parameters remain fixed.
+
+### Some systems explicitly search among alternatives {.unlisted}
+
+The idea of a model “prompting itself” is especially concrete in systems with a search procedure around the LLM. **Tree of Thoughts**, for example, generates candidate intermediate steps, evaluates alternatives, and searches forward or backtracks among them (Yao et al., 2023). Here, a control procedure organizes repeated model calls. Other reasoning systems develop a single extended sequence; a reasoning label alone does not establish that a separate controller compares multiple branches.
+
+The functional resemblance to metacognition lies in treating an intermediate answer as something to examine and potentially revise. It does not establish human-like awareness or make the AI architecture an implementation of the psychological System 1/System 2 distinction.
+
+### A useful check needs a criterion for being wrong {.unlisted}
+
+Consider a model that proposes ten cents for the ball. Asking it to verify both the total and the price difference gives the next reasoning step a concrete test. Asking only “Are you sure?” leaves it to decide what counts as a reason to change. Huang et al. (2024) found that, in the systems and tasks they tested, attempts at self-correction without external feedback sometimes reduced reasoning accuracy. Trained checking strategies can help, but the opportunity to reconsider does not itself guarantee improvement.
+
+The same practical problem appears when people deliberate. A longer explanation may expose an error or defend it more elaborately. Arithmetic supplies an internal consistency test; a claim about the world may require a measurement, an observation, or a reliable source. The value of reflection depends on what the additional work checks and whether its result can overturn the first answer. [Chapter 42](42-data-driven-decision-making.qmd#ai-workbench) applies this principle to AI-assisted decisions.
+:::
+
+:::
+
 ## How the modes train and correct one another
+
+A check can improve the answer in front of us. Repeated checking with useful feedback can also change which answer comes to mind next time.
 
 Practice can make a response faster without making its cue more trustworthy. The training problem is to develop fluency while preserving feedback that can expose error. Fitts and Posner (1967) described changes from effortful learning through refinement toward more autonomous performance. Logan's (1988) account emphasizes retrieving stored instances instead of recomputing each response.
 
@@ -182,6 +225,10 @@ Damasio, A. R. (1994). Descartes’ error: Emotion, reason, and the human brain.
 :::
 
 ::: {.reference}
+Desender, K., Boldt, A., & Yeung, N. (2018). Subjective confidence predicts information seeking in decision making. *Psychological Science, 29*(5), 761–778. https://doi.org/10.1177/0956797617744771
+:::
+
+::: {.reference}
 Evans, J. St. B. T., & Stanovich, K. E. (2013). Dual-process theories of higher cognition: Advancing the debate. *Perspectives on Psychological Science, 8*(3), 223–241. https://doi.org/10.1177/1745691612460685
 :::
 
@@ -191,6 +238,10 @@ Fitts, P. M., & Posner, M. I. (1967). Human performance. Brooks/Cole.
 
 ::: {.reference}
 Frederick, S. (2005). Cognitive reflection and decision making. Journal of Economic Perspectives, 19(4), 25–42.
+:::
+
+::: {.reference}
+Friston, K. (2010). The free-energy principle: A unified brain theory? Nature Reviews Neuroscience, 11(2), 127–138.
 :::
 
 ::: {.reference}
@@ -214,7 +265,15 @@ Goldstein, D. G., & Gigerenzer, G. (2002). Models of ecological rationality: The
 :::
 
 ::: {.reference}
+Guo, D., Yang, D., Zhang, H., et al. (2025). DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning. *Nature, 645*, 633–638. https://doi.org/10.1038/s41586-025-09422-z
+:::
+
+::: {.reference}
 Haselton, M. G., & Buss, D. M. (2000). Error management theory: A new perspective on biases in cross-sex mind reading. Journal of Personality and Social Psychology, 78(1), 81–91.
+:::
+
+::: {.reference}
+Huang, J., Chen, X., Mishra, S., Zheng, H. S., Yu, A. W., Song, X., & Zhou, D. (2024). Large language models cannot self-correct reasoning yet. *International Conference on Learning Representations*. https://openreview.net/forum?id=IkmD3fKBPQ
 :::
 
 ::: {.reference}
@@ -275,4 +334,12 @@ Toplak, M. E., West, R. F., & Stanovich, K. E. (2011). The Cognitive Reflection 
 
 ::: {.reference}
 Tversky, A. (1972). Elimination by aspects: A theory of choice. Psychological Review, 79(4), 281–299.
+:::
+
+::: {.reference}
+Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. V., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems, 35*, 24824–24837. https://proceedings.neurips.cc/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html
+:::
+
+::: {.reference}
+Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). Tree of Thoughts: Deliberate problem solving with large language models. *Advances in Neural Information Processing Systems, 36*. https://proceedings.neurips.cc/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html
 :::
