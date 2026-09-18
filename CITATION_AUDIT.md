@@ -44,12 +44,12 @@ Unresolved author–year citations: **0**
 | Persuasion | 28 | 0 |
 | Why Stories Move Minds | 12 | 0 |
 | Building an Evidence-Aligned Message | 12 | 0 |
-| Communication | 18 | 0 |
+| Communication | 23 | 0 |
 | Connection and Repair | 30 | 0 |
 | Negotiation as Joint Decision Design | 18 | 0 |
 | Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 13 | 0 |
-| Designing Better Agreements | 22 | 0 |
+| Designing Better Agreements | 17 | 0 |
 | Behavior Design | 30 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
