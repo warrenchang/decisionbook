@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **994**
+Unique references in the master union: **999**
 
-Chapter reference blocks: **1009**
+Chapter reference blocks: **1017**
 
 Unresolved author–year citations: **0**
 
@@ -44,8 +44,8 @@ Unresolved author–year citations: **0**
 | Persuasion | 28 | 0 |
 | Why Stories Move Minds | 12 | 0 |
 | Building an Evidence-Aligned Message | 12 | 0 |
-| Communication | 23 | 0 |
-| Connection and Repair | 30 | 0 |
+| Communication | 25 | 0 |
+| Connection and Repair | 36 | 0 |
 | Negotiation as Joint Decision Design | 18 | 0 |
 | Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 13 | 0 |
