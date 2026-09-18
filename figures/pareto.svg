@@ -1,42 +1,50 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="522" viewBox="0 88 1200 522" role="img" aria-labelledby="pareto-title pareto-desc" data-text-review="2026-09-14">
-  <title id="pareto-title">An illustrative Pareto-efficient set of negotiation packages</title>
-  <desc id="pareto-desc">A scatterplot shows a discrete set of feasible packages using separately specified value measures for Party A and Party B. Four nondominated packages are highlighted and joined only as a visual guide. An arrow shows a Pareto improvement from one dominated package to one nondominated package.</desc>
-  <rect width="1200" height="720" fill="#ffffff"/>
-  <rect x="128" y="112" width="944" height="474" rx="24" fill="#f7fafc" stroke="#c7d5df" stroke-width="2"/>
-  <line x1="190" y1="520" x2="1014" y2="520" stroke="#17324d" stroke-width="4"/>
-  <line x1="190" y1="520" x2="190" y2="150" stroke="#17324d" stroke-width="4"/>
-  <path d="M1014 520 L996 510 L996 530 Z" fill="#17324d"/>
-  <path d="M190 150 L180 168 L200 168 Z" fill="#17324d"/>
-
-  <text x="610" y="568" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#17324d">Party A value measure for the specified issues</text>
-  <text x="92" y="335" text-anchor="middle" transform="rotate(-90 92 335)" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#17324d">Party B value measure for the specified issues</text>
-
-  <g fill="#aebdca" stroke="#ffffff" stroke-width="2">
-    <circle cx="292" cy="438" r="10"/>
-    <circle cx="386" cy="404" r="10"/>
-    <circle cx="478" cy="446" r="10"/>
-    <circle cx="548" cy="342" r="10"/>
-    <circle cx="652" cy="384" r="10"/>
-    <circle cx="738" cy="310" r="10"/>
-    <circle cx="842" cy="354" r="10"/>
-    <circle cx="920" cy="410" r="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="760" viewBox="0 0 760 760" role="img" aria-labelledby="pareto-title pareto-desc">
+  <title id="pareto-title">Creating and claiming value at the Pareto frontier</title>
+  <desc id="pareto-desc">A square plot has value to the seller on the horizontal axis and value to the buyer on the vertical axis, both from 0 to 100. A downward-curving Pareto frontier bounds the shaded feasible agreements. A creating-value arrow moves northeast from an interior agreement to the frontier, improving both outcomes. A two-headed claiming-value arrow follows the frontier: more for one party means less for the other.</desc>
+  <defs>
+    <marker id="axis-tip" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" viewBox="0 0 14 14" refX="14" refY="7" orient="auto"><path d="M0 0 L14 7 L0 14 Z" fill="#19364d"/></marker>
+    <marker id="creation-tip" markerUnits="userSpaceOnUse" markerWidth="17" markerHeight="17" viewBox="0 0 17 17" refX="17" refY="8.5" orient="auto"><path d="M0 0 L17 8.5 L0 17 Z" fill="#19746b"/></marker>
+    <marker id="claim-tip" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" viewBox="0 0 16 16" refX="16" refY="8" orient="auto-start-reverse"><path d="M0 0 L16 8 L0 16 Z" fill="#b65b27"/></marker>
+  </defs>
+  <rect width="760" height="760" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#19364d">
+    <path id="feasible-set" d="M130 630 L130 110 A520 520 0 0 1 650 630 Z" fill="#eaf4f2"/>
+    <g stroke="#d0dfdf" stroke-width="1.5" stroke-dasharray="5 7">
+      <path d="M390 630 V110"/>
+      <path d="M130 370 H650"/>
+    </g>
+    <path id="frontier" d="M130 110 A520 520 0 0 1 650 630" fill="none" stroke="#19364d" stroke-width="5"/>
+    <g stroke="#19364d" stroke-width="4" fill="none">
+      <path id="x-axis" d="M130 630 H692" stroke-width="4" marker-end="url(#axis-tip)"/>
+      <path id="y-axis" d="M130 630 V68" stroke-width="4" marker-end="url(#axis-tip)"/>
+    </g>
+    <g stroke="#19364d" stroke-width="2">
+      <path d="M390 630 V640 M650 630 V640 M120 370 H130 M120 110 H130"/>
+    </g>
+    <g fill="#506476">
+      <text x="113" y="662" text-anchor="end">0</text>
+      <text x="390" y="673" text-anchor="middle">50</text>
+      <text x="650" y="673" text-anchor="middle">100</text>
+      <text x="108" y="380" text-anchor="end">50</text>
+      <text x="108" y="120" text-anchor="end">100</text>
+    </g>
+    <text x="390" y="724" text-anchor="middle" font-size="30" font-weight="700">Value to seller</text>
+    <text x="42" y="370" text-anchor="middle" font-size="30" font-weight="700" transform="rotate(-90 42 370)">Value to buyer</text>
+    <text x="338" y="72" text-anchor="middle" font-weight="700">Pareto frontier</text>
+    <path d="M300 86 L300 138.574" stroke="#19364d" stroke-width="2" fill="none"/>
+    <text x="283" y="553" text-anchor="middle" fill="#506476">Feasible</text>
+    <text x="283" y="587" text-anchor="middle" fill="#506476">agreements</text>
+    <circle cx="270" cy="490" r="7" fill="#19746b"/>
+    <path id="value-creation" d="M274.950 485.050 L492.039 267.961" stroke="#19746b" stroke-width="5" fill="none" marker-end="url(#creation-tip)"/>
+    <circle cx="497.696" cy="262.304" r="8" fill="#fff" stroke="#19364d" stroke-width="3"/>
+    <g fill="#19746b" font-weight="700" text-anchor="middle">
+      <text x="455" y="410">Creating</text>
+      <text x="455" y="444">value</text>
+    </g>
+    <path id="value-claiming" d="M366.666 122.468 A560 560 0 0 1 637.532 393.334" stroke="#b65b27" stroke-width="5" fill="none" marker-start="url(#claim-tip)" marker-end="url(#claim-tip)"/>
+    <g fill="#b65b27" font-weight="700" text-anchor="middle">
+      <text x="614" y="193">Claiming</text>
+      <text x="614" y="227">value</text>
+    </g>
   </g>
-
-  <path d="M390 192 L590 224 L788 270 L982 350" fill="none" stroke="#c56a2d" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round" stroke-linejoin="round"/>
-  <g fill="#fff7ed" stroke="#c56a2d" stroke-width="4">
-    <circle cx="390" cy="192" r="12"/>
-    <circle cx="590" cy="224" r="12"/>
-    <circle cx="788" cy="270" r="12"/>
-    <circle cx="982" cy="350" r="12"/>
-  </g>
-  <rect x="566" y="128" width="350" height="40" rx="14" fill="#fff7ed" stroke="#e2b182" stroke-width="2"/>
-  <text x="741" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#9d5122">Pareto efficient in this menu</text>
-
-  <circle cx="386" cy="404" r="12" fill="#2f6f9f" stroke="#ffffff" stroke-width="3"/>
-  <text x="448" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#17324d">dominated package</text>
-  <path d="M401 392 C462 342 508 288 559 247" fill="none" stroke="#447c55" stroke-width="5" stroke-linecap="round"/>
-  <path d="M572 237 L555 241 L563 256 Z" fill="#447c55"/>
-  <text x="468" y="313" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#447c55">Pareto improvement</text>
-
-  </svg>
+</svg>

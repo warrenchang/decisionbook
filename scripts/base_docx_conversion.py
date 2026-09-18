@@ -874,21 +874,14 @@ def generate_figures(figdir: Path):
     txt(d,380,y+115,'Seller reservation',20,'bold',fill=COL['orange']); txt(d,820,y+115,'Buyer reservation',20,'bold',fill=COL['blue'])
     txt(d,600,520,'A negative ZOPA is not a failure of tactics. It is a signal to walk away or add issues.',22,fill=COL['gray']); save_svg(d,p)
     figs['zopa']={'file':p.name,'caption':'Figure 19. A positive bargaining zone exists when the buyer’s maximum exceeds the seller’s minimum; the overlap is the bargaining surplus.','alt':'Number line showing seller reservation at 8,000 euros, buyer reservation at 10,000 euros, and a 2,000-euro zone between them.'}
-    # 20 integrative frontier
-    p=figdir/'pareto.svg'; d=new_svg(p,title='Pareto frontier',desc='Negotiated agreements inside a curved frontier are inefficient; moving northeast can improve both parties until reaching the Pareto frontier. Distribution along the frontier remains a fairness question.')
-    txt(d,600,48,'Create value before arguing over its division',34,'bold')
-    # axes
-    d.add(d.line(start=(150,540),end=(1080,540),stroke=COL['navy'],stroke_width=4)); d.add(d.line(start=(150,540),end=(150,100),stroke=COL['navy'],stroke_width=4)); arrow(d,1080,540,1120,540); arrow(d,150,100,150,70)
-    txt(d,650,610,'Value to Party A',22,'bold'); txt(d,55,310,'Value to Party B',22,'bold',anchor='middle')
-    # frontier curve
-    path=d.path(d='M 250 500 C 420 420, 650 260, 990 140',fill='none',stroke=COL['orange'],stroke_width=8); d.add(path)
-    txt(d,820,165,'Pareto frontier',24,'bold',fill=COL['orange'])
-    # points and arrows
-    for x,y,l in [(390,430,'compromise'),(500,360,'better package'),(760,245,'efficient deal')]:
-        d.add(d.circle(center=(x,y),r=11,fill=COL['blue'])); txt(d,x+18,y-15,l,18,anchor='start')
-    arrow(d,390,430,500,360,stroke=COL['green']); arrow(d,500,360,760,245,stroke=COL['green'])
-    txt(d,600,565,'Efficiency asks whether value is wasted. Fairness asks how the created value is divided.',20,fill=COL['gray']); save_svg(d,p)
-    figs['pareto']={'file':p.name,'caption':'Figure 20. Integrative negotiation moves agreements toward the Pareto frontier; efficiency and fairness remain distinct questions.','alt':'Graph with value to two parties on the axes and a Pareto frontier; arrows move from compromise to better package to efficient deal.'}
+    # 20 integrative frontier: share the reviewed, equal-scale figure builder.
+    try:
+        from .build_pareto_figure import ALT as pareto_alt, CAPTION as pareto_caption, write_pareto_svg
+    except ImportError:
+        from build_pareto_figure import ALT as pareto_alt, CAPTION as pareto_caption, write_pareto_svg
+    p = figdir / 'pareto.svg'
+    write_pareto_svg(p)
+    figs['pareto'] = {'file': p.name, 'caption': 'Figure 20. ' + pareto_caption, 'alt': pareto_alt}
     # 21 DPN cycle
     p=figdir/'dpn-cycle.svg'; d=new_svg(p,title='DPN cycle',desc='Notice, test, ask, design and learn form a repeating cycle for decision, persuasion and negotiation.')
     txt(d,600,48,'The DPN cycle',36,'bold')
@@ -1322,6 +1315,7 @@ def main():
     write_support_files(chapters,old_refs,all_ref_text,removed,unresolved)
     # copy this build script as reproducible site builder, but the script expects original source; include a lighter README command note.
     shutil.copy2(__file__,OUT/'scripts/source_conversion_pipeline.py')
+    shutil.copy2(Path(__file__).with_name('build_pareto_figure.py'), OUT/'scripts/build_pareto_figure.py')
 
     # Build combined EPUB source using PNG figures and no duplicate YAML front matter.
     combined=['% Decision in the Making','% Huanren Warren Zhang','% 2026 Edition','']

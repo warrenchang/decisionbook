@@ -80,6 +80,12 @@ figcaption {
   line-height: 1.3;
 }
 
+/* Begin the end-of-chapter recognition cue on a new page in paginated readers. */
+#recognition-reveal {
+  break-before: page;
+  page-break-before: always;
+}
+
 table {
   width: 100%;
   max-width: 100%;

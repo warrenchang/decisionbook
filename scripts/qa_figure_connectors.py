@@ -28,8 +28,9 @@ BOOK_SOURCE_LINE = re.compile(r"^\s*-\s+(?:part:\s+)?([^\s]+\.qmd)\s*$", re.MULT
 DESKTOP_FIGURE_WIDTH = 820.0  # quarto-custom.scss: main.content max-width
 MIN_SUPPORTING_TEXT_CSS_PX = 10.5
 FREE_ENDPOINTS = {
-    ("pareto.svg", 1120.0, 540.0),  # horizontal axis
-    ("pareto.svg", 150.0, 70.0),  # vertical axis
+    ("pareto.svg", 692.0, 630.0),  # horizontal axis
+    ("pareto.svg", 130.0, 68.0),  # vertical axis
+    ("pareto.svg", 637.5, 393.3),  # unboxed claiming-value arc, 40px outside frontier
     # Side arrows point to unboxed validity labels, not participant-flow nodes.
     # Their 20px label gaps are verified in the rendered F.2 figure audit.
     ("random-sampling-vs-assignment.svg", 565.0, 240.0),  # external validity

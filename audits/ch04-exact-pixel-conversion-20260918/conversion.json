@@ -1,0 +1,19 @@
+{
+  "source": "/Users/ra25fi/Library/CloudStorage/OneDrive-AalborgUniversitet/decision_book/figures/recognition-grayscale-reveal.png",
+  "source_sha256": "b59049ac8a4d055916a8c6cc50a0d38b1d64e524efa3f7a7ce5bf87a0ca55039",
+  "output": "figures/recognition-two-tone.png",
+  "output_sha256": "dd21f0b6e4105e8b82715011064cc7264949b3593d5ed77c6dd545f48e938670",
+  "size": [
+    1536,
+    1024
+  ],
+  "threshold": 30,
+  "rule": "Pillow L luminance < threshold -> 0 (black); otherwise 255 (white)",
+  "black_fraction": 0.06836954752604167,
+  "verification": {
+    "pixels_checked": 1572864,
+    "mismatches": 0,
+    "source_unchanged": true,
+    "luminance_conversion": "Pillow RGB to L"
+  }
+}

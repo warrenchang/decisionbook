@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **984**
+Unique references in the master union: **994**
 
-Chapter reference blocks: **999**
+Chapter reference blocks: **1009**
 
 Unresolved author–year citations: **0**
 
@@ -15,8 +15,8 @@ Unresolved author–year citations: **0**
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision | 9 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 33 | 0 |
-| The Predictive Mind {#the-predictive-mind-perception-is-inference} | 35 | 0 |
-| Expectations {#expectations-when-predictions-become-causes} | 32 | 0 |
+| The Predictive Mind {#the-predictive-mind-perception-is-inference} | 40 | 0 |
+| Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 58 | 0 |
 | The Narrator After Choice | 19 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 31 | 0 |
@@ -31,7 +31,7 @@ Unresolved author–year citations: **0**
 | Prospect Theory | 14 | 0 |
 | Decisions From Experience | 19 | 0 |
 | Mental Accounting | 23 | 0 |
-| Intertemporal Decision Making | 29 | 0 |
+| Intertemporal Decision Making | 33 | 0 |
 | Habits, Wanting, and Self-Control | 35 | 0 |
 | Deciding for a Better Life | 19 | 0 |
 | Strategic Interdependence | 13 | 0 |

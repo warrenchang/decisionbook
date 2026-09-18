@@ -200,6 +200,7 @@ th[scope="rowgroup"] { vertical-align: middle; }
 
 @media print {
   .quarto-figure, table, .callout { break-inside: avoid; }
+  #recognition-reveal { break-before: page; page-break-before: always; }
 }
 
 .author-profile {

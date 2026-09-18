@@ -1,0 +1,19 @@
+
+
+## Pareto efficiency
+
+![A discrete menu of feasible packages for two parties. The highlighted packages are nondominated; dashed lines connect them for visibility.](../figures/pareto.svg){#fig-pareto fig-alt="A scatterplot uses separate value measures for Party A and Party B. Four packages are Pareto efficient in the specified discrete menu: no feasible gain for one party avoids a loss to the other. An arrow shows a Pareto improvement from a dominated package."}
+
+Both parties can prefer a deal to walking away and still leave gains undiscovered. Agreement answers whether the package is acceptable; it does not tell them whether another package could improve one side’s outcome without costing the other. To judge how well the negotiation used the available value, they need a second benchmark.
+
+An agreement is Pareto efficient **relative to a specified feasible set** if there is no feasible alternative that at least one specified party prefers while no specified party is worse off. The parties may still argue about distribution, rights, or implementation, but no Pareto improvement remains within the parties, issues, constraints, and value measures included in that comparison.
+
+A Pareto frontier is the set of Pareto-efficient agreements under those specifications. The feasible set may be discrete, nonconvex, or only partly known. The two axes in @fig-pareto represent each party's own value measure. Each axis is interpreted in that party's own units.[^ch37-value-units]
+
+For a separate four-package example, assign **hypothetical, party-specific scores** to the contract-length and delivery trade.
+
+| Package | Buyer’s score | Supplier’s score |
+| --- | --- | --- |
+| Short contract, fixed quantities | 30 | 30 |
+| Short contract, flexible quantities | 100 | 0 |
+| Long contract, fixed quantities | 0 | 100 |
