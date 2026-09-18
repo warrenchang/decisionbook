@@ -28,6 +28,7 @@ For each material promise, specify who is responsible, what will be observed, ho
 - Produce a minimum viable agreement covering ownership, measurement, verification, review, failure, and exit.
 - Diagnose whether unclear priorities, forecast disagreement, sensitive claims, or process failure warrants an optional agreement-design module.
 - Add an advanced term only when its measurement, incentives, authority, and implementation burden are defensible.
+- Evaluate a contingent contract under different forecasts, risk exposures, and incentives, and distinguish mediation from arbitration.
 
 ## Start with a minimum viable agreement
 
@@ -88,6 +89,20 @@ The buyer can compare these trade-offs without disclosing its reservation value,
 
 Prepare the packages carefully. Approximate equivalence is from the offer-maker’s perspective, not an assurance that the counterpart will regard them as equally attractive. Each must be sincere and understandable; a deliberately unavailable decoy would undermine the exchange.
 
+### Check equivalence before calling the offers MESOs
+
+Consider the service menu in @tbl-meso-service-menu, adapted from the course example. It varies both the start date and whether the customer buys a premium service (Zhang, 2022c).
+
+| Service begins | Standard service | With premium service |
+| --- | ---: | ---: |
+| July | $650,000 | $700,000 |
+| March | $635,000 | $680,000 |
+: A service menu for learning about timing and service preferences {#tbl-meso-service-menu}
+
+The menu offers a concrete choice: premium service adds $50,000 in July or $45,000 in March. A customer who selects March with premium service reveals a combination worth investigating. Is the earlier start essential, is the premium valuable, or does the lower price drive the choice?
+
+The prices alone do not establish that the four offers are equally valuable to the provider. The provider must account for capacity, costs, timing, and risk. For example, if the July standard package costs $500,000 to deliver and the March standard package costs $485,000, each leaves $150,000 before other differences. Those cost assumptions are illustrative; they show the calculation needed before using the term MESO. Otherwise, this is a useful package menu without an established equivalence claim.
+
 
 
 ### Turn a package into a diagnostic question
@@ -108,9 +123,76 @@ Use @fig-agreement-design to check package sincerity, measurement and incentives
 
 Suppose a builder expects early completion while a buyer fears delay. A fixed payment asks them to settle the price of that uncertain performance now, when their forecasts differ. Repeating the forecasts need not bring them closer to agreement. A **contingent contract** makes a term depend on the future outcome: a bonus for finishing early and compensation for specified delays may offer each something it values, provided the possible payments, risks, and incentives are acceptable.
 
+The construction case starts with a demand made just before signing: substantial penalties if completion is more than a month late. Instead of accepting the demand, rejecting it, or merely reducing the penalty, the builder proposes a larger late penalty paired with a bonus for early completion. The request reveals that timing has value to the buyer, while the builder's confidence creates an opportunity to exchange a fixed price concession for an outcome-dependent term (Malhotra & Bazerman, 2007). The useful question is what the demand reveals about the problem the other side wants solved.
+
 The main questions concern measurement and control. Define completion so that speed cannot be achieved by omitting quality checks. Specify which delays the builder controls, how external disruptions are treated, who verifies the date, and how a disputed finding can be challenged. A payment tied to a vague “successful launch” simply moves the disagreement into the future.
 
 Contingent terms also create new incentives. A party that controls the measurement or part of the outcome may be able to influence the payment in ways the other did not intend. The contracting and verification burden must be worthwhile relative to a simpler fixed term (Bazerman & Gillespie, 1999).
+
+An author who expects strong sales might accept a smaller advance for a higher royalty. A producer forecasting a television audience share of nine might trade a fixed fee for a ratings bonus with a station forecasting seven. The station's control over scheduling and promotion then matters: a payment rule should not make suppressing the audience profitable. Outcome-dependent professional fees raise the same questions about who controls effort, what the metric rewards, and which arrangements the applicable professional rules permit.
+
+### MPharm: compare the packages before choosing one {#mpharm-contingent-contract}
+
+The MPharm classroom case gives this problem enough detail to work through (Zhang, 2022c). Dr. Chen can sell a patent to iDiet for **$20 million**, his BATNA. MPharm would obtain a patent worth **$20 million without regulatory approval** and **$120 million with approval**. Chen believes approval has a **60%** chance; MPharm assigns **10%**. These are the case's different subjective forecasts. Initially assume risk neutrality, reliable payment, no additional costs, and no change in approval chances caused by the contract.
+
+MPharm's expected gross value is $30 million. A fixed price of $25 million therefore gives each side a $5 million gain relative to its alternative. A contingent package adds an upfront payment and a further payment only if approval occurs. Because Chen is more optimistic, the approval payment is worth more in his calculation than it costs in MPharm's calculation.
+
+Before reading the explanation, compare packages A–E in @tbl-mpharm-packages. A negative upfront amount means that Chen pays MPharm at signing. All amounts are **millions of dollars**; Chen's gain is measured above his $20 million alternative and MPharm's above its assumed no-purchase payoff of zero.
+
+| Package | Upfront payment to Chen | Approval bonus to Chen | Chen's expected gain at 60% | MPharm's expected gain at 10% |
+| --- | ---: | ---: | ---: | ---: |
+| A | 25 | 0 | 5 | 5 |
+| B | 20 | 15 | 9 | 8.5 |
+| C | 15 | 20 | 7 | 13 |
+| D | −10 | 100 | 30 | 30 |
+| E | 2 | 80 | 30 | 20 |
+: MPharm packages evaluated using each party's own forecast {#tbl-mpharm-packages}
+
+Package B pays Chen $20 million immediately and $15 million upon approval. Chen values that bonus at $9 million, while MPharm expects it to cost $1.5 million. Both therefore expect to gain more than under the fixed-price package A. Package C moves further toward a lower upfront price: it gives MPharm more expected gain than B but Chen less. Package E improves both parties' expected monetary gains relative to A, B, and C under the stated assumptions.
+
+These comparisons do not mean the patent has become more valuable in either eventual outcome. The parties disagree about which outcome is likely and therefore price the same risk differently. The mathematical box shows why adding their differently calculated expected gains can produce an apparently larger pie.
+
+:::: {#math-mpharm-contract}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: MPharm's contingent payments
+
+Let $X$ be the upfront payment to Chen and $Y$ the approval bonus, both in millions. With the case's fixed subjective probabilities and risk-neutral valuations, Chen's expected gain above his alternative is:
+
+$$
+G_C=X+0.6Y-20.
+$$
+
+MPharm's expected gain is:
+
+$$
+\begin{aligned}
+G_M &= 0.9(20-X) \\
+&\quad +0.1(120-X-Y) \\
+&=30-X-0.1Y.
+\end{aligned}
+$$
+
+Adding the gains under their respective forecasts gives:
+
+$$
+G_C+G_M=10+0.5Y.
+$$
+
+With a bonus of 100, that sum is 60. Equal expected gains of 30 require $X=-10$, producing package D. Chen pays 10 upfront and receives 100 upon approval.
+
+With the same probability $p$ used for both parties, their combined expected gain would instead be $100p$, independent of the payment split. In either realized state, transfers between the parties cancel. Differing forecasts explain the extra apparent gains from increasing $Y$; they do not manufacture additional patent revenue.
+:::
+::::
+
+### Check effort, liquidity, and risk {#mpharm-incentives}
+
+Package D appears especially attractive in the table, but now examine what each party would actually do. MPharm keeps **$30 million without approval**: the patent's $20 million value plus Chen's $10 million upfront payment. It also keeps **$30 million with approval**: $120 million plus the upfront payment, less the $100 million bonus. Approval adds nothing to MPharm's own return. If MPharm must spend money or effort pursuing it, the payment design has removed that financial incentive. The fixed approval chances used in the first calculation may no longer be appropriate.
+
+Chen must also be able to pay $10 million at signing. His receipts net of that payment are −$10 million without approval or $90 million with it, whereas selling to iDiet provides $20 million for sure. Credit constraints, risk aversion, or a need for dependable funds can make this exposure unacceptable even when his expected monetary gain is high.
+
+Package E avoids the initial payment by Chen and leaves MPharm **$18 million without approval** or **$38 million with approval**. The $20 million difference preserves a financial stake in approval. Whether that stake motivates enough effort depends on the cost of effort and how much it changes the approval chance. The table identifies promising trades; selecting a workable contract also requires those missing facts.
+
+The incentives of an agent deserve the same examination. Chen's lawyer may receive most compensation upfront while Chen depends on a later bonus. Where professional rules permit an outcome component, fee design can give the agent a stake in the client's result; oversight and clear responsibilities are still needed when important effort cannot be observed. Align the reward with the desired work, not merely with reaching a signature or reporting a favorable metric.
 
 
 
@@ -149,6 +231,14 @@ Return to the **Meaning Audit** in [Culture and Identity](29-culture-and-identit
 - Would a public concession, correction, or apology impose an avoidable face cost?
 
 These questions turn broad cultural knowledge into checks of meaning, authority, and consent in this interaction (Gunia et al., 2016).
+
+### Agree on the meaning of the meeting and the signature {#culture-meeting-and-commitment}
+
+The cultural dimensions in [Chapter 35](35-negotiation-as-joint-decision-design.qmd#culture-and-meaning-ask-do-not-diagnose-from-a-passport) affect the sequence as well as the content of bargaining. One team may want to move quickly to a written contract; another may first seek confidence through introductions, hospitality, and conversation. For example, a Canadian buyer and a Chinese supplier might differ in this way—or have the opposite preferences. Ask what each needs before discussing sensitive terms, rather than assuming a national script.
+
+A handshake can likewise mark a final understanding, agreement on broad principles, or a willingness to begin detailed work. Clarify the commitment explicitly: “Which terms are agreed, which remain open, and what approvals or documents are still required?” A handshake has no single meaning shared by all Western or Middle Eastern negotiators. Its legal effect is also a separate question governed by the relevant circumstances and law.
+
+Record the agenda, use of interpreters, role of private consultation, authorized signatories, and points requiring senior approval. If one side treats a signed contract as a complete allocation of duties while the other expects continued adjustment through the relationship, specify both the initial obligations and the agreed way to revise them. Protocol becomes useful when it tells both sides what happens next.
 
 ### Replace lie detection with claim verification
 
@@ -190,9 +280,16 @@ When direct bargaining stalls, bringing in a third party can seem like the obvio
 | --- | --- | --- | --- | --- |
 | **Mediation** | Structure communication, clarify issues, test assumptions, and help the parties search for settlement | The parties: the mediator does not ordinarily impose a settlement | The parties still need a negotiated solution, especially when communication, trust, emotion, or option search has stalled | Power imbalance, strategic delay, pressure to settle, or no agreement |
 | **Arbitration** | Hear the parties' submissions and decide the dispute under agreed rules | The arbitrator or tribunal, to the extent specified by the agreement, rules, and governing law | The parties need finality, authoritative interpretation, or a decision after bargaining has failed | Loss of outcome control, cost, adversarial escalation, and a result neither party would have designed |
+| **Final-offer arbitration** | Select between the parties' final proposals under the agreed selection rules | The arbitrator chooses within the options the parties submitted | The unresolved issue can be expressed through comparable final proposals | An unacceptable offer may be selected; the neutral cannot simply invent a better compromise |
 : Mediation assists party choice; arbitration transfers decision authority {#tbl-34-third-party-processes}
 
 Mediation is therefore not “soft arbitration,” and arbitration is not “strong mediation.” A mediator can reframe, carry proposals, surface interests, manage difficult interaction, and reality-test a package while leaving acceptance to the parties. An arbitrator receives authority to decide.
+
+Mediation can give a stalled conversation a different structure. The mediator may meet the parties together or separately, help distinguish positions from interests, and ask what each needs from a future working relationship. For the supplier, a payment dispute could conceal an unresolved quality check or unclear acceptance procedure. Clarifying that issue may reveal a settlement that another round of price demands would miss. The parties retain the decision whether to accept.
+
+**Final-offer arbitration**, sometimes called baseball arbitration, is a particular form of arbitration. Under a whole-package selection rule, each party submits its final proposal and the arbitrator selects one; conventional arbitration is not generally limited to that choice (American Arbitration Association, n.d.). If the final figures are €25,000 and €37,000, that rule requires selecting a submitted figure rather than announcing €31,000 as a compromise. It can encourage defensible proposals because an extreme offer risks losing to the other side's proposal. The agreed rules must specify whether selection applies to a whole package or separately to issues, what criteria guide the decision, and whether any revision is allowed.
+
+Both mediation and arbitration can address practical relationships and contested rights, but they allocate decision authority differently. Evaluate a proposed process by whether participants can present their concerns fairly, whether the neutral has relevant expertise, and whether the procedure can produce an outcome the parties can implement.
 
 A 2012 review of the preceding decade found diverse goals, settings, mediator strategies, and outcomes, but relatively few controlled studies comparing specific strategies or observing actual mediation behavior (Wall & Dunne, 2012). Choose the process by its task: **Do the parties need help making a joint decision, or do they need someone else to make a decision?**
 
@@ -209,6 +306,9 @@ The buyer and supplier might discover that a different payment schedule releases
 
 Use the procedure only when the original agreement is secure, participants have authority, and the possible gain justifies further effort.
 
+Open the discussion by acknowledging what the first agreement achieved. Invite each side to identify something it would still value, then search for a linked improvement without demanding another unilateral concession. For example: “We have an agreement we can both use. Would you be willing to compare one alternative payment-and-delivery package? We keep the signed terms unless both of us prefer the change.” This invitation makes the protection part of the procedure.
+
+The steps are to acknowledge the agreement, identify remaining interests, develop possible trades, and compare each proposed replacement with the signed package. Record any agreed amendment and who approved it. If either party prefers the original, stop without penalty. That fallback is what separates a post-settlement search from a last-minute attempt to reopen settled terms.
 
 
 ## Complete the minimum agreement: implementation and review
@@ -241,6 +341,8 @@ Produce a **one-page minimum viable agreement** for the supplier obligation most
 
 Choose **no more than one** optional module from @tbl-agreement-module-routing. State the diagnosed problem that justifies it and add only the information that module requires—for example, two or three sincere packages for unclear priorities, one measurable contingent term for forecast disagreement, or one explicit escalation rule for process failure. If no module is justified, record “none.” Multiple packages, full contingent-contract drafting, independent audits, detailed mediation or arbitration clauses, and multi-shock testing belong in an advanced agreement-design file, not in the minimum exercise.
 
+For an advanced seminar, use MPharm. First evaluate a fixed-price offer and one contingent package privately in each role. Then compare the forecasts and explain why your valuations differ. Reproduce the gains in @tbl-mpharm-packages, inspect MPharm's payoff in each approval state, and propose an effort safeguard. Finally, compare one improvement with a signed fallback and choose a dispute procedure for a disagreement over whether the bonus trigger occurred. Report the economic calculation and the implementation judgment separately.
+
 ## Take it forward
 
 
@@ -249,6 +351,10 @@ Return to the term in your agreement most likely to become disputed. Can both si
 [^ch38-legal-terms]: These operating terms require legal drafting for the relevant jurisdiction. Legal effects, confidentiality, review, disclosure duties, and enforceability depend on the clause, institutional rules, and governing law.
 
 ## References cited in this chapter
+
+::: {.reference}
+American Arbitration Association. (n.d.). *Antitrust, compensation, and pricing disputes*. https://www.adr.org/industries/antitrust-compensation-and-pricing-disputes/
+:::
 
 ::: {.reference}
 American Arbitration Association. (2025, November 6). Single-neutral dual-role processes—workable or worrisome redux. https://www.adr.org/news-and-insights/single-neutral-dual-role-processes/
@@ -299,6 +405,10 @@ Leonardelli, G. J., Gu, J., McRuer, G., Medvec, V. H., & Galinsky, A. D. (2019).
 :::
 
 ::: {.reference}
+Malhotra, D., & Bazerman, M. H. (2007). Investigative negotiation. *Harvard Business Review, 85*(9), 72–78. https://hbr.org/2007/09/investigative-negotiation
+:::
+
+::: {.reference}
 Rogers, T., Zeckhauser, R., Gino, F., Norton, M. I., & Schweitzer, M. E. (2017). Artful paltering: The risks and rewards of using truthful statements to mislead others. Journal of Personality and Social Psychology, 112(3), 456–473. https://doi.org/10.1037/pspi0000081
 :::
 
@@ -320,6 +430,10 @@ Vrij, A., Hartwig, M., & Granhag, P. A. (2019). Reading lies: Nonverbal communic
 
 ::: {.reference}
 Wall, J. A., & Dunne, T. C. (2012). Mediation research: A current review. Negotiation Journal, 28(2), 217–244. https://doi.org/10.1111/j.1571-9979.2012.00336.x
+:::
+
+::: {.reference}
+Zhang, H. (2022c). *Integrative negotiation* [Unpublished lecture notes, Decision, Persuasion, and Negotiation]. University of Southern Denmark.
 :::
 
 ::: {.reference}

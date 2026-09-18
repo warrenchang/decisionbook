@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **974**
+Unique references in the master union: **984**
 
-Chapter reference blocks: **983**
+Chapter reference blocks: **999**
 
 Unresolved author–year citations: **0**
 
@@ -46,10 +46,10 @@ Unresolved author–year citations: **0**
 | Building an Evidence-Aligned Message | 12 | 0 |
 | Communication | 18 | 0 |
 | Connection and Repair | 30 | 0 |
-| Negotiation as Joint Decision Design | 13 | 0 |
-| Distributive Negotiation {#preparing-and-claiming-value} | 11 | 0 |
-| Integrative Negotiation {#creating-value-across-differences} | 10 | 0 |
-| Designing Better Agreements | 19 | 0 |
+| Negotiation as Joint Decision Design | 18 | 0 |
+| Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
+| Integrative Negotiation {#creating-value-across-differences} | 13 | 0 |
+| Designing Better Agreements | 22 | 0 |
 | Behavior Design | 30 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
