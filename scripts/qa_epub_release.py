@@ -103,7 +103,7 @@ REQUIRED_CONTENT = [
     "We should pay attention to our decisions while they are still in the making.",
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
-    "no strengthening, but no reset",
+    "A lapse does not erase learning",
     "median of 66 days",
     "Index of Concepts",
 ]

@@ -72,6 +72,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
+#tbl-wanting-liking table { display: table; table-layout: fixed; width: 100%; }
+#tbl-wanting-liking th, #tbl-wanting-liking td { overflow-wrap: anywhere; hyphens: none; }
+#tbl-wanting-liking td:first-child { hyphens: auto; }
+@media (max-width: 600px) {
+  #tbl-wanting-liking th:first-child, #tbl-wanting-liking td:first-child { padding-left: .25rem; padding-right: .25rem; }
+}
+</style>
 
 
 </head>
@@ -549,20 +557,28 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-habits-form" id="toc-how-habits-form" class="nav-link" data-scroll-target="#how-habits-form">How habits form</a>
   <ul class="collapse">
   <li><a href="#a-learning-curve-not-a-deadline" id="toc-a-learning-curve-not-a-deadline" class="nav-link" data-scroll-target="#a-learning-curve-not-a-deadline">How automaticity develops with repetition</a></li>
+  <li><a href="#habituation-and-reward-expectations" id="toc-habituation-and-reward-expectations" class="nav-link" data-scroll-target="#habituation-and-reward-expectations">Habits and habituation</a></li>
   </ul></li>
   <li><a href="#why-an-unrewarding-routine-can-persist" id="toc-why-an-unrewarding-routine-can-persist" class="nav-link" data-scroll-target="#why-an-unrewarding-routine-can-persist">Why an unrewarding routine can persist</a>
   <ul class="collapse">
   <li><a href="#the-popcorn-people-kept-eating" id="toc-the-popcorn-people-kept-eating" class="nav-link" data-scroll-target="#the-popcorn-people-kept-eating">The popcorn people kept eating</a></li>
   <li><a href="#what-checking-accomplishes" id="toc-what-checking-accomplishes" class="nav-link" data-scroll-target="#what-checking-accomplishes">What the next swipe offers</a></li>
-  <li><a href="#wanting-can-outlast-liking" id="toc-wanting-can-outlast-liking" class="nav-link" data-scroll-target="#wanting-can-outlast-liking">Wanting can outlast liking</a></li>
-  <li><a href="#dopamine-anticipation-and-effort" id="toc-dopamine-anticipation-and-effort" class="nav-link" data-scroll-target="#dopamine-anticipation-and-effort">From expecting a reward to working for it</a></li>
-  <li><a href="#uncertain-rewards-and-near-misses" id="toc-uncertain-rewards-and-near-misses" class="nav-link" data-scroll-target="#uncertain-rewards-and-near-misses">Why “maybe this time” can keep us going</a></li>
   </ul></li>
-  <li><a href="#changing-the-routine-before-the-next-difficult-sentence" id="toc-changing-the-routine-before-the-next-difficult-sentence" class="nav-link" data-scroll-target="#changing-the-routine-before-the-next-difficult-sentence">What the explanation suggests changing</a>
+  <li><a href="#wanting-can-outlast-liking" id="toc-wanting-can-outlast-liking" class="nav-link" data-scroll-target="#wanting-can-outlast-liking">Wanting, liking, and reward learning</a>
+  <ul class="collapse">
+  <li><a href="#the-neural-foundations-of-wanting-and-liking" id="toc-the-neural-foundations-of-wanting-and-liking" class="nav-link" data-scroll-target="#the-neural-foundations-of-wanting-and-liking">The neural foundations of wanting and liking</a></li>
+  <li><a href="#dopamine-anticipation-and-effort" id="toc-dopamine-anticipation-and-effort" class="nav-link" data-scroll-target="#dopamine-anticipation-and-effort">Learning from reward prediction errors</a></li>
+  <li><a href="#uncertain-rewards-and-near-misses" id="toc-uncertain-rewards-and-near-misses" class="nav-link" data-scroll-target="#uncertain-rewards-and-near-misses">Why “maybe this time” can keep us going</a></li>
+  <li><a href="#effort-and-reward-pursuit" id="toc-effort-and-reward-pursuit" class="nav-link" data-scroll-target="#effort-and-reward-pursuit">Effort and reward pursuit</a></li>
+  <li><a href="#smoking-opportunity-and-craving" id="toc-smoking-opportunity-and-craving" class="nav-link" data-scroll-target="#smoking-opportunity-and-craving">Anticipating an opportunity to act</a></li>
+  </ul></li>
+  <li><a href="#changing-the-routine-before-the-next-difficult-sentence" id="toc-changing-the-routine-before-the-next-difficult-sentence" class="nav-link" data-scroll-target="#changing-the-routine-before-the-next-difficult-sentence">Changing a routine</a>
   <ul class="collapse">
   <li><a href="#find-the-cues-that-arrive-together" id="toc-find-the-cues-that-arrive-together" class="nav-link" data-scroll-target="#find-the-cues-that-arrive-together">Find the cues that arrive together</a></li>
   <li><a href="#give-a-familiar-cue-a-new-response" id="toc-give-a-familiar-cue-a-new-response" class="nav-link" data-scroll-target="#give-a-familiar-cue-a-new-response">Give a familiar cue a new response</a></li>
-  <li><a href="#create-space-without-demanding-that-the-urge-disappear" id="toc-create-space-without-demanding-that-the-urge-disappear" class="nav-link" data-scroll-target="#create-space-without-demanding-that-the-urge-disappear">Make room for an urge</a></li>
+  </ul></li>
+  <li><a href="#create-space-without-demanding-that-the-urge-disappear" id="toc-create-space-without-demanding-that-the-urge-disappear" class="nav-link" data-scroll-target="#create-space-without-demanding-that-the-urge-disappear">Responding to urges and lapses</a>
+  <ul class="collapse">
   <li><a href="#yu-and-the-flood" id="toc-yu-and-the-flood" class="nav-link" data-scroll-target="#yu-and-the-flood">Yu and the flood: give the experience a way through</a></li>
   <li><a href="#observing-an-urge-with-brain" id="toc-observing-an-urge-with-brain" class="nav-link" data-scroll-target="#observing-an-urge-with-brain">Observe an urge with BRAIN</a></li>
   <li><a href="#decide-how-to-return-after-a-lapse" id="toc-decide-how-to-return-after-a-lapse" class="nav-link" data-scroll-target="#decide-how-to-return-after-a-lapse">A lapse does not erase learning</a></li>
@@ -625,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Explain how a repeated action can become a habit, and why frequency alone is insufficient to identify one.</li>
 <li>Distinguish habits from habituation, and wanting an outcome from enjoying it.</li>
-<li>Explain how reward cues can motivate effort, and why a near miss can encourage another attempt without improving its odds.</li>
+<li>Explain how reward predictions guide learning and pursuit, and why a near miss can encourage another attempt without improving its odds.</li>
 <li>Use observations of cues, urges, and consequences to distinguish possible explanations of a recurring action.</li>
 <li>Design a specific replacement response to a familiar cue and explain how repetition can make it more automatic.</li>
 <li>Practice observing an urge without immediately acting on it, and respond to a lapse in a way that supports the next attempt.</li>
@@ -634,14 +650,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-a-habit" class="level2">
 <h2 data-anchor-id="what-is-a-habit">What is a habit?</h2>
-<p>The first few times the student opened the feed in bed, there may have been a clear reason: catching up with friends or enjoying a few posts at the end of the day. Those outcomes gave the student a reason to return. With repetition in the same setting, getting into bed with the phone could begin to bring opening the feed to mind, even before the student considered whether there was anything worth seeing. That is a hypothesis about how the episode starts; we still need to examine what keeps the scrolling going.</p>
+<p>The first few times the student opened the feed in bed, there may have been a clear reason: catching up with friends or enjoying a few posts at the end of the day. Those outcomes gave the student a reason to return. With repetition in the same setting, getting into bed with the phone could begin to bring opening the feed to mind, even before the student considered whether there was anything worth seeing.</p>
 <p>A <strong>habit</strong> is a learned association through which a context cue retrieves a response, while <strong>automaticity</strong> describes how readily that response starts with little deliberate guidance. Research on everyday routines emphasizes how repeating an action in a recurring context can make familiar cues prompt that action with less need for a fresh decision (Wood et al., 2002; Wood &amp; Neal, 2007).</p>
-<p>Frequency alone does not tell us whether an action is habitual. A student might check a course website every day because the instructor has promised an important update, with each visit following a fresh judgment that the information is needed. The same number of visits could instead result from opening the site whenever the laptop starts, even after the announcement period ends. The visible action is similar; what brings it about differs.</p>
+<p>Frequency alone does not tell us whether an action is habitual. A student might check a course website every day because the instructor has promised an important update, with each visit following a fresh judgment that the information is needed. The same number of visits could instead result from opening the site whenever the laptop starts, even after the announcement period ends.</p>
 <p><span id="following-a-goal-or-following-a-cue"></span></p>
 <section id="goal-directed-behavior-and-habitual-behavior" class="level3">
 <h3 data-anchor-id="goal-directed-behavior-and-habitual-behavior">Goal-directed behavior and habitual behavior</h3>
 <p><strong>Goal-directed behavior</strong> is guided by the expected consequences of an action and their current value: the student checks because the expected update matters now. <strong>Habitual behavior</strong> is prompted more directly by a learned association between a context cue and a response: opening the laptop brings checking the site to mind. Both can contribute to the same activity, as when a person chooses to study for an exam and relies on familiar routines to get started.</p>
-<p>The distinction concerns what guides the response, rather than whether someone is fully conscious. Goal-directed actions need not involve slow, explicit reasoning, and people can notice a habit while performing it. The research notes at the end explain how different methods test these distinctions.</p>
+<p>Goal-directed actions need not involve slow, explicit reasoning, and people can notice a habit while performing it. The research notes at the end explain how different methods test what guides a response.</p>
 <p>There is considerable value in having useful actions become easy. If finishing lunch reliably brings to mind putting on walking shoes, a person does less negotiating before a planned walk begins. Good habits help turn knowledge into practice, although a response learned in the past can remain available after its usefulness has changed.</p>
 </section>
 </section>
@@ -661,7 +677,7 @@ Figure&nbsp;21.1: CIAO: following a routine. The dashed arrow marks a later enco
 <p>In <a href="#fig-habit-loop" class="quarto-xref">Figure&nbsp;<span>21.1</span></a>, learning concerns how responding changes across repeated episodes. Reward or relief can encourage repetition, through which a familiar cue becomes associated with the action and brings it to mind more readily (Wood &amp; Neal, 2007). Once established, that association can persist without a satisfying outcome each time (Wood &amp; Rünger, 2016). This helps explain why opening the feed could become easy to repeat even on nights when it offers little enjoyment.</p>
 <section id="a-learning-curve-not-a-deadline" class="level3">
 <h3 data-anchor-id="a-learning-curve-not-a-deadline">How automaticity develops with repetition</h3>
-<p>The same process can support a routine someone wants to build. Consider a person who plans to walk for ten minutes after lunch: although the walk initially needs deliberate preparation, repeating it after the same event can make finishing lunch a more reliable prompt to put on walking shoes.</p>
+<p>How long does it take for a planned action to become easier to start? Returning to the walk after lunch, each repetition gives the familiar occasion another chance to prompt the response.</p>
 <p>Lally and colleagues (2010) followed people trying to establish everyday behaviors in a consistent context. The schematic curve in <a href="#fig-habit-formation-curve" class="quarto-xref">Figure&nbsp;<span>21.2</span></a> represents diminishing gains in reported automaticity. The median modeled time to reach 95% of the plateau was 66 days, with estimates from 18 to 254 days among participants whose data fitted the curve well.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div id="fig-habit-formation-curve" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="A schematic automaticity curve rises with diminishing gains and approaches a plateau.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -674,6 +690,10 @@ Figure&nbsp;21.2: A schematic of increasing automaticity with diminishing gains.
 </figure>
 </div>
 <p>The useful question is whether the chosen action is becoming easier to start when its cue occurs. A brief walk after lunch gives that question a concrete answer; a resolution to become healthier does not yet specify what to repeat.</p>
+</section>
+<section id="habituation-and-reward-expectations" class="level3">
+<h3 data-anchor-id="habituation-and-reward-expectations">Habits and habituation</h3>
+<p>Repetition can produce another kind of learning: <strong>habituation</strong>, a decline in response to a repeated stimulus beyond sensory adaptation or fatigue. Turning less often toward a harmless sound that keeps recurring is an everyday example. Responding can recover after a break (Rankin et al., 2009). A habit makes a practiced action easier to trigger; habituation reduces a response to repeated stimulation.</p>
 </section>
 </section>
 <section id="why-an-unrewarding-routine-can-persist" class="level2">
@@ -689,74 +709,78 @@ Figure&nbsp;21.2: A schematic of increasing automaticity with diminishing gains.
 <h3 data-anchor-id="what-checking-accomplishes">What the next swipe offers</h3>
 <p>Once the feed is open, an occasional entertaining post, a friend’s update, or a moment of relief from boredom may make the next swipe attractive. Judged over twenty minutes, the student may regret continuing; judged at the moment of a swipe, another post may still seem worth seeing. The immediate attraction and the cost of stopping late occur on different timescales.</p>
 <p>To investigate that explanation, ask what changes after a swipe: does something enjoyable appear, does boredom recede, or does the student simply move on with little awareness? A deliberate search for a particular update would give a different account from opening the app automatically or continuing in hope of finding something interesting.</p>
-<p>The next post can vary in both appeal and relevance. Occasional rewarding posts are one possible contributor to continued scrolling, but an uncertain outcome can also be disappointing enough to make someone stop.</p>
-<p>Learning theory distinguishes consequences by what they do to future behavior. If receiving interesting content makes scrolling more likely, that is <strong>positive reinforcement</strong>; if relief from boredom makes it more likely, that is <strong>negative reinforcement</strong>. Both strengthen responding. <em>Negative</em> refers to removing an aversive condition, whereas <strong>punishment</strong> concerns consequences that reduce a response (Skinner, 1953). These are hypotheses about what sustains the student’s scrolling, not conclusions we can draw from frequency alone.</p>
+<p>Learning theory distinguishes consequences by what they do to future behavior. If receiving interesting content makes scrolling more likely, that is <strong>positive reinforcement</strong>; if relief from boredom makes it more likely, that is <strong>negative reinforcement</strong>. Both strengthen responding. <em>Negative</em> refers to removing an aversive condition, whereas <strong>punishment</strong> concerns consequences that reduce a response (Skinner, 1953).</p>
 </section>
-<section id="wanting-can-outlast-liking" class="level3">
-<h3 data-anchor-id="wanting-can-outlast-liking">Wanting can outlast liking</h3>
-<p>The student has enjoyed little of the last few minutes, yet still feels drawn to see the next post. If pleasure from the present experience explained the entire attraction, that pull would be difficult to understand. Separating <strong>wanting</strong>, or motivational attraction, from <strong>liking</strong>, or experienced pleasure, gives us a way to examine what keeps the behavior appealing. Research distinguishes these components of reward even though they often occur together (Berridge &amp; Robinson, 1998).</p>
-<p>Animal experiments help separate these components. Berridge and Robinson (1998) reported that severe dopamine depletion disrupted rats’ spontaneous feeding, yet characteristic positive reactions to sucrose delivered into the mouth remained. Their <strong>taste-reactivity</strong> measure used observable facial and mouth movements to assess hedonic responses. The dissociation supports separating reward pursuit from hedonic impact; it is not a report of the rats’ conscious feelings, nor evidence that dopamine has no role in learning.</p>
-<p>Feeling drawn to continue despite little enjoyment is different from opening the feed automatically without noticing a desire. Habit and wanting can contribute to the same episode, but neither establishes the other. A craving may include a conscious expectation of relief or pleasure; motivational pull need not depend on an explicit forecast.</p>
-<p><strong>Incentive salience</strong> names the process through which reward-associated cues become motivationally attractive: they can draw approach even when pleasure is modest. It is a more specific research account of “wanting” than the everyday use of that word for any conscious wish (Berridge &amp; Robinson, 1998).</p>
-<p>The comparison in <a href="#tbl-wanting-liking" class="quarto-xref">Table&nbsp;<span>21.1</span></a> connects these experiences to the ways researchers measure them and investigate their neural foundations. <strong>Hedonic hotspots</strong> are small brain regions where particular forms of stimulation can amplify positive reactions to a pleasant stimulus.</p>
+</section>
+<section id="wanting-can-outlast-liking" class="level2">
+<h2 data-anchor-id="wanting-can-outlast-liking">Wanting, liking, and reward learning</h2>
+<p>The student has enjoyed little of the last few minutes, yet still feels drawn to see the next post. Separating <strong>wanting</strong>, or motivational attraction, from <strong>liking</strong>, or experienced pleasure, helps explain why pursuit can continue after enjoyment has faded (Berridge &amp; Robinson, 1998).</p>
+<p><strong>Incentive salience</strong> is the process through which reward-associated cues become motivationally attractive. A cue can draw approach even when the reward provides little pleasure. This research use of “wanting” is more specific than the everyday use of the word for any conscious wish: the motivational pull need not depend on an explicit forecast of pleasure or relief (Berridge &amp; Robinson, 1998).</p>
+<p>Wanting also differs from habit. Feeling drawn to see another post describes a motivational pull; opening the feed automatically describes how a learned response begins. Both can contribute to the same episode.</p>
+<section id="the-neural-foundations-of-wanting-and-liking" class="level3">
+<h3 data-anchor-id="the-neural-foundations-of-wanting-and-liking">The neural foundations of wanting and liking</h3>
+<p>Berridge and Robinson (1998) reported that severe dopamine depletion disrupted rats’ spontaneous feeding, yet positive reactions to sucrose delivered into the mouth remained. Their <strong>taste-reactivity</strong> measure recorded characteristic facial and mouth movements. These findings separate the motivation to obtain a reward from its hedonic impact. Mesolimbic dopamine pathways, which connect the midbrain with regions including the nucleus accumbens, contribute to reward pursuit.</p>
+<p>Rat studies have also identified <strong>hedonic hotspots</strong>: small brain regions where particular forms of stimulation amplify positive reactions to a pleasant stimulus. Hotspots in the nucleus accumbens shell and posterior ventral pallidum interact in the enhancement of sweet liking through mu-opioid signaling (Smith &amp; Berridge, 2007). Anandamide, an endocannabinoid made by the body, can enhance positive taste reactions in an accumbens hotspot (Mahler et al., 2007).</p>
+<p>The location of the signal matters. Peciña and Berridge (2005) found that mu-opioid stimulation increased eating across the accumbens shell, but enhanced positive reactions to sweetness only within a small hotspot. Wanting and liking therefore involve overlapping chemical systems with different functional effects. <a href="#tbl-wanting-liking" class="quarto-xref">Table&nbsp;<span>21.1</span></a> summarizes the comparison.</p>
 <p><span id="fig-wanting-liking"></span></p>
 <div id="tbl-wanting-liking" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wanting-liking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;21.1: Wanting and liking: experience, measurement, and neural foundations. The neural dissociations and hotspot findings summarized here come from animal experiments (Berridge &amp; Robinson, 1998; Peciña &amp; Berridge, 2005; Smith &amp; Berridge, 2007; Mahler et al., 2007; Schultz et al., 1997).
+Table&nbsp;21.1: Wanting and liking
 </figcaption>
 <div aria-describedby="tbl-wanting-liking-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 28%">
+<col style="width: 35%">
+<col style="width: 35%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Wanting: motivational attraction</th>
-<th style="text-align: left;">Liking: hedonic pleasure</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Wanting</th>
+<th style="text-align: left;">Liking</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Question.</strong> How strongly am I drawn to pursue it?</td>
-<td style="text-align: left;"><strong>Question.</strong> How enjoyable is the experience?</td>
+<td style="text-align: left;"><strong>Question</strong></td>
+<td style="text-align: left;">How strongly am I drawn to pursue it?</td>
+<td style="text-align: left;">How enjoyable is the experience?</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Measurement.</strong> Cue-triggered approach, seeking, and willingness to work for a reward; people can also report their felt urge.</td>
-<td style="text-align: left;"><strong>Measurement.</strong> People’s pleasure ratings; in animal studies, characteristic positive facial and mouth reactions to a taste.</td>
+<td style="text-align: left;"><strong>Measures</strong></td>
+<td style="text-align: left;">Approach, seeking, effort, and reported urges.</td>
+<td style="text-align: left;">Pleasure ratings; positive taste reactions in animals.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Dopamine.</strong> Contributes to the motivational pull of reward cues and the effort invested in pursuit. Some dopamine signals also help update reward predictions.</td>
-<td style="text-align: left;"><strong>Dopamine.</strong> Positive taste reactions can remain after severe dopamine depletion, even when spontaneous pursuit is greatly reduced. Dopamine activity is not a direct measure of pleasure.</td>
+<td style="text-align: left;"><strong>Dopamine</strong></td>
+<td style="text-align: left;">Supports the pull of reward cues and effort to obtain rewards.</td>
+<td style="text-align: left;">Positive taste reactions can survive severe dopamine depletion.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Brain circuitry.</strong> Distributed motivation networks include mesolimbic dopamine pathways connecting the midbrain with the nucleus accumbens.</td>
-<td style="text-align: left;"><strong>Brain circuitry.</strong> Rat experiments identify interacting hedonic hotspots in the nucleus accumbens shell and posterior ventral pallidum, within a wider reward network.</td>
+<td style="text-align: left;"><strong>Brain circuitry</strong></td>
+<td style="text-align: left;">Distributed motivation networks, including mesolimbic pathways to the nucleus accumbens.</td>
+<td style="text-align: left;">Hedonic hotspots in the accumbens shell and posterior ventral pallidum.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Opioids and endocannabinoids.</strong> These systems can also increase eating and reward pursuit; motivation depends on more than dopamine.</td>
-<td style="text-align: left;"><strong>Opioids and endocannabinoids.</strong> Local stimulation of mu-opioid receptors can enhance liking in these hotspots. Anandamide, an endocannabinoid made by the body, can enhance liking in an accumbens hotspot.</td>
+<td style="text-align: left;"><strong>Opioids and endocannabinoids</strong></td>
+<td style="text-align: left;">Can increase food intake and reward pursuit.</td>
+<td style="text-align: left;">Can amplify positive taste reactions in particular hotspots.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Bedtime example.</strong> The next post feels tempting, so the student reaches for another swipe.</td>
-<td style="text-align: left;"><strong>Bedtime example.</strong> The posts provide little enjoyment, even while the pull to continue remains strong.</td>
+<td style="text-align: left;"><strong>Bedtime example</strong></td>
+<td style="text-align: left;">“I want another post.”</td>
+<td style="text-align: left;">“I am barely enjoying this.”</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>A chemical signal’s effect also depends on where it acts. In rats, mu-opioid stimulation increased eating across the accumbens shell, but enhanced positive reactions to sweetness only within a small hotspot (Peciña &amp; Berridge, 2005). Wanting and liking are separable functions within interacting networks.</p>
-<p>For the student, the practical comparison is between how strongly the next post attracts them and how enjoyable the recent posts actually were. Recording both, alongside the intended and actual stopping time, separates attraction, experience, and the consequence for sleep.</p>
-<p><span id="smoking-opportunity-and-craving"></span></p>
-<p>A cue’s pull also depends on the <strong>perceived opportunity to act</strong>. Dar and colleagues (2010) asked flight attendants who smoked to rate their craving during flights. Craving rose as landing approached: near the end of a short flight leg lasting 3–5.5 hours, it was comparable to craving near the end of an 8–13-hour flight, and higher than at the corresponding elapsed time on the long flight. The pattern suggests that anticipating an opportunity to smoke mattered alongside time without smoking. This was a naturalistic comparison, not random assignment to flight lengths.</p>
-<p>Bailey and colleagues (2010) tested availability in a laboratory, analyzing 101 smokers after excluding participants who did not meet abstinence criteria. Participants had been randomly assigned to 24-hour abstinence or usual smoking. On each trial, a lit cigarette or water stood inside a box with a glass access door. A display stated a 0%, 50%, or 100% chance that the door would open. Participants rated <strong>cigarette craving on both cigarette and water trials</strong>, before attempting access.</p>
-<p>Craving rose with availability on cigarette trials, without a significant corresponding increase on water trials. Abstinence raised craving more generally; it did not reliably amplify the cue or probability effects. Thus, anticipated access can shape the urge before action.</p>
-<p>Addiction can involve impaired control and continued use despite harm, with craving, withdrawal, and wider health problems. Theories of incentive sensitization and addiction help explain persistent pursuit of drugs, but frequent phone checking alone does not establish a clinical disorder (Robinson &amp; Berridge, 1993; Koob &amp; Volkow, 2016).</p>
 </section>
 <section id="dopamine-anticipation-and-effort" class="level3">
-<h3 data-anchor-id="dopamine-anticipation-and-effort">From expecting a reward to working for it</h3>
+<h3 data-anchor-id="dopamine-anticipation-and-effort">Learning from reward prediction errors</h3>
 <p>The attraction can begin before anything rewarding happens. In classic monkey experiments, an unexpected juice reward briefly increased the firing of many dopamine neurons. After a visual cue reliably predicted the juice, the brief response appeared at the cue, with little additional response when the expected juice arrived. If the juice was omitted, firing fell below its usual level at the expected time. This <strong>reward prediction error</strong> signals a difference between expectation and outcome; it is not a reading of how pleasurable the juice tastes (Schultz et al., 1997; Schultz, 2016).</p>
 <p>Panels A–C of <a href="#fig-reward-prediction-error-shift" class="quarto-xref">Figure&nbsp;<span>21.3</span></a> show these three patterns. Panel D adds an unexpected delay: firing falls when the reward fails to arrive on time, then rises when it finally appears (Hollerman &amp; Schultz, 1998). The dip reflects a violated expectation about timing. A delay known in advance creates a different expectation. Zero on these curves represents baseline firing, so a flat line at reward delivery can accompany enjoyment of a fully expected reward.</p>
 <div id="fig-reward-prediction-error-shift" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Four panels show schematic changes in dopamine-neuron firing over time. A stays at baseline after a cue that does not yet predict reward, then rises at the unexpected reward. B rises at the learned cue and shows little additional response at reward. C rises at the cue and falls below baseline when reward is omitted. D rises at the cue, dips when reward was due, and rises again when the delayed reward arrives. Baseline does not mean no dopamine.">
@@ -769,14 +793,8 @@ Figure&nbsp;21.3: Reward prediction error: schematic changes in dopamine-neuron 
 </figcaption>
 </figure>
 </div>
-<p>To make the principle concrete, imagine a monkey that expects one raisin after pressing a lever but suddenly receives two. The extra raisin is better than expected, producing a positive prediction error. If two raisins become the regular reward, the brief dopamine-neuron response at delivery diminishes as the new amount becomes expected. Returning to one raisin now produces a negative prediction error: the outcome is worse than the updated expectation. The same amount of food can therefore signal different news as expectations change.</p>
+<p>To make the principle concrete, imagine a monkey that expects one raisin after pressing a lever but suddenly receives two. The extra raisin is better than expected, producing a positive prediction error. If two raisins become the regular reward, the brief dopamine-neuron response at delivery diminishes as the new amount becomes expected. Returning to one raisin now produces a negative prediction error: the outcome is worse than the updated expectation. The same amount of food can therefore signal different news as expectations change. This updating of expectations differs from habituation to a repeated stimulus.</p>
 <p>The scale of the signal can adjust too. Tobler, Fiorillo, and Schultz (2005) found that dopamine-neuron responses adapted to both the expected reward and the variability of possible rewards. Neural sensitivity to a reward difference was greater within a narrow range than within a wide one. This <strong>adaptive coding</strong> helps preserve sensitivity across different reward ranges.</p>
-<p><span id="habituation-and-reward-expectations"></span></p>
-<p>Repetition can also reduce responsiveness through <strong>habituation</strong>: a learned decline in response to a repeated stimulus, beyond sensory adaptation or fatigue. Turning less often toward a harmless sound that keeps recurring is an everyday example. Responding can recover after a break (Rankin et al., 2009). A habit makes a practiced action easier to trigger; habituation reduces a response to repeated stimulation. Neither should be equated with a reward becoming predictable or less enjoyable. A familiar reward can remain pleasurable even when it no longer produces much surprise.</p>
-<p>Learning what predicts a reward is only part of the story: obtaining it may require work. Salamone and colleagues (1991) gave rats a choice between pressing a lever for preferred food and eating less-preferred chow freely available nearby. Reducing dopamine signaling in the <strong>nucleus accumbens</strong> shifted behavior toward the freely available chow. The rats still sought and ate food, but allocated less behavior to the more demanding route. The result helps distinguish pursuing a reward from consuming it.</p>
-<p>Dopamine therefore contributes both to learning about rewards and to mobilizing effort to obtain them. These functions need not share one signal: Mohebi and colleagues (2019) found that dopamine release in the accumbens tracked changing reward expectations even when the firing of the recorded dopamine cells did not change correspondingly. Calling dopamine the “happiness of pursuit” would still confuse motivation with pleasure; an insistent urge can be unpleasant.</p>
-<p>The <a href="#research-delay-progress-effort">research lens on delay and effort</a> separates waiting longer from getting closer to a reward, and explains why a rising dopamine signal is not evidence that delay itself is motivating.</p>
-<p>For our student, these distinctions keep three questions separate: what the next post promises, how enjoyable the current experience is, and how readily the practiced action starts. None of those observations measures dopamine. The laboratory findings help us formulate possible explanations without assigning a dopamine surge to each swipe. The conflict between another post now and time available for sleep also has a timing dimension; <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html#the-future-must-become-believable-and-self-relevant">Chapter 20</a> examines how a delayed benefit can acquire more weight in the present.</p>
 </section>
 <section id="uncertain-rewards-and-near-misses" class="level3">
 <h3 data-anchor-id="uncertain-rewards-and-near-misses">Why “maybe this time” can keep us going</h3>
@@ -796,16 +814,30 @@ Figure&nbsp;21.4: Certain versus uncertain reward. The dashed blue curve represe
 <p>A slot machine adds another complication: a loss can look like progress. Two matching symbols stop on the payline, while the third lands just above it. The player has won nothing, but the display invites the thought, “Almost.” In a simplified two-reel experiment with 40 volunteers, near misses were rated less pleasant than full misses, yet increased the reported desire to continue when players had selected their own play symbol (Clark et al., 2009). Here, stronger motivation accompanied a worse experience.</p>
 <p>In a skill task, getting closer to a target may provide useful feedback. On a slot machine with independent spins, a <strong>near miss</strong> does not improve the probability of winning next time. Treating resemblance to success as evidence of progress can therefore sustain costly pursuit. The <a href="#research-near-miss-evidence">research note below</a> separates this behavioral finding from stronger claims about dopamine and gambling disorder.</p>
 </section>
+<section id="effort-and-reward-pursuit" class="level3">
+<h3 data-anchor-id="effort-and-reward-pursuit">Effort and reward pursuit</h3>
+<p>Learning what predicts a reward is only part of the story: obtaining it may require work. Salamone and colleagues (1991) gave rats a choice between pressing a lever for preferred food and eating less-preferred chow freely available nearby. Reducing dopamine signaling in the <strong>nucleus accumbens</strong> shifted behavior toward the freely available chow. The rats still sought and ate food, but allocated less behavior to the more demanding route. The result helps distinguish pursuing a reward from consuming it.</p>
+<p>Dopamine therefore contributes both to learning about rewards and to mobilizing effort to obtain them. These functions need not share one signal: Mohebi and colleagues (2019) found that dopamine release in the accumbens tracked changing reward expectations even when the firing of the recorded dopamine cells did not change correspondingly. Calling dopamine the “happiness of pursuit” would still confuse motivation with pleasure; an insistent urge can be unpleasant.</p>
+<p>The <a href="#research-delay-progress-effort">research lens on delay and effort</a> separates waiting longer from getting closer to a reward, and explains why a rising dopamine signal is not evidence that delay itself is motivating.</p>
+<p>For our student, these findings suggest asking how attractive the next post seems, how enjoyable the recent posts have been, and how much effort another swipe requires. Such observations can help explain pursuit without revealing its neural activity. The conflict between another post now and time available for sleep also has a timing dimension; <a href="../chapters/19-intertemporal-decision-making-why-later-loses-to-now.html#the-future-must-become-believable-and-self-relevant">Chapter 20</a> examines how a delayed benefit can acquire more weight in the present.</p>
+</section>
+<section id="smoking-opportunity-and-craving" class="level3">
+<h3 data-anchor-id="smoking-opportunity-and-craving">Anticipating an opportunity to act</h3>
+<p>A cue’s pull also depends on the <strong>perceived opportunity to act</strong>. Dar and colleagues (2010) asked flight attendants who smoked to rate their craving during flights. Craving rose as landing approached: near the end of a short flight leg lasting 3–5.5 hours, it was comparable to craving near the end of an 8–13-hour flight, and higher than at the corresponding elapsed time on the long flight. The pattern suggests that anticipating an opportunity to smoke mattered alongside time without smoking. This was a naturalistic comparison, not random assignment to flight lengths.</p>
+<p>Bailey and colleagues (2010) tested availability in a laboratory, analyzing 101 smokers after excluding participants who did not meet abstinence criteria. Participants had been randomly assigned to 24-hour abstinence or usual smoking. On each trial, a lit cigarette or water stood inside a box with a glass access door. A display stated a 0%, 50%, or 100% chance that the door would open. Participants rated <strong>cigarette craving on both cigarette and water trials</strong>, before attempting access.</p>
+<p>Craving rose with availability on cigarette trials, without a significant corresponding increase on water trials. Abstinence raised craving more generally; it did not reliably amplify the cue or probability effects. Thus, anticipated access can shape the urge before action.</p>
+<p>Addiction can involve impaired control and continued use despite harm, with craving, withdrawal, and wider health problems. Theories of incentive sensitization and addiction help explain persistent pursuit of drugs, but frequent phone checking alone does not establish a clinical disorder (Robinson &amp; Berridge, 1993; Koob &amp; Volkow, 2016).</p>
+</section>
 </section>
 <section id="changing-the-routine-before-the-next-difficult-sentence" class="level2">
-<h2 data-anchor-id="changing-the-routine-before-the-next-difficult-sentence">What the explanation suggests changing</h2>
-<p>The student could begin by examining where the bedtime episode starts and where it becomes hard to stop. Each explanation suggests a different point of intervention: the setting that retrieves opening the feed, the benefit that makes another swipe attractive, or the urge that precedes it. Here we follow those implications for bedtime scrolling; <a href="../chapters/39-behavior-design-make-the-better-action-easier.html#behavior-design-make-the-better-action-easier">Chapter 39</a> transfers the reasoning to term-paper writing and develops a complete plan for selecting, testing, and maintaining a change.</p>
-<p>People reporting higher self-control also reported stronger beneficial routines in Galla and Duckworth’s (2015) studies. This association suggests looking beyond acts of resistance. Duckworth and colleagues (2016) develop the complementary argument that choosing and modifying situations can make self-control easier by intervening before an impulse becomes strong. What could the student arrange before getting into bed?</p>
+<h2 data-anchor-id="changing-the-routine-before-the-next-difficult-sentence">Changing a routine</h2>
+<p>The bedtime episode offers several places to intervene: the setting that prompts opening the feed, the benefit that makes another swipe attractive, and the ease of continuing. Start by arranging a different response before the familiar moment arrives.</p>
+<p>People reporting higher self-control also reported stronger beneficial routines in Galla and Duckworth’s (2015) studies. This association suggests looking beyond acts of resistance. Duckworth and colleagues (2016) develop the complementary argument that choosing and modifying situations can make self-control easier by intervening before an impulse becomes strong.</p>
 <section id="find-the-cues-that-arrive-together" class="level3">
 <h3 data-anchor-id="find-the-cues-that-arrive-together">Find the cues that arrive together</h3>
-<p>The phone is only one part of the student’s situation: it is within reach in bed, the end of the day supplies a familiar occasion, and the app makes the next post easy to obtain. A <strong>cue ecology</strong> is a practical label for inspecting how several cues and enabling conditions converge.</p>
+<p>The phone is only one part of the student’s situation: it is within reach in bed, the end of the day supplies a familiar occasion, and the app makes the next post easy to obtain. Several cues and enabling conditions can converge on the same action.</p>
 <p>For the student’s next few evenings, three observations would be a useful start: where the phone sits, what happens just before the feed opens, and what prompts continuation after the student has decided to stop. Looking only for notifications could miss the role of the setting, boredom, and the attraction of another post.</p>
-<p>A first change could be to charge the phone away from the bed while keeping any necessary calls accessible. If the student wants a quiet activity before sleep, a book could be ready instead. The change should have a specific purpose: reduce automatic entry into the feed or provide an alternative way to wind down. It is a test of a routine, not a promise that sleep problems will resolve. <a href="../chapters/03-attention-what-becomes-evidence.html#chapter-03-start">Limited Attention</a> examines the earlier question of which signals enter awareness; here the aim is to change the practiced response that follows.</p>
+<p>A first change could be to charge the phone away from the bed while keeping any necessary calls accessible. If the student wants a quiet activity before sleep, a book could be ready instead. The changes aim to reduce automatic entry into the feed and provide an alternative way to wind down. <a href="../chapters/03-attention-what-becomes-evidence.html#chapter-03-start">Limited Attention</a> examines the earlier question of which signals enter awareness; here the aim is to change the practiced response that follows.</p>
 </section>
 <section id="give-a-familiar-cue-a-new-response" class="level3">
 <h3 data-anchor-id="give-a-familiar-cue-a-new-response">Give a familiar cue a new response</h3>
@@ -814,27 +846,27 @@ Figure&nbsp;21.4: Certain versus uncertain reward. The dashed blue curve represe
 <ol type="1">
 <li><strong>Locate the moment of action.</strong> Use the observation record to identify what reliably comes just before the old response. For this student, it might be settling into bed, followed by opening the feed. A recognizable event gives the replacement a place in the evening; “use my phone less” leaves that moment unspecified.</li>
 <li><strong>Choose one concrete alternative.</strong> The student could plan, <strong>“After I get into bed, I will pick up the book beside me and read one page.”</strong> This is an <strong>implementation intention</strong>: a specified situation linked to a specified action (Gollwitzer, 1999). “Do not scroll” supplies no alternative to begin. Reading one page is an action the student can carry out immediately, even when tired.</li>
-<li><strong>Prepare the setting.</strong> Before bedtime, put an appealing book within reach, mark the page, and leave the phone at its charging place. Rehearse the first movement once. The cue remains, but the surrounding arrangement makes the chosen response easier and the old response less convenient. A plan has more chance to guide action when the materials are already there.</li>
+<li><strong>Prepare the setting.</strong> Before bedtime, put an appealing book within reach, mark the page, and leave the phone at its charging place. Rehearse the first movement once. The cue remains, but the surrounding arrangement makes the chosen response easier and the old response less convenient.</li>
 <li><strong>Check what the alternative offers.</strong> If scrolling provides a way to wind down, reading something enjoyable may serve that purpose. If the observation record instead points to loneliness, arranging a conversation earlier in the evening may matter more than putting a book beside the bed. The old action may serve several functions. Test whether the new arrangement meets the relevant need and fits the larger goal of going to sleep on time.</li>
-<li><strong>Repeat the response when the cue occurs.</strong> Start with the manageable action and practice it across evenings. Repetition in a consistent context can make initiation more automatic (Lally et al., 2010). Record both whether the student starts reading and whether bedtime moves toward the intended time. A dependable routine is useful when it serves the goal for which it was chosen.</li>
+<li><strong>Repeat the response when the cue occurs.</strong> Start with the manageable action and practice it across evenings. Repetition in a consistent context can make initiation more automatic (Lally et al., 2010). Record both whether the student starts reading and whether bedtime moves toward the intended time.</li>
 </ol>
 <p>Planning can give the new response a chance to compete. In three experiments, Adriaanse and colleagues (2011) found that plans to choose an alternative snack or drink reduced the familiar option’s accessibility advantage on a timed word-recognition task. This finding concerns how readily the options were activated in memory. Building the everyday routine requires carrying the plan into action; a strongly established habit may also require changes to its cues and convenience (Wood &amp; Rünger, 2016).</p>
 <p>An episode already underway needs a different plan. The student might decide: <strong>“If I notice ‘one more’ after my planned stopping point, I close the feed and put the phone at its charging place.”</strong> This interrupts scrolling once it has started. The bedtime plan rehearses a new beginning. In either case, the replacement action can be carried out while the wish to see another post is still present; the BRAIN practice below can help create that pause.</p>
 <p>The same approach applies to interaction. A manager whose defensive replies follow a colleague’s questioning tone might rehearse asking for one concrete example before explaining. The cue becomes an opportunity to practice curiosity. <a href="../chapters/39-behavior-design-make-the-better-action-easier.html#implementation-intentions">Chapter 39</a> develops these plans into a broader method for testing and maintaining behavior change.</p>
 </section>
-<section id="create-space-without-demanding-that-the-urge-disappear" class="level3">
-<h3 data-anchor-id="create-space-without-demanding-that-the-urge-disappear">Make room for an urge</h3>
+</section>
+<section id="create-space-without-demanding-that-the-urge-disappear" class="level2">
+<h2 data-anchor-id="create-space-without-demanding-that-the-urge-disappear">Responding to urges and lapses</h2>
 <p>Even after the setting changes, the student may still want one more post. “Stop wanting it,” the student thinks, then checks: “Has the urge gone?” A moment later comes another check. The phone has been put down, but the struggle with wanting it now occupies the evening.</p>
 <p>Trying to force a thought out of awareness can sometimes keep bringing it back. In Wegner and colleagues’ (1987) experiments, people who first tried to suppress thoughts of a white bear later reported more of those thoughts, when invited to think about the bear, than people who had begun with that invitation. Wegner’s (1994) <strong>ironic-process account</strong> offers an explanation: mental control involves both directing thought elsewhere and monitoring for the unwanted thought. That monitoring keeps the target accessible, particularly when other demands make deliberate control difficult. Repeatedly asking whether the urge has disappeared can become another reminder of it.</p>
-<p>The <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html#focusing-illusion">focusing illusion</a> offers a related perspective on how we judge importance. Applied to this example, an urge that fills attention can seem to outweigh everything else about the evening. “I want to scroll” becomes “Nothing matters until this feeling is resolved.” Bringing sleep, tomorrow’s plans, and other available activities back into view gives the decision a wider context. This concerns the importance assigned to the urge; its duration is a separate question.</p>
+<p>The <a href="../chapters/22-deciding-for-a-better-life-satisfaction-connection-and-meaning.html#focusing-illusion">focusing illusion</a> offers a related perspective on how we judge importance. Applied to this example, an urge that fills attention can seem to outweigh everything else about the evening. “I want to scroll” becomes “Nothing matters until this feeling is resolved.” Bringing sleep, tomorrow’s plans, and other available activities back into view gives the decision a wider context.</p>
 <p><strong>Allow the feeling to be present while choosing what to do.</strong> The student can acknowledge restlessness and still leave the phone at its charging place. Observation also uses attention, but gives it a different task: notice sensations and changes without repeatedly judging, arguing with, or checking for the disappearance of the feeling. “There is a pull to reach for the phone” describes an experience that can be examined. It need not become a command.</p>
 <p>Jung expressed the value of acceptance in a concise way: “We cannot change anything unless we accept it” (1969, para. 519). In this practice, acceptance means acknowledging what is happening so that the next action can be chosen deliberately. <strong>Urge surfing</strong> develops this approach by attending to the changing sensations of an urge without immediately acting on it (Bowen &amp; Marlatt, 2009). The <a href="#research-urge-surfing">study below</a> shows why a change in behavior can matter even when reported urge intensity does not change.</p>
-</section>
 <section id="yu-and-the-flood" class="level3">
 <h3 data-anchor-id="yu-and-the-flood">Yu and the flood: give the experience a way through</h3>
 <p>Ancient Chinese tradition offers a memorable image. In the <em>Book of Documents</em>, Gun attempts to contain destructive floodwaters by damming them, but his undertaking fails. His son Yu is remembered for opening passages and deepening channels so that the water can reach the sea (Legge, 1879, pp.&nbsp;57–58, 139–140).</p>
-<p>The contrast invites a different question: where can this go? Applied to an urge, the move is to give sensations room to change while guiding the next action. The “channel” is a sequence of noticing, allowing, and choosing; it need not run through the behavior the urge proposes. <strong>You can allow the urge and redirect the action.</strong> The wave can unfold while you continue with something you have chosen to do.</p>
-<p>The same image will return in <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html#replace-mind-reading-with-verified-understanding">Connection and Repair</a>. When another person is upset, making room for their account can reveal a concern that attempts to quiet the emotion have left unanswered. Here, BRAIN gives the individual a practical way to make that room internally.</p>
+<p>The contrast invites a different question: where can this go? Applied to an urge, the move is to give sensations room to change while guiding the next action. The “channel” is a sequence of noticing, allowing, and choosing; it need not run through the behavior the urge proposes. <strong>You can allow the urge and redirect the action.</strong> The sensations can change while you continue with something you have chosen to do.</p>
+<p>This also matters in communication. When another person is upset, listening and checking that you can accurately restate their concern can make a difficult issue easier to discuss. <a href="../chapters/34-connection-and-repair-warm-honesty-makes-truth-usable.html#replace-mind-reading-with-verified-understanding">Connection and Repair</a> develops that approach. Here, BRAIN gives the individual a practical way to make room for their own experience.</p>
 </section>
 <section id="observing-an-urge-with-brain" class="level3">
 <h3 data-anchor-id="observing-an-urge-with-brain">Observe an urge with BRAIN</h3>
@@ -898,11 +930,10 @@ Figure&nbsp;21.5: A schematic course of urge intensity, with no fixed timescale.
 </section>
 <section id="decide-how-to-return-after-a-lapse" class="level3">
 <h3 data-anchor-id="decide-how-to-return-after-a-lapse">A lapse does not erase learning</h3>
-<p>If the student opens the feed in bed after several evenings of leaving the phone elsewhere, the old response may still be available when familiar cues recur. That lapse does not by itself show that nothing was learned. What matters is whether the new response becomes easier to retrieve across further opportunities.</p>
+<p>If the student opens the feed in bed after several evenings of leaving the phone elsewhere, the old response may still be available when familiar cues recur. Earlier learning can remain available too: in Lally and colleagues’ (2010) study, missing one opportunity to perform the new behavior did not materially disrupt the formation process.</p>
 <p>The same observing stance can help after acting on an urge. Replaying “I failed again; I have no self-control” keeps attention on a judgment of the self and can crowd out the practical question of what to do next. A more useful account is specific: “I kept the phone beside the bed and scrolled beyond my stopping point.” Acknowledge the consequence, identify the cue or difficulty, and make the next adjustment. The student can put the phone away now and prepare its charging place for tomorrow.</p>
 <p><strong>Self-compassion</strong> means responding to the difficulty with kindness while taking it seriously. In an experiment by Breines and Chen (2012), students encouraged to respond compassionately after a difficult vocabulary test spent more time preparing for another test than students given no such encouragement. An accepting response to a setback can therefore support renewed effort. For the student at bedtime, the practical lesson is to turn a lapse into information for the next attempt, without making it a verdict on personal worth.</p>
-<p>In Lally and colleagues’ (2010) study, missing one opportunity to perform the new behavior did not materially disrupt the formation process. A useful shorthand is <strong>no strengthening, but no reset</strong>: the missed occasion supplied no new repetition, but one miss need not erase earlier progress.</p>
-<p>One evening of stopping as planned and a well-established habit are different achievements. To distinguish them, observe relevant opportunities over time and whether the new response starts with less deliberation. Chapter 39 turns these observations into measures of maintenance and a practical recovery plan.</p>
+<p>Across further opportunities, observe whether the new response starts with less deliberation and helps the student stop at the intended time. These observations track both habit formation and progress toward the original goal.</p>
 <div class="loop-location callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -924,7 +955,7 @@ Figure&nbsp;21.5: A schematic course of urge intensity, with no fixed timescale.
 <ol type="1">
 <li><strong>Reconstruct the sequence.</strong> What happened just before the action, what did the person do, and what changed immediately afterward?</li>
 <li><strong>Separate attraction from pleasure.</strong> What did the action seem to offer, and what did it actually provide? Record an urge only if one was noticed.</li>
-<li><strong>Compare explanations.</strong> Did a familiar setting retrieve the response, did the action serve a currently valued goal, or could both contribute? Frequency alone cannot decide this.</li>
+<li><strong>Compare explanations.</strong> Did a familiar setting retrieve the response, did the action serve a currently valued goal, or could both contribute?</li>
 <li><strong>Name a distinguishing observation.</strong> Would the action continue when the expected benefit was unavailable, or change when the setting changed? Explain what either result would suggest and what it would leave uncertain.</li>
 <li><strong>Prepare a replacement.</strong> Write “When [specific cue] occurs, I will [observable action].” Make the first step easy to start, arrange what it needs, and consider what benefit might make it worth repeating.</li>
 <li><strong>Practice at the next opportunity.</strong> Carry out the replacement when the cue occurs. If a mild urge intervenes, use BRAIN briefly, then choose your response. Record what you did and whether it served your goal. If the old action occurred, identify one adjustment for the next opportunity without judging your character.</li>
@@ -990,13 +1021,14 @@ Figure&nbsp;21.5: A schematic course of urge intensity, with no fixed timescale.
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Research Lens: do variable rewards motivate animals more?
+<span class="screen-reader-only">Note</span>Research Lens: what makes uncertain rewards attractive?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>An animal approaching a cue, choosing a food source, and continuing to respond after a missed reward provide different measures of motivation. None alone measures pleasure. Likewise, the anticipatory dopamine activity described above cannot establish how much effort an animal will expend. Three behavioral comparisons help clarify what uncertainty can do.</p>
+<p>Uncertainty can attract behavior through several routes. The studies below distinguish attraction to a cue, preference for variable outcomes, information seeking, and enjoyment of pursuit. They also show why a neural response during anticipation cannot by itself tell us which reward an animal will choose.</p>
+<p>Uncertain rewards should also be distinguished from <strong>ambiguity</strong>, where the probabilities themselves are unclear. <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html#ambiguity-and-brain-signals">Chapter 16</a> examines why imaging evidence does not support a simple rule that known risk excites the reward system while ambiguity shuts it down.</p>
 <p><strong>Uncertainty can strengthen attraction to a reward cue.</strong> Anselme and colleagues (2013) presented rats with a lever cue before sucrose delivery. When both delivery and reward size varied, rats showed a stronger bias toward pressing the cue lever relative to checking the food dish than rats receiving one pellet every trial, despite similar average food delivery. This is <strong>sign-tracking</strong>: attraction to the reward-associated cue. Pressing did not earn extra food. The result concerns how behavior was directed; absolute lever-press counts did not reliably differ across groups.</p>
 <p><strong>What varies can change the preference.</strong> Bateson and Kacelnik (1995) offered starlings fixed and variable food sources. The birds strongly preferred a source delivering five food units after either 2.5 or 60.5 seconds over five units after 20 seconds. Yet when the delay stayed at 20 seconds and the amount varied between three and seven units, choice showed no reliable preference; response latency and pecking suggested weak avoidance of variability. Occasional short waits and variable quantities therefore had different effects.</p>
 <p><strong>Seeking information is a separate possibility.</strong> Bromberg-Martin and Hikosaka (2009) found that two macaques sought advance information about the size of an upcoming water reward. This supports the idea that learning what will happen can itself attract behavior. Information seeking is one candidate explanation to test, alongside attraction to reward cues and the value of particular possible outcomes.</p>
@@ -1021,7 +1053,6 @@ Figure&nbsp;21.5: A schematic course of urge intensity, with no fixed timescale.
 <div class="callout-body-container callout-body">
 <p>In an fMRI study of 22 people, Habib and Dixon (2010) found greater overlap between responses to near misses and wins in the group classified as pathological gamblers. That is evidence about a blood-oxygenation signal associated with brain activity, not a direct measurement of dopamine release. Near-miss responses also occur in people without gambling disorder (Clark et al., 2009).</p>
 <p>Sescousse and colleagues (2016) found stronger striatal responses to near misses in 22 pathological gamblers than in 22 controls. However, their dopamine-receptor-blocking drug manipulation did not reliably alter those responses. This result leaves the specific dopamine mechanism unresolved.</p>
-<p>Uncertain rewards should also be distinguished from <strong>ambiguity</strong>, where the probabilities themselves are unclear. <a href="../chapters/16-risky-decision-making-a-probability-is-not-yet-a-feeling.html#ambiguity-and-brain-signals">Chapter 16</a> examines why imaging evidence does not support a simple rule that known risk excites the reward system while ambiguity shuts it down.</p>
 </div>
 </div>
 </div>
@@ -1040,7 +1071,7 @@ Figure&nbsp;21.5: A schematic course of urge intensity, with no fixed timescale.
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Bowen and Marlatt (2009) randomly assigned 123 undergraduate smokers interested in changing their smoking to brief mindfulness instructions or a no-instruction comparison before exposure to smoking cues. The instructions encouraged observing and accepting urges without immediately acting on them—the practice called urge surfing.</p>
-<p>The groups did <strong>not</strong> differ significantly in reported urges during the experiment. However, participants receiving the instructions reported smoking fewer cigarettes over the following seven days. That distinction is the teaching point: behavior can change even when an urge has not become weaker.</p>
+<p>The groups did <strong>not</strong> differ significantly in reported urges during the experiment. However, participants receiving the instructions reported smoking fewer cigarettes over the following seven days.</p>
 </div>
 </div>
 </div>

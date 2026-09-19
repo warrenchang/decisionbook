@@ -103,7 +103,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: We should pay attention to our decisions while they are still in the making. | **PASS** |
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
-| Required content: no strengthening, but no reset | **PASS** |
+| Required content: A lapse does not erase learning | **PASS** |
 | Required content: median of 66 days | **PASS** |
 | Required content: Index of Concepts | **PASS** |
 | Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |
