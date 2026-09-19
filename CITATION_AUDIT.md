@@ -4,7 +4,7 @@ Canonical chapters: **42**
 
 Unique references in the master union: **1028**
 
-Chapter reference blocks: **1048**
+Chapter reference blocks: **1049**
 
 Unresolved author–year citations: **0**
 
@@ -23,7 +23,7 @@ Unresolved author–year citations: **0**
 | Availability, Affect, and Representativeness {#what-feels-likely} | 16 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 18 | 0 |
 | Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 15 | 0 |
-| Framing | 15 | 0 |
+| Framing | 16 | 0 |
 | Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 29 | 0 |
 | Base Rates and Updating | 7 | 0 |
 | Randomness and Overconfidence {#samples-randomness-and-calibration} | 24 | 0 |
