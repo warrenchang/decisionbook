@@ -572,12 +572,7 @@ window.Quarto = {
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#worked-update-the-same-screen-in-two-applicant-pools" id="toc-worked-update-the-same-screen-in-two-applicant-pools" class="nav-link" data-scroll-target="#worked-update-the-same-screen-in-two-applicant-pools">Worked update: the same screen in two applicant pools</a></li>
-  <li><a href="#probability-begins-with-a-model" id="toc-probability-begins-with-a-model" class="nav-link" data-scroll-target="#probability-begins-with-a-model">Probability begins with a model</a>
-  <ul class="collapse">
-  <li><a href="#complement-preserve-the-event-boundary" id="toc-complement-preserve-the-event-boundary" class="nav-link" data-scroll-target="#complement-preserve-the-event-boundary">Complement: preserve the event boundary</a></li>
-  <li><a href="#and-use-the-conditional-branch" id="toc-and-use-the-conditional-branch" class="nav-link" data-scroll-target="#and-use-the-conditional-branch">AND: use the conditional branch</a></li>
-  <li><a href="#or-restore-the-overlap" id="toc-or-restore-the-overlap" class="nav-link" data-scroll-target="#or-restore-the-overlap">OR: restore the overlap</a></li>
-  </ul></li>
+  <li><a href="#probability-begins-with-a-model" id="toc-probability-begins-with-a-model" class="nav-link" data-scroll-target="#probability-begins-with-a-model">Probability begins with a model</a></li>
   <li><a href="#conditional-direction-matters" id="toc-conditional-direction-matters" class="nav-link" data-scroll-target="#conditional-direction-matters">Conditional direction matters</a></li>
   <li><a href="#bayes-rule-restores-the-alternatives" id="toc-bayes-rule-restores-the-alternatives" class="nav-link" data-scroll-target="#bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</a></li>
   <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a></li>
@@ -656,20 +651,14 @@ window.Quarto = {
 <h2 data-anchor-id="probability-begins-with-a-model">Probability begins with a model</h2>
 <p>The hiring calculation became useful only after the applicants and possible results were organized into a common population. Without that structure, a percentage can answer a different question from the one the decision requires.</p>
 <p>A <strong>sample space</strong> lists the elementary outcomes allowed by a model. An <strong>event</strong> collects the outcomes of interest, such as finishing a project by Friday. Probabilities range from zero to one, and the probability of some outcome in the complete sample space is one. Probabilities add when events are mutually exclusive. Calling a coin fair, successive observations independent, or an applicant pool comparable to the validation sample are substantive assumptions.</p>
-<section id="complement-preserve-the-event-boundary" class="level3">
-<h3 data-anchor-id="complement-preserve-the-event-boundary">Complement: preserve the event boundary</h3>
+<p><span id="complement-preserve-the-event-boundary"></span></p>
 <p>An event and its <strong>complement</strong> cover all possibilities without overlapping. If a project has a 70% probability of finishing by Friday, the remaining 30% is the probability of not finishing by Friday under the same model. “Not finished by Friday” is not the same event as “the project fails.” A complement works only when the time horizon and outcome definition remain fixed.</p>
-</section>
-<section id="and-use-the-conditional-branch" class="level3">
-<h3 data-anchor-id="and-use-the-conditional-branch">AND: use the conditional branch</h3>
+<p><span id="and-use-the-conditional-branch"></span></p>
 <p>To find the probability that two events both occur, start with the chance of the first and multiply by the chance of the second <em>among cases where the first occurs</em>. If the events are independent, learning that the first occurred does not change the chance of the second.</p>
 <p>Independence is not the same as mutual exclusivity. Rain and traffic delay can occur together and may be dependent. Two cards drawn without replacement are dependent because the first draw changes the deck.</p>
-</section>
-<section id="or-restore-the-overlap" class="level3">
-<h3 data-anchor-id="or-restore-the-overlap">OR: restore the overlap</h3>
+<p><span id="or-restore-the-overlap"></span></p>
 <p>To find the probability that at least one of two events occurs, add their probabilities and subtract the overlap. That last step prevents double counting.</p>
 <p>A project can be delayed by a supplier problem, a software problem, or both. Adding the separate probabilities as though the routes were disjoint exaggerates total risk; considering only the most vivid route understates it.</p>
-</section>
 </section>
 <section id="conditional-direction-matters" class="level2">
 <h2 data-anchor-id="conditional-direction-matters">Conditional direction matters</h2>
@@ -750,7 +739,7 @@ P(A\mid B)=
 </section>
 <section id="natural-frequencies-make-bayes-visible" class="level2">
 <h2 data-anchor-id="natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</h2>
-<p>Knowing the updating rule does not guarantee that the relevant denominator stays visible. Translating percentages into people makes it easier to inspect who could have produced a positive result.</p>
+<p>Translating percentages into people makes it easier to inspect who could have produced a positive result.</p>
 <p>For a second hypothetical example, suppose 1 percent of a population has a disease. A test is positive for 90 percent of people who have it and for 9 percent of people who do not. A person tests positive. The tempting answer is 90 percent, but that describes how often people with the disease test positive. We need to know how often people with a positive test have the disease.</p>
 <p>Imagine 10,000 people:</p>
 <ul>
@@ -774,7 +763,7 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 <section id="reference-classes-are-judgment-calls" class="level2">
 <h2 data-anchor-id="reference-classes-are-judgment-calls">Reference classes are judgment calls</h2>
 <p>The calculation asks for a base rate, but the decision rarely supplies an uncontested comparison group. Should a start-up be compared with all new firms, firms in the same sector, firms at the same funding stage, or firms with similarly experienced founders? A narrow class may be more relevant but noisier. A broad class is more stable but less tailored. Choosing the class is therefore part of the substantive judgment, and it can change the recommendation even when the arithmetic is correct.</p>
-<p>Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman &amp; Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. “This case is unique” is a hypothesis, not a denominator. <a href="../chapters/15-samples-randomness-regression-and-calibration.html#small-samples-swing-widely">Chapter 15</a> examines the sampling uncertainty that remains even after the class is well chosen.</p>
+<p>Base-rate neglect is more likely when individuating detail feels causal and the statistic feels incidental (Bar-Hillel, 1980). The outside view therefore begins with comparable cases before explaining why the focal case differs (Kahneman &amp; Lovallo, 1993). A defensible analysis reports several nested classes, shows whether the conclusion changes, and identifies which differences are genuinely diagnostic. <a href="../chapters/15-samples-randomness-regression-and-calibration.html#small-samples-swing-widely">Chapter 15</a> examines the sampling uncertainty that remains even after the class is well chosen.</p>
 <p>Return to hiring. The base rate should concern future performance under the organization’s role, support, and criterion—not an undefined pool of “talent.” The screen’s sensitivity and false-positive rate must come from a comparable applicant population. If the criterion rewards manager similarity rather than job output, the posterior can be mathematically correct and substantively wrong.</p>
 <p><span id="research-lens-conjunction-disjunction-and-dilution"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
@@ -808,7 +797,6 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 <li>Ten percent of projects suffer supplier delay and 12% suffer software delay. What must be known before adding the percentages?</li>
 <li>A screen validated in experienced applicants is applied to entry-level applicants. Which part of the Bayesian model may no longer transport?</li>
 </ol>
-<p>A complete answer names the conditioning event, denominator, relevant overlap or alternative, and at least one assumption about how the evidence was generated.</p>
 </div>
 </div>
 </section>

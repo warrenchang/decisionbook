@@ -37,7 +37,7 @@ More recorded data and cheaper computation make it feasible to inform many more 
 
 **Data-driven decision making** uses observations and analysis to inform choices and learn from their results. A decision once informed by memory and occasional reports may now leave a continuous digital record. Payments record purchases, booking systems record demand, sensors record equipment conditions, and inspections update information about properties. Documents, photographs, and messages add evidence that does not begin as a tidy spreadsheet. Much of this information is produced while people carry out ordinary work. Reusing appropriate records can make learning less expensive than collecting every observation afresh.
 
-The scale of recorded activity has grown rapidly. In 2014, IDC estimated that the data created and copied worldwide during 2013 amounted to **4.4 zettabytes** and projected **44 zettabytes for 2020**—ten times as much. A zettabyte is a trillion gigabytes. The second number was a forecast made in 2014, not a later measurement of the 2020 total (IDC, 2014). Nor did this measure count only distinct, useful observations: it included copies and transient data. The practical opportunity is the growing range of activities that can be observed, compared, and learned from.
+The scale of recorded activity has grown rapidly. In 2014, IDC estimated that the data created and copied worldwide during 2013 amounted to **4.4 zettabytes** and projected **44 zettabytes for 2020**—ten times as much. A zettabyte is a trillion gigabytes. The estimate included copies and transient data (IDC, 2014). The practical opportunity is the growing range of activities that can be observed, compared, and learned from.
 
 Availability has several meanings. Data may exist somewhere without being accessible, lawful to use for this purpose, or relevant to this decision. A city's property database can contain millions of entries and still omit the pipe material needed for a particular house. More rows can improve precision when the observations are informative, but they do not automatically correct selective coverage, inaccurate labels, or a poorly chosen outcome.
 
@@ -85,7 +85,7 @@ These capabilities extend beyond numerical forecasts. **Generative AI** produces
 
 For decision making, the useful question is which task needs help: estimating demand, finding relevant information, generating alternatives, or planning how to act. Specifying that task gives us something concrete to test—and keeps the choice of technology connected to the decision it should improve.
 
-### Image recognition: a historical gain in predictive capability
+[]{#image-recognition-a-historical-gain-in-predictive-capability}
 
 Image classification shows how much a defined task can improve. In the ImageNet competition, the best classification error fell from **28.2 percent in 2010** to **3.57 percent in 2015**, when an ensemble of residual neural networks won. These are **top-five error rates**: an image counts as an error when its correct category is absent from the system's five proposed labels (Russakovsky et al., 2015; He et al., 2016). The widely reproduced human reference of about 5 percent came from a particular trained annotator, not a universal limit on human vision.[^ch42-imagenet-comparison]
 
@@ -115,7 +115,7 @@ Return to @fig-normative-decision-loop in [Chapter 1](01-how-decisions-should-be
 
 Agrawal and colleagues use *judgment* in a narrower sense for assigning payoffs to consequences. Here we retain the book's term *valuation*, so that *judgment* can continue to describe forming beliefs and assessments more broadly (Agrawal et al., 2019).
 
-### One rain forecast, two sensible choices
+### From a forecast to a choice {#one-rain-forecast-two-sensible-choices}
 
 Two organizers receive the same forecast: a 30 percent probability of rain during an outdoor event. One moves indoors; the other stays outside. They agree about the weather, yet choose opposite actions. Rain would badly damage the first event, while moving inside would sacrifice much of the second event's appeal. How can the same forecast support both choices?
 
@@ -157,7 +157,7 @@ For the first organizer, the threshold is $2/(2+8)=0.20$; for the second it is $
 
 Real choices can include reserving a tent, delaying a decision, accepting some weather exposure, or cancelling. They may also involve fixed costs, uncertain forecasts, capacity limits, and protected rights that cannot simply be priced away. The arithmetic reveals where valuation enters.
 
-### Values enter before the final button {#ai-target-variable-problem}
+[]{#ai-target-variable-problem}
 
 A model's training target is already a consequential choice. In a widely used healthcare-management algorithm, spending was used as a proxy for health need. Obermeyer and colleagues found that Black patients were sicker than White patients with the same risk score: unequal spending patterns made costs an inadequate stand-in for need (Obermeyer et al., 2019).
 
@@ -229,21 +229,20 @@ A central training task for many LLMs is predicting subsequent tokens—pieces o
 
 The optional [Research Lens in Chapter 4](04-the-predictive-mind-perception-is-inference.qmd#generative-ai-and-predictive-processing) explains how prompts guide generation through context, why this offers a limited analogy with human perception, and why plausible content still needs external evidence. Much organizational work consists of turning scattered information into something another person can understand and use. A useful LLM can lower that cost, provided the workflow preserves the evidence and gives someone the means to check it.
 
-### Customer support: help at the moment of action {#ai-customer-support}
+[]{#ai-customer-support}
 
 A support worker needs a useful answer while the customer is still waiting. Searching a long manual costs time, but an immediate answer that is wrong leaves the problem unresolved. An assistant that brings relevant guidance into the live conversation could change that trade-off. Brynjolfsson and colleagues studied a staggered rollout of a generative-AI assistant among 5,172 customer-support agents. Compared with working without the assistant, access increased issues resolved per hour by 15 percent on average, with substantial differences across workers (Brynjolfsson et al., 2025).
 
 The assistant's value was connected to an immediate task: helping a worker respond to a customer. Translating that idea elsewhere requires identifying what the worker needs at the moment of action. A draft that arrives too late, cannot be checked, or contradicts the organization's obligations may save writing time while worsening the service.
 
-### Screening: change the workflow, then test it {#ai-masai-screening}
+[]{#ai-masai-screening}
 
 Screening programmes need to find cancers while managing the work of reading large numbers of examinations. Reducing the number of human readings would save effort, but missed cancers could make that saving costly. The Swedish MASAI trial tested an AI-supported mammography workflow in which scores helped route examinations to one or two radiologists and supported detection. In the 2023 interim analysis of about 80,000 women, screen-reading workload fell by 44.3 percent relative to standard double reading (Lång et al., 2023).
 
 The later randomized analysis examined **interval cancers**: cancers diagnosed between scheduled screening rounds. Rates were **1.55 per 1,000 women with AI-supported screening versus 1.76 with standard double reading**, meeting the trial's **non-inferiority** criterion: ruling out worsening beyond a prespecified margin. The rate ratio was 0.88, with a 95 percent confidence interval of 0.65–1.18. The AI-supported workflow detected 80.5 percent of cancers, compared with 73.8 percent under standard double reading (**sensitivity**). Both workflows correctly cleared 98.5 percent of women without cancer (**specificity**) (Gommers et al., 2026).
 
-The lesson is practical: the intervention included a division of work, a comparison condition, and patient-relevant evaluation. It was more specific than making an algorithm available and hoping it helped.
 
-### A capable assistant can still fail to improve the user {#ai-physician-vignettes}
+[]{#ai-physician-vignettes}
 
 Strong performance on a clinical case gives a reason to test a model as a physician’s assistant. The physician must still know when to consult it, recognize a useful answer, and change the relevant judgment. A study can therefore find capable model output without finding better performance by people given access to it. In a randomized study, 50 physicians solved clinical vignettes using conventional resources, with half also given access to an LLM. Their median diagnostic-reasoning scores per case were **76 percent with LLM access and 74 percent without it**. The adjusted difference was 2 percentage points, with a 95 percent confidence interval from −4 to 8. Yet in a separate assessment using a standardized prompt, the LLM alone achieved a median score of **92 percent** on the same scoring rubric. A strong standalone result had not translated into a significant improvement for physicians given access to the tool (Goh et al., 2024).
 
@@ -273,15 +272,15 @@ Imagine receiving a report that a model is “95 percent accurate.” Before cel
 
 Begin by testing the estimate on observations that did not determine the fitted model, keeping validation separate from final testing (James et al., 2023). Then follow the estimate into use: which errors change actions, what capacity limits those actions, and what consequences follow? The sections below separate these checks so a favorable model score cannot stand in for an evaluation of the decision.
 
-### Make the test resemble the task
+[]{#make-the-test-resemble-the-task}
 
 Begin with the unit and moment of decision. Are we predicting a property, a customer session, a student term, or tomorrow's demand? Use only information available at that moment. **Data leakage** occurs when information that should be unavailable to the prediction enters its development or evaluation. A variable recorded after the outcome can make a model look excellent by leaking the answer into its inputs.
 
 Keep an untouched test set for the final comparison. Use the training and validation data to fit and tune the model. When future performance is the target, respect time order; when the same person or organization appears repeatedly, avoid treating their related observations as independent evidence of generalization. Apply preprocessing within the relevant training partitions. Document exclusions, missingness, source versions, and the exact model that produced the result.
 
-Compare a complex model with a credible simple rule on the same cases and under the same information constraints. A base rate, a transparent regression, or the existing procedure may be hard to beat after operating costs are included. Better-looking performance on a more favorable test does not show improvement.
+Compare a complex model with a credible simple rule on the same cases and under the same information constraints. A base rate, a transparent regression, or the existing procedure may be hard to beat after operating costs are included.
 
-### Evaluate probabilities and decisions separately
+[]{#evaluate-probabilities-and-decisions-separately}
 
 A city may use a risk cutoff to decide whether an inspection is worth its cost. A model can rank properties correctly while overstating their probabilities; the ranking then looks useful, but more properties may cross the action threshold than the evidence justifies. Evaluation needs to test both what the scores separate and what their numerical values mean. **Discrimination** concerns how well scores distinguish cases with different outcomes. **Calibration** concerns whether stated probabilities agree with observed frequencies across appropriate groups of predictions. Among many comparable cases assigned a 30 percent probability, roughly 30 percent should have the event.
 
@@ -289,7 +288,7 @@ Then evaluate the action rule. Count the important kinds of error, inspect subgr
 
 Record the number of cases underlying each result and the uncertainty in estimated performance. [Chapter 15](15-samples-randomness-regression-and-calibration.qmd#calibration-makes-confidence-answerable) develops the discipline of calibration and learning from samples.
 
-### Compare workflows before scaling
+[]{#compare-workflows-before-scaling}
 
 A practical pilot should compare the current process, a simple baseline, and the proposed AI-assisted process. A model-only comparison can be informative in a retrospective or otherwise safe evaluation even when it would not be an acceptable live policy. Measure verification time, error consequences, appropriate reliance, and outcomes—not only how quickly a draft appears.
 
@@ -297,7 +296,7 @@ Start with a mode that lets the system produce outputs without automatically cha
 
 The live system also changes its own evidence. A fraud review prevents some losses; outreach may prevent some departures; an excavation reveals a previously unknown pipe. Outcomes under the new policy are not a neutral test of what would have happened under the old one. Log the action as well as the prediction, and preserve the distinction between forecasting quality and policy effects.
 
-### Communicate enough uncertainty to support a choice
+[]{#communicate-enough-uncertainty-to-support-a-choice}
 
 A useful display makes the relevant comparison visible. Show the same units and time horizon across alternatives, label the action threshold, and distinguish observations from predictions. If an interval is shown, say whether it concerns an average effect, an estimated parameter, or an individual future outcome; those are different uncertainties. Wilke's treatment of uncertainty emphasizes that a visually precise mark can easily be mistaken for certainty (Wilke, 2019).
 
@@ -346,7 +345,7 @@ For an LLM helping with a document-based decision, a useful instruction is:
 
 > Using only the supplied material, make a comparison table for these alternatives. Link each factual claim to its supporting passage. Separate stated facts, assumptions, and missing information. Show which additional evidence could change the comparison. Use our stated criteria; flag any value trade-off that we have not resolved.
 
-This prompt structures a checkable output. Verify the supporting passages and important calculations before using the table.
+Verify the supporting passages and important calculations before using the table.
 
 **Round 3: diagnose the disagreement.** When individual assessments and analytical results differ, classify the reason. Do they disagree about evidence, probability, values, feasibility, or authority? A model cannot settle a disagreement about priorities merely by restating its forecast. A senior person cannot refute a well-validated forecast merely by disliking its implications.
 

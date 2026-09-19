@@ -575,7 +575,6 @@ window.Quarto = {
   <li><a href="#define-the-question" id="toc-define-the-question" class="nav-link" data-scroll-target="#define-the-question">Define the question</a>
   <ul class="collapse">
   <li><a href="#turn-a-topic-into-a-question-and-hypothesis" id="toc-turn-a-topic-into-a-question-and-hypothesis" class="nav-link" data-scroll-target="#turn-a-topic-into-a-question-and-hypothesis">1. Turn a topic into a question and hypothesis</a></li>
-  <li><a href="#research-question-check" id="toc-research-question-check" class="nav-link" data-scroll-target="#research-question-check">Research question check</a></li>
   <li><a href="#define-the-construct-before-choosing-the-instrument" id="toc-define-the-construct-before-choosing-the-instrument" class="nav-link" data-scroll-target="#define-the-construct-before-choosing-the-instrument">2. Define the construct before choosing the instrument</a></li>
   <li><a href="#separate-description-prediction-causation-and-mechanism" id="toc-separate-description-prediction-causation-and-mechanism" class="nav-link" data-scroll-target="#separate-description-prediction-causation-and-mechanism">3. Separate description, prediction, causation, and mechanism</a></li>
   </ul></li>
@@ -731,9 +730,7 @@ Figure&nbsp;D.1: Five questions connect an experimental design to the claim it c
 <li><strong>Exploratory</strong> analysis uses the data to discover patterns and generate explanations.</li>
 <li><strong>Post hoc prediction</strong> can be valuable, but it must not be narrated as if it was specified in advance.</li>
 </ul>
-</section>
-<section id="research-question-check" class="level3">
-<h3 data-anchor-id="research-question-check">Research question check</h3>
+<p><span id="research-question-check"></span></p>
 <ul>
 <li>Can another researcher name the population, comparison, outcome, and horizon?</li>
 <li>Is the question descriptive, predictive, causal, mechanistic, or a synthesis question?</li>
@@ -746,7 +743,7 @@ Figure&nbsp;D.1: Five questions connect an experimental design to the claim it c
 <h3 data-anchor-id="define-the-construct-before-choosing-the-instrument">2. Define the construct before choosing the instrument</h3>
 <p>Suppose the clinic wants to explain whether the reminder improves understanding. Understanding is the <strong>construct</strong>, the property the study seeks to investigate. A question asking patients to identify the appointment time is one possible <strong>operationalization</strong>, a procedure for making that property observable. Other studies use scales, choices, response times, transfers, or physiological signals to investigate constructs such as trust, impatience, fairness, or experienced affect.</p>
 <p>Similar labels can hide different constructs. A one-shot transfer, a self-report of generosity, and repeated helping behavior are not interchangeable measures of “prosociality.” Different labels can also hide near-identical measures. Name the construct first, then justify why the operation captures it in this population and setting.</p>
-<p><strong>Reliability</strong> concerns the consistency or precision of a measurement for its intended use. <strong>Validity</strong> concerns whether the interpretation of the score is warranted. A measure can be reliable and invalid: a scale can reproduce the same number while measuring the wrong object. High internal consistency does not establish construct validity. A correlation with brain activity does not certify a questionnaire as the true measure of a mental state.</p>
+<p><strong>Reliability</strong> concerns the consistency or precision of a measurement for its intended use. <strong>Validity</strong> concerns whether the interpretation of the score is warranted. A measure can be reliable and invalid: a scale can reproduce the same number while measuring the wrong object. High internal consistency does not establish construct validity.</p>
 <p>Before data collection, record:</p>
 <ul>
 <li>exact items, task, instructions, response scale, timing, scoring, exclusions, and version;</li>
@@ -917,36 +914,27 @@ Table&nbsp;D.3: Approaches to evidence differ in how the comparison is generated
 </figure>
 </div>
 <p>Laboratory and field settings are a separate design choice. A randomized <strong>laboratory experiment</strong> uses a controlled task to examine mechanisms or comparative statics, with conclusions bounded by the task, stakes, participants, and institution. A randomized <strong>field experiment</strong> tests effects in a natural setting, often with less control over treatment delivery and spillovers. Both are randomized experiments in the table above; the setting does not itself establish how treatment was assigned.</p>
-<p>“Quasi-experiment” is not a stamp of causality. A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.</p>
+<p>A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.</p>
 <p>No design dominates on every dimension. Control can improve internal validity and narrow realism. Field context can increase realism and add uncontrolled pathways. Build a body of evidence whose weaknesses do not all point in the same direction.</p>
-<section id="randomization-in-practice" class="level4">
-<h4 data-anchor-id="randomization-in-practice">Fit randomization to how the program operates</h4>
+<p><span id="randomization-in-practice"></span></p>
 <p>The clinic may have capacity to offer additional appointment support to only some eligible patients. A lottery within that eligible group can allocate scarce places and create a comparison. Fix eligibility before the draw; if only borderline cases enter the lottery, the causal conclusion concerns that group.</p>
 <p>A randomized <strong>phase-in</strong> can compare patients or clinics receiving a program earlier with those scheduled to receive it later. Compare outcomes while their exposure differs, account for calendar time, and consider whether the announcement changes behavior before delivery. Once everyone has received the program, there is no contemporaneous untreated group for that same contrast.</p>
 <p>When participation cannot be assigned, an <strong>encouragement design</strong> randomizes an invitation or incentive to participate. It directly identifies the effect of that encouragement. Inferring the effect of participation itself requires the additional assumptions in the noncompliance section below. Each approach uses an operational feature to create an informative comparison (Duflo et al., 2007).</p>
-</section>
-<section id="between-and-within-subject-designs" class="level4">
-<h4 data-anchor-id="between-and-within-subject-designs">Between-person and within-person comparisons</h4>
+<p><span id="between-and-within-subject-designs"></span></p>
 <p>A <strong>between-subjects design</strong> assigns different people to different conditions. A <strong>within-subjects design</strong> exposes the same person to multiple conditions, allowing comparisons that account for stable individual differences. The latter can improve precision, but exposure to the first condition may change responses to the next through learning, fatigue, contrast, or carryover. Randomizing or counterbalancing order helps diagnose some of these problems; it does not erase an irreversible treatment effect (Shadish et al., 2002).</p>
 <p>For a reminder study, randomly rotating message versions across repeated appointments could support a within-person comparison only if earlier messages do not contaminate the later contrast in an unaddressed way. An intervention that permanently changes knowledge cannot simply be switched off for the next period. Choose the unit and sequence to identify the effect, rather than choosing repeated measurement simply because it produces more rows.</p>
-</section>
-<section id="factorial-designs" class="level4">
-<h4 data-anchor-id="factorial-designs">Factorial designs separate components and their interaction</h4>
+<p><span id="factorial-designs"></span></p>
 <p>Suppose the clinic wants to change both the reminder’s content and its timing. Comparing a plain message sent a week ahead with a personalized message sent the day before would test a package; it could not tell us which change mattered.</p>
 <p>A <strong>2 × 2 factorial design</strong> crosses two content versions with two timing options, creating four conditions. Random assignment to all four combinations permits a comparison of content at each timing and timing under each content version. In a balanced design, the <strong>main effect</strong> of content averages its effect across the two timings. An <strong>interaction</strong> asks whether that effect differs between timings: personalization might help when a message arrives early but add little the day before (Collins et al., 2009).</p>
 <p>Those are different questions. State which one matters before allocating the sample, and plan enough precision for the interaction if it is central. Merely including two factors does not make a study informative about how they work together.</p>
 </section>
-</section>
 <section id="random-sampling-and-random-assignment-solve-different-problems" class="level3">
 <h3 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h3>
 <p>The clinic wants to know both whether the reminder works and whose attendance it could improve. These questions concern different forms of validity. <strong>Internal validity</strong> asks whether the study supports its causal conclusion for the comparison it makes. <strong>External validity</strong> asks how far the finding applies to other people, settings, treatments, or times. We therefore need to distinguish how patients enter the study from how they receive a reminder (Shadish et al., 2002; Stuart et al., 2011).</p>
-<section id="sampling-and-external-validity" class="level4">
-<h4 data-anchor-id="sampling-and-external-validity">Random sampling and external validity</h4>
+<p><span id="sampling-and-external-validity"></span></p>
 <p><strong>Random sampling</strong> selects units from a defined population using known, nonzero selection probabilities. It supports inference from the sample to that population, one aspect of external validity. A random sample from the clinic’s patient list can therefore support a population estimate more directly than recruiting only patients who respond to an advertisement. The analysis still needs to respect the sampling design, including unequal selection probabilities, and account for incomplete coverage or selective nonresponse.</p>
 <p>That support has a boundary. A patient list excludes people who never reached the clinic, and a sample from this clinic does not automatically represent another health system or a later period. Generalizing a treatment effect also requires a credible causal estimate in the first place and attention to factors that could change the effect across populations and settings.</p>
-</section>
-<section id="assignment-and-internal-validity" class="level4">
-<h4 data-anchor-id="assignment-and-internal-validity">Random assignment and internal validity</h4>
+<p><span id="assignment-and-internal-validity"></span></p>
 <p><strong>Random assignment</strong> allocates study participants to treatment conditions by chance. It supports internal validity by separating treatment allocation from pre-existing causes of the outcome. The assigned groups are comparable in expectation, allowing their outcomes to estimate the effect of assignment when implementation and analysis preserve the comparison.</p>
 <p>For example, the clinic could recruit volunteers and randomly assign them to the standard or shorter reminder. That design can support a causal conclusion about the volunteers even though their response may differ from other patients’. Conversely, drawing a random sample of patients and then letting staff choose which reminder each receives would leave the treatment comparison open to confounding. Random sampling and random assignment can be used together, but neither substitutes for the other (Stuart et al., 2011).</p>
 <div id="fig-random-sampling-vs-assignment" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Target population branches through random sampling into an evaluation sample and people not in the evaluation. Only the evaluation sample proceeds through random assignment to treatment and control groups. External validity and internal validity appear as unboxed side labels beside the corresponding procedures.">
@@ -960,15 +948,12 @@ Figure&nbsp;D.2: Random sampling supports generalization to the target populatio
 </figure>
 </div>
 <p>Follow the two forks in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a>. The first determines who enters the evaluation; the second determines which condition those participants are assigned to. The control group is part of the evaluation sample and must be followed for outcomes. People outside the evaluation are not that control group. The figure shows one possible design: a trial can use random assignment without random sampling, as in the volunteer example above, while requiring a separate argument about generalization.</p>
-</section>
 <section id="unit-of-randomization" class="level4">
-<h4 data-anchor-id="unit-of-randomization">Choose the unit of randomization</h4>
+<h4 data-anchor-id="unit-of-randomization">Balance groups at the right level</h4>
 <p>The <strong>unit of randomization</strong> is the entity whose treatment assignment is drawn. The clinic could assign individual patients, households, or whole clinics. The choice should reflect how the intervention is delivered and how people may affect one another. If family members share messages, household assignment may contain some spillovers; if a clinic changes its entire reminder system, assigning individual patients may be impractical.</p>
 <p>The unit of randomization can differ from the unit of measurement. A study may assign clinics but record each patient’s attendance. Those patient records provide information, yet patients in the same clinic share an assignment and may share other influences. The analysis must account for that dependence, for example through inference at the level of the randomized clusters. A thousand patients across two randomized clinics do not provide a thousand independently randomized comparisons.</p>
 <p>Choose the level that supports credible delivery and the intended effect, then plan the number of randomized units and the analysis together. Assigning larger groups can reduce contamination while leaving fewer independent groups and less precision; it does not guarantee that effects stop at the group boundary (Duflo et al., 2007).</p>
-</section>
-<section id="random-assignment-balances-in-expectation" class="level4">
-<h4 data-anchor-id="random-assignment-balances-in-expectation">Random assignment balances in expectation</h4>
+<p><span id="random-assignment-balances-in-expectation"></span></p>
 <p>Random assignment does not guarantee that realized groups are identical. With a common assignment probability, it makes assignment independent of baseline potential outcomes and covariates. Stratified designs provide the corresponding independence within strata; unequal assignment probabilities require the appropriate weighting or adjustment. Across repeated allocations under a balanced design, baseline differences average to zero; in one realized sample, chance imbalance can occur (Imbens &amp; Rubin, 2015).</p>
 <p>This changes how balance should be used.</p>
 <ol type="1">
@@ -978,9 +963,7 @@ Figure&nbsp;D.2: Random sampling supports generalization to the target populatio
 <li>Pre-specify adjustment for strong predictors to improve precision; do not select controls by whether their baseline test is significant.</li>
 <li>Investigate patterns that suggest coding errors, differential recruitment after assignment, or implementation failure.</li>
 </ol>
-</section>
-<section id="rerandomization-is-a-design-not-a-rescue" class="level4">
-<h4 data-anchor-id="rerandomization-is-a-design-not-a-rescue">Prespecified rerandomization and blocking</h4>
+<p><span id="rerandomization-is-a-design-not-a-rescue"></span></p>
 <p>Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. <strong>Rerandomization</strong> can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan &amp; Rubin, 2012).</p>
 <p><strong>Stratification</strong>, or blocking, forms groups using important baseline characteristics and randomizes within each one. For example, the reminder study could divide patients by clinic and prior attendance, then allocate both reminder versions within each stratum. This makes the comparison less dependent on a chance concentration of frequent attenders in one arm. Pair matching similarly assigns treatment within preformed pairs of comparable units. Specify these groups before assignment and preserve the allocation structure in the analysis (Bruhn &amp; McKenzie, 2009).</p>
 </section>
@@ -1159,7 +1142,7 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 <h2 data-anchor-id="report-reproduce-and-extend">Report, reproduce, and extend</h2>
 <section id="replication-is-estimation-under-a-declared-protocol" class="level3">
 <h3 data-anchor-id="replication-is-estimation-under-a-declared-protocol">10. Replication is estimation under a declared protocol</h3>
-<p>A replication is not a ritual in which an effect “works” or “fails.” It asks whether an estimate appears under a specified protocol, sample, setting, measure, and analysis—and how the new estimate changes cumulative uncertainty.</p>
+<p>A replication estimates an effect under a specified protocol, sample, setting, measure, and analysis, then examines how the new estimate changes cumulative uncertainty.</p>
 <ul>
 <li><strong>Direct replication</strong> holds key procedures close to the original to test repeatability under a defined protocol.</li>
 <li><strong>Conceptual replication</strong> tests a theory with a different operation; a difference can reflect the theory, the new measure, or an unrecognized moderator.</li>
@@ -1171,7 +1154,7 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 </section>
 <section id="build-an-open-and-reproducible-workflow" class="level3">
 <h3 data-anchor-id="build-an-open-and-reproducible-workflow">11. Build an open and reproducible workflow</h3>
-<p>Another researcher should be able to check how the clinic reached its conclusion. Making the records public, however, could expose patients’ identities or confidential information. The practical question is how to make the analysis verifiable while protecting the people whose data make it possible. The target is <strong>as open as possible and as protected as necessary</strong>.</p>
+<p>Another researcher should be able to check how the clinic reached its conclusion. Making the records public, however, could expose patients’ identities or confidential information. The target is <strong>as open as possible and as protected as necessary</strong>.</p>
 <p>A minimum project structure preserves:</p>
 <ul>
 <li>immutable raw inputs with provenance and checksums;</li>

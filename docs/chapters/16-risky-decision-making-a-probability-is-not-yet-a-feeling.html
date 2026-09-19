@@ -571,15 +571,12 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#opening-puzzle-the-same-expected-value-a-different-choice" id="toc-opening-puzzle-the-same-expected-value-a-different-choice" class="nav-link" data-scroll-target="#opening-puzzle-the-same-expected-value-a-different-choice">The same expected value, a different choice</a></li>
-  <li><a href="#risk-uncertainty-and-ambiguity" id="toc-risk-uncertainty-and-ambiguity" class="nav-link" data-scroll-target="#risk-uncertainty-and-ambiguity">Risk, uncertainty, and ambiguity</a></li>
+  <li><a href="#opening-puzzle-the-same-expected-value-a-different-choice" id="toc-opening-puzzle-the-same-expected-value-a-different-choice" class="nav-link" data-scroll-target="#opening-puzzle-the-same-expected-value-a-different-choice">Choices under risk, uncertainty, and ambiguity</a></li>
   <li><a href="#expected-value-the-monetary-benchmark" id="toc-expected-value-the-monetary-benchmark" class="nav-link" data-scroll-target="#expected-value-the-monetary-benchmark">Expected value: the monetary benchmark</a></li>
   <li><a href="#expected-utility-value-over-final-consequences" id="toc-expected-utility-value-over-final-consequences" class="nav-link" data-scroll-target="#expected-utility-value-over-final-consequences">Expected utility: value over final consequences</a>
   <ul class="collapse">
   <li><a href="#curvature-and-attitudes-toward-a-mean-preserving-risk" id="toc-curvature-and-attitudes-toward-a-mean-preserving-risk" class="nav-link" data-scroll-target="#curvature-and-attitudes-toward-a-mean-preserving-risk">Curvature and attitudes toward a mean-preserving risk</a></li>
   <li><a href="#certainty-equivalents-and-risk-premia" id="toc-certainty-equivalents-and-risk-premia" class="nav-link" data-scroll-target="#certainty-equivalents-and-risk-premia">Certainty equivalents and risk premia</a></li>
-  <li><a href="#insurance-expected-loss-is-not-the-whole-premium" id="toc-insurance-expected-loss-is-not-the-whole-premium" class="nav-link" data-scroll-target="#insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss and willingness to pay</a></li>
-  <li><a href="#why-do-people-buy-insurance-and-lottery-tickets" id="toc-why-do-people-buy-insurance-and-lottery-tickets" class="nav-link" data-scroll-target="#why-do-people-buy-insurance-and-lottery-tickets">Why do people buy insurance and lottery tickets?</a></li>
   </ul></li>
   <li><a href="#the-allais-pattern-certainty-does-not-cancel-cleanly" id="toc-the-allais-pattern-certainty-does-not-cancel-cleanly" class="nav-link" data-scroll-target="#the-allais-pattern-certainty-does-not-cancel-cleanly">The Allais paradox: certainty and the independence axiom</a></li>
   <li><a href="#the-ellsberg-urn-risk-is-not-ambiguity" id="toc-the-ellsberg-urn-risk-is-not-ambiguity" class="nav-link" data-scroll-target="#the-ellsberg-urn-risk-is-not-ambiguity">The Ellsberg urn: choosing with unknown probabilities</a></li>
@@ -648,7 +645,7 @@ window.Quarto = {
 </ul>
 </section>
 <section id="opening-puzzle-the-same-expected-value-a-different-choice" class="level2">
-<h2 data-anchor-id="opening-puzzle-the-same-expected-value-a-different-choice">The same expected value, a different choice</h2>
+<h2 data-anchor-id="opening-puzzle-the-same-expected-value-a-different-choice">Choices under risk, uncertainty, and ambiguity</h2>
 <p>Choose between:</p>
 <ul>
 <li><strong>Option S:</strong> €50 for certain.</li>
@@ -656,9 +653,7 @@ window.Quarto = {
 </ul>
 <p>Both have expected monetary value €50. Many people nevertheless choose the sure €50. Now imagine that the gamble determines whether you can pay rent. The sure amount may become much more attractive. Imagine instead that both amounts are entertainment money and the gamble itself is enjoyable. The gamble may become more attractive.</p>
 <p>Expected money leaves out what the money would make possible. To evaluate the insurance quote, we need a way to express that difference.</p>
-</section>
-<section id="risk-uncertainty-and-ambiguity" class="level2">
-<h2 data-anchor-id="risk-uncertainty-and-ambiguity">Risk, uncertainty, and ambiguity</h2>
+<p><span id="risk-uncertainty-and-ambiguity"></span></p>
 <p>In a textbook lottery, outcomes and probabilities are specified: a coin gives a 50% chance of each result. This is <strong>risk</strong> in the narrow decision-theory sense. In many real decisions, the probabilities are estimated, disputed, or partly unknown. This broader <strong>uncertainty</strong> includes model error, missing outcomes, changing environments, and ambiguous evidence.</p>
 <p><strong>Ambiguity</strong> describes uncertainty about the probability model itself. A jar with a known 30 red and 60 black balls is risky; a jar with 30 red and 60 balls of unknown black–yellow composition introduces ambiguity. A precise-looking spreadsheet can still be ambiguous if the probability estimates rest on one historical period or an untested causal model.</p>
 <p>For the insurance team, this distinction changes what to investigate. Even a well-estimated frequency of familiar incidents may omit a new kind of attack; a precise average cannot settle whether the model covers the exposure.</p>
@@ -703,7 +698,7 @@ EV(X)=\sum_{i=1}^{n}p_i x_i.
 <li>A <strong>convex</strong> utility function implies weak risk seeking over that range: the lottery is at least as attractive as its sure average. Additional wealth brings larger increments of utility.</li>
 </ul>
 <p>The preferences become strict when the curve is strictly concave or convex over outcomes that genuinely vary.</p>
-<p>Curvature is local. A function can be concave over one wealth range and different elsewhere. Observing one safe choice does not establish a stable trait across stakes, domains, or reference points.</p>
+<p>Curvature is local. A function can be concave over one wealth range and different elsewhere.</p>
 <div id="math-expected-utility">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -778,14 +773,10 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </figure>
 </div>
 <p>If the outcomes are changes around wealth, then wealth must enter the calculation. With €10,000 in initial wealth and the same square-root utility, a 50–50 chance of gaining €0 or €100 has a certainty-equivalent payoff of about €49.94: its risk premium is only about €0.06. The same payoff lottery and utility function look very different when the starting resources change. <a href="../chapters/17-prospect-theory-gains-and-losses-begin-at-a-reference-point.html#chapter-17-start">Prospect Theory</a> asks what happens when people instead evaluate changes around a reference point.</p>
-</section>
-<section id="insurance-expected-loss-is-not-the-whole-premium" class="level3">
-<h3 data-anchor-id="insurance-expected-loss-is-not-the-whole-premium">Insurance: expected loss and willingness to pay</h3>
+<p><span id="insurance-expected-loss-is-not-the-whole-premium"></span></p>
 <p>Insurance exchanges an uncertain loss for a certain premium. Under concave utility, a person may pay more than the actuarially fair expected loss to remove variability. The difference can reflect a risk premium, but real insurance decisions also include insurer costs, exclusions, deductibles, counterparty risk, liquidity, legal requirements, and protection against ruin.</p>
 <p>The key comparison is not “premium versus expected loss” alone. It is final wealth and feasible action in each state. Insurance can be valuable because a rare loss would be unaffordable even when its expected amount is modest.</p>
-</section>
-<section id="why-do-people-buy-insurance-and-lottery-tickets" class="level3">
-<h3 data-anchor-id="why-do-people-buy-insurance-and-lottery-tickets">Why do people buy insurance and lottery tickets?</h3>
+<p><span id="why-do-people-buy-insurance-and-lottery-tickets"></span></p>
 <p>A globally concave utility function over money cannot explain paying for an unfavorable monetary gamble. Yet a lottery ticket may also buy entertainment and anticipation, while insurance protects against an unaffordable loss. Separate mental accounts, misunderstanding, or extra weight on tiny probabilities offer other explanations. Buying both products challenges a simple account of monetary risk preference without identifying which alternative is right.</p>
 </section>
 </section>

@@ -68,7 +68,7 @@ Three distinctions prevent later confusion:
 - **Exploratory** analysis uses the data to discover patterns and generate explanations.
 - **Post hoc prediction** can be valuable, but it must not be narrated as if it was specified in advance.
 
-### Research question check
+[]{#research-question-check}
 
 - Can another researcher name the population, comparison, outcome, and horizon?
 - Is the question descriptive, predictive, causal, mechanistic, or a synthesis question?
@@ -82,7 +82,7 @@ Suppose the clinic wants to explain whether the reminder improves understanding.
 
 Similar labels can hide different constructs. A one-shot transfer, a self-report of generosity, and repeated helping behavior are not interchangeable measures of “prosociality.” Different labels can also hide near-identical measures. Name the construct first, then justify why the operation captures it in this population and setting.
 
-**Reliability** concerns the consistency or precision of a measurement for its intended use. **Validity** concerns whether the interpretation of the score is warranted. A measure can be reliable and invalid: a scale can reproduce the same number while measuring the wrong object. High internal consistency does not establish construct validity. A correlation with brain activity does not certify a questionnaire as the true measure of a mental state.
+**Reliability** concerns the consistency or precision of a measurement for its intended use. **Validity** concerns whether the interpretation of the score is warranted. A measure can be reliable and invalid: a scale can reproduce the same number while measuring the wrong object. High internal consistency does not establish construct validity.
 
 Before data collection, record:
 
@@ -162,11 +162,11 @@ Ask of every causal claim:
 
 Laboratory and field settings are a separate design choice. A randomized **laboratory experiment** uses a controlled task to examine mechanisms or comparative statics, with conclusions bounded by the task, stakes, participants, and institution. A randomized **field experiment** tests effects in a natural setting, often with less control over treatment delivery and spillovers. Both are randomized experiments in the table above; the setting does not itself establish how treatment was assigned.
 
-“Quasi-experiment” is not a stamp of causality. A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.
+A regression discontinuity design needs continuity near the threshold and limited manipulation. Difference-in-differences needs a credible counterfactual trend and attention to timing and heterogeneous treatment effects. An instrumental-variable design needs instrument relevance plus independence, exclusion, and—for the usual LATE interpretation—monotonicity. A natural event is useful only if the process generating exposure supports the comparison.
 
 No design dominates on every dimension. Control can improve internal validity and narrow realism. Field context can increase realism and add uncontrolled pathways. Build a body of evidence whose weaknesses do not all point in the same direction.
 
-#### Fit randomization to how the program operates {#randomization-in-practice}
+[]{#randomization-in-practice}
 
 The clinic may have capacity to offer additional appointment support to only some eligible patients. A lottery within that eligible group can allocate scarce places and create a comparison. Fix eligibility before the draw; if only borderline cases enter the lottery, the causal conclusion concerns that group.
 
@@ -174,13 +174,13 @@ A randomized **phase-in** can compare patients or clinics receiving a program ea
 
 When participation cannot be assigned, an **encouragement design** randomizes an invitation or incentive to participate. It directly identifies the effect of that encouragement. Inferring the effect of participation itself requires the additional assumptions in the noncompliance section below. Each approach uses an operational feature to create an informative comparison (Duflo et al., 2007).
 
-#### Between-person and within-person comparisons {#between-and-within-subject-designs}
+[]{#between-and-within-subject-designs}
 
 A **between-subjects design** assigns different people to different conditions. A **within-subjects design** exposes the same person to multiple conditions, allowing comparisons that account for stable individual differences. The latter can improve precision, but exposure to the first condition may change responses to the next through learning, fatigue, contrast, or carryover. Randomizing or counterbalancing order helps diagnose some of these problems; it does not erase an irreversible treatment effect (Shadish et al., 2002).
 
 For a reminder study, randomly rotating message versions across repeated appointments could support a within-person comparison only if earlier messages do not contaminate the later contrast in an unaddressed way. An intervention that permanently changes knowledge cannot simply be switched off for the next period. Choose the unit and sequence to identify the effect, rather than choosing repeated measurement simply because it produces more rows.
 
-#### Factorial designs separate components and their interaction {#factorial-designs}
+[]{#factorial-designs}
 
 Suppose the clinic wants to change both the reminder's content and its timing. Comparing a plain message sent a week ahead with a personalized message sent the day before would test a package; it could not tell us which change mattered.
 
@@ -192,13 +192,13 @@ Those are different questions. State which one matters before allocating the sam
 
 The clinic wants to know both whether the reminder works and whose attendance it could improve. These questions concern different forms of validity. **Internal validity** asks whether the study supports its causal conclusion for the comparison it makes. **External validity** asks how far the finding applies to other people, settings, treatments, or times. We therefore need to distinguish how patients enter the study from how they receive a reminder (Shadish et al., 2002; Stuart et al., 2011).
 
-#### Random sampling and external validity {#sampling-and-external-validity}
+[]{#sampling-and-external-validity}
 
 **Random sampling** selects units from a defined population using known, nonzero selection probabilities. It supports inference from the sample to that population, one aspect of external validity. A random sample from the clinic's patient list can therefore support a population estimate more directly than recruiting only patients who respond to an advertisement. The analysis still needs to respect the sampling design, including unequal selection probabilities, and account for incomplete coverage or selective nonresponse.
 
 That support has a boundary. A patient list excludes people who never reached the clinic, and a sample from this clinic does not automatically represent another health system or a later period. Generalizing a treatment effect also requires a credible causal estimate in the first place and attention to factors that could change the effect across populations and settings.
 
-#### Random assignment and internal validity {#assignment-and-internal-validity}
+[]{#assignment-and-internal-validity}
 
 **Random assignment** allocates study participants to treatment conditions by chance. It supports internal validity by separating treatment allocation from pre-existing causes of the outcome. The assigned groups are comparable in expectation, allowing their outcomes to estimate the effect of assignment when implementation and analysis preserve the comparison.
 
@@ -208,7 +208,7 @@ For example, the clinic could recruit volunteers and randomly assign them to the
 
 Follow the two forks in @fig-random-sampling-vs-assignment. The first determines who enters the evaluation; the second determines which condition those participants are assigned to. The control group is part of the evaluation sample and must be followed for outcomes. People outside the evaluation are not that control group. The figure shows one possible design: a trial can use random assignment without random sampling, as in the volunteer example above, while requiring a separate argument about generalization.
 
-#### Choose the unit of randomization {#unit-of-randomization}
+#### Balance groups at the right level {#unit-of-randomization}
 
 The **unit of randomization** is the entity whose treatment assignment is drawn. The clinic could assign individual patients, households, or whole clinics. The choice should reflect how the intervention is delivered and how people may affect one another. If family members share messages, household assignment may contain some spillovers; if a clinic changes its entire reminder system, assigning individual patients may be impractical.
 
@@ -216,7 +216,7 @@ The unit of randomization can differ from the unit of measurement. A study may a
 
 Choose the level that supports credible delivery and the intended effect, then plan the number of randomized units and the analysis together. Assigning larger groups can reduce contamination while leaving fewer independent groups and less precision; it does not guarantee that effects stop at the group boundary (Duflo et al., 2007).
 
-#### Random assignment balances in expectation
+[]{#random-assignment-balances-in-expectation}
 
 Random assignment does not guarantee that realized groups are identical. With a common assignment probability, it makes assignment independent of baseline potential outcomes and covariates. Stratified designs provide the corresponding independence within strata; unequal assignment probabilities require the appropriate weighting or adjustment. Across repeated allocations under a balanced design, baseline differences average to zero; in one realized sample, chance imbalance can occur (Imbens & Rubin, 2015).
 
@@ -228,7 +228,7 @@ This changes how balance should be used.
 4. Pre-specify adjustment for strong predictors to improve precision; do not select controls by whether their baseline test is significant.
 5. Investigate patterns that suggest coding errors, differential recruitment after assignment, or implementation failure.
 
-#### Prespecified rerandomization and blocking {#rerandomization-is-a-design-not-a-rescue}
+[]{#rerandomization-is-a-design-not-a-rescue}
 
 Discarding an allocation after viewing an inconvenient imbalance can invalidate the stated assignment mechanism. But the rule “never rerandomize” is also wrong. **Rerandomization** can be valid when the acceptable-balance criterion, variables, and procedure are specified before treatment assignment and the analysis accounts for that restricted randomization (Morgan & Rubin, 2012).
 
@@ -367,7 +367,7 @@ Report all planned outcomes, raw treatment-control summaries where meaningful, a
 
 ### 10. Replication is estimation under a declared protocol
 
-A replication is not a ritual in which an effect “works” or “fails.” It asks whether an estimate appears under a specified protocol, sample, setting, measure, and analysis—and how the new estimate changes cumulative uncertainty.
+A replication estimates an effect under a specified protocol, sample, setting, measure, and analysis, then examines how the new estimate changes cumulative uncertainty.
 
 - **Direct replication** holds key procedures close to the original to test repeatability under a defined protocol.
 - **Conceptual replication** tests a theory with a different operation; a difference can reflect the theory, the new measure, or an unrecognized moderator.
@@ -380,7 +380,7 @@ For a useful replication, document fidelity and departures, compare effect estim
 
 ### 11. Build an open and reproducible workflow
 
-Another researcher should be able to check how the clinic reached its conclusion. Making the records public, however, could expose patients' identities or confidential information. The practical question is how to make the analysis verifiable while protecting the people whose data make it possible. The target is **as open as possible and as protected as necessary**.
+Another researcher should be able to check how the clinic reached its conclusion. Making the records public, however, could expose patients' identities or confidential information. The target is **as open as possible and as protected as necessary**.
 
 A minimum project structure preserves:
 
