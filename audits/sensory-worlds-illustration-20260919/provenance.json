@@ -1,0 +1,37 @@
+{
+  "created": "2026-09-19",
+  "mode": "Built-in image generation",
+  "asset": "figures/sensory-worlds-illustrated.png",
+  "reference": "audits/sensory-worlds-illustration-20260919/user-style-reference.png",
+  "generated_original": "/Users/ra25fi/.codex/generated_images/01a0a8e5-d161-7631-8348-0e40cad96c90/exec-e13b909e-ecd4-4f96-ac62-2d83efe5cce3.png",
+  "prompt": "Use case: scientific-educational. Create a finished, publication-quality hand-drawn natural-history illustration for a university behavioral-science book, using the supplied image as a STYLE AND FOUR-PANEL COMPOSITION REFERENCE. This is a new figure, not a verbatim copy. Make a landscape 3:2 canvas with four equally sized panels in a clear 2 by 2 grid, subtle warm-white graph paper, graphite pencil hatching, delicate realistic animal anatomy, sparse colored-pencil accents. Keep the quiet sketchbook aesthetic and thin dividers of the reference. Make the animals and environmental signals tell the story; no lists or paragraphs. Large readable dark lettering, generous margins; no overall title, no figure number, no citations. Render at high resolution, preferably 2400 by 1600 or larger.\n\nTOP LEFT: a pit viper head in profile facing right and a small live mouse on the right. Show warm orange infrared radiation coming FROM the mouse TOWARD a highlighted loreal pit on the snake, not from the snake. The pit opening is between and below the eye and nostril; distinguish it from the eye and nostril. A fine leader correctly terminates at the pit opening. Exact minimal labels: \"Pit organ\", \"Infrared heat\". Bottom panel title in two large lines: \"Pit viper\" / \"Infrared sensing\".\n\nTOP RIGHT: a beautifully drawn small bee above TWO MATCHED FIVE-PETALLED FLOWERS shown face on. Both are the same flower shape. Left flower has yellow petals with no visible petal-base bullseye; right flower visualizes ultraviolet contrast as pale violet outer petals and clearly dark inner halves of the petals, producing a broad central bullseye. Labels beneath the pair: \"Visible light\" and \"UV pattern\"; under the UV label add \"(false colour)\" clearly. This is a schematic UV comparison, not a claim about the bee's subjective colour experience. Do not draw spectral graphs, wavelengths, stars, or extra birds. Bottom panel title in two large lines: \"Bee\" / \"Ultraviolet vision\".\n\nBOTTOM LEFT: a realistic Asian elephant, recognizably smaller rounded ears and domed forehead, standing in sparse grass, with a second smaller elephant in the distance on the right. Gentle teal sound-wave arcs between them suggest low-frequency communication. Do not show a trumpet or an upward-raised trumpeting trunk. The only internal label is \"Below 20 Hz\". Bottom panel title in two large lines: \"Asian elephant\" / \"Infrasonic calls\". Do not add an invented frequency plot or distance.\n\nBOTTOM RIGHT: a realistic European robin with orange-red face and breast and brown-gray wings, in flight. Under it, show a small blue-green globe with simple continuous curved magnetic-field loops and an enlarged patch of parallel sloping teal field lines behind the robin. The field lines are schematic. No compass needle, no bar magnet, no numbered route, no Atlantic map, no stars or sun. The only internal label is \"Earth's magnetic field\". Bottom panel title in two large lines: \"European robin\" / \"Magnetic orientation\".\n\nAll explanatory color marks must be restrained; most rendering should be pencil-like. Four panels must be equally balanced with no dense micro-text. All labels must be spelled exactly. Avoid the unsupported species-specific migration assertions, questionable wavelength plots, and long captions in the reference. Keep all content well inside the borders.",
+  "sources": [
+    {
+      "panel": "Pit viper",
+      "claim": "Infrared radiation produces heating in the pit organ; TRPA1-based thermal transduction.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2855400/"
+    },
+    {
+      "panel": "Bee",
+      "claim": "UV-absorbing petal bases and UV-reflecting tips can create a pattern absent from human-visible petals. False colour depicts the contrast, not subjective bee colour.",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.12242"
+    },
+    {
+      "panel": "Asian elephant",
+      "claim": "Recorded calls included infrasonic frequencies. Most calls ranged from 14 to 24 Hz, so the caption and text do not say all calls are below 20 Hz.",
+      "url": "https://link.springer.com/article/10.1007/BF00300007"
+    },
+    {
+      "panel": "European robin",
+      "claim": "Experimental magnetic orientation depends on field inclination. Schematic field lines; no species-specific transatlantic route claim.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17784420/"
+    }
+  ],
+  "verification": {
+    "original_inspection": "All four panels and labels visually inspected. Pit label reaches the loreal pit; warm animal supplies infrared signal; floral pair displays UV contrast; elephant calls labeled below 20 Hz; robin paired with schematic geomagnetic field.",
+    "notes": "An educational schematic, not experimental measurements or a literal rendering of animal subjective experience."
+  },
+  "subsequent_edits": [
+    "label-edit.json"
+  ]
+}

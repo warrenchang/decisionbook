@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1028**
+Unique references in the master union: **1030**
 
-Chapter reference blocks: **1049**
+Chapter reference blocks: **1051**
 
 Unresolved author–year citations: **0**
 
@@ -14,7 +14,7 @@ Unresolved author–year citations: **0**
 | --- | ---: | ---: |
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision | 9 | 0 |
-| Limited Attention {#attention-what-becomes-evidence} | 33 | 0 |
+| Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | The Predictive Mind {#the-predictive-mind-perception-is-inference} | 46 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 58 | 0 |

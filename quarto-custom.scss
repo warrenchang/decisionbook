@@ -167,6 +167,14 @@ th[scope="rowgroup"] { vertical-align: middle; }
     max-height: none;
   }
 
+  // Illustrated figures with labels need the same readable mobile pane.
+  figure.quarto-float-fig > div[aria-describedby] > img.wide-illustration {
+    width: 800px;
+    min-width: 800px;
+    max-width: none;
+    max-height: none;
+  }
+
   // Compact figures are composed to remain readable in a narrow reading column.
   // Let them fit the screen instead of forcing the wide-diagram scroll pane.
   figure.quarto-float-fig > div[aria-describedby] > img.phone-fit {
