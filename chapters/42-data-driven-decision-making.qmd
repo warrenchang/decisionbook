@@ -115,7 +115,7 @@ Return to @fig-normative-decision-loop in [Chapter 1](01-how-decisions-should-be
 
 Agrawal and colleagues use *judgment* in a narrower sense for assigning payoffs to consequences. Here we retain the book's term *valuation*, so that *judgment* can continue to describe forming beliefs and assessments more broadly (Agrawal et al., 2019).
 
-### From a forecast to a choice {#one-rain-forecast-two-sensible-choices}
+### How consequences set an action threshold {#one-rain-forecast-two-sensible-choices}
 
 Two organizers receive the same forecast: a 30 percent probability of rain during an outdoor event. One moves indoors; the other stays outside. They agree about the weather, yet choose opposite actions. Rain would badly damage the first event, while moving inside would sacrifice much of the second event's appeal. How can the same forecast support both choices?
 
@@ -165,9 +165,9 @@ The model could perform well at predicting its label while allocating help in a 
 
 Before discussing model sophistication, finish two sentences: **“The outcome we can measure is…”** and **“The consequence we actually care about is…”** If they differ, explain why the first is an acceptable proxy, how it could fail, and who bears the cost of that failure.
 
-## Flint: a probability map becomes a public decision {#flint-lead-pipes}
+## Turn predictions into an allocation policy {#flint-lead-pipes}
 
-Return to Flint's contested excavation plan. To judge what went wrong, we need to separate the prediction the model supplied from the priorities people chose. Agrawal and colleagues develop this conflict in chapter 15 of *Power and Prediction*, “The New Judges” (Agrawal et al., 2022a). The technical task was a form of **supervised learning**: use properties with observed service-line materials to learn relationships that help estimate materials at other properties. Features included information about parcels and buildings, historical records, and inspection findings. The work used predictive models including gradient-boosted decision trees, alongside methods for deciding where additional inspection would be informative (Abernethy et al., 2018; Webb et al., 2020).
+Using predictions to allocate scarce resources requires a policy: which cases take priority, how limited capacity is used, and who can revise the rule. Flint's contested excavation plan shows why that policy cannot be read directly from the probability map. Agrawal and colleagues develop this conflict in chapter 15 of *Power and Prediction*, “The New Judges” (Agrawal et al., 2022a). The technical task was a form of **supervised learning**: use properties with observed service-line materials to learn relationships that help estimate materials at other properties. Features included information about parcels and buildings, historical records, and inspection findings. The work used predictive models including gradient-boosted decision trees, alongside methods for deciding where additional inspection would be informative (Abernethy et al., 2018; Webb et al., 2020).
 
 A **decision tree** divides cases through a sequence of feature-based splits. A tree ensemble combines many trees; in boosting, successive trees help improve the model's predictions under a specified loss function. The resulting score can express an estimated probability of a class, rather than only a yes-or-no label (James et al., 2023). Here the target was the material of the service line.
 
@@ -270,7 +270,7 @@ Evaluation should match the analytical purpose. A descriptive report needs accur
 
 Imagine receiving a report that a model is “95 percent accurate.” Before celebrating, ask what was predicted, which cases were included, and what comparison matters. If an event occurs in only 5 percent of cases, a rule that always predicts its absence is already 95 percent accurate. It may still be useless for finding the cases that require action.
 
-Begin by testing the estimate on observations that did not determine the fitted model, keeping validation separate from final testing (James et al., 2023). Then follow the estimate into use: which errors change actions, what capacity limits those actions, and what consequences follow? The sections below separate these checks so a favorable model score cannot stand in for an evaluation of the decision.
+Begin by testing the estimate on observations that did not determine the fitted model, keeping validation separate from final testing (James et al., 2023). Then follow the estimate into use: which errors change actions, what capacity limits those actions, and what consequences follow? Keeping these checks separate prevents a favorable model score from standing in for an evaluation of the decision.
 
 []{#make-the-test-resemble-the-task}
 
@@ -320,7 +320,7 @@ These connections give the chapter its practical test: identify the uncertainty 
 
 Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. First state whether the missing contribution is descriptive, diagnostic, predictive, or prescriptive. A spreadsheet or simple comparison may be sufficient; add AI when it has a defined job. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before seeing the analysis and preserve that version. You can study how the output changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.
 
-### The data and AI decision canvas {#ai-decision-canvas}
+[]{#ai-decision-canvas}
 
 Use @tbl-ai-decision-canvas to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.
 

@@ -677,7 +677,7 @@ Figure&nbsp;8.2: System 1 and System 2 name families of processes, not separate 
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div id="fig-daughter-finger-counting" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center" alt="A three-year-old child looks down at her hands while counting on her fingers to work out four plus one.">
+<div id="fig-daughter-finger-counting" class="quarto-float quarto-figure quarto-figure-center" alt="A three-year-old child looks down at her hands while counting on her fingers to work out four plus one." data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-daughter-finger-counting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../figures/daughter-finger-counting.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:42.0%" alt="A three-year-old child looks down at her hands while counting on her fingers to work out four plus one.">
@@ -738,21 +738,15 @@ Figure&nbsp;8.4: A self-contained Stroop activity. Neutral strings carry ink col
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>An AI system can also give an immediate answer or spend more computation developing and checking a solution. This makes reasoning modes a useful comparison with deliberate thought. To understand the comparison, follow what changes between the first candidate answer and the final one.</p>
-<section id="intermediate-steps-become-input-for-later-steps" class="level3 unlisted">
-<h3 class="unlisted" data-anchor-id="intermediate-steps-become-input-for-later-steps">Intermediate steps become input for later steps</h3>
+<p><span id="intermediate-steps-become-input-for-later-steps"></span></p>
 <p>An autoregressive LLM continues to generate tokens during an extended reasoning sequence. Those tokens can state subproblems, carry intermediate results, identify contradictions, or propose another approach. Because earlier generated text becomes context for later generation, the system can use its own intermediate work to shape its next step. <strong>Chain-of-thought prompting</strong> elicits such sequences through examples of worked reasoning; Wei et al.&nbsp;(2022) demonstrated improvements on several reasoning benchmarks.</p>
 <p>Reasoning behavior can also be learned during training. In the DeepSeek-R1 research, reinforcement learning rewarded successful solutions to verifiable problems and produced patterns of checking and revising intermediate work (Guo et al., 2025). Training changes parameters; using the resulting reasoning strategy on a new problem need not do so. More computation at answer time can improve a solution while the underlying parameters remain fixed.</p>
-</section>
-<section id="some-systems-explicitly-search-among-alternatives" class="level3 unlisted">
-<h3 class="unlisted" data-anchor-id="some-systems-explicitly-search-among-alternatives">Some systems explicitly search among alternatives</h3>
+<p><span id="some-systems-explicitly-search-among-alternatives"></span></p>
 <p>The idea of a model “prompting itself” is especially concrete in systems with a search procedure around the LLM. <strong>Tree of Thoughts</strong>, for example, generates candidate intermediate steps, evaluates alternatives, and searches forward or backtracks among them (Yao et al., 2023). Here, a control procedure organizes repeated model calls. Other reasoning systems develop a single extended sequence; a reasoning label alone does not establish that a separate controller compares multiple branches.</p>
 <p>The functional resemblance to metacognition lies in treating an intermediate answer as something to examine and potentially revise. It does not establish human-like awareness or make the AI architecture an implementation of the psychological System 1/System 2 distinction.</p>
-</section>
-<section id="a-useful-check-needs-a-criterion-for-being-wrong" class="level3 unlisted">
-<h3 class="unlisted" data-anchor-id="a-useful-check-needs-a-criterion-for-being-wrong">A useful check needs a criterion for being wrong</h3>
+<p><span id="a-useful-check-needs-a-criterion-for-being-wrong"></span></p>
 <p>Consider a model that proposes ten cents for the ball. Asking it to verify both the total and the price difference gives the next reasoning step a concrete test. Asking only “Are you sure?” leaves it to decide what counts as a reason to change. Huang et al.&nbsp;(2024) found that, in the systems and tasks they tested, attempts at self-correction without external feedback sometimes reduced reasoning accuracy. Trained checking strategies can help, but the opportunity to reconsider does not itself guarantee improvement.</p>
 <p>The same practical problem appears when people deliberate. A longer explanation may expose an error or defend it more elaborately. Arithmetic supplies an internal consistency test; a claim about the world may require a measurement, an observation, or a reliable source. The value of reflection depends on what the additional work checks and whether its result can overturn the first answer. <a href="../chapters/42-data-driven-decision-making.html#ai-workbench">Chapter 42</a> applies this principle to AI-assisted decisions.</p>
-</section>
 </div>
 </div>
 </div>

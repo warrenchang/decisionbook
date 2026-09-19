@@ -35,7 +35,7 @@ A market price is a public signal built from many private judgments. It can aggr
 - Evaluate an event study and a limits-to-arbitrage case against their stated benchmarks.
 - Produce a falsifiable market memo and a two-direction bubble dashboard with a robust action.
 
-## Financial markets as a test of behavioral explanations {#why-study-behavior-in-financial-markets}
+## How markets incorporate information {#why-study-behavior-in-financial-markets}
 
 Financial markets put behavioral explanations through a demanding test: stakes are high, professionals participate, and mistakes create opportunities for others. Yet a biased investor does not imply a biased market, because other traders may offset the error.
 
@@ -63,9 +63,9 @@ The first two claims in @fig-finance-euro-efficiency do not automatically establ
 
 Grossman and Stiglitz (1980) expose the paradox. If prices revealed all costly information perfectly, nobody would pay to collect information; if nobody collected it, prices could not reveal it. Informational efficiency is better understood as an equilibrium in which information acquisition is costly and informed trading is rewarded enough to occur—not as costless omniscience.
 
-## Fast price discovery is possible
+[]{#fast-price-discovery-is-possible}
 
-If public news changes a price before an investor can trade, recognizing the news correctly may still come too late to earn a return. The useful question is how quickly the adjustment occurs relative to an executable order. The US Federal Reserve’s [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) establishes its release at 14:00 on September 18, 2013. To measure how quickly the market responded, an event study must pair that timestamp with price and volume data.
+For the investor in the opening example, the speed of this information process is crucial. If public news changes a price before an investor can trade, recognizing the news correctly may still come too late to earn a return. The useful question is how quickly the adjustment occurs relative to an executable order. The US Federal Reserve’s [policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20130918a.htm) establishes its release at 14:00 on September 18, 2013. To measure how quickly the market responded, an event study must pair that timestamp with price and volume data.
 
 Price discovery can also aggregate dispersed clues. The space shuttle *Challenger* exploded at 11:39 a.m. on January 28, 1986; the news appeared on a major financial wire minutes later. Four publicly traded contractors were connected to the launch. By the end of the trading response, Morton Thiokol experienced the distinctive loss. A presidential commission identified the failure of booster O-ring seals made by Thiokol months later. Maloney and Mulherin (2003) found no simple news story or obvious insider-trading trail that fully explained the early discrimination. The market appeared to combine dispersed information, inference, and trading.
 
@@ -326,17 +326,17 @@ Different strategies can sustain the same path. A passive or fundamental-value t
 
 The mixture in @fig-bubble-trader-strategies-redraw shows several patterns of trading within the same experimental design. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.
 
-### Lottery payoffs and cognitive reflection
+### Payoffs and participants shape market behavior {#lottery-payoffs-and-cognitive-reflection}
 
-Two assets can have the same expected dividend while offering very different payoff distributions. In Ackert et al. (2006), a standard asset paid $0.50, $0.90, or $1.20 with probabilities 0.48, 0.48, and 0.04, giving an expected dividend of $0.72. A lottery asset paid $18 with probability 0.04 and zero otherwise, also averaging $0.72. In markets that developed bubbles, traders paid more for the lottery asset. Financing purchases from their own available funds and allowing short sales moderated the price run-ups.
+The market rules are only part of the explanation: the payoff distribution and the people trading also matter. Two assets can have the same expected dividend while offering very different payoff distributions. In Ackert et al. (2006), a standard asset paid $0.50, $0.90, or $1.20 with probabilities 0.48, 0.48, and 0.04, giving an expected dividend of $0.72. A lottery asset paid $18 with probability 0.04 and zero otherwise, also averaging $0.72. In markets that developed bubbles, traders paid more for the lottery asset. Financing purchases from their own available funds and allowing short sales moderated the price run-ups.
 
 Equal expected payouts do not imply that every preference model assigns equal value. Attraction to positively skewed payoffs and overweighting a small chance of a large gain are possible interpretations. The example connects asset trading to the treatment of small probabilities in [Prospect Theory](17-prospect-theory-gains-and-losses-begin-at-a-reference-point.qmd).
 
 Individual differences also matter without translating automatically into market accuracy. Corgnet et al. (2015) found that higher cognitive reflection test scores were associated with higher earnings and trading more consistent with fundamentals. Bubbles occurred even when participants had earned their initial endowments through a task, although trading volume and earnings dispersion were higher with house money.
 
-### Gender, context, and a distinct hormonal intervention
+[]{#gender-context-and-a-distinct-hormonal-intervention}
 
-The suggestion that “Lehman Sisters” would have avoided the crisis is a memorable prompt for a hypothesis. The experiments supply a more conditional answer. Eckel and Füllbrunn (2015) found larger bubbles in all-male than all-female markets in their declining-value design. Their later study did not find a significant difference when gender composition was obscured (Eckel & Füllbrunn, 2017). Holt et al. (2017) found similar bubbles across gender groups with flat fundamentals and unobtrusive sorting, but larger bubbles among men in a declining-value robustness treatment.
+Market composition raises a related question about how individual differences combine in trading. The suggestion that “Lehman Sisters” would have avoided the crisis is a memorable prompt for a hypothesis. The experiments supply a more conditional answer. Eckel and Füllbrunn (2015) found larger bubbles in all-male than all-female markets in their declining-value design. Their later study did not find a significant difference when gender composition was obscured (Eckel & Füllbrunn, 2017). Holt et al. (2017) found similar bubbles across gender groups with flat fundamentals and unobtrusive sorting, but larger bubbles among men in a declining-value robustness treatment.
 
 Wang et al. (2018) further found that all-female groups in China produced bubbles comparable to those in all-male groups, and larger than those in all-female U.S. groups. Cross-country comparisons also change more than one contextual feature and cannot isolate “culture” as if it were a randomly assigned treatment.
 
@@ -348,7 +348,7 @@ Nadler et al. (2018) tested a different question by experimentally administering
 These experiments establish that known dividend distributions, an announced horizon, larger groups, or prior experience do not invariably prevent mispricing. They also let researchers test how liquidity, financing, information, and trading rules alter the outcome. Transporting the findings requires comparing those conditions with the field market of interest.[^ch27-laboratory-markets] A historical price chart establishes a trajectory; a controlled treatment comparison can establish the effect of a particular intervention.
 :::
 
-## A two-direction bubble dashboard
+## Evaluating competing explanations for a boom {#a-two-direction-bubble-dashboard}
 
 A rising price can reflect improving prospects, a reinforcing trading process, or both. Treating every rise as confirmation of a bubble would make the diagnosis impossible to correct; dismissing every concern as innovation could leave growing exposure unchecked. Use both evidence columns in @tbl-bubble-dashboard to record what makes the price look fragile, what could justify it, and which observation would change your assessment. A probability can help when the event and horizon are well defined.
 

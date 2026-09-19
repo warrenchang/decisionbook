@@ -571,20 +571,17 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#which-sequence-looks-random" id="toc-which-sequence-looks-random" class="nav-link" data-scroll-target="#which-sequence-looks-random">Which sequence looks random?</a></li>
+  <li><a href="#which-sequence-looks-random" id="toc-which-sequence-looks-random" class="nav-link" data-scroll-target="#which-sequence-looks-random">Randomness and apparent patterns</a></li>
   <li><a href="#small-samples-swing-widely" id="toc-small-samples-swing-widely" class="nav-link" data-scroll-target="#small-samples-swing-widely">Small samples swing widely</a></li>
   <li><a href="#streaks-require-a-process-model" id="toc-streaks-require-a-process-model" class="nav-link" data-scroll-target="#streaks-require-a-process-model">Streaks require a process model</a></li>
   <li><a href="#clusters-and-the-search-for-causes" id="toc-clusters-and-the-search-for-causes" class="nav-link" data-scroll-target="#clusters-and-the-search-for-causes">Clusters and the search for causes</a></li>
-  <li><a href="#regression-to-the-mean" id="toc-regression-to-the-mean" class="nav-link" data-scroll-target="#regression-to-the-mean">Regression to the mean</a>
-  <ul class="collapse">
+  <li><a href="#regression-to-the-mean" id="toc-regression-to-the-mean" class="nav-link" data-scroll-target="#regression-to-the-mean">Regression to the mean</a></li>
   <li><a href="#superstition" id="toc-superstition" class="nav-link" data-scroll-target="#superstition">Superstition and the illusion of control</a></li>
-  </ul></li>
-  <li><a href="#confidence-must-face-a-distribution" id="toc-confidence-must-face-a-distribution" class="nav-link" data-scroll-target="#confidence-must-face-a-distribution">Overconfidence: three different errors</a>
+  <li><a href="#confidence-must-face-a-distribution" id="toc-confidence-must-face-a-distribution" class="nav-link" data-scroll-target="#confidence-must-face-a-distribution">Overconfidence: three different errors</a></li>
+  <li><a href="#calibration-makes-confidence-answerable" id="toc-calibration-makes-confidence-answerable" class="nav-link" data-scroll-target="#calibration-makes-confidence-answerable">Calibration makes confidence answerable</a>
   <ul class="collapse">
-  <li><a href="#planning-fallacy-and-outside-view" id="toc-planning-fallacy-and-outside-view" class="nav-link" data-scroll-target="#planning-fallacy-and-outside-view">Planning fallacy: the plan needs an outside view</a></li>
+  <li><a href="#from-a-project-story-to-a-forecast-system" id="toc-from-a-project-story-to-a-forecast-system" class="nav-link" data-scroll-target="#from-a-project-story-to-a-forecast-system">Combine causal forecasts with the outside view</a></li>
   </ul></li>
-  <li><a href="#calibration-makes-confidence-answerable" id="toc-calibration-makes-confidence-answerable" class="nav-link" data-scroll-target="#calibration-makes-confidence-answerable">Calibration makes confidence answerable</a></li>
-  <li><a href="#from-a-project-story-to-a-forecast-system" id="toc-from-a-project-story-to-a-forecast-system" class="nav-link" data-scroll-target="#from-a-project-story-to-a-forecast-system">From a project story to a forecast system</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
@@ -644,7 +641,7 @@ window.Quarto = {
 </ul>
 </section>
 <section id="which-sequence-looks-random" class="level2">
-<h2 data-anchor-id="which-sequence-looks-random">Which sequence looks random?</h2>
+<h2 data-anchor-id="which-sequence-looks-random">Randomness and apparent patterns</h2>
 <p>Before explaining the branch’s recovery, consider a simpler problem: recognizing what chance can produce. A fair coin will be tossed six times. Rank these exact sequences from most to least likely:</p>
 <ol type="1">
 <li>H H H H H H</li>
@@ -772,17 +769,33 @@ Y=\theta+\varepsilon,
 </div>
 </div>
 </div>
-<section id="superstition" class="level3">
-<h3 data-anchor-id="superstition">Superstition and the illusion of control</h3>
+</section>
+<section id="superstition" class="level2">
+<h2 data-anchor-id="superstition">Superstition and the illusion of control</h2>
 <p>A basketball player tosses chalk into the air before a game; a golfer wears red on Sunday. LeBron James’s chalk toss and Tiger Woods’s red shirt are familiar sporting rituals (NBA, 2009; PGA TOUR, 2024). In a humorous interview, Woods recalled winning in red, then unsuccessfully trying blue to challenge his mother’s belief that red was his “power color.” The sequence makes a memorable story, but different tournaments also bring different opponents, conditions, and performances.</p>
 <p><strong>Superstition</strong> attributes influence to an action or sign without adequate evidence of a causal connection. A ritual alone does not establish such a belief: an athlete might use a familiar routine to prepare or concentrate.</p>
-<p>Skinner’s (1948) pigeon experiment made the apparent connection between action and reward strikingly visible. Food arrived at regular intervals regardless of what the birds did. Six of eight developed recognizable repeated movements, including circling and head motions. Skinner proposed that movements accidentally followed by food had been reinforced, sustaining responses that did not produce the reward.</p>
+<p><span id="personal-story-superstition"></span></p>
+<div class="personal-example callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>From my experience: a childhood warning that still follows me
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When I was a child, I was told not to let someone else’s legs pass over my head: if that happened, I would never grow. The remedy was to jump ten times.</p>
+<p>Today, I no longer believe that warning. Yet when my daughter goes under my legs for fun or by accident, those childhood words return. I feel uneasy and am tempted to ask her to jump ten times. I can reject the rule intellectually while still feeling its pull.</p>
+<p>If I asked her to jump, I could pass on the very rule I no longer believe.</p>
+</div>
+</div>
+<p>Laboratory studies have also examined how repeated actions can emerge without a causal connection to reward. Skinner’s (1948) pigeon experiment made the apparent connection between action and reward strikingly visible. Food arrived at regular intervals regardless of what the birds did. Six of eight developed recognizable repeated movements, including circling and head motions. Skinner proposed that movements accidentally followed by food had been reinforced, sustaining responses that did not produce the reward.</p>
 <p>Staddon and Simmelhag’s (1971) later work found activities organized around the timing of food delivery, challenging the simple account that arbitrary movements had been strengthened by coincidence. Further experiments pointed to species-typical feeding patterns and the arrangement of the feeding environment as influences on the repeated behavior (Timberlake &amp; Lucas, 1985).</p>
 <p>For a human causal claim, ask what the ritual is supposed to change. Helping a player settle into a practiced routine is a different claim from changing the odds through an unrelated gesture. Record failures as carefully as successes, compare occasions with and without the action, and consider what else differed. The same discipline applies to the branch manager: a practice that preceded recovery deserves investigation before it becomes a rule for every branch.</p>
 <p><span id="illusion-of-control"></span></p>
 <p>An <strong>illusion of control</strong> occurs when someone overestimates their causal influence over an outcome. The branch manager may control staffing and training but cannot thereby control every market shock. Naming the controllable action and comparing what would happen without it is more informative than asking whether the manager feels in charge.</p>
 <p>Langer’s (1975) classic studies helped establish the topic, but one familiar inference needs care: preferring a lottery ticket one selected does not show a belief that selecting it improved the odds. Preference, ownership, and anticipated regret can also matter. Across 17 experiments with 10,825 participants, Klusowski, Small, and Simmons (2021) found little support for the claim that choice itself creates inflated success expectations when options are functionally identical.</p>
-</section>
 </section>
 <section id="confidence-must-face-a-distribution" class="level2">
 <h2 data-anchor-id="confidence-must-face-a-distribution">Overconfidence: three different errors</h2>
@@ -849,12 +862,11 @@ Table&nbsp;15.1: Three forms of overconfidence require different comparisons
 </div>
 </div>
 <p>The familiar Dunning–Kruger pattern raises a further measurement question: what explains the relationship between performance and errors in self-assessment? Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac &amp; Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person’s metacognition from one rank comparison.</p>
-<section id="planning-fallacy-and-outside-view" class="level3">
-<h3 data-anchor-id="planning-fallacy-and-outside-view">Planning fallacy: the plan needs an outside view</h3>
+<p><span id="planning-fallacy-and-outside-view"></span></p>
 <p>The <strong>planning fallacy</strong> illustrates how optimistic forecasts can affect a project: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman &amp; Tversky, 1979). Underestimating the time a task needs can express overestimation of what one can accomplish in that time; an unduly narrow completion window also expresses overprecision. Planning fallacy is therefore an application, rather than a fourth form alongside those in <a href="#tbl-confidence-calibration" class="quarto-xref">Table&nbsp;<span>15.1</span></a>. The <strong>outside view</strong> begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman &amp; Lovallo, 1993; Lovallo &amp; Kahneman, 2003).</p>
 <p>Suppose a city team proposes an 18-month rail-project schedule. Before hearing why this project is special, obtain the completion-time distribution for comparable projects. Then require each departure from that range to name a causal difference and evidence that the difference changed outcomes elsewhere. The inside view remains useful because it reveals mechanisms and dependencies; the outside view prevents an elegant plan from erasing how projects actually unfold.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -863,7 +875,7 @@ Table&nbsp;15.1: Three forms of overconfidence require different comparisons
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In Monty Hall, seeing two unopened doors can make staying and switching look equally promising. Yet the host’s rule for revealing a goat determines what the reveal tells us: similar-looking endings can carry different evidence. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Following the unchosen-door branch in <a href="#fig-monty-hall-protocol" class="quarto-xref">Figure&nbsp;<span>15.2</span></a> shows why switching wins with probability <span class="math inline">\(2/3\)</span>, compared with <span class="math inline">\(1/3\)</span> for staying (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
 <div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
@@ -880,7 +892,6 @@ Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generat
 </div>
 </div>
 </section>
-</section>
 <section id="calibration-makes-confidence-answerable" class="level2">
 <h2 data-anchor-id="calibration-makes-confidence-answerable">Calibration makes confidence answerable</h2>
 <p>A correct prediction can look like evidence of skill, but even a poor forecaster will sometimes be right. To decide whose probabilities deserve weight, we need a record of how stated confidence compares with outcomes across forecasts.</p>
@@ -889,7 +900,7 @@ Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generat
 <p>The <strong>Brier score</strong> measures the squared gap between a forecast probability and what happened, coding occurrence as one and nonoccurrence as zero. A lower score is better: a 70% forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).</p>
 <div id="math-brier-score">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -898,7 +909,7 @@ Figure&nbsp;15.2: The standard Monty Hall protocol keeps the information-generat
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>For a binary event with forecast <span class="math inline">\(p\)</span> and outcome <span class="math inline">\(o\in\{0,1\}\)</span>, the Brier score is</p>
 <p><span class="math display">\[
@@ -963,14 +974,13 @@ Table&nbsp;15.2: A minimal forecast ledger
 </div>
 <p>The dated entries in <a href="#tbl-probability-forecast-ledger" class="quarto-xref">Table&nbsp;<span>15.2</span></a> matter because memory rounds forecasts toward outcomes. “We knew it might fail” can describe almost any vague prior statement. A dated number, event definition, and update rule allow learning to survive hindsight.</p>
 <p>The same discipline is needed when AI supplies the forecast. <a href="../chapters/42-data-driven-decision-making.html#test-the-whole-decision">Chapter 42</a> carries calibration and sampling into the evaluation of machine predictions: reserve observations that were not used to fit or tune the model, make the test resemble its intended use, and examine whether its probabilities support better actions. This is how the book’s treatment of uncertainty helps distinguish a promising demonstration from evidence that a decision process has improved.</p>
-</section>
-<section id="from-a-project-story-to-a-forecast-system" class="level2">
-<h2 data-anchor-id="from-a-project-story-to-a-forecast-system">From a project story to a forecast system</h2>
+<section id="from-a-project-story-to-a-forecast-system" class="level3">
+<h3 data-anchor-id="from-a-project-story-to-a-forecast-system">Combine causal forecasts with the outside view</h3>
 <p>Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.</p>
 <p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-conditional-probability-and-bayesian-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
 <div id="math-combined-delays">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -979,7 +989,7 @@ Table&nbsp;15.2: A minimal forecast ledger
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Under independence, multiply the probabilities that each delay does <em>not</em> occur, then subtract that joint no-delay probability from one:</p>
 <p><span class="math display">\[
@@ -992,6 +1002,7 @@ Table&nbsp;15.2: A minimal forecast ledger
 <p>Missing the <strong>final deadline</strong> is a separate event. Schedule slack may absorb a component delay, while an omitted failure route may jeopardize completion. Define that final event and model how each route affects it before comparing the forecast with the deadline-miss rate for similar projects. If the estimates differ sharply, investigate the reference class, schedule assumptions, dependencies, and missing routes. The outside view cannot correct the inside view until both refer to the same outcome.</p>
 <p>Record one forecast for the final date and separate forecasts for leading mechanisms. Update when relevant evidence arrives, including an unexpected development; record why the new information changes the forecast. After resolution, score the forecasts and examine whether errors came from the base rate, dependence assumptions, missing pathways, or unjustified confidence. Each project adds observations to the calibration ledger.</p>
 <p><span id="ch15-research-findings"></span></p>
+</section>
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>

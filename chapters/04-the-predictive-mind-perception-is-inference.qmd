@@ -83,9 +83,9 @@ Laboratory studies capture a related influence of familiar colors. When observer
 
 The blue-green scene also supplies information about illumination. **Color constancy** helps an object's perceived color remain relatively stable as illumination changes: a white shirt can still look white in warm indoor light or cool daylight (Foster, 2011). Interpreting a scene can change that judgment. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). The familiar object and the light falling on it jointly inform the interpretation.
 
-### A hollow face that seems to look back {#hollow-face-illusion}
+[]{#hollow-face-illusion}
 
-Imagine looking into the inside of a face mask. Its nose recedes into the surface, yet you may see a normal face with a nose projecting toward you. This is the **hollow-face illusion**: a concave face can appear convex. Even knowing that the mask is hollow need not make it look hollow (Hill & Johnston, 2007).
+Learned expectations also affect apparent depth. Imagine looking into the inside of a face mask. Its nose recedes into the surface, yet you may see a normal face with a nose projecting toward you. This is the **hollow-face illusion**: a concave face can appear convex. Even knowing that the mask is hollow need not make it look hollow (Hill & Johnston, 2007).
 
 :::: {.content-visible unless-format="epub"}
 Watch the upper mask in @fig-hollow-face-illusion, then compare it with the featureless hollow surface below. Does the face seem to bulge toward you? Does its apparent shape change as it turns? Try separating what you **know about the shape** from what you **see**.
@@ -273,19 +273,27 @@ Consider the unfinished sentence **“At the bank, she…”** After a paragraph
 
 A **large language model**, or **LLM**, makes this dependence on context especially visible. A generative language model learns patterns from training material and uses them to construct text. Its output depends on both what training has encoded and the input available now. That combination offers a useful comparison with perception: incomplete information becomes meaningful through learned structure and present context.
 
-### How a generative model supports perception {.unlisted}
+### Learned structure and current context {.unlisted #how-a-generative-model-supports-perception}
 
 In predictive processing, a generative model represents relationships between hidden causes and the observations they could produce. Seeing a shadowy shape as a chair depends on expectations about how chairs look under different conditions. The model can generate expectations about signals arriving now as well as signals likely to arrive next. The nervous system uses the mismatch with incoming evidence to revise its interpretation or its learned expectations (Rao & Ballard, 1999; Friston, 2010).
 
 Attention participates in this loop. Searching for your keys makes some locations and features especially relevant; noticing a metallic glint can redirect the search. Expectations help guide attention, while attention affects which evidence has influence. Feldman and Friston (2010) model this influence through the estimated precision of sensory signals. On this account, attention and prediction interact continuously, rather than attention simply handing a finished input to a predictor.
 
-### What does a language model predict? {.unlisted}
+[]{#what-does-a-language-model-predict}
 
 In an **autoregressive** language model, generation proceeds by estimating probabilities for the next **token**: a unit of text that may be a word, part of a word, or punctuation. The model uses the available context, including earlier generated text, rather than only the immediately preceding word. A token is selected, appended, and becomes part of the context for the next step. Selection can involve sampling; the system need not always choose the most probable token (Vaswani et al., 2017; Brown et al., 2020).
 
 The model can continue a historical account, a fictional story, or a plan for tomorrow. The prediction task is simple to state, but performing it well across varied texts draws on complex dependencies. Brown et al. (2020), for example, demonstrated translation and question answering from instructions and examples supplied in context, with substantial differences in performance across tasks.
 
-### Changing the current interpretation and changing the model {.unlisted}
+[]{#images-and-videos-generation-is-broader-than-next-token-prediction}
+
+It is tempting to extend the token-by-token picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.
+
+The family of generative models extends beyond language and uses several generation procedures. **Diffusion models** can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).
+
+Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.
+
+### Learning and adapting to new evidence {.unlisted #changing-the-current-interpretation-and-changing-the-model}
 
 A **prompt** can supply instructions, examples, facts, and a conversation history. It plays a role analogous to contextual cues: it helps establish what the current task is and which responses fit. The model's learned parameters supply enduring structure; its temporary internal representations depend on the input being processed. During ordinary prompting, those representations change without retraining the parameters. This distinction underlies **in-context learning**: examples can alter how a task is performed without a training update to the model's weights (Brown et al., 2020).
 
@@ -295,7 +303,7 @@ This makes the comparison with AI more precise. Standard LLM use usually separat
 
 The word *weight* can obscure this distinction. A model's **parameters** encode learned relationships; the **weight given to evidence** concerns how strongly an observation should influence the current judgment. A knowledgeable person can give decisive weight to a clear observation that contradicts an expectation. Having learned more does not mechanically mean assigning less weight to new evidence.
 
-### Does experience make the mind less open to evidence? {.unlisted}
+[]{#does-experience-make-the-mind-less-open-to-evidence}
 
 Experience can make learning both easier and harder. A familiar pattern lets an expert recognize something a novice misses. The same expectations can make an unfamiliar pattern harder to discover. Lucas et al. (2014) found that four- and five-year-olds were more willing than adults to generalize an unusual causal rule: two objects had to work together to activate a machine. Adults more often carried over a familiar assumption that an individual object would suffice. The children's advantage concerned a particular kind of causal learning in which established expectations could mislead.
 
@@ -303,19 +311,11 @@ Later-life differences also depend on the task. In a changing prediction task, N
 
 There is therefore no single age-controlled dial that steadily turns down the influence of evidence. What matters is how reliable the present evidence is, how well established the relevant expectation is, and whether the environment has changed. For a learner of any age, the useful question is **“Does this observation reveal a temporary exception, or a relationship I need to relearn?”**
 
-### Guiding a process that usually runs outside awareness {.unlisted}
+[]{#guiding-a-process-that-usually-runs-outside-awareness}
 
-You experience the chair, not the calculations that made its outline recognizable. Much of the inference described by predictive processing happens without deliberate supervision. Conscious goals can nevertheless change the conditions under which it operates: you can switch on a light, inspect another angle, or ask someone what happened. Such actions supply evidence that an unchanged viewpoint would miss (Clark, 2013).
+Adapting to evidence does not require conscious access to every inference. You experience the chair, not the calculations that made its outline recognizable. Much of the inference described by predictive processing happens without deliberate supervision. Conscious goals can nevertheless change the conditions under which it operates: you can switch on a light, inspect another angle, or ask someone what happened. Such actions supply evidence that an unchanged viewpoint would miss (Clark, 2013).
 
 This opens a connection with reflective thinking. We can question a first interpretation and decide what to inspect next without gaining direct access to every process that produced it. [Chapter 8](08-fast-and-frugal-thinking.qmd#monitoring-and-guiding-thought) develops this capacity as **metacognition**, then examines how AI reasoning systems can perform some comparable checking functions.
-
-### Images and videos: generation is broader than next-token prediction {.unlisted}
-
-An autoregressive language model builds an output token by token. It is tempting to extend that picture to a painting assembled pixel by pixel or a film generated strictly frame by frame, but that would miss how other major generative systems work.
-
-The family of generative models extends beyond language and uses several generation procedures. **Diffusion models** can start from noise and repeatedly refine it toward a generated sample. Latent diffusion performs this process in a compressed representation of an image, with text or other inputs guiding the result (Rombach et al., 2022). Video diffusion can refine a whole group of frames together; groups can also be extended using earlier frames as context (Ho et al., 2022).
-
-Across these examples, learned patterns and supplied context constrain what gets generated. A convincing picture of a flooded street or video of a future city can help us imagine a possibility.
 
 ### Prompts as framing and priming {.unlisted #prompt-framing-and-priming}
 
@@ -329,15 +329,15 @@ The two influences can coexist. Calling a workplace disagreement “resistance t
 
 Other prompt effects have a more direct explanation. “Write three bullet points” specifies a format; examples can teach a task within context; new facts can warrant a new conclusion. A changed answer is therefore not enough to identify framing or priming. The question is **which feature of the prompt changed, and whether that feature should change the answer**.
 
-### Change the question—and then seek evidence {.unlisted}
+[]{#change-the-questionand-then-seek-evidence}
 
 Framing can also enter through assumptions built into a question. **“Why did my team resist a useful change?”** already assumes that the change was useful and that resistance is the problem. A more open inquiry would provide the observations, ask for competing explanations, and specify what evidence would distinguish them. Perhaps the team misunderstood the change; perhaps it recognized a cost the manager overlooked.
 
 Changing the frame gives us alternatives to test against evidence. [Chapter 42](42-data-driven-decision-making.qmd#ai-workbench) builds on this distinction: generative AI can help articulate options and questions, while predictions used for consequential choices need validation and the values guiding those choices need explicit human judgment.
 
-### Exercise: separate the frame from the preceding cue {.unlisted}
+[]{#exercise-separate-the-frame-from-the-preceding-cue}
 
-For a framing comparison, present the same fictional project results as successes or failures while keeping the available actions and evaluation question identical. For a separate priming comparison, keep that entire prompt fixed and vary a preceding, unrelated passage. Choose in advance what to compare: the recommended action, the explanation, or a grammatical pattern. Use fresh conversations with the same model and settings, vary the order in which you run the conditions, and repeat them to distinguish a consistent difference from ordinary output variation. Check whether either manipulation accidentally supplied new evidence or instructions. Which claims came from the project facts, and which were added? Name one external observation needed to evaluate the recommendation.
+**Try the comparison.** Present the same fictional project results as successes or failures while keeping the available actions and evaluation question identical. For a separate priming comparison, keep that entire prompt fixed and vary a preceding, unrelated passage. Choose in advance what to compare: the recommended action, the explanation, or a grammatical pattern. Use fresh conversations with the same model and settings, vary the order in which you run the conditions, and repeat them to distinguish a consistent difference from ordinary output variation. Check whether either manipulation accidentally supplied new evidence or instructions. Which claims came from the project facts, and which were added? Name one external observation needed to evaluate the recommendation.
 :::
 
 :::

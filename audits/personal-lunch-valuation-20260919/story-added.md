@@ -1,0 +1,11 @@
+[]{#personal-story-proper-lunch}
+
+::: {.callout-note .personal-example icon=false}
+## From my experience: what counts as a proper lunch?
+
+I was surprised by how quiet some Danish restaurants could be at lunchtime, even on weekends. In the Danish routines I encountered, dinner was often the occasion for a fuller meal or a restaurant visit, while an ordinary weekday lunch could be as simple as two pieces of rye bread and some carrots. In the Chinese settings familiar to me, lunch was more likely to mean a substantial hot meal.
+
+The contrast also drew my attention to the longer midday breaks and opportunities to nap that I associated with Chinese schools and workplaces. Food, bodily rhythms, and schedules can interact: a substantial lunch may add to sleepiness, while an afternoon dip in alertness can occur without a conventional lunch. Whether people respond to that sleepiness by napping also depends on the time a school or workplace makes available.[^ch06-lunch-alertness]
+
+For me, the comparison makes valuation concrete. What feels like a “proper lunch” depends partly on the meals we have learned to expect. The same cold meal can feel complete and convenient to one person and insufficient to another.
+:::

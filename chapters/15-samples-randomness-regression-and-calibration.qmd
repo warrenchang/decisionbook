@@ -29,7 +29,7 @@ A striking result becomes useful evidence when we compare it with what the under
 - Diagnose regression to the mean and distinguish an apparent causal pattern, including superstition, from evidence that an action changes the outcome.
 - Distinguish three forms of overconfidence, use an outside view to challenge the planning fallacy, and score forecasts for calibration and resolution.
 
-## Which sequence looks random?
+## Randomness and apparent patterns {#which-sequence-looks-random}
 
 Before explaining the branch’s recovery, consider a simpler problem: recognizing what chance can produce. A fair coin will be tossed six times. Rank these exact sequences from most to least likely:
 
@@ -146,13 +146,25 @@ A fixed-seed teaching simulation draws 50 observations from $z_1,\varepsilon\sim
 :::
 ::::
 
-### Superstition and the illusion of control {#superstition}
+## Superstition and the illusion of control {#superstition}
 
 A basketball player tosses chalk into the air before a game; a golfer wears red on Sunday. LeBron James’s chalk toss and Tiger Woods’s red shirt are familiar sporting rituals (NBA, 2009; PGA TOUR, 2024). In a humorous interview, Woods recalled winning in red, then unsuccessfully trying blue to challenge his mother’s belief that red was his “power color.” The sequence makes a memorable story, but different tournaments also bring different opponents, conditions, and performances.
 
 **Superstition** attributes influence to an action or sign without adequate evidence of a causal connection. A ritual alone does not establish such a belief: an athlete might use a familiar routine to prepare or concentrate.
 
-Skinner’s (1948) pigeon experiment made the apparent connection between action and reward strikingly visible. Food arrived at regular intervals regardless of what the birds did. Six of eight developed recognizable repeated movements, including circling and head motions. Skinner proposed that movements accidentally followed by food had been reinforced, sustaining responses that did not produce the reward.
+[]{#personal-story-superstition}
+
+::: {.callout-note .personal-example icon=false}
+## From my experience: a childhood warning that still follows me
+
+When I was a child, I was told not to let someone else's legs pass over my head: if that happened, I would never grow. The remedy was to jump ten times.
+
+Today, I no longer believe that warning. Yet when my daughter goes under my legs for fun or by accident, those childhood words return. I feel uneasy and am tempted to ask her to jump ten times. I can reject the rule intellectually while still feeling its pull.
+
+If I asked her to jump, I could pass on the very rule I no longer believe.
+:::
+
+Laboratory studies have also examined how repeated actions can emerge without a causal connection to reward. Skinner’s (1948) pigeon experiment made the apparent connection between action and reward strikingly visible. Food arrived at regular intervals regardless of what the birds did. Six of eight developed recognizable repeated movements, including circling and head motions. Skinner proposed that movements accidentally followed by food had been reinforced, sustaining responses that did not produce the reward.
 
 Staddon and Simmelhag’s (1971) later work found activities organized around the timing of food delivery, challenging the simple account that arbitrary movements had been strengthened by coincidence. Further experiments pointed to species-typical feeding patterns and the arrangement of the feeding environment as influences on the repeated behavior (Timberlake & Lucas, 1985).
 
@@ -195,7 +207,7 @@ Afterward, examine both coverage and width. Repeatedly missing many intervals su
 
 The familiar Dunning–Kruger pattern raises a further measurement question: what explains the relationship between performance and errors in self-assessment? Kruger and Dunning (1999) reported larger self-assessment errors among lower performers in several tasks and proposed that some skills needed for good performance also help people recognize good performance. Measurement error, regression to the mean, scale boundaries, task difficulty, and general self-enhancement can produce part of the pattern; later work suggests that any distinctive metacognitive component may be smaller and more task-specific than the popular slogan implies (Gignac & Zajenkowski, 2020). Measure performance and confidence separately. Do not diagnose a person's metacognition from one rank comparison.
 
-### Planning fallacy: the plan needs an outside view {#planning-fallacy-and-outside-view}
+[]{#planning-fallacy-and-outside-view}
 
 The **planning fallacy** illustrates how optimistic forecasts can affect a project: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman & Tversky, 1979). Underestimating the time a task needs can express overestimation of what one can accomplish in that time; an unduly narrow completion window also expresses overprecision. Planning fallacy is therefore an application, rather than a fourth form alongside those in @tbl-confidence-calibration. The **outside view** begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman & Lovallo, 1993; Lovallo & Kahneman, 2003).
 
@@ -250,7 +262,7 @@ The dated entries in @tbl-probability-forecast-ledger matter because memory roun
 
 The same discipline is needed when AI supplies the forecast. [Chapter 42](42-data-driven-decision-making.qmd#test-the-whole-decision) carries calibration and sampling into the evaluation of machine predictions: reserve observations that were not used to fit or tune the model, make the test resemble its intended use, and examine whether its probabilities support better actions. This is how the book's treatment of uncertainty helps distinguish a promising demonstration from evidence that a decision process has improved.
 
-## From a project story to a forecast system
+### Combine causal forecasts with the outside view {#from-a-project-story-to-a-forecast-system}
 
 Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.
 

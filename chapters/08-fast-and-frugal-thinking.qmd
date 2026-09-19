@@ -131,19 +131,19 @@ Predictive processing and dual-process theory address different aspects of cogni
 
 An AI system can also give an immediate answer or spend more computation developing and checking a solution. This makes reasoning modes a useful comparison with deliberate thought. To understand the comparison, follow what changes between the first candidate answer and the final one.
 
-### Intermediate steps become input for later steps {.unlisted}
+[]{#intermediate-steps-become-input-for-later-steps}
 
 An autoregressive LLM continues to generate tokens during an extended reasoning sequence. Those tokens can state subproblems, carry intermediate results, identify contradictions, or propose another approach. Because earlier generated text becomes context for later generation, the system can use its own intermediate work to shape its next step. **Chain-of-thought prompting** elicits such sequences through examples of worked reasoning; Wei et al. (2022) demonstrated improvements on several reasoning benchmarks.
 
 Reasoning behavior can also be learned during training. In the DeepSeek-R1 research, reinforcement learning rewarded successful solutions to verifiable problems and produced patterns of checking and revising intermediate work (Guo et al., 2025). Training changes parameters; using the resulting reasoning strategy on a new problem need not do so. More computation at answer time can improve a solution while the underlying parameters remain fixed.
 
-### Some systems explicitly search among alternatives {.unlisted}
+[]{#some-systems-explicitly-search-among-alternatives}
 
 The idea of a model “prompting itself” is especially concrete in systems with a search procedure around the LLM. **Tree of Thoughts**, for example, generates candidate intermediate steps, evaluates alternatives, and searches forward or backtracks among them (Yao et al., 2023). Here, a control procedure organizes repeated model calls. Other reasoning systems develop a single extended sequence; a reasoning label alone does not establish that a separate controller compares multiple branches.
 
 The functional resemblance to metacognition lies in treating an intermediate answer as something to examine and potentially revise. It does not establish human-like awareness or make the AI architecture an implementation of the psychological System 1/System 2 distinction.
 
-### A useful check needs a criterion for being wrong {.unlisted}
+[]{#a-useful-check-needs-a-criterion-for-being-wrong}
 
 Consider a model that proposes ten cents for the ball. Asking it to verify both the total and the price difference gives the next reasoning step a concrete test. Asking only “Are you sure?” leaves it to decide what counts as a reason to change. Huang et al. (2024) found that, in the systems and tasks they tested, attempts at self-correction without external feedback sometimes reduced reasoning accuracy. Trained checking strategies can help, but the opportunity to reconsider does not itself guarantee improvement.
 

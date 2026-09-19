@@ -1,0 +1,9 @@
+[]{#personal-story-hotel-numbers}
+
+::: {.callout-note .personal-example icon=false}
+## From my experience: the numbers hotels leave out
+
+During my travels, I have noticed some hotels whose floor numbering skips 4, 13, or 14. Some also avoid room numbers containing 4 or 13.
+
+A room number can carry associations learned long before a journey. A hotel may accommodate guests' concerns about unlucky numbers through its numbering scheme, even if its staff do not share those beliefs. Cultural meanings can thus become part of the shared environment people encounter.
+:::
