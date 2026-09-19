@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1026**
+Unique references in the master union: **1028**
 
-Chapter reference blocks: **1046**
+Chapter reference blocks: **1048**
 
 Unresolved author–year citations: **0**
 
@@ -24,7 +24,7 @@ Unresolved author–year citations: **0**
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 18 | 0 |
 | Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 15 | 0 |
 | Framing | 15 | 0 |
-| Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 27 | 0 |
+| Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 29 | 0 |
 | Base Rates and Updating | 7 | 0 |
 | Randomness and Overconfidence {#samples-randomness-and-calibration} | 24 | 0 |
 | Risky Decision Making | 16 | 0 |
