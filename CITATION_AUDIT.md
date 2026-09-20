@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1038**
+Unique references in the master union: **1041**
 
-Chapter reference blocks: **1063**
+Chapter reference blocks: **1066**
 
 Unresolved author–year citations: **0**
 
@@ -33,7 +33,7 @@ Unresolved author–year citations: **0**
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 33 | 0 |
 | Habits, Wanting, and Self-Control | 45 | 0 |
-| Deciding for a Better Life | 20 | 0 |
+| Deciding for a Better Life | 23 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
