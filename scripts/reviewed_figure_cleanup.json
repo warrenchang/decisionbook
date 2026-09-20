@@ -1341,8 +1341,8 @@
     },
     "habit-formation-curve.svg": {
       "generator": "build_reading_figures.py",
-      "input_sha256": "629ebe5ed84d747137c522605ec6d5a95bcf4acf6206dd92271af1ca521ae241",
-      "output_sha256": "eaada0a9143c612371d053f85669889471903fcf314356c0aa7b50075a8d81f6",
+      "input_sha256": "8a23757ac67ab48827d62820da80532e6765d0e9ad33808bd9292d8cf40cfaaa",
+      "output_sha256": "b5605f389d391dadcf83b04459a0a0b4ad9ec1a78b296d058924ee08fd02bc0e",
       "source_viewBox": "0 0 760 615",
       "reviewed_viewBox": "0 165 760 390",
       "removed_texts": [
@@ -1351,37 +1351,46 @@
         "Illustrative shape of automaticity",
         "Modeled days to 95% of plateau: 18–254 (median 66)"
       ],
-      "review_notes": "Retain the schematic curve, axes, plateau, and one line with modeled days to 95% of the plateau, range 18–254 and median 66. Attribution remains in the caption.",
+      "review_notes": "Dashed habit line marks 95% of the plateau. The schematic exponential curve crosses it and continues toward its asymptote. Study estimates and attribution remain in the chapter text.",
       "information_review": {
         "status": "REVISED",
-        "purpose": "Distinguish a schematic increase in automaticity from modeled formation times.",
-        "rationale": "Replace the study-summary box with one line; preserve the 95-percent criterion, range, median, and caption citation.",
+        "purpose": "Show diminishing gains in automaticity and the 95-percent criterion used for modeled formation times.",
+        "rationale": "Place the dashed line at 95% of the plateau and label it Habit line; keep the curve schematic and the caption concise.",
         "changed_labels": [
           {
             "before": "What Lally et al. (2010) estimated / Modeled days to reach 95% of the plateau / 18–254 Range / 66 Median",
             "after": "Modeled days to 95% of plateau: 18–254 (median 66)",
             "attributes": {}
+          },
+          {
+            "before": "Plateau",
+            "after": "Habit line",
+            "attributes": {
+              "line_y": 229.9,
+              "plateau_y": 217,
+              "baseline_y": 475
+            }
           }
         ]
       },
       "patches": [
         {
           "start": 0,
-          "end": 456,
-          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"615\" viewBox=\"0 0 760 615\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\">\n<title id=\"title\">Habit formation has no fixed deadline</title><desc id=\"desc\">A schematic automaticity curve approaches a plateau. A single line below reports modeled days to reach 95 percent of the plateau: 18 to 254, median 66. These are study estimates, not a guarantee for an individual habit.</desc>\n",
-          "after": "<?xml version='1.0' encoding='UTF-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"390\" viewBox=\"0 165 760 390\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\" data-text-review=\"2026-09-14\">\n<title id=\"title\">Habit formation has no fixed deadline</title><desc id=\"desc\">A schematic automaticity curve rises with diminishing gains and approaches a plateau. The caption reports study estimates for the time to reach 95 percent of the plateau, which are not a guarantee for an individual habit.</desc>\n"
+          "end": 150,
+          "before": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"615\" viewBox=\"0 0 760 615\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\">\n",
+          "after": "<?xml version='1.0' encoding='UTF-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"760\" height=\"390\" viewBox=\"0 165 760 390\" role=\"img\" aria-labelledby=\"title desc\" data-layout=\"compact\" data-text-review=\"2026-09-20\">\n"
         },
         {
-          "start": 1143,
-          "end": 1598,
+          "start": 1076,
+          "end": 1531,
           "before": "</defs><rect width=\"760\" height=\"615\" fill=\"white\"/>\n<text x=\"380\" y=\"56\" text-anchor=\"middle\" font-size=\"38\" font-weight=\"normal\" style=\"fill:#183047\" class=\"title\"><tspan x=\"380\" dy=\"0\">Habit formation has</tspan><tspan x=\"380\" dy=\"47.12\">no fixed deadline</tspan></text>\n<text x=\"380\" y=\"156\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Illustrative shape of automaticity</tspan></text>\n",
-          "after": "</defs><rect width=\"760\" height=\"490\" fill=\"white\" x=\"0\" y=\"125\"/>\n"
+          "after": "</defs><rect width=\"760\" height=\"390\" fill=\"white\" x=\"0\" y=\"165\"/>\n"
         },
         {
-          "start": 2283,
-          "end": 2487,
-          "before": "<text x=\"380\" y=\"580\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Modeled days to 95% of plateau: 18–254 (median 66)</tspan></text>\n</svg>\n",
-          "after": "</svg>"
+          "start": 4080,
+          "end": 4277,
+          "before": "<text x=\"380\" y=\"580\" text-anchor=\"middle\" font-size=\"28\" font-weight=\"normal\" style=\"fill:#183047\" class=\"\"><tspan x=\"380\" dy=\"0\">Modeled days to 95% of plateau: 18–254 (median 66)</tspan></text>\n",
+          "after": ""
         }
       ],
       "text_review_20260914": {

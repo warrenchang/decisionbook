@@ -104,7 +104,7 @@ REQUIRED_CONTENT = [
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
     "Recover from a lapse without self-blame",
-    "median of 66 days",
+    "The median modeled time to reach 95% of the plateau was 66 days",
     "Index of Concepts",
 ]
 

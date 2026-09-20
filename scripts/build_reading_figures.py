@@ -6,6 +6,7 @@ This file owns only the SVGs listed in BUILDERS below; render their PNG
 companions with render_svg_png_fallbacks.cjs after changes.
 """
 from html import escape
+from math import exp
 from pathlib import Path
 from reviewed_figure_cleanup import clean_svg
 
@@ -79,12 +80,18 @@ def urge_observation():
 
 
 def habit_formation():
-    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve approaches a plateau. A single line below reports modeled days to reach 95 percent of the plateau: 18 to 254, median 66. These are study estimates, not a guarantee for an individual habit.', 615)
+    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve rises with diminishing gains, crosses a dashed habit line at 95 percent of the plateau, and continues toward the plateau.', 615)
     f.text(380,56,['Habit formation has','no fixed deadline'],css='title')
     f.text(380,156,'Illustrative shape of automaticity')
-    f.items.append(f'<path d="M115 204 V475 H692" fill="none" stroke="{INK}" stroke-width="2.5"/><path d="M127 454 C165 250 271 239 675 229" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linecap="round"/><path d="M127 217 H681" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/>')
+    baseline, plateau, initial = 475, 217, 454
+    habit_line = baseline - 0.95 * (baseline - plateau)
+    # Illustrative exponential approach to the asymptote; no empirical time scale.
+    points = [(127 + 548 * i / 120, plateau + (initial - plateau) * exp(-6 * i / 120))
+              for i in range(121)]
+    curve = 'M' + ' L'.join(f'{x:.2f} {y:.2f}' for x, y in points)
+    f.items.append(f'<path d="M115 204 V475 H692" fill="none" stroke="{INK}" stroke-width="2.5"/><path id="habit-line" d="M127 {habit_line:g} H681" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/><path id="automaticity-curve" d="{curve}" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>')
     f.text(380,519,'Time');f.items.append('<text x="52" y="353" font-size="28" text-anchor="middle" transform="rotate(-90 52 353)">Automaticity</text>')
-    f.text(675,201,'Plateau',28,anchor='end')
+    f.text(140,207,'Habit line',28,anchor='start')
     f.text(380,580,'Modeled days to 95% of plateau: 18–254 (median 66)')
     f.save('habit-formation-curve')
 

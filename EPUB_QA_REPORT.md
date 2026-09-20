@@ -104,7 +104,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
 | Required content: Recover from a lapse without self-blame | **PASS** |
-| Required content: median of 66 days | **PASS** |
+| Required content: The median modeled time to reach 95% of the plateau was 66 days | **PASS** |
 | Required content: Index of Concepts | **PASS** |
 | Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |
 | Removed reader text: Start Here | **PASS** |
