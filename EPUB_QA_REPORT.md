@@ -57,7 +57,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every packaged content image has nonempty alternative text | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
-| Required content: How Decisions Should Be Made—and How They Actually Are | **PASS** |
+| Required content: Normative, Descriptive, and Prescriptive | **PASS** |
 | Required content: Building a Better Decision | **PASS** |
 | Required content: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
 | Required content: Rational Choice and Decision Analysis | **PASS** |
@@ -103,7 +103,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: We should pay attention to our decisions while they are still in the making. | **PASS** |
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
-| Required content: A lapse does not erase learning | **PASS** |
+| Required content: Recover from a lapse without self-blame | **PASS** |
 | Required content: median of 66 days | **PASS** |
 | Required content: Index of Concepts | **PASS** |
 | Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |

@@ -57,7 +57,7 @@ EXPECTED_APPENDICES = [
 ]
 
 REQUIRED_CONTENT = [
-    "How Decisions Should Be Made—and How They Actually Are",
+    "Normative, Descriptive, and Prescriptive",
     "Building a Better Decision",
     "Alternatives, Opportunity Cost, Information, and Robustness",
     "Rational Choice and Decision Analysis",
@@ -103,7 +103,7 @@ REQUIRED_CONTENT = [
     "We should pay attention to our decisions while they are still in the making.",
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
-    "A lapse does not erase learning",
+    "Recover from a lapse without self-blame",
     "median of 66 days",
     "Index of Concepts",
 ]

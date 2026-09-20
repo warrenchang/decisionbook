@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1044**
+Unique references in the master union: **1049**
 
-Chapter reference blocks: **1071**
+Chapter reference blocks: **1076**
 
 Unresolved author–year citations: **0**
 
@@ -12,13 +12,13 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
+| Normative, Descriptive, and Prescriptive | 17 | 0 |
 | Building a Better Decision | 12 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
-| The Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
+| Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 60 | 0 |
-| The Narrator After Choice | 19 | 0 |
+| Narrator After Choice | 19 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 37 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 18 | 0 |
@@ -32,7 +32,7 @@ Unresolved author–year citations: **0**
 | Decisions From Experience | 19 | 0 |
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 33 | 0 |
-| Habits, Wanting, and Self-Control | 45 | 0 |
+| Habits, Wanting, and Self-Control | 50 | 0 |
 | Deciding for a Better Life | 25 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 18 | 0 |
