@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1049**
+Unique references in the master union: **1054**
 
-Chapter reference blocks: **1076**
+Chapter reference blocks: **1081**
 
 Unresolved author–year citations: **0**
 
@@ -32,7 +32,7 @@ Unresolved author–year citations: **0**
 | Decisions From Experience | 19 | 0 |
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 33 | 0 |
-| Habits, Wanting, and Self-Control | 50 | 0 |
+| Habits, Wanting, and Self-Control | 51 | 0 |
 | Deciding for a Better Life | 25 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 18 | 0 |
@@ -50,7 +50,7 @@ Unresolved author–year citations: **0**
 | Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 13 | 0 |
 | Designing Better Agreements | 17 | 0 |
-| Behavior Design | 34 | 0 |
+| Behavior Design | 38 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
 | Deciding With Data and AI {#data-driven-decision-making} | 26 | 0 |
