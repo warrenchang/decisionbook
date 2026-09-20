@@ -6,7 +6,7 @@ This file owns only the SVGs listed in BUILDERS below; render their PNG
 companions with render_svg_png_fallbacks.cjs after changes.
 """
 from html import escape
-from math import exp
+from math import exp, log
 from pathlib import Path
 from reviewed_figure_cleanup import clean_svg
 
@@ -15,8 +15,8 @@ INK, BLUE, GREEN, WARM = '#183047', '#25678f', '#2b7a78', '#b95f2d'
 
 
 class Figure:
-    def __init__(self, title, description, height):
-        self.items = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="{height}" viewBox="0 0 760 {height}" role="img" aria-labelledby="title desc" data-layout="compact">
+    def __init__(self, title, description, height, width=760):
+        self.items = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc" data-layout="compact">
 <title id="title">{escape(title)}</title><desc id="desc">{escape(description)}</desc>
 <defs><style>
 text {{font-family:Arial,Helvetica,sans-serif;fill:{INK}}}
@@ -24,7 +24,7 @@ text {{font-family:Arial,Helvetica,sans-serif;fill:{INK}}}
 </style>''']
         for name, color in [('blue', BLUE), ('green', GREEN), ('warm', WARM)]:
             self.items.append(f'<marker id="{name}" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="{color}"/></marker>')
-        self.items.append(f'</defs><rect width="760" height="{height}" fill="white"/>')
+        self.items.append(f'</defs><rect width="{width}" height="{height}" fill="white"/>')
 
     def text(self, x, y, lines, size=28, weight='normal', color=INK, anchor='middle', css=''):
         if css == 'title': size = 38
@@ -80,19 +80,22 @@ def urge_observation():
 
 
 def habit_formation():
-    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve rises with diminishing gains, crosses a dashed habit line at 95 percent of the plateau, and continues toward the plateau.', 615)
-    f.text(380,56,['Habit formation has','no fixed deadline'],css='title')
-    f.text(380,156,'Illustrative shape of automaticity')
-    baseline, plateau, initial = 475, 217, 454
+    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve crosses a horizontal dashed habit line at 95 percent of the plateau. A vertical dotted line connects that crossing to the time axis, marking the time to develop a habit by this criterion.', 560, width=560)
+    baseline, plateau = 465, 135
+    # Preserve the prior curve's starting proportion while reflowing the plot.
+    initial = baseline - (21 / 258) * (baseline - plateau)
     habit_line = baseline - 0.95 * (baseline - plateau)
+    habit_time = log((initial - plateau) / (habit_line - plateau)) / 6
+    habit_x = 105 + 400 * habit_time
     # Illustrative exponential approach to the asymptote; no empirical time scale.
-    points = [(127 + 548 * i / 120, plateau + (initial - plateau) * exp(-6 * i / 120))
-              for i in range(121)]
+    times = sorted([i / 120 for i in range(121)] + [habit_time])
+    points = [(105 + 400 * t, plateau + (initial - plateau) * exp(-6 * t))
+              for t in times]
     curve = 'M' + ' L'.join(f'{x:.2f} {y:.2f}' for x, y in points)
-    f.items.append(f'<path d="M115 204 V475 H692" fill="none" stroke="{INK}" stroke-width="2.5"/><path id="habit-line" d="M127 {habit_line:g} H681" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/><path id="automaticity-curve" d="{curve}" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>')
-    f.text(380,519,'Time');f.items.append('<text x="52" y="353" font-size="28" text-anchor="middle" transform="rotate(-90 52 353)">Automaticity</text>')
-    f.text(140,207,'Habit line',28,anchor='start')
-    f.text(380,580,'Modeled days to 95% of plateau: 18–254 (median 66)')
+    f.items.append(f'<path d="M95 55 V465 H515" fill="none" stroke="{INK}" stroke-width="2"/><path id="habit-line" d="M105 {habit_line:g} H510" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/><path id="habit-time" d="M{habit_x:.2f} {habit_line:g} V{baseline}" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/><path id="automaticity-curve" d="{curve}" fill="none" stroke="{BLUE}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="{habit_x:.2f}" cy="{habit_line:g}" r="4" fill="{BLUE}"/>')
+    f.text(510,503,'Time',24,anchor='end');f.items.append('<text x="34" y="270" font-size="24" text-anchor="middle" transform="rotate(-90 34 270)">Automaticity</text>')
+    f.text(510,184,'Habit line',24,anchor='end')
+    f.text(round(habit_x,2),496,['Time to develop','a habit'],22)
     f.save('habit-formation-curve')
 
 
