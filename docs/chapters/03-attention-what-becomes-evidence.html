@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -667,7 +638,7 @@ window.Quarto = {
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Reading an email, remembering an earlier meeting, and planning a reply place different demands on the brain. Neuroscience describes several large-scale networks involved in these shifts. Dorsal attention regions contribute to goal-directed selection, while a ventral system helps reorient toward relevant unexpected events (Corbetta &amp; Shulman, 2002). The <strong>default mode network</strong> participates in internally directed thought, including autobiographical remembering and imagining. <strong>Frontoparietal control networks</strong>, often discussed under the heading <em>central executive network</em>, help organize cognition around a task.</p>
-<p>These are not isolated switches. In an fMRI planning study, default-network activity coupled with frontoparietal control activity during autobiographical planning (Spreng et al., 2010). Internally directed thought can therefore serve a goal. The <strong>salience network</strong> is implicated in detecting consequential internal and external signals; one influential model proposes that it helps coordinate changes between other networks (Menon &amp; Uddin, 2010).</p>
+<p>These networks operate within an already active brain with substantial resting energy demands; taking on a task changes the distribution of activity within that system (Attwell &amp; Laughlin, 2001; Raichle &amp; Gusnard, 2002). They also cooperate: in an fMRI planning study, default-network activity coupled with frontoparietal control activity during autobiographical planning (Spreng et al., 2010). Internally directed thought can therefore serve a goal. The <strong>salience network</strong> is implicated in detecting consequential internal and external signals; one influential model proposes that it helps coordinate changes between other networks (Menon &amp; Uddin, 2010).</p>
 <p>Network names and boundaries vary across research methods. They do not map one-to-one onto the book’s decision functions. The useful lesson is that focusing, remembering, monitoring the body, and planning require coordination. <a href="../chapters/06-valuation-how-options-become-worth-choosing.html#interoception-and-allostasis">Chapter 6</a> connects bodily signals to valuation.</p>
 </div>
 </div>
@@ -690,14 +661,12 @@ window.Quarto = {
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Zheng and Meister (2025) compare estimates of sensory acquisition on the order of <span class="math inline">\(10^9\)</span> bits per second with deliberate behavioral throughput near 10 bits per second across selected tasks. This contrast raises a question about how rich sensory signals support much slower observable responses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p><span id="fig-attention-bottleneck"></span></p>
-<p>The brain has substantial resting energy demands; tasks redistribute activity within this already active system (Attwell &amp; Laughlin, 2001; Raichle &amp; Gusnard, 2002).</p>
+<p>Our senses take in far more information than we can express through deliberate responses. Zheng and Meister (2025) illustrate this contrast by comparing estimates of sensory acquisition near one billion bits per second with behavioral throughput near 10 bits per second in selected tasks, including typing and puzzle solving.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Their comparison highlights a question central to attention: how does the brain select the information needed for the task at hand from such rich input?</p>
 </div>
 </div>
 </div>
-<p>The classroom provides a more direct test of divided demand.</p>
-<p>Students who divide attention between class and digital distractions often learn less. Junco and Cotten (2012) found that multitasking with technology was associated with poorer academic performance. Sana, Weston, and Cepeda (2013) found that laptop multitasking harmed not only the multitasker’s learning but also the learning of nearby students who could see the screen. Gingerich and Lineweaver (2014) experimentally varied classroom texting and found poorer comprehension under texting demands.</p>
+<p>In classrooms, digital distractions can undermine learning. Junco and Cotten (2012) found that multitasking with technology was associated with poorer academic performance. Sana, Weston, and Cepeda (2013) found that laptop multitasking harmed not only the multitasker’s learning but also the learning of nearby students who could see the screen. Gingerich and Lineweaver (2014) experimentally varied classroom texting and found poorer comprehension under texting demands.</p>
 <p>Drivers using phones suffer similar limits. Strayer and Johnston (2001) showed that cell phone conversations can impair driving performance, and Strayer, Drews, and Johnston (2003) found that hands-free conversation does not eliminate the attentional cost. The problem is not merely holding a device. It is the diversion of attention from the driving environment.</p>
 <p>At the team level, another attention problem appears when the discussion has a narrow target. A meeting devoted to quarterly revenue may leave burnout or customer confusion unexamined even when the relevant reports are available.</p>
 </section>

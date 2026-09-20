@@ -4,7 +4,7 @@ Canonical chapters: **42**
 
 Unique references in the master union: **1038**
 
-Chapter reference blocks: **1061**
+Chapter reference blocks: **1063**
 
 Unresolved author–year citations: **0**
 
@@ -15,7 +15,7 @@ Unresolved author–year citations: **0**
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
 | Building a Better Decision | 9 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
-| The Predictive Mind {#the-predictive-mind-perception-is-inference} | 46 | 0 |
+| The Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 60 | 0 |
 | The Narrator After Choice | 19 | 0 |

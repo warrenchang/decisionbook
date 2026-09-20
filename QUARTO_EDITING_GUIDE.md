@@ -2,6 +2,34 @@
 
 The repository is now a Quarto book project. The `.qmd` files are the canonical source; `docs/` is generated output. Do not routinely edit generated HTML files.
 
+## Book-specific presentation requirements
+
+The following requirements apply to *Decision in the Making*. They are project conventions, not general writing-style rules.
+
+### Personal stories and cultural examples
+
+- Write the author's experiences in first person in consistently labeled, normally expanded note boxes headed “From my experience: …”. Prefer “personal story” or “personal experience” to the vague “personal illustration.” Place the story beside the mechanism it helps the reader understand.
+- Preserve supplied events, setting, uncertainty, and sequence while polishing the language. Do not invent dialogue, motives, reactions, actions, or outcomes. Distinguish a response the author gave at the time from what they now think they could have said; identify hypothetical alternatives explicitly.
+- End with a short implication earned by the episode, without retelling its lesson in several forms. Use the story to illustrate a concept, not to establish a scientific or population-level claim.
+- Scope cultural observations to the people and settings described. One colleague's reaction is not a national trait; a restaurant observation is not a national frequency estimate. Separate observations from proposed explanations, especially when connecting food, sleep, institutions, and behavior.
+- When a personal story spans topics, give it one developed home and cross-reference it elsewhere. Do not repeat the full anecdote to populate several chapters.
+
+Use the existing Quarto style. Put an anchor before a new callout when it needs a link; assigning the ID directly to the callout can duplicate it in the EPUB wrapper:
+
+```markdown
+[]{#personal-story-short-name}
+
+::: {.callout-note .personal-example icon=false}
+## From my experience: a descriptive title
+
+The author's story and its implication.
+:::
+```
+
+### Supplementary mathematics
+
+- Minimize mathematics in the main reading path. Explain the intuition and decision consequence in ordinary language; put derivations and substantial formal analysis in a clearly titled, foldable “Mathematical analysis” box or an appropriate appendix. Keep simple quantities when they help, and spell out expressions such as “one billion” when notation adds no value.
+
 ## Install
 
 1. Install Quarto from <https://quarto.org/docs/download/>.
