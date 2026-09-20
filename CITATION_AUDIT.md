@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1041**
+Unique references in the master union: **1044**
 
-Chapter reference blocks: **1066**
+Chapter reference blocks: **1071**
 
 Unresolved author–year citations: **0**
 
@@ -13,7 +13,7 @@ Unresolved author–year citations: **0**
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
 | How Decisions Should Be Made—and How They Actually Are | 17 | 0 |
-| Building a Better Decision | 9 | 0 |
+| Building a Better Decision | 12 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | The Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
@@ -33,7 +33,7 @@ Unresolved author–year citations: **0**
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 33 | 0 |
 | Habits, Wanting, and Self-Control | 45 | 0 |
-| Deciding for a Better Life | 23 | 0 |
+| Deciding for a Better Life | 25 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
