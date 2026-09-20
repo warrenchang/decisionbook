@@ -80,7 +80,7 @@ def urge_observation():
 
 
 def habit_formation():
-    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve crosses a horizontal dashed habit line at 95 percent of the plateau. A vertical dotted line connects that crossing to the time axis, marking the time to develop a habit by this criterion.', 560, width=560)
+    f=Figure('Habit formation has no fixed deadline', 'A schematic automaticity curve crosses a horizontal dashed habit line at 95 percent of the plateau. A vertical dotted line connects that crossing to the time axis.', 560, width=560)
     baseline, plateau = 465, 135
     # Preserve the prior curve's starting proportion while reflowing the plot.
     initial = baseline - (21 / 258) * (baseline - plateau)
@@ -93,9 +93,8 @@ def habit_formation():
               for t in times]
     curve = 'M' + ' L'.join(f'{x:.2f} {y:.2f}' for x, y in points)
     f.items.append(f'<path d="M95 55 V465 H515" fill="none" stroke="{INK}" stroke-width="2"/><path id="habit-line" d="M105 {habit_line:g} H510" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="7 6"/><path id="habit-time" d="M{habit_x:.2f} {habit_line:g} V{baseline}" fill="none" stroke="#607080" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/><path id="automaticity-curve" d="{curve}" fill="none" stroke="{BLUE}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="{habit_x:.2f}" cy="{habit_line:g}" r="4" fill="{BLUE}"/>')
-    f.text(510,503,'Time',24,anchor='end');f.items.append('<text x="34" y="270" font-size="24" text-anchor="middle" transform="rotate(-90 34 270)">Automaticity</text>')
+    f.text(305,515,'Time',24);f.items.append('<text x="34" y="270" font-size="24" text-anchor="middle" transform="rotate(-90 34 270)">Automaticity</text>')
     f.text(510,184,'Habit line',24,anchor='end')
-    f.text(round(habit_x,2),496,['Time to develop','a habit'],22)
     f.save('habit-formation-curve')
 
 
