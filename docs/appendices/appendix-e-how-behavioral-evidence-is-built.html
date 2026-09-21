@@ -1138,6 +1138,25 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 </ul>
 <p>Preregistration time-stamps decisions. Deviations can be scientifically necessary. Report what changed, when, why, and whether the change used outcome information.</p>
 <p>Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.</p>
+<p><span id="discovering-who-benefits"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: discovering who benefits
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A randomized student-outreach study may show a modest average effect while leaving open whether some students benefit much more than others. Searching many possible groups can suggest useful answers, but the group with the largest estimated benefit may partly owe that distinction to chance. Using the same observations to discover the group and report its effect can exaggerate the result.</p>
+<p>Athey and Imbens (2016) develop an <strong>honest estimation</strong> approach that separates those jobs. One sample is used to construct a tree that divides participants into groups defined by observed characteristics. A separate sample is then used to estimate the treatment effect within each group. For the outreach example, the analyst would fix the group definitions before examining treatment-control differences in the estimation sample. This separation helps prevent a favorable fluctuation used to select a group from also determining its reported benefit.</p>
+<p>The method estimates group-average effects; it does not reveal the unobserved causal effect for each individual. Splitting the data also leaves fewer observations for each job and can reduce precision. Valid inference still requires an appropriate causal design, adequate observations within groups, and the method’s assumptions. The authors evaluate their approach through simulations; it is a method for investigating differences, not evidence that outreach works. <a href="../chapters/42-data-driven-decision-making.html#risk-is-not-treatment-benefit">Chapter 42</a> explains why allocating outreach requires estimates of intervention benefit as well as baseline risk.</p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="report-reproduce-and-extend" class="level2">
@@ -1389,7 +1408,7 @@ Table&nbsp;D.7: Planned design for the simulated reminder study
 <p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.7</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
 <div id="math-reminder-simulation">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1398,7 +1417,7 @@ Table&nbsp;D.7: Planned design for the simulated reminder study
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <pre class="python"><code>import math
 import random
@@ -1467,6 +1486,9 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
 <h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
 <div class="reference">
 <p>Angrist, J. D., Imbens, G. W., &amp; Rubin, D. B. (1996). Identification of causal effects using instrumental variables. <em>Journal of the American Statistical Association, 91</em>(434), 444–455.</p>
+</div>
+<div class="reference">
+<p>Athey, S., &amp; Imbens, G. (2016). Recursive partitioning for heterogeneous causal effects. <em>Proceedings of the National Academy of Sciences, 113</em>(27), 7353–7360. https://doi.org/10.1073/pnas.1510489113</p>
 </div>
 <div class="reference">
 <p>Bruhn, M., &amp; McKenzie, D. (2009). In pursuit of balance: Randomization in practice in development field experiments. <em>American Economic Journal: Applied Economics, 1</em>(4), 200–232.</p>

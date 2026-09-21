@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1066**
+Unique references in the master union: **1069**
 
-Chapter reference blocks: **1093**
+Chapter reference blocks: **1095**
 
 Unresolved author–year citations: **0**
 
@@ -16,7 +16,7 @@ Unresolved author–year citations: **0**
 | Building a Better Decision | 12 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
-| Expectations {#expectations-when-predictions-become-causes} | 33 | 0 |
+| Expectations {#expectations-when-predictions-become-causes} | 34 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 60 | 0 |
 | Narrator After Choice | 19 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 37 | 0 |
@@ -26,7 +26,7 @@ Unresolved author–year citations: **0**
 | Framing | 16 | 0 |
 | Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 36 | 0 |
 | Base Rates and Updating | 7 | 0 |
-| Randomness and Overconfidence {#samples-randomness-and-calibration} | 24 | 0 |
+| Randomness and Overconfidence {#samples-randomness-and-calibration} | 25 | 0 |
 | Risky Decision Making | 16 | 0 |
 | Prospect Theory | 14 | 0 |
 | Decisions From Experience | 19 | 0 |
@@ -38,7 +38,7 @@ Unresolved author–year citations: **0**
 | Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
 | Social Norms and Conformity | 30 | 0 |
-| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 69 | 0 |
+| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 67 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Culture and Identity | 30 | 0 |
 | Persuasion | 28 | 0 |
@@ -53,7 +53,7 @@ Unresolved author–year citations: **0**
 | Behavior Design | 38 | 0 |
 | Choice Architecture | 29 | 0 |
 | Decision Hygiene | 32 | 0 |
-| Deciding With Data and AI {#data-driven-decision-making} | 26 | 0 |
+| Deciding With Data and AI {#data-driven-decision-making} | 28 | 0 |
 
 ## Unresolved citation strings
 

@@ -39,7 +39,7 @@ Prices often incorporate news before an investor can trade on it. That makes obv
 
 []{#fast-price-discovery-is-possible}
 
-The first question is empirical: what happens to prices when news arrives? A useful example has an identifiable surprise, a reliable release time, and prices observed closely enough to show the response. Three cases distinguish a scheduled announcement, information arriving throughout a night, and dispersed clues about an unexpected disaster.
+The first question is empirical: what happens to prices when news arrives? A useful example has an identifiable surprise, a reliable release time, and prices observed closely enough to show the response. Three cases distinguish a scheduled announcement, a shock whose meaning becomes clearer as events unfold, and dispersed clues about which company was responsible for a disaster.
 
 ### A scheduled announcement: unchanged policy can be surprising
 
@@ -51,25 +51,25 @@ In @fig-finance-fed-announcement, the S&P 500 moves sharply at the announcement.
 
 This is the first lesson of the earnings puzzle: a favorable outcome matters through its unexpected component. Excellent earnings can disappoint a market that expected even more; unchanged policy can surprise a market that expected a change. The chart illustrates a rapid response to a particular announcement, not a complete test of whether all relevant information was incorporated correctly.
 
-### Election night: the announcement may confirm what prices already reflect
+### An unfolding shock: September 11
 
-An election provides a different information process. Results arrive from many places over several hours, and traders update before any broadcaster declares a winner. The 2024 US election example in @fig-finance-election-night aligns a prediction-market contract with a broad equity-index futures price. The top panel records the price of a Kalshi contract paying $1 if Donald Trump or another Republican was inaugurated; the lower panel records E-mini S&P 500 futures during the same night.
+[]{#election-night-the-announcement-may-confirm-what-prices-already-reflect}
 
-A contract price of 95 cents can be read approximately as a 95% market-implied probability under simplifying assumptions about risk preferences and trading frictions. It is neither vote share nor certainty, and its settlement condition matters. In the recorded minute closes, the price first reached 95 cents at 23:30, later dipped below it, and remained at or above it from 00:51 onward through the end of the observed series at 07:00. A threshold crossing and a sustained change convey different information.
+[]{#fig-finance-election-night}
 
-![Prices during the 2024 US election night. A: Kalshi PRES-2024-DJT, one-minute closing trades, on a 0–100-cent scale. B: Yahoo Finance's ES=F continuous nearby E-mini S&P 500 futures series, using each hourly bar's opening price at its timestamp. Both panels use US Eastern time (UTC−5). Lines connect observations; the hourly futures data do not reveal the within-hour path. Sources: Kalshi and Yahoo Finance, as retained with the lecture data.](../figures/finance-election-night.svg){#fig-finance-election-night fig-alt="Aligned election-night plots from 18:00 on November 5 to 06:00 on November 6. The Republican inauguration contract rises toward 100 cents, remaining at least 95 cents from 00:51. S&P 500 futures rise unevenly from 5,820.25 to 5,942.75 index points." width=100%}
+On the morning of September 11, 2001, US stock exchanges had not yet opened, but stock-index futures were trading. A **futures contract** sets a price today for settlement against an asset or index at a future date. Trading outside regular stock-market hours makes futures useful for observing early responses to news.
 
-The Associated Press declared Trump the winner at 05:34, after other organizations had already made projections ([Associated Press, 2024](https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/)). By then, much of the information behind the declaration was already public. A trader buying only upon reading that headline would therefore need to explain what remained unanticipated. Across the displayed 18:00–06:00 window, futures rose from 5,820.25 to 5,942.75, about 2.1%. That whole-window change is not an estimate of the effect of any one news item.
+The first plane struck the North Tower at 08:46 US Eastern time. In @fig-finance-september11-futures, futures initially fall and then recover much of that decline. At 09:03, a second plane struck the South Tower, making clear that the events were a coordinated attack. Futures then fell much more sharply, followed by large fluctuations and a partial rebound (National Commission on Terrorist Attacks Upon the United States, 2004; Siegel, 2008).
 
-**Futures** are contracts whose value is linked to an underlying asset or index. Equity-index futures can trade while the regular US stock session is closed, making them useful for observing overnight responses. The futures price need not equal the cash index because financing and expected dividends matter. The two panels also price different things: the inauguration outcome in one, and expectations about company earnings, policy, discount rates, and risk in the other. Their co-movement alone does not isolate which of these channels caused the equity response.
+![S&P 500 futures on September 11, 2001. An initial fall and recovery are followed by a much sharper decline around the second impact. Dashed lines mark the two impact times in US Eastern time. Approximate trace of Siegel (2008), Figure 13-1, as reproduced in the lecture; event times follow the 9/11 Commission (2004). This minute-scale chart cannot establish response times in milliseconds.](../figures/finance-september11-futures.svg){#fig-finance-september11-futures fig-alt="S&P 500 futures from 08:43 to 09:15 on September 11, 2001. After the first impact at 08:46, prices fall and largely recover. Around the second impact at 09:03, prices fall steeply from roughly 1,095 to below 1,070, fluctuate sharply, and partly recover toward 1,080. The curve is traced approximately from the source figure." width=100%}
 
-The lecture's September 11, 2001 futures chart offers a related contrast: prices adjusted as the attacks unfolded, with a further sharp decline around the second plane's impact (Siegel, 2008, Figure 13-1). The informational meaning of an unfolding event can change. Neither that chart nor hourly election observations identify response speed in milliseconds. The general point is that prices respond to arriving information, which need not coincide with the time a reader encounters a settled account of events.
+The first reports left uncertainty about the cause and scale of the event; the second impact changed its meaning. Potential consequences now extended well beyond a single accident. This helps explain why the two impacts were followed by different price responses. Prices can incorporate new information while its full economic consequences remain unknown. A trader who encounters a later account of the attacks faces the price then available, after other traders have already been updating their expectations.
 
 ### Challenger: prices can combine dispersed clues
 
 The space shuttle *Challenger* exploded at 11:39 a.m. on January 28, 1986; a Dow Jones newswire report followed at 11:47. All four major publicly traded contractors initially lost value. In @fig-finance-challenger, however, Morton Thiokol separates from the others. Measured from the previous day’s close, its stock fell 11.86%, compared with declines of roughly 2–3% for Lockheed, Martin Marietta, and Rockwell. Months later, the presidential commission identified failure of the booster O-ring seals supplied by Thiokol (Maloney & Mulherin, 2003).
 
-![Intraday prices of the four principal shuttle contractors after the Challenger explosion, relative to their opening prices; the daily returns in the text instead use the previous close. Morton Thiokol experiences the largest sustained decline. NYSE trading in Thiokol was halted from 11:52 to 12:44; a Nasdaq trade occurred at 12:36. A gap in trading is not an unchanged price. Source: Maloney and Mulherin (2003), Figure 1, reproduced in the lecture.](../figures/finance-challenger-intraday.png){#fig-finance-challenger fig-alt="Intraday prices after the Challenger explosion. Thiokol's relative price falls toward 0.89 by the close, whereas the other three contractors end between about 0.95 and 0.98. Thiokol has a trading halt around noon." width=100% .wide-illustration}
+![Intraday prices of the four principal shuttle contractors after the Challenger explosion, expressed as percentage changes from their opening prices. The dashed line marks the 11:39 explosion. Morton Thiokol experiences the largest sustained decline. Points are not connected across trading gaps: NYSE trading in Thiokol was halted from 11:52 to 12:44, with a Nasdaq trade at 12:36. Source: Maloney and Mulherin (2003), Figure 1. The daily returns in the text instead use the previous close.](../figures/finance-challenger-redraw.svg){#fig-finance-challenger fig-alt="Published intraday points for four shuttle contractors, shown as percentage changes from their opening prices. Morton Thiokol falls to about minus 12 percent by the close and has a gap in observations around noon. Lockheed, Martin Marietta, and Rockwell recover part of their initial declines and end about 1 to 5 percent below their opening prices." width=100% .wide-illustration}
 
 Maloney and Mulherin found no single public report or clear insider-trading explanation that accounted for the market's early discrimination. Their interpretation is that trading combined dispersed information and inference. This is evidence of successful price discovery in one episode, not evidence that the market already possessed the commission's complete engineering explanation.
 
@@ -486,7 +486,7 @@ Then red-team the memo. Look for an unfalsifiable escape (“the market will rec
 
 **Classroom-market debrief.** If class trading data are available, first reconstruct the dividend distribution, number of periods, redemption rule, interest rate, and borrowing or short-sale constraints. Then calculate the correct benchmark for that session and compare it with actual transactions and recorded forecasts. A six-period exercise has a different horizon from the classic 15-period market. Describe the observed path without assuming in advance that a bubble or a crash occurred.
 
-**News-timing comparison.** Compare the Fed announcement with election night. Identify when the underlying information arrived, when a reader could have acted, and what the sampling frequency lets you infer. Explain why a headline can be favorable yet offer no obvious gain at the available price.
+**News-timing comparison.** Compare the scheduled Fed announcement with the unfolding September 11 attacks. Identify when new information arrived, how its meaning changed, and when a reader could have acted. Explain what each chart reveals about price adjustment and why reading a headline does not give access to the price that preceded it.
 
 **Event-study audit.** Choose a published event study discussed in this chapter or a course-provided case containing the event time, benchmark, reported abnormal return, uncertainty, and potential confounds. Produce a one-page audit that records: first public time, expected-return model, estimation and event windows, main estimate with uncertainty, overlapping news, tradable timing, and costs. End with two sentences: the strongest warranted conclusion and one stronger claim the evidence does not support.
 
@@ -537,10 +537,6 @@ Abreu, D., & Brunnermeier, M. K. (2003). Bubbles and crashes. Econometrica, 71(1
 
 ::: {.reference}
 Ackert, L. F., Charupat, N., Church, B. K., & Deaves, R. (2006). Margin, short selling, and lotteries in experimental asset markets. *Southern Economic Journal, 73*(2), 419–436. https://doi.org/10.1002/j.2325-8012.2006.tb00779.x
-:::
-
-::: {.reference}
-Associated Press. (2024, November 6). Calling the 2024 presidential race state by state. https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/
 :::
 
 ::: {.reference}
@@ -664,10 +660,6 @@ Jegadeesh, N., & Titman, S. (1993). Returns to buying winners and selling losers
 :::
 
 ::: {.reference}
-Kalshi. (n.d.). Historical candlesticks for PRES-2024-DJT, October–November 2024 [Data set]. https://docs.kalshi.com/api-reference/historical/get-historical-market-candlesticks
-:::
-
-::: {.reference}
 Kindleberger, C. P., & Aliber, R. Z. (2011). *Manias, panics, and crashes: A history of financial crises* (6th ed.). Palgrave Macmillan.
 :::
 
@@ -705,6 +697,10 @@ Nadler, A., Jiao, P., Johnson, C. J., Alexander, V., & Zak, P. J. (2018). The bu
 
 ::: {.reference}
 Odlyzko, A. (2020). Isaac Newton and the perils of the financial South Sea. *Physics Today, 73*(7), 30–36. https://doi.org/10.1063/PT.3.4521
+:::
+
+::: {.reference}
+National Commission on Terrorist Attacks Upon the United States. (2004). *The 9/11 Commission report* (Chapter 9). https://9-11commission.gov/report/911Report_Ch9.htm
 :::
 
 ::: {.reference}
@@ -801,8 +797,4 @@ Weinberg, J. (2013). The Great Recession and its aftermath. *Federal Reserve His
 
 ::: {.reference}
 Williams, A. W. (2008). Price bubbles in large financial asset markets. In C. R. Plott & V. L. Smith (Eds.), *Handbook of experimental economics results* (Vol. 1, pp. 242–246). North-Holland. https://doi.org/10.1016/S1574-0722(07)00029-7
-:::
-
-::: {.reference}
-Yahoo Finance. (n.d.). E-mini S&P 500 futures (ES=F): Hourly observations for November 2024 [Data set]. https://finance.yahoo.com/quote/ES%3DF/history/
 :::

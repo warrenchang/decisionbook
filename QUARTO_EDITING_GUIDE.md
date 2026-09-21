@@ -93,6 +93,12 @@ A planning-question diagram, an activity, and a research-results plot serve diff
 
 After changing a figure, update its alternative text and caption, regenerate its PNG from the final SVG, and inspect the image at native and narrow reading sizes. Update its generator as well. Covered generators use `scripts/reviewed_figure_cleanup.json` to preserve reviewed edits and deliberately reject unreviewed changes in generator output; refresh those exact patches after a new review rather than bypassing the guard.
 
+### Style for empirical plots
+
+Use the Chapter 27 news and earnings plots as the style reference for comparable empirical charts: white background, navy text, muted axes, light horizontal grid lines, and the book's blue/teal palette with restrained additional colors when groups need them. Use consistent sans-serif typography, readable axis units, sparse time ticks, and direct labels or a compact legend. Keep event labels brief and put the interpretation and scholarly source in the caption or surrounding prose.
+
+`scripts/build_finance_news_figures.py` provides the current reusable plotting settings and builds Figures 27.2–27.4. Match Figure 27.5's treatment when adding comparable figures. Preserve the scientific form of the evidence: points stay points, trading gaps stay gaps, and published irregularities should not become fitted smooth curves. Label approximate tracing when original numerical data are unavailable, and keep source geometry or extracted coordinates with provenance for reproduction.
+
 ### Connect every table and figure to the argument
 
 Every teaching table and figure must have a stable identifier and an explicit numbered reference in the surrounding prose of the chapter, appendix, or part opener where it appears. Use `@fig-...` and `@tbl-...` so numbering and links remain correct when the book changes. A caption, alternative text, or reference from another chapter does not replace this local discussion.

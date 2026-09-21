@@ -210,6 +210,8 @@ The same distinction is useful in business. A customer with a high purchase prob
 
 Even a credible benefit estimate does not finish the allocation decision. A university may protect a minimum level of access, prioritize people facing severe disadvantage, or provide a different intervention where outreach is insufficient. Those commitments should be explicit. The figure makes the causal input visible alongside those allocation priorities.
 
+Discovering which students benefit most introduces a further challenge: searching many possible groups can uncover apparently large effects by chance. One approach uses separate data to discover group definitions and to estimate their effects. The [research note on discovering who benefits](../appendices/appendix-e-how-behavioral-evidence-is-built.qmd#discovering-who-benefits) explains this separation and its limits. A flexible model can help investigate differences in benefit, provided the underlying comparison supports a causal interpretation.
+
 ## Choose tools by the work they must do {#ai-workbench}
 
 Suppose the city asks a team to “use AI” to improve pipe replacement. One member proposes a risk model, another a chatbot to answer residents' questions, and a third a scheduling tool for crews. Each addresses a different obstacle. The four analytical purposes help the team identify which obstacle matters before choosing a tool. The workbench in @tbl-ai-workbench includes ordinary reporting and causal analysis alongside predictive models, language models, retrieval systems, and optimizers. A workflow can combine them, with a different check for each output.
@@ -224,6 +226,20 @@ Suppose the city asks a team to “use AI” to improve pipe replacement. One me
 | Generate and compare language | A large language model | Drafts, alternative explanations, questions, or a comparison table | Are facts, calculations, implications, and the option set sound? |
 | Allocate resources under explicit rules | Optimization, possibly using model estimates | A feasible schedule or allocation | Are the objective, constraints, and uncertainty acceptable? |
 : Select methods for the work a decision needs; their uses overlap {#tbl-ai-workbench}
+
+[]{#machine-learning-and-behavioral-discovery}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: discovering what predicts a choice
+
+A bargaining record can contain more than the final agreement. The sequence of offers, the pauses between them, and the size of concessions may help predict whether negotiations will break down. Machine learning gives researchers a way to examine many such features and ask what they add to a simpler account based on the amount available for division.
+
+Camerer (2019) describes experiments in which two people negotiated by moving cursors along a number line. One knew the amount available; the other did not. Features of the cursor movements predicted disagreement about as well as the amount being divided. Combining the process records with that amount improved prediction on held-out data. How bargaining unfolded therefore contained information beyond what was at stake.
+
+This result creates questions for theory. A pause might reflect calculation, uncertainty, or a strategic attempt to make the other person concede. Those are candidate explanations, not conclusions established by the predictive model. Researchers can formulate competing predictions, vary information or bargaining rules in a new experiment, and examine which account survives. Camerer presents this use of machine learning as a research agenda for discovering behavioral regularities.
+
+The available measurements can expand too. Athey (2019) explains how methods that organize text and images can turn previously unstructured material into variables for analysis. For example, classifying negotiation messages might reveal patterns that offer amounts miss. That proposed measure would need checking: a category labeled “hostility” is not validated merely because a model can assign it. The useful progression is to construct a defensible measure, establish whether it predicts new cases, and then test the explanation it suggests. Each step asks for different evidence.
+:::
 
 A central training task for many LLMs is predicting subsequent tokens—pieces of text—given a context. Additional training and connected tools can support instruction following, retrieval, coding, and other tasks. A fluent answer is therefore not equivalent to a calibrated forecast about the external world. Generated facts and references can be false; asking the model to sound more certain does not validate them (Ji et al., 2023).
 
@@ -388,6 +404,10 @@ Agrawal, A., Gans, J., & Goldfarb, A. (2022b). *Prediction machines: The simple 
 :::
 
 ::: {.reference}
+Athey, S. (2019). The impact of machine learning on economics. In A. Agrawal, J. Gans, & A. Goldfarb (Eds.), *The economics of artificial intelligence: An agenda* (pp. 507–547). University of Chicago Press. https://doi.org/10.7208/chicago/9780226613475.003.0021
+:::
+
+::: {.reference}
 Bertsimas, D., & Kallus, N. (2020). [From predictive to prescriptive analytics](https://doi.org/10.1287/mnsc.2018.3253). *Management Science, 66*(3), 1025–1044.
 :::
 
@@ -397,6 +417,10 @@ Bigman, Y. E., & Gray, K. (2018). People are averse to machines making moral dec
 
 ::: {.reference}
 Brynjolfsson, E., Li, D., & Raymond, L. (2025). Generative AI at work. *The Quarterly Journal of Economics, 140*(2), 889–942. https://doi.org/10.1093/qje/qjae044
+:::
+
+::: {.reference}
+Camerer, C. F. (2019). Artificial intelligence and behavioral economics. In A. Agrawal, J. Gans, & A. Goldfarb (Eds.), *The economics of artificial intelligence: An agenda* (pp. 587–608). University of Chicago Press. https://doi.org/10.7208/chicago/9780226613475.003.0024
 :::
 
 ::: {.reference}

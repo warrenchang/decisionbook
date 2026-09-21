@@ -363,6 +363,18 @@ Preregistration time-stamps decisions. Deviations can be scientifically necessar
 
 Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.
 
+[]{#discovering-who-benefits}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: discovering who benefits
+
+A randomized student-outreach study may show a modest average effect while leaving open whether some students benefit much more than others. Searching many possible groups can suggest useful answers, but the group with the largest estimated benefit may partly owe that distinction to chance. Using the same observations to discover the group and report its effect can exaggerate the result.
+
+Athey and Imbens (2016) develop an **honest estimation** approach that separates those jobs. One sample is used to construct a tree that divides participants into groups defined by observed characteristics. A separate sample is then used to estimate the treatment effect within each group. For the outreach example, the analyst would fix the group definitions before examining treatment-control differences in the estimation sample. This separation helps prevent a favorable fluctuation used to select a group from also determining its reported benefit.
+
+The method estimates group-average effects; it does not reveal the unobserved causal effect for each individual. Splitting the data also leaves fewer observations for each job and can reduce precision. Valid inference still requires an appropriate causal design, adequate observations within groups, and the method's assumptions. The authors evaluate their approach through simulations; it is a method for investigating differences, not evidence that outreach works. [Chapter 42](../chapters/42-data-driven-decision-making.qmd#risk-is-not-treatment-benefit) explains why allocating outreach requires estimates of intervention benefit as well as baseline risk.
+:::
+
 ## Report, reproduce, and extend
 
 ### 10. Replication is estimation under a declared protocol
@@ -538,6 +550,10 @@ Submit the completed pipeline, one explicit assumption, the revised design, and 
 
 ::: {.reference}
 Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. *Journal of the American Statistical Association, 91*(434), 444–455.
+:::
+
+::: {.reference}
+Athey, S., & Imbens, G. (2016). Recursive partitioning for heterogeneous causal effects. *Proceedings of the National Academy of Sciences, 113*(27), 7353–7360. https://doi.org/10.1073/pnas.1510489113
 :::
 
 ::: {.reference}

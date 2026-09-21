@@ -905,6 +905,7 @@ Figure&nbsp;42.2: Hypothetical group-average dropout rates show how baseline ris
 <p>For one student, we cannot observe both outcomes at the same time: leaving after receiving outreach and leaving without it. Causal inference uses research designs and assumptions to estimate such comparisons across appropriate groups. Randomized assignment is one route; credible observational designs require other defensible assumptions (Cunningham, 2021). Machine learning can assist estimation, but predictive flexibility does not by itself establish the causal comparison.</p>
 <p>The same distinction is useful in business. A customer with a high purchase probability may buy without a discount. An offer can then reduce revenue on a purchase that would have happened anyway. Predicting purchase propensity and estimating the <strong>incremental effect</strong> of an offer answer different questions. A randomized offer test, where appropriate, helps distinguish them.</p>
 <p>Even a credible benefit estimate does not finish the allocation decision. A university may protect a minimum level of access, prioritize people facing severe disadvantage, or provide a different intervention where outreach is insufficient. Those commitments should be explicit. The figure makes the causal input visible alongside those allocation priorities.</p>
+<p>Discovering which students benefit most introduces a further challenge: searching many possible groups can uncover apparently large effects by chance. One approach uses separate data to discover group definitions and to estimate their effects. The <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html#discovering-who-benefits">research note on discovering who benefits</a> explains this separation and its limits. A flexible model can help investigate differences in benefit, provided the underlying comparison supports a causal interpretation.</p>
 </section>
 <section id="ai-workbench" class="level2">
 <h2 data-anchor-id="ai-workbench">Choose tools by the work they must do</h2>
@@ -977,6 +978,26 @@ Table&nbsp;42.4: Select methods for the work a decision needs; their uses overla
 </table>
 </div>
 </figure>
+</div>
+<p><span id="machine-learning-and-behavioral-discovery"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: discovering what predicts a choice
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A bargaining record can contain more than the final agreement. The sequence of offers, the pauses between them, and the size of concessions may help predict whether negotiations will break down. Machine learning gives researchers a way to examine many such features and ask what they add to a simpler account based on the amount available for division.</p>
+<p>Camerer (2019) describes experiments in which two people negotiated by moving cursors along a number line. One knew the amount available; the other did not. Features of the cursor movements predicted disagreement about as well as the amount being divided. Combining the process records with that amount improved prediction on held-out data. How bargaining unfolded therefore contained information beyond what was at stake.</p>
+<p>This result creates questions for theory. A pause might reflect calculation, uncertainty, or a strategic attempt to make the other person concede. Those are candidate explanations, not conclusions established by the predictive model. Researchers can formulate competing predictions, vary information or bargaining rules in a new experiment, and examine which account survives. Camerer presents this use of machine learning as a research agenda for discovering behavioral regularities.</p>
+<p>The available measurements can expand too. Athey (2019) explains how methods that organize text and images can turn previously unstructured material into variables for analysis. For example, classifying negotiation messages might reveal patterns that offer amounts miss. That proposed measure would need checking: a category labeled “hostility” is not validated merely because a model can assign it. The useful progression is to construct a defensible measure, establish whether it predicts new cases, and then test the explanation it suggests. Each step asks for different evidence.</p>
+</div>
+</div>
 </div>
 <p>A central training task for many LLMs is predicting subsequent tokens—pieces of text—given a context. Additional training and connected tools can support instruction following, retrieval, coding, and other tasks. A fluent answer is therefore not equivalent to a calibrated forecast about the external world. Generated facts and references can be false; asking the model to sound more certain does not validate them (Ji et al., 2023).</p>
 <p>The optional <a href="../chapters/04-the-predictive-mind-perception-is-inference.html#generative-ai-and-predictive-processing">Research Lens in Chapter 4</a> explains how prompts guide generation through context, why this offers a limited analogy with human perception, and why plausible content still needs external evidence. Much organizational work consists of turning scattered information into something another person can understand and use. A useful LLM can lower that cost, provided the workflow preserves the evidence and gives someone the means to check it.</p>
@@ -1134,6 +1155,9 @@ Table&nbsp;42.5: A decision canvas that keeps the analytical question, valuation
 <p>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2022b). <em>Prediction machines: The simple economics of artificial intelligence</em> (Updated and expanded ed.). Harvard Business Review Press. https://store.hbr.org/product/prediction-machines-updated-and-expanded-the-simple-economics-of-artificial-intelligence/10598</p>
 </div>
 <div class="reference">
+<p>Athey, S. (2019). The impact of machine learning on economics. In A. Agrawal, J. Gans, &amp; A. Goldfarb (Eds.), <em>The economics of artificial intelligence: An agenda</em> (pp.&nbsp;507–547). University of Chicago Press. https://doi.org/10.7208/chicago/9780226613475.003.0021</p>
+</div>
+<div class="reference">
 <p>Bertsimas, D., &amp; Kallus, N. (2020). <a href="https://doi.org/10.1287/mnsc.2018.3253">From predictive to prescriptive analytics</a>. <em>Management Science, 66</em>(3), 1025–1044.</p>
 </div>
 <div class="reference">
@@ -1141,6 +1165,9 @@ Table&nbsp;42.5: A decision canvas that keeps the analytical question, valuation
 </div>
 <div class="reference">
 <p>Brynjolfsson, E., Li, D., &amp; Raymond, L. (2025). Generative AI at work. <em>The Quarterly Journal of Economics, 140</em>(2), 889–942. https://doi.org/10.1093/qje/qjae044</p>
+</div>
+<div class="reference">
+<p>Camerer, C. F. (2019). Artificial intelligence and behavioral economics. In A. Agrawal, J. Gans, &amp; A. Goldfarb (Eds.), <em>The economics of artificial intelligence: An agenda</em> (pp.&nbsp;587–608). University of Chicago Press. https://doi.org/10.7208/chicago/9780226613475.003.0024</p>
 </div>
 <div class="reference">
 <p>Cunningham, S. (2021). <em>Causal inference: The mixtape</em>. Yale University Press.</p>
