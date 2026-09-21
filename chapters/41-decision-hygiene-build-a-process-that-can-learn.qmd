@@ -19,7 +19,7 @@ A hiring committee is ready to compare candidates when its chair says, “I was 
 
 The problem spans two meetings: one in which judgments became correlated before the evidence was compared, and another in which memory rewrote the earlier uncertainty. Recognizing bias is useful, but the committee also needs a procedure that preserves independent views and a record that later events cannot silently change.
 
-This chapter brings the book’s tools together around that task. We will follow what needs to be protected before a discussion, what disagreement can reveal during it, and what a later review can establish from the original record.
+[Chapter 2](02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#chapter-02-start) clarified alternatives, trade-offs, and information. This chapter brings the behavioral explanations together to build a procedure that keeps those elements open to examination. We will follow what needs to be protected before a discussion, what disagreement can reveal during it, and what a later review can establish from the original record.
 
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
@@ -188,6 +188,17 @@ Sometimes the comparison reveals that the next useful action is to gather inform
 
 Two committee members can call a candidate “too risky” for different reasons: one expects poor performance, while the other finds even a small chance of failure too costly. More debate about the candidate will go in circles until the disagreement is located. Separate prediction from valuation. Ask first what each person believes will happen and what evidence supports that belief. Ask separately what outcomes matter, which trade-offs are acceptable, and whose welfare or rights count. Many arguments become clearer when "too risky" is decomposed into probability and consequence.
 
+[]{#challenge-the-assumptions}
+
+Once the disagreement is clear, test whether credible differences would change the preferred option. The **sensitivity analysis** introduced in [Chapter 2](02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd#stress-test-the-recommendation) becomes a shared check on the recommendation:
+
+- Which forecast or priority does the recommendation depend on most?
+- How far would it have to change before another option becomes preferable, and is that threshold within a plausible range?
+- Which assumptions could move together, and does the recommendation survive a jointly unfavorable scenario?
+- If the choice is fragile, would further information be worth obtaining, or could a staged or reversible commitment reduce the cost of being wrong?
+
+Report the conditions under which the preferred option wins. For a project, compare continuing, redesigning, pausing, and stopping from the same starting point. A limited pilot, staged investment, contingency clause, or exit option may make the decision more manageable when another forecast cannot resolve the uncertainty. Specify what evidence would justify further commitment before making it; the later review can then examine whether that condition was met.
+
 Checklists can protect against omissions in repeated work when they are short, located at a useful pause, and tied to known failures. In Haynes and colleagues’ (2009) before-and-after study of eight hospitals, inpatient complications fell from 11.0% to 7.0% and mortality from 1.5% to 0.8% after a surgical safety program introduced a checklist. The larger rollout offers a caution: a study of checklist adoption in 101 Ontario hospitals found no statistically significant reduction in complications or mortality (Urbach et al., 2014). Neither design randomly assigned the whole implementation. A checklist’s content, use, and local consequences therefore need evaluation, rather than assuming that adoption reproduces the earlier gains. A hiring checklist likewise needs to address an actual failure, such as scoring work samples before discussing impressions.
 
 
@@ -218,6 +229,8 @@ Many organizations call a meeting before defining what must be decided. Particip
 : A decision meeting organized around judgment rather than presentation {#tbl-36-meeting}
 
 Roles can make the process visible: one person tracks criteria, one assumptions, one risks and dissent, one unresolved questions, and one implementation. Decision rights must also be explicit. Who decides? Who advises? Who must consent? Who implements? Ambiguity here produces recurring debate and hidden vetoes.
+
+The meeting should end with a conditional recommendation: the chosen path, its main reasons, the best feasible alternative forgone, the assumptions that could reverse the choice, and the safeguards needed to proceed. In the job-offer example from Chapter 2, an agreed workload or supervision arrangement could make acceptance conditional on the support the student needs. A review date and a named person responsible for following up turn an intention to check into an assigned task. The decision-journal template below preserves these commitments for comparison with the outcome.
 
 ## The decision audit: from a smooth story to an inspectable process
 
@@ -331,13 +344,18 @@ The committee still needs to test what its structure rewards. A rubric can consi
 
 Apply the same scrutiny to the controls: a checklist should support professional attention, and a decision journal should support learning without becoming surveillance. Examine whose opportunities improve and who bears additional burdens before treating a more consistent process as a better one.
 
-Use the two levels of protection in @tbl-36-proportionality to scale the procedure to the stakes. A low-cost reversible choice may need a short note and a review date; a repeated hiring process needs stronger evidence and checks for unfair treatment. Remove a control when its burden exceeds its useful contribution.
+[]{#proportionate-decision-process}
+
+Match the procedure to both the stakes and the difficulty. Familiar, inexpensive, reversible choices with clear feedback usually need less structure. Novel decisions with uncertain assumptions, costly commitments, or delayed feedback need more explicit forecasts and challenge. Strategic dependence adds a reason to examine others' likely responses; effects on rights or on many people add a reason to include affected perspectives and a way to contest errors.
+
+Use @tbl-36-proportionality to select the protection that addresses the actual difficulty. A short note may be sufficient for a low-cost reversible choice; a repeated hiring process needs comparable evidence, independent judgments, and checks for unfair treatment. Remove a control when its burden exceeds its useful contribution.
 
 
 | Failure mode | First-line protection | Stronger response when stakes warrant it |
 | --- | --- | --- |
 | Inconsistent judges | Noise audit and anchored criteria | Multiple judges, calibration, model comparison |
-| Overconfident plan | Outside view and probability ranges | Premortem, staged investment, stop criteria |
+| Overconfident plan | Outside view and probability ranges | Sensitivity checks, premortem, jointly unfavorable scenarios |
+| Costly or irreversible error | Compare reversible alternatives and exit costs | Pilot, staged commitment, safeguards, stop criteria |
 | Hierarchy or conformity | Independent input; senior person speaks last | Anonymous concerns, external review, red team |
 | Hindsight learning | Decision journal and review date | Forecast scoring and portfolio-level analysis |
 | Inconsistent repeated predictions | Transparent statistical baseline | Validated model with fairness and drift audit |
@@ -349,13 +367,13 @@ Use the two levels of protection in @tbl-36-proportionality to scale the procedu
 
 Produce one completed, one-page judgment pipeline for a real decision:
 
-1. **Define:** state the decision, deadline, owner, affected people, and most costly error.
+1. **Define:** state the decision, deadline, owner, affected people, and most costly error. List the feasible alternatives, including what happens if nobody acts.
 2. **Decompose:** name three to five criteria and the evidence each requires before giving an overall judgment.
 3. **Ground:** record one base rate, reference class, transparent baseline, or the reason none is available.
 4. **Judge independently:** obtain at least two estimates, scores, or written views before discussion or AI output; if only one decision-maker is available, record an initial estimate before seeking advice.
 5. **Compare:** display the estimates, disagreement, and reasons; do not average away uniquely diagnostic evidence.
-6. **Challenge:** write the strongest objection, one disconfirming observation, and one safe information-gaining action.
-7. **Decide and document:** state the choice, trade-offs, implementation owner, and any justified exception. If AI materially informed it, attach the [minimum AI-use record](#minimum-ai-use-record).
+6. **Challenge:** identify the assumption that could reverse the recommendation, its switching threshold, and one plausible combination of unfavorable changes. State what information or staged commitment could address the uncertainty.
+7. **Decide and document:** state the choice, reasons, best alternative forgone, implementation owner, safeguards, and any justified exception. If AI materially informed it, attach the [minimum AI-use record](#minimum-ai-use-record).
 8. **Review and learn:** specify an observable outcome, threshold or resolution rule, review date, and what will continue, stop, scale, or change.
 
 For a low-stakes reversible choice, use only **define → challenge → decide → review**. For a consequential, repeated, contested, difficult-to-reverse, or partly automated decision, complete all eight stages.

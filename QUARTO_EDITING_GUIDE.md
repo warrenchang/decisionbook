@@ -6,6 +6,10 @@ The repository is now a Quarto book project. The `.qmd` files are the canonical 
 
 The following requirements apply to *Decision in the Making*. They are project conventions, not general writing-style rules.
 
+### Examples adapted from teaching materials
+
+- Present each example directly, without phrases such as “the lecture’s example,” “as shown in the slides,” or “the course’s comparison.” Make the explanation self-contained and refer only to figures readers can see in the book. Retain scholarly citations and qualifications needed to interpret the evidence; keep the provenance of teaching materials in project records.
+
 ### Personal stories and cultural examples
 
 - Write the author's experiences in first person in consistently labeled, normally expanded note boxes headed “From my experience: …”. Prefer “personal story” or “personal experience” to the vague “personal illustration.” Place the story beside the mechanism it helps the reader understand.

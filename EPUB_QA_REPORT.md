@@ -58,8 +58,8 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
 | Required content: Understanding Decision Making | **PASS** |
-| Required content: Building a Better Decision | **PASS** |
-| Required content: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
+| Required content: Structuring a Decision | **PASS** |
+| Required content: Alternatives, Trade-offs, and Information | **PASS** |
 | Required content: Rational Choice and Decision Analysis | **PASS** |
 | Required content: Probability Judgment | **PASS** |
 | Required content: Risky Decision Making | **PASS** |

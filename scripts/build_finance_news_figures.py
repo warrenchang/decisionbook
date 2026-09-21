@@ -114,7 +114,7 @@ for t,label in [(3,'First impact\n08:46'),(20,'Second impact\n09:03')]:
 ax.set_ylabel('S&P 500 futures price (index points)',labelpad=12,fontsize=13)
 ax.set_xlabel('11 September 2001 · US Eastern time',labelpad=13)
 save(fig,'finance-september11-futures','S&P 500 futures as the September 11 attacks unfolded',
-    'Approximate tracing of the lecture reproduction of Siegel (2008), Figure 13-1. Between 08:43 and 09:15, futures initially fall and recover, then drop steeply around the second impact at 09:03. The sharp fluctuations and partial rebound are retained. Event times are from the 9/11 Commission.')
+    'Approximate tracing of a reproduction of Siegel (2008), Figure 13-1. Between 08:43 and 09:15, futures initially fall and recover, then drop steeply around the second impact at 09:03. The sharp fluctuations and partial rebound are retained. Event times are from the 9/11 Commission.')
 # Pixel fidelity screen: this measures graphical agreement, not data accuracy.
 from scipy.ndimage import distance_transform_edt
 from PIL import ImageDraw

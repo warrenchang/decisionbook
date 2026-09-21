@@ -58,8 +58,8 @@ EXPECTED_APPENDICES = [
 
 REQUIRED_CONTENT = [
     "Understanding Decision Making",
-    "Building a Better Decision",
-    "Alternatives, Opportunity Cost, Information, and Robustness",
+    "Structuring a Decision",
+    "Alternatives, Trade-offs, and Information",
     "Rational Choice and Decision Analysis",
     "Probability Judgment",
     "Risky Decision Making",
