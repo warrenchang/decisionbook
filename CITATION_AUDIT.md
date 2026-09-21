@@ -12,7 +12,7 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| Normative, Descriptive, and Prescriptive | 17 | 0 |
+| Understanding Decision Making {#normative-descriptive-and-prescriptive} | 17 | 0 |
 | Building a Better Decision | 12 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |

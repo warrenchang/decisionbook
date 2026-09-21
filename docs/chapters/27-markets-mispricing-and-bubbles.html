@@ -172,7 +172,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/01-how-decisions-should-be-made-and-how-they-actually-are.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Normative, Descriptive, and Prescriptive</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Understanding Decision Making</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -838,20 +838,11 @@ Table&nbsp;27.1: Historical return patterns require competing explanations, not 
 </section>
 <section id="every-efficiency-test-is-a-joint-test" class="level2">
 <h2 data-anchor-id="every-efficiency-test-is-a-joint-test">Every efficiency test is a joint test</h2>
-<p>The historical patterns raise a problem: to label a return abnormal, we must first say what return was expected. Suppose an asset earns 12%. That is not evidence of mispricing until we specify its risk, exposures, time period, benchmark, and costs.</p>
+<p>The historical patterns raise a problem: to label a return abnormal, we must first say what return was expected. Suppose a portfolio earns an average of 12% a year. A risk benchmark that predicts 8% leaves four percentage points unexplained; one that predicts 12% leaves none. The observed return is the same, but the judgment about performance depends on whether the benchmark appropriately captures the portfolio’s risk.</p>
 <p>The <strong>capital asset pricing model</strong> (CAPM) relates an asset’s expected excess return to its exposure to the market’s excess return. Its <strong>beta</strong> measures that exposure; an estimated <strong>alpha</strong> is the average return left unexplained by the fitted benchmark. Multifactor models allow several systematic exposures. An alpha can change when the benchmark changes, so it is not a model-free measure of skill. A more elaborate model is not automatically a better explanation either: its factors and tests need an economic justification (Sharpe, 1964; Fama &amp; French, 1993).</p>
 <p>Fama (1991) emphasizes the <strong>joint-hypothesis problem</strong>: a test evaluates market efficiency together with an asset-pricing model. A rejection may reflect inefficient prices or an inadequate expected-return model. Unrealistic execution, omitted costs, or selection of the sample and statistic can further undermine an apparent trading opportunity.</p>
-<div id="fig-behavioral-finance-audit" class="quarto-float quarto-figure quarto-figure-center" alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-behavioral-finance-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/behavioral-finance-audit.svg" class="img-fluid figure-img" alt="A left-to-right evidence pipeline begins with a documented return pattern. It enters five alternative explanation boxes: priced risk, behavioral mispricing, market frictions, model misspecification, and data mining. The paths converge on an implementation gate for timing, liquidity, costs, capacity, and taxes, followed by an out-of-sample and post-publication test. The final outcome can be a bounded empirical regularity, an implementable strategy, or insufficient evidence.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-behavioral-finance-audit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27.6: A documented return pattern passes through a joint-test audit before it can support an investment decision. Risk, mispricing, frictions, model error, and data mining remain competing explanations; implementation and post-publication evidence decide how much of the pattern survives.
-</figcaption>
-</figure>
-</div>
-<p><a href="#fig-behavioral-finance-audit" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> separates explaining a return pattern from establishing whether it survives realistic trading conditions and new observations. An <strong>event study</strong> measures returns around a defined event against a stated expected-return model. The <a href="#advanced-research-track-auditing-an-event-study">optional research track</a> shows how to audit its timing, comparison, and uncertainty, using earnings announcements as an example.</p>
+<p><span id="fig-behavioral-finance-audit"></span></p>
+<p>An <strong>event study</strong> measures returns around a defined event against a stated expected-return model. The <a href="#advanced-research-track-auditing-an-event-study">optional research track</a> shows how to audit its timing, comparison, and uncertainty, using earnings announcements as an example.</p>
 <div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -932,11 +923,11 @@ V_0=\frac{d_1}{r-g}.
 <img src="../figures/asset-bubble-feedback.svg" class="img-fluid figure-img" alt="Three boxes arranged in a loop show rising prices, expecting more gains, and more buying. A separate fundamentals box points to price; a dashed arrow from financing points to buying as an optional amplifier.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-asset-bubble-feedback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27.7: A possible reinforcing loop links rising prices, expectations of further gains, and more buying. Fundamentals affect price separately, and financing can amplify demand without being required for the loop. Supply, short selling, risk limits, and skeptical capital can weaken the process. Correction can be delayed by funding constraints and uncertainty about when others will act.
+Figure&nbsp;27.6: A possible reinforcing loop links rising prices, expectations of further gains, and more buying. Fundamentals affect price separately, and financing can amplify demand without being required for the loop. Supply, short selling, risk limits, and skeptical capital can weaken the process. Correction can be delayed by funding constraints and uncertainty about when others will act.
 </figcaption>
 </figure>
 </div>
-<p>The separate paths in <a href="#fig-asset-bubble-feedback" class="quarto-xref">Figure&nbsp;<span>27.7</span></a> allow a boom to begin with genuine innovation and later acquire a feedback component. Credit can amplify buying, but the loop does not require it.</p>
+<p>The separate paths in <a href="#fig-asset-bubble-feedback" class="quarto-xref">Figure&nbsp;<span>27.6</span></a> allow a boom to begin with genuine innovation and later acquire a feedback component. Credit can amplify buying, but the loop does not require it.</p>
 <section id="strategic-resale-and-synchronization-risk" class="level3">
 <h3 data-anchor-id="strategic-resale-and-synchronization-risk">How resale expectations can sustain a boom and crash</h3>
 <p>A buyer can believe that a price exceeds their own estimate of fundamental value and still purchase because they expect to resell to someone else at a higher price. The payoff then depends not only on cash flows but on beliefs about later buyers’ beliefs and on exiting before the correction. This is the recursive prediction problem in <a href="../chapters/23-strategic-interdependence-the-best-move-depends-on-other-minds.html#two-beauty-contests">Chapter 23’s beauty contest</a>, now with a financial consequence: accurately forecasting the next buyer can reward a trade the buyer would reject on cash-flow value alone.</p>
@@ -1224,11 +1215,11 @@ Table&nbsp;27.4: Rule-based behavioral classifications in Haruvy and Noussair (2
 <img src="../figures/bubble-trader-strategies-redraw.svg" class="img-fluid figure-img" style="width:100.0%" alt="Horizontal bars show feedback or momentum-consistent behavior at thirty-six point five percent, passive or fundamental-value-consistent behavior at thirty-three point one percent, speculator or next-price-consistent behavior at twenty-five point four percent, and other or unclassified behavior at four point nine percent.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bubble-trader-strategies-redraw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27.8: The chart reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other or unclassified behavior. Haruvy and Noussair (2006) report 162 rule-based classifications in 18 sessions, with fractional allocation of ties and a highest consistency score of at least 8 of 15 periods.
+Figure&nbsp;27.7: The chart reports 36.5% feedback or momentum-consistent behavior, 33.1% passive or fundamental-value-consistent behavior, 25.4% speculator or next-price-consistent behavior, and 4.9% other or unclassified behavior. Haruvy and Noussair (2006) report 162 rule-based classifications in 18 sessions, with fractional allocation of ties and a highest consistency score of at least 8 of 15 periods.
 </figcaption>
 </figure>
 </div>
-<p>The mixture in <a href="#fig-bubble-trader-strategies-redraw" class="quarto-xref">Figure&nbsp;<span>27.8</span></a> shows several patterns of trading within the same experimental design. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.</p>
+<p>The mixture in <a href="#fig-bubble-trader-strategies-redraw" class="quarto-xref">Figure&nbsp;<span>27.7</span></a> shows several patterns of trading within the same experimental design. They help organize competing explanations for the price path, without establishing that every trader assigned a label used the same reasoning.</p>
 </section>
 <section id="lottery-payoffs-and-cognitive-reflection" class="level3">
 <h3 data-anchor-id="lottery-payoffs-and-cognitive-reflection">Payoffs and participants shape market behavior</h3>
@@ -1397,14 +1388,14 @@ Table&nbsp;27.5: A two-direction bubble diagnostic
 <li>Test uncertainty and inspect confounding events.</li>
 </ol>
 <p>For an audit, record the published answer to each step and mark missing information rather than inventing a price, return, or model. A full reproduction additionally requires the original sample-construction rules, data vintage, corporate-action handling, code, and trading assumptions.</p>
-<p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. The continued separation after the announcement in <a href="#fig-finance-event-study-drift" class="quarto-xref">Figure&nbsp;<span>27.9</span></a> can illustrate slow updating, but an observed pattern like this could also reflect a weak benchmark, overlapping news, trading frictions, or sample construction that would not have been available in real time.</p>
+<p>If prices incorporate a clean public surprise rapidly, abnormal returns should cluster near the release. The continued separation after the announcement in <a href="#fig-finance-event-study-drift" class="quarto-xref">Figure&nbsp;<span>27.8</span></a> can illustrate slow updating, but an observed pattern like this could also reflect a weak benchmark, overlapping news, trading frictions, or sample construction that would not have been available in real time.</p>
 <div id="fig-finance-event-study-drift" class="quarto-float quarto-figure quarto-figure-center" alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-finance-event-study-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../figures/finance-event-study-drift.svg" class="img-fluid figure-img" style="width:100.0%" alt="A two-part event-study schematic. A timeline marks an estimation window, the first public event time, and a post-event window. Below, the positive- and negative-surprise paths overlap before the announcement, diverge at the announcement, and continue upward or downward afterward. A side audit lists event time, expected-return model, confounds, uncertainty, tradable timing, and costs.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finance-event-study-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27.9: An event-study schematic distinguishes the estimation window, the event’s first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift.
+Figure&nbsp;27.8: An event-study schematic distinguishes the estimation window, the event’s first public time, and the post-event window. In the cumulative-abnormal-return panel, positive- and negative-surprise paths share one pre-announcement baseline, diverge at the announcement, and then continue drifting apart. The curves explain the logic of post-earnings-announcement drift.
 </figcaption>
 </figure>
 </div>

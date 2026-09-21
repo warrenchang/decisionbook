@@ -57,7 +57,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Every packaged content image has nonempty alternative text | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
-| Required content: Normative, Descriptive, and Prescriptive | **PASS** |
+| Required content: Understanding Decision Making | **PASS** |
 | Required content: Building a Better Decision | **PASS** |
 | Required content: Alternatives, Opportunity Cost, Information, and Robustness | **PASS** |
 | Required content: Rational Choice and Decision Analysis | **PASS** |

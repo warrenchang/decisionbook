@@ -57,7 +57,7 @@ EXPECTED_APPENDICES = [
 ]
 
 REQUIRED_CONTENT = [
-    "Normative, Descriptive, and Prescriptive",
+    "Understanding Decision Making",
     "Building a Better Decision",
     "Alternatives, Opportunity Cost, Information, and Robustness",
     "Rational Choice and Decision Analysis",
