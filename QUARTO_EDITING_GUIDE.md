@@ -95,6 +95,8 @@ After changing a figure, update its alternative text and caption, regenerate its
 
 ### Style for empirical plots
 
+Place y-axis titles vertically alongside their axes throughout the book, with enough margin for the tick labels. Keep category names, tick labels, panel titles, and legends in their appropriate readable orientation; these are not y-axis titles.
+
 Use the Chapter 27 news and earnings plots as the style reference for comparable empirical charts: white background, navy text, muted axes, light horizontal grid lines, and the book's blue/teal palette with restrained additional colors when groups need them. Use consistent sans-serif typography, readable axis units, sparse time ticks, and direct labels or a compact legend. Keep event labels brief and put the interpretation and scholarly source in the caption or surrounding prose.
 
 `scripts/build_finance_news_figures.py` provides the current reusable plotting settings and builds Figures 27.2–27.4. Match Figure 27.5's treatment when adding comparable figures. Preserve the scientific form of the evidence: points stay points, trading gaps stay gaps, and published irregularities should not become fitted smooth curves. Label approximate tracing when original numerical data are unavailable, and keep source geometry or extracted coordinates with provenance for reproduction.

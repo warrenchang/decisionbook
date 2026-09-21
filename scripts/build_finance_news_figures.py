@@ -57,7 +57,8 @@ flat=sum(paths,[])
 x0,x1=min(p[0] for p in flat),max(p[0] for p in flat)
 y0,y1=min(p[1] for p in flat),max(p[1] for p in flat)
 norm=lambda p:((p[0]-x0)/(x1-x0),(p[1]-y0)/(y1-y0))
-fig,ax=axes(4.8,.81,.19)
+fig,ax=axes(4.2,.90,.20)
+fig.subplots_adjust(left=.13)
 for pts,col in zip(paths,[BLUE,TEAL]):
     ax.add_collection(LineCollection([[norm(pts[i]),norm(pts[i+1])] for i in range(0,len(pts),2)],colors=col,linewidths=1.6,capstyle='round',joinstyle='round'))
 marker=norm(paths[1][0])[0]
@@ -67,7 +68,7 @@ ax.text(0,norm(paths[0][0])[1]+.08,'1,705.48',va='bottom',fontsize=13)
 ax.text(1,norm(paths[1][-1])[1]+.065,'1,725.52',ha='right',va='bottom',fontsize=13)
 ax.set_xticks([0,marker,1],['09:30','14:00','16:00']);ax.set_yticks([])
 ax.set_xlabel('18 September 2013 · US Eastern time',labelpad=13)
-ax.set_title('S&P 500 index',loc='left',fontsize=15,pad=24)
+ax.set_ylabel('S&P 500 index',labelpad=12,fontsize=13)
 ax.spines['left'].set_visible(False);ax.spines['bottom'].set_bounds(0,1)
 ax.set_xlim(-.025,1.025);ax.set_ylim(-.07,1.24)
 save(fig,'finance-fed-announcement','S&P 500 response to the September 2013 Fed announcement',
@@ -100,7 +101,8 @@ plotted=[[data(a),data(b)] for a,b in segments]
 with (HERE/'september11-digitized-geometry.csv').open('w') as f:
     w=csv.writer(f);w.writerow(['segment','minutes_after_0843_start_approx','index_start_approx','minutes_after_0843_end_approx','index_end_approx'])
     for i,(a,b) in enumerate(plotted):w.writerow([i,*a,*b])
-fig,ax=axes(5.4,.77,.16)
+fig,ax=axes(4.8,.86,.18)
+fig.subplots_adjust(left=.15)
 ax.add_collection(LineCollection(plotted,colors=BLUE,linewidths=1.35,capstyle='round',joinstyle='round'))
 ax.set_xlim(0,32);ax.set_ylim(1060,1105)
 ax.set_yticks([1060,1070,1080,1090,1100]);ax.yaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
@@ -109,7 +111,7 @@ ax.set_xticks([2,7,12,17,22,27,32],['08:45','08:50','08:55','09:00','09:05','09:
 for t,label in [(3,'First impact\n08:46'),(20,'Second impact\n09:03')]:
     ax.axvline(t,color=AXIS,lw=1.1,ls=(0,(4,4)),zorder=0)
     ax.text(t,1.035,label,transform=ax.get_xaxis_transform(),ha='center',va='bottom',fontsize=12,color=MUTED,linespacing=1.25)
-ax.set_title('S&P 500 futures price (index points)',loc='left',fontsize=15,pad=53)
+ax.set_ylabel('S&P 500 futures price (index points)',labelpad=12,fontsize=13)
 ax.set_xlabel('11 September 2001 · US Eastern time',labelpad=13)
 save(fig,'finance-september11-futures','S&P 500 futures as the September 11 attacks unfolded',
     'Approximate tracing of the lecture reproduction of Siegel (2008), Figure 13-1. Between 08:43 and 09:15, futures initially fall and recover, then drop steeply around the second impact at 09:03. The sharp fluctuations and partial rebound are retained. Event times are from the 9/11 Commission.')

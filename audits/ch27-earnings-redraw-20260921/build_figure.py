@@ -88,14 +88,14 @@ plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 13,
     'text.color': '#183047', 'axes.labelcolor': '#183047',
     'xtick.color': '#536879', 'ytick.color': '#536879',
     'axes.edgecolor': '#9aabb5'})
-fig, ax = plt.subplots(figsize=(8.4, 6.0))
-fig.subplots_adjust(left=.09, right=.94, top=.86, bottom=.14)
+fig, ax = plt.subplots(figsize=(8.4, 5.5))
+fig.subplots_adjust(left=.14, right=.94, top=.90, bottom=.15)
 ax.set_xlim(-22, 102); ax.set_ylim(-10, 10)
 ax.set_xticks([-20, 0, 20, 40, 60, 80, 90])
 ax.set_yticks([-10, -5, 0, 5, 10])
 ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f'{y:+.0f}' if y else '0'))
 ax.set_xlabel('Days from earnings announcement', labelpad=13)
-ax.set_title('Cumulative average excess return (%)', loc='left', fontsize=15, pad=31)
+ax.set_ylabel('Cumulative average excess return (%)', labelpad=12, fontsize=13)
 ax.spines[['top', 'right']].set_visible(False)
 ax.spines['left'].set_bounds(-10, 10)
 ax.spines['bottom'].set_bounds(-20, 90)
