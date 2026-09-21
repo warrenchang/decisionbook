@@ -131,7 +131,8 @@ septmeta={'source':str(source.relative_to(ROOT)),'source_sha256':hashlib.sha256(
 # 27.4: replot every source vector marker, with no connecting lines.
 with (HERE/'challenger-vector-points.csv').open() as f:rows=list(csv.DictReader(f))
 spec=[('Lockheed','D',BLUE),('Martin Marietta','^',MUTED),('Rockwell','o',TEAL),('Morton Thiokol','s',RED)]
-fig,ax=axes(6.0,.75,.14)
+fig,ax=axes(5.0,.88,.17)
+fig.subplots_adjust(left=.13)
 for name,marker,color in spec:
     pts=[r for r in rows if r['company']==name]
     ax.scatter([float(p['time_hour']) for p in pts],[float(p['change_from_open_percent']) for p in pts],
@@ -142,8 +143,8 @@ ax.grid(axis='y',color=GRID,lw=.7);ax.axhline(0,color='#b7c5ce',lw=.9,zorder=0)
 ax.axvline(11+39/60,color=AXIS,lw=1.1,ls=(0,(4,4)),zorder=0)
 ax.set_xticks([11.5,12,13,14,15,16],['11:30','12:00','13:00','14:00','15:00','16:00'])
 ax.set_xlabel('28 January 1986 · US Eastern time',labelpad=13)
-ax.set_title('Price change from opening price (%)',loc='left',fontsize=15,pad=69)
-ax.legend(frameon=False,ncol=2,loc='lower left',bbox_to_anchor=(0,1.025),borderaxespad=0,fontsize=12,columnspacing=2.1,handletextpad=.55,markerscale=1.25)
+ax.set_ylabel('Price change from opening price (%)',labelpad=12,fontsize=13)
+ax.legend(frameon=False,ncol=4,loc='lower center',bbox_to_anchor=(.5,1.025),borderaxespad=0,fontsize=12,columnspacing=1.05,handlelength=1.0,handletextpad=.4,markerscale=1.25)
 save(fig,'finance-challenger-redraw','The four shuttle contractors after the Challenger explosion',
     'All published vector markers from Maloney and Mulherin (2003), Figure 1, expressed as percent change from each opening price. Morton Thiokol, marked with squares, has the greatest sustained decline and a gap in observations during its trading halt. The vertical reference marks the 11:39 explosion. Points are not joined across trading gaps.')
 print('Built three consistent book plots: Fed, September 11 futures, and Challenger.')
