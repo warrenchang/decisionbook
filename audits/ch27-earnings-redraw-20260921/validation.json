@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "source_preservation": {
+    "chapter_lines_changed": 1,
+    "original_scan_unchanged": true
+  },
+  "svg": {
+    "accessible_title_description": true,
+    "endpoint_labels": 10,
+    "viewBox": "0 0 604.8 432"
+  },
+  "html": {
+    "figure_number": "27.5",
+    "svg_matches_source": true,
+    "png_fallback_matches_source": true,
+    "approximation_caption": true,
+    "alt_text": true
+  },
+  "epub": {
+    "chapter": "EPUB/text/ch034.xhtml",
+    "image": "EPUB/media/file62.svg",
+    "figure_number": "27.5",
+    "svg_matches_source": true,
+    "approximation_caption": true,
+    "alt_text": true,
+    "staged_and_delivered_match": true
+  },
+  "visual_checks": {
+    "native_figure": "PASS",
+    "800px": "PASS",
+    "390px": "labels too small when fitted; existing 900px HTML SVG reading pane retained",
+    "independent_source_fidelity_review": "PASS",
+    "browser_destination_screenshot": "not performed; existing local-file preview policy block respected",
+    "native_epub_reader": "not inspected"
+  },
+  "sha256": {
+    "chapters/27-markets-mispricing-and-bubbles.qmd": "b6d6e2997c6e95a1ddc33e3c0b5334aae36fbfc913b9cc9c385a835d7263bb1b",
+    "figures/finance-earnings-drift-redraw.svg": "1d7a7a86407fb4f4a24b3db53b040d2d1958d7a357855c9d064fb00650c4af4c",
+    "docs/chapters/27-markets-mispricing-and-bubbles.html": "fbed030a967a76e0ce2220185c6995c3ffb60b432a9f497c831011c38609d9e3",
+    "docs/Decision-in-the-Making.epub": "5cf4fa130ea2df17f5c22c06ba6f8e8b35e0bb33a4a6d2f98efc3919100277e8"
+  },
+  "repository_checks": {
+    "book": "QA PASS: 0 error(s), 0 warning(s).",
+    "epub": "EPUB QA PASS: 0 error(s); report=/Users/ra25fi/Library/CloudStorage/OneDrive-AalborgUniversitet/decision_book/EPUB_QA_REPORT.md",
+    "float_references": "PASS: 62 sources; {'fig': 100, 'tbl': 166}; 0 issue(s)",
+    "master_references": "PASS: references.qmd contains 1066 unique chapter-and-appendix references.",
+    "chapter_diff_whitespace": "PASS"
+  }
+}
