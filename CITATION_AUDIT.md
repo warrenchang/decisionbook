@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1070**
+Unique references in the master union: **1072**
 
-Chapter reference blocks: **1092**
+Chapter reference blocks: **1094**
 
 Unresolved author–year citations: **0**
 
@@ -17,7 +17,7 @@ Unresolved author–year citations: **0**
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 34 | 0 |
-| Valuation {#valuation-how-options-become-worth-choosing} | 60 | 0 |
+| Valuation {#valuation-how-options-become-worth-choosing} | 61 | 0 |
 | Narrator After Choice | 20 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 37 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
@@ -38,7 +38,7 @@ Unresolved author–year citations: **0**
 | Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
 | Social Norms and Conformity | 30 | 0 |
-| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 67 | 0 |
+| Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 68 | 0 |
 | Authority, Groupthink, and Shared Responsibility | 15 | 0 |
 | Culture and Identity | 30 | 0 |
 | Persuasion | 28 | 0 |
