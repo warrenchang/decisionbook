@@ -4,7 +4,7 @@ Canonical chapters: **42**
 
 Unique references in the master union: **1072**
 
-Chapter reference blocks: **1094**
+Chapter reference blocks: **1097**
 
 Unresolved author–year citations: **0**
 
@@ -17,7 +17,7 @@ Unresolved author–year citations: **0**
 | Limited Attention {#attention-what-becomes-evidence} | 35 | 0 |
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 48 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 34 | 0 |
-| Valuation {#valuation-how-options-become-worth-choosing} | 61 | 0 |
+| Valuation {#valuation-how-options-become-worth-choosing} | 63 | 0 |
 | Narrator After Choice | 20 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 37 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
@@ -33,7 +33,7 @@ Unresolved author–year citations: **0**
 | Mental Accounting | 23 | 0 |
 | Intertemporal Decision Making | 33 | 0 |
 | Habits, Wanting, and Self-Control | 52 | 0 |
-| Deciding for a Better Life | 25 | 0 |
+| Deciding for a Better Life | 26 | 0 |
 | Strategic Interdependence | 13 | 0 |
 | Coordination and Focal Points | 18 | 0 |
 | Cooperation and Social Preferences | 39 | 0 |
