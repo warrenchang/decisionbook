@@ -1,0 +1,627 @@
+---
+aliases:
+  - 25-cooperation-and-social-preferences-self-interest-is-not-the-only-payoff.html
+  - 48-cooperation-social-preferences.html
+---
+
+# Cooperation and Social Preferences
+
+*Self-Interest Is Not the Only Payoff*
+
+::: {#chapter-25-start .chapter-epigraph}
+> “We are all caught in an inescapable network of mutuality.”
+>
+> — Martin Luther King Jr., [remarks at the Africa Freedom Dinner](https://kinginstitute.stanford.edu/king-papers/documents/remarks-delivered-africa-freedom-dinner-atlanta-university), 13 May 1959
+:::
+
+[]{#opening-puzzle-why-cooperate-when-defection-dominates}Two colleagues need each other's working notes to finish a joint report. Preparing clear notes takes time away from work assessed individually. Each would welcome the other's help while skipping their own contribution. If both withhold their notes, both lose useful input.
+
+They agree on what working together would require. Their difficulty is that each can gain by letting the other do the work. In the stag hunt in [Coordination and Focal Points](24-coordination-and-focal-points.qmd#strategic-uncertainty-the-stag-hunt), confidence that the other person would join made joining worthwhile. Here, confidence that the colleague will help still leaves a reason to withhold one's own contribution.
+
+Yet people often share the notes, return a favor, or refuse an unfair advantage. Some expect a later benefit; others care about the colleague or believe that helping is the right thing to do. Those differences matter when we try to make cooperation last.
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+Cooperation can become worthwhile through future interaction, reputation, and rules. It can also reflect concern for others, fairness, and shared obligations. Group identity helps determine whom that concern includes. A durable arrangement needs to take incentives, motives, and the boundaries of “us” seriously.
+:::
+
+## Learning goals
+
+- Distinguish a coordination problem from a conflict between individual incentives and collective gains.
+- Explain how continued interaction, reputation, and institutions can support cooperation, including the need for repair after mistakes.
+- Use differences between games to separate strategic incentives, social preferences, and expectations about appropriate behavior.
+- Explain how ingroup favoritism can restrict cooperation and how shared goals and a more inclusive identity can help rebuild it.
+
+## When cooperation invites exploitation
+
+The colleagues choose simultaneously whether to share their notes. @tbl-one-shot-pd represents sharing as Cooperate and withholding as Defect. Its illustrative payoffs combine the benefit of receiving useful input and the cost of providing it.
+
+| Player 1 \\ Player 2 | Cooperate | Defect |
+| --- | ---: | ---: |
+| **Cooperate** | 4, 4 | 0, 6 |
+| **Defect** | 6, 0 | 2, 2 |
+: One-shot Prisoner's Dilemma; Player 1's payoff appears first {#tbl-one-shot-pd}
+
+Defecting raises Player 1's payoff from 4 to 6 if Player 2 cooperates, and from 0 to 2 if Player 2 defects. It does the same for Player 2. Defection is therefore a strictly dominant strategy for each: it pays more regardless of the other's choice. The unique Nash equilibrium is Defect–Defect, giving each 2 instead of the 4 each could receive through mutual cooperation.
+
+This is the **Prisoner's Dilemma**: individually attractive departures undermine a mutually beneficial outcome. Unlike the stag hunt, no greater confidence in the partner's cooperation makes cooperating a best response in this one-shot calculation. Something beyond reassurance must change.
+
+[]{#is-the-scene-really-a-prisoners-dilemma}
+
+Watch the [ferry dilemma from *The Dark Knight*](https://youtu.be/Yqvbv-SB4bg) and reconstruct each group's options and payoff ranking. Does defection dominate, who can communicate, and can the threat be trusted? The fictional scene tests the model's assumptions.
+
+The opening matrix also leaves out future encounters and concerns beyond the stated rewards. Adding either can change the choice. Repeated interaction and reputation attach later consequences to today's act, rules alter the conditions of the interaction, and social preferences change what a player values. The optional evolutionary lens examines how the structure of a population can support cooperation over time.
+
+[]{#fig-cooperation-architecture}
+
+## How relationships and rules support cooperation {#movement-1-why-cooperation-persists}
+
+### The future can outweigh today's temptation {#repetition-gives-current-behavior-a-future}
+
+Suppose the colleagues will work together again. Withholding notes may save effort today but cost access to useful notes later. Cooperation can now serve each person's own interests, provided the future relationship is valuable enough and the response to defection is credible.
+
+Consider an indefinitely repeated version of the opening game. Under a **grim-trigger strategy**, each player cooperates until someone defects, then defects forever. Defecting brings a larger reward today but replaces future mutual cooperation with mutual defection.
+
+Whether that trade is worthwhile depends on how strongly the future relationship counts, allowing for both the chance of another encounter and the discounting of later payoffs. With the opening payoffs, cooperation can remain a best response when each next round carries at least half the weight of the current round. The optional analysis derives that threshold.
+
+This identifies when cooperation can be sustained by these strategies, not that players will necessarily reach it. The comparison assumes reliable observation and the specified response to defection. Misobserved actions can trigger punishment after an innocent error. A known final round can also unravel cooperation by backward induction when the stage-game incentives and rationality assumptions apply throughout. Experimental evidence reviewed by Dal Bó and Fréchette (2018) makes continuation and incentives central to understanding when repeated cooperation emerges. Reputational links or further relationships can preserve future consequences after one particular project ends.
+
+:::: {#math-repeated-cooperation}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: when future cooperation outweighs defection
+
+Consider an indefinitely repeated version of the opening game. Under a **grim-trigger strategy**, each player cooperates until someone defects, then defects forever. Let $T$ be the temptation payoff from defecting against a cooperator, $R$ the reward from mutual cooperation, and $P$ the payoff from mutual defection. The continuation weight $\delta$, between 0 and 1, captures how strongly the next round counts, allowing for both the chance of another encounter and discounting of future payoffs.
+
+Continued cooperation yields
+
+$$
+\frac{R}{1-\delta},
+$$
+
+whereas a one-time defection followed by permanent punishment yields
+
+$$
+T+\frac{\delta P}{1-\delta}.
+$$
+
+For cooperation to remain a best response to the other player's grim-trigger strategy,
+
+$$
+\frac{R}{1-\delta}\geq T+\frac{\delta P}{1-\delta},
+\qquad\text{or}\qquad
+\delta\geq\frac{T-R}{T-P}.
+$$
+
+With $T=6$, $R=4$, and $P=2$, the threshold is $\delta\geq0.5$. At $\delta=0.5$, continued cooperation is worth $4/(1-0.5)=8$; defecting is worth $6+0.5\times2/(1-0.5)=8$ as well. At $\delta=0.75$, cooperation is worth 16 and defection followed by punishment only 12. The current gain of 2 is outweighed by the loss of future cooperation.
+:::
+::::
+
+### Reciprocity needs a way to repair mistakes {#tit-for-tat-forgiveness-and-noise}
+
+Permanent punishment illustrates an incentive; it is a severe policy for working with fallible people. A colleague may fail to send notes because a file was lost, not because they intended to exploit anyone. A useful response needs to deter deliberate withholding while allowing cooperation to recover from error.
+
+**Tit-for-tat** begins by cooperating and then copies the partner's previous move. Axelrod's tournaments made four properties memorable: be nice, be provocable, be forgiving, and be clear (Axelrod, 1984). Here, forgiving means returning to cooperation after the partner does. These properties help explain its success in those tournaments.
+
+An accidental defection can nevertheless send two tit-for-tat players into alternating retaliation. **Generous tit-for-tat** sometimes cooperates after a defection, while **win-stay, lose-shift** repeats an action after satisfactory outcomes and switches after unsatisfactory ones. Imhof, Fudenberg, and Nowak (2007), for example, find win-stay, lose-shift rather than tit-for-tat selected above a cooperation-benefit threshold in their particular finite-population evolutionary process. Which strategy succeeds depends on mistakes, the alternatives present, and how success changes future play or population composition.
+
+The “live-and-let-live” system that emerged in parts of the Western Front during the First World War illustrates reciprocal restraint outside a laboratory: units facing one another repeatedly could respond to local restraint and punish violations (Axelrod, 1984). The possibility of a continuing response helped sustain restraint even between enemies.
+
+### Reputation and institutions support cooperation {#reputation-networks-and-institutions-change-incentives}
+
+Future consequences need not come from the person we help today. A colleague who shares useful work may later be invited onto another team because others have learned that they can rely on them. **Indirect reciprocity** operates through that wider reputation, while **direct reciprocity** operates through another encounter with the same partner (Nowak, 2006).
+
+For a reputation to affect incentives, an action must leave a record that reaches someone who can respond. A rating system, a reference, or informal information sharing can provide that link. The link can also fail: records can be mistaken, selective, or manipulated, and a permanent bad label can block recovery. The design of the record and the possibility of correcting it are part of the cooperation problem.
+
+Cooperation can also travel through people's next interactions without anyone passing along a reputation. Fowler and Christakis (2010) reanalyzed public-goods experiments in which participants were randomly placed in new four-person groups over six rounds and never met the same partner twice. People exposed to larger contributions subsequently gave more in new groups, and the influence extended through intermediaries. In the version allowing punishment, it reached three links along the interaction chain. Random rematching helps distinguish this pattern from cooperative people simply choosing cooperative friends. It does not establish a universal “three degrees” rule for ordinary social networks. The practical possibility is that an example of cooperation changes how its recipient treats someone else.
+
+[]{#can-an-image-of-eyes-create-reputation}
+
+[]{#fig-watched-eyes-evidence-update}
+
+[]{#robot-eyes-and-perceived-observation}
+
+A social cue can also suggest an audience without creating one. Burnham and Hare (2007) displayed images of **Kismet**, a robot with humanlike eyes, during a public-goods game. Participants seeing Kismet contributed an average of 5.39 of 10 tokens across six rounds, compared with 4.17 without it—about 29% more.
+
+The comparison did not isolate the eyes from the rest of the robot image. Later meta-analyses, which included this study, found no reliable overall increase in generosity from artificial surveillance cues (Northover et al., 2017). A reputation system still needs consequences that other people can actually impose.
+
+[]{#rules-can-change-the-temptation}
+
+An organization need not wait for colleagues to punish one another. It can recognize useful contributions, make responsibility visible, or require a shared handover before a project is accepted. Contracts and enforcement can similarly change the expected return from keeping an agreement. A penalty for withholding notes, however, needs a clear definition of the required contribution, a proportionate response, and a way to correct a mistaken record. Otherwise the rule can punish a technical failure or a justified refusal to disclose sensitive information.
+
+Rules also communicate what the relationship means. Paying people for helping, fining them for withholding, and recognizing a shared obligation can produce different responses even when the monetary changes seem small. We will return to this issue after considering what people value beyond their own rewards.
+
+[]{#applied-case-large-stakes-do-not-remove-context}
+
+A televised choice brings reputation, prior interaction, and immediate incentives together. The game *Golden Balls* ended with contestants choosing Split or Steal for large and widely varying prizes. Stealing could secure the whole prize against a partner who split; splitting exposed a contestant to leaving with nothing. Before reading the evidence, watch [one Split-or-Steal round](https://youtu.be/7FbkwrhW_0I) and an [unusual communication strategy](https://youtu.be/LPwZ3wYoSmA). Record the promises, threats, and choices that remain credible.
+
+Van den Assem, van Dolder, and Thaler (2012) report stakes averaging more than $20,000. Many contestants chose Split even though Steal weakly dominated it in immediate monetary payoffs: Steal did better against Split and equally well against Steal. The authors find evidence consistent with reciprocal preferences from earlier interaction, little support in their sample for conditional cooperation based on an opponent's expected action, and an age-dependent gender pattern.
+
+The choices show cooperation at high stakes in a setting where contestants interacted before choosing and faced a television audience.[^ch25-golden-balls]
+
+## What people value beyond their own payoff {#movement-2-what-people-value-socially}
+
+Future consequences explain why helping can serve a player's own material interests. They do not exhaust the possibilities: a person may share even when doing so brings no later return. A **social preference** means that utility depends on more than one's own material payoff. People may care about another person's welfare, inequality, total surplus, the worst-off person's outcome, intentions, or obligations to a group.
+
+Two important forms can predict different choices. **Altruism**, in an outcome-based preference model, gives positive weight to another person's welfare. **Inequity aversion** places a cost on unequal outcomes, often distinguishing being behind from being ahead. Helping someone already better off can improve their welfare while widening the gap. Allocation experiments vary such trade-offs to distinguish motives; the optional research track develops the models (Andreoni & Miller, 2002; Fehr & Schmidt, 1999).
+
+### Fairness, bargaining, and giving {#ultimatum-game-fairness-has-strategic-force}
+
+In the **ultimatum game**, a proposer divides a sum. A responder accepts, implementing the division, or rejects, giving both zero. A responder concerned only with their own money prefers accepting any positive offer to rejecting it. With a smallest positive monetary unit, and if the responder rejects zero, backward reasoning predicts that smallest positive offer. If zero is accepted, a zero offer can be optimal instead; continuously divisible money has no smallest positive amount.
+
+Classic experiments instead commonly find modal offers around 40–50% and mean offers around 30–40%; offers below 20% are often rejected roughly half the time in multi-study summaries (Camerer, 2003; Oosterbeek, Sloof, & van de Kuilen, 2004).
+
+Rejecting a positive offer costs the responder money. That sacrifice changes the proposer's calculation: an offer that leaves little for the responder may also leave nothing for the proposer. Fairness can therefore affect the bargain even when the proposer cares only about their own return.
+
+An offer can still mix motives. A proposer may value fairness, fear rejection, follow a norm, or misunderstand responders. A responder may dislike inequality, punish an insulting intention, preserve self-respect, or enforce a norm. Rejection reveals a willingness to sacrifice money, without uniquely identifying the reason.
+
+The linked [ultimatum scene](https://youtu.be/7mETgb-fPRo) provides a communication exercise. Identify the demand, the threatened consequence, and the recipient's outside options. Then consider whether posing the ultimatum changes only the material menu or also respect, identity, and the perceived intention behind the offer.
+
+[]{#dictator-game-remove-strategic-rejection}
+
+A generous ultimatum offer can express care or simply buy acceptance. To test how much acceptance matters, remove the recipient's power to reject. In the **dictator game**, the allocator can keep the money without risking that punishment. Removing rejection usually reduces transfers. In classic comparable treatments, average giving is around 20% in Forsythe and colleagues (1994) and closer to 10% under the double-blind procedures of Hoffman and colleagues (1994).
+
+Removing rejection does not remove the rest of the setting. Anonymity, earned entitlement, experimenter observation, and whether the menu allows taking as well as giving can change the meaning of the action. Removing rejection changes the recipient's power; allowing taking changes the allocator's options and the meaning of giving.
+
+[]{#fig-social-preference-games-redraw}
+
+### Reciprocity changes what feels rewarding {#mutual-cooperation-and-reward}
+
+Sharing notes may matter because the other person responds in kind. In two fMRI experiments involving 36 women, Rilling and colleagues (2002) found that mutual cooperation with a presumed human partner was associated with stronger responses in parts of the ventral striatum and orbitofrontal cortex than the average of the other three Prisoner's Dilemma outcomes. Mutual cooperation paid less than exploiting a cooperating partner.
+
+Reciprocated help may acquire value through social connection and expectations of continued cooperation. The repeated-game design leaves both in play. For the colleagues, a reliable exchange can make contributing valuable because of the relationship it sustains as well as the notes it delivers.
+
+The measurement was **blood-oxygen-level-dependent (BOLD) activity**, an indirect indicator of neural activity. It did not measure dopamine release. The findings support a role for reward processing in mutual cooperation. This is the same distinction between brain activity and neurotransmitter release discussed in [Chapter 21](21-habits-wanting-and-self-control.qmd#research-near-miss-evidence).
+
+[]{#punishment-and-anticipated-reward}
+
+Social preferences can also make another person's loss attractive. Someone who has been deliberately betrayed may be willing to pay to punish the offender, even when doing so cannot recover the lost money. The prospect of seeing a wrong answered may itself enter the payoff.
+
+De Quervain and colleagues (2004) studied this possibility using **positron emission tomography (PET)** during a trust game. Their analysis included 14 men who had trusted their partners. After a partner kept money instead of returning a share, participants could assign punishment points. Effective punishment reduced the partner's earnings; symbolic punishment did not. While participants considered their response, effective punishment produced greater activity in the **dorsal striatum**, a region involved in reward processing and goal-directed action. Stronger activation was also associated with willingness to spend more of one's own money to punish.
+
+The authors interpreted this pattern as evidence of **anticipated satisfaction from punishment**. A monetary sacrifice can therefore be consistent with pursuing something the person values. The term *altruistic punishment* does not establish a selfless psychological motive: enforcing a cooperative norm and expecting personal satisfaction can coexist.
+
+
+Anticipation can also differ from the emotional aftermath. In separate behavioral experiments, Carlsmith, Wilson, and Gilbert (2008) found that participants expected punishment to improve their mood. Yet participants given the opportunity to punish, most of whom used it, reported worse mood than those without it. Continued rumination about the offender helped explain the pattern.
+
+For the colleagues sharing notes, this creates a practical tension. Wanting an exploiter to face consequences can motivate enforcement, but the appeal of retaliation does not establish that it will repair the relationship. A useful sanction needs to be judged by what happens to cooperation as well as by how satisfying it seems to impose.
+
+## When cooperation is a shared obligation {#bridge-preferences-norms-and-enforcement-are-different}
+
+The colleagues may share notes because they value helping, because they expect a return, or because contributing is understood to be part of the job. These reasons can reinforce one another. They can also come apart: someone may believe colleagues approve of sharing while privately wishing to keep their work to themselves.
+
+Bicchieri (2006) distinguishes **empirical expectations**, about what others do, from **normative expectations**, about what others think one should do. Social norms can make behavior depend on both. A shared obligation therefore requires more than a manager announcing a preferred action: the relevant expectations must exist within the group whose conduct or approval matters.
+
+@tbl-preference-norm separates these expectations from private preferences and enforcement. Its purpose is to keep an observed act of helping from being treated as a complete explanation of itself.
+
+| Influence on the choice | What enters the account? | Evidence that helps distinguish it |
+| --- | --- | --- |
+| Social preference | Value placed on own and others' outcomes, inequality, efficiency, or intentions. | Choices across payoff and intention variations. |
+| Empirical expectation | Belief about what others do. | Expected behavior within a specified reference group. |
+| Normative expectation | Belief about what others think one should do. | Perceived approval or appropriateness within that group. |
+| External enforcement | Expected reward or sanction from others or institutions. | Responses to changes in observability, sanctions, or formal rules. |
+| Internal enforcement | Guilt, shame, pride, identity, or self-sanction. | Private choices combined with careful reports of feelings or reasons. |
+: Distinguishing motives, expectations, and enforcement {#tbl-preference-norm}
+
+Changing a rule may also change its social meaning. Gneezy and Rustichini's (2000) daycare study found that introducing a fine for late pickup increased lateness in the treated centers; the effect did not simply disappear when the fine was removed. One interpretation is that parents began to treat lateness as a service they could buy instead of an imposition they should avoid. The result makes the relationship between incentives and obligation part of the design problem. The applied notes examine this study alongside fairness in markets and punishment.
+
+[*Social Norms and Conformity*](26-social-norms-and-conformity.qmd#social-norms-and-conformity-when-other-people-become-evidence) develops how expectations about others form and change. Here, their significance is that people can experience cooperation as something owed to one another, alongside any future reward.
+
+## When “us and them” blocks cooperation {#group-identity-changes-the-social-boundary}
+
+An obligation to help still leaves a question: *help whom?* Suppose the colleagues preparing the joint report belong to departments with a history of rivalry. Each readily shares notes with colleagues in their own department but withholds them from the other. Cooperation is already strong within each team. The difficulty lies at the boundary between them.
+
+**Ingroup favoritism** means treating members of one's own group more favorably than members of another. It can shape whose request receives attention, whose mistake gets the benefit of the doubt, and whose success feels worth supporting. Minimal-group experiments show that even arbitrary categorization can produce such favoritism under some conditions (Tajfel, 1970). Chen and Li (2009) find that experimentally induced group identity changes social preferences and strategic responses. A long history of conflict is therefore not necessary for group membership to affect a choice.
+
+Favoritism does not necessarily mean hostility. In a meta-analysis of 212 studies, Balliet and colleagues (2014) found greater cooperation with ingroup than outgroup members. Comparisons with unclassified strangers supported a pattern driven mainly by extra cooperation toward insiders, rather than reduced cooperation toward outsiders. The practical distinction matters: someone can sincerely deny disliking another department while giving their own colleagues preferential help. The size of that difference depends on the task, information, and relationship.
+
+[]{#ingroup-favoritism-and-evolution}
+
+An evolutionary model asks how such selective cooperation could become common. Hammond and Axelrod (2006) model agents that recognize a group marker and can help their own group, other groups, both, or neither. Local interaction and reproduction allow cooperation within a group to spread alongside noncooperation across its boundary. Their **ethnocentric strategy** means helping agents with the same marker while withholding help from others; it requires neither hatred nor a belief in the group's superiority. The [evolutionary notes below](#advanced-research-track-evolutionary-and-spatial-models) explain how this pattern can emerge.
+
+These are complementary levels of explanation: experiments examine responses to group labels, whereas the model tracks the spread of conditional strategies. The model keeps the rule for identifying insiders fixed. Shared goals matter because people can change which boundary defines the group whose success they value.
+
+[]{#superordinate-goals-and-cooperation}
+
+Telling rival teams to be friendlier leaves their working relationship largely unchanged. A **superordinate goal** is valuable to both groups and requires their combined efforts or resources. Both wanting the same prize creates competition; needing each other to achieve a valued outcome creates a reason to cooperate.
+
+Sherif's (1958) account of the Robbers Cave camp study gives a concrete illustration. Researchers first established two groups of boys, then introduced competitive activities and prizes that generated hostility. Pleasant contact alone did not dissolve the rivalry. Later, the researchers arranged problems requiring joint effort, including restoring a water supply and getting transport working to collect food. Across a series of shared tasks, hostility declined and friendships increasingly crossed the group boundary.
+
+In this staged study with a deliberately homogeneous sample, shared tasks changed both interdependence and social experience: the boys came to need one another and repeatedly experienced being useful to the other group.
+
+### Shared work can change who “we” are {#common-ingroup-identity}
+
+A shared task can help through two distinct routes. It can make another group's contribution valuable to my own success, changing incentives. It can also change how I categorize the contributors: from outsiders whose help I need to members of a team to which I belong. The **common ingroup identity model** proposes that this broader category can extend favorable treatment to people previously regarded as outsiders (Dovidio, Gaertner, & Saguy, 2009).
+
+Gaertner and colleagues (1990) tested this account with pairs of three-person groups, varying cooperation and whether participants were encouraged to see one group or two. Among participants initially encouraged to see two groups, cooperation strengthened the perception of a single group and reduced evaluative bias. The findings support recategorization as a pathway.
+
+Levine and colleagues (2005) illustrate how the boundary can also shape helping. In one study, football supporters whose club identity had been emphasized were more likely to help an apparently injured stranger wearing their own team's shirt than a rival team's or an unbranded shirt. In a second study, emphasizing the broader identity of football supporter extended helping to rival fans, but not equally to people without a football shirt. The two-study pattern suggests that a more inclusive identity can widen concern while leaving a boundary in place.
+
+For the departments, “We produce a report that clients can rely on” becomes credible when each team can see how the other's contribution improves that report. A shared label may help people recognize the relationship. Successful joint work gives them evidence for it.
+
+This differs from the [common knowledge](24-coordination-and-focal-points.qmd#private-mutual-common-knowledge) discussed in Chapter 24. Common knowledge concerns what people know about one another's knowledge; common identity concerns whom they understand themselves to belong with. Everyone may know the plan while still viewing the other department as an adversary.
+
+[]{#rebuild-cooperation-without-erasing-differences}
+
+Building that wider identity need not require either department to abandon its expertise or history. A **dual identity** preserves subgroup membership within a wider “we”: two distinct departments contributing to one service. Dovidio and colleagues (2009) also warn that an emphasis on sameness can obscure unequal treatment. A common identity is more credible when people can name differences and challenge unfair arrangements without being accused of undermining unity.
+
+For the joint report, a practical rebuilding sequence is:
+
+- **Choose an outcome both groups value.** Agree what a reliable report must allow its users to do, and what would demonstrate improvement.
+- **Make contributions complementary and visible.** Give each department a useful role, recognize both contributions, and align assessment with the joint result.
+- **Begin with a manageable shared task.** Exchange a small set of notes, complete one report section together, and review whether each side delivered. Repeated reliable contributions can give trust something to rest on.
+- **Keep voice and accountability.** Agree how to share costs, correct mistakes, and address renewed withholding. A shared identity should support those conversations.
+
+Check whether help actually crosses the old boundary and persists after the initial task. Better relations can make cooperation easier, but they cannot make an exploitative agreement fair or remove a remaining incentive to free-ride.
+
+## Building an arrangement people can sustain {#application-build-cooperation-around-the-diagnosed-failure}
+
+Return to the joint report. Individual assessment may reward withholding useful notes; colleagues may doubt that anyone will reciprocate; they may disagree about what can legitimately be shared; or they may reserve help for their own department. Recognizing shared work addresses the first problem, a small reciprocal trial with visible contributions can address the second, and an agreed disclosure rule can address the third. A joint task with complementary roles can help bridge a group boundary.
+
+@tbl-cooperation-mechanisms collects the conditions examined in this chapter. They can coexist: a continuing relationship can also have a reputation system and formal enforcement. Each changes the reason cooperation might be chosen.
+
+[]{#compare-the-cooperation-mechanisms}
+
+::: {.callout-note icon=false}
+## Compare the conditions for cooperation
+
+| Interaction feature | What changes? | Why cooperation may appear | Main boundary |
+| --- | --- | --- | --- |
+| One-shot material-payoff game | No future strategic consequence. | Social preferences, norms, mistakes, communication, or beliefs about the game. | A cooperative action does not identify which motive operated. |
+| Repeated game | Current behavior changes future play. | Direct reciprocity, threats, forgiveness, relationship value. | Requires sufficient continuation, monitoring, and credible response. |
+| Reputation system | Others observe or learn one's history. | Indirect reciprocity and future access. | Records may be noisy, manipulable, or impossible to escape. |
+| Institutional rules | Rules change payoffs, information, or enforcement. | Contracts, sanctions, matching, insurance, or dispute resolution. | Enforcement can be costly, unequal, or alter the meaning of the act. |
+| Shared task across groups | Joint success requires contributions across an existing boundary. | Complementary incentives and a potentially more inclusive group identity. | A shared goal need not create shared identity; unequal costs and free-riding can remain. |
+: Interaction features change the conditions for cooperation {#tbl-cooperation-mechanisms}
+:::
+
+[]{#ethics-cooperation-for-whom}
+
+The same arrangements can sustain harmful cooperation: firms can maintain a cartel at buyers' expense, and a project team can reward silence about mistakes. When defining the contributions to support, include their effects on clients and others outside the team. Members need a way to raise concerns, refuse a harmful request, or leave the arrangement without being treated as defectors.
+
+## Practice Lab
+
+Use the opening payoff matrix for one anonymous round. Then play four announced rounds with the same partner. Record each action and the action you expected from the partner; afterward, note whether reciprocity, fairness, obligation, or the approaching final round influenced your choice.
+
+Compare the patterns without assuming that repetition caused any difference: familiarity, order, and changing beliefs also changed. Design one additional comparison that separates two explanations—for example, randomizing whether partners remain together or whether contributions are publicly observable. State what each explanation predicts and which result would count against it.
+
+For an application to group boundaries, choose two teams that cooperate internally but struggle to help one another. Propose a superordinate goal and specify each team's contribution. Separate the incentive change from the identity change you expect: what would people gain, and whom might they begin to count as “us”? Identify observable help across teams and a follow-up check after the task, rather than treating agreement with a team slogan as evidence of restored cooperation.
+
+## Take it forward
+
+The colleagues' difficulty is easier to address once we distinguish the reward for withholding notes, the future value of the relationship, the obligation each feels, and whom that obligation includes. Make useful contributions worthwhile, give people experience of succeeding together, and leave room to repair mistakes. When cooperation stops at a group boundary, ask what credible shared task could make the other side part of “us.”
+
+The next chapter follows another influence of other people: their behavior supplies evidence about what works, what is normal, and what earns approval. Those signals can help cooperation grow, but they can also spread a practice whose value nobody has checked.
+
+## Optional research and application notes
+
+[]{#advanced-research-track-evolutionary-and-spatial-models}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Advanced research track: how cooperative strategies spread
+
+Explaining why a colleague cooperates today differs from explaining why a cooperative practice spreads through a workplace. The first question concerns a choice; the second concerns change over time. The population question complements the reasoning explored in [Strategic Interdependence](23-strategic-interdependence.qmd#chapter-23-start) and the equilibrium analysis developed in [Coordination and Focal Points](24-coordination-and-focal-points.qmd#chapter-24-start).
+
+[]{#fig-three-lenses-strategic-behavior}
+
+[]{#compare-the-three-lenses}
+
+The comparison in @tbl-three-strategic-lenses makes the object of explanation explicit. A population can change because existing members revise what they do, because some members are replaced, or because the rules of the interaction change. None of these possibilities can be inferred from a final pattern alone.
+
+| Lens | What the account specifies | Primary question |
+| --- | --- | --- |
+| Equilibrium benchmark | Strategies that are best responses to one another. | Which profiles give no player an incentive to depart alone? |
+| Behavioral reasoning | How players form beliefs about others and respond to them. | What reasoning and beliefs explain the choices people make? |
+| Population dynamics | How strategies become more or less common through an update process. | Which strategies spread or coexist, and by what process? |
+: Three lenses on strategic behavior {#tbl-three-strategic-lenses}
+
+### Evolution depends on the transmission process
+
+Evolutionary game theory studies how success in an interaction affects the persistence or spread of strategies. A strategy here need not be a consciously chosen plan: it can be an inherited behavioral rule. **Evolutionary stability** asks whether a resident strategy can resist a sufficiently rare alternative under the model's conditions; it is distinct from an individual's calculation about an opponent (Maynard Smith & Price, 1973).
+
+One recurring condition supporting cooperation is **positive assortment**: cooperators encounter cooperators more often than random mixing would predict. The model must explain how this pattern arises. @tbl-five-rules separates how relatedness, repeated encounters, reputation, and population structure can support cooperation (Nowak, 2006).
+
+| Rule | Link that supports cooperation | Diagnostic question |
+| --- | --- | --- |
+| Kin selection | Help benefits genetically related recipients. | Is relatedness part of the actual transmission process? |
+| Direct reciprocity | The same parties meet again. | Is continuation likely enough, and can actions be observed? |
+| Indirect reciprocity | Reputation affects treatment by others. | Who observes, records, corrects, and can escape the record? |
+| Network reciprocity | Cooperators interact disproportionately with cooperators. | How are links formed, broken, and inherited? |
+| Group or multilevel selection | Groups with more cooperation differentially persist or grow. | What competes at each level, and how much movement occurs across groups? |
+: Five-rule taxonomy for the evolution of cooperation {#tbl-five-rules}
+
+Kin, repeated contact, reputation, and networks can matter in human settings, but laws, organizations, language, and deliberate design also determine who interacts and which outcomes reproduce.
+
+
+### Spatial models: who encounters whom?
+
+A spatial model adds rules for interaction or movement. Cooperators may persist in clusters where much of the benefit they provide reaches other cooperators. Whether that happens depends on the network, payoffs, and update rule.
+
+Schelling's segregation model shows another reason to distinguish an individual's motive from a population pattern: local decisions about neighbors can generate substantial aggregate segregation without a corresponding individual preference for that degree of segregation (Schelling, 1969; Wilensky, 1997). Evolutionary Prisoner's Dilemma models instead examine payoff-dependent strategy transmission (Wilensky, 2002). These are executable hypotheses under specified rules, not direct evidence about human motives.
+
+Tournament success, repeated-game equilibrium, and evolutionary stability are different criteria. Tit-for-tat's tournament performance does not make it successful under every population process (Axelrod, 1984; Imhof et al., 2007). A dynamic model needs declared payoffs, initial conditions, transmission or update rules, interaction structure, and time horizon; a stochastic simulation also needs recorded random seeds and independent runs. [Appendix B](../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd#population-model-provenance) develops these requirements and separates evolutionary function, current mechanism, and normative interpretation.
+
+[]{#ethnocentrism-as-selective-cooperation}
+
+The [ingroup favoritism discussed above](#ingroup-favoritism-and-evolution) has a precise counterpart in the ethnocentrism model. In the [NetLogo teaching version](https://ccl.northwestern.edu/netlogo/models/Ethnocentrism-AlternativeVisualization), agents inherit a color marker and two rules: whether to help agents of the same color and whether to help agents of a different color (Wilensky, 2003). Helping reduces the donor's chance of reproducing and raises the recipient's. Offspring occupy vacant neighboring sites and inherit their parent's traits, with occasional mutation; immigration and death also change the population.
+
+Local reproduction creates clusters whose members tend to share markers and strategies. Mutual help can sustain these clusters, while selective helpers avoid the cost of helping differently marked neighbors. The marker does not guarantee cooperation: same-marker free riders can exploit a cooperative cluster. In Hammond and Axelrod's (2006) reported dynamics, selectively cooperative clusters of another marker can spread at those free riders' expense. Ingroup favoritism can therefore coexist with considerable cooperation while leaving a boundary across which help is withheld.
+
+The connection to common goals has a limit. The model defines an insider by marker equality; it does not model rival departments learning to regard themselves as one team. The [shared-goal discussion](#superordinate-goals-and-cooperation) concerns changing that social boundary, not simply making a fixed ethnocentric rule more successful.
+
+### A spreading routine can have several explanations {#application-choose-the-model-after-diagnosing-the-process}
+
+Suppose sharing notes becomes common across teams. Employees may repeat it after a useful return, copy respected colleagues, or comply with a new rule. Alternatively, teams that share may attract resources and expand while other teams disappear. @tbl-strategy-diffusion-diagnostic separates changes within continuing units from changes in which units remain.
+
+| Candidate process | Question about the process | Evidence that helps distinguish it |
+| --- | --- | --- |
+| Reinforcement | Do employees repeat sharing after it benefits them? | Vary feedback about their own outcomes while holding information about others constant. |
+| Imitation | Do employees copy visible or prestigious colleagues? | Vary whose behavior is visible while holding own-outcome feedback constant. |
+| Selection | Do teams using the practice expand or survive more often? | Separate change within continuing teams from replacement or differential survival of teams. |
+| Institutional change | Did software, incentives, defaults, or management make sharing easier or mandatory? | Compare behavior around a clearly identified rule change under otherwise similar conditions. |
+: Four processes that can produce a spreading practice {#tbl-strategy-diffusion-diagnostic}
+
+The processes can coexist. Greater prevalence alone establishes neither a particular mechanism nor a desirable result: a routine can spread because it attracts attention, receives a subsidy, or excludes competitors, as well as because it improves joint work.
+:::
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Advanced research track: identify social preferences by contrast
+
+
+[]{#distributional-models-make-motives-testable}
+
+### Distributional models: inequality aversion {#inequality-aversion}
+
+For two people, Fehr and Schmidt's (1999) model can be written as
+
+$$
+U_i=x_i-\alpha_i\max(x_j-x_i,0)-\beta_i\max(x_i-x_j,0),
+$$
+
+with the standard restrictions $\alpha_i\geq\beta_i$ and $0\leq\beta_i<1$. The first penalty represents disadvantageous inequality; the second represents advantageous inequality. Because disadvantageous inequality can hurt more, a responder may reject a low ultimatum offer, while a proposer may share even when rejection is impossible.
+
+Bolton and Ockenfels's (2000) ERC model emphasizes one's relative share, while Charness and Rabin (2002) allow concerns for total surplus, the worst-off person, and reciprocity. Efficiency and equality can conflict: giving an extra euro to the better-off person may create several euros of total benefit, while equalization may reduce the sum.
+
+### Revealed preference over allocations
+
+A generous choice at one price leaves open how much someone will sacrifice when giving becomes more costly. To predict the next allocation, we need to know whether these trade-offs form a consistent pattern. Andreoni and Miller (2002) gave 176 participants 8–11 allocation choices at varying prices of giving, producing more than 1,600 decisions. Eighteen of the 176 participants violated at least one of the revealed-preference axioms tested. Only three—fewer than 2%—had violations classified as severe using a critical cost efficiency index below 0.95. The small severe-violation rate supports approximate consistency for most participants.
+
+A familiar summary assigns 47.2% to a selfish type, 30.4% to an egalitarian or maximin type, and 22.4% to a utilitarian type. But only 43% fit one of the pure categories exactly; the remaining 57% were assigned to the nearest category. The percentages demonstrate structured heterogeneity.
+
+### Outcomes and intentions are different
+
+Outcome-based models ask who gets what. **Reciprocity** also asks why the other person acted. The same unequal allocation can be judged differently if it was freely chosen, forced by the available menu, produced by chance, or intended to help.
+
+[]{#worked-identification-contrast-same-allocation-different-control}
+
+To separate these accounts, suppose a responder faces the same proposed split—€8 for the proposer and €2 for the responder—in two conditions. In one, the proposer freely chose that split while an equal split was available. In the other, a computer assigned the split and the proposer had no control. Keep the responder's consequences and rejection option unchanged. Record the response, perceived intentionality, expected social approval, and belief about the proposer's alternatives.
+
+If rejection changes across conditions, a model based only on final payoffs is incomplete. Perceived intent, responsibility, norm violation, or demand may have changed. The additional records reveal which explanation is plausible and which further treatment is needed.
+
+### Cross-cultural, comparative, and neural evidence generate hypotheses
+
+Henrich and colleagues (2001) conducted ultimatum, public-goods, and dictator-type experiments across 15 small-scale societies. Behavior varied substantially. In Lamalera, Indonesia, offers were often hyperfair and have been discussed in relation to the cooperative organization of whale hunting. Among the Au and Gnau in Papua New Guinea, some high offers were rejected and have been interpreted in relation to obligations created by accepting gifts.
+
+These comparisons do not isolate culture from recruitment, comprehension, stakes, markets, kinship, or production systems. Meta-analysis likewise finds variation across settings (Oosterbeek et al., 2004). Use it to generate a specific hypothesis about entitlements or expectations, then test a contrast that separates that hypothesis from the other differences.
+
+In a well-known capuchin comparison, a monkey that receives cucumber while a neighbor receives a preferred grape sometimes refuses the cucumber. Inequality aversion, frustration, changed reward expectation, and protest against the experimenter remain competing accounts (Brosnan & de Waal, 2003). Neural studies of inequality and equity–efficiency trade-offs likewise identify correlates consistent with social valuation (Hsu et al., 2008; Tricomi et al., 2010). Comparative and neural evidence should determine the next discriminating contrast, not close the diagnosis.
+:::
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Applied Lens: measuring and enforcing social meaning
+
+### Eliciting norms as a coordination problem
+
+Krupka and Weber (2013) ask participants to rate how socially appropriate an action is, with payment for matching the modal rating of others. The task converts a private opinion into a coordination problem: “Which rating will people in this setting recognize as shared?”
+
+A pedagogical representation is
+
+$$
+u(a_k)=\beta\pi(a_k)+\gamma N(a_k),
+$$
+
+where $\pi(a_k)$ is the material payoff and $N(a_k)$ is the perceived appropriateness of action $a_k$. The weight $\gamma$, the reference group, and the norm score must be measured.
+
+Adding a worse option can change what keeping the money means. In List's (2007) experiment, both participants began with $5, and the allocator received another $5 to keep or share. **Seventeen of 24 allocators gave something.** When the menu also allowed taking $1 from the recipient, **16 of 46 gave something**: about 71% compared with 35%. Giving remained possible, but the available alternatives had changed. In a separate study, allowing people to avoid a sharing opportunity reduced sharing, revealing people who would give when placed in the situation but preferred not to enter it (Lazear et al., 2012).
+
+These findings qualify what a single generous allocation can reveal. Entitlements, the available actions, and the opportunity to avoid a request can all matter. Krupka and Weber (2013) found that elicited appropriateness judgments, combined with concern for money, predicted behavioral differences across dictator-game variants. This supports a role for social meaning; the giving and exit patterns alone do not identify whether a particular participant acted from generosity, obligation, self-image, or perceived expectations.
+
+### Punishment can enforce cooperation—and create another dilemma
+
+People sometimes pay to punish defectors or unfair partners. Punishment can stabilize cooperation when future interactions, reputation, or internalized norms are present. It can also be antisocial, mistaken, retaliatory, or captured by powerful actors.
+
+The [anticipated reward from punishment](#punishment-and-anticipated-reward) adds a design concern: people may find enforcing a sanction attractive even when its contribution to future cooperation is uncertain.
+
+Before adding sanctions, establish who judges violations, how errors can be appealed, and whether powerful members face the same accountability. Measure repair of cooperation as well as the punishment imposed.
+
+[]{#when-a-fine-changes-the-meaning-of-the-act}
+
+Enforcement can also change what compliance means. The daycare example discussed above (Gneezy & Rustichini, 2000) illustrates how an incentive may change a social obligation into a priced service. Its practical implication depends on why parents responded as they did. A fine that is large, legitimate, and well enforced could deter lateness; a small charge perceived as permission may encourage it. Assess both the price of the behavior and the meaning the rule gives it.
+
+### Fairness in markets: entitlement constrains price
+
+A price increase can cover a seller’s higher costs while disrupting a customer’s sense of what is owed. The amount alone may therefore miss what makes a change objectionable. The following comparisons ask how the reason for an increase and the transaction it replaces shape judgments of fairness.
+
+Kahneman, Knetsch, and Thaler (1986) asked separate samples of respondents to judge market practices. @fig-fairness-entitlements-redraw shows four selected historical vignettes. The car questions hold the size of the price increase at $200 but vary its relation to list price: one adds a surcharge above list, while the other removes a discount below list.[^ch25-fairness-vignettes]
+
+![Four selected fairness judgments from Kahneman, Knetsch, and Thaler (1986), redrawn from the reported values. A post-storm snow-shovel increase was rated unfair or very unfair by 82% of respondents, and a lettuce wholesale-cost pass-through was rated unfair by 21%. Charging $200 above a scarce car's list price was rated unfair by 71%, compared with 42% for withdrawing a $200 discount. The rows use separate Toronto and Vancouver samples collected in 1984–85.](../figures/fairness-entitlements-redraw.svg){#fig-fairness-entitlements-redraw fig-alt="Four horizontal bars report the percentage rating a market action unfair or very unfair. Snow-shovel price rise after a storm is 82 percent, lettuce wholesale-cost pass-through is 21 percent, a scarce-car surcharge above list is 71 percent, and withdrawal of a $200 discount is 42 percent. Sample sizes are shown for each scenario." width=100%}
+
+Two further scenarios show how judgments depend on the transaction: 74% rated auctioning one scarce doll to the highest bidder unfair ($N=101$), and 91% rated a rent increase exploiting a tenant's location-specific dependence unfair ($N=157$). “Unfair” combines the two unfavorable response categories.
+
+The contrast suggests that people protect reference transactions and accepted entitlements while allowing some cost-based adjustments. For managers, explain the changed cost or scarcity, preserve procedural consistency, avoid exploiting a trapped party, and consider rationing rules that remain defensible if customers understand them.
+
+:::
+
+[^ch25-golden-balls]: Contestants selected into the program and experienced the prize inside a larger show. Split–Steal differs from a standard Prisoner’s Dilemma: Steal weakly, rather than strictly, dominates Split.
+
+[^ch25-fairness-vignettes]: The car questions imply different final prices. The snow-shovel and lettuce questions also differ in products, circumstances, price changes, and samples (Kahneman et al., 1986).
+
+## References cited in this chapter
+
+::: {.reference}
+Andreoni, J., & Miller, J. (2002). Giving according to GARP: An experimental test of the consistency of preferences for altruism. *Econometrica, 70*(2), 737–753. https://doi.org/10.1111/1468-0262.00302
+:::
+
+::: {.reference}
+Axelrod, R. (1984). *The evolution of cooperation*. Basic Books.
+:::
+
+::: {.reference}
+Balliet, D., Wu, J., & De Dreu, C. K. W. (2014). Ingroup favoritism in cooperation: A meta-analysis. *Psychological Bulletin, 140*(6), 1556–1581. https://doi.org/10.1037/a0037737
+:::
+
+::: {.reference}
+Bicchieri, C. (2006). *The grammar of society: The nature and dynamics of social norms*. Cambridge University Press.
+:::
+
+::: {.reference}
+Bolton, G. E., & Ockenfels, A. (2000). ERC: A theory of equity, reciprocity, and competition. *American Economic Review, 90*(1), 166–193. https://doi.org/10.1257/aer.90.1.166
+:::
+
+::: {.reference}
+Brosnan, S. F., & de Waal, F. B. M. (2003). Monkeys reject unequal pay. *Nature, 425*, 297–299. https://doi.org/10.1038/nature01963
+:::
+
+::: {.reference}
+Burnham, T. C., & Hare, B. (2007). Engineering human cooperation: Does involuntary neural activation increase public goods contributions? *Human Nature, 18*(2), 88–108. https://doi.org/10.1007/s12110-007-9012-2
+:::
+
+::: {.reference}
+Camerer, C. F. (2003). *Behavioral game theory: Experiments in strategic interaction*. Princeton University Press.
+:::
+
+::: {.reference}
+Carlsmith, K. M., Wilson, T. D., & Gilbert, D. T. (2008). The paradoxical consequences of revenge. *Journal of Personality and Social Psychology, 95*(6), 1316–1324. https://doi.org/10.1037/a0012165
+:::
+
+::: {.reference}
+Charness, G., & Rabin, M. (2002). Understanding social preferences with simple tests. *Quarterly Journal of Economics, 117*(3), 817–869. https://doi.org/10.1162/003355302760193904
+:::
+
+::: {.reference}
+Chen, Y., & Li, S. X. (2009). Group identity and social preferences. *American Economic Review, 99*(1), 431–457. https://doi.org/10.1257/aer.99.1.431
+:::
+
+::: {.reference}
+Dal Bó, P., & Fréchette, G. R. (2018). On the determinants of cooperation in infinitely repeated games: A survey. *Journal of Economic Literature, 56*(1), 60–114. https://doi.org/10.1257/jel.20160980
+:::
+
+::: {.reference}
+de Quervain, D. J.-F., Fischbacher, U., Treyer, V., Schellhammer, M., Schnyder, U., Buck, A., & Fehr, E. (2004). The neural basis of altruistic punishment. *Science, 305*(5688), 1254–1258. https://doi.org/10.1126/science.1100735
+:::
+
+::: {.reference}
+Dovidio, J. F., Gaertner, S. L., & Saguy, T. (2009). Commonality and the complexity of “we”: Social attitudes and social change. *Personality and Social Psychology Review, 13*(1), 3–20. https://doi.org/10.1177/1088868308326751
+:::
+
+::: {.reference}
+Fehr, E., & Schmidt, K. M. (1999). A theory of fairness, competition, and cooperation. *Quarterly Journal of Economics, 114*(3), 817–868. https://doi.org/10.1162/003355399556151
+:::
+
+::: {.reference}
+Forsythe, R., Horowitz, J. L., Savin, N. E., & Sefton, M. (1994). Fairness in simple bargaining experiments. *Games and Economic Behavior, 6*(3), 347–369. https://doi.org/10.1006/game.1994.1021
+:::
+
+::: {.reference}
+Fowler, J. H., & Christakis, N. A. (2010). Cooperative behavior cascades in human social networks. *Proceedings of the National Academy of Sciences, 107*(12), 5334–5338.
+:::
+
+::: {.reference}
+Gaertner, S. L., Mann, J. A., Dovidio, J. F., Murrell, A. J., & Pomare, M. (1990). How does cooperation reduce intergroup bias? *Journal of Personality and Social Psychology, 59*(4), 692–704. https://doi.org/10.1037/0022-3514.59.4.692
+:::
+
+::: {.reference}
+Gneezy, U., & Rustichini, A. (2000). A fine is a price. *Journal of Legal Studies, 29*(1), 1–17. https://doi.org/10.1086/468061
+:::
+
+::: {.reference}
+Hammond, R. A., & Axelrod, R. (2006). The evolution of ethnocentrism. *Journal of Conflict Resolution, 50*(6), 926–936. https://doi.org/10.1177/0022002706293470
+:::
+
+::: {.reference}
+Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H., & McElreath, R. (2001). In search of Homo economicus: Behavioral experiments in 15 small-scale societies. *American Economic Review, 91*(2), 73–78. https://doi.org/10.1257/aer.91.2.73
+:::
+
+::: {.reference}
+Hoffman, E., McCabe, K., Shachat, K., & Smith, V. (1994). Preferences, property rights, and anonymity in bargaining games. *Games and Economic Behavior, 7*(3), 346–380. https://doi.org/10.1006/game.1994.1056
+:::
+
+::: {.reference}
+Hsu, M., Anen, C., & Quartz, S. R. (2008). The right and the good: Distributive justice and neural encoding of equity and efficiency. *Science, 320*(5879), 1092–1095. https://doi.org/10.1126/science.1153651
+:::
+
+::: {.reference}
+Imhof, L. A., Fudenberg, D., & Nowak, M. A. (2007). Tit-for-tat or win-stay, lose-shift? *Journal of Theoretical Biology, 247*(3), 574–580. https://doi.org/10.1016/j.jtbi.2007.03.027
+:::
+
+::: {.reference}
+Kahneman, D., Knetsch, J. L., & Thaler, R. H. (1986). Fairness as a constraint on profit seeking: Entitlements in the market. *American Economic Review, 76*(4), 728–741.
+:::
+
+::: {.reference}
+Krupka, E. L., & Weber, R. A. (2013). Identifying social norms using coordination games: Why does dictator game sharing vary? *Journal of the European Economic Association, 11*(3), 495–524. https://doi.org/10.1111/jeea.12006
+:::
+
+::: {.reference}
+Lazear, E. P., Malmendier, U., & Weber, R. A. (2012). Sorting in experiments with application to social preferences. *American Economic Journal: Applied Economics, 4*(1), 136–163.
+:::
+
+::: {.reference}
+Levine, M., Prosser, A., Evans, D., & Reicher, S. (2005). Identity and emergency intervention: How social group membership and inclusiveness of group boundaries shape helping behavior. *Personality and Social Psychology Bulletin, 31*(4), 443–453. https://doi.org/10.1177/0146167204271651
+:::
+
+::: {.reference}
+List, J. A. (2007). On the interpretation of giving in dictator games. *Journal of Political Economy, 115*(3), 482–493.
+:::
+
+::: {.reference}
+Maynard Smith, J., & Price, G. R. (1973). The logic of animal conflict. *Nature, 246*, 15–18. https://doi.org/10.1038/246015a0
+:::
+
+::: {.reference}
+Northover, S. B., Pedersen, W. C., Cohen, A. B., & Andrews, P. W. (2017). Artificial surveillance cues do not increase generosity: Two meta-analyses. *Evolution and Human Behavior, 38*(1), 144–153. https://doi.org/10.1016/j.evolhumbehav.2016.07.001
+:::
+
+::: {.reference}
+Nowak, M. A. (2006). Five rules for the evolution of cooperation. *Science, 314*(5805), 1560–1563. https://doi.org/10.1126/science.1133755
+:::
+
+::: {.reference}
+Oosterbeek, H., Sloof, R., & van de Kuilen, G. (2004). Cultural differences in ultimatum game experiments: Evidence from a meta-analysis. *Experimental Economics, 7*, 171–188. https://doi.org/10.1023/B:EXEC.0000026978.14316.74
+:::
+
+::: {.reference}
+Rilling, J. K., Gutman, D. A., Zeh, T. R., Pagnoni, G., Berns, G. S., & Kilts, C. D. (2002). A neural basis for social cooperation. *Neuron, 35*(2), 395–405. https://doi.org/10.1016/S0896-6273(02)00755-9
+:::
+
+::: {.reference}
+Schelling, T. C. (1969). Models of segregation. *American Economic Review, 59*(2), 488–493.
+:::
+
+::: {.reference}
+Sherif, M. (1958). Superordinate goals in the reduction of intergroup conflict. *American Journal of Sociology, 63*(4), 349–356. https://doi.org/10.1086/222258
+:::
+
+::: {.reference}
+Tajfel, H. (1970). Experiments in intergroup discrimination. *Scientific American, 223*(5), 96–102. https://doi.org/10.1038/scientificamerican1170-96
+:::
+
+::: {.reference}
+Tricomi, E., Rangel, A., Camerer, C. F., & O'Doherty, J. P. (2010). Neural evidence for inequality-averse social preferences. *Nature, 463*, 1089–1091. https://doi.org/10.1038/nature08785
+:::
+
+::: {.reference}
+van den Assem, M. J., van Dolder, D., & Thaler, R. H. (2012). Split or steal? Cooperative behavior when the stakes are large. *Management Science, 58*(1), 2–20. https://doi.org/10.1287/mnsc.1110.1413
+:::
+
+::: {.reference}
+Wilensky, U. (1997). *NetLogo Segregation model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/Segregation
+:::
+
+::: {.reference}
+Wilensky, U. (2002). *NetLogo PD Basic Evolutionary model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. http://ccl.northwestern.edu/netlogo/models/PDBasicEvolutionary
+:::
+
+::: {.reference}
+Wilensky, U. (2003). *NetLogo Ethnocentrism - Alternative Visualization model*. Center for Connected Learning and Computer-Based Modeling, Northwestern University. https://ccl.northwestern.edu/netlogo/models/Ethnocentrism-AlternativeVisualization
+:::

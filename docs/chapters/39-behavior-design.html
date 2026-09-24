@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>39&nbsp; Behavior Design – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/40-choice-architecture.html" rel="next">
+<link href="../parts/part-7.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d2ab3828f0446ed9f3a10bc4efc982a8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-7.html">Part VII. Designing Better Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/39-behavior-design.html"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-understanding-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Understanding Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-structuring-a-decision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Structuring a Decision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-limited-attention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Limited Attention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-predictive-mind.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Predictive Mind</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-expectations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-valuation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-narrator-after-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Narrator After Choice</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-intuition-and-deliberation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Intuition and Deliberation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-availability-affect-and-representativeness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Availability, Affect, and Representativeness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-confirmation-bias-and-motivated-reasoning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Confirmation Bias and Motivated Reasoning</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-anchors-halos-and-decoys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Anchors, Halos, and Decoys</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-framing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-priming-fluency-and-familiarity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Priming, Fluency, and Familiarity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-base-rates-and-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-randomness-and-overconfidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Randomness and Overconfidence</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-risky-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-prospect-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-decisions-from-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions From Experience</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Mental Accounting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-intertemporal-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Intertemporal Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-deciding-for-a-better-life.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-strategic-interdependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-coordination-and-focal-points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-cooperation-and-social-preferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-social-norms-and-conformity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-social-influence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Social Influence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-culture-and-identity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-persuasion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-message-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Message Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-connection-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-distributive-negotiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Distributive Negotiation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-integrative-negotiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Integrative Negotiation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Decisions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-behavior-design.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-choice-architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decision-hygiene.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/42-deciding-with-data-and-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Deciding With Data and AI</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Evolutionary Explanations of Value, Choice, and Rationality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-literature-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Conducting and Writing a Literature Review</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-d-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#one-primary-workflow" id="toc-one-primary-workflow" class="nav-link" data-scroll-target="#one-primary-workflow">From intention to a testable change</a></li>
+  <li><a href="#implementation-intentions" id="toc-implementation-intentions" class="nav-link" data-scroll-target="#implementation-intentions">Implementation intentions</a></li>
+  <li><a href="#diagnose-the-moment-with-bmap" id="toc-diagnose-the-moment-with-bmap" class="nav-link" data-scroll-target="#diagnose-the-moment-with-bmap">Diagnose the moment with B=MAP</a></li>
+  <li><a href="#friction-rewards-and-commitment" id="toc-friction-rewards-and-commitment" class="nav-link" data-scroll-target="#friction-rewards-and-commitment">Change friction in both directions</a></li>
+  <li><a href="#make-the-activity-rewarding-now" id="toc-make-the-activity-rewarding-now" class="nav-link" data-scroll-target="#make-the-activity-rewarding-now">Make the activity rewarding now</a></li>
+  <li><a href="#commit-before-temptation" id="toc-commit-before-temptation" class="nav-link" data-scroll-target="#commit-before-temptation">Protect the plan from temptation and distraction</a></li>
+  <li><a href="#social-support-and-accountability" id="toc-social-support-and-accountability" class="nav-link" data-scroll-target="#social-support-and-accountability">Support the change over time</a></li>
+  <li><a href="#organizational-habits" id="toc-organizational-habits" class="nav-link" data-scroll-target="#organizational-habits">Changing a routine together</a></li>
+  <li><a href="#habit-design-is-power" id="toc-habit-design-is-power" class="nav-link" data-scroll-target="#habit-design-is-power">Evaluate the change and whose goals it serves</a></li>
+  <li><a href="#practice-lab-behavior-design-studio" id="toc-practice-lab-behavior-design-studio" class="nav-link" data-scroll-target="#practice-lab-behavior-design-studio">Practice Lab: behavior-design studio</a></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/39-behavior-design.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/39-behavior-design.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-7.html">Part VII. Designing Better Decisions</a></li><li class="breadcrumb-item"><a href="../chapters/39-behavior-design.html"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Make the Better Action Easier</em></p>
+<p><span id="behavior-design-make-the-better-action-easier"></span></p>
+<div id="chapter-39-start" class="chapter-epigraph">
+<blockquote class="blockquote">
+<p>“For the great doesn’t happen through impulse alone, and is a succession of little things that are brought together.”</p>
+<p>— Vincent van Gogh, <a href="https://vangoghletters.org/vg/letters/let274/letter.html">letter to Theo van Gogh</a>, 22 October 1882, letter 274</p>
+</blockquote>
+</div>
+<p>A student intends to work on a term paper before opening email, but the laptop opens onto the inbox each morning. Replies offer small tasks with clear endings; the paper offers a vague instruction: “Work on the literature review.” By the time the student opens the draft, much of the available writing time has gone.</p>
+<p>One possible change is to leave the draft open the evening before, beside notes on two studies and a precise next step: “Write one sentence explaining how their findings agree or differ.” The next morning begins with a visible action instead of a decision about where to start. That could help if the vague starting point was the main obstacle. If the student cannot yet interpret the studies, needs guidance on academic writing, or has no time available that morning, a clearer prompt will accomplish little.</p>
+<p>The useful change depends on why the intention fails. Behavior design starts with that explanation, then changes a specific condition and tests whether the intended action becomes easier to carry out.</p>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core Idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Begin with an action someone wants to take and a specific occasion when it fails to happen. Find what makes starting or continuing difficult, change that condition, and observe the result. A useful design also explains how to resume after a lapse and when to reconsider the goal or seek more support.</p>
+</div>
+</div>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>Apply one five-step workflow: define the behavior, diagnose the bottleneck, redesign the decisive point, measure, and review.</li>
+<li>Match a practical change to the obstacle it addresses.</li>
+<li>Increase the feasibility of a desired action by reducing friction, and make an unwanted competing action harder to perform.</li>
+<li>Anchor a new action to a reliable prompt and distinguish prompting, planning, and habit formation.</li>
+<li>Compare immediate enjoyment, celebration, temptation bundling, commitment, skill building, and social support as ways to sustain action.</li>
+<li>Distinguish follow-through from the outcome it is meant to improve, and plan how to resume after a lapse.</li>
+</ul>
+<p>The <a href="../chapters/21-habits-wanting-and-self-control.html#chapter-21-start">habit chapter</a> used bedtime scrolling to distinguish familiar cues, wanting, and enjoyment (Wood &amp; Rünger, 2016). Term-paper writing is a useful transfer case because several other obstacles can produce a similar detour. Opening email may be habitual, but it can also avoid an unclear or uncomfortable task, meet a real coordination need, or fill time too short for the planned work. This chapter turns that diagnosis into a plan for change, whether the aim is to alter an established routine or begin something new.</p>
+</section>
+<section id="one-primary-workflow" class="level2">
+<h2 data-anchor-id="one-primary-workflow">From intention to a testable change</h2>
+<p>“Work on my paper” gives the student a direction, but it does not specify what should happen differently tomorrow. “Draft one comparison of the two selected studies before opening email” identifies an action, a competing response, and an occasion to observe. Now the student can ask why email comes first and choose a change that addresses that obstacle.</p>
+<p><strong>Goal setting</strong> connects a valued outcome to a standard for progress. An outcome goal might be a well-supported literature review; a behavior goal specifies writing and checking one comparison during the morning session. The familiar <strong>SMART</strong> checklist—specific, measurable, achievable, relevant, and time-bound—can make the target clearer. “By the end of tomorrow’s session, draft one comparison and check it against both papers” tells the student what completion would look like.</p>
+<p>The goal also needs to fit what the person knows how to do. Goal-setting research emphasizes commitment, feedback, and task knowledge alongside specificity and challenge (Locke &amp; Latham, 2002). If the student cannot yet compare research designs, a useful <strong>learning goal</strong> is to identify one methodological difference and explain why it matters. A higher word target would leave that missing skill untouched. Explaining why the comparison matters can strengthen its purpose; instruction and practice address the ability to produce it.</p>
+<p><span id="willpower-and-the-habit-loop"></span></p>
+<p>Relying on <strong>willpower alone</strong> would mean resisting the inbox afresh whenever writing feels difficult. That can work on a particular morning, but it leaves success dependent on repeatedly winning the same conflict. A more reliable plan prepares the conditions under which the desired action starts and continues (Duckworth et al., 2016).</p>
+<div class="evidence-and-boundary-conditions callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Self-control effort and the debate over ego depletion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <strong>ego-depletion</strong> account pictures willpower as a fuel supply that each act of self-control uses up. Large preregistered tests have challenged that account (Hagger et al., 2016; Vohs et al., 2021). In a 36-laboratory study with 3,531 participants, the planned analysis found a near-zero effect of prior self-control effort on subsequent performance. Another multilab study found a small effect (Dang et al., 2021), but a performance cost does not establish that a fuel has been consumed. Willpower should not be treated as a fixed, depletable supply; effort and fatigue can matter without that explanation. <a href="../appendices/appendix-f-when-evidence-breaks.html#direct-or-coordinated-tests-that-did-not-reproduce-the-focal-result">Appendix E</a> examines the disputed evidence.</p>
+</div>
+</div>
+<p>Two tasks clarify what self-control evidence can establish. The <a href="../chapters/08-intuition-and-deliberation.html#slow-thinking-is-powerful-expensive-and-often-late">Stroop demonstration in Chapter 8</a> shows interference from a practiced response. The <a href="../chapters/20-intertemporal-decision-making.html#scarcity-and-trust-when-now-is-rational">marshmallow studies in Chapter 20</a> separate the effect of a reliable promise from the association between childhood waiting and later achievement. Neither task is a direct gauge of a person’s fixed supply of willpower.</p>
+<p>Use the <a href="../chapters/21-habits-wanting-and-self-control.html#fig-habit-loop">CIAO habit loop</a> to organize that preparation: choose a reliable cue, anticipate the impulse that competes with the goal, make the intended action easy enough to begin, and arrange an outcome that makes progress visible. For the student, this means returning to the prepared draft after breakfast, marking an uncertainty instead of escaping into email, and completing one useful comparison. Repeating that start in a familiar setting can build a cue–action association; deliberate effort helps establish and adjust the arrangement.</p>
+<p><span id="optional-tools-for-a-diagnosed-bottleneck"></span></p>
+</section>
+<section id="implementation-intentions" class="level2">
+<h2 data-anchor-id="implementation-intentions">Implementation intentions</h2>
+<p>A reminder about a free workplace flu clinic already tells employees where and when vaccination is available. Would asking them to choose their own visit time add anything? Milkman and colleagues (2011) randomly assigned employees to a basic reminder or one prompting them to write a planned date and time. Workplace vaccination was 33.1% with the basic reminder and 37.1% with the planning prompt. The raw difference in <a href="#fig-vaccination-plans" class="quarto-xref">Figure&nbsp;<span>39.1</span></a> is 4.0 percentage points; adjusting for employee characteristics gave 4.2 points (95% confidence interval: 0.5–7.8). A separate date-only condition at sites with multiday clinics did not reliably outperform the basic reminder.</p>
+<div id="fig-vaccination-plans" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Two bars show workplace vaccination rates of 33.1 percent with a reminder alone and 37.1 percent with a reminder and date-and-time planning prompt.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vaccination-plans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/study-vaccination-plans.svg" class="phone-fit img-fluid figure-img" alt="Two bars show workplace vaccination rates of 33.1 percent with a reminder alone and 37.1 percent with a reminder and date-and-time planning prompt.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vaccination-plans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;39.1: Vaccination at free workplace clinics (Milkman et al., 2011). Bars show raw rates for reminder-only employees (n = 1,268) and employees prompted to plan (n = 1,270). The adjusted effect was 4.2 percentage points (95% CI 0.5–7.8), distinct from the 4.0-point raw difference.
+</figcaption>
+</figure>
+</div>
+<p>A plan does not reliably solve every failure to act. Carrera and colleagues (2018) tested planning with 877 gym members who completed an online survey: the treatment group scheduled visits over the next two weeks, while controls recalled recent visits. Administrative records showed no increase in attendance. Planned times predicted when people visited, but asking people to make plans did not make them visit more. A plan can describe an intention accurately without changing behavior. The contrast suggests checking whether forgetting a feasible opportunity is the obstacle, or whether motivation, competing demands, and repeated scheduling remain unresolved.</p>
+<p>A feasible action can still be forgotten at the moment it matters. <strong>Implementation intentions</strong> connect an anticipated situation to a specified response: <strong>If this happens, then I will do that</strong>. The plan helps bring a goal to mind and guide action when the situation occurs (Gollwitzer, 1999).</p>
+<p>The student can turn “I will work on my paper” into “If I finish breakfast on a weekday, then I will sit at my desk and draft the selected comparison before opening email.” Twenty-five minutes of writing might remain the session goal, while drafting the comparison specifies how to begin. The same structure works beyond writing: a manager might plan to ask one clarifying question when receiving criticism, or a saver to transfer 10 percent of each salary payment immediately. Each plan identifies an occasion and an action concrete enough to carry out.</p>
+<p>When the aim is to replace an existing habit, connect the plan to the cue that actually precedes the old response. If opening the laptop reliably leads this student into the inbox, a closer plan is “When I open the laptop for my writing session, I will type the first comparison sentence in the prepared draft.” Leaving that draft open makes the response available at the critical moment. <a href="../chapters/21-habits-wanting-and-self-control.html#give-a-familiar-cue-a-new-response">Chapter 21</a> explains how to select this replacement and practice it until it starts more readily.</p>
+<p>Sometimes the difficulty is choosing a realistic response to an obstacle. <strong>WOOP</strong> (Wish, Outcome, Obstacle, Plan) adds that preparation: identify a meaningful, feasible wish, imagine the valued outcome, consider what could obstruct it, and form an if-then plan. For the student, “I want to explain what these studies tell us” becomes more actionable after identifying the vague starting point that sends them toward email. Imagining success alone would leave that obstacle unchanged. Evidence on mental contrasting with implementation intentions supports modest average gains in goal attainment compared with control conditions without the combined exercise, with variation across goals and settings (Oettingen, 2012; Wang et al., 2021). The <a href="#research-woop-evidence">WOOP research lens</a> explains what that evidence establishes.</p>
+<p><strong>Coping plans</strong> specify a response to a foreseeable difficulty: “If I cannot resolve a methodological question, I will mark it and draft what I can establish from the papers.” If the obstacle is an urge to escape discomfort, the <a href="../chapters/21-habits-wanting-and-self-control.html#observing-an-urge-with-brain">BRAIN practice</a> offers a pause before acting. The <a href="../chapters/21-habits-wanting-and-self-control.html#give-a-familiar-cue-a-new-response">replacement-response method</a> then gives that pause a next step. Preparation matters because the difficult moment is often a poor time to invent an alternative.</p>
+</section>
+<section id="diagnose-the-moment-with-bmap" class="level2">
+<h2 data-anchor-id="diagnose-the-moment-with-bmap">Diagnose the moment with B=MAP</h2>
+<p>The planning experiments leave a diagnostic question: what prevents an intended action here? A missing reminder, an unavailable opportunity, and an activity that feels unrewarding call for different changes. For the student, willingness alone has not settled what happens when the laptop opens. The Fogg Behavior Model, <strong>B=MAP</strong>, describes behavior as occurring when <strong>motivation</strong>, <strong>ability</strong>, and a <strong>prompt</strong> converge (Fogg, 2009, 2020). Here ability means how easy the action is to perform at that moment; a prompt calls for it to happen. Read B=MAP as a framework for diagnosing an occasion for action, rather than an equation with measured quantities to multiply.</p>
+<p>This distinction gives the student three questions to answer. Is this writing step worth doing now, or does fear of producing a poor paragraph make email more attractive? Can the student carry it out with the writing skills, understanding, materials, and time available? What will bring it to attention before the inbox does? A reminder addresses the last question, but cannot supply missing understanding or protected time.</p>
+<p>Opportunity can also influence motivation. The <a href="../chapters/21-habits-wanting-and-self-control.html#smoking-opportunity-and-craving">smoking studies in Chapter 21</a> show that expecting access can strengthen craving itself. Changing access may therefore affect the impulse before action, as well as make the action easier or harder to carry out.</p>
+<p>The framework applies to <strong>one-time actions as well as repeated behavior</strong>. A person might want to support an emergency appeal, have an easy payment method available, and encounter a request to donate now. No established donation habit is needed for that action to occur. Daily writing presents an additional problem: the conditions for starting must work across many mornings. Fogg’s <strong>Tiny Habits</strong> method addresses that recurring task by combining a small action, a reliable anchor, and a celebration of completion. B=MAP supplies diagnostic questions; Tiny Habits proposes a way to arrange repeated opportunities. Evidence for individual components does not establish the effectiveness of the whole recipe.</p>
+<p>This distinction also matters in business. An online shop may want a customer to complete one purchase; a language-learning service needs the learner to return. Both can examine motivation, ease, and prompts. Sustained participation also depends on what the experience provides and whether it continues to be worth the person’s time. The <a href="#research-fogg-apps">app-design research lens</a> considers Instagram, Clubhouse, and Duolingo, distinguishing documented connections to Fogg’s teaching from applications of his model to product features.</p>
+<p>When motivation fluctuates, preparing an easier first action and a timely prompt may offer a more workable plan than expecting the same enthusiasm every morning. Look for mornings when writing already begins before email. Such <strong>bright spots</strong> can suggest conditions worth reproducing and testing, such as a clearer first task or a quieter setting (Heath &amp; Heath, 2010).</p>
+<p>The techniques below change different parts of this situation: what the person is trying to achieve, how demanding the action is, what prompts it, what makes it worth repeating, and what support and feedback are available. Start with the obstacle the observation record identifies. Several tools can eventually work together, but adding them all at once would make it difficult to learn which change helped.</p>
+</section>
+<section id="friction-rewards-and-commitment" class="level2">
+<h2 data-anchor-id="friction-rewards-and-commitment">Change friction in both directions</h2>
+<p><strong>Friction</strong> is the time, effort, steps, cost, or uncertainty involved in carrying out an action. In B=MAP, reducing these demands increases <strong>ability at that moment</strong>: the action becomes more feasible with the resources the person has. This can happen without any change in intelligence, discipline, or skill. A prepared draft is easier to begin than a folder that must first be searched and organized.</p>
+<p><strong>Lower friction for the desired action.</strong> Put the necessary materials where they will be used, remove avoidable steps, simplify instructions, and make the first decision in advance. The student can download the two papers, mark the relevant passages, and leave a comparison question at the top of the draft. For another person, the decisive change might be an accessible tool, help with a form, transport, or a protected period of time. Inspect the whole route to action, including access to the materials it requires.</p>
+<p><strong>Raise friction for the competing action.</strong> Logging out of a distracting account, removing its shortcut, putting the phone in another room, or turning off autoplay adds a step before continuing. A person trying to curb impulse purchases might remove saved payment details or put an item on a list to reconsider the next day. The interruption gives the current goal a chance to influence the next move. Place the barrier at the point where the unwanted action usually begins, while preserving access needed for legitimate tasks.</p>
+<p>These two changes can be paired: the draft is ready and the inbox is closed. <strong>Environmental restructuring</strong> also changes what is visible and nearby; <strong>defaults and automation</strong> determine what happens with little further action. The student might make the writing workspace the laptop’s startup view, while someone saving regularly might arrange a chosen transfer after payday. Automation can maintain a behavior without turning it into a personal habit. <a href="../chapters/40-choice-architecture.html#set-the-starting-point-defaults-and-active-choice">Chapter 40</a> examines defaults and the design of the wider choice process.</p>
+<p>Added friction has a purpose only in relation to someone’s goal. A pause chosen to reduce impulsive spending serves a different purpose from making an unwanted subscription hard to cancel. Chapter 40’s <a href="../chapters/40-choice-architecture.html#simplification-friction-and-sludge">discussion of sludge</a> asks whose interests a barrier protects.</p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Practical extension: small starts and reliable prompts
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Fogg’s Tiny Habits recipe is one way to apply the questions above. The following examples show how to specify and try it; the complete package has a different evidential status from the individual interventions tested in the studies.</p>
+<section id="tiny-is-strategic" class="level3">
+<h3 data-anchor-id="tiny-is-strategic">Make the first action small</h3>
+<p>Fogg proposes <strong>starting tiny</strong> when the size of the first step prevents action. A demanding plan can turn every attempt into a test of whether enough has been done. A small, useful action provides a clear opportunity to follow through and experience progress. The student need not solve the whole literature review this morning; drafting one comparison sentence is a start worth recognizing. A brief acknowledgment of that success can make the first step encouraging, as the <a href="#celebrate-small-progress">celebration practice below</a> explains.</p>
+<p>Laozi captures the value of small beginnings in the <a href="https://ctext.org/dao-de-jing/ens"><em>Daodejing</em>, chapter 63</a>: “天下难事，必作于易，天下大事，必作于细”—translated here as “Difficult undertakings begin with what is easy; great undertakings begin with what is small.” Applied to behavior change, the two halves suggest complementary choices: find a manageable part of a difficult task, and define a small, concrete action within it. “Write a literature review” becomes “write one sentence comparing these two findings.” The larger goal gives direction; the small action gives a place to begin.</p>
+<p><strong>Graded tasks</strong> build from a manageable action toward a more demanding one. Once the starting routine and the underlying skill are workable, the student can develop a full paragraph. Keep the first step small enough to begin on an ordinary day, and increase the challenge as it becomes manageable. As the work grows, each comparison still needs to be accurate and help answer the research question.</p>
+<p>When the obstacle is missing know-how, use <strong>instruction, demonstration, and rehearsal</strong>. A tutor can model how to compare two studies, have the student explain a difference, and give feedback before the student tries a new pair. A checklist can support execution after the procedure is understood. These techniques build capability, while a prepared workspace reduces the demands on that capability. Both routes can make action easier (Fogg, 2009, 2020; Michie et al., 2011).</p>
+<p>An inspiring class or approaching deadline may make an ambitious plan feel easy. Use that motivation to prepare for a tired Wednesday: obtain the studies, identify the next comparison, and arrange a workable time. The arrangement still has to be tried when the initial enthusiasm fades.</p>
+</section>
+<section id="anchor-action-to-a-prompt" class="level3">
+<h3 data-anchor-id="anchor-action-to-a-prompt">Anchor the action to a reliable prompt</h3>
+<p>An easy action can remain undone if nothing brings it to mind. An <strong>anchor</strong> is an existing event selected to prompt the new behavior. Finishing breakfast, opening the laptop for a writing session, or ending a meeting can each supply a recognizable moment. Linking a new action to an established routine is often called <strong>habit stacking</strong>.</p>
+<p>Fogg’s practical recipe connects a small start to that event: <strong>After I [reliable anchor], I will [tiny behavior]. Then I will [celebrate].</strong> The anchor supplies the prompt, the small action reduces the effort needed to begin, and celebration brings attention to the success. For the student, “After I open the laptop for my writing session, I will draft the selected comparison sentence” brings the response close to the moment when email usually wins. A quiet acknowledgment immediately afterward completes the recipe; the <a href="#celebrate-small-progress">discussion of celebration below</a> explains its purpose and timing.</p>
+<p>A useful anchor happens reliably, is easy to recognize, and occurs where the action is feasible. Finishing breakfast is a poor anchor for desk work if the person immediately leaves to catch a bus. Choose an event that already belongs to the relevant situation, and specify what happens immediately after it. Repeating the response at that cue can gradually make the cue itself retrieve the action, as <a href="../chapters/21-habits-wanting-and-self-control.html#give-a-familiar-cue-a-new-response">Chapter 21</a> explains.</p>
+<p><strong>Reminders and prompts</strong> can also be deliberately added: a calendar alert, a note on the keyboard, or materials placed at the point of use. Make the message actionable—“Open the prepared draft and write the first comparison”—and time it for an available opportunity. If a reminder is repeatedly dismissed, check timing, feasibility, and willingness before adding more alerts. For an unwanted behavior, remove avoidable prompts: silence nonessential notifications or move tempting material out of the usual line of sight. Internal cues such as worry may still require a prepared response.</p>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="make-the-activity-rewarding-now" class="level2">
+<h2 data-anchor-id="make-the-activity-rewarding-now">Make the activity rewarding now</h2>
+<p>The student may value the finished paper while finding today’s writing unpleasant. <strong>Immediate enjoyment</strong> gives the activity something to offer during the work: an interesting question, a comfortable setting, or a way of working the person prefers. In an experiment by Woolley and Fishbach (2016), gym-goers asked to choose an exercise they enjoyed completed more sets than those asked to choose one for its usefulness to their health goals. Delayed benefits can explain why a goal is chosen; the experience of pursuing it can influence whether someone continues.</p>
+<p><span id="celebrate-small-progress"></span></p>
+<p>Fogg’s <strong>celebration</strong> technique proposes acknowledging a small success while carrying out an action or immediately afterward (Fogg, 2020, n.d.). After drafting a comparison, the student might quietly notice, “I began as planned.” This recognizes the step without pretending that the paragraph is already excellent.</p>
+<p>That proposal is distinct from Woolley and Fishbach’s test of enjoyment during exercise. Their experiment did not isolate celebration or measure dopamine, and it does not establish that a self-generated celebration produces a habit.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If the gesture feels useful, try it and observe whether it helps the routine continue. If it feels forced, the practical benefit of a clearer draft may be enough to acknowledge. Honest feedback on the writing still matters.</p>
+<p><span id="temptation-bundling"></span></p>
+<p><strong>Temptation bundling</strong> pairs a desirable but effortful activity with an immediately appealing one, often by reserving the pleasure for that occasion. “I listen to this favorite audiobook only while walking” makes the walk a route to something enjoyable now. The activities occur together. Promising entertainment after completing the walk instead creates a reward following the behavior.</p>
+<p>Milkman and colleagues (2014) randomly assigned participants to gym-only access to tempting audiobooks, encouragement to restrict audiobook listening to the gym themselves, or a comparison condition. Initially, gym visits were 51% higher with restricted access and 29% higher with encouragement than in the comparison group. The effects weakened over time, especially after the Thanksgiving break.</p>
+<p>Choose a pairing that preserves the purpose of the desired activity. An audiobook may fit a familiar walk; a gripping television program is likely to compete with understanding a difficult paper. The student might test a pleasant drink or comfortable study setting instead. Check the quality of the work as well as time spent on it, and prepare how the pairing will resume after a break.</p>
+<p><span id="rewards-incentives-and-progress"></span></p>
+<p><strong>Incentives</strong> promise a consequence contingent on an action or result: a small reward after a planned session, recognition for a useful contribution, or payment for a completed task. Deliver the consequence close enough to the behavior for the connection to be clear, and tie it to something worth encouraging. A word-count reward may produce more words while leaving the argument unchanged; rewarding completion of a checked comparison better matches the student’s aim.</p>
+<p>An outcome functions as a <strong>reinforcer</strong> when it strengthens subsequent behavior. <a href="../chapters/21-habits-wanting-and-self-control.html#how-habits-form">Chapter 21</a> distinguishes reinforcement from punishment and explains how relief can also sustain repetition. Removing an agreed privilege or imposing a penalty is intended to discourage an action, but the meaning of the consequence also matters. The <a href="../chapters/25-cooperation-and-social-preferences.html#chapter-25-start">day-care fine example</a> shows how a penalty can instead be interpreted as a price.</p>
+<p><strong>Gamification</strong> adds devices such as points, badges, levels, or streaks. These can make progress visible and introduce a challenge, but the score must represent the activity that matters. A streak that encourages superficial check-ins needs redesign. For the student, a record of completed, checked comparisons provides more useful feedback than a count of how often the document was opened. Acknowledge progress in a way that leaves room for planned rest and a return after missed occasions.</p>
+</section>
+<section id="commit-before-temptation" class="level2">
+<h2 data-anchor-id="commit-before-temptation">Protect the plan from temptation and distraction</h2>
+<p>If the problem is a predictable future temptation, <strong>precommitment</strong> can constrain the later choice (Thaler &amp; Shefrin, 1981). App blockers, cancellation penalties, and restricted-access accounts do this in different ways, with different costs and possibilities for reversal. Assess whether the constraint supports the person’s goal and remains acceptable when circumstances change. The <a href="../chapters/20-intertemporal-decision-making.html#chapter-19-start">intertemporal-choice chapter</a> reviews commitment evidence, including the retracted deadline study; a plausible device still needs evidence that it helps.</p>
+<p>The constraint may be <strong>soft</strong>, such as agreeing to show a colleague a draft at a chosen time, or <strong>hard</strong>, such as a lock that cannot be immediately disabled or a deposit forfeited if an agreed action is missed. Friction raises the effort needed to depart from a plan; commitment deliberately changes the future options or consequences. A device may do both. Choose the smallest constraint that addresses the recurring problem, with terms that remain acceptable if illness, urgent work, or other legitimate needs intervene.</p>
+<p><span id="design-an-attention-boundary"></span></p>
+<p>For the student, beginning the comparison will accomplish little if every new message interrupts it. In <em>Indistractable</em>, Eyal (2019) distinguishes <strong>traction</strong>, which serves an intended activity, from <strong>distraction</strong>, which takes us away from it. Email can support a planned correspondence period and interrupt a writing period; chosen rest also deserves protected time.</p>
+<p>Checking can begin with an <strong>external trigger</strong>, such as an alert, or an <strong>internal trigger</strong>, such as boredom or uncertainty. An <strong>attention boundary</strong> therefore needs more than silenced notifications: notice what prompts the detour, reserve realistic time for the intended activity, and adjust interrupting cues. <strong>Time blocking</strong> reserves a period for a chosen activity; <strong>batching</strong> groups similar tasks into planned periods, such as checking email after the writing session. Leave space for breaks and genuine urgent demands. If uncertainty about a study repeatedly precedes checking, mark the unresolved issue or seek the needed explanation. If a rough sentence feels unacceptable, try drafting it before editing. The precommitment tools above can help protect a feasible plan when temptation is predictable; they cannot teach writing skills or create unavailable time.</p>
+<p>These changes should address an observed problem. Ward and colleagues (2017) reported lower cognitive performance when participants’ own phones were nearby, but a later meta-analysis found a narrower pattern: pooled impairment appeared for working memory, while other cognitive outcomes showed no significant effect (Parry, 2024). Phone presence and an actual notification are different conditions; <a href="../chapters/03-limited-attention.html#designed-attention">Limited Attention</a> discusses interruption. Switching away from an unfinished task also creates a distinct difficulty: part of the previous task can remain mentally active—<strong>attention residue</strong>—and reduce performance on the next task (Leroy, 2009).</p>
+<p>Digital services can also encourage the repetitions through which habits develop. Eyal’s (2014) <strong>Hook Model</strong> describes a product-design sequence: <strong>Trigger → Action → Variable reward → Investment</strong>. The last two elements help explain why someone might return after the first visit.</p>
+<p>A <strong>variable reward</strong> concerns the outcome: opening a course forum may reveal useful feedback, a routine reply, or nothing new. In four experiments with real consequences, Shen and colleagues (2019) found that uncertain incentives could encourage repetition even when financially inferior to certain incentives. The advantage appeared after people experienced the activity and when uncertainty was resolved immediately; delaying resolution removed it. This supports an explanation in which finding out the outcome can itself reward participation.</p>
+<p>Compare that with <a href="../chapters/21-habits-wanting-and-self-control.html#research-animal-variable-rewards">Shen and colleagues’ (2015) pursuit experiments in Chapter 21</a>: uncertainty can make working toward a reward more engaging, whereas the 2019 studies examine repeating an activity after experiencing its outcome. Neither finding establishes that repetition has become automatic or that uncertainty always helps.</p>
+<p>An <strong>investment</strong> is effort that makes a later visit more valuable or sets up another cue. Saving an explanation creates useful material to return to; posting a follow-up question may generate the next reply alert (Eyal, 2014). In the student’s writing routine, leaving notes and a selected comparison prepares the next start. Variable rewards and investment can thus support repetition, but neither is required for every habit: reliable, satisfying progress can also encourage return. <a href="#tbl-21-digital-loop" class="quarto-xref">Table&nbsp;<span>39.1</span></a> examines when these features support the user’s goal and when they make disengagement difficult.</p>
+<div id="tbl-21-digital-loop" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-21-digital-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39.1: Applying the Hook Model: useful return, capture risks, and safeguards
+</figcaption>
+<div aria-describedby="tbl-21-digital-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hook stage</th>
+<th>Helpful use</th>
+<th>Capture risk</th>
+<th>Agency safeguard</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trigger</td>
+<td>A chosen reminder or relevant reply</td>
+<td>Continuous interruption or anxiety-driven checking</td>
+<td>User-controlled timing and batching</td>
+</tr>
+<tr class="even">
+<td>Action</td>
+<td>Easy access to the intended task</td>
+<td>One-tap entry into an endless feed</td>
+<td>A visible stopping point and deliberate continuation</td>
+</tr>
+<tr class="odd">
+<td>Variable reward</td>
+<td>Fresh information or feedback whose content varies</td>
+<td>Repeated searching for the next uncertain payoff</td>
+<td>Relevant feedback and bounded sessions</td>
+</tr>
+<tr class="even">
+<td>Investment</td>
+<td>Useful notes, saved work, or a question that invites a reply</td>
+<td>Accumulated data or streaks make leaving costly</td>
+<td>Export, deletion, pause, and easy cancellation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Evaluate the loop against the outcome the user values. As the <a href="../chapters/21-habits-wanting-and-self-control.html#uncertain-rewards-and-near-misses">near-miss example in Chapter 21</a> shows, renewed desire to continue need not indicate pleasure or progress. More clicks, check-ins, or time spent can coexist with less learning or lower well-being; measure goal attainment and opportunity cost as well as engagement.</p>
+</section>
+<section id="social-support-and-accountability" class="level2">
+<h2 data-anchor-id="social-support-and-accountability">Support the change over time</h2>
+<p>Some barriers are easier to change with another person. <strong>Practical support</strong> supplies something needed for action: shared notes, help understanding a method, protected time, or someone to handle another responsibility. <strong>Emotional support</strong> makes it possible to acknowledge difficulty and ask for help. <strong>Accountability</strong> creates an agreed occasion to explain what happened and decide what to do next. These forms of support address different problems.</p>
+<p>The student might arrange a quiet writing session with a peer, state the comparison each intends to draft, and finish by reading each other’s paragraph. The arrangement supplies a prompt, protected time, and feedback. A useful check-in asks, “What did you try, where did you get stuck, and what support would help?” It can reveal why a plan failed without turning a missed session into a public verdict on character. Agree on what will be shared and how the other person will respond.</p>
+<p><strong>Modeling and social comparison</strong> offer information about how others act. Watching a peer work through an imperfect draft can reveal a strategy worth trying; comparing only final polished work may hide that process. <strong>Norm messages</strong> describe what relevant others do or approve of. They need to be truthful and relevant to the setting: advertising that almost everyone procrastinates may make procrastination seem ordinary. <a href="../chapters/26-social-norms-and-conformity.html#chapter-26-start">Chapter 26</a> explains social influence, while <a href="../chapters/40-choice-architecture.html#use-social-information-carefully">Chapter 40</a> examines its use in design.</p>
+<p><span id="make-the-change-last"></span></p>
+<p>Beginning once and maintaining a routine pose different problems. The student needs a plan that can survive a busy week, a missed morning, or a change in schedule.</p>
+<p><span id="fresh-starts-identity-and-social-context"></span></p>
+<p>A new semester can make a fresh writing plan feel credible. Aspirational behavior often increases around such temporal landmarks (Dai et al., 2014), but the same inbox and vague first task may still win on the first morning. Use the occasion to prepare what will be different: the writing location, the first task, or the time available. The <a href="#research-fresh-start-and-context">fresh-start research lens</a> distinguishes a calendar landmark from an actual change in the setting.</p>
+<p>The cue-based account in <a href="../chapters/21-habits-wanting-and-self-control.html#find-the-cues-that-arrive-together">Chapter 21</a> suggests why a move or changed schedule can disrupt a familiar response, while leaving it available if the old cues return. Prepare a routine for the changed setting, including replacement cues for useful habits that the disruption might otherwise unsettle (Wood, 2019).</p>
+<p>Identity can affect how people interpret that practice. Difficulty might mean “this matters to people like me” or “this proves I do not belong” (Oyserman, 2009). “I am becoming someone who begins with a rough draft and improves it” gives the student an action to practice without requiring every morning to go well. Treat the identity as flexible enough to accommodate rest, revision, and setbacks.</p>
+<p><span id="relapse-recovery-and-ethics"></span></p>
+<p>A missed morning should lead to a specific next step. The student might plan: “If I miss the writing period, then I will mark the next comparison that evening and begin with it after breakfast.” This connects recovery to another workable occasion, instead of leaving it dependent on a renewed promise.</p>
+<p>Repeated lapses call for another look at the diagnosis. The task may remain too difficult, the time may be unavailable, or the competing action may serve a need the plan ignored. Review the support and goal as well as the prompt. Recovery from addiction may require clinical assessment and evidence-based treatment alongside changes to everyday routines (Volkow et al., 2016).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="organizational-habits" class="level2">
+<h2 data-anchor-id="organizational-habits">Changing a routine together</h2>
+<p>The student can rearrange his own desk, but an employee who wants to speak openly depends on how colleagues respond. An organizational <strong>routine</strong> involves several people, roles, tools, and rules. Deliberate incentives and formal requirements can sustain it alongside automatic responses, so changing one person’s habit may leave the larger pattern intact.</p>
+<p>The same design workflow now has to follow an interaction: who does what, how others respond, and which part of that sequence could change.</p>
+<p><span id="mini-case-the-defensive-meeting-loop"></span></p>
+<p>A product team wants concerns to surface early, yet its Monday meetings repeatedly discourage them. When a senior manager questions a progress update, the project lead hears criticism and explains why the team’s choices were reasonable. Other members fall silent. The manager interprets the explanation as a refusal to take responsibility and presses harder, prompting more defense. The meeting ends with action items but little new information about the project’s risks.</p>
+<p>The manager meant to improve the project, the lead meant to protect the team, and colleagues meant to avoid conflict. Their reactions nevertheless sustained a pattern none of them wanted. One possible explanation is that defending past choices protects the lead’s standing in the moment, while silence protects colleagues from joining the dispute. Ask participants what they understood and examine repeated meetings before settling on that diagnosis.</p>
+<p>Agree with the team on a short, reversible trial; giving people a say and reducing uncertainty can make a change easier to try (Berger, 2020). Begin with one change: before questioning the update, the manager asks, “What would be most useful for us to challenge?” Keep the rest of the meeting reasonably stable and record whether a concrete uncertainty is raised before a defensive exchange begins. If that change helps, a later test might add the lead’s implementation intention: “If I hear criticism, I will ask which risk the question is meant to clarify.” Introducing both changes together would make their separate contributions harder to learn.</p>
+<p>The manager’s subsequent conduct remains part of the design. As <a href="../chapters/28-social-influence.html#match-the-safeguard-to-the-missing-step">Chapter 28</a> emphasized, inviting a concern and punishing the answer would teach silence again. Track both whether concerns appear earlier and whether they receive useful responses, including when they challenge the manager’s own view.</p>
+</section>
+<section id="habit-design-is-power" class="level2">
+<h2 data-anchor-id="habit-design-is-power">Evaluate the change and whose goals it serves</h2>
+<p>The studies above tested particular changes, with different results. The practical synthesis in <a href="#fig-behavior-design" class="quarto-xref">Figure&nbsp;<span>39.2</span></a> organizes a local test; its return arrow matters because an unsuccessful attempt can reveal that the obstacle was misidentified. Making the next writing step visible tests a different explanation from obtaining missing studies, learning how to evaluate their methods, or finding a feasible period to work.</p>
+<div id="fig-behavior-design" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="A vertical five-step workflow moves from defining an action through diagnosis, a changed condition, measurement, and review. A return arrow sends results back to diagnosis.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-behavior-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/behavior-design.svg" class="phone-fit img-fluid figure-img" alt="A vertical five-step workflow moves from defining an action through diagnosis, a changed condition, measurement, and review. A return arrow sends results back to diagnosis.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-behavior-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;39.2: A practical workflow defines an action, finds an obstacle, changes one condition, and tests the result. Review can change the diagnosis; after a lapse or harm, recovery or support may also change the goal or design.
+</figcaption>
+</figure>
+</div>
+<p><a href="#tbl-behavior-design-workflow" class="quarto-xref">Table&nbsp;<span>39.2</span></a> turns the figure into a short record. Write down the prediction before trying the change, so that the result can challenge the explanation that seemed plausible at the start.</p>
+<div id="tbl-behavior-design-workflow" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-behavior-design-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39.2: A minimum behavior-design record
+</figcaption>
+<div aria-describedby="tbl-behavior-design-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Required output</th>
+<th>Governing question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Define the behavior</strong></td>
+<td>One observable target action, the competing action, and the situation in which one displaces the other</td>
+<td>What would a camera or reliable record show?</td>
+</tr>
+<tr class="even">
+<td><strong>2. Diagnose the bottleneck</strong></td>
+<td>The cue, immediate function or consequence, and the main constraint on the target action</td>
+<td>Why does the current response win at this moment?</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Redesign the decisive point</strong></td>
+<td>One change to the cue, action size, friction, prompt, support, or immediate feedback</td>
+<td>What is the smallest change that directly addresses the diagnosed bottleneck?</td>
+</tr>
+<tr class="even">
+<td><strong>4. Measure</strong></td>
+<td>What happens before the change, a prediction, measures of follow-through and outcome, and a test period</td>
+<td>What observable pattern would show that the diagnosis was useful?</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Review</strong></td>
+<td>A review date and a keep, revise, or stop rule, including recovery after a lapse or harm</td>
+<td>What will change next if the prediction succeeds or fails?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>For the student, the prediction might be: leaving the draft open with a specific comparison to make will make writing more likely to begin before email. Starting is the first thing to observe; whether the paragraph offers an accurate, useful comparison is a separate question to return to when evaluating the change.</p>
+<p>The meeting example makes a further question unavoidable: who gets to decide what counts as better behavior? The student can choose a writing arrangement, while a manager or platform designer changes conditions for other people. More reporting or longer engagement may serve the organization without serving those asked to participate.</p>
+<p>Ask whether affected people can understand the arrangement, question its goals, choose otherwise, and discover its costs. A streak may encourage practice while making rest feel like failure; a reporting dashboard may improve coordination while exposing staff to surveillance. These effects belong in the evaluation alongside the behavior the designer hopes to increase.</p>
+<p><span id="measure-the-loop-not-the-story"></span></p>
+<p>The student may begin before email more often without improving the paper. A team may report more concerns without addressing any of them. Separate the action a design encourages from the outcome that makes it worth encouraging.</p>
+<p>Before making the change, record what happens at relevant opportunities. For the student, that means noting whether writing begins before email and what work gets done. During the test, continue that record and check the resulting argument: does the paragraph compare the studies accurately, support its claims with appropriate evidence, and help answer the research question? For the team, note whether concerns receive an answer or lead to a useful change in the project.</p>
+<p><strong>Self-monitoring</strong> makes behavior and progress available for review. A brief record could note the cue, whether the planned start happened, the work completed, and the obstacle encountered. In a meta-analysis of 138 randomized studies, Harkin and colleagues (2016) found that interventions encouraging progress monitoring improved goal attainment on average. Recording can therefore be part of the intervention itself. Keep the monitoring arrangement consistent when comparing an earlier period with a changed routine.</p>
+<p><strong>Feedback</strong> relates that record to a goal and helps select an adjustment. “You worked for twenty minutes” reports duration; “This paragraph now distinguishes the samples, but the causal claim still exceeds the design” identifies what to improve. Review at a useful interval, choose the next change, and keep the record short enough to maintain. A visible checklist can acknowledge completion, while the substance of the work determines whether the goal is being served. <a href="../chapters/40-choice-architecture.html#close-the-loop-feedback-and-error-proofing">Chapter 40’s feedback examples</a> apply this reasoning to choices made across a wider system.</p>
+<p>Choose a few measures that answer distinct questions:</p>
+<ul>
+<li><strong>Follow-through:</strong> Did the planned action happen when the opportunity arose?</li>
+<li><strong>Outcome:</strong> Did it improve the learning, judgment, cooperation, or well-being it was meant to support?</li>
+<li><strong>Maintenance:</strong> Does the change persist after novelty or intensive support declines?</li>
+<li><strong>Costs and access:</strong> Who can use the arrangement, and what effort, trust, rest, or flexibility does it cost?</li>
+</ul>
+<p>Set a review date and decide what would justify keeping, revising, or stopping the change. A personal before-and-after comparison can inform the next attempt, but other changes may explain the result. Stronger causal claims require a comparison that can separate those explanations.</p>
+<p>The tools in <a href="#tbl-21-1" class="quarto-xref">Table&nbsp;<span>39.3</span></a> address different obstacles. Use the table to choose a change whose predicted effect you can observe, then carry that choice into the Practice Lab.</p>
+<div id="tbl-21-1" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-21-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39.3: Common behavior-change techniques and their practical uses
+</figcaption>
+<div aria-describedby="tbl-21-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technique</th>
+<th>Purpose and example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Goals and action planning</strong></td>
+<td>Clarify the desired result and next action. <strong>Try:</strong> Draft and check one comparison tomorrow morning.</td>
+</tr>
+<tr class="even">
+<td><strong>Small steps and graded tasks</strong></td>
+<td>Reduce the starting demand; build from it. <strong>Try:</strong> Begin with one sentence, then develop the paragraph.</td>
+</tr>
+<tr class="odd">
+<td><strong>Instruction, modeling, and rehearsal</strong></td>
+<td>Build knowledge and skill. <strong>Try:</strong> Observe a worked comparison, then try another with feedback.</td>
+</tr>
+<tr class="even">
+<td><strong>Friction and environment</strong></td>
+<td>Make the desired action easier and the competing action harder. <strong>Try:</strong> Prepare the draft; close and log out of the inbox.</td>
+</tr>
+<tr class="odd">
+<td><strong>Defaults and automation</strong></td>
+<td>Arrange a helpful starting point or repeated action. <strong>Try:</strong> Open the writing workspace at startup; automate a chosen transfer.</td>
+</tr>
+<tr class="even">
+<td><strong>Anchors and reminders</strong></td>
+<td>Supply a prompt where action is feasible. <strong>Try:</strong> Open the laptop for writing, then draft the selected sentence.</td>
+</tr>
+<tr class="odd">
+<td><strong>Implementation intentions</strong></td>
+<td>Link a specific situation to a prepared response. <strong>Try:</strong> If I receive criticism, ask one clarifying question first.</td>
+</tr>
+<tr class="even">
+<td><strong>WOOP and coping plans</strong></td>
+<td>Anticipate an obstacle and decide how to respond. <strong>Try:</strong> If a method is unclear, mark the question and seek an explanation.</td>
+</tr>
+<tr class="odd">
+<td><strong>Habit replacement</strong></td>
+<td>Practice a new response at an old cue. <strong>Try:</strong> On getting into bed, open the prepared book.</td>
+</tr>
+<tr class="even">
+<td><strong>Immediate enjoyment and temptation bundling</strong></td>
+<td>Make the activity more rewarding while doing it. <strong>Try:</strong> Reserve a favorite audiobook for walks.</td>
+</tr>
+<tr class="odd">
+<td><strong>Celebration</strong></td>
+<td>Notice success during or immediately after the chosen action. <strong>Try:</strong> Quietly acknowledge completing the first comparison sentence.</td>
+</tr>
+<tr class="even">
+<td><strong>Incentives and gamification</strong></td>
+<td>Link consequences or progress signals to useful behavior. <strong>Try:</strong> Award points for completed, checked comparisons.</td>
+</tr>
+<tr class="odd">
+<td><strong>Precommitment</strong></td>
+<td>Change future options or consequences. <strong>Try:</strong> Use a chosen block on distracting apps during writing.</td>
+</tr>
+<tr class="even">
+<td><strong>Time blocking and batching</strong></td>
+<td>Protect an activity from competing demands. <strong>Try:</strong> Write in one period; handle messages in the next.</td>
+</tr>
+<tr class="odd">
+<td><strong>Social support and accountability</strong></td>
+<td>Supply help and an agreed check-in. <strong>Try:</strong> Work beside a peer and review one paragraph together.</td>
+</tr>
+<tr class="even">
+<td><strong>Self-monitoring and feedback</strong></td>
+<td>Reveal progress and guide adjustment. <strong>Try:</strong> Record starts and review the quality of the work.</td>
+</tr>
+<tr class="odd">
+<td><strong>Fresh starts and context change</strong></td>
+<td>Create an occasion to establish a new routine. <strong>Try:</strong> Prepare a new study setting at the start of term.</td>
+</tr>
+<tr class="even">
+<td><strong>BRAIN and lapse recovery</strong></td>
+<td>Create a pause and a route back to action. <strong>Try:</strong> Notice the urge, choose a response, and prepare the next opportunity.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="practice-lab-behavior-design-studio" class="level2">
+<h2 data-anchor-id="practice-lab-behavior-design-studio">Practice Lab: behavior-design studio</h2>
+<p>Choose one manageable everyday behavior you want to change and complete the record in <a href="#tbl-behavior-design-workflow" class="quarto-xref">Table&nbsp;<span>39.2</span></a>:</p>
+<ol type="1">
+<li><strong>Define:</strong> write the observable target, competing action, and recurring situation.</li>
+<li><strong>Diagnose:</strong> name the cue, the current action’s immediate function, and the main obstacle. Use B=MAP to distinguish willingness, feasibility, and the prompt.</li>
+<li><strong>Redesign:</strong> change one decisive point. Choose one primary technique from <a href="#tbl-21-1" class="quarto-xref">Table&nbsp;<span>39.3</span></a>. Write the desired action, its cue or prompt, and the preparation that makes it feasible. If a competing action repeatedly wins, identify where added friction could interrupt it. If testing celebration, specify how and when you will acknowledge the completed step. State which change you will test first.</li>
+<li><strong>Measure:</strong> record what happens before the change, predict what will improve, and choose one measure of follow-through and one of the valued outcome for a short reversible test.</li>
+<li><strong>Review:</strong> set a date and a rule for keeping, revising, or stopping the change. Add a way to resume after a lapse and one cost or unintended effect that would make you reconsider.</li>
+</ol>
+<p>Conclude with one sentence: “If this diagnosis is useful, we should observe…” Name the action or event that would support the explanation, along with one result that would send you back to the diagnosis.</p>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<p>Tomorrow morning, the student opens a laptop onto a prepared comparison, with the inbox closed and the necessary papers ready. Opening the laptop supplies the prompt; preparation makes the response feasible. After drafting the sentence, the student can pause to notice: “I have started, and I know what to work on next.” A useful result, an enjoyable working experience, or supportive feedback may make returning worthwhile. A detour toward email still calls for diagnosis: the next change may concern a cue, a writing skill, discomfort, or unavailable time. Choose one recurring occasion in your own day, prepare the response it should prompt, and decide what result would lead you to revise the arrangement.</p>
+<p>The next chapter, <a href="../chapters/40-choice-architecture.html#chapter-40-start">Choice Architecture</a>, widens the view from a particular action to the sequence of choices through which people must pass.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Media Lab
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before viewing, identify a behavior and the obstacle you suspect prevents it. After viewing, state one change the proposed framework suggests, the result you predict, and how you would check it.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AdKUJxjn-R8">B. J. Fogg: Forget Big Change, Start with a Tiny Habit</a></li>
+<li><a href="https://www.youtube.com/watch?v=KH2SQb7crAY">Gabriele Oettingen on WOOP</a></li>
+</ul>
+</div>
+</div>
+<div id="research-fogg-apps">
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: behavior design in apps
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Instagram’s history provides a documented connection to Fogg’s teaching. In a Stanford talk, Tristan Harris (2017) described Instagram co-founder Mike Krieger as his project partner in Fogg’s persuasive-technology class and said that techniques they learned informed Instagram. This is firsthand testimony about educational influence. It does not isolate B=MAP as the cause of the company’s growth, which also depended on the product, its users, and the market it entered.</p>
+<p>Clubhouse offers a concrete feature to analyze. Its 2021 <strong>Wave</strong> announcement described sending a friend an invitation to talk: the friend received a notification and could join a private audio room (Clubhouse, 2021). Through B=MAP, the opportunity to talk with a friend supplies a possible motivation, the notification prompts a response, and the short path into the room reduces effort. This is our application of the model to the feature, rather than evidence that Clubhouse’s designers used Fogg’s model. Even a well-timed invitation needs a conversation the recipient wants and time to participate.</p>
+<p>Duolingo reported an A/B test of making a streak easier to maintain. Previously, users had to meet their full daily learning goal; the revised design let one completed lesson extend the streak while displaying the larger goal separately (Duolingo, n.d.). The company reported a <strong>3.3% relative increase in retention at day 14</strong>, alongside fewer users meeting their full daily goals. Lowering the demand supported return, while changing how much completion was needed for the progress signal. Retention and meeting the learning target could move in different directions. The report supports this particular design change; it does not establish that the team adopted B=MAP or that greater retention by itself meant greater language proficiency.</p>
+<p>These examples separate acquiring a user, helping the user take a first action, and making later visits worthwhile. A subscription service depends on continued value; an advertising service may benefit from more attention even when the user would prefer to stop. B=MAP helps identify a behavioral moment to redesign. The evaluation must still ask whether the resulting action serves the person’s goal, a question taken up in <a href="#habit-design-is-power">evaluating whose goals a design serves</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research note: the ideas behind the workflow
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The workflow combines diagnosis, planning, and review. The Fogg Behavior Model describes motivation, ability, and a cue for action converging at a behavioral moment; its earlier term “trigger” became “prompt” in later presentations (Fogg, 2009, 2020). Research on implementation intentions, habits, and behavior-change maintenance supports planning, feedback, and preparation for obstacles (Gollwitzer &amp; Sheeran, 2006; Kwasnicka et al., 2016; Wood &amp; Rünger, 2016).</p>
+<p>Michie and colleagues’ (2013) <strong>Behavior Change Technique Taxonomy</strong> distinguishes 93 techniques in 16 groups, providing a common vocabulary for describing interventions. The practical families in <a href="#tbl-21-1" class="quarto-xref">Table&nbsp;<span>39.3</span></a> bring together techniques commonly used in everyday behavior change. A taxonomy identifies what an intervention contains; evidence about a particular technique’s effects must come from studies of its use. Some familiar packages combine several techniques, as a writing group can combine scheduling, prompts, support, and feedback.</p>
+</div>
+</div>
+</div>
+<div id="com-b-research-lens">
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: COM-B widens the diagnosis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>COM-B asks whether <strong>capability</strong>, <strong>opportunity</strong>, and <strong>motivation</strong> converge (Michie et al., 2011). Capability includes skill, knowledge, energy, and physical ability. Opportunity includes time, tools, permission, safety, and social context. Motivation includes reflective and automatic processes. A motivational speech cannot fix a broken opportunity structure. COM-B is useful when B=MAP’s moment-level diagnosis needs a broader account of resources and institutions.</p>
+<div id="tbl-21-diagnosis" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-21-diagnosis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39.4: Components within COM-B and B=MAP; the frameworks overlap but organize the diagnosis differently
+</figcaption>
+<div aria-describedby="tbl-21-diagnosis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Framework</th>
+<th>Component</th>
+<th>Diagnostic question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>COM-B</td>
+<td>Capability</td>
+<td>Does the person have the psychological and physical capacity, including the necessary knowledge and skills?</td>
+</tr>
+<tr class="even">
+<td>COM-B</td>
+<td>Opportunity</td>
+<td>Do external conditions provide the time, access, tools, permission, and social support needed?</td>
+</tr>
+<tr class="odd">
+<td>COM-B</td>
+<td>Motivation</td>
+<td>Do reflective intentions and automatic processes support the action?</td>
+</tr>
+<tr class="even">
+<td>B=MAP</td>
+<td>Motivation</td>
+<td>Is the person sufficiently willing to act at this moment, given how easy or difficult it is?</td>
+</tr>
+<tr class="odd">
+<td>B=MAP</td>
+<td>Ability</td>
+<td>Is the action easy enough now, given its demands on time, effort, money, and the existing routine?</td>
+</tr>
+<tr class="even">
+<td>B=MAP</td>
+<td>Prompt</td>
+<td>What calls for the action at the moment it is feasible?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Use the separate framework questions in <a href="#tbl-21-diagnosis" class="quarto-xref">Table&nbsp;<span>39.4</span></a> to identify when the barrier calls for resources, access, treatment, or organizational change. Their components overlap, but a prompt at the right moment cannot substitute for missing capability or opportunity.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="research-woop-evidence">
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: what WOOP evidence establishes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>WOOP combines <strong>mental contrasting</strong>—considering a desired future alongside a present obstacle—with an <strong>implementation intention</strong> specifying a response to that obstacle. Wang, Wang, and Gai’s (2021) meta-analysis of this combined procedure included 21 articles, 24 independent effect sizes, and 15,907 participants. The pooled effect on goal attainment was small to moderate (Hedges’ <em>g</em> = 0.34; 95% confidence interval: 0.23–0.44).</p>
+<p>Effects varied across studies, and indications of publication bias suggest the average may be overstated. Comparisons also used different control conditions. The result supports trying a structured obstacle-and-plan exercise. For the student, the test remains whether the chosen plan addresses the actual obstacle to writing.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="research-fresh-start-and-context">
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: a fresh start and a changed setting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Calendar landmarks can encourage initiation.</strong> Dai and colleagues (2014) examined diet-related internet searches, gym attendance, and commitments to pursue goals in three archival studies. Aspirational activity rose around temporal landmarks such as a new week, month, or year. These patterns are consistent with treating a new period as a break from past shortcomings.</p>
+<p><strong>Relocation can make intervention more timely.</strong> Verplanken and Roy (2016) compared a sustainability intervention with a control condition among 800 participants, including recent movers and matched nonmovers. Across 25 self-reported behaviors measured at baseline and eight weeks later, the intervention was more effective among recent movers. Moving may interrupt familiar cues and create an opening for a new routine. Relocation itself was not randomly assigned.</p>
+<p>A new semester supplies a date. A new desk, timetable, or commute changes the conditions of action. Either may provide an opening, but a useful plan specifies what will happen differently when the next opportunity arrives.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Berger, J. (2020). <em>The catalyst: How to change anyone’s mind</em>. Simon &amp; Schuster.</p>
+</div>
+<div class="reference">
+<p>Carrera, M., Royer, H., Stehr, M., Sydnor, J., &amp; Taubinsky, D. (2018). The limits of simple implementation intentions: Evidence from a field experiment on making plans to exercise. Journal of Health Economics, 62, 95–104.</p>
+</div>
+<div class="reference">
+<p>Clubhouse. (2021, September 23). <em>Say hello to Wave!</em> https://blog.clubhouse.com/wave-clubhouse-new-feature/</p>
+</div>
+<div class="reference">
+<p>Dai, H., Milkman, K. L., &amp; Riis, J. (2014). The fresh start effect: Temporal landmarks motivate aspirational behavior. <em>Management Science, 60</em>(10), 2563–2582. https://doi.org/10.1287/mnsc.2014.1901</p>
+</div>
+<div class="reference">
+<p>Dang, J., Barker, P., Baumert, A., Bentvelzen, M., Berkman, E., et al.&nbsp;(2021). A multilab replication of the ego depletion effect. <em>Social Psychological and Personality Science, 12</em>(1), 14–24. https://doi.org/10.1177/1948550619887702</p>
+</div>
+<div class="reference">
+<p>Duckworth, A. L., Gendler, T. S., &amp; Gross, J. J. (2016). Situational strategies for self-control. Perspectives on Psychological Science, 11(1), 35-55.</p>
+</div>
+<div class="reference">
+<p>Duolingo. (n.d.). <em>Improving the streak: Forming habits one lesson at a time</em>. https://blog.duolingo.com/improving-the-streak/</p>
+</div>
+<div class="reference">
+<p>Eyal, N. (2014). <em>Hooked: How to build habit-forming products</em> (R. Hoover, Ed.). Portfolio.</p>
+</div>
+<div class="reference">
+<p>Eyal, N. (2019). <em>Indistractable: How to control your attention and choose your life</em> (with J. Li). BenBella Books.</p>
+</div>
+<div class="reference">
+<p>Fogg, B. J. (n.d.). <em>Rewire your brain</em>. Tiny Habits. https://tinyhabits.com/rewire/</p>
+</div>
+<div class="reference">
+<p>Fogg, B. J. (2009). A behavior model for persuasive design. In Proceedings of the 4th International Conference on Persuasive Technology (Article 40). ACM.</p>
+</div>
+<div class="reference">
+<p>Fogg, B. J. (2020). Tiny habits: The small changes that change everything. Houghton Mifflin Harcourt.</p>
+</div>
+<div class="reference">
+<p>Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493-503.</p>
+</div>
+<div class="reference">
+<p>Gollwitzer, P. M., &amp; Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69-119.</p>
+</div>
+<div class="reference">
+<p>Hagger, M. S., Chatzisarantis, N. L. D., Alberts, H., Anggono, C. O., Batailler, C., Birt, A. R., Brand, R., Brandt, M. J., Brewer, G., Bruyneel, S., Calvillo, D. P., Campbell, W. K., Cannon, P. R., Carlucci, M., Carruth, N. P., Cheung, T., Crowell, A., De Ridder, D. T. D., Dewitte, S., et al.&nbsp;(2016). A multilab preregistered replication of the ego-depletion effect. Perspectives on Psychological Science, 11(4), 546-573.</p>
+</div>
+<div class="reference">
+<p>Harkin, B., Webb, T. L., Chang, B. P. I., Prestwich, A., Conner, M., Kellar, I., Benn, Y., &amp; Sheeran, P. (2016). Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence. <em>Psychological Bulletin, 142</em>(2), 198–229. https://doi.org/10.1037/bul0000025</p>
+</div>
+<div class="reference">
+<p>Harris, T. (2017, November 3). <em>Making technology less manipulative</em> [Video and transcript]. Stanford Technology Ventures Program. https://stvp.stanford.edu/av/making-technology-less-manipulative-entire-talk</p>
+</div>
+<div class="reference">
+<p>Heath, C., &amp; Heath, D. (2010). <em>Switch: How to change things when change is hard</em>. Broadway Books.</p>
+</div>
+<div class="reference">
+<p>Kwasnicka, D., Dombrowski, S. U., White, M., &amp; Sniehotta, F. (2016). Theoretical explanations for maintenance of behaviour change: A systematic review of behaviour theories. <em>Health Psychology Review, 10</em>(3), 277–296.</p>
+</div>
+<div class="reference">
+<p>Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue when switching between work tasks. Organizational Behavior and Human Decision Processes, 109(2), 168-181.</p>
+</div>
+<div class="reference">
+<p>Locke, E. A., &amp; Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. <em>American Psychologist, 57</em>(9), 705–717. https://doi.org/10.1037/0003-066X.57.9.705</p>
+</div>
+<div class="reference">
+<p>Michie, S., Richardson, M., Johnston, M., Abraham, C., Francis, J., Hardeman, W., Eccles, M. P., Cane, J., &amp; Wood, C. E. (2013). The behavior change technique taxonomy (v1) of 93 hierarchically clustered techniques: Building an international consensus for the reporting of behavior change interventions. <em>Annals of Behavioral Medicine, 46</em>(1), 81–95. https://doi.org/10.1007/s12160-013-9486-6</p>
+</div>
+<div class="reference">
+<p>Michie, S., van Stralen, M. M., &amp; West, R. (2011). The behaviour change wheel: A new method for characterising and designing behaviour change interventions. Implementation Science, 6, Article 42.</p>
+</div>
+<div class="reference">
+<p>Milkman, K. L., Beshears, J., Choi, J. J., Laibson, D., &amp; Madrian, B. C. (2011). Using implementation intentions prompts to enhance influenza vaccination rates. <em>Proceedings of the National Academy of Sciences, 108</em>(26), 10415–10420. https://doi.org/10.1073/pnas.1103170108</p>
+</div>
+<div class="reference">
+<p>Milkman, K. L., Minson, J. A., &amp; Volpp, K. G. M. (2014). Holding the Hunger Games hostage at the gym: An evaluation of temptation bundling. <em>Management Science, 60</em>(2), 283–299. https://doi.org/10.1287/mnsc.2013.1784</p>
+</div>
+<div class="reference">
+<p>Oettingen, G. (2012). Future thought and behaviour change. European Review of Social Psychology, 23(1), 1-63.</p>
+</div>
+<div class="reference">
+<p>Oyserman, D. (2009). Identity-based motivation: Implications for action-readiness, procedural-readiness, and consumer behavior. Journal of Consumer Psychology, 19(3), 250-260.</p>
+</div>
+<div class="reference">
+<p>Parry, D. A. (2024). Does the mere presence of a smartphone impact cognitive performance? A meta-analysis of the “brain drain effect.” Media Psychology, 27(5), 737–762. https://doi.org/10.1080/15213269.2023.2286647</p>
+</div>
+<div class="reference">
+<p>Shen, L., Fishbach, A., &amp; Hsee, C. K. (2015). The motivating-uncertainty effect: Uncertainty increases resource investment in the process of reward pursuit. <em>Journal of Consumer Research, 41</em>(5), 1301–1315. https://doi.org/10.1086/679418</p>
+</div>
+<div class="reference">
+<p>Shen, L., Hsee, C. K., &amp; Talloen, J. H. (2019). The fun and function of uncertainty: Uncertain incentives reinforce repetition decisions. <em>Journal of Consumer Research, 46</em>(1), 69–81. https://doi.org/10.1093/jcr/ucy062</p>
+</div>
+<div class="reference">
+<p>Thaler, R. H., &amp; Shefrin, H. M. (1981). An economic theory of self-control. Journal of Political Economy, 89(2), 392-406.</p>
+</div>
+<div class="reference">
+<p>Verplanken, B., &amp; Roy, D. (2016). Empowering interventions to promote sustainable lifestyles: Testing the habit discontinuity hypothesis in a field experiment. <em>Journal of Environmental Psychology, 45</em>, 127–134. https://doi.org/10.1016/j.jenvp.2015.11.008</p>
+</div>
+<div class="reference">
+<p>Vohs, K. D., Schmeichel, B. J., Lohmann, S., Gronau, Q. F., Finley, A. J., et al.&nbsp;(2021). A multisite preregistered paradigmatic test of the ego-depletion effect. <em>Psychological Science, 32</em>(10), 1566–1581. https://doi.org/10.1177/0956797621989733</p>
+</div>
+<div class="reference">
+<p>Volkow, N. D., Koob, G. F., &amp; McLellan, A. T. (2016). Neurobiologic advances from the brain disease model of addiction. New England Journal of Medicine, 374(4), 363-371.</p>
+</div>
+<div class="reference">
+<p>Wang, G., Wang, Y., &amp; Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. <em>Frontiers in Psychology, 12</em>, Article 565202. https://doi.org/10.3389/fpsyg.2021.565202</p>
+</div>
+<div class="reference">
+<p>Ward, A. F., Duke, K., Gneezy, A., &amp; Bos, M. W. (2017). Brain drain: The mere presence of one’s own smartphone reduces available cognitive capacity. Journal of the Association for Consumer Research, 2(2), 140-154.</p>
+</div>
+<div class="reference">
+<p>Wood, W. (2019). <em>Good habits, bad habits: The science of making positive changes that stick</em>. Farrar, Straus and Giroux.</p>
+</div>
+<div class="reference">
+<p>Wood, W., &amp; Rünger, D. (2016). Psychology of habit. Annual Review of Psychology, 67, 289-314.</p>
+</div>
+<div class="reference">
+<p>Woolley, K., &amp; Fishbach, A. (2016). For the fun of it: Harnessing immediate rewards to increase persistence in long-term goals. <em>Journal of Consumer Research, 42</em>(6), 952–966. https://doi.org/10.1093/jcr/ucv098</p>
+</div>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Reward-learning research gives a possible rationale for timely encouragement. It does not directly test Fogg’s celebration technique or establish its proposed neural mechanism.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Addiction can involve impaired control and continued behavior despite serious harm. Some substance withdrawals are medically dangerous; the mild routine exercises in this chapter are not a treatment protocol.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../parts/part-7.html" class="pagination-link" aria-label="Part VII. Designing Better Decisions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Part VII. Designing Better Decisions</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/40-choice-architecture.html" class="pagination-link" aria-label="Choice Architecture">
+        <span class="nav-page-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/39-behavior-design.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/39-behavior-design.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

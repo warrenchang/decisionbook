@@ -21,10 +21,10 @@ H1 = re.compile(r"^#\s+(.+?)(?:\s+\{[^}]+\})?\s*$", re.MULTILINE)
 MARKDOWN_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 REDIRECTS = {
-    "01-the-choice-is-the-tip-of-the-iceberg.qmd": "01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
-    "01-decision-making-is-a-process-not-a-moment.qmd": "01-how-decisions-should-be-made-and-how-they-actually-are.qmd",
-    "02-a-rational-benchmark-not-a-portrait.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
-    "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
+    "01-the-choice-is-the-tip-of-the-iceberg.qmd": "01-understanding-decision-making.qmd",
+    "01-decision-making-is-a-process-not-a-moment.qmd": "01-understanding-decision-making.qmd",
+    "02-a-rational-benchmark-not-a-portrait.qmd": "02-structuring-a-decision.qmd",
+    "02-building-a-better-decision-rationality-alternatives-and-opportunity-cost.qmd": "02-structuring-a-decision.qmd",
     "appendix-a-portable-course-tools.qmd": "appendix-c-portable-course-tools.qmd",
     "appendix-b-portable-course-tools.qmd": "appendix-c-portable-course-tools.qmd",
     "appendix-b-index-of-major-course-examples.qmd": "appendix-d-index-of-major-course-examples.qmd",
@@ -34,14 +34,14 @@ REDIRECTS = {
     "appendix-d-when-evidence-breaks.qmd": "appendix-f-when-evidence-breaks.qmd",
     "appendix-e-when-evidence-breaks.qmd": "appendix-f-when-evidence-breaks.qmd",
     "appendix-f-evolutionary-explanations-of-value-choice-and-rationality.qmd": "appendix-b-evolutionary-explanations-of-value-choice-and-rationality.qmd",
-    "retired-opportunity-cost-information-and-better-options.qmd": "02-building-a-better-decision-alternatives-opportunity-cost-information-and-robustness.qmd",
-    "retired-heuristics-the-adaptive-toolbox.qmd": "08-fast-and-frugal-thinking.qmd",
-    "retired-resemblance-is-not-probability.qmd": "09-what-feels-likely-availability-affect-and-resemblance.qmd",
-    "retired-fluency-familiarity-and-the-feeling-of-truth.qmd": "13-accessibility-familiarity-and-ease.qmd",
+    "retired-opportunity-cost-information-and-better-options.qmd": "02-structuring-a-decision.qmd",
+    "retired-heuristics-the-adaptive-toolbox.qmd": "08-intuition-and-deliberation.qmd",
+    "retired-resemblance-is-not-probability.qmd": "09-availability-affect-and-representativeness.qmd",
+    "retired-fluency-familiarity-and-the-feeling-of-truth.qmd": "13-priming-fluency-and-familiarity.qmd",
     "retired-wanting-craving-and-self-control.qmd": "21-habits-wanting-and-self-control.qmd",
     "retired-asset-bubbles.qmd": "27-markets-mispricing-and-bubbles.qmd",
-    "retired-conformity-norms-and-social-proof.qmd": "26-social-norms-and-conformity-when-other-people-become-evidence.qmd",
-    "retired-anchors-concessions-and-bargaining-tactics.qmd": "36-preparing-and-claiming-value.qmd",
+    "retired-conformity-norms-and-social-proof.qmd": "26-social-norms-and-conformity.qmd",
+    "retired-anchors-concessions-and-bargaining-tactics.qmd": "36-distributive-negotiation.qmd",
 }
 
 

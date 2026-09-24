@@ -2,6 +2,8 @@
 
 The repository is now a Quarto book project. The `.qmd` files are the canonical source; `docs/` is generated output. Do not routinely edit generated HTML files.
 
+Chapter filenames use the current reader-facing number and H1 title, in lowercase with hyphens: `31-storytelling.qmd`. When a title or chapter order changes, preview the filename updates with `python3 scripts/sync_chapter_filenames.py`; use `--apply` to update active paths and preserve former HTML URLs as aliases. Keep section identifiers stable. The older `rename_chapter_files.py` records a historical one-time migration and should not be rerun for current naming changes.
+
 ## Book-specific presentation requirements
 
 The following requirements apply to *Decision in the Making*. They are project conventions, not general writing-style rules.
@@ -64,7 +66,7 @@ From the repository root, run:
 quarto preview
 ```
 
-Open a chapter such as `chapters/01-how-decisions-should-be-made-and-how-they-actually-are.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
+Open a chapter such as `chapters/01-understanding-decision-making.qmd`. Use **Visual** mode for word-processor-like editing or **Source** mode for precise Markdown editing. Save the file; the browser preview updates automatically.
 
 ## Rebuild all publishing files
 

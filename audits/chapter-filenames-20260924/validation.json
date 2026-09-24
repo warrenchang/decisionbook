@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "chapter_count": 42,
+  "renamed_files": 38,
+  "already_matching_files": 4,
+  "source_preservation": "PASS: independent comparison of all 42 chapters; only paths and added aliases differ",
+  "existing_staged_changes": "Not staged, reset, committed, or pushed by this task",
+  "html_build": "PASS: full render",
+  "epub_build": "PASS: full render",
+  "chapter_filename_dry_run": "PASS: zero remaining changes",
+  "source_qa": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "references": {
+    "unique": 1096,
+    "unresolved_citations": 0
+  },
+  "html": {
+    "status": "PASS",
+    "canonical_pages": 62,
+    "chapter_navigation_and_search_entries": 42,
+    "redirect_aliases_checked": 83,
+    "local_html_links_checked": 7676,
+    "issues": []
+  },
+  "epub_release_qa": {
+    "errors": 0,
+    "navigation_chapters": 42
+  },
+  "float_references": {
+    "sources": 62,
+    "figures": 102,
+    "tables": 165,
+    "issues": 0
+  },
+  "epub_sha256": "a8e41728f078332eccf9cf64b8c256c1f261fd02be767718d1cb11397d873f79",
+  "commands": [
+    "python3 scripts/sync_chapter_filenames.py",
+    "quarto render --profile html",
+    "quarto render --profile epub",
+    "python3 scripts/qa_quarto_book.py",
+    "python3 scripts/sync_references.py --check",
+    "python3 audits/chapter-filenames-20260924/verify_html.py",
+    "python3 scripts/qa_epub_release.py",
+    "python3 scripts/qa_float_references.py --rendered --epub-dir /private/tmp/decision-chapter-filenames-epub/EPUB"
+  ]
+}

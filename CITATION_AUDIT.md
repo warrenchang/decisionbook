@@ -42,8 +42,8 @@ Unresolved author–year citations: **0**
 | Social Influence | 24 | 0 |
 | Culture and Identity | 30 | 0 |
 | Persuasion | 30 | 0 |
-| Why Stories Move Minds | 12 | 0 |
-| Building an Evidence-Aligned Message | 14 | 0 |
+| Storytelling | 12 | 0 |
+| Message Design | 14 | 0 |
 | Communication | 27 | 0 |
 | Connection and Repair | 38 | 0 |
 | Negotiation as Joint Decision Design | 17 | 0 |

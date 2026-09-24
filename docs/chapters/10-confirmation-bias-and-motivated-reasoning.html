@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Visible choices are only the endpoint. This book follows decisions in the making—from attention, interpretation, prediction, and valuation to influence, communication, negotiation, and the design of environments that make better judgment and action possible.">
+
+<title>10&nbsp; Confirmation Bias and Motivated Reasoning – Decision in the Making</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/11-anchors-halos-and-decoys.html" rel="next">
+<link href="../chapters/09-availability-affect-and-representativeness.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d2ab3828f0446ed9f3a10bc4efc982a8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-2.html">Part II. Judgment Under Uncertainty</a></li><li class="breadcrumb-item"><a href="../chapters/10-confirmation-bias-and-motivated-reasoning.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Confirmation Bias and Motivated Reasoning</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Decision in the Making</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/warrenchang/decisionbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use-this-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-read-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Read the Evidence in This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part I. How a Choice Takes Shape</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-understanding-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Understanding Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-structuring-a-decision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Structuring a Decision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-limited-attention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Limited Attention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-predictive-mind.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Predictive Mind</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-expectations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Expectations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-valuation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Valuation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-narrator-after-choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Narrator After Choice</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part II. Judgment Under Uncertainty</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-intuition-and-deliberation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Intuition and Deliberation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-availability-affect-and-representativeness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Availability, Affect, and Representativeness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-confirmation-bias-and-motivated-reasoning.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Confirmation Bias and Motivated Reasoning</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-anchors-halos-and-decoys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Anchors, Halos, and Decoys</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-framing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Framing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-priming-fluency-and-familiarity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Priming, Fluency, and Familiarity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-base-rates-and-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Updating</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-randomness-and-overconfidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Randomness and Overconfidence</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part III. Risk, Time, and Well-Being</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-risky-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-prospect-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Prospect Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-decisions-from-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Decisions From Experience</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-mental-accounting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Mental Accounting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-intertemporal-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Intertemporal Decision Making</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/21-habits-wanting-and-self-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Habits, Wanting, and Self-Control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/22-deciding-for-a-better-life.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Deciding for a Better Life</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part IV. Strategic and Social Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/23-strategic-interdependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Strategic Interdependence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/24-coordination-and-focal-points.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Coordination and Focal Points</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/25-cooperation-and-social-preferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Cooperation and Social Preferences</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/26-social-norms-and-conformity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Social Norms and Conformity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/27-markets-mispricing-and-bubbles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Markets, Mispricing, and Bubbles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/28-social-influence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Social Influence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/29-culture-and-identity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Culture and Identity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part V. Persuasion, Communication, and Connection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/30-persuasion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Persuasion</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/31-storytelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Storytelling</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/32-message-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Message Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/33-communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Communication</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/34-connection-and-repair.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VI. Negotiating Joint Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/36-distributive-negotiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Distributive Negotiation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/37-integrative-negotiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Integrative Negotiation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/38-designing-better-agreements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Designing Better Agreements</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../parts/part-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part VII. Designing Better Decisions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/39-behavior-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Behavior Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/40-choice-architecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Choice Architecture</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/41-decision-hygiene.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Decision Hygiene</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/42-deciding-with-data-and-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Deciding With Data and AI</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-a-rational-choice-and-decision-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Rational Choice and Decision Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Evolutionary Explanations of Value, Choice, and Rationality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-literature-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Conducting and Writing a Literature Review</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-e-how-behavioral-evidence-is-built.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Running an Experimental Study: From Question to Credible Evidence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-f-when-evidence-breaks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">When Evidence Breaks: The Replication Crisis and Research Integrity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-portable-course-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Portable Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-d-index-of-major-course-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Index of Major Examples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../concept-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index of Concepts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About This Book</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#expectations-and-confirmation" id="toc-expectations-and-confirmation" class="nav-link" data-scroll-target="#expectations-and-confirmation">How beliefs shape the test</a></li>
+  <li><a href="#self-serving-explanations" id="toc-self-serving-explanations" class="nav-link" data-scroll-target="#self-serving-explanations">Self-serving explanations</a></li>
+  <li><a href="#attribution-behavior-is-visible-situations-are-not" id="toc-attribution-behavior-is-visible-situations-are-not" class="nav-link" data-scroll-target="#attribution-behavior-is-visible-situations-are-not">Attribution: weighing the person and the situation</a></li>
+  <li><a href="#when-both-sides-feel-objective" id="toc-when-both-sides-feel-objective" class="nav-link" data-scroll-target="#when-both-sides-feel-objective">When both sides feel objective</a></li>
+  <li><a href="#protect-the-test-not-the-belief" id="toc-protect-the-test-not-the-belief" class="nav-link" data-scroll-target="#protect-the-test-not-the-belief">Make beliefs open to a fair test</a></li>
+  <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
+  <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
+  <li><a href="#references-cited-in-this-chapter" id="toc-references-cited-in-this-chapter" class="nav-link" data-scroll-target="#references-cited-in-this-chapter">References cited in this chapter</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/10-confirmation-bias-and-motivated-reasoning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/10-confirmation-bias-and-motivated-reasoning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../parts/part-2.html">Part II. Judgment Under Uncertainty</a></li><li class="breadcrumb-item"><a href="../chapters/10-confirmation-bias-and-motivated-reasoning.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Confirmation Bias and Motivated Reasoning</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="beliefs-that-defend-themselves" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Confirmation Bias and Motivated Reasoning</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Beliefs That Defend Themselves</em></p>
+<div id="chapter-10-start" class="chapter-epigraph">
+<blockquote class="blockquote">
+<p>“The human understanding when it has once adopted an opinion … draws all things else to support and agree with it.”</p>
+<p>— Francis Bacon, <a href="https://constitution.org/2-Authors/bacon/nov_org.htm"><em>Novum Organum</em></a>, 1620, Book I, Aphorism XLVI</p>
+</blockquote>
+</div>
+<p>A project leader believes customers want a simpler app. She highlights complaints about confusing menus and dismisses requests for extra features as coming from unusual users. A colleague concludes that the app needs more capability, pointing to the same requests and calling the simplicity complaints minor.</p>
+<p>Customer feedback should help the team decide what to build. Here, the colleagues use the same evidence to support opposing redesigns, each of which would consume time and money and could disappoint some users. Another collection of comments may leave both colleagues more convinced. Before gathering it, they need a test that could separate the explanations: what would each account predict that the other would not?</p>
+<div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Core Idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Existing beliefs guide what people search for and how they interpret what they find. The process becomes unreliable when the favored explanation faces an easier test than its rivals. Improvement requires a comparison that could change the conclusion, using the same standards for both sides.</p>
+</div>
+</div>
+<section id="learning-goals" class="level2">
+<h2 data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>Trace how an existing belief shapes search, interpretation, memory, and attribution.</li>
+<li>Distinguish confirmation, motivated reasoning, self-serving attribution, and correspondence bias.</li>
+<li>Separate biased evaluation of evidence from an expectation that changes the outcome itself.</li>
+<li>Build a structured disconfirmation protocol with a prediction recorded before discussion.</li>
+</ul>
+<p>A bias label is useful when it identifies a process to examine. Calling the project leader “biased” explains little; comparing which comments she counts, which she dismisses, and what she predicted beforehand makes the disagreement open to investigation.</p>
+</section>
+<section id="expectations-and-confirmation" class="level2">
+<h2 data-anchor-id="expectations-and-confirmation">How beliefs shape the test</h2>
+<p><a href="../chapters/05-expectations.html#when-a-forecast-enters-the-causal-system">Chapter 5</a> asked whether acting on an expectation changes what happens. This chapter asks whether a belief receives a fair test. In the app example, the colleagues can interpret the same customer comments differently even when neither has changed the product or the customers’ experience. That is a problem of inference.</p>
+<p>The two processes can then join up. A leader convinced there is no market for a feature may discount requests for it and refuse to develop it; interested customers leave, apparently confirming the initial pessimism. To investigate the first step, give independent reviewers the same comments and compare their coding. To investigate the second, compare outcomes under credible alternative product decisions. <strong>Biased interpretation and a self-fulfilling outcome require different evidence.</strong> Neither proves the other.</p>
+<p><span id="confirmation-and-myside-bias"></span></p>
+<div id="fig-belief-protection-loop" class="quarto-float quarto-figure quarto-figure-center" alt="Selective search, interpretation, memory, and confidence form a reinforcing loop, with disconfirming tests and independent standards as interventions.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-belief-protection-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/belief-protection-loop.svg" class="img-fluid figure-img" alt="Selective search, interpretation, memory, and confidence form a reinforcing loop, with disconfirming tests and independent standards as interventions.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-belief-protection-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: Selective search, interpretation, memory, and confidence can reinforce an existing belief.
+</figcaption>
+</figure>
+</div>
+<p>Finding what we expected can be reassuring evidence that a model works. In <a href="#fig-belief-protection-loop" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>, however, selective search, reading, and memory build confidence that feeds back into the same belief. That loop can keep a preferred account convincing without testing whether a rival works better.</p>
+<p><strong>Confirmation bias</strong> refers to patterns of search, interpretation, or memory that favor an existing belief (Nickerson, 1998). It can arise without deliberate distortion, as the favored explanation makes some questions easier to think of than others.</p>
+<p>In Wason’s (1960) rule-discovery task, participants saw 2-4-6 and proposed further triples to discover the rule. Testing 4-6-8 may confirm “increase by two,” but also fits the broader rule “any increasing numbers.” A test such as 2-5-9 separates those accounts. Testing a predicted example is not inherently irrational; the weakness is choosing a test whose answer does little to distinguish the rival rules.</p>
+<p>In another classic line of work, Lord, Ross, and Lepper (1979) gave people who supported or opposed capital punishment mixed evidence about whether the death penalty deters crime. Rather than moving toward each other, participants interpreted the evidence in ways that strengthened their original positions. Supporters saw the pro-deterrence study as stronger; opponents saw the anti-deterrence study as stronger. Participants reported greater polarization after considering the mixed evidence.</p>
+<p>This pattern is sometimes called <strong>biased assimilation</strong>: people interpret evidence through their prior beliefs. It is related to <strong>myside bias</strong>, the tendency to evaluate evidence and arguments in ways that favor one’s own position. Across the tasks reviewed by Stanovich and colleagues (2013), the size of myside bias had little relationship with intelligence. Strong cognitive ability therefore gives us no simple assurance of impartial evaluation.</p>
+<p>In the app example, each colleague can find genuine comments supporting a preferred explanation. The question is whether the same inclusion rules and standards of evidence were applied to both kinds of comment.</p>
+<p>Belief protection becomes more consequential when beliefs are tied to identity, status, morality, or prior commitment. Kunda’s (1990) account of <strong>motivated reasoning</strong> explains how people can recruit plausible reasons for a desired conclusion. In Kahan’s (2013) study, greater cognitive reflection was associated with more ideologically patterned responses on the task examined. This is a separate claim from the weak intelligence–myside correlation: the question is how reasoning is being used in a particular setting. <a href="../chapters/07-narrator-after-choice.html#reasoning-as-a-social-instrument">Chapter 7</a> examines the social work an explanation can do.</p>
+<p>Beliefs need not concern a disputed policy to receive selective support. A vague description of ourselves can invite us to supply its confirming examples. The Barnum effect or Forer effect occurs when people accept general descriptions as uniquely true of themselves. Forer (1949) gave students a personality description supposedly based on a test, but actually composed of vague statements that could apply to many people. Students rated the description as highly accurate. Selective recall is one plausible contributor, alongside the breadth and favorable character of many statements. A horoscope, personality reading, or vague leadership profile can feel personal because the mind supplies the evidence.</p>
+<p>A fair test does not require abandoning a well-supported belief after one weak anomaly. The question is whether the new observation is more consistent with that belief or a plausible rival, given the quality of the evidence. Confidence should be difficult to move when the support is strong, not because an objection has been ruled out in advance.</p>
+<p>For the app, define two predictions before reading another set of comments. If simplicity is the main problem, what pattern should appear? If missing capability is the problem, what different pattern should appear? The best next observation need not be hostile to a preferred belief; it must be informative about the alternatives.</p>
+<div class="watch-and-test predict-first callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Watch and test: are you testing the rule—or collecting agreement?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="reading-label">Predict first</span></p>
+<p>Open the <a href="https://youtu.be/Q3kfJu4y0M0">short “kiss test” demonstration</a> and pause after the initial puzzle, before its explanation. Write a candidate rule, one observation that would support it, and one that would falsify it. Continue watching, then ask whether each question distinguishes your rule from a plausible rival. The debrief is the transferable tool: a good test separates competing explanations; it does not merely produce another “yes.”</p>
+</div>
+</div>
+</section>
+<section id="self-serving-explanations" class="level2">
+<h2 data-anchor-id="self-serving-explanations">Self-serving explanations</h2>
+<p>A project review should reveal what to repeat and what to change. That becomes harder when the same account also determines who deserves credit or blame: a flattering explanation can be personally useful while teaching the team the wrong lesson.</p>
+<p><strong>Self-serving attribution</strong> gives the self more credit for success than responsibility for failure. Mezulis and colleagues’ (2004) meta-analysis found this asymmetry across a broad literature, with substantial differences across populations and settings. Miller and Ross (1975) found stronger support for taking credit after success than for shifting blame after failure, and argued that expectations and information could explain some apparently self-serving judgments. Their skeptical question remains useful: did the explanation follow the evidence, or did its standards change to favor the self?</p>
+<p>The narrator discussed in <a href="../chapters/07-narrator-after-choice.html#organizations-have-narrators-too">Chapter 7</a> adds a further problem: later knowledge can reconstruct the cause after choice. A forecast recorded before the outcome helps reveal both selective attribution and retrospective rewriting.</p>
+<p>The project leader might credit strong sales to the design and weak sales to marketing. Either explanation could be true. The warning sign is an evidential standard that changes with whether the outcome flatters the decision-maker. A review should ask what the leader and external circumstances contributed to both success and failure.</p>
+<div id="research-note-positive-illusions" class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional research note: can a flattering belief help?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>After a disappointing launch, the project leader tells the team, “We can learn from this and build something better.” That encouragement leaves the outcome open. “Customers already love the design; they just do not know it yet” makes a claim the sales and feedback may contradict. The difference matters when discussing <strong>positive illusions</strong>: views of ourselves, our control, or our future that are more favorable than the evidence warrants.</p>
+<p>Taylor and Brown (1988) proposed that modest positive distortions could support motivation, coping, and well-being. Their argument challenged the idea that psychological health always requires an entirely accurate self-view. It also prompted a substantial debate. Colvin and Block (1994) questioned whether the evidence adequately established either the inaccuracy of the beliefs or their benefits; Taylor and Brown (1994) defended a qualified version of their account. A correlation between feeling confident and feeling well does not, by itself, show that being mistaken produces the benefit.</p>
+<p>When an excessively favorable belief concerns future outcomes, it is often called <strong>unrealistic optimism</strong> or <strong>optimism bias</strong>. Hope alone does not establish an error; the forecast needs a defensible accuracy benchmark. The leader can express confidence in the team’s capacity to improve while recording a realistic adoption forecast and agreeing when results would require a redesign. <a href="../chapters/15-randomness-and-overconfidence.html#confidence-must-face-a-distribution">Chapter 15</a> distinguishes confidence about performance, relative standing, and uncertainty, and shows how to test each.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="attribution-behavior-is-visible-situations-are-not" class="level2">
+<h2 data-anchor-id="attribution-behavior-is-visible-situations-are-not">Attribution: weighing the person and the situation</h2>
+<p>Attribution is the causal explanation attached to an action. A colleague misses a deadline. Was the cause carelessness, an impossible workload, ambiguous instructions, a dependency that failed, or a reasonable choice to protect a more important task? The observed behavior is the same. The implied remedy is not.</p>
+<p>Jones and Harris (1967) separated a person’s apparent position from the freedom to express it. Participants read essays supporting or opposing Fidel Castro, then estimated the writer’s own attitude. Some were told the writer had chosen which position to defend; others knew it had been assigned. The assignment information reduced the inference, but did not eliminate it: even an assigned essay shifted judgments of the writer’s beliefs in the direction the essay defended. Observers noticed the constraint yet still treated the resulting behavior as evidence about the person.</p>
+<p>The <strong>fundamental attribution error</strong>, also called the <strong>correspondence tendency</strong>, is the tendency to infer a stable personal disposition from another person’s behavior while giving too little weight to situational constraints (Ross, 1977). Dispositions can predict behavior. The error is concluding too quickly that behavior corresponds to character when the situation could have produced the same action.</p>
+<p>One reason is an actor-information asymmetry. Actors can usually retrieve their intentions, pressures, instructions, incentives, and blocked options. Observers see the action more directly than the conditions that shaped it. This asymmetry helps explain why a character story can feel complete before the situational evidence has been collected.</p>
+<p>The comparison with our own behavior provides a useful check. Would the same workload count as an explanation if we had missed the deadline? A different answer identifies a standard that should be made explicit and applied consistently.</p>
+<p>Use an <strong>attribution audit</strong> before converting an action into a judgment of character:</p>
+<ol type="1">
+<li>Describe the behavior without a trait word: “The report arrived two days late,” not “She is unreliable.”</li>
+<li>List at least two situational explanations and one dispositional explanation that could produce it.</li>
+<li>Apply the same evidentiary standard to yourself, the other person, and your preferred group.</li>
+<li>Identify the observation that would distinguish among those explanations—for example, performance across different workloads or instructions.</li>
+<li>Match the intervention to the supported cause: clarify the task, change the constraint, build a safeguard, or address a repeated behavioral pattern.</li>
+</ol>
+<p>The audit reveals repairable systems and testable alternatives that a premature character verdict would hide.</p>
+</section>
+<section id="when-both-sides-feel-objective" class="level2">
+<h2 data-anchor-id="when-both-sides-feel-objective">When both sides feel objective</h2>
+<p>Negotiators who both want a fair settlement might expect that shared aim to help them agree. Yet knowing which side one represents can change what fairness appears to require, leaving both parties sincerely convinced that the other is unreasonable.</p>
+<p>Babcock and Loewenstein (1997) reviewed research showing that disputants often interpret fairness in self-serving ways. When people know which side they represent, they tend to view fair settlements as more favorable to their own side. This can make bargaining harder, because each side sincerely believes its position is fair. In one study of settlement negotiations, participants who learned their role before reviewing case materials developed more self-serving assessments and settled less often than those who evaluated the case before knowing their role (Babcock et al., 1995).</p>
+<p>For a negotiation, this means a sincere appeal to fairness may leave the disagreement unchanged. Parties also need to examine how they selected their standard and whether they would accept it from the other side.</p>
+<p>A related bias is the bias blind spot: people tend to see biases more readily in others than in themselves (Pronin et al., 2002). We judge our own objectivity by introspection: “I do not feel biased.” We judge others by their behavior: “Their conclusion serves their interest.” Because biases often operate outside awareness, introspection is a poor detector. In Scopelliti and colleagues’ (2015) studies, a stronger bias blind spot was associated with placing less weight on other people’s estimates and responding less to debiasing training.</p>
+<p>Before preparing another argument, ask each side to state the evidence and standard it would accept if the roles were reversed. The reversal can expose unequal standards; an agreed method of applying them gives the next conversation a way to make progress.</p>
+</section>
+<section id="protect-the-test-not-the-belief" class="level2">
+<h2 data-anchor-id="protect-the-test-not-the-belief">Make beliefs open to a fair test</h2>
+<p>Confirmation, motivated reasoning, and self-serving attribution differ in what they protect, but they share a process risk: search, interpretation, and explanation become easier in the direction of a preferred conclusion. The corrections in <a href="#tbl-13-1" class="quarto-xref">Table&nbsp;<span>10.1</span></a> make “be objective” testable by specifying what must be compared: rival predictions, evidence thresholds, causal standards, or situational explanations.</p>
+<div id="tbl-13-1" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-13-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.1: Risks in searching, interpreting, and explaining evidence
+</figcaption>
+<div aria-describedby="tbl-13-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Process risk</th>
+<th>Story from the inside</th>
+<th>Process correction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Confirmation / myside search</td>
+<td>“The evidence keeps supporting us.”</td>
+<td>Specify disconfirming evidence and assign the rival test to someone with permission to challenge.</td>
+</tr>
+<tr class="even">
+<td>Motivated interpretation</td>
+<td>“This evidence is weak; that evidence is decisive.”</td>
+<td>Apply the same relevance and quality threshold to congenial and uncongenial evidence.</td>
+</tr>
+<tr class="odd">
+<td>Self-serving attribution</td>
+<td>“Our success was skill; failure was circumstance.”</td>
+<td>Apply the same causal standard to self, others, and rival groups.</td>
+</tr>
+<tr class="even">
+<td>Fundamental attribution error</td>
+<td>“The action reveals the person.”</td>
+<td>Compare dispositional and situational accounts using behavior across constraints.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Confidence is a related but distinct forecasting problem. <a href="../chapters/15-randomness-and-overconfidence.html#calibration-makes-confidence-answerable">Chapter 15</a> turns confidence into a scored record. A strongly held belief might be accurate, overconfident, or selectively protected; those possibilities require different evidence.</p>
+</section>
+<section id="practice-lab" class="level2">
+<h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<p>Choose one consequential belief held by you or a team. Produce a <strong>disconfirmation protocol</strong> with five entries: the current claim and confidence; the observation that would materially reduce confidence; the strongest competing account; a person assigned to develop that account without reputational penalty; and a dated prediction recorded before group discussion. Specify how each possible result changes action rather than merely the story.</p>
+</section>
+<section id="take-it-forward" class="level2">
+<h2 data-anchor-id="take-it-forward">Take it forward</h2>
+<p>The two colleagues do not need to agree that either is biased. They need to agree on what the next test will measure and how its possible results bear on their competing accounts. Write those commitments before examining the evidence, while a change of mind is still possible.</p>
+</section>
+<section id="references-cited-in-this-chapter" class="level2">
+<h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Babcock, L., &amp; Loewenstein, G. (1997). Explaining bargaining impasse: The role of self-serving biases. Journal of Economic Perspectives, 11(1), 109–126.</p>
+</div>
+<div class="reference">
+<p>Babcock, L., Loewenstein, G., Issacharoff, S., &amp; Camerer, C. (1995). Biased judgments of fairness in bargaining. American Economic Review, 85(5), 1337–1343.</p>
+</div>
+<div class="reference">
+<p>Bacon, F. (1620). <em>Novum organum</em>. https://constitution.org/2-Authors/bacon/nov_org.htm</p>
+</div>
+<div class="reference">
+<p>Colvin, C. R., &amp; Block, J. (1994). Do positive illusions foster mental health? An examination of the Taylor and Brown formulation. <em>Psychological Bulletin, 116</em>(1), 3–20. https://doi.org/10.1037/0033-2909.116.1.3</p>
+</div>
+<div class="reference">
+<p>Forer, B. R. (1949). The fallacy of personal validation: A classroom demonstration of gullibility. Journal of Abnormal and Social Psychology, 44(1), 118–123.</p>
+</div>
+<div class="reference">
+<p>Jones, E. E., &amp; Harris, V. A. (1967). The attribution of attitudes. <em>Journal of Experimental Social Psychology, 3</em>(1), 1–24.</p>
+</div>
+<div class="reference">
+<p>Kahan, D. M. (2013). Ideology, motivated reasoning, and cognitive reflection. Judgment and Decision Making, 8(4), 407-424.</p>
+</div>
+<div class="reference">
+<p>Kunda, Z. (1990). The case for motivated reasoning. Psychological Bulletin, 108(3), 480-498.</p>
+</div>
+<div class="reference">
+<p>Lord, C. G., Ross, L., &amp; Lepper, M. R. (1979). Biased assimilation and attitude polarization. Journal of Personality and Social Psychology, 37(11), 2098–2109.</p>
+</div>
+<div class="reference">
+<p>Mezulis, A. H., Abramson, L. Y., Hyde, J. S., &amp; Hankin, B. L. (2004). Is there a universal positivity bias in attributions? A meta-analytic review of individual, developmental, and cultural differences in the self-serving attributional bias. Psychological Bulletin, 130(5), 711–747.</p>
+</div>
+<div class="reference">
+<p>Miller, D. T., &amp; Ross, M. (1975). Self-serving biases in attribution of causality: Fact or fiction? Psychological Bulletin, 82(2), 213–225.</p>
+</div>
+<div class="reference">
+<p>Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220.</p>
+</div>
+<div class="reference">
+<p>Pronin, E., Lin, D. Y., &amp; Ross, L. (2002). The bias blind spot: Perceptions of bias in self versus others. Personality and Social Psychology Bulletin, 28(3), 369–381.</p>
+</div>
+<div class="reference">
+<p>Ross, L. (1977). The intuitive psychologist and his shortcomings: Distortions in the attribution process. In L. Berkowitz (Ed.), Advances in experimental social psychology (Vol. 10, pp.&nbsp;173–220). Academic Press.</p>
+</div>
+<div class="reference">
+<p>Scopelliti, I., Morewedge, C. K., McCormick, E., Min, H. L., Lebrecht, S., &amp; Kassam, K. S. (2015). Bias blind spot: Structure, measurement, and consequences. <em>Management Science, 61</em>(10), 2468–2486.</p>
+</div>
+<div class="reference">
+<p>Stanovich, K. E., West, R. F., &amp; Toplak, M. E. (2013). Myside bias, rational thinking, and intelligence. Current Directions in Psychological Science, 22(4), 259–264.</p>
+</div>
+<div class="reference">
+<p>Taylor, S. E., &amp; Brown, J. D. (1988). Illusion and well-being: A social psychological perspective on mental health. Psychological Bulletin, 103(2), 193-210.</p>
+</div>
+<div class="reference">
+<p>Taylor, S. E., &amp; Brown, J. D. (1994). Positive illusions and well-being revisited: Separating fact from fiction. <em>Psychological Bulletin, 116</em>(1), 21–27. https://doi.org/10.1037/0033-2909.116.1.21</p>
+</div>
+<div class="reference">
+<p>Wason, P. C. (1960). On the failure to eliminate hypotheses in a conceptual task. Quarterly Journal of Experimental Psychology, 12(3), 129–140.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "warrenchang/decisionbook";
+    script.dataset.repoId = "R_kgDOTpqPRg";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDOTpqPRs4DCa1q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/09-availability-affect-and-representativeness.html" class="pagination-link" aria-label="Availability, Affect, and Representativeness">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Availability, Affect, and Representativeness</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/11-anchors-halos-and-decoys.html" class="pagination-link" aria-label="Anchors, Halos, and Decoys">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Anchors, Halos, and Decoys</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Huanren Warren Zhang. All rights reserved.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/warrenchang/decisionbook/edit/main/chapters/10-confirmation-bias-and-motivated-reasoning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/warrenchang/decisionbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/warrenchang/decisionbook/blob/main/chapters/10-confirmation-bias-and-motivated-reasoning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

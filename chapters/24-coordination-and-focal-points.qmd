@@ -1,0 +1,391 @@
+---
+aliases:
+  - 24-behavioral-game-theory-equilibrium-is-a-benchmark-not-a-portrait.html
+  - 47-behavioral-game-theory.html
+---
+
+# Coordination and Focal Points
+
+*Finding a Way to Act Together*
+
+::: {#chapter-24-start .chapter-epigraph}
+> “Alone we can do so little; together we can do so much.”
+>
+> — Helen Keller, [vaudeville performance script](https://afb.org/about-afb/history/helen-keller/quotes/helen-keller-quotes-progress), c. 1920
+:::
+
+Two departments need to exchange reports. Each has tested a different system, and each can explain why its preferred system works better. Department A values integration with its existing software; Department B values flexibility. Both agree that adopting incompatible systems would waste time and create errors.
+
+The deadline approaches, but neither commits. A manager calls the delay resistance to change. Yet accepting the other department's preferred system would solve only part of the problem: someone must still arrange training, move the records, and ensure that both departments switch at the same time. A department can reasonably support the shared plan while hesitating to act first.
+
+The disagreement contains several questions. Which standard should they use? Can each rely on the other to adopt it? Who should bear the transition costs? These questions require different answers, even though all three can look like a failure to cooperate.
+
+::: {.callout-note .core-idea icon=false}
+## Core Idea
+
+A payoff matrix makes the dependence between choices visible. Finding mutual best responses identifies equilibria, but several may remain. Successful coordination then requires a shared expectation about which outcome to pursue and enough confidence that others will act on it.
+:::
+
+## Learning goals
+
+- Construct and read a payoff matrix, then identify best responses and pure- and mixed-strategy equilibria.
+- Distinguish focality, payoff dominance, and risk dominance as explanations for which coordinated outcome people pursue.
+- Diagnose whether a coordination problem requires a focal point, common knowledge, credible assurance, or an agreed division of benefits and responsibilities.
+
+## Representing the interaction {#a-game-is-a-model-not-the-situation-itself}
+
+The departments' arguments mix the quality of a system with the benefits of compatibility and the costs of changing. A game-theoretic model separates these features so that we can inspect how each department's choice depends on the other's. Begin with a simpler version of the [meeting problem](23-strategic-interdependence.qmd#opening-puzzle-meet-me-in-odense), where the shared objective is easier to represent.
+
+A **game** is a model that specifies the players, their possible actions, and how their choices jointly determine payoffs. Five features make the meeting model explicit:
+
+- **Players:** the two people trying to meet.
+- **Actions:** the places and times each can choose.
+- **Payoffs:** how each person values meeting or failing to meet.
+- **Information:** what each knows about the venue, the other person, and the situation.
+- **Timing:** each chooses where to go before learning the other's destination.
+
+An **action** is a particular move. A **strategy** is a complete plan for what to do at every point where a player might have to choose. In a one-move meeting game, choosing a place and time specifies the whole strategy. If messages or later decisions were allowed, a strategy would also specify how to respond to them.
+
+Safety, time, fairness, and the relationship can all affect how someone values an outcome. Allowing communication or letting one person observe the other's choice changes the game even if the possible destinations stay the same.
+
+[]{#reading-a-payoff-matrix}
+
+To isolate the choice of destination, suppose each of you goes to either the main entrance or the information desk and waits there. Assume that you find each other if you choose the same place, and set aside differences in walking distance or the view of the performance. Represent a successful meeting with 50 illustrative payoff units for each person and a failed meeting with zero. The **payoff matrix** in @tbl-meeting-coordination records what each receives under every combination of choices.
+
+| Your choice \\ Other person's choice | Entrance | Information desk |
+| --- | ---: | ---: |
+| **Entrance** | 50, 50 | 0, 0 |
+| **Information desk** | 0, 0 | 50, 50 |
+: A simplified meeting game; your payoff appears first {#tbl-meeting-coordination}
+
+Read the rows as your actions and the columns as the other person's actions. Within each cell, your payoff comes first and theirs second. If you choose the entrance and they choose the information desk, the relevant cell is the top-right one: both receive zero. The two diagonal cells show the successful meetings.
+
+[]{#best-responses-and-nash-equilibrium}
+
+A **best response** gives a player the highest payoff against specified choices by the others. If the other person chooses the entrance, compare your first payoff in that column: choosing the entrance gives 50, while the information desk gives zero. Your best response is the entrance. If they choose the information desk, your best response changes to the information desk.
+
+You cannot see which column will apply when you make your choice. Suppose you assign a 70% chance to the other person choosing the entrance. Weighting the reward of 50 by each matching probability gives an expected payoff of 35 at the entrance, compared with 15 at the information desk. Choosing the entrance is then the best response to that belief, provided you maximize the expected value of the displayed payoffs.
+
+[]{#mutual-best-responses-checking-equilibrium}
+
+To check a **Nash equilibrium**, examine a whole combination of strategies and ask whether anyone would gain by changing their own strategy alone (Nash, 1950). Both choosing the entrance passes this test: neither person gains by going alone to the information desk. Both choosing the information desk passes it too. Choosing different places fails because either person could improve their payoff by joining the other.
+
+These choices are **pure strategies**, which specify a definite action at each decision point. A **mixed strategy** assigns probabilities to pure strategies. In this one-move game, that means randomizing between destinations. Independent 50–50 randomization by both players is also an equilibrium in this particular symmetric matrix: either destination offers an expected payoff of 25 against the other's randomization, so neither player can improve it by changing their own mix. Yet they meet only half the time on average.
+
+The meeting game therefore has two pure-strategy equilibria and a mixed-strategy equilibrium. Finding them does not tell the people where to go, and the mixed equilibrium does not deliver the highest available joint payoff. We still need to explain which expectations can bring their actions together.
+
+[]{#coordination-shared-expectations-can-do-the-work}
+
+[]{#fig-strategic-situation-diagnostic}
+
+The departments face the same selection problem. Suppose either common standard is preferable to incompatible systems, even though each department has a favorite. Both adopting A and both adopting B are then Nash equilibria: at either matched outcome, one department would lose by switching alone. The meeting matrix's two successful destinations become two compatible standards.
+
+If A expects B to adopt standard A, choosing A makes sense. If both expect standard B, their choices can sustain that outcome instead. Everyone can respond sensibly to what they expect and still end up at a convention that nobody selected through a joint comparison of the alternatives.
+
+## When everyone knows—but no one knows that everyone knows {#private-mutual-common-knowledge}
+
+Knowing which outcome would be good is only the beginning. In a coordination problem, what matters is also what you know about what other people know.
+
+In *The Emperor's New Clothes*, the emperor walks before a crowd wearing nothing. Read as a parable about coordination, each observer can see what is happening, yet sees everyone else behaving as if the magnificent clothes were real. Speaking up is risky: perhaps others will defend the emperor, leaving the person who objects exposed as the fool.
+
+Then a child says aloud what people could already see: the emperor is wearing no clothes.
+
+The announcement adds little information about the emperor. It changes what observers can infer about one another. Each hears the statement in front of the crowd and can recognize that others heard it too. What had been privately perceived becomes publicly acknowledged. Pinker, Nowak, and Lee (2008) use the story to illustrate **common knowledge**: communication can change what people know about one another's knowledge even when it adds little to their knowledge of the world.
+
+The distinction builds through the levels in @tbl-private-mutual-common-knowledge. Here *X* stands for a fact.
+
+| State of knowledge | What it means | What remains uncertain about others' knowledge of *X*? |
+| --- | --- | --- |
+| Private knowledge | I know *X*. | Do you know *X*? |
+| Mutual knowledge[^ch24-knowledge-terminology] | Everyone knows *X*. | Does everyone know that everyone knows *X*? |
+| Common knowledge | Everyone knows *X*, everyone knows that everyone knows *X*, and so on through every higher level. | No further uncertainty within this hierarchy. |
+: Knowing a fact and knowing that others know it are different informational conditions {#tbl-private-mutual-common-knowledge}
+
+This hierarchy is central to the accounts of convention and common knowledge developed by Lewis (1969) and Aumann (1976). In ordinary conversation, information known by many people is sometimes called *public knowledge*. For strategic reasoning, distinguish that wide distribution from a genuinely public signal: its reception and meaning are themselves commonly recognized. Under those idealized conditions, a truthful public announcement can generate common knowledge. Giving everyone the same information separately need not.
+
+Thomas and colleagues (2014) turned that distinction into a paid coordination experiment. Participants played a baker or butcher. Working alone earned a sure profit; supplying buns and meat together could earn more, but someone who prepared for joint production while the partner worked alone earned nothing. The researchers varied how participants learned that joint production was profitable. A private messenger conveyed the price and, in some conditions, information about what the partner knew. A described loudspeaker announcement made the price public. Participants attempted joint production more often under the public-announcement condition than under the private or finite shared-knowledge conditions.
+
+Within each payoff condition, the opportunity was the same; what changed was how participants learned about others' knowledge. This supports the distinction between knowing a fact and knowing that others recognize it too; it does not show that every public announcement guarantees coordination. For the departments, a joint acknowledgment of the migration schedule can address an uncertainty that identical private emails leave unresolved.
+
+::: {.callout-note .core-idea icon=false}
+### The information may be old; the social knowledge is new
+
+What changes is what each person can infer about other people's knowledge and expectations.
+
+Communication can therefore do two jobs: tell us something about the world and tell us what others know about the world.
+:::
+
+These **higher-order beliefs** matter because my best action depends on yours, while your action may depend on what you expect me to do. Predicting your choice can therefore require reasoning about your prediction of mine. Common knowledge specifies an idealized information structure in which the chain of *Does she know that I know that she knows?* is settled for a particular fact.
+
+[]{#almost-common-knowledge-is-not-quite-common-knowledge}
+
+The difficulty is sustaining those higher-order beliefs when communication can fail. Rubinstein's (1989) **electronic-mail game** makes that problem explicit. One player learns that circumstances have changed and sends a message to the other. Receipt triggers an automatic confirmation, which triggers another confirmation, and so on. Each message has a small chance of failing, ending the exchange.
+
+Many successful messages establish many levels of *I know that you know that I know*. Yet no finite chain makes the changed circumstances common knowledge: the sender cannot know whether the last message arrived. Under the model's payoff and communication assumptions, even a long exchange fails to recover the coordinated switch supported when the changed circumstances are common knowledge.
+
+People routinely coordinate through conventions, trust, and imperfect signals. The lesson is that uncertainty about what others know can matter greatly when acting together is valuable and acting alone is costly. For the departments, learning that System A is good differs from learning that the other team knows the plan and expects a joint switch.
+
+[]{#why-public-events-can-have-disproportionate-effects}
+
+Public events offer a different way to make others’ awareness visible. Chwe (2001) argues that one function of public rituals, ceremonies, and broadcasts is to generate common knowledge. Their strategic importance can come from people recognizing that others are attending to the same message. The same words delivered privately to a thousand people and before a thousand mutually visible participants can therefore have different consequences.
+
+An all-hands meeting can serve this function inside an organization. Employees hear the new standard and see colleagues acknowledge it. But audience size alone does not establish common knowledge. People may miss the message, interpret it differently, or doubt whether others understood it.
+
+The diagnostic question is practical: *Do people merely know the plan, or do they have reason to believe that others know it and expect a joint response?* Sending another explanation may leave this gap untouched. A shared occasion can help make expectations visible.
+
+This also prepares the logic of focal points. A salient answer helps when I expect it to attract your attention and expect you to recognize its salience to me. Shared history and conventions can align these expectations even without a new announcement.
+
+## What makes an answer stand out? {#focality-payoff-dominance-and-evidence}
+
+A **focal point** is a solution that stands out in a way that helps people coordinate their expectations (Schelling, 1960). The main entrance might serve this role at the concert because both people remember arriving there together and expect the other to see it as a natural place to return. Being memorable to one person is insufficient; the crucial link is the expectation that it will also stand out to the other.
+
+A familiar file format, an established deadline, or an equal split can provide the same service. Shared history makes a choice easier to anticipate without requiring a long chain of guesses. But what seems obvious depends on whose history is shared. A newcomer may not know which entrance colleagues mean, while two departments may each regard their own reporting convention as the natural default.
+
+Focality also differs from **payoff dominance**. An equilibrium is payoff dominant if it gives every player a higher payoff than the other equilibrium being compared. A salient outcome need not have that advantage. Nor does the existence of a better common outcome ensure that people will select it.
+
+[]{#a-ten-cent-difference-can-disrupt-a-common-answer}
+
+Crawford, Gneezy, and Rottenstreich (2008) studied matching games in which two players independently chose X or Y and earned nothing if they failed to match. With matching payoffs of $5 each, the observed choice frequencies implied a 64% coordination rate. In another condition, matching on X paid $5 to one player and $5.10 to the other, while matching on Y reversed those payoffs. The implied coordination rate fell to 38%.[^ch24-coordination-rate]
+
+Only ten cents separated the preferred coordinated outcomes, while a mismatch cost each player at least $5. Nevertheless, a shared label became less effective when payoffs pulled expectations in different directions. People also had to anticipate what the difference would mean to their partner.
+
+Naming an obvious option may help when interests align closely. Once people prefer different coordinated outcomes, they may need an agreed selection rule as well as a salient answer.
+
+## When the better outcome feels too risky {#strategic-uncertainty-the-stag-hunt}
+
+Now suppose both departments agree that a new common system would be better than keeping the old one. The conflict over which system to choose has disappeared, but the danger of switching alone remains. Each may wait for evidence that the other will follow, leaving both with the old system.
+
+The **stag hunt** isolates this problem (Skyrms, 2004). Two hunters can secure the larger return only by hunting stag together. Each can instead hunt hare independently. In the illustrative payoff matrix in @tbl-stag-hunt, the first number belongs to Player 1.
+
+| Player 1 \\ Player 2 | Stag | Hare |
+| --- | ---: | ---: |
+| **Stag** | 15, 15 | 2, 10 |
+| **Hare** | 10, 2 | 10, 10 |
+: Stag hunt: mutual commitment offers more, but acting alone is costly {#tbl-stag-hunt}
+
+Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner's action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.
+
+How much confidence is enough? With these numbers treated as utility payoffs, Stag is strictly better when the player believes the partner's chance of choosing Stag exceeds about **61.5%**. At the exact threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting.
+
+Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the **risk-dominant equilibrium**: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.
+
+:::: {#math-stag-hunt-threshold}
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: the stag-hunt confidence threshold
+
+Suppose the displayed numbers are utility payoffs and Player 1 assigns probability $p$ to Player 2 choosing Stag. The expected payoff from Stag is
+
+$$
+15p+2(1-p)=2+13p,
+$$
+
+while Hare yields 10. Stag is strictly better when
+
+$$
+p>\frac{8}{13}\approx0.615.
+$$
+
+At $p=8/13$, the player is indifferent; below that threshold, Hare gives the higher expected payoff.
+:::
+::::
+
+This is **strategic uncertainty**: uncertainty about what others will do. A pilot, staged adoption, or compatibility guarantee could make the departmental switch more attractive by increasing confidence in the partner's action or reducing the loss from being left alone. Improving the promised system matters less if the unresolved obstacle is whether anybody else will use it.
+
+Van Huyck, Battalio, and Beil (1990) tested a related problem with groups choosing effort levels from 1 to 7. Each person's payoff increased with the group's lowest effort, but choosing more effort than the minimum incurred an extra cost. Everyone would earn more if everyone chose the highest level. Yet in seven large-group experiments, the minimum effort reached 1 within four rounds.
+
+The design made higher effort attractive only when others also supplied it. Seeing a low minimum could therefore make reducing one's own effort a sensible response, while helping the group remain at the lower outcome. Learning from experience can reinforce a disappointing convention as well as improve coordination.
+
+## How a convention becomes difficult to leave {#conventions-and-path-dependence}
+
+Once a common standard is established, using it can become valuable precisely because others already do. Colleagues know the file format, support staff know how to repair failures, and suppliers build compatible products. These **network benefits** reinforce the initial choice. Training and conversion costs add further reasons to stay.
+
+The resulting **path dependence** means that earlier events can influence which outcome persists. The relevant comparison includes the benefits of compatibility and the costs of a coordinated transition, not just the technical features of two isolated products.
+
+David (1985) used the history of QWERTY to develop the path-dependence argument. Liebowitz and Margolis (1990) challenged the evidence that the keyboard persisted despite a demonstrably superior alternative. The familiar story that QWERTY was designed to slow typists should therefore not carry the explanation. Installed bases, learned skills, and compatibility provide mechanisms worth investigating without treating a contested historical verdict as established fact.
+
+For the departments, this suggests a useful distinction: evidence that a new system is better in isolation differs from evidence that changing together is worthwhile. A credible transition plan addresses the second question by making costs, timing, and support explicit.
+
+[]{#ethics-a-convention-can-work-and-still-exclude}
+
+A familiar convention can make work easier for insiders while leaving newcomers unable to anticipate what is expected. Compatibility alone does not settle whether a standard is fair: the people bearing its training and conversion costs also need a voice in choosing it.
+
+## Coordinating when interests differ {#mixed-motives-and-compatible-claims}
+
+Return to the original disagreement: Department A prefers integration; Department B prefers flexibility. Both want compatibility, but each coordinated outcome distributes benefits differently. This structure is conventionally called the **Battle of the Sexes**, named after an older example in which two people want to spend an evening together but prefer different activities. Finding a common choice and deciding whose preference prevails are separate problems.
+
+A lottery, rotation, or neutral tie-breaker can provide an answer both sides anticipate. The appropriate rule depends on the activity. Taking turns may work for recurring meeting times but waste resources if it requires replacing the reporting system every month. For a durable standard, compensating concentrated training costs or sharing implementation work may produce a more acceptable agreement.
+
+[]{#compatible-bargaining-claims}
+
+A simple bargaining game makes the distribution problem explicit. Two players simultaneously claim shares of a total of 4. If their claims sum to at most 4, each receives the amount claimed; if they exceed 4, both receive 0.
+
+The claims 2 and 2 fit together, as do 3 and 1. In either of those pairs, raising one's claim would destroy the agreement, while lowering it would reduce one's payoff. Both are Nash equilibria. Equilibrium alone does not decide which division should prevail. Equal shares may be focal, but contribution, alternatives, past agreements, and power can support other expectations.
+
+The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. [Negotiation as Joint Decision Design](35-negotiation-as-joint-decision-design.qmd#chapter-35-start) develops that task. Even an agreement that improves both parties' outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: coordination can require different actions
+
+Matching is only one form of coordination. In **chicken**, two drivers approach a one-lane bridge. Each would rather proceed while the other yields, but both prefer avoiding a collision. The desirable actions are complementary. A right-of-way rule can select who yields; commitments by both drivers to keep going can instead make the worst outcome more likely.
+
+In a **volunteer's dilemma**, everyone benefits if someone acts, and each values getting the task done more than the personal cost of volunteering, but prefers someone else to bear that cost. A team may need one person to report a software failure, but an open request can leave everyone waiting. Assigning the task or rotating responsibility addresses who acts. [Shared Responsibility](28-social-influence.qmd#bystanders-and-pluralistic-ignorance) examines the psychological evidence and distinguishes this incentive problem from uncertainty about whether help is needed.
+
+These cases extend the chapter's question: which combination of actions is needed, and what rule makes each person's role predictable? Coordination does not always mean doing the same thing.
+:::
+
+## Making an agreement credible {#commitment-changes-the-game}
+
+The earlier distinction between mutual and common knowledge explains why a joint announcement can help. Both departments may know the Monday migration plan and know that the other knows it. They can still hesitate if they doubt the other's readiness or expect a last-minute withdrawal.
+
+Communication can identify a common option, reveal transition costs, make expectations more public, and specify who will do what. In the stag hunt, confidence that the partner will hunt Stag can make Stag attractive. But common knowledge of a promise does not establish that fulfilling it will be feasible or worthwhile when the moment arrives.
+
+Words can matter even without a binding commitment. In a stag-hunt experiment, Charness (2000) found much more efficient coordination when a player could send a costless, nonbinding message before choosing an action than when communication was unavailable. Reversing the order of message and action changed behavior. Communication can therefore coordinate expectations without mechanically enforcing behavior.
+
+A **credible commitment** goes further by changing the cost or feasibility of departing from a future action. Booking shared training, allocating an implementation budget, making an irreversible investment, or signing an enforceable contract can strengthen a plan when it makes withdrawal harder and the other party understands that consequence. Schelling (1960) emphasized the strategic value of limiting one's future freedom: the restriction can change someone else's response.
+
+The practical sequence is to make the desired outcome identifiable, make the shared expectation visible, and make the promised action credible. A failure can arise at any stage. More explanation of the plan's merits may leave uncertainty about others' knowledge unresolved; a public promise may leave the incentive to withdraw unchanged.
+
+The same mechanism can serve competitive purposes. In 1999, Ford promised UK buyers a refund if it cut prices before the end of the year (Motor Trader, 1999b). The strategic logic is that a later reduction would then cost Ford money on qualifying earlier sales as well as on new ones. Yet a contemporary report described buyers postponing purchases until January, when they expected the guarantee to expire and prices to fall (Motor Trader, 1999a). The report illustrates how a commitment might shift expectations in an unintended direction, without isolating its causal effect on purchases.
+
+Commitment has a cost: the flexibility surrendered. A public promise to use one system may persuade the other department to invest, but it can also make managers defend that system after serious defects emerge. A useful commitment specifies the response it is intended to change and preserves a clear review condition. If persistence mainly protects an earlier decision rather than a worthwhile future arrangement, the escalation problem discussed in [Strategic Interdependence](23-strategic-interdependence.qmd#research-lens-the-50-auction-and-competitive-escalation) deserves attention.
+
+## Diagnose the obstacle before choosing the tool {#application-diagnose-the-obstacle-before-choosing-the-tool}
+
+The reporting dispute can now be separated into actionable problems. The rows of @tbl-strategic-structures identify obstacles that can coexist; each suggests a different first intervention.
+
+| Obstacle | Evidence to look for | Possible response |
+| --- | --- | --- |
+| Different expectations about the common choice | Each department assumes its own standard is the obvious answer. | Choose one standard explicitly and confirm that both understand the choice. |
+| Uncertainty about what others know | Both have received the plan, but neither knows whether the other received and understood it. | Review the plan together and make each team's acknowledgement visible to the other. |
+| Fear of acting alone | Both prefer the joint switch but doubt the other's readiness. | Set a shared launch condition or reduce the cost of a failed transition. |
+| Disagreement over benefits and burdens | Both want compatibility, but one bears more training or conversion costs. | Compare total gains and agree how to share transition costs. |
+| Unassigned or conflicting roles | Each waits for the other to act, or both claim the same decision right. | Name responsibilities and agree on a tie-breaker. |
+: Different coordination obstacles call for different responses {#tbl-strategic-structures}
+
+Begin with a joint pilot that uses the same evaluation criteria and records costs for both departments. Agree on the decision rule before results are available, then specify who transfers the records, who trains staff, and what must be ready before launch. A review date creates a way to respond to evidence without making every temporary difficulty a reason to abandon the common plan. The rule should also remain understandable and open to challenge by the people expected to follow it.
+
+The diagnostic also marks a boundary. If one department benefits from abandoning the agreement even when the other fulfills it, reassurance alone will not solve the problem. The incentives or the agreement itself need to change.
+
+After specifying the game, keep the answers supplied by equilibrium analysis separate from questions that require evidence about the people involved. @tbl-equilibrium-boundary collects that distinction: identifying a stable combination is one step in evaluating a joint decision.
+
+| Equilibrium can clarify | Equilibrium alone cannot establish |
+| --- | --- |
+| Whether each strategy is a best response to the others. | Whether players understand the game or hold those expectations. |
+| Whether anyone gains by changing their strategy alone. | Whether the outcome is fair or best for the people affected. |
+| Which strategy combinations remain stable under specified rules. | Which equilibrium people select when several exist. |
+| How changing incentives alters that stability. | Whether the proposed payoffs capture actual motives. |
+: Questions answered by equilibrium analysis and questions requiring further evidence {#tbl-equilibrium-boundary}
+
+## Practice Lab
+
+Choose a real situation in which two people or groups must adopt compatible actions. Specify their options and construct a payoff matrix, stating the assumptions behind the numbers. Mark each player's best responses and identify any pure-strategy equilibria. If more than one coordinated outcome could work, explain why the people have not settled on one: different expectations, uncertainty about what others know, fear of acting alone, conflicting benefits, or an unassigned role.
+
+Propose one change that addresses the identified obstacle. State whose expectation or incentive should change and what behavior would count as evidence that the diagnosis was useful. If you propose communication, explain how participants will know that others received and understood it, and whether it changes any incentive to act. If you propose a guarantee, calculate what it protects against; if you propose a rule, explain how the people bearing its costs can take part in choosing it.
+
+## Take it forward
+
+At the next stalled meeting, separate three questions: “Which plan would work?”, “What does each person know about the others' understanding?”, and “What makes each person willing to act?” Look for the missing shared expectation, assurance, decision rule, or allocation of responsibility before treating hesitation as unwillingness.
+
+[Cooperation and Social Preferences](25-cooperation-and-social-preferences.qmd#chapter-25-start) takes the next step: what if a person gains by departing from the common plan even when everyone else keeps it? Future relationships, institutions, and concern for others can change that decision in different ways.
+
+[]{#research-lens-dependence-without-a-changing-best-response}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Research Lens: dependence without a changing best response
+
+In the meeting game, your best response changes with the other person's choice. Strategic dependence can also exist when one action is best regardless of what the other player does. A **strictly dominant strategy** yields a higher payoff than every alternative against every strategy combination of the others.
+
+The illustrative price-war matrix in @tbl-price-war shows the distinction. Its numbers represent profit units and omit many features of an actual market. Rao and colleagues (2000) examine how responses to price competition depend on such details of the competitive setting.
+
+| Firm 1 \\ Firm 2 | High price | Low price |
+| --- | ---: | ---: |
+| **High price** | 10, 10 | 2, 15 |
+| **Low price** | 15, 2 | 5, 5 |
+: Illustrative price-war payoff matrix; Firm 1's payoff appears first {#tbl-price-war}
+
+Against a high price, Firm 1 earns 15 by choosing low rather than 10 by choosing high. Against a low price, it earns 5 rather than 2. Low strictly dominates high for both firms. Low–low is the unique Nash equilibrium, even though each firm's profit remains affected by its rival's action.
+
+Both firms would earn more at high–high, but an agreement to charge high prices would harm customers and may be unlawful. The firms' joint profit is not a measure of social welfare. [Chapter 25](25-cooperation-and-social-preferences.qmd#chapter-25-start) develops the incentive conflict in a Prisoner's Dilemma and examines what can sustain cooperation.
+:::
+
+[^ch24-knowledge-terminology]: Terminology varies across fields. Here, *mutual knowledge* means that every member of a specified group knows *X*; statements about what others know add higher-order levels. *Shared knowledge* sometimes names the same first-order condition (Herzig & Perrotin, 2020), but psychological research also uses it for a finite number of higher-order levels that fall short of common knowledge (De Freitas et al., 2019). *Public knowledge* often means that information is widely known or publicly available. Availability alone does not establish that everyone knows it. In formal models, a truthful public announcement can generate common knowledge when its reception and meaning are themselves commonly recognized. These terms should therefore be read according to the author's definitions, rather than treated as interchangeable labels.
+
+[^ch24-coordination-rate]: Table 2 reports rates implied by choices, not observed pair-success rates. There were 50 participants in the symmetric condition and 23 and 25 in the asymmetric roles.
+
+## References cited in this chapter
+
+::: {.reference}
+Aumann, R. J. (1976). [Agreeing to disagree](https://doi.org/10.1214/aos/1176343654). *The Annals of Statistics, 4*(6), 1236–1239.
+:::
+
+::: {.reference}
+Charness, G. (2000). Self-serving cheap talk: A test of Aumann's conjecture. *Games and Economic Behavior, 33*(2), 177–194.
+:::
+
+::: {.reference}
+Chwe, M. S.-Y. (2001). *[Rational ritual: Culture, coordination, and common knowledge](https://www.jstor.org/stable/j.ctt24hqf1)*. Princeton University Press.
+:::
+
+::: {.reference}
+Crawford, V. P., Gneezy, U., & Rottenstreich, Y. (2008). The power of focal points is limited: Even minute payoff asymmetry may yield large coordination failures. *American Economic Review, 98*(4), 1443–1458.
+:::
+
+::: {.reference}
+David, P. A. (1985). Clio and the economics of QWERTY. *American Economic Review, 75*(2), 332–337.
+:::
+
+::: {.reference}
+De Freitas, J., Thomas, K., DeScioli, P., & Pinker, S. (2019). [Common knowledge, coordination, and strategic mentalizing in human social life](https://doi.org/10.1073/pnas.1905518116). *Proceedings of the National Academy of Sciences, 116*(28), 13751–13758.
+:::
+
+::: {.reference}
+Herzig, A., & Perrotin, E. (2020). [On the axiomatisation of common knowledge](https://www.aiml.net/volumes/volume13/Herzig-Perrotin.pdf). In N. Olivetti, R. Verbrugge, S. Negri, & G. Sandu (Eds.), *Advances in modal logic* (Vol. 13, pp. 309–328). College Publications.
+:::
+
+::: {.reference}
+Lewis, D. (1969). *Convention: A philosophical study*. Harvard University Press.
+:::
+
+::: {.reference}
+Liebowitz, S. J., & Margolis, S. E. (1990). The fable of the keys. *Journal of Law & Economics, 33*(1), 1–25.
+:::
+
+::: {.reference}
+Motor Trader. (1999a, December 13). [Car makers hold out on price cuts](https://www.motortrader.com/general-news/car-makers-hold-out-on-price-cuts-13-12-1999).
+:::
+
+::: {.reference}
+Motor Trader. (1999b, November 1). [Going off list on-line](https://www.motortrader.com/general-news/going-off-list-on-line-01-11-1999).
+:::
+
+::: {.reference}
+Nash, J. F. (1950). Equilibrium points in n-person games. *Proceedings of the National Academy of Sciences, 36*(1), 48–49.
+:::
+
+::: {.reference}
+Pinker, S., Nowak, M. A., & Lee, J. J. (2008). [The logic of indirect speech](https://doi.org/10.1073/pnas.0707192105). *Proceedings of the National Academy of Sciences, 105*(3), 833–838.
+:::
+
+::: {.reference}
+Rao, A. R., Bergen, M. E., & Davis, S. (2000). How to fight a price war. *Harvard Business Review, 78*(2), 107–116.
+:::
+
+::: {.reference}
+Rubinstein, A. (1989). [The electronic mail game: Strategic behavior under “almost common knowledge”](https://arielrubinstein.tau.ac.il/papers/32.pdf). *American Economic Review, 79*(3), 385–391.
+:::
+
+::: {.reference}
+Schelling, T. C. (1960). *The strategy of conflict*. Harvard University Press.
+:::
+
+::: {.reference}
+Skyrms, B. (2004). *The stag hunt and the evolution of social structure*. Cambridge University Press.
+:::
+
+::: {.reference}
+Thomas, K. A., DeScioli, P., Haque, O. S., & Pinker, S. (2014). [The psychology of coordination and common knowledge](https://pdescioli.com/papers/thomas.etal.common.knowledge.jpsp14.pdf). *Journal of Personality and Social Psychology, 107*(4), 657–676.
+:::
+
+::: {.reference}
+Van Huyck, J. B., Battalio, R. C., & Beil, R. O. (1990). Tacit coordination games, strategic uncertainty, and coordination failure. *American Economic Review, 80*(1), 234–248.
+:::
