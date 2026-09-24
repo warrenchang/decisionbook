@@ -10,6 +10,16 @@ The following requirements apply to *Decision in the Making*. They are project c
 
 - Present each example directly, without phrases such as “the lecture’s example,” “as shown in the slides,” or “the course’s comparison.” Make the explanation self-contained and refer only to figures readers can see in the book. Retain scholarly citations and qualifications needed to interpret the evidence; keep the provenance of teaching materials in project records.
 
+### Scientific grounding and lecture coverage
+
+- Develop central claims through relevant studies: explain the comparison, what was measured, what changed, and the boundary that affects interpretation. A list of author–date citations cannot substitute for explaining the evidence.
+- Organize empirical explanations around a revealing question and the studies that answer it. Let readers encounter the comparison and finding before a framework, checklist, or recommendation built from it. Keep the central evidence in the main text; reserve optional research boxes for additional methods, models, or debates. Preserve formal foundations and clearly identified hypothetical exercises where they do necessary explanatory work.
+- Prefer a small number of developed studies to a catalogue of claims. Include informative nulls, replications, and conflicting results when they change the conclusion. Do not select only vivid positive findings or add exact numbers that the inspected source does not support.
+- Illustrate a study when its experimental contrast, pattern of results, or mechanism is easier to understand visually. Preserve actual reported values, denominators, uncertainty, and design distinctions; never invent observations or treat different experiments as one randomized comparison. Give each plot a prose cross-reference, concise caption, equivalent alt text, and reproducible source record. Avoid diagrams that merely repeat a checklist.
+- Distinguish empirical findings, scientific theories, historical organizing ideas, and practical checklists. Do not present a teaching heuristic or a synthesis created for this book as a validated causal model. Practical advice should follow from the evidence without promising a guaranteed effect.
+- When integrating BE or DPN material, compare the latest complete decks with the current manuscript, including speaker notes and substantive visual examples. Maintain a topic-to-passage ledger and record why a topic is omitted, merged, relocated, or treated cautiously. Administrative slides and duplicates need a disposition, not repetition in the book.
+- Use published scientific sources for evidential claims. Do not cite unpublished lecture slides in the book; retain their provenance in project audit records. Keep hypothetical exercises clearly identifiable as illustrations.
+
 ### Personal stories and cultural examples
 
 - Write the author's experiences in first person in consistently labeled, normally expanded note boxes headed “From my experience: …”. Prefer “personal story” or “personal experience” to the vague “personal illustration.” Place the story beside the mechanism it helps the reader understand.

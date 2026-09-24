@@ -199,6 +199,10 @@ The forms can move in opposite directions. In Moore and Healy's experiments, dif
 
 Gathering more information does not necessarily close the gap between confidence and accuracy. Oskamp (1965) gave 32 judges, including eight clinical psychologists, one person's case history in four stages. After each stage, they answered the same 25 multiple-choice questions about that person's attitudes and behavior and rated their confidence. As the account grew from basic demographic facts into a detailed life history, average confidence rose significantly, from 33.2% to 52.8%. Accuracy changed from 26.0% to 27.8%, with no statistically significant improvement between the first and final stages.
 
+@fig-confidence-accuracy separates the two trajectories: confidence rose at every stage, while accuracy fluctuated within a much narrower range.
+
+![As information accumulated, confidence rose without a corresponding gain in accuracy (Oskamp, 1965, Table 2). Thirty-two judges answered the same 25 five-option questions at four information stages about one case. Lines connect reported stage means.](../figures/study-confidence-accuracy.svg){#fig-confidence-accuracy fig-alt="Across four information stages, mean confidence is 33.2, 39.2, 46.0, and 52.8 percent; mean accuracy is 26.0, 23.0, 28.4, and 27.8 percent. Distinct lines and markers distinguish confidence from accuracy." .phone-fit}
+
 This was a small historical study of one case, using questions with five possible answers. It does not establish that additional information is generally unhelpful or harmful. It shows why becoming more convinced that we understand a person is insufficient evidence that our judgments have improved.
 
 For the branch manager, the practical question is whether another detail changes a prediction in a way that later outcomes support. Record the prediction before those outcomes are known, then check accuracy alongside confidence. [Chapter 42](42-data-driven-decision-making.qmd#make-the-test-resemble-the-task) applies a related safeguard to machine learning: keep an untouched test set to assess whether a developed model predicts new observations. The activity below begins such a record for your own judgments.
@@ -215,9 +219,13 @@ The familiar Dunning–Kruger pattern raises a further measurement question: wha
 
 []{#planning-fallacy-and-outside-view}
 
-The **planning fallacy** illustrates how optimistic forecasts can affect a project: people often construct an inside-view story of the steps that should occur while underweighting delays observed in similar projects (Buehler et al., 1994; Kahneman & Tversky, 1979). Underestimating the time a task needs can express overestimation of what one can accomplish in that time; an unduly narrow completion window also expresses overprecision. Planning fallacy is therefore an application, rather than a fourth form alongside those in @tbl-confidence-calibration. The **outside view** begins with a reference class and then adjusts only for differences that are genuinely predictive (Kahneman & Lovallo, 1993; Lovallo & Kahneman, 2003).
+When will your thesis be finished? Buehler, Griffin, and Ross (1994) asked students working on an honors thesis for their best estimate, an optimistic estimate, and a pessimistic one. Among the 33 who finished during follow-up, the best estimate averaged **33.9 days**; completion took **55.5 days**. Even their pessimistic estimate averaged only 48.6 days. Four further students had not finished by the end of follow-up and were excluded from those completion-time averages. The gap therefore survives a comparison that leaves out the longest unfinished projects.
 
-Suppose a city team proposes an 18-month rail-project schedule. Before hearing why this project is special, obtain the completion-time distribution for comparable projects. Then require each departure from that range to name a causal difference and evidence that the difference changed outcomes elsewhere. The inside view remains useful because it reveals mechanisms and dependencies; the outside view prevents an elegant plan from erasing how projects actually unfold.
+The **planning fallacy** is this tendency to underestimate how long a task will take. A plausible story of the remaining steps can crowd out experience of earlier delays (Buehler et al., 1994; Kahneman & Tversky, 1979). Underestimating the time needed can express overestimation of what one can accomplish; an unduly narrow completion window also expresses overprecision. It is an application of the errors in @tbl-confidence-calibration, rather than a fourth form of overconfidence.
+
+The **outside view** starts with the completion-time distribution of comparable projects, then adjusts for differences with predictive evidence (Kahneman & Lovallo, 1993; Lovallo & Kahneman, 2003). The inside view still matters: a project's steps reveal dependencies and possible delays. Comparing the two prevents a coherent plan from erasing what happened to other coherent plans.
+
+For the branch manager, the same distinction applies to the rescue plan. A compelling account of why it should work is an inside view. Results from other branches facing comparable conditions provide an outside view. Their disagreement is a reason to examine the assumptions, rather than average the two claims mechanically.
 
 ::: {.callout-note .research-lens icon=false collapse=true}
 ## Research Lens: information protocols change probability puzzles
@@ -226,6 +234,7 @@ In Monty Hall, seeing two unopened doors can make staying and switching look equ
 
 ![The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.](../figures/monty-hall-protocol.svg){#fig-monty-hall-protocol fig-alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds." width=100%}
 :::
+
 
 ## Calibration makes confidence answerable
 

@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-24",
+  "scope": "Current working-tree revision; not committed or pushed",
+  "chapters_reviewed": 42,
+  "chapters_revised": 27,
+  "canonical_sources_revised": 36,
+  "checks": [
+    {
+      "check": "Full HTML render, with targeted final refreshes",
+      "status": "PASS",
+      "log": "/private/tmp/decision-study-centered-20260924-html.log"
+    },
+    {
+      "check": "Full final EPUB render",
+      "status": "PASS",
+      "log": "/private/tmp/decision-study-centered-20260924-epub-final.log"
+    },
+    {
+      "check": "Canonical source QA",
+      "status": "PASS",
+      "command": "python3 scripts/qa_quarto_book.py",
+      "errors": 0,
+      "warnings": 0,
+      "report": "../../QA_REPORT.md"
+    },
+    {
+      "check": "Master references",
+      "status": "PASS",
+      "command": "python3 scripts/sync_references.py --check",
+      "unique_references": 1096,
+      "unresolved_author_year_citations": 0,
+      "report": "../../CITATION_AUDIT.md"
+    },
+    {
+      "check": "Source and rendered float references",
+      "status": "PASS",
+      "command": "python3 scripts/qa_float_references.py --rendered --epub-dir /private/tmp/decision-study-centered-20260924/epub-release/EPUB",
+      "sources": 62,
+      "figures": 102,
+      "tables": 165,
+      "issues": 0,
+      "report": "../float-reference-qa.json"
+    },
+    {
+      "check": "Local HTML links and fragments",
+      "status": "PASS",
+      "pages": 62,
+      "links": 7676,
+      "issues": 0,
+      "report": "html-links.json"
+    },
+    {
+      "check": "Final EPUB release packaging, navigation, content, and internal links",
+      "status": "PASS",
+      "command": "python3 scripts/qa_epub_release.py",
+      "errors": 0,
+      "report": "../../EPUB_QA_REPORT.md"
+    },
+    {
+      "check": "Four source SVGs match generated HTML assets",
+      "status": "PASS"
+    },
+    {
+      "check": "New plot visual inspection",
+      "status": "PASS",
+      "html_viewports": [
+        390,
+        1280
+      ],
+      "epub_viewports": [
+        390,
+        768
+      ],
+      "screenshots": 16,
+      "report": "visual-qa/README.md"
+    },
+    {
+      "check": "Final EPUB plots match inspected extraction",
+      "status": "PASS",
+      "report": "visual-qa/final-epub-equivalence.json"
+    },
+    {
+      "check": "Whitespace diff check",
+      "status": "PASS",
+      "command": "git diff --check"
+    }
+  ],
+  "epub_sha256": "b13c0907a5a339c5d6005a96af514ba6a6c7a7eafff45e106f4759b10836ad76",
+  "limits": "Newly developed claims were checked against primary sources with a targeted independent audit. This is not a new systematic review of every reference or a test in every EPUB reader."
+}

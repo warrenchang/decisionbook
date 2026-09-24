@@ -21,42 +21,16 @@ Supervision intended to protect performance may have restricted the very initiat
 ::: {.callout-note .core-idea icon=false}
 ## Core Idea
 
-A useful forecast names an outcome, a time horizon, and the conditions under which it might occur. In human systems, acting on the forecast may change those conditions. To learn from the result, examine both the prediction and the treatment it prompted.
+Expectations can affect experience, effort, and treatment by others. A result that appears to confirm a prediction may therefore have been partly produced by it. Tests that separate what people expect from what they receive or are allowed to do help distinguish these pathways.
 
 :::
 
 ## Learning goals
 
-- Construct a consequence forecast with a defined option, outcome, time horizon, range, and reference class.
+- Use controlled comparisons to distinguish changes in reported experience, behavior, and measured outcomes.
 - Distinguish an external prediction from a forecast that can alter physiology, behavior, treatment by others, or opportunity.
-- Design a supported expectation and an independent test of its effects.
+- Record a forecast and design an independent test of how acting on it affects the outcome.
 
-
-## Build the forecast before telling its story
-
-Before asking how a forecast changes behavior, we need a forecast clear enough to evaluate. Consider a leadership team deciding whether to launch a product in October or delay until February. Launching sooner brings forward the opportunity to earn revenue and learn, but leaves less time to prepare.
-
-“October will probably work” does little to resolve that trade-off. It could mean shipping on time, reaching a revenue target, avoiding severe defects, or retaining customers. The team needs to specify the outcome and period, then state the staffing, price, and marketing conditions under which it expects to succeed.
-
-A consequence forecast should make six elements visible:
-
-| Forecast element | Question to answer | October-launch example |
-| --- | --- | --- |
-| Option | What action is being evaluated? | Launch the current product on 1 October. |
-| Outcome and horizon | What event resolves the forecast, and when? | At least 90% of paid users remain active after 90 days. |
-| Reference class | What comparable cases provide a starting rate? | Similar first releases with the same customer type and onboarding model. |
-| Causal pathways | What must happen for the outcome to occur or fail? | Reliability, onboarding, support capacity, and product–market fit. |
-| Range or probability | How uncertain is the estimate? | 45% probability, with a plausible range of 30–60% across assumptions. |
-| Update trigger | Which new observation should change the estimate or action? | A usability pilot, defect rate, staffing milestone, or pre-commitment threshold. |
-: Anatomy of a consequence forecast {#tbl-consequence-forecast}
-
-The reference class supplies an outside starting point; the causal model explains why the present case might differ. Neither should automatically defeat the other. If only 35% of comparable launches reach that retention target, the illustrative 45% forecast in @tbl-consequence-forecast adds ten percentage points that need a reason. A validated improvement in onboarding might justify an increase; confidence in the team alone does not quantify one. [Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#reference-classes-are-judgment-calls) examines the comparison group, and [Chapter 15](15-samples-randomness-regression-and-calibration.qmd#calibration-makes-confidence-answerable) shows how to evaluate forecasts against later outcomes.
-
-Use ranges or scenarios when one precise number would hide model uncertainty. A **base scenario** states the best-supported path, an **upside scenario** identifies the conditions required for a better outcome, and a **downside scenario** identifies a plausible failure path. Scenarios are not three stories chosen for emotional balance. Each should specify assumptions, an observable sign, and what decision follows if the sign appears.
-
-Forecasting also requires separating prediction from valuation. The estimate that an October launch has a 45% chance of meeting the retention target does not determine whether launching is worthwhile. The answer depends on the value of speed, learning, revenue, reputation, workload, and the harm of failure. Nor does a predictive association establish which intervention will improve the outcome. A team may predict churn accurately without knowing whether price, reliability, support, or customer fit causes it.
-
-One final question changes the rest of the chapter: **Can acting on or communicating this forecast change the outcome being predicted?** A weather forecast normally changes preparation rather than weather. A forecast about a bank, employee, patient, student, or market may change behavior, resources, and feedback. In those settings, prediction is no longer only a representation of the future. It is a possible input into that future.
 
 ## When a forecast enters the causal system
 
@@ -128,14 +102,16 @@ In @fig-expectation-loop, one pathway may operate alone, or several may combine.
 
 **Placebo effects** are changes attributable to treatment context, including expectations and learning, beyond the specific action of the treatment. **Nocebo effects** are adverse changes attributable to such contextual processes. They can accompany active treatment as well as an inert intervention (Benedetti, 2008; Colloca & Barsky, 2020; Colloca & Miller, 2011). Improvement in a placebo group alone does not establish a placebo effect: natural recovery, regression to the mean, and other influences may also contribute.
 
-Pain research provides one example of plausible pathways. Expectations can affect anxiety, attention to symptoms, and endogenous pain regulation, although the mechanisms and size of effects vary by outcome and procedure (Finniss et al., 2010; Kirsch, 1985).
+Atlas and colleagues (2012) separated receiving pain relief from expecting it. During experimental heat pain, participants received an opioid painkiller or a control infusion and were told either that they were receiving the drug or that they were not. Both the actual drug and the expectation of receiving it reduced reported pain. The drug still helped when participants did not know they were receiving it, and the study detected no interaction between the drug and expectancy effects. Belief influenced the experience without replacing the pharmacological action.
+
+Expectations can affect anxiety, attention to symptoms, and endogenous pain regulation, although the mechanisms and size of effects vary by outcome and procedure (Finniss et al., 2010; Kirsch, 1985).
 
 Risk communication should therefore preserve accurate probabilities and explain what support is available. A clinician can describe both the proportion likely to experience a side effect and the proportion unlikely to experience it, using the same outcome and time horizon.
 
 ::: {.callout-note .research-lens icon=false collapse=true}
 ## Research Lens: expectations can alter reported experience
 
-A tasting seems to offer direct evidence about a product’s qualities. Yet information about the product can enter the experience being judged, making description and experience harder to separate. Price and product information have changed reported pleasantness, preference, or performance in controlled tasting and consumer tasks (Lee et al., 2006; Plassmann et al., 2008; Shiv et al., 2005). Information supplied beforehand can help construct the experience rather than merely justify it afterward. Studies have also examined mindset effects on health and physiology (Crum & Langer, 2007; Crum et al., 2011).[^ch05-expectancy-mechanisms]
+A tasting seems to offer direct evidence about a product’s qualities. Yet information about the product can enter the experience being judged, making description and experience harder to separate. Price and product information have changed reported pleasantness, preference, or performance in controlled tasting and consumer tasks (Lee et al., 2006; Plassmann et al., 2008; Shiv et al., 2005). [Chapter 6](06-valuation-how-options-become-worth-choosing.qmd#valuation-how-options-become-worth-choosing) examines the wine and energy-drink experiments in detail. Information supplied beforehand can help construct the experience rather than merely justify it afterward. Studies have also examined mindset effects on health and physiology (Crum & Langer, 2007; Crum et al., 2011).[^ch05-expectancy-mechanisms]
 :::
 
 Information supplied before an experience can influence how it is interpreted. Evaluating its effects requires measuring the relevant outcome: reported experience, physiological change, or lasting health benefit.
@@ -161,7 +137,7 @@ Several explanations could fit. Symptoms may have received less attention during
 
 Difficulty should help a student identify what needs practice. But if confusion is taken as proof of inability, it may instead become a reason to avoid the task. Another student who sees confusion as part of learning may seek a new strategy. The same obstacle can therefore open or close a path to improvement. The question is which beliefs support useful action and what support makes that action possible.
 
-Self-efficacy, a concept developed by Bandura, refers to people’s beliefs about their capability to organize and execute actions required to achieve goals (Bandura, 1977, 1997). Self-efficacy affects effort, persistence, resilience, emotional response, and willingness to take on challenge. People with higher self-efficacy are more likely to approach difficult tasks, persist after setbacks, and recover from failure.
+**Self-efficacy** refers to beliefs about one’s capability to carry out the actions a goal requires. Bandura’s account proposes that these beliefs influence which tasks people approach and how much effort they invest (Bandura, 1977, 1997). The relationship can also run the other way: successful practice builds both ability and confidence. A confident person’s better performance therefore does not, by itself, show what confidence caused.
 
 Self-efficacy is not the same as empty confidence. It is most useful when grounded in mastery experiences, modeling, feedback, and realistic strategies. False confidence can be dangerous. But low confidence can also become self-defeating if it prevents the very effort that would build ability.
 
@@ -227,6 +203,28 @@ Support also has to be credible. Telling employees they are trusted while retain
 | Relationships | Predicted rejection changes behavior and the response it elicits. | Test the prediction through perspective-getting, not mind-reading. |
 : Expectation pathways and ethical conditions {#tbl-08-1}
 
+::: {.callout-note .research-lens icon=false collapse=true #build-the-forecast-before-telling-its-story}
+## Research Lens: recording a forecast that can change its outcome
+
+The studies in this chapter distinguish what people expect from what that expectation helps bring about. The practical recording tool in @tbl-consequence-forecast keeps both questions visible. Its product-launch figures are illustrative assumptions, not measured success rates.
+
+| Forecast element | Question to answer | October-launch example |
+| --- | --- | --- |
+| Option | What action is being evaluated? | Launch the current product on 1 October. |
+| Outcome and horizon | What event resolves the forecast, and when? | At least 90% of paid users remain active after 90 days. |
+| Reference class | What comparable cases provide a starting rate? | Similar first releases with the same customer type and onboarding model. |
+| Causal pathways | What must happen for the outcome to occur or fail? | Reliability, onboarding, support capacity, and product–market fit. |
+| Range or probability | How uncertain is the estimate? | 45% probability, with a plausible range of 30–60% across assumptions. |
+| Update trigger | Which new observation should change the estimate or action? | A usability pilot, defect rate, staffing milestone, or pre-commitment threshold. |
+: Anatomy of a consequence forecast {#tbl-consequence-forecast}
+
+A **reference class** supplies a starting rate from comparable cases; a causal account explains why this case might differ. [Chapter 14](14-base-rates-conditional-probability-and-bayesian-updating.qmd#reference-classes-are-judgment-calls) examines that comparison group, and [Chapter 15](15-samples-randomness-regression-and-calibration.qmd#calibration-makes-confidence-answerable) shows how to assess forecasts against outcomes.
+
+When one number hides important uncertainty, record a **base scenario** with the best-supported assumptions, an **upside scenario** with conditions for improvement, and a **downside scenario** with a plausible failure path. Each needs an observable sign and a decision that would follow. Forecasting success still does not determine whether a launch is worthwhile; that also depends on the value of its possible outcomes.
+
+Finally, record what changes when people receive or act on the forecast: effort, treatment by others, resources, or opportunities. Without that record, a forecast that partly produces its own confirmation can look like an independent prediction.
+:::
+
 ## Practice Lab
 
 Choose one consequential option and produce a one-page **forecast-and-reactivity audit**: a record of the prediction and how people might react to it. Define the outcome and deadline, give a range or probability, defend a reference class, name two causal pathways, and state one update trigger. Then ask whether communicating or acting on the forecast can change physiology, the focal person's behavior, other people's responses, or resources and opportunities. Add one measure collected before that loop can operate and one comparison that could separate an accurate forecast from an outcome partly produced by the forecast.
@@ -241,6 +239,10 @@ The manager's next review could begin with two records: what she expected, and w
 
 ::: {.reference}
 Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. Journal of Abnormal Psychology, 87(1), 49–74.
+:::
+
+::: {.reference}
+Atlas, L. Y., Whittington, R. A., Lindquist, M. A., Wielgosz, J., Sonty, N., & Wager, T. D. (2012). Dissociable influences of opiates and expectations on pain. *Journal of Neuroscience, 32*(23), 8053–8064.
 :::
 
 ::: {.reference}
