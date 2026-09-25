@@ -62,7 +62,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Alternatives, Trade-offs, and Information | **PASS** |
 | Required content: Rational Choice and Decision Analysis | **PASS** |
 | Required content: Probability Judgment | **PASS** |
-| Required content: Risky Decision Making | **PASS** |
+| Required content: Risk and Uncertainty | **PASS** |
 | Required content: Prospect Theory | **PASS** |
 | Required content: Decisions From Experience | **PASS** |
 | Required content: Intertemporal Decision Making | **PASS** |

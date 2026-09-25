@@ -62,7 +62,7 @@ REQUIRED_CONTENT = [
     "Alternatives, Trade-offs, and Information",
     "Rational Choice and Decision Analysis",
     "Probability Judgment",
-    "Risky Decision Making",
+    "Risk and Uncertainty",
     "Prospect Theory",
     "Decisions From Experience",
     "Intertemporal Decision Making",

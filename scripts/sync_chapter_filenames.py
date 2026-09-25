@@ -82,6 +82,21 @@ def add_alias(text: str, alias: str) -> str:
     return f"---\naliases:\n  - {alias}\n---\n\n" + text
 
 
+def remove_self_alias(text: str, canonical_name: str) -> str:
+    """A restored filename is a page again, not a redirect to itself."""
+    if not text.startswith("---\n"):
+        return text
+    end = text.index("\n---", 4)
+    front = text[:end]
+    pattern = re.compile(r"(^aliases:[ \t]*\n(?:[ \t]+.*(?:\n|$))*)", re.M)
+
+    def clean(match: re.Match) -> str:
+        lines = match.group(0).splitlines(keepends=True)
+        return "".join(line for line in lines if line.strip() != f"- {canonical_name}")
+
+    return pattern.sub(clean, front) + text[end:]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apply", action="store_true")
@@ -108,7 +123,8 @@ def main() -> None:
             updates[path] = new
     for row in changed:
         path = ROOT / row["old"]
-        updates[path] = add_alias(updates.get(path, path.read_text()), Path(row["old"]).with_suffix(".html").name)
+        updated = add_alias(updates.get(path, path.read_text()), Path(row["old"]).with_suffix(".html").name)
+        updates[path] = remove_self_alias(updated, Path(row["new"]).with_suffix(".html").name)
     for path, text in updates.items():
         path.write_text(text)
     for row in changed:

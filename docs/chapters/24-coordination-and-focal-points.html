@@ -207,8 +207,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-narrator-after-choice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Narrator After Choice</span></span></a>
+  <a href="../chapters/07-rationalization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Rationalization</span></span></a>
   </div>
 </li>
       </ul>
@@ -260,8 +260,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/14-base-rates-and-updating.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Updating</span></span></a>
+  <a href="../chapters/14-base-rates-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Bayesian Updating</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -283,8 +283,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/16-risky-decision-making.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision Making</span></span></a>
+  <a href="../chapters/16-risk-and-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risk and Uncertainty</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -413,8 +413,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/34-connection-and-repair.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair</span></span></a>
+  <a href="../chapters/34-connection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection</span></span></a>
   </div>
 </li>
       </ul>
@@ -430,8 +430,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  <a href="../chapters/35-negotiation-as-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Making</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -817,6 +817,17 @@ Table&nbsp;24.3: Stag hunt: mutual commitment offers more, but acting alone is c
 </div>
 <p>Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner’s action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.</p>
 <p>How much confidence is enough? With these numbers treated as utility payoffs, Stag is strictly better when the player believes the partner’s chance of choosing Stag exceeds about <strong>61.5%</strong>. At the exact threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting.</p>
+<p>In <a href="#fig-stag-hunt-belief-payoffs" class="quarto-xref">Figure&nbsp;<span>24.1</span></a>, Hare’s payoff stays at 10 while Stag’s expected payoff rises with confidence in the partner. Their crossing shows why wanting the better joint outcome is not enough to make Stag the best individual choice.</p>
+<div id="fig-stag-hunt-belief-payoffs" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="A line chart plots expected payoff against the believed chance that the other player chooses Stag. Stag rises from 2 to 15, while Hare stays at 10. They intersect at about 61.5 percent. Below that belief Hare pays more; above it Stag pays more.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stag-hunt-belief-payoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/stag-hunt-belief-payoffs.svg" class="phone-fit img-fluid figure-img" alt="A line chart plots expected payoff against the believed chance that the other player chooses Stag. Stag rises from 2 to 15, while Hare stays at 10. They intersect at about 61.5 percent. Below that belief Hare pays more; above it Stag pays more.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stag-hunt-belief-payoffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24.1: Expected utility payoffs calculated from <a href="#tbl-stag-hunt" class="quarto-xref">Table&nbsp;<span>24.3</span></a>. The threshold is <span class="math inline">\(8/13\)</span>, approximately 61.5%; the plotted lines describe this illustrative game, not observed choices.
+</figcaption>
+</figure>
+</div>
 <p>Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the <strong>risk-dominant equilibrium</strong>: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.</p>
 <div id="math-stag-hunt-threshold">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
@@ -864,7 +875,7 @@ p&gt;\frac{8}{13}\approx0.615.
 <p><span id="compatible-bargaining-claims"></span></p>
 <p>A simple bargaining game makes the distribution problem explicit. Two players simultaneously claim shares of a total of 4. If their claims sum to at most 4, each receives the amount claimed; if they exceed 4, both receive 0.</p>
 <p>The claims 2 and 2 fit together, as do 3 and 1. In either of those pairs, raising one’s claim would destroy the agreement, while lowering it would reduce one’s payoff. Both are Nash equilibria. Equilibrium alone does not decide which division should prevail. Equal shares may be focal, but contribution, alternatives, past agreements, and power can support other expectations.</p>
-<p>The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. <a href="../chapters/35-negotiation-as-joint-decision-design.html#chapter-35-start">Negotiation as Joint Decision Design</a> develops that task. Even an agreement that improves both parties’ outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.</p>
+<p>The example fixes the total at 4. Real negotiation can also discover trades that create more value before deciding how to divide it. <a href="../chapters/35-negotiation-as-joint-decision-making.html#chapter-35-start">Negotiation as Joint Decision Making</a> develops that task. Even an agreement that improves both parties’ outcomes can preserve an unequal division; mutual gain does not settle whether the allocation or procedure is fair.</p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

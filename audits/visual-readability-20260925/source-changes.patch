@@ -1,0 +1,52 @@
+--- before/chapters/22-deciding-for-a-better-life.qmd
++++ chapters/22-deciding-for-a-better-life.qmd
+@@ -86,7 +86,9 @@
+ 
+ A later randomized trial tested whether changing the ending could change the memory. Some colonoscopy patients received a brief additional interval during which the instrument remained stationary, producing an ending that was less painful than the preceding part of the procedure. They subsequently remembered the procedure as less unpleasant than patients receiving the usual ending (Redelmeier et al., 2003). The added interval still involved discomfort: the remembered improvement and the additional time spent undergoing the procedure pointed in different directions.
+ 
+-What people remember can also influence what they choose to repeat. In a cold-water experiment, participants experienced a painful 60-second immersion and a longer immersion with the same first minute followed by 30 seconds in slightly warmer, still unpleasant water. Twenty-two of the 32 participants chose to repeat the longer trial (Kahneman et al., 1993). A better ending had made an episode containing more discomfort more attractive to choose again. Peaks and endings can thus shape a later choice even when they give an incomplete account of the time lived through.
++What people remember can also influence what they choose to repeat. In a cold-water experiment, participants experienced a painful 60-second immersion and a longer immersion with the same first minute followed by 30 seconds in gradually warming, still unpleasant water. As @fig-cold-water-better-ending shows, the longer trial added discomfort but improved the ending. Twenty-two of the 32 men in the analyzed student sample chose to repeat it (Kahneman et al., 1993). Peaks and endings can thus shape a later choice even when they give an incomplete account of the time lived through.
++
++![The two cold-water protocols and the subsequent repeat choice (Kahneman et al., 1993). Temperatures are nominal; the added interval remained painful. The strips show timing, not pain ratings.](../figures/cold-water-better-ending.svg){#fig-cold-water-better-ending fig-alt="The short trial lasts 60 seconds at 14 degrees Celsius. The long trial has the same first minute, followed by 30 seconds during which the water gradually warms toward 15 degrees Celsius. Twenty-two of 32 analyzed participants chose to repeat the longer trial." .phone-fit}
+ 
+ The same tension can arise with pleasant experiences. Imagine a second holiday week that is as enjoyable as the first but adds few distinctive events. It adds pleasant time, yet may add little to the story later told. Planning a family holiday can make this distinction especially visible, because the person choosing and the people having the experience may value its different parts.
+ 
+--- before/chapters/24-coordination-and-focal-points.qmd
++++ chapters/24-coordination-and-focal-points.qmd
+@@ -166,6 +166,10 @@
+ Stag–stag and hare–hare are both Nash equilibria. Stag–stag is payoff dominant, giving each player 15 rather than 10. Hare guarantees 10 regardless of the partner's action, whereas choosing Stag leaves a player with 2 if the partner chooses Hare.
+ 
+ How much confidence is enough? With these numbers treated as utility payoffs, Stag is strictly better when the player believes the partner's chance of choosing Stag exceeds about **61.5%**. At the exact threshold, both actions are best responses. Below it, choosing Hare is a sensible response to uncertainty about the partner, even for someone who prefers mutual stag hunting.
++
++In @fig-stag-hunt-belief-payoffs, Hare's payoff stays at 10 while Stag's expected payoff rises with confidence in the partner. Their crossing shows why wanting the better joint outcome is not enough to make Stag the best individual choice.
++
++![Expected utility payoffs calculated from @tbl-stag-hunt. The threshold is $8/13$, approximately 61.5%; the plotted lines describe this illustrative game, not observed choices.](../figures/stag-hunt-belief-payoffs.svg){#fig-stag-hunt-belief-payoffs fig-alt="A line chart plots expected payoff against the believed chance that the other player chooses Stag. Stag rises from 2 to 15, while Hare stays at 10. They intersect at about 61.5 percent. Below that belief Hare pays more; above it Stag pays more." .phone-fit}
+ 
+ Under a fifty–fifty belief about the partner, Stag yields 8.5 while Hare yields 10. In this symmetric two-action game, hare–hare is therefore the **risk-dominant equilibrium**: Hare is preferable over a larger range of beliefs about the partner, whereas stag–stag is payoff dominant. This comparison concerns uncertainty about another player; it requires no additional assumption that the person is risk averse.
+ 
+--- before/chapters/30-persuasion.qmd
++++ chapters/30-persuasion.qmd
+@@ -80,7 +80,9 @@
+ 
+ Attitudes formed or changed through greater elaboration tend, under appropriate conditions, to be more persistent, resistant to counterpersuasion, and predictive of behavior because they are connected to a more developed structure of supporting thoughts. Lower-elaboration change may be more fragile, though repetition, identity, learning, and later experience can stabilize it.
+ 
+-In the platform meeting, a dense technical report may help an interested specialist while overwhelming a colleague who has ten minutes between tasks. Use @tbl-25-1 to match the presentation to people’s motivation and ability to inspect it:
++In the platform meeting, a dense technical report may help an interested specialist while overwhelming a colleague who has ten minutes between tasks. The two axes in @fig-elaboration-quadrant separate wanting to evaluate the proposal from having the knowledge, time, and attention to do so. An interested but overwhelmed colleague needs a clearer explanation or more time; a knowledgeable but disengaged colleague needs a reason to examine the proposal. @tbl-25-1 develops these implications for presenting the evidence.
++
++![Motivation and ability jointly shape elaboration. The quadrants summarize continuous dimensions rather than fixed audience types (Petty & Briñol, 2012).](../figures/elaboration-quadrant.svg){#fig-elaboration-quadrant fig-alt="Motivation to evaluate increases upward; ability to evaluate increases to the right. High motivation with low ability means willing but constrained; high ability with low motivation means able but less motivated. Little scrutiny is likely when both are low, and careful scrutiny is more likely when both are high." .phone-fit}
+ 
+ 
+ | Audience condition | Likely elaboration pattern | Design implication |
+--- before/chapters/38-designing-better-agreements.qmd
++++ chapters/38-designing-better-agreements.qmd
+@@ -190,7 +190,9 @@
+ 
+ Chen must also be able to pay $10 million at signing. His receipts net of that payment are −$10 million without approval or $90 million with it, whereas selling to iDiet provides $20 million for sure. Credit constraints, risk aversion, or a need for dependable funds can make this exposure unacceptable even when his expected monetary gain is high.
+ 
+-Package E avoids the initial payment by Chen and leaves MPharm **$18 million without approval** or **$38 million with approval**. The $20 million difference preserves a financial stake in approval. Whether that stake motivates enough effort depends on the cost of effort and how much it changes the approval chance. The table identifies promising trades; selecting a workable contract also requires those missing facts.
++Package E avoids the initial payment by Chen and leaves MPharm **$18 million without approval** or **$38 million with approval**. The $20 million difference preserves a financial stake in approval. Whether that stake motivates enough effort depends on the cost of effort and how much it changes the approval chance. The comparison in @fig-contract-state-payoffs shows why the expected gains in @tbl-mpharm-packages need to be checked against the incentive to secure approval.
++
++![MPharm's net payoffs under two hypothetical contracts, before effort costs. Approval adds no payoff under package D but $20 million under package E.](../figures/contract-state-payoffs.svg){#fig-contract-state-payoffs fig-alt="Four bars compare MPharm's net payoff before effort costs: package D gives 30 million dollars without approval and 30 million with approval; package E gives 18 million without approval and 38 million with approval." .phone-fit}
+ 
+ The incentives of an agent deserve the same examination. Chen's lawyer may receive most compensation upfront while Chen depends on a later bonus. Where professional rules permit an outcome component, fee design can give the agent a stake in the client's result; oversight and clear responsibilities are still needed when important effort cannot be observed. Align the reward with the desired work, not merely with reaching a signature or reporting a favorable metric.
+ 

@@ -157,7 +157,7 @@ async function main() {
       ["chapters/04-predictive-mind.html", "#fig-perception-context-lab", "perception-context-desktop.png"],
       ["chapters/15-randomness-and-overconfidence.html", "#fig-monty-hall-protocol", "monty-hall-desktop.png"],
       ["chapters/12-framing.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-desktop.png"],
-      ["chapters/07-narrator-after-choice.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
+      ["chapters/07-rationalization.html", "#fig-choice-blindness-swap", "choice-blindness-desktop.png"],
       ["chapters/26-social-norms-and-conformity.html", "#fig-asch-line-comparison", "asch-lines-desktop.png"],
       ["appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html", "#fig-schelling-emergence", "schelling-emergence-desktop.png"],
       ["chapters/25-cooperation-and-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-desktop.png"],
@@ -191,7 +191,7 @@ async function main() {
     await screenshotFigure(mobilePage, "chapters/04-predictive-mind.html", "#fig-perception-context-lab", "perception-context-mobile.png");
     await screenshotFigure(mobilePage, "chapters/15-randomness-and-overconfidence.html", "#fig-monty-hall-protocol", "monty-hall-mobile.png");
     await screenshotFigure(mobilePage, "chapters/12-framing.html", "#fig-assumed-choice-eggs", "assumed-choice-eggs-mobile.png");
-    await screenshotFigure(mobilePage, "chapters/07-narrator-after-choice.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
+    await screenshotFigure(mobilePage, "chapters/07-rationalization.html", "#fig-choice-blindness-swap", "choice-blindness-mobile.png");
     await screenshotFigure(mobilePage, "chapters/26-social-norms-and-conformity.html", "#fig-asch-line-comparison", "asch-lines-mobile.png");
     await screenshotFigure(mobilePage, "appendices/appendix-b-evolutionary-explanations-of-value-choice-and-rationality.html", "#fig-schelling-emergence", "schelling-emergence-mobile.png");
     await screenshotFigure(mobilePage, "chapters/25-cooperation-and-social-preferences.html", "#fig-fairness-entitlements-redraw", "fairness-entitlements-mobile.png");

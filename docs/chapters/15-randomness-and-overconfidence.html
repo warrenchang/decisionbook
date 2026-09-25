@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../parts/part-3.html" rel="next">
-<link href="../chapters/14-base-rates-and-updating.html" rel="prev">
+<link href="../chapters/14-base-rates-and-bayesian-updating.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -207,8 +207,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/07-narrator-after-choice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Narrator After Choice</span></span></a>
+  <a href="../chapters/07-rationalization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Rationalization</span></span></a>
   </div>
 </li>
       </ul>
@@ -260,8 +260,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/14-base-rates-and-updating.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Updating</span></span></a>
+  <a href="../chapters/14-base-rates-and-bayesian-updating.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Bayesian Updating</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -283,8 +283,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/16-risky-decision-making.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risky Decision Making</span></span></a>
+  <a href="../chapters/16-risk-and-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Risk and Uncertainty</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -413,8 +413,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/34-connection-and-repair.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection and Repair</span></span></a>
+  <a href="../chapters/34-connection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Connection</span></span></a>
   </div>
 </li>
       </ul>
@@ -430,8 +430,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/35-negotiation-as-joint-decision-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Design</span></span></a>
+  <a href="../chapters/35-negotiation-as-joint-decision-making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Negotiation as Joint Decision Making</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -993,7 +993,7 @@ Table&nbsp;15.2: A minimal forecast ledger
 <section id="from-a-project-story-to-a-forecast-system" class="level3">
 <h3 data-anchor-id="from-a-project-story-to-a-forecast-system">Combine causal forecasts with the outside view</h3>
 <p>Breaking a project into possible failure routes should make its forecast more informative. But combining those routes carelessly can undo the benefit if they share causes or trigger one another.</p>
-<p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-and-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
+<p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-and-bayesian-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
 <div id="math-combined-delays">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
@@ -1168,8 +1168,8 @@ Table&nbsp;15.2: A minimal forecast ledger
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/14-base-rates-and-updating.html" class="pagination-link" aria-label="Base Rates and Updating">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Updating</span></span>
+      <a href="../chapters/14-base-rates-and-bayesian-updating.html" class="pagination-link" aria-label="Base Rates and Bayesian Updating">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Base Rates and Bayesian Updating</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
