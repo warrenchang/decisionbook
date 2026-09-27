@@ -188,6 +188,16 @@ A **2 × 2 factorial design** crosses two content versions with two timing optio
 
 Those are different questions. State which one matters before allocating the sample, and plan enough precision for the interaction if it is central. Merely including two factors does not make a study informative about how they work together.
 
+#### The procedure helps define the behavior {#eliciting-choices-in-the-laboratory}
+
+Suppose a responder in an ultimatum game must accept or reject a proposed division of €10. With the **direct-response method**, the responder sees the actual offer and then decides. With the **strategy method**, the responder specifies a response to every possible offer in advance; the response corresponding to the offer actually made determines payment. Both procedures can have real consequences. The second also records decisions at offers that might rarely occur, such as receiving only €1.
+
+That extra information comes from a different experience: planning how to respond to €1 is not identical to encountering that offer from another person. Brandts and Charness's (2011) survey of 29 experimental comparisons found agreement in some studies and differences or mixed findings in others. A contingent response is therefore evidence about an elicited plan, with a separate question about how well it predicts behavior at the moment of receipt. This matters when interpreting a [conditional-cooperation schedule](../chapters/25-cooperation-and-social-preferences.qmd#chapter-25-start): its additional observations do not all represent encounters that actually happened.
+
+The matching procedure also changes the question. Repeated interaction with the same partner permits relationship-specific learning and future consequences. Random rematching changes those incentives but can allow the same pair to meet again; a *perfect-stranger* protocol prevents repeat pairings. Likewise, anonymity between participants is different from keeping researchers unaware of a person's decision or treatment. State who can identify whom, which histories are visible, and who can respond later before attributing a transfer to generosity alone.
+
+Payment needs the same precision. **Incentive compatibility** is a property of a particular mechanism under specified assumptions: the desired truthful report or choice must serve the participant's interests. Paying participants does not automatically establish it. Nor does a larger reward supply missing knowledge. Camerer and Hogarth's (1999) review found that incentive effects depended on the task; extra payment sometimes improved performance, often left mean performance unchanged, and could reduce variability. Specify how a decision affects payment, check understanding, and distinguish an incentive to try from the ability to perform the task.
+
 ### 6. Random sampling and random assignment solve different problems
 
 The clinic wants to know both whether the reminder works and whose attendance it could improve. These questions concern different forms of validity. **Internal validity** asks whether the study supports its causal conclusion for the comparison it makes. **External validity** asks how far the finding applies to other people, settings, treatments, or times. We therefore need to distinguish how patients enter the study from how they receive a reminder (Shadish et al., 2002; Stuart et al., 2011).
@@ -271,6 +281,8 @@ Attrition occurs when outcomes cannot be collected for people originally include
 
 Suppose the clinic measures patients' understanding only when they attend. If the new reminder brings previously absent patients into the clinic, the observed groups may now contain different kinds of patients. A difference in understanding among attenders would mix the reminder's influence with this change in who was measured. Follow-up should seek outcomes for all assigned patients, including nonattenders and people who never received the message.
 
+A hypothetical **school-meal program** makes the direction of the error vivid. Suppose meals attract children who previously missed school and who weigh less, on average, than regular attenders. Weighing only pupils present could then produce a lower treated-school average even if the program improves children's growth. The composition of the measured group has changed. Follow a defined baseline cohort whether or not its members attend, and measure attendance separately from weight. This is a sampling argument, not an empirical claim that school meals reduce weight.
+
 Report rates and reasons by arm, timing, and baseline predictors of missingness. These checks can reveal selective loss; they cannot prove that the missing outcomes resemble the observed ones. Keep missing attendance records distinct from confirmed nonattendance. Weighting or imputation requires assumptions about missingness, while bounds and sensitivity analyses show what conclusions survive less favorable possibilities. Do not silently replace the randomized sample with complete cases and retain the original causal language (Duflo et al., 2007).
 
 #### Noncompliance: effects of assignment and treatment receipt {#noncompliance-assignment-is-not-receipt}
@@ -314,6 +326,28 @@ The hypothetical invitation example gives $0.03/(0.45-0.20)=0.12$, or 12 percent
 :::
 ::::
 
+[]{#school-meals-noncompliance-calculation}
+
+::: {.callout-note .research-lens icon=false collapse=true}
+## Worked example: why comparing participants can mislead
+
+The school-meal exercise in @tbl-school-meals-noncompliance uses invented changes in reading scores to separate assignment from participation. Ten pupils belong to a school assigned meals and ten to a comparison school; some pupils in each school receive meals. Every pupil's score change is observed.
+
+| School | Meals? | Pupils | Mean change |
+| --- | --- | ---: | ---: |
+| Offered meals | Yes | 5 | 4.4 |
+| Offered meals | No | 5 | 1.2 |
+| Comparison | Yes | 2 | 3.0 |
+| Comparison | No | 8 | 0.625 |
+: Hypothetical school-meal data: retain the assigned groups when calculating the effect of assignment. {#tbl-school-meals-noncompliance}
+
+Comparing meal recipients in the offered school with nonrecipients in the comparison school gives $4.4-0.625=3.775$. This discards pupils according to a choice made after assignment. The resulting contrast can reflect who participates as well as what meals do.
+
+Keeping all pupils in their assigned groups gives means of $(5\times4.4+5\times1.2)/10=2.8$ and $(2\times3+8\times0.625)/10=1.1$. The intention-to-treat difference is therefore **1.7 score points**. Receipt differs by $0.5-0.2=0.3$, so the Wald ratio is $1.7/0.3\approx5.67$ score points. Only the additional assumptions stated above give that ratio a complier-effect interpretation.
+
+These are arithmetic illustrations. Two schools supply only two assignment units, not twenty independently randomized pupils, so this tiny exercise provides no adequate basis for a precise empirical effect estimate. Its purpose is to show why redefining groups by participation changes the comparison.
+:::
+
 #### Spillovers, interference, and displacement
 
 The usual no-interference assumption says one unit's outcome does not depend on other units' assignments. Social information, contagion, peer effects, congestion, and markets often violate it.
@@ -343,6 +377,10 @@ Imagine that clinic staff tell the comparison group it has received the “ordin
 : Participation can alter the comparison through different pathways {#tbl-research-reactivity}
 
 Use @tbl-research-reactivity to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.
+
+[]{#baby-bonus-anticipation}
+
+Anticipation can alter an outcome before the policy's official start. On 11 May 2004, Australia announced an A$3,000 payment for babies born on or after 1 July. Gans and Leigh (2009) found a dip in births before eligibility and a surge afterward; most of the estimated shift involved the timing of inductions and cesarean sections. The seven-week interval concerned pregnancies already underway, not a new generation of conceptions. This historical policy comparison illustrates why the announcement date belongs in the design: late June was already exposed to the incentive to wait. Treating it as an unaffected baseline would miss part of the response. The study does not establish the motives or medical circumstances of every family.
 
 Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Where possible, keep outcome assessors unaware of assignment and define scoring rules before outcomes are examined, so that expectations about the treatment do not influence measurement. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.
 
@@ -547,6 +585,18 @@ Submit the completed pipeline, one explicit assumption, the revised design, and 
 :::
 
 ## References cited in this appendix
+
+::: {.reference}
+Brandts, J., & Charness, G. (2011). The strategy versus the direct-response method: A first survey of experimental comparisons. *Experimental Economics, 14*, 375–398. https://doi.org/10.1007/s10683-011-9272-x
+:::
+
+::: {.reference}
+Camerer, C. F., & Hogarth, R. M. (1999). The effects of financial incentives in experiments: A review and capital-labor-production framework. *Journal of Risk and Uncertainty, 19*(1–3), 7–42. https://doi.org/10.1023/A:1007850605129
+:::
+
+::: {.reference}
+Gans, J. S., & Leigh, A. (2009). Born on the first of July: An (un)natural experiment in birth timing. *Journal of Public Economics, 93*(1–2), 246–263. https://doi.org/10.1016/j.jpubeco.2008.07.004
+:::
 
 ::: {.reference}
 Angrist, J. D., Imbens, G. W., & Rubin, D. B. (1996). Identification of causal effects using instrumental variables. *Journal of the American Statistical Association, 91*(434), 444–455.

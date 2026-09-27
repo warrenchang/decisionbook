@@ -1127,11 +1127,81 @@ Table&nbsp;B.7: Bennett’s proposed five breakthroughs
 x' = \frac{xf_1}{xf_1+(1-x)f_2}.
 \]</span></p>
 <p>These restrictions keep the updated share between zero and one. Arbitrary game payoffs, especially negative ones, cannot be inserted without a stated mapping to admissible weights. An <strong>evolutionarily stable strategy</strong> is resistant to invasion by any sufficiently rare alternative strategy in the model’s strategy space. A stable population mixture is also different from each person deliberately randomizing.</p>
-<p>Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. The record in <a href="#tbl-model-provenance" class="quarto-xref">Table&nbsp;<span>B.8</span></a> makes these dependencies explicit, so another reader can reconstruct the result and assess how far it applies:</p>
+<section id="evolutionary-arms-race" class="level3">
+<h3 data-anchor-id="evolutionary-arms-race">An arms race can make everyone worse off</h3>
+<p>Imagine two inherited beetle types competing for food. Large beetles gain an advantage against small ones but need more food to sustain their bodies. The invented payoffs in <a href="#tbl-beetle-arms-race" class="quarto-xref">Table&nbsp;<span>B.8</span></a> represent reproductive weights after that cost. They illustrate a possible mechanism; they are not measurements of beetles.</p>
+<div id="tbl-beetle-arms-race" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-beetle-arms-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;B.8: A hypothetical size arms race: each cell gives the focal type’s reproductive weight.
+</figcaption>
+<div aria-describedby="tbl-beetle-arms-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Focal type</th>
+<th style="text-align: right;">Meets small</th>
+<th style="text-align: right;">Meets large</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>Large</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Large does better against either opponent. Under random mixing and payoff-dependent reproduction, it therefore increases from any interior population share. Once all are large, a rare small mutant receives approximately zero against residents receiving approximately one. Large resists invasion within this two-type model. Yet an all-small population would give each beetle weight three. Selection favors a relative advantage without maximizing the population’s average payoff. This is the evolutionary counterpart of the <a href="../chapters/25-cooperation-and-social-preferences.html#chapter-25-start">Prisoner’s Dilemma</a>, not evidence that organisms consciously choose collective harm.</p>
+</section>
+<section id="evolutionary-hawk-dove" class="level3">
+<h3 data-anchor-id="evolutionary-hawk-dove">Rarity can instead preserve a mixture</h3>
+<p>Now suppose aggressive behavior gains against a yielding opponent but becomes costly when both escalate. In the illustrative <strong>hawk–dove</strong> game in <a href="#tbl-hawk-dove-weights" class="quarto-xref">Table&nbsp;<span>B.9</span></a>, all payoffs are nonnegative weights, with background reproduction already included.</p>
+<div id="tbl-hawk-dove-weights" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hawk-dove-weights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;B.9: Hypothetical hawk–dove weights: each pure strategy can invade a population using the other.
+</figcaption>
+<div aria-describedby="tbl-hawk-dove-weights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Focal strategy</th>
+<th style="text-align: right;">Meets hawk</th>
+<th style="text-align: right;">Meets dove</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hawk</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>Dove</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A rare hawk among doves receives five while residents receive approximately three. A rare dove among hawks receives two while residents receive approximately one. Neither pure population resists invasion. If <span class="math inline">\(p\)</span> is the hawk share, random mixing gives expected weights <span class="math inline">\(5-4p\)</span> for hawks and <span class="math inline">\(3-p\)</span> for doves. They are equal at <span class="math inline">\(p=2/3\)</span>: below that share hawks gain; above it doves gain. Under the frequency update above, interior shares approach this mixture.</p>
+<p>This calculation describes a population of fixed types. A model in which every individual randomizes between actions can produce the same average encounter frequencies while making a different claim about behavior. Evolutionary stability, equilibrium, and a particular update rule must therefore be stated separately. Changing the interaction structure or allowing additional strategies can change what persists (Maynard Smith &amp; Price, 1973).</p>
+<p>Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. The record in <a href="#tbl-model-provenance" class="quarto-xref">Table&nbsp;<span>B.10</span></a> makes these dependencies explicit, so another reader can reconstruct the result and assess how far it applies:</p>
 <div id="tbl-model-provenance" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;B.8: A minimum provenance record for population and spatial models
+Table&nbsp;B.10: A minimum provenance record for population and spatial models
 </figcaption>
 <div aria-describedby="tbl-model-provenance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1180,6 +1250,7 @@ Figure&nbsp;B.1: Local moves produce more same-group clustering in one teaching 
 </div>
 <p>The retained generator, <code>scripts/build_schelling_sequence.py</code>, uses Python’s <code>random.Random(20260830)</code> on a bounded 18 × 14 grid, with 107 agents per group and 38 vacancies. Neighbors are the eight surrounding cells, excluding vacancies from the same-group share. An agent with no occupied neighbors is treated as satisfied and assigned a same-group share of one. Each sweep shuffles occupied cells; an unsatisfied agent moves uniformly among currently acceptable vacancies. The run stops after a sweep with no moves or after 25 sweeps. Here it stops after four sweeps and 44 moves.</p>
 <p>Reproducible teaching implementations include Schelling-style segregation (Schelling, 1969; Wilensky, 1997), evolutionary prisoner’s-dilemma dynamics (Wilensky, 2002), and one specified ethnocentrism model (Hammond &amp; Axelrod, 2006; Wilensky, 2003). Tournament success, repeated-game equilibrium, and evolutionary stability answer different questions: tit-for-tat’s success in one tournament and its vulnerability under another mutation–selection process are not contradictory findings (Axelrod, 1984; Imhof et al., 2007).</p>
+</section>
 </div>
 </div>
 </div>

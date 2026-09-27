@@ -268,6 +268,32 @@ $$
 
 These restrictions keep the updated share between zero and one. Arbitrary game payoffs, especially negative ones, cannot be inserted without a stated mapping to admissible weights. An **evolutionarily stable strategy** is resistant to invasion by any sufficiently rare alternative strategy in the model's strategy space. A stable population mixture is also different from each person deliberately randomizing.
 
+### An arms race can make everyone worse off {#evolutionary-arms-race}
+
+Imagine two inherited beetle types competing for food. Large beetles gain an advantage against small ones but need more food to sustain their bodies. The invented payoffs in @tbl-beetle-arms-race represent reproductive weights after that cost. They illustrate a possible mechanism; they are not measurements of beetles.
+
+| Focal type | Meets small | Meets large |
+| --- | ---: | ---: |
+| Small | 3 | 0 |
+| Large | 4 | 1 |
+: A hypothetical size arms race: each cell gives the focal type's reproductive weight. {#tbl-beetle-arms-race}
+
+Large does better against either opponent. Under random mixing and payoff-dependent reproduction, it therefore increases from any interior population share. Once all are large, a rare small mutant receives approximately zero against residents receiving approximately one. Large resists invasion within this two-type model. Yet an all-small population would give each beetle weight three. Selection favors a relative advantage without maximizing the population's average payoff. This is the evolutionary counterpart of the [Prisoner's Dilemma](../chapters/25-cooperation-and-social-preferences.qmd#chapter-25-start), not evidence that organisms consciously choose collective harm.
+
+### Rarity can instead preserve a mixture {#evolutionary-hawk-dove}
+
+Now suppose aggressive behavior gains against a yielding opponent but becomes costly when both escalate. In the illustrative **hawk–dove** game in @tbl-hawk-dove-weights, all payoffs are nonnegative weights, with background reproduction already included.
+
+| Focal strategy | Meets hawk | Meets dove |
+| --- | ---: | ---: |
+| Hawk | 1 | 5 |
+| Dove | 2 | 3 |
+: Hypothetical hawk–dove weights: each pure strategy can invade a population using the other. {#tbl-hawk-dove-weights}
+
+A rare hawk among doves receives five while residents receive approximately three. A rare dove among hawks receives two while residents receive approximately one. Neither pure population resists invasion. If $p$ is the hawk share, random mixing gives expected weights $5-4p$ for hawks and $3-p$ for doves. They are equal at $p=2/3$: below that share hawks gain; above it doves gain. Under the frequency update above, interior shares approach this mixture.
+
+This calculation describes a population of fixed types. A model in which every individual randomizes between actions can produce the same average encounter frequencies while making a different claim about behavior. Evolutionary stability, equilibrium, and a particular update rule must therefore be stated separately. Changing the interaction structure or allowing additional strategies can change what persists (Maynard Smith & Price, 1973).
+
 Spatial models add another dependency: who interacts with whom. Cooperative clusters, conditional helping, or aggregate segregation can arise under particular neighborhoods and update rules. The record in @tbl-model-provenance makes these dependencies explicit, so another reader can reconstruct the result and assess how far it applies:
 
 | Aspect to document | Minimum provenance |

@@ -188,6 +188,8 @@ $$
 
 and renormalize the distribution over the lower steps the player believes exist. The parameter $\tau$ controls the average number of steps. The authors report that a value around 1.5 fits behavior across many games, although fitted values differ by task and participant pool.
 
+A numerical contrast makes the difference from a simple level-$k$ chain visible. Suppose a step-2 player believes that 40% of opponents choose randomly with mean 50 and 60% are step-1 players choosing $33\frac{1}{3}$. The expected opposing mean is $0.4\times50+0.6\times33\frac{1}{3}=40$, suggesting a two-thirds target of about 26.7. A level-2 player who assumes everyone else is level 1 instead aims at about 22.2. These are illustrative beliefs, not estimated population shares. The calculation neglects the player's own contribution to the average, as is approximately appropriate in a large group. Reasoning one step further does not have a unique numerical meaning until we specify whom the player believes they face.
+
 @tbl-beauty-contest-groups reproduces selected guessing-game results from their Table II. The fitted $\tau$ values in this table were chosen to match the observed mean.
 
 | Participant pool | Sample size | Mean choice | Modal choice | Fitted $\tau$ |
@@ -216,9 +218,13 @@ Coricelli and Nagel (2009) compared play against human and computer opponents us
 
 In Shubik's dollar-auction game, the highest bidder wins the prize, but the second-highest bidder must also pay their final bid (Shubik, 1971). Early entry looks attractive. Once two people are competing, another small bid can appear cheaper than accepting a certain loss. Each expects that the next bid may make the rival quit. If both reason this way, bids can exceed the prize.
 
+For a €50 prize and €5 bid increments, suppose you stand at €45 and your rival at €50. Quitting costs you €45. Raising to €55 would leave you with a €5 loss if the rival then stops: €50 received minus €55 paid. The extra bid can thus look like a way to reduce a loss, even after the price exceeds the prize. But if the rival raises again, you are the runner-up at €55 and face the same problem at a worse starting point. The conditional appeal of one more bid does not establish that entering the auction was wise.
+
 The game makes it possible to examine **competition neglect**, when bidders enter without accounting for rivals' persistence, and **escalation of commitment**, when earlier choices make stopping difficult (Staw, 1976). A further bid can also be a forward-looking response to a belief that the rival will stop.
 
 Competitive acquisition creates a related trap. When bidders have noisy estimates of a common value, winning can be bad news: the winner may simply be the most optimistic bidder (Bazerman & Samuelson, 1983). This winner's-curse problem concerns what winning reveals about the estimate, whereas the dollar auction concerns a rule requiring the runner-up to pay. Before entering, examine the rules and likely competitors, separate private synergies from common value, and set a reservation price based on future benefits and costs.
+
+A high acquisition bid can also reflect a genuine strategic benefit. Suppose a target would add €1.2 billion to your firm's value, while its acquisition by a rival would reduce your existing firm's value by €0.5 billion. If losing certainly means that rival acquires it, winning at price $P$ yields $1.2-P$ billion relative to no acquisition, whereas losing yields $-0.5$ billion. The corresponding ceiling is €1.7 billion. This hypothetical ceiling falls if the rival might not buy or the threatened loss is exaggerated. Paying above the target's stand-alone value is therefore not sufficient evidence of a winner's curse; we must first reconstruct the relevant alternative.
 :::
 
 ::: {.callout-note .applied-module icon=false collapse=true}

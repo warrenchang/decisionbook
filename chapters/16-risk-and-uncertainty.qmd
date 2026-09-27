@@ -291,6 +291,18 @@ For fractions between zero and one, this is maximized at $f=0.20$. The favorable
 [Mental Accounting](19-mental-accounting.qmd#mental-accounting-money-is-fungible-minds-label-it) examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
 
 
+## Stocking for uncertain demand {#newsvendor-worked-example}
+
+A shop must order seasonal wetsuits before knowing demand. Consider an illustrative contract: each suit costs $110, sells for $190 during the season, and can be cleared for $90 afterward. Ordering one suit too few sacrifices an $80 margin. Ordering one too many loses $20 after clearance. These mistakes have different prices, even though each misses demand by exactly one unit.
+
+Suppose the demand forecast assigns a 50% chance to selling an additional suit. Its expected incremental profit is $0.5\times80-0.5\times20=30$. Stopping at the median demand would therefore leave a profitable opportunity unexploited. Buying the extra suit stops being attractive when its chance of selling falls to 20%: $0.2\times80-0.8\times20=0$. Under these assumptions, the shop should stock to the 80th percentile of demand. An average forecast of 3,200 suits alone cannot identify that quantity; the shape and spread of demand also matter.
+
+Now increase the procurement cost to $170 while holding the selling and clearance prices fixed. The missed margin becomes $20 and the leftover loss $80. The relevant percentile falls to 20%. The same demand distribution now calls for much less stock. The [newsvendor formula](#application-box-the-single-period-newsvendor) formalizes this comparison.
+
+Schweitzer and Cachon (2000) found that participants tended to order too few high-margin products and too many low-margin products relative to expected-profit benchmarks. This **pull toward average demand** can look sensible if the aim is to forecast accurately. Ordering, however, also requires pricing the errors. Their experimental pattern was consistent with anchoring and insufficient adjustment or a preference for reducing inventory error; ordinary risk aversion alone did not explain both directions of deviation.
+
+The practical separation is between a forecast and an action. First estimate the distribution of demand. Then use margins, clearance values, shortage consequences, and financial constraints to choose the stock. Yesterday's leftovers can inform the forecast without becoming today's order target.
+
 ## Practice Lab
 
 Build a one-page risk register for a real insurance or project decision. Report final-state consequences, probabilities or ranges, dependencies, affected parties, expected value where meaningful, one capacity-to-bear-loss constraint, and one ambiguity the point estimates hide. Conclude with a recommendation, a review date, and an observable condition that would reverse it. The output is the completed register—not a description of what one might contain.
@@ -301,8 +313,10 @@ The insurance discussion ends with a more useful comparison: what the organizati
 
 ## Optional research and application notes
 
+[]{#application-box-the-single-period-newsvendor}
+
 ::: {.callout-note .mathematical-analysis icon=false collapse=true}
-## Mathematical analysis: the single-period newsvendor {#application-box-the-single-period-newsvendor}
+## Mathematical analysis: the single-period newsvendor
 
 A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand D is uncertain. Each unit sells for $p$, costs $c$, and has salvage value $s$, with $p>c>s$. Ordering one unit too few sacrifices the margin
 
@@ -358,6 +372,8 @@ A risk-preference measure seems useful because it could help predict choices bey
 : Common risk-elicitation methods and what travels with them {#tbl-risk-elicitation}
 
 Holt and Laury's (2002) multiple-price-list design, Eckel and Grossman's (2008) ordered gambles, and the bomb task of Crosetto and Filippin (2013) are all useful. They are not interchangeable rulers. Reviews and direct comparisons find that classifications can vary substantially across elicitation methods (Charness et al., 2013; Pedroni et al., 2017).
+
+For a concrete price-list comparison, take Holt and Laury's low-stakes lotteries. Option A pays either $2.00 or $1.60; Option B pays either $3.85 or $0.10. Both have the same probability of their higher payoff, and that probability rises down the list. At 40%, A's expected payoff is $1.76 and B's is $1.60. At 50%, A's is $1.80 and B's is $1.975. A person maximizing expected money therefore switches between those rows. Switching later is consistent with risk aversion under the model. It is the change across controlled choices, rather than one refusal to gamble, that supplies the evidence.
 
 []{#identification-requires-more-than-a-choice}
 

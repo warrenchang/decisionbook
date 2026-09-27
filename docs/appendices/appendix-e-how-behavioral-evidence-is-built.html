@@ -929,6 +929,13 @@ Table&nbsp;D.3: Approaches to evidence differ in how the comparison is generated
 <p>Suppose the clinic wants to change both the reminder’s content and its timing. Comparing a plain message sent a week ahead with a personalized message sent the day before would test a package; it could not tell us which change mattered.</p>
 <p>A <strong>2 × 2 factorial design</strong> crosses two content versions with two timing options, creating four conditions. Random assignment to all four combinations permits a comparison of content at each timing and timing under each content version. In a balanced design, the <strong>main effect</strong> of content averages its effect across the two timings. An <strong>interaction</strong> asks whether that effect differs between timings: personalization might help when a message arrives early but add little the day before (Collins et al., 2009).</p>
 <p>Those are different questions. State which one matters before allocating the sample, and plan enough precision for the interaction if it is central. Merely including two factors does not make a study informative about how they work together.</p>
+<section id="eliciting-choices-in-the-laboratory" class="level4">
+<h4 data-anchor-id="eliciting-choices-in-the-laboratory">The procedure helps define the behavior</h4>
+<p>Suppose a responder in an ultimatum game must accept or reject a proposed division of €10. With the <strong>direct-response method</strong>, the responder sees the actual offer and then decides. With the <strong>strategy method</strong>, the responder specifies a response to every possible offer in advance; the response corresponding to the offer actually made determines payment. Both procedures can have real consequences. The second also records decisions at offers that might rarely occur, such as receiving only €1.</p>
+<p>That extra information comes from a different experience: planning how to respond to €1 is not identical to encountering that offer from another person. Brandts and Charness’s (2011) survey of 29 experimental comparisons found agreement in some studies and differences or mixed findings in others. A contingent response is therefore evidence about an elicited plan, with a separate question about how well it predicts behavior at the moment of receipt. This matters when interpreting a <a href="../chapters/25-cooperation-and-social-preferences.html#chapter-25-start">conditional-cooperation schedule</a>: its additional observations do not all represent encounters that actually happened.</p>
+<p>The matching procedure also changes the question. Repeated interaction with the same partner permits relationship-specific learning and future consequences. Random rematching changes those incentives but can allow the same pair to meet again; a <em>perfect-stranger</em> protocol prevents repeat pairings. Likewise, anonymity between participants is different from keeping researchers unaware of a person’s decision or treatment. State who can identify whom, which histories are visible, and who can respond later before attributing a transfer to generosity alone.</p>
+<p>Payment needs the same precision. <strong>Incentive compatibility</strong> is a property of a particular mechanism under specified assumptions: the desired truthful report or choice must serve the participant’s interests. Paying participants does not automatically establish it. Nor does a larger reward supply missing knowledge. Camerer and Hogarth’s (1999) review found that incentive effects depended on the task; extra payment sometimes improved performance, often left mean performance unchanged, and could reduce variability. Specify how a decision affects payment, check understanding, and distinguish an incentive to try from the ability to perform the task.</p>
+</section>
 </section>
 <section id="random-sampling-and-random-assignment-solve-different-problems" class="level3">
 <h3 data-anchor-id="random-sampling-and-random-assignment-solve-different-problems">6. Random sampling and random assignment solve different problems</h3>
@@ -1008,6 +1015,7 @@ Figure&nbsp;D.3: Three distinct problems in a randomized evaluation: treatment r
 <h4 data-anchor-id="attrition-and-missing-outcomes">Attrition and missing outcomes</h4>
 <p>Attrition occurs when outcomes cannot be collected for people originally included in the study. It is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.</p>
 <p>Suppose the clinic measures patients’ understanding only when they attend. If the new reminder brings previously absent patients into the clinic, the observed groups may now contain different kinds of patients. A difference in understanding among attenders would mix the reminder’s influence with this change in who was measured. Follow-up should seek outcomes for all assigned patients, including nonattenders and people who never received the message.</p>
+<p>A hypothetical <strong>school-meal program</strong> makes the direction of the error vivid. Suppose meals attract children who previously missed school and who weigh less, on average, than regular attenders. Weighing only pupils present could then produce a lower treated-school average even if the program improves children’s growth. The composition of the measured group has changed. Follow a defined baseline cohort whether or not its members attend, and measure attendance separately from weight. This is a sampling argument, not an empirical claim that school meals reduce weight.</p>
 <p>Report rates and reasons by arm, timing, and baseline predictors of missingness. These checks can reveal selective loss; they cannot prove that the missing outcomes resemble the observed ones. Keep missing attendance records distinct from confirmed nonattendance. Weighting or imputation requires assumptions about missingness, while bounds and sensitivity analyses show what conclusions survive less favorable possibilities. Do not silently replace the randomized sample with complete cases and retain the original causal language (Duflo et al., 2007).</p>
 </section>
 <section id="noncompliance-assignment-is-not-receipt" class="level4">
@@ -1051,6 +1059,71 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 </div>
 </div>
 </div>
+<p><span id="school-meals-noncompliance-calculation"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Worked example: why comparing participants can mislead
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The school-meal exercise in <a href="#tbl-school-meals-noncompliance" class="quarto-xref">Table&nbsp;<span>D.4</span></a> uses invented changes in reading scores to separate assignment from participation. Ten pupils belong to a school assigned meals and ten to a comparison school; some pupils in each school receive meals. Every pupil’s score change is observed.</p>
+<div id="tbl-school-meals-noncompliance" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-school-meals-noncompliance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.4: Hypothetical school-meal data: retain the assigned groups when calculating the effect of assignment.
+</figcaption>
+<div aria-describedby="tbl-school-meals-noncompliance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>School</th>
+<th>Meals?</th>
+<th style="text-align: right;">Pupils</th>
+<th style="text-align: right;">Mean change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Offered meals</td>
+<td>Yes</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.4</td>
+</tr>
+<tr class="even">
+<td>Offered meals</td>
+<td>No</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr class="odd">
+<td>Comparison</td>
+<td>Yes</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3.0</td>
+</tr>
+<tr class="even">
+<td>Comparison</td>
+<td>No</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.625</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Comparing meal recipients in the offered school with nonrecipients in the comparison school gives <span class="math inline">\(4.4-0.625=3.775\)</span>. This discards pupils according to a choice made after assignment. The resulting contrast can reflect who participates as well as what meals do.</p>
+<p>Keeping all pupils in their assigned groups gives means of <span class="math inline">\((5\times4.4+5\times1.2)/10=2.8\)</span> and <span class="math inline">\((2\times3+8\times0.625)/10=1.1\)</span>. The intention-to-treat difference is therefore <strong>1.7 score points</strong>. Receipt differs by <span class="math inline">\(0.5-0.2=0.3\)</span>, so the Wald ratio is <span class="math inline">\(1.7/0.3\approx5.67\)</span> score points. Only the additional assumptions stated above give that ratio a complier-effect interpretation.</p>
+<p>These are arithmetic illustrations. Two schools supply only two assignment units, not twenty independently randomized pupils, so this tiny exercise provides no adequate basis for a precise empirical effect estimate. Its purpose is to show why redefining groups by participation changes the comparison.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="spillovers-interference-and-displacement" class="level4">
 <h4 data-anchor-id="spillovers-interference-and-displacement">Spillovers, interference, and displacement</h4>
@@ -1067,7 +1140,7 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 <div id="tbl-research-reactivity" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-research-reactivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.4: Participation can alter the comparison through different pathways
+Table&nbsp;D.5: Participation can alter the comparison through different pathways
 </figcaption>
 <div aria-describedby="tbl-research-reactivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1119,7 +1192,9 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 </div>
 </figure>
 </div>
-<p>Use <a href="#tbl-research-reactivity" class="quarto-xref">Table&nbsp;<span>D.4</span></a> to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.</p>
+<p>Use <a href="#tbl-research-reactivity" class="quarto-xref">Table&nbsp;<span>D.5</span></a> to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.</p>
+<p><span id="baby-bonus-anticipation"></span></p>
+<p>Anticipation can alter an outcome before the policy’s official start. On 11 May 2004, Australia announced an A$3,000 payment for babies born on or after 1 July. Gans and Leigh (2009) found a dip in births before eligibility and a surge afterward; most of the estimated shift involved the timing of inductions and cesarean sections. The seven-week interval concerned pregnancies already underway, not a new generation of conceptions. This historical policy comparison illustrates why the announcement date belongs in the design: late June was already exposed to the incentive to wait. Treating it as an unaffected baseline would miss part of the response. The study does not establish the motives or medical circumstances of every family.</p>
 <p>Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Where possible, keep outcome assessors unaware of assignment and define scoring rules before outcomes are examined, so that expectations about the treatment do not influence measurement. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.</p>
 </section>
 </section>
@@ -1140,7 +1215,7 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 <p>Report all planned outcomes, raw treatment-control summaries where meaningful, adjusted estimates, uncertainty, and the multiplicity approach. A null result is not evidence of exact zero; a significant result is not evidence of practical importance.</p>
 <p><span id="discovering-who-benefits"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1149,7 +1224,7 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A randomized student-outreach study may show a modest average effect while leaving open whether some students benefit much more than others. Searching many possible groups can suggest useful answers, but the group with the largest estimated benefit may partly owe that distinction to chance. Using the same observations to discover the group and report its effect can exaggerate the result.</p>
 <p>Athey and Imbens (2016) develop an <strong>honest estimation</strong> approach that separates those jobs. One sample is used to construct a tree that divides participants into groups defined by observed characteristics. A separate sample is then used to estimate the treatment effect within each group. For the outreach example, the analyst would fix the group definitions before examining treatment-control differences in the estimation sample. This separation helps prevent a favorable fluctuation used to select a group from also determining its reported benefit.</p>
@@ -1207,11 +1282,11 @@ Table&nbsp;D.4: Participation can alter the comparison through different pathway
 </section>
 <section id="match-the-final-sentence-to-the-design" class="level3">
 <h3 data-anchor-id="match-the-final-sentence-to-the-design">13. Match the final sentence to the design</h3>
-<p><a href="#tbl-claim-design-matching" class="quarto-xref">Table&nbsp;<span>D.5</span></a> shows how wording can preserve or exceed what a design establishes. In particular, an effect of assignment should not become a claim about everyone who receives treatment, and a modeled pattern should not become proof of a human mechanism.</p>
+<p><a href="#tbl-claim-design-matching" class="quarto-xref">Table&nbsp;<span>D.6</span></a> shows how wording can preserve or exceed what a design establishes. In particular, an effect of assignment should not become a claim about everyone who receives treatment, and a modeled pattern should not become proof of a human mechanism.</p>
 <div id="tbl-claim-design-matching" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.5: Examples of matching claims to the evidence and assumptions that support them
+Table&nbsp;D.6: Examples of matching claims to the evidence and assumptions that support them
 </figcaption>
 <div aria-describedby="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1273,11 +1348,11 @@ Table&nbsp;D.5: Examples of matching claims to the evidence and assumptions that
 </section>
 <section id="the-one-page-evidence-design-card" class="level2">
 <h2 data-anchor-id="the-one-page-evidence-design-card">The one-page evidence design card</h2>
-<p>Complete <a href="#tbl-evidence-design-card" class="quarto-xref">Table&nbsp;<span>D.6</span></a> before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.</p>
+<p>Complete <a href="#tbl-evidence-design-card" class="quarto-xref">Table&nbsp;<span>D.7</span></a> before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.</p>
 <div id="tbl-evidence-design-card" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.6: A compact evidence design card
+Table&nbsp;D.7: A compact evidence design card
 </figcaption>
 <div aria-describedby="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1353,7 +1428,7 @@ Table&nbsp;D.6: A compact evidence design card
 <div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.7: Planned design for the simulated reminder study
+Table&nbsp;D.8: Planned design for the simulated reminder study
 </figcaption>
 <div aria-describedby="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1405,10 +1480,10 @@ Table&nbsp;D.7: Planned design for the simulated reminder study
 </div>
 </figure>
 </div>
-<p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.7</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
+<p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.8</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
 <div id="math-reminder-simulation">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1417,7 +1492,7 @@ Table&nbsp;D.7: Planned design for the simulated reminder study
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <pre class="python"><code>import math
 import random
@@ -1484,6 +1559,15 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
 </section>
 <section id="references-cited-in-this-appendix" class="level2">
 <h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
+<div class="reference">
+<p>Brandts, J., &amp; Charness, G. (2011). The strategy versus the direct-response method: A first survey of experimental comparisons. <em>Experimental Economics, 14</em>, 375–398. https://doi.org/10.1007/s10683-011-9272-x</p>
+</div>
+<div class="reference">
+<p>Camerer, C. F., &amp; Hogarth, R. M. (1999). The effects of financial incentives in experiments: A review and capital-labor-production framework. <em>Journal of Risk and Uncertainty, 19</em>(1–3), 7–42. https://doi.org/10.1023/A:1007850605129</p>
+</div>
+<div class="reference">
+<p>Gans, J. S., &amp; Leigh, A. (2009). Born on the first of July: An (un)natural experiment in birth timing. <em>Journal of Public Economics, 93</em>(1–2), 246–263. https://doi.org/10.1016/j.jpubeco.2008.07.004</p>
+</div>
 <div class="reference">
 <p>Angrist, J. D., Imbens, G. W., &amp; Rubin, D. B. (1996). Identification of causal effects using instrumental variables. <em>Journal of the American Statistical Association, 91</em>(434), 444–455.</p>
 </div>

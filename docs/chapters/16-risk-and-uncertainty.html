@@ -585,6 +585,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#extension-one-project-or-a-portfolio" id="toc-extension-one-project-or-a-portfolio" class="nav-link" data-scroll-target="#extension-one-project-or-a-portfolio">Diversification and shared risks</a></li>
   </ul></li>
+  <li><a href="#newsvendor-worked-example" id="toc-newsvendor-worked-example" class="nav-link" data-scroll-target="#newsvendor-worked-example">Stocking for uncertain demand</a></li>
   <li><a href="#practice-lab" id="toc-practice-lab" class="nav-link" data-scroll-target="#practice-lab">Practice Lab</a></li>
   <li><a href="#take-it-forward" id="toc-take-it-forward" class="nav-link" data-scroll-target="#take-it-forward">Take it forward</a></li>
   <li><a href="#optional-research-and-application-notes" id="toc-optional-research-and-application-notes" class="nav-link" data-scroll-target="#optional-research-and-application-notes">Optional research and application notes</a></li>
@@ -919,6 +920,14 @@ g(f)=0.6\ln(1+f)+0.4\ln(1-f).
 <p><a href="../chapters/19-mental-accounting.html#mental-accounting-money-is-fungible-minds-label-it">Mental Accounting</a> examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.</p>
 </section>
 </section>
+<section id="newsvendor-worked-example" class="level2">
+<h2 data-anchor-id="newsvendor-worked-example">Stocking for uncertain demand</h2>
+<p>A shop must order seasonal wetsuits before knowing demand. Consider an illustrative contract: each suit costs $110, sells for $190 during the season, and can be cleared for $90 afterward. Ordering one suit too few sacrifices an $80 margin. Ordering one too many loses $20 after clearance. These mistakes have different prices, even though each misses demand by exactly one unit.</p>
+<p>Suppose the demand forecast assigns a 50% chance to selling an additional suit. Its expected incremental profit is <span class="math inline">\(0.5\times80-0.5\times20=30\)</span>. Stopping at the median demand would therefore leave a profitable opportunity unexploited. Buying the extra suit stops being attractive when its chance of selling falls to 20%: <span class="math inline">\(0.2\times80-0.8\times20=0\)</span>. Under these assumptions, the shop should stock to the 80th percentile of demand. An average forecast of 3,200 suits alone cannot identify that quantity; the shape and spread of demand also matter.</p>
+<p>Now increase the procurement cost to $170 while holding the selling and clearance prices fixed. The missed margin becomes $20 and the leftover loss $80. The relevant percentile falls to 20%. The same demand distribution now calls for much less stock. The <a href="#application-box-the-single-period-newsvendor">newsvendor formula</a> formalizes this comparison.</p>
+<p>Schweitzer and Cachon (2000) found that participants tended to order too few high-margin products and too many low-margin products relative to expected-profit benchmarks. This <strong>pull toward average demand</strong> can look sensible if the aim is to forecast accurately. Ordering, however, also requires pricing the errors. Their experimental pattern was consistent with anchoring and insufficient adjustment or a preference for reducing inventory error; ordinary risk aversion alone did not explain both directions of deviation.</p>
+<p>The practical separation is between a forecast and an action. First estimate the distribution of demand. Then use margins, clearance values, shortage consequences, and financial constraints to choose the stock. Yesterday’s leftovers can inform the forecast without becoming today’s order target.</p>
+</section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
 <p>Build a one-page risk register for a real insurance or project decision. Report final-state consequences, probabilities or ranges, dependencies, affected parties, expected value where meaningful, one capacity-to-bear-loss constraint, and one ambiguity the point estimates hide. Conclude with a recommendation, a review date, and an observable condition that would reverse it. The output is the completed register—not a description of what one might contain.</p>
@@ -929,6 +938,7 @@ g(f)=0.6\ln(1+f)+0.4\ln(1-f).
 </section>
 <section id="optional-research-and-application-notes" class="level2">
 <h2 data-anchor-id="optional-research-and-application-notes">Optional research and application notes</h2>
+<p><span id="application-box-the-single-period-newsvendor"></span></p>
 <div class="mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1052,6 +1062,7 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 </figure>
 </div>
 <p>Holt and Laury’s (2002) multiple-price-list design, Eckel and Grossman’s (2008) ordered gambles, and the bomb task of Crosetto and Filippin (2013) are all useful. They are not interchangeable rulers. Reviews and direct comparisons find that classifications can vary substantially across elicitation methods (Charness et al., 2013; Pedroni et al., 2017).</p>
+<p>For a concrete price-list comparison, take Holt and Laury’s low-stakes lotteries. Option A pays either $2.00 or $1.60; Option B pays either $3.85 or $0.10. Both have the same probability of their higher payoff, and that probability rises down the list. At 40%, A’s expected payoff is $1.76 and B’s is $1.60. At 50%, A’s is $1.80 and B’s is $1.975. A person maximizing expected money therefore switches between those rows. Switching later is consistent with risk aversion under the model. It is the change across controlled choices, rather than one refusal to gamble, that supplies the evidence.</p>
 <p><span id="identification-requires-more-than-a-choice"></span></p>
 <p>A safe choice might reflect concave utility, distrust of the probabilities, a liquidity constraint, or misunderstanding of the task. Estimating a “risk-aversion coefficient” holds some of these possibilities fixed. Report the task, stakes, probability format, model, error structure, and population so readers can see what the parameter identifies.</p>
 </div>
