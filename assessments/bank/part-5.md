@@ -17,28 +17,28 @@ A message implies that refusing a proposal makes someone a bad colleague. The re
 - Information dilution | Irrelevant information is not weakening a diagnostic judgment here.
 
 ## C30.03 | elaboration | medium | apply | 30
-An audience is motivated, knowledgeable, and has time to evaluate a proposal. Which message feature most directly supports careful evaluation of its merits?
-+ Relevant, well-supported arguments about the proposal | These provide the substance for scrutiny.
-- Endorsement by a prestigious speaker outside the field | Prestige without relevant expertise supplies a weaker peripheral cue.
-- Repetition of the central claim in several formats | Repetition adds exposure rather than supporting evidence.
-- A statement that many unexamined proposals use this approach | Prevalence does not establish this proposal's merits.
-- A polished presentation with fewer opportunities for questions | Fluency does not replace inspection of the argument.
+According to the elaboration likelihood model, how should greater motivation and ability to evaluate a proposal change the influence of argument quality relative to speaker prestige alone?
++ Argument quality should carry more weight relative to prestige. | Greater elaboration makes the merits of the arguments more influential relative to a peripheral prestige cue.
+- Speaker prestige should carry more weight relative to argument quality. | This reverses the predicted shift toward scrutiny of the arguments.
+- Argument quality should matter primarily when speaker prestige is high. | Relevant arguments can influence careful evaluation without a prestigious source.
+- The relative influence should depend mainly on message repetition. | Repetition does not replace motivation and ability in the model's account of elaboration.
+- The relative influence should remain stable as evaluation increases. | The model predicts a change in how the message is processed.
 
 ## C30.04 | self-persuasion | medium | apply | 30
-Before making any public commitment, participants generate their own reasons for adopting a study plan. Which process is being invited?
-+ Self-persuasion through generating one's own arguments | The reasons are produced by the people considering the change.
-- Acceptance of an expert's supplied reasoning | The reasons are self-generated rather than merely received.
-- Inference that peers approve of the plan | No peer-approval information is supplied.
-- Defense of a prior public commitment | The stem places the task before such a commitment.
-- Resistance to a threat to freedom | No threatened freedom is specified.
+Students preparing for exams are asked to advise younger pupils on why a regular study plan is worthwhile. Which process could strengthen the advisers' own commitment to studying?
++ Self-persuasion | Producing reasons for someone else can lead the advisers to develop arguments that also persuade themselves.
+- Reactance | Reactance is resistance to a perceived threat to freedom, which is not the task described.
+- Informational conformity | This involves relying on other people's judgments as evidence, rather than generating arguments oneself.
+- Source credibility transfer | This involves an audience responding to a credible source, not the advisers generating their own reasons.
+- Dissonance from a failed prediction | The task does not describe an earlier prediction contradicted by events.
 
 ## C30.05 | persuasive-test | hard | analyze | 30
-A proposal increases employees' stated support but may also create surveillance concerns. Which pilot best tests whether it earns informed support for actual use?
-+ Explain costs and safeguards; assess understanding and voluntary use. | This examines informed attitudes, practical use, and the relevant concern together.
-- Measure support immediately after a motivational speech alone. | This omits actual use and understanding of the surveillance issue.
-- Require use, then count compliance as voluntary endorsement. | Mandatory compliance cannot establish voluntary support.
-- Count registrations while omitting the monitoring provisions. | Uptake without material information is not informed acceptance.
-- Survey only enthusiastic volunteers after removing their costs. | Selection and changed conditions limit conclusions about the proposed workflow.
+A team is piloting an optional workplace app that records employees' activity. After everyone receives the same explanation of its features, costs, and safeguards, which result most strongly supports introducing it as an informed, voluntary choice?
++ Employees accurately explain the monitoring terms and choose to continue after trying the app. | Understanding the material terms and choosing continued use together provide evidence of informed acceptance under the pilot conditions.
+- Employees rate the presentation highly and correctly recall the app's main advertised benefit. | A favorable presentation rating and selective recall do not establish understanding of monitoring or acceptance of actual use.
+- Employees understand the monitoring terms and predict that colleagues will adopt the app. | Understanding is useful, but predictions about others do not demonstrate employees' own voluntary use.
+- Employees register for the trial and report that management's explanation seems credible. | Registration and perceived credibility are weaker evidence than understanding the terms and choosing continued use.
+- Employees use the app frequently during the trial and give its interface high usability ratings. | Use and usability alone do not establish that employees understand the material monitoring terms.
 
 ## C31.01 | narrative-structure | easy | understand | 31
 Which example most clearly has narrative structure rather than being a list of facts?
@@ -65,28 +65,28 @@ A reader becomes absorbed in the unfolding story world, mentally following event
 - Evaluation of the author's professional credibility | This concerns the source rather than entry into the story world.
 
 ## C31.04 | story-and-comparison | medium | apply | 31
-A report combines a participant's account with the trial's average effect, variation, and comparison group. What does this combination add?
-+ The case conveys experience while the trial situates its evidential significance. | Narrative detail and comparative evidence perform complementary tasks.
-- The vivid case replaces the need for a comparison group. | The report retains the comparison because the case cannot identify the effect alone.
-- The average effect proves that every participant had that experience. | A mean does not eliminate variation.
-- The account becomes statistically representative because it is detailed. | Detail is unrelated to a representative sampling guarantee.
-- The trial proves that the participant's interpretation is the sole mechanism. | An outcome comparison does not isolate every proposed mechanism.
+A trial finds a positive average effect of a mentoring program. One participant says that feeling encouraged explains her improvement. Which follow-up would most directly test encouragement as a causal mechanism?
++ Randomly vary the encouragement component while holding the other program components constant. | Separating this component experimentally tests its contribution rather than inferring a mechanism from the overall effect.
+- Increase the trial's sample size to estimate the overall program effect more precisely. | Greater precision about the total effect does not isolate which component produced it.
+- Interview additional participants who experienced unusually large improvements in the program. | Accounts from selected successes can suggest mechanisms but do not identify their causal contribution.
+- Compare encouragement ratings and improvement among participants who completed the program. | This association can reflect prior motivation, progress, or other differences rather than an effect of encouragement.
+- Ask independent readers how convincingly the participant's account explains her improvement. | The persuasiveness of an explanation is not a test of its causal validity.
 
 ## C31.05 | selection-of-stories | hard | analyze | 31
-A program report selects the most improved participant from a large cohort and presents the case as a normal result. Which revision best addresses the selection problem while retaining the story?
-+ Identify the selection rule and show the case within the full outcome distribution. | Readers can then distinguish an exceptional illustration from typical effects.
-- Add more biographical detail but retain the claim of typicality. | Detail does not correct outcome-based selection.
-- Replace the participant's name while leaving the sampling claim unchanged. | Anonymity protects identity but does not establish typicality.
-- Average several retellings of the same participant's experience. | These are not additional independent cases.
-- Report the participant's starting score without cohort outcomes. | A baseline alone does not locate the case in the resulting distribution.
+A program report features the participant with the largest improvement. The editor wants to keep the story while allowing readers to judge what other participants can expect. Which revision best achieves this?
++ Explain how the case was selected and locate its improvement within the cohort's outcome distribution. | The selection rule and distribution show how an exceptional case relates to the range of observed results.
+- Add three more success stories and describe the circumstances shared by those participants. | More selected successes still do not show how commonly those outcomes occur.
+- Report the featured participant's starting score and give a detailed account of the support received. | These details help explain the case but do not locate it among the cohort's outcomes.
+- Ask experienced program staff to explain why they regard the featured participant as a useful example. | Staff judgment about an illustration does not supply the missing outcome distribution.
+- Describe recruitment and compare the featured participant's initial characteristics with the cohort's averages. | Similar starting characteristics do not make an outcome selected for exceptional improvement typical.
 
 ## C32.01 | clarity-and-evidence | easy | understand | 32
-What does simplifying a message's wording directly improve when successful?
-+ The audience's ability to understand what is being claimed | Clarity makes content accessible; evidence must still support it.
-- The truth of every claim in the message | Readability does not establish truth.
-- The representativeness of the underlying sample | Wording does not change sample construction.
-- The random assignment in the original study | Editing does not alter study design.
-- The objective size of the intervention effect | Presentation does not change the measured effect.
+Two versions of a claim cite the same evidence. One uses familiar wording; the other uses unfamiliar jargon. Which reader response illustrates an effect of processing fluency?
++ Giving the familiar version more credibility because it feels easier to read | Ease of processing can influence perceived credibility even when the evidence is unchanged.
+- Giving a version more credibility because a trusted specialist endorses it | This relies on source credibility rather than ease of processing.
+- Giving a version more credibility because most colleagues agree with it | This relies on social influence rather than the ease of reading the claim.
+- Giving a version more credibility because it supports an existing opinion | This reflects belief-consistent evaluation rather than processing fluency.
+- Giving a version more credibility because a recent personal experience supports it | This relies on accessible supporting experience rather than how easily the wording is processed.
 
 ## C32.02 | rejectable-proposal | easy | apply | 32
 A clearly explained proposal is called voluntary, but declining it reduces promotion prospects. Which aspect of message design is directly contradicted?
@@ -97,12 +97,12 @@ A clearly explained proposal is called voluntary, but declining it reduces promo
 - Visibility of the message's author | The problem concerns consequences of refusal, not source identification.
 
 ## C32.03 | claim-evidence-match | medium | apply | 32
-An observational survey finds that users of an app exercise more. Which message best matches that design?
-+ App use was associated with more exercise in this survey. | The survey establishes association, not an isolated causal effect.
-- The app caused the exercise difference measured in this survey. | Self-selection and other explanations have not been excluded.
-- Assigning the app would produce the same gain for every new user. | Neither causal transport nor uniform effects is established.
-- The app's design was the only factor distinguishing the groups. | The observational design does not supply that assurance.
-- Exercise could not have influenced who chose the app. | Reverse selection remains possible.
+A survey finds that users of a fitness app exercise more than nonusers. Which additional finding would most strengthen a causal claim about offering the app?
++ Random assignment to app access increases exercise relative to a comparison group. | Random assignment addresses selection into access and tests the effect of offering the app.
+- The exercise difference is larger among people who use the app more frequently. | More motivated exercisers may use the app more often, so a dose association does not remove selection.
+- The same exercise difference appears in a larger survey conducted the following year. | Replication and precision do not by themselves remove confounding.
+- Users rate the app as helpful when explaining why they exercise regularly. | Users' interpretations may suggest a mechanism but do not isolate a causal effect.
+- Users and nonusers give similar ratings to the importance of healthy living. | Similarity on one reported characteristic does not establish comparability on other causes of exercise.
 
 ## C32.04 | meaningful-uncertainty | medium | apply | 32
 A forecast is sensitive to future energy prices. Which communication makes that uncertainty useful for a decision?
@@ -137,12 +137,12 @@ Which action exemplifies perspective-getting rather than merely imagining anothe
 - Count how many people share your interpretation. | Agreement among others does not reveal this person's meaning.
 
 ## C33.03 | inferred-intent | medium | apply | 33
-A short email says, “We need to talk.” The receiver interprets it as criticism. Which response best checks the inference?
-+ Ask what topic and outcome the sender has in mind. | This obtains missing context rather than treating inferred intent as observed fact.
-- Reply that the sender is obviously angry. | This presents an interpretation as established intent.
-- Avoid the meeting to prevent all disagreement. | Avoidance does not clarify the message.
-- Ask unrelated colleagues to vote on the sender's mood. | Their guesses do not recover the missing context.
-- Rewrite the email in memory to make it more explicit. | Reconstruction is not evidence about the original intention.
+A colleague emails, “We need to talk.” Before replying, you notice that you are reading it as criticism. Which question would best clarify what the colleague means?
++ “What topic and outcome do you have in mind?” | This requests missing context without assuming that criticism or anger motivated the message.
+- “Which part of my work has disappointed you?” | This builds the unverified interpretation of criticism into the question.
+- “Would it help if I explained why I made that decision?” | This starts defending a decision before establishing what the conversation concerns.
+- “Would you prefer to meet today or tomorrow?” | Scheduling the conversation does not clarify its intended subject or purpose.
+- “Has someone complained to you about my work?” | This assumes a particular source of criticism that the email does not establish.
 
 ## C33.04 | credibility-and-verification | medium | analyze | 33
 A speaker avoids eye contact while claiming a parcel arrived last Tuesday. What is the most useful way to assess that claim?
@@ -153,12 +153,12 @@ A speaker avoids eye contact while claiming a parcel arrived last Tuesday. What 
 - Ask the speaker to use a warmer tone. | Tone can change impressions without establishing the factual claim.
 
 ## C33.05 | closed-loop-message | hard | analyze | 33
-A deadline changed in a meeting attended by only half the project team. Which follow-up best prevents a shared-understanding failure?
-+ Notify everyone of the changes and verify each owner's understanding. | The message supplies the change and verifies that responsible people understand it.
-- File the meeting notes where attendees usually store them. | Absent members may not know to consult them.
-- Ask attendees to assume their colleagues heard about the change. | This substitutes an assumption for grounding.
-- Send “as discussed” without restating the revised date. | The phrase relies on context some recipients lack.
-- Remind late contributors of the old general policy on deadlines. | That does not communicate or verify the new deadline.
+A deadline changes during a project meeting. Which follow-up gives the strongest evidence that the people responsible for delivery share an understanding of the revised plan?
++ Send the revised date and ask each owner to confirm the resulting task commitment. | This communicates the change and checks what each responsible person understands it to require.
+- Circulate a detailed meeting record and retain confirmation that the email was delivered. | Delivery establishes that a message arrived, not that its implications were understood.
+- Update the shared calendar and notify everyone that the project schedule has changed. | A common reference helps, but the notification does not verify each owner's interpretation.
+- Post the revised date prominently on the project dashboard and track page visits. | Opening a page is weaker evidence of shared understanding than confirming the resulting commitment.
+- Ask the meeting chair to summarize the change again at the next team meeting. | Repetition provides another opportunity to hear the change but does not close the understanding loop.
 
 ## C34.01 | support-mismatch | easy | apply | 34
 A friend describes feeling humiliated at work. You immediately offer efficiency tips, and the friend says you have missed the point. What should you do first?
@@ -185,36 +185,36 @@ During a team meeting, a manager unfairly blamed a colleague for missing a date 
 - Move on quickly so the team does not revisit the mistake. | Avoidance leaves the harm and defective process unresolved.
 
 ## C34.04 | network-functions | medium | understand | 34
-Why can ties outside a close-knit circle be useful when searching for opportunities?
-+ They can connect a person to less redundant information. | Different network regions can provide information absent from close contacts.
-- They necessarily provide more emotional support than close friends. | Informational reach does not guarantee stronger support.
-- They eliminate the need to verify advice. | New information still needs evaluation.
-- They make every opportunity equally accessible. | Access remains shaped by resources and institutions.
-- They ensure that all contacts know one another. | Bridging ties can connect otherwise separate groups.
+Why can acquaintances outside a close-knit circle be useful when searching for job opportunities?
++ They connect the searcher to information that close contacts may not share. | Bridging different network regions can bring less redundant information.
+- They provide the repeated emotional reassurance associated with intimate relationships. | This is more characteristic of close supportive ties than the informational advantage of bridging ties.
+- They make it easier for mutual friends to coordinate help within one group. | Coordinated support within a dense group is different from reaching information outside it.
+- They reinforce the common expectations maintained by a tightly connected community. | Shared local norms describe cohesion rather than access to distinct information.
+- They support the detailed personal disclosure that develops through frequent contact. | Intimacy can be valuable, but it is not the informational mechanism highlighted here.
 
-## C34.05 | forgiveness-trust | hard | analyze | 34
-A colleague says she has let go of resentment after an apology but still requires written deadline confirmation while reliability is rebuilt. Which interpretation best fits?
-+ Forgiveness has progressed; restored reliance remains conditional. | Reduced resentment does not establish confidence in future conduct.
-- Forgiveness and full operational trust have both been restored. | The continued safeguard indicates that reliance remains conditional.
-- The safeguard concerns punishment rather than future reliability. | Its stated purpose is checking future deadlines.
-- Procedural repair makes acknowledgment of the prior harm unnecessary. | A safeguard does not replace acknowledgment.
-- Reconciliation is impossible whenever any safeguard remains. | Rebuilding a relationship can include protective procedures.
+## C34.05 | forgiveness-trust | medium | apply | 34
+After a colleague apologizes for missing an important deadline, you no longer feel resentful. You are deciding whether to rely on that colleague for another time-sensitive task. Which evidence bears most directly on that decision?
++ A record of meeting comparable commitments since the incident | Future reliance should be informed by evidence of reliability; reduced resentment does not supply that evidence by itself.
+- How fully you can now discuss the incident without feeling angry | Emotional recovery concerns forgiveness rather than the colleague's demonstrated reliability.
+- How warmly the colleague delivered the apology at the time | A sincere apology can matter for repair, but its warmth is weaker evidence of reliable performance.
+- Whether mutual friends consider it time to put the incident behind you | Social pressure to move on does not establish how the colleague will handle a new commitment.
+- How pleasant your informal conversations with the colleague have become | Restored rapport is different from dependable performance on comparable tasks.
 
 ## P05.01 | persuasion-versus-grounding | easy | apply | 30,33
-A reader correctly explains a proposal but rejects it because its costs conflict with her priorities. Which conclusion follows?
-+ Understanding the message does not require agreeing with it. | Grounding and persuasion are different accomplishments.
-- Rejection proves the proposal was not understood. | The reader has demonstrated understanding.
-- Agreement can be established by repeating the same words. | Repetition need not change the underlying trade-off.
-- The reader's priorities must be factually mistaken. | Values are not shown to be erroneous by disagreement alone.
-- A clearer font would necessarily resolve the dispute. | The obstacle is a substantive cost–priority conflict.
+A client accurately summarizes a proposal but declines it. What should the adviser investigate before preparing another explanation?
++ Which consequences conflict with the client's priorities | Accurate understanding leaves open substantive disagreement about the proposal's value to the client.
+- Which technical terms need a simpler definition | This targets a comprehension problem despite the accurate summary.
+- Which section should be repeated more prominently | Repetition need not resolve disagreement about consequences.
+- Which visual layout would make the summary easier to scan | Improved presentation does not directly investigate why an understood proposal was rejected.
+- Which communication channel would make the same explanation more familiar | Familiarity with a channel does not identify the client's substantive objection.
 
 ## P05.02 | illustration-and-evidence | easy | apply | 31,32
-A presentation opens with one moving patient story and then claims a treatment usually works. What evidence is missing for the frequency claim?
-+ Representative outcome data for comparable patients | One case does not establish how commonly recovery occurs.
-- A more dramatic ending to the same story | Drama does not identify an outcome rate.
-- A shorter name for the treatment | Naming does not establish effectiveness.
-- A photograph of the presenter | Appearance does not supply outcome evidence.
-- Several quotations from the same patient | Repeated testimony from one case remains one case.
+A presentation opens with a moving patient story and claims that similar patients usually recover after the treatment. Which evidence best supports the frequency claim?
++ Follow-up outcomes from a representative sample of comparable patients | An appropriate sample with outcome follow-up supports an estimate of how frequently recovery occurs; it does not by itself establish a treatment effect.
+- Detailed accounts from several patients selected for successful recovery | Selected successes do not provide the denominator needed to estimate a recovery rate.
+- Clinicians' recollections of the cases they found most striking | Memorable cases can be unrepresentative of the patients treated.
+- Satisfaction ratings from patients who completed the full treatment | Satisfaction among completers is neither recovery frequency nor a representative outcome measure for all comparable patients.
+- The number of favorable treatment stories reported in the local press | Media selection and an absent patient denominator prevent a recovery-rate estimate.
 
 ## P05.03 | autonomy-and-tone | medium | analyze | 30,32
 A manager says a pilot is optional but uses a threatening tone and implies refusal will be remembered. Which redesign best preserves meaningful choice?
@@ -241,28 +241,28 @@ A colleague says a schedule change made her feel disregarded. Which response bes
 - “The schedule is efficient, so there is no problem.” | Efficiency does not resolve the relational concern.
 
 ## P05.06 | structure-and-grounding | medium | analyze | 32,33
-A brief follows the STORY drafting framework and is easy for readers to summarize, but omits uncertainty that could change the recommended action. What revision best completes the message?
-+ Keep the clear structure and add the uncertain assumption and its decision implications. | A drafting aid organizes communication; it does not replace evidence or uncertainty checks.
-- Treat accurate paraphrasing as proof that the recommendation is correct. | Understanding does not establish evidential adequacy.
-- Remove the structure and retain only the central recommendation. | This neither preserves clarity nor supplies the missing assumption.
-- Add another story illustrating the preferred outcome. | Illustration does not reveal the consequential uncertainty.
-- Describe the framework as validation of the underlying evidence. | A communication framework is not a research design.
+A policy brief recommends expanding a service. The expansion is worthwhile at high demand but costly at low demand, and future demand is uncertain. Which addition would best help readers assess the recommendation?
++ A demand range and the level at which expansion ceases to be worthwhile | These connect the uncertainty to the decision rather than merely acknowledging that estimates may be wrong.
+- A general limitations paragraph noting that future conditions may change | A general caveat does not show when uncertainty would alter the recommended action.
+- A precise central demand estimate accompanied by the authors' confidence rating | A central estimate and confidence rating do not reveal the decision's sensitivity to other plausible demand levels.
+- A comprehensive list of forecasting difficulties arranged by data source | Cataloguing difficulties does not establish which ones can change the choice.
+- A successful expansion elsewhere with a similar estimated average demand | A comparison case may be informative but does not locate the relevant decision threshold for this service.
 
 ## P05.07 | measure-message-outcomes | medium | analyze | 30,32
-Two messages are randomly assigned. The study detects higher perceived credibility for one message but no reliable differences in comprehension or uptake. What result should the report state?
-+ The detected difference concerns perceived credibility. | The reported effect should match the measured outcome that changed.
-- The message improved actual follow-through. | No reliable improvement in uptake was detected.
-- The message established the underlying claim's truth. | Perceived credibility is not external verification.
-- The audience understood the message better. | No reliable improvement in comprehension was detected.
-- The message lowered all resistance mechanisms. | A single rating does not measure every mechanism.
+A message earns higher credibility ratings in a randomized study. The team is considering using it to increase completed vaccinations. Which follow-up would best test that objective?
++ Randomly assign the messages in the intended setting and compare completed vaccinations. | This tests the behavioral outcome the team aims to change rather than treating credibility as an established substitute for it.
+- Repeat the study with a more detailed scale measuring the message's credibility. | More precise credibility measurement does not establish an effect on completed vaccinations.
+- Compare how accurately recipients remember the messages after a week. | Memory is a possible intermediate outcome, not the intended completed behavior.
+- Ask a larger sample how likely they would be to share each message. | Sharing intentions need not translate into recipients completing vaccination.
+- Compare recipients' ratings of the medical expertise conveyed by each message. | Perceived expertise is another judgment about the message, not a direct test of the target behavior.
 
 ## P05.08 | relationship-and-facts | medium | analyze | 33,34
-Two colleagues agree that a missed handoff was caused by an omitted message, but one still feels publicly humiliated by the accusation. What remains to be addressed?
-+ Repair of the unfair public account and its relational impact | Agreement on facts does not by itself repair the harm.
-- Only a second statistical test of the same message log | The remaining issue is not uncertainty about the cause.
-- Proof that the harmed colleague has no emotions | Emotions can identify a real consequence needing attention.
-- A stronger accusation to ensure future compliance | This would intensify the identified harm.
-- An instruction to treat shared understanding as forgiveness | Understanding does not obligate forgiveness.
+After publicly blaming a colleague for a missed handoff, a manager discovers that an omitted instruction caused the problem. Which response most directly repairs the harm from the accusation?
++ Correct the account before the same audience and acknowledge the colleague's treatment. | Repair should address the false public account and the harm it caused, alongside any operational correction.
+- Privately send the missing instruction and agree on the next handoff date. | This helps the work resume but leaves the public accusation uncorrected.
+- Introduce a checklist that prevents similar omissions in future handoffs. | A process safeguard does not correct what colleagues were told about this incident.
+- Explain privately why the available information originally suggested the colleague was at fault. | Explaining the mistake to the colleague does not repair the public record.
+- Ask the team to stop discussing the incident and focus on the next delivery. | Moving attention elsewhere leaves the unfair account in place.
 
 ## P05.09 | story-selection-and-causal-claim | hard | analyze | 31,32
 A training advertisement features a top performer whose income doubled after attending. There is no comparison group, and attendees selected themselves. Which revised claim best fits the evidence?
@@ -273,9 +273,9 @@ A training advertisement features a top performer whose income doubled after att
 - Self-selection proves that the training had zero effect. | Failure to identify an effect is not proof of no effect.
 
 ## P05.10 | distinguish-message-bottlenecks | hard | analyze | 30,33,34
-Staff accurately explain a proposed workflow, believe it could work, but object that it removes professional discretion. Which response most directly addresses the remaining disagreement?
-+ Negotiate which decisions require discretion and revise those boundaries. | The unresolved issue is value and control, not basic comprehension or feasibility.
-- Repeat the instructions more slowly. | Staff already understand the procedure.
-- Add another technical success story. | They already accept its potential feasibility.
-- Test whether staff can recall the platform's name. | Name recall does not address discretion.
-- Interpret the objection as evidence of deficient listening. | Accurate explanation shows that understanding is present.
+A workflow pilot succeeds on routine cases, but staff report that unusual cases require exceptions the system blocks. A manager proposes a more persuasive presentation before expanding the pilot. Which alternative best tests the substance of the objection?
++ Agree on an exception procedure with staff and test it on the unusual cases. | This investigates the reported conflict between standardization and professional discretion through a concrete design change.
+- Have the pilot's strongest advocates demonstrate the routine cases to another team. | Further demonstrations of routine success do not test the problem reported for unusual cases.
+- Give staff a simpler explanation of why consistent procedures improve performance. | The value of consistency does not establish that blocked exceptions are unnecessary.
+- Ask an external expert to endorse the workflow before the next implementation meeting. | An endorsement does not test whether the current boundaries work for unusual cases.
+- Collect more favorable evaluations from staff who mainly handle routine cases. | These evaluations provide limited evidence about the cases behind the objection.

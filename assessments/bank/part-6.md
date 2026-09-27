@@ -25,12 +25,12 @@ Two departments demand the same room every Friday. What question most directly s
 - What is the midpoint between the two identical demands? | An arithmetic compromise cannot resolve identical exclusive claims.
 
 ## C35.04 | authority | medium | apply | 35
-A negotiator agrees in principle, but a board must approve any contract. What should the other party establish before treating the deal as final?
-+ The approval process, decision authority, and remaining conditions | Implementation depends on who can authorize the agreement.
-- Whether the negotiator spoke with confidence | Confidence does not establish authority.
-- Whether the meeting ended on friendly terms | Rapport does not replace approval.
-- Which party made the first concession | Concession sequence does not settle authorization.
-- How quickly the tentative agreement was reached | Speed does not make it binding or approved.
+Two negotiators agree on price, delivery, and service terms. Before announcing a completed agreement, which check most directly addresses whether they can commit their organizations?
++ Establish who can approve the package and which approvals remain outstanding. | Agreement between negotiators is not sufficient if authorization or ratification is still required.
+- Compare the package with each organization's best alternative to agreement. | This checks acceptability, not the authority to bind the organizations.
+- Confirm the milestones by which implementation performance will be reviewed. | Implementation planning does not establish decision authority.
+- Record which concessions each side made during the final bargaining round. | Concession history does not show whether the negotiators can authorize the deal.
+- Agree on a joint explanation of the benefits for the two organizations. | A persuasive account of benefits does not replace approval.
 
 ## C35.05 | joint-decision-map | hard | analyze | 35
 A buyer focuses on unit price while the supplier says the proposed delivery pattern causes expensive overtime. Which next move best combines learning with protection of the buyer's interests?
@@ -185,12 +185,12 @@ On existing terms a seller needs at least €110 and a buyer will pay at most �
 - No ZOPA, because none existed on the original terms | Changing costs can create a feasible agreement.
 
 ## P06.04 | concession-and-reservation | medium | analyze | 36,37
-A seller makes progressively smaller price concessions on an otherwise unchanged package. What should the buyer infer before closing?
-+ The pattern may signal firmness; compare the package with independent limits. | Concession patterns provide information but do not reveal the seller's true reservation value exactly.
-- The last price is necessarily the seller's minimum acceptable amount. | Strategic concession patterns need not reveal the actual limit.
-- The buyer should accept because small concessions prove joint efficiency. | Concession size does not establish Pareto efficiency or buyer value.
-- Earlier large concessions make the final package favorable by definition. | The final terms matter relative to alternatives, not just movement.
-- The buyer's BATNA rises automatically when the seller's concessions shrink. | The seller's offer sequence does not itself improve the outside option.
+A seller makes progressively smaller price concessions on an unchanged package. Which use of this information is most defensible for the buyer?
++ Treat it as a possible firmness signal while evaluating the offer against outside alternatives. | A concession pattern can communicate firmness without revealing the seller's true limit; the buyer still needs an independent basis for evaluating the package.
+- Estimate the seller's reservation price by taking the latest offer as the lower bound. | The current offer can remain above the seller's actual minimum, so it is not a lower bound on that minimum.
+- Treat the shrinking increments as evidence that the final package creates the largest joint surplus. | Movement in price does not establish that other terms leave no joint gains available.
+- Use the total reduction from the opening demand as the principal measure of the deal's value. | A favorable-looking movement can reflect an inflated opening anchor rather than an attractive final package.
+- Increase the assessed value of the buyer's BATNA in proportion to the seller's slowing movement. | An offer sequence does not itself improve what the buyer can obtain outside the negotiation.
 
 ## P06.05 | forecast-disagreement | medium | analyze | 37,38
 Two parties disagree about a future sales forecast but agree on how sales can be verified. Which possibility should they examine?
@@ -209,20 +209,20 @@ A negotiator offers several packages she values equally, with different combinat
 - The final outcome of any future contingency | Preference is not a realized forecast.
 
 ## P06.07 | contingent-incentives | medium | analyze | 36,38
-A bonus depends on reported sales, and the recipient can raise reports without raising actual sales. What must be addressed before accepting the term?
-+ Measurement manipulation and incentives created by the reporting rule | The contract rewards the measure, which may diverge from the intended outcome.
-- Only whether the opening bonus amount was high | Price alone does not repair the incentive problem.
-- Only whether both forecasts have the same average | Forecast agreement does not make reports truthful.
-- Only the order of signatures on the contract | Signature order does not verify performance.
-- Whether the term sounds cooperative when read aloud | Tone does not remove the opportunity for manipulation.
+A sales bonus rewards orders entered before month-end, even if customers later cancel them. Which contract revision most directly aligns the bonus with sales retained after cancellations?
++ Settle the bonus using orders still valid after the cancellation window. | This excludes orders cancelled within the agreed window from the bonus measure.
+- Increase the bonus rate for orders entered in the final week of the month. | This strengthens the incentive to bring orders inside the reporting window without addressing cancellations.
+- Require an independently verified timestamp for every order entered before month-end. | Accurate entry times do not establish whether orders remain valid after cancellations.
+- Compare each salesperson's recorded orders with the team's monthly average. | Relative performance on the same flawed measure leaves the cancellation problem intact.
+- Ask salespeople to explain large deviations from their initial monthly forecasts. | Forecast explanations do not change which orders earn the bonus.
 
 ## P06.08 | post-agreement-search | medium | apply | 37,38
-After reaching an acceptable deal, the parties agree to explore improvements while retaining the original deal if no mutually preferred alternative emerges. What protects this search?
-+ The existing agreement remains the fallback for both parties. | Neither must surrender the acceptable package to investigate joint gains.
-- The original agreement is cancelled before any alternative is found. | That removes the protective fallback.
-- One party may replace the deal unilaterally. | Unilateral replacement does not protect mutual acceptability.
-- Every new proposal must divide each issue equally. | Equality on each issue can prevent useful trades.
-- Any increase in total value is imposed despite one party's loss. | That is not a mutually preferred improvement.
+After signing an acceptable agreement, two parties want to explore whether they have missed opportunities for mutual gain. Which rule best protects both parties during that search?
++ Retain the signed agreement unless both accept a replacement package. | The existing deal provides a secure fallback while the parties investigate mutually preferred changes.
+- Suspend the signed agreement until the exploratory negotiation is complete. | Suspension exposes the parties to losing the acceptable deal if the search fails.
+- Allow either party to replace the agreement when estimated total value rises. | Higher total value can coexist with one party being worse off, so unilateral replacement is not protective.
+- Commit both parties to the midpoint between their next two package proposals. | A midpoint need not improve both parties' positions relative to the existing deal.
+- Require every improved term to be accepted separately before considering the next issue. | Separate acceptance can prevent the package trades that make improvements mutually beneficial.
 
 ## P06.09 | total-cost-and-zopa | hard | apply | 36,37
 A buyer's alternative costs €500 all-inclusive. Under the proposed deal the buyer pays price p plus €30 transport. The seller incurs €350 in costs only if this deal proceeds; its best alternative provides €90 net. No other differences matter. What price range makes both at least as well off as their alternatives?

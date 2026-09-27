@@ -17,20 +17,20 @@ Which statement is an implementation intention?
 - Good writers spend time improving their craft. | This is a general belief rather than an executable plan.
 
 ## C39.03 | bottleneck-diagnosis | medium | apply | 39
-Employees want to complete a form and remember the deadline, but cannot understand one required field. Which change targets this observed bottleneck most directly?
-+ Add a worked example and help for the confusing field. | This improves ability at the step preventing completion.
-- Send a reminder shortly before the existing deadline. | This targets forgetting rather than understanding.
-- Explain how completed forms benefit the organization. | This targets motivation, which is already present.
-- Offer praise immediately after a correct submission. | This rewards completion but does not explain how to complete the field.
-- Let colleagues announce their intention to submit. | Social commitment leaves the comprehension barrier unresolved.
+Form records show that many employees stop at the “cost centre code” field. Requests for help repeatedly ask where to find the code. Which change should be tested first?
++ Add a code lookup beside the field. | This targets the information needed at the observed point of difficulty.
+- Send reminders close to the submission deadline. | Reminders prompt action but do not help employees find the required code.
+- Explain how completed forms benefit the organization. | A stronger reason to submit does not supply the missing information.
+- Send a congratulatory message after successful submission. | Feedback after completion does not resolve the obstacle encountered beforehand.
+- Display the proportion of colleagues who have submitted. | A social norm may encourage action without making this field easier to complete.
 
 ## C39.04 | lapse-recovery | medium | apply | 39
-A student misses a study session because the planned slot conflicted with work. Which response best turns the lapse into a feasible resumption plan?
-+ Schedule a specific alternative slot that fits the work commitments. | This directly addresses the observed scheduling obstacle.
-- Repeat the long-term aspiration to become a diligent student. | The aspiration does not resolve the timing conflict.
-- Retain the conflicting slot to keep the original plan consistent. | Consistency preserves the diagnosed obstacle.
-- Increase the planned session length without checking available time. | The larger commitment may be even less feasible.
-- Wait until the end of term to review missed sessions together. | Delayed review does not specify the next opportunity to resume.
+A student's work rota changes, and the study session linked to the old lunch break is missed repeatedly. Which revision best restores a usable cue for studying?
++ Link a shorter session to a reliable free period in the new rota. | This adapts the cue and action to the changed opportunity for studying.
+- Keep the old lunch cue and strengthen the reminder sent at that time. | A more noticeable reminder does not create a free period during work.
+- Set a larger weekly study target while retaining the existing cue. | A larger target leaves the timing problem unresolved.
+- Review the benefits of studying whenever a missed session is recorded. | Reinforcing motivation does not establish an available opportunity to act.
+- Add a reward for completing all sessions in the original timetable. | The incentive leaves the cue tied to a time that is no longer usable.
 
 ## C39.05 | action-versus-outcome | hard | analyze | 39
 In a randomized reminder trial, applications average 8 versus 4 per person, a reliable difference. Interviews average 1.1 versus 1.0 with an interval for the difference spanning negative and positive values. Application time rises by two hours. Which summary fits?
@@ -57,12 +57,12 @@ A workshop teaches people to translate conditional probabilities into natural fr
 - An option restriction | It does not remove alternatives from a menu.
 
 ## C40.03 | friction | medium | apply | 40
-Eligible applicants abandon a benefit application because it repeatedly asks for already verified information. Which change directly reduces that task burden?
-+ Reuse verified information and remove duplicate entries. | This reduces the concrete effort causing abandonment.
-- Send an appointment reminder before application begins. | A prompt does not remove redundant work.
-- Explain the financial value of the benefit more prominently. | Stronger motivation leaves the repeated-entry cost intact.
-- Add a progress bar while keeping every duplicate field. | Progress feedback can help navigation but retains the stated burden.
-- Publish testimonials from successful applicants. | Social reassurance does not eliminate the redundant entries.
+A benefit application requires people to re-enter information that the agency already holds in verified records. Which redesign most directly reduces the effort of completing the form?
++ Prefill those fields and let applicants review and correct the entries. | Reusing the records removes repeated entry while preserving an opportunity to correct outdated or mismatched information.
+- Display the number of fields remaining after each completed page. | Progress feedback helps orientation but does not remove the repeated entry.
+- Send a reminder when an applicant leaves a partially completed form. | A reminder brings the task back to attention without reducing its effort.
+- Place an estimate of the benefit's monetary value beside the form. | Greater motivation to finish does not reduce the required data entry.
+- Show brief testimonials from people who completed the application. | Social reassurance leaves the repeated-entry burden unchanged.
 
 ## C40.04 | meaningful-exit | medium | analyze | 40
 Enrollment takes one click, while cancellation is formally available but hidden behind several steps. Which measure most directly tests practical access to exit?
@@ -89,12 +89,12 @@ Several judges assess identical cases differently in ways that are unwanted for 
 - A deliberate difference in the stated decision standard | The variability is specified to be unwanted.
 
 ## C41.02 | process-and-outcome | easy | apply | 41
-A decision audit asks what information was available when a choice was made, instead of judging only its eventual success. What does this protect against?
-+ Confusing outcome luck with decision quality | The ex ante process and the realized result require separate assessment.
-- Any use of outcome data for later learning | Outcomes remain important when compared with prior reasoning.
-- Every possible forecasting error | A good process can still produce errors.
-- The need to specify decision criteria | Criteria remain central to assessing the process.
-- Differences in legitimate stakeholder values | A process audit should still acknowledge them.
+Two managers use the same sound procedure on comparable decisions. One receives a favorable outcome through luck; a reviewer judges that manager's decision process to have been better. Which error is illustrated?
++ Outcome bias | The reviewer uses realized luck to rank the quality of otherwise comparable decision processes.
+- Anchoring | The case does not describe insufficient adjustment from an initial numerical reference.
+- Base-rate neglect | No prior frequency is being ignored in favor of case-specific evidence.
+- The sunk-cost effect | Past irrecoverable expenditure is not driving the reviewer's judgment.
+- Present bias | The judgment does not turn on disproportionate weight placed on immediate rewards.
 
 ## C41.03 | independent-judgments | medium | apply | 41
 A panel must estimate project risk. Which sequence best preserves its members' initial information before social influence begins?
@@ -113,12 +113,12 @@ A decision journal names delivery speed and reliability as success criteria. Aft
 - Omit every newly noticed concern from all future records. | New learning is useful when distinguished from original expectations.
 
 ## C41.05 | consistency-and-validity | hard | analyze | 41
-A rubric reduces disagreement on identical cases: the standard deviation of ratings falls from 12 to 5. On comparable held-out cases, prediction error for later performance rises from 8 to 11. Lower values are better for both measures. Which interpretation follows?
-+ Ratings became more consistent but predicted performance less accurately. | Reduced disagreement and improved validity are separate criteria.
-- Both consistency and predictive accuracy improved. | Prediction error rose, which is worse under the stated metric.
-- Both consistency and predictive accuracy deteriorated. | Rating disagreement fell.
-- Predictive accuracy improved despite greater rating disagreement. | Both directions are reversed.
-- The changes establish that the rubric removed systematic bias. | These measures do not isolate or establish removal of directional bias.
+After a rubric is introduced, the standard deviation of ratings on identical cases falls from 12 to 5. On comparable held-out cases, mean absolute prediction error for later performance rises from 8 to 11. Which interpretation follows?
++ Ratings became more consistent but predicted performance less accurately. | Reduced dispersion indicates greater consistency, whereas higher mean absolute error indicates worse predictive accuracy.
+- Both rating consistency and predictive accuracy improved. | Mean absolute prediction error rose, indicating less accurate predictions.
+- Both rating consistency and predictive accuracy deteriorated. | The dispersion of ratings on identical cases fell, indicating greater consistency.
+- Predictive accuracy improved despite greater rating disagreement. | This reverses both changes: disagreement fell and absolute prediction error rose.
+- The rubric removed systematic bias while leaving predictive accuracy unchanged. | Accuracy changed, and these measures do not establish whether directional bias was removed.
 
 ## C42.01 | prediction-versus-prescription | easy | apply | 42
 A model estimates which customers are likely to leave next month. Which further input is needed to recommend a retention action?
@@ -145,12 +145,12 @@ A hospital wants to allocate a support program. Its sole benefit measure is read
 - The patient's historical spending on hospital care | Historical costs are not a measure of this program's causal benefit.
 
 ## C42.04 | workflow-evaluation | medium | apply | 42
-An AI assistant performs well on examples used to design its prompt. Using predefined outcomes and costs, which next test best evaluates its value for the intended workflow?
-+ Compare the AI-assisted workflow with the current process on held-out tasks. | A relevant baseline and fresh cases test performance beyond development examples.
-- Re-run only the examples used to select the prompt. | Reuse risks overestimating general performance.
-- Judge the assistant solely by the fluency of its explanations. | Fluency need not track task accuracy or practical value.
-- Remove difficult examples after seeing its answers. | Outcome-dependent selection biases evaluation.
-- Count how many tokens the assistant generates. | Output volume is not the workflow objective.
+An AI assistant performs well on examples used to develop its prompt. Which next study best evaluates whether it improves the intended workflow?
++ Compare assisted and current workflows on fresh tasks using predefined outcomes and costs. | A relevant comparison and cases not used in development test whether the workflow delivers useful gains beyond the development examples.
+- Collect expert ratings of the assistant's explanations for the development examples. | Expert judgments may reveal issues but do not establish comparative workflow performance on new tasks.
+- Compare this month's assisted results with last year's results under the current workflow. | Changes in cases or conditions between periods can explain the difference.
+- Compare volunteers using the assistant with staff who choose to retain the current workflow. | Self-selection can create differences unrelated to the assistant.
+- Refine the prompt until its answers improve further on the development examples. | Further tuning can improve fit to those examples without establishing performance in the intended workflow.
 
 ## C42.05 | action-threshold | hard | apply | 42
 Taking an umbrella has a certain inconvenience cost of 2. Without it, rain causes a loss of 10; with it, that loss is avoided completely. There are no other effects. If the forecast rain probability is p, when does expected-loss minimization favor taking it?
@@ -161,20 +161,20 @@ Taking an umbrella has a certain inconvenience cost of 2. Without it, rain cause
 - Only p = 1 | Certainty is unnecessary when the expected avoided loss exceeds the cost.
 
 ## P07.01 | diagnosis-before-design | easy | apply | 39,40
-People remember to apply for a service and want it, but cannot complete a required identity check on their phones. Which change best matches the observed barrier?
-+ Provide a workable identity-check route on the devices people use. | The bottleneck is practical ability at a specific step.
-- Send more reminders about why the service matters. | Memory and motivation are already present.
-- Increase the number of motivational slogans. | Slogans do not fix the technical barrier.
-- Assume abandonment reveals lack of interest. | The stem states interest and identifies another cause.
-- Hide the identity requirement until the final step. | Concealment does not make the requirement feasible.
+A service team is choosing between adding reminders and simplifying its application form. Which finding most strongly favors simplifying the form first?
++ Users repeatedly return but stop at a field they cannot interpret. | Repeated attempts combined with a specific comprehension barrier point to task difficulty rather than a missing prompt.
+- Users complete the form easily when a reminder arrives before the deadline. | This suggests that a prompt can help initiate an otherwise feasible action.
+- Users rarely open the existing reminder because it arrives during the night. | This points toward the timing of the prompt rather than the form's difficulty.
+- Users report that they planned to apply but forgot the closing date. | Forgetting the deadline makes reminders a more direct candidate.
+- Users complete the form quickly after a colleague mentions the service. | Successful completion after a prompt provides little evidence of a form-comprehension barrier.
 
 ## P07.02 | predictions-and-values | easy | apply | 41,42
-Two teams share the same rain forecast but choose different umbrella policies because carrying an umbrella has different costs for them. What does this illustrate?
-+ A shared prediction can support different decisions when consequences differ. | Action thresholds depend on costs and benefits as well as probabilities.
-- One forecast must be numerically incorrect. | The forecast is shared; valuations differ.
-- Forecast accuracy determines a unique policy for every person. | Different consequences can justify different actions.
-- The teams must disagree about the definition of rain. | No such disagreement is specified.
-- Decision costs should be removed from the analysis. | Those costs are essential to the choice.
+Two people accept the same rain forecast but choose different policies about carrying an umbrella. Which additional information is most relevant before judging either policy mistaken?
++ How each person values carrying the umbrella and getting wet | Different consequences can justify different action thresholds under the same probability forecast.
+- Whether the forecast is displayed as a percentage or as odds | Equivalent displays do not determine which consequences each person should prefer.
+- How many other people chose to carry an umbrella that day | The majority's policy does not establish what is best for either person's circumstances.
+- Which forecasting service has the best reputation among their friends | The stem already gives a shared forecast; source reputation does not settle differences in the value of acting.
+- Whether the two people discussed the forecast before making their choices | Discussion history does not establish the relevant costs and benefits of either action.
 
 ## P07.03 | reminder-versus-commitment | medium | apply | 39,40
 One intervention sends a reminder at the intended action time. Another is a voluntarily chosen restriction preventing access to a competing activity. Which distinction is correct?
@@ -185,36 +185,36 @@ One intervention sends a reminder at the intended action time. Another is a volu
 - Both establish that a habit has already formed. | An intervention is not evidence of learned automaticity.
 
 ## P07.04 | independent-ai-disagreement | medium | analyze | 41,42
-A panel records human estimates before seeing an AI forecast. They disagree strongly. Which next step best uses this disagreement?
-+ Check inputs and assumptions, then compare both methods on relevant cases. | Independence makes the disagreement informative; comparative evidence can guide resolution.
-- Average the estimates automatically without inspecting shared errors. | Averaging need not resolve a systematic or input error.
-- Accept whichever estimate is stated with more confidence. | Confidence can be miscalibrated.
-- Choose the AI because computational complexity establishes validity. | Complexity is not a performance test.
-- Replace the recorded human estimates with their post-AI revisions. | This erases the independent starting point needed for the audit.
+A panel's recorded estimates disagree with an AI forecast. Which evidence would most strongly justify assigning the AI greater weight for this type of decision?
++ Lower error than the panel’s independent forecasts on comparable held-out cases | A fair comparison uses information available at the time of each forecast. Relevant out-of-sample performance then provides a basis for weighting the forecasts without relying on confidence or presentation.
+- More detailed explanations of the variables contributing to the AI forecast | Detailed explanations may help inspection without establishing predictive performance.
+- Closer agreement with panel estimates after members review the AI's explanation | Agreement after exposure can reflect anchoring and does not validate either forecast independently.
+- Higher confidence scores accompanying the AI's most recent predictions | Self-reported confidence requires calibration against outcomes before it can justify greater weight.
+- Better fit to the historical cases used to develop the forecasting system | Fit on development data can overstate predictive performance on new decisions.
 
 ## P07.05 | uptake-versus-benefit | medium | analyze | 39,40,42
-A redesigned application page increases submissions but also increases ineligible applications and processing delays. Which evaluation best assesses the full decision path?
-+ Track submissions, eligibility, actual service delivery, delays, and user costs. | A proximal action metric can improve while downstream outcomes deteriorate.
-- Use submission counts as the sole success measure. | This ignores the newly identified consequences.
-- Drop ineligible applications from every report without recording them. | Their processing burden remains relevant.
-- Evaluate only whether the button was clicked faster. | Click speed is still further from the intended benefit.
-- Assume higher activity guarantees higher welfare. | Activity and welfare are distinct targets.
+A redesigned application page increases submissions but also increases processing delays and ineligible applications. Which outcome is most useful for deciding whether to retain it?
++ Net benefit from services delivered after counting processing and applicant costs | The decision needs a downstream benefit measure that accounts for burdens as well as the rise in activity.
+- The number of submitted applications per visitor to the redesigned page | Conversion measures the proximal action but omits the downstream consequences.
+- The time users spend locating and pressing the submission button | Faster interaction does not establish that services reach eligible applicants efficiently.
+- Satisfaction ratings collected immediately after a form is submitted | Immediate experience omits later delays, eligibility outcomes, and service delivery.
+- The proportion of applicants who return to check their submission status | Return visits can reflect uncertainty or delays rather than improved welfare.
 
 ## P07.06 | fair-comparison | medium | apply | 39,41,42
-A team wants to test a new decision aid. Which plan best supports learning whether it improves the current process?
-+ Predefine outcomes and randomly assign comparable cases to the two workflows. | Predefined criteria and randomized allocation support a causal comparison of the workflows.
-- Choose the success metric after seeing which result looks best. | Post hoc selection can exaggerate improvement.
-- Compare easy cases using the aid with hard cases under the old process. | Case difficulty is confounded with the aid.
-- Keep only examples where the aid and manager agreed. | Agreement-based selection excludes important failures.
-- Replace the original records with the aid's rewritten summaries. | That obscures the evidence needed to reconstruct performance.
+A team has resources to pilot a new decision aid while continuing the current workflow. Which design best isolates the aid's effect on the same predefined performance measure?
++ Randomly assign comparable cases to the two workflows during the same period. | Random allocation and contemporaneous comparison help separate the aid's effect from case selection and changing conditions.
+- Compare performance before and after the whole team switches to the new aid. | Other changes over time can contribute to the observed difference.
+- Compare volunteers who adopt the aid with colleagues who prefer the current workflow. | Adoption choices can be related to ability, motivation, or the cases staff handle.
+- Compare the aided team's performance with a historical industry benchmark. | Differences in case mix and conditions can explain a gap from the benchmark.
+- Ask experienced managers to assess how plausible the aid's recommendations appear. | Expert plausibility ratings do not isolate its effect on the predefined performance measure.
 
 ## P07.07 | enjoyment-and-commitment | medium | analyze | 39,40
-A reader can exercise safely and remembers the plan, but finds sessions dull. She wants to keep flexible timing and avoid financial penalties. Which design best matches these preferences?
-+ Pair exercise with a favorite audiobook reserved for those sessions. | Temptation bundling adds immediate enjoyment without fixed timing or a financial penalty.
-- Add an extra reminder at a fixed time every day. | The stated barrier is enjoyment, not forgetting.
-- Require a forfeitable deposit for missing a scheduled session. | This conflicts with the preference against financial penalties and fixed timing.
-- Repeat instruction on an exercise she already performs correctly. | Additional skill training does not target the specified boredom.
-- Publish a league table of other people's attendance. | Social comparison does not directly supply the desired immediate enjoyment.
+A reader wants to make routine exercise more enjoyable at the time it occurs. Which arrangement uses temptation bundling?
++ Reserve a favorite entertainment podcast for listening during exercise. | The enjoyable activity is paired with the beneficial task, supplying an immediate reason to begin and continue it.
+- Watch a favorite film after completing the week's full exercise target. | This is a later contingent reward, rather than enjoyment bundled with performing the activity.
+- Set aside money that will be forfeited if the weekly target is missed. | This is a commitment penalty rather than pairing exercise with a tempting activity.
+- Display a reminder beside the door before the usual exercise time. | This supplies a prompt rather than an enjoyable experience during the task.
+- Record each completed session on a chart shared with a friend. | Monitoring and social accountability differ from bundling the activity with an immediate temptation.
 
 ## P07.08 | accountable-automation | medium | analyze | 41,42
 A model recommends denying a request, but its training labels reflect past administrative decisions that may contain errors. What is the most important governance step?

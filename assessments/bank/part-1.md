@@ -1,12 +1,12 @@
 # Part I question bank
 
 ## C01.01 | decision-perspectives | easy | understand | 1
-A researcher asks why employees keep the pension contribution chosen for them. Which kind of question is this?
-+ Descriptive | It asks how people actually choose.
-- Normative | A normative question asks which choice meets a stated standard.
-- Prescriptive | A prescriptive question asks how to improve the choice process.
-- A question about opportunity cost | No forgone alternative is being valued.
-- A question about expected utility | No probabilities or utility comparison are specified.
+A team first measures the proportion of employees who retain the preselected pension contribution. It then develops a practical enrollment procedure to help employees choose contributions suited to their goals. Which perspectives correspond to these two tasks?
++ Descriptive, then prescriptive | Measuring actual choices is descriptive; developing practical support for better choices is prescriptive. Descriptive decision research also includes explaining why people choose as they do. Such explanations can inform a prescription without themselves recommending a change.
+- Normative, then descriptive | The first task measures behavior rather than defining a standard, and the second designs practical support rather than describing existing choices.
+- Prescriptive, then normative | Measuring behavior does not prescribe a change. The second task develops a practical procedure rather than specifying an ideal choice under stated assumptions.
+- Descriptive, then normative | The first classification fits. The second task concerns a usable intervention; a normative task would specify the standard by which choices should be judged.
+- Normative, then prescriptive | The second classification fits. The first task measures what employees do rather than determining which contribution they ought to choose.
 
 ## C01.02 | decision-quality | easy | apply | 1
 A buyer uses reliable information and her stated priorities to select a supplier. An unforeseeable flood then closes that supplier. What follows about the original decision?
@@ -25,20 +25,20 @@ A team compares two offices carefully but never considers remote work, although 
 - Learning from the office move | Feedback comes after this missed alternative.
 
 ## C01.04 | normative-benchmark | medium | apply | 1
-Two people agree about each job's pay, hours, and risks but choose different jobs. Which explanation is compatible with a rational-choice benchmark?
-+ They place different values on the agreed consequences. | Shared beliefs do not imply shared preferences.
-- They must have different estimates of the working hours. | The stem explicitly holds those estimates equal.
-- They must have overlooked one of the available jobs. | Different choices do not establish an omission.
-- Their agreement makes the higher-paying job dominant. | Higher pay alone need not dominate on other attributes.
-- Their disagreement establishes an error in probability calculation. | No calculation error follows from different values.
+Two people can choose either of two jobs. They agree about each job's pay, hours, and risks, but prefer different jobs. Which difference can explain their choices within the rational-choice benchmark?
++ The importance each assigns to income relative to free time | Shared forecasts can be evaluated using different priorities.
+- The salary each expects the higher-paying job to provide | The two people agree about the pay offered.
+- The working hours each predicts for the two jobs | The two people agree about working hours.
+- The probability each assigns to the stated employment risks | Their assessments of the risks are held equal.
+- The set of jobs each is able to accept | Both can accept either job.
 
-## C01.05 | context-and-inference | hard | analyze | 1
-In a well-powered randomized study, two descriptions of identical subscription terms produce a reliable difference in purchase rates. No satisfaction or mechanism measures were collected. Which conclusion is supported?
-+ Description affected purchase rates in the study. | Random assignment isolates the description's effect on this measured response.
-- Description changed satisfaction with the purchased product. | Satisfaction was not measured.
-- Description operated specifically by changing perceived quality. | The design does not isolate that mechanism.
-- The more successful description increased consumer welfare. | Purchase rates alone do not establish welfare.
-- The effect has the same size in other customer populations. | Transport of the effect requires additional evidence.
+## C01.05 | context-and-inference | medium | apply | 1
+An annual subscription can be described as “€10 per month, billed annually” or “€120 per year.” Which finding challenges description invariance?
++ Random assignment produces a reliable purchase-rate difference between the two descriptions. | Equivalent descriptions should produce the same choices under description invariance.
+- Customers purchase at different rates when billing changes from annual to monthly. | Payment timing changes the consequences, not merely their description.
+- Customers with different usage needs purchase at different rates under one description. | Different preferences can explain this difference without violating description invariance.
+- Customers purchase more often after the annual fee falls from €120 to €100. | The price reduction changes the monetary consequence of subscribing.
+- Customers purchase less often after learning that fewer services are included. | New information about the service can change its valuation.
 
 ## C02.01 | opportunity-cost | easy | apply | 2
 During a free evening, Amir can accept a paid shift worth €70 to him, attend a concert worth €50 to him, or stay home worth €30 to him. These values already include all costs. What is the opportunity cost of attending the concert?
@@ -153,12 +153,12 @@ Thirst begins to decline shortly after drinking, before the water has fully corr
 - Drinking has permanently changed the person's values. | A short-term regulatory response does not establish that change.
 
 ## C04.05 | competing-models | hard | analyze | 4
-Two perceptual models predict the probability of response R. For stimulus A their predictions are 0.8 and 0.8; for B, 0.9 and 0.1; for C, 0.6 and 0.4. Measurement reliability and testing cost are equal. Which stimulus offers the largest predicted contrast?
-+ B, with a contrast of 0.8 | The absolute differences are 0, 0.8, and 0.2.
-- A, because both models predict R frequently | Agreement offers no contrast between the models.
-- C, because its predictions are closest to one half | Closeness to one half is not the requested contrast.
-- A and B, because their mean predicted probabilities are high | The criterion is separation between models, not average probability.
-- All three, because each has two numerical predictions | Having two predictions does not make their differences equal.
+One perceptual model predicts that context has more influence when an image is unclear. A rival predicts the same contextual influence at both clarity levels. Which comparison best distinguishes them?
++ Vary context at both clarity levels and compare the size of its effect. | The models disagree about whether clarity changes the influence of context.
+- Compare clear and unclear images while keeping the same context throughout. | A clarity effect alone does not test the predicted interaction with context.
+- Vary context for unclear images and test whether perception changes at all. | Both models permit a context effect on unclear images.
+- Compare clear and unclear images after removing contextual information from both. | Removing context prevents measuring its influence at either clarity level.
+- Compare observers' confidence before and after viewing an unclear image. | A confidence change alone does not distinguish the stated predictions about perception.
 
 ## C05.01 | self-fulfilling-expectation | easy | apply | 5
 A supervisor expects a trainee to improve, gives her more practice and feedback, and her performance improves. What route from expectation to outcome is described?
@@ -169,12 +169,12 @@ A supervisor expects a trainee to improve, gives her more practice and feedback,
 - The outcome changes before any behavior changes. | The sequence explicitly includes changed treatment first.
 
 ## C05.02 | expectation-outcomes | easy | understand | 5
-A label changes reported taste ratings for an otherwise identical drink. Which outcome has directly been shown to change?
-+ Reported taste experience | This is the measured outcome.
-- The drink's nutrient content | Identical drinks have unchanged content in the comparison.
-- Long-term physical health | No long-term health measure is supplied.
-- The drink's market production cost | Ratings do not measure production costs.
-- The body's complete metabolic response | The study measures ratings, not complete metabolism.
+Participants are randomly assigned to taste the same drink under different labels. Which finding shows a difference in reported experience rather than only expectations before tasting?
++ Ratings of how pleasant the drink tasted differ between the label groups. | These ratings measure reported experience; they do not isolate experience from reporting or establish a physiological change.
+- Predicted enjoyment differs between groups before either tastes the drink. | These ratings measure anticipated rather than experienced pleasantness.
+- Participants expect the more expensive label to indicate better ingredients. | This measures a belief about quality before the experience.
+- Participants recognize one label more often before the taste test. | Recognition measures familiarity, not experienced pleasantness.
+- Participants assign different expected calorie counts to the two labels. | Expected nutritional content is distinct from how pleasant the drink tastes.
 
 ## C05.03 | controlled-expectation-test | medium | apply | 5
 Researchers want to estimate the effect of an encouraging label on task performance. Which comparison is strongest, assuming random assignment is feasible?
@@ -185,12 +185,12 @@ Researchers want to estimate the effect of an encouraging label on task performa
 - Compare labeled believers with unlabeled nonbelievers. | Selecting on belief after assignment can bias the comparison.
 
 ## C05.04 | truthful-expectations | medium | apply | 5
-A tutor wants to create useful expectations for a struggling student. Which message best connects an encouraging forecast to an actionable mechanism?
-+ Targeted practice and feedback can improve these specific skills. | It connects improvement to credible support and controllable action.
-- Your score reflects a permanent limit that practice will reveal. | This frames current performance as fixed ability.
-- Confidence alone will deliver the score you choose. | It substitutes certainty for a learning mechanism.
-- A high score matters more than understanding your mistakes. | This directs attention away from diagnostic feedback.
-- Improvement will occur regardless of how you study. | This disconnects the forecast from effective action.
+A tutor wants an encouraging message to give a struggling student a workable route to improvement. Which message does this best?
++ “Let's practice identifying problem types, then use feedback to choose the next exercise.” | This connects a controllable strategy with feedback for improvement.
+- “Your past success suggests more natural talent than this recent score would indicate.” | Ability reassurance does not supply a method for correcting the difficulty.
+- “Your confidence may grow once you stop comparing yourself with the strongest students.” | This addresses comparison without identifying a learning strategy.
+- “This assessment was unusually difficult, so your score is less worrying than it seems.” | Reinterpreting the score offers reassurance without a route to skill improvement.
+- “You deserve credit for the time you have already devoted to this demanding subject.” | Acknowledging effort does not establish whether the study method is effective.
 
 ## C05.05 | forecast-versus-intervention | hard | analyze | 5
 A bank predicts default, withdraws credit, and observes defaults. To estimate withdrawal's causal contribution among comparable eligible customers, which feasible and permissible study is strongest?
@@ -202,11 +202,11 @@ A bank predicts default, withdraws credit, and observes defaults. To estimate wi
 
 ## C06.01 | utility-and-valuation | easy | understand | 6
 Which statement distinguishes a utility representation from a psychological account of valuation?
-+ Utility represents preference ordering; valuation explains how appeal arises. | The concepts address different explanatory tasks.
-- Utility measures brain activity; valuation measures income. | Neither definition is correct.
-- Utility specifies moral worth; valuation specifies biological fitness. | These are distinct concepts discussed separately.
-- Utility explains sensory processing; valuation lists feasible actions. | These descriptions concern other parts of a decision.
-- Utility records market prices; valuation records production costs. | Subjective preference is not reducible to these prices or costs.
++ Utility represents preference ordering; valuation explains how appeal arises. | Representation and psychological explanation address different tasks.
+- Utility measures experienced pleasure; valuation measures willingness to pay. | Utility need not measure pleasure, and valuation is broader than monetary bids.
+- Utility describes correct choices; valuation describes departures from rationality. | Valuation also contributes to choices consistent with a rational benchmark.
+- Utility requires monetary outcomes; valuation permits nonmonetary outcomes. | Utility can represent preferences over nonmonetary consequences.
+- Utility and valuation are interchangeable accounts of how preferences form. | A representation of rankings does not itself explain their formation.
 
 ## C06.02 | incidental-affect | easy | apply | 6
 A person dislikes a job applicant more after an unrelated stressful commute. Which influence is most directly illustrated?
@@ -217,12 +217,12 @@ A person dislikes a job applicant more after an unrelated stressful commute. Whi
 - A change in the applicant's formal credentials | The applicant's credentials did not change.
 
 ## C06.03 | price-signals | medium | apply | 6
-The same unfamiliar product becomes more attractive when its displayed price rises, although buying it now costs more. Buyers report inferring higher quality from the price. Which account captures the two roles of price?
-+ It raises monetary cost while also signaling quality. | The valuation signal can offset part of the higher cost.
-- It lowers monetary cost while signaling scarcity. | The stated monetary cost increases.
-- It changes the product's ingredients through the label. | Displaying a price does not physically change ingredients.
-- It removes the buyer's need to infer quality. | A quality signal is itself used in inference.
-- It demonstrates that the higher price improves welfare. | Attractiveness alone does not establish welfare improvement.
+A retailer cuts the price of an unfamiliar wine. Which response could offset the benefit of its lower purchase cost?
++ Buyers revise their estimate of the wine's quality downward. | Price can serve as a quality signal as well as a cost.
+- Buyers judge the saving relative to the old price more favorably. | A more attractive saving reinforces the price cut's appeal.
+- Buyers find that a bottle now fits within their spending budget. | Relaxing a budget constraint supports rather than offsets purchase.
+- Buyers see less money at risk if they dislike the wine. | A smaller financial downside makes trying the wine more attractive.
+- Buyers can afford more bottles with the same total expenditure. | Increased purchasing power reinforces the benefit of the lower price.
 
 ## C06.04 | changing-bodily-value | medium | apply | 6
 After a large lunch, a person values an additional sandwich less than before lunch. Which explanation is closest to the chapter's account?
@@ -233,12 +233,12 @@ After a large lunch, a person values an additional sandwich less than before lun
 - The change is evidence of an incorrect probability calculation. | The comparison need not involve probability calculation.
 
 ## C06.05 | valuation-evidence | hard | analyze | 6
-A model fitted to one group uses neural activity to predict music bids in a separate group from the same study population. No brain intervention was made, and the model was not compared with reported liking. Which claim follows?
-+ The signal predicts bids for observations not used to fit the model. | Predicting the separate group tests performance beyond the observations used for fitting.
-- The signal improves prediction beyond reported liking. | That incremental comparison was not performed.
-- The measured region is necessary for valuing music. | Necessity requires causal evidence beyond the association.
-- The relationship generalizes to listeners from other populations. | Those populations were not tested.
-- Neural activity identifies the music's objective artistic worth. | Prediction of subjective bids does not define artistic worth.
+Neural activity recorded while people hear music predicts their later bids. Which additional finding best distinguishes a causal contribution of the measured region from a predictive association?
++ A targeted neural intervention changes bids with relevant alternative explanations controlled. | An intervention tests the consequences of changing the neural process.
+- The association recurs in a larger group of listeners from the same population. | Replication strengthens an association without identifying its cause.
+- The signal predicts bids in listeners excluded from fitting the prediction model. | Held-out prediction tests generalization rather than causation.
+- The signal correlates with both bids and reported liking for the music. | Converging correlations do not establish a causal contribution.
+- A more flexible model fits the originally observed bids more accurately. | Better fit does not show what happens when the neural process is changed.
 
 ## C07.01 | choice-blindness | easy | apply | 7
 After a covert swap, a participant explains why she preferred the picture she actually rejected. What is the main lesson?
@@ -305,12 +305,12 @@ A job comparison page makes salary prominent and hides commuting time. Applicant
 - Explain the selected job only after the contract is signed. | Later justification does not repair the original comparison.
 
 ## P01.04 | sensitivity-and-analysis | medium | apply | 2,4
-A supplier recommendation reverses if an uncertain failure rate rises from 3% to 4%, both plausible values. The choice is costly to reverse. A quick, inexpensive check could substantially improve the estimate. What analysis is most valuable next?
-+ Improve the consequential failure-rate estimate and compare outcomes across its plausible range. | The consequential sensitivity and inexpensive informative check make this uncertainty worth investigating.
-- Refine an unrelated estimate that leaves the recommendation unchanged. | Precision in an inconsequential input has less decision value.
-- Treat the central estimate as certain because it fits the current model. | A plausible model prediction still carries uncertainty.
-- Average the suppliers' names to remove personal preference. | The issue is uncertainty about consequences, not naming.
-- Stop analysis because a numerical recommendation already exists. | A fragile consequential recommendation warrants a proportionate check.
+A supplier recommendation reverses when an uncertain failure rate rises from 3% to 4%, both plausible values. Which response uses sensitivity analysis appropriately?
++ Compare outcomes across that range and locate where the preferred supplier changes. | Sensitivity analysis examines how plausible input changes affect the recommendation.
+- Replace the failure rate with 3.5% and treat the resulting recommendation as settled. | A midpoint estimate hides the recommendation's dependence on the uncertain input.
+- Average the suppliers' projected costs and select the quote closest to that average. | Closeness to an average does not test the uncertain input that changes the ranking.
+- Apply the larger failure estimate to every supplier without comparing their evidence. | Uniform pessimism does not identify the effect of each consequential uncertainty.
+- Report projected costs to more decimal places while retaining the original failure estimate. | More displayed precision does not address sensitivity to the uncertain input.
 
 ## P01.05 | expectation-and-confirmation | medium | analyze | 4,5
 A coach predicts an athlete will excel and gives that athlete extra practice. Later success is treated as proof that the coach merely recognized innate ability. What has been overlooked?
@@ -353,9 +353,9 @@ An expected-profit maximizer can take a certain €50 or launch a product earnin
 - Buy information and take €50 regardless of its result. | This earns €35 and wastes the information.
 
 ## P01.10 | mechanism-testing | hard | analyze | 3,5,7
-A randomized label study detects a change in reported enjoyment but no reliable performance difference. Participants later say the label helped concentration; concentration was not independently measured. Which claim best fits?
-+ The label changed reported enjoyment; the concentration mechanism remains untested. | The outcome comparison supports the rating effect, not the retrospective causal account.
-- The label changed concentration, which mediated the rating effect. | The proposed mediator was neither independently measured nor manipulated.
-- The label changed performance despite the reported comparison. | The study did not reliably detect that difference.
-- The label had no effect on any unmeasured experience. | Lack of measurement cannot establish no effect.
-- The retrospective account identifies the participants' original causal process. | A sincere account can be a post hoc explanation.
+An encouraging label increases reported task enjoyment. Participants say it helped them concentrate. Which follow-up most directly tests this proposed mechanism?
++ Vary the label and a separate concentration intervention, measuring concentration and enjoyment. | Testing both links provides stronger mechanism evidence, provided the intervention's other effects are addressed.
+- Repeat the label comparison with more participants and more detailed explanations afterward. | Greater precision and fuller introspection do not independently test the proposed mediator.
+- Ask participants to predict which label would help concentration before completing the task. | Beliefs about a mechanism do not establish that it caused the outcome.
+- Test whether the label increases task performance in a larger randomized comparison. | An additional outcome does not isolate the proposed concentration pathway.
+- Compare enjoyment among participants who later say the label helped them concentrate. | Selecting on retrospective explanations can confound the proposed mediator with the outcome.

@@ -57,20 +57,20 @@ A manager's enthusiasm for a new technology leads her to rate both its benefits 
 - Mental accounting | No labeled budget separates funds.
 
 ## C09.03 | representativeness | medium | apply | 9
-A quiet, bookish person is judged more likely to be an archivist than a sales worker solely because of the description. Which additional information is most important for a probability judgment?
-+ The relative prevalence of the occupations in the relevant population | Category resemblance must be evaluated alongside base rates.
-- The evaluator's liking for quiet workplaces | Liking does not establish occupational frequency.
-- The number of adjectives in the description | Description length does not supply the missing base rates.
-- Whether the description is easy to pronounce | Fluency is not the needed population evidence.
-- The salary the evaluator would prefer to earn | Personal salary preferences do not determine occupation probabilities.
+A quiet, bookish person is judged more likely to be an archivist than a sales worker. Which finding most directly challenges reliance on that resemblance?
++ Quiet, bookish sales workers greatly outnumber quiet, bookish archivists in the relevant population. | The relevant frequencies can outweigh a stereotypical match.
+- Archivists receive higher personality-match ratings than sales workers from the same judges. | Agreement about resemblance does not establish occupational probability.
+- The description is presented in the same wording to everyone making the judgment. | Standardized wording does not make resemblance sufficient evidence.
+- Respondents agree closely about which occupation best fits the description they read. | Consensus about fit does not supply the relevant population frequencies.
+- The person prefers the working conditions associated with archives to those in sales. | Preferred working conditions do not establish the person's current occupation.
 
 ## C09.04 | correlated-cues | medium | apply | 9
-Three news sites repeat the same eyewitness account. A reader treats them as three independent confirmations. What is the main error?
-+ Counting a common source several times as independent evidence | Shared origins make the reports dependent.
-- Treating all eyewitness accounts as equally precise | The stem concerns dependence, not equality of precision.
-- Ignoring a loss relative to a reference point | No gain–loss reference point is specified.
-- Updating too little because the reports are repeated | Repetition here is being overcounted, not ignored.
-- Confusing the cost of gathering evidence with its value | Evidence cost is not discussed.
+Three news sites report that a factory will close. All cite the same agency dispatch. Which additional finding most increases their value as independent evidence?
++ Each site also verified the closure with a different firsthand source. | Separate corroboration adds evidence beyond the shared dispatch.
+- Each site published the account at a different time of day. | Timing does not separate the reports' informational origin.
+- Each site attracted comments from readers who believed the account. | Reader reactions need not provide independent knowledge of the closure.
+- Each site gave the story a prominent place on its main page. | Prominence affects visibility rather than evidential independence.
+- Each site paraphrased the dispatch using different headlines and wording. | Different wording does not create a new underlying source.
 
 ## C09.05 | rates-and-consequences | hard | analyze | 9
 During the same period, risk A produces 20 incidents in 200 exposures, and B produces 30 in 3,000. Incident severity and prevention costs differ but have not been evaluated. Which conclusion is warranted?
@@ -97,12 +97,12 @@ A salesperson attributes a strong month to skill and a weak month to unlucky cus
 - An unbiased comparison of rival causes | The favorable asymmetry is precisely what requires examination.
 
 ## C10.03 | correspondence-bias | medium | apply | 10
-An employee reluctantly follows a strict script imposed by management. A customer infers that the employee personally prefers rigid rules. What information is underweighted?
-+ The situational constraint on the employee's behavior | The script limits how the employee can act.
-- The customer's own reference point for prices | Price reference points are not part of the example.
-- The employee's past investment in training | No sunk investment is specified.
-- The frequency of customers at the shop | Traffic volume does not explain the forced wording.
-- The difference between two monetary outcomes | The attribution concerns disposition and situation.
+An employee follows a script imposed by management. A customer concludes that the employee has a rigid personality. Which comparison best tests that inference?
++ Observe the employee handling a similar request when allowed discretion. | Behavior without the constraint helps distinguish disposition from the imposed script.
+- Ask the customer to rate the employee again after the same encounter. | Repeating the judgment adds no behavior outside the constraint.
+- Observe another employee following the same required script with that customer. | Shared scripted behavior does not reveal the first employee's disposition.
+- Compare how accurately the employee follows different required scripts. | This still observes behavior under imposed rules.
+- Ask managers whether they described the employee as dependable when hiring. | A hiring description does not directly test the inference of personal rigidity.
 
 ## C10.04 | disconfirmation | medium | apply | 10
 A team thinks a service succeeds only when response time is under one hour. Which observation would most directly challenge that necessity claim?
@@ -217,20 +217,20 @@ A repeated claim feels more credible even though each repetition traces to the s
 - A change in the claim's logical content | The claim is repeated, not revised.
 
 ## C13.03 | fluency-and-truth | medium | apply | 13
-A designer makes instructions easier to read. What test best establishes improved understanding rather than mere ease?
-+ Randomly assign original or revised instructions, then compare new-example accuracy. | The comparison tests whether the redesign improves comprehension beyond perceived ease.
-- Ask whether the font looks familiar. | Familiarity is not comprehension.
-- Count how often the slogan is repeated. | Repetition does not measure understanding.
-- Measure readers' liking for the page alone. | Liking can rise without comprehension.
-- Compare only the designer's preferred layouts. | Designer preference is not reader performance.
+A designer makes instructions easier to read. Which comparison best tests whether the revision improves understanding?
++ Randomly assign the versions and compare performance on new examples. | Transfer to new examples tests application beyond perceived ease.
+- Randomly assign the versions and compare confidence in having understood them. | Fluency can raise confidence without improving comprehension.
+- Randomly assign the versions and compare how quickly readers finish the page. | Reading speed does not establish correct understanding.
+- Randomly assign the versions and compare ratings of clarity and visual appeal. | Perceived clarity and appeal need not improve application.
+- Randomly assign the versions and compare recognition of phrases from the instructions. | Recognizing wording does not establish understanding of its meaning.
 
 ## C13.04 | mere-exposure | medium | apply | 13
-Repeatedly seeing a neutral logo increases liking for it without adding product information. What changed most directly in this example?
-+ Familiarity with the logo | Mere exposure can increase liking through repeated encounters.
-- Objective product quality | No product feature changed.
-- The product's verified failure rate | No reliability evidence was added.
-- The buyer's ownership of the product | Seeing a logo does not transfer ownership.
-- The monetary cost of switching products | No switching cost change is specified.
+Two unfamiliar logos receive similar initial liking ratings. One then appears repeatedly on unrelated screens. Which later result best fits the mere-exposure effect?
++ The repeated logo receives higher liking ratings without new product information. | Repeated exposure can increase liking without providing evidence of better performance.
+- Both logos receive higher ratings after evidence of better product performance. | This change follows new product information rather than repeated exposure.
+- The repeated logo is recognized more accurately but receives unchanged liking ratings. | Recognition alone does not demonstrate an increase in liking.
+- The unseen logo receives higher ratings because participants prefer novel designs. | This describes a novelty preference rather than mere exposure.
+- Both logos retain equal ratings because their products have identical attributes. | The mere-exposure prediction permits familiarity to affect liking despite equal attributes.
 
 ## C13.05 | mood-and-retrieval | hard | analyze | 13
 One study finds better recall when retrieval mood matches learning mood. Another finds sad participants preferentially recall unpleasant events regardless of learning mood. Which pair describes these patterns?
@@ -345,12 +345,12 @@ A policy slogan claiming that a reform cuts waiting times is easy to process and
 - Compare how much the two sides like their slogans. | Liking is not a test of the claim.
 
 ## P02.04 | halo-control | medium | apply | 8,11
-A recruitment panel wants to prevent an engaging interview from dominating unrelated skill judgments. Which procedure best targets that problem?
-+ Score each job-relevant dimension before making an overall rating. | Separate initial assessments reduce spillover from a global impression.
-- Discuss overall likability before reviewing any work sample. | This establishes the impression likely to contaminate later ratings.
-- Give the first speaker more time to defend the favorite candidate. | This can strengthen early impressions rather than test them.
-- Use an arbitrary numerical starting score for everyone. | This introduces an anchor without adding skill evidence.
-- Remove the work sample because it takes longer to assess. | This discards relevant evidence in favor of easier impressions.
+A recruitment panel wants to prevent an engaging interview from dominating unrelated skill judgments. Which scoring procedure best targets this problem?
++ Rate job-relevant dimensions separately before recording an overall impression. | Separate initial ratings constrain spillover from a global evaluation.
+- Record an overall impression first and use it to guide dimension ratings. | The global judgment may shape each later assessment.
+- Give each interviewer an equal vote on the candidate's overall impression. | Equal voting weights do not address each evaluator's halo effect.
+- Require a longer explanation of the overall impression before scoring dimensions. | Elaborating the impression may reinforce rather than separate it.
+- Average repeated overall-impression ratings collected during the same interview. | Averaging global ratings does not isolate evidence for distinct skills.
 
 ## P02.05 | complements-and-denominators | medium | apply | 12,14
 Every application has a final outcome recorded as either success or failure. A report says 3% fail. Its complementary frame must describe the same applications and period. Which statement qualifies?

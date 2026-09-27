@@ -6,7 +6,7 @@ All items use five alternatives and one best answer, following the short scenari
 
 ## Blueprint and authoring
 
-Each chapter has two easy, two medium, and one hard item. Each part has two easy, six medium, and two hard items: 98 easy, 126 medium, and 56 hard overall (35%, 45%, 20%). These are intended difficulty levels, not estimates from student response data. Most items require application or analysis. Every chapter has equal question weight; each item receives one point in its set.
+Most chapters have two easy, two medium, and one hard item. Chapters 1, 21, 22, and 34 have two easy and three medium items following the answer-cue review. Each part has two easy, six medium, and two hard items: 98 easy, 130 medium, and 52 hard overall (35.0%, 46.4%, 18.6%). These are intended difficulty levels, not estimates from student response data. Most items require application or analysis. Every chapter has equal question weight; each item receives one point in its set.
 
 Canonical items live in `bank/part-N.md`. Each heading records ID, topic/objective, intended difficulty, cognitive level, and source chapter numbers. The stem supplies all assumptions. Exactly one `+` choice is correct; four `-` choices represent plausible errors. The text after ` | ` explains each option. Correct-first authoring is only an editing convention: the generator reproducibly shuffles all alternatives before publication.
 

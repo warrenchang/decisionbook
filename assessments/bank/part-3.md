@@ -65,12 +65,12 @@ Under the typical fourfold pattern, how do people often respond to a small proba
 - Ignore both events because each is unlikely. | That is not the small-probability overweighting prediction.
 
 ## C17.04 | competing-mechanisms | medium | analyze | 17
-Customers keep a contract after a better one becomes available, but switching requires several hours of paperwork. What should be checked before attributing the pattern to loss aversion?
-+ Whether switching costs explain the retained contract. | A forward-looking cost can rationalize staying without a gain–loss asymmetry.
-- Whether the old contract was ever advertised. | Prior advertising alone does not isolate the stated alternative mechanism.
-- Whether retained contracts can be called reference points. | Renaming the option does not distinguish mechanisms.
-- Whether all customers receive the same monthly statement. | Statement delivery does not measure switching costs.
-- Whether the new provider has a shorter company name. | Name length is not the concrete alternative raised by the case.
+A customer keeps a more expensive contract after a cheaper alternative appears. Which comparison best tests whether staying has a rational explanation in terms of costs?
++ Compare the future savings with the full cost of changing providers. | Switching costs can outweigh the savings from a lower price.
+- Compare the old contract price with its original advertised price. | Historical prices do not measure the consequences of changing now.
+- Compare the customer's attachment to the old provider with other customers' attachment. | Attachment ratings do not quantify the relevant cost comparison.
+- Compare the number of favorable reviews received by the two advertisements. | Advertising reactions do not establish the customer's switching costs.
+- Compare the new price's percentage discount with discounts in unrelated markets. | An unrelated discount does not determine the net benefit of this switch.
 
 ## C17.05 | value-function | hard | apply | 17
 Use v(x) = x for gains and v(x) = 2x for losses relative to zero, with linear probability weights. What is the value of a 50% chance to gain €60 and a 50% chance to lose €40?
@@ -105,12 +105,12 @@ Each independent order has a 10% failure chance. What is the chance that all thr
 - 90.0% | This is the chance one order avoids failure.
 
 ## C18.04 | feedback-and-avoidance | medium | apply | 18
-After one poor restaurant visit, a diner never returns and never receives information about later improvements. What keeps the initial belief from being corrected?
-+ Avoidance cuts off new outcome feedback. | Choices shape the experiences available for updating.
-- Returning is known to have a lower expected value. | The stem supplies no current outcome comparison.
-- The first visit becomes a representative random sample of all future visits. | One visit need not represent a changing service.
-- The diner's dislike changes the restaurant's objective quality. | No such effect is specified.
-- The restaurant's improvements erase the original experience. | New quality does not erase memory or automatically reach the diner.
+After one disappointing visit, a diner stops returning to a restaurant. Which learning problem can this create?
++ Later improvements may remain unobserved. | Avoidance removes opportunities to update the initial impression through experience.
+- Each avoided visit adds evidence of poor service. | A visit that never occurs supplies no new service observation.
+- Trying other restaurants reveals this restaurant's current quality. | Experience at other restaurants is not a direct observation of this one.
+- Adding more alternatives makes the first observation representative. | A larger choice set does not improve the original sample.
+- The initial observation becomes more reliable as time passes. | Elapsed time alone does not improve the evidence and conditions may change.
 
 ## C18.05 | sampling-design | hard | analyze | 18
 A buyer samples suppliers but stops testing each one as soon as it delivers successfully once. She compares the success share in each short record. Which improvement best addresses this sampling rule?
@@ -129,12 +129,12 @@ Ignoring tax and contractual restrictions, €100 from a refund buys the same go
 - An endowment effect | Ownership status does not differ between the amounts.
 
 ## C19.02 | account-labels | easy | apply | 19
-A household spends a €200 bonus on a luxury while saving an otherwise identical €200 salary payment. What most directly distinguishes the two choices?
-+ The mental label attached to the money | Source labels place economically substitutable money in different accounts.
-- The amount of money available | The amounts are identical.
-- The nominal purchasing power of the payments | No purchasing-power difference is stipulated.
-- The expected return on the same saving account | The comparison specifies no return change.
-- The market price of the luxury | The item need not change price for labeling to affect spending.
+A household spends a €200 bonus more readily than €200 of salary. If mental accounting drives the difference, which change should most directly reduce it?
++ Present both payments as additions to one available balance. | Combining the funds weakens the separation into source-based spending accounts.
+- Describe each payment's source more vividly before spending. | Making the labels more salient can reinforce the separation.
+- Display each payment in a separately named budget category. | Separate categories maintain the source-based distinction.
+- Increase both payments by the same percentage. | Equal increases retain the account distinction rather than directly addressing it.
+- Change both payments from bank transfers to cash. | A common payment format does not itself remove their different mental labels.
 
 ## C19.03 | account-closing | medium | apply | 19
 An investor resists selling a losing asset because selling would “make the loss real.” Which operation is most directly implicated?
@@ -161,12 +161,12 @@ A project has spent €90,000 irrecoverably. Stopping now returns €10,000 in s
 - Stop; salvage exceeds the completion payoff by €5,000. | This reverses the correct comparison.
 
 ## C20.01 | present-bias | easy | apply | 20
-On Monday, Priya chooses 12 tokens this Friday over 10 this Thursday. When that Thursday arrives, with all other conditions unchanged, she chooses 10 now over 12 tomorrow. Which pattern is illustrated?
-+ A preference reversal when the earlier reward becomes immediate | Present bias can make immediacy change the relative ranking.
-- Stable exponential discounting with unchanged preferences | Shifting both rewards equally toward the present preserves that model's ranking.
-- A change in the objective number of tokens | The amounts stay fixed.
-- A sunk-cost effect from Monday's decision | No irrecoverable expenditure is specified.
-- A change in the lottery's stated probabilities | No lottery or probability change appears.
+On Monday, Priya prefers 12 tokens on Friday to 10 on Thursday. On Thursday, with other conditions unchanged, she prefers 10 now to 12 tomorrow. Which model can explain this reversal?
++ Present-biased discounting | Making the earlier reward immediate can change its relative weight.
+- Exponential discounting with a constant discount rate | Moving both rewards equally toward the present preserves their ranking in this model.
+- Probability weighting | The scenario concerns certain dated rewards rather than changes in probabilities.
+- Sunk-cost reasoning | No irrecoverable prior expenditure explains the change.
+- Ambiguity aversion | Uncertainty about the reward probabilities is not part of the comparison.
 
 ## C20.02 | commitment | easy | apply | 20
 Before an anticipated temptation, a person voluntarily blocks access to a distracting app for the next study session. What is this arrangement?
@@ -177,20 +177,20 @@ Before an anticipated temptation, a person voluntarily blocks access to a distra
 - A retrospective justification | The restriction is arranged before the later choice.
 
 ## C20.03 | liquidity-and-delay | medium | analyze | 20
-A worker chooses €100 today over €110 next month because an essential bill is due tomorrow and borrowing is unavailable. What must be considered before inferring strong time discounting?
-+ The liquidity constraint changes the usefulness of today's money. | Immediate funds solve a need that delayed funds cannot meet.
-- The worker must misunderstand the difference between 100 and 110. | The choice can be coherent with the stated constraint.
-- The choice reveals a stable discount rate for every context. | Liquidity and circumstances confound that inference.
-- Delayed money has no purchasing power by definition. | Its later usefulness is distinct from the urgent current need.
-- The worker is treating a gain as an owned loss. | No ownership-based reference point is specified.
+A worker chooses €100 today over €110 next month. Which additional fact most weakens the interpretation that this reveals strong impatience?
++ An essential bill is due tomorrow and borrowing is unavailable. | A liquidity constraint can make the earlier payment valuable without strong impatience.
+- Both payments are guaranteed by the same institution. | This removes a payment-risk explanation rather than adding a liquidity explanation.
+- The choice is made privately without a response deadline. | This reduces pressure but does not explain the value of earlier resources.
+- The worker can state both payment amounts accurately. | Comprehension does not rule out patience or liquidity as explanations.
+- Prices are expected to remain unchanged over the month. | Stable prices remove an inflation explanation without identifying time preference.
 
 ## C20.04 | temptation-bundling | medium | apply | 20
-A student reserves a favorite audiobook for time spent exercising. Which mechanism does this arrangement use?
-+ Pairing an immediately enjoyable activity with a beneficial one | The bundle gives a delayed-benefit activity a current reward.
-- Removing all immediate pleasure from exercise | The arrangement adds pleasure rather than removes it.
-- Replacing exercise with imagined future fitness | Exercise remains part of the chosen bundle.
-- Making the future reward arrive financially sooner | The mechanism does not alter the payment date of a future reward.
-- Reclassifying past exercise as a sunk cost | The arrangement concerns future behavior.
+A student reserves a favorite audiobook for time spent exercising. Which intervention is this?
++ Temptation bundling | An immediately enjoyable activity is paired with a beneficial activity.
+- A commitment through financial forfeiture | No money is lost for failing to exercise.
+- Episodic future thinking | The student is not simulating a future episode.
+- A descriptive-norm message | The arrangement supplies no information about other people's behavior.
+- Goal-gradient feedback | It provides no signal of distance to a goal.
 
 ## C20.05 | discounting | hard | apply | 20
 A person values money linearly and uses exponential discounting with a constant annual factor δ = 0.8. Payments are certain and liquidity is irrelevant. Which option has the greatest present value?
@@ -217,12 +217,12 @@ A person feels a strong urge to check an app but gets little enjoyment from doin
 - Habituation with increased sensory pleasure | The stem does not describe a diminished sensory response.
 
 ## C21.03 | reward-prediction-error | medium | apply | 21
-A learner expects a reward of 6 points and receives 2. Using received reward minus expected reward, what is the prediction error?
-+ −4 points | The outcome falls four points short of expectation.
-- +4 points | This reverses the subtraction.
+A learner expects a reward of 6 points and receives 2. What is the reward prediction error?
++ −4 points | Received reward minus expected reward is 2 minus 6.
+- +4 points | This reverses the direction of the discrepancy.
 - +2 points | This ignores the expected reward.
-- −6 points | This ignores the two points actually received.
-- +8 points | Adding expected and received rewards does not measure their discrepancy.
+- −6 points | This ignores the two points received.
+- +8 points | Adding expected and received rewards does not measure prediction error.
 
 ## C21.04 | replacement-response | medium | apply | 21
 A writer opens social media whenever a paragraph becomes difficult. Which plan specifies a replacement response to that cue?
@@ -232,13 +232,13 @@ A writer opens social media whenever a paragraph becomes difficult. Which plan s
 - Wait until the urge to browse disappears completely. | This makes action depend on eliminating the urge.
 - Count the total number of open tabs at bedtime. | Later measurement does not supply the immediate replacement.
 
-## C21.05 | near-miss | hard | analyze | 21
-Participants are randomly shown a near-miss or clear-loss display. Next-play odds are identical by design. The study detects greater reported urge after near misses, but does not measure enjoyment or later plays. Which conclusion follows?
-+ The display changed reported urge, with next-play odds held fixed. | Randomized display differences identify the reported motivational response, not a change in objective odds.
-- The display increased enjoyment despite the financial loss. | Enjoyment was not measured.
-- The display increased subsequent playing time through the urge. | Later play and mediation were not tested.
-- The display helped participants learn a more successful playing strategy. | No improved strategy or success probability was demonstrated.
-- The display effect establishes the response of all experienced gamblers. | That population-wide generalization was not tested.
+## C21.05 | near-miss | medium | analyze | 21
+A slot-machine player interprets a near miss as evidence of improving skill. Which comparison best tests that interpretation?
++ Compare subsequent win rates after near misses and clear losses under the same game rules. | The interpretation predicts an improvement in future success, not merely greater motivation.
+- Compare the reported urge to continue after near misses and clear losses. | Motivation to continue does not establish greater skill or better odds.
+- Compare reported enjoyment after near misses and successful spins. | Enjoyment does not test whether a near miss predicts future success.
+- Compare time spent watching near-miss and clear-loss displays. | Attention to a display does not establish improved performance.
+- Compare the visual similarity of near misses and successful spins. | Resemblance to success is not evidence of an increased chance of winning.
 
 ## C22.01 | experienced-and-remembered | easy | understand | 22
 A person records pleasant moments throughout a trip but later judges the whole trip poorly because of a stressful ending. Which distinction is illustrated?
@@ -249,12 +249,12 @@ A person records pleasant moments throughout a trip but later judges the whole t
 - Risk versus ambiguity | The key contrast is not known versus unknown probabilities.
 
 ## C22.02 | anticipatory-utility | easy | apply | 22
-A traveler enjoys looking forward to a holiday several weeks before departure. What is the immediate source of this enjoyment?
-+ Anticipation of the future experience | Pleasure can occur before the event itself.
-- Recollection of this completed holiday | The holiday has not yet occurred.
-- A realized financial return from the holiday | No financial payoff is specified.
-- The opportunity cost of staying home | A forgone alternative is not the stated enjoyment.
-- Adaptation after repeated holiday experiences | The example describes anticipation, not a declining response over time.
+A traveler feels happier during ordinary workdays after booking a holiday. Which concept can account for this benefit before departure?
++ Anticipatory utility | Looking forward to a future experience can provide present enjoyment.
+- Remembered utility | Remembered utility concerns an evaluation of a past experience.
+- Hedonic adaptation | Adaptation concerns adjustment to a changed condition over time.
+- Duration neglect | Duration neglect concerns how an episode's length enters its evaluation.
+- Projection bias | Projection bias concerns mispredicting future preferences from a current state.
 
 ## C22.03 | focusing-illusion | medium | apply | 22
 While considering a move, someone imagines sunshine and neglects commuting, friendships, and work. Which revision best addresses the focusing illusion?
@@ -265,20 +265,20 @@ While considering a move, someone imagines sunshine and neglects commuting, frie
 - Ask for a single happiness score before discussing daily life. | An unstructured global score may retain the same focal bias.
 
 ## C22.04 | connection-measures | medium | apply | 22
-Someone meets many people each week but feels that nobody would help in a crisis. Which distinction is most directly relevant?
-+ Social contact frequency versus perceived support | Many contacts do not imply a sense that help is available.
-- Life evaluation versus monetary wealth | Those quantities are not the specific contrast.
-- Risk preference versus time preference | No risky or delayed reward choice is described.
-- Anticipation versus recollection | The example compares two dimensions of current relationships.
-- Objective income versus relative income | No income comparison is provided.
+A survey records weekly social encounters and whether respondents expect help in a crisis. Why retain both measures?
++ Social integration and perceived support describe different features of relationships. | Contact and expected access to help need not coincide.
+- Both measure received support, but one uses a shorter recall period. | Expecting help does not show that support has actually been received.
+- Contact counts measure relationship quality more directly than expected help does. | Frequency alone does not establish the quality of relationships.
+- Expected help measures social integration independently of respondents' beliefs. | This is a perception-based measure, not an objective count of contacts.
+- Combining the measures eliminates differences in what relationships mean to respondents. | Multiple measures do not remove individual differences in interpretation.
 
-## C22.05 | well-being-audit | hard | analyze | 22
-A policy raises mean life satisfaction, lowers it in a vulnerable subgroup, and restricts opting out. Which review most fully addresses the chapter's well-being audit?
-+ Examine subgroup consequences, affected rights, and the ability to revise. | The review needs distributional outcomes and agency as well as the mean.
-- Check the overall mean and median using a second survey. | Aggregate replication leaves subgroup rights and exit unresolved.
-- Compare subgroup scores while holding the no-exit rule outside the review. | Distribution alone does not assess agency.
-- Confirm that opting out is legally possible without testing practical access. | Formal availability need not mean feasible exit, and outcomes remain relevant.
-- Validate the questionnaire without examining who gains or loses. | Measurement quality is necessary but does not settle the decision.
+## C22.05 | well-being-audit | medium | analyze | 22
+A policy raises mean life satisfaction. Which additional finding most strongly challenges using that average alone to justify adoption?
++ A vulnerable subgroup loses access to an essential service and has no workable appeal. | Distributional harm and loss of agency remain relevant despite an improved mean.
+- Respondents differ in the importance they attach to income, health, and relationships. | Different priorities are expected and do not by themselves overturn the result.
+- The improvement is larger on a satisfaction scale than on a positive-affect scale. | Different dimensions of well-being can move by different amounts.
+- A second survey uses a different numerical range but finds a similar standardized effect. | A replicated effect across compatible scales strengthens rather than undermines the mean result.
+- The policy improves satisfaction without changing participants' reported material aspirations. | Well-being can improve without changing that particular aspiration measure.
 
 ## P03.01 | insurance-and-tail-exposure | easy | apply | 16,18
 A small firm has never suffered a fire, but credible evidence gives a 1% annual risk of a €200,000 loss that would bankrupt it. Insurance costs more than the €2,000 expected loss. What should guide the decision?
@@ -289,12 +289,12 @@ A small firm has never suffered a fire, but credible evidence gives a 1% annual 
 - Assume a fire is due because none has occurred recently. | Absence of recent events does not create a balancing requirement.
 
 ## P03.02 | future-self-and-measures | easy | analyze | 20,22
-An experiment finds that viewing an age-progressed self-image raises hypothetical retirement allocations. Which outcome has been demonstrated?
-+ A change in stated allocation in that experimental task | Future-self vividness affected the measured hypothetical choice.
-- A rise in actual retirement deposits | Hypothetical allocation is not an observed deposit.
-- A permanent improvement in experienced well-being | That outcome and horizon were not measured.
-- Equal financial gains for every participant | Neither realized gains nor equal effects were shown.
-- A change in the market return on retirement assets | The experiment changes a decision setting, not asset returns.
+An age-progressed self-image increases hypothetical retirement allocations. Which follow-up most directly tests whether the effect extends to saving behavior?
++ Randomly assign the image intervention and compare subsequent account contributions. | This tests the intervention against an actual saving outcome.
+- Repeat the hypothetical allocation with a different windfall amount. | Another hypothetical allocation does not establish behavioral transfer.
+- Compare balances of people who volunteer to view the image with those who decline. | Self-selection prevents isolating the image's effect on saving.
+- Ask whether viewing the image makes retirement saving seem more important. | A changed attitude is not an observed contribution.
+- Compare recognition accuracy for current and age-progressed photographs. | Recognition does not measure saving behavior.
 
 ## P03.03 | insurance-and-reference-points | medium | analyze | 16,17
 A person rejects a fair gamble over final wealth but has made no explicit gain–loss comparison. Which evidence would most specifically help distinguish reference-dependent valuation from stable concave utility over final wealth?
@@ -305,28 +305,28 @@ A person rejects a fair gamble over final wealth but has made no explicit gain�
 - Ask whether the person has ever bought insurance. | Insurance can reflect several motives and constraints.
 
 ## P03.04 | delayed-payment-and-trust | medium | analyze | 18,20
-A buyer refuses a larger delayed rebate because the seller has repeatedly failed to pay rebates. What is the most relevant alternative to an impatience explanation?
-+ Experience has reduced trust in receiving the delayed payment. | Timing and payment risk are confounded in the choice.
-- The larger amount necessarily has lower nominal value. | The nominal amount is explicitly larger.
-- A delayed payment cannot enter expected utility. | Uncertain delayed payments can be modeled.
-- The buyer is responding to a cost already irrecoverably paid. | The choice concerns future receipt.
-- The buyer must prefer smaller sums at every date. | The concern may be reliability rather than amount.
+A buyer chooses a smaller immediate rebate over a larger delayed one. Which comparison best separates impatience from concerns about receiving payment?
++ Offer both payment dates with the same credible payment guarantee. | Equalizing payment reliability reduces its confounding with the delay.
+- Increase the delayed amount while leaving its reliability unchanged. | This changes the reward trade-off while retaining the reliability difference.
+- Ask the buyer to imagine spending the delayed payment. | Imagery changes how the future is represented without controlling payment risk.
+- Present the immediate rebate after describing the delayed rebate. | Presentation order does not equalize payment reliability.
+- Compare the choice with another buyer's choice at a different seller. | Changing buyers and sellers introduces additional differences.
 
 ## P03.05 | budgeting-and-present-bias | medium | apply | 19,20
-A saver moves money into a voluntarily chosen account earmarked for saving, with a withdrawal delay. Which pair of mechanisms could support the saving goal?
-+ A saving label plus a restriction on immediate access | Mental accounting and commitment can work together.
-- A lower future balance plus a higher spending limit | These changes would not describe the arrangement.
-- Repetition of a slogan plus a numerical anchor | Neither is specified by the account design.
-- A sunk expenditure plus a guaranteed investment return | The funds are not necessarily spent, and no return is guaranteed.
-- A change in prices plus elimination of opportunity cost | The account does neither.
+A saver chooses an account earmarked for saving that also delays withdrawals. Which pair of mechanisms could support the saving goal?
++ Mental accounting and commitment | The label separates the money mentally; the delay restricts immediate access.
+- Loss aversion and numerical anchoring | The design specifies neither a framed loss nor a starting numerical estimate.
+- Exponential discounting and diversification | A labeled access restriction does not specify either a discount function or a portfolio mix.
+- Probability weighting and insurance | No probability transformation or transfer of risk is described.
+- Habituation and social proof | The account does not rely on repeated exposure or evidence of others' choices.
 
 ## P03.06 | forecasts-of-well-being | medium | analyze | 20,22
-Someone chooses a demanding holiday for its anticipated highlights but later dislikes most days of it. What should a future holiday comparison add?
-+ Predictions of ordinary daily experience as well as memorable highlights. | Decision utility and anticipated memory can omit much of experienced time.
-- Only the anticipated final photograph. | This narrows the forecast further.
-- Only the cheapest ticket among all destinations. | Price alone does not capture the relevant experiences.
-- The assumption that remembered and experienced utility coincide. | Their divergence is precisely the issue.
-- A rule that the most intense holiday is best. | Intensity need not mean more desirable daily experience.
+A traveler selects a holiday for its spectacular highlights but dislikes most days of the trip. Which forecasting method best addresses that mismatch next time?
++ Imagine a typical day in each itinerary, including travel and waiting. | This brings ordinary experienced time into a comparison dominated by highlights.
+- Estimate how impressive each itinerary would sound in a story afterward. | This emphasizes anticipated memory and social presentation rather than daily experience.
+- Compare the single most enjoyable activity available at each destination. | Focusing on the peak repeats the original omission.
+- Predict the final overall rating without considering the itinerary's daily schedule. | A global forecast can leave the same neglected periods unexamined.
+- Rank destinations by the intensity of excitement when viewing their advertisements. | Immediate excitement need not predict enjoyment throughout the trip.
 
 ## P03.07 | habit-versus-sunk-cost | medium | analyze | 19,21
 Maya automatically opens a service when she sees its icon. Leo consciously keeps using it because he paid a nonrefundable annual fee, despite a better free alternative and no switching costs. Which diagnosis fits each stated reason?

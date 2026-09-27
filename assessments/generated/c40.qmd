@@ -21,12 +21,12 @@
 <label class="practice-option" for="c40-02-e"><input type="radio" id="c40-02-e" name="c40-02" value="4"><span><strong>E.</strong> A default</span></label>
 <p class="practice-item-result" id="c40-02-result" hidden></p></fieldset>
 <fieldset class="practice-question" id="c40-03" aria-describedby="quiz-c40-instructions">
-<legend><span class="practice-number">3.</span> Eligible applicants abandon a benefit application because it repeatedly asks for already verified information. Which change directly reduces that task burden?</legend>
-<label class="practice-option" for="c40-03-a"><input type="radio" id="c40-03-a" name="c40-03" value="0"><span><strong>A.</strong> Reuse verified information and remove duplicate entries.</span></label>
-<label class="practice-option" for="c40-03-b"><input type="radio" id="c40-03-b" name="c40-03" value="1"><span><strong>B.</strong> Explain the financial value of the benefit more prominently.</span></label>
-<label class="practice-option" for="c40-03-c"><input type="radio" id="c40-03-c" name="c40-03" value="2"><span><strong>C.</strong> Publish testimonials from successful applicants.</span></label>
-<label class="practice-option" for="c40-03-d"><input type="radio" id="c40-03-d" name="c40-03" value="3"><span><strong>D.</strong> Send an appointment reminder before application begins.</span></label>
-<label class="practice-option" for="c40-03-e"><input type="radio" id="c40-03-e" name="c40-03" value="4"><span><strong>E.</strong> Add a progress bar while keeping every duplicate field.</span></label>
+<legend><span class="practice-number">3.</span> A benefit application requires people to re-enter information that the agency already holds in verified records. Which redesign most directly reduces the effort of completing the form?</legend>
+<label class="practice-option" for="c40-03-a"><input type="radio" id="c40-03-a" name="c40-03" value="0"><span><strong>A.</strong> Prefill those fields and let applicants review and correct the entries.</span></label>
+<label class="practice-option" for="c40-03-b"><input type="radio" id="c40-03-b" name="c40-03" value="1"><span><strong>B.</strong> Send a reminder when an applicant leaves a partially completed form.</span></label>
+<label class="practice-option" for="c40-03-c"><input type="radio" id="c40-03-c" name="c40-03" value="2"><span><strong>C.</strong> Show brief testimonials from people who completed the application.</span></label>
+<label class="practice-option" for="c40-03-d"><input type="radio" id="c40-03-d" name="c40-03" value="3"><span><strong>D.</strong> Display the number of fields remaining after each completed page.</span></label>
+<label class="practice-option" for="c40-03-e"><input type="radio" id="c40-03-e" name="c40-03" value="4"><span><strong>E.</strong> Place an estimate of the benefit&#x27;s monetary value beside the form.</span></label>
 <p class="practice-item-result" id="c40-03-result" hidden></p></fieldset>
 <fieldset class="practice-question" id="c40-04" aria-describedby="quiz-c40-instructions">
 <legend><span class="practice-number">4.</span> Enrollment takes one click, while cancellation is formally available but hidden behind several steps. Which measure most directly tests practical access to exit?</legend>
@@ -64,11 +64,11 @@
 <dt>E. A default <span class="practice-verdict">(Incorrect)</span></dt><dd>It does not preselect an option.</dd>
 </dl><p class="practice-source">Review: <a href="../chapters/40-choice-architecture.html">Chapter 40</a>. <a href="#c40-02">Back to question 2</a></p></li>
 <li data-answer="0" data-question="c40-03"><h3>Question 3: A</h3><p class="practice-your-answer" hidden></p><dl>
-<dt>A. Reuse verified information and remove duplicate entries. <span class="practice-verdict">(Correct)</span></dt><dd>This reduces the concrete effort causing abandonment.</dd>
-<dt>B. Explain the financial value of the benefit more prominently. <span class="practice-verdict">(Incorrect)</span></dt><dd>Stronger motivation leaves the repeated-entry cost intact.</dd>
-<dt>C. Publish testimonials from successful applicants. <span class="practice-verdict">(Incorrect)</span></dt><dd>Social reassurance does not eliminate the redundant entries.</dd>
-<dt>D. Send an appointment reminder before application begins. <span class="practice-verdict">(Incorrect)</span></dt><dd>A prompt does not remove redundant work.</dd>
-<dt>E. Add a progress bar while keeping every duplicate field. <span class="practice-verdict">(Incorrect)</span></dt><dd>Progress feedback can help navigation but retains the stated burden.</dd>
+<dt>A. Prefill those fields and let applicants review and correct the entries. <span class="practice-verdict">(Correct)</span></dt><dd>Reusing the records removes repeated entry while preserving an opportunity to correct outdated or mismatched information.</dd>
+<dt>B. Send a reminder when an applicant leaves a partially completed form. <span class="practice-verdict">(Incorrect)</span></dt><dd>A reminder brings the task back to attention without reducing its effort.</dd>
+<dt>C. Show brief testimonials from people who completed the application. <span class="practice-verdict">(Incorrect)</span></dt><dd>Social reassurance leaves the repeated-entry burden unchanged.</dd>
+<dt>D. Display the number of fields remaining after each completed page. <span class="practice-verdict">(Incorrect)</span></dt><dd>Progress feedback helps orientation but does not remove the repeated entry.</dd>
+<dt>E. Place an estimate of the benefit&#x27;s monetary value beside the form. <span class="practice-verdict">(Incorrect)</span></dt><dd>Greater motivation to finish does not reduce the required data entry.</dd>
 </dl><p class="practice-source">Review: <a href="../chapters/40-choice-architecture.html">Chapter 40</a>. <a href="#c40-03">Back to question 3</a></p></li>
 <li data-answer="0" data-question="c40-04"><h3>Question 4: A</h3><p class="practice-your-answer" hidden></p><dl>
 <dt>A. Users&#x27; ability and time to find and complete cancellation <span class="practice-verdict">(Correct)</span></dt><dd>This tests the whole exit path rather than its nominal existence.</dd>
@@ -115,13 +115,13 @@ E) A default
 :::
 
 ::: {#c40-03 .practice-question}
-**Question 3.** Eligible applicants abandon a benefit application because it repeatedly asks for already verified information. Which change directly reduces that task burden?
+**Question 3.** A benefit application requires people to re-enter information that the agency already holds in verified records. Which redesign most directly reduces the effort of completing the form?
 
-A) Reuse verified information and remove duplicate entries.
-B) Explain the financial value of the benefit more prominently.
-C) Publish testimonials from successful applicants.
-D) Send an appointment reminder before application begins.
-E) Add a progress bar while keeping every duplicate field.
+A) Prefill those fields and let applicants review and correct the entries.
+B) Send a reminder when an applicant leaves a partially completed form.
+C) Show brief testimonials from people who completed the application.
+D) Display the number of fields remaining after each completed page.
+E) Place an estimate of the benefit's monetary value beside the form.
 
 :::
 
@@ -176,11 +176,11 @@ Review: [Chapter 40](../chapters/40-choice-architecture.qmd). [Back to question 
 
 **Question 3: A.**
 
-- **A. Reuse verified information and remove duplicate entries. (Correct)** This reduces the concrete effort causing abandonment.
-- **B. Explain the financial value of the benefit more prominently. (Incorrect)** Stronger motivation leaves the repeated-entry cost intact.
-- **C. Publish testimonials from successful applicants. (Incorrect)** Social reassurance does not eliminate the redundant entries.
-- **D. Send an appointment reminder before application begins. (Incorrect)** A prompt does not remove redundant work.
-- **E. Add a progress bar while keeping every duplicate field. (Incorrect)** Progress feedback can help navigation but retains the stated burden.
+- **A. Prefill those fields and let applicants review and correct the entries. (Correct)** Reusing the records removes repeated entry while preserving an opportunity to correct outdated or mismatched information.
+- **B. Send a reminder when an applicant leaves a partially completed form. (Incorrect)** A reminder brings the task back to attention without reducing its effort.
+- **C. Show brief testimonials from people who completed the application. (Incorrect)** Social reassurance leaves the repeated-entry burden unchanged.
+- **D. Display the number of fields remaining after each completed page. (Incorrect)** Progress feedback helps orientation but does not remove the repeated entry.
+- **E. Place an estimate of the benefit's monetary value beside the form. (Incorrect)** Greater motivation to finish does not reduce the required data entry.
 
 Review: [Chapter 40](../chapters/40-choice-architecture.qmd). [Back to question 3](#c40-03).
 

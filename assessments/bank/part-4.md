@@ -65,12 +65,12 @@ Two players choose X or Y. Each earns 8 if both choose X, 6 if both choose Y, 0 
 - All four profiles. | The mismatches fail the best-response test.
 
 ## C24.04 | assurance | medium | apply | 24
-Each firm benefits from adopting a standard if the other adopts, but loses from adopting alone. Both prefer joint adoption. Which measure most directly addresses this obstacle?
-+ A credible arrangement making the two adoptions conditional on each other | Assurance reduces the risk of being the sole adopter.
-- Explain again that joint adoption has high benefits. | The firms already agree about those benefits.
-- Keep each firm's adoption plan secret until afterward. | Secrecy preserves strategic uncertainty.
-- Ask one firm to disregard the loss from adopting alone. | The loss is central to its incentive.
-- Lower the benefit from successful joint adoption. | That would weaken the incentive to coordinate.
+Each firm gains from adopting a standard if the other adopts, but loses from adopting alone. Both favor joint adoption. Which measure most directly addresses the strategic obstacle?
++ Make each adoption binding only when both firms commit. | Conditional commitments reduce the risk of being the sole adopter.
+- Provide both firms with another forecast of the gains from joint adoption. | Agreement on joint benefits leaves uncertainty about the other's action.
+- Subsidize adoption by an amount smaller than the loss from adopting alone. | The stated subsidy leaves a unilateral-adoption loss and the assurance problem.
+- Invite both firms to sign a nonbinding statement of enthusiasm. | Enthusiasm alone does not make the other firm's action dependable.
+- Let each firm announce its implementation decision after the other has acted. | Waiting for the other does not establish a coordinated commitment.
 
 ## C24.05 | mixed-equilibrium | hard | apply | 24
 In a symmetric game, X pays 8 against X and 0 against Y; Y pays 6 against either action. The player maximizes expected displayed payoff. At what probability p that the other chooses X is the player indifferent?
@@ -82,11 +82,11 @@ In a symmetric game, X pays 8 against X and 0 against Y; Y pays 6 against either
 
 ## C25.01 | social-dilemma | easy | understand | 25
 What distinguishes a prisoner's dilemma from a pure coordination problem?
-+ Defection benefits each player regardless of the other's choice, although both prefer mutual cooperation. | Individual incentives conflict with the jointly better outcome.
-- Players merely need to agree on one of several equally safe meeting places. | That describes a coordination obstacle.
-- Both players receive identical payoffs from every action. | Payoffs differ across choices in a prisoner's dilemma.
-- Players are unable to compare their own payoffs. | The dilemma can arise with fully understood payoffs.
-- One player must lack information about the rules. | The incentive conflict can exist under common knowledge of the rules.
++ Defection is individually better against either action, but both prefer mutual cooperation to mutual defection. | Dominant individual incentives conflict with the jointly better outcome.
+- Cooperation is individually better when the other cooperates, but worse when the other defects. | This describes conditional incentives characteristic of an assurance problem.
+- Each player prefers to choose the same action as the other, whichever action that is. | Matching incentives describe a coordination problem rather than dominant defection.
+- Each player prefers to choose a different action from the other player. | This is an anti-coordination incentive.
+- One player prefers matching actions while the other prefers different actions. | This describes conflicting matching incentives rather than a prisoner's dilemma.
 
 ## C25.02 | dictator-versus-ultimatum | easy | understand | 25
 What strategic feature is present in an ultimatum game but absent from a standard dictator game?
@@ -105,12 +105,12 @@ In a one-shot linear public-goods task, a contributed token returns less than on
 - A preference for lower total group output | Contributions generally increase total output in the standard task.
 
 ## C25.04 | punishment-evidence | medium | analyze | 25
-A brain signal associated with reward rises when participants anticipate punishing a defector, and predicts punishment expenditure. What does the observation support?
-+ The pattern is consistent with anticipated reward from punishment. | The signal and behavior link punishment to motivational value.
-- Punishment is therefore ethically justified. | Descriptive reward evidence does not settle moral justification.
-- Punishment necessarily improves cooperation in every group. | That outcome depends on the institution and response.
-- Every participant punished solely for personal pleasure. | The observation does not isolate every individual's sole motive.
-- Defectors face no material deterrent from punishment. | The punishment may still change their incentives.
+Punishing a defector is associated with activity in a reward-related brain region. Which additional finding provides the most direct behavioral evidence that punishment has motivational value?
++ People pay from their own earnings to reduce the defector's payoff. | Costly punishment reveals willingness to sacrifice resources, without establishing pleasure as the sole motive.
+- People remember the defector's identity more accurately afterward. | Better memory does not directly establish willingness to pay for punishment.
+- People describe the defector's action as unfair before punishment is offered. | A fairness judgment is distinct from valuing the act of punishment.
+- People show similar activity while viewing an unrelated financial reward. | Neural overlap adds no direct behavioral evidence of valuing punishment.
+- People report that punishment is common in their community. | Knowledge of a norm does not establish personal willingness to bear its costs.
 
 ## C25.05 | repeated-cooperation | hard | apply | 25
 Each period, mutual cooperation pays 3 each. Defecting against cooperation pays 5; mutual defection pays 1. A deviation triggers mutual defection forever. Players maximize discounted sums of these payoffs, with 0 ≤ δ < 1, and deviations are observed. With infinite repetition, when is cooperation at least as good as a one-time deviation?
@@ -145,12 +145,12 @@ What feature specifically characterizes an information cascade?
 - People happen to choose the same action by chance. | Coincidence does not establish the social-learning mechanism.
 
 ## C26.04 | independence-before-discussion | medium | apply | 26
-A chair wants to learn members' initial judgments before a confident speaker influences the meeting. Which procedure fits that goal?
-+ Collect private estimates before anyone announces a view. | This preserves initial judgments before this meeting's public influence.
-- Ask the most senior member to open with a recommendation. | This exposes others to an early authoritative judgment.
-- Take a show of hands after each speech. | Public sequential voting allows influence from prior responses.
-- Record only the final consensus. | Consensus hides the distribution of initial beliefs.
-- Ask members to infer what the chair prefers. | That adds a conformity cue rather than eliciting independent evidence.
+A committee must estimate next year's demand. Which procedure best preserves information from members' separate initial judgments?
++ Collect estimates privately, then discuss the reasons for disagreement. | Elicitation before discussion preserves views formed before hearing other members.
+- Discuss the strongest arguments, then collect estimates privately. | Privacy afterward does not recover judgments from before the discussion.
+- Let members revise an estimate displayed on a shared screen. | Sequential revisions can become dependent on the preceding estimate.
+- Ask the most experienced member to propose an initial estimate. | An expert's starting point may anchor the other judgments.
+- Record one group estimate and ask each member to explain it. | Explaining a shared answer does not preserve the original distribution of views.
 
 ## C26.05 | pluralistic-ignorance | hard | analyze | 26
 Anonymous responses show that most students dislike a custom, yet most also believe that most classmates approve of it. In public they comply. Which intervention most directly corrects the demonstrated belief error?
@@ -161,20 +161,20 @@ Anonymous responses show that most students dislike a custom, yet most also beli
 - Assume compliance proves the anonymous answers are false. | Public conformity can coexist with private disapproval.
 
 ## C27.01 | information-incorporation | easy | apply | 27
-A share price jumps when public news arrives, before a reader can trade on the headline. What does this illustrate?
-+ Public news can enter prices before the reader trades. | Correctly understanding news does not ensure an available abnormal return.
-- The firm has no fundamental value. | Rapid repricing says nothing of that kind.
-- Every subsequent price must be exactly correct. | Rapid response does not establish permanent fundamental accuracy.
-- The reader necessarily misunderstood the news. | Timing alone can explain the lack of profit.
-- Public information cannot influence market prices. | The example illustrates the opposite.
+An investor reads favorable earnings news and plans to buy the shares. Why does understanding this news not by itself establish an opportunity for an abnormal return?
++ The purchase price may already reflect the information. | Recognizing good news offers no advantage if its implications are already priced in.
+- Favorable earnings news removes uncertainty about future dividends. | A favorable report does not make future cash flows certain.
+- A higher expected dividend makes the share's current value lower. | Higher expected cash flows generally raise value when other inputs are unchanged.
+- A price increase removes the need to adjust returns for risk. | Risk adjustment remains necessary when assessing abnormal performance.
+- Public earnings information affects trading volume but not fundamental value. | Earnings information can change expectations about future cash flows.
 
 ## C27.02 | limits-to-arbitrage | easy | understand | 27
-Why might a trader who sees apparent overpricing be unable to eliminate it immediately?
-+ Funding costs and short-sale risks can limit corrective trades. | Recognition does not remove financing, implementation, or timing risks.
-- Recognizing mispricing automatically supplies unlimited capital. | Capital availability is a separate constraint.
-- A short position has no risk when the trader's valuation is sound. | Prices can move adversely before any correction.
-- Transaction costs disappear for informed traders. | Costs can remain even with good information.
-- Overpricing requires a guaranteed date of correction. | Apparent mispricing can persist without a known correction date.
+A trader believes a share is overpriced but may rise further before correcting. Which feature of a short position makes the timing of the correction important?
++ Interim losses can trigger demands for additional collateral. | Financing constraints can force exit before a correct valuation forecast pays off.
+- The trader receives dividends on the borrowed shares while waiting. | A short seller generally owes dividend-equivalent payments instead.
+- The maximum possible loss equals the initial short-sale proceeds. | A share price can rise beyond twice the initial price, so losses are not capped that way.
+- The eventual correction reimburses the costs of financing the position. | Financing costs remain costs even if the price later corrects.
+- Borrowed shares can be repaid at the original sale price. | Closing normally requires purchasing at the then-current price.
 
 ## C27.03 | finite-asset-value | medium | apply | 27
 An asset pays an expected dividend of €4 at each of three remaining rounds and has zero terminal resale value. Under a risk-neutral, zero-discount benchmark, what is its current fundamental value?
@@ -233,12 +233,12 @@ In one case, agreeing to a small request precedes a larger related request. In a
 - Authority; liking | Neither sequence requires an authoritative or liked requester.
 
 ## C28.05 | diagnose-silence | hard | analyze | 28
-Private interviews show that staff noticed a safety problem, knew how to report it, and expected retaliation from their manager. Which safeguard most directly targets the identified bottleneck?
-+ A protected reporting channel with credible protection against retaliation | Evidence and procedural knowledge exist; the barrier is anticipated punishment.
-- A training session on recognizing the same visible problem | Recognition is already present.
-- A new chart listing the existing reporting steps | Knowledge of the steps is already present.
-- An instruction to assign a witness to every incident | The stated barrier is not absence of witnesses or ownership.
-- A public show of hands about who has concerns | Public identification may increase the retaliation risk.
+Managers are deciding whether low safety reporting calls for recognition training or a confidential reporting channel. Which finding most strongly favors testing the channel first?
++ Staff accurately identify hazards privately but omit them from reports bearing their names. | The private-public gap points toward a social cost of reporting rather than a recognition deficit.
+- Staff misclassify hazards in both anonymous exercises and public discussions. | This pattern supports addressing recognition or knowledge.
+- Staff submit named reports promptly once technical guidance clarifies what counts as a hazard. | This pattern supports a classification or knowledge barrier.
+- Staff identify similar numbers of hazards with and without their names attached. | This provides little evidence that identifiability inhibits recognition or reporting.
+- Staff miss the same hazards across written descriptions and photographs. | Consistent detection failures favor recognition training over a privacy intervention.
 
 ## C29.01 | group-and-individual | easy | understand | 29
 A study finds an average difference in attention between two cultural samples. What is needed to assess a particular person's attentional pattern?
@@ -249,20 +249,20 @@ A study finds an average difference in attention between two cultural samples. W
 - A ranking of which culture is objectively better | The empirical comparison does not supply such a ranking.
 
 ## C29.02 | identity-and-meaning | easy | apply | 29
-The same critical comment is heard as useful feedback in one relationship and as humiliation in another. Which account best fits?
-+ Relationship and identity shape the comment's social meaning. | Interpretation depends on more than the literal words.
-- Identical wording fixes the same meaning for every listener. | This excludes the contextual variation in the example.
-- One listener must have failed to hear the words. | Different interpretation need not arise from hearing failure.
-- The comment's monetary cost determines its meaning. | No monetary mechanism is specified.
-- Cultural meaning can be read directly from nationality alone. | The relationship and local situation also matter.
+During feedback, an employee hears a technical correction as a judgment that she does not belong in the profession. Which concept best explains this interpretation?
++ Identity threat | The criticism is interpreted as undermining a valued group membership or self-conception.
+- Outcome bias | Outcome bias evaluates a prior decision using its eventual result.
+- Probability neglect | The example does not concern disregarding a risk's likelihood.
+- Temporal discounting | No trade-off between earlier and later outcomes is involved.
+- Informational conformity | The employee is not adopting the group's judgment as evidence of the correct answer.
 
 ## C29.03 | identity-safe-feedback | medium | apply | 29
-A child treats a wrong answer as evidence that she is “not a clever person.” Which response best supports revision without lowering standards?
-+ Correct the answer without judging the child's worth. | This preserves accuracy while reducing the identity threat of correction.
-- Declare the wrong answer correct to protect confidence. | That abandons the accuracy standard.
-- Compare her publicly with the highest-performing child. | This can intensify a status-based threat.
-- Explain that clever children do not make such errors. | This reinforces the fixed identity interpretation.
-- Avoid discussing any answer that could be mistaken. | Avoidance removes opportunities to learn.
+A child treats a wrong answer as evidence that she is “not a clever person.” Which reply best supports learning while reducing that identity threat?
++ “This step needs correcting; let's work out which rule applies here.” | It preserves the accuracy standard while directing attention to a revisable action.
+- “You are one of the cleverest children, even when you make a mistake.” | Reassurance still makes a fixed ability identity the basis of evaluation.
+- “The other children found this difficult too, so your rank has barely changed.” | The reply keeps relative status central rather than examining the error.
+- “You worked hard on this, and that is the main thing to remember.” | Effort praise alone leaves the incorrect reasoning unexamined.
+- “Let's do an easier problem so that you can feel successful again.” | Immediate success avoids rather than repairs the reasoning that produced this error.
 
 ## C29.04 | local-verification | medium | apply | 29
 An international team interprets one colleague's silence as agreement. Which next step best checks that interpretation?
@@ -297,12 +297,12 @@ Two teams cooperate internally but resist sharing resources across teams. Which 
 - Separate tasks with no need for interteam contact | Separation provides no shared cooperative purpose.
 
 ## P04.03 | disagreement-and-information | medium | analyze | 26,28,29
-Team members have unique evidence but fear that public disagreement will look disloyal. Which combined procedure most directly addresses both problems?
-+ Collect independent evidence privately, then discuss it under explicit protection for dissent. | This surfaces unshared facts while reducing the identity and social cost of challenge.
-- Ask the leader to announce the preferred answer before collecting facts. | This increases pressure before independent information is elicited.
-- Replace factual discussion with a public loyalty vote. | That conflates allegiance with evidence.
-- Record only the final unanimous statement. | A consensus record can hide both missing facts and inhibited doubts.
-- Ask members to guess which answer their colleagues will approve. | This redirects attention toward anticipated social acceptance.
+A team must combine members' different evidence on a disputed proposal. Which procedure best protects independent input and makes dissent usable?
++ Obtain private written judgments, then compare conflicting evidence under agreed discussion rules. | This preserves independent information and gives disagreement a legitimate place in deliberation.
+- Have the leader summarize the evidence, then request private comments on that summary. | The leader's framing precedes the independent input and can shape it.
+- Discuss the proposal to agreement, then record each member's final estimate anonymously. | Final anonymity cannot recover evidence or judgments suppressed during the discussion.
+- Ask everyone to state a preferred option publicly before submitting supporting evidence. | Early public commitments can create conformity and consistency pressure.
+- Average members' initial scores and adopt the mean without examining their reasons. | Aggregation alone can conceal uniquely diagnostic evidence and unresolved disagreements.
 
 ## P04.04 | cascade-and-price | medium | analyze | 26,27
 Investors buy after observing earlier purchases, although their private signals favor selling. Which additional evidence would most help distinguish an information cascade from independently justified optimism?
@@ -321,12 +321,12 @@ Two partners want continued cooperation, but accidental failures sometimes look 
 - Judge intentions solely from the worst observed outcome. | Outcome severity alone does not distinguish accident from defection.
 
 ## P04.06 | incentives-and-meaning | medium | analyze | 25,29
-A community introduces a small payment for an activity previously treated as a shared duty. Participation falls. Which follow-up best examines the proposed change in social meaning?
-+ Randomize payments; compare reported obligation and subsequent participation. | With the task, eligibility, and period fixed, this tests parallel changes in meaning and behavior; it does not identify obligation as the causal mediator.
-- Infer that money reduces motivation in every setting. | One pattern does not support that generalization.
-- Compare only the income of people who continue participating. | Post-treatment selection omits those whose participation changed.
-- Treat the participation decline as proof of lower physical ability. | Ability is not the stated mechanism.
-- Increase payment while changing the activity and eligibility rules too. | Multiple changes make interpretation difficult.
+A community payment scheme is followed by lower participation in an activity previously treated as a duty. Which follow-up best investigates whether the payment changes perceived obligation as well as behavior?
++ Randomly vary the payment and measure obligation and subsequent participation in each group. | This tests changes in both outcomes; it does not by itself identify obligation as the causal mediator.
+- Compare the incomes and obligation ratings of the people who continue participating. | Selecting only continuing participants excludes people whose participation changed.
+- Compare participation before and after a larger payment is announced to the whole community. | A before-after change can reflect timing and still leaves perceived obligation unmeasured.
+- Survey participants about the payment's fairness without recording later participation. | Fairness opinions alone do not test the proposed obligation-behavior pattern.
+- Compare two communities that chose different payments and have different eligibility rules. | Community selection and rule differences confound the comparison.
 
 ## P04.07 | arbitrage-and-beliefs | medium | analyze | 23,27
 A trader believes a share is overpriced but expects enthusiastic buyers to push it higher before any correction. Why can waiting be strategically sensible?

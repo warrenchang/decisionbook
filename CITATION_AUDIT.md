@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1248**
+Unique references in the master union: **1252**
 
-Chapter reference blocks: **1259**
+Chapter reference blocks: **1263**
 
 Unresolved author–year citations: **0**
 
@@ -12,17 +12,17 @@ Unresolved author–year citations: **0**
 
 | Chapter | Reference blocks | Unresolved |
 | --- | ---: | ---: |
-| Understanding Decision Making {#normative-descriptive-and-prescriptive} | 18 | 0 |
+| Understanding Decision Making {#normative-descriptive-and-prescriptive} | 19 | 0 |
 | Structuring a Decision {#building-a-better-decision} | 11 | 0 |
 | Limited Attention {#attention-what-becomes-evidence} | 39 | 0 |
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 53 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 39 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 75 | 0 |
 | Rationalization {#narrator-after-choice} | 20 | 0 |
-| Intuition and Deliberation {#fast-and-frugal-thinking} | 51 | 0 |
+| Intuition and Deliberation {#fast-and-frugal-thinking} | 52 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 19 | 0 |
-| Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 16 | 0 |
+| Anchors, Halos, and Decoys {#when-context-rewrites-comparison} | 17 | 0 |
 | Framing | 18 | 0 |
 | Priming, Fluency, and Familiarity {#fluency-and-familiarity} | 42 | 0 |
 | Base Rates and Bayesian Updating {#base-rates-and-updating} | 9 | 0 |
@@ -51,7 +51,7 @@ Unresolved author–year citations: **0**
 | Integrative Negotiation {#creating-value-across-differences} | 12 | 0 |
 | Designing Better Agreements | 18 | 0 |
 | Behavior Design | 42 | 0 |
-| Choice Architecture | 36 | 0 |
+| Choice Architecture | 37 | 0 |
 | Decision Hygiene | 39 | 0 |
 | Deciding With Data and AI {#data-driven-decision-making} | 33 | 0 |
 
