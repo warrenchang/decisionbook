@@ -24,6 +24,7 @@ const selections = [
   {name: 'water', x: 1232, y: 650, topX: 1128},
 ];
 const topY = 186;
+const imaginedOpacity = 0.72;
 const framedView = (s) => `<g id="view-${s.name}">
   <rect width="${frameSize}" height="${frameSize}" fill="#85542f"/>
   <svg x="${rim}" y="${rim}" width="${opening}" height="${opening}" viewBox="${s.x} ${s.y} ${opening} ${opening}" overflow="hidden"><use href="#master"/></svg>
@@ -36,7 +37,7 @@ const placements = selections.flatMap(s => [
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
 <title id="title">Selected evidence and possible reconstructed surroundings</title>
-<desc id="desc">The lower scene contains buildings, a park and a lawn sprinkler. The third frame shows falling water droplets but excludes the sprinkler head. Each frame and its contents are repeated exactly above, against pale imagined surroundings: a dense city, an extensive park, or an ordinary rainy street. The imagined surroundings go beyond the observed evidence.</desc>
+<desc id="desc">The lower scene contains buildings, a park and a lawn sprinkler. The third frame shows falling water droplets but excludes the sprinkler head. Each frame and its contents are repeated exactly above, against lighter imagined surroundings: a dense city, an extensive park, or an ordinary rainy street. The imagined surroundings go beyond the observed evidence.</desc>
 <defs>
   <g id="master">
     <image width="1536" height="1024" href="data:image/png;base64,${master.toString('base64')}"/>
@@ -62,7 +63,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   ${selections.map(framedView).join('\n')}
 </defs>
 <rect width="${width}" height="${height}" fill="white"/>
-<use href="#imagined" x="0" y="0" opacity="0.36"/>
+<use href="#imagined" x="0" y="0" opacity="${imaginedOpacity}"/>
 <svg x="0" y="${sceneTop}" width="1536" height="548" viewBox="0 ${sourceTop} 1536 548" overflow="hidden"><use href="#master"/></svg>
 ${placements.join('\n')}
 </svg>`;
@@ -87,7 +88,7 @@ ${placements.join('\n')}
     if (unequalChannels) throw Error(`${s.name}: ${unequalChannels} unequal channels`);
     checks.push({name: s.name, source: {x:s.x,y:s.y,width:opening,height:opening}, upper, lower, unequalChannels, identical: true});
   }
-  const report = {figure:'fig-framing-three-windows', width, height, frameSize, opening,
+  const report = {figure:'fig-framing-three-windows', width, height, frameSize, opening, imaginedOpacity,
     masterSha256:crypto.createHash('sha256').update(master).digest('hex'),
     imaginedSha256:crypto.createHash('sha256').update(imagined).digest('hex'),
     sprinklerSha256:crypto.createHash('sha256').update(sprinkler).digest('hex'),
