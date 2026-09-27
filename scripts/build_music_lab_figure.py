@@ -6,11 +6,11 @@ PNG companion is rendered from this SVG by the book's browser QA workflow.
 from pathlib import Path
 from html import escape
 ROOT=Path(__file__).resolve().parents[1]
-W,H=640,1090
+W,H=640,1020
 parts=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title desc">',
 '<title id="title">What Music Lab participants saw</title>',
 '<desc id="desc">Illustrative song menus, not observed data. Experiment 1 shows the same six example songs in a three-column grid: independent choice hides download counts, social influence displays counts from the participant’s world. Both use random order. Experiment 2 shows a single-column list: independent choice uses random order with no counts, social influence orders songs by its world’s download counts. The actual experiments offered 48 songs and eight separate social worlds.</desc>',
-'<rect width="640" height="1090" fill="white"/>',
+'<rect width="640" height="1020" fill="white"/>',
 '<g font-family="Arial, sans-serif" fill="#183047">']
 def text(x,y,s,size=24,bold=False,fill='#183047',anchor='start'):
  parts.append(f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{700 if bold else 400}" fill="{fill}" text-anchor="{anchor}">{escape(s)}</text>')
@@ -50,7 +50,5 @@ for col in range(2):
   if col:text(x+270,cy+31,str(counts[s]),25,fill='#126d64',anchor='end')
  text(x+152,924,'Random order' if not col else 'Most downloaded first',23,anchor='middle')
 text(320,997,'↓ = downloads in your world',24,anchor='middle')
-text(320,1035,'48 songs in every condition',24,True,anchor='middle')
-text(320,1073,'Listen → rate → choose whether to download',24,anchor='middle')
 parts.extend(['</g>','</svg>'])
 (ROOT/'figures/cultural-market-study-redraw.svg').write_text('\n'.join(parts)+'\n')

@@ -26,7 +26,7 @@ POINTS = [
     (8.3, 66), (8.5, 57), (8.7, 61), (8.9, 28), (9.0, 73), (9.2, 67),
     (9.5, 69), (9.7, 54),
 ]
-WIDTH, HEIGHT = 760, 676
+WIDTH, HEIGHT = 760, 622
 NAVY, MUTED, LINE, ACCENT = "#17324d", "#536879", "#becbd4", "#b65d62"
 SPECS = [
     ("observations", "A. Observations", None, None),
@@ -108,8 +108,6 @@ def build():
                        "fixed_basis": basis_formula, "fit": fit,
                        "curve_domain": domain if fit else None,
                        "coordinates": POINTS, "x_limits": [0, 10], "y_limits": [0, 100]})
-    body += [f'<path d="M20 624 H740" stroke="{LINE}" stroke-width="1.5"/>',
-             text(380, 653, "Same observations. Same scales.", 29, anchor="middle", weight=700, fill=NAVY)]
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="title desc">
 <title id="title">Same evidence, different stories</title>
@@ -125,7 +123,7 @@ def build():
     assert all(s == signatures[0] for s in signatures)
     assert all(0 < x < 10 and 0 < y < 100 for x, y in POINTS)
     # The smallest retained label remains >12px in the HTML phone column.
-    assert 29 * 330.5 / WIDTH >= 12
+    assert 30 * 330.5 / WIDTH >= 12
     (FIGURES / "model-underdetermination.svg").write_text(svg)
     source = FIGURES / "source" / "model-underdetermination.json"
     source.parent.mkdir(exist_ok=True)
@@ -137,7 +135,7 @@ def build():
         "axis_display": "Plain axis lines; titles, ticks, and tick labels omitted",
         "units": "Arbitrary time and outcome units", "panels": panels,
         "verification": {"identical_observations": True, "identical_scales": True,
-                         "observations_per_panel": 32, "minimum_label_px_at_330_5px": 29*330.5/WIDTH}
+                         "observations_per_panel": 32, "minimum_label_px_at_330_5px": 30*330.5/WIDTH}
     }, indent=2) + "\n")
     print("Built Figure 30.1: 4 panels, identical 32-point examples and axis scales.")
 

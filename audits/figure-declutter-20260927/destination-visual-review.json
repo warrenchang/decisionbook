@@ -1,0 +1,50 @@
+{
+  "method": "Codex in-app browser, local HTTP preview; final HTML and extracted EPUB content with .html preview extensions",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    {
+      "figure": "26.1",
+      "edition": "HTML",
+      "result": "PASS",
+      "observation": "Target/comparisons and caption inspected at desktop size. At 390px the existing 900px horizontal pane exposes every comparison by scrolling; caption stays in column."
+    },
+    {
+      "figure": "29.3",
+      "edition": "HTML",
+      "result": "PASS",
+      "observation": "Bar labels and values visible at desktop and narrow widths; caption preserves design and sample limits."
+    },
+    {
+      "figure": "26.1",
+      "edition": "EPUB content preview",
+      "result": "PASS",
+      "observation": "Simplified figure and updated caption render; narrow view retains horizontal-pane behavior."
+    },
+    {
+      "figure": "26.2",
+      "edition": "EPUB content preview",
+      "result": "PASS",
+      "observation": "Branching diagnostic renders without its former general advice footer."
+    },
+    {
+      "figure": "D.3",
+      "edition": "EPUB content preview",
+      "result": "PASS",
+      "observation": "Three compact mechanisms render at desktop and 390px. Caption/prose retain ITT, missingness and interference boundaries."
+    }
+  ],
+  "limitations": [
+    "Browser preview of extracted EPUB content is not a test in every native e-reader.",
+    "Wide figures retain the existing horizontal reading pane on small screens; they are not all designed to fit in one phone viewport.",
+    "Standalone/contact-sheet review covers all 108 numbered figures; final destination visual sampling covers representative revised figures."
+  ]
+}

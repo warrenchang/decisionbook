@@ -1,0 +1,1879 @@
+{
+  "date": "2026-09-27",
+  "scope": "Chapters 15–28 except Chapter 26",
+  "counts": {
+    "total": 31,
+    "PASS": 21,
+    "REVISED": 10,
+    "BLOCKED": 0
+  },
+  "source_changes": {
+    "svg": 10,
+    "png_fallback": 10,
+    "qmd_files": 6,
+    "figure_caption_alt_entries": 7
+  },
+  "geometry_check": "All original plotted paths, circles, polygons, polylines and substantive lines are byte-attribute-identical. Only removed geometric primitives: prospect-theory callout leader; rare-event side-box divider. No data values or plotted coordinates changed. Decorative callout rectangles and empty viewBox margins removed as recorded.",
+  "limitations": [
+    "This is standalone/source review, not a completed HTML/EPUB build. Parent owns final destination verification.",
+    "390px forced-fit images are stress checks; wide figures retain repository scroll-pane behavior."
+  ],
+  "figures": [
+    {
+      "figure_id": "fig-regression-conditional-shrinkage",
+      "chapter": "chapters/15-randomness-and-overconfidence.qmd",
+      "asset": "figures/regression-conditional-shrinkage.svg",
+      "status": "REVISED",
+      "reason": "Interpretive prediction sentence duplicates the caption; axes, formula labels and prediction guides remain.",
+      "removed_or_moved_text": [
+        "z₁ = +2 → prediction +0.8"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Simulation points, identity and conditional-prediction lines, axis units and prediction guides.",
+      "visible_text_after": [
+        "−2",
+        "−1",
+        "0",
+        "1",
+        "2",
+        "−2",
+        "−1",
+        "0",
+        "1",
+        "2",
+        "First measurement, z₁",
+        "Second measurement, z₂",
+        "Dashed: z₂ = z₁",
+        "Orange: E[z₂|z₁] = 0.40z₁"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/00-regression-conditional-shrinkage.png",
+          "size_pixels": [
+            1000,
+            656
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/00-regression-conditional-shrinkage.png",
+          "size_pixels": [
+            390,
+            256
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "ca7a90b89ce3ee154c5f25a5c5c22f6c6f3d69af93998cfb1677988bb0f1ef4b",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/regression-conditional-shrinkage.svg",
+      "png_fallback": {
+        "asset": "figures/regression-conditional-shrinkage.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "b895fe864cf958313cbcd046b6c4973a4b8aecaf1211325d0ab73c22dd0197e5"
+      }
+    },
+    {
+      "figure_id": "fig-confidence-accuracy",
+      "chapter": "chapters/15-randomness-and-overconfidence.qmd",
+      "asset": "figures/study-confidence-accuracy.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Four observed stages, direct series labels and reported endpoint values.",
+      "visible_text_after": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "Successive information stages",
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "Mean percentage",
+        "52.8",
+        "27.8",
+        "Confidence",
+        "Accuracy"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_study_centered_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/01-study-confidence-accuracy.png",
+          "size_pixels": [
+            1000,
+            853
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/01-study-confidence-accuracy.png",
+          "size_pixels": [
+            390,
+            333
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "6502fc965980b56a72ed4198247ea45f7d9464f84c394eaa076f475dbea7438e"
+    },
+    {
+      "figure_id": "fig-monty-hall-protocol",
+      "chapter": "chapters/15-randomness-and-overconfidence.qmd",
+      "asset": "figures/monty-hall-protocol.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Constrained host protocol, stages, door labels and branch probabilities; protocol header is necessary to interpretation.",
+      "visible_text_after": [
+        "One car is placed randomly; the knowledgeable host must reveal a goat and always offer a switch.",
+        "1  CHOOSE ONE DOOR",
+        "1",
+        "2",
+        "3",
+        "1/3",
+        "2/3 together",
+        "2  HOST REVEALS A GOAT",
+        "1",
+        "2",
+        "GOAT",
+        "3 open",
+        "3  KEEP OR SWITCH",
+        "KEEP 1",
+        "SWITCH 2",
+        "1/3",
+        "2/3"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/02-monty-hall-protocol.png",
+          "size_pixels": [
+            1000,
+            383
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/02-monty-hall-protocol.png",
+          "size_pixels": [
+            390,
+            150
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "5ff2ddcb99a7b18a56708d9c306c4e62b3a49df82210955d02ed1d4bf003f095"
+    },
+    {
+      "figure_id": "fig-risky-decision-map",
+      "chapter": "chapters/16-risk-and-uncertainty.qmd",
+      "asset": "figures/risky-decision-map.svg",
+      "status": "REVISED",
+      "reason": "Replace argumentative headings with panel labels and remove duplicated lottery sentence and expected-value explanation; mathematical and condition labels remain.",
+      "removed_or_moved_text": [
+        "1. Same expected money, lower expected utility",
+        "Illustration: X = 0 or 100 with equal probability; u(x) = √x",
+        "not a guaranteed outcome",
+        "2. Diagnose what the number omits"
+      ],
+      "replacement_labels": [
+        "Expected value and expected utility",
+        "Risk, ambiguity, and outcomes"
+      ],
+      "essential_labels_retained": "Utility/wealth axes and function, 50/50 outcomes, expected utility/value, certainty equivalent/risk premium; known versus unknown urn conditions and process/outcome distinction.",
+      "visible_text_after": [
+        "Expected value and expected utility",
+        "Final wealth x",
+        "Utility u(x)",
+        "0",
+        "25",
+        "50",
+        "100",
+        "0",
+        "5",
+        "10",
+        "u(x) = √x",
+        "50%: x = 0",
+        "50%: x = 100",
+        "Expected utility = 5",
+        "Certainty equivalent = 25",
+        "Expected value = 50",
+        "Risk premium = EV − CE = 25",
+        "Risk, ambiguity, and outcomes",
+        "KNOWN RISK versus AMBIGUITY",
+        "Known mix",
+        "probabilities specified",
+        "Unknown mix",
+        "?",
+        "?",
+        "?",
+        "?",
+        "mix unknown",
+        "PROCESS is not OUTCOME",
+        "Decision process",
+        "evidence • values • safeguards",
+        "Good outcome",
+        "may include luck",
+        "Bad outcome",
+        "bad luck possible"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/03-risky-decision-map.png",
+          "size_pixels": [
+            1000,
+            554
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/03-risky-decision-map.png",
+          "size_pixels": [
+            390,
+            216
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "f5388314cc79d5ed45b70ac43736e3c96b30b6372e410b45967f9a88e4a08962",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/risky-decision-map.svg",
+      "png_fallback": {
+        "asset": "figures/risky-decision-map.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "f61a5a85fcd8100c866e951c7747b2937ae4f25866c2152bf6e80dc4e20cd10f"
+      }
+    },
+    {
+      "figure_id": "fig-prospect-theory-map",
+      "chapter": "chapters/17-prospect-theory.qmd",
+      "asset": "figures/prospect-theory-map.svg",
+      "status": "REVISED",
+      "reason": "Remove redundant prose and decorative callout backgrounds while preserving direct concept labels, curve relations, four risk attitudes and concrete examples.",
+      "removed_or_moved_text": [
+        "1. Value of gains and losses",
+        "loss side often steeper",
+        "near the reference point",
+        "2. Probability becomes decision weight",
+        "Small p, large weight",
+        "near 1 → 1 is special",
+        "3. The fourfold pattern",
+        "protect the likely gain • certainty",
+        "pursue the possibility",
+        "gamble to avoid the loss",
+        "pay to remove the possibility"
+      ],
+      "replacement_labels": [
+        "Value of gains and losses",
+        "Probability weighting",
+        "The fourfold pattern"
+      ],
+      "essential_labels_retained": "Value/weighting axes, reference point, loss-aversion/possibility/certainty concepts, curves, four probability/outcome classes, risk attitudes and examples.",
+      "visible_text_after": [
+        "Value of gains and losses",
+        "gain",
+        "loss",
+        "subjective value",
+        "reference point r",
+        "concave gains",
+        "convex losses",
+        "Loss aversion",
+        "Probability weighting",
+        "objective probability p",
+        "decision weight w(p)",
+        "w(p) = p",
+        "Possibility",
+        "Certainty",
+        "0",
+        "0.5",
+        "1",
+        "The fourfold pattern",
+        "HIGH-PROBABILITY GAIN",
+        "Risk averse",
+        "example: sure payoff",
+        "LOW-PROBABILITY GAIN",
+        "Risk seeking",
+        "example: lottery",
+        "HIGH-PROBABILITY LOSS",
+        "Risk seeking",
+        "example: break-even attempt",
+        "LOW-PROBABILITY LOSS",
+        "Risk averse",
+        "example: insurance"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/04-prospect-theory-map.png",
+          "size_pixels": [
+            1000,
+            554
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/04-prospect-theory-map.png",
+          "size_pixels": [
+            390,
+            216
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "cd64930fc24959e820893b50840555fe59baa5e3af9fc5faba0051b83381d845",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/prospect-theory-map.svg",
+      "png_fallback": {
+        "asset": "figures/prospect-theory-map.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "44e0fa316a014c17ffb0690be2b1851add6324a346195f19dbfc21238bd46514"
+      }
+    },
+    {
+      "figure_id": "fig-decision-experience-states",
+      "chapter": "chapters/18-decisions-from-experience.qmd",
+      "asset": "figures/decision-experience-states.svg",
+      "status": "REVISED",
+      "reason": "Action recommendations repeat the adjacent information-states table and prose. Retain matrix axes, four state names and definitions.",
+      "removed_or_moved_text": [
+        "Preserve options",
+        "Deep uncertainty is possible if no stable model exists",
+        "Make numbers usable",
+        "Absolute risk · denominator · comparison",
+        "Audit the sample",
+        "Exposure · selection · stopping · base rates",
+        "Reconcile evidence",
+        "Ask what each source observes and misses"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Description/experience dimensions, present/absent axis labels and definitions of all four states.",
+      "visible_text_after": [
+        "DESCRIPTION",
+        "Absent",
+        "Present",
+        "EXPERIENCE",
+        "Absent",
+        "Present",
+        "?",
+        "Neither: information-poor",
+        "No credible description and little",
+        "relevant personal experience.",
+        "Description only",
+        "Explicit outcomes and probabilities,",
+        "but no personal feedback.",
+        "Experience only",
+        "A sampled path without the full",
+        "generating distribution.",
+        "Both",
+        "Numbers and experience can reinforce",
+        "one another—or point in opposite directions."
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/05-decision-experience-states.png",
+          "size_pixels": [
+            1000,
+            446
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/05-decision-experience-states.png",
+          "size_pixels": [
+            390,
+            174
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "0805cb829120b58049e8ff81c0d022041478df6ffb1a7b6fddd7c79ce0730ddd",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/decision-experience-states.svg",
+      "png_fallback": {
+        "asset": "figures/decision-experience-states.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "385adacca69b204db7c71045404014b8b505326c0d8369efa5237d86fb19e9d1"
+      }
+    },
+    {
+      "figure_id": "fig-experience-rare-event-sampling",
+      "chapter": "chapters/18-decisions-from-experience.qmd",
+      "asset": "figures/experience-rare-event-sampling.svg",
+      "status": "REVISED",
+      "reason": "Remove side calculation box; its unchanged 86% and 46% values remain in the caption. Crop unused right margin without altering plotted curves or axes.",
+      "removed_or_moved_text": [
+        "At n = 15",
+        "86%",
+        "chance that a 1% event",
+        "has not appeared",
+        "has not appeared",
+        "46%",
+        "chance that a 5% event"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Both rare-event-probability curves, axes and 11–19-observation band.",
+      "visible_text_after": [
+        "0%",
+        "20%",
+        "40%",
+        "60%",
+        "80%",
+        "100%",
+        "0",
+        "10",
+        "20",
+        "40",
+        "60",
+        "80",
+        "100",
+        "11–19",
+        "Number of observations in the experience sample (n)",
+        "Probability the rare event is absent",
+        "p = 1%",
+        "p = 5%"
+      ],
+      "generator_origin": {
+        "kind": "hand-maintained SVG protected by historical generator",
+        "path": "scripts/build_new_chapter_figures.py",
+        "note": "Listed in HAND_MAINTAINED_SVGS; builder preserves canonical SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/06-experience-rare-event-sampling.png",
+          "size_pixels": [
+            1000,
+            669
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/06-experience-rare-event-sampling.png",
+          "size_pixels": [
+            390,
+            261
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "beed6c0ba3a33631a6e379df965710587f1c08650c9a099dfd82c60956c2633c",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/experience-rare-event-sampling.svg",
+      "png_fallback": {
+        "asset": "figures/experience-rare-event-sampling.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "d1ae07db878ae1fec160a30e42f970851625abac6d9706498283a12e2ffbe818"
+      }
+    },
+    {
+      "figure_id": "fig-mental-accounting-map",
+      "chapter": "chapters/19-mental-accounting.qmd",
+      "asset": "figures/mental-accounting-map.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Mental-accounting operation names and clarifying questions, valuation categories and possible support/distortion pathways; questions define the concepts.",
+      "visible_text_after": [
+        "Outcome",
+        "payment • gain • loss",
+        "purchase • investment",
+        "MENTAL ACCOUNTING OPERATIONS",
+        "Label / open",
+        "Which account?",
+        "Code / post",
+        "Gain, loss, fee, saving?",
+        "Bracket",
+        "Separate or combine?",
+        "Couple / close",
+        "Link use and payment?Close when?",
+        "VALUATION LAYER",
+        "Compare with a reference",
+        "Acquisition value",
+        "Transaction value",
+        "Gain or loss",
+        "May support a goal",
+        "protects a goal • reduces temptation",
+        "May distort substitution",
+        "hides substitutes • keeps sunk costs salient"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-0.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/07-mental-accounting-map.png",
+          "size_pixels": [
+            1000,
+            500
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/07-mental-accounting-map.png",
+          "size_pixels": [
+            390,
+            195
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "76a8b9d67bdb62c5c34c3512647b552d44a11b486de527b370e87f232fb7a405"
+    },
+    {
+      "figure_id": "fig-mental-accounting-evidence-redraw",
+      "chapter": "chapters/19-mental-accounting.qmd",
+      "asset": "figures/mental-accounting-evidence-redraw.svg",
+      "status": "REVISED",
+      "reason": "Remove investment-advice question box; shorten panel headings and sample line while retaining sources, sample size, 3.41-percentage-point contrast and 40%/90% allocations.",
+      "removed_or_moved_text": [
+        "Disposition effect: sell winners, hold losers",
+        "Forward-looking test",
+        "Would I buy this position today at this price?",
+        "The same risk, a different horizon",
+        "Median allocations · 25 staff per display condition"
+      ],
+      "replacement_labels": [
+        "Disposition effect",
+        "Return-display horizon",
+        "25 staff per display condition"
+      ],
+      "essential_labels_retained": "Distinct source/study labels, winner sold/loser held, 3.41 percentage points and return horizon, annual/30-year displays, 40%/90% allocations and N=25 per condition.",
+      "visible_text_after": [
+        "Disposition effect",
+        "Odean (1998), brokerage sample",
+        "WINNER",
+        "sold",
+        "account closed",
+        "LOSER",
+        "held",
+        "loss not realized",
+        "+3.41 percentage points",
+        "market-adjusted return of winners sold",
+        "relative to losing positions retained",
+        "over the following year",
+        "Return-display horizon",
+        "Benartzi & Thaler (1999), Study 3",
+        "40%",
+        "Annual return",
+        "distributions",
+        "90%",
+        "30-year return",
+        "distributions",
+        "0",
+        "25",
+        "50",
+        "75",
+        "100",
+        "Median hypothetical stock allocation (%)",
+        "25 staff per display condition"
+      ],
+      "generator_origin": {
+        "kind": "hand-maintained SVG protected by historical generator",
+        "path": "scripts/build_new_chapter_figures.py",
+        "note": "Listed in HAND_MAINTAINED_SVGS; builder preserves canonical SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/08-mental-accounting-evidence-redraw.png",
+          "size_pixels": [
+            1000,
+            525
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/08-mental-accounting-evidence-redraw.png",
+          "size_pixels": [
+            390,
+            205
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "762d16ae466ecc22c5ab55310f2b85af7e0707c24db867f388bfb050542d9eae",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/mental-accounting-evidence-redraw.svg",
+      "png_fallback": {
+        "asset": "figures/mental-accounting-evidence-redraw.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "1a4fd0735903c9fa7ea7b8a62e8e37ccdf0a99f0d15dedd17714de06b36faa81"
+      }
+    },
+    {
+      "figure_id": "fig-discount-model-crossover",
+      "chapter": "chapters/20-intertemporal-decision-making.qmd",
+      "asset": "figures/discount-model-crossover.svg",
+      "status": "REVISED",
+      "reason": "Remove exponential comparison footer already explained in caption/body; retain all three curves, parameters and the worked quasi-hyperbolic preference reversal.",
+      "removed_or_moved_text": [
+        "With exponential δ=.95, the relative ranking stays stable:",
+        "€120 next period receives €114 of weight, more than €100 now."
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Three discount curves and parameters, illustrative model specification and the two contrasting quasi-hyperbolic calculations.",
+      "visible_text_after": [
+        "Exponential: 0.95ᵗ",
+        "Hyperbolic: 1/(1 + 0.15t)",
+        "Quasi-hyperbolic:",
+        "1 now; 0.70×0.95ᵗ later",
+        "0",
+        "3",
+        "6",
+        "9",
+        "12",
+        "0",
+        ".25",
+        ".50",
+        ".75",
+        "1",
+        "Delay, t (periods)",
+        "Discount factor, D(t)",
+        "Present bias: β = .70, δ = .95",
+        "Linear utility",
+        "Viewed today: both rewards are delayed",
+        "€100×βδ¹² = €37.8",
+        "€120×βδ¹³ = €43.1",
+        "Model prefers €120 later",
+        "At month 12: the smaller reward is immediate",
+        "€100 now = €100",
+        "€120×βδ = €79.8",
+        "Preference reverses to €100 now"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/09-discount-model-crossover.png",
+          "size_pixels": [
+            1000,
+            990
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/09-discount-model-crossover.png",
+          "size_pixels": [
+            390,
+            386
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "800bd567c34875cce4ea3bca99a106dacbd38566a4f3ae0797abde8caddf7896",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/discount-model-crossover.svg",
+      "png_fallback": {
+        "asset": "figures/discount-model-crossover.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "b774335d083b839915879aeabfdff5899939fcfbf32e9e9e829d4cd39fb0117f"
+      }
+    },
+    {
+      "figure_id": "fig-intertemporal-choice",
+      "chapter": "chapters/20-intertemporal-decision-making.qmd",
+      "asset": "figures/intertemporal-choice.svg",
+      "status": "REVISED",
+      "reason": "Remove disconnected bridge-design recommendation row and its boxes, already developed in the chapter; retain both paths and diagnostic mechanism labels.",
+      "removed_or_moved_text": [
+        "DESIGN THE BRIDGE",
+        "Make future concrete",
+        "Reduce uncertainty",
+        "Add a small",
+        "immediate reward",
+        "Plan before",
+        "temptation arrives"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Sooner/later alternatives, diagnostic uncertainty/imagery/friction nodes and mechanism-specific questions.",
+      "visible_text_after": [
+        "Choice point",
+        "what matters now",
+        "and later?",
+        "Smaller, sooner",
+        "salient • relief close at hand",
+        "Larger, later",
+        "valuable if the path survives",
+        "immediate pull",
+        "Uncertainty",
+        "will it arrive?",
+        "Weak image",
+        "can I feel it?",
+        "Friction",
+        "can I act now?"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/10-intertemporal-choice.png",
+          "size_pixels": [
+            1000,
+            400
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/10-intertemporal-choice.png",
+          "size_pixels": [
+            390,
+            156
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "9af66d42fad86fe3a0c35d1e9a2a1b9ef5580d0171779eb8b423fd9286b22f30",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/intertemporal-choice.svg",
+      "png_fallback": {
+        "asset": "figures/intertemporal-choice.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "55f039c7e2bc5f7542fdf4e68da6cdd7973d3c8e6457e35759942c0639660c97"
+      }
+    },
+    {
+      "figure_id": "fig-hidden-zero-frame",
+      "chapter": "chapters/20-intertemporal-decision-making.qmd",
+      "asset": "figures/hidden-zero-frame.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Two framing conditions, dates, options, unchanged payoffs and explicit zero versus unshown cells.",
+      "visible_text_after": [
+        "ABBREVIATED FRAME",
+        "Today",
+        "In one month",
+        "Option A",
+        "€100",
+        "not shown",
+        "Option B",
+        "not shown",
+        "€120",
+        "COMPLETE STREAM: HIDDEN ZEROS SHOWN",
+        "Today",
+        "In one month",
+        "Option A",
+        "€100",
+        "€0",
+        "Option B",
+        "€0",
+        "€120"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/11-hidden-zero-frame.png",
+          "size_pixels": [
+            1000,
+            713
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/11-hidden-zero-frame.png",
+          "size_pixels": [
+            390,
+            278
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "0c74b52fc41f5cb1467294dc7e08754564c83eb27e12ef45ccd94f090fd44605"
+    },
+    {
+      "figure_id": "fig-habit-loop",
+      "chapter": "chapters/21-habits-wanting-and-self-control.qmd",
+      "asset": "figures/habit-loop.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Cue/impulse/action/outcome labels, learning across repetitions, solid versus dashed sequence.",
+      "visible_text_after": [
+        "Cue",
+        "Impulse",
+        "Action",
+        "Outcome",
+        "Learning",
+        "across repetitions"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/12-habit-loop.png",
+          "size_pixels": [
+            1000,
+            1000
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/12-habit-loop.png",
+          "size_pixels": [
+            390,
+            390
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "16d1a71b8015ec6975907f3f837ed7cecdfc7069bc8dd183d399dd2435966634"
+    },
+    {
+      "figure_id": "fig-habit-formation-curve",
+      "chapter": "chapters/21-habits-wanting-and-self-control.qmd",
+      "asset": "figures/habit-formation-curve.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Time/automaticity axes, habit line and exact 95-percent guide/crossing.",
+      "visible_text_after": [
+        "Time",
+        "Automaticity",
+        "Habit line"
+      ],
+      "generator_origin": {
+        "kind": "active generator with reviewed cleanup",
+        "path": "scripts/build_reading_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/13-habit-formation-curve.png",
+          "size_pixels": [
+            1000,
+            1000
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/13-habit-formation-curve.png",
+          "size_pixels": [
+            390,
+            390
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "294083487472a9865491c4dc23641dd839d54eb87a949aa5a6a6963f6d477e1b"
+    },
+    {
+      "figure_id": "fig-reward-prediction-error-shift",
+      "chapter": "chapters/21-habits-wanting-and-self-control.qmd",
+      "asset": "figures/reward-prediction-error-abcd.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Four experimentally meaningful schematic conditions, cue/reward/due/no-reward events, baseline and response signs.",
+      "visible_text_after": [
+        "Cue",
+        "Reward",
+        "−",
+        "0",
+        "+",
+        "A  Unexpected reward",
+        "Cue",
+        "Reward",
+        "−",
+        "0",
+        "+",
+        "B  Learned prediction",
+        "Cue",
+        "No reward",
+        "−",
+        "0",
+        "+",
+        "C  Reward omitted",
+        "Cue",
+        "Due",
+        "Reward",
+        "−",
+        "0",
+        "+",
+        "D  Unexpected delay",
+        "Time within each trial"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_dopamine_figures.py",
+        "input": "figures-src/dopamine-schematics.json"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/14-reward-prediction-error-abcd.png",
+          "size_pixels": [
+            1000,
+            1275
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/14-reward-prediction-error-abcd.png",
+          "size_pixels": [
+            390,
+            497
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "228e2317350818da00b18c4a0b9d88585e1ff9d5df0fe25b94031b0038110dd9"
+    },
+    {
+      "figure_id": "fig-reward-uncertainty-comparison",
+      "chapter": "chapters/21-habits-wanting-and-self-control.qmd",
+      "asset": "figures/reward-uncertainty-comparison.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Certain/uncertain legend, cue/outcome labels, common baseline and reward/no-reward outcome branches.",
+      "visible_text_after": [
+        "Cue",
+        "Outcome",
+        "0",
+        "Reward",
+        "No reward",
+        "Certain reward",
+        "Uncertain reward"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_dopamine_figures.py",
+        "input": "figures-src/dopamine-schematics.json"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-1.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/15-reward-uncertainty-comparison.png",
+          "size_pixels": [
+            1000,
+            600
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/15-reward-uncertainty-comparison.png",
+          "size_pixels": [
+            390,
+            234
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "cec9c848d2b11788d6852a7c78ea6514da0dd669a7dd42a1872284779946879c"
+    },
+    {
+      "figure_id": "fig-urge-wave-observation",
+      "chapter": "chapters/21-habits-wanting-and-self-control.qmd",
+      "asset": "figures/urge-wave-observation.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Time and intensity axes; schematic urge trajectory.",
+      "visible_text_after": [
+        "Time",
+        "Urge intensity"
+      ],
+      "generator_origin": {
+        "kind": "active generator with reviewed cleanup",
+        "path": "scripts/build_reading_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/16-urge-wave-observation.png",
+          "size_pixels": [
+            1000,
+            487
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/16-urge-wave-observation.png",
+          "size_pixels": [
+            390,
+            190
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "31e0488777278d6dc2a4615758b0b64514bbacbf988bf8cbef3abf808ee837c7"
+    },
+    {
+      "figure_id": "fig-well-being-six-lenses",
+      "chapter": "chapters/22-deciding-for-a-better-life.qmd",
+      "asset": "figures/subjective-well-being-six-lenses.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Six distinct utility/well-being concepts and short defining questions; within-choice chronology separated from across-life perspectives.",
+      "visible_text_after": [
+        "BEFORE",
+        "CHOOSING",
+        "DURING",
+        "AFTER",
+        "Predicted utility",
+        "How will it feel?",
+        "Decision utility",
+        "What do I choose?",
+        "Experienced utility",
+        "How does it feel now?",
+        "Remembered utility",
+        "How do I remember it?",
+        "ACROSS A LIFE",
+        "Life evaluation",
+        "How is my life going?",
+        "Meaning and purpose",
+        "Is it worthwhile?"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/17-subjective-well-being-six-lenses.png",
+          "size_pixels": [
+            1000,
+            367
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/17-subjective-well-being-six-lenses.png",
+          "size_pixels": [
+            390,
+            143
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "685d8ffe2ceec11aa6cdacdad3c36e813aabaa4b62918ffcd8cd7d66211022ee"
+    },
+    {
+      "figure_id": "fig-cold-water-better-ending",
+      "chapter": "chapters/22-deciding-for-a-better-life.qmd",
+      "asset": "figures/cold-water-better-ending.svg",
+      "status": "REVISED",
+      "reason": "Move repeat-choice result from an isolated footer into the caption, preserving the exact result and denominator. Retain nominal temperatures and timing; crop resulting blank footer.",
+      "removed_or_moved_text": [
+        "22 of 32 chose the longer trial"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Short/long protocol labels, 14/15-degree nominal temperatures, 60/90-second durations, time axis.",
+      "visible_text_after": [
+        "Short trial",
+        "14°C",
+        "Stop",
+        "Long trial",
+        "14°C",
+        "Warms to",
+        "15°C",
+        "0",
+        "60",
+        "90",
+        "Time in water (seconds)"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_coordination_experience_figures.py",
+        "verification": "Exact reviewed output preserved and isolated generator output verified byte-identical; see audits/figure-declutter-20260927/generator-verification.json."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/18-cold-water-better-ending.png",
+          "size_pixels": [
+            1000,
+            645
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/18-cold-water-better-ending.png",
+          "size_pixels": [
+            390,
+            251
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "2116c3c74bba6b8cef1d7b6b7b29af15bc47de181ded7950c9d04a998cdb0ab8",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/cold-water-better-ending.svg",
+      "png_fallback": {
+        "asset": "figures/cold-water-better-ending.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "3a2c84b82afdf41fa4c3ab6fc517a186647d95d65c19f8a4d34ee59e3f9815a0"
+      }
+    },
+    {
+      "figure_id": "fig-income-wellbeing-evidence-synthesis",
+      "chapter": "chapters/22-deciding-for-a-better-life.qmd",
+      "asset": "figures/income-wellbeing-evidence-synthesis.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Three studies, solid/dashed construct legend, happier/least-happy subgroups and log-income axis.",
+      "visible_text_after": [
+        "Life evaluation",
+        "Emotional well-being",
+        "Kahneman and Deaton (2010)",
+        "Killingsworth (2021)",
+        "Killingsworth et al. (2023)",
+        "Happier respondents",
+        "Least happy respondents",
+        "Annual household income (log scale)"
+      ],
+      "generator_origin": {
+        "kind": "hand-maintained SVG protected by historical generator",
+        "path": "scripts/build_new_chapter_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/19-income-wellbeing-evidence-synthesis.png",
+          "size_pixels": [
+            1000,
+            367
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/19-income-wellbeing-evidence-synthesis.png",
+          "size_pixels": [
+            390,
+            143
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "ec7b1fc2a9f45900e95d54513a0087acfee19ca3d48381930d190911dc3cad23"
+    },
+    {
+      "figure_id": "fig-level-k-reasoning-ladder",
+      "chapter": "chapters/23-strategic-interdependence.qmd",
+      "asset": "figures/level-k-reasoning-ladder.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Level-0 anchor, three finite reasoning levels, equilibrium, numbers and task rule; task sentence makes the two-thirds operation intelligible.",
+      "visible_text_after": [
+        "LEVEL 0",
+        "50",
+        "random-choice anchor",
+        "LEVEL 1",
+        "33",
+        "⅔ of 50",
+        "LEVEL 2",
+        "22",
+        "⅔ of 33",
+        "LEVEL 3",
+        "15",
+        "⅔ of 22",
+        "EQUILIBRIUM",
+        "0",
+        "continued iteration",
+        "Choose a number from 0 to 100; aim for ⅔ of the group mean."
+      ],
+      "generator_origin": {
+        "kind": "hand-maintained SVG protected by historical generator",
+        "path": "scripts/build_new_chapter_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/20-level-k-reasoning-ladder.png",
+          "size_pixels": [
+            1000,
+            296
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/20-level-k-reasoning-ladder.png",
+          "size_pixels": [
+            390,
+            115
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "fb6f83d34bebdc2c08f2fcadaba889c139a216fee521892fcaa8237e18f706d0"
+    },
+    {
+      "figure_id": "fig-stag-hunt-belief-payoffs",
+      "chapter": "chapters/24-coordination-and-focal-points.qmd",
+      "asset": "figures/stag-hunt-belief-payoffs.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Stag/Hare payoff curves, belief/payoff axes and 61.5-percent threshold.",
+      "visible_text_after": [
+        "0",
+        "5",
+        "10",
+        "15",
+        "0%",
+        "50%",
+        "100%",
+        "Stag",
+        "Hare",
+        "61.5%",
+        "Expected payoff",
+        "Believed chance the other",
+        "player chooses Stag"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_coordination_experience_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/21-stag-hunt-belief-payoffs.png",
+          "size_pixels": [
+            1000,
+            888
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/21-stag-hunt-belief-payoffs.png",
+          "size_pixels": [
+            390,
+            346
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "7478c90f95bbd59f9b615925a0e28d6254dcaac63e73e534a067b9e113d784cf"
+    },
+    {
+      "figure_id": "fig-fairness-entitlements-redraw",
+      "chapter": "chapters/25-cooperation-and-social-preferences.qmd",
+      "asset": "figures/fairness-entitlements-redraw.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Four scenario definitions, separate sample sizes, measured unfairness percentages and comparison grouping.",
+      "visible_text_after": [
+        "Unfair or very unfair (%)",
+        "DIFFERENT PRICE-CHANGE SCENARIOS",
+        "Snow shovel after a large storm",
+        "Price rises from $15 to $20; N = 107",
+        "82%",
+        "Lettuce wholesale-cost pass-through",
+        "Wholesale and retail price each rise $0.30; N = 101",
+        "21%",
+        "TWO REFERENCE-POINT DESCRIPTIONS",
+        "Scarce car: add a $200 surcharge",
+        "Formerly list price; now $200 above list; N = 130",
+        "71%",
+        "Scarce car: withdraw a $200 discount",
+        "Formerly $200 below list; now list price; N = 123",
+        "42%",
+        "0%",
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/22-fairness-entitlements-redraw.png",
+          "size_pixels": [
+            1000,
+            454
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/22-fairness-entitlements-redraw.png",
+          "size_pixels": [
+            390,
+            177
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "5f140dfd2f742b1fb1ce9f8b795ab82e7ae8ef95e07f57d28ee7a0ce7970b3f8"
+    },
+    {
+      "figure_id": "fig-finance-euro-efficiency",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-euro-note-found.png",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Illustrative photo of 20-euro note on pavement, with no explanatory overlay.",
+      "visible_text_after": [],
+      "generator_origin": {
+        "kind": "raster photograph",
+        "note": "No modification required; original photo retained."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-2.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/23-finance-euro-note-found.png",
+          "size_pixels": [
+            1000,
+            749
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/23-finance-euro-note-found.png",
+          "size_pixels": [
+            390,
+            292
+          ],
+          "inspected": true,
+          "result": "Essential labels remain readable at 390px; no clipping or overlap observed."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "b6e26a00b52c77dba5043b212fa8b78275d9822dd7a49a756a97a6f97227b9c5"
+    },
+    {
+      "figure_id": "fig-finance-fed-announcement",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-fed-announcement.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Observed traced price path, announcement marker, opening/closing values and time/date/index labels.",
+      "visible_text_after": [
+        "09:30",
+        "14:00",
+        "16:00",
+        "18 September 2013 · US Eastern time",
+        "S&P 500 index",
+        "Fed announcement",
+        "1,705.48",
+        "1,725.52"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_finance_news_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/24-finance-fed-announcement.png",
+          "size_pixels": [
+            1000,
+            500
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/24-finance-fed-announcement.png",
+          "size_pixels": [
+            390,
+            195
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "297561eb075b2eb437dd7783a67080676b19c9d2207953e7a4c3b73c8c1b8a19"
+    },
+    {
+      "figure_id": "fig-finance-september11-futures",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-september11-futures.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Traced futures path, two event times, price units and time/date labels.",
+      "visible_text_after": [
+        "08:45",
+        "08:50",
+        "08:55",
+        "09:00",
+        "09:05",
+        "09:10",
+        "09:15",
+        "11 September 2001 · US Eastern time",
+        "1,060",
+        "1,070",
+        "1,080",
+        "1,090",
+        "1,100",
+        "S&P 500 futures price (index points)",
+        "First impact",
+        "08:46",
+        "Second impact",
+        "09:03"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_finance_news_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/25-finance-september11-futures.png",
+          "size_pixels": [
+            1000,
+            571
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/25-finance-september11-futures.png",
+          "size_pixels": [
+            390,
+            223
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "e8559af09b59843ce92ae627bf43afe98a8c383ebdf1ceae8b6ab8ef8097f119"
+    },
+    {
+      "figure_id": "fig-finance-challenger",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-challenger-redraw.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Observed points, distinct contractor shapes/legend, trading gap, percentage scale and event-time marker.",
+      "visible_text_after": [
+        "11:30",
+        "12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "28 January 1986 · US Eastern time",
+        "-12",
+        "-8",
+        "-4",
+        "0",
+        "Price change from opening price (%)",
+        "Lockheed",
+        "Martin Marietta",
+        "Rockwell",
+        "Morton Thiokol"
+      ],
+      "generator_origin": {
+        "kind": "active generator",
+        "path": "scripts/build_finance_news_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/26-finance-challenger-redraw.png",
+          "size_pixels": [
+            1000,
+            595
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/26-finance-challenger-redraw.png",
+          "size_pixels": [
+            390,
+            232
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "5dc7ca018901385bca53bb6c0c6669379bd2709f17d1b4a2d4c6e30a6e0a22d3"
+    },
+    {
+      "figure_id": "fig-finance-earnings-evidence",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-earnings-drift-redraw.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Ten decile paths, decile identifiers, announcement marker and returns/time axes.",
+      "visible_text_after": [
+        "−20",
+        "0",
+        "20",
+        "40",
+        "60",
+        "80",
+        "90",
+        "Days from earnings announcement",
+        "-10",
+        "-5",
+        "0",
+        "+5",
+        "+10",
+        "Cumulative average excess return (%)",
+        "Announcement",
+        "Decile",
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "generator_origin": {
+        "kind": "historical generator",
+        "path": "audits/ch27-finance-lecture-20260921/build_figures.py",
+        "note": "Canonical traced plot retained without changes."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/27-finance-earnings-drift-redraw.png",
+          "size_pixels": [
+            1000,
+            655
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/27-finance-earnings-drift-redraw.png",
+          "size_pixels": [
+            390,
+            255
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "9c0146f565d4f35eb7eb5e950fd724a869577934345d19a754f6df12a6195014"
+    },
+    {
+      "figure_id": "fig-asset-bubble-feedback",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/asset-bubble-feedback.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Three feedback nodes, fundamentals and optional financing, explanatory definitions integral to the causal schematic.",
+      "visible_text_after": [
+        "RISING PRICES",
+        "The recent gain attracts attention",
+        "EXPECTING MORE GAINS",
+        "Buyers extrapolate or plan to resell",
+        "MORE BUYING",
+        "Demand can push the price up",
+        "FUNDAMENTALS",
+        "Cash flows and scarcity",
+        "Risk and discount rates",
+        "FINANCING",
+        "Credit or cash can",
+        "amplify buying",
+        "REINFORCING",
+        "FEEDBACK"
+      ],
+      "generator_origin": {
+        "kind": "canonical SVG",
+        "note": "No active generator located by filename search in scripts; edits made directly to authoritative SVG."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/28-asset-bubble-feedback.png",
+          "size_pixels": [
+            1000,
+            450
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/28-asset-bubble-feedback.png",
+          "size_pixels": [
+            390,
+            176
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "32a219418d93bc47e1b056daa099607750796ffdd12367ad2305a221e629998b"
+    },
+    {
+      "figure_id": "fig-bubble-trader-strategies-redraw",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/bubble-trader-strategies-redraw.svg",
+      "status": "PASS",
+      "reason": "No redundant explanatory overlay identified; remaining text serves the visual purpose.",
+      "removed_or_moved_text": [],
+      "replacement_labels": [],
+      "essential_labels_retained": "Four classification groups, observed shares and denominator axis label.",
+      "visible_text_after": [
+        "Feedback / momentum",
+        "consistent",
+        "36.5%",
+        "Passive / fundamental",
+        "value consistent",
+        "33.1%",
+        "Speculator / next-price",
+        "consistent",
+        "25.4%",
+        "Other / unclassified",
+        "4.9%",
+        "Share of trader classifications"
+      ],
+      "generator_origin": {
+        "kind": "hand-maintained SVG protected by historical generator",
+        "path": "scripts/build_new_chapter_figures.py"
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/29-bubble-trader-strategies-redraw.png",
+          "size_pixels": [
+            1000,
+            728
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/29-bubble-trader-strategies-redraw.png",
+          "size_pixels": [
+            390,
+            284
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "b9f139a91aeda5e8880ba3910a5f30696e8d80319656c0673785c2203513e3ac"
+    },
+    {
+      "figure_id": "fig-finance-event-study-drift",
+      "chapter": "chapters/27-markets-mispricing-and-bubbles.qmd",
+      "asset": "figures/finance-event-study-drift.svg",
+      "status": "REVISED",
+      "reason": "Remove checklist side box already covered by the event-study audit prose and exercise. Retain timeline definitions, schematic label, shared baseline and both surprise paths.",
+      "removed_or_moved_text": [
+        "AUDIT",
+        "event time",
+        "expected-return",
+        "model",
+        "confounds",
+        "uncertainty",
+        "tradable timing",
+        "costs"
+      ],
+      "replacement_labels": [],
+      "essential_labels_retained": "Three time windows with definitions, explicit schematic designation, shared pre-event baseline, positive/negative surprise paths and vertical-quantity definition.",
+      "visible_text_after": [
+        "ESTIMATION WINDOW",
+        "fit the expected-return model",
+        "EVENT",
+        "first public time",
+        "POST-EVENT WINDOW",
+        "test persistence or reversal",
+        "Schematic cumulative abnormal return",
+        "EVENT · t = 0",
+        "before",
+        "after",
+        "positive surprise",
+        "negative surprise",
+        "Cumulative observed − expected return"
+      ],
+      "generator_origin": {
+        "kind": "active generator with reviewed cleanup",
+        "path": "scripts/build_new_chapter_figures.py",
+        "verification": "Exact reviewed output preserved and isolated generator output verified byte-identical; see audits/figure-declutter-20260927/generator-verification.json."
+      },
+      "visual_checks": {
+        "contact_sheet_before": "tmp/figure-declutter-20260927/middle/sheet-3.jpg",
+        "full": {
+          "path": "tmp/figure-declutter-20260927/middle/full/30-finance-event-study-drift.png",
+          "size_pixels": [
+            1000,
+            458
+          ],
+          "inspected": true,
+          "result": "No clipped text, text collisions, data alteration or unintended overlay observed."
+        },
+        "narrow": {
+          "path": "tmp/figure-declutter-20260927/middle/narrow/30-finance-event-study-drift.png",
+          "size_pixels": [
+            390,
+            179
+          ],
+          "inspected": true,
+          "result": "390px forced-fit stress view has small type; intended narrow HTML/EPUB layout uses an existing horizontal reading pane (900px SVG or 800px wide-illustration). Final destination verification belongs to root."
+        },
+        "destination_HTML_EPUB": "Not built or inspected by this worker; parent owns final publication rendering."
+      },
+      "sha256": "05f52fdec1ff5a66be707af5d9f702a545fec45a85a56b65a6f8dc132ef8d4f8",
+      "before_asset": "tmp/figure-declutter-20260927/before/figures/finance-event-study-drift.svg",
+      "png_fallback": {
+        "asset": "figures/finance-event-study-drift.png",
+        "regenerated_from_final_SVG": true,
+        "renderer": "Sharp via bundled Node, density 180",
+        "sha256": "a71640108a79dbbd45825e4d5535fc857cade6e997ae6201a50481d034dd324e"
+      }
+    }
+  ],
+  "generator_verification_report": "audits/figure-declutter-20260927/generator-verification.json",
+  "structural_checks": {
+    "all_31_referenced_assets_present": true,
+    "all_30_SVGs_parse": true,
+    "all_10_changed_PNGs_exact_bytes_from_final_SVG_at_density_180": true,
+    "owned_file_git_diff_check": true
+  }
+}

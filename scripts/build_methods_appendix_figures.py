@@ -183,19 +183,14 @@ def participant_flow() -> str:
     # forms of dropout. Each panel names and depicts its own comparison.
     body = []
     panels = [
-        ('noncompliance', 20, 260, 'Noncompliance', PALE_ORANGE, ORANGE,
-         ['Treatment', 'assigned'], ['Treatment', 'received'], 'may differ',
-         ['Some assigned participants may not receive it.',
-          'Some controls may receive it.']),
-        ('attrition', 310, 260, 'Attrition', PALE_RED, RED,
-         ['Randomized', 'participants'], ['Participants', 'observed'], 'follow-up',
-         ['Loss to follow-up leaves outcomes missing.',
-          'Observed groups may no longer be comparable.']),
-        ('interference', 600, 220, 'Spillovers (interference)', PALE_PURPLE, PURPLE,
-         ["Person A’s", 'treatment'], ["Person B’s", 'outcome'], 'can affect',
-         ['Effects can cross treatment and control groups.']),
+        ('noncompliance', 20, 190, 'Noncompliance', PALE_ORANGE, ORANGE,
+         ['Treatment', 'assigned'], ['Treatment', 'received'], 'may differ'),
+        ('attrition', 240, 190, 'Attrition', PALE_RED, RED,
+         ['Randomized', 'participants'], ['Participants', 'observed'], 'some lost'),
+        ('interference', 460, 190, 'Spillovers (interference)', PALE_PURPLE, PURPLE,
+         ["Person A’s", 'treatment'], ["Person B’s", 'outcome'], 'can affect'),
     ]
-    for ident, y, height, label, fill, color, left, right, link, explanation in panels:
+    for ident, y, height, label, fill, color, left, right, link in panels:
         body.extend([
             f'<g id="{ident}">',
             rect(20, y, 720, height, fill=fill, stroke=color),
@@ -212,28 +207,18 @@ def participant_flow() -> str:
             text(380, y + 93, link, 28),
             f'<path d="M300 {y+120} H460" fill="none" stroke="{MUTED}" '
             'stroke-width="3" marker-end="url(#arrow)"/>',
-            lines(45, y + 202, explanation, 28, leading=36, anchor='start'),
             '</g>',
         ])
-    body.extend([
-        '<g id="intention-to-treat">',
-        rect(20, 850, 720, 145, fill=PALE_GREEN, stroke=GREEN),
-        text(45, 893, 'Intention-to-treat (ITT)', 32, anchor='start', weight=700, fill=GREEN),
-        text(45, 936, 'Compare outcomes by original assignment.', 28, anchor='start'),
-        text(45, 975, 'ITT alone does not resolve attrition or spillovers.', 28, anchor='start'),
-        '</g>',
-    ])
     return svg_document(
-        'Noncompliance, attrition, spillovers, and the assigned-group comparison',
+        'Noncompliance, attrition, and spillovers',
         'Three separate panels distinguish threats in a randomized evaluation. Noncompliance '
         'means treatment receipt differs from assignment: some assigned participants do not '
         'receive treatment and some controls do. Attrition leaves outcomes missing after loss '
         'to follow-up, so observed groups may no longer be comparable. Spillovers, or interference, '
         'mean one person’s treatment affects another person’s outcome, possibly across study '
-        'groups. Intention-to-treat compares outcomes by original assignment; it does not by '
-        'itself resolve missing outcomes or spillovers. The panels are distinct mechanisms, '
+        'groups. The panels are distinct mechanisms, '
         'not successive stages of one participant’s progress.',
-        '\n'.join(body), 760, 1015)
+        '\n'.join(body), 760, 670)
 
 
 def normal_cdf(x: float) -> float:

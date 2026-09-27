@@ -1,0 +1,133 @@
+{
+  "scope": "Independent read-only review of seven root-owned figure revisions against task-start copies. No source or asset edits made during this audit.",
+  "result": "PASS",
+  "summary": {
+    "PASS": 7,
+    "issues": 0
+  },
+  "limitations": [
+    "No new literature verification; audit checks fidelity to existing scientific content and declared boundaries.",
+    "HTML/EPUB destination verification and generator reproducibility remain with root/middle agent."
+  ],
+  "figures": [
+    {
+      "asset": "figures/asch-line-comparison.svg",
+      "source_chapter": "chapters/26-social-norms-and-conformity.qmd",
+      "status": "PASS",
+      "checks": [
+        "All four line elements exactly match task-start attributes: target/C 170 coordinate units, A 130, B 200. Widths, caps and positions unchanged.",
+        "Question, numeric size label, endpoint measurement path and pink debrief box removed; essential target/comparison/A/B/C labels retained.",
+        "Body and caption retain selection task followed by imagined unanimous B responses and private/public distinction. Alt describes actual lines, without deleted annotations."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        1096,
+        355
+      ],
+      "asset_sha256": "3fd484c2a529c53a44c2de781402e73a4707d9cd50c6ce0347fce0b552e4534d",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/norm-message-diagnostic.svg",
+      "source_chapter": "chapters/26-social-norms-and-conformity.qmd",
+      "status": "PASS",
+      "checks": [
+        "Concepts descriptive/injunctive, relevant-others definitions, truth/commonness checks and yes/no recommendations remain visible.",
+        "Removed backfire footer and secondary advice do not remove experimental conditions or results. Caption preserves accuracy/relevant-group/normalizing-harm test; body line 102 preserves prevalence, privacy and truthful alternatives.",
+        "Alt describes the surviving flowchart, with no stale reference to a final backfire box. Native layout has contained text and connected routes."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        1200,
+        424
+      ],
+      "asset_sha256": "d20c27b607f202744d484e8f22881573efa38225611d9dfebb01c178005a8e4f",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/social-pathways.svg",
+      "source_chapter": "chapters/26-social-norms-and-conformity.qmd",
+      "status": "PASS",
+      "checks": [
+        "Informational and normative routes, evidence inference versus approval/sanction, belief/action updating versus public conformity, and feedback are retained.",
+        "Removed explanation that public behavior may change without private belief is explicitly retained in caption. Correlated evidence and cascades are explained in adjacent body text.",
+        "Alt now describes only visible stages/routes and feedback. Native text is contained; connectors meet nodes."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        1200,
+        620
+      ],
+      "asset_sha256": "9e2ec9226bc8eeaf731be8d293f27610af5da46d57843aa7ce5339ae81c143da",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/cultural-market-study-redraw.svg",
+      "source_chapter": "chapters/26-social-norms-and-conformity.qmd",
+      "status": "PASS",
+      "checks": [
+        "All menu geometry, song names, illustrative counts, condition labels and random-versus-download-ranked ordering remain unchanged; only canvas background height changes among graphic shapes.",
+        "48 songs and listen/rate/download procedure removed from image footer but remain in body. Invented names/counts boundary remains prominent in caption and alt.",
+        "Counts-hidden/visible labels and world-specific download legend remain; no stale alt reference to removed footer."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        640,
+        1020
+      ],
+      "asset_sha256": "ef0c097f34d53c9ae80a7e4348ff2c06c51da7d699fd9f2e3e649488d0806859",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/mimicry-study-redraw.svg",
+      "source_chapter": "chapters/26-social-norms-and-conformity.qmd",
+      "status": "PASS",
+      "checks": [
+        "All bar rectangles and chart paths unchanged. Four values .57/.35/.45/.73, zero-origin actions-per-minute axis, category and partner conditions remain.",
+        "Only six significance-bracket lines and their explanatory text removed. Caption and alt retain N=35, significant face-rubbing contrast and marginal foot-shaking p=.06.",
+        "No uncertainty interval was removed: deleted lines form bracket annotations, not bar-specific error bars."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        810,
+        525
+      ],
+      "asset_sha256": "3c16640b15e17f170b6ece208aa31b5df77d4b6dc8dc47c72c2df9963edf424f",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/participant-flow-threats.svg",
+      "source_chapter": "appendices/appendix-e-how-behavioral-evidence-is-built.qmd",
+      "status": "PASS",
+      "checks": [
+        "Three separately framed mechanisms retain standard names and concrete assignments/receipt, randomized/observed participants, and one-person-treatment/other-person-outcome distinctions.",
+        "Attrition connector now says some lost, preserving the defining loss rather than generic follow-up. Removed explanation and ITT footer remain in caption/body, including missingness/spillover limits.",
+        "Alt no longer describes removed ITT box; SVG desc states separate mechanisms rather than sequential participant stages. Native connector shafts are clear and labels fit."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        760,
+        670
+      ],
+      "asset_sha256": "a5cb47b8231d7f453ef58d3764f33c903c045d3ad3f163a0f99883b3e741ca4d",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    },
+    {
+      "asset": "figures/selected-literature-simulation.svg",
+      "source_chapter": "appendices/appendix-f-when-evidence-breaks.qmd",
+      "status": "PASS",
+      "checks": [
+        "All histogram geometry remains unchanged; removed SVG path is only the rounded reporting-gate box. Tick scales, within-set percentages, dashed true-effect lines, 2,000/328 counts and .202/.490 means remain.",
+        "Two-sided p<.05 selection rule is now in second panel title; no qualification lost. Caption/alt/body identify a teaching simulation and preserve true effect .20, denominators and simulation parameters.",
+        "Native panel title fits; alt has no stale reporting-box description. Actual source chapter is Appendix F, not Appendix E."
+      ],
+      "issues": [],
+      "native_render_pixels": [
+        691,
+        605
+      ],
+      "asset_sha256": "79fca73915da32f686358285bce3b927547403f7cc2917160704f5ef7a3ee49a",
+      "visual_review": "Individually inspected native Sharp rasterization; source text and shape attributes compared with task-start copy; caption, alt and nearby body read."
+    }
+  ]
+}

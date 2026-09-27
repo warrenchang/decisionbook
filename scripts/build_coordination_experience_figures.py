@@ -8,6 +8,7 @@ Source and interpretation boundaries: audits/visual-readability-20260925/
 """
 from html import escape
 from pathlib import Path
+from reviewed_figure_cleanup import clean_svg
 
 ROOT = Path(__file__).resolve().parents[1]
 INK, BLUE, TEAL = '#183047', '#254f77', '#087e8b'
@@ -45,7 +46,7 @@ class SVG:
 
     def save(self, stem):
         target = ROOT / 'figures' / f'{stem}.svg'
-        target.write_text('\n'.join(self.items + ['</svg>']) + '\n')
+        target.write_text(clean_svg(f'{stem}.svg', '\n'.join(self.items + ['</svg>']) + '\n'))
         print(target.relative_to(ROOT))
 
 
