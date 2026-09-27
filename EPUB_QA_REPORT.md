@@ -44,7 +44,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | EPUB declares textual and visual access modes | **PASS** |
 | EPUB declares MathML and alternative-text accessibility features | **PASS** |
 | EPUB includes an accessibility summary | **PASS** |
-| All 62 source documents are packaged | **PASS** |
+| All 69 source documents are packaged | **PASS** |
 | Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |

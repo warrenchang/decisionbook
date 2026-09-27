@@ -226,3 +226,8 @@ th[scope="rowgroup"] {
 .tool-quick { border-left-color: #2b7a78; }
 .tool-extension { border-left-color: #6f5d9b; }
 .tool-level, .reading-label { font-size: .85em; font-weight: bold; color: #43586c; }
+
+/* Questions precede a deferred answer section in reading systems without JS. */
+.practice-question { margin: 1.2em 0; break-inside: avoid; page-break-inside: avoid; }
+.practice-answer-key { break-before: page; page-break-before: always; margin-top: 2em; }
+.practice-answer-key li { margin-bottom: .5em; }

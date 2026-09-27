@@ -1,8 +1,11 @@
 project:
   type: book
   output-dir: docs
+  pre-render:
+    - python3 scripts/build_practice.py
   resources:
     - figures/
+    - assets/practice.js
   preview:
     port: 8000
     browser: true

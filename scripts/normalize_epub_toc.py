@@ -25,6 +25,7 @@ NCX = "http://www.daisy.org/z3986/2005/ncx/"
 
 PART_RE = re.compile(r"^(?:Part\s+[IVXLCDM]+\.|Applied Interlude\.)")
 CHAPTER_RE = re.compile(r"^(\d+)\s+")
+REVIEW_RE = re.compile(r"^Part\s+[IVXLCDM]+\s+Review$")
 
 
 def normalized_text(element: ET.Element | None) -> str:
@@ -69,7 +70,7 @@ def nested_nav_chapters(item: ET.Element) -> list[ET.Element]:
     chapters: list[ET.Element] = []
     for ordered in [child for child in item if child.tag == f"{{{XHTML}}}ol"]:
         for nested in list(ordered):
-            if nested.tag == f"{{{XHTML}}}li" and CHAPTER_RE.match(nav_label(nested)):
+            if nested.tag == f"{{{XHTML}}}li" and (CHAPTER_RE.match(nav_label(nested)) or REVIEW_RE.match(nav_label(nested))):
                 chapters.append(nested)
     return chapters
 
@@ -116,10 +117,12 @@ def normalize_nav(data: bytes) -> tuple[bytes, list[str], list[str]]:
             for chapter in carried_chapters:
                 strip_direct_children(chapter, f"{{{XHTML}}}ol")
                 current_part_list.append(chapter)
-                chapter_labels.append(nav_label(chapter))
-        elif CHAPTER_RE.match(label) and current_part_list is not None:
+                if CHAPTER_RE.match(nav_label(chapter)):
+                    chapter_labels.append(nav_label(chapter))
+        elif (CHAPTER_RE.match(label) or REVIEW_RE.match(label)) and current_part_list is not None:
             current_part_list.append(item)
-            chapter_labels.append(label)
+            if CHAPTER_RE.match(label):
+                chapter_labels.append(label)
         else:
             ordered.append(item)
             current_part_list = None
@@ -144,7 +147,7 @@ def nested_ncx_chapters(item: ET.Element) -> list[ET.Element]:
     return [
         child
         for child in item
-        if child.tag == f"{{{NCX}}}navPoint" and CHAPTER_RE.match(ncx_label(child))
+        if child.tag == f"{{{NCX}}}navPoint" and (CHAPTER_RE.match(ncx_label(child)) or REVIEW_RE.match(ncx_label(child)))
     ]
 
 
@@ -181,7 +184,7 @@ def normalize_ncx(data: bytes) -> bytes:
             for chapter in carried_chapters:
                 strip_direct_children(chapter, f"{{{NCX}}}navPoint")
                 current_part.append(chapter)
-        elif CHAPTER_RE.match(label) and current_part is not None:
+        elif (CHAPTER_RE.match(label) or REVIEW_RE.match(label)) and current_part is not None:
             current_part.append(item)
         else:
             nav_map.append(item)

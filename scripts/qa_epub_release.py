@@ -141,6 +141,9 @@ def main() -> int:
         *ROOT.glob("parts/*.qmd"),
         *ROOT.glob("appendices/*.qmd"),
         *ROOT.glob("_quarto*.yml"),
+        *ROOT.glob("assessments/bank/*.md"),
+        *ROOT.glob("assessments/generated/*.qmd"),
+        ROOT / "scripts" / "build_practice.py",
         ROOT / "epub-custom.css",
         ROOT / "filters" / "epub-parts.lua",
         ROOT / "scripts" / "normalize_epub_toc.py",
@@ -321,6 +324,9 @@ def main() -> int:
                     hierarchy_errors.append(f"{part_title} contains section-level navigation")
             if actual_numbers != expected_numbers:
                 hierarchy_errors.append(f"{part_title}: expected {expected_numbers}, found {actual_numbers}")
+            review_title = part_title.split(".", 1)[0] + " Review"
+            if not chapter_items or normalized_text(chapter_items[-1].find(f"{{{XHTML}}}a")) != review_title:
+                hierarchy_errors.append(f"{part_title}: missing final review page")
         check(
             "Every chapter is nested under its Part with no section titles",
             not hierarchy_errors,
@@ -405,6 +411,9 @@ def main() -> int:
                         ncx_hierarchy_errors.append(f"{part_title} contains section-level NCX entries")
                 if actual_numbers != expected_numbers:
                     ncx_hierarchy_errors.append(f"{part_title}: expected {expected_numbers}, found {actual_numbers}")
+                review_title = part_title.split(".", 1)[0] + " Review"
+                if not nested_points or normalized_text(nested_points[-1].find(f"{{{NCX}}}navLabel/{{{NCX}}}text")) != review_title:
+                    ncx_hierarchy_errors.append(f"{part_title}: missing final review page")
             check("NCX mirrors the compact Part-to-Chapter hierarchy", not ncx_hierarchy_errors, "; ".join(ncx_hierarchy_errors[:5]))
 
         publication_date = package.findtext(f".//{{{DC}}}date", default="")
@@ -449,7 +458,7 @@ def main() -> int:
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
         media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
-        check("All 62 source documents are packaged", len(chapter_files) == 62, str(len(chapter_files)))
+        check("All 69 source documents are packaged", len(chapter_files) == 69, str(len(chapter_files)))
         check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         malformed_xhtml: list[str] = []

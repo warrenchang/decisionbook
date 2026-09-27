@@ -13,7 +13,8 @@ const dir = path.join(root, 'figures-src/framing');
 const master = fs.readFileSync(path.join(dir, 'master-scene.png'));
 const imagined = fs.readFileSync(path.join(dir, 'imagined-surroundings.png'));
 const sprinkler = fs.readFileSync(path.join(dir, 'master-scene-rain-streaks.png'));
-const rain = fs.readFileSync(path.join(dir, 'imagined-surroundings-rain.png'));
+const wetGround = fs.readFileSync(path.join(dir, 'master-scene-wet-ground.png'));
+const rain = fs.readFileSync(path.join(dir, 'imagined-surroundings-rain-aligned.png'));
 const width = 1536, height = 1076, opening = 280, rim = 12;
 const frameSize = opening + 2 * rim;
 const sourceTop = 476, sceneTop = 528;
@@ -39,11 +40,21 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <title id="title">Selected evidence and possible reconstructed surroundings</title>
 <desc id="desc">The lower scene contains buildings, a park and a lawn sprinkler. The third frame shows falling water droplets but excludes the sprinkler head. Each frame and its contents are repeated exactly above, against lighter imagined surroundings: a dense city, an extensive park, or an ordinary rainy street. The imagined surroundings go beyond the observed evidence.</desc>
 <defs>
+  <linearGradient id="wet-ground-transition" gradientUnits="userSpaceOnUse" x1="1000" y1="0" x2="1160" y2="0">
+    <stop offset="0" stop-color="black"/><stop offset="1" stop-color="white"/>
+  </linearGradient>
+  <mask id="wet-ground-mask" maskUnits="userSpaceOnUse" x="1000" y="850" width="536" height="174">
+    <rect x="1000" y="850" width="536" height="174" fill="url(#wet-ground-transition)"/>
+  </mask>
   <g id="master">
     <image width="1536" height="1024" href="data:image/png;base64,${master.toString('base64')}"/>
     <!-- Replace only the right-hand example; retain the accepted left and middle artwork. -->
     <svg x="1000" y="476" width="536" height="548" viewBox="1000 476 536 548" overflow="hidden">
       <image width="1536" height="1024" href="data:image/png;base64,${sprinkler.toString('base64')}"/>
+    </svg>
+    <!-- Reuse the accepted water trajectories; update only the wet ground beneath them. -->
+    <svg x="1000" y="850" width="536" height="174" viewBox="1000 850 536 174" overflow="hidden" mask="url(#wet-ground-mask)">
+      <image width="1536" height="1024" href="data:image/png;base64,${wetGround.toString('base64')}"/>
     </svg>
   </g>
   <g id="imagined">
@@ -73,6 +84,8 @@ ${placements.join('\n')}
   if (metadata.width !== 1536 || metadata.height !== 1024) throw Error('Unexpected master dimensions');
   const sprinklerMetadata = await sharp(sprinkler).metadata();
   if (sprinklerMetadata.width !== 1536 || sprinklerMetadata.height !== 1024) throw Error('Unexpected sprinkler artwork dimensions');
+  const wetGroundMetadata = await sharp(wetGround).metadata();
+  if (wetGroundMetadata.width !== 1536 || wetGroundMetadata.height !== 1024) throw Error('Unexpected wet-ground artwork dimensions');
   const svgFile = path.join(dir, 'framing-three-windows.svg');
   fs.writeFileSync(svgFile, svg);
   const pngFile = path.join(root, 'figures/framing-three-windows.png');
@@ -92,6 +105,7 @@ ${placements.join('\n')}
     masterSha256:crypto.createHash('sha256').update(master).digest('hex'),
     imaginedSha256:crypto.createHash('sha256').update(imagined).digest('hex'),
     sprinklerSha256:crypto.createHash('sha256').update(sprinkler).digest('hex'),
+    wetGroundSha256:crypto.createHash('sha256').update(wetGround).digest('hex'),
     rainSha256:crypto.createHash('sha256').update(rain).digest('hex'),
     outputSha256:crypto.createHash('sha256').update(fs.readFileSync(pngFile)).digest('hex'),
     checks};
