@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-09-27T05:31:24.922351+00:00",
+  "commands": {
+    "quarto render --profile html (with subsequent affected-page refreshes)": 0,
+    "quarto render --profile epub": 0,
+    "python3 scripts/sync_references.py --check": 0,
+    "python3 scripts/qa_quarto_book.py": 0,
+    "python3 scripts/qa_epub_release.py": 0,
+    "python3 scripts/qa_float_references.py --rendered": 0,
+    "python3 audits/behave-integration-20260927/verify_integration.py": 0,
+    "git diff --check": 0
+  },
+  "book_qa_summary": {
+    "canonical_chapters": 42,
+    "chapter_body_words": 206164,
+    "shortest_chapter_words": 2371,
+    "longest_chapter_words": 10821,
+    "chapter_reference_blocks": 1203,
+    "master_unique_references": 1186,
+    "chapter_figures": 100,
+    "book_figures": 108,
+    "chapter_tables": 129,
+    "book_numbered_figures": 108,
+    "book_numbered_tables": 164,
+    "rendered_chapters_missing": 0,
+    "rendered_images_missing_alt": 0,
+    "unresolved_citations": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "canonical_source_changes_after_final_build_snapshot": [],
+  "visual_checks": [
+    "Chapter 20 development passage: readable heading, prose, and navigation at desktop width",
+    "Appendix B genes/environment passage: readable layout and heading hierarchy",
+    "Appendix B agency note: expanded successfully; text contained within callout",
+    "Chapter 34 compassion passage: readable heading, paragraphs, and citation caveats"
+  ],
+  "visual_scope": "Representative desktop browser views, not an exhaustive page-by-page or mobile visual audit.",
+  "concurrency": "Other tasks edited the same checkout. Their changes were preserved and affected pages refreshed. Book-wide counts include those edits and are not attributed solely to this integration.",
+  "publication": "Local files only; no commit, push, or external publication in this task."
+}

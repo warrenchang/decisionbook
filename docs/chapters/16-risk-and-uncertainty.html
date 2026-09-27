@@ -894,6 +894,28 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <p>A firm considers ten independent projects. Each costs €40,000 and has a 30% chance of returning €200,000, otherwise zero. The probability-weighted return is €60,000 per project. Subtracting its €40,000 cost leaves an expected net value of €20,000.</p>
 <p>Positive expected value does not make one project safe: it still loses the full investment 70% of the time. A diversified portfolio can reduce idiosyncratic variation if the outcomes are genuinely independent, but common market shocks can make the projects move together. The decision therefore needs both project-level EV and a dependence model at portfolio level.</p>
 <p>The portfolio comparison must also identify whose returns and losses enter the calculation. A portfolio can be attractive to the firm while exposing employees, customers, or other parties to losses they cannot absorb; expected value does not settle distribution, rights, consent, or ruin.</p>
+<p>The size of each commitment matters even when the odds are favorable. Kelly (1956) considered repeated bets made from a changing stock of wealth. Betting everything could maximize the expected money after a fixed number of rounds while making eventual bankruptcy almost certain. His <strong>Kelly criterion</strong> instead chooses the fraction that maximizes long-run compounded growth under the assumed probabilities and payoffs. It offers a sharp distinction between finding a favorable opportunity and deciding how much to expose to it. Unknown odds, near-term cash needs, and an inability to survive a large drawdown can make a growth-maximizing stake unsuitable.</p>
+<p><span id="kelly-and-growth"></span></p>
+<div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mathematical analysis: how much of a favorable gamble?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose independent rounds each offer a known 60% chance of winning the amount staked and a 40% chance of losing it. If the same fraction <span class="math inline">\(f\)</span> of current wealth is staked each round, expected log growth is</p>
+<p><span class="math display">\[
+g(f)=0.6\ln(1+f)+0.4\ln(1-f).
+\]</span></p>
+<p>For fractions between zero and one, this is maximized at <span class="math inline">\(f=0.20\)</span>. The favorable odds justify risking part of the wealth, not all of it. If the actual win probability were 55%, the corresponding optimum would fall to 10%; an apparently precise stake is sensitive to the probability estimate. Even a correctly specified growth-maximizing rule can suffer severe losses along the way. This example assumes no transaction costs, borrowing, withdrawals, or changing opportunities.</p>
+</div>
+</div>
+</div>
 <p><a href="../chapters/19-mental-accounting.html#mental-accounting-money-is-fungible-minds-label-it">Mental Accounting</a> examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.</p>
 </section>
 </section>
@@ -908,7 +930,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 <section id="optional-research-and-application-notes" class="level2">
 <h2 data-anchor-id="optional-research-and-application-notes">Optional research and application notes</h2>
 <div class="mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -917,7 +939,7 @@ Figure&nbsp;16.1: A 50–50 lottery paying 0 or 100 has expected value 50. Under
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A retailer must commit to stock before learning how much customers will buy. Too little stock loses sales; too much leaves paid-for goods unsold. The decision is how to balance these competing errors. In the single-period model, demand D is uncertain. Each unit sells for <span class="math inline">\(p\)</span>, costs <span class="math inline">\(c\)</span>, and has salvage value <span class="math inline">\(s\)</span>, with <span class="math inline">\(p&gt;c&gt;s\)</span>. Ordering one unit too few sacrifices the margin</p>
 <p><span class="math display">\[
@@ -937,7 +959,7 @@ F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
 </div>
 </div>
 <div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -946,7 +968,7 @@ F(Q^*)=\frac{C_u}{C_u+C_o}=\frac{p-c}{p-s}.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Consider a game in which a fair coin is tossed until the first head. If the first head occurs on toss <span class="math inline">\(n\)</span>, the game pays <span class="math inline">\(2^n\)</span> monetary units. The probability of that outcome is <span class="math inline">\(2^{-n}\)</span>. Its expected monetary value is</p>
 <p><span class="math display">\[
@@ -960,7 +982,7 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 </div>
 </div>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -969,7 +991,7 @@ EV=\sum_{n=1}^{\infty}2^{-n}2^n
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A risk-preference measure seems useful because it could help predict choices beyond the task. Yet changing the task can change a person’s classification. Before using that label in another setting, we need to identify what the task measured. <a href="#tbl-risk-elicitation" class="quarto-xref">Table&nbsp;<span>16.1</span></a> pairs each task with what it can reveal and what complicates the inference. A model maps choices back to a parameter, but comprehension, probability format, reference point, response mode, and noise can also affect the result.</p>
 <div id="tbl-risk-elicitation" class="quarto-float quarto-figure quarto-figure-center">
@@ -1037,7 +1059,7 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 </div>
 <p><span id="multiplicative-risk"></span></p>
 <div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1046,7 +1068,7 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Suppose a deliberately extreme gamble risks <strong>all current wealth</strong> in every round. It multiplies wealth by 1.8 with probability one half and by 0.4 with probability one half, independently across 52 rounds. The one-round arithmetic mean return is +10%, so expected terminal wealth from €10,000 is</p>
 <p><span class="math display">\[
@@ -1099,6 +1121,9 @@ Table&nbsp;16.1: Common risk-elicitation methods and what travels with them
 </div>
 <div class="reference">
 <p>Hsu, M., Bhatt, M., Adolphs, R., Tranel, D., &amp; Camerer, C. F. (2005). Neural systems responding to degrees of uncertainty in human decision-making. <em>Science, 310</em>(5754), 1680–1683. https://doi.org/10.1126/science.1115327</p>
+</div>
+<div class="reference">
+<p>Kelly, J. L., Jr.&nbsp;(1956). A new interpretation of information rate. <em>Bell System Technical Journal, 35</em>(4), 917–926. https://doi.org/10.1002/j.1538-7305.1956.tb03809.x</p>
 </div>
 <div class="reference">
 <p>Mohr, P. N. C., Biele, G., &amp; Heekeren, H. R. (2010). Neural processing of risk. <em>Journal of Neuroscience, 30</em>(19), 6613–6619.</p>

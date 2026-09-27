@@ -272,6 +272,22 @@ Positive expected value does not make one project safe: it still loses the full 
 
 The portfolio comparison must also identify whose returns and losses enter the calculation. A portfolio can be attractive to the firm while exposing employees, customers, or other parties to losses they cannot absorb; expected value does not settle distribution, rights, consent, or ruin.
 
+The size of each commitment matters even when the odds are favorable. Kelly (1956) considered repeated bets made from a changing stock of wealth. Betting everything could maximize the expected money after a fixed number of rounds while making eventual bankruptcy almost certain. His **Kelly criterion** instead chooses the fraction that maximizes long-run compounded growth under the assumed probabilities and payoffs. It offers a sharp distinction between finding a favorable opportunity and deciding how much to expose to it. Unknown odds, near-term cash needs, and an inability to survive a large drawdown can make a growth-maximizing stake unsuitable.
+
+[]{#kelly-and-growth}
+
+::: {.callout-note .research-lens .mathematical-analysis icon=false collapse=true}
+## Mathematical analysis: how much of a favorable gamble?
+
+Suppose independent rounds each offer a known 60% chance of winning the amount staked and a 40% chance of losing it. If the same fraction $f$ of current wealth is staked each round, expected log growth is
+
+$$
+g(f)=0.6\ln(1+f)+0.4\ln(1-f).
+$$
+
+For fractions between zero and one, this is maximized at $f=0.20$. The favorable odds justify risking part of the wealth, not all of it. If the actual win probability were 55%, the corresponding optimum would fall to 10%; an apparently precise stake is sensitive to the probability estimate. Even a correctly specified growth-maximizing rule can suffer severe losses along the way. This example assumes no transaction costs, borrowing, withdrawals, or changing opportunities.
+:::
+
 [Mental Accounting](19-mental-accounting.qmd#mental-accounting-money-is-fungible-minds-label-it) examines why people evaluate each gain and loss in isolation. Here the benchmark is already clear: the unit of evaluation changes the risk.
 
 
@@ -416,6 +432,10 @@ Holt, C. A., & Laury, S. K. (2002). Risk aversion and incentive effects. *Americ
 
 ::: {.reference}
 Hsu, M., Bhatt, M., Adolphs, R., Tranel, D., & Camerer, C. F. (2005). Neural systems responding to degrees of uncertainty in human decision-making. *Science, 310*(5754), 1680–1683. https://doi.org/10.1126/science.1115327
+:::
+
+::: {.reference}
+Kelly, J. L., Jr. (1956). A new interpretation of information rate. *Bell System Technical Journal, 35*(4), 917–926. https://doi.org/10.1002/j.1538-7305.1956.tb03809.x
 :::
 
 ::: {.reference}

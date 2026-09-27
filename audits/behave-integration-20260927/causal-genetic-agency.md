@@ -1,0 +1,54 @@
+# Causal history, genes, agency, and the two recap PDFs
+
+Reviewed 2026-09-27. Source IDs resolve to original absolute paths and SHA256 hashes in `source-manifest.json`. Page/tile locators refer to complete OCR in ignored `tmp/behave-20260927/`; precise study details were checked against published sources, not inferred from OCR. These are editorial dispositions, not endorsements of every claim in the commentary.
+
+## Topic-to-passage ledger
+
+| Source and location | Topic | Disposition and destination |
+|---|---|---|
+| jy1021 p1t1–3 | Author/book introduction and promotional claims of scientific finality | Book identified as Sapolsky (2017); claims science has fully understood humanity omitted. The commentary is a topic guide, not the final scientific authority. |
+| jy1021 p1t4–5 | Road-rage/lollipop family anecdote and Indonesian mass killing | Omitted: neither needed to explain the book's decision process; historical details and causal interpretations not established by this secondary account. Not converted into author experience. |
+| jy1021 p1t6–8 | Displaced aggression; human–animal continuity; single-discipline explanations | Causal plurality developed in Ch1 `a-decision-has-a-history`; rank/stress has Ch29 home. Do not equate domestic violence, rodent biting, and baboon aggression as identical mechanisms or derive human hierarchy from lobsters. |
+| jy1021 p2t1–3 | Backward causal timescales and mechanism-first learning | Added Ch1 bridge to existing Appendix B `sapolsky-turtles`; functional process and developmental history distinguished. Explanations require discriminating evidence. |
+| jy1021 p2t3–4 | Helping a casualty and shooting a monster allegedly use exactly identical circuits | Omitted unsupported exact-circuit claim. Ch6 interacting-system treatment and reverse-inference caution answer the general issue. |
+| jy1030 p1t1–5 | DNA, genetic variants, expression, environments | Added Appendix B `genes-develop-in-environments`. Corrected: expression is not exclusively environmental; transcription factors are not simply noncoding DNA switches; genes are not all protein-coding. No unsupported percentage of junk DNA retained. |
+| jy1030 p1t5–8 | Heritability, hypothetical desert/rainforest plants, twin/adoption designs | Added `heritability-describes-variation`, population/measurement/assumption boundaries. Illustrative extreme plant numbers and blanket 40–60% estimates omitted. High within-population heritability can coexist with an environmental mean shift. |
+| jy1030 p1t8–p2t1 | Standardized multi-laboratory mice | Added Crabbe et al. (1999) developed comparison at `genes-develop-in-environments`. Corrected: multiple genetic strains tested, three labs not all in the United States, protocols closely standardized rather than every influence demonstrably identical. |
+| jy1030 p2t1–2 | MAOA and DRD4 candidate-gene stories | Omitted as portable personality predictions: selected variants do not establish a reliable individual diagnosis or a universally good/bad allele. The general interaction claim is developed through the directly verified multi-lab experiment instead. No assertion that all gene–environment interaction findings are false. |
+| jy1030 p2t2–3 | SES moderation of IQ heritability, rich/poor 70%/10% claims | Added Turkheimer et al. (2003), qualified by Tucker-Drob & Bates (2016) cross-national meta-analysis. Corrected individual percentages and universal class destiny; national policy differences not experimentally identified. |
+| jy1030 p2t3 and comments | Epigenetics and inheritance | Added `experience-and-gene-regulation`, Weaver et al. (2004) rat cross-fostering/pharmacology, explicit within-life persistence versus inheritance across unexposed generations. No human germline conclusion. |
+| jy1030 p2t4–8 | Reader comments on schooling, personality, DNA efficiency, class mobility | Omitted as reader discussion/unsupported generalization; substantive distinctions covered by the main genetic section and Ch20 developmental evidence. No comments represented as new study findings. |
+| jy1118 p1t1–6 | Biological causes, determinism, criminal responsibility, psychiatric/neurological examples | Existing `sapolsky-turtles` retains Sapolsky's position and compatibilist alternative. New `neural-preparation-and-conscious-choice` distinguishes purposes of sanctions and prediction from moral judgment. Dated legal incident/age rule, diagnostic stereotypes, and compulsory-treatment prescription omitted. This is not a legal guide or clinical diagnostic argument. |
+| jy1118 p1t7–8 | Libet, precursors to awareness, conscious veto | Corrected EEG versus MRI, spontaneous movement versus meaningful alternatives, retrospective timing report versus proof of decision completion. Added Libet1983, Schurger2012, Maoz2019. Veto mentioned in source but not asserted to resolve metaphysical freedom; inhibitory control already treated in Ch8. |
+| jy1118 p1t8–p2t2 | Effort, breakfast, unknown causes, unpredictability | Existing Ch39 resource-depletion caveats retained; no glucose-fuel proof of effort. Existing Appendix B separates determinism, prediction, and randomness. Unknown causes do not establish or disprove agency. |
+| jy1118 p2t3–4 | Retribution, prevention, rehabilitation, praise, preemptive confinement | Ethical distinctions included in new research lens. No inference from a biomarker to guilt/future offense; no recommendation to rename prisons as hospitals or confine people for predicted tendencies. Sapolsky's philosophical view remains attributed. |
+| jy1108 p1t1–3 | Recap causal clock | Merged into Ch1 and existing Appendix B; not repeated as another diagram. |
+| jy1108 p1t3–6 | Recap triune brain, dopamine, PFC, endocrine timing | Merged into Ch6 revisions and existing Ch3/Ch8/Ch21. Corrected clean evolutionary layers, dopamine=pleasure, pure rationality region, and one fixed hormone timetable; see neuro-development ledger. |
+| jy1108 p1t7–p2t1 | Recap parenting, adversity, class | Merged into Ch20; deterministic parenting/class labels not retained. |
+| jy1108 p2t1–3 | Recap genes and heritability | Merged into Appendix B new genetics section; fixed rich/poor percentages rejected. |
+| jy1108 p2t3–6 | Recap culture, selection, memorable slogans | Merged into Ch29 and existing Ch25/Appendix B, with qualified multilevel selection. No separate treatment of rhetorical quotations or UI/promotional material. |
+| jy1122 p1t1–3 | Recap hierarchy and control | Merged into Ch29 rank/stress treatment. Neither cortisol nor a brain response is a universal measure of rank/health. |
+| jy1122 p1t4–5 | Recap moral intuition and ethical schools | Merged into Ch8 moral judgment. Neither all morality=intuition nor deontology=System1/consequentialism=System2 retained. |
+| jy1122 p1t5–7 | Recap empathy, compassion, dopamine | Merged into Ch34 component/training comparisons; no exclusive definition of empathy as self-distress or claim compassion directly provides dopamine. |
+| jy1122 p1t7–p2t1 | Recap metaphor, embodiment, symbolic cooperation | Ch25 sacred values; Ch29 category/identity discussion; existing Ch13/Appendix E replication boundaries. No reliable clipboard/warm-cup technique or absolute claim that nonhuman animals never use symbols. |
+| jy1122 p2t1–2 | Recap free will/Libet | Merged into Appendix B new research lens; same empirical corrections as jy1118. |
+| jy1122 p2t3–5 | Hope: mobility, trade, religion, contact, apology, plasticity | Existing Ch25 repeated interaction, common identity, incentives; Ch34 repair/forgiveness; new Ch29 social-transmission example. Broad assertions that mobility guarantees cooperation or trade guarantees peace omitted; intergroup contact limitations retained in culture ledger. No guarantee that practicing habits makes someone morally good. |
+| All five sources | Navigation, promotional text, comments, review instructions | Administrative/source commentary; not book instructions or empirical evidence. Not reproduced. |
+
+## Verified source support
+
+| Work | Inspected source | Claim supported and boundary |
+|---|---|---|
+| Sapolsky2017 | [Publisher](https://www.penguinrandomhouse.com/books/311787/behave-by-robert-m-sapolsky/), source commentary, existing appendix | Book metadata and integrative scope; framework attributed, not experimental proof of determinism. |
+| Crabbe1999 | [PubMed abstract](https://pubmed.ncbi.nlm.nih.gov/10356397/), [author manuscript](https://libres.uncg.edu/ir/uncg/f/D_Wahlsten_Genetics_1999.pdf), [authors' project](https://www.albany.edu/psychology/obssr3/) | Multiple strains and three laboratories; six behavioral tests, standardized methods, some genotype-by-lab differences. No individual human inference. |
+| Visscher2008 | [Publisher](https://www.nature.com/articles/nrg2322), [authors' companion exposition](https://www.nature.com/scitable/topicpage/estimating-trait-heritability-46889/) | Definition and misconceptions of heritability; methodological synthesis, not a new intervention experiment. |
+| Turkheimer2003 | [PubMed](https://pubmed.ncbi.nlm.nih.gov/14629696/), [research manuscript](https://ibg.colorado.edu/cdrom2012/demoor/ModeratingCovariances/Papers/Turkheimer_2003.pdf) | U.S. seven-year-old twin-model moderation by SES; not fraction of a child's IQ caused by genes. |
+| Tucker-DrobBates2016 | [PubMed](https://pubmed.ncbi.nlm.nih.gov/26671911/), [full study](https://pmc.ncbi.nlm.nih.gov/articles/PMC4749462/) | Primary cross-national meta-analysis; U.S. positive moderation, Western Europe/Australia zero or reversed. National institutional explanation remains a hypothesis. |
+| Weaver2004 | [Publisher abstract and figures](https://www.nature.com/articles/nn1276), [PubMed](https://pubmed.ncbi.nlm.nih.gov/15220929/) | Rat maternal care, hippocampal GR promoter methylation, cross-fostering, pharmacological manipulation; does not establish inherited human trauma. |
+| Libet1983 | [Original journal abstract](https://doi.org/10.1093/brain/106.3.623) | Five participants, EEG readiness potential and clock-based retrospective intention reports; task/model limits stated. |
+| Schurger2012 | [Authors' full article](https://www.unicog.org/publications/PNAS-2012-Schurger-1210467109.pdf) | Accumulator model and interruption experiment; alternative interpretation of movement-locked averages. |
+| Maoz2019 | [Authors' full article](https://people.socsci.tau.ac.il/mu/mudriklab/files/2020/09/elife_2019.pdf) | Within-participant deliberate donation versus arbitrary key-press contrast; RP absent/substantially diminished for deliberate choice. No proof of metaphysical freedom. |
+
+## Preservation
+
+The prior Sejnowski fly/implicit-learning revision is outside this addition's ownership and remains intact. Original PDFs were not changed. The recap PDFs were read completely, including their repetitions and concluding claims; they introduce no distinct study requiring a second developed home.
