@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1260**
+Unique references in the master union: **1267**
 
-Chapter reference blocks: **1269**
+Chapter reference blocks: **1276**
 
 Unresolved author–year citations: **0**
 
@@ -35,12 +35,12 @@ Unresolved author–year citations: **0**
 | Habits, Wanting, and Self-Control | 54 | 0 |
 | Deciding for a Better Life | 31 | 0 |
 | Strategic Interdependence | 18 | 0 |
-| Coordination and Focal Points | 19 | 0 |
+| Coordination and Focal Points | 20 | 0 |
 | Cooperation and Social Preferences | 51 | 0 |
 | Social Norms and Conformity | 33 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 73 | 0 |
 | Social Influence | 26 | 0 |
-| Culture and Identity | 47 | 0 |
+| Culture, Personality, and Identity | 53 | 0 |
 | Persuasion | 30 | 0 |
 | Storytelling | 12 | 0 |
 | Message Design | 16 | 0 |
