@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1252**
+Unique references in the master union: **1260**
 
-Chapter reference blocks: **1263**
+Chapter reference blocks: **1269**
 
 Unresolved author–year citations: **0**
 
@@ -40,7 +40,7 @@ Unresolved author–year citations: **0**
 | Social Norms and Conformity | 33 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 73 | 0 |
 | Social Influence | 26 | 0 |
-| Culture and Identity | 42 | 0 |
+| Culture and Identity | 47 | 0 |
 | Persuasion | 30 | 0 |
 | Storytelling | 12 | 0 |
 | Message Design | 16 | 0 |
@@ -50,7 +50,7 @@ Unresolved author–year citations: **0**
 | Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 12 | 0 |
 | Designing Better Agreements | 18 | 0 |
-| Behavior Design | 42 | 0 |
+| Behavior Design | 43 | 0 |
 | Choice Architecture | 37 | 0 |
 | Decision Hygiene | 39 | 0 |
 | Deciding With Data and AI {#data-driven-decision-making} | 33 | 0 |
