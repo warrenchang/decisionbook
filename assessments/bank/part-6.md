@@ -1,7 +1,7 @@
 # Part VI question bank
 
 ## C35.01 | positions-and-interests | easy | apply | 35
-A tenant says, “The rent must be €900.” The underlying concern is having predictable housing costs while studying. Which is the position, and which is the interest?
+A tenant says, “The rent must be €900.” She wants predictable housing costs while studying. Which is the position, and which is the interest?
 + The €900 demand is the position; predictable costs are the interest. | A position states a proposed term; an interest explains the concern behind it.
 - Predictable costs are the position; the €900 demand is the interest. | This reverses the distinction.
 - Both are BATNAs because they concern alternatives. | Neither states what happens without agreement.
@@ -49,7 +49,7 @@ What is a negotiator's BATNA?
 - The minimum gain the other side is willing to accept | That concerns the counterpart's reservation value, not one's own BATNA.
 
 ## C36.02 | zopa | easy | apply | 36
-A buyer will pay at most €120 and a seller will accept at least €90. Price is the only issue and both limits include all relevant costs. What is the zone of possible agreement?
+A buyer will pay at most €120 and a seller will accept at least €90. What is the price range of possible agreement?
 + €90 through €120 | Both parties can accept a price in that interval.
 - €0 through €90 | Prices below €90 violate the seller's limit.
 - €120 through €210 | Prices above €120 violate the buyer's limit.
@@ -113,7 +113,7 @@ Which preparation information most directly identifies trades across issues that
 - A record of the sequence of previous monetary concessions | Concession history does not directly specify cross-issue preferences.
 
 ## C37.05 | package-dominance | hard | apply | 37
-Feasible packages give utility pairs (buyer, seller): A=(6,6), B=(8,7), C=(9,5), D=(5,9). More utility is preferred. Which package is Pareto dominated within this set?
+Feasible packages give utility pairs (buyer, seller): A=(6,6), B=(8,7), C=(9,5), D=(5,9). Which package is Pareto dominated within this set?
 + A only | B raises both parties' utility relative to A; the remaining packages trade off their interests.
 - B only | No listed package gives both parties at least B's utility and one more.
 - C only | C gives the buyer the highest listed utility.

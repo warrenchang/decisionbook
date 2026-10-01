@@ -49,7 +49,7 @@ During a free evening, Amir can accept a paid shift worth €70 to him, attend a
 - €20 | This is the net disadvantage relative to the shift.
 
 ## C02.02 | sunk-cost | easy | apply | 2
-A firm paid a nonrefundable €6,000 deposit. Completing the project now costs €2,000 and yields a certain €3,000 benefit; cancellation yields nothing further. Ignoring other effects, what should it do?
+A firm paid a nonrefundable €6,000 deposit. Completing the project now costs €2,000 and yields a certain €3,000 benefit; cancellation yields nothing further. Which choice maximizes its remaining net benefit?
 + Complete; the remaining net benefit is €1,000. | Compare future benefits and avoidable future costs.
 - Cancel; the total historical cost exceeds €3,000. | The nonrecoverable deposit is not changed by today's choice.
 - Complete; recovering the deposit requires finishing. | The deposit is unrecoverable under either action.
@@ -177,7 +177,7 @@ Participants are randomly assigned to taste the same drink under different label
 - Participants assign different expected calorie counts to the two labels. | Expected nutritional content is distinct from how pleasant the drink tastes.
 
 ## C05.03 | controlled-expectation-test | medium | apply | 5
-Researchers want to estimate the effect of an encouraging label on task performance. Which comparison is strongest, assuming random assignment is feasible?
+Researchers want to estimate the effect of an encouraging label on task performance. Which comparison is strongest?
 + Identical tasks and support, with only the label varied randomly. | Holding other conditions fixed isolates the assigned label.
 - Different labels paired with different amounts of coaching. | Coaching confounds the label comparison.
 - Performance before a label versus afterward, without a control. | Practice or time could explain the change.

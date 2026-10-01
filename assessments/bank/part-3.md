@@ -121,7 +121,7 @@ A buyer samples suppliers but stops testing each one as soon as it delivers succ
 - Extend testing only for suppliers that already look best. | Selective extension preserves unequal sampling tied to outcomes.
 
 ## C19.01 | fungibility | easy | apply | 19
-Ignoring tax and contractual restrictions, €100 from a refund buys the same goods as €100 from wages. Which benchmark does this illustrate?
+€100 from a refund buys the same goods as €100 from wages. Which benchmark does this illustrate?
 + Fungibility | The source label does not change money's purchasing power.
 - Loss aversion | No equal gain–loss comparison is specified.
 - Exponential discounting | Timing is held out of the comparison.
@@ -353,7 +353,7 @@ With linear utility and an annual discount factor of 0.9, compare a certain €7
 - The options tie; discounting cancels the probability. | Probability and discounting both enter multiplicatively.
 
 ## P03.10 | positive-mean-and-experience | hard | analyze | 16,18
-An investment independently multiplies wealth by 1.5 or 0.6 with equal probability each period. A sample contains one of each outcome. Which statement correctly compares expected one-period return with the realized two-period path?
+An investment multiplies wealth by 1.5 or 0.6 with equal probability each period. A sample contains one of each outcome. Which statement correctly compares expected one-period return with the realized two-period path?
 + Expected one-period return is +5%; the sampled path loses 10%. | The expected multiplier is 1.05; the sampled product is 1.5×0.6 = 0.9.
 - Expected one-period return is +10%; the sampled path gains 10%. | Both calculations confuse arithmetic and multiplicative changes.
 - Expected one-period return is −10%; the sampled path loses 10%. | The path loss is correct, but the expected one-period return is positive.

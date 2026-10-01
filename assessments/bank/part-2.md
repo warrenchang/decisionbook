@@ -105,7 +105,7 @@ An employee follows a script imposed by management. A customer concludes that th
 - Ask managers whether they described the employee as dependable when hiring. | A hiring description does not directly test the inference of personal rigidity.
 
 ## C10.04 | disconfirmation | medium | apply | 10
-A team thinks a service succeeds only when response time is under one hour. Which observation would most directly challenge that necessity claim?
+A team thinks a service succeeds only when response time is under one hour. Which observation would most directly challenge that claim?
 + A successful case with a response time above one hour | Success without the purported necessary condition refutes necessity.
 - A successful case with a response time below one hour | This is consistent with the claim.
 - An unsuccessful case with a response time above one hour | Failure without the condition is also consistent with necessity.
@@ -185,9 +185,9 @@ Among completed journeys, a safety brochure gives only the percentage with no in
 - Use larger type for the current statistic. | Prominence leaves the one-sided frame unchanged.
 
 ## C12.04 | frame-versus-default | medium | apply | 12
-A form changes “10% service failures” to “90% service success,” while leaving the preselected option unchanged. Which feature was directly changed?
+A form changes “10% service failures” to “90% service success.” Which feature was directly changed?
 + The descriptive frame | The wording changes the presented complement.
-- The default option | The stem holds the preselection fixed.
+- The default option | Changing this wording does not select a different option.
 - The feasible set | No option is added or removed.
 - The objective success rate | Both descriptions state the same rate.
 - The financial incentive | No payoff change is specified.
@@ -281,8 +281,8 @@ A screen has 90% sensitivity and a 10% false-positive rate in each of two groups
 - 90% in A and 50% in B | This reverses the correctly calculated posterior rates.
 
 ## C15.01 | independent-trials | easy | apply | 15
-A fair coin has landed heads four times. Tosses are independent. What is the probability of heads on the next toss?
-+ 1/2 | Independence leaves the next-toss probability unchanged.
+A fair coin has landed heads four times. What is the probability of heads on the next toss?
++ 1/2 | In the usual fair-coin model, tosses are independent, so the previous heads do not change the next-toss probability of 1/2.
 - 1/5 | Past heads do not create a balancing requirement.
 - 4/5 | Four previous heads do not make the next toss 80% likely.
 - 1/16 | This is the probability of four specified heads in advance.
@@ -353,7 +353,7 @@ A recruitment panel wants to prevent an engaging interview from dominating unrel
 - Average repeated overall-impression ratings collected during the same interview. | Averaging global ratings does not isolate evidence for distinct skills.
 
 ## P02.05 | complements-and-denominators | medium | apply | 12,14
-Every application has a final outcome recorded as either success or failure. A report says 3% fail. Its complementary frame must describe the same applications and period. Which statement qualifies?
+Every application has a final outcome recorded as either success or failure. A report says 3% fail. Which statement gives the complementary frame?
 + 97% of those applications succeed. | Success complements failure within the specified population.
 - 97% of rejected applicants would succeed elsewhere. | This changes both the population and the outcome.
 - 3% of accepted applicants later fail. | This uses a new conditional denominator and outcome.
