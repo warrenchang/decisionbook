@@ -2,9 +2,9 @@
 
 Canonical chapters: **42**
 
-Unique references in the master union: **1267**
+Unique references in the master union: **1283**
 
-Chapter reference blocks: **1276**
+Chapter reference blocks: **1293**
 
 Unresolved author–year citations: **0**
 
@@ -18,7 +18,7 @@ Unresolved author–year citations: **0**
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 53 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 39 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 75 | 0 |
-| Rationalization {#narrator-after-choice} | 20 | 0 |
+| Rationalization {#narrator-after-choice} | 24 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 52 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 19 | 0 |
@@ -40,7 +40,7 @@ Unresolved author–year citations: **0**
 | Social Norms and Conformity | 33 | 0 |
 | Markets, Mispricing, and Bubbles {#prices-as-social-signals} | 73 | 0 |
 | Social Influence | 26 | 0 |
-| Culture, Personality, and Identity | 53 | 0 |
+| Culture, Personality, and Identity | 64 | 0 |
 | Persuasion | 30 | 0 |
 | Storytelling | 12 | 0 |
 | Message Design | 16 | 0 |
@@ -50,7 +50,7 @@ Unresolved author–year citations: **0**
 | Distributive Negotiation {#preparing-and-claiming-value} | 16 | 0 |
 | Integrative Negotiation {#creating-value-across-differences} | 12 | 0 |
 | Designing Better Agreements | 18 | 0 |
-| Behavior Design | 43 | 0 |
+| Behavior Design | 45 | 0 |
 | Choice Architecture | 37 | 0 |
 | Decision Hygiene | 39 | 0 |
 | Deciding With Data and AI {#data-driven-decision-making} | 33 | 0 |
