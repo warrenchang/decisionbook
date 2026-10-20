@@ -4,7 +4,7 @@ Canonical chapters: **42**
 
 Unique references in the master union: **1283**
 
-Chapter reference blocks: **1293**
+Chapter reference blocks: **1292**
 
 Unresolved author–year citations: **0**
 
@@ -18,7 +18,7 @@ Unresolved author–year citations: **0**
 | Predictive Mind {#the-predictive-mind-perception-is-inference} | 53 | 0 |
 | Expectations {#expectations-when-predictions-become-causes} | 39 | 0 |
 | Valuation {#valuation-how-options-become-worth-choosing} | 75 | 0 |
-| Rationalization {#narrator-after-choice} | 24 | 0 |
+| Rationalization {#narrator-after-choice} | 23 | 0 |
 | Intuition and Deliberation {#fast-and-frugal-thinking} | 52 | 0 |
 | Availability, Affect, and Representativeness {#what-feels-likely} | 17 | 0 |
 | Confirmation Bias and Motivated Reasoning {#beliefs-that-defend-themselves} | 19 | 0 |
