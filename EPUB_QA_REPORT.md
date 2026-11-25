@@ -45,7 +45,6 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | EPUB declares MathML and alternative-text accessibility features | **PASS** |
 | EPUB includes an accessibility summary | **PASS** |
 | All 69 source documents are packaged | **PASS** |
-| Book figures and cover are packaged | **PASS** |
 | Every packaged chapter is well-formed XHTML | **PASS** |
 | Callout titles do not contain later headings, tables, or callout bodies | **PASS** |
 | Every main chapter packages one epigraph | **PASS** |
@@ -55,8 +54,12 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Appendix A contains no empty-parenthesis math loss | **PASS** |
 | Every internal content link and fragment resolves | **PASS** |
 | Every packaged content image has nonempty alternative text | **PASS** |
+| Every packaged content image resolves to a local image | **PASS** |
+| All EPUB teaching figures defined in the sources are packaged | **PASS** |
+| The manifest identifies one packaged cover image | **PASS** |
 | Chapter 4 prediction distinction uses an EPUB-safe two-column table | **PASS** |
 | Chapter 4 contains no stale manual Table 6.1 caption | **PASS** |
+| Chapter 4 asks for a first judgment and reveals the image before extensions and questions | **PASS** |
 | Required content: Understanding Decision Making | **PASS** |
 | Required content: Structuring a Decision | **PASS** |
 | Required content: Alternatives, Trade-offs, and Information | **PASS** |
@@ -104,7 +107,7 @@ Artifact: `docs/Decision-in-the-Making.epub`
 | Required content: Predictive processing and predictive judgment ask different questions | **PASS** |
 | Required content: Prediction is not responsibility | **PASS** |
 | Required content: Recover from a lapse without self-blame | **PASS** |
-| Required content: The median modeled time to reach 95% of the plateau was 66 days | **PASS** |
+| Required content: modeled times to reach that criterion had a median of 66 days and ranged from 18 to 254 days among cases with good model fit | **PASS** |
 | Required content: Index of Concepts | **PASS** |
 | Rendered EPUB contains no duplicated Figure Figure cross-reference labels | **PASS** |
 | Removed reader text: Start Here | **PASS** |

@@ -229,13 +229,10 @@ The **outside view** starts with the completion-time distribution of comparable 
 
 For the branch manager, the same distinction applies to the rescue plan. A compelling account of why it should work is an inside view. Results from other branches facing comparable conditions provide an outside view. Their disagreement is a reason to examine the assumptions, rather than average the two claims mechanically.
 
-::: {.callout-note .research-lens icon=false collapse=true}
-## Research Lens: information protocols change probability puzzles
+[]{#fig-monty-hall-protocol}
+[]{#research-lens-information-protocols-change-probability-puzzles}
 
-In Monty Hall, seeing two unopened doors can make staying and switching look equally promising. Yet the host’s rule for revealing a goat determines what the reveal tells us: similar-looking endings can carry different evidence. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Following the unchosen-door branch in @fig-monty-hall-protocol shows why switching wins with probability $2/3$, compared with $1/3$ for staying (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: **How was this information generated?**
-
-![The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.](../figures/monty-hall-protocol.svg){#fig-monty-hall-protocol fig-alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds." width=100%}
-:::
+The [two host rules in Chapter 14](14-base-rates-and-bayesian-updating.qmd#monty-hall-and-the-hosts-rule) show how the same visible outcome can carry different information. When a branch reaches headquarters because it had a particularly bad quarter, ask what other branches could have been selected and by which rule.
 
 
 ## Calibration makes confidence answerable
@@ -307,6 +304,8 @@ Record one forecast for the final date and separate forecasts for leading mechan
 ## Practice Lab
 
 Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. For a quantity such as cost or completion time, add the 10th, 50th, and 90th percentiles and explain every adjustment away from the outside-view distribution. When the date arrives, enter the outcome and score without revising the original entry. Keep the ledger and identify which assumptions the outcome gives you reason to reconsider. One result may reveal a missing pathway, but calibration and systematic overconfidence require a longer record.
+
+For the branch manager, put the inside estimate beside a record of comparable quarters and state which dependencies could make the two cases differ. The delay calculation above answers a related outside-view question. Multiplying independent no-delay probabilities is appropriate if the causes are independent. If several delays share a cause, record that dependence before treating the result as a forecast.
 
 ## Take it forward
 
@@ -397,10 +396,6 @@ Oskamp, S. (1965). Overconfidence in case-study judgments. *Journal of Consultin
 
 ::: {.reference}
 PGA TOUR. (2024, April 30). *Tiger Woods appears on “The Tonight Show Starring Jimmy Fallon” to discuss Sun Day Red and more*. https://www.pgatour.com/article/news/latest/2024/04/30/tiger-woods-goes-on-the-tonight-show-jimmy-fallon-sun-day-red
-:::
-
-::: {.reference}
-Selvin, S. (1975). A problem in probability. *The American Statistician, 29*(1), 67.
 :::
 
 ::: {.reference}

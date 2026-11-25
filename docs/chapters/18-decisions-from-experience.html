@@ -665,7 +665,9 @@ window.Quarto = {
 <p>— Mark Twain, <a href="https://www.gutenberg.org/cache/epub/2895/pg2895-images.html"><em>Following the Equator</em></a>, 1897, ch.&nbsp;XI</p>
 </blockquote>
 </div>
-<p><span id="opening-puzzle-the-rare-outcome-that-did-not-happen"></span>Option A always pays €3. Option B pays €32 with probability 10% and €0 otherwise. You may sample either option as often as you wish before making one consequential choice.</p>
+<p><span id="opening-puzzle-the-rare-outcome-that-did-not-happen"></span></p>
+<p><strong>Predict first.</strong> Imagine you have tried each option five times. A paid €3, €3, €3, €3 and €3. B paid €0, €0, €0, €0 and €0. These are hypothetical draws. Which would you choose if you could collect the payoff only once? Record your choice before reading the descriptions.</p>
+<p>Option A always pays €3. Option B pays €32 with probability 10% and €0 otherwise. Sampling each option more often could give a different impression of the same payoffs.</p>
 <p>The description gives everything required to calculate expected value: A is worth €3; B is worth €3.20. Experience creates another problem. A learner who samples B five times has a probability of about 59% of seeing no €32 outcome at all. For that learner, B has so far looked like a machine that pays zero. Another learner may encounter €32 on the first draw and see B as extraordinarily attractive. Although both learners face the same distribution, they have encountered very different evidence.</p>
 <p>The two learners must infer what each option can deliver from the outcomes they happened to see. A team deciding whether to add a second supplier after eight years of reliable deliveries faces a similar problem. Its experience is reassuring, but did those years include the kinds of disruption it needs to prepare for? We will return to that decision after examining what experience reveals and conceals.</p>
 <div class="core-idea callout callout-style-default callout-note no-icon callout-titled">
@@ -688,22 +690,14 @@ window.Quarto = {
 <li>Diagnose sampling, stopping, recency, avoidance, and feedback mechanisms in one supplier-risk case.</li>
 <li>Design a learning system that combines calibrated description with representative experience.</li>
 </ul>
+<p>Try the opening choices again from the supplier’s perspective. Write down what you could have learned from five ordinary deliveries and what still would not have appeared. The supplier’s record later in the chapter asks the same question about eight years of successful deliveries.</p>
 </section>
 <section id="description-and-experience-are-different-information-conditions" class="level2">
 <h2 data-anchor-id="description-and-experience-are-different-information-conditions">Description and experience are different information conditions</h2>
 <p>A <strong>decision from description</strong> states the possible outcomes and their probabilities. A weather forecast gives a probability of rain. A medicine fact box reports estimated benefits and harms. An insurer may provide estimated claim frequencies and loss amounts. The decision-maker may misunderstand, neglect, or transform these numbers, but the distribution is externally represented.</p>
 <p>A <strong>decision from experience</strong> requires the distribution to be learned from observations. A driver infers how dangerous a familiar road is from previous journeys. A manager estimates supplier reliability from deliveries that happened to be observed. A person decides whether to back up a computer after years without a disk failure. Outcomes and probabilities are not fully listed; the person samples, remembers, and updates.</p>
-<p>Many consequential decisions contain both. A physician can read trial evidence and also remember patients. A resident can see a flood map and also remember years without flooding. An investor can study a long return series and still give special weight to the market experienced during early adulthood. The independent dimensions in <a href="#fig-decision-experience-states" class="quarto-xref">Figure&nbsp;<span>18.1</span></a> make room for all four combinations, including having neither source. When both are present, disagreement calls for investigation; neither is automatically superior.</p>
-<div id="fig-decision-experience-states" class="quarto-float quarto-figure quarto-figure-center" alt="A two-by-two matrix. Columns indicate description absent or present; rows indicate experience absent or present. Neither is labeled information-poor. Description only means an explicit model without personal feedback; experience only means a sampled path without an explicit distribution; both means evidence sources can reinforce or conflict.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-decision-experience-states-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/decision-experience-states.svg" class="img-fluid figure-img" alt="A two-by-two matrix. Columns indicate description absent or present; rows indicate experience absent or present. Neither is labeled information-poor. Description only means an explicit model without personal feedback; experience only means a sampled path without an explicit distribution; both means evidence sources can reinforce or conflict.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decision-experience-states-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18.1: Four information states created by the presence or absence of statistical description and personal experience.
-</figcaption>
-</figure>
-</div>
+<p>Many decisions combine a statistical description and personal experience. A physician can read trial evidence and remember patients, while a resident can see a flood map and remember years without flooding. In <a href="#tbl-experience-states" class="quarto-xref">Table&nbsp;<span>18.1</span></a>, check which source is available and how it was formed. If they conflict, investigate whether they cover the same outcomes and conditions.</p>
+<p><span id="fig-decision-experience-states"></span></p>
 <p><span id="four-epistemic-states"></span></p>
 <p>Hertwig and Wulff (2022) organize risk situations by asking whether description and experience are present or absent. The responses in <a href="#tbl-experience-states" class="quarto-xref">Table&nbsp;<span>18.1</span></a> follow from what is missing: a selective history calls for broader evidence, while a described distribution may need a clearer, more usable presentation.</p>
 <div id="tbl-experience-states" class="quarto-float quarto-figure quarto-figure-center">
@@ -785,11 +779,11 @@ Table&nbsp;18.1: Four information states require different diagnoses
 <img src="../figures/experience-rare-event-sampling.svg" class="img-fluid figure-img" style="width:100.0%" alt="Line chart showing the probability that a rare event has not appeared after up to one hundred independent observations. The one-percent-event curve falls slowly and the five-percent-event curve falls more quickly. A band marks sample sizes eleven to nineteen. At fifteen observations, the curves imply absence probabilities of about eighty-six percent for a one-percent event and forty-six percent for a five-percent event.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-experience-rare-event-sampling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18.2: An independently occurring rare event can remain absent from a small experience sample. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time.
+Figure&nbsp;18.1: An independently occurring rare event can remain absent from a small experience sample. With 15 observations, a 1% event remains unseen about 86% of the time and a 5% event about 46% of the time.
 </figcaption>
 </figure>
 </div>
-<p>The slowly falling one-percent curve in <a href="#fig-experience-rare-event-sampling" class="quarto-xref">Figure&nbsp;<span>18.2</span></a> shows why an uneventful sample can coexist with a real rare-event risk.</p>
+<p>The slowly falling one-percent curve in <a href="#fig-experience-rare-event-sampling" class="quarto-xref">Figure&nbsp;<span>18.1</span></a> shows why an uneventful sample can coexist with a real rare-event risk.</p>
 <p>Larger forced samples reduce this source of the gap, but do not always eliminate the gap (Hau et al., 2008, 2010; Wulff et al., 2018). That residual matters. If exposure were the entire explanation, choices should converge once experienced frequencies are controlled. Remaining differences direct attention to memory, recency, learning, format, and choice rules.</p>
 <div id="math-unseen-rare-events">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
@@ -944,7 +938,11 @@ Table&nbsp;18.2: Process quality and outcome quality must be reviewed separately
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<details class="exercise-disclosure"><summary>Open exercise</summary>
+<div>
 <p>Audit a supplier judged “reliable because it has never failed us.” Produce a sampling map with the observation window, number of exposures, near misses, avoided situations, unreported failures, relevant base rate, and stopping rule. Add one controlled stress test or simulation, then state what finding would change the sourcing decision. Show which conditions the record covers and which remain untested, then explain how that gap affects your recommendation.</p>
+</div>
+</details>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
@@ -994,6 +992,8 @@ Table&nbsp;18.2: Process quality and outcome quality must be reviewed separately
 </section>
 <section id="practice-c18" class="level2">
 <h2 data-anchor-id="practice-c18">Chapter practice</h2>
+<details class="exercise-disclosure"><summary>Open practice questions</summary>
+<div>
 <!-- Generated by scripts/build_practice.py. Edit assessments/bank/ instead. -->
 <form class="book-practice" id="quiz-c18" data-practice-set="C18" novalidate="">
 <p id="quiz-c18-instructions">Choose one answer for each of the 5 questions. Complete the set, then select <strong>Check answers</strong> to see your score and explanations. Each question is worth one point.</p>
@@ -1080,6 +1080,8 @@ Table&nbsp;18.2: Process quality and outcome quality must be reviewed separately
 </dl><p class="practice-source">Review: <a href="../chapters/18-decisions-from-experience.html">Chapter 18</a>. <a href="#c18-05">Back to question 5</a></p></li>
 </ol></details></form>
 <script src="../assets/practice.js" defer=""></script>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>

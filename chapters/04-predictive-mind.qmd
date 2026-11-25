@@ -16,7 +16,7 @@ aliases:
 :::
 
 ::: {#patches-become-a-scene}
-Look at @fig-recognition-two-tone for a few seconds. What, if anything, do the patches represent? Write down your first interpretation, or note that you cannot yet find one. The grayscale source image appears in the final section of this chapter. Leave it until then, so that you can compare your first impression with what you see after the reveal.
+Look at @fig-recognition-two-tone for a few seconds. What, if anything, do the patches represent? Write down your first interpretation, or note that you cannot yet find one. The grayscale version appears after the core examples, where you can compare what you saw before and after the reveal.
 
 ![What do these patches represent? Record your first impression before continuing.](../figures/recognition-two-tone.png){#fig-recognition-two-tone fig-alt="Irregular black patches on a white field. Some form small isolated clusters, while others join into larger dark regions. The image's subject is deliberately left unnamed for this recognition exercise." width=100% .phone-fit}
 
@@ -55,6 +55,65 @@ Read the middle symbol in each row of @fig-context-b13-demonstration. Its shape 
 
 ![The same mark can be read as “13” in a number context or “B” in a letter context.](../figures/context-b13-demonstration.svg){#fig-context-b13-demonstration fig-alt="Two horizontal rows contain the same central ambiguous mark. The top row places it between 12 and 14, encouraging a reading of 13. The bottom row places it between A and C, encouraging a reading of B." width=100%}
 
+[]{#color-and-illumination-context}
+
+Look first at the isolated light on the left in @fig-traffic-light-color-context. What color would you call it? Now look at the upper lamp on the right. Both show the same lens, but only the right supplies its familiar setting. Does recognizing the traffic signal make the upper light seem redder?
+
+![The same gray lens appears alone on a blue-green field and at the top of a familiar traffic signal.](../figures/traffic-light-color-context.svg){#fig-traffic-light-color-context fig-alt="The left panel contains only a gray textured lens on a plain blue-green background, with no frame or other objects. The right places the identical lens at the same size and height at the top of a three-lamp traffic signal in a blue-green scene. The familiar upper position supplies the learned expectation of red." width=100% .phone-fit}
+
+The scene brings learned knowledge into play: in a familiar vertical traffic signal, the top lamp is red. Recognizing the signal makes red an expected interpretation of the upper lens. The isolated circle offers no such positional clue. Cover the housing and lower lamps, then reveal them again; notice both the color you assign to the lens and how it appears.[^ch04-color-cues] **The context tells us what the sensory evidence is likely to mean.**
+
+Laboratory studies capture a related influence of familiar colors. When observers adjusted banana images until they looked gray, they shifted them slightly toward blue compared with their gray settings for unfamiliar control patches—the direction opposite to a banana's familiar yellow (Hansen et al., 2006). Related effects occur for familiar manufactured objects whose typical colors are learned through experience (Witzel et al., 2011).
+
+The blue-green scene also supplies information about illumination. **Color constancy** helps an object's perceived color remain relatively stable as illumination changes: a white shirt can still look white in warm indoor light or cool daylight (Foster, 2011). Interpreting a scene can change that judgment. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). The familiar object and the light falling on it jointly inform the interpretation.
+
+## Two meanings of prediction
+
+To explain how learned expectations work, we first need to clarify a term that can otherwise cause confusion.
+
+Recognizing a chair and forecasting the result of taking a job both draw on prior information. Yet a model that explains the first has not thereby supplied a reliable forecast of the second. To connect perception with decision-making, we need to specify what **prediction** is about in each case.
+
+| Use of prediction | Meaning in this book |
+| --- | --- |
+| **Prediction in predictive processing** | An internal model anticipates sensory signals or infers their hidden causes. A mismatch between expected and incoming signals can alter perception or update the model. |
+| **Prediction in judgment and decision-making** | A person or model forecasts a state or consequence that may occur, often under a specified option and time horizon. The forecast becomes one input into valuation and choice. |
+: Predictive processing and predictive judgment ask different questions {#tbl-two-meanings-prediction}
+
+The first row of @tbl-two-meanings-prediction asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. In a hiring interview, interpreting a quiet answer as thoughtfulness is an inference about what just happened; predicting reliable future work is a further claim.
+
+This chapter concentrates on interpreting sensory and bodily signals. It also considers how the nervous system anticipates the bodily effects of actions such as drinking. Such anticipation need not involve a conscious forecast. The next chapter asks how expectations about an outcome can themselves help change that outcome.
+
+## Prediction, error, and precision
+
+Suppose the chair in the dim kitchen has been moved. Your first interpretation places it where it usually stands, but approaching it reveals a mismatch. A **prediction error** is a discrepancy between an expected signal and an incoming one. In predictive-processing models, such discrepancies can change the interpretation or update what is expected next time (Clark, 2013; Friston, 2010; Hohwy, 2013; Rao & Ballard, 1999).
+
+How much should a discrepancy matter? In dim light, one uncertain outline may deserve little weight; after the light is switched on, the same location provides clearer evidence. **Precision** means estimated reliability, often formalized as inverse variance. A signal treated as more reliable has greater influence on the relevant update. Precision does not simply mean importance, emotional force, or confidence stated aloud.
+
+Ernst and Banks (2002) made that weighting observable. Participants estimated the height of a virtual bar by seeing it, feeling it through a force-feedback device, or combining both senses. The researchers added visual noise and introduced small disagreements between the seen and felt heights. When vision was reliable, estimates gave it more weight; as the image became noisier, touch gained influence. The combined judgments closely followed predictions based on the reliability of each sense measured separately. The study supports reliability-weighted integration in this task.
+
+The **generative process** is the world and body producing the observations; the **generative model** is the system's account of how those observations could arise. A model of a chair anticipates what its shape would look like from a particular angle and in particular lighting. Perceptual inference uses incoming signals to work back toward the likely object and setting. The actual chair belongs to the process, while these learned relationships belong to the model. Keeping them separate matters because a familiar model can be wrong.
+
+![A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="Expectations and incoming signals converge on perception. Perception informs action and sampling, which changes the next evidence. A feedback arrow shows that mismatch can update the internal model."}
+
+Predictive-processing models differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman & Friston, 2010), but precision and attention are not interchangeable. The return path through action and sampling in @fig-predictive-processing-decision also explains why a smaller prediction error need not mean a better account of the world: the system may have sampled only evidence its model already explains.
+
+## Return to the opening image {#recognition-reveal}
+
+Before looking below, recall your first interpretation of @fig-recognition-two-tone. Now examine the grayscale image in @fig-recognition-grayscale, then cover it or turn back to the opening image. Does the same arrangement of black and white look different?
+
+![The grayscale source of the opening image. Compare the same landmarks in both versions, then try to recover your first impression of the patches.](../figures/recognition-grayscale-reveal.png){#fig-recognition-grayscale fig-alt="A grayscale illustration of a Dalmatian resting in dappled shade, its head facing left. Its nose is near the center-left, its eye is above it, and a dark ear hangs on the right." width=100% .phone-fit}
+
+The scene shows a Dalmatian. Locate the nose toward the center-left, the eye above it, and the dark ear on the right. Can you now find the same features in the opening image? Try to see that image again as unrelated patches, without seeing the animal.
+
+**The patches you return to have not changed; the interpretation available to you has.** The cue can connect prior knowledge of the animal with this particular arrangement, making individual marks into parts of a recognizable whole. Once that interpretation takes hold, it may be difficult to recover the earlier uncertainty. Your response may differ: you might have recognized the scene immediately, or still find the two-tone image difficult.[^ch04-recognition-illustrations]
+
+Laboratory research with two-tone images supports this broader phenomenon: seeing the corresponding grayscale image can greatly improve later recognition of the degraded image (Dolan et al., 1997). The illustration makes the chapter's central idea tangible: experience supplies ways to organize incoming signals, and a new cue can change which organization becomes available.
+
+[]{#perception-comparisons}
+
+:::::::: {.callout-note .research-lens icon=false collapse="true"}
+## More ways to test an interpretation
+
 []{#ambiguous-animals-and-seasonal-context}
 
 Before reading the caption, name the animal in @fig-duck-rabbit-context. Then try to find another animal without rotating the image. The challenge is to reorganize the same marks, not discover a second hidden drawing.
@@ -72,18 +131,6 @@ The symbol and the ambiguous animal show how the same marks can support differen
 In @fig-perception-context-lab, the paired shafts, centre circles, and grey patches are physically identical within each comparison. The surrounding geometry or luminance changes their appearance. Measuring the target can correct the judgment without necessarily turning off the impression.
 
 ![Three perceptual demonstrations hold a measurable target constant while changing its context: equal line shafts receive different fins, equal centre circles receive differently sized neighbours, and identical grey patches appear on dark and light fields.](../figures/perception-context-lab.svg){#fig-perception-context-lab fig-alt="Three panels compare physically identical targets in different contexts. Equal horizontal shafts have different arrow fins, equal blue centre circles are surrounded by small or large circles, and identical grey patches appear on dark and light backgrounds." width=100%}
-
-[]{#color-and-illumination-context}
-
-Look first at the isolated light on the left in @fig-traffic-light-color-context. What color would you call it? Now look at the upper lamp on the right. Both show the same lens, but only the right supplies its familiar setting. Does recognizing the traffic signal make the upper light seem redder?
-
-![The same gray lens appears alone on a blue-green field and at the top of a familiar traffic signal.](../figures/traffic-light-color-context.svg){#fig-traffic-light-color-context fig-alt="The left panel contains only a gray textured lens on a plain blue-green background, with no frame or other objects. The right places the identical lens at the same size and height at the top of a three-lamp traffic signal in a blue-green scene. The familiar upper position supplies the learned expectation of red." width=100% .phone-fit}
-
-The scene brings learned knowledge into play: in a familiar vertical traffic signal, the top lamp is red. Recognizing the signal makes red an expected interpretation of the upper lens. The isolated circle offers no such positional clue. Cover the housing and lower lamps, then reveal them again; notice both the color you assign to the lens and how it appears.[^ch04-color-cues] **The context tells us what the sensory evidence is likely to mean.**
-
-Laboratory studies capture a related influence of familiar colors. When observers adjusted banana images until they looked gray, they shifted them slightly toward blue compared with their gray settings for unfamiliar control patches—the direction opposite to a banana's familiar yellow (Hansen et al., 2006). Related effects occur for familiar manufactured objects whose typical colors are learned through experience (Witzel et al., 2011).
-
-The blue-green scene also supplies information about illumination. **Color constancy** helps an object's perceived color remain relatively stable as illumination changes: a white shirt can still look white in warm indoor light or cool daylight (Foster, 2011). Interpreting a scene can change that judgment. In a laboratory demonstration, changing the perceived folding direction of a card changed its apparent color in a way consistent with altered interpretation of light reflected between its surfaces (Bloj et al., 1999). The familiar object and the light falling on it jointly inform the interpretation.
 
 []{#hollow-face-illusion}
 
@@ -145,36 +192,7 @@ Systematic research offers a complementary test. Newly sighted participants init
 :::
 
 We need learned structure to interpret incomplete signals, and reliable new observations to correct an interpretation when that structure misleads us.
-
-## Two meanings of prediction
-
-To explain how learned expectations work, we first need to clarify a term that can otherwise cause confusion.
-
-Recognizing a chair and forecasting the result of taking a job both draw on prior information. Yet a model that explains the first has not thereby supplied a reliable forecast of the second. To connect perception with decision-making, we need to specify what **prediction** is about in each case.
-
-| Use of prediction | Meaning in this book |
-| --- | --- |
-| **Prediction in predictive processing** | An internal model anticipates sensory signals or infers their hidden causes. A mismatch between expected and incoming signals can alter perception or update the model. |
-| **Prediction in judgment and decision-making** | A person or model forecasts a state or consequence that may occur, often under a specified option and time horizon. The forecast becomes one input into valuation and choice. |
-: Predictive processing and predictive judgment ask different questions {#tbl-two-meanings-prediction}
-
-The first row of @tbl-two-meanings-prediction asks, in effect, **“What is producing the signals I am receiving?”** The second asks **“What is likely to happen if this option is chosen?”** Both use prior information and uncertainty, but they predict different objects and are evaluated against different evidence. In a hiring interview, interpreting a quiet answer as thoughtfulness is an inference about what just happened; predicting reliable future work is a further claim.
-
-This chapter concentrates on interpreting sensory and bodily signals. It also considers how the nervous system anticipates the bodily effects of actions such as drinking. Such anticipation need not involve a conscious forecast. The next chapter asks how expectations about an outcome can themselves help change that outcome.
-
-## Prediction, error, and precision
-
-Suppose the chair in the dim kitchen has been moved. Your first interpretation places it where it usually stands, but approaching it reveals a mismatch. A **prediction error** is a discrepancy between an expected signal and an incoming one. In predictive-processing models, such discrepancies can change the interpretation or update what is expected next time (Clark, 2013; Friston, 2010; Hohwy, 2013; Rao & Ballard, 1999).
-
-How much should a discrepancy matter? In dim light, one uncertain outline may deserve little weight; after the light is switched on, the same location provides clearer evidence. **Precision** means estimated reliability, often formalized as inverse variance. A signal treated as more reliable has greater influence on the relevant update. Precision does not simply mean importance, emotional force, or confidence stated aloud.
-
-Ernst and Banks (2002) made that weighting observable. Participants estimated the height of a virtual bar by seeing it, feeling it through a force-feedback device, or combining both senses. The researchers added visual noise and introduced small disagreements between the seen and felt heights. When vision was reliable, estimates gave it more weight; as the image became noisier, touch gained influence. The combined judgments closely followed predictions based on the reliability of each sense measured separately. The study supports reliability-weighted integration in this task.
-
-The **generative process** is the world and body producing the observations; the **generative model** is the system's account of how those observations could arise. A model of a chair anticipates what its shape would look like from a particular angle and in particular lighting. Perceptual inference uses incoming signals to work back toward the likely object and setting. The actual chair belongs to the process, while these learned relationships belong to the model. Keeping them separate matters because a familiar model can be wrong.
-
-![A simplified predictive-processing account. Expectations and incoming signals both contribute to perception; action changes subsequent sampling, while mismatches can update the model. Estimated reliability affects the weight given to the signals.](../figures/judgment-and-decision-making-according-to-predictive-processing.svg){#fig-predictive-processing-decision fig-alt="Expectations and incoming signals converge on perception. Perception informs action and sampling, which changes the next evidence. A feedback arrow shows that mismatch can update the internal model."}
-
-Predictive-processing models differ in their scope and implementation. Some model aspects of attention through precision assignment (Feldman & Friston, 2010), but precision and attention are not interchangeable. The return path through action and sampling in @fig-predictive-processing-decision also explains why a smaller prediction error need not mean a better account of the world: the system may have sampled only evidence its model already explains.
+::::::::
 
 []{#learning-a-sound-that-is-not-there}
 
@@ -278,6 +296,8 @@ weight**, and **what observation would change that weight**. “Use less
 intuition” is not yet a test; specify what evidence should become more
 diagnostic.
 :::
+
+A perceptual model and a data tool can both use learned regularities, and the mechanisms need to be examined separately. [Chapter 42](42-deciding-with-data-and-ai.qmd#ai-workbench) asks how to check a tool’s output before using it in a decision. The extension below develops the comparison in more detail.
 
 ::: {#generative-ai-and-predictive-processing}
 
@@ -587,15 +607,3 @@ Zimmerman, C. A., Huey, E. L., Ahn, J. S., Beutler, L. R., Tan, C. L., Kosar, S.
 ::: {.reference}
 Zimmerman, C. A., Lin, Y.-C., Leib, D. E., Guo, L., Huey, E. L., Daly, G. E., Chen, Y., & Knight, Z. A. (2016). Thirst neurons anticipate the homeostatic consequences of eating and drinking. *Nature, 537*, 680–684. [Published paper](https://doi.org/10.1038/nature18950).
 :::
-
-## Return to the opening image {#recognition-reveal}
-
-Before looking below, recall your first interpretation of @fig-recognition-two-tone. Now examine the grayscale image in @fig-recognition-grayscale, then cover it or turn back to the opening image. Does the same arrangement of black and white look different?
-
-![The grayscale source of the opening image. Compare the same landmarks in both versions, then try to recover your first impression of the patches.](../figures/recognition-grayscale-reveal.png){#fig-recognition-grayscale fig-alt="A grayscale illustration of a Dalmatian resting in dappled shade, its head facing left. Its nose is near the center-left, its eye is above it, and a dark ear hangs on the right." width=100% .phone-fit}
-
-The scene shows a Dalmatian. Locate the nose toward the center-left, the eye above it, and the dark ear on the right. Can you now find the same features in the opening image? Try to see that image again as unrelated patches, without seeing the animal.
-
-**The patches you return to have not changed; the interpretation available to you has.** The cue can connect prior knowledge of the animal with this particular arrangement, making individual marks into parts of a recognizable whole. Once that interpretation takes hold, it may be difficult to recover the earlier uncertainty. Your response may differ: you might have recognized the scene immediately, or still find the two-tone image difficult.[^ch04-recognition-illustrations]
-
-Laboratory research with two-tone images supports this broader phenomenon: seeing the corresponding grayscale image can greatly improve later recognition of the degraded image (Dolan et al., 1997). The illustration makes the chapter's central idea tangible: experience supplies ways to organize incoming signals, and a new cue can change which organization becomes available.

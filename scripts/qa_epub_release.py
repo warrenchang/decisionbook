@@ -12,6 +12,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree as ET
 
+from qa_float_references import SOURCE_LINE, source_inventory
+
 
 ROOT = Path(__file__).resolve().parents[1]
 EPUB = ROOT / "docs" / "Decision-in-the-Making.epub"
@@ -25,6 +27,7 @@ DC = "http://purl.org/dc/elements/1.1/"
 CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 NCX = "http://www.daisy.org/z3986/2005/ncx/"
 MATHML = "http://www.w3.org/1998/Math/MathML"
+ONLINE_ONLY_FIGURES = {"fig-hollow-face-illusion"}
 
 EXPECTED_PARTS = [
     "Part I. How a Choice Takes Shape",
@@ -104,7 +107,7 @@ REQUIRED_CONTENT = [
     "Predictive processing and predictive judgment ask different questions",
     "Prediction is not responsibility",
     "Recover from a lapse without self-blame",
-    "The median modeled time to reach 95% of the plateau was 66 days",
+    "modeled times to reach that criterion had a median of 66 days and ranged from 18 to 254 days among cases with good model fit",
     "Index of Concepts",
 ]
 
@@ -457,9 +460,7 @@ def main() -> int:
         )
 
         chapter_files = sorted(name for name in names if re.fullmatch(r"EPUB/text/ch\d{3}\.xhtml", name))
-        media_files = sorted(name for name in names if name.startswith("EPUB/media/"))
         check("All 69 source documents are packaged", len(chapter_files) == 69, str(len(chapter_files)))
-        check("Book figures and cover are packaged", len(media_files) >= 71, str(len(media_files)))
 
         malformed_xhtml: list[str] = []
         overnested_callout_titles: list[str] = []
@@ -533,15 +534,27 @@ def main() -> int:
             )
 
         broken_content_links: list[str] = []
+        broken_image_sources: list[str] = []
         empty_image_alts: list[str] = []
+        packaged_figures: set[str] = set()
         id_cache: dict[str, set[str]] = {
             path: {element.get("id", "") for element in root.iter() if element.get("id")}
             for path, root in parsed_chapters.items()
         }
         for chapter_path, chapter_root in parsed_chapters.items():
+            for figure in chapter_root.iter():
+                if "quarto-figure" not in figure.get("class", "").split():
+                    continue
+                identifier = figure.get("id", "")
+                if identifier.startswith("fig-") and figure.find(f".//{{{XHTML}}}img") is not None:
+                    packaged_figures.add(identifier)
             for image in chapter_root.findall(f".//{{{XHTML}}}img"):
+                src = image.get("src", "").strip()
+                target = posixpath.normpath(posixpath.join(posixpath.dirname(chapter_path), unquote(src)))
+                if target not in names:
+                    broken_image_sources.append(f"{chapter_path}: {src}")
                 if not image.get("alt", "").strip():
-                    empty_image_alts.append(f"{chapter_path}: {image.get('src', '')}")
+                    empty_image_alts.append(f"{chapter_path}: {src}")
             for anchor in chapter_root.findall(f".//{{{XHTML}}}a"):
                 href = anchor.get("href", "").strip()
                 if not href or href.startswith(("http://", "https://", "mailto:", "tel:", "data:")):
@@ -578,6 +591,28 @@ def main() -> int:
             not empty_image_alts,
             "; ".join(empty_image_alts[:5]),
         )
+        check(
+            "Every packaged content image resolves to a local image",
+            not broken_image_sources,
+            "; ".join(broken_image_sources[:5]),
+        )
+        configured_sources = SOURCE_LINE.findall((ROOT / "_quarto-epub.yml").read_text(encoding="utf-8"))
+        expected_figures = {
+            item["id"]
+            for source in configured_sources
+            for item in source_inventory(ROOT / source, ROOT)[0]
+            if item["type"] == "fig" and item["id"] not in ONLINE_ONLY_FIGURES
+        }
+        missing_figures = sorted(expected_figures - packaged_figures)
+        check(
+            "All EPUB teaching figures defined in the sources are packaged",
+            bool(expected_figures) and not missing_figures,
+            f"{len(expected_figures & packaged_figures)}/{len(expected_figures)}; missing: {', '.join(missing_figures)}",
+        )
+        cover_items = [
+            item for item in manifest_items if "cover-image" in item.get("properties", "").split()
+        ]
+        check("The manifest identifies one packaged cover image", len(cover_items) == 1)
 
         chapter_four_item = next(
             (
@@ -615,6 +650,20 @@ def main() -> int:
             f"{chapter_four_path}: {len(first_row_cells)} columns",
         )
         check("Chapter 4 contains no stale manual Table 6.1 caption", "Table 6.1" not in chapter_four_text)
+        chapter_four_ids = [
+            element.get("id") for element in chapter_four_root.iter() if element.get("id")
+        ] if chapter_four_root is not None else []
+        reveal_sequence = [
+            "fig-recognition-two-tone",
+            "tbl-two-meanings-prediction",
+            "fig-recognition-grayscale",
+            "perception-comparisons",
+            "practice-c04",
+        ]
+        check(
+            "Chapter 4 asks for a first judgment and reveals the image before extensions and questions",
+            [identifier for identifier in chapter_four_ids if identifier in reveal_sequence] == reveal_sequence,
+        )
 
         searchable = "\n".join(
             archive.read(name).decode("utf-8", "ignore")

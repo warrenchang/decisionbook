@@ -615,7 +615,6 @@ window.Quarto = {
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#data-and-computation" id="toc-data-and-computation" class="nav-link" data-scroll-target="#data-and-computation">More data and cheaper computation</a></li>
   <li><a href="#four-uses-of-data" id="toc-four-uses-of-data" class="nav-link" data-scroll-target="#four-uses-of-data">Four questions data analysis can answer</a></li>
-  <li><a href="#ai-a-short-guide" id="toc-ai-a-short-guide" class="nav-link" data-scroll-target="#ai-a-short-guide">AI, machine learning, and algorithms: a short guide</a></li>
   <li><a href="#cheap-prediction" id="toc-cheap-prediction" class="nav-link" data-scroll-target="#cheap-prediction">What becomes possible when prediction becomes cheap?</a></li>
   <li><a href="#separate-prediction-and-valuation" id="toc-separate-prediction-and-valuation" class="nav-link" data-scroll-target="#separate-prediction-and-valuation">Separate the forecast from the value of its consequences</a>
   <ul class="collapse">
@@ -755,9 +754,19 @@ Table&nbsp;42.1: Four uses of data, illustrated within one decision
 <p><strong>Prediction fills an information gap.</strong> Forecasting next month’s demand is one example; estimating the material of a pipe that already exists is another. A useful predictor can exploit an association without explaining why that association exists. Whether the model predicts well for new cases is an empirical question, and it is different from whether changing one of its inputs would change the outcome.</p>
 <p><strong>Prescription compares feasible actions.</strong> It combines information with an objective, constraints, and consequences. An optimizer can recommend an excavation schedule that performs best under its stated assumptions, but the objective and acceptable trade-offs must come from somewhere. Research on prescriptive analytics formalizes this connection between prediction and constrained decision making (Bertsimas &amp; Kallus, 2020). When an action changes the outcome being predicted, credible evidence of its effect is an additional input; a risk score alone is insufficient.</p>
 <p>These purposes connect <strong>hindsight, insight, and foresight</strong> to action. They do not form a universal ladder of increasing value or difficulty. A reliable count revealing an overlooked street can be more useful than a sophisticated forecast of the wrong target. In practice, the questions recur: an action produces outcomes to describe, unexpected results prompt diagnosis, and new evidence changes predictions and plans. The method should follow the question.</p>
-</section>
-<section id="ai-a-short-guide" class="level2">
-<h2 data-anchor-id="ai-a-short-guide">AI, machine learning, and algorithms: a short guide</h2>
+<p><span id="ai-a-short-guide"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>AI, machine learning, and algorithms
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The four purposes of analysis do not map onto four kinds of AI. A descriptive table may need only a database query; an allocation problem may be solved with conventional optimization. AI offers additional tools, particularly when the task involves complex patterns, language, or images. A pipe-risk model, a chatbot, and a chess-playing program can all be described as AI while doing different jobs. The following terms help identify what each tool contributes.</p>
 <p><strong>Artificial intelligence (AI)</strong> is the broad field of building computer systems that perform tasks associated with intelligence: recognizing patterns, working with language, reasoning, and planning. Such systems can use inputs such as records, text, images, or sound to produce predictions, recommendations, content, or actions (National Institute of Standards and Technology, 2023; OECD, 2024).</p>
 <p>An <strong>algorithm</strong> is a step-by-step procedure for carrying out a task. Sorting names alphabetically uses an algorithm; so does training a pipe-risk model. Algorithms are building blocks of ordinary software as well as AI. Some AI systems reason with explicitly supplied rules or search through possible moves; others learn patterns from data.</p>
@@ -767,6 +776,9 @@ Table&nbsp;42.1: Four uses of data, illustrated within one decision
 <p><span id="image-recognition-a-historical-gain-in-predictive-capability"></span></p>
 <p>Image classification shows how much a defined task can improve. In the ImageNet competition, the best classification error fell from <strong>28.2 percent in 2010</strong> to <strong>3.57 percent in 2015</strong>, when an ensemble of residual neural networks won. These are <strong>top-five error rates</strong>: an image counts as an error when its correct category is absent from the system’s five proposed labels (Russakovsky et al., 2015; He et al., 2016). The widely reproduced human reference of about 5 percent came from a particular trained annotator, not a universal limit on human vision.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>The result illustrates gains in capability made possible by the combination of training data, algorithms, and computing resources. Tasks such as sorting images or flagging cases for inspection became more plausible candidates for automation or assistance. It does not directly measure the price of computation, nor establish reliable performance on every new image source. Images from a different setting, different error costs, and a different workflow still require evaluation. Falling costs and improving performance are distinct changes; together they expand the tasks worth testing.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="cheap-prediction" class="level2">
 <h2 data-anchor-id="cheap-prediction">What becomes possible when prediction becomes cheap?</h2>
@@ -782,7 +794,7 @@ Table&nbsp;42.1: Four uses of data, illustrated within one decision
 <h2 data-anchor-id="separate-prediction-and-valuation">Separate the forecast from the value of its consequences</h2>
 <p>A prediction describes possibilities and uncertainty. <strong>Valuation</strong> assigns importance to consequences: money, time, safety, dignity, fairness, enjoyment, or other ends. A <strong>choice</strong> commits to an available action. A decision process needs all three, together with evidence about what the actions can change.</p>
 <p>Values enter early because they help determine which outcomes deserve prediction. Evidence can then reveal a trade-off that people had overlooked. What matters is keeping the contributions visible, so a disagreement about probabilities does not quietly become a disagreement about priorities—or the reverse.</p>
-<p>Return to <a href="01-understanding-decision-making.html#fig-normative-decision-loop" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> in <a href="../chapters/01-understanding-decision-making.html#a-rational-benchmark">Chapter 1</a>. It supplies the normative framework here: information about alternatives supports prediction; predicted consequences are valued; choice and implementation lead to outcomes; and feedback can inform later judgment. AI can assist prediction within that process. People and institutions remain responsible for specifying what matters, deciding whether the evidence is sufficient, authorizing the action, and learning from its consequences.</p>
+<p>Return to the <a href="../chapters/01-understanding-decision-making.html#tbl-hiring-loop">worked hiring comparison in Chapter 1</a>. The committee needed a forecast about each candidate and a judgment about which outcomes mattered. An AI system could assist with a forecast. The committee still had to specify the criteria, assess the evidence, authorize a choice, and identify what it could learn after hiring.</p>
 <p>Agrawal and colleagues use <em>judgment</em> in a narrower sense for assigning payoffs to consequences. Here we retain the book’s term <em>valuation</em>, so that <em>judgment</em> can continue to describe forming beliefs and assessments more broadly (Agrawal et al., 2019).</p>
 <section id="one-rain-forecast-two-sensible-choices" class="level3">
 <h3 data-anchor-id="one-rain-forecast-two-sensible-choices">How consequences set an action threshold</h3>
@@ -846,7 +858,7 @@ Figure&nbsp;42.1: A 30% rain forecast exceeds one organizer’s 20% action thres
 </div>
 <div id="math-rain-decision-threshold">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -855,7 +867,7 @@ Figure&nbsp;42.1: A 30% rain forecast exceeds one organizer’s 20% action thres
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>More generally, let <span class="math inline">\(p\)</span> be the probability of rain, <span class="math inline">\(C_F\)</span> the false-alarm loss, and <span class="math inline">\(C_M\)</span> the missed-rain loss. In this model, moving indoors has lower expected loss when</p>
 <p><span class="math display">\[
@@ -1028,7 +1040,7 @@ Table&nbsp;42.4: Select methods for the work a decision needs; their uses overla
 </div>
 <p><span id="machine-learning-and-behavioral-discovery"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1037,7 +1049,7 @@ Table&nbsp;42.4: Select methods for the work a decision needs; their uses overla
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A bargaining record can contain more than the final agreement. The sequence of offers, the pauses between them, and the size of concessions may help predict whether negotiations will break down. Machine learning gives researchers a way to examine many such features and ask what they add to a simpler account based on the amount available for division.</p>
 <p>Camerer (2019) describes experiments in which two people negotiated by moving cursors along a number line. One knew the amount available; the other did not. Features of the cursor movements predicted disagreement about as well as the amount being divided. Combining the process records with that amount improved prediction on held-out data. How bargaining unfolded therefore contained information beyond what was at stake.</p>
@@ -1103,9 +1115,12 @@ Table&nbsp;42.4: Select methods for the work a decision needs; their uses overla
 <li><strong>Design and learning:</strong> <a href="../chapters/39-behavior-design.html#one-primary-workflow">Chapters 39</a> through <a href="../chapters/41-decision-hygiene.html#decision-hygiene-build-a-process-that-can-learn">41</a> turn these distinctions into changes that can be implemented and tested. A forecast becomes useful when someone can act on it, record the result, and revise the process.</li>
 </ul>
 <p>These connections give the chapter its practical test: identify the uncertainty a tool could reduce, decide what action would follow, and compare that arrangement with the existing process. A model’s score matters because of what it enables people to do.</p>
+<p>Return to the hiring committee from the Preface. A validated forecast might help it anticipate who will deliver reliably. The committee still has to decide what reliability and time for new work are worth, where candidates can challenge the information used, and what the later review will measure. The forecast fits into that record alongside the decision and its consequences.</p>
 </section>
 <section id="practice-lab-build-a-small-ai-decision-system" class="level2">
 <h2 data-anchor-id="practice-lab-build-a-small-ai-decision-system">Practice Lab: improve a decision with data</h2>
+<details class="exercise-disclosure"><summary>Open exercise</summary>
+<div>
 <p>Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. First state whether the missing contribution is descriptive, diagnostic, predictive, or prescriptive. A spreadsheet or simple comparison may be sufficient; add AI when it has a defined job. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before seeing the analysis and preserve that version. You can study how the output changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.</p>
 <p><span id="ai-decision-canvas"></span></p>
 <p>Use <a href="#tbl-ai-decision-canvas" class="quarto-xref">Table&nbsp;<span>42.5</span></a> to specify the decision, missing evidence, protected values, and review rule before selecting a product or writing a prompt. The separate fields make it possible to judge the tool by the contribution the decision actually needs.</p>
@@ -1178,16 +1193,20 @@ Table&nbsp;42.5: A decision canvas that keeps the analytical question, valuation
 <p><strong>Round 3: diagnose the disagreement.</strong> When individual assessments and analytical results differ, classify the reason. Do they disagree about evidence, probability, values, feasibility, or authority? A model cannot settle a disagreement about priorities merely by restating its forecast. A senior person cannot refute a well-validated forecast merely by disliking its implications.</p>
 <p><strong>Round 4: record a choice and a test.</strong> Use the canvas to authorize a limited action or decide that more evidence is needed. Preserve the initial forecasts, the advice received, what was checked, and why the advice changed—or did not change—the decision. Set a review date before the outcome can rewrite the story.</p>
 <p>Debrief with one question: <strong>What became better because of the analysis, and what evidence would show that improvement?</strong> A useful answer identifies a changed part of the process and an observable consequence, taking the cost of analysis and implementation into account. “The output sounded professional” is not enough.</p>
+</div>
+</details>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
 <p>Flint needed a replacement policy it could explain to anxious residents and evaluate against the removal of hazardous pipes. Better predictions made the search more informative; the dispute concerned how those predictions should guide action and who could set the priorities. A defensible process needs both useful evidence and accountable authority over the trade-offs.</p>
 <p>More available data and cheaper computation make this discipline feasible for more recurring decisions. Choose one this week. State the question, identify the relevant records, and begin with a simple analysis. Use AI where it improves a defined contribution. Make the values behind the choice explicit, keep an identifiable owner, and preserve a record that later evidence can challenge.</p>
 <p>Return finally to the hiring committee that opened the book. AI might help compare applications or estimate later performance. The committee still has to define which kinds of performance matter, examine how evidence was selected and presented, hear disagreement, and justify its choice. It then needs to check what happened without letting the outcome rewrite the original reasoning. Attention, prediction, valuation, influence, design, and learning meet in that one decision.</p>
-<p>The decision map in <a href="01-understanding-decision-making.html#fig-normative-decision-loop" class="quarto-xref">Figure&nbsp;<span>1.1</span></a> gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.</p>
+<p>The <a href="../index.html#fig-master-loop">decision map in the Preface</a> gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.</p>
 </section>
 <section id="practice-c42" class="level2">
 <h2 data-anchor-id="practice-c42">Chapter practice</h2>
+<details class="exercise-disclosure"><summary>Open practice questions</summary>
+<div>
 <!-- Generated by scripts/build_practice.py. Edit assessments/bank/ instead. -->
 <form class="book-practice" id="quiz-c42" data-practice-set="C42" novalidate="">
 <p id="quiz-c42-instructions">Choose one answer for each of the 5 questions. Complete the set, then select <strong>Check answers</strong> to see your score and explanations. Each question is worth one point.</p>
@@ -1274,6 +1293,8 @@ Table&nbsp;42.5: A decision canvas that keeps the analytical question, valuation
 </dl><p class="practice-source">Review: <a href="../chapters/42-deciding-with-data-and-ai.html">Chapter 42</a>. <a href="#c42-05">Back to question 5</a></p></li>
 </ol></details></form>
 <script src="../assets/practice.js" defer=""></script>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>

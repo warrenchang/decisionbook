@@ -52,7 +52,7 @@ Observed choices usually identify neither component cleanly. A person choosing m
 
 Exponential discounting treats each added period proportionally. Human choices often display **declining impatience**: the difference between now and soon feels larger than an equal difference between two distant dates. Hyperbolic models capture this pattern by making the implied discount rate fall with delay (Ainslie, 1975). Quasi-hyperbolic models simplify it into a special penalty for anything not immediate, followed by more regular discounting across later periods (Laibson, 1997).
 
-![Three discount models illustrate different implications. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. The optional analysis specifies the plotted functions and parameters.](../figures/discount-model-crossover.svg){#fig-discount-model-crossover fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate." width=100%}
+![The same fixed payments viewed today and at month 12. The choices use the illustrative discount functions and linear utility specified below.](../figures/same-payoff-two-evaluation-dates.svg){#fig-discount-model-crossover fig-alt="Option A pays 100 euros in month 12 and option B pays 120 euros in month 13. The exponential and hyperbolic examples prefer B at both evaluation dates. The quasi-hyperbolic example prefers B today and reverses to A in month 12." .phone-fit}
 
 The worked example in @fig-discount-model-crossover shows **dynamic inconsistency**: a plan that looks best from a distance can lose when temptation or effort becomes immediate. O'Donoghue and Rabin (1999) show how present bias can produce two familiar failures:
 
@@ -75,7 +75,9 @@ Here, $u(c_t)$ is the utility of consumption or another outcome at time $t$, and
 
 Three discount functions illustrate different implications: exponential $D(t)=0.95^t$, hyperbolic $D(t)=1/(1+0.15t)$, and quasi-hyperbolic $D(0)=1$ and $D(t>0)=0.70(0.95^t)$. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.
 
-These are illustrative functions.
+Compare the illustrative discount factors and the worked quasi-hyperbolic values in @fig-discount-factor-functions.
+
+![Illustrative discount factors as a function of delay. The worked values show how the quasi-hyperbolic model can reverse a preference.](../figures/discount-model-crossover.svg){#fig-discount-factor-functions fig-alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate." width=100%}
 :::
 ::::
 
@@ -85,9 +87,9 @@ Commitment devices alter future options or make deviation costly before the temp
 
 ### Credibility, attention, and imagination
 
-![Intertemporal choice can be shaped by immediate salience, uncertainty, weak future imagery, friction, and changing states.](../figures/intertemporal-choice.svg){#fig-intertemporal-choice fig-alt="An author's diagnostic synthesis shows two paths from a choice point. Possible bottlenecks on the path to a larger, later outcome include uncertainty, weak future imagery, and friction. The shorter path leads to a smaller, sooner outcome."}
+[]{#fig-intertemporal-choice}
 
-Waiting is rarely just empty time. @fig-intertemporal-choice traces how uncertainty, weak future imagery, and friction can obstruct the path to a delayed benefit. The distinctions in @tbl-22-delay-mechanisms broaden the diagnosis to include urgent needs, subjective time, and the emotions experienced while waiting:
+A delay raises different questions. What evidence would make the later payment credible? What would an ordinary day for the future beneficiary look like? Which first step could the person take now? Use @tbl-22-delay-mechanisms to find the question that changes the choice.
 
 | Mechanism | Diagnostic question | Example |
 | --- | --- | --- |
@@ -129,14 +131,25 @@ Delayed gains are often discounted differently from delayed losses. People may b
 
 **The invisible zero can be made visible.**
 
-The choice “€100 today or €120 in a month” hides two complete outcome streams. The fuller representation in @fig-hidden-zero-frame makes the forgone payment at each date explicit:
+[]{#fig-hidden-zero-frame}
 
-- €100 today **and €0 in one month**, or
-- €0 today **and €120 in one month**.
+Make a choice from @tbl-hidden-zero-abbreviated before reading the second display.
 
-Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The mechanism connects directly to opportunity-cost neglect: the immediate reward is not free; it replaces a later reward.
+| Option | Amount and date shown |
+| --- | --- |
+| A | €100 today |
+| B | €120 in one month |
+: Abbreviated payment choices {#tbl-hidden-zero-abbreviated}
 
-![The abbreviated and complete-stream displays contain the same payoffs. Writing the otherwise hidden zeros makes the forgone outcome at each date explicit and can redirect attention to opportunity cost.](../figures/hidden-zero-frame.svg){#fig-hidden-zero-frame fig-alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month." width=100%}
+Now compare the same options in @tbl-hidden-zero-complete. Would you keep your first choice?
+
+| Option | Today | In one month |
+| --- | --- | --- |
+| A | €100 | €0 |
+| B | €0 | €120 |
+: The same two payment streams with both dates shown {#tbl-hidden-zero-complete}
+
+Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The full display makes the forgone reward visible at each date.
 
 []{#search-paths-and-patience}
 
@@ -154,13 +167,17 @@ Money is tradable and often measurable. Health, pain, environmental quality, eff
 
 A decision about a delayed health benefit may involve side effects now, uncertain benefit later, caregiving burden, trust in the institution, or values the experiment did not measure.
 
-### Does the language of the future change saving? {#language-and-future-oriented-behavior}
+[]{#language-and-future-oriented-behavior}
+
+:::::::: {.callout-note .research-lens icon=false collapse="true"}
+## Research Lens: language and saving
 
 English speakers can say “It will rain tomorrow,” while Danish speakers commonly use a present-tense form with the equivalent of “tomorrow.” Both languages can describe future events. The question is whether their customary grammatical treatment makes those events feel differently connected to the present.
 
 Chen (2013) found that speakers of languages with weaker grammatical separation of present and future were more likely to save and showed several other future-oriented behaviors, including in comparisons of demographically similar households within countries. He proposed that representing the future as closer could change current choices. Language, however, also travels with shared history, institutions, and social practices. Roberts, Winters, and Chen (2015) reanalyzed the relationship while accounting for geographic and historical relatedness among languages. The association weakened and was not significant under their strictest tests, although it survived others.
 
 This case connects [culture](29-culture-personality-and-identity.qmd#chapter-29-start) with time preference while exposing an identification problem. A population-level association does not establish that changing a verb tense will make an individual save. Testing that intervention requires varying language while keeping the payment, delay, and decision environment comparable.
+::::::::
 
 ### What did the patience task identify?
 
@@ -178,6 +195,8 @@ A multiple price list seems to turn patience into a number: at which row does a 
 
 Incentive-compatible payment can improve a task, but it does not solve every identification problem. Cross-domain comparisons require matched procedures and explicit assumptions. A reported association between patience and education, saving, or health is not by itself evidence that changing one stable discount parameter will change those outcomes.
 
+A person can wait because the payment is credible, because current needs allow it or because the future reward feels concrete. A dated choice comparison changes what is visible. A credibility check instead changes what the person knows about whether the payment will arrive.
+
 ## Making future outcomes vivid and personally relevant {#the-future-must-become-believable-and-self-relevant}
 
 Delayed outcomes often lose because they are represented poorly. The immediate reward is sensory and specific; the future reward is verbal and vague. **Episodic future thinking** asks people to imagine a personally relevant future event connected to the delayed outcome. Peters and Büchel (2010) found that individualized future-event cues reduced delay discounting in their task, with the vividness of episodic imagination predicting the change. Making a future concrete can increase its present decision weight.
@@ -190,7 +209,10 @@ There is a further distance to cross: the distance between the person choosing n
 
 **Future-self continuity** is the felt connection between who one is now and who one will become. The hypothesis is that a stronger connection gives the later person's welfare more weight in today's decision (Hershfield, 2011). This adds a social dimension to temporal discounting: a reward can lose value because its recipient feels psychologically distant as well as because its delivery is delayed. The calendar interval stays the same, but the beneficiary becomes more or less personally important.
 
-### Self, friends, and strangers in the brain
+[]{#self-friends-and-strangers-in-the-brain}
+
+:::::::: {.callout-note .research-lens icon=false collapse="true"}
+## Research Lens: what imaging and future-self portraits can show
 
 Neuroimaging offers evidence relevant to this idea. The **medial prefrontal cortex (mPFC)** lies along the brain's frontal midline. Its ventral portion (vmPFC) is lower; its dorsal portion (dmPFC) is higher. Across 107 imaging studies, Denny and colleagues (2012) found that judgments about oneself more often involved relatively ventral mPFC, whereas judgments about others more often involved relatively dorsal mPFC. Both kinds of judgment engaged overlapping regions. The result describes a graded difference in involvement, rather than activation physically moving from one location to another.
 
@@ -209,6 +231,7 @@ Study 2 compared an older avatar of oneself with an older avatar of someone else
 A later field experiment connected the idea to actual saving. Robalino and colleagues (2023) randomized 48,853 retirement-account holders in Mexico to receive ordinary saving messages or invitations to see an aged selfie, followed by a saving prompt and contribution link. Over one month, one-time contributions occurred among approximately 1.7% of the intervention group and 1.5% of controls. That modest difference concerned an outcome added after preregistration; the preregistered participation outcomes—recurring-deposit enrollment and any voluntary contribution—showed no statistically significant effects. The study tests the whole invitation-and-image intervention, and cannot isolate a photograph's effect or establish that greater future-self continuity was the mechanism.
 
 The evidence supports making the future beneficiary concrete, while leaving the precise mechanism open. Seeing an older self may strengthen connection, increase attention, or make future needs easier to imagine. For a decision aid, the useful sequence is to picture an ordinary day in that person's life, identify what today's action could make possible, and choose an affordable step. Making the beneficiary feel closer can support patience when the delayed benefit is credible and the present sacrifice is feasible.
+::::::::
 
 :::: {#research-lens-a-future-reward-can-motivate-now}
 ::: {.callout-note .research-lens icon=false collapse=true}
@@ -220,7 +243,10 @@ Reward-related brain activity is not reserved for immediate gratification. Kable
 :::
 ::::
 
-## Growing into decisions about the future {#development-and-peer-context}
+[]{#development-and-peer-context}
+
+:::::::: {.callout-note .research-lens icon=false collapse="true"}
+## Research Lens: development and decisions with peers
 
 The person weighing now against later is also developing. An adolescent may explain a danger clearly in a quiet conversation and still approach it differently when friends are watching. Understanding the consequence and assigning it enough weight in that setting are separate accomplishments.
 
@@ -229,6 +255,7 @@ O'Brien and colleagues (2011) randomly assigned one hundred participants aged ei
 Development therefore needs a more careful description than an emotional brain waiting for a rational part to turn on. Across four longitudinal samples, Mills and colleagues (2016) found different trajectories for cortical gray matter and cerebral white matter between childhood and early adulthood. These MRI measures neither count individual neurons nor identify a birthday when judgment becomes mature. As Somerville (2016) explains, a claim about brain maturity depends on which property is measured and which capacity it is supposed to establish. The familiar age of twenty-five is not a universal neurological deadline.
 
 The practical response is to give young people opportunities to choose with feedback while examining the audience, urgency, and consequences around the choice. A private decision before a public commitment may reveal whether peer approval is changing its appeal. Safe opportunities for exploration can make learning possible without treating every dangerous experience as necessary for development. The question becomes how to support judgment in this setting, rather than whether someone possesses an adult amount of self-control.
+::::::::
 
 ## Scarcity and trust: when now is rational
 
@@ -236,7 +263,7 @@ Waiting can preserve a long-term goal, so choosing an immediate reward is easily
 
 If income is unstable, a promised future reward may be risky. If institutions have broken promises, trust should be lower. If a person faces urgent needs or expensive debt, money today can have much higher marginal value. If inflation or political instability threatens future purchasing power, waiting changes the outcome itself. If a medical condition can deteriorate, delay may be dangerous.
 
-Scarcity certainly changes constraints. An influential set of studies proposed that it can also capture attention and impose cognitive load (Mani et al., 2013; Mullainathan & Shafir, 2013), but the size and generality of this additional cognitive mechanism remain contested. Carvalho, Meier, and Wang (2016), for example, found little evidence that being just before payday reduced cognitive function or decision quality in a low-income US sample, even though short-run resource availability changed. The larger lesson is that measured patience can partly reflect constraints, urgent needs, liquidity, and the reliability of the future.
+Measured patience can therefore reflect urgent needs, cash on hand, and the reliability of the future. Financial concerns may also make it harder to concentrate, a separate mechanism for which the evidence is mixed; [Chapter 3](03-limited-attention.qmd#financial-scarcity-and-attention) compares the findings.
 
 The classic marshmallow task is therefore not a pure assay of willpower. A child chooses between eating a treat now and waiting for a larger reward, but waiting also depends on attention strategy, incentives, and whether the promise seems credible. Kidd, Palmeri, and Aslin (2013) experimentally varied whether an adult had first kept a promise; children waited longer after reliable experience.
 
@@ -360,10 +387,6 @@ Ariely, D., & Wertenbroch, K. (2002). Procrastination, deadlines, and performanc
 :::
 
 ::: {.reference}
-Carvalho, L. S., Meier, S., & Wang, S. W. (2016). Poverty and economic decision-making: Evidence from changes in financial resources at payday. American Economic Review, 106(2), 260–284.
-:::
-
-::: {.reference}
 Chapman, G. B. (1996). Temporal discounting and utility for health and money. Journal of Experimental Psychology: Learning, Memory, and Cognition, 22(3), 771–791.
 :::
 
@@ -436,10 +459,6 @@ Magen, E., Dweck, C. S., & Gross, J. J. (2008). The hidden-zero effect: Represen
 :::
 
 ::: {.reference}
-Mani, A., Mullainathan, S., Shafir, E., & Zhao, J. (2013). Poverty impedes cognitive function. Science, 341(6149), 976–980.
-:::
-
-::: {.reference}
 Milkman, K. L., Minson, J. A., & Volpp, K. G. M. (2014). Holding the Hunger Games hostage at the gym: An evaluation of temptation bundling. *Management Science, 60*(2), 283–299. https://doi.org/10.1287/mnsc.2013.1784
 :::
 
@@ -449,10 +468,6 @@ Mills, K. L., Goddings, A.-L., Herting, M. M., Meuwese, R., Blakemore, S.-J., Cr
 
 ::: {.reference}
 Mitchell, J. P., Macrae, C. N., & Banaji, M. R. (2006). Dissociable medial prefrontal contributions to judgments of similar and dissimilar others. Neuron, 50(4), 655–663. https://doi.org/10.1016/j.neuron.2006.03.040
-:::
-
-::: {.reference}
-Mullainathan, S., & Shafir, E. (2013). Scarcity: Why having too little means so much. Times Books.
 :::
 
 ::: {.reference}

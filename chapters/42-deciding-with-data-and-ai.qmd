@@ -76,7 +76,10 @@ Data analysis is the systematic use of observations to answer a question. **Desc
 
 These purposes connect **hindsight, insight, and foresight** to action. They do not form a universal ladder of increasing value or difficulty. A reliable count revealing an overlooked street can be more useful than a sophisticated forecast of the wrong target. In practice, the questions recur: an action produces outcomes to describe, unexpected results prompt diagnosis, and new evidence changes predictions and plans. The method should follow the question.
 
-## AI, machine learning, and algorithms: a short guide {#ai-a-short-guide}
+[]{#ai-a-short-guide}
+
+:::::::: {.callout-note .research-lens icon=false collapse="true"}
+## AI, machine learning, and algorithms
 
 The four purposes of analysis do not map onto four kinds of AI. A descriptive table may need only a database query; an allocation problem may be solved with conventional optimization. AI offers additional tools, particularly when the task involves complex patterns, language, or images. A pipe-risk model, a chatbot, and a chess-playing program can all be described as AI while doing different jobs. The following terms help identify what each tool contributes.
 
@@ -95,6 +98,7 @@ For decision making, the useful question is which task needs help: estimating de
 Image classification shows how much a defined task can improve. In the ImageNet competition, the best classification error fell from **28.2 percent in 2010** to **3.57 percent in 2015**, when an ensemble of residual neural networks won. These are **top-five error rates**: an image counts as an error when its correct category is absent from the system's five proposed labels (Russakovsky et al., 2015; He et al., 2016). The widely reproduced human reference of about 5 percent came from a particular trained annotator, not a universal limit on human vision.[^ch42-imagenet-comparison]
 
 The result illustrates gains in capability made possible by the combination of training data, algorithms, and computing resources. Tasks such as sorting images or flagging cases for inspection became more plausible candidates for automation or assistance. It does not directly measure the price of computation, nor establish reliable performance on every new image source. Images from a different setting, different error costs, and a different workflow still require evaluation. Falling costs and improving performance are distinct changes; together they expand the tasks worth testing.
+::::::::
 
 ## What becomes possible when prediction becomes cheap? {#cheap-prediction}
 
@@ -118,7 +122,7 @@ A prediction describes possibilities and uncertainty. **Valuation** assigns impo
 
 Values enter early because they help determine which outcomes deserve prediction. Evidence can then reveal a trade-off that people had overlooked. What matters is keeping the contributions visible, so a disagreement about probabilities does not quietly become a disagreement about priorities—or the reverse.
 
-Return to @fig-normative-decision-loop in [Chapter 1](01-understanding-decision-making.qmd#a-rational-benchmark). It supplies the normative framework here: information about alternatives supports prediction; predicted consequences are valued; choice and implementation lead to outcomes; and feedback can inform later judgment. AI can assist prediction within that process. People and institutions remain responsible for specifying what matters, deciding whether the evidence is sufficient, authorizing the action, and learning from its consequences.
+Return to the [worked hiring comparison in Chapter 1](01-understanding-decision-making.qmd#tbl-hiring-loop). The committee needed a forecast about each candidate and a judgment about which outcomes mattered. An AI system could assist with a forecast. The committee still had to specify the criteria, assess the evidence, authorize a choice, and identify what it could learn after hiring.
 
 Agrawal and colleagues use *judgment* in a narrower sense for assigning payoffs to consequences. Here we retain the book's term *valuation*, so that *judgment* can continue to describe forming beliefs and assessments more broadly (Agrawal et al., 2019).
 
@@ -349,6 +353,8 @@ Using that opportunity draws on the whole book:
 
 These connections give the chapter its practical test: identify the uncertainty a tool could reduce, decide what action would follow, and compare that arrangement with the existing process. A model’s score matters because of what it enables people to do.
 
+Return to the hiring committee from the Preface. A validated forecast might help it anticipate who will deliver reliably. The committee still has to decide what reliability and time for new work are worth, where candidates can challenge the information used, and what the later review will measure. The forecast fits into that record alongside the decision and its consequences.
+
 ## Practice Lab: improve a decision with data {#practice-lab-build-a-small-ai-decision-system}
 
 Work with a recurring decision that is important enough to improve but small enough to test: scheduling staff, classifying incoming requests, prioritizing maintenance inspections, or preparing a document review. First state whether the missing contribution is descriptive, diagnostic, predictive, or prescriptive. A spreadsheet or simple comparison may be sufficient; add AI when it has a defined job. If using real records, use data authorized for this purpose and the chosen tool. The exercise can also use fictional cases. Working alone, record your assessment before seeing the analysis and preserve that version. You can study how the output changes your judgment, but you cannot use your own two assessments as evidence about disagreement between independent people.
@@ -394,7 +400,7 @@ More available data and cheaper computation make this discipline feasible for mo
 
 Return finally to the hiring committee that opened the book. AI might help compare applications or estimate later performance. The committee still has to define which kinds of performance matter, examine how evidence was selected and presented, hear disagreement, and justify its choice. It then needs to check what happened without letting the outcome rewrite the original reasoning. Attention, prediction, valuation, influence, design, and learning meet in that one decision.
 
-The decision map in @fig-normative-decision-loop gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.
+The [decision map in the Preface](../index.qmd#fig-master-loop) gives us a common reference from the first chapter to the last. We can ask which part a tool improves, which judgment still needs attention, and what later evidence would justify a change. The more a machine can tell us about what may happen, the more clearly we need to decide what is worth making happen.
 
 [^ch42-imagenet-comparison]: Russakovsky et al. (2015) report 5.1% top-five error for a trained annotator on 1,500 test images; a second, less-trained annotator had 12.0% error on 258 images. The often-used human line is therefore a task- and annotator-specific reference. The paper also notes changes in challenge categories between 2010 and 2012. The historical sequence shows progress in the benchmark family, rather than the same test administered unchanged each year. He et al. (2016) report the 2015 winning ensemble's 3.57% error on the full test set.
 

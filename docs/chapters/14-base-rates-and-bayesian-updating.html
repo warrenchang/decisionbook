@@ -615,7 +615,10 @@ window.Quarto = {
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
   <li><a href="#worked-update-the-same-screen-in-two-applicant-pools" id="toc-worked-update-the-same-screen-in-two-applicant-pools" class="nav-link" data-scroll-target="#worked-update-the-same-screen-in-two-applicant-pools">A test result depends on the starting population</a></li>
   <li><a href="#probability-begins-with-a-model" id="toc-probability-begins-with-a-model" class="nav-link" data-scroll-target="#probability-begins-with-a-model">Probability begins with a model</a></li>
-  <li><a href="#conditional-direction-matters" id="toc-conditional-direction-matters" class="nav-link" data-scroll-target="#conditional-direction-matters">Conditional direction matters</a></li>
+  <li><a href="#conditional-direction-matters" id="toc-conditional-direction-matters" class="nav-link" data-scroll-target="#conditional-direction-matters">Conditional direction matters</a>
+  <ul class="collapse">
+  <li><a href="#monty-hall-two-host-rules-two-inferences" id="toc-monty-hall-two-host-rules-two-inferences" class="nav-link" data-scroll-target="#monty-hall-two-host-rules-two-inferences">Monty Hall: two host rules, two inferences</a></li>
+  </ul></li>
   <li><a href="#bayes-rule-restores-the-alternatives" id="toc-bayes-rule-restores-the-alternatives" class="nav-link" data-scroll-target="#bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</a></li>
   <li><a href="#natural-frequencies-make-bayes-visible" id="toc-natural-frequencies-make-bayes-visible" class="nav-link" data-scroll-target="#natural-frequencies-make-bayes-visible">Natural frequencies make Bayes visible</a></li>
   <li><a href="#reference-classes-are-judgment-calls" id="toc-reference-classes-are-judgment-calls" class="nav-link" data-scroll-target="#reference-classes-are-judgment-calls">Reference classes are judgment calls</a></li>
@@ -681,14 +684,19 @@ window.Quarto = {
 <section id="worked-update-the-same-screen-in-two-applicant-pools" class="level2">
 <h2 data-anchor-id="worked-update-the-same-screen-in-two-applicant-pools">A test result depends on the starting population</h2>
 <p>A validated screen may look like a portable measure of candidate quality. Yet the same positive result can mean different things in different applicant pools. To see why, return to the hiring screen.</p>
-<p>Suppose that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:</p>
-<ul>
-<li>2,000 would meet the standard; 1,600 pass the screen.</li>
-<li>8,000 would not; 2,400 nevertheless pass.</li>
-<li>Of 4,000 positive screens, 1,600 are true positives.</li>
-</ul>
-<p>Under those assumptions, 1,600 of the 4,000 applicants who pass would perform strongly: 40%. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.</p>
-<p>Now place the same screen in a carefully preselected pool where 50% would meet the standard. Assume its <strong>sensitivity</strong>, the share of strong performers who pass, and its <strong>false-positive rate</strong>, the share of others who pass, remain unchanged. Among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the probability of strong performance after a positive screen is about 72.7%. Interpreting a sensitivity figure requires the starting population and evidence that the test performs similarly in it.</p>
+<p>Suppose the screen passes 80% of applicants who would meet the standard and 30% of applicants who would fall short. Compare two pools of 10,000. One includes 20% who would meet the standard. A preselected pool includes 50%. Assume the screen works at the same rates in both.</p>
+<p><strong>Predict first.</strong> In each pool, which group supplies more positive screens? Read the positive counts in <a href="#fig-probability-judgment-map" class="quarto-xref">Figure&nbsp;<span>14.1</span></a> and add the two routes before dividing.</p>
+<div id="fig-probability-judgment-map" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="The broad pool has 1,600 true positives and 2,400 false positives, so 40 percent of 4,000 positives would meet the standard. The preselected pool has 4,000 true positives and 1,500 false positives, so about 72.7 percent of 5,500 positives would meet it.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/hiring-screen-positive-pools.svg" class="phone-fit img-fluid figure-img" alt="The broad pool has 1,600 true positives and 2,400 false positives, so 40 percent of 4,000 positives would meet the standard. The preselected pool has 4,000 true positives and 1,500 false positives, so about 72.7 percent of 5,500 positives would meet it.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14.1: Two routes to a positive screen in each hypothetical pool of 10,000 applicants. True positives are measured against the full set of positive screens.
+</figcaption>
+</figure>
+</div>
+<p>In the broad pool, 1,600 of 4,000 applicants with positive screens would meet the standard, or <strong>40%</strong>. In the preselected pool, 4,000 of 5,500 would meet it, or about <strong>72.7%</strong>. Interpreting a positive result requires the starting population and evidence that the sensitivity and false-positive rate carry across pools.</p>
 </section>
 <section id="probability-begins-with-a-model" class="level2">
 <h2 data-anchor-id="probability-begins-with-a-model">Probability begins with a model</h2>
@@ -747,25 +755,25 @@ P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 </div>
 </div>
 <p><span id="monty-hall-and-the-hosts-rule"></span></p>
-<div class="mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<p><span id="math-host-evidence"></span></p>
+<section id="monty-hall-two-host-rules-two-inferences" class="level3">
+<h3 data-anchor-id="monty-hall-two-host-rules-two-inferences">Monty Hall: two host rules, two inferences</h3>
+<p>In the <strong>Monty Hall problem</strong> (Selvin, 1975), a car is equally likely to be behind any of three doors. You select one. A host who knows the location must open an unchosen door containing a goat and must then offer a switch to the remaining closed door. Should you switch?</p>
+<p>In <a href="#fig-monty-hall-two-hosts" class="quarto-xref">Figure&nbsp;<span>14.2</span></a>, trace the rule for the host who knows where the car is. If there are two available goat doors, assume the host chooses between them at random.</p>
+<div id="fig-monty-hall-two-hosts" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-monty-hall-two-hosts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/monty-hall-protocol.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Mathematical analysis: the host’s choice is part of the evidence
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-monty-hall-two-hosts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14.2: The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.
+</figcaption>
+</figure>
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In the <strong>Monty Hall problem</strong>, a car is equally likely to be behind any of three doors. You select one. A host who knows the location must open an unchosen door containing a goat and must then offer a switch to the remaining closed door. Should you switch?</p>
 <p>Your initial selection has a one-third chance of containing the car. If it was correct, switching loses. If it was wrong, which happens with probability two-thirds, the host must remove the other goat, so switching wins. The always-switch strategy therefore wins two-thirds of games under these rules. The opened door is selected using information about the prize; it is not an independent random loss of one possibility.</p>
 <p>Change the procedure and the inference changes. Suppose an uninformed host opens one of the unchosen doors at random, and we consider only games where it reveals a goat. Among those retained games, the initial choice contains the car half the time. A goat is certain when the initial choice was right, but only half as likely when it was wrong: the retained weights are <span class="math inline">\(1/3\)</span> and <span class="math inline">\((2/3)(1/2)=1/3\)</span>. Switching now wins half the time.</p>
 <p>This comparison is why the sampling rule belongs in a probability model (Gill, 2011). When someone shows you a favorable case, ask how they selected it from the cases they could have shown.</p>
-</div>
-</div>
-</div>
+</section>
 </section>
 <section id="bayes-rule-restores-the-alternatives" class="level2">
 <h2 data-anchor-id="bayes-rule-restores-the-alternatives">Bayes’ rule restores the alternatives</h2>
@@ -774,7 +782,7 @@ P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 <p>To update, count the cases where the explanation produces the evidence, then compare them with <em>all</em> cases that could produce it. For the hiring screen, both strong and weaker performers can pass.</p>
 <div id="math-bayes-rule">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -783,7 +791,7 @@ P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(A^c\)</span> partition the cases, total probability rebuilds the denominator:</p>
 <p><span class="math display">\[
@@ -813,17 +821,7 @@ P(A\mid B)=
 <li>Of 981 positive tests, 90 are true positives.</li>
 </ul>
 <p>Of the 981 people who test positive, 90 have the disease: about 9.17%.</p>
-<div id="fig-probability-judgment-map" class="quarto-float quarto-figure quarto-figure-center" alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/probability-judgment-map.svg" class="img-fluid figure-img" style="width:100.0%" alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-probability-judgment-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.1: A positive result can come from either group. In this hypothetical population, the much larger group without disease supplies most of the positive tests.
-</figcaption>
-</figure>
-</div>
-<p>The two branches in <a href="#fig-probability-judgment-map" class="quarto-xref">Figure&nbsp;<span>14.1</span></a> answer the crucial question: who could have produced this positive result? Natural frequencies preserve those nested sets, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer &amp; Hoffrage, 1995). They expose the denominator that the 90% sensitivity figure leaves implicit.</p>
+<p>The clinical calculation uses the same denominator as the hiring comparison. Natural frequencies group true and false positives so we can count both routes to the same result (Gigerenzer &amp; Hoffrage, 1995).</p>
 </section>
 <section id="reference-classes-are-judgment-calls" class="level2">
 <h2 data-anchor-id="reference-classes-are-judgment-calls">Reference classes are judgment calls</h2>
@@ -867,7 +865,11 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<details class="exercise-disclosure"><summary>Open exercise</summary>
+<div>
 <p>Take one positive test, screening result, warning signal, or performance indicator. Produce a one-page <strong>Bayesian audit</strong> using a population of 10,000. State the target conditional probability, choose and defend two plausible reference classes, show true positives and false positives under each, and identify one omitted alternative or measurement problem. The observable output is the two natural-frequency trees and a decision rule that states what action changes at which posterior range.</p>
+</div>
+</details>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
@@ -875,6 +877,8 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 </section>
 <section id="practice-c14" class="level2">
 <h2 data-anchor-id="practice-c14">Chapter practice</h2>
+<details class="exercise-disclosure"><summary>Open practice questions</summary>
+<div>
 <!-- Generated by scripts/build_practice.py. Edit assessments/bank/ instead. -->
 <form class="book-practice" id="quiz-c14" data-practice-set="C14" novalidate="">
 <p id="quiz-c14-instructions">Choose one answer for each of the 5 questions. Complete the set, then select <strong>Check answers</strong> to see your score and explanations. Each question is worth one point.</p>
@@ -961,9 +965,14 @@ Figure&nbsp;14.1: A positive result can come from either group. In this hypothet
 </dl><p class="practice-source">Review: <a href="../chapters/14-base-rates-and-bayesian-updating.html">Chapter 14</a>. <a href="#c14-05">Back to question 5</a></p></li>
 </ol></details></form>
 <script src="../assets/practice.js" defer=""></script>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
+<div class="reference">
+<p>Selvin, S. (1975). A problem in probability. <em>The American Statistician, 29</em>(1), 67.</p>
+</div>
 <div class="reference">
 <p>Bar-Hillel, M. (1980). The base-rate fallacy in probability judgments. <em>Acta Psychologica, 44</em>(3), 211–233.</p>
 </div>

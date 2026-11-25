@@ -103,6 +103,12 @@ def main():
             tree=Tree(path.read_text()).root;forms=tree.all('form','book-practice');check(len(forms)==1,f'{b["set"]}: HTML form count')
             if len(forms)!=1:continue
             form=forms[0];qs=sets[b['set']];fields=form.all('fieldset','practice-question');answers=[x for x in form.all('li') if 'data-answer' in x.attrs]
+            check(any(
+                'open' not in disclosure.attrs
+                and disclosure.children and disclosure.children[0].tag == 'summary'
+                and form in disclosure.all('form', 'book-practice')
+                for disclosure in tree.all('details', 'exercise-disclosure')
+            ), b['set']+': practice set lacks a closed disclosure')
             check(len(fields)==len(qs)==len(answers),b['set']+': rendered question/key counts')
             check(any(s.attrs.get('src')=='../assets/practice.js' for s in tree.all('script')),b['set']+': script missing')
             for q,field,answer in zip(qs,fields,answers):

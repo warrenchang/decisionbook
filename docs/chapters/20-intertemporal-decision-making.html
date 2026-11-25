@@ -619,15 +619,9 @@ window.Quarto = {
   <li><a href="#present-bias-and-preference-reversal" id="toc-present-bias-and-preference-reversal" class="nav-link" data-scroll-target="#present-bias-and-preference-reversal">Present bias and preference reversal</a></li>
   <li><a href="#credibility-attention-and-imagination" id="toc-credibility-attention-and-imagination" class="nav-link" data-scroll-target="#credibility-attention-and-imagination">Credibility, attention, and imagination</a></li>
   <li><a href="#amount-sign-wording-search-and-domain" id="toc-amount-sign-wording-search-and-domain" class="nav-link" data-scroll-target="#amount-sign-wording-search-and-domain">Amount, sign, wording, search, and domain</a></li>
-  <li><a href="#language-and-future-oriented-behavior" id="toc-language-and-future-oriented-behavior" class="nav-link" data-scroll-target="#language-and-future-oriented-behavior">Does the language of the future change saving?</a></li>
   <li><a href="#what-did-the-patience-task-identify" id="toc-what-did-the-patience-task-identify" class="nav-link" data-scroll-target="#what-did-the-patience-task-identify">What did the patience task identify?</a></li>
   </ul></li>
-  <li><a href="#the-future-must-become-believable-and-self-relevant" id="toc-the-future-must-become-believable-and-self-relevant" class="nav-link" data-scroll-target="#the-future-must-become-believable-and-self-relevant">Making future outcomes vivid and personally relevant</a>
-  <ul class="collapse">
-  <li><a href="#self-friends-and-strangers-in-the-brain" id="toc-self-friends-and-strangers-in-the-brain" class="nav-link" data-scroll-target="#self-friends-and-strangers-in-the-brain">Self, friends, and strangers in the brain</a></li>
-  <li><a href="#age-progressed-future-self" id="toc-age-progressed-future-self" class="nav-link" data-scroll-target="#age-progressed-future-self">Giving the future self a face</a></li>
-  </ul></li>
-  <li><a href="#development-and-peer-context" id="toc-development-and-peer-context" class="nav-link" data-scroll-target="#development-and-peer-context">Growing into decisions about the future</a></li>
+  <li><a href="#the-future-must-become-believable-and-self-relevant" id="toc-the-future-must-become-believable-and-self-relevant" class="nav-link" data-scroll-target="#the-future-must-become-believable-and-self-relevant">Making future outcomes vivid and personally relevant</a></li>
   <li><a href="#scarcity-and-trust-when-now-is-rational" id="toc-scarcity-and-trust-when-now-is-rational" class="nav-link" data-scroll-target="#scarcity-and-trust-when-now-is-rational">Scarcity and trust: when now is rational</a></li>
   <li><a href="#design-the-bridge-not-only-the-destination" id="toc-design-the-bridge-not-only-the-destination" class="nav-link" data-scroll-target="#design-the-bridge-not-only-the-destination">Make delayed goals easier to act on now</a>
   <ul class="collapse">
@@ -710,13 +704,13 @@ window.Quarto = {
 <section id="present-bias-and-preference-reversal" class="level3">
 <h3 data-anchor-id="present-bias-and-preference-reversal">Present bias and preference reversal</h3>
 <p>Exponential discounting treats each added period proportionally. Human choices often display <strong>declining impatience</strong>: the difference between now and soon feels larger than an equal difference between two distant dates. Hyperbolic models capture this pattern by making the implied discount rate fall with delay (Ainslie, 1975). Quasi-hyperbolic models simplify it into a special penalty for anything not immediate, followed by more regular discounting across later periods (Laibson, 1997).</p>
-<div id="fig-discount-model-crossover" class="quarto-float quarto-figure quarto-figure-center" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate.">
+<div id="fig-discount-model-crossover" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Option A pays 100 euros in month 12 and option B pays 120 euros in month 13. The exponential and hyperbolic examples prefer B at both evaluation dates. The quasi-hyperbolic example prefers B today and reverses to A in month 12.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-discount-model-crossover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/discount-model-crossover.svg" class="img-fluid figure-img" style="width:100.0%" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate.">
+<img src="../figures/same-payoff-two-evaluation-dates.svg" class="phone-fit img-fluid figure-img" alt="Option A pays 100 euros in month 12 and option B pays 120 euros in month 13. The exponential and hyperbolic examples prefer B at both evaluation dates. The quasi-hyperbolic example prefers B today and reverses to A in month 12.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discount-model-crossover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.1: Three discount models illustrate different implications. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable. The optional analysis specifies the plotted functions and parameters.
+Figure&nbsp;20.1: The same fixed payments viewed today and at month 12. The choices use the illustrative discount functions and linear utility specified below.
 </figcaption>
 </figure>
 </div>
@@ -745,7 +739,17 @@ U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 &lt; \delta \leq 1.
 \]</span></p>
 <p>Here, <span class="math inline">\(u(c_t)\)</span> is the utility of consumption or another outcome at time <span class="math inline">\(t\)</span>, and <span class="math inline">\(\delta\)</span> is the weight placed on each additional period of delay.</p>
 <p>Three discount functions illustrate different implications: exponential <span class="math inline">\(D(t)=0.95^t\)</span>, hyperbolic <span class="math inline">\(D(t)=1/(1+0.15t)\)</span>, and quasi-hyperbolic <span class="math inline">\(D(0)=1\)</span> and <span class="math inline">\(D(t&gt;0)=0.70(0.95^t)\)</span>. With linear utility, the quasi-hyperbolic example prefers €120 in thirteen months when viewed today but reverses to €100 when that reward becomes immediate; exponential discounting keeps the relative ranking stable.</p>
-<p>These are illustrative functions.</p>
+<p>Compare the illustrative discount factors and the worked quasi-hyperbolic values in <a href="#fig-discount-factor-functions" class="quarto-xref">Figure&nbsp;<span>20.2</span></a>.</p>
+<div id="fig-discount-factor-functions" class="quarto-float quarto-figure quarto-figure-center" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-discount-factor-functions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/discount-model-crossover.svg" class="img-fluid figure-img" style="width:100.0%" alt="A plot compares exponential, hyperbolic, and quasi-hyperbolic discount functions with declared parameters. Below it, a worked quasi-hyperbolic example prefers 120 euros in thirteen months when both rewards are delayed but reverses to 100 euros when the smaller reward becomes immediate.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discount-factor-functions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20.2: Illustrative discount factors as a function of delay. The worked values show how the quasi-hyperbolic model can reverse a preference.
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -755,17 +759,8 @@ U = \sum_{t=0}^{T} \delta^t u(c_t), \qquad 0 &lt; \delta \leq 1.
 </section>
 <section id="credibility-attention-and-imagination" class="level3">
 <h3 data-anchor-id="credibility-attention-and-imagination">Credibility, attention, and imagination</h3>
-<div id="fig-intertemporal-choice" class="quarto-float quarto-figure quarto-figure-center" alt="An author's diagnostic synthesis shows two paths from a choice point. Possible bottlenecks on the path to a larger, later outcome include uncertainty, weak future imagery, and friction. The shorter path leads to a smaller, sooner outcome.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-intertemporal-choice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/intertemporal-choice.svg" class="img-fluid figure-img" alt="An author's diagnostic synthesis shows two paths from a choice point. Possible bottlenecks on the path to a larger, later outcome include uncertainty, weak future imagery, and friction. The shorter path leads to a smaller, sooner outcome.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intertemporal-choice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.2: Intertemporal choice can be shaped by immediate salience, uncertainty, weak future imagery, friction, and changing states.
-</figcaption>
-</figure>
-</div>
-<p>Waiting is rarely just empty time. <a href="#fig-intertemporal-choice" class="quarto-xref">Figure&nbsp;<span>20.2</span></a> traces how uncertainty, weak future imagery, and friction can obstruct the path to a delayed benefit. The distinctions in <a href="#tbl-22-delay-mechanisms" class="quarto-xref">Table&nbsp;<span>20.1</span></a> broaden the diagnosis to include urgent needs, subjective time, and the emotions experienced while waiting:</p>
+<p><span id="fig-intertemporal-choice"></span></p>
+<p>A delay raises different questions. What evidence would make the later payment credible? What would an ordinary day for the future beneficiary look like? Which first step could the person take now? Use <a href="#tbl-22-delay-mechanisms" class="quarto-xref">Table&nbsp;<span>20.1</span></a> to find the question that changes the choice.</p>
 <div id="tbl-22-delay-mechanisms" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-22-delay-mechanisms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -885,22 +880,67 @@ Table&nbsp;20.2: MOST: four attributes that shift apparent discounting
 <p><strong>Dates and delays create different representations.</strong></p>
 <p>“In six months” emphasizes waiting. “On February 12” locates an event in a calendar and may make it more concrete. Read and colleagues (2005) found lower discounting when outcomes were described with dates rather than delays. A calendar date can make the future event easier to imagine.</p>
 <p><strong>The invisible zero can be made visible.</strong></p>
-<p>The choice “€100 today or €120 in a month” hides two complete outcome streams. The fuller representation in <a href="#fig-hidden-zero-frame" class="quarto-xref">Figure&nbsp;<span>20.3</span></a> makes the forgone payment at each date explicit:</p>
-<ul>
-<li>€100 today <strong>and €0 in one month</strong>, or</li>
-<li>€0 today <strong>and €120 in one month</strong>.</li>
-</ul>
-<p>Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The mechanism connects directly to opportunity-cost neglect: the immediate reward is not free; it replaces a later reward.</p>
-<div id="fig-hidden-zero-frame" class="quarto-float quarto-figure quarto-figure-center" alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hidden-zero-frame-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/hidden-zero-frame.svg" class="img-fluid figure-img" style="width:100.0%" alt="Two panels show the same intertemporal payoffs. The abbreviated panel displays 100 euros today or 120 euros in one month and leaves the other dates unstated. The complete panel displays 100 euros today plus zero next month, or zero today plus 120 euros next month.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hidden-zero-frame-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20.3: The abbreviated and complete-stream displays contain the same payoffs. Writing the otherwise hidden zeros makes the forgone outcome at each date explicit and can redirect attention to opportunity cost.
+<p><span id="fig-hidden-zero-frame"></span></p>
+<p>Make a choice from <a href="#tbl-hidden-zero-abbreviated" class="quarto-xref">Table&nbsp;<span>20.3</span></a> before reading the second display.</p>
+<div id="tbl-hidden-zero-abbreviated" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hidden-zero-abbreviated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;20.3: Abbreviated payment choices
 </figcaption>
+<div aria-describedby="tbl-hidden-zero-abbreviated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Amount and date shown</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>€100 today</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>€120 in one month</td>
+</tr>
+</tbody>
+</table>
+</div>
 </figure>
 </div>
+<p>Now compare the same options in <a href="#tbl-hidden-zero-complete" class="quarto-xref">Table&nbsp;<span>20.4</span></a>. Would you keep your first choice?</p>
+<div id="tbl-hidden-zero-complete" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hidden-zero-complete-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;20.4: The same two payment streams with both dates shown
+</figcaption>
+<div aria-describedby="tbl-hidden-zero-complete-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Today</th>
+<th>In one month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>€100</td>
+<td>€0</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>€0</td>
+<td>€120</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Making both zeros explicit increased selection of delayed rewards in the hidden-zero studies (Magen et al., 2008). The full display makes the forgone reward visible at each date.</p>
 <p><span id="search-paths-and-patience"></span></p>
 <p><strong>The search path can construct patience.</strong></p>
 <p>An intertemporal option has at least two attributes: amount and time. A person can search <strong>within an option</strong>, integrating “€100 now” before considering “€120 later.” Or the person can search <strong>across an attribute</strong>, comparing €100 with €120 and then now with one month. These paths make different contrasts salient.</p>
@@ -909,20 +949,33 @@ Figure&nbsp;20.3: The abbreviated and complete-stream displays contain the same 
 <p><strong>Money, health, environment, effort, and relationships differ.</strong></p>
 <p>Money is tradable and often measurable. Health, pain, environmental quality, effort, and social trust are not interchangeable bank balances. People may discount across domains differently because uncertainty, irreversibility, emotion, identity, and moral meaning differ (Chapman, 1996; Hardisty &amp; Weber, 2009).</p>
 <p>A decision about a delayed health benefit may involve side effects now, uncertain benefit later, caregiving burden, trust in the institution, or values the experiment did not measure.</p>
-</section>
-<section id="language-and-future-oriented-behavior" class="level3">
-<h3 data-anchor-id="language-and-future-oriented-behavior">Does the language of the future change saving?</h3>
+<p><span id="language-and-future-oriented-behavior"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: language and saving
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>English speakers can say “It will rain tomorrow,” while Danish speakers commonly use a present-tense form with the equivalent of “tomorrow.” Both languages can describe future events. The question is whether their customary grammatical treatment makes those events feel differently connected to the present.</p>
 <p>Chen (2013) found that speakers of languages with weaker grammatical separation of present and future were more likely to save and showed several other future-oriented behaviors, including in comparisons of demographically similar households within countries. He proposed that representing the future as closer could change current choices. Language, however, also travels with shared history, institutions, and social practices. Roberts, Winters, and Chen (2015) reanalyzed the relationship while accounting for geographic and historical relatedness among languages. The association weakened and was not significant under their strictest tests, although it survived others.</p>
 <p>This case connects <a href="../chapters/29-culture-personality-and-identity.html#chapter-29-start">culture</a> with time preference while exposing an identification problem. A population-level association does not establish that changing a verb tense will make an individual save. Testing that intervention requires varying language while keeping the payment, delay, and decision environment comparable.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="what-did-the-patience-task-identify" class="level3">
 <h3 data-anchor-id="what-did-the-patience-task-identify">What did the patience task identify?</h3>
-<p>A multiple price list seems to turn patience into a number: at which row does a person switch from a smaller-sooner to a larger-later amount? But choosing the earlier payment could also keep an urgent bill paid or avoid a promise the person distrusts. Treating either constraint as impatience would point to the wrong remedy. The design responses in <a href="#tbl-discount-identification" class="quarto-xref">Table&nbsp;<span>20.3</span></a> show what must be measured or held comparable before attributing the observed choice to time preference.</p>
+<p>A multiple price list seems to turn patience into a number: at which row does a person switch from a smaller-sooner to a larger-later amount? But choosing the earlier payment could also keep an urgent bill paid or avoid a promise the person distrusts. Treating either constraint as impatience would point to the wrong remedy. The design responses in <a href="#tbl-discount-identification" class="quarto-xref">Table&nbsp;<span>20.5</span></a> show what must be measured or held comparable before attributing the observed choice to time preference.</p>
 <div id="tbl-discount-identification" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-discount-identification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constraints, and task design
+Table&nbsp;20.5: A discount-rate estimate combines preferences, beliefs, constraints, and task design
 </figcaption>
 <div aria-describedby="tbl-discount-identification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -975,6 +1028,7 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </figure>
 </div>
 <p>Incentive-compatible payment can improve a task, but it does not solve every identification problem. Cross-domain comparisons require matched procedures and explicit assumptions. A reported association between patience and education, saving, or health is not by itself evidence that changing one stable discount parameter will change those outcomes.</p>
+<p>A person can wait because the payment is credible, because current needs allow it or because the future reward feels concrete. A dated choice comparison changes what is visible. A credibility check instead changes what the person knows about whether the payment will arrive.</p>
 </section>
 </section>
 <section id="the-future-must-become-believable-and-self-relevant" class="level2">
@@ -984,12 +1038,22 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 <p><span id="future-self-continuity"></span></p>
 <p>There is a further distance to cross: the distance between the person choosing now and the person who will receive the benefit. Consider putting money aside for retirement. The sacrifice belongs to someone vividly present—you today—while the benefit belongs to an older person whose routines, needs, and appearance may be difficult to imagine. Saving can then feel less like keeping money for yourself and more like giving it to someone you barely know.</p>
 <p><strong>Future-self continuity</strong> is the felt connection between who one is now and who one will become. The hypothesis is that a stronger connection gives the later person’s welfare more weight in today’s decision (Hershfield, 2011). This adds a social dimension to temporal discounting: a reward can lose value because its recipient feels psychologically distant as well as because its delivery is delayed. The calendar interval stays the same, but the beneficiary becomes more or less personally important.</p>
-<section id="self-friends-and-strangers-in-the-brain" class="level3">
-<h3 data-anchor-id="self-friends-and-strangers-in-the-brain">Self, friends, and strangers in the brain</h3>
+<p><span id="self-friends-and-strangers-in-the-brain"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: what imaging and future-self portraits can show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Neuroimaging offers evidence relevant to this idea. The <strong>medial prefrontal cortex (mPFC)</strong> lies along the brain’s frontal midline. Its ventral portion (vmPFC) is lower; its dorsal portion (dmPFC) is higher. Across 107 imaging studies, Denny and colleagues (2012) found that judgments about oneself more often involved relatively ventral mPFC, whereas judgments about others more often involved relatively dorsal mPFC. Both kinds of judgment engaged overlapping regions. The result describes a graded difference in involvement, rather than activation physically moving from one location to another.</p>
 <p>Who the other person is also matters. Mitchell, Macrae, and Banaji (2006) found that thinking about a person described as similar to oneself recruited a ventral region also involved in self-related thought, while thinking about a dissimilar person recruited a more dorsal region. Similarity and friendship are different, however. Krienen, Tu, and Buckner (2010) found stronger responses in anterior mPFC and rostral anterior cingulate regions for oneself and actual friends than for strangers, even when a friend held dissimilar views. These findings connect personal relevance with neural representation, but do not establish a fixed three-step anatomical ladder from self to friend to stranger.</p>
 <p>Ersner-Hershfield, Wimmer, and Knutson (2009) brought the comparison into the future. Eighteen young adults judged traits describing themselves now, themselves ten years later, and another person. Thinking about the present self elicited greater activity than thinking about the future self in the <strong>rostral anterior cingulate cortex (rACC)</strong>, a neighboring frontal midline region also sensitive to the self–other distinction. Participants with a larger present–future difference in right rACC activity subsequently discounted delayed money more steeply.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> This is consistent with a less personally connected representation of the future self.</p>
-</section>
 <section id="age-progressed-future-self" class="level3">
 <h3 data-anchor-id="age-progressed-future-self">Giving the future self a face</h3>
 <p>The practical question follows naturally: can making the later beneficiary easier to recognize increase willingness to provide for that person? An age-progressed photograph gives an abstract future self a familiar face. The proposed mechanism is a reduction in felt distance: today’s sacrifice becomes a contribution to someone whose welfare feels more closely connected to one’s own.</p>
@@ -997,9 +1061,13 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 <p>Study 2 compared an older avatar of oneself with an older avatar of someone else, while asking participants to discuss their similarities to the depicted person. Its 21 participants showed a pattern of greater willingness to favor future rewards in the self condition, including on a task with real delayed payments. The combined test across three outcomes was suggestive rather than conclusive (<em>p</em> = .056).</p>
 <p>A later field experiment connected the idea to actual saving. Robalino and colleagues (2023) randomized 48,853 retirement-account holders in Mexico to receive ordinary saving messages or invitations to see an aged selfie, followed by a saving prompt and contribution link. Over one month, one-time contributions occurred among approximately 1.7% of the intervention group and 1.5% of controls. That modest difference concerned an outcome added after preregistration; the preregistered participation outcomes—recurring-deposit enrollment and any voluntary contribution—showed no statistically significant effects. The study tests the whole invitation-and-image intervention, and cannot isolate a photograph’s effect or establish that greater future-self continuity was the mechanism.</p>
 <p>The evidence supports making the future beneficiary concrete, while leaving the precise mechanism open. Seeing an older self may strengthen connection, increase attention, or make future needs easier to imagine. For a decision aid, the useful sequence is to picture an ordinary day in that person’s life, identify what today’s action could make possible, and choose an affordable step. Making the beneficiary feel closer can support patience when the delayed benefit is credible and the present sacrifice is feasible.</p>
+</section>
+</div>
+</div>
+</div>
 <div id="research-lens-a-future-reward-can-motivate-now">
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1008,7 +1076,7 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Reward-related brain activity is not reserved for immediate gratification. Kable and Glimcher (2007) found that activity in the ventral striatum, medial prefrontal cortex, and posterior cingulate tracked the subjective value of delayed monetary rewards. These findings challenge a strict division between an impulsive reward system and a patient frontal system.</p>
 <p><a href="../chapters/21-habits-wanting-and-self-control.html#dopamine-anticipation-and-effort">Chapter 21</a> distinguishes anticipating a reward, working to obtain it, and enjoying it. For a delayed goal, the practical task includes making the future benefit meaningful enough to pursue and the present effort feasible.</p>
@@ -1016,25 +1084,37 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="development-and-peer-context" class="level2">
-<h2 data-anchor-id="development-and-peer-context">Growing into decisions about the future</h2>
+<p><span id="development-and-peer-context"></span></p>
+<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research Lens: development and decisions with peers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The person weighing now against later is also developing. An adolescent may explain a danger clearly in a quiet conversation and still approach it differently when friends are watching. Understanding the consequence and assigning it enough weight in that setting are separate accomplishments.</p>
 <p>O’Brien and colleagues (2011) randomly assigned one hundred participants aged eighteen to twenty to make choices about hypothetical money either alone or while two friends of the same age and sex watched. Those observed by friends showed a stronger preference for immediate rewards. The delay and amounts did not change; the social setting did. Because the study included no older comparison group, it does not establish that this effect is unique to adolescence. In a separate simulated-driving study with adolescent, young-adult, and adult groups, Chein and colleagues (2011) found that peer observation increased adolescent risk taking and reward-related neural responses. The scans did not measure dopamine release or demonstrate that teenagers cannot understand risk.</p>
 <p>Development therefore needs a more careful description than an emotional brain waiting for a rational part to turn on. Across four longitudinal samples, Mills and colleagues (2016) found different trajectories for cortical gray matter and cerebral white matter between childhood and early adulthood. These MRI measures neither count individual neurons nor identify a birthday when judgment becomes mature. As Somerville (2016) explains, a claim about brain maturity depends on which property is measured and which capacity it is supposed to establish. The familiar age of twenty-five is not a universal neurological deadline.</p>
 <p>The practical response is to give young people opportunities to choose with feedback while examining the audience, urgency, and consequences around the choice. A private decision before a public commitment may reveal whether peer approval is changing its appeal. Safe opportunities for exploration can make learning possible without treating every dangerous experience as necessary for development. The question becomes how to support judgment in this setting, rather than whether someone possesses an adult amount of self-control.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="scarcity-and-trust-when-now-is-rational" class="level2">
 <h2 data-anchor-id="scarcity-and-trust-when-now-is-rational">Scarcity and trust: when now is rational</h2>
 <p>Waiting can preserve a long-term goal, so choosing an immediate reward is easily read as weak self-control. But a person who cannot cover an urgent need, or cannot trust the promised payment, faces a different trade-off. Advising patience may increase the hardship. Before trying to change the preference, examine what waiting would actually cost.</p>
 <p>If income is unstable, a promised future reward may be risky. If institutions have broken promises, trust should be lower. If a person faces urgent needs or expensive debt, money today can have much higher marginal value. If inflation or political instability threatens future purchasing power, waiting changes the outcome itself. If a medical condition can deteriorate, delay may be dangerous.</p>
-<p>Scarcity certainly changes constraints. An influential set of studies proposed that it can also capture attention and impose cognitive load (Mani et al., 2013; Mullainathan &amp; Shafir, 2013), but the size and generality of this additional cognitive mechanism remain contested. Carvalho, Meier, and Wang (2016), for example, found little evidence that being just before payday reduced cognitive function or decision quality in a low-income US sample, even though short-run resource availability changed. The larger lesson is that measured patience can partly reflect constraints, urgent needs, liquidity, and the reliability of the future.</p>
+<p>Measured patience can therefore reflect urgent needs, cash on hand, and the reliability of the future. Financial concerns may also make it harder to concentrate, a separate mechanism for which the evidence is mixed; <a href="../chapters/03-limited-attention.html#financial-scarcity-and-attention">Chapter 3</a> compares the findings.</p>
 <p>The classic marshmallow task is therefore not a pure assay of willpower. A child chooses between eating a treat now and waiting for a larger reward, but waiting also depends on attention strategy, incentives, and whether the promise seems credible. Kidd, Palmeri, and Aslin (2013) experimentally varied whether an adult had first kept a promise; children waited longer after reliable experience.</p>
 <p>Whether waiting predicts later achievement is a different question. In a longitudinal analysis concentrating on children whose mothers had not completed college, Watts, Duncan, and Quan (2018) found that each additional minute waited at age four predicted roughly one tenth of a standard deviation higher achievement at age fifteen before adjustment. That association shrank by about two thirds after accounting for family background, early cognitive ability, and the home environment.</p>
 <p><span id="childhood-conditions-and-development"></span></p>
 <div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1043,7 +1123,7 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The circumstances behind a waiting task reach further back than the latest promise. A child’s history may include reliable care, opportunities to learn, material insecurity, or repeated threat. Calling a measured difference biological does not tell us whether it was inherited, produced by experience, or open to change.</p>
 <p>Noble and colleagues (2015) examined brain structure in 1,099 children and adolescents aged three to twenty. Family income was associated with cortical surface area, with a steeper association at the lower end of the income distribution. This was a cross-sectional observational study. It did not establish that income itself caused the anatomical differences, isolate stress from nutrition or learning opportunities, or identify any child’s potential. Poverty is also not interchangeable with neglect: material resources and the quality of caregiving are different features of an environment.</p>
@@ -1085,11 +1165,11 @@ Table&nbsp;20.3: A discount-rate estimate combines preferences, beliefs, constra
 </div>
 <div class="callout-body-container callout-body">
 <p>Intertemporal choice is not always a smaller-sooner versus larger-later pair. An option can create value or cost <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> the focal event. Anticipating a holiday can be enjoyable, waiting for a medical procedure can create dread, representative moments can differ from the later memory, and peaks or endings can disproportionately influence whether an episode is repeated.</p>
-<p>Before choosing, use <a href="#tbl-intertemporal-time-stream" class="quarto-xref">Table&nbsp;<span>20.4</span></a> to sketch what each option creates before, during, and after the focal event:</p>
+<p>Before choosing, use <a href="#tbl-intertemporal-time-stream" class="quarto-xref">Table&nbsp;<span>20.6</span></a> to sketch what each option creates before, during, and after the focal event:</p>
 <div id="tbl-intertemporal-time-stream" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-intertemporal-time-stream-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;20.4: A three-part time-stream prompt
+Table&nbsp;20.6: A three-part time-stream prompt
 </figcaption>
 <div aria-describedby="tbl-intertemporal-time-stream-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1133,14 +1213,18 @@ Table&nbsp;20.4: A three-part time-stream prompt
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<details class="exercise-disclosure"><summary>Open exercise</summary>
+<div>
 <p>Choose a saving, retirement, health, or project decision with an immediate cost and delayed benefit. Draw both complete outcome streams, including the hidden zeros. Apply MOST—Magnitude, Opportunity cost, Sign, and Time frame—then mark liquidity, trust, uncertainty, and the moment of likely reversal. Describe the future beneficiary and an ordinary situation in which the benefit would matter. Produce one bridge intervention, one recovery path, and a seven-day observable prediction.</p>
+</div>
+</details>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
 <p>For the manager, “have the conversation” becomes an appointment, an opening sentence, and a specific observation to discuss. Preparing them on Friday reduces what must be worked out at the uncomfortable moment on Monday. Afterward, the manager can review how the conversation went and what preparation would help next time.</p>
 <p>A plan can also lose out without a fresh comparison of now and later. Checking a phone or opening an inbox may begin because a familiar setting brings that action to mind. <a href="../chapters/21-habits-wanting-and-self-control.html#habits-wanting-and-self-control">Habits, Wanting, and Self-Control</a> examines how a repeated response can become easier to start even when it no longer serves the goal.</p>
 <div class="mathematical-analysis research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1149,7 +1233,7 @@ Table&nbsp;20.4: A three-part time-stream prompt
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Financial interest transfers purchasing power across time. If a principal <span class="math inline">\(P\)</span> earns a per-period interest rate <span class="math inline">\(r\)</span> for <span class="math inline">\(n\)</span> periods, its future value is</p>
 <p><span class="math display">\[
@@ -1167,6 +1251,8 @@ PV = \frac{FV}{(1+r)^n}.
 </section>
 <section id="practice-c20" class="level2">
 <h2 data-anchor-id="practice-c20">Chapter practice</h2>
+<details class="exercise-disclosure"><summary>Open practice questions</summary>
+<div>
 <!-- Generated by scripts/build_practice.py. Edit assessments/bank/ instead. -->
 <form class="book-practice" id="quiz-c20" data-practice-set="C20" novalidate="">
 <p id="quiz-c20-instructions">Choose one answer for each of the 5 questions. Complete the set, then select <strong>Check answers</strong> to see your score and explanations. Each question is worth one point.</p>
@@ -1253,6 +1339,8 @@ PV = \frac{FV}{(1+r)^n}.
 </dl><p class="practice-source">Review: <a href="../chapters/20-intertemporal-decision-making.html">Chapter 20</a>. <a href="#c20-05">Back to question 5</a></p></li>
 </ol></details></form>
 <script src="../assets/practice.js" defer=""></script>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
@@ -1261,9 +1349,6 @@ PV = \frac{FV}{(1+r)^n}.
 </div>
 <div class="reference">
 <p>Ariely, D., &amp; Wertenbroch, K. (2002). Procrastination, deadlines, and performance: Self-control by precommitment. Psychological Science, 13(3), 219–224. <strong>Retracted September 2026.</strong></p>
-</div>
-<div class="reference">
-<p>Carvalho, L. S., Meier, S., &amp; Wang, S. W. (2016). Poverty and economic decision-making: Evidence from changes in financial resources at payday. American Economic Review, 106(2), 260–284.</p>
 </div>
 <div class="reference">
 <p>Chapman, G. B. (1996). Temporal discounting and utility for health and money. Journal of Experimental Psychology: Learning, Memory, and Cognition, 22(3), 771–791.</p>
@@ -1320,9 +1405,6 @@ PV = \frac{FV}{(1+r)^n}.
 <p>Magen, E., Dweck, C. S., &amp; Gross, J. J. (2008). The hidden-zero effect: Representing a single choice as an extended sequence reduces impulsive choice. Psychological Science, 19(7), 648–649.</p>
 </div>
 <div class="reference">
-<p>Mani, A., Mullainathan, S., Shafir, E., &amp; Zhao, J. (2013). Poverty impedes cognitive function. Science, 341(6149), 976–980.</p>
-</div>
-<div class="reference">
 <p>Milkman, K. L., Minson, J. A., &amp; Volpp, K. G. M. (2014). Holding the Hunger Games hostage at the gym: An evaluation of temptation bundling. <em>Management Science, 60</em>(2), 283–299. https://doi.org/10.1287/mnsc.2013.1784</p>
 </div>
 <div class="reference">
@@ -1330,9 +1412,6 @@ PV = \frac{FV}{(1+r)^n}.
 </div>
 <div class="reference">
 <p>Mitchell, J. P., Macrae, C. N., &amp; Banaji, M. R. (2006). Dissociable medial prefrontal contributions to judgments of similar and dissimilar others. Neuron, 50(4), 655–663. https://doi.org/10.1016/j.neuron.2006.03.040</p>
-</div>
-<div class="reference">
-<p>Mullainathan, S., &amp; Shafir, E. (2013). Scarcity: Why having too little means so much. Times Books.</p>
 </div>
 <div class="reference">
 <p>Nelson, C. A., III, Zeanah, C. H., Fox, N. A., Marshall, P. J., Smyke, A. T., &amp; Guthrie, D. (2007). Cognitive recovery in socially deprived young children: The Bucharest Early Intervention Project. <em>Science, 318</em>(5858), 1937–1940. https://doi.org/10.1126/science.1143921</p>

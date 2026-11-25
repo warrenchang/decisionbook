@@ -924,32 +924,8 @@ Figure&nbsp;15.2: As information accumulated, mean confidence rose without a cor
 <p>The <strong>planning fallacy</strong> is this tendency to underestimate how long a task will take. A plausible story of the remaining steps can crowd out experience of earlier delays (Buehler et al., 1994; Kahneman &amp; Tversky, 1979). Underestimating the time needed can express overestimation of what one can accomplish; an unduly narrow completion window also expresses overprecision. It is an application of the errors in <a href="#tbl-confidence-calibration" class="quarto-xref">Table&nbsp;<span>15.1</span></a>, rather than a fourth form of overconfidence.</p>
 <p>The <strong>outside view</strong> starts with the completion-time distribution of comparable projects, then adjusts for differences with predictive evidence (Kahneman &amp; Lovallo, 1993; Lovallo &amp; Kahneman, 2003). The inside view still matters: a project’s steps reveal dependencies and possible delays. Comparing the two prevents a coherent plan from erasing what happened to other coherent plans.</p>
 <p>For the branch manager, the same distinction applies to the rescue plan. A compelling account of why it should work is an inside view. Results from other branches facing comparable conditions provide an outside view. Their disagreement is a reason to examine the assumptions, rather than average the two claims mechanically.</p>
-<div class="research-lens callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Research Lens: information protocols change probability puzzles
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In Monty Hall, seeing two unopened doors can make staying and switching look equally promising. Yet the host’s rule for revealing a goat determines what the reveal tells us: similar-looking endings can carry different evidence. In the standard Monty Hall protocol, a knowledgeable host always reveals a goat behind an unchosen door and always offers a switch; if either goat door could be opened, assume the host chooses between them uniformly at random. Following the unchosen-door branch in <a href="#fig-monty-hall-protocol" class="quarto-xref">Figure&nbsp;<span>15.3</span></a> shows why switching wins with probability <span class="math inline">\(2/3\)</span>, compared with <span class="math inline">\(1/3\)</span> for staying (Selvin, 1975). If the host instead opens doors or offers a switch selectively, the evidence changes. Likewise, “at least one child is a boy,” “the older child is a boy,” and a parent volunteering “I have a boy” arise from different sampling rules. The transferable question is not the puzzle answer but: <strong>How was this information generated?</strong></p>
-<div id="fig-monty-hall-protocol" class="quarto-float quarto-figure quarto-figure-center" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/monty-hall-protocol.svg" class="img-fluid figure-img" style="width:100.0%" alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-monty-hall-protocol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15.3: The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
+<p><span id="fig-monty-hall-protocol"></span> <span id="research-lens-information-protocols-change-probability-puzzles"></span></p>
+<p>The <a href="../chapters/14-base-rates-and-bayesian-updating.html#monty-hall-and-the-hosts-rule">two host rules in Chapter 14</a> show how the same visible outcome can carry different information. When a branch reaches headquarters because it had a particularly bad quarter, ask what other branches could have been selected and by which rule.</p>
 </section>
 <section id="calibration-makes-confidence-answerable" class="level2">
 <h2 data-anchor-id="calibration-makes-confidence-answerable">Calibration makes confidence answerable</h2>
@@ -959,7 +935,7 @@ Figure&nbsp;15.3: The standard Monty Hall protocol keeps the information-generat
 <p>The <strong>Brier score</strong> measures the squared gap between a forecast probability and what happened, coding occurrence as one and nonoccurrence as zero. A lower score is better: a 70% forecast scores 0.09 if the event occurs and 0.49 if it does not. Average the scores across forecasts to evaluate the record rather than its most memorable success (Brier, 1950; Murphy, 1973).</p>
 <div id="math-brier-score">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -968,7 +944,7 @@ Figure&nbsp;15.3: The standard Monty Hall protocol keeps the information-generat
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>For a binary event with forecast <span class="math inline">\(p\)</span> and outcome <span class="math inline">\(o\in\{0,1\}\)</span>, the Brier score is</p>
 <p><span class="math display">\[
@@ -1039,7 +1015,7 @@ Table&nbsp;15.2: A minimal forecast ledger
 <p>A project team assigns 15 percent to supplier delay, 10 percent to regulatory delay, and 20 percent to software delay. The probability of <strong>at least one of these delays</strong> must lie between 20 percent and 45 percent: it cannot be smaller than the largest component, and adding the components would count any overlapping delays more than once. Under an illustrative independence assumption, the chance of at least one delay would be 38.8 percent. But a supplier delay might cause a software delay, so independence needs evidence. An event tree with conditional probabilities can make those dependencies explicit; the <a href="../chapters/14-base-rates-and-bayesian-updating.html#chapter-14-start">probability rules in Chapter 14</a> provide the first consistency check.</p>
 <div id="math-combined-delays">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1048,7 +1024,7 @@ Table&nbsp;15.2: A minimal forecast ledger
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Under independence, multiply the probabilities that each delay does <em>not</em> occur, then subtract that joint no-delay probability from one:</p>
 <p><span class="math display">\[
@@ -1065,7 +1041,12 @@ Table&nbsp;15.2: A minimal forecast ledger
 </section>
 <section id="practice-lab" class="level2">
 <h2 data-anchor-id="practice-lab">Practice Lab</h2>
+<details class="exercise-disclosure"><summary>Open exercise</summary>
+<div>
 <p>Choose one event that will resolve within four weeks. Produce a complete forecast ledger: an unambiguous event and resolution source, a numerical probability, two reference classes, an inside-view mechanism, one argument against, and a dated update trigger. For a quantity such as cost or completion time, add the 10th, 50th, and 90th percentiles and explain every adjustment away from the outside-view distribution. When the date arrives, enter the outcome and score without revising the original entry. Keep the ledger and identify which assumptions the outcome gives you reason to reconsider. One result may reveal a missing pathway, but calibration and systematic overconfidence require a longer record.</p>
+<p>For the branch manager, put the inside estimate beside a record of comparable quarters and state which dependencies could make the two cases differ. The delay calculation above answers a related outside-view question. Multiplying independent no-delay probabilities is appropriate if the causes are independent. If several delays share a cause, record that dependence before treating the result as a forecast.</p>
+</div>
+</details>
 </section>
 <section id="take-it-forward" class="level2">
 <h2 data-anchor-id="take-it-forward">Take it forward</h2>
@@ -1073,6 +1054,8 @@ Table&nbsp;15.2: A minimal forecast ledger
 </section>
 <section id="practice-c15" class="level2">
 <h2 data-anchor-id="practice-c15">Chapter practice</h2>
+<details class="exercise-disclosure"><summary>Open practice questions</summary>
+<div>
 <!-- Generated by scripts/build_practice.py. Edit assessments/bank/ instead. -->
 <form class="book-practice" id="quiz-c15" data-practice-set="C15" novalidate="">
 <p id="quiz-c15-instructions">Choose one answer for each of the 5 questions. Complete the set, then select <strong>Check answers</strong> to see your score and explanations. Each question is worth one point.</p>
@@ -1159,6 +1142,8 @@ Table&nbsp;15.2: A minimal forecast ledger
 </dl><p class="practice-source">Review: <a href="../chapters/15-randomness-and-overconfidence.html">Chapter 15</a>. <a href="#c15-05">Back to question 5</a></p></li>
 </ol></details></form>
 <script src="../assets/practice.js" defer=""></script>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-chapter" class="level2">
 <h2 data-anchor-id="references-cited-in-this-chapter">References cited in this chapter</h2>
@@ -1221,9 +1206,6 @@ Table&nbsp;15.2: A minimal forecast ledger
 </div>
 <div class="reference">
 <p>PGA TOUR. (2024, April 30). <em>Tiger Woods appears on “The Tonight Show Starring Jimmy Fallon” to discuss Sun Day Red and more</em>. https://www.pgatour.com/article/news/latest/2024/04/30/tiger-woods-goes-on-the-tonight-show-jimmy-fallon-sun-day-red</p>
-</div>
-<div class="reference">
-<p>Selvin, S. (1975). A problem in probability. <em>The American Statistician, 29</em>(1), 67.</p>
 </div>
 <div class="reference">
 <p>Skinner, B. F. (1948). “Superstition” in the pigeon. <em>Journal of Experimental Psychology, 38</em>(2), 168–172. https://doi.org/10.1037/h0055873</p>

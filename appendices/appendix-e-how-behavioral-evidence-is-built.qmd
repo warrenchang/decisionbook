@@ -44,9 +44,9 @@ The reminder example allows four different questions:
 
 A before–after count could answer the descriptive question while leaving the others unresolved. To estimate the reminder's effect, we need a credible comparison; to explain its mechanism, we need evidence that separates the possible pathways.
 
-![Five questions connect an experimental design to the claim it can support. Revisit earlier steps when the evidence exposes a weakness.](../figures/claim-to-design-pipeline.svg){#fig-claim-to-design-pipeline fig-alt="A vertical sequence asks what to learn, what to measure, what to compare, how large and uncertain the estimate is, and what the design justifies." .phone-fit}
+[]{#fig-claim-to-design-pipeline}
 
-The sequence in @fig-claim-to-design-pipeline helps locate a weakness before it becomes a confident conclusion. If the attendance record is incomplete, for example, a sound assignment procedure alone will not rescue the final estimate.
+Use @tbl-experimental-workflow to start filling out the clinic’s record. Specify an administrative attendance measure, compare two assigned reminder groups and record missing outcomes by group. A gap in the attendance record limits what the comparison can answer even when assignment worked.
 
 ## Define the question
 
@@ -271,9 +271,16 @@ After data collection, observed power computed from the observed effect adds lit
 
 Random assignment gives the clinic a basis for comparing reminder offers. Failed delivery can make the effect of assignment differ from the effect of receiving a message; missing attendance records can also compromise the comparison between assigned groups. Track each participant or unit from eligibility through assignment, delivery, outcome observation, and analysis to establish which effect the records can support.
 
-![Three distinct problems in a randomized evaluation: treatment receipt can differ from assignment, follow-up can leave outcomes missing, and treatment can affect other people. An intention-to-treat comparison retains the original assignment groups; missingness and spillovers require additional attention.](../figures/participant-flow-threats.svg){#fig-participant-flow-threats fig-alt="Three separate panels show noncompliance, attrition, and spillovers or interference. Noncompliance links treatment assigned to treatment received with the label may differ. Attrition links randomized participants to observed participants, with some lost. Spillovers connect one person's treatment to another person's outcome with the label can affect." .phone-fit}
+[]{#fig-participant-flow-threats}
 
-The three panels in @fig-participant-flow-threats distinguish problems that are easily collapsed into “dropout.” **Noncompliance** concerns treatment receipt, **attrition** concerns missing outcomes after loss to follow-up, and **spillovers or interference** concern effects on other people. They can occur together, but they change different parts of the comparison. Retain original assignment when estimating the intention-to-treat effect, then address the assumptions threatened by missing outcomes and interference.
+| Recorded stage | Assigned plain-language reminder | Assigned standard reminder |
+| --- | --- | --- |
+| Assigned | 600 | 600 |
+| Received the assigned message | 570 of 600 | 588 of 600 |
+| Attendance outcome recorded | 594 of 600 | 596 of 600 |
+: Hypothetical delivery and observation counts for the clinic {#tbl-clinic-assignment-flow}
+
+In @tbl-clinic-assignment-flow, compare receipt and observation separately. Some assigned messages did not arrive. Some attendance outcomes are missing. The outcome totals therefore tell us neither the exact number who received a message and were observed nor what happened to patients with missing records. Keep patients grouped by original assignment for the intention-to-treat analysis and address missing outcomes explicitly. A further comparison asks whether a patient who receives a reminder tells a household member about the appointment. The household member’s outcome can then depend on another person’s assignment.
 
 #### Attrition and missing outcomes
 
@@ -481,6 +488,8 @@ External validity is not a yes/no property of a study. It is an argument support
 
 For the clinic, the first sentence should identify which reminder groups were compared, how attendance differed, and how uncertain the estimate is. The explanation of why the reminder helped must stay within what that comparison can establish.
 
+Return to the clinic after following the workflow. The design card ties the reminder question to the eligible patients, the assignment contrast and the outcome window. The generated-data example then shows how that fixed record constrains the claim reported after observation.
+
 ## The one-page evidence design card
 
 Complete @tbl-evidence-design-card before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.
@@ -579,7 +588,7 @@ Institutional review, data-protection law, registration, and local procedures ch
 ::: {.callout-tip .activity icon=false}
 ## Activity: break and repair the evidence chain
 
-Choose one claim from the book or current media. Place it in @fig-claim-to-design-pipeline. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.
+Choose one claim from the book or current media. Use @tbl-experimental-workflow to specify the question, construct, measure, comparison, estimand, and final sentence. Identify the weakest step, then propose a redesign or narrow the claim to what the comparison can establish.
 
 Submit the completed pipeline, one explicit assumption, the revised design, and a final sentence whose strength matches the evidence the redesign could earn.
 :::

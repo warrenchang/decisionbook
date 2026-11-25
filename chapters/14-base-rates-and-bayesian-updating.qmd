@@ -37,15 +37,13 @@ A positive screen can come from someone who meets the standard or someone who do
 
 A validated screen may look like a portable measure of candidate quality. Yet the same positive result can mean different things in different applicant pools. To see why, return to the hiring screen.
 
-Suppose that 20% of applicants in a broad pool would meet a clearly defined performance standard, the screen passes 80% of those future strong performers, and it also passes 30% of the others. Among 10,000 applicants:
+Suppose the screen passes 80% of applicants who would meet the standard and 30% of applicants who would fall short. Compare two pools of 10,000. One includes 20% who would meet the standard. A preselected pool includes 50%. Assume the screen works at the same rates in both.
 
-- 2,000 would meet the standard; 1,600 pass the screen.
-- 8,000 would not; 2,400 nevertheless pass.
-- Of 4,000 positive screens, 1,600 are true positives.
+**Predict first.** In each pool, which group supplies more positive screens? Read the positive counts in @fig-probability-judgment-map and add the two routes before dividing.
 
-Under those assumptions, 1,600 of the 4,000 applicants who pass would perform strongly: 40%. The screen can be meaningfully informative—it raises the probability from 20% to 40%—without making a positive result decisive.
+![Two routes to a positive screen in each hypothetical pool of 10,000 applicants. True positives are measured against the full set of positive screens.](../figures/hiring-screen-positive-pools.svg){#fig-probability-judgment-map fig-alt="The broad pool has 1,600 true positives and 2,400 false positives, so 40 percent of 4,000 positives would meet the standard. The preselected pool has 4,000 true positives and 1,500 false positives, so about 72.7 percent of 5,500 positives would meet it." .phone-fit}
 
-Now place the same screen in a carefully preselected pool where 50% would meet the standard. Assume its **sensitivity**, the share of strong performers who pass, and its **false-positive rate**, the share of others who pass, remain unchanged. Among 10,000 applicants it produces 4,000 true positives and 1,500 false positives, so the probability of strong performance after a positive screen is about 72.7%. Interpreting a sensitivity figure requires the starting population and evidence that the test performs similarly in it.
+In the broad pool, 1,600 of 4,000 applicants with positive screens would meet the standard, or **40%**. In the preselected pool, 4,000 of 5,500 would meet it, or about **72.7%**. Interpreting a positive result requires the starting population and evidence that the sensitivity and false-positive rate carry across pools.
 
 ## Probability begins with a model
 
@@ -117,18 +115,21 @@ Everything after the vertical bar identifies the group being counted within. Thu
 
 []{#monty-hall-and-the-hosts-rule}
 
-::: {.callout-note .mathematical-analysis icon=false collapse=true}
-## Mathematical analysis: the host's choice is part of the evidence
+[]{#math-host-evidence}
 
-In the **Monty Hall problem**, a car is equally likely to be behind any of three doors. You select one. A host who knows the location must open an unchosen door containing a goat and must then offer a switch to the remaining closed door. Should you switch?
+### Monty Hall: two host rules, two inferences
+
+In the **Monty Hall problem** (Selvin, 1975), a car is equally likely to be behind any of three doors. You select one. A host who knows the location must open an unchosen door containing a goat and must then offer a switch to the remaining closed door. Should you switch?
+
+In @fig-monty-hall-two-hosts, trace the rule for the host who knows where the car is. If there are two available goat doors, assume the host chooses between them at random.
+
+![The standard Monty Hall protocol keeps the information-generating rule visible. The initial choice has probability one-third, the two unchosen doors carry two-thirds together, and a knowledgeable host must reveal a goat before offering a switch, using a random tie-break when either goat door is available. The remaining unchosen door retains the two-thirds branch.](../figures/monty-hall-protocol.svg){#fig-monty-hall-two-hosts fig-alt="Three stages show a Monty Hall problem. First, the chosen door receives one-third probability and the two unchosen doors receive two-thirds together. Second, a knowledgeable host opens an unchosen goat door under a constrained rule, choosing randomly when either goat door could be opened. Third, keeping retains one-third while switching receives two-thirds." width=100%}
 
 Your initial selection has a one-third chance of containing the car. If it was correct, switching loses. If it was wrong, which happens with probability two-thirds, the host must remove the other goat, so switching wins. The always-switch strategy therefore wins two-thirds of games under these rules. The opened door is selected using information about the prize; it is not an independent random loss of one possibility.
 
 Change the procedure and the inference changes. Suppose an uninformed host opens one of the unchosen doors at random, and we consider only games where it reveals a goat. Among those retained games, the initial choice contains the car half the time. A goat is certain when the initial choice was right, but only half as likely when it was wrong: the retained weights are $1/3$ and $(2/3)(1/2)=1/3$. Switching now wins half the time.
 
 This comparison is why the sampling rule belongs in a probability model (Gill, 2011). When someone shows you a favorable case, ask how they selected it from the cases they could have shown.
-:::
-
 
 ## Bayes' rule restores the alternatives
 
@@ -177,9 +178,9 @@ Imagine 10,000 people:
 
 Of the 981 people who test positive, 90 have the disease: about 9.17%.
 
-![A positive result can come from either group. In this hypothetical population, the much larger group without disease supplies most of the positive tests.](../figures/probability-judgment-map.svg){#fig-probability-judgment-map fig-alt="A natural-frequency tree starts with 10,000 people: 100 have the disease and 9,900 do not. With ninety-percent sensitivity, 90 people with disease test positive. With a nine-percent false-positive rate, 891 people without disease test positive. Therefore 90 of the 981 positive tests, about 9.2 percent, come from people with disease." width=100%}
 
-The two branches in @fig-probability-judgment-map answer the crucial question: who could have produced this positive result? Natural frequencies preserve those nested sets, often making Bayesian reasoning more transparent than isolated percentages (Gigerenzer & Hoffrage, 1995). They expose the denominator that the 90% sensitivity figure leaves implicit.
+
+The clinical calculation uses the same denominator as the hiring comparison. Natural frequencies group true and false positives so we can count both routes to the same result (Gigerenzer & Hoffrage, 1995).
 
 ## Reference classes are judgment calls
 
@@ -227,6 +228,10 @@ The committee can now replace “the screen is 80 percent accurate” with a mea
 {{< include ../assessments/generated/c14.qmd >}}
 
 ## References cited in this chapter
+
+::: {.reference}
+Selvin, S. (1975). A problem in probability. *The American Statistician, 29*(1), 67.
+:::
 
 ::: {.reference}
 Bar-Hillel, M. (1980). The base-rate fallacy in probability judgments. *Acta Psychologica, 44*(3), 211–233.

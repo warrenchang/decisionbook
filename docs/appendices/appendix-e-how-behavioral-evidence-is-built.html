@@ -745,17 +745,8 @@ Table&nbsp;D.1: Running an experimental study from definition to preservation
 <li><strong>Mechanism:</strong> Did the reminder work by improving comprehension, attracting attention, or changing something else?</li>
 </ul>
 <p>A before–after count could answer the descriptive question while leaving the others unresolved. To estimate the reminder’s effect, we need a credible comparison; to explain its mechanism, we need evidence that separates the possible pathways.</p>
-<div id="fig-claim-to-design-pipeline" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="A vertical sequence asks what to learn, what to measure, what to compare, how large and uncertain the estimate is, and what the design justifies.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-claim-to-design-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/claim-to-design-pipeline.svg" class="phone-fit img-fluid figure-img" alt="A vertical sequence asks what to learn, what to measure, what to compare, how large and uncertain the estimate is, and what the design justifies.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-claim-to-design-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;D.1: Five questions connect an experimental design to the claim it can support. Revisit earlier steps when the evidence exposes a weakness.
-</figcaption>
-</figure>
-</div>
-<p>The sequence in <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a> helps locate a weakness before it becomes a confident conclusion. If the attendance record is incomplete, for example, a sound assignment procedure alone will not rescue the final estimate.</p>
+<p><span id="fig-claim-to-design-pipeline"></span></p>
+<p>Use <a href="#tbl-experimental-workflow" class="quarto-xref">Table&nbsp;<span>D.1</span></a> to start filling out the clinic’s record. Specify an administrative attendance measure, compare two assigned reminder groups and record missing outcomes by group. A gap in the attendance record limits what the comparison can answer even when assignment worked.</p>
 </section>
 <section id="define-the-question" class="level2">
 <h2 data-anchor-id="define-the-question">Define the question</h2>
@@ -994,11 +985,11 @@ Table&nbsp;D.3: Approaches to evidence differ in how the comparison is generated
 <img src="../figures/random-sampling-vs-assignment.svg" class="phone-fit img-fluid figure-img" alt="Target population branches through random sampling into an evaluation sample and people not in the evaluation. Only the evaluation sample proceeds through random assignment to treatment and control groups. External validity and internal validity appear as unboxed side labels beside the corresponding procedures.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-sampling-vs-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;D.2: Random sampling supports generalization to the target population; random assignment supports a causal comparison within the evaluation sample.
+Figure&nbsp;D.1: Random sampling supports generalization to the target population; random assignment supports a causal comparison within the evaluation sample.
 </figcaption>
 </figure>
 </div>
-<p>Follow the two forks in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a>. The first determines who enters the evaluation; the second determines which condition those participants are assigned to. The control group is part of the evaluation sample and must be followed for outcomes. People outside the evaluation are not that control group. The figure shows one possible design: a trial can use random assignment without random sampling, as in the volunteer example above, while requiring a separate argument about generalization.</p>
+<p>Follow the two forks in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. The first determines who enters the evaluation; the second determines which condition those participants are assigned to. The control group is part of the evaluation sample and must be followed for outcomes. People outside the evaluation are not that control group. The figure shows one possible design: a trial can use random assignment without random sampling, as in the volunteer example above, while requiring a separate argument about generalization.</p>
 <section id="unit-of-randomization" class="level4">
 <h4 data-anchor-id="unit-of-randomization">Balance groups at the right level</h4>
 <p>The <strong>unit of randomization</strong> is the entity whose treatment assignment is drawn. The clinic could assign individual patients, households, or whole clinics. The choice should reflect how the intervention is delivered and how people may affect one another. If family members share messages, household assignment may contain some spillovers; if a clinic changes its entire reminder system, assigning individual patients may be impractical.</p>
@@ -1042,17 +1033,48 @@ Figure&nbsp;D.2: Random sampling supports generalization to the target populatio
 <section id="protect-the-assignment-during-implementation" class="level3">
 <h3 data-anchor-id="protect-the-assignment-during-implementation">8. Protect the assignment during implementation</h3>
 <p>Random assignment gives the clinic a basis for comparing reminder offers. Failed delivery can make the effect of assignment differ from the effect of receiving a message; missing attendance records can also compromise the comparison between assigned groups. Track each participant or unit from eligibility through assignment, delivery, outcome observation, and analysis to establish which effect the records can support.</p>
-<div id="fig-participant-flow-threats" class="phone-fit quarto-float quarto-figure quarto-figure-center" alt="Three separate panels show noncompliance, attrition, and spillovers or interference. Noncompliance links treatment assigned to treatment received with the label may differ. Attrition links randomized participants to observed participants, with some lost. Spillovers connect one person's treatment to another person's outcome with the label can affect.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/participant-flow-threats.svg" class="phone-fit img-fluid figure-img" alt="Three separate panels show noncompliance, attrition, and spillovers or interference. Noncompliance links treatment assigned to treatment received with the label may differ. Attrition links randomized participants to observed participants, with some lost. Spillovers connect one person's treatment to another person's outcome with the label can affect.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-participant-flow-threats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;D.3: Three distinct problems in a randomized evaluation: treatment receipt can differ from assignment, follow-up can leave outcomes missing, and treatment can affect other people. An intention-to-treat comparison retains the original assignment groups; missingness and spillovers require additional attention.
+<p><span id="fig-participant-flow-threats"></span></p>
+<div id="tbl-clinic-assignment-flow" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-clinic-assignment-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;D.4: Hypothetical delivery and observation counts for the clinic
 </figcaption>
+<div aria-describedby="tbl-clinic-assignment-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Recorded stage</th>
+<th>Assigned plain-language reminder</th>
+<th>Assigned standard reminder</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assigned</td>
+<td>600</td>
+<td>600</td>
+</tr>
+<tr class="even">
+<td>Received the assigned message</td>
+<td>570 of 600</td>
+<td>588 of 600</td>
+</tr>
+<tr class="odd">
+<td>Attendance outcome recorded</td>
+<td>594 of 600</td>
+<td>596 of 600</td>
+</tr>
+</tbody>
+</table>
+</div>
 </figure>
 </div>
-<p>The three panels in <a href="#fig-participant-flow-threats" class="quarto-xref">Figure&nbsp;<span>D.3</span></a> distinguish problems that are easily collapsed into “dropout.” <strong>Noncompliance</strong> concerns treatment receipt, <strong>attrition</strong> concerns missing outcomes after loss to follow-up, and <strong>spillovers or interference</strong> concern effects on other people. They can occur together, but they change different parts of the comparison. Retain original assignment when estimating the intention-to-treat effect, then address the assumptions threatened by missing outcomes and interference.</p>
+<p>In <a href="#tbl-clinic-assignment-flow" class="quarto-xref">Table&nbsp;<span>D.4</span></a>, compare receipt and observation separately. Some assigned messages did not arrive. Some attendance outcomes are missing. The outcome totals therefore tell us neither the exact number who received a message and were observed nor what happened to patients with missing records. Keep patients grouped by original assignment for the intention-to-treat analysis and address missing outcomes explicitly. A further comparison asks whether a patient who receives a reminder tells a household member about the appointment. The household member’s outcome can then depend on another person’s assignment.</p>
 <section id="attrition-and-missing-outcomes" class="level4">
 <h4 data-anchor-id="attrition-and-missing-outcomes">Attrition and missing outcomes</h4>
 <p>Attrition occurs when outcomes cannot be collected for people originally included in the study. It is dangerous when missingness differs by assignment or relates to potential outcomes. Equal attrition rates do not guarantee equal selection, and a low percentage is not automatically harmless.</p>
@@ -1114,11 +1136,11 @@ LATE = \frac{E[Y\mid Z=1]-E[Y\mid Z=0]}{E[D\mid Z=1]-E[D\mid Z=0]}.
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The school-meal exercise in <a href="#tbl-school-meals-noncompliance" class="quarto-xref">Table&nbsp;<span>D.4</span></a> uses invented changes in reading scores to separate assignment from participation. Ten pupils belong to a school assigned meals and ten to a comparison school; some pupils in each school receive meals. Every pupil’s score change is observed.</p>
+<p>The school-meal exercise in <a href="#tbl-school-meals-noncompliance" class="quarto-xref">Table&nbsp;<span>D.5</span></a> uses invented changes in reading scores to separate assignment from participation. Ten pupils belong to a school assigned meals and ten to a comparison school; some pupils in each school receive meals. Every pupil’s score change is observed.</p>
 <div id="tbl-school-meals-noncompliance" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-school-meals-noncompliance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.4: Hypothetical school-meal data: retain the assigned groups when calculating the effect of assignment.
+Table&nbsp;D.5: Hypothetical school-meal data: retain the assigned groups when calculating the effect of assignment.
 </figcaption>
 <div aria-describedby="tbl-school-meals-noncompliance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1173,7 +1195,7 @@ Table&nbsp;D.4: Hypothetical school-meal data: retain the assigned groups when c
 <p>Spillovers can make the standard difference too small, too large, or simply answer the wrong question. A job-placement program can help treated workers while displacing untreated workers from a fixed number of jobs. The direct effect and the total labor-market effect are different estimands.</p>
 <p>To separate these effects, <strong>treatment saturation</strong> designs vary the proportion offered treatment within a group or market. Comparing offered and unoffered people within a market estimates a contrast at that exposure level. Comparing unoffered people in exposed markets with people in markets receiving no offers helps identify spillovers. Comparing average outcomes across markets addresses the wider effect of the policy at each tested saturation. Each comparison needs its own assignment, measurement, and analysis plan.</p>
 <p>Crépon and colleagues (2013) used this approach to evaluate job-placement assistance across 235 French labor markets. They randomized the proportion of eligible young, educated job seekers offered assistance to 0%, 25%, 50%, 75%, or 100%, then randomized individual offers within the relevant markets. Gains in stable employment visible after eight months were transitory and appeared partly to come at other eligible workers’ expense. The study found little net benefit.</p>
-<p>The markets receiving no offers were deliberately included and measured as <strong>pure controls</strong>. They are different from the people outside the evaluation in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a>. Higher-level assignment, buffer areas, or network measurement may also help, but none should be treated as proof that interference has disappeared. State whose outcome depends on whose treatment and whether the study estimates an individual gain, an effect on others, or a broader policy effect.</p>
+<p>The markets receiving no offers were deliberately included and measured as <strong>pure controls</strong>. They are different from the people outside the evaluation in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. Higher-level assignment, buffer areas, or network measurement may also help, but none should be treated as proof that interference has disappeared. State whose outcome depends on whose treatment and whether the study estimates an individual gain, an effect on others, or a broader policy effect.</p>
 </section>
 <section id="research-reactivity" class="level4">
 <h4 data-anchor-id="research-reactivity">Evaluation can change behavior</h4>
@@ -1182,7 +1204,7 @@ Table&nbsp;D.4: Hypothetical school-meal data: retain the assigned groups when c
 <div id="tbl-research-reactivity" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-research-reactivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.5: Participation can alter the comparison through different pathways
+Table&nbsp;D.6: Participation can alter the comparison through different pathways
 </figcaption>
 <div aria-describedby="tbl-research-reactivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1234,7 +1256,7 @@ Table&nbsp;D.5: Participation can alter the comparison through different pathway
 </div>
 </figure>
 </div>
-<p>Use <a href="#tbl-research-reactivity" class="quarto-xref">Table&nbsp;<span>D.5</span></a> to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.</p>
+<p>Use <a href="#tbl-research-reactivity" class="quarto-xref">Table&nbsp;<span>D.6</span></a> to identify which pathways your design needs to address. A systematic review found highly varied evidence under the Hawthorne label, with substantial uncertainty about mechanisms and magnitudes (McCambridge et al., 2014). More specifically, Zwane and colleagues (2011) randomly varied survey exposure across five field studies: surveys increased use of health products in three studies, but the two microlending studies did not detect changes in borrowing. Measurement can matter without having one predictable effect everywhere.</p>
 <p><span id="baby-bonus-anticipation"></span></p>
 <p>Anticipation can alter an outcome before the policy’s official start. On 11 May 2004, Australia announced an A$3,000 payment for babies born on or after 1 July. Gans and Leigh (2009) found a dip in births before eligibility and a surge afterward; most of the estimated shift involved the timing of inductions and cesarean sections. The seven-week interval concerned pregnancies already underway, not a new generation of conceptions. This historical policy comparison illustrates why the announcement date belongs in the design: late June was already exposed to the incentive to wait. Treating it as an unaffected baseline would miss part of the response.</p>
 <p>Reduce avoidable salience, blind participants or staff where ethical and feasible, use unobtrusive or administrative measures with appropriate consent and privacy, standardize contact, and design diagnostics. Where possible, keep outcome assessors unaware of assignment and define scoring rules before outcomes are examined, so that expectations about the treatment do not influence measurement. Deception or undisclosed observation requires independent ethical justification; methodological convenience does not override respect for persons.</p>
@@ -1310,7 +1332,7 @@ Table&nbsp;D.5: Participation can alter the comparison through different pathway
 </section>
 <section id="transport-the-result-only-as-far-as-the-evidence-travels" class="level3">
 <h3 data-anchor-id="transport-the-result-only-as-far-as-the-evidence-travels">12. Transport the result only as far as the evidence travels</h3>
-<p>Suppose the clinic establishes that its new reminder improves attendance. A neighboring clinic wants to adopt it, but serves patients with different needs and uses a different booking system. The original comparison cannot by itself tell that clinic what to expect. The sampling step in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a> supports inference to a defined population; extending the result to a different setting requires examining what else has changed.</p>
+<p>Suppose the clinic establishes that its new reminder improves attendance. A neighboring clinic wants to adopt it, but serves patients with different needs and uses a different booking system. The original comparison cannot by itself tell that clinic what to expect. The sampling step in <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.1</span></a> supports inference to a defined population; extending the result to a different setting requires examining what else has changed.</p>
 <p>“The laboratory is artificial” is not a complete criticism. Every design abstracts. A lab can identify a mechanism that is hidden in the field. A field experiment can be realistic and highly local. A representative sample can improve population description but not guarantee that an intervention effect transports across institutions.</p>
 <p>Build a transport argument:</p>
 <ol type="1">
@@ -1324,11 +1346,11 @@ Table&nbsp;D.5: Participation can alter the comparison through different pathway
 </section>
 <section id="match-the-final-sentence-to-the-design" class="level3">
 <h3 data-anchor-id="match-the-final-sentence-to-the-design">13. Match the final sentence to the design</h3>
-<p><a href="#tbl-claim-design-matching" class="quarto-xref">Table&nbsp;<span>D.6</span></a> shows how wording can preserve or exceed what a design establishes. In particular, an effect of assignment should not become a claim about everyone who receives treatment, and a modeled pattern should not become proof of a human mechanism.</p>
+<p><a href="#tbl-claim-design-matching" class="quarto-xref">Table&nbsp;<span>D.7</span></a> shows how wording can preserve or exceed what a design establishes. In particular, an effect of assignment should not become a claim about everyone who receives treatment, and a modeled pattern should not become proof of a human mechanism.</p>
 <div id="tbl-claim-design-matching" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.6: Examples of matching claims to the evidence and assumptions that support them
+Table&nbsp;D.7: Examples of matching claims to the evidence and assumptions that support them
 </figcaption>
 <div aria-describedby="tbl-claim-design-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1386,15 +1408,16 @@ Table&nbsp;D.6: Examples of matching claims to the evidence and assumptions that
 </figure>
 </div>
 <p>For the clinic, the first sentence should identify which reminder groups were compared, how attendance differed, and how uncertain the estimate is. The explanation of why the reminder helped must stay within what that comparison can establish.</p>
+<p>Return to the clinic after following the workflow. The design card ties the reminder question to the eligible patients, the assignment contrast and the outcome window. The generated-data example then shows how that fixed record constrains the claim reported after observation.</p>
 </section>
 </section>
 <section id="the-one-page-evidence-design-card" class="level2">
 <h2 data-anchor-id="the-one-page-evidence-design-card">The one-page evidence design card</h2>
-<p>Complete <a href="#tbl-evidence-design-card" class="quarto-xref">Table&nbsp;<span>D.7</span></a> before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.</p>
+<p>Complete <a href="#tbl-evidence-design-card" class="quarto-xref">Table&nbsp;<span>D.8</span></a> before collecting data. Reading across the fields should reveal whether the measure, comparison, analysis, and intended claim fit together; an unresolved entry identifies a design decision that still needs attention.</p>
 <div id="tbl-evidence-design-card" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.7: A compact evidence design card
+Table&nbsp;D.8: A compact evidence design card
 </figcaption>
 <div aria-describedby="tbl-evidence-design-card-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1470,7 +1493,7 @@ Table&nbsp;D.7: A compact evidence design card
 <div id="tbl-worked-reminder-design" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;D.8: Planned design for the simulated reminder study
+Table&nbsp;D.9: Planned design for the simulated reminder study
 </figcaption>
 <div aria-describedby="tbl-worked-reminder-design-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -1522,7 +1545,7 @@ Table&nbsp;D.8: Planned design for the simulated reminder study
 </div>
 </figure>
 </div>
-<p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.8</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
+<p><a href="#tbl-worked-reminder-design" class="quarto-xref">Table&nbsp;<span>D.9</span></a> fixes the reminder comparison, attendance outcome, and analysis before the result is known. The data below are generated with a declared seed and fixed probabilities solely to make that workflow reproducible:</p>
 <div id="math-reminder-simulation">
 <div class="research-lens mathematical-analysis callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
@@ -1578,9 +1601,11 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
 </section>
 <section id="study-and-practice" class="level2">
 <h2 data-anchor-id="study-and-practice">Study and practice</h2>
+<details class="exercise-disclosure"><summary>Open study questions</summary>
+<div>
 <ol type="1">
 <li>Design a comparison for the clinic that would separate the reminder package’s effect from a seasonal change.</li>
-<li>Trace a patient through <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.2</span></a>. Explain how being outside the evaluation differs from assignment to its control group, and when household assignment might be preferable.</li>
+<li>Trace a patient through <a href="#fig-random-sampling-vs-assignment" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. Explain how being outside the evaluation differs from assignment to its control group, and when household assignment might be preferable.</li>
 <li>Explain what you would record if some messages were not delivered or some attendance outcomes were missing. Identify which problem changes receipt and which changes observation.</li>
 <li>Propose a further comparison that could distinguish comprehension from attention as a mechanism, or an individual benefit from a spillover onto others.</li>
 </ol>
@@ -1594,10 +1619,12 @@ ci = (effect - 1.96 * se, effect + 1.96 * se)</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Choose one claim from the book or current media. Place it in <a href="#fig-claim-to-design-pipeline" class="quarto-xref">Figure&nbsp;<span>D.1</span></a>. State the question, construct, measure, comparison, estimand, and final sentence. Mark the weakest arrow. Then propose the smallest feasible redesign that would strengthen that link. If the redesign cannot support the original claim, narrow the claim.</p>
+<p>Choose one claim from the book or current media. Use <a href="#tbl-experimental-workflow" class="quarto-xref">Table&nbsp;<span>D.1</span></a> to specify the question, construct, measure, comparison, estimand, and final sentence. Identify the weakest step, then propose a redesign or narrow the claim to what the comparison can establish.</p>
 <p>Submit the completed pipeline, one explicit assumption, the revised design, and a final sentence whose strength matches the evidence the redesign could earn.</p>
 </div>
 </div>
+</div>
+</details>
 </section>
 <section id="references-cited-in-this-appendix" class="level2">
 <h2 data-anchor-id="references-cited-in-this-appendix">References cited in this appendix</h2>
